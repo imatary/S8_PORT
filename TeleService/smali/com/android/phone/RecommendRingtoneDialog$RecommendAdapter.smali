@@ -91,7 +91,7 @@
 
     if-nez p1, :cond_2
 
-    const v5, 0x7f0d0997
+    const v5, 0x7f0d09fd
 
     invoke-virtual {v1, v5}, Landroid/widget/TextView;->setText(I)V
 
@@ -131,11 +131,11 @@
     goto :goto_0
 
     :cond_2
-    const v5, 0x7f0d099a
+    const v5, 0x7f0d0a00
 
     invoke-virtual {v1, v5}, Landroid/widget/TextView;->setText(I)V
 
-    const v5, 0x7f0d099b
+    const v5, 0x7f0d0a01
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(I)V
 

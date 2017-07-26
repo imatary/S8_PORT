@@ -22,6 +22,8 @@
 # instance fields
 .field private mAirplainModeEnabledObserver:Landroid/database/ContentObserver;
 
+.field mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
 .field private mButtonDomesticCdmaDataRoamingSetting:Landroid/preference/SwitchPreference;
 
 .field private mButtonDomesticCdmaVoiceRoamingSetting:Landroid/preference/SwitchPreference;
@@ -41,6 +43,8 @@
 .field private mPhone:Lcom/android/internal/telephony/Phone;
 
 .field private mRoamingPolicy:Lcom/samsung/android/knox/restriction/RoamingPolicy;
+
+.field mStateListener:Lcom/android/phone/ia/IAInterimListener;
 
 
 # direct methods
@@ -125,9 +129,9 @@
 
     const/4 v6, 0x2
 
-    const/4 v5, 0x1
+    const/4 v5, 0x0
 
-    const/4 v4, 0x0
+    const/4 v4, 0x1
 
     const-string/jumbo v1, "Roaming"
 
@@ -153,11 +157,11 @@
 
     const-string/jumbo v1, "roam_guard_data_domestic"
 
-    invoke-static {v1, v5}, Lcom/android/phone/operator/usa/TelephonyExtension;->getSecureSettingBoolean(Ljava/lang/String;I)Z
+    invoke-static {v1, v4}, Lcom/android/phone/operator/usa/TelephonyExtension;->getSecureSettingBoolean(Ljava/lang/String;I)Z
 
     move-result v0
 
-    if-eqz p1, :cond_6
+    if-eqz p1, :cond_7
 
     iget-object v1, p0, Lcom/android/phone/operator/usa/Roaming;->mButtonDomesticCdmaVoiceRoamingSetting:Landroid/preference/SwitchPreference;
 
@@ -173,10 +177,10 @@
 
     move-result v1
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_5
 
     :cond_0
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticRoamingInService()Z
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticDataRoamingInService()Z
 
     move-result v1
 
@@ -199,10 +203,10 @@
 
     move-result v1
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_6
 
     :cond_2
-    invoke-direct {p0, v6, v5}, Lcom/android/phone/operator/usa/Roaming;->setSecureSettingRoamValue(II)V
+    invoke-direct {p0, v6, v4}, Lcom/android/phone/operator/usa/Roaming;->setSecureSettingRoamValue(II)V
 
     const-string/jumbo v1, "lte_roaming_enhancement"
 
@@ -215,10 +219,19 @@
     invoke-direct {p0}, Lcom/android/phone/operator/usa/Roaming;->setLTECdmaRoaming()V
 
     :cond_3
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticDataRoamingInService()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    invoke-static {v4}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
+
+    :cond_4
     :goto_0
     return-void
 
-    :cond_4
+    :cond_5
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
@@ -227,7 +240,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0685
+    const v3, 0x7f0d06e9
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -253,7 +266,7 @@
 
     invoke-direct {v2, p0, v0}, Lcom/android/phone/operator/usa/Roaming$4;-><init>(Lcom/android/phone/operator/usa/Roaming;Z)V
 
-    const v3, 0x7f0d04a2
+    const v3, 0x7f0d0502
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -263,13 +276,13 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/operator/usa/Roaming$5;-><init>(Lcom/android/phone/operator/usa/Roaming;)V
 
-    const v3, 0x7f0d04a3
+    const v3, 0x7f0d0503
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    invoke-virtual {v1, v5}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v1, v4}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
@@ -277,11 +290,11 @@
 
     iget-object v1, p0, Lcom/android/phone/operator/usa/Roaming;->mButtonDomesticCdmaDataRoamingSetting:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {v1, v4}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+    invoke-virtual {v1, v5}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     goto :goto_0
 
-    :cond_5
+    :cond_6
     if-eqz v0, :cond_2
 
     const-string/jumbo v1, "domestic_cdma_data_roaming_setting_extra"
@@ -290,38 +303,38 @@
 
     goto :goto_0
 
-    :cond_6
+    :cond_7
     const-string/jumbo v1, "roaming_setting_guard_data_only"
 
     invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_7
+    if-eqz v1, :cond_8
 
-    invoke-direct {p0, v5, v4}, Lcom/android/phone/operator/usa/Roaming;->setCheckSecureSettingRoamValue(II)V
+    invoke-direct {p0, v4, v5}, Lcom/android/phone/operator/usa/Roaming;->setCheckSecureSettingRoamValue(II)V
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/Roaming;->setCdmaRoaming()V
 
-    :cond_7
-    invoke-direct {p0, v6, v4}, Lcom/android/phone/operator/usa/Roaming;->setCheckSecureSettingRoamValue(II)V
+    :cond_8
+    invoke-direct {p0, v6, v5}, Lcom/android/phone/operator/usa/Roaming;->setCheckSecureSettingRoamValue(II)V
 
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticRoamingInService()Z
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticDataRoamingInService()Z
 
     move-result v1
 
-    if-eqz v1, :cond_8
+    if-eqz v1, :cond_9
 
-    invoke-static {v4}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
+    invoke-static {v5}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
 
-    :cond_8
+    :cond_9
     const-string/jumbo v1, "lte_roaming_enhancement"
 
     invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_4
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/Roaming;->setLTECdmaRoaming()V
 
@@ -367,7 +380,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0684
+    const v2, 0x7f0d06e8
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -393,7 +406,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/usa/Roaming$2;-><init>(Lcom/android/phone/operator/usa/Roaming;)V
 
-    const v2, 0x7f0d04a2
+    const v2, 0x7f0d0502
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -403,7 +416,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/usa/Roaming$3;-><init>(Lcom/android/phone/operator/usa/Roaming;)V
 
-    const v2, 0x7f0d04a3
+    const v2, 0x7f0d0503
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -516,11 +529,13 @@
 
     invoke-direct {p0, v7, v5}, Lcom/android/phone/operator/usa/Roaming;->setSecureSettingRoamValue(II)V
 
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isInternationalRoamingInService()Z
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isInternationalDataRoamingInService()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
+
+    invoke-static {v5}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
 
     if-eqz v0, :cond_1
 
@@ -541,7 +556,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0686
+    const v3, 0x7f0d06ea
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -567,7 +582,7 @@
 
     invoke-direct {v2, p0, v0}, Lcom/android/phone/operator/usa/Roaming$8;-><init>(Lcom/android/phone/operator/usa/Roaming;Z)V
 
-    const v3, 0x7f0d04a2
+    const v3, 0x7f0d0502
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -577,7 +592,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/operator/usa/Roaming$9;-><init>(Lcom/android/phone/operator/usa/Roaming;)V
 
-    const v3, 0x7f0d04a3
+    const v3, 0x7f0d0503
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -615,7 +630,7 @@
 
     invoke-direct {p0, v7, v4}, Lcom/android/phone/operator/usa/Roaming;->setCheckSecureSettingRoamValue(II)V
 
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isInternationalRoamingInService()Z
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isInternationalDataRoamingInService()Z
 
     move-result v1
 
@@ -663,7 +678,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0684
+    const v2, 0x7f0d06e8
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -689,7 +704,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/usa/Roaming$6;-><init>(Lcom/android/phone/operator/usa/Roaming;)V
 
-    const v2, 0x7f0d04a2
+    const v2, 0x7f0d0502
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -699,7 +714,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/usa/Roaming$7;-><init>(Lcom/android/phone/operator/usa/Roaming;)V
 
-    const v2, 0x7f0d04a3
+    const v2, 0x7f0d0503
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -981,18 +996,10 @@
 
     invoke-static {v0, p2}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
 
-    const-string/jumbo v0, "roam_guard_call_domestic"
-
-    invoke-static {v0, p2}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
-
     goto :goto_0
 
     :pswitch_2
     const-string/jumbo v0, "roam_setting_data_domestic"
-
-    invoke-static {v0, p2}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
-
-    const-string/jumbo v0, "roam_guard_data_domestic"
 
     invoke-static {v0, p2}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
 
@@ -1015,18 +1022,10 @@
 
     invoke-static {v0, p2}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
 
-    const-string/jumbo v0, "roam_guard_call_international"
-
-    invoke-static {v0, p2}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
-
     goto :goto_0
 
     :pswitch_4
     const-string/jumbo v0, "roam_setting_data_international"
-
-    invoke-static {v0, p2}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
-
-    const-string/jumbo v0, "roam_guard_data_international"
 
     invoke-static {v0, p2}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
 
@@ -1046,10 +1045,6 @@
 
     :pswitch_5
     const-string/jumbo v0, "sprint_gsm_data_roaming"
-
-    invoke-static {v0, p2}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
-
-    const-string/jumbo v0, "sprint_gsm_data_guard"
 
     invoke-static {v0, p2}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
 
@@ -1649,7 +1644,7 @@
 .end method
 
 .method public onPause()V
-    .locals 1
+    .locals 2
 
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
@@ -1657,6 +1652,33 @@
 
     invoke-static {v0}, Lcom/android/phone/mobilenetworks/boundary/SettingProxy;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
+    const-string/jumbo v0, "support_bixby"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/phone/operator/usa/Roaming;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    invoke-virtual {v0}, Lcom/samsung/android/sdk/bixby/BixbyApi;->clearInterimStateListener()V
+
+    iget-object v0, p0, Lcom/android/phone/operator/usa/Roaming;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v1, "Roaming"
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logExitState(Ljava/lang/String;)V
+
+    iget-object v0, p0, Lcom/android/phone/operator/usa/Roaming;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    invoke-interface {v0}, Lcom/android/phone/ia/IAInterimListener;->clear()V
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/android/phone/operator/usa/Roaming;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    :cond_0
     return-void
 .end method
 
@@ -1784,7 +1806,7 @@
 
     move-result v0
 
-    if-ne v0, v4, :cond_0
+    if-ne v0, v4, :cond_3
 
     iget-object v1, p0, Lcom/android/phone/operator/usa/Roaming;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -1801,16 +1823,83 @@
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/Roaming;->updateRoamingPolicy()V
 
-    return-void
+    const-string/jumbo v1, "support_bixby"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-static {}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getInstance()Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/android/phone/operator/usa/Roaming;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    new-instance v1, Lcom/android/phone/ia/SprintRoamingMenuStateListener;
+
+    invoke-direct {v1, p0}, Lcom/android/phone/ia/SprintRoamingMenuStateListener;-><init>(Landroid/preference/PreferenceActivity;)V
+
+    iput-object v1, p0, Lcom/android/phone/operator/usa/Roaming;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    iget-object v1, p0, Lcom/android/phone/operator/usa/Roaming;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    iget-object v2, p0, Lcom/android/phone/operator/usa/Roaming;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    invoke-virtual {v1, v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->setInterimStateListener(Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;)V
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    const-string/jumbo v1, "Roaming"
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingLastState()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const-string/jumbo v1, "Roaming"
+
+    invoke-static {v1}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
 
     :cond_0
-    if-eq v0, v3, :cond_1
+    sget-object v1, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v1}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    :cond_1
+    iget-object v1, p0, Lcom/android/phone/operator/usa/Roaming;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v2, "Roaming"
+
+    invoke-virtual {v1, v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logEnterState(Ljava/lang/String;)V
+
+    :cond_2
+    return-void
+
+    :cond_3
+    if-eq v0, v3, :cond_4
 
     const/4 v1, 0x3
 
-    if-ne v0, v1, :cond_2
+    if-ne v0, v1, :cond_5
 
-    :cond_1
+    :cond_4
     iget-object v1, p0, Lcom/android/phone/operator/usa/Roaming;->mPhone:Lcom/android/internal/telephony/Phone;
 
     iget-object v2, p0, Lcom/android/phone/operator/usa/Roaming;->mHandler:Lcom/android/phone/operator/usa/Roaming$MyHandler;
@@ -1823,10 +1912,10 @@
 
     goto :goto_0
 
-    :cond_2
+    :cond_5
     const/4 v1, 0x5
 
-    if-eq v0, v1, :cond_1
+    if-eq v0, v1, :cond_4
 
     new-instance v1, Ljava/lang/IllegalStateException;
 

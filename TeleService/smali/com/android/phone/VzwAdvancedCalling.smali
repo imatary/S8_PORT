@@ -289,24 +289,6 @@
     return-void
 .end method
 
-.method private disableAdvancedCallSetting()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/phone/VzwAdvancedCalling;->mVzwAdvCallSetting:Landroid/preference/Preference;
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setShouldDisableView(Z)V
-
-    iget-object v0, p0, Lcom/android/phone/VzwAdvancedCalling;->mVzwAdvCallSetting:Landroid/preference/Preference;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
-
-    return-void
-.end method
-
 .method private enableAdvCallSetting()V
     .locals 6
 
@@ -372,7 +354,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0d63
+    const v5, 0x7f0d0dd9
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -396,7 +378,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0d65
+    const v5, 0x7f0d0ddb
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -588,34 +570,6 @@
     goto :goto_0
 .end method
 
-.method private updateUxInEmergencyMode()V
-    .locals 2
-
-    invoke-static {}, Lcom/android/phone/TeleServiceSystemDB;->isEmergencyMode()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    invoke-static {}, Lcom/android/phone/TeleServiceSystemDB;->isUltraPowerSavingMode()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    :cond_0
-    const-string/jumbo v0, "VzwAdvancedCalling"
-
-    const-string/jumbo v1, "updateUxInEmergencyMode: disable mVzwAdvCallSetting preference"
-
-    invoke-static {v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-direct {p0}, Lcom/android/phone/VzwAdvancedCalling;->disableAdvancedCallSetting()V
-
-    :cond_1
-    return-void
-.end method
-
 .method private updateVowifiCallSetting()V
     .locals 5
 
@@ -635,7 +589,7 @@
 
     iget-object v2, p0, Lcom/android/phone/VzwAdvancedCalling;->mVzwVowifiCallSettingPref:Landroid/preference/Preference;
 
-    const v3, 0x7f0d0a24
+    const v3, 0x7f0d0a8b
 
     invoke-virtual {p0, v3}, Lcom/android/phone/VzwAdvancedCalling;->getString(I)Ljava/lang/String;
 
@@ -685,7 +639,7 @@
 
     iget-object v2, p0, Lcom/android/phone/VzwAdvancedCalling;->mVzwVowifiCallSettingPref:Landroid/preference/Preference;
 
-    const v3, 0x7f0d0d71
+    const v3, 0x7f0d0de7
 
     invoke-virtual {p0, v3}, Lcom/android/phone/VzwAdvancedCalling;->getString(I)Ljava/lang/String;
 
@@ -729,7 +683,7 @@
     :cond_2
     iget-object v2, p0, Lcom/android/phone/VzwAdvancedCalling;->mVzwVowifiCallSettingPref:Landroid/preference/Preference;
 
-    const v3, 0x7f0d0d6e
+    const v3, 0x7f0d0de4
 
     invoke-virtual {p0, v3}, Lcom/android/phone/VzwAdvancedCalling;->getString(I)Ljava/lang/String;
 
@@ -753,7 +707,7 @@
     :cond_4
     iget-object v2, p0, Lcom/android/phone/VzwAdvancedCalling;->mVzwVowifiCallSettingPref:Landroid/preference/Preference;
 
-    const v3, 0x7f0d0d72
+    const v3, 0x7f0d0de8
 
     invoke-virtual {p0, v3}, Lcom/android/phone/VzwAdvancedCalling;->getString(I)Ljava/lang/String;
 
@@ -892,7 +846,7 @@
 
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCalling;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0d0d6f
+    const v1, 0x7f0d0de5
 
     invoke-virtual {p0, v1}, Lcom/android/phone/VzwAdvancedCalling;->getString(I)Ljava/lang/String;
 
@@ -1181,8 +1135,6 @@
 
     :goto_0
     invoke-direct {p0}, Lcom/android/phone/VzwAdvancedCalling;->updateVowifiCallSetting()V
-
-    invoke-direct {p0}, Lcom/android/phone/VzwAdvancedCalling;->updateUxInEmergencyMode()V
 
     invoke-direct {p0}, Lcom/android/phone/VzwAdvancedCalling;->checkBixbySupport()V
 

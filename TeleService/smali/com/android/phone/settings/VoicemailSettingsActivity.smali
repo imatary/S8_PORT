@@ -1318,7 +1318,7 @@
 
     iget-object v3, p0, Lcom/android/phone/settings/VoicemailSettingsActivity;->mVoicemailProviders:Lcom/android/phone/settings/VoicemailProviderListPreference;
 
-    const v4, 0x7f0d0340
+    const v4, 0x7f0d03a0
 
     invoke-virtual {p0, v4}, Lcom/android/phone/settings/VoicemailSettingsActivity;->getString(I)Ljava/lang/String;
 
@@ -1392,7 +1392,7 @@
 
     iget-object v0, p0, Lcom/android/phone/settings/VoicemailSettingsActivity;->mSubMenuVoicemailSettings:Lcom/android/phone/EditPhoneNumberPreference;
 
-    const v1, 0x7f0d04a8
+    const v1, 0x7f0d0508
 
     invoke-virtual {p0, v1}, Lcom/android/phone/settings/VoicemailSettingsActivity;->getString(I)Ljava/lang/String;
 
@@ -1821,7 +1821,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d02f2
+    const v3, 0x7f0d0352
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/SubscriptionInfoHelper;->setActionBarTitle(Landroid/app/ActionBar;Landroid/content/res/Resources;I)V
 
@@ -1940,7 +1940,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v2, 0x7f0d02f3
+    const v2, 0x7f0d0353
 
     invoke-virtual {p0, v2}, Lcom/android/phone/settings/VoicemailSettingsActivity;->getString(I)Ljava/lang/String;
 
@@ -2366,7 +2366,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0ca1
+    const v3, 0x7f0d0d12
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2390,7 +2390,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0ca2
+    const v3, 0x7f0d0d13
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2412,7 +2412,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0ca3
+    const v3, 0x7f0d0d14
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -230,7 +230,7 @@
 
     iget-object v1, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0d01f0
+    const v3, 0x7f0d024d
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -331,7 +331,7 @@
 
     const-string/jumbo v0, "setBackgroundResource"
 
-    const v3, 0x7f020158
+    const v3, 0x7f02015c
 
     invoke-virtual {p2, v1, v0, v3}, Landroid/widget/RemoteViews;->setInt(ILjava/lang/String;I)V
 
@@ -584,6 +584,122 @@
     goto :goto_0
 .end method
 
+.method private creatDisable2gNotification()Landroid/app/Notification;
+    .locals 10
+
+    const/4 v9, 0x0
+
+    const/4 v8, 0x1
+
+    iget-object v6, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
+
+    const v7, 0x7f0d07d2
+
+    invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    iget-object v6, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
+
+    const v7, 0x7f0d0a44
+
+    invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Landroid/content/Intent;
+
+    iget-object v6, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
+
+    const-class v7, Lcom/android/phone/MobileNetworkSettings;
+
+    invoke-direct {v2, v6, v7}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    iget-object v6, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
+
+    const/high16 v7, 0x8000000
+
+    invoke-static {v6, v9, v2, v7}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v4
+
+    new-instance v6, Landroid/app/Notification$Builder;
+
+    iget-object v7, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
+
+    invoke-direct {v6, v7}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v6, v5}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v1}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    move-result-object v6
+
+    new-instance v7, Landroid/app/Notification$BigTextStyle;
+
+    invoke-direct {v7}, Landroid/app/Notification$BigTextStyle;-><init>()V
+
+    invoke-virtual {v7, v1}, Landroid/app/Notification$BigTextStyle;->bigText(Ljava/lang/CharSequence;)Landroid/app/Notification$BigTextStyle;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Landroid/app/Notification$Builder;->setStyle(Landroid/app/Notification$Style;)Landroid/app/Notification$Builder;
+
+    move-result-object v6
+
+    const v7, 0x108008a
+
+    invoke-virtual {v6, v7}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
+
+    move-result-object v6
+
+    invoke-static {v8}, Landroid/app/NotificationManager$Policy;->priorityCategoriesToString(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Landroid/app/Notification$Builder;->setCategory(Ljava/lang/String;)Landroid/app/Notification$Builder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v8}, Landroid/app/Notification$Builder;->setOngoing(Z)Landroid/app/Notification$Builder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v8}, Landroid/app/Notification$Builder;->setOnlyAlertOnce(Z)Landroid/app/Notification$Builder;
+
+    move-result-object v6
+
+    const/16 v7, 0x14
+
+    invoke-virtual {v6, v7}, Landroid/app/Notification$Builder;->setPriority(I)Landroid/app/Notification$Builder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v4}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
+
+    move-result-object v6
+
+    const/4 v7, -0x1
+
+    invoke-virtual {v6, v7}, Landroid/app/Notification$Builder;->setDefaults(I)Landroid/app/Notification$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v3
+
+    iget-object v6, v3, Landroid/app/Notification;->extras:Landroid/os/Bundle;
+
+    const-string/jumbo v7, "headsup"
+
+    invoke-virtual {v6, v7, v9}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    return-object v3
+.end method
+
 .method private createDataOffNotification()Landroid/app/Notification;
     .locals 14
 
@@ -595,7 +711,7 @@
 
     iget-object v9, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f0d0d12
+    const v10, 0x7f0d0d83
 
     invoke-virtual {v9, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -603,7 +719,7 @@
 
     iget-object v9, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f0d0d13
+    const v10, 0x7f0d0d84
 
     invoke-virtual {v9, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -611,7 +727,7 @@
 
     iget-object v9, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f0d0d14
+    const v10, 0x7f0d0d85
 
     invoke-virtual {v9, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -669,7 +785,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f020175
+    const v10, 0x7f02017e
 
     invoke-virtual {v9, v10}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -698,6 +814,12 @@
     move-result-object v9
 
     invoke-virtual {v9, v6}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
+
+    move-result-object v9
+
+    const/4 v10, -0x1
+
+    invoke-virtual {v9, v10}, Landroid/app/Notification$Builder;->setDefaults(I)Landroid/app/Notification$Builder;
 
     move-result-object v9
 
@@ -1498,7 +1620,7 @@
 
     iget-object v10, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v11, 0x7f0d0462
+    const v11, 0x7f0d04c2
 
     invoke-virtual {v10, v11}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1518,7 +1640,7 @@
 
     aput-object p1, v11, v12
 
-    const v12, 0x7f0d0463
+    const v12, 0x7f0d04c3
 
     invoke-virtual {v10, v12, v11}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1881,7 +2003,7 @@
 
     iget-object v9, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v11, 0x7f0d0384
+    const v11, 0x7f0d03e4
 
     invoke-virtual {v9, v11}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1901,7 +2023,7 @@
 
     iget-object v11, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v12, 0x7f0d037e
+    const v12, 0x7f0d03de
 
     invoke-virtual {v11, v12}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -2040,6 +2162,14 @@
     goto :goto_2
 
     :cond_3
+    return-void
+.end method
+
+.method public canceDisable2g()V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/android/phone/NotificationMgr;->hideDisable2gNotification()V
+
     return-void
 .end method
 
@@ -2390,6 +2520,18 @@
     return-void
 .end method
 
+.method hideDisable2gNotification()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/phone/NotificationMgr;->mNotificationManager:Landroid/app/NotificationManager;
+
+    const/16 v1, 0x9
+
+    invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->cancel(I)V
+
+    return-void
+.end method
+
 .method hideInternationalRomingNoti()V
     .locals 2
 
@@ -2488,7 +2630,7 @@
 .method notifyDataDisconnectDomestic()V
     .locals 6
 
-    const v5, 0x7f0d078d
+    const v5, 0x7f0d07f1
 
     const-string/jumbo v2, "notifyDataDisconnectDomestic()..."
 
@@ -2540,7 +2682,7 @@
 
     iget-object v3, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0d078c
+    const v4, 0x7f0d07f0
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2617,10 +2759,18 @@
     return-void
 .end method
 
+.method public notifyDisable2g()V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/android/phone/NotificationMgr;->showDisable2gNoti()V
+
+    return-void
+.end method
+
 .method public notifyDisableAutoRejectNotification()V
     .locals 8
 
-    const v7, 0x7f0d0546
+    const v7, 0x7f0d05aa
 
     const/16 v6, 0xd
 
@@ -2658,7 +2808,7 @@
 
     iget-object v4, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0d0528
+    const v5, 0x7f0d0588
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2688,7 +2838,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0200bf
+    const v4, 0x7f0200c2
 
     invoke-virtual {v3, v4}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -2730,7 +2880,7 @@
 .method public notifyDisableBlockModeNotification()V
     .locals 8
 
-    const v7, 0x7f0d0548
+    const v7, 0x7f0d05ac
 
     const/16 v6, 0xe
 
@@ -2768,7 +2918,7 @@
 
     iget-object v4, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0d054a
+    const v5, 0x7f0d05ae
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2798,7 +2948,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0200c0
+    const v4, 0x7f0200c3
 
     invoke-virtual {v3, v4}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -3049,7 +3199,7 @@
 
     iget-object v4, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0d02f0
+    const v5, 0x7f0d0350
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3065,7 +3215,7 @@
 
     iget-object v4, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0d09f1
+    const v5, 0x7f0d0a58
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3178,7 +3328,7 @@
 
     iget-object v5, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0d06ff
+    const v6, 0x7f0d0763
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3198,7 +3348,7 @@
 
     iget-object v5, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0d0831
+    const v6, 0x7f0d0895
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3336,7 +3486,7 @@
 
     iget-object v9, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v11, 0x7f0d0383
+    const v11, 0x7f0d03e3
 
     invoke-virtual {v9, v11}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -3356,7 +3506,7 @@
 
     iget-object v11, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v12, 0x7f0d037e
+    const v12, 0x7f0d03de
 
     invoke-virtual {v11, v12}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -3490,12 +3640,32 @@
     return-void
 .end method
 
+.method showDisable2gNoti()V
+    .locals 3
+
+    const-string/jumbo v1, "showDisable2gNoti()..."
+
+    invoke-direct {p0, v1}, Lcom/android/phone/NotificationMgr;->log(Ljava/lang/String;)V
+
+    invoke-direct {p0}, Lcom/android/phone/NotificationMgr;->creatDisable2gNotification()Landroid/app/Notification;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/phone/NotificationMgr;->mNotificationManager:Landroid/app/NotificationManager;
+
+    const/16 v2, 0x9
+
+    invoke-virtual {v1, v2, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
+
+    return-void
+.end method
+
 .method showLUCDataDisconnectedRoaming()V
     .locals 15
 
-    const v14, 0x7f0d078b
+    const v14, 0x7f0d07ef
 
-    const v13, 0x7f0d037e
+    const v13, 0x7f0d03de
 
     const/high16 v12, 0x10000000
 
@@ -3547,7 +3717,7 @@
 
     iget-object v7, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0d0383
+    const v8, 0x7f0d03e3
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -3627,7 +3797,7 @@
 
     iget-object v7, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0d078a
+    const v8, 0x7f0d07ee
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3701,7 +3871,7 @@
 
     iget-object v7, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0d0831
+    const v8, 0x7f0d0895
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3866,7 +4036,7 @@
 
     iget-object v7, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0d0c82
+    const v8, 0x7f0d0cf3
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3876,7 +4046,7 @@
 
     iget-object v7, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0d0c83
+    const v8, 0x7f0d0cf4
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3924,7 +4094,7 @@
 
     iget-object v9, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v11, 0x7f0d09dd
+    const v11, 0x7f0d0a43
 
     invoke-virtual {v9, v11}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -3944,7 +4114,7 @@
 
     iget-object v11, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v12, 0x7f0d076e
+    const v12, 0x7f0d07d2
 
     invoke-virtual {v11, v12}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -4091,7 +4261,7 @@
 
     const/4 v7, 0x0
 
-    const v6, 0x7f0d0be4
+    const v6, 0x7f0d0c4f
 
     const/4 v5, 0x0
 
@@ -4125,7 +4295,7 @@
 
     invoke-direct {v0, v3}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f020044
+    const v3, 0x7f020046
 
     invoke-virtual {v0, v3}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -4139,7 +4309,7 @@
 
     iget-object v3, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0d0be3
+    const v4, 0x7f0d0c4e
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4214,7 +4384,7 @@
 
     const/4 v7, 0x0
 
-    const v6, 0x7f0d06a8
+    const v6, 0x7f0d070c
 
     const/4 v5, 0x0
 
@@ -4242,7 +4412,7 @@
 
     invoke-direct {v0, v3}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f020042
+    const v3, 0x7f020044
 
     invoke-virtual {v0, v3}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -4256,7 +4426,7 @@
 
     iget-object v3, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0d06a7
+    const v4, 0x7f0d070b
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4331,7 +4501,7 @@
 
     const/4 v7, 0x0
 
-    const v6, 0x7f0d06a5
+    const v6, 0x7f0d0709
 
     const/4 v5, 0x0
 
@@ -4365,7 +4535,7 @@
 
     invoke-direct {v0, v3}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f020043
+    const v3, 0x7f020045
 
     invoke-virtual {v0, v3}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -4379,7 +4549,7 @@
 
     iget-object v3, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0d0693
+    const v4, 0x7f0d06f7
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4452,9 +4622,9 @@
 .method public showVzwTtyNotification()V
     .locals 8
 
-    const v7, 0x7f0d08f1
+    const v7, 0x7f0d0957
 
-    const v6, 0x7f0d08f0
+    const v6, 0x7f0d0956
 
     const/4 v5, 0x0
 
@@ -4482,7 +4652,7 @@
 
     invoke-direct {v0, v3}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f020185
+    const v3, 0x7f02018e
 
     invoke-virtual {v0, v3}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -4492,7 +4662,7 @@
 
     iget-object v3, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0d08ef
+    const v4, 0x7f0d0955
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4630,7 +4800,7 @@
 
     iget-object v4, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0d04bd
+    const v5, 0x7f0d051d
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4648,7 +4818,7 @@
 
     iget-object v4, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0d04ab
+    const v5, 0x7f0d050b
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4659,7 +4829,7 @@
 
     const-wide/16 v6, 0x0
 
-    const v5, 0x7f0201c9
+    const v5, 0x7f0201d2
 
     invoke-direct {v4, v5, v1, v6, v7}, Landroid/app/Notification;-><init>(ILjava/lang/CharSequence;J)V
 
@@ -4737,7 +4907,7 @@
 
     invoke-direct {v6, v8}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
-    const v8, 0x7f02017b
+    const v8, 0x7f020184
 
     invoke-virtual {v6, v8}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -4745,7 +4915,7 @@
 
     iget-object v8, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f0d0310
+    const v9, 0x7f0d0370
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4757,7 +4927,7 @@
 
     iget-object v8, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f0d0314
+    const v9, 0x7f0d0374
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5170,7 +5340,7 @@
 
     move-object/from16 v17, v0
 
-    const v18, 0x7f0d0314
+    const v18, 0x7f0d0374
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5235,7 +5405,7 @@
 
     move-object/from16 v17, v0
 
-    const v18, 0x7f0d05b4
+    const v18, 0x7f0d0618
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5250,7 +5420,7 @@
 
     move-object/from16 v17, v0
 
-    const v18, 0x7f0d05b5
+    const v18, 0x7f0d0619
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5296,7 +5466,7 @@
 
     invoke-direct/range {v17 .. v18}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
-    const v18, 0x7f02017b
+    const v18, 0x7f020184
 
     invoke-virtual/range {v17 .. v18}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -5316,7 +5486,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x7f0d0310
+    const v19, 0x7f0d0370
 
     invoke-virtual/range {v18 .. v19}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5447,7 +5617,7 @@
 
     move-object/from16 v17, v0
 
-    const v18, 0x7f0d0310
+    const v18, 0x7f0d0370
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5890,14 +6060,14 @@
 
     move-object/from16 v24, v0
 
-    const v25, 0x7f0d0314
+    const v25, 0x7f0d0374
 
     invoke-virtual/range {v24 .. v25}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
     :goto_4
-    const v8, 0x7f02017b
+    const v8, 0x7f020184
 
     const-string/jumbo v24, "feature_multisim"
 
@@ -5956,7 +6126,7 @@
 
     move-object/from16 v24, v0
 
-    const v25, 0x7f0d05b4
+    const v25, 0x7f0d0618
 
     invoke-virtual/range {v24 .. v25}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6008,7 +6178,7 @@
 
     move-object/from16 v25, v0
 
-    const v26, 0x7f0d0310
+    const v26, 0x7f0d0370
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6366,7 +6536,7 @@
 
     move-object/from16 v24, v0
 
-    const v25, 0x7f0d05b4
+    const v25, 0x7f0d0618
 
     invoke-virtual/range {v24 .. v25}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6381,7 +6551,7 @@
 
     move-object/from16 v24, v0
 
-    const v25, 0x7f0d05b5
+    const v25, 0x7f0d0619
 
     invoke-virtual/range {v24 .. v25}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6419,7 +6589,7 @@
 
     move-object/from16 v24, v0
 
-    const v25, 0x7f0d0314
+    const v25, 0x7f0d0374
 
     invoke-virtual/range {v24 .. v25}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6434,7 +6604,7 @@
 
     move-object/from16 v24, v0
 
-    const v25, 0x7f0d05b5
+    const v25, 0x7f0d0619
 
     invoke-virtual/range {v24 .. v25}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6495,7 +6665,7 @@
 
     move-object/from16 v25, v0
 
-    const v26, 0x7f0d0310
+    const v26, 0x7f0d0370
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6628,7 +6798,7 @@
 
     move-object/from16 v25, v0
 
-    const v26, 0x7f0d0310
+    const v26, 0x7f0d0370
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6738,7 +6908,7 @@
 
     move-object/from16 v25, v0
 
-    const v26, 0x7f0d0310
+    const v26, 0x7f0d0370
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -7308,14 +7478,14 @@
 
     if-ne v0, v5, :cond_13
 
-    const v27, 0x7f020179
+    const v27, 0x7f020182
 
     :goto_1
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v39, 0x7f0d045d
+    const v39, 0x7f0d04bd
 
     move/from16 v0, v39
 
@@ -7461,7 +7631,7 @@
 
     iget-object v5, v0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v39, 0x7f0d045e
+    const v39, 0x7f0d04be
 
     move/from16 v0, v39
 
@@ -7498,7 +7668,7 @@
 
     iget-object v5, v0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v39, 0x7f0d0461
+    const v39, 0x7f0d04c1
 
     move/from16 v0, v39
 
@@ -7510,7 +7680,7 @@
 
     iget-object v5, v0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v39, 0x7f0d0461
+    const v39, 0x7f0d04c1
 
     move/from16 v0, v39
 
@@ -7936,12 +8106,12 @@
 
     if-ne v0, v5, :cond_15
 
-    const v27, 0x7f020178
+    const v27, 0x7f020181
 
     goto/16 :goto_1
 
     :cond_15
-    const v27, 0x7f020177
+    const v27, 0x7f020180
 
     goto/16 :goto_1
 
@@ -7979,7 +8149,7 @@
 
     iget-object v5, v0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v39, 0x7f0d045f
+    const v39, 0x7f0d04bf
 
     move/from16 v0, v39
 
@@ -8114,7 +8284,7 @@
 
     iget-object v5, v0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v39, 0x7f0d045f
+    const v39, 0x7f0d04bf
 
     move/from16 v0, v39
 
@@ -8707,7 +8877,7 @@
 .method public updateRoamingNotification(Z)V
     .locals 14
 
-    const v13, 0x7f020176
+    const v13, 0x7f02017f
 
     const v12, 0x7f10024f
 
@@ -8905,7 +9075,7 @@
 
     iget-object v7, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0d070a
+    const v8, 0x7f0d076e
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8917,7 +9087,7 @@
 
     iget-object v7, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0d070c
+    const v8, 0x7f0d0770
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -34,7 +34,7 @@
 .method public filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
     .locals 9
 
-    const v8, 0x7f0d05dc
+    const v8, 0x7f0d0640
 
     const/16 v7, 0xa0
 

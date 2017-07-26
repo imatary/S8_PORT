@@ -423,7 +423,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d094c
+    const v8, 0x7f0d09b2
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -439,7 +439,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d094d
+    const v8, 0x7f0d09b3
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -463,7 +463,7 @@
 
     aput-object v5, v8, v11
 
-    const v9, 0x7f0d094e
+    const v9, 0x7f0d09b4
 
     invoke-virtual {v7, v9, v8}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -487,7 +487,7 @@
 
     invoke-direct {v8, p0}, Lcom/android/phone/callsettings/GeneralSettingFragment$8;-><init>(Lcom/android/phone/callsettings/GeneralSettingFragment;)V
 
-    const v9, 0x7f0d02ca
+    const v9, 0x7f0d032a
 
     invoke-virtual {v7, v9, v8}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -497,7 +497,7 @@
 
     invoke-direct {v8, p0}, Lcom/android/phone/callsettings/GeneralSettingFragment$9;-><init>(Lcom/android/phone/callsettings/GeneralSettingFragment;)V
 
-    const v9, 0x7f0d02c7
+    const v9, 0x7f0d0327
 
     invoke-virtual {v7, v9, v8}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -876,7 +876,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mActivity:Landroid/app/Activity;
 
-    const v4, 0x7f0d0770
+    const v4, 0x7f0d07d4
 
     invoke-static {v3, v4, v6}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -942,7 +942,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mImsUtdialog:Landroid/app/ProgressDialog;
 
-    const v4, 0x7f0d032c
+    const v4, 0x7f0d038c
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/GeneralSettingFragment;->getText(I)Ljava/lang/CharSequence;
 
@@ -960,7 +960,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mImsUtdialog:Landroid/app/ProgressDialog;
 
-    const v4, 0x7f0d032f
+    const v4, 0x7f0d038f
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/GeneralSettingFragment;->getText(I)Ljava/lang/CharSequence;
 
@@ -1152,7 +1152,7 @@
 
     move-result-object v4
 
-    const v7, 0x7f0d0bcf
+    const v7, 0x7f0d0c3a
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1190,7 +1190,7 @@
 
     move-result-object v4
 
-    const v7, 0x7f0d0c19
+    const v7, 0x7f0d0c8a
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1281,7 +1281,7 @@
 
     move-result-object v4
 
-    const v7, 0x7f0d0bd0
+    const v7, 0x7f0d0c3b
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1300,7 +1300,7 @@
 
     move-result-object v4
 
-    const v7, 0x7f0d0c1a
+    const v7, 0x7f0d0c8b
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1693,7 +1693,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_d
+    if-eqz v3, :cond_b
 
     :goto_2
     invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
@@ -1742,28 +1742,6 @@
     goto :goto_0
 
     :cond_a
-    const-string/jumbo v0, "support_safetycare"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_b
-
-    iget-object v3, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mCallerInfo:Landroid/preference/SwitchPreference;
-
-    invoke-static {}, Lcom/android/phone/TeleServiceSystemDB;->isEmergencyMode()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_c
-
-    move v0, v2
-
-    :goto_3
-    invoke-virtual {v3, v0}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
-
-    :cond_b
     iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mCallerInfo:Landroid/preference/SwitchPreference;
 
     invoke-static {}, Lcom/android/phone/TeleServiceSystemDB;->isCallerInfoCardMode()Z
@@ -1774,12 +1752,7 @@
 
     goto :goto_1
 
-    :cond_c
-    move v0, v1
-
-    goto :goto_3
-
-    :cond_d
+    :cond_b
     move v1, v2
 
     goto :goto_2
@@ -2175,67 +2148,74 @@
 .end method
 
 .method private updateRecordSetting()V
-    .locals 5
+    .locals 4
 
-    iget-object v2, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mPhone:Lcom/android/internal/telephony/Phone;
+    const/4 v3, 0x1
 
-    invoke-virtual {v2}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mRecordSetting:Landroid/preference/PreferenceScreen;
 
-    move-result-object v2
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    const-string/jumbo v0, "record_calls_automatically_on_off"
 
-    move-result-object v2
+    const/4 v1, 0x0
 
-    const v3, 0x7f0d0c09
+    invoke-static {v0, v1}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    move-result v0
 
-    move-result-object v0
+    if-ne v0, v3, :cond_1
 
-    iget-object v2, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mRecordSetting:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v2}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    const v3, 0x7f0d0c13
-
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mRecordSetting:Landroid/preference/PreferenceScreen;
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    const v2, 0x7f0d0c85
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v1
 
-    const-string/jumbo v4, ", "
+    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :goto_0
+    iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mRecordSetting:Landroid/preference/PreferenceScreen;
 
-    move-result-object v3
+    invoke-virtual {v0, v3}, Landroid/preference/PreferenceScreen;->semSetSummaryColorToColorPrimaryDark(Z)V
 
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
-
+    :cond_0
     return-void
+
+    :cond_1
+    iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mRecordSetting:Landroid/preference/PreferenceScreen;
+
+    iget-object v1, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    invoke-virtual {v1}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v2, 0x7f0d0c86
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
+
+    goto :goto_0
 .end method
 
 .method private updateRoamingAssistanceSetting()V
@@ -2249,11 +2229,11 @@
 
     move-result v1
 
-    const v2, 0x7f0d0604
+    const v2, 0x7f0d0668
 
-    const v3, 0x7f0d0606
+    const v3, 0x7f0d066a
 
-    const v4, 0x7f0d0607
+    const v4, 0x7f0d066b
 
     filled-new-array {v2, v3, v4}, [I
 
@@ -2379,7 +2359,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0d0bcf
+    const v5, 0x7f0d0c3a
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2503,7 +2483,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0d0bd0
+    const v5, 0x7f0d0c3b
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2574,7 +2554,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d059c
+    const v5, 0x7f0d0600
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -2612,7 +2592,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mAutoArea:Landroid/preference/EditTextPreference;
 
-    const v5, 0x7f0d059d
+    const v5, 0x7f0d0601
 
     invoke-virtual {v4, v5}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
@@ -2900,7 +2880,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mVisualCallCenter:Landroid/preference/PreferenceScreen;
 
-    const v1, 0x7f0d0c87
+    const v1, 0x7f0d0cf8
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setTitle(I)V
 
@@ -3031,7 +3011,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_8
 
     const/4 v0, 0x1
 
@@ -3076,7 +3056,7 @@
     :cond_2
     iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mAnsweringCall:Landroid/preference/PreferenceScreen;
 
-    const v1, 0x7f0d0567
+    const v1, 0x7f0d05cb
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setTitle(I)V
 
@@ -3145,33 +3125,6 @@
 
     iput-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mSmartCall:Landroid/preference/PreferenceScreen;
 
-    const-string/jumbo v0, "support_smart_call"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    const-string/jumbo v0, "feature_usa"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mSmartCall:Landroid/preference/PreferenceScreen;
-
-    if-eqz v0, :cond_6
-
-    iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mSmartCall:Landroid/preference/PreferenceScreen;
-
-    const v1, 0x7f0d0bee
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setTitle(I)V
-
-    :cond_6
     invoke-static {}, Lcom/android/phone/callsettings/GeneralSettingManager;->getInstance()Lcom/android/phone/callsettings/GeneralSettingManager;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mPrefCategory:Landroid/preference/PreferenceCategory;
@@ -3188,13 +3141,13 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mRecordSetting:Landroid/preference/PreferenceScreen;
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_6
 
     iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mRecordSetting:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, p0}, Landroid/preference/PreferenceScreen;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    :cond_7
+    :cond_6
     invoke-static {}, Lcom/android/phone/callsettings/GeneralSettingManager;->getInstance()Lcom/android/phone/callsettings/GeneralSettingManager;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mPrefCategory:Landroid/preference/PreferenceCategory;
@@ -3241,16 +3194,16 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mButtonPopupWindow:Landroid/preference/SwitchPreference;
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_7
 
     iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingFragment;->mButtonPopupWindow:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    :cond_8
+    :cond_7
     return-void
 
-    :cond_9
+    :cond_8
     const/4 v0, 0x0
 
     goto/16 :goto_0
@@ -4156,7 +4109,7 @@
 
     if-eqz v16, :cond_9
 
-    const v20, 0x7f0d08b1
+    const v20, 0x7f0d0915
 
     invoke-static/range {v20 .. v20}, Lcom/android/phone/PhoneUtils;->displayToast(I)V
 
@@ -4292,7 +4245,7 @@
 
     move-result-object v20
 
-    const v21, 0x7f0d08ab
+    const v21, 0x7f0d090f
 
     const/16 v22, 0x1
 
@@ -4313,7 +4266,7 @@
 
     move-object/from16 v20, v0
 
-    const v21, 0x7f0d08a9
+    const v21, 0x7f0d090d
 
     const/16 v22, 0x1
 
@@ -4633,7 +4586,7 @@
 
     move-object/from16 v20, v0
 
-    const v21, 0x7f0d08aa
+    const v21, 0x7f0d090e
 
     const/16 v22, 0x1
 
@@ -4886,7 +4839,7 @@
 
     move-result-object v20
 
-    const v21, 0x7f0d01f1
+    const v21, 0x7f0d024e
 
     invoke-virtual/range {v20 .. v21}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4906,7 +4859,7 @@
 
     move-result-object v21
 
-    const v22, 0x7f0d02b0
+    const v22, 0x7f0d0310
 
     invoke-virtual/range {v21 .. v22}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -5071,7 +5024,7 @@
 
     move-result-object v20
 
-    const v21, 0x7f0d01f1
+    const v21, 0x7f0d024e
 
     invoke-virtual/range {v20 .. v21}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -5091,7 +5044,7 @@
 
     move-result-object v21
 
-    const v22, 0x7f0d022e
+    const v22, 0x7f0d028c
 
     invoke-virtual/range {v21 .. v22}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -5419,7 +5372,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0702
+    const v2, 0x7f0d0766
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -5429,7 +5382,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d06ff
+    const v2, 0x7f0d0763
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -5445,7 +5398,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0335
+    const v3, 0x7f0d0395
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

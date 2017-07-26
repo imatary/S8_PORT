@@ -926,7 +926,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d09ab
+    const v7, 0x7f0d0a11
 
     invoke-static {v6, v7, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -941,7 +941,7 @@
 
     if-eqz v6, :cond_8
 
-    const v6, 0x7f0d09af
+    const v6, 0x7f0d0a15
 
     invoke-virtual {p0, v6}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
@@ -956,7 +956,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d092e
+    const v7, 0x7f0d0994
 
     invoke-static {v6, v7, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1352,7 +1352,7 @@
 
     if-eqz v1, :cond_2
 
-    const v1, 0x7f0d0c2f
+    const v1, 0x7f0d0ca0
 
     invoke-virtual {p0, v1}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
@@ -1364,7 +1364,7 @@
     return-void
 
     :cond_2
-    const v1, 0x7f0d09a5
+    const v1, 0x7f0d0a0b
 
     invoke-virtual {p0, v1}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
@@ -1375,7 +1375,7 @@
     goto :goto_0
 
     :cond_3
-    const v1, 0x7f0d081e
+    const v1, 0x7f0d0882
 
     invoke-virtual {p0, v1}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
@@ -1476,7 +1476,7 @@
 
     if-eqz v7, :cond_2
 
-    const v7, 0x7f0d0933
+    const v7, 0x7f0d0999
 
     invoke-direct {p0, v7}, Lcom/android/phone/ims/IMSConferenceCallActivity;->showToast(I)V
 
@@ -1615,7 +1615,7 @@
     :cond_9
     if-eqz v3, :cond_b
 
-    const v7, 0x7f0d081c
+    const v7, 0x7f0d0880
 
     invoke-direct {p0, v7}, Lcom/android/phone/ims/IMSConferenceCallActivity;->showToast(I)V
 
@@ -1642,7 +1642,7 @@
 
     aput-object v8, v7, v9
 
-    const v8, 0x7f0d081a
+    const v8, 0x7f0d087e
 
     invoke-virtual {p0, v8, v7}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1655,7 +1655,7 @@
     :cond_c
     if-eqz v0, :cond_d
 
-    const v7, 0x7f0d0bc3
+    const v7, 0x7f0d0c2e
 
     invoke-direct {p0, v7}, Lcom/android/phone/ims/IMSConferenceCallActivity;->showToast(I)V
 
@@ -1664,7 +1664,7 @@
     :cond_d
     if-eqz v1, :cond_e
 
-    const v7, 0x7f0d0bc4
+    const v7, 0x7f0d0c2f
 
     invoke-direct {p0, v7}, Lcom/android/phone/ims/IMSConferenceCallActivity;->showToast(I)V
 
@@ -1673,7 +1673,7 @@
     :cond_e
     if-nez v5, :cond_a
 
-    const v7, 0x7f0d0bc5
+    const v7, 0x7f0d0c30
 
     invoke-direct {p0, v7}, Lcom/android/phone/ims/IMSConferenceCallActivity;->showToast(I)V
 
@@ -2665,7 +2665,7 @@
 
     iget-object v0, p1, Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;->mStatusView:Landroid/widget/TextView;
 
-    const v1, 0x7f0d09a7
+    const v1, 0x7f0d0a0d
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -2682,7 +2682,7 @@
 
     iget-object v0, p1, Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;->mStatusView:Landroid/widget/TextView;
 
-    const v1, 0x7f0d09a8
+    const v1, 0x7f0d0a0e
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -2696,7 +2696,7 @@
 
     iget-object v0, p1, Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;->mButton_Dial:Landroid/widget/Button;
 
-    const v1, 0x7f0d09a6
+    const v1, 0x7f0d0a0c
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
@@ -2713,7 +2713,7 @@
 
     iget-object v0, p1, Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;->mStatusView:Landroid/widget/TextView;
 
-    const v1, 0x7f0d09a9
+    const v1, 0x7f0d0a0f
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -2844,7 +2844,7 @@
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mButton_Send:Landroid/widget/Button;
 
-    const v1, 0x7f0d06b8
+    const v1, 0x7f0d071c
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
@@ -2873,7 +2873,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mButton_Send:Landroid/widget/Button;
 
-    const v1, 0x7f0d09a5
+    const v1, 0x7f0d0a0b
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
@@ -2882,7 +2882,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mButton_Send:Landroid/widget/Button;
 
-    const v1, 0x7f0d081e
+    const v1, 0x7f0d0882
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
@@ -3272,7 +3272,7 @@
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 12
 
-    const v11, 0x7f0d081d
+    const v11, 0x7f0d0881
 
     const/16 v10, 0x3b
 
@@ -3585,9 +3585,9 @@
 .method public onClick(Landroid/view/View;)V
     .locals 9
 
-    const v8, 0x7f0d081e
+    const v8, 0x7f0d0882
 
-    const v7, 0x7f0d081b
+    const v7, 0x7f0d087f
 
     const/4 v6, 0x2
 
@@ -3637,7 +3637,7 @@
 
     new-array v2, v6, [Ljava/lang/Object;
 
-    const v3, 0x7f0d0c2f
+    const v3, 0x7f0d0ca0
 
     invoke-virtual {p0, v3}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
@@ -3670,7 +3670,7 @@
 
     new-array v2, v6, [Ljava/lang/Object;
 
-    const v3, 0x7f0d09a5
+    const v3, 0x7f0d0a0b
 
     invoke-virtual {p0, v3}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
@@ -3776,7 +3776,7 @@
 
     new-array v2, v6, [Ljava/lang/Object;
 
-    const v3, 0x7f0d0c2f
+    const v3, 0x7f0d0ca0
 
     invoke-virtual {p0, v3}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
@@ -3809,7 +3809,7 @@
 
     new-array v2, v6, [Ljava/lang/Object;
 
-    const v3, 0x7f0d09a5
+    const v3, 0x7f0d0a0b
 
     invoke-virtual {p0, v3}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
@@ -3894,14 +3894,14 @@
 
     if-eqz v2, :cond_9
 
-    const v2, 0x7f0d081f
+    const v2, 0x7f0d0883
 
     invoke-direct {p0, v2}, Lcom/android/phone/ims/IMSConferenceCallActivity;->showToast(I)V
 
     goto/16 :goto_0
 
     :cond_9
-    const v2, 0x7f0d0820
+    const v2, 0x7f0d0884
 
     invoke-direct {p0, v2}, Lcom/android/phone/ims/IMSConferenceCallActivity;->showToast(I)V
 
@@ -3922,7 +3922,7 @@
 
     if-ge v2, v5, :cond_a
 
-    const v2, 0x7f0d0821
+    const v2, 0x7f0d0885
 
     invoke-direct {p0, v2}, Lcom/android/phone/ims/IMSConferenceCallActivity;->showEmptyToast(I)V
 
@@ -4123,7 +4123,7 @@
 
     if-eqz v6, :cond_2
 
-    const v6, 0x7f0d09ad
+    const v6, 0x7f0d0a13
 
     invoke-static {p0, v6, v9}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -4139,7 +4139,7 @@
     return-void
 
     :cond_2
-    const v6, 0x7f0d074c
+    const v6, 0x7f0d07b0
 
     invoke-static {p0, v6, v9}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -4172,7 +4172,7 @@
 
     if-eqz v6, :cond_4
 
-    const v6, 0x7f0d09b0
+    const v6, 0x7f0d0a16
 
     invoke-static {p0, v6, v9}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -4188,7 +4188,7 @@
     return-void
 
     :cond_4
-    const v6, 0x7f0d09ac
+    const v6, 0x7f0d0a12
 
     invoke-static {p0, v6, v9}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -4199,7 +4199,7 @@
     goto :goto_1
 
     :cond_5
-    const v6, 0x7f0d0819
+    const v6, 0x7f0d087d
 
     invoke-static {p0, v6, v9}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -4254,7 +4254,7 @@
 
     if-eqz v6, :cond_9
 
-    const v6, 0x7f0d09ae
+    const v6, 0x7f0d0a14
 
     invoke-static {p0, v6, v9}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -4270,7 +4270,7 @@
     return-void
 
     :cond_9
-    const v6, 0x7f0d0824
+    const v6, 0x7f0d0888
 
     invoke-static {p0, v6, v9}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -4548,7 +4548,7 @@
 
     aput-object v7, v6, v9
 
-    const v7, 0x7f0d081a
+    const v7, 0x7f0d087e
 
     invoke-virtual {p0, v7, v6}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -4601,7 +4601,7 @@
 
     if-le v6, v7, :cond_16
 
-    const v6, 0x7f0d081d
+    const v6, 0x7f0d0881
 
     invoke-direct {p0, v6}, Lcom/android/phone/ims/IMSConferenceCallActivity;->showToast(I)V
 
@@ -4636,7 +4636,7 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
-    const v0, 0x7f1002e4
+    const v0, 0x7f1002e7
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -4814,7 +4814,7 @@
     :sswitch_data_0
     .sparse-switch
         0x102002c -> :sswitch_0
-        0x7f1002e4 -> :sswitch_1
+        0x7f1002e7 -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -5221,7 +5221,7 @@
 
     iget-object v2, p2, Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;->mButton_Dial:Landroid/widget/Button;
 
-    const v3, 0x7f0d09a6
+    const v3, 0x7f0d0a0c
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setText(I)V
 
@@ -5255,7 +5255,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f02005f
+    const v3, 0x7f020061
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -5428,9 +5428,9 @@
 .method public showParticipantHolder(Landroid/view/View;Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;Lcom/android/phone/ims/Participant;)V
     .locals 6
 
-    const v5, 0x7f0d0bc2
+    const v5, 0x7f0d0c2d
 
-    const v4, 0x7f0d09a6
+    const v4, 0x7f0d0a0c
 
     const/16 v3, 0x8
 
@@ -5883,7 +5883,7 @@
 .method public updateChangedLanguage()V
     .locals 2
 
-    const v1, 0x7f0d081e
+    const v1, 0x7f0d0882
 
     const v0, 0x7f10013e
 
@@ -5907,7 +5907,7 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f0d0c2f
+    const v0, 0x7f0d0ca0
 
     invoke-virtual {p0, v0}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
@@ -5924,7 +5924,7 @@
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    const v1, 0x7f0d0930
+    const v1, 0x7f0d0996
 
     invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setHint(I)V
 
@@ -5932,7 +5932,7 @@
     return-void
 
     :cond_1
-    const v0, 0x7f0d09a5
+    const v0, 0x7f0d0a0b
 
     invoke-virtual {p0, v0}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
@@ -6073,7 +6073,7 @@
 
     move-result v0
 
-    const v2, 0x7f0d09f7
+    const v2, 0x7f0d0a5e
 
     invoke-virtual {p0, v2}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 

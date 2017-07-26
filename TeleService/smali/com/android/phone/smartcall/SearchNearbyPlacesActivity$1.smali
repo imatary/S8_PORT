@@ -96,7 +96,7 @@
     :goto_1
     iget-object v0, p0, Lcom/android/phone/smartcall/SearchNearbyPlacesActivity$1;->this$0:Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;
 
-    const v3, 0x7f0d0214
+    const v3, 0x7f0d0272
 
     invoke-virtual {v0, v3}, Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;->getString(I)Ljava/lang/String;
 
@@ -104,7 +104,7 @@
 
     iget-object v3, p0, Lcom/android/phone/smartcall/SearchNearbyPlacesActivity$1;->this$0:Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;
 
-    const v4, 0x7f0d022d
+    const v4, 0x7f0d028b
 
     invoke-virtual {v3, v4}, Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;->getString(I)Ljava/lang/String;
 
@@ -124,7 +124,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/smartcall/SearchNearbyPlacesActivity$1;->this$0:Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;
 
-    invoke-static {v0}, Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;->-wrap1(Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;)V
+    invoke-static {v0, v2}, Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;->-wrap1(Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;Z)V
 
     goto :goto_1
 

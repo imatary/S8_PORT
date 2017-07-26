@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dh %2$dm</string>
-    <string name="battery_history_minutes_no_seconds">%d m</string>
+    <string name="battery_history_hours_no_seconds">%1$d h %2$d min</string>
+    <string name="battery_history_minutes_no_seconds">%d min</string>
     <string name="wifi_fail_to_scan">Impossible de rechercher des réseaux.</string>
     <string name="wifi_failed_to_obtain_IP">"Impossible d'obtenir l'adresse IP."</string>
     <string name="wifi_security_none">Aucune</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">"La connexion à l'appareil %s est impossible."</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">Connexion à %1$s impossible. Vérifiez vos paramètres dans %2$s, puis réessayez.</string>
     <string name="bluetooth_pairing_rejected_error_message">Association refusée par %s</string>
+    <string name="bluetooth_getting_remote_device_name">"Obtention du nom de l'appareil…"</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">"Le nom de l'appareil s'affichera une fois cet appareil connecté."</string>
     <string name="accessibility_wifi_off">Wi-Fi désactivé</string>
     <string name="accessibility_no_wifi">Wi-Fi déconnecté</string>
     <string name="accessibility_wifi_one_bar">Signal Wi-Fi faible</string>
@@ -486,8 +488,8 @@
     <string name="callsetting_swipe_summary_vzw">Effectuez des appels ou envoyez des messages en faisant glisser votre doigt vers la droite ou vers la gauche sur les coordonnées du contact dans Contacts ou sur un élément du journal dans Téléphone.</string>
     <string name="callsetting_swipe_nomessage_title">Glissement pour appeler</string>
     <string name="callsetting_swipe_nomessage_summary">"Effectuez des appels en faisant glisser votre doigt vers la droite sur les coordonnées d'un contact dans Contacts ou sur un élément du journal dans Téléphone."</string>
-    <string name="callsetting_contact_with_phone_title">Modif. contacts sans numéros</string>
-    <string name="callsetting_contact_with_phone_title_for_tts">Modif. contacts sans numéros</string>
+    <string name="callsetting_contact_with_phone_title">Masquer les contacts sans numéros</string>
+    <string name="callsetting_contact_with_phone_title_for_tts">Masquer les contacts sans numéros</string>
     <string name="callsetting_contact_with_phone_summary">"Affichez uniquement les contacts ayant un numéro de téléphone dans l'onglet CONTACTS."</string>
     <string name="labelCallerId">"Affich. mon ID d'appelant"</string>
     <string name="sum_hide_caller_id">Numéro masqué en appel sortant</string>
@@ -839,7 +841,7 @@
     <string name="singleContactImportedMsg">Contact importé</string>
     <string name="failedToImportSingleContactMsg">"Échec de l'importation du contact."</string>
     <string name="hac_mode_title">Prothèses auditives</string>
-    <string name="hac_mode_summary">Améliorez la qualité du son de votre appareil, pour une utilisation avec des prothèses auditives.</string>
+    <string name="hac_mode_summary">Optimisez la qualité du son de votre téléphone lorsque vous utilisez des prothèses auditives.</string>
     <string name="dtmf_tones_title">Tonalités DTMF</string>
     <string name="dtmf_tones_summary">Définir la longueur des tonalités DTMF.</string>
     <string name="network_info_message">Message réseau</string>
@@ -961,7 +963,7 @@ Cette opération peut prendre jusqu'à cinq minutes.\""</string>
     <string name="callsettings_videocall">Appel visio</string>
     <string name="callsettings_number">Numéro</string>
     <string name="callsettings_reject_number">Ajouter num. de téléphone</string>
-    <string name="callsettings_rejection_msg">Msg rapide refus personnalis.</string>
+    <string name="callsettings_rejection_msg">Message rapide de refus</string>
     <string name="callsettings_rejection_msg_for_tts">Ajouter un message de refus</string>
     <string name="callsettings_no_name">Aucun nom</string>
     <string name="callsettings_off">Désactivé</string>
@@ -1020,6 +1022,10 @@ Cette opération peut prendre jusqu'à cinq minutes.\""</string>
     <string name="add_call_block_number_toast">"Vous ne recevrez pas d'appels de ce numéro."</string>
     <string name="delete_call_block_number_toast">Vous pouvez à présent recevoir des appels de ce numéro.</string>
     <string name="emergency_call_block_number_toast">"Impossible de bloquer les numéros d'urgence."</string>
+    <string name="call_block_dialog_title">Modifiez les numéros bloqués</string>
+    <string name="call_block_dialog_contents">"À partir d'Android Nougat, le mode Blocage d'appel est remplacé par la fonction Bloquer des numéros. Plutôt que de bloquer uniquement les appels, cette fonction bloque automatiquement les appels et les messages."</string>
+    <string name="call_block_dialog_settings">Appuyez sur PARAMÈTRES pour modifier la fonction Bloquer des numéros.</string>
+    <string name="call_block_dialog_button">Paramètres</string>
     <string name="no_block_number_description">Les numéros que vous ajoutez seront affichés ici.</string>
     <string name="no_messages_description">Les messages que vous ajoutez seront affichés ici.</string>
     <string name="callsettings_vipmode_blacklist_title">Liste de rejet</string>
@@ -1069,7 +1075,7 @@ Cette opération peut prendre jusqu'à cinq minutes.\""</string>
     <string name="callsettings_answering_volume_key_title">Appui Augm. vol. pour répondre</string>
     <string name="callsettings_answering_key_summary">Appuyer sur la touche Accueil pour accepter les appels entrants.</string>
     <string name="callsettings_PowerkeyEndsCalls_title">Appui sur Marche pour fin appels</string>
-    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Appui sur Marche pour fin appels</string>
+    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Appuyez sur la touche Marche pour mettre fin aux appels</string>
     <string name="callsettings_PowerkeyEndsCalls_summary">"App. sur Marche pour arrêter appels qd écran est activé. L'écran ne sera pas désactivé."</string>
     <string name="Dialog_PowerkeyEndsCalls">"Impossible de configurer la touche Marche pour mettre fin aux appels lorsque le capteur de proximité est désactivé. Celui-ci va être activé. Pendant les appels, l'écran sera éteint lorsque vous porterez l'appareil à votre oreille."</string>
     <string name="Dialog_PowerkeyEndsCalls_title">Activez le capteur de proximité</string>
@@ -1341,7 +1347,7 @@ Injured/Dead
     <string name="roaming_alerts_sbody">"Modifiez les paramètres d'itinérance liés à la voix, au texte et aux données, y compris l'itinérance internationale."</string>
     <string name="roaming_alerts_voice_body">Itinérance vocale</string>
     <string name="roaming_alerts_data_body">Itinérance des données</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">Itinérance pour texte sortant</string>
     <string name="roaming_domestic_category">Itinérance nationale</string>
     <string name="roaming_international_category">Itinérance internationale</string>
     <string name="roaming_voice_body">Itinérance pour voix et texte</string>
@@ -1511,9 +1517,7 @@ Désactiver les données mobiles ?"</string>
     <string name="data_usage_disable_mobile_vzw_chn">"À moins que vous n'utilisiez un réseau WLAN, vous ne pourrez plus utiliser Internet, la messagerie électronique ou d'autres applications nécessitant une connexion de données.
 
 Les données mobiles vont être désactivées."</string>
-    <string name="mobile_data_off_dialog_text_common">"À moins que vous n'utilisiez le Wi-Fi, vous ne pourrez plus utiliser Internet, la messagerie électronique ou d'autres applications nécessitant une connexion de données.
-
-Les données mobiles vont être désactivées."</string>
+    <string name="mobile_data_off_dialog_text_common">"À moins que vous ne vous connectiez à un réseau Wi-Fi, vous ne pourrez pas utiliser Internet, la messagerie électronique ou d'autres applications nécessitant une connexion réseau."</string>
     <string name="mobile_data_off_dialog_button_turn_off">Désactiver</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"A moins que vous n'utilisiez le Wi-Fi, vous ne pourrez plus utiliser internet, la messagerie électronique ou d'autres applications nécessitant une connexion de données.
 
@@ -1593,8 +1597,9 @@ Pour modifier votre mode réseau, accédez à Paramètres > Plus de réseaux > R
 Des frais supplémentaires peuvent être facturés si vous ne disposez pas d'un forfait adapté."</string>
     <string name="data_3gwarning_popup_title">Données mobiles</string>
     <string name="roaming_data_off_msg">"Pour utiliser l'itinérance des données, accédez à Paramètres > Connexions > Itinérance mondiale, puis activez l'itinérance des données."</string>
-    <string name="data_3gwarning_popup_noti">"Si vous ne disposez pas d'un forfait, la connexion aux réseaux mobiles peut entraîner des frais supplémentaires. Se connecter ?"</string>
-    <string name="lgt_4gwarning_popup_mobiledata">Les données mobiles vont être activées. En fonction de votre forfait, votre opérateur peut vous facturer des frais supplémentaires.</string>
+    <string name="data_3gwarning_popup_noti">Les données mobiles vont être activées. La connexion aux réseaux mobiles peut entraîner des frais supplémentaires en fonction de votre forfait.</string>
+    <string name="data_3gwarning_popup_noti_ktt">Les données mobiles vont être activées pour que vous puissiez utiliser la fonction GiGA LTE. Cela peut entraîner des frais supplémentaires en fonction de votre forfait.</string>
+    <string name="lgt_4gwarning_popup_mobiledata">Les données mobiles vont être activées. La connexion aux réseaux mobiles peut entraîner des frais supplémentaires en fonction de votre forfait.</string>
     <string name="lgt_lte_data_roaming_warningmsg">"Lorsque l'itinérance des données est activée, &lt;u>&lt;font color=\"%1$s\">des frais d'itinérance internationale seront appliqués à la place des frais au tarif national.&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">Activez la fonction Restreindre les données d'arrière-plan pour réduire les frais d'itinérance des données&lt;/font>&lt;/u> en désactivant des fonctions telles que les notifications MI et les mises à jour automatiques"</string>
@@ -1965,6 +1970,8 @@ Contactez votre service client ou votre distributeur local."</string>
     <string name="volte_call_summary_ops">Passez des appels vocaux HD sur le réseau 4G.</string>
     <string name="voice_over_lte_title_cct">Appels VoLTE</string>
     <string name="volte_call_summary_cct">"Activez les fonctions Appels avancés sur le réseau cellulaire 4G LTE lorsqu'il est disponible."</string>
+    <string name="voice_over_lte_title_o2">Appel 4G</string>
+    <string name="volte_call_summary_o2">"Profitez d'une communication améliorée en utilisant les données 4G."</string>
     <string name="volte_tty_description_on">"Lorsque le mode TTY est activé, vous ne pourrez ni passer ni recevoir d'appels visio, ni participer à des conférences audio."</string>
     <string name="volte_prepaid_tty_description_on">Le mode TTY va être activé. Vous ne pourrez pas lancer de conférences audio ni y assister.</string>
     <string name="volte_tty_description_off">"Lorsque le mode TTY est désactivé, vous ne pourrez ni passer ni recevoir d'appels TTY."</string>
@@ -2154,9 +2161,13 @@ L'itinérance 4G ne sera pas disponible si vous n'acceptez pas. Il se peut que l
     <string name="group_voice_call_disable_on_3G">Les appels de groupe sont uniquement disponibles via le réseau LTE.</string>
     <string name="group_voice_call_outgoing_voice_call">Appel vocal sortant</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"À moins que vous n'utilisiez le Wi-Fi, vous ne pourrez plus utiliser Internet, la messagerie électronique ou d'autres applications nécessitant une connexion de données.
+
+Les données mobiles vont être désactivées."</string>
     <string name="data_usage_disable_mobile_warning">"A moins que vous n'utilisiez le Wi-Fi, vous ne pourrez plus utiliser internet, la messagerie électronique ou d'autres applications nécessitant une connexion de données.
 
 Les données mobiles vont être désactivées."</string>
+    <string name="data_usage_enable_mobile_warning_skt">Les données mobiles vont être activées. La connexion aux réseaux mobiles peut entraîner des frais supplémentaires en fonction de votre forfait.</string>
     <string name="data_usage_enable_mobile_warning">Les connexions de données peuvent entraîner des frais supplémentaires. Continuer ?</string>
     <string name="insert_sim_card">Insérez la carte SIM</string>
     <string name="insert_sim_card_message">Insérez une carte SIM pour accéder aux services réseau.</string>
@@ -2192,6 +2203,7 @@ Les données mobiles vont être désactivées."</string>
     <string name="disconnect_network_title">Déconnecter le réseau actuel</string>
     <string name="lte_only_warning_message">"Dans ce mode de fonctionnement, vous ne pourrez pas effectuer / recevoir des appels. 
  Vous pouvez également perdre le service en raison de l'absence de couverture 4G."</string>
+    <string name="disable2g_warning_message">"Ce paramètre désactive le service 2G. Si le service 2G est désactivé, certaines applications et fonctions risquent de ne pas fonctionner lorsque la 4G ou la 3G n'est pas disponible."</string>
     <string name="data_roaming_restrict_title">Itinérance données désac.</string>
     <string name="data_roaming_restrict_body">Appuyez ici pour activer Itinérance des données.</string>
     <string name="data_network_mode">Réseau de données</string>
@@ -2392,6 +2404,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">Supprimer ce numéro ?</string>
     <string name="change_guide_language_kddi">"Changer la langue d'assistance"</string>
     <string name="apply_option_service_kddi">Acc. aux opt. service %s</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">Service client</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">Assist. en japonais (%d)</string>
     <string name="English_guidance_kddi">Assist. en anglais (%d)</string>
     <string name="voicecall_kddi">Messagerie vocale</string>
@@ -2446,11 +2462,13 @@ La fonctionnalité Identification des numéros non enregistrés utilise le conte
     <string name="spam_call_mute_first_ring_summary">Coupez le son de la première sonnerie des appels provenant de numéros non enregistrés.</string>
     <string name="spam_call_auto_reject_title">Rejet auto. des appels</string>
     <string name="smart_call_title">Protect. ID appelant et anti-spam</string>
-    <string name="smart_call_title_usa">Identifier numéros spam</string>
     <string name="smart_call_title_for_notice">Protection des ID appelant et anti-spam</string>
-    <string name="smart_call_description">"Identifiez les appelants et les expéditeurs de messages non enregistrés sur l'écran d'appel, dans le journal et dans l'application Messages."</string>
-    <string name="smart_call_usa_description">"Affichez les informations sur les appelants indésirables sur l'écran d'appel et dans le journal du téléphone."</string>
+    <string name="smart_call_description">"Utilisez Appel intelligent pour identifier les appelants indésirables et escrocs.
+
+Ce service indique les noms et photos de profil des appelants et les expéditeurs de messages qui ne figurent pas parmi vos contacts."</string>
     <string name="smart_call_description_roaming">"Ce service n'est pas disponible dans d'autres pays."</string>
+    <string name="smart_call_noti_description_1">Appuyez ici pour vous protéger gratuitement contre les appelants escrocs.</string>
+    <string name="smart_call_noti_description_2">Appuyez ici pour identifier les appelants indésirables et escrocs.</string>
     <string name="smart_call_share_name_number_title">Partage du nom et numéro</string>
     <string name="smart_call_share_name_number_summary">Enregistrez nom et num. sur serveur afin que destinataires sans votre num. puissent voir qd vous les appelez/leur envoyez msg.</string>
     <string name="smart_call_legal_info_category">Mentions légales</string>
@@ -2467,12 +2485,16 @@ Afin de proposer cette fonctionnalité, certaines données, par exemple le numé
 Veuillez cliquer sur le bouton approprié ci-dessous pour indiquer que vous acceptez ce qui précède et souhaitez dès à présent activer la fonctionnalité %s."</string>
     <string name="smart_call_privacy_notice_donotshow">Ne pas afficher à nouveau la notification décrivant la fonction Identification des numéros non enregistrés</string>
     <string name="smart_call_privacy_notice_dream">Ce service est disponible lorsque votre appareil mobile est connecté au réseau mobile pendant les appels entrants ou sortants, mais sera limité pendant l’itinérance. L’utilisation des réseaux mobiles peut entraîner des frais supplémentaires en fonction du forfait souscrit auprès de votre opérateur.</string>
+    <string name="show_privacy_notice_title">Polit. confidentialité</string>
     <string name="search_for_places_nearby_title">Recherche de lieux à proximité</string>
     <string name="search_for_places_nearby_help_description1">Recherchez des numéros de téléphone et des informations relatives aux entreprises locales et aux lieux à proximité.</string>
     <string name="search_for_places_nearby_help_description2">Ce service requiert des informations sur votre position.</string>
     <string name="search_for_places_nearby_help_description3">Pour optimiser la précision des informations de localisation, accédez à Paramètres > Connexions > Position > Méthode de localisation, puis sélectionnez Haute précision.</string>
     <string name="search_for_places_nearby_help_description3_vzw">Pour optimiser la précision des informations de localisation, accédez à Paramètres > Connexions > Position > Méthode de localisation, puis sélectionnez Haute précision.</string>
     <string name="search_for_places_nearby_help_description4">"L'utilisation des réseaux mobiles au lieu des réseaux Wi-Fi risque d'entraîner des frais supplémentaires en fonction de votre forfait."</string>
+    <string name="withdraw_menu_title">Arrêter utiliser service</string>
+    <string name="withdraw_dialog_description">"Lorsque vous arrêterez d'utiliser %1$s, le service sera désactivé, et toutes vos données %2$s stockées par l'opérateur seront supprimées."</string>
+    <string name="withdraw_dialog_button">Arrêter util. service</string>
     <string name="record_call_setting_title">Enregistrement auto. des appels</string>
     <string name="record_call_setting_selected_number">Numéros sélectionnés</string>
     <string name="record_call_setting_all_number">Tous les numéros</string>
@@ -2485,6 +2507,8 @@ Veuillez cliquer sur le bouton approprié ci-dessous pour indiquer que vous acce
     <string name="record_call_noti_setting_title">Enregistrement notif.</string>
     <string name="record_call_noti_setting_summary">"Recevez des notifications après l'enregistrement des appels."</string>
     <string name="record_call_help_summary">Enregistrez automatiquement les appels à ou depuis des numéros sélectionnés.</string>
+    <string name="record_call_setting_on_description">Enregistrement automatique activé</string>
+    <string name="record_call_setting_off_description">Enregistrement automatique désactivé</string>
     <string name="visual_call_title_callsetting">"Menu de l'écran des appels SVI"</string>
     <string name="preference_update_DB_visual_call">MÀJ BdD des appels SVI</string>
     <string name="preference_update_DB_visual_call_summary">Mise à jour automatique via WLAN uniquement</string>
@@ -2727,6 +2751,7 @@ Saisissez le code obtenu par Verizon :"</string>
     <string name="about_phone_open_source_licenses">Licences open source</string>
     <string name="no_network_connection">Aucune connexion réseau</string>
     <string name="unable_to_check_for_updates">"Impossible de rechercher les mises à jour. Il n'y a aucune connexion réseau."</string>
+    <string name="phoneAppLabel_dcm">Dial</string>
     <string name="dcm_vt_fail_cause_not_in_4g">"Impossible de passer un appel visio car vous n'êtes pas dans une zone 4G."</string>
     <string name="ss_do_not_show_again_us">Ne plus afficher</string>
     <string name="disable_advanced_calling_warning_msg">"Votre téléphone ne peut pas passer ou recevoir d'appels HD Voice ni des appels visio lorsque ce paramètre est désactivé."</string>
@@ -2760,6 +2785,8 @@ Saisissez le code obtenu par Verizon :"</string>
     <string name="save_text">Enreg.</string>
     <string name="wfc_enable_dialog_title">Activer Appels Wi-Fi</string>
     <string name="wfc_enable_dialog">"L'activation des appels Wi-Fi désactivera le mode Économie d'énergie. Cela peut par ailleurs augmenter la consommation de la batterie. Certains fournisseurs d'accès risquent de ne pas prendre en charge cette fonction."</string>
+    <string name="group_call_not_support_emergency_number">"Impossible d'ajouter des numéros d'urgence aux appels de groupe."</string>
+    <string name="group_call_not_support_emergency_number_all">"Impossible d'ajouter des numéros d'urgence aux appels de groupe. Tous les autres contacts sélectionnés ont été ajoutés."</string>
     <string name="enable_data_popup_message">Pour activer cette fonction, les données mobiles doivent être activées.</string>
     <string name="enable_data_popup_tittle">Activation impossible</string>
 </resources>

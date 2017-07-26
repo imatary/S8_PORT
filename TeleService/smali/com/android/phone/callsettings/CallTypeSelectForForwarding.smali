@@ -364,7 +364,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d02c9
+    const v7, 0x7f0d0329
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -616,13 +616,13 @@
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 8
 
-    const v7, 0x7f0d025f
+    const v7, 0x7f0d02be
 
-    const v5, 0x7f0d025e
+    const v5, 0x7f0d02bd
 
     const/4 v6, 0x1
 
-    const v4, 0x7f0d01fd
+    const v4, 0x7f0d025a
 
     const-string/jumbo v3, "feature_multisim"
 
@@ -648,7 +648,7 @@
 
     invoke-static {v3, v4}, Lcom/android/phone/utils/SALogging;->sendSAEventLog(Ljava/lang/String;Ljava/lang/String;)V
 
-    const v3, 0x7f0d04fa
+    const v3, 0x7f0d055a
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallTypeSelectForForwarding;->getString(I)Ljava/lang/String;
 
@@ -724,7 +724,7 @@
 
     invoke-static {v3, v4}, Lcom/android/phone/utils/SALogging;->sendSAEventLog(Ljava/lang/String;Ljava/lang/String;)V
 
-    const v3, 0x7f0d04fb
+    const v3, 0x7f0d055b
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallTypeSelectForForwarding;->getString(I)Ljava/lang/String;
 
@@ -835,7 +835,7 @@
 
     invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onResume()V
 
-    const v0, 0x7f0d01fd
+    const v0, 0x7f0d025a
 
     invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallTypeSelectForForwarding;->getString(I)Ljava/lang/String;
 

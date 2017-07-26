@@ -173,7 +173,7 @@
 
     iget-object v1, p0, Lcom/android/phone/mobilenetworks/NetworkModeGlobalController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0d088a
+    const v2, 0x7f0d08ee
 
     const/4 v3, 0x1
 
@@ -545,7 +545,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v5, 0x7f0d0886
+    const v5, 0x7f0d08ea
 
     invoke-direct {p0, v3, p1, v5}, Lcom/android/phone/mobilenetworks/NetworkModeGlobalController;->showSearchingForDialog(Lcom/android/phone/MobileNetworkSettings;II)V
 
@@ -570,7 +570,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v5, 0x7f0d0887
+    const v5, 0x7f0d08eb
 
     invoke-direct {p0, v3, p1, v5}, Lcom/android/phone/mobilenetworks/NetworkModeGlobalController;->showSearchingForDialog(Lcom/android/phone/MobileNetworkSettings;II)V
 
@@ -614,7 +614,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v5, 0x7f0d0888
+    const v5, 0x7f0d08ec
 
     invoke-direct {p0, v3, p1, v5}, Lcom/android/phone/mobilenetworks/NetworkModeGlobalController;->showSearchingForDialog(Lcom/android/phone/MobileNetworkSettings;II)V
 
@@ -825,7 +825,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d087c
+    const v1, 0x7f0d08e0
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 

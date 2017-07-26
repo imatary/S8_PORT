@@ -384,7 +384,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0e0095
+    const v0, 0x7f0e0096
 
     invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsActivity;->setTheme(I)V
 
@@ -617,7 +617,7 @@
 
     if-eqz v6, :cond_4
 
-    const v6, 0x7f0d02f0
+    const v6, 0x7f0d0350
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallSettingsActivity;->getText(I)Ljava/lang/CharSequence;
 

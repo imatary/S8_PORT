@@ -85,7 +85,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/VideoCallBarring$5;->this$0:Lcom/android/phone/callsettings/VideoCallBarring;
 
-    const v2, 0x7f0d05c9
+    const v2, 0x7f0d062d
 
     invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/VideoCallBarring;->getString(I)Ljava/lang/String;
 

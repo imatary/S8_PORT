@@ -41,7 +41,7 @@
 
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipSettings$9;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
-    const v2, 0x7f0d0185
+    const v2, 0x7f0d01e2
 
     invoke-virtual {v1, v2}, Lcom/android/services/telephony/sip/SipSettings;->getString(I)Ljava/lang/String;
 
@@ -59,7 +59,7 @@
 
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipSettings$9;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
-    const v2, 0x7f0d018b
+    const v2, 0x7f0d01e8
 
     invoke-virtual {v1, v2}, Lcom/android/services/telephony/sip/SipSettings;->getString(I)Ljava/lang/String;
 
@@ -88,7 +88,7 @@
 
     aput-object p3, v2, v3
 
-    const v3, 0x7f0d018c
+    const v3, 0x7f0d01e9
 
     invoke-virtual {v1, v3, v2}, Lcom/android/services/telephony/sip/SipSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -104,7 +104,7 @@
 
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipSettings$9;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
-    const v2, 0x7f0d0186
+    const v2, 0x7f0d01e3
 
     invoke-virtual {v1, v2}, Lcom/android/services/telephony/sip/SipSettings;->getString(I)Ljava/lang/String;
 
@@ -119,7 +119,7 @@
 
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipSettings$9;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
-    const v2, 0x7f0d018d
+    const v2, 0x7f0d01ea
 
     invoke-virtual {v1, v2}, Lcom/android/services/telephony/sip/SipSettings;->getString(I)Ljava/lang/String;
 
@@ -134,7 +134,7 @@
 
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipSettings$9;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
-    const v2, 0x7f0d018e
+    const v2, 0x7f0d01eb
 
     invoke-virtual {v1, v2}, Lcom/android/services/telephony/sip/SipSettings;->getString(I)Ljava/lang/String;
 
@@ -161,7 +161,7 @@
 
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipSettings$9;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
-    const v2, 0x7f0d0189
+    const v2, 0x7f0d01e6
 
     invoke-virtual {v1, v2}, Lcom/android/services/telephony/sip/SipSettings;->getString(I)Ljava/lang/String;
 
@@ -176,7 +176,7 @@
 
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipSettings$9;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
-    const v2, 0x7f0d0188
+    const v2, 0x7f0d01e5
 
     invoke-virtual {v1, v2}, Lcom/android/services/telephony/sip/SipSettings;->getString(I)Ljava/lang/String;
 
@@ -191,7 +191,7 @@
 
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipSettings$9;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
-    const v2, 0x7f0d018a
+    const v2, 0x7f0d01e7
 
     invoke-virtual {v1, v2}, Lcom/android/services/telephony/sip/SipSettings;->getString(I)Ljava/lang/String;
 

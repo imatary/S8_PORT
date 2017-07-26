@@ -132,7 +132,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/SecAutoRejectList$AutoRejectAdapter;->this$0:Lcom/android/phone/callsettings/SecAutoRejectList;
 
-    const v4, 0x7f0d0536
+    const v4, 0x7f0d0596
 
     invoke-virtual {v3, v4}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -172,7 +172,7 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/SecAutoRejectList$AutoRejectAdapter;->this$0:Lcom/android/phone/callsettings/SecAutoRejectList;
 
-    const v3, 0x7f0d01f2
+    const v3, 0x7f0d024f
 
     invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -182,7 +182,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/SecAutoRejectList$AutoRejectAdapter;->this$0:Lcom/android/phone/callsettings/SecAutoRejectList;
 
-    const v4, 0x7f0d021c
+    const v4, 0x7f0d027a
 
     invoke-virtual {v3, v4}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -240,7 +240,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/SecAutoRejectList$AutoRejectAdapter;->this$0:Lcom/android/phone/callsettings/SecAutoRejectList;
 
-    const v4, 0x7f0d0538
+    const v4, 0x7f0d0598
 
     invoke-virtual {v3, v4}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 

@@ -632,7 +632,7 @@
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    const v1, 0x7f0d01ab
+    const v1, 0x7f0d0208
 
     invoke-virtual {p0, v1}, Lcom/android/services/telephony/sip/SipEditor;->getString(I)Ljava/lang/String;
 
@@ -764,7 +764,7 @@
 
     if-eqz v5, :cond_0
 
-    const v6, 0x7f0d01ab
+    const v6, 0x7f0d0208
 
     :goto_1
     invoke-virtual {p0, v6}, Lcom/android/services/telephony/sip/SipEditor;->getString(I)Ljava/lang/String;
@@ -779,7 +779,7 @@
     goto :goto_0
 
     :cond_0
-    const v6, 0x7f0d01aa
+    const v6, 0x7f0d0207
 
     goto :goto_1
 
@@ -1054,7 +1054,7 @@
 
     invoke-virtual {p0, v1, v0}, Lcom/android/services/telephony/sip/SipEditor;->setResult(ILandroid/content/Intent;)V
 
-    const v1, 0x7f0d017e
+    const v1, 0x7f0d01db
 
     const/4 v2, 0x0
 
@@ -1267,7 +1267,7 @@
     goto :goto_2
 
     :pswitch_2
-    const v17, 0x7f0d01a0
+    const v17, 0x7f0d01fd
 
     move-object/from16 v0, p0
 
@@ -1319,7 +1319,7 @@
     if-lez v17, :cond_1
 
     :cond_4
-    const v14, 0x7f0d01a6
+    const v14, 0x7f0d0203
 
     move-object/from16 v0, p0
 
@@ -1376,7 +1376,7 @@
     :cond_6
     if-eqz v2, :cond_8
 
-    const v14, 0x7f0d01a4
+    const v14, 0x7f0d0201
 
     move-object/from16 v0, p0
 
@@ -1406,7 +1406,7 @@
 
     aput-object v6, v14, v15
 
-    const v15, 0x7f0d01a5
+    const v15, 0x7f0d0202
 
     move-object/from16 v0, p0
 
@@ -1444,7 +1444,7 @@
 
     invoke-virtual {v0, v14, v7}, Lcom/android/services/telephony/sip/SipEditor;->setResult(ILandroid/content/Intent;)V
 
-    const v14, 0x7f0d017d
+    const v14, 0x7f0d01da
 
     const/4 v15, 0x0
 
@@ -1704,7 +1704,7 @@
     :cond_4
     if-nez v3, :cond_5
 
-    const v5, 0x7f0d0191
+    const v5, 0x7f0d01ee
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceGroup;->setTitle(I)V
 
@@ -1742,7 +1742,7 @@
 
     const/4 v0, 0x2
 
-    const v1, 0x7f0d0180
+    const v1, 0x7f0d01dd
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -1750,7 +1750,7 @@
 
     invoke-interface {v0, v3}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
-    const v0, 0x7f0d017f
+    const v0, 0x7f0d01dc
 
     invoke-interface {p1, v2, v3, v2, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -1760,7 +1760,7 @@
 
     const/4 v0, 0x3
 
-    const v1, 0x7f0d017b
+    const v1, 0x7f0d01d8
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 

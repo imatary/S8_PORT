@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dh %2$dm</string>
-    <string name="battery_history_minutes_no_seconds">%dm</string>
+    <string name="battery_history_hours_no_seconds">%1$d h %2$d m</string>
+    <string name="battery_history_minutes_no_seconds">%d minuti</string>
     <string name="wifi_fail_to_scan">Impossibile cercare reti</string>
     <string name="wifi_failed_to_obtain_IP">Impossibile ottenere indirizzo IP.</string>
     <string name="wifi_security_none">Nessuna</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">Impossibile connettersi a %s.</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">Impossibile connettersi a %1$s. Controllate le impostazioni in %2$s e riprovate.</string>
     <string name="bluetooth_pairing_rejected_error_message">Associazione rifiutata da %s.</string>
+    <string name="bluetooth_getting_remote_device_name">Acquisizione del nome del dispositivo in corso…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">Il nome del dispositivo verrà mostrato alla connessione di questo dispositivo.</string>
     <string name="accessibility_wifi_off">Wi-Fi non attivo.</string>
     <string name="accessibility_no_wifi">Rete Wi-Fi scollegata.</string>
     <string name="accessibility_wifi_one_bar">Wi-Fi: una barra.</string>
@@ -839,7 +841,7 @@
     <string name="singleContactImportedMsg">Contatto importato</string>
     <string name="failedToImportSingleContactMsg">Importazione contatto non riuscita</string>
     <string name="hac_mode_title">Apparecchi acustici</string>
-    <string name="hac_mode_summary">"Migliorate la qualità dell'audio del dispositivo per l'utilizzo di apparecchi acustici."</string>
+    <string name="hac_mode_summary">Ottimizzate la qualità audio del telefono per gli apparecchi acustici.</string>
     <string name="dtmf_tones_title">Toni DTMF</string>
     <string name="dtmf_tones_summary">Imposta lunghezza dei toni DTMF.</string>
     <string name="network_info_message">Messaggio di rete</string>
@@ -1022,6 +1024,10 @@ L'icona riportata di seguito verrà visualizzata tutte le volte che questa funzi
     <string name="add_call_block_number_toast">Non riceverete chiamate da questo numero.</string>
     <string name="delete_call_block_number_toast">Adesso potete ricevere chiamate da questo numero.</string>
     <string name="emergency_call_block_number_toast">Impossibile bloccare i numeri di emergenza.</string>
+    <string name="call_block_dialog_title">Modifica numeri bloccati</string>
+    <string name="call_block_dialog_contents">Da Android Nougat in poi, la modalità Blocco chiamate viene sostituita dalla funzione Blocca numeri. Invece di bloccare soltanto le chiamate, la funzione Blocca numeri bloccherà automaticamente sia le chiamate che i messaggi.</string>
+    <string name="call_block_dialog_settings">"Toccate IMPOSTAZIONI per modificare l'opzione Blocca numeri."</string>
+    <string name="call_block_dialog_button">Impostazioni</string>
     <string name="no_block_number_description">I numeri aggiunti verranno visualizzati qui.</string>
     <string name="no_messages_description">I messaggi aggiunti verranno visualizzati qui.</string>
     <string name="callsettings_vipmode_blacklist_title">Non consentiti</string>
@@ -1071,7 +1077,7 @@ L'icona riportata di seguito verrà visualizzata tutte le volte che questa funzi
     <string name="callsettings_answering_volume_key_title">Prem. Volume su per rispondere</string>
     <string name="callsettings_answering_key_summary">Premete il tasto Home per accettare le chiamate in arrivo.</string>
     <string name="callsettings_PowerkeyEndsCalls_title">Tasto accens. per fine chiamata</string>
-    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Tasto accens. per fine chiamata</string>
+    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Premete il tasto di accensione per terminare le chiamate</string>
     <string name="callsettings_PowerkeyEndsCalls_summary">Termina una chiamata senza disattivare lo schermo.</string>
     <string name="Dialog_PowerkeyEndsCalls">"Impossibile impostare il tasto di accensione per terminare le chiamate quando il sensore di prossimità è disattivato. Il sensore di prossimità verrà attivato. Durante le chiamate, lo schermo si spegnerà quando avvicinate il dispositivo all'orecchio."</string>
     <string name="Dialog_PowerkeyEndsCalls_title">Attiva sensore di prossimità</string>
@@ -1343,7 +1349,7 @@ Injured/Dead
     <string name="roaming_alerts_sbody">Modificate le impostazioni relative a voce, testo e roaming dati, incluse quelle sul roaming internazionale.</string>
     <string name="roaming_alerts_voice_body">Roaming voce</string>
     <string name="roaming_alerts_data_body">Roaming dati</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">Roaming messaggi in uscita</string>
     <string name="roaming_domestic_category">Roaming nazionale</string>
     <string name="roaming_international_category">Roaming internazionale</string>
     <string name="roaming_voice_body">Roaming voce e testo</string>
@@ -1513,9 +1519,7 @@ Disattivare la connessione dati?"</string>
     <string name="data_usage_disable_mobile_vzw_chn">"A meno che non utilizziate una rete WLAN, non potrete più utilizzare Internet, E-mail o altre applicazioni che richiedono una connessione dati.
 
 La connessione dati verrà disattivata."</string>
-    <string name="mobile_data_off_dialog_text_common">"A meno che non utilizziate una rete Wi-Fi, non potrete più utilizzare Internet, E-mail o altre applicazioni che richiedono una connessione dati.
-
-La connessione dati verrà disattivata."</string>
+    <string name="mobile_data_off_dialog_text_common">Se non vi connettete a una rete Wi-Fi, non potrete utilizzare Internet, E-mail o altre applicazioni che richiedono una connessione di rete.</string>
     <string name="mobile_data_off_dialog_button_turn_off">Disattiva</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"Se non siete connessi ad una rete Wi-Fi, non potrete utilizzare Internet, E-mail o altre applicazioni che richiedono una connessione dati attiva.
 
@@ -1595,8 +1599,9 @@ Per modificare la modalità di rete, andate in Impostazioni > Altre reti > Reti 
 Potrebbero essere applicati addebiti aggiuntivi se non si usa un piano dati a tariffa fissa."</string>
     <string name="data_3gwarning_popup_title">Connessione dati</string>
     <string name="roaming_data_off_msg">Per utilizzare il roaming dati, andate a Impostazioni > Connessioni > Roaming globale, quindi attivate Roaming dati.</string>
-    <string name="data_3gwarning_popup_noti">"La connessione datipuò comportare l'addebito di spese aggiuntive se non si usa un piano a tariffa fissa. Connettersi?"</string>
-    <string name="lgt_4gwarning_popup_mobiledata">La connessione dati verrà attivata. Ciò potrebbe comportare ulteriori addebiti da parte del gestore telefonico a seconda del piano tariffario.</string>
+    <string name="data_3gwarning_popup_noti">La connessione dati verrà attivata. La connessione alle reti mobili potrebbe comportare costi aggiuntivi a seconda del piano tariffario.</string>
+    <string name="data_3gwarning_popup_noti_ktt">La connessione dati verrà attivata per utilizzare GiGA LTE. Ciò potrebbe comportare ulteriori addebiti a seconda del piano tariffario.</string>
+    <string name="lgt_4gwarning_popup_mobiledata">La connessione dati verrà attivata. La connessione alle reti mobili potrebbe comportare costi aggiuntivi a seconda del piano tariffario.</string>
     <string name="lgt_lte_data_roaming_warningmsg">"Mentre il roaming dati è attivato, &lt;u>&lt;font color=\"%1$s\">verranno applicati i costi per il roaming dati internazionale invece dei costi per il roaming nazionale.&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">Attivare la limitazione dei dati in background per ridurre le tariffe sul roaming dei dati&lt;/font>&lt;/u> disattivando le funzionalità di notifiche IM e gli aggiornamenti automatici"</string>
@@ -1967,6 +1972,8 @@ Contattare il centro clienti o il rivenditore locale."</string>
     <string name="volte_call_summary_ops">Effettuate delle chiamate vocali in HD sulla rete 4G.</string>
     <string name="voice_over_lte_title_cct">Chiamata VoLTE</string>
     <string name="volte_call_summary_cct">Attiva le funzioni delle chiamate avanzate sulla rete cellulare 4G LTE, se disponibili.</string>
+    <string name="voice_over_lte_title_o2">Chiamata 4G</string>
+    <string name="volte_call_summary_o2">Provate la comunicazione avanzata tramite i dati 4G.</string>
     <string name="volte_tty_description_on">Quando TTY è attivato, non potrete effettuare e ricevere videochiamate o effettuare teleconferenze.</string>
     <string name="volte_prepaid_tty_description_on">La modalità TTY verrà attivata. Non potrete effettuare o ricevere delle conferenze.</string>
     <string name="volte_tty_description_off">Quando TTY è disattivato, non potrete effettuare e ricevere chiamate TTY.</string>
@@ -2156,9 +2163,13 @@ Il roaming LTE non sarà disponibile se non accettate. Potrebbero venire utilizz
     <string name="group_voice_call_disable_on_3G">Le chiamate di gruppo sono disponibili solo con la rete LTE.</string>
     <string name="group_voice_call_outgoing_voice_call">Chiamata vocale in uscita</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"A meno che non utilizziate una rete Wi-Fi, non potrete più utilizzare Internet, E-mail o altre applicazioni che richiedono una connessione dati.
+
+La connessione dati verrà disattivata."</string>
     <string name="data_usage_disable_mobile_warning">"Se non siete connessi ad una rete Wi-Fi, non potrete utilizzare Internet, E-mail o altre applicazioni che richiedono una connessione dati attiva.
 
 La connessione dati verrà disattivata."</string>
+    <string name="data_usage_enable_mobile_warning_skt">La connessione dati verrà attivata. La connessione alle reti mobili potrebbe comportare costi aggiuntivi a seconda del piano tariffario.</string>
     <string name="data_usage_enable_mobile_warning">La connessione a pacchetti dati può determinare costi aggiuntivi. Continuare?</string>
     <string name="insert_sim_card">Inserisci una scheda SIM</string>
     <string name="insert_sim_card_message">Inserite una scheda SIM per accedere ai servizi di rete.</string>
@@ -2194,6 +2205,7 @@ La connessione dati verrà disattivata."</string>
     <string name="disconnect_network_title">Disconnetti rete corrente</string>
     <string name="lte_only_warning_message">"In questa modalità di funzionamento non sarà in grado di effettuare / ricevere chiamate. 
  Si può anche perdere il servizio a causa della mancanza di copertura 4G."</string>
+    <string name="disable2g_warning_message">Questa impostazione disattiva il servizio 2G. Se tale servizio è disattivato, alcune applicazioni e funzioni potrebbero non essere disponibili nelle zone in cui la rete LTE o 3G è assente.</string>
     <string name="data_roaming_restrict_title">Roaming dati disattivato</string>
     <string name="data_roaming_restrict_body">Toccate qui per attivare il roaming dati.</string>
     <string name="data_network_mode">Connessione dati</string>
@@ -2394,6 +2406,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">Eliminare questo numero?</string>
     <string name="change_guide_language_kddi">Modifica la lingua della guida</string>
     <string name="apply_option_service_kddi">Vai a opzioni servizio %s</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">Assistenza clienti</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">Assistenza giapponese (%d)</string>
     <string name="English_guidance_kddi">Assistenza inglese (%d)</string>
     <string name="voicecall_kddi">Segreteria telefonica</string>
@@ -2448,11 +2464,13 @@ Identifica numeri non salvati utilizza contenuto fornito da Tencent. Utilizzando
     <string name="spam_call_mute_first_ring_summary">Disattiva il suono del primo squillo delle chiamate da numeri non salvati.</string>
     <string name="spam_call_auto_reject_title">Rifiuta autom. chiam.</string>
     <string name="smart_call_title">ID chiamante e protezione spam</string>
-    <string name="smart_call_title_usa">Identifica numeri spam</string>
     <string name="smart_call_title_for_notice">ID chiamante e protezione spam</string>
-    <string name="smart_call_description">Identifica i chiamanti ed i mittenti dei messaggi non salvati sulla schermata della chiamata, nel registro telefono ed in Messaggi.</string>
-    <string name="smart_call_usa_description">Consente di visualizzare le informazioni sui chiamanti di spam nella schermata della chiamata e nel Registro del telefono.</string>
+    <string name="smart_call_description">"Utilizzate Chiamata intelligente per identificare le chiamate spam e di phishing.
+
+Tramite questo servizio, potrete visualizzare i nomi e l'immagine del profilo dei chiamanti e dei mittenti dei messaggi non salvati in Rubrica."</string>
     <string name="smart_call_description_roaming">Questo servizio non è disponibile in altri Paesi.</string>
+    <string name="smart_call_noti_description_1">Toccate qui per ottenere protezione gratuita dalle chiamate spam.</string>
+    <string name="smart_call_noti_description_2">Toccate qui per identificare le chiamate spam e di phishing.</string>
     <string name="smart_call_share_name_number_title">Condividi nome e numero</string>
     <string name="smart_call_share_name_number_summary">Registrate nome e numero sul server per permettere la visualizzazione delle vostre info a chi non le ha quando lo chiamate o gli inviate un messaggio.</string>
     <string name="smart_call_legal_info_category">Informazioni legali</string>
@@ -2469,12 +2487,16 @@ Per fornirla, alcuni dati, ad esempio il numero di telefono del chiamante, verra
 L’utente dovrà fare clic sul pulsante appropriato che segue per indicare che accetta quanto sopra specificato e che desidera abilitare la funzione %s in quel momento."</string>
     <string name="smart_call_privacy_notice_donotshow">Non mostrare più le notifiche associate alla funzione Identifica numeri non salvati</string>
     <string name="smart_call_privacy_notice_dream">Il servizio è disponibile mentre il dispositivo mobile è connesso alla rete mobile in uso durante le chiamate in entrata o in uscita, ma sarà limitato durante il roaming. L’utilizzo delle reti mobili potrà comportare possibili spese aggiuntive a seconda del piano dati stipulato con l’operatore della rete.</string>
+    <string name="show_privacy_notice_title">Informat. sulla privacy</string>
     <string name="search_for_places_nearby_title">Cerca luoghi vicini</string>
     <string name="search_for_places_nearby_help_description1">Cercate numeri di telefono e informazioni sulle aziende e le sedi locali vicine.</string>
     <string name="search_for_places_nearby_help_description2">Questo servizio richiede le informazioni sulla posizione.</string>
     <string name="search_for_places_nearby_help_description3">Per ottimizzare la precisione delle informazioni sulla posizione, andate a Impostazioni > Connessioni > Posizione > Metodo di localizzazione, quindi selezionate Precisione elevata.</string>
     <string name="search_for_places_nearby_help_description3_vzw">Per ottimizzare la precisione delle informazioni sulla posizione, andate a Impostazioni > Connessioni > Posizione > Metodo di localizzazione, quindi selezionate Precisione elevata.</string>
     <string name="search_for_places_nearby_help_description4">"L'utilizzo delle reti mobili al posto delle reti Wi-Fi potrebbe comportare costi aggiuntivi a seconda del piano tariffario."</string>
+    <string name="withdraw_menu_title">Arresta uso del servizio</string>
+    <string name="withdraw_dialog_description">Se smettete di utilizzare %1$s, il servizio verrà disattivato e tutti i dati di %2$s memorizzati dal gestore telefonico verranno eliminati.</string>
+    <string name="withdraw_dialog_button">Arresta uso servizio</string>
     <string name="record_call_setting_title">Registrazione auto chiamate</string>
     <string name="record_call_setting_selected_number">Numeri selezionati</string>
     <string name="record_call_setting_all_number">Tutti i numeri</string>
@@ -2487,6 +2509,8 @@ L’utente dovrà fare clic sul pulsante appropriato che segue per indicare che 
     <string name="record_call_noti_setting_title">Registrazione notifiche</string>
     <string name="record_call_noti_setting_summary">Ricevete delle notifiche in seguito alla registrazione delle chiamate.</string>
     <string name="record_call_help_summary">Registra automaticamente le chiamate da e verso i numeri selezionati.</string>
+    <string name="record_call_setting_on_description">Registrazione automatica attivata</string>
+    <string name="record_call_setting_off_description">Registrazione automatica disattivata</string>
     <string name="visual_call_title_callsetting">Menu a schermo della chiamata IVR</string>
     <string name="preference_update_DB_visual_call">Aggiorna DB chiamata IVR</string>
     <string name="preference_update_DB_visual_call_summary">Aggiornamento automatico solo con WLAN</string>
@@ -2729,6 +2753,7 @@ Inserite il codice ricevuto da Verizon:"</string>
     <string name="about_phone_open_source_licenses">Licenze open source</string>
     <string name="no_network_connection">Connessione rete assente</string>
     <string name="unable_to_check_for_updates">Impossibile verificare la presenza di aggiornamenti. Nessuna connessione di rete.</string>
+    <string name="phoneAppLabel_dcm">Componi</string>
     <string name="dcm_vt_fail_cause_not_in_4g">"Impossibile effettuare la videochiamata perché non vi trovate in un'area 4G."</string>
     <string name="ss_do_not_show_again_us">Non mostrare più</string>
     <string name="disable_advanced_calling_warning_msg">Se disattivate questa impostazione, il dispositivo non sarà in grado di effettuare o ricevere videochiamate e chiamate in Voce in HD.</string>
@@ -2762,6 +2787,8 @@ In futuro, se volete utilizzare la rete Wi-Fi per le chiamate vocali, potete att
     <string name="save_text">Salva</string>
     <string name="wfc_enable_dialog_title">Attiva chiamata Wi-Fi</string>
     <string name="wfc_enable_dialog">Se attivate le chiamate Wi-Fi, verrà disattivata la modalità Risparmio energetico avanzato e il consumo della batteria potrebbe aumentare. Alcuni gestori telefonici potrebbero non supportare questa funzione.</string>
+    <string name="group_call_not_support_emergency_number">Impossibile aggiungere i numeri di emergenza alle chiamate di gruppo.</string>
+    <string name="group_call_not_support_emergency_number_all">Impossibile aggiungere i numeri di emergenza alle chiamate di gruppo. Tutti gli altri contatti selezionati sono stati aggiunti.</string>
     <string name="enable_data_popup_message">Per attivare questa funzione, la connessione dati deve essere attivata.</string>
     <string name="enable_data_popup_tittle">Imposs. attivare funzione</string>
 </resources>

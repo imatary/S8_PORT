@@ -120,7 +120,7 @@
     :cond_0
     iget-object v6, p0, Lcom/android/phone/operator/usa/AssistedDialingList$2;->this$0:Lcom/android/phone/operator/usa/AssistedDialingList;
 
-    const v7, 0x7f0d020e
+    const v7, 0x7f0d026c
 
     invoke-virtual {v6, v7}, Lcom/android/phone/operator/usa/AssistedDialingList;->getString(I)Ljava/lang/String;
 
@@ -128,7 +128,7 @@
 
     iget-object v7, p0, Lcom/android/phone/operator/usa/AssistedDialingList$2;->this$0:Lcom/android/phone/operator/usa/AssistedDialingList;
 
-    const v8, 0x7f0d02aa
+    const v8, 0x7f0d030a
 
     invoke-virtual {v7, v8}, Lcom/android/phone/operator/usa/AssistedDialingList;->getString(I)Ljava/lang/String;
 
@@ -248,7 +248,7 @@
     :cond_3
     iget-object v6, p0, Lcom/android/phone/operator/usa/AssistedDialingList$2;->this$0:Lcom/android/phone/operator/usa/AssistedDialingList;
 
-    const v7, 0x7f0d020e
+    const v7, 0x7f0d026c
 
     invoke-virtual {v6, v7}, Lcom/android/phone/operator/usa/AssistedDialingList;->getString(I)Ljava/lang/String;
 
@@ -256,7 +256,7 @@
 
     iget-object v7, p0, Lcom/android/phone/operator/usa/AssistedDialingList$2;->this$0:Lcom/android/phone/operator/usa/AssistedDialingList;
 
-    const v8, 0x7f0d02aa
+    const v8, 0x7f0d030a
 
     invoke-virtual {v7, v8}, Lcom/android/phone/operator/usa/AssistedDialingList;->getString(I)Ljava/lang/String;
 

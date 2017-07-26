@@ -101,41 +101,41 @@
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 5
 
-    const/4 v4, 0x1
+    const/4 v1, 0x1
 
-    const/4 v2, 0x0
+    const/4 v4, 0x0
 
-    const/4 v3, 0x0
+    const/4 v0, 0x0
 
-    const-string/jumbo v0, "EmergencySyncGroupItemContainer"
+    const-string/jumbo v2, "EmergencySyncGroupItemContainer"
 
-    const-string/jumbo v1, "onQueryComplete"
+    const-string/jumbo v3, "onQueryComplete"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+    iget-object v2, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    iput v1, v0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mExtraCount:I
+    iput v3, v2, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mExtraCount:I
 
     invoke-static {}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->-getcom-android-phone-emergencydialer-SyncGroupItemContainer$ItemTypeSwitchesValues()[I
 
-    move-result-object v0
+    move-result-object v2
 
     invoke-static {}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$ItemType;->values()[Lcom/android/phone/emergencydialer/SyncGroupItemContainer$ItemType;
 
-    move-result-object v1
+    move-result-object v3
 
-    aget-object v1, v1, p1
+    aget-object v3, v3, p1
 
-    invoke-virtual {v1}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$ItemType;->ordinal()I
+    invoke-virtual {v3}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$ItemType;->ordinal()I
 
-    move-result v1
+    move-result v3
 
-    aget v0, v0, v1
+    aget v2, v2, v3
 
-    packed-switch v0, :pswitch_data_0
+    packed-switch v2, :pswitch_data_0
 
     :cond_0
     :goto_0
@@ -146,22 +146,22 @@
 
     invoke-interface {p3}, Landroid/database/Cursor;->getCount()I
 
-    move-result v0
+    move-result v2
 
-    if-gtz v0, :cond_2
+    if-gtz v2, :cond_2
 
     :cond_1
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
-    invoke-virtual {v0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->inflateEmergencyEmptyView()V
+    invoke-virtual {v1}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->inflateEmergencyEmptyView()V
 
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
-    invoke-virtual {v0, v3}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->setEmergencyContactExists(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->setEmergencyContactExists(Z)V
 
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
-    invoke-static {v0, v3}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->-set2(Lcom/android/phone/emergencydialer/SyncGroupItemContainer;I)I
+    invoke-static {v1, v0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->-set2(Lcom/android/phone/emergencydialer/SyncGroupItemContainer;I)I
 
     sget-object v0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$ItemType;->EMERGENCY_DIALER:Lcom/android/phone/emergencydialer/SyncGroupItemContainer$ItemType;
 
@@ -170,31 +170,41 @@
     goto :goto_0
 
     :cond_2
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+    iget-object v2, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
     invoke-interface {p3}, Landroid/database/Cursor;->getCount()I
 
-    move-result v1
+    move-result v3
 
-    invoke-static {v0, v1}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->-set2(Lcom/android/phone/emergencydialer/SyncGroupItemContainer;I)I
+    invoke-static {v2, v3}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->-set2(Lcom/android/phone/emergencydialer/SyncGroupItemContainer;I)I
 
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+    iget-object v2, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
-    invoke-virtual {v0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->getContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->getContext()Landroid/content/Context;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-static {v0}, Lcom/android/phone/emergencydialer/EmergencyDialerUtils;->isNoStateInService(Landroid/content/Context;)Z
+    invoke-static {v2}, Lcom/android/phone/emergencydialer/EmergencyDialerUtils;->isNoStateInService(Landroid/content/Context;)Z
 
-    move-result v0
+    move-result v2
 
+    if-eqz v2, :cond_3
+
+    invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isAvailableVoWIFI()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    :cond_3
+    :goto_1
     invoke-static {v0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->-set3(Z)Z
 
     invoke-static {}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->-get5()Z
 
     move-result v0
 
-    if-nez v0, :cond_3
+    if-nez v0, :cond_5
 
     sget-object v0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$ItemType;->EMERGENCY_DIALER:Lcom/android/phone/emergencydialer/SyncGroupItemContainer$ItemType;
 
@@ -202,7 +212,12 @@
 
     goto :goto_0
 
-    :cond_3
+    :cond_4
+    move v0, v1
+
+    goto :goto_1
+
+    :cond_5
     iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
     iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
@@ -219,72 +234,11 @@
 
     iget v1, v1, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mExtraCount:I
 
-    invoke-virtual {v0, v2, v1}, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;->updateByCursor(Landroid/database/Cursor;I)V
+    invoke-virtual {v0, v4, v1}, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;->updateByCursor(Landroid/database/Cursor;I)V
 
     iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
     invoke-virtual {v0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->restoreContainerState()V
-
-    const-string/jumbo v0, "support_bixby"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const-string/jumbo v0, "EmergencyDialer"
-
-    invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    sget-object v0, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
-
-    invoke-static {v0}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
-
-    goto :goto_0
-
-    :pswitch_1
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
-
-    invoke-static {v0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->-get4(Lcom/android/phone/emergencydialer/SyncGroupItemContainer;)I
-
-    move-result v0
-
-    if-nez v0, :cond_5
-
-    if-eqz p3, :cond_4
-
-    invoke-interface {p3}, Landroid/database/Cursor;->getCount()I
-
-    move-result v0
-
-    if-lez v0, :cond_4
-
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
-
-    iget-object v0, v0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mSyncGroupItemAdapter:Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;
-
-    invoke-virtual {v0, p3}, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;->removeEmergencyContact(Landroid/database/Cursor;)V
-
-    :cond_4
-    :goto_1
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
-
-    invoke-static {v0, v3}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->-set0(Lcom/android/phone/emergencydialer/SyncGroupItemContainer;Z)Z
 
     const-string/jumbo v0, "support_bixby"
 
@@ -318,108 +272,167 @@
 
     goto/16 :goto_0
 
-    :cond_5
+    :pswitch_1
+    iget-object v2, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    invoke-static {v2}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->-get4(Lcom/android/phone/emergencydialer/SyncGroupItemContainer;)I
+
+    move-result v2
+
+    if-nez v2, :cond_7
+
     if-eqz p3, :cond_6
 
     invoke-interface {p3}, Landroid/database/Cursor;->getCount()I
 
-    move-result v0
+    move-result v1
 
-    if-gtz v0, :cond_7
+    if-lez v1, :cond_6
+
+    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    iget-object v1, v1, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mSyncGroupItemAdapter:Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;
+
+    invoke-virtual {v1, p3}, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;->removeEmergencyContact(Landroid/database/Cursor;)V
 
     :cond_6
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
-
-    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
-
-    iget v1, v1, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mExtraCount:I
-
-    invoke-virtual {v0, v1}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->setGridView(I)V
-
     :goto_2
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
-
-    iget-object v0, v0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mSyncGroupItemAdapter:Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;
-
     iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
-    iget v1, v1, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mExtraCount:I
+    invoke-static {v1, v0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->-set0(Lcom/android/phone/emergencydialer/SyncGroupItemContainer;Z)Z
 
-    invoke-virtual {v0, p3, v1}, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;->updateByCursor(Landroid/database/Cursor;I)V
+    const-string/jumbo v0, "support_bixby"
 
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    invoke-virtual {v0}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->restoreContainerState()V
+    move-result v0
 
-    goto :goto_1
+    if-eqz v0, :cond_0
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string/jumbo v0, "EmergencyDialer"
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v0}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    goto/16 :goto_0
 
     :cond_7
-    invoke-interface {p3}, Landroid/database/Cursor;->getCount()I
-
-    move-result v0
-
-    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
-
-    iget v1, v1, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->EMERGENCY_CONTACT_MAX_COUNT:I
-
-    if-eq v0, v1, :cond_8
+    if-eqz p3, :cond_8
 
     invoke-interface {p3}, Landroid/database/Cursor;->getCount()I
 
-    move-result v0
+    move-result v2
 
-    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
-
-    invoke-static {v1}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->-get4(Lcom/android/phone/emergencydialer/SyncGroupItemContainer;)I
-
-    move-result v1
-
-    if-lt v0, v1, :cond_9
+    if-gtz v2, :cond_9
 
     :cond_8
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
-
-    iput v4, v0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mExtraCount:I
-
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
-
-    invoke-interface {p3}, Landroid/database/Cursor;->getCount()I
-
-    move-result v1
+    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
     iget-object v2, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
     iget v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mExtraCount:I
 
-    add-int/2addr v1, v2
-
-    invoke-virtual {v0, v1}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->setGridView(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->setGridView(I)V
 
     :goto_3
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
-    invoke-virtual {v0, v4}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->setEmergencyContactExists(Z)V
+    iget-object v1, v1, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mSyncGroupItemAdapter:Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;
+
+    iget-object v2, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    iget v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mExtraCount:I
+
+    invoke-virtual {v1, p3, v2}, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;->updateByCursor(Landroid/database/Cursor;I)V
+
+    iget-object v1, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    invoke-virtual {v1}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->restoreContainerState()V
 
     goto :goto_2
 
     :cond_9
-    iget-object v0, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+    invoke-interface {p3}, Landroid/database/Cursor;->getCount()I
+
+    move-result v2
+
+    iget-object v3, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    iget v3, v3, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->EMERGENCY_CONTACT_MAX_COUNT:I
+
+    if-eq v2, v3, :cond_a
 
     invoke-interface {p3}, Landroid/database/Cursor;->getCount()I
 
-    move-result v1
+    move-result v2
+
+    iget-object v3, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    invoke-static {v3}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->-get4(Lcom/android/phone/emergencydialer/SyncGroupItemContainer;)I
+
+    move-result v3
+
+    if-lt v2, v3, :cond_b
+
+    :cond_a
+    iget-object v2, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    iput v1, v2, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mExtraCount:I
 
     iget-object v2, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
 
-    iget v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mExtraCount:I
+    invoke-interface {p3}, Landroid/database/Cursor;->getCount()I
 
-    add-int/2addr v1, v2
+    move-result v3
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->setGridView(I)V
+    iget-object v4, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    iget v4, v4, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mExtraCount:I
+
+    add-int/2addr v3, v4
+
+    invoke-virtual {v2, v3}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->setGridView(I)V
+
+    :goto_4
+    iget-object v2, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    invoke-virtual {v2, v1}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->setEmergencyContactExists(Z)V
 
     goto :goto_3
 
-    nop
+    :cond_b
+    iget-object v2, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    invoke-interface {p3}, Landroid/database/Cursor;->getCount()I
+
+    move-result v3
+
+    iget-object v4, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    iget v4, v4, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mExtraCount:I
+
+    add-int/2addr v3, v4
+
+    invoke-virtual {v2, v3}, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->setGridView(I)V
+
+    goto :goto_4
 
     :pswitch_data_0
     .packed-switch 0x1

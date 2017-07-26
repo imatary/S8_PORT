@@ -58,19 +58,19 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
 
-    const v4, 0x7f0d05a8
+    const v4, 0x7f0d060c
 
-    const v3, 0x7f0d055b
+    const v3, 0x7f0d05bf
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    const v1, 0x7f0d01f1
+    const v1, 0x7f0d024e
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallAlert;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f0d0234
+    const v2, 0x7f0d0292
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/CallAlert;->getString(I)Ljava/lang/String;
 
@@ -363,7 +363,7 @@
 
     invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onResume()V
 
-    const v4, 0x7f0d01f6
+    const v4, 0x7f0d0253
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallAlert;->getString(I)Ljava/lang/String;
 
@@ -620,7 +620,7 @@
 
     const/4 v9, 0x0
 
-    const v8, 0x7f0d01f6
+    const v8, 0x7f0d0253
 
     const/4 v5, 0x1
 
@@ -645,7 +645,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d024c
+    const v3, 0x7f0d02ab
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallAlert;->getString(I)Ljava/lang/String;
 
@@ -687,7 +687,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d024d
+    const v3, 0x7f0d02ac
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallAlert;->getString(I)Ljava/lang/String;
 
@@ -729,7 +729,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d024e
+    const v3, 0x7f0d02ad
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallAlert;->getString(I)Ljava/lang/String;
 
@@ -797,7 +797,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d024f
+    const v3, 0x7f0d02ae
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallAlert;->getString(I)Ljava/lang/String;
 
@@ -839,7 +839,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0250
+    const v3, 0x7f0d02af
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallAlert;->getString(I)Ljava/lang/String;
 

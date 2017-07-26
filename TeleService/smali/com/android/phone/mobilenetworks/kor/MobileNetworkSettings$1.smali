@@ -109,7 +109,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->-wrap5(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;Landroid/preference/ListPreference;)V
+    invoke-static {v1, v2}, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->-wrap4(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;Landroid/preference/ListPreference;)V
 
     goto :goto_0
 

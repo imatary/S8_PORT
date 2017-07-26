@@ -1083,7 +1083,7 @@
     if-ge v4, v7, :cond_1
 
     :cond_0
-    const v4, 0x7f0d05cc
+    const v4, 0x7f0d0630
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -1108,7 +1108,7 @@
     if-ge v4, v7, :cond_3
 
     :cond_2
-    const v4, 0x7f0d05cd
+    const v4, 0x7f0d0631
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -1128,7 +1128,7 @@
     if-ge v4, v7, :cond_5
 
     :cond_4
-    const v4, 0x7f0d05ce
+    const v4, 0x7f0d0632
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -1143,7 +1143,7 @@
 
     if-nez v4, :cond_6
 
-    const v4, 0x7f0d05d0
+    const v4, 0x7f0d0634
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -1152,7 +1152,7 @@
     goto :goto_0
 
     :cond_6
-    const v4, 0x7f0d050c
+    const v4, 0x7f0d056c
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -1963,7 +1963,7 @@
 
     :cond_8
     :goto_2
-    const v3, 0x7f0d05c2
+    const v3, 0x7f0d0626
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -2128,7 +2128,7 @@
 
     if-nez v3, :cond_9
 
-    const v3, 0x7f0d05c2
+    const v3, 0x7f0d0626
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -2323,7 +2323,7 @@
 
     :cond_1a
     :goto_8
-    const v3, 0x7f0d05c1
+    const v3, 0x7f0d0625
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -2452,7 +2452,7 @@
 
     if-nez v3, :cond_1b
 
-    const v3, 0x7f0d05c1
+    const v3, 0x7f0d0625
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -2603,7 +2603,7 @@
 
     invoke-static {v1}, Lcom/android/phone/callsettings/CallBarring;->log(Ljava/lang/String;)V
 
-    const v1, 0x7f0d05cf
+    const v1, 0x7f0d0633
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -4314,7 +4314,7 @@
 .method private showPasswordDialog()V
     .locals 6
 
-    const v4, 0x7f0d0210
+    const v4, 0x7f0d026e
 
     const/4 v5, 0x0
 
@@ -4338,13 +4338,13 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0229
+    const v3, 0x7f0d0287
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v4, 0x7f0d05d9
+    const v4, 0x7f0d063d
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -5106,11 +5106,11 @@
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 11
 
-    const v10, 0x7f0d0210
+    const v10, 0x7f0d026e
 
     const/16 v6, 0x3e8
 
-    const v9, 0x7f0d050c
+    const v9, 0x7f0d056c
 
     const/4 v8, 0x0
 
@@ -5140,7 +5140,7 @@
 
     sparse-switch p1, :sswitch_data_0
 
-    const v2, 0x7f0d05c9
+    const v2, 0x7f0d062d
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -5211,7 +5211,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d05c9
+    const v6, 0x7f0d062d
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -5234,7 +5234,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/CallBarring;->editText:Landroid/widget/EditText;
 
-    const v5, 0x7f0d05d8
+    const v5, 0x7f0d063c
 
     invoke-virtual {v4, v5}, Landroid/widget/EditText;->setHint(I)V
 
@@ -5248,13 +5248,13 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0229
+    const v5, 0x7f0d0287
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
-    const v6, 0x7f0d05d7
+    const v6, 0x7f0d063b
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -5270,7 +5270,7 @@
 
     invoke-direct {v0, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d05d7
+    const v4, 0x7f0d063b
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -5288,7 +5288,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/callsettings/CallBarring$15;-><init>(Lcom/android/phone/callsettings/CallBarring;)V
 
-    const v5, 0x7f0d050d
+    const v5, 0x7f0d056d
 
     invoke-virtual {v0, v5, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -5355,7 +5355,7 @@
     sparse-switch p1, :sswitch_data_1
 
     :sswitch_2
-    const v3, 0x7f0d032d
+    const v3, 0x7f0d038d
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
@@ -5367,7 +5367,7 @@
 
     sparse-switch p1, :sswitch_data_2
 
-    const v2, 0x7f0d0332
+    const v2, 0x7f0d0392
 
     :cond_1
     :goto_1
@@ -5430,22 +5430,22 @@
     return-object v4
 
     :sswitch_5
-    const v2, 0x7f0d0331
+    const v2, 0x7f0d0391
 
     goto :goto_1
 
     :sswitch_6
-    const v2, 0x7f0d0333
+    const v2, 0x7f0d0393
 
     goto :goto_1
 
     :sswitch_7
-    const v2, 0x7f0d05ca
+    const v2, 0x7f0d062e
 
     goto :goto_1
 
     :sswitch_8
-    const v2, 0x7f0d05cb
+    const v2, 0x7f0d062f
 
     const-string/jumbo v4, "feature_org"
 
@@ -5495,9 +5495,9 @@
     return-object v4
 
     :sswitch_9
-    const v3, 0x7f0d0505
+    const v3, 0x7f0d0565
 
-    const v2, 0x7f0d05b6
+    const v2, 0x7f0d061a
 
     goto/16 :goto_1
 
@@ -5569,13 +5569,13 @@
     invoke-static {v0, v1, v2}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
 
     :goto_0
-    const v0, 0x7f0d0201
+    const v0, 0x7f0d025e
 
     invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f0d0218
+    const v1, 0x7f0d0276
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -5586,13 +5586,13 @@
     return-void
 
     :cond_2
-    const v0, 0x7f0d05d9
+    const v0, 0x7f0d063d
 
     invoke-interface {p1, v1, v2, v1, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f0200bc
+    const v1, 0x7f0200bf
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -5730,13 +5730,13 @@
     return v0
 
     :pswitch_0
-    const v0, 0x7f0d0201
+    const v0, 0x7f0d025e
 
     invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f0d026d
+    const v1, 0x7f0d02cc
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -5777,7 +5777,7 @@
 
     invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onResume()V
 
-    const v0, 0x7f0d0201
+    const v0, 0x7f0d025e
 
     invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -5961,7 +5961,7 @@
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 9
 
-    const v8, 0x7f0d0201
+    const v8, 0x7f0d025e
 
     const/4 v2, 0x1
 
@@ -6005,7 +6005,7 @@
 
     move-result-object v4
 
-    const v1, 0x7f0d0268
+    const v1, 0x7f0d02c7
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -6041,7 +6041,7 @@
 
     move-result-object v4
 
-    const v1, 0x7f0d0269
+    const v1, 0x7f0d02c8
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -6077,7 +6077,7 @@
 
     move-result-object v4
 
-    const v1, 0x7f0d026a
+    const v1, 0x7f0d02c9
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -6115,7 +6115,7 @@
 
     move-result-object v4
 
-    const v1, 0x7f0d026b
+    const v1, 0x7f0d02ca
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -6153,7 +6153,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f0d026c
+    const v4, 0x7f0d02cb
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 

@@ -448,11 +448,7 @@
 .end method
 
 .method private checkDataConnectionAutoSelect()V
-    .locals 6
-
-    const v5, 0x7f0d0655
-
-    const v4, 0x1040013
+    .locals 5
 
     const-string/jumbo v1, "NetworkOperators_Lgt"
 
@@ -496,11 +492,13 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v1, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
+    const v2, 0x7f0d06b9
+
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0d064b
+    const v2, 0x7f0d06af
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -508,7 +506,9 @@
 
     iget-object v2, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mAlertDialogListener:Landroid/content/DialogInterface$OnClickListener;
 
-    invoke-virtual {v1, v4, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    const v3, 0x1040013
+
+    invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
@@ -526,71 +526,13 @@
     return-void
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getMobileDataEnabled()Z
+    iget-object v1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mHandler:Landroid/os/Handler;
 
-    move-result v1
+    const-wide/16 v2, 0x1f4
 
-    if-nez v1, :cond_2
+    const/16 v4, 0x7d6
 
-    const/4 v1, 0x2
-
-    if-eq v0, v1, :cond_1
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_2
-
-    :cond_1
-    const-string/jumbo v1, "NetworkOperators_Lgt"
-
-    const-string/jumbo v2, "Data is still not disconnected"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v1, Landroid/app/AlertDialog$Builder;
-
-    invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v1, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v1
-
-    const v2, 0x7f0d03f0
-
-    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mDisconnectAutoSelectDialogListener:Landroid/content/DialogInterface$OnClickListener;
-
-    invoke-virtual {v1, v4, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mAlertDialogListener:Landroid/content/DialogInterface$OnClickListener;
-
-    const v3, 0x1040009
-
-    invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p0}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mFailDialog:Landroid/app/AlertDialog;
-
-    goto :goto_0
-
-    :cond_2
-    const/4 v1, 0x0
-
-    invoke-direct {p0, v1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->selectNetworkAutomatic(I)V
+    invoke-virtual {v1, v4, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_0
 .end method
@@ -598,10 +540,6 @@
 .method private checkDataConnectionSearchButton()V
     .locals 6
 
-    const v5, 0x7f0d0655
-
-    const v4, 0x1040013
-
     const-string/jumbo v1, "NetworkOperators_Lgt"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -644,11 +582,13 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v1, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
+    const v2, 0x7f0d06b9
+
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0d064b
+    const v2, 0x7f0d06af
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -656,7 +596,9 @@
 
     iget-object v2, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mAlertDialogListener:Landroid/content/DialogInterface$OnClickListener;
 
-    invoke-virtual {v1, v4, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    const v3, 0x1040013
+
+    invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
@@ -674,71 +616,9 @@
     return-void
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getMobileDataEnabled()Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    const/4 v1, 0x2
-
-    if-eq v0, v1, :cond_1
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_2
-
-    :cond_1
-    const-string/jumbo v1, "NetworkOperators_Lgt"
-
-    const-string/jumbo v2, "Data is still not disconnected"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v1, Landroid/app/AlertDialog$Builder;
-
-    invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v1, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v1
-
-    const v2, 0x7f0d0656
-
-    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mDisconnectSearchDialogListener:Landroid/content/DialogInterface$OnClickListener;
-
-    invoke-virtual {v1, v4, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mAlertDialogListener:Landroid/content/DialogInterface$OnClickListener;
-
-    const v3, 0x1040009
-
-    invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p0}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mFailDialog:Landroid/app/AlertDialog;
-
-    goto :goto_0
-
-    :cond_2
     iget-object v1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mCategorySearchNetwork:Landroid/preference/PreferenceCategory;
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_1
 
     const-string/jumbo v1, "NetworkOperators_Lgt"
 
@@ -766,7 +646,7 @@
 
     goto :goto_0
 
-    :cond_3
+    :cond_1
     const-string/jumbo v1, "NetworkOperators_Lgt"
 
     const-string/jumbo v2, "DIALOG_NETWORK_LIST_LOAD"
@@ -785,7 +665,7 @@
 .method private checkDataConnectionSelectList()V
     .locals 6
 
-    const v5, 0x7f0d0655
+    const v5, 0x7f0d06b9
 
     const v4, 0x1040013
 
@@ -835,7 +715,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d064b
+    const v2, 0x7f0d06af
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -890,7 +770,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d03f0
+    const v2, 0x7f0d0450
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -1094,7 +974,7 @@
 
     const-string/jumbo v2, "O"
 
-    const v3, 0x7f0d0357
+    const v3, 0x7f0d03b7
 
     invoke-virtual {p2, v3}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -1123,7 +1003,7 @@
 
     if-eqz p1, :cond_0
 
-    const v0, 0x7f0d0346
+    const v0, 0x7f0d03a6
 
     :goto_0
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->setTitle(I)V
@@ -1131,7 +1011,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f0d0343
+    const v0, 0x7f0d03a3
 
     goto :goto_0
 .end method
@@ -1173,7 +1053,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d034a
+    const v1, 0x7f0d03aa
 
     invoke-static {v0, v1, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1307,7 +1187,7 @@
 .method private displayNetworkSelectionFailed(Ljava/lang/Throwable;I)V
     .locals 7
 
-    const v6, 0x7f0d06d1
+    const v6, 0x7f0d0735
 
     const/4 v5, 0x1
 
@@ -1448,7 +1328,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d06d3
+    const v4, 0x7f0d0737
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1477,7 +1357,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d034c
+    const v4, 0x7f0d03ac
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1500,7 +1380,7 @@
 .method private displayNetworkSelectionSucceeded()V
     .locals 10
 
-    const v9, 0x7f0d0c81
+    const v9, 0x7f0d0cf2
 
     const/4 v8, 0x0
 
@@ -2398,7 +2278,7 @@
 
     aput-object v15, v14, v16
 
-    const v15, 0x7f0d0c88
+    const v15, 0x7f0d0cf9
 
     invoke-virtual {v13, v15, v14}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2544,7 +2424,7 @@
 
     aput-object v15, v14, v16
 
-    const v15, 0x7f0d0c88
+    const v15, 0x7f0d0cf9
 
     invoke-virtual {v13, v15, v14}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2649,7 +2529,7 @@
 
     aput-object v13, v15, v16
 
-    const v13, 0x7f0d0c88
+    const v13, 0x7f0d0cf9
 
     invoke-virtual {v14, v13, v15}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3824,7 +3704,7 @@
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 7
 
-    const v6, 0x7f0d0c7f
+    const v6, 0x7f0d0cf0
 
     const v5, 0x1040013
 
@@ -3903,7 +3783,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0c6e
+    const v1, 0x7f0d0cdf
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -3960,7 +3840,7 @@
     :sswitch_2
     iget-object v2, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mDialog:Landroid/app/ProgressDialog;
 
-    const v3, 0x7f0d0c6c
+    const v3, 0x7f0d0cdd
 
     invoke-virtual {p0, v3}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getString(I)Ljava/lang/String;
 
@@ -3981,7 +3861,7 @@
     :sswitch_3
     iget-object v2, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mDialog:Landroid/app/ProgressDialog;
 
-    const v3, 0x7f0d0c7e
+    const v3, 0x7f0d0cef
 
     invoke-virtual {p0, v3}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getString(I)Ljava/lang/String;
 
@@ -4044,7 +3924,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0c6f
+    const v1, 0x7f0d0ce0
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -4069,13 +3949,13 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0c7c
+    const v1, 0x7f0d0ced
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0d0c7d
+    const v1, 0x7f0d0cee
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -4112,7 +3992,7 @@
 
     const/4 v0, 0x3
 
-    const v1, 0x7f0d0c6b
+    const v1, 0x7f0d0cdc
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -4294,32 +4174,21 @@
     goto :goto_0
 
     :sswitch_2
-    invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getMobileDataEnabled()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const-string/jumbo v1, "Mobile data on && TelephonyManager.DATA_DISCONNECTED"
-
-    invoke-static {v1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->log(Ljava/lang/String;)V
-
     invoke-direct {p0, v3}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->setMobileDataEnabled(Z)V
 
-    :cond_0
     iget-object v1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mCategorySearchNetwork:Landroid/preference/PreferenceCategory;
-
-    if-eqz v1, :cond_2
-
-    iget-object v1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->progressThread:Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT$ProgressThread;
 
     if-eqz v1, :cond_1
 
     iget-object v1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->progressThread:Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT$ProgressThread;
 
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->progressThread:Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT$ProgressThread;
+
     invoke-virtual {v1, v3}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT$ProgressThread;->setState(I)V
 
-    :cond_1
+    :cond_0
     iget-object v1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mHandler:Landroid/os/Handler;
 
     const/16 v2, 0x7d3
@@ -4330,7 +4199,7 @@
 
     goto :goto_0
 
-    :cond_2
+    :cond_1
     const-string/jumbo v1, "Show network selection mDialog"
 
     invoke-static {v1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->log(Ljava/lang/String;)V
@@ -4523,7 +4392,7 @@
 
     const-wide/16 v8, 0x0
 
-    const v6, 0x7f0d0293
+    const v6, 0x7f0d02f3
 
     const/16 v5, 0x1f4
 
@@ -4598,13 +4467,13 @@
 
     move-result v1
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_3
 
     invoke-virtual {p0, v6}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f0d0297
+    const v2, 0x7f0d02f7
 
     invoke-virtual {p0, v2}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getString(I)Ljava/lang/String;
 
@@ -4653,29 +4522,18 @@
     return v4
 
     :cond_2
-    invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getMobileDataEnabled()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    const-string/jumbo v1, "Mobile data on && TelephonyManager.DATA_DISCONNECTED"
-
-    invoke-static {v1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->log(Ljava/lang/String;)V
-
     invoke-direct {p0, v3}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->setMobileDataEnabled(Z)V
 
-    :cond_3
     invoke-direct {p0, v3}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->selectNetworkAutomatic(I)V
 
     goto :goto_0
 
-    :cond_4
+    :cond_3
     invoke-virtual {p0, v6}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f0d0296
+    const v2, 0x7f0d02f6
 
     invoke-virtual {p0, v2}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getString(I)Ljava/lang/String;
 
@@ -4687,7 +4545,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_4
 
     invoke-virtual {p0, v5}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->showDialog(I)V
 
@@ -4697,20 +4555,9 @@
 
     return v4
 
-    :cond_5
-    invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getMobileDataEnabled()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_6
-
-    const-string/jumbo v1, "Mobile data on && TelephonyManager.DATA_DISCONNECTED"
-
-    invoke-static {v1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->log(Ljava/lang/String;)V
-
+    :cond_4
     invoke-direct {p0, v3}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->setMobileDataEnabled(Z)V
 
-    :cond_6
     iget-object v1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v5, v8, v9}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
@@ -5143,7 +4990,7 @@
 
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
-    const v1, 0x7f0d0293
+    const v1, 0x7f0d02f3
 
     invoke-virtual {p0, v1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getString(I)Ljava/lang/String;
 
@@ -5175,7 +5022,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0c6f
+    const v2, 0x7f0d0ce0
 
     invoke-static {v1, v2, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

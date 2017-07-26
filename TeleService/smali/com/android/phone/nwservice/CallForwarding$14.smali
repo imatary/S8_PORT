@@ -75,7 +75,7 @@
 
     iget-object v1, p0, Lcom/android/phone/nwservice/CallForwarding$14;->this$0:Lcom/android/phone/nwservice/CallForwarding;
 
-    const v2, 0x7f0d0ac9
+    const v2, 0x7f0d0b30
 
     invoke-virtual {v1, v2}, Lcom/android/phone/nwservice/CallForwarding;->getString(I)Ljava/lang/String;
 
@@ -120,7 +120,7 @@
 
     iget-object v1, p0, Lcom/android/phone/nwservice/CallForwarding$14;->this$0:Lcom/android/phone/nwservice/CallForwarding;
 
-    const v2, 0x7f0d0aca
+    const v2, 0x7f0d0b31
 
     invoke-virtual {v1, v2}, Lcom/android/phone/nwservice/CallForwarding;->getString(I)Ljava/lang/String;
 

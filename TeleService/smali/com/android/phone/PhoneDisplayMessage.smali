@@ -111,19 +111,6 @@
 .method public static displayDialogVZWMessage(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
 
-    const/4 v1, 0x0
-
-    sget-object v0, Lcom/android/phone/PhoneDisplayMessage;->sDisplayVZWMessageDialog:Landroid/app/AlertDialog;
-
-    if-eqz v0, :cond_0
-
-    sget-object v0, Lcom/android/phone/PhoneDisplayMessage;->sDisplayVZWMessageDialog:Landroid/app/AlertDialog;
-
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
-
-    sput-object v1, Lcom/android/phone/PhoneDisplayMessage;->sDisplayVZWMessageDialog:Landroid/app/AlertDialog;
-
-    :cond_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     new-instance v1, Landroid/view/ContextThemeWrapper;
@@ -325,7 +312,7 @@
     invoke-static {v1}, Lcom/android/phone/PhoneDisplayMessage;->log(Ljava/lang/String;)V
 
     :cond_0
-    const v1, 0x7f0d0484
+    const v1, 0x7f0d04e4
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

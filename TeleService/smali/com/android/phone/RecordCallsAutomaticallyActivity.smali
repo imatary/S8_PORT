@@ -65,11 +65,11 @@
 
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
 
-    const v0, 0x7f0d0c0c
+    const v0, 0x7f0d0c7b
 
-    const v1, 0x7f0d0c0d
+    const v1, 0x7f0d0c7c
 
-    const v2, 0x7f0d0c0b
+    const v2, 0x7f0d0c7a
 
     filled-new-array {v0, v1, v2}, [I
 
@@ -199,7 +199,7 @@
 
     iget-object v1, p0, Lcom/android/phone/RecordCallsAutomaticallyActivity;->mSubAppBarOnffTextview:Landroid/widget/TextView;
 
-    const v2, 0x7f0d0695
+    const v2, 0x7f0d06f9
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -215,7 +215,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/phone/RecordCallsAutomaticallyActivity;->mSubAppBarOnffTextview:Landroid/widget/TextView;
 
-    const v2, 0x7f0d0694
+    const v2, 0x7f0d06f8
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -265,13 +265,13 @@
 
     invoke-static {v0, v3, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    const v0, 0x7f0d01fa
+    const v0, 0x7f0d0257
 
     invoke-virtual {p0, v0}, Lcom/android/phone/RecordCallsAutomaticallyActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v0, 0x7f0d023c
+    const v0, 0x7f0d029a
 
     invoke-virtual {p0, v0}, Lcom/android/phone/RecordCallsAutomaticallyActivity;->getString(I)Ljava/lang/String;
 
@@ -292,7 +292,7 @@
 
     iget-object v0, p0, Lcom/android/phone/RecordCallsAutomaticallyActivity;->mSubAppBarOnffTextview:Landroid/widget/TextView;
 
-    const v2, 0x7f0d0695
+    const v2, 0x7f0d06f9
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -319,7 +319,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/RecordCallsAutomaticallyActivity;->mSubAppBarOnffTextview:Landroid/widget/TextView;
 
-    const v1, 0x7f0d0694
+    const v1, 0x7f0d06f8
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -341,13 +341,13 @@
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const v1, 0x7f0d0215
+    const v1, 0x7f0d0273
 
     invoke-virtual {p0, v1}, Lcom/android/phone/RecordCallsAutomaticallyActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f0d023a
+    const v2, 0x7f0d0298
 
     invoke-virtual {p0, v2}, Lcom/android/phone/RecordCallsAutomaticallyActivity;->getString(I)Ljava/lang/String;
 
@@ -506,13 +506,13 @@
 
     if-ne v0, v1, :cond_0
 
-    const v1, 0x7f0d01fa
+    const v1, 0x7f0d0257
 
     invoke-virtual {p0, v1}, Lcom/android/phone/RecordCallsAutomaticallyActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f0d0217
+    const v2, 0x7f0d0275
 
     invoke-virtual {p0, v2}, Lcom/android/phone/RecordCallsAutomaticallyActivity;->getString(I)Ljava/lang/String;
 
@@ -582,13 +582,13 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f0d01fa
+    const v2, 0x7f0d0257
 
     invoke-virtual {p0, v2}, Lcom/android/phone/RecordCallsAutomaticallyActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v3, 0x7f0d0255
+    const v3, 0x7f0d02b4
 
     invoke-virtual {p0, v3}, Lcom/android/phone/RecordCallsAutomaticallyActivity;->getString(I)Ljava/lang/String;
 
@@ -662,7 +662,7 @@
 
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
-    const v0, 0x7f0d01fa
+    const v0, 0x7f0d0257
 
     invoke-virtual {p0, v0}, Lcom/android/phone/RecordCallsAutomaticallyActivity;->getString(I)Ljava/lang/String;
 

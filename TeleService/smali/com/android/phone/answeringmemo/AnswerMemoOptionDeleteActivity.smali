@@ -326,7 +326,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0cc2
+    const v4, 0x7f0d0d33
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -364,7 +364,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f0d0cba
+    const v3, 0x7f0d0d2b
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -374,7 +374,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0ccb
+    const v4, 0x7f0d0d3c
 
     invoke-virtual {p0, v4}, Lcom/android/phone/answeringmemo/AnswerMemoOptionDeleteActivity;->getString(I)Ljava/lang/String;
 
@@ -386,7 +386,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d086a
+    const v4, 0x7f0d08ce
 
     invoke-virtual {p0, v4}, Lcom/android/phone/answeringmemo/AnswerMemoOptionDeleteActivity;->getString(I)Ljava/lang/String;
 
@@ -413,7 +413,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0cc3
+    const v4, 0x7f0d0d34
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1111,7 +1111,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d09f7
+    const v3, 0x7f0d0a5e
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1139,7 +1139,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0506
+    const v4, 0x7f0d0566
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1317,7 +1317,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0506
+    const v5, 0x7f0d0566
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1415,7 +1415,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d09f7
+    const v3, 0x7f0d0a5e
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1458,7 +1458,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0506
+    const v4, 0x7f0d0566
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1565,7 +1565,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0ccd
+    const v3, 0x7f0d0d3e
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1621,7 +1621,7 @@
 
     iget-object v0, p0, Lcom/android/phone/answeringmemo/AnswerMemoOptionDeleteActivity;->mActionBar:Landroid/app/ActionBar;
 
-    const v2, 0x7f0d09d5
+    const v2, 0x7f0d0a3b
 
     invoke-virtual {v0, v2}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -1653,7 +1653,7 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f0e0095
+    const v2, 0x7f0e0096
 
     invoke-virtual {p0, v2}, Lcom/android/phone/answeringmemo/AnswerMemoOptionDeleteActivity;->setTheme(I)V
 
@@ -1822,7 +1822,7 @@
     invoke-interface {v1, v3}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
     :goto_0
-    const v1, 0x7f1002e2
+    const v1, 0x7f1002e5
 
     invoke-interface {p1, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2459,7 +2459,7 @@
 
     invoke-virtual {v2, v3}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    const v2, 0x7f0d0cc4
+    const v2, 0x7f0d0d35
 
     const/4 v3, 0x0
 

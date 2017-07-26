@@ -53,4 +53,5 @@
     <dimen name="incoming_call_widget_arrow_margin_bottom_l_up">14.0dip</dimen>
     <dimen name="incoming_call_widget_arrow_margin_right_l_up">0.0dip</dimen>
     <dimen name="incoming_call_widget_arrow_margin_left_l_up">0.0dip</dimen>
+    <dimen name="emergency_actionbar_divider_height">3.0px</dimen>
 </resources>

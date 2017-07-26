@@ -3,7 +3,7 @@
 .source "VzwAdvancedCallingSettings.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/content/DialogInterface$OnCancelListener;
 
 
 # annotations
@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
+.method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
 
     return-void

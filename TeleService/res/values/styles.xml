@@ -871,6 +871,7 @@
         <item name="android:paddingStart">@dimen/tw_pop_up_dialog_padding_left</item>
         <item name="android:paddingEnd">@dimen/tw_pop_up_dialog_margin_right</item>
     </style>
+    <style name="EmergencyAlertTheme" parent="@android:style/Theme.DeviceDefault.Dialog.Alert" />
     <style name="EmergencyDialerActionBarTitleText" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
         <item name="android:textColor">@color/emergency_call_actionbar_text_color</item>
     </style>
@@ -912,6 +913,7 @@
         <item name="android:textAllCaps">false</item>
     </style>
     <style name="EmergencyDialerActionBar" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
+        <item name="android:background">@drawable/emergency_call_actionbar_bg</item>
         <item name="android:titleTextStyle">@style/EmergencyDialerActionBarTitleText</item>
     </style>
     <style name="EmergencyDialerActionMode" parent="@android:style/Widget.DeviceDefault.ActionMode">

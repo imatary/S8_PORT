@@ -145,7 +145,7 @@
 .method private changeToBlockList()V
     .locals 3
 
-    const v2, 0x7f0d0527
+    const v2, 0x7f0d0587
 
     const/4 v1, 0x0
 
@@ -172,7 +172,7 @@
 
     iget-object v0, v0, Lcom/android/phone/callsettings/AutoRejectPreference$AutoRejectModeInfo;->mPreference:Landroid/preference/PreferenceScreen;
 
-    const v1, 0x7f0d0528
+    const v1, 0x7f0d0588
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setTitle(I)V
 
@@ -200,13 +200,13 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AutoRejectPreference;->mBlockList:Landroid/preference/PreferenceScreen;
 
-    const v1, 0x7f0d0530
+    const v1, 0x7f0d0590
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AutoRejectPreference;->mBlockList:Landroid/preference/PreferenceScreen;
 
-    const v1, 0x7f0d0531
+    const v1, 0x7f0d0591
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setSummary(I)V
 
@@ -217,13 +217,13 @@
     :cond_4
     iget-object v0, p0, Lcom/android/phone/callsettings/AutoRejectPreference;->mBlockList:Landroid/preference/PreferenceScreen;
 
-    const v1, 0x7f0d052b
+    const v1, 0x7f0d058b
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AutoRejectPreference;->mBlockList:Landroid/preference/PreferenceScreen;
 
-    const v1, 0x7f0d052c
+    const v1, 0x7f0d058c
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setSummary(I)V
 
@@ -482,7 +482,7 @@
 
     invoke-direct {v2, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f0d0528
+    const v3, 0x7f0d0588
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -496,7 +496,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/AutoRejectPreference$2;-><init>(Lcom/android/phone/callsettings/AutoRejectPreference;)V
 
-    const v4, 0x7f0d02c7
+    const v4, 0x7f0d0327
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -580,7 +580,7 @@
 
     const/4 v5, 0x1
 
-    const v3, 0x7f0d0517
+    const v3, 0x7f0d0577
 
     iget-object v4, p1, Lcom/android/phone/callsettings/AutoRejectPreference$AutoRejectModeInfo;->mModeSettingName:Ljava/lang/String;
 
@@ -590,7 +590,7 @@
 
     if-ne v0, v5, :cond_1
 
-    const v3, 0x7f0d0529
+    const v3, 0x7f0d0589
 
     :goto_0
     invoke-virtual {p0}, Lcom/android/phone/callsettings/AutoRejectPreference;->getActivity()Landroid/app/Activity;
@@ -609,7 +609,7 @@
 
     if-nez v1, :cond_0
 
-    const v3, 0x7f0d0501
+    const v3, 0x7f0d0561
 
     :cond_0
     iget-object v4, p1, Lcom/android/phone/callsettings/AutoRejectPreference$AutoRejectModeInfo;->mPreference:Landroid/preference/PreferenceScreen;
@@ -629,12 +629,12 @@
 
     if-ne v0, v4, :cond_2
 
-    const v3, 0x7f0d052a
+    const v3, 0x7f0d058a
 
     goto :goto_0
 
     :cond_2
-    const v3, 0x7f0d0501
+    const v3, 0x7f0d0561
 
     goto :goto_0
 .end method
@@ -778,7 +778,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/AutoRejectPreference;->mRejectMsgCategory:Landroid/preference/PreferenceGroup;
 
-    const v2, 0x7f0d04e6
+    const v2, 0x7f0d0546
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceGroup;->setTitle(I)V
 

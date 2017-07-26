@@ -329,7 +329,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f0d0208
+    const v5, 0x7f0d0265
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -339,7 +339,7 @@
 
     move-result-object v2
 
-    const v6, 0x7f0d0244
+    const v6, 0x7f0d02a2
 
     invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -391,7 +391,6 @@
     invoke-direct {p0}, Lcom/android/phone/callsettings/WifiCallActivity;->showEmergencyCallDialog()V
 
     :cond_0
-    :goto_1
     invoke-virtual {p0}, Lcom/android/phone/callsettings/WifiCallActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
@@ -400,7 +399,7 @@
 
     if-eqz p1, :cond_8
 
-    :goto_2
+    :goto_1
     invoke-static {v2, v5, v3}, Lcom/android/phone/VoWifiSettingsDataBaseManager;->setInt(Landroid/content/Context;Ljava/lang/String;I)V
 
     const-string/jumbo v2, "vowifi_in_can"
@@ -418,7 +417,7 @@
     if-eqz v2, :cond_9
 
     :cond_1
-    :goto_3
+    :goto_2
     return-void
 
     :cond_2
@@ -439,7 +438,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/WifiCallActivity;->showWfcInfoDialogForLatin()V
 
-    goto :goto_1
+    return-void
 
     :cond_4
     const-string/jumbo v2, "support_wfc_opl"
@@ -500,12 +499,12 @@
     :cond_8
     move v3, v4
 
-    goto :goto_2
+    goto :goto_1
 
     :cond_9
     invoke-direct {p0}, Lcom/android/phone/callsettings/WifiCallActivity;->showProgressDialogForRogers()V
 
-    goto :goto_3
+    goto :goto_2
 .end method
 
 .method private initLayout(Landroid/view/View;)V
@@ -603,7 +602,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0c95
+    const v3, 0x7f0d0d06
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -944,7 +943,7 @@
 
     if-ne p1, v4, :cond_2
 
-    const v0, 0x7f0d027c
+    const v0, 0x7f0d02db
 
     :cond_0
     :goto_0
@@ -954,7 +953,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0208
+    const v2, 0x7f0d0265
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -978,7 +977,7 @@
 
     if-ne p1, v1, :cond_3
 
-    const v0, 0x7f0d027b
+    const v0, 0x7f0d02da
 
     goto :goto_0
 
@@ -987,7 +986,7 @@
 
     if-ne p1, v1, :cond_0
 
-    const v0, 0x7f0d027d
+    const v0, 0x7f0d02dc
 
     goto :goto_0
 .end method
@@ -1027,7 +1026,7 @@
 
     invoke-direct {v4, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f0d0cf1
+    const v5, 0x7f0d0d62
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1037,7 +1036,7 @@
 
     invoke-direct {v5, p0, v0}, Lcom/android/phone/callsettings/WifiCallActivity$7;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;Landroid/widget/CheckBox;)V
 
-    const v6, 0x7f0d02ca
+    const v6, 0x7f0d032a
 
     invoke-virtual {v4, v6, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1083,7 +1082,7 @@
 
     check-cast v1, Landroid/widget/CheckBox;
 
-    const v6, 0x7f1002da
+    const v6, 0x7f1002dd
 
     invoke-virtual {v4, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1101,7 +1100,7 @@
 
     if-eqz v6, :cond_1
 
-    const v5, 0x7f0d0cf4
+    const v5, 0x7f0d0d65
 
     :goto_0
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setText(I)V
@@ -1115,21 +1114,21 @@
 
     invoke-direct {v6, v7}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    new-instance v7, Lcom/android/phone/callsettings/WifiCallActivity$11;
+    new-instance v7, Lcom/android/phone/callsettings/WifiCallActivity$12;
 
-    invoke-direct {v7, p0, v1}, Lcom/android/phone/callsettings/WifiCallActivity$11;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;Landroid/widget/CheckBox;)V
+    invoke-direct {v7, p0, v1}, Lcom/android/phone/callsettings/WifiCallActivity$12;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;Landroid/widget/CheckBox;)V
 
-    const v8, 0x7f0d02ca
+    const v8, 0x7f0d032a
 
     invoke-virtual {v6, v8, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v6
 
-    new-instance v7, Lcom/android/phone/callsettings/WifiCallActivity$12;
+    new-instance v7, Lcom/android/phone/callsettings/WifiCallActivity$13;
 
-    invoke-direct {v7, p0}, Lcom/android/phone/callsettings/WifiCallActivity$12;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;)V
+    invoke-direct {v7, p0}, Lcom/android/phone/callsettings/WifiCallActivity$13;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;)V
 
-    const v8, 0x7f0d02c7
+    const v8, 0x7f0d0327
 
     invoke-virtual {v6, v8, v7}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1151,16 +1150,16 @@
 
     invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
 
-    new-instance v6, Lcom/android/phone/callsettings/WifiCallActivity$13;
+    new-instance v6, Lcom/android/phone/callsettings/WifiCallActivity$14;
 
-    invoke-direct {v6, p0}, Lcom/android/phone/callsettings/WifiCallActivity$13;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;)V
+    invoke-direct {v6, p0}, Lcom/android/phone/callsettings/WifiCallActivity$14;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;)V
 
     invoke-virtual {v2, v6}, Landroid/app/AlertDialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
     return-void
 
     :cond_1
-    const v5, 0x7f0d0cf3
+    const v5, 0x7f0d0d64
 
     goto :goto_0
 .end method
@@ -1186,7 +1185,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0c91
+    const v2, 0x7f0d0d02
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1244,7 +1243,7 @@
 
     check-cast v1, Landroid/widget/CheckBox;
 
-    const v5, 0x7f1002da
+    const v5, 0x7f1002dd
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1254,10 +1253,17 @@
 
     if-eqz v0, :cond_0
 
-    const v5, 0x7f0d0cf5
+    invoke-static {}, Lcom/android/phone/TelephonyConfig;->isClaroBrSim()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    const v5, 0x7f0d0d67
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setText(I)V
 
+    :goto_0
     invoke-static {}, Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
 
     move-result-object v5
@@ -1277,7 +1283,7 @@
 
     invoke-direct {v6, p0, v1}, Lcom/android/phone/callsettings/WifiCallActivity$8;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;Landroid/widget/CheckBox;)V
 
-    const v7, 0x7f0d02ca
+    const v7, 0x7f0d032a
 
     invoke-virtual {v5, v7, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1287,13 +1293,32 @@
 
     move-result-object v5
 
+    const/4 v6, 0x0
+
+    invoke-virtual {v5, v6}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v5
+
     invoke-virtual {v5}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v2
 
     invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
 
+    new-instance v5, Lcom/android/phone/callsettings/WifiCallActivity$9;
+
+    invoke-direct {v5, p0}, Lcom/android/phone/callsettings/WifiCallActivity$9;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;)V
+
+    invoke-virtual {v2, v5}, Landroid/app/AlertDialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
+
     return-void
+
+    :cond_1
+    const v5, 0x7f0d0d66
+
+    invoke-virtual {v0, v5}, Landroid/widget/TextView;->setText(I)V
+
+    goto :goto_0
 .end method
 
 .method private showWfcOPLDialog()V
@@ -1323,17 +1348,17 @@
 
     invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d0cf7
+    const v4, 0x7f0d0d68
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v3
 
-    new-instance v4, Lcom/android/phone/callsettings/WifiCallActivity$9;
+    new-instance v4, Lcom/android/phone/callsettings/WifiCallActivity$10;
 
-    invoke-direct {v4, p0}, Lcom/android/phone/callsettings/WifiCallActivity$9;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;)V
+    invoke-direct {v4, p0}, Lcom/android/phone/callsettings/WifiCallActivity$10;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;)V
 
-    const v5, 0x7f0d0cfe
+    const v5, 0x7f0d0d6f
 
     invoke-virtual {v3, v5, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1355,9 +1380,9 @@
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
-    new-instance v3, Lcom/android/phone/callsettings/WifiCallActivity$10;
+    new-instance v3, Lcom/android/phone/callsettings/WifiCallActivity$11;
 
-    invoke-direct {v3, p0}, Lcom/android/phone/callsettings/WifiCallActivity$10;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;)V
+    invoke-direct {v3, p0}, Lcom/android/phone/callsettings/WifiCallActivity$11;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;)V
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
@@ -1375,23 +1400,23 @@
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d0c8e
+    const v2, 0x7f0d0cff
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0d0c92
+    const v2, 0x7f0d0d03
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/phone/callsettings/WifiCallActivity$14;
+    new-instance v2, Lcom/android/phone/callsettings/WifiCallActivity$15;
 
-    invoke-direct {v2, p0}, Lcom/android/phone/callsettings/WifiCallActivity$14;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;)V
+    invoke-direct {v2, p0}, Lcom/android/phone/callsettings/WifiCallActivity$15;-><init>(Lcom/android/phone/callsettings/WifiCallActivity;)V
 
-    const v3, 0x7f0d02ca
+    const v3, 0x7f0d032a
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1442,7 +1467,7 @@
 
     if-eqz v0, :cond_1
 
-    const v1, 0x7f0d0bcf
+    const v1, 0x7f0d0c3a
 
     :goto_1
     invoke-virtual {v4, v1}, Landroid/widget/TextView;->setText(I)V
@@ -1479,7 +1504,7 @@
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f0d0bd0
+    const v1, 0x7f0d0c3b
 
     goto :goto_1
 
@@ -1650,7 +1675,7 @@
 
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
-    const v1, 0x7f0d04b7
+    const v1, 0x7f0d0517
 
     invoke-interface {p1, v3, v4, v3, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -1797,13 +1822,13 @@
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_0
-    const v4, 0x7f0d0208
+    const v4, 0x7f0d0265
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/WifiCallActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const v5, 0x7f0d0219
+    const v5, 0x7f0d0277
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/WifiCallActivity;->getString(I)Ljava/lang/String;
 

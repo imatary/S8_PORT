@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dh %2$dm</string>
-    <string name="battery_history_minutes_no_seconds">%dm</string>
+    <string name="battery_history_hours_no_seconds">%1$d h %2$d min</string>
+    <string name="battery_history_minutes_no_seconds">%d min</string>
     <string name="wifi_failed_to_obtain_IP">Failed to obtain IP address.</string>
     <string name="wifi_unknown_security_type">Unknown security type.</string>
     <string name="wifi_disabled_no_internet">Internet not available</string>
@@ -44,6 +44,8 @@
     <string name="bluetooth_pairing_device_down_error_message">"Can't connect to %s."</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">"Can't connect to %1$s. Check your settings in %2$s and try again."</string>
     <string name="bluetooth_pairing_rejected_error_message">Pairing rejected by %s.</string>
+    <string name="bluetooth_getting_remote_device_name">Getting device name…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">Device name will appear when this device is connected.</string>
     <string name="tether_settings_title_all"><cst>Mobile hotspot and tethering</cst></string>
     <string name="unknown">Unknown</string>
     <string name="tts_settings_title">Text-to-speech</string>
@@ -549,7 +551,7 @@
     <string name="importingSimContacts">Importing SIM contacts</string>
     <string name="importToFDNfromContacts">Import from contacts</string>
     <string name="hac_mode_title">Hearing aids</string>
-    <string name="hac_mode_summary">Improve the sound quality of your <cst>device</cst>, for use with hearing aids.</string>
+    <string name="hac_mode_summary">Optimize the sound quality of your phone for hearing aids.</string>
     <string name="dtmf_tones_title">DTMF tones</string>
     <string name="dtmf_tones_summary">Set length of DTMF tones.</string>
     <string name="network_info_message">Network message</string>
@@ -729,6 +731,10 @@ The icon below will be shown whenever this function is available."</string>
     <string name="add_call_block_number_toast">You will not receive calls from this number.</string>
     <string name="delete_call_block_number_toast">You can now receive calls from this number.</string>
     <string name="emergency_call_block_number_toast">"Can't block emergency numbers."</string>
+    <string name="call_block_dialog_title">Edit Block numbers</string>
+    <string name="call_block_dialog_contents">From Android Nougat onwards, Call blocking mode is replaced by Block numbers. Instead of just blocking calls, Block numbers will automatically block both calls and messages.</string>
+    <string name="call_block_dialog_settings">Tap SETTINGS to edit Block numbers.</string>
+    <string name="call_block_dialog_button">Settings</string>
     <string name="no_block_number_description">The numbers you add will appear here.</string>
     <string name="no_messages_description">The messages you add will appear here.</string>
     <string name="callsettings_vipmode_blacklist_title">Black list</string>
@@ -1221,9 +1227,7 @@ Turn off Mobile data?"</string>
     <string name="data_usage_disable_mobile_vzw_chn">"Unless you use WLAN, you will no longer be able to use Internet, Email, or other apps that require a data connection.
 
 Mobile data will be turned off."</string>
-    <string name="mobile_data_off_dialog_text_common">Unless you use <cst>Wi-Fi</cst>", you will no longer be able to use Internet, Email, or other apps that require a data connection.
-
-Mobile data will be turned off."</string>
+    <string name="mobile_data_off_dialog_text_common">Unless you connect to a <cst>Wi-Fi</cst>" network, you won't be able to use Internet, Email, or other apps that require a network connection."</string>
     <string name="mobile_data_off_dialog_button_turn_off">Turn off</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">Unless you connect to a <cst>Wi-Fi</cst>" network, you will not be able to use the Internet, Email or other apps that require a data connection.
 
@@ -1304,6 +1308,7 @@ Additional charges may be incurred if you are not using a flat rate data plan."<
     <string name="data_3gwarning_popup_title">Mobile data</string>
     <string name="roaming_data_off_msg">To use data roaming, go to Settings > Connections > Global roaming, then turn on Data roaming.</string>
     <string name="data_3gwarning_popup_noti">Connecting to mobile networks may incur additional charges if you are not using a flat rate plan. Connect?</string>
+    <string name="data_3gwarning_popup_noti_ktt">Mobile data will be turned on to use GiGA LTE. This may result in additional charges depending on your payment plan.</string>
     <string name="lgt_4gwarning_popup_mobiledata">Mobile data will be turned on. This may result in additional charges from your service provider depending on your payment plan.</string>
     <string name="lgt_lte_data_roaming_warningmsg">"While data roaming is enabled, &lt;u>&lt;font color=\"%1$s\">international data roaming charges will apply instead of domestic data charges.&lt;/font>&lt;/u>
 
@@ -1675,6 +1680,8 @@ Contact your customer center or local dealer."</string>
     <string name="volte_call_summary_ops">Make HD voice calls on the <cst>4G</cst> network.</string>
     <string name="voice_over_lte_title_cct">VoLTE Calling</string>
     <string name="volte_call_summary_cct">Turn on advanced calling features over the 4G LTE mobile network where available.</string>
+    <string name="voice_over_lte_title_o2"><cst>4G</cst> calling</string>
+    <string name="volte_call_summary_o2">Enjoy enhanced communication using 4G data.</string>
     <string name="volte_tty_description_on">While TTY is on, you will not be able to make and receive video calls or have conference calls.</string>
     <string name="volte_prepaid_tty_description_on">TTY mode will be enabled. You will not be able to make or receive conference calls.</string>
     <string name="volte_tty_description_off">While TTY is off, you will not be able to make and receive TTY calls.</string>
@@ -1868,9 +1875,13 @@ LTE roaming will not be available if you do not agree. 3G networks may be used w
     <string name="group_voice_call_disable_on_3G">Group calls only available via 4G LTE network.</string>
     <string name="group_voice_call_outgoing_voice_call">Outgoing voice call</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">Unless you use <cst>Wi-Fi</cst>", you will no longer be able to use Internet, Email, or other apps that require a data connection.
+
+Mobile data will be turned off."</string>
     <string name="data_usage_disable_mobile_warning">Unless you connect to a <cst>Wi-Fi</cst>" network, you will not be able to use the Internet, Email or other apps that require a data connection.
 
 Mobile data will be turned off."</string>
+    <string name="data_usage_enable_mobile_warning_skt">Mobile data will be turned on. Connecting to mobile networks may result in additional charges depending on your payment plan.</string>
     <string name="data_usage_enable_mobile_warning">Connecting via packet data may incur additional charges. Continue?</string>
     <string name="insert_sim_card">Insert SIM card</string>
     <string name="insert_sim_card_message">Insert SIM card to access network services.</string>
@@ -1904,6 +1915,7 @@ Mobile data will be turned off."</string>
     <string name="turning_off_answer_memo">Automatic answering and answering message cannot both be on. Answering message will be turned off.</string>
     <string name="disconnect_network_message">Changing data service network will disconnect network currently in use. Change data service network?</string>
     <string name="disconnect_network_title">Disconnect from current network</string>
+    <string name="disable2g_warning_message">This setting turns off 2G service. If 2G service is off, some apps and functions may not work in locations where LTE or 3G is unavailable.</string>
     <string name="data_roaming_restrict_title">Data roaming turned off</string>
     <string name="data_roaming_restrict_body">Tap here to turn on Data roaming.</string>
     <string name="data_network_mode">Data network mode</string>
@@ -2303,6 +2315,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">Delete this number?</string>
     <string name="change_guide_language_kddi">Change guide language</string>
     <string name="apply_option_service_kddi">Go to %s service options</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">Customer support</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">Japanese guidance (%d)</string>
     <string name="English_guidance_kddi">English guidance (%d)</string>
     <string name="voicecall_kddi"><cst>Voicemail</cst></string>
@@ -2357,11 +2373,13 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
     <string name="spam_call_mute_first_ring_summary">Mute the first ring of calls from unsaved numbers.</string>
     <string name="spam_call_auto_reject_title">Auto reject calls</string>
     <string name="smart_call_title">Caller ID and spam protection</string>
-    <string name="smart_call_title_usa">Identify spam numbers</string>
     <string name="smart_call_title_for_notice">Caller ID and spam protection</string>
-    <string name="smart_call_description">Identify unsaved callers and senders of messages on the call screen, in the Phone log, and in Messages.</string>
-    <string name="smart_call_usa_description">Show information about spam callers on the call screen and in the Phone log.</string>
+    <string name="smart_call_description">"Use Smart Call to identify spam and scam callers.
+
+This service shows you the names and profile pictures of callers and message senders who aren't in your contacts."</string>
     <string name="smart_call_description_roaming">This service is not available in other countries.</string>
+    <string name="smart_call_noti_description_1">Tap here to protect yourself from spam callers for free.</string>
+    <string name="smart_call_noti_description_2">Tap here to identify spam and scam callers.</string>
     <string name="smart_call_share_name_number_title">Share name and number</string>
     <string name="smart_call_share_name_number_summary">Register your name and number with the server so recipients without your number might see when you call/send messages to them.</string>
     <string name="smart_call_legal_info_category">Legal information</string>
@@ -2378,12 +2396,16 @@ In order to provide this feature, certain data, for example the caller’s phone
 Please click the appropriate button below to indicate whether you agree with the above and would like to enable the %s feature at this time."</string>
     <string name="smart_call_privacy_notice_donotshow">Do not show notification describing Identify unsaved numbers function again</string>
     <string name="smart_call_privacy_notice_dream">This service is available when your mobile device is connected to your carrier network during incoming or outgoing calls, but will be restricted while roaming. Using mobile networks may result in additional charges depending on your data plan with your carrier.</string>
+    <string name="show_privacy_notice_title">Privacy policy</string>
     <string name="search_for_places_nearby_title">Search for places nearby</string>
     <string name="search_for_places_nearby_help_description1">Find phone numbers and information for local businesses and venues nearby.</string>
     <string name="search_for_places_nearby_help_description2">This service requires your location information.</string>
     <string name="search_for_places_nearby_help_description3">To optimize the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
     <string name="search_for_places_nearby_help_description3_vzw">To optimize the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
     <string name="search_for_places_nearby_help_description4">Using mobile networks instead of <cst>Wi-Fi</cst> networks may result in additional charges depending on your payment plan.</string>
+    <string name="withdraw_menu_title">Stop using this service</string>
+    <string name="withdraw_dialog_description">When you stop using %1$s, the service will be deactivated, and all of your %2$s data stored by the service provider will be deleted.</string>
+    <string name="withdraw_dialog_button">Stop using service</string>
     <string name="record_call_setting_title">Auto record calls</string>
     <string name="record_call_setting_selected_number">Selected numbers</string>
     <string name="record_call_setting_all_number">All numbers</string>
@@ -2396,6 +2418,8 @@ Please click the appropriate button below to indicate whether you agree with the
     <string name="record_call_noti_setting_title">Recording notifications</string>
     <string name="record_call_noti_setting_summary">Receive notifications after calls are recorded.</string>
     <string name="record_call_help_summary">Record calls to or from selected numbers automatically.</string>
+    <string name="record_call_setting_on_description">Auto recording on</string>
+    <string name="record_call_setting_off_description">Auto recording off</string>
     <string name="visual_call_title_callsetting">IVR call screen menu</string>
     <string name="preference_update_DB_visual_call">Update IVR call DB</string>
     <string name="preference_update_DB_visual_call_summary">Auto update via WLAN only</string>
@@ -2575,7 +2599,7 @@ Choose the SETTINGS menu below to activate your WiFi Calling service on your mob
     <string name="wfc_location_dialog_body">Your location information might be sent to your service provider while you are using <cst>Wi-Fi</cst> calling. Contact your service provider for details.</string>
     <string name="wfc_location_dialog_body_ftm">Your location-related information can be sent to Google and your operator in order to establish <cst>Wi-Fi</cst> calls, whether you have activated or not the location feature.</string>
     <string name="wfc_enable_dialog_latin_body">When you see VoWiFi icon in your notification bar you can call using any WiFi network around the world at the local price of your data plan! More information <a href="http://www.claro.com.ar/clarovowifi">here</a>.</string>
-    <string name="wfc_enable_dialog_latin_claro_br">The Claro VoWiFi service has been activated. When the service icon appears on the status bar, it means you can make calls using any <cst>Wi-Fi</cst> network, inside or outside of the country, for the same price as your Claro plan! Tap <a href="www.claro.com.br/wifi-calling">here</a> for more information.</string>
+    <string name="wfc_enable_dialog_latin_claro_br">The Claro VoWiFi service has been activated. When the service icon appears on the status bar, it means you can make calls using any <cst>Wi-Fi</cst> network, inside or outside of the country, for the same price as your Claro plan! Tap <a href="http://www.claro.com.br/wifi-calling">here</a> for more information.</string>
     <string name="wfc_enable_dialog_opl_title">WELCOME TO WI-FI CALLING SERVICE</string>
     <string name="wfc_enable_dialog_opl_body0"><cst>Wi-Fi</cst>" Calling is a service of your mobile operator, Orange Polska S.A.
 Please read the description of the service provided by your operator:"</string>
@@ -2638,6 +2662,7 @@ Enter the code you get from Verizon:"</string>
     <string name="about_phone_open_source_licenses">Open source licenses</string>
     <string name="no_network_connection">No network connection</string>
     <string name="unable_to_check_for_updates">Unable to check for updates. There is no network connection.</string>
+    <string name="phoneAppLabel_dcm">Dial</string>
     <string name="dcm_vt_fail_cause_roaming">You cannot use video call in the this network. Use voice call.</string>
     <string name="dcm_vt_fail_cause_network_mode">Video call failed since the mobile network setting is set to \"other than LTE\". Use voice call.</string>
     <string name="dcm_vt_fail_cause_call_mode">Video call failed since the communication mode setting is set to \"VoLTE OFF\". Use voice call.</string>
@@ -2675,6 +2700,8 @@ In the future if you want to use Wi-Fi for voice calling you can turn on Wi-Fi C
     <string name="save_text">Save</string>
     <string name="wfc_enable_dialog_title">Turn on Wi-Fi calling</string>
     <string name="wfc_enable_dialog">Turning on Wi-Fi calling will turn off Power saving mode. This may increase battery consumption. Some service providers may not support this function.</string>
+    <string name="group_call_not_support_emergency_number">"Can't add emergency numbers to group calls."</string>
+    <string name="group_call_not_support_emergency_number_all">"Can't add emergency numbers to group calls. All other selected contacts added."</string>
     <string name="enable_data_popup_message">To turn this function on, Mobile data must be on.</string>
     <string name="enable_data_popup_tittle">Unable to turn on function</string>
 </resources>

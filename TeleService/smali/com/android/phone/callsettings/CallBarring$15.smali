@@ -43,7 +43,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CallBarring$15;->this$0:Lcom/android/phone/callsettings/CallBarring;
 
-    const v4, 0x7f0d0210
+    const v4, 0x7f0d026e
 
     invoke-virtual {v1, v4}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
@@ -51,7 +51,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/CallBarring$15;->this$0:Lcom/android/phone/callsettings/CallBarring;
 
-    const v5, 0x7f0d021f
+    const v5, 0x7f0d027d
 
     invoke-virtual {v4, v5}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 

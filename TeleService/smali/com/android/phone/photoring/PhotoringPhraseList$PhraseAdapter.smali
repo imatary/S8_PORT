@@ -245,7 +245,7 @@
     return-object v5
 
     :cond_0
-    const v6, 0x7f020058
+    const v6, 0x7f02005a
 
     invoke-virtual {v3, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 

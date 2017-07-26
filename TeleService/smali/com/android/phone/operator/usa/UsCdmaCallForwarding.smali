@@ -132,7 +132,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d07e0
+    const v5, 0x7f0d0844
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -146,7 +146,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d07e1
+    const v5, 0x7f0d0845
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -154,7 +154,7 @@
 
     aput-object v4, v2, v6
 
-    const v3, 0x7f0d07e2
+    const v3, 0x7f0d0846
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -192,7 +192,7 @@
     return-object v0
 
     :pswitch_0
-    const v3, 0x7f0d07df
+    const v3, 0x7f0d0843
 
     new-instance v4, Lcom/android/phone/operator/usa/UsCdmaCallForwarding$3;
 
@@ -207,7 +207,7 @@
     goto :goto_0
 
     :pswitch_1
-    const v3, 0x7f0d07df
+    const v3, 0x7f0d0843
 
     new-instance v4, Lcom/android/phone/operator/usa/UsCdmaCallForwarding$4;
 

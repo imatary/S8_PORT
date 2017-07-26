@@ -3,12 +3,12 @@
 .source "VzwVoWiFiCallSettings.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/preference/Preference$OnPreferenceClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/VzwVoWiFiCallSettings;->setVowifiPreferenceStatus(ZZ)V
+    value = Lcom/android/phone/VzwVoWiFiCallSettings;->enableRoamingSetting()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,26 +34,47 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
+.method public onPreferenceClick(Landroid/preference/Preference;)Z
+    .locals 4
 
+    const-string/jumbo v2, "VzwVoWiFiCallSettings"
+
+    const-string/jumbo v3, "Inside roaming setting onPreferenceClick"
+
+    invoke-static {v2, v3}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :try_start_0
+    new-instance v1, Landroid/content/Intent;
+
+    iget-object v2, p0, Lcom/android/phone/VzwVoWiFiCallSettings$4;->this$0:Lcom/android/phone/VzwVoWiFiCallSettings;
+
+    invoke-static {v2}, Lcom/android/phone/VzwVoWiFiCallSettings;->-get1(Lcom/android/phone/VzwVoWiFiCallSettings;)Landroid/content/Context;
+
+    move-result-object v2
+
+    const-class v3, Lcom/android/phone/RoamingSettingActivity;
+
+    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    iget-object v2, p0, Lcom/android/phone/VzwVoWiFiCallSettings$4;->this$0:Lcom/android/phone/VzwVoWiFiCallSettings;
+
+    invoke-virtual {v2, v1}, Lcom/android/phone/VzwVoWiFiCallSettings;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
     const/4 v2, 0x1
 
-    iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings$4;->this$0:Lcom/android/phone/VzwVoWiFiCallSettings;
+    return v2
 
-    invoke-static {v0}, Lcom/android/phone/VzwVoWiFiCallSettings;->-get1(Lcom/android/phone/VzwVoWiFiCallSettings;)Landroid/widget/TextView;
+    :catch_0
+    move-exception v0
 
-    move-result-object v0
+    const-string/jumbo v2, "VzwVoWiFiCallSettings"
 
-    const v1, 0x7f0d0bcf
+    const-string/jumbo v3, "In catch block"
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
+    invoke-static {v2, v3}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings$4;->this$0:Lcom/android/phone/VzwVoWiFiCallSettings;
-
-    invoke-static {v0, v2, v2}, Lcom/android/phone/VzwVoWiFiCallSettings;->-wrap1(Lcom/android/phone/VzwVoWiFiCallSettings;ZZ)V
-
-    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
-
-    return-void
+    goto :goto_0
 .end method

@@ -271,7 +271,7 @@
 
     check-cast v4, Landroid/widget/TextView;
 
-    const v6, 0x7f0d0956
+    const v6, 0x7f0d09bc
 
     invoke-virtual {v4, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -287,7 +287,7 @@
 
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mSim1value:Landroid/widget/EditText;
 
-    const v7, 0x7f0d041d
+    const v7, 0x7f0d047d
 
     invoke-virtual {v6, v7}, Landroid/widget/EditText;->setHint(I)V
 
@@ -311,7 +311,7 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    const v6, 0x7f0d0957
+    const v6, 0x7f0d09bd
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -327,7 +327,7 @@
 
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mSim2value:Landroid/widget/EditText;
 
-    const v7, 0x7f0d041d
+    const v7, 0x7f0d047d
 
     invoke-virtual {v6, v7}, Landroid/widget/EditText;->setHint(I)V
 
@@ -878,13 +878,13 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d0c2a
+    const v2, 0x7f0d0c9b
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0d0c2b
+    const v2, 0x7f0d0c9c
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -894,7 +894,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/DsaPhoneNumber$10;-><init>(Lcom/android/phone/DsaPhoneNumber;)V
 
-    const v3, 0x7f0d02c7
+    const v3, 0x7f0d0327
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -904,7 +904,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/DsaPhoneNumber$11;-><init>(Lcom/android/phone/DsaPhoneNumber;)V
 
-    const v3, 0x7f0d07f5
+    const v3, 0x7f0d0859
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -914,7 +914,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/DsaPhoneNumber$12;-><init>(Lcom/android/phone/DsaPhoneNumber;)V
 
-    const v3, 0x7f0d041e
+    const v3, 0x7f0d047e
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1313,7 +1313,7 @@
 
     iget-object v1, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftImage:Landroid/widget/ImageView;
 
-    const v4, 0x7f020193
+    const v4, 0x7f02019c
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1324,7 +1324,7 @@
 
     iget-object v1, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftImage:Landroid/widget/ImageView;
 
-    const v4, 0x7f020194
+    const v4, 0x7f02019d
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1643,13 +1643,13 @@
 
     iget-object v2, p0, Lcom/android/phone/DsaPhoneNumber;->mCancleButton:Landroid/widget/Button;
 
-    const v3, 0x7f020165
+    const v3, 0x7f020169
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     iget-object v2, p0, Lcom/android/phone/DsaPhoneNumber;->mDoneButton:Landroid/widget/Button;
 
-    const v3, 0x7f020166
+    const v3, 0x7f02016a
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setBackgroundResource(I)V
 
@@ -1945,13 +1945,13 @@
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d095c
+    const v1, 0x7f0d09c2
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d095b
+    const v1, 0x7f0d09c1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -2110,13 +2110,13 @@
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d02c7
+    const v1, 0x7f0d0327
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d095b
+    const v1, 0x7f0d09c1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -2287,13 +2287,13 @@
 
     iget-object v1, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftBtn:Landroid/widget/LinearLayout;
 
-    const v2, 0x7f020165
+    const v2, 0x7f020169
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
     iget-object v1, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftBtn:Landroid/widget/LinearLayout;
 
-    const v2, 0x7f020166
+    const v2, 0x7f02016a
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 

@@ -44,7 +44,7 @@
     move-result-object v3
 
     :goto_0
-    const v8, 0x7f0d01e7
+    const v8, 0x7f0d0244
 
     invoke-virtual {p0, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -52,7 +52,7 @@
 
     if-nez v3, :cond_5
 
-    const v8, 0x7f0d01e6
+    const v8, 0x7f0d0243
 
     invoke-virtual {p0, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -68,7 +68,7 @@
 
     aput-object v5, v8, v9
 
-    const v9, 0x7f0d01cd
+    const v9, 0x7f0d022a
 
     invoke-virtual {p0, v9, v8}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

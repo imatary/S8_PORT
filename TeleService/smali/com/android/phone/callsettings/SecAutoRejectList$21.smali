@@ -98,7 +98,7 @@
 
     move-result-object v2
 
-    const v6, 0x7f0d0c19
+    const v6, 0x7f0d0c8a
 
     invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -119,7 +119,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d052e
+    const v7, 0x7f0d058e
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -157,7 +157,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d0bd9
+    const v7, 0x7f0d0c44
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -184,7 +184,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/SecAutoRejectList$21;->this$0:Lcom/android/phone/callsettings/SecAutoRejectList;
 
-    const v3, 0x7f0d01f2
+    const v3, 0x7f0d024f
 
     invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -192,7 +192,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/SecAutoRejectList$21;->this$0:Lcom/android/phone/callsettings/SecAutoRejectList;
 
-    const v4, 0x7f0d0245
+    const v4, 0x7f0d02a3
 
     invoke-virtual {v3, v4}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -228,7 +228,7 @@
 
     move-result-object v2
 
-    const v6, 0x7f0d0c1a
+    const v6, 0x7f0d0c8b
 
     invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

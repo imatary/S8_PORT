@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="battery_history_hours_no_seconds">%1$ds %2$dd</string>
-    <string name="battery_history_minutes_no_seconds">%dd</string>
+    <string name="battery_history_minutes_no_seconds">%d d</string>
     <string name="wifi_fail_to_scan">Tarmoqlarni tekshirib chiqishni iloji bo‘lmadi</string>
     <string name="wifi_failed_to_obtain_IP">IP-manzilni olib bo‘lmadi.</string>
     <string name="wifi_security_none">Yo‘q</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">%s’ga ulanib bo‘lmaydi.</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">%1$s’ga ulanib bo‘lmaydi. %2$s’da parametrlarni tekshiring va qayta urinib ko‘ring.</string>
     <string name="bluetooth_pairing_rejected_error_message">Bog‘lanish %s tomonidan rad etildi.</string>
+    <string name="bluetooth_getting_remote_device_name">Qurilma nomi olinmoqda…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">Ushbu qurilma ulanganda, qurilma nomi ko‘rsatiladi.</string>
     <string name="accessibility_wifi_off">Wi-Fi o‘chiq.</string>
     <string name="accessibility_no_wifi">Wi-Fi o‘chiq.</string>
     <string name="accessibility_wifi_one_bar">Wi-Fi: bitta ustun</string>
@@ -835,7 +837,7 @@
     <string name="singleContactImportedMsg">Kontakt import qilindi</string>
     <string name="failedToImportSingleContactMsg">Kontaktni import qilib bo‘lmadi</string>
     <string name="hac_mode_title">Eshitish apparatlari</string>
-    <string name="hac_mode_summary">Eshitish apparati yordamida foydalanish uchun qurilmangiz ovozi sifatini yaxshilang.</string>
+    <string name="hac_mode_summary">Eshitish apparatlari uchun telefoningiz ovoz sifatini optimallashtiring.</string>
     <string name="dtmf_tones_title">DTMF ohanglari</string>
     <string name="dtmf_tones_summary">DTMF ohanglar uzunligini o‘rnatish.</string>
     <string name="network_info_message">Tarmoq xabari</string>
@@ -1014,6 +1016,10 @@ Bu funksiyadan foydalanish mumkin bo‘lganda quyidagi ikonacha ko‘rsatiladi."
     <string name="add_call_block_number_toast">Bu raqamdan qo‘ng‘iroqlarni olmaysiz.</string>
     <string name="delete_call_block_number_toast">Endi ushbu raqamdan qo‘ng‘iroqlar olishingiz mumkin.</string>
     <string name="emergency_call_block_number_toast">Favqulodda raqamlarni bloklab bo‘lmaydi.</string>
+    <string name="call_block_dialog_title">Raqamlarni bloklashni tahrirlash</string>
+    <string name="call_block_dialog_contents">Android Nougat’dan boshlab, Qo‘ng‘iroqni bloklash rejimi Raqamlarni bloklash bilan almashtirildi. Qo‘ng‘iroqlarni bloklash o‘rniga Raqamlarni bloklash ham qo‘ng‘iroqlarni ham xabarlarni avtomatik tarzda bloklaydi.</string>
+    <string name="call_block_dialog_settings">Bloklangan raqamlarni tahrirlash uchun PARAMETRLAR tugmasiga teging.</string>
+    <string name="call_block_dialog_button">Parametrlar</string>
     <string name="no_block_number_description">Siz qo‘shgan raqamlar shu yerda paydo bo‘ladi.</string>
     <string name="no_messages_description">Siz qo‘shgan xabarlar shu yerda paydo bo‘ladi.</string>
     <string name="callsettings_vipmode_blacklist_title">Qora ro‘yxat</string>
@@ -1063,7 +1069,7 @@ Bu funksiyadan foydalanish mumkin bo‘lganda quyidagi ikonacha ko‘rsatiladi."
     <string name="callsettings_answering_volume_key_title">Javob u-n Ov/ko‘tar tgm. bos</string>
     <string name="callsettings_answering_key_summary">Kiruvchi qo‘ng‘iroqni qabul qilish uchun, asosiy tugmani bosing.</string>
     <string name="callsettings_PowerkeyEndsCalls_title">Qo‘n. yakun. u-n Qvvt tgm. bos</string>
-    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Qo‘n. yakun. u-n Qvvt tgm. bos</string>
+    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Qo‘ng‘iroqlarni yakunlash uchun Quvvat tugmasini bosing</string>
     <string name="callsettings_PowerkeyEndsCalls_summary">Ekran yoqilganda, qo‘n. yakunlash u-n yoq/o‘ch tugmasini bosing. Bu ekranni o‘chirmaydi.</string>
     <string name="Dialog_PowerkeyEndsCalls">Sensorli datchik o‘chiqligida yoqish/o‘chirish tugmasini qo‘ng‘iroqlarni yakunlaydigan qilib sozlab bo‘lmaydi. Sensorli datchik yoqiladi. Qo‘ng‘iroqlar mobaynida qurilmangizni qulog‘ingizga olib kelganingizda, ekran o‘chiriladi.</string>
     <string name="Dialog_PowerkeyEndsCalls_title">Sensorli datchikni yoqish</string>
@@ -1335,7 +1341,7 @@ Injured/Dead
     <string name="roaming_alerts_sbody">Ovozli, matnli va ma’lumot roumingi, jumladan, xalqaro rouming, parametrlarini o‘zgartiring.</string>
     <string name="roaming_alerts_voice_body">Ovozli roumingi</string>
     <string name="roaming_alerts_data_body">Ma’lumot roumingi</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">Chiquvchi matnli rouming</string>
     <string name="roaming_domestic_category">Mahalliy roumingi</string>
     <string name="roaming_international_category">Xalqaro rouming</string>
     <string name="roaming_voice_body">Ovozli va matnli rouming</string>
@@ -1505,9 +1511,7 @@ Mobil ma’lumotni o‘chirish uchun %s ga o‘ting."</string>
     <string name="data_usage_disable_mobile_vzw_chn">"WLAN’dan foydalanmasangiz, Internet, e-pochta yoki ma‘lumot ulanishini talab qiluvchi boshqa ilovalardan foydalana olmaysiz.
 
 Mobil ma’lumot o‘chiriladi."</string>
-    <string name="mobile_data_off_dialog_text_common">"Wi-Fidan foydalanmasangiz, Internet, e-pochta yoki ma‘lumot ulanishini talab qiluvchi boshqa ilovalardan foydalana olmaysiz.
-
-Mobil ma’lumot o‘chiriladi."</string>
+    <string name="mobile_data_off_dialog_text_common">Wi-Fi tarmoqqa ulanmagan bo‘lsangiz, Internet, E-pochta va tarmoq ulanishini talab qiluvchi boshqa ilovalardan foydalana olmaysiz.</string>
     <string name="mobile_data_off_dialog_button_turn_off">O‘chirish</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"Wi-Fi ulanishidan foydalanmasangiz, Internet, e-pochta yoki ma‘lumot ulanishini talab qiluvchi boshqa ilovalardan foydalana olmaysiz.
 
@@ -1587,8 +1591,9 @@ Tarmog‘ingiz rejimini o‘zgartirish uchun Parametrlar > Ko‘proq tarmoqlar >
 Agar o‘zgarmas narxlar tarifidan foydalanmayotgan bo‘lsangiz, qo‘shimcha to‘lov olinishi mumkin."</string>
     <string name="data_3gwarning_popup_title">Mobil internet</string>
     <string name="roaming_data_off_msg">Ma’lumot roumingidan foydalanish uchun Parametrlar > Ulanishlar > Global rouming’ga o‘ting va undan so‘ng Ma’lumot roumingini yoqing.</string>
-    <string name="data_3gwarning_popup_noti">Agar o‘zgarmas narxlar tarifidan foydalanmayotgan bo‘lsangiz, mobil tarmoqqa ulanish uchun qo‘shimcha to‘lov olinishi mumkin. Ulanilsinmi?</string>
-    <string name="lgt_4gwarning_popup_mobiledata">Mobil ma’lumot yoqiladi. Buning uchun xizmat ta’minotchingiz tomonidan tarif rejangiz asosida to‘lov olinishi mumkin.</string>
+    <string name="data_3gwarning_popup_noti">Mobil internet yoqiladi. Mobil tarmoqlarga ulanish tarif rejangiz asosida qo‘shimcha to‘lov olinishiga sabab bo‘lishi mumkin.</string>
+    <string name="data_3gwarning_popup_noti_ktt">GiGA LTE’dan foydalanish uchun mobil internet yoqiladi. Bu tarif rejangiz asosidagi qo‘shimcha to‘lovlarga olib kelishi mumkin.</string>
+    <string name="lgt_4gwarning_popup_mobiledata">Mobil internet yoqiladi. Mobil tarmoqlarga ulanish tarif rejangiz asosida qo‘shimcha to‘lov olinishiga olib kelishi mumkin.</string>
     <string name="lgt_lte_data_roaming_warningmsg">"Rouming yoqilganda, &lt;u>&lt;font color=\"%1$s\">mahalliy tariflar o‘rniga xalqaro ma’lumot roumingi tariflari qo‘llaniladi.&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">Ma’lumot roumingi to‘lovlarni qisqartirish uchun&lt;/font>&lt;/u> IM bildirishnomalari va avtomatik yangilanishlar orqali fondagi ma’lumotlar cheklanishini yoqing"</string>
@@ -1959,6 +1964,8 @@ Mijozlarga xizmat ko‘rsatish markazi yoki mahalliy diler bilan bog‘laning."<
     <string name="volte_call_summary_ops">4G tarmoqda HD ovozli qo‘ng‘irog‘ini amalga oshiring.</string>
     <string name="voice_over_lte_title_cct">Volte qo‘ng‘iroq</string>
     <string name="volte_call_summary_cct">Imkoni bo‘lganda 4G LTE uyali tarmoq orqali takomillashtirilgan qo‘ng‘iroq qilish funksiyalarini yoqing.</string>
+    <string name="voice_over_lte_title_o2">4G calling</string>
+    <string name="volte_call_summary_o2">4G internet yordamida takomillashtirilgan kommunikatsiyadan zavqlaning.</string>
     <string name="volte_tty_description_on">While TTY is on, you will not be able to make and receive video calls or have conference calls.</string>
     <string name="volte_prepaid_tty_description_on">TTY mode will be enabled. You will not be able to make or receive conference calls.</string>
     <string name="volte_tty_description_off">While TTY is off, you will not be able to make and receive TTY calls.</string>
@@ -2148,9 +2155,13 @@ LTE-roumingdan rozi bo‘lmasangiz foydalanib bo‘lmaydi. LTE tarmoqlaridan foy
     <string name="group_voice_call_disable_on_3G">Guruh qo‘ng‘iroqlaridan LTE tarmoq orqali foydalanish mumkin</string>
     <string name="group_voice_call_outgoing_voice_call">Chiquvchi ovozli qo‘ng‘iroq</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"Wi-Fidan foydalanmasangiz, Internet, e-pochta yoki tarmoq ulanishini talab qiluvchi boshqa ilovalardan foydalana olmaysiz.
+
+Mobil internet o‘chiriladi."</string>
     <string name="data_usage_disable_mobile_warning">"Wi-Fi ulanishidan foydalanmasangiz, Internet, e-pochta yoki ma‘lumot ulanishini talab qiluvchi boshqa ilovalardan foydalana olmaysiz.
 
 Mobil ma’lumot o‘chiriladi"</string>
+    <string name="data_usage_enable_mobile_warning_skt">Mobil internet yoqiladi. Mobil tarmoqlarga ulanish tarif rejangiz asosida qo‘shimcha to‘lov olinishiga sabab bo‘lishi mumkin.</string>
     <string name="data_usage_enable_mobile_warning">Paketli ma’lumot orqali ulanish uchun qo‘shimcha to‘lov olinishi mumkin. Davom ettirilsinmi?</string>
     <string name="insert_sim_card">SIM-karta kiriting</string>
     <string name="insert_sim_card_message">Tarmoq xizmatlariga kirish uchun SIM-karta kiriting.</string>
@@ -2184,6 +2195,7 @@ Mobil ma’lumot o‘chiriladi"</string>
     <string name="turning_off_answer_memo">Avtomatik javob berish va javob xabarining har ikkalasini yoqib bo‘lmaydi. Javob xabari o‘chiriladi</string>
     <string name="disconnect_network_message">Ma’lumotlar xizmati tarmog‘ini o‘zgartirish hozirda ishlatilayotgan tarmoq uzilishiga olib keladi. Ma’lumotlar xizmati tarmog‘i o‘zgartirilsinmi?</string>
     <string name="disconnect_network_title">Joriy tarmoqni uzish</string>
+    <string name="disable2g_warning_message">Bu parametr 2G xizmatni o‘chiradi. Agar 2G xizmati o‘chirilgan bo‘lsa, LTE yoki 3G mavjud bo‘lmagan joylarda ayrim ilova va funksiyalar ishlamaydi.</string>
     <string name="data_roaming_restrict_title">Ma’lumot roumingi o‘chiq</string>
     <string name="data_roaming_restrict_body">Ma’lumot roumingini yoqish uchun bu yerga teging.</string>
     <string name="data_network_mode">Ma’lumotlar tarmog‘i rejimi</string>
@@ -2384,6 +2396,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">Ushbu raqam yo‘q qilinsinmi?</string>
     <string name="change_guide_language_kddi">Yo‘riqnoma tilini o‘zgartirish</string>
     <string name="apply_option_service_kddi">%s xizmat opsiya-ga o‘t</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">Mijozlarga xizmat ko‘rsatish</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">Yaponcha yo‘riqnoma (%d)</string>
     <string name="English_guidance_kddi">Inglizcha yo‘riqnoma (%d)</string>
     <string name="voicecall_kddi">Ovozli pochta</string>
@@ -2438,11 +2454,13 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
     <string name="spam_call_mute_first_ring_summary">Mute the first ring of calls from unsaved numbers.</string>
     <string name="spam_call_auto_reject_title">Qo‘ng‘iroqni avto-rad et</string>
     <string name="smart_call_title">Qo‘n. qil-chi ID va spm. himoya</string>
-    <string name="smart_call_title_usa">Spam raqamlarini aniqlash</string>
     <string name="smart_call_title_for_notice">Qo‘ng‘iroq qiluvchi ID’si va spamdan himoya qilish</string>
-    <string name="smart_call_description">Qo‘ng‘iroq ekrani, Telefon jurnali va Xabarlar ilovasida saqlanmagan qo‘ng‘iroq qiluvchilar va xabar yuboruvchilarini aniqlashtirish.</string>
-    <string name="smart_call_usa_description">Qo‘ng‘iroq ekrani va Telefon jurnallarida spam qo‘ng‘iroq qiluvchilar haqidagi ma’lumotlar ko‘rsatilsin.</string>
+    <string name="smart_call_description">"Spam va firibgar qo‘ng‘iroq qiluvchilarni aniqlash uchun Smart qo‘ng‘iroqdan foydalaning.
+
+Bu xizmat kontaktlaringizda bo‘lmagan qo‘ng‘iroq qiluvchi va xabar yuboruvchilarning ismi va profil rasmlarini ko‘rsatadi."</string>
     <string name="smart_call_description_roaming">Ushbu xizmat boshqa mamlakatlarda mavjud emas.</string>
+    <string name="smart_call_noti_description_1">O‘zingizni spam va firibgar qo‘ng‘iroq qiluvchilarni himoya qilish uchun bu yerga teging.</string>
+    <string name="smart_call_noti_description_2">Spam va firibgar qo‘ng‘iroq qiluvchilarni aniqlash uchun bu yerga teging.</string>
     <string name="smart_call_share_name_number_title">Nom va raqamni ulashing</string>
     <string name="smart_call_share_name_number_summary">Ism va rqm. serverda ro‘yxatga oling va rqm. ega bo‘lmagan oluvchilarga qo‘n. qilinganda/xbr yuborilganda Sizni tanishsin.</string>
     <string name="smart_call_legal_info_category">Qonuniy ma’lumot</string>
@@ -2459,12 +2477,16 @@ Bu xizmatni taqdim etish uchun %2$s qurilmangizdan muayyan ma’lumotlarni, masa
 Yuqoridagi shartlarga rozi ekanligingizni hamda ayni paytda %s xizmatini yoqmoqchi ekanligingizni bildirish uchun quyidagi mos tugmani bosing."</string>
     <string name="smart_call_privacy_notice_donotshow">Saqlanmagan raqamlarni identifikatsiyalash funksiyasini ta’riflovchi bildirishnoma ko‘rsatilmasin</string>
     <string name="smart_call_privacy_notice_dream">Bu xizmat ishlab turishi uchun kiruvchi yoki chiquvchi qo‘ng‘iroqlar vaqtida mobil qurilmangiz mobil tarmoqqa ulangan bo‘lishi lozim, biroq bu rouming vaqtida cheklanadi. Mobil internetdan foydalansangiz, sarflangan trafik uchun aloqa operatoringiz tomonidan tarif rejangizga qarab haq olinishi mumkin.</string>
+    <string name="show_privacy_notice_title">Maxfiylik siyosati</string>
     <string name="search_for_places_nearby_title">Yaqindagi joylarni qidirish</string>
     <string name="search_for_places_nearby_help_description1">Mahalliy biznes va yaqin-atrofdagi joylar uchun telefon raqamlari va ma’lumotlarni toping.</string>
     <string name="search_for_places_nearby_help_description2">Bu xizmat joylashuvingiz haqidagi ma’lumotlarni talab qiladi.</string>
     <string name="search_for_places_nearby_help_description3">Joylashuvingiz ma’lumoti yanada aniqroq bo‘lishi uchun, Parametrlar > Ulanishlar > Joylashuv menyusi > Joylashtirish usuliga o‘ting, so‘ngra Yuqori aniqlikni tanlang.</string>
     <string name="search_for_places_nearby_help_description3_vzw">To optimize the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
     <string name="search_for_places_nearby_help_description4">Wi-Fi o‘rniga mobil tarmoqlardan foydalanish uchun tarif rejangiz asosida qo‘shimcha to‘lov olinishi mumkin.</string>
+    <string name="withdraw_menu_title">Bu xzmt. foyd. to‘xtat</string>
+    <string name="withdraw_dialog_description">%1$s’dan foydalanishni to‘xtatganingizda, xizmat o‘chiriladi va xizmat ta’minotchisi tomonidan saqlangan barcha %2$s ma’lumotlari o‘chirib tashlanadi.</string>
+    <string name="withdraw_dialog_button">Xzmt. foyd. to‘xtat</string>
     <string name="record_call_setting_title">Qo‘ng‘iroqni avto yozib olish</string>
     <string name="record_call_setting_selected_number">Tanlangan raqamlar</string>
     <string name="record_call_setting_all_number">Barcha raqamlar</string>
@@ -2477,6 +2499,8 @@ Yuqoridagi shartlarga rozi ekanligingizni hamda ayni paytda %s xizmatini yoqmoqc
     <string name="record_call_noti_setting_title">Yozish bildirishnomalari</string>
     <string name="record_call_noti_setting_summary">Qo‘ng‘iroqlar yozib olingandan so‘ng bildirishnomalar olish.</string>
     <string name="record_call_help_summary">Tanlangan raqamlarga/dan qabul qilingan qo‘ng‘iroqlarni avtomatik yozib olish.</string>
+    <string name="record_call_setting_on_description">Avtomatik yozib olish yoqilgan</string>
+    <string name="record_call_setting_off_description">Avtomatik yozib olish o‘chirilgan</string>
     <string name="visual_call_title_callsetting">IVR call screen menu</string>
     <string name="preference_update_DB_visual_call">IVR qo‘n-q MB’ni yangila</string>
     <string name="preference_update_DB_visual_call_summary">Faqat WLAN orqali avtomatik yangilash</string>
@@ -2719,6 +2743,7 @@ Verizon tomonidan taqdim etilgan kodni kiriting:"</string>
     <string name="about_phone_open_source_licenses">Ochiq manba litsenziyalari</string>
     <string name="no_network_connection">Tarmoq ulanishi yo‘q</string>
     <string name="unable_to_check_for_updates">Yangilashlar mavjudligini tekshirib bo‘lmaydi. Tarmoq ulanishi yo‘q.</string>
+    <string name="phoneAppLabel_dcm">Terish</string>
     <string name="dcm_vt_fail_cause_not_in_4g">Video qo‘ng‘iroqni amalga oshirib bo‘lmadi, chunki siz 4G xizmat ko‘rsatish doirasida emassiz.</string>
     <string name="ss_do_not_show_again_us">Do not show again</string>
     <string name="disable_advanced_calling_warning_msg">Your phone will not be able to make or receive HD voice and video calls when you turn this setting off.</string>
@@ -2752,6 +2777,8 @@ In the future if you want to use Wi-Fi for voice calling you can turn on Wi-Fi C
     <string name="save_text">Saqlash</string>
     <string name="wfc_enable_dialog_title">Wi-Fi qo‘ng‘iroqni yoqish</string>
     <string name="wfc_enable_dialog">Wi-Fi qo‘ng‘iroqni yoqish Quvvat tejash rejimini o‘chiradi. Bu ko‘proq batareya quvvatini sarflashi mumkin. Ba’zi xizmat ta’minotchilari ushbu funksiyani qo‘llab-quvvatlamasligi mumkin.</string>
+    <string name="group_call_not_support_emergency_number">Favqulodda raqamlarni guruh qo‘ng‘iroqlariga qo‘shib bo‘lmaydi.</string>
+    <string name="group_call_not_support_emergency_number_all">Favqulodda raqamlarni guruh qo‘ng‘iroqlariga qo‘shib bo‘lmaydi. Boshqa barcha tanlangan kontaktlar qo‘shiladi.</string>
     <string name="enable_data_popup_message">Ushbu funksiyadan foydalanish uchun Mobil ma’lumot yoqiladi.</string>
     <string name="enable_data_popup_tittle">Funksiyani yoqib bo‘lmaydi</string>
 </resources>

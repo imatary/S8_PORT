@@ -33,7 +33,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setDisplayShowHomeEnabled(Z)V
 
-    const v1, 0x7f0d02f5
+    const v1, 0x7f0d0355
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(I)V
 

@@ -43,7 +43,7 @@
 
     const/4 v2, 0x1
 
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticRoamingInService()Z
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticDataRoamingInService()Z
 
     move-result v0
 
@@ -57,7 +57,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
     :cond_0
     iget-object v0, p0, Lcom/android/phone/operator/usa/Roaming$4;->this$0:Lcom/android/phone/operator/usa/Roaming;
@@ -74,23 +74,32 @@
 
     invoke-static {v0}, Lcom/android/phone/operator/usa/Roaming;->-wrap2(Lcom/android/phone/operator/usa/Roaming;)V
 
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticDataRoamingInService()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-static {v2}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
+
+    :cond_1
     const-string/jumbo v0, "lte_roaming_enhancement"
 
     invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/Roaming$4;->this$0:Lcom/android/phone/operator/usa/Roaming;
 
     invoke-static {v0}, Lcom/android/phone/operator/usa/Roaming;->-wrap4(Lcom/android/phone/operator/usa/Roaming;)V
 
-    :cond_1
+    :cond_2
     :goto_0
     return-void
 
-    :cond_2
+    :cond_3
     iget-boolean v0, p0, Lcom/android/phone/operator/usa/Roaming$4;->val$domesticCdmaDataRoamingGuardValue:Z
 
     if-eqz v0, :cond_0

@@ -1769,6 +1769,8 @@
 .method public getDatabase(Landroid/net/Uri;)Z
     .locals 4
 
+    const/4 v3, 0x0
+
     const/4 v2, 0x0
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->uriMatcher:Landroid/content/UriMatcher;
@@ -1806,8 +1808,42 @@
     :sswitch_0
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    if-nez v1, :cond_0
+    if-eqz v1, :cond_0
 
+    iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject_db:Landroid/database/sqlite/SQLiteDatabase;
+
+    invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->isReadOnly()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject_db:Landroid/database/sqlite/SQLiteDatabase;
+
+    invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
+
+    iput-object v2, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject_db:Landroid/database/sqlite/SQLiteDatabase;
+
+    :cond_0
+    iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject_db:Landroid/database/sqlite/SQLiteDatabase;
+
+    if-eqz v1, :cond_2
+
+    iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject_db:Landroid/database/sqlite/SQLiteDatabase;
+
+    invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    :cond_1
+    :goto_0
+    const/4 v1, 0x1
+
+    return v1
+
+    :cond_2
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject:Lcom/android/phone/callsettings/AutoRejectDB;
 
@@ -1819,11 +1855,7 @@
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    :cond_0
-    :goto_0
-    const/4 v1, 0x1
-
-    return v1
+    goto :goto_0
 
     :catch_0
     move-exception v0
@@ -1834,12 +1866,12 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/callsettings/CallSettingsProvider;->log(Ljava/lang/String;)V
 
-    return v2
+    return v3
 
     :sswitch_1
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->autorejectvideocall_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     :try_start_1
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->autorejectvideocall:Lcom/android/phone/callsettings/AutoRejectVideoCallDB;
@@ -1863,12 +1895,12 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/callsettings/CallSettingsProvider;->log(Ljava/lang/String;)V
 
-    return v2
+    return v3
 
     :sswitch_2
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->autorejectoutgoingcall_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     :try_start_2
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->autorejectoutgoingcall:Lcom/android/phone/callsettings/AutoRejectOutgoingCallDB;
@@ -1892,12 +1924,12 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/callsettings/CallSettingsProvider;->log(Ljava/lang/String;)V
 
-    return v2
+    return v3
 
     :sswitch_3
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->rejectmsg_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     :try_start_3
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->rejectmsg:Lcom/android/phone/callsettings/RejectCallWithMsgDB;
@@ -1921,12 +1953,12 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/callsettings/CallSettingsProvider;->log(Ljava/lang/String;)V
 
-    return v2
+    return v3
 
     :sswitch_4
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->registerussd_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     :try_start_4
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->registerussd:Lcom/android/phone/callsettings/RegisterUssdDB;
@@ -1950,12 +1982,12 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/callsettings/CallSettingsProvider;->log(Ljava/lang/String;)V
 
-    return v2
+    return v3
 
     :sswitch_5
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->ipcall_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     :try_start_5
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->ipcall:Lcom/android/phone/callsettings/IpCallDB;
@@ -1979,12 +2011,12 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/callsettings/CallSettingsProvider;->log(Ljava/lang/String;)V
 
-    return v2
+    return v3
 
     :sswitch_6
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->ipcallcdma_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     :try_start_6
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->ipcallcdma:Lcom/android/phone/callsettings/IpCallCdmaDB;
@@ -2008,12 +2040,12 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/callsettings/CallSettingsProvider;->log(Ljava/lang/String;)V
 
-    return v2
+    return v3
 
     :sswitch_7
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->ipcall_sim2_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     :try_start_7
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->ipcallSim2:Lcom/android/phone/callsettings/IpCallDBSim2;
@@ -2037,12 +2069,12 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/callsettings/CallSettingsProvider;->log(Ljava/lang/String;)V
 
-    return v2
+    return v3
 
     :sswitch_8
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->deleteprefix_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     :try_start_8
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->deleteprefix:Lcom/android/phone/callsettings/DeletePrefixDB;
@@ -2066,12 +2098,12 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/callsettings/CallSettingsProvider;->log(Ljava/lang/String;)V
 
-    return v2
+    return v3
 
     :sswitch_9
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->photoring_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     :try_start_9
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->photoring:Lcom/android/phone/operator/kor/LGTPhotoRingDB;
@@ -2095,12 +2127,12 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/callsettings/CallSettingsProvider;->log(Ljava/lang/String;)V
 
-    return v2
+    return v3
 
     :sswitch_a
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->enhanced_voicerecord_number_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     :try_start_a
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->enhanced_voicerecord_number:Lcom/android/phone/callsettings/EnhancedVoiceRecordNumberDB;
@@ -2124,12 +2156,12 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/callsettings/CallSettingsProvider;->log(Ljava/lang/String;)V
 
-    return v2
+    return v3
 
     :sswitch_b
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->quickreplymsg_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     :try_start_b
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->quickreplymsg:Lcom/android/phone/callsettings/QuickReplyMsgDB;
@@ -2153,9 +2185,7 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/callsettings/CallSettingsProvider;->log(Ljava/lang/String;)V
 
-    return v2
-
-    nop
+    return v3
 
     :sswitch_data_0
     .sparse-switch
@@ -3673,7 +3703,7 @@
 .end method
 
 .method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-    .locals 16
+    .locals 17
 
     const/4 v10, 0x0
 
@@ -3720,6 +3750,7 @@
     return-object v10
 
     :sswitch_0
+    :try_start_0
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->uriMatcher:Landroid/content/UriMatcher;
@@ -3778,12 +3809,47 @@
     move-object/from16 v9, p5
 
     invoke-virtual/range {v2 .. v9}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    :try_end_0
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v10
 
     goto :goto_0
 
-    :sswitch_1
+    :catch_0
+    move-exception v11
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject_db:Landroid/database/sqlite/SQLiteDatabase;
+
+    if-eqz v2, :cond_4
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject_db:Landroid/database/sqlite/SQLiteDatabase;
+
+    invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
+
+    const/4 v2, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject_db:Landroid/database/sqlite/SQLiteDatabase;
+
+    :cond_4
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject:Lcom/android/phone/callsettings/AutoRejectDB;
+
+    invoke-virtual {v2}, Lcom/android/phone/callsettings/AutoRejectDB;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+
+    move-result-object v2
+
+    move-object/from16 v0, p0
+
+    iput-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject_db:Landroid/database/sqlite/SQLiteDatabase;
+
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->uriMatcher:Landroid/content/UriMatcher;
@@ -3794,9 +3860,9 @@
 
     move-result v2
 
-    const/4 v3, 0x4
+    const/4 v3, 0x2
 
-    if-ne v2, v3, :cond_4
+    if-ne v2, v3, :cond_5
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -3822,7 +3888,71 @@
 
     move-result-object p3
 
-    :cond_4
+    :cond_5
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->autoreject_db:Landroid/database/sqlite/SQLiteDatabase;
+
+    const-string/jumbo v3, "reject_num"
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    move-object/from16 v4, p2
+
+    move-object/from16 v5, p3
+
+    move-object/from16 v6, p4
+
+    move-object/from16 v9, p5
+
+    invoke-virtual/range {v2 .. v9}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v10
+
+    goto/16 :goto_0
+
+    :sswitch_1
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->uriMatcher:Landroid/content/UriMatcher;
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v2, v0}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
+
+    move-result v2
+
+    const/4 v3, 0x4
+
+    if-ne v2, v3, :cond_6
+
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    invoke-interface {v2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-static {v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+
+    move-result-wide v12
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p3
+
+    invoke-direct {v0, v1, v12, v13}, Lcom/android/phone/callsettings/CallSettingsProvider;->appendRowId(Ljava/lang/String;J)Ljava/lang/String;
+
+    move-result-object p3
+
+    :cond_6
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->autorejectvideocall_db:Landroid/database/sqlite/SQLiteDatabase;
@@ -3860,7 +3990,7 @@
 
     const/16 v3, 0x65
 
-    if-ne v2, v3, :cond_5
+    if-ne v2, v3, :cond_7
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -3886,7 +4016,7 @@
 
     move-result-object p3
 
-    :cond_5
+    :cond_7
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->autorejectoutgoingcall_db:Landroid/database/sqlite/SQLiteDatabase;
@@ -3924,7 +4054,7 @@
 
     const/4 v3, 0x6
 
-    if-ne v2, v3, :cond_6
+    if-ne v2, v3, :cond_8
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -3950,7 +4080,7 @@
 
     move-result-object p3
 
-    :cond_6
+    :cond_8
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->rejectmsg_db:Landroid/database/sqlite/SQLiteDatabase;
@@ -3988,162 +4118,6 @@
 
     const/4 v3, 0x6
 
-    if-ne v2, v3, :cond_7
-
-    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
-
-    move-result-object v2
-
-    const/4 v3, 0x1
-
-    invoke-interface {v2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    invoke-static {v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
-
-    move-result-wide v12
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p3
-
-    invoke-direct {v0, v1, v12, v13}, Lcom/android/phone/callsettings/CallSettingsProvider;->appendRowId(Ljava/lang/String;J)Ljava/lang/String;
-
-    move-result-object p3
-
-    :cond_7
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->rejectmsg_db:Landroid/database/sqlite/SQLiteDatabase;
-
-    const-string/jumbo v3, "reject_msg"
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    move-object/from16 v4, p2
-
-    move-object/from16 v5, p3
-
-    move-object/from16 v6, p4
-
-    move-object/from16 v9, p5
-
-    invoke-virtual/range {v2 .. v9}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object v11
-
-    invoke-static {v11}, Lcom/android/phone/PhoneUtilsCommon;->getRejectMessageCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
-
-    move-result-object v10
-
-    if-eqz v11, :cond_1
-
-    invoke-interface {v11}, Landroid/database/Cursor;->close()V
-
-    const/4 v11, 0x0
-
-    goto/16 :goto_0
-
-    :sswitch_5
-    const-string/jumbo v2, "reject_call_with_message_icon_mode"
-
-    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->uriMatcher:Landroid/content/UriMatcher;
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v2, v0}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
-
-    move-result v2
-
-    const/16 v3, 0x14
-
-    if-ne v2, v3, :cond_8
-
-    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
-
-    move-result-object v2
-
-    const/4 v3, 0x1
-
-    invoke-interface {v2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    invoke-static {v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
-
-    move-result-wide v12
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p3
-
-    invoke-direct {v0, v1, v12, v13}, Lcom/android/phone/callsettings/CallSettingsProvider;->appendRowId(Ljava/lang/String;J)Ljava/lang/String;
-
-    move-result-object p3
-
-    :cond_8
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->rejectmsg_db:Landroid/database/sqlite/SQLiteDatabase;
-
-    const-string/jumbo v3, "reject_msg_icon_mode"
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    move-object/from16 v4, p2
-
-    move-object/from16 v5, p3
-
-    move-object/from16 v6, p4
-
-    move-object/from16 v9, p5
-
-    invoke-virtual/range {v2 .. v9}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object v14
-
-    invoke-static {v14}, Lcom/android/phone/PhoneUtilsCommon;->getRejectMessageIconModeCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
-
-    move-result-object v10
-
-    if-eqz v14, :cond_1
-
-    invoke-interface {v14}, Landroid/database/Cursor;->close()V
-
-    const/4 v14, 0x0
-
-    goto/16 :goto_0
-
-    :sswitch_6
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->uriMatcher:Landroid/content/UriMatcher;
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v2, v0}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
-
-    move-result v2
-
-    const/16 v3, 0xc
-
     if-ne v2, v3, :cond_9
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
@@ -4171,6 +4145,162 @@
     move-result-object p3
 
     :cond_9
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->rejectmsg_db:Landroid/database/sqlite/SQLiteDatabase;
+
+    const-string/jumbo v3, "reject_msg"
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    move-object/from16 v4, p2
+
+    move-object/from16 v5, p3
+
+    move-object/from16 v6, p4
+
+    move-object/from16 v9, p5
+
+    invoke-virtual/range {v2 .. v9}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v14
+
+    invoke-static {v14}, Lcom/android/phone/PhoneUtilsCommon;->getRejectMessageCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
+
+    move-result-object v10
+
+    if-eqz v14, :cond_1
+
+    invoke-interface {v14}, Landroid/database/Cursor;->close()V
+
+    const/4 v14, 0x0
+
+    goto/16 :goto_0
+
+    :sswitch_5
+    const-string/jumbo v2, "reject_call_with_message_icon_mode"
+
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->uriMatcher:Landroid/content/UriMatcher;
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v2, v0}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
+
+    move-result v2
+
+    const/16 v3, 0x14
+
+    if-ne v2, v3, :cond_a
+
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    invoke-interface {v2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-static {v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+
+    move-result-wide v12
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p3
+
+    invoke-direct {v0, v1, v12, v13}, Lcom/android/phone/callsettings/CallSettingsProvider;->appendRowId(Ljava/lang/String;J)Ljava/lang/String;
+
+    move-result-object p3
+
+    :cond_a
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->rejectmsg_db:Landroid/database/sqlite/SQLiteDatabase;
+
+    const-string/jumbo v3, "reject_msg_icon_mode"
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    move-object/from16 v4, p2
+
+    move-object/from16 v5, p3
+
+    move-object/from16 v6, p4
+
+    move-object/from16 v9, p5
+
+    invoke-virtual/range {v2 .. v9}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v15
+
+    invoke-static {v15}, Lcom/android/phone/PhoneUtilsCommon;->getRejectMessageIconModeCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
+
+    move-result-object v10
+
+    if-eqz v15, :cond_1
+
+    invoke-interface {v15}, Landroid/database/Cursor;->close()V
+
+    const/4 v15, 0x0
+
+    goto/16 :goto_0
+
+    :sswitch_6
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->uriMatcher:Landroid/content/UriMatcher;
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v2, v0}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
+
+    move-result v2
+
+    const/16 v3, 0xc
+
+    if-ne v2, v3, :cond_b
+
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    invoke-interface {v2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-static {v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+
+    move-result-wide v12
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p3
+
+    invoke-direct {v0, v1, v12, v13}, Lcom/android/phone/callsettings/CallSettingsProvider;->appendRowId(Ljava/lang/String;J)Ljava/lang/String;
+
+    move-result-object p3
+
+    :cond_b
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->registerussd_db:Landroid/database/sqlite/SQLiteDatabase;
@@ -4208,7 +4338,7 @@
 
     const/16 v3, 0xe
 
-    if-ne v2, v3, :cond_a
+    if-ne v2, v3, :cond_c
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -4234,7 +4364,7 @@
 
     move-result-object p3
 
-    :cond_a
+    :cond_c
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->registerussd_db:Landroid/database/sqlite/SQLiteDatabase;
@@ -4272,7 +4402,7 @@
 
     const/16 v3, 0x8
 
-    if-ne v2, v3, :cond_b
+    if-ne v2, v3, :cond_d
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -4298,7 +4428,7 @@
 
     move-result-object p3
 
-    :cond_b
+    :cond_d
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->ipcall_db:Landroid/database/sqlite/SQLiteDatabase;
@@ -4336,7 +4466,7 @@
 
     const/16 v3, 0xa
 
-    if-ne v2, v3, :cond_c
+    if-ne v2, v3, :cond_e
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -4362,7 +4492,7 @@
 
     move-result-object p3
 
-    :cond_c
+    :cond_e
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->ipcallcdma_db:Landroid/database/sqlite/SQLiteDatabase;
@@ -4400,7 +4530,7 @@
 
     const/16 v3, 0x12
 
-    if-ne v2, v3, :cond_d
+    if-ne v2, v3, :cond_f
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -4426,7 +4556,7 @@
 
     move-result-object p3
 
-    :cond_d
+    :cond_f
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->ipcall_sim2_db:Landroid/database/sqlite/SQLiteDatabase;
@@ -4464,7 +4594,7 @@
 
     const/16 v3, 0x1a
 
-    if-ne v2, v3, :cond_e
+    if-ne v2, v3, :cond_10
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -4490,7 +4620,7 @@
 
     move-result-object p3
 
-    :cond_e
+    :cond_10
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->deleteprefix_db:Landroid/database/sqlite/SQLiteDatabase;
@@ -4528,7 +4658,7 @@
 
     const/16 v3, 0xc9
 
-    if-ne v2, v3, :cond_f
+    if-ne v2, v3, :cond_11
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -4554,7 +4684,7 @@
 
     move-result-object p3
 
-    :cond_f
+    :cond_11
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->enhanced_voicerecord_number_db:Landroid/database/sqlite/SQLiteDatabase;
@@ -4592,7 +4722,7 @@
 
     const/16 v3, 0x18
 
-    if-ne v2, v3, :cond_10
+    if-ne v2, v3, :cond_12
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -4618,7 +4748,7 @@
 
     move-result-object p3
 
-    :cond_10
+    :cond_12
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->photoring_db:Landroid/database/sqlite/SQLiteDatabase;
@@ -4662,7 +4792,7 @@
 
     const/16 v3, 0x1c
 
-    if-ne v2, v3, :cond_11
+    if-ne v2, v3, :cond_13
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -4688,7 +4818,7 @@
 
     move-result-object p3
 
-    :cond_11
+    :cond_13
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/callsettings/CallSettingsProvider;->quickreplymsg_db:Landroid/database/sqlite/SQLiteDatabase;
@@ -4709,19 +4839,21 @@
 
     invoke-virtual/range {v2 .. v9}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
-    move-result-object v15
+    move-result-object v16
 
-    invoke-static {v15}, Lcom/android/phone/PhoneUtilsCommon;->getQuickReplyMsgCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
+    invoke-static/range {v16 .. v16}, Lcom/android/phone/PhoneUtilsCommon;->getQuickReplyMsgCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
 
     move-result-object v10
 
-    if-eqz v15, :cond_1
+    if-eqz v16, :cond_1
 
-    invoke-interface {v15}, Landroid/database/Cursor;->close()V
+    invoke-interface/range {v16 .. v16}, Landroid/database/Cursor;->close()V
 
-    const/4 v15, 0x0
+    const/16 v16, 0x0
 
     goto/16 :goto_0
+
+    nop
 
     :sswitch_data_0
     .sparse-switch

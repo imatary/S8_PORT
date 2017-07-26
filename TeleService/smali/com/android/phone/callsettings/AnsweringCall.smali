@@ -213,7 +213,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d09d2
+    const v3, 0x7f0d0a38
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -229,7 +229,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d09d7
+    const v3, 0x7f0d0a3d
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -245,7 +245,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d02ca
+    const v3, 0x7f0d032a
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -265,7 +265,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d02c7
+    const v3, 0x7f0d0327
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -501,9 +501,9 @@
 .method public handleVoiceCmd()V
     .locals 10
 
-    const v9, 0x7f0d024a
+    const v9, 0x7f0d02a9
 
-    const v8, 0x7f0d01f5
+    const v8, 0x7f0d0252
 
     const/4 v7, 0x1
 
@@ -570,7 +570,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d0577
+    const v6, 0x7f0d05db
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -627,13 +627,13 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    const v4, 0x7f0d01f1
+    const v4, 0x7f0d024e
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/AnsweringCall;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const v5, 0x7f0d0233
+    const v5, 0x7f0d0291
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/AnsweringCall;->getString(I)Ljava/lang/String;
 
@@ -793,7 +793,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAutoAnswer:Landroid/preference/SwitchPreference;
 
-    const v5, 0x7f0d059a
+    const v5, 0x7f0d05fe
 
     invoke-virtual {v4, v5}, Landroid/preference/SwitchPreference;->setTitleDescription(I)V
 
@@ -906,7 +906,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0594
+    const v5, 0x7f0d05f8
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1013,6 +1013,16 @@
     move-result-object v4
 
     invoke-virtual {v3, v4}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
+    iget-object v4, p0, Lcom/android/phone/callsettings/AnsweringCall;->mPowerkeySwitched:Lcom/android/phone/callsettings/SecPowerKeyEndPreference;
+
+    if-eqz v4, :cond_a
+
+    iget-object v4, p0, Lcom/android/phone/callsettings/AnsweringCall;->mPowerkeySwitched:Lcom/android/phone/callsettings/SecPowerKeyEndPreference;
+
+    const v5, 0x7f0d05d2
+
+    invoke-virtual {v4, v5}, Lcom/android/phone/callsettings/SecPowerKeyEndPreference;->setTitleDescription(I)V
 
     :cond_a
     :goto_1
@@ -1138,7 +1148,7 @@
     if-eqz v4, :cond_11
 
     :cond_10
-    const v4, 0x7f0d0567
+    const v4, 0x7f0d05cb
 
     invoke-virtual {v0, v4}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -1167,13 +1177,13 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/AnsweringCall;->mPowerkeySwitched:Lcom/android/phone/callsettings/SecPowerKeyEndPreference;
 
-    const v5, 0x7f0d0587
+    const v5, 0x7f0d05eb
 
     invoke-virtual {v4, v5}, Lcom/android/phone/callsettings/SecPowerKeyEndPreference;->setTitle(I)V
 
     iget-object v4, p0, Lcom/android/phone/callsettings/AnsweringCall;->mPowerkeySwitched:Lcom/android/phone/callsettings/SecPowerKeyEndPreference;
 
-    const v5, 0x7f0d0588
+    const v5, 0x7f0d05ec
 
     invoke-virtual {v4, v5}, Lcom/android/phone/callsettings/SecPowerKeyEndPreference;->setSummary(I)V
 
@@ -1280,13 +1290,13 @@
 
     check-cast v4, Ljava/lang/Boolean;
 
-    const v5, 0x7f0d01f5
+    const v5, 0x7f0d0252
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/AnsweringCall;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const v5, 0x7f0d0248
+    const v5, 0x7f0d02a7
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/AnsweringCall;->getString(I)Ljava/lang/String;
 
@@ -1518,6 +1528,16 @@
 
     if-ne p1, v5, :cond_8
 
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v5
+
+    const-string/jumbo v6, "VolkeyTapping"
+
+    const/4 v7, 0x1
+
+    invoke-static {v5, v6, v7}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
     const/4 v5, 0x1
 
     return v5
@@ -1647,7 +1667,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0582
+    const v5, 0x7f0d05e6
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1657,7 +1677,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0580
+    const v4, 0x7f0d05e4
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1667,7 +1687,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/callsettings/AnsweringCall$3;-><init>(Lcom/android/phone/callsettings/AnsweringCall;)V
 
-    const v5, 0x7f0d02ca
+    const v5, 0x7f0d032a
 
     invoke-virtual {v3, v5, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1677,7 +1697,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/callsettings/AnsweringCall$4;-><init>(Lcom/android/phone/callsettings/AnsweringCall;)V
 
-    const v5, 0x7f0d02c7
+    const v5, 0x7f0d0327
 
     invoke-virtual {v3, v5, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1707,7 +1727,7 @@
 
     invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onResume()V
 
-    const v6, 0x7f0d01f5
+    const v6, 0x7f0d0252
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/AnsweringCall;->getString(I)Ljava/lang/String;
 
@@ -2173,7 +2193,7 @@
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 13
 
-    const v12, 0x7f0d01f5
+    const v12, 0x7f0d0252
 
     const/4 v11, 0x1
 
@@ -2258,7 +2278,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d0247
+    const v6, 0x7f0d02a6
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/AnsweringCall;->getString(I)Ljava/lang/String;
 
@@ -2324,7 +2344,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d024b
+    const v6, 0x7f0d02aa
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/AnsweringCall;->getString(I)Ljava/lang/String;
 

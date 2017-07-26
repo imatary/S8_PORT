@@ -75,7 +75,7 @@
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/OtaUtilsAlertDialog;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0d0c2d
+    const v1, 0x7f0d0c9e
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -87,7 +87,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d02ca
+    const v1, 0x7f0d032a
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

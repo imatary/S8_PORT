@@ -212,27 +212,12 @@
     goto :goto_0
 
     :cond_3
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticRoamingInService()Z
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticDataRoamingInService()Z
 
     move-result v1
 
-    if-nez v1, :cond_4
+    if-eqz v1, :cond_4
 
-    const-string/jumbo v1, "lte_roaming_enhancement"
-
-    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_5
-
-    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->IsDomesticLteRoaming()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_5
-
-    :cond_4
     const-string/jumbo v1, "roam_guard_data_domestic"
 
     invoke-static {v1, p1}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
@@ -251,28 +236,13 @@
 
     goto :goto_0
 
-    :cond_5
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isInternationalRoamingInService()Z
-
-    move-result v1
-
-    if-nez v1, :cond_6
-
-    const-string/jumbo v1, "lte_roaming_enhancement"
-
-    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    :cond_4
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isInternationalDataRoamingInService()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->IsInternationalLteRoaming()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    :cond_6
     const-string/jumbo v1, "roam_guard_data_international"
 
     invoke-static {v1, p1}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
@@ -283,18 +253,18 @@
 
     move-result v1
 
-    if-eqz v1, :cond_7
+    if-eqz v1, :cond_5
 
     const-string/jumbo v1, "roam_guard_data_lte_international"
 
     invoke-static {v1, p1}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
 
-    :cond_7
+    :cond_5
     const-string/jumbo v1, "sprint_gsm_data_guard"
 
     invoke-static {v1, p1}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
 
-    goto/16 :goto_0
+    goto :goto_0
 .end method
 
 .method private setSecureRoamSettingCallValue(I)V
@@ -378,27 +348,12 @@
     return-void
 
     :cond_1
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticRoamingInService()Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    const-string/jumbo v1, "lte_roaming_enhancement"
-
-    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticDataRoamingInService()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->IsDomesticLteRoaming()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    :cond_2
     const-string/jumbo v1, "roam_setting_data_domestic"
 
     invoke-static {v1, p1}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
@@ -409,13 +364,13 @@
 
     move-result v1
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_2
 
     const-string/jumbo v1, "roam_setting_data_lte"
 
     invoke-static {v1, p1}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
 
-    :cond_3
+    :cond_2
     const-string/jumbo v1, "lte_roaming_enhancement"
 
     invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
@@ -566,17 +521,17 @@
     invoke-static {v5, v6}, Lcom/android/phone/mobilenetworks/boundary/NetworkProxy;->listen(Landroid/telephony/PhoneStateListener;I)V
 
     :cond_1
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isInternationalRoamingInService()Z
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isInternationalDataRoamingInService()Z
 
     move-result v5
 
     if-eqz v5, :cond_6
 
-    const v5, 0x7f0d082d
+    const v5, 0x7f0d0891
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(I)V
 
-    const v5, 0x7f0d0830
+    const v5, 0x7f0d0894
 
     invoke-virtual {v1, v5}, Landroid/widget/Button;->setText(I)V
 

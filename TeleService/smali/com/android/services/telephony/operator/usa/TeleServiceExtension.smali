@@ -547,6 +547,23 @@
     return v0
 
     :cond_0
+    const-string/jumbo v0, "feature_usc"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const-string/jumbo v0, "*228"
+
+    invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    return v0
+
+    :cond_1
     const-string/jumbo v0, "*22899"
 
     invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -604,7 +621,7 @@
     return-object p1
 
     :sswitch_0
-    const v0, 0x7f0d0a64
+    const v0, 0x7f0d0acb
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -613,7 +630,7 @@
     goto :goto_0
 
     :sswitch_1
-    const v0, 0x7f0d0a65
+    const v0, 0x7f0d0acc
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -636,7 +653,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0d0a66
+    const v0, 0x7f0d0acd
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

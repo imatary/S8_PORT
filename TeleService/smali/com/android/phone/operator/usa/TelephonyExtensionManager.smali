@@ -1270,7 +1270,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d080e
+    const v2, 0x7f0d0872
 
     const/4 v3, 0x0
 
@@ -2945,59 +2945,17 @@
 .end method
 
 .method public registerDataRoamingSettingsContentObserver(Lcom/android/internal/telephony/Phone;)V
-    .locals 4
+    .locals 1
 
-    const/4 v3, 0x0
+    const-string/jumbo v0, "roaming_enhancement"
 
-    const-string/jumbo v1, "roaming_enhancement"
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    move-result v0
 
-    move-result v1
-
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->updatePhoneName(Lcom/android/internal/telephony/Phone;)V
-
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingDataRoaming()V
-
-    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    const-string/jumbo v1, "roam_setting_data_domestic"
-
-    invoke-static {v1}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->mDataRoamingSettingsContentObserver:Landroid/database/ContentObserver;
-
-    invoke-virtual {v0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
-
-    const-string/jumbo v1, "roam_setting_data_international"
-
-    invoke-static {v1}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->mDataRoamingSettingsContentObserver:Landroid/database/ContentObserver;
-
-    invoke-virtual {v0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
-
-    const-string/jumbo v1, "sprint_gsm_data_roaming"
-
-    invoke-static {v1}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->mDataRoamingSettingsContentObserver:Landroid/database/ContentObserver;
-
-    invoke-virtual {v0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     :cond_0
     return-void
@@ -3309,7 +3267,7 @@
 .end method
 
 .method public updatePhoneName(Ljava/lang/String;)V
-    .locals 4
+    .locals 1
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->isPhoneNameChanged(Ljava/lang/String;)Z
 
@@ -3318,20 +3276,6 @@
     if-eqz v0, :cond_0
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->setPhoneName(Ljava/lang/String;)V
-
-    iget-object v0, p0, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->mHandler:Landroid/os/Handler;
-
-    iget-object v1, p0, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->mHandler:Landroid/os/Handler;
-
-    const/16 v2, 0x67
-
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
-
-    move-result-object v1
-
-    const-wide/16 v2, 0x3e8
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     :cond_0
     return-void

@@ -73,7 +73,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0342
+    const v2, 0x7f0d03a2
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -291,7 +291,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_6
+    if-nez v2, :cond_7
 
     const-string/jumbo v2, "volte_settings_in_mobile_networks_chn"
 
@@ -305,7 +305,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d08d6
+    const v3, 0x7f0d093a
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -332,7 +332,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d08f3
+    const v3, 0x7f0d0959
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -359,7 +359,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d08d7
+    const v3, 0x7f0d093b
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -386,7 +386,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d08e2
+    const v3, 0x7f0d0946
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -413,7 +413,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d088f
+    const v3, 0x7f0d08f3
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -440,7 +440,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d08d8
+    const v3, 0x7f0d093c
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -455,6 +455,33 @@
     invoke-virtual {p2, v2}, Landroid/database/MatrixCursor;->addRow([Ljava/lang/Object;)V
 
     :cond_6
+    const-string/jumbo v2, "cust_network_sel_menu4_o2"
+
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_7
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    const v3, 0x7f0d094a
+
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string/jumbo v2, "volte_call_key"
+
+    invoke-direct {p0, p1, v2, v0}, Lcom/android/phone/mobilenetworks/MobileNetworksSearchIndexablesProvider;->makeRawData(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-virtual {p2, v2}, Landroid/database/MatrixCursor;->addRow([Ljava/lang/Object;)V
+
+    :cond_7
     invoke-static {}, Lcom/android/phone/mobilenetworks/MobileNetworksManager;->getInstance()Lcom/android/phone/mobilenetworks/MobileNetworksManager;
 
     move-result-object v2
@@ -463,7 +490,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_7
+    if-nez v2, :cond_8
 
     invoke-static {}, Lcom/android/phone/utils/WifiSettingUtils;->getWiFiCallingTitle()Ljava/lang/String;
 
@@ -473,7 +500,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_7
+    if-nez v2, :cond_8
 
     const-string/jumbo v2, "wifi_calling_key"
 
@@ -483,6 +510,6 @@
 
     invoke-virtual {p2, v2}, Landroid/database/MatrixCursor;->addRow([Ljava/lang/Object;)V
 
-    :cond_7
+    :cond_8
     return-void
 .end method

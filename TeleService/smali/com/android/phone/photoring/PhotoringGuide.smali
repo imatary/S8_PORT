@@ -131,7 +131,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d07f7
+    const v3, 0x7f0d085b
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -551,7 +551,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0903
+    const v2, 0x7f0d0969
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -571,7 +571,7 @@
 
     iput-object p0, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const v1, 0x7f0d02ca
+    const v1, 0x7f0d032a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/photoring/PhotoringGuide;->getString(I)Ljava/lang/String;
 

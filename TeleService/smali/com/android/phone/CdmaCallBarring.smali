@@ -436,7 +436,7 @@
 
     packed-switch v1, :pswitch_data_0
 
-    const v0, 0x7f0d05d7
+    const v0, 0x7f0d063b
 
     :goto_0
     iget-object v1, p0, Lcom/android/phone/CdmaCallBarring;->mButtonPasswd:Lcom/android/phone/EditPinPreference;
@@ -500,17 +500,17 @@
     return-void
 
     :pswitch_0
-    const v0, 0x7f0d05d4
+    const v0, 0x7f0d0638
 
     goto :goto_0
 
     :pswitch_1
-    const v0, 0x7f0d05d2
+    const v0, 0x7f0d0636
 
     goto :goto_0
 
     :pswitch_2
-    const v0, 0x7f0d06b4
+    const v0, 0x7f0d0718
 
     goto :goto_0
 
@@ -924,7 +924,7 @@
 .method private updateCBIncomingSummary(I)V
     .locals 2
 
-    const v1, 0x7f0d06bd
+    const v1, 0x7f0d0721
 
     packed-switch p1, :pswitch_data_0
 
@@ -945,7 +945,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/phone/CdmaCallBarring;->mButtonIncoming:Landroid/preference/ListPreference;
 
-    const v1, 0x7f0d06be
+    const v1, 0x7f0d0722
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(I)V
 
@@ -963,7 +963,7 @@
 .method private updateCBOutgoingSummary(I)V
     .locals 2
 
-    const v1, 0x7f0d06b9
+    const v1, 0x7f0d071d
 
     packed-switch p1, :pswitch_data_0
 
@@ -984,7 +984,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/phone/CdmaCallBarring;->mButtonOutgoing:Landroid/preference/ListPreference;
 
-    const v1, 0x7f0d06ba
+    const v1, 0x7f0d071e
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(I)V
 
@@ -1372,7 +1372,7 @@
 
     const/4 v8, 0x0
 
-    const v7, 0x7f0d0334
+    const v7, 0x7f0d0394
 
     const/4 v6, 0x1
 
@@ -1393,7 +1393,7 @@
 
     invoke-direct {v2, v5}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f0d032c
+    const v5, 0x7f0d038c
 
     invoke-virtual {p0, v5}, Lcom/android/phone/CdmaCallBarring;->getText(I)Ljava/lang/CharSequence;
 
@@ -1421,7 +1421,7 @@
 
     invoke-virtual {v2, v8}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v5, 0x7f0d032f
+    const v5, 0x7f0d038f
 
     invoke-virtual {p0, v5}, Lcom/android/phone/CdmaCallBarring;->getText(I)Ljava/lang/CharSequence;
 
@@ -1444,7 +1444,7 @@
 
     invoke-virtual {v2, v5}, Landroid/app/ProgressDialog;->setCancelMessage(Landroid/os/Message;)V
 
-    const v5, 0x7f0d032e
+    const v5, 0x7f0d038e
 
     invoke-virtual {p0, v5}, Lcom/android/phone/CdmaCallBarring;->getText(I)Ljava/lang/CharSequence;
 
@@ -1472,11 +1472,11 @@
 
     invoke-direct {v0, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d032d
+    const v4, 0x7f0d038d
 
     sparse-switch p1, :sswitch_data_1
 
-    const v3, 0x7f0d0332
+    const v3, 0x7f0d0392
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1513,14 +1513,14 @@
     return-object v5
 
     :sswitch_2
-    const v3, 0x7f0d0331
+    const v3, 0x7f0d0391
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     goto :goto_1
 
     :sswitch_3
-    const v3, 0x7f0d0333
+    const v3, 0x7f0d0393
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1567,7 +1567,7 @@
 .method public onPinEntered(Lcom/android/phone/EditPinPreference;Z)V
     .locals 6
 
-    const v5, 0x7f0d06b5
+    const v5, 0x7f0d0719
 
     const/4 v2, 0x0
 
@@ -1690,7 +1690,7 @@
 
     iput v4, p0, Lcom/android/phone/CdmaCallBarring;->mPwState:I
 
-    const v1, 0x7f0d06b6
+    const v1, 0x7f0d071a
 
     invoke-direct {p0, v1, v4}, Lcom/android/phone/CdmaCallBarring;->displayPasswdDialog(IZ)V
 

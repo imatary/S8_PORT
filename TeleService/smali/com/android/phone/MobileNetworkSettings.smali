@@ -260,12 +260,6 @@
 
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
 
-    invoke-static {}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getInstance()Lcom/samsung/android/sdk/bixby/BixbyApi;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/phone/MobileNetworkSettings;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
-
     new-instance v0, Lcom/android/phone/MobileNetworkSettings$1;
 
     invoke-direct {v0, p0}, Lcom/android/phone/MobileNetworkSettings$1;-><init>(Lcom/android/phone/MobileNetworkSettings;)V
@@ -410,7 +404,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d08f2
+    const v2, 0x7f0d0958
 
     const/4 v3, 0x1
 
@@ -608,11 +602,9 @@
 
     :cond_4
     :goto_5
-    invoke-static {}, Lcom/android/phone/mobilenetworks/MobileNetworksManager;->getInstance()Lcom/android/phone/mobilenetworks/MobileNetworksManager;
+    const-string/jumbo v0, "remove_mobile_networks_roaming_settings"
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/phone/mobilenetworks/MobileNetworksManager;->isRemoveMobileNetworksEnhancedRoamingMode()Z
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -2625,7 +2617,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d080c
+    const v1, 0x7f0d0870
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3280,7 +3272,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0808
+    const v3, 0x7f0d086c
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3298,7 +3290,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d080b
+    const v3, 0x7f0d086f
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3407,7 +3399,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d0810
+    const v6, 0x7f0d0874
 
     invoke-virtual {v0, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3433,7 +3425,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d0811
+    const v6, 0x7f0d0875
 
     invoke-virtual {v0, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3524,7 +3516,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d088a
+    const v2, 0x7f0d08ee
 
     const/4 v3, 0x1
 
@@ -3623,7 +3615,7 @@
     goto :goto_0
 
     :pswitch_2
-    const v4, 0x7f0d0352
+    const v4, 0x7f0d03b2
 
     invoke-virtual {p0, v4}, Lcom/android/phone/MobileNetworkSettings;->getString(I)Ljava/lang/String;
 
@@ -3632,7 +3624,7 @@
     goto :goto_1
 
     :pswitch_3
-    const v4, 0x7f0d0c30
+    const v4, 0x7f0d0ca1
 
     invoke-virtual {p0, v4}, Lcom/android/phone/MobileNetworkSettings;->getString(I)Ljava/lang/String;
 
@@ -3641,7 +3633,7 @@
     goto :goto_1
 
     :pswitch_4
-    const v4, 0x7f0d0350
+    const v4, 0x7f0d03b0
 
     invoke-virtual {p0, v4}, Lcom/android/phone/MobileNetworkSettings;->getString(I)Ljava/lang/String;
 
@@ -4198,7 +4190,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0345
+    const v2, 0x7f0d03a5
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4527,13 +4519,13 @@
 
     if-ne p2, v2, :cond_5
 
-    const v2, 0x7f0d020a
+    const v2, 0x7f0d0267
 
     invoke-virtual {p0, v2}, Lcom/android/phone/MobileNetworkSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v3, 0x7f0d0294
+    const v3, 0x7f0d02f4
 
     invoke-virtual {p0, v3}, Lcom/android/phone/MobileNetworkSettings;->getString(I)Ljava/lang/String;
 
@@ -4726,7 +4718,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d01f1
+    const v3, 0x7f0d024e
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4736,7 +4728,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0243
+    const v4, 0x7f0d02a1
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4762,7 +4754,7 @@
 
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
-    const v11, 0x7f0d020a
+    const v11, 0x7f0d0267
 
     invoke-virtual {p0, v11}, Lcom/android/phone/MobileNetworkSettings;->getString(I)Ljava/lang/String;
 
@@ -4784,7 +4776,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d0c55
+    const v12, 0x7f0d0cc6
 
     const/4 v13, 0x1
 
@@ -5305,6 +5297,12 @@
     move-result v11
 
     if-eqz v11, :cond_18
+
+    invoke-static {}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getInstance()Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    move-result-object v11
+
+    iput-object v11, p0, Lcom/android/phone/MobileNetworkSettings;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
 
     new-instance v11, Lcom/android/phone/ia/MobileNetworkSettingsStateListener;
 

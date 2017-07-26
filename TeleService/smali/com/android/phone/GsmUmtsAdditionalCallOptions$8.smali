@@ -3,7 +3,7 @@
 .source "GsmUmtsAdditionalCallOptions.java"
 
 # interfaces
-.implements Landroid/preference/Preference$OnPreferenceChangeListener;
+.implements Landroid/preference/Preference$OnPreferenceClickListener;
 
 
 # annotations
@@ -34,67 +34,22 @@
 
 
 # virtual methods
-.method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
-    .locals 6
+.method public onPreferenceClick(Landroid/preference/Preference;)Z
+    .locals 5
 
-    const/4 v5, 0x1
+    const/4 v4, 0x1
 
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    check-cast p1, Landroid/preference/EditTextPreference;
 
-    move-result-object v0
-
-    move-object v1, v0
-
-    const-string/jumbo v2, " "
-
-    const-string/jumbo v3, ""
-
-    invoke-virtual {v0, v2, v3}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/preference/EditTextPreference;->getEditText()Landroid/widget/EditText;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    const-string/jumbo v0, ""
-
-    :cond_0
-    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$8;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "onPreferenceChange - mAutoAreaCodeButton "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2, v3, v5}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap7(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;Z)V
-
-    const-string/jumbo v2, "feature_multisim"
-
-    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
+    if-eqz v1, :cond_0
 
     sget v2, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    if-ne v2, v5, :cond_2
+    if-ne v2, v4, :cond_1
 
     iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$8;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
@@ -104,21 +59,25 @@
 
     const-string/jumbo v3, "area_code_sim2_value"
 
-    invoke-static {v2, v3, v0}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v2, v3}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+
+    :goto_0
+    invoke-virtual {v1}, Landroid/widget/EditText;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_0
+
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setSelection(I)V
+
+    :cond_0
+    return v4
 
     :cond_1
-    :goto_0
-    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$8;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
-
-    invoke-static {v2, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap15(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
-
-    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$8;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
-
-    invoke-static {v2, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap10(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
-
-    return v5
-
-    :cond_2
     iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$8;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
     invoke-static {v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap0(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/ContentResolver;
@@ -127,19 +86,11 @@
 
     const-string/jumbo v3, "area_code_value"
 
-    invoke-static {v2, v3, v0}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v2, v3}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
-    const-string/jumbo v2, "dcm_dialer_prefix_setting_support"
+    move-result-object v2
 
-    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$8;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
-
-    invoke-static {v2, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap4(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 .end method

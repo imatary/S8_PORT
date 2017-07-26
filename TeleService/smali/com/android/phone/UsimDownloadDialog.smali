@@ -206,7 +206,7 @@
 
     iput-object v2, p0, Lcom/android/phone/UsimDownloadDialog;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
-    const v2, 0x7f1002aa
+    const v2, 0x7f1002ad
 
     invoke-virtual {p0, v2}, Lcom/android/phone/UsimDownloadDialog;->findViewById(I)Landroid/view/View;
 
@@ -226,13 +226,13 @@
 
     if-eqz v2, :cond_4
 
-    const v2, 0x7f0d06ef
+    const v2, 0x7f0d0753
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     :cond_0
     :goto_0
-    const v2, 0x7f1002ab
+    const v2, 0x7f1002ae
 
     invoke-virtual {p0, v2}, Lcom/android/phone/UsimDownloadDialog;->findViewById(I)Landroid/view/View;
 
@@ -246,7 +246,7 @@
 
     invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    const v2, 0x7f1002ad
+    const v2, 0x7f1002b0
 
     invoke-virtual {p0, v2}, Lcom/android/phone/UsimDownloadDialog;->findViewById(I)Landroid/view/View;
 
@@ -256,7 +256,7 @@
 
     iput-object v2, p0, Lcom/android/phone/UsimDownloadDialog;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f1002af
+    const v2, 0x7f1002b2
 
     invoke-virtual {p0, v2}, Lcom/android/phone/UsimDownloadDialog;->findViewById(I)Landroid/view/View;
 
@@ -331,7 +331,7 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f0d06d6
+    const v2, 0x7f0d073a
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -399,7 +399,7 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d06d4
+    const v2, 0x7f0d0738
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -411,7 +411,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/UsimDownloadDialog$5;-><init>(Lcom/android/phone/UsimDownloadDialog;)V
 
-    const v3, 0x7f0d04a2
+    const v3, 0x7f0d0502
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -419,7 +419,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/UsimDownloadDialog$6;-><init>(Lcom/android/phone/UsimDownloadDialog;)V
 
-    const v3, 0x7f0d04a3
+    const v3, 0x7f0d0503
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -467,7 +467,7 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d06d5
+    const v2, 0x7f0d0739
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -479,7 +479,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/UsimDownloadDialog$3;-><init>(Lcom/android/phone/UsimDownloadDialog;)V
 
-    const v3, 0x7f0d04a2
+    const v3, 0x7f0d0502
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -487,7 +487,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/UsimDownloadDialog$4;-><init>(Lcom/android/phone/UsimDownloadDialog;)V
 
-    const v3, 0x7f0d04a3
+    const v3, 0x7f0d0503
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

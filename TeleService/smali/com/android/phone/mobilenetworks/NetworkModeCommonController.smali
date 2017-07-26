@@ -1225,7 +1225,7 @@
 
     iget-object v6, p0, Lcom/android/phone/mobilenetworks/NetworkModeCommonController;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f0d0505
+    const v7, 0x7f0d0565
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1237,7 +1237,7 @@
 
     iget-object v6, p0, Lcom/android/phone/mobilenetworks/NetworkModeCommonController;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f0d064b
+    const v7, 0x7f0d06af
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1249,7 +1249,7 @@
 
     iget-object v6, p0, Lcom/android/phone/mobilenetworks/NetworkModeCommonController;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f0d050c
+    const v7, 0x7f0d056c
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

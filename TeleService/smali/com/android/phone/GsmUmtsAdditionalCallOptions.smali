@@ -14,7 +14,6 @@
         Lcom/android/phone/GsmUmtsAdditionalCallOptions$3;,
         Lcom/android/phone/GsmUmtsAdditionalCallOptions$4;,
         Lcom/android/phone/GsmUmtsAdditionalCallOptions$5;,
-        Lcom/android/phone/GsmUmtsAdditionalCallOptions$6;,
         Lcom/android/phone/GsmUmtsAdditionalCallOptions$EmptyView;
     }
 .end annotation
@@ -41,6 +40,8 @@
 
 .field private mApplyOptionSVC:Landroid/preference/PreferenceScreen;
 
+.field private mApplyWebsiteSVC:Landroid/preference/PreferenceScreen;
+
 .field private mAssistedDialingSwitch:Landroid/preference/PreferenceScreen;
 
 .field private mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
@@ -66,6 +67,8 @@
 .field private mCWButton:Lcom/android/phone/CallWaitingCheckBoxPreference;
 
 .field private mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+.field private mCallAUSVC:Landroid/preference/PreferenceScreen;
 
 .field private mCallBarring:Landroid/preference/PreferenceScreen;
 
@@ -166,10 +169,6 @@
 
 .field public mVoicePrivacy:Landroid/preference/Preference;
 
-.field private mWfcRegistrationStateChangeHandler:Landroid/os/Handler;
-
-.field private mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
 
 # direct methods
 .method static synthetic -get0(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/preference/EditTextPreference;
@@ -220,15 +219,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get6(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    return-object v0
-.end method
-
-.method static synthetic -get7()I
+.method static synthetic -get6()I
     .locals 1
 
     sget v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->prvTtyMode:I
@@ -296,15 +287,7 @@
     return-object v0
 .end method
 
-.method static synthetic -wrap10(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->updateAutoAreaCodeOnOff(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method static synthetic -wrap11(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+.method static synthetic -wrap10(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->updateDropDownTty()V
@@ -312,7 +295,7 @@
     return-void
 .end method
 
-.method static synthetic -wrap12(Lcom/android/phone/GsmUmtsAdditionalCallOptions;I)V
+.method static synthetic -wrap11(Lcom/android/phone/GsmUmtsAdditionalCallOptions;I)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->updateDropDownTty(I)V
@@ -320,7 +303,7 @@
     return-void
 .end method
 
-.method static synthetic -wrap13(Lcom/android/phone/GsmUmtsAdditionalCallOptions;I)V
+.method static synthetic -wrap12(Lcom/android/phone/GsmUmtsAdditionalCallOptions;I)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->updatePreferredTtyModeSummaryForVolte(I)V
@@ -328,7 +311,7 @@
     return-void
 .end method
 
-.method static synthetic -wrap14(Lcom/android/phone/GsmUmtsAdditionalCallOptions;I)V
+.method static synthetic -wrap13(Lcom/android/phone/GsmUmtsAdditionalCallOptions;I)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->updatePreferredTtyModeSummary(I)V
@@ -336,7 +319,7 @@
     return-void
 .end method
 
-.method static synthetic -wrap15(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
+.method static synthetic -wrap14(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->updateSummaryAutoAreaCode(Ljava/lang/String;)V
@@ -402,10 +385,10 @@
     return-void
 .end method
 
-.method static synthetic -wrap9(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Z)V
+.method static synthetic -wrap9(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->switchAdditionalCallSettingsButtonsState(Z)V
+    invoke-direct {p0, p1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->updateAutoAreaCodeOnOff(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -487,35 +470,29 @@
 
     new-instance v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$2;
 
-    invoke-direct {v0, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$2;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
-
-    iput-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mWfcRegistrationStateChangeHandler:Landroid/os/Handler;
-
-    new-instance v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$3;
-
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$3;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$2;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Landroid/os/Handler;)V
 
     iput-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataEnabledObserver:Landroid/database/ContentObserver;
+
+    new-instance v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$3;
+
+    invoke-direct {v0, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$3;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+
+    iput-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
     new-instance v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$4;
 
     invoke-direct {v0, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$4;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    iput-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
+    iput-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mOnKeyListener:Landroid/view/View$OnKeyListener;
 
     new-instance v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$5;
 
     invoke-direct {v0, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$5;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
-
-    iput-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mOnKeyListener:Landroid/view/View$OnKeyListener;
-
-    new-instance v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$6;
-
-    invoke-direct {v0, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$6;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
     iput-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
@@ -759,7 +736,7 @@
 
     aput-object v0, v5, v8
 
-    const v6, 0x7f0d0bda
+    const v6, 0x7f0d0c45
 
     invoke-virtual {v4, v6, v5}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -773,7 +750,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0c28
+    const v5, 0x7f0d0c99
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -783,21 +760,21 @@
 
     move-result-object v3
 
-    new-instance v4, Lcom/android/phone/GsmUmtsAdditionalCallOptions$27;
+    new-instance v4, Lcom/android/phone/GsmUmtsAdditionalCallOptions$28;
 
-    invoke-direct {v4, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$27;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v4, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$28;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    const v5, 0x7f0d02ca
+    const v5, 0x7f0d032a
 
     invoke-virtual {v3, v5, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v3
 
-    new-instance v4, Lcom/android/phone/GsmUmtsAdditionalCallOptions$28;
+    new-instance v4, Lcom/android/phone/GsmUmtsAdditionalCallOptions$29;
 
-    invoke-direct {v4, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$28;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v4, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$29;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    const v5, 0x7f0d02c7
+    const v5, 0x7f0d0327
 
     invoke-virtual {v3, v5, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -911,7 +888,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0c29
+    const v2, 0x7f0d0c9a
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -925,7 +902,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0c28
+    const v2, 0x7f0d0c99
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -935,21 +912,21 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;
+    new-instance v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions$26;
 
-    invoke-direct {v1, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v1, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$26;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    const v2, 0x7f0d02ca
+    const v2, 0x7f0d032a
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions$26;
+    new-instance v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions$27;
 
-    invoke-direct {v1, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$26;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v1, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$27;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    const v2, 0x7f0d02c7
+    const v2, 0x7f0d0327
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1013,25 +990,25 @@
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->builder:Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d08e6
+    const v1, 0x7f0d094c
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     :goto_0
     iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->builder:Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d08e9
+    const v1, 0x7f0d094f
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v0, 0x7f0d08ea
+    const v0, 0x7f0d0950
 
     return v0
 
     :cond_0
     iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->builder:Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d08e7
+    const v1, 0x7f0d094d
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -1040,17 +1017,17 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->builder:Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d08e8
+    const v1, 0x7f0d094e
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->builder:Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d08ec
+    const v1, 0x7f0d0952
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v0, 0x7f0d08eb
+    const v0, 0x7f0d0951
 
     return v0
 .end method
@@ -2761,7 +2738,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f1002c0
+    const v4, 0x7f1002c3
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2789,17 +2766,17 @@
 
     move-result v5
 
-    new-instance v6, Lcom/android/phone/GsmUmtsAdditionalCallOptions$23;
+    new-instance v6, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;
 
-    invoke-direct {v6, p0, v0, v1, p1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$23;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Landroid/widget/CheckBox;Landroid/content/Context;I)V
+    invoke-direct {v6, p0, v0, v1, p1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Landroid/widget/CheckBox;Landroid/content/Context;I)V
 
     invoke-virtual {v4, v5, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     iget-object v4, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->builder:Landroid/app/AlertDialog$Builder;
 
-    new-instance v5, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;
+    new-instance v5, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;
 
-    invoke-direct {v5, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$24;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v5, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$25;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
     const/high16 v6, 0x1040000
 
@@ -2877,7 +2854,7 @@
 
     move-result-object v4
 
-    const v6, 0x7f1002c0
+    const v6, 0x7f1002c3
 
     invoke-virtual {v4, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2905,17 +2882,17 @@
 
     move-result v7
 
-    new-instance v8, Lcom/android/phone/GsmUmtsAdditionalCallOptions$21;
+    new-instance v8, Lcom/android/phone/GsmUmtsAdditionalCallOptions$22;
 
-    invoke-direct {v8, p0, v0, v1, v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$21;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Landroid/widget/CheckBox;Landroid/content/Context;I)V
+    invoke-direct {v8, p0, v0, v1, v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$22;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Landroid/widget/CheckBox;Landroid/content/Context;I)V
 
     invoke-virtual {v6, v7, v8}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     iget-object v6, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->builder:Landroid/app/AlertDialog$Builder;
 
-    new-instance v7, Lcom/android/phone/GsmUmtsAdditionalCallOptions$22;
+    new-instance v7, Lcom/android/phone/GsmUmtsAdditionalCallOptions$23;
 
-    invoke-direct {v7, p0, v5}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$22;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;I)V
+    invoke-direct {v7, p0, v5}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$23;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;I)V
 
     const/high16 v8, 0x1040000
 
@@ -3198,9 +3175,9 @@
     :cond_0
     iget-object v4, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropdownDTMF:Lcom/android/phone/DropDownPreference;
 
-    new-instance v5, Lcom/android/phone/GsmUmtsAdditionalCallOptions$13;
+    new-instance v5, Lcom/android/phone/GsmUmtsAdditionalCallOptions$14;
 
-    invoke-direct {v5, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$13;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v5, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$14;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
     invoke-virtual {v4, v5}, Lcom/android/phone/DropDownPreference;->setCallback(Lcom/android/phone/DropDownPreference$Callback;)V
 
@@ -4649,527 +4626,6 @@
     goto :goto_0
 .end method
 
-.method private switchAdditionalCallSettingsButtonsState(Z)V
-    .locals 3
-
-    const/4 v2, 0x0
-
-    invoke-static {}, Lcom/android/phone/TeleServiceFeature;->getOmcNwCode()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    const-string/jumbo v1, "VZW"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const-string/jumbo v1, "SPR"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const-string/jumbo v1, "XAS"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const-string/jumbo v1, "USC"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const-string/jumbo v1, "LRA"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    :cond_0
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
-
-    if-eqz v1, :cond_1
-
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
-
-    invoke-virtual {v1, v2}, Lcom/android/phone/CLIRDropDownPreference;->setEnabled(Z)V
-
-    :cond_1
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWButton:Lcom/android/phone/CallWaitingCheckBoxPreference;
-
-    if-eqz v1, :cond_2
-
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWButton:Lcom/android/phone/CallWaitingCheckBoxPreference;
-
-    invoke-virtual {v1, p1}, Lcom/android/phone/CallWaitingCheckBoxPreference;->setEnabled(Z)V
-
-    :cond_2
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
-
-    if-eqz v1, :cond_4
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_f
-
-    const-string/jumbo v1, "VZW"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_3
-
-    const-string/jumbo v1, "SPR"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_3
-
-    const-string/jumbo v1, "XAS"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_3
-
-    const-string/jumbo v1, "USC"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_3
-
-    const-string/jumbo v1, "LRA"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_f
-
-    :cond_3
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
-
-    invoke-virtual {v1, v2}, Lcom/android/phone/CallWaitingSwitchPreference;->setEnabled(Z)V
-
-    :cond_4
-    :goto_0
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mVoiceCallBarring:Landroid/preference/PreferenceScreen;
-
-    if-eqz v1, :cond_6
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_10
-
-    const-string/jumbo v1, "AIO"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_5
-
-    const-string/jumbo v1, "ATT"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_5
-
-    const-string/jumbo v1, "VZW"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_5
-
-    const-string/jumbo v1, "SPR"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_5
-
-    const-string/jumbo v1, "XAS"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_5
-
-    const-string/jumbo v1, "USC"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_5
-
-    const-string/jumbo v1, "LRA"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_10
-
-    :cond_5
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mVoiceCallBarring:Landroid/preference/PreferenceScreen;
-
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
-
-    :cond_6
-    :goto_1
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallBarring:Landroid/preference/PreferenceScreen;
-
-    if-eqz v1, :cond_8
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_11
-
-    const-string/jumbo v1, "AIO"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_7
-
-    const-string/jumbo v1, "ATT"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_7
-
-    const-string/jumbo v1, "VZW"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_7
-
-    const-string/jumbo v1, "SPR"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_7
-
-    const-string/jumbo v1, "XAS"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_7
-
-    const-string/jumbo v1, "USC"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_7
-
-    const-string/jumbo v1, "LRA"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_11
-
-    :cond_7
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallBarring:Landroid/preference/PreferenceScreen;
-
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
-
-    :cond_8
-    :goto_2
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallForwarding:Landroid/preference/PreferenceScreen;
-
-    if-eqz v1, :cond_a
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_12
-
-    const-string/jumbo v1, "VZW"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_9
-
-    const-string/jumbo v1, "SPR"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_9
-
-    const-string/jumbo v1, "XAS"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_9
-
-    const-string/jumbo v1, "USC"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_9
-
-    const-string/jumbo v1, "LRA"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_12
-
-    :cond_9
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallForwarding:Landroid/preference/PreferenceScreen;
-
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
-
-    :cond_a
-    :goto_3
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallTypeSelect:Landroid/preference/PreferenceScreen;
-
-    if-eqz v1, :cond_c
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_13
-
-    const-string/jumbo v1, "VZW"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_b
-
-    const-string/jumbo v1, "SPR"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_b
-
-    const-string/jumbo v1, "XAS"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_b
-
-    const-string/jumbo v1, "USC"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_b
-
-    const-string/jumbo v1, "LRA"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_13
-
-    :cond_b
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallTypeSelect:Landroid/preference/PreferenceScreen;
-
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
-
-    :cond_c
-    :goto_4
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mFdnSetting:Landroid/preference/PreferenceScreen;
-
-    if-eqz v1, :cond_e
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_14
-
-    const-string/jumbo v1, "VZW"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_d
-
-    const-string/jumbo v1, "SPR"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_d
-
-    const-string/jumbo v1, "XAS"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_d
-
-    const-string/jumbo v1, "USC"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_d
-
-    const-string/jumbo v1, "LRA"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_14
-
-    :cond_d
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mFdnSetting:Landroid/preference/PreferenceScreen;
-
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
-
-    :cond_e
-    :goto_5
-    return-void
-
-    :cond_f
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
-
-    invoke-virtual {v1, p1}, Lcom/android/phone/CallWaitingSwitchPreference;->setEnabled(Z)V
-
-    goto/16 :goto_0
-
-    :cond_10
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mVoiceCallBarring:Landroid/preference/PreferenceScreen;
-
-    invoke-virtual {v1, p1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
-
-    goto/16 :goto_1
-
-    :cond_11
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallBarring:Landroid/preference/PreferenceScreen;
-
-    invoke-virtual {v1, p1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
-
-    goto/16 :goto_2
-
-    :cond_12
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallForwarding:Landroid/preference/PreferenceScreen;
-
-    invoke-virtual {v1, p1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
-
-    goto/16 :goto_3
-
-    :cond_13
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallTypeSelect:Landroid/preference/PreferenceScreen;
-
-    invoke-virtual {v1, p1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
-
-    goto :goto_4
-
-    :cond_14
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v2, "mFdnSetting.setEnabled("
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string/jumbo v2, ")"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x1
-
-    invoke-direct {p0, v1, v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->log(Ljava/lang/String;Z)V
-
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mFdnSetting:Landroid/preference/PreferenceScreen;
-
-    invoke-virtual {v1, p1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
-
-    goto :goto_5
-.end method
-
 .method private updateAutoAreaCodeOnOff(Ljava/lang/String;)V
     .locals 6
 
@@ -5362,7 +4818,7 @@
 
     iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
 
-    const v3, 0x7f0d08ed
+    const v3, 0x7f0d0953
 
     invoke-virtual {v2, v3}, Lcom/android/phone/DropDownPreference;->setSummary(I)V
 
@@ -5389,7 +4845,7 @@
     :cond_2
     iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
 
-    const v3, 0x7f0d08ee
+    const v3, 0x7f0d0954
 
     invoke-virtual {v2, v3}, Lcom/android/phone/DropDownPreference;->setSummary(I)V
 
@@ -5525,7 +4981,7 @@
 
     iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
 
-    const v2, 0x7f0d08ed
+    const v2, 0x7f0d0953
 
     invoke-virtual {v1, v2}, Lcom/android/phone/DropDownPreference;->setSummary(I)V
 
@@ -5552,7 +5008,7 @@
     :cond_3
     iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
 
-    const v2, 0x7f0d08ee
+    const v2, 0x7f0d0954
 
     invoke-virtual {v1, v2}, Lcom/android/phone/DropDownPreference;->setSummary(I)V
 
@@ -5740,7 +5196,7 @@
 
     iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
 
-    const v2, 0x7f0d08ed
+    const v2, 0x7f0d0953
 
     invoke-virtual {v1, v2}, Lcom/android/phone/TtyListPreference;->setSummary(I)V
 
@@ -5759,7 +5215,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
 
-    const v2, 0x7f0d08ee
+    const v2, 0x7f0d0954
 
     invoke-virtual {v1, v2}, Lcom/android/phone/TtyListPreference;->setSummary(I)V
 
@@ -5821,7 +5277,7 @@
 
     aput-object p1, v2, v6
 
-    const v4, 0x7f0d059c
+    const v4, 0x7f0d0600
 
     invoke-virtual {p0, v4}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getText(I)Ljava/lang/CharSequence;
 
@@ -5859,7 +5315,7 @@
 
     iget-object v4, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
 
-    const v5, 0x7f0d059d
+    const v5, 0x7f0d0601
 
     invoke-virtual {v4, v5}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
@@ -5965,6 +5421,14 @@
     :cond_0
     :goto_0
     iget-object v10, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+
+    if-eqz v10, :cond_4
+
+    iget-object v10, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+
+    invoke-virtual {v10}, Lcom/android/phone/CLIRDropDownPreference;->isEnabled()Z
+
+    move-result v10
 
     if-eqz v10, :cond_4
 
@@ -6488,9 +5952,9 @@
     :cond_0
     iget-object v4, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
 
-    new-instance v5, Lcom/android/phone/GsmUmtsAdditionalCallOptions$14;
+    new-instance v5, Lcom/android/phone/GsmUmtsAdditionalCallOptions$15;
 
-    invoke-direct {v5, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$14;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v5, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$15;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
     invoke-virtual {v4, v5}, Lcom/android/phone/DropDownPreference;->setCallback(Lcom/android/phone/DropDownPreference$Callback;)V
 
@@ -6499,1817 +5963,1431 @@
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 23
+    .locals 18
 
     invoke-super/range {p0 .. p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     invoke-static {}, Lcom/android/phone/TeleServiceFeature;->getOmcNwCode()Ljava/lang/String;
 
+    move-result-object v10
+
+    const v14, 0x7f0d024e
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
+
     move-result-object v14
 
-    const v19, 0x7f0d01f1
+    const v15, 0x7f0d029b
 
     move-object/from16 v0, p0
 
-    move/from16 v1, v19
+    invoke-virtual {v0, v15}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
+    move-result-object v15
 
-    move-result-object v19
-
-    const v20, 0x7f0d023d
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v20
-
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
-
-    move-result-object v20
-
-    invoke-static/range {v19 .. v20}, Lcom/android/phone/utils/SALogging;->sendSAEventLog(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v14, v15}, Lcom/android/phone/utils/SALogging;->sendSAEventLog(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->onCreateMultiSIM()V
 
-    const v19, 0x7f070030
+    const v14, 0x7f070030
 
     move-object/from16 v0, p0
 
-    move/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->addPreferencesFromResource(I)V
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->addPreferencesFromResource(I)V
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
-    move-result-object v16
+    move-result-object v12
 
-    const-string/jumbo v19, "button_clir_key"
+    const-string/jumbo v14, "button_clir_key"
 
-    move-object/from16 v0, v16
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v1, v19
+    move-result-object v14
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Lcom/android/phone/CLIRListPreference;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
-
-    const-string/jumbo v19, "button_clir_dropdown_key"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Lcom/android/phone/CLIRDropDownPreference;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
-
-    const-string/jumbo v19, "button_cw_key"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Lcom/android/phone/CallWaitingCheckBoxPreference;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWButton:Lcom/android/phone/CallWaitingCheckBoxPreference;
-
-    const-string/jumbo v19, "meterial_button_cw_key"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Lcom/android/phone/CallWaitingSwitchPreference;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
-
-    const-string/jumbo v19, "meterial_button_clir_key"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Lcom/android/phone/CLIRSwitchPreference;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
-
-    const-string/jumbo v19, "button_hac_key"
+    check-cast v14, Lcom/android/phone/CLIRListPreference;
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v19
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    const-string/jumbo v14, "button_clir_dropdown_key"
 
-    move-result-object v19
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    check-cast v19, Landroid/preference/CheckBoxPreference;
+    move-result-object v14
 
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
-
-    const-string/jumbo v19, "meterial_button_hac_key"
+    check-cast v14, Lcom/android/phone/CLIRDropDownPreference;
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v19
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    const-string/jumbo v14, "button_cw_key"
 
-    move-result-object v19
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    check-cast v19, Landroid/preference/SwitchPreference;
+    move-result-object v14
 
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mMeterialButtonHAC:Landroid/preference/SwitchPreference;
+    check-cast v14, Lcom/android/phone/CallWaitingCheckBoxPreference;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mMeterialButtonHAC:Landroid/preference/SwitchPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWButton:Lcom/android/phone/CallWaitingCheckBoxPreference;
 
-    move-object/from16 v19, v0
+    const-string/jumbo v14, "meterial_button_cw_key"
 
-    if-eqz v19, :cond_0
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Lcom/android/phone/CallWaitingSwitchPreference;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mMeterialButtonHAC:Landroid/preference/SwitchPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v19, v0
+    const-string/jumbo v14, "meterial_button_clir_key"
 
-    move-object/from16 v0, v19
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v1, p0
+    move-result-object v14
 
-    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    check-cast v14, Lcom/android/phone/CLIRSwitchPreference;
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
+
+    const-string/jumbo v14, "button_hac_key"
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Landroid/preference/CheckBoxPreference;
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
+
+    const-string/jumbo v14, "meterial_button_hac_key"
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Landroid/preference/SwitchPreference;
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mMeterialButtonHAC:Landroid/preference/SwitchPreference;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mMeterialButtonHAC:Landroid/preference/SwitchPreference;
+
+    if-eqz v14, :cond_0
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mMeterialButtonHAC:Landroid/preference/SwitchPreference;
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v14, v0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     :cond_0
-    const-string/jumbo v19, "button_tty_mode_key"
+    const-string/jumbo v14, "button_tty_mode_key"
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v19
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    move-result-object v14
 
-    move-result-object v19
-
-    check-cast v19, Lcom/android/phone/TtyListPreference;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
-
-    const-string/jumbo v19, "button_tty_mode_dropdown_key"
+    check-cast v14, Lcom/android/phone/TtyListPreference;
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v19
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    const-string/jumbo v14, "button_tty_mode_dropdown_key"
 
-    move-result-object v19
+    move-object/from16 v0, p0
 
-    check-cast v19, Lcom/android/phone/DropDownPreference;
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v0, v19
+    move-result-object v14
 
-    move-object/from16 v1, p0
+    check-cast v14, Lcom/android/phone/DropDownPreference;
 
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
+    move-object/from16 v0, p0
 
-    const-string/jumbo v19, "feature_multisim"
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    const-string/jumbo v14, "feature_multisim"
 
-    move-result v19
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    if-eqz v19, :cond_25
+    move-result v14
 
-    sget v19, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+    if-eqz v14, :cond_25
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/PhoneUtilsMultiSIM;->getPhone(I)Lcom/android/internal/telephony/Phone;
+    sget v14, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    move-result-object v19
+    invoke-static {v14}, Lcom/android/phone/PhoneUtilsMultiSIM;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
-    move-object/from16 v0, v19
+    move-result-object v14
 
-    move-object/from16 v1, p0
+    move-object/from16 v0, p0
 
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
 
     :goto_0
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
-    move-result-object v19
+    move-result-object v14
 
-    invoke-virtual/range {v19 .. v19}, Lcom/android/phone/PhoneGlobals;->getNotificationMgr()Lcom/android/phone/NotificationMgr;
+    invoke-virtual {v14}, Lcom/android/phone/PhoneGlobals;->getNotificationMgr()Lcom/android/phone/NotificationMgr;
 
-    move-result-object v19
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mNM:Lcom/android/phone/NotificationMgr;
-
-    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
-
-    move-result-object v19
-
-    const-string/jumbo v20, "CscFeature_Common_SupportSecWFC"
-
-    invoke-virtual/range {v19 .. v20}, Lcom/samsung/android/feature/SemCscFeature;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_1
-
-    const-string/jumbo v19, "feature_multisim"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_2
-
-    :cond_1
-    const-string/jumbo v19, "button_gsm_voicecall_forwarding"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallForwarding:Landroid/preference/PreferenceScreen;
-
-    const-string/jumbo v19, "button_callType_select_key"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallTypeSelect:Landroid/preference/PreferenceScreen;
-
-    const-string/jumbo v19, "voicecall_barring_key"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallBarring:Landroid/preference/PreferenceScreen;
-
-    const-string/jumbo v19, "button_fdn_key"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mFdnSetting:Landroid/preference/PreferenceScreen;
-
-    :cond_2
-    const-string/jumbo v19, "call_setting_ui_kdi"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_3
-
-    const-string/jumbo v19, "button_gsm_voicecall_forwarding"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallVoicemailForwarding:Landroid/preference/PreferenceScreen;
+    move-result-object v14
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallVoicemailForwarding:Landroid/preference/PreferenceScreen;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mNM:Lcom/android/phone/NotificationMgr;
 
-    move-object/from16 v19, v0
+    const-string/jumbo v14, "feature_multisim"
+
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_1
+
+    const-string/jumbo v14, "button_gsm_voicecall_forwarding"
+
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Landroid/preference/PreferenceScreen;
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallForwarding:Landroid/preference/PreferenceScreen;
+
+    const-string/jumbo v14, "button_callType_select_key"
+
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Landroid/preference/PreferenceScreen;
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallTypeSelect:Landroid/preference/PreferenceScreen;
+
+    const-string/jumbo v14, "voicecall_barring_key"
+
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Landroid/preference/PreferenceScreen;
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallBarring:Landroid/preference/PreferenceScreen;
+
+    const-string/jumbo v14, "button_fdn_key"
+
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Landroid/preference/PreferenceScreen;
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mFdnSetting:Landroid/preference/PreferenceScreen;
+
+    :cond_1
+    const-string/jumbo v14, "call_setting_ui_kdi"
+
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_2
+
+    const-string/jumbo v14, "button_gsm_voicecall_forwarding"
+
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Landroid/preference/PreferenceScreen;
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallVoicemailForwarding:Landroid/preference/PreferenceScreen;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallVoicemailForwarding:Landroid/preference/PreferenceScreen;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v20
+    move-result-object v15
 
-    const v21, 0x7f0d045b
+    const v16, 0x7f0d04bb
 
-    invoke-virtual/range {v20 .. v21}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    move-result-object v20
+    move-result-object v15
 
-    invoke-virtual/range {v19 .. v20}, Landroid/preference/PreferenceScreen;->setTitle(Ljava/lang/CharSequence;)V
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallVoicemailForwarding:Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v19, v0
-
-    const-string/jumbo v20, ""
-
-    invoke-virtual/range {v19 .. v20}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
-
-    const-string/jumbo v19, "button_sync_call_settings_key"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSyncCallSettings:Landroid/preference/PreferenceScreen;
+    invoke-virtual {v14, v15}, Landroid/preference/PreferenceScreen;->setTitle(Ljava/lang/CharSequence;)V
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSyncCallSettings:Landroid/preference/PreferenceScreen;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallVoicemailForwarding:Landroid/preference/PreferenceScreen;
 
-    move-object/from16 v19, v0
+    const-string/jumbo v15, ""
 
-    if-eqz v19, :cond_3
+    invoke-virtual {v14, v15}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
 
-    move-object/from16 v0, p0
+    const-string/jumbo v14, "button_sync_call_settings_key"
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSyncCallSettings:Landroid/preference/PreferenceScreen;
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v19, v0
+    move-result-object v14
 
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSyncCallSettings:Landroid/preference/PreferenceScreen;
-
-    :cond_3
-    new-instance v19, Landroid/content/IntentFilter;
-
-    invoke-direct/range {v19 .. v19}, Landroid/content/IntentFilter;-><init>()V
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapFilter:Landroid/content/IntentFilter;
+    check-cast v14, Landroid/preference/PreferenceScreen;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapFilter:Landroid/content/IntentFilter;
-
-    move-object/from16 v19, v0
-
-    const-string/jumbo v20, "com.samsung.intent.action.SIMHOTSWAP"
-
-    invoke-virtual/range {v19 .. v20}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSyncCallSettings:Landroid/preference/PreferenceScreen;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapFilter:Landroid/content/IntentFilter;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSyncCallSettings:Landroid/preference/PreferenceScreen;
 
-    move-object/from16 v19, v0
+    if-eqz v14, :cond_2
 
-    const-string/jumbo v20, "com.samsung.settings.SIMCARD_MGT_ACTIVATED"
+    move-object/from16 v0, p0
 
-    invoke-virtual/range {v19 .. v20}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSyncCallSettings:Landroid/preference/PreferenceScreen;
 
-    new-instance v19, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    move-object/from16 v0, v19
+    const/4 v14, 0x0
 
-    move-object/from16 v1, p0
+    move-object/from16 v0, p0
 
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSyncCallSettings:Landroid/preference/PreferenceScreen;
 
-    move-object/from16 v0, v19
+    :cond_2
+    new-instance v14, Landroid/content/IntentFilter;
 
-    move-object/from16 v1, p0
+    invoke-direct {v14}, Landroid/content/IntentFilter;-><init>()V
 
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapReceiver:Landroid/content/BroadcastReceiver;
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapFilter:Landroid/content/IntentFilter;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapFilter:Landroid/content/IntentFilter;
+
+    const-string/jumbo v15, "com.samsung.intent.action.SIMHOTSWAP"
+
+    invoke-virtual {v14, v15}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapFilter:Landroid/content/IntentFilter;
+
+    const-string/jumbo v15, "com.samsung.settings.SIMCARD_MGT_ACTIVATED"
+
+    invoke-virtual {v14, v15}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    new-instance v14, Lcom/android/phone/GsmUmtsAdditionalCallOptions$6;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v14, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$6;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getActivity()Landroid/app/Activity;
 
-    move-result-object v19
+    move-result-object v14
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapReceiver:Landroid/content/BroadcastReceiver;
-
-    move-object/from16 v20, v0
+    iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapReceiver:Landroid/content/BroadcastReceiver;
 
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapFilter:Landroid/content/IntentFilter;
 
-    move-object/from16 v21, v0
+    move-object/from16 v16, v0
 
-    invoke-virtual/range {v19 .. v21}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual/range {v14 .. v16}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    const/16 v19, 0x1
+    const/4 v14, 0x1
 
-    move/from16 v0, v19
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
+    iput-boolean v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIsHotSwapRegister:Z
 
-    iput-boolean v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIsHotSwapRegister:Z
+    const-string/jumbo v14, "feature_chn"
 
-    new-instance v19, Landroid/content/IntentFilter;
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    invoke-direct/range {v19 .. v19}, Landroid/content/IntentFilter;-><init>()V
+    move-result v14
 
-    move-object/from16 v0, v19
+    if-eqz v14, :cond_3
 
-    move-object/from16 v1, p0
+    const-string/jumbo v14, "feature_multisim"
 
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedFilter:Landroid/content/IntentFilter;
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_3
+
+    new-instance v14, Landroid/content/IntentFilter;
+
+    invoke-direct {v14}, Landroid/content/IntentFilter;-><init>()V
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedFilter:Landroid/content/IntentFilter;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedFilter:Landroid/content/IntentFilter;
+
+    const-string/jumbo v15, "com.samsung.intent.action.ACTION_DEFAULT_DATA_SUBSCRIPTION_FAILED"
+
+    invoke-virtual {v14, v15}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedFilter:Landroid/content/IntentFilter;
+
+    const-string/jumbo v15, "android.intent.action.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED"
+
+    invoke-virtual {v14, v15}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getActivity()Landroid/app/Activity;
+
+    move-result-object v14
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedReceiver:Landroid/content/BroadcastReceiver;
 
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedFilter:Landroid/content/IntentFilter;
 
-    move-object/from16 v19, v0
+    move-object/from16 v16, v0
 
-    const-string/jumbo v20, "com.samsung.intent.action.ACTION_DEFAULT_DATA_SUBSCRIPTION_FAILED"
+    invoke-virtual/range {v14 .. v16}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    invoke-virtual/range {v19 .. v20}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v14
+
+    const-string/jumbo v15, "phone"
+
+    invoke-virtual {v14, v15}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v13
+
+    check-cast v13, Landroid/telephony/TelephonyManager;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedFilter:Landroid/content/IntentFilter;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
-    move-object/from16 v19, v0
+    const/16 v15, 0x40
 
-    const-string/jumbo v20, "android.intent.action.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED"
+    invoke-virtual {v13, v14, v15}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
-    invoke-virtual/range {v19 .. v20}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
+    :cond_3
     move-object/from16 v0, p0
 
     move-object/from16 v1, p0
 
     iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mTcpListener:Lcom/android/phone/TimeConsumingPreferenceListener;
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getActivity()Landroid/app/Activity;
+    const-string/jumbo v14, "tty_to_default_wired_headset_plugged_out"
 
-    move-result-object v19
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-object/from16 v0, p0
+    move-result v14
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedReceiver:Landroid/content/BroadcastReceiver;
+    if-eqz v14, :cond_4
 
-    move-object/from16 v20, v0
+    new-instance v9, Landroid/content/IntentFilter;
 
-    move-object/from16 v0, p0
+    invoke-direct {v9}, Landroid/content/IntentFilter;-><init>()V
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedFilter:Landroid/content/IntentFilter;
+    const-string/jumbo v14, "android.telecom.action.CURRENT_TTY_MODE_CHANGED"
 
-    move-object/from16 v21, v0
-
-    invoke-virtual/range {v19 .. v21}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
-
-    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v19
-
-    const-string/jumbo v20, "phone"
-
-    invoke-virtual/range {v19 .. v20}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v17
-
-    check-cast v17, Landroid/telephony/TelephonyManager;
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
-
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x40
-
-    move-object/from16 v0, v17
-
-    move-object/from16 v1, v19
-
-    move/from16 v2, v20
-
-    invoke-virtual {v0, v1, v2}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
-
-    const-string/jumbo v19, "tty_to_default_wired_headset_plugged_out"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_4
-
-    new-instance v13, Landroid/content/IntentFilter;
-
-    invoke-direct {v13}, Landroid/content/IntentFilter;-><init>()V
-
-    const-string/jumbo v19, "android.telecom.action.CURRENT_TTY_MODE_CHANGED"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v13, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-virtual {v9, v14}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getActivity()Landroid/app/Activity;
 
-    move-result-object v19
+    move-result-object v14
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIntentReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
-    move-object/from16 v20, v0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, v20
-
-    invoke-virtual {v0, v1, v13}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {v14, v15, v9}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     :cond_4
-    const-string/jumbo v19, "edittext_areacode_key"
+    const-string/jumbo v14, "edittext_areacode_key"
 
-    move-object/from16 v0, v16
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v1, v19
+    move-result-object v14
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/EditTextPreference;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
+    check-cast v14, Landroid/preference/EditTextPreference;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_5
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
 
-    move-object/from16 v19, v0
-
-    const v20, 0x7f0400a4
-
-    invoke-virtual/range {v19 .. v20}, Landroid/preference/EditTextPreference;->setDialogLayoutResource(I)V
+    if-eqz v14, :cond_5
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
 
-    move-object/from16 v19, v0
+    const v15, 0x7f0400a4
 
-    new-instance v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions$8;
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, p0
-
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$8;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
-
-    invoke-virtual/range {v19 .. v20}, Landroid/preference/EditTextPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v14, v15}, Landroid/preference/EditTextPreference;->setDialogLayoutResource(I)V
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
 
-    move-object/from16 v19, v0
-
-    invoke-virtual/range {v19 .. v19}, Landroid/preference/EditTextPreference;->getEditText()Landroid/widget/EditText;
-
-    move-result-object v19
+    new-instance v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mOnKeyListener:Landroid/view/View$OnKeyListener;
+    invoke-direct {v15, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    move-object/from16 v20, v0
-
-    invoke-virtual/range {v19 .. v20}, Landroid/widget/EditText;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
-
-    const-string/jumbo v19, "feature_multisim"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_5
+    invoke-virtual {v14, v15}, Landroid/preference/EditTextPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v14}, Landroid/preference/EditTextPreference;->getEditText()Landroid/widget/EditText;
 
-    new-instance v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions$9;
+    move-result-object v14
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
+    iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mOnKeyListener:Landroid/view/View$OnKeyListener;
 
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$9;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-virtual {v14, v15}, Landroid/widget/EditText;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    invoke-virtual/range {v19 .. v20}, Landroid/preference/EditTextPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    const-string/jumbo v14, "feature_multisim"
+
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_5
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
+
+    new-instance v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions$8;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v15, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$8;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+
+    invoke-virtual {v14, v15}, Landroid/preference/EditTextPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     :cond_5
-    const-string/jumbo v19, "button_autoredial_key"
+    const-string/jumbo v14, "button_autoredial_key"
 
-    move-object/from16 v0, v16
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v1, v19
+    move-result-object v14
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/CheckBoxPreference;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoRedial:Landroid/preference/CheckBoxPreference;
-
-    const-string/jumbo v19, "button_subaddress_key"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/CheckBoxPreference;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSubaddress:Landroid/preference/CheckBoxPreference;
-
-    const-string/jumbo v19, "feature_kdi"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_28
-
-    const-string/jumbo v19, "call_setting_ui_kdi"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_26
-
-    const-string/jumbo v19, "switch_clir_key"
+    check-cast v14, Landroid/preference/CheckBoxPreference;
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v19
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoRedial:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    const-string/jumbo v14, "button_subaddress_key"
 
-    move-result-object v19
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    check-cast v19, Landroid/preference/SwitchPreference;
+    move-result-object v14
 
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+    check-cast v14, Landroid/preference/CheckBoxPreference;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSubaddress:Landroid/preference/CheckBoxPreference;
 
-    move-object/from16 v19, v0
+    const-string/jumbo v14, "feature_kdi"
 
-    if-eqz v19, :cond_6
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_27
+
+    const-string/jumbo v14, "call_setting_ui_kdi"
+
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_26
+
+    const-string/jumbo v14, "switch_clir_key"
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v19, v0
+    move-result-object v14
 
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const-string/jumbo v19, "removePreference  SWITCH_CLIR_KEY"
+    check-cast v14, Landroid/preference/SwitchPreference;
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v19
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
 
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->log(Ljava/lang/String;)V
+    move-object/from16 v0, p0
 
-    const/16 v19, 0x0
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
 
-    move-object/from16 v0, v19
+    if-eqz v14, :cond_6
 
-    move-object/from16 v1, p0
+    move-object/from16 v0, p0
 
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
+    const-string/jumbo v14, "removePreference  SWITCH_CLIR_KEY"
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->log(Ljava/lang/String;)V
+
+    const/4 v14, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
 
     :cond_6
     :goto_1
-    const-string/jumbo v19, "change_guide_language_key"
+    const-string/jumbo v14, "change_guide_language_key"
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v19
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    move-result-object v14
 
-    move-result-object v19
+    check-cast v14, Landroid/preference/ListPreference;
 
-    check-cast v19, Landroid/preference/ListPreference;
+    move-object/from16 v0, p0
 
-    move-object/from16 v0, v19
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
 
-    move-object/from16 v1, p0
+    const/4 v14, 0x1
 
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
+    new-array v4, v14, [Ljava/lang/String;
 
-    const/16 v19, 0x1
+    const-string/jumbo v14, "%d"
 
-    move/from16 v0, v19
+    const/4 v15, 0x0
 
-    new-array v6, v0, [Ljava/lang/String;
+    aput-object v14, v4, v15
 
-    const-string/jumbo v19, "%d"
+    const/4 v14, 0x1
 
-    const/16 v20, 0x0
+    new-array v3, v14, [Ljava/lang/String;
 
-    aput-object v19, v6, v20
+    const-string/jumbo v14, "14190"
 
-    const/16 v19, 0x1
+    const/4 v15, 0x0
 
-    move/from16 v0, v19
+    aput-object v14, v3, v15
 
-    new-array v5, v0, [Ljava/lang/String;
+    const/4 v14, 0x1
 
-    const-string/jumbo v19, "14190"
+    new-array v2, v14, [Ljava/lang/String;
 
-    const/16 v20, 0x0
+    const-string/jumbo v14, "14191"
 
-    aput-object v19, v5, v20
+    const/4 v15, 0x0
 
-    const/16 v19, 0x1
-
-    move/from16 v0, v19
-
-    new-array v4, v0, [Ljava/lang/String;
-
-    const-string/jumbo v19, "14191"
-
-    const/16 v20, 0x0
-
-    aput-object v19, v4, v20
+    aput-object v14, v2, v15
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v19
+    move-result-object v14
 
-    const v20, 0x7f0900c4
+    const v15, 0x7f0900c4
 
-    invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+    invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
-    move-result-object v10
+    move-result-object v8
 
-    const/16 v19, 0x2
+    const/4 v14, 0x2
 
-    move/from16 v0, v19
+    new-array v7, v14, [Ljava/lang/CharSequence;
 
-    new-array v9, v0, [Ljava/lang/CharSequence;
+    const/4 v14, 0x0
 
-    const/16 v19, 0x0
+    aget-object v14, v8, v14
 
-    aget-object v19, v10, v19
+    invoke-static {v14, v4, v3}, Landroid/text/TextUtils;->replace(Ljava/lang/CharSequence;[Ljava/lang/String;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
-    move-object/from16 v0, v19
+    move-result-object v14
 
-    invoke-static {v0, v6, v5}, Landroid/text/TextUtils;->replace(Ljava/lang/CharSequence;[Ljava/lang/String;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    const/4 v15, 0x0
 
-    move-result-object v19
+    aput-object v14, v7, v15
 
-    const/16 v20, 0x0
+    const/4 v14, 0x1
 
-    aput-object v19, v9, v20
+    aget-object v14, v8, v14
 
-    const/16 v19, 0x1
+    invoke-static {v14, v4, v2}, Landroid/text/TextUtils;->replace(Ljava/lang/CharSequence;[Ljava/lang/String;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
-    aget-object v19, v10, v19
+    move-result-object v14
 
-    move-object/from16 v0, v19
+    const/4 v15, 0x1
 
-    invoke-static {v0, v6, v4}, Landroid/text/TextUtils;->replace(Ljava/lang/CharSequence;[Ljava/lang/String;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
-
-    move-result-object v19
-
-    const/16 v20, 0x1
-
-    aput-object v19, v9, v20
+    aput-object v14, v7, v15
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
 
-    move-object/from16 v19, v0
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v9}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
+    invoke-virtual {v14, v7}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
 
-    move-object/from16 v19, v0
-
-    new-instance v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions$10;
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, p0
-
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$10;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
-
-    invoke-virtual/range {v19 .. v20}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
-
-    const-string/jumbo v19, "apply_option_service_key"
+    new-instance v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions$9;
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v19
+    invoke-direct {v15, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$9;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v14, v15}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
-
-    const-string/jumbo v12, "KDDI"
-
-    const-string/jumbo v11, "au"
-
-    const/16 v18, 0x0
-
-    const-string/jumbo v19, "call_setting_ui_kdi"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_27
-
-    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v19
-
-    const v20, 0x7f0d0bb9
-
-    invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v19
-
-    const-string/jumbo v20, "%s"
-
-    const-string/jumbo v21, "au"
-
-    invoke-virtual/range {v19 .. v21}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v18
-
-    :goto_2
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v19, v0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, v18
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setTitle(Ljava/lang/CharSequence;)V
+    const-string/jumbo v14, "apply_option_service_key"
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v19, v0
+    move-result-object v14
 
-    new-instance v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions$11;
+    check-cast v14, Landroid/preference/PreferenceScreen;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
 
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$11;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    move-object/from16 v0, p0
 
-    invoke-virtual/range {v19 .. v20}, Landroid/preference/PreferenceScreen;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
+
+    new-instance v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions$10;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v15, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$10;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+
+    invoke-virtual {v14, v15}, Landroid/preference/PreferenceScreen;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+
+    const-string/jumbo v14, "apply_website_service_key"
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Landroid/preference/PreferenceScreen;
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyWebsiteSVC:Landroid/preference/PreferenceScreen;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyWebsiteSVC:Landroid/preference/PreferenceScreen;
+
+    new-instance v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions$11;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v15, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$11;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+
+    invoke-virtual {v14, v15}, Landroid/preference/PreferenceScreen;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+
+    const-string/jumbo v14, "call_au_service_key"
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Landroid/preference/PreferenceScreen;
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallAUSVC:Landroid/preference/PreferenceScreen;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCallAUSVC:Landroid/preference/PreferenceScreen;
+
+    new-instance v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions$12;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v15, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$12;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+
+    invoke-virtual {v14, v15}, Landroid/preference/PreferenceScreen;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     :cond_7
-    :goto_3
+    :goto_2
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v19
+    move-result-object v14
 
-    const v20, 0x7f0b0007
+    const v15, 0x7f0b0007
 
-    invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getBoolean(I)Z
+    invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getBoolean(I)Z
 
-    move-result v19
+    move-result v14
 
-    if-nez v19, :cond_2c
+    if-nez v14, :cond_2b
 
-    const-string/jumbo v19, "hac_enable"
+    const-string/jumbo v14, "hac_enable"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    :goto_4
-    if-nez v19, :cond_2d
+    :goto_3
+    if-nez v14, :cond_2c
 
-    if-eqz v16, :cond_a
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_8
+    if-eqz v12, :cond_a
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
 
-    move-object/from16 v19, v0
+    if-eqz v14, :cond_8
 
-    move-object/from16 v0, v16
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, v19
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_8
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mMeterialButtonHAC:Landroid/preference/SwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mMeterialButtonHAC:Landroid/preference/SwitchPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_9
+    if-eqz v14, :cond_9
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mMeterialButtonHAC:Landroid/preference/SwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mMeterialButtonHAC:Landroid/preference/SwitchPreference;
 
-    move-object/from16 v19, v0
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_9
-    const/16 v19, 0x0
+    const/4 v14, 0x0
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
+    const/4 v14, 0x0
 
-    const/16 v19, 0x0
+    move-object/from16 v0, p0
 
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mMeterialButtonHAC:Landroid/preference/SwitchPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mMeterialButtonHAC:Landroid/preference/SwitchPreference;
 
     :cond_a
-    :goto_5
-    if-eqz v16, :cond_b
+    :goto_4
+    if-eqz v12, :cond_b
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
 
-    move-object/from16 v19, v0
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_b
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
+    const/4 v14, 0x0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
 
-    move-object/from16 v19, v0
+    move-object/from16 v0, p0
 
-    if-eqz v19, :cond_d
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
+
+    if-eqz v14, :cond_d
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v19
+    move-result-object v14
 
-    const v20, 0x7f0b0006
+    const v15, 0x7f0b0006
 
-    invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getBoolean(I)Z
+    invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getBoolean(I)Z
 
-    move-result v19
+    move-result v14
 
-    if-nez v19, :cond_c
+    if-nez v14, :cond_c
 
-    const-string/jumbo v19, "tty_enable"
+    const-string/jumbo v14, "tty_enable"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_2f
+    if-eqz v14, :cond_2e
 
     :cond_c
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
-
-    move-object/from16 v19, v0
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v20
+    move-result-object v15
 
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/TtyListPreference;->init(Landroid/content/Context;)V
+    invoke-virtual {v14, v15}, Lcom/android/phone/TtyListPreference;->init(Landroid/content/Context;)V
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
 
-    move-object/from16 v19, v0
+    new-instance v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions$13;
 
-    new-instance v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions$12;
+    move-object/from16 v0, p0
 
-    move-object/from16 v0, v20
+    invoke-direct {v15, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$13;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    move-object/from16 v1, p0
-
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$12;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
-
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/TtyListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v14, v15}, Lcom/android/phone/TtyListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     :cond_d
-    :goto_6
+    :goto_5
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_f
+    if-eqz v14, :cond_f
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v19
+    move-result-object v14
 
-    const v20, 0x7f0b0006
+    const v15, 0x7f0b0006
 
-    invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getBoolean(I)Z
+    invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getBoolean(I)Z
 
-    move-result v19
+    move-result v14
 
-    if-nez v19, :cond_e
+    if-nez v14, :cond_e
 
-    const-string/jumbo v19, "tty_enable"
+    const-string/jumbo v14, "tty_enable"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_31
+    if-eqz v14, :cond_30
 
     :cond_e
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->initializeDropDownTTY()V
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
 
-    move-object/from16 v19, v0
+    const/4 v15, 0x1
 
-    const/16 v20, 0x1
-
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/DropDownPreference;->semSetSummaryColorToColorPrimaryDark(Z)V
+    invoke-virtual {v14, v15}, Lcom/android/phone/DropDownPreference;->semSetSummaryColorToColorPrimaryDark(Z)V
 
     :cond_f
-    :goto_7
-    const-string/jumbo v19, "cdma_additional_setting_enable"
+    :goto_6
+    const-string/jumbo v14, "cdma_additional_setting_enable"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-nez v19, :cond_10
+    if-nez v14, :cond_10
 
-    const-string/jumbo v19, "call_setting_ui_kdi"
+    const-string/jumbo v14, "call_setting_ui_kdi"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_18
+    if-eqz v14, :cond_18
 
     :cond_10
-    if-eqz v16, :cond_18
+    if-eqz v12, :cond_18
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_11
+    if-eqz v14, :cond_11
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    move-object/from16 v0, v16
+    const/4 v14, 0x0
 
-    move-object/from16 v1, v19
+    move-object/from16 v0, p0
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
     :cond_11
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_12
+    if-eqz v14, :cond_12
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    move-object/from16 v0, v16
+    const/4 v14, 0x0
 
-    move-object/from16 v1, v19
+    move-object/from16 v0, p0
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
     :cond_12
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_13
+    if-eqz v14, :cond_13
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    move-object/from16 v0, v16
+    const/4 v14, 0x0
 
-    move-object/from16 v1, v19
+    move-object/from16 v0, p0
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
 
     :cond_13
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_14
+    if-eqz v14, :cond_14
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    move-object/from16 v0, v16
+    const/4 v14, 0x0
 
-    move-object/from16 v1, v19
+    move-object/from16 v0, p0
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
 
     :cond_14
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWButton:Lcom/android/phone/CallWaitingCheckBoxPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWButton:Lcom/android/phone/CallWaitingCheckBoxPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_15
+    if-eqz v14, :cond_15
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWButton:Lcom/android/phone/CallWaitingCheckBoxPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWButton:Lcom/android/phone/CallWaitingCheckBoxPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    move-object/from16 v0, v16
+    const/4 v14, 0x0
 
-    move-object/from16 v1, v19
+    move-object/from16 v0, p0
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWButton:Lcom/android/phone/CallWaitingCheckBoxPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWButton:Lcom/android/phone/CallWaitingCheckBoxPreference;
 
     :cond_15
-    const-string/jumbo v19, "call_setting_ui_kdi"
+    const-string/jumbo v14, "call_setting_ui_kdi"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-nez v19, :cond_16
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_16
+    if-nez v14, :cond_16
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v19, v0
+    if-eqz v14, :cond_16
 
-    move-object/from16 v0, v16
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, v19
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    const/16 v19, 0x0
+    const/4 v14, 0x0
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
     :cond_16
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_17
+    if-eqz v14, :cond_17
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    move-object/from16 v0, v16
+    const/4 v14, 0x0
 
-    move-object/from16 v1, v19
+    move-object/from16 v0, p0
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
 
     :cond_17
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoRedial:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoRedial:Landroid/preference/CheckBoxPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_18
+    if-eqz v14, :cond_18
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoRedial:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoRedial:Landroid/preference/CheckBoxPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    move-object/from16 v0, v16
+    const/4 v14, 0x0
 
-    move-object/from16 v1, v19
+    move-object/from16 v0, p0
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoRedial:Landroid/preference/CheckBoxPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mAutoRedial:Landroid/preference/CheckBoxPreference;
 
     :cond_18
-    const-string/jumbo v19, "call_setting_ui_kdi"
+    const-string/jumbo v14, "call_setting_ui_kdi"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-nez v19, :cond_1c
+    if-nez v14, :cond_1d
 
-    if-eqz v16, :cond_1c
+    if-eqz v12, :cond_1d
 
-    const-string/jumbo v19, "button_au_callreject_key"
+    const-string/jumbo v14, "button_au_callreject_key"
 
-    move-object/from16 v0, v16
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v1, v19
+    move-result-object v11
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    if-eqz v11, :cond_19
 
-    move-result-object v15
-
-    if-eqz v15, :cond_19
-
-    move-object/from16 v0, v16
-
-    invoke-virtual {v0, v15}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v12, v11}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_19
-    const-string/jumbo v19, "button_roaming_kddi_key"
+    const-string/jumbo v14, "button_roaming_kddi_key"
 
-    move-object/from16 v0, v16
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v1, v19
+    move-result-object v11
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    if-eqz v11, :cond_1a
 
-    move-result-object v15
-
-    if-eqz v15, :cond_1a
-
-    move-object/from16 v0, v16
-
-    invoke-virtual {v0, v15}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v12, v11}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_1a
-    const-string/jumbo v19, "button_sync_call_settings_key"
+    const-string/jumbo v14, "button_sync_call_settings_key"
 
-    move-object/from16 v0, v16
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v1, v19
+    move-result-object v11
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    if-eqz v11, :cond_1b
 
-    move-result-object v15
-
-    if-eqz v15, :cond_1b
-
-    move-object/from16 v0, v16
-
-    invoke-virtual {v0, v15}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v12, v11}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_1b
-    const-string/jumbo v19, "feature_sbm"
+    const-string/jumbo v14, "feature_sbm"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-nez v19, :cond_1c
+    if-nez v14, :cond_1c
 
-    const-string/jumbo v19, "meterial_button_clir_key"
+    const-string/jumbo v14, "meterial_button_clir_key"
 
-    move-object/from16 v0, v16
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v1, v19
+    move-result-object v11
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    if-eqz v11, :cond_1c
 
-    move-result-object v15
+    invoke-virtual {v12, v11}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    if-eqz v15, :cond_1c
+    const/4 v14, 0x0
 
-    move-object/from16 v0, v16
+    move-object/from16 v0, p0
 
-    invoke-virtual {v0, v15}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
 
     :cond_1c
-    const-string/jumbo v19, "feature_multisim"
+    const-string/jumbo v14, "aucallsettings_category_key"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-result v19
+    move-result-object v11
 
-    if-eqz v19, :cond_33
+    if-eqz v11, :cond_1d
 
-    const-string/jumbo v19, "feature_ctc"
+    const-string/jumbo v14, "removePreference AUCALLSETTINGS_CATEGORY: "
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    move-object/from16 v0, p0
 
-    move-result v19
+    invoke-direct {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->log(Ljava/lang/String;)V
 
-    :goto_8
-    if-nez v19, :cond_1d
-
-    if-eqz v16, :cond_1d
-
-    const-string/jumbo v19, "button_voicemail_category_key_duos"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v15
-
-    if-eqz v15, :cond_1d
-
-    move-object/from16 v0, v16
-
-    invoke-virtual {v0, v15}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v12, v11}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_1d
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    const-string/jumbo v14, "feature_multisim"
 
-    const-string/jumbo v20, "onCreate MENU SIMPLE add the CLIRDropDown"
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    const/16 v21, 0x1
+    move-result v14
 
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    if-eqz v14, :cond_32
 
-    move-object/from16 v0, p0
+    const-string/jumbo v14, "feature_ctc"
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-object/from16 v19, v0
+    move-result v14
 
-    if-eqz v19, :cond_1e
+    :goto_7
+    if-nez v14, :cond_1e
 
-    move-object/from16 v0, p0
+    if-eqz v12, :cond_1e
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    const-string/jumbo v14, "button_voicemail_category_key_duos"
 
-    move-object/from16 v19, v0
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-object/from16 v0, v16
+    move-result-object v11
 
-    move-object/from16 v1, v19
+    if-eqz v11, :cond_1e
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    invoke-virtual {v12, v11}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_1e
-    move-object/from16 v0, p0
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    const-string/jumbo v15, "onCreate MENU SIMPLE add the CLIRDropDown"
 
-    move-object/from16 v19, v0
+    const/16 v16, 0x1
 
-    if-eqz v19, :cond_1f
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPreferences:Ljava/util/ArrayList;
-
-    move-object/from16 v19, v0
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v20, v0
+    if-eqz v14, :cond_1f
 
-    invoke-virtual/range {v19 .. v20}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
+    const/4 v14, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
     :cond_1f
-    const-string/jumbo v19, "remove_additional_call_setting"
+    move-object/from16 v0, p0
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-result v19
-
-    if-nez v19, :cond_21
+    if-eqz v14, :cond_20
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_20
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPreferences:Ljava/util/ArrayList;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPreferences:Ljava/util/ArrayList;
+    iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
-
-    move-object/from16 v20, v0
-
-    invoke-virtual/range {v19 .. v20}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v14, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_20
-    const-string/jumbo v19, "feature_sbm"
+    const-string/jumbo v14, "remove_additional_call_setting"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_21
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_21
+    if-nez v14, :cond_22
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPreferences:Ljava/util/ArrayList;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v19, v0
+    if-eqz v14, :cond_21
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPreferences:Ljava/util/ArrayList;
 
-    move-object/from16 v20, v0
+    move-object/from16 v0, p0
 
-    invoke-virtual/range {v19 .. v20}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+    invoke-virtual {v14, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_21
-    const-string/jumbo v19, "hide_caller_id"
+    const-string/jumbo v14, "feature_sbm"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_34
+    if-eqz v14, :cond_22
 
-    const-string/jumbo v19, "remove_additional_call_setting"
+    move-object/from16 v0, p0
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
 
-    move-result v19
+    if-eqz v14, :cond_22
 
-    if-eqz v19, :cond_34
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPreferences:Ljava/util/ArrayList;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
+
+    invoke-virtual {v14, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_22
-    :goto_9
+    const-string/jumbo v14, "hide_caller_id"
+
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_33
+
+    const-string/jumbo v14, "remove_additional_call_setting"
+
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_33
+
+    :cond_23
+    :goto_8
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v19
+    move-result-object v14
 
-    const-string/jumbo v20, "voicecall_type"
+    const-string/jumbo v15, "voicecall_type"
 
-    const/16 v21, 0x1
+    const/16 v16, 0x1
 
-    invoke-static/range {v19 .. v21}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static/range {v14 .. v16}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
-    move-result v19
+    move-result v14
 
-    if-nez v19, :cond_6b
+    if-nez v14, :cond_6a
 
-    const/16 v19, 0x1
+    const/4 v14, 0x1
 
-    :goto_a
-    move/from16 v0, v19
+    :goto_9
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
-
-    iput-boolean v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->isVoLteEnabled:Z
+    iput-boolean v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->isVoLteEnabled:Z
 
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->checkCallForwardingMenu()V
 
@@ -8321,2512 +7399,1988 @@
 
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->checkAdditionalCallMenu()V
 
-    const-string/jumbo v19, "feature_usa"
+    const-string/jumbo v14, "feature_usa"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_6c
+    if-eqz v14, :cond_6b
 
-    const/16 v19, 0x1
+    const/4 v14, 0x1
 
     move-object/from16 v0, p0
 
-    move/from16 v1, v19
+    invoke-direct {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->initializeOthersCallSetting(Z)V
 
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->initializeOthersCallSetting(Z)V
-
-    :goto_b
+    :goto_a
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getActionBar()Landroid/app/ActionBar;
 
-    move-result-object v7
+    move-result-object v5
 
-    if-eqz v7, :cond_23
+    if-eqz v5, :cond_24
 
-    const/16 v19, 0x1
+    const/4 v14, 0x1
 
-    move/from16 v0, v19
-
-    invoke-virtual {v7, v0}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
-
-    :cond_23
-    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
-
-    move-result-object v19
-
-    const-string/jumbo v20, "CscFeature_Common_SupportSecWFC"
-
-    invoke-virtual/range {v19 .. v20}, Lcom/samsung/android/feature/SemCscFeature;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_24
-
-    new-instance v19, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getActivity()Landroid/app/Activity;
-
-    move-result-object v20
-
-    invoke-direct/range {v19 .. v20}, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;-><init>(Landroid/content/Context;)V
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    move-object/from16 v19, v0
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mWfcRegistrationStateChangeHandler:Landroid/os/Handler;
-
-    move-object/from16 v20, v0
-
-    invoke-virtual/range {v19 .. v20}, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;->registerHandlerForWfcRegistrationStateChage(Landroid/os/Handler;)V
+    invoke-virtual {v5, v14}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_24
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    const-string/jumbo v20, "Registering for air plane mode listener in on create"
+    const-string/jumbo v15, "Registering for air plane mode listener in on create"
 
-    invoke-static/range {v19 .. v20}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v14, v15}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v19
+    move-result-object v14
 
-    invoke-virtual/range {v19 .. v19}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v14}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v19
+    move-result-object v14
 
-    const-string/jumbo v20, "airplane_mode_on"
+    const-string/jumbo v15, "airplane_mode_on"
 
-    invoke-static/range {v20 .. v20}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {v15}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
-    move-result-object v20
+    move-result-object v15
 
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataEnabledObserver:Landroid/database/ContentObserver;
 
-    move-object/from16 v21, v0
+    move-object/from16 v16, v0
 
-    const/16 v22, 0x1
+    const/16 v17, 0x1
 
-    move-object/from16 v0, v19
+    move/from16 v0, v17
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v16
 
-    move/from16 v2, v22
+    invoke-virtual {v14, v15, v0, v1}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    move-object/from16 v3, v21
+    const/4 v14, 0x1
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+    move-object/from16 v0, p0
 
-    const/16 v19, 0x1
-
-    move/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-boolean v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIsAirplainModeObserverRegister:Z
+    iput-boolean v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIsAirplainModeObserverRegister:Z
 
     return-void
 
     :cond_25
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getPhone()Lcom/android/internal/telephony/Phone;
 
-    move-result-object v19
+    move-result-object v14
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
 
     goto/16 :goto_0
 
     :cond_26
-    const-string/jumbo v19, "switch_clir_key"
+    const-string/jumbo v14, "switch_clir_key"
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v19
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    move-result-object v14
 
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/SwitchPreference;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+    check-cast v14, Landroid/preference/SwitchPreference;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_6
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
 
-    move-object/from16 v19, v0
+    if-eqz v14, :cond_6
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    move-object/from16 v0, p0
+
+    invoke-virtual {v14, v0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     goto/16 :goto_1
 
     :cond_27
-    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getResources()Landroid/content/res/Resources;
+    const-string/jumbo v14, "removePreference : "
 
-    move-result-object v19
+    move-object/from16 v0, p0
 
-    const v20, 0x7f0d0bb9
+    invoke-direct {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->log(Ljava/lang/String;)V
 
-    invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    const-string/jumbo v14, "switch_clir_key"
 
-    move-result-object v19
+    move-object/from16 v0, p0
 
-    const-string/jumbo v20, "%s"
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    const-string/jumbo v21, "KDDI"
+    move-result-object v14
 
-    invoke-virtual/range {v19 .. v21}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    check-cast v14, Landroid/preference/SwitchPreference;
 
-    move-result-object v18
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+
+    if-eqz v14, :cond_28
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
+    const-string/jumbo v14, "removePreference  SWITCH_CLIR_KEY"
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->log(Ljava/lang/String;)V
+
+    const/4 v14, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
+
+    :cond_28
+    const-string/jumbo v14, "feature_sbm"
+
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-nez v14, :cond_29
+
+    const-string/jumbo v14, "meterial_button_clir_key"
+
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v11
+
+    if-eqz v11, :cond_29
+
+    invoke-virtual {v12, v11}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
+    const/4 v14, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
+
+    :cond_29
+    const-string/jumbo v14, "change_guide_language_key"
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Landroid/preference/ListPreference;
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
+
+    if-eqz v14, :cond_2a
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
+
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
+    const-string/jumbo v14, "removePreference  CHANGE_GUIDE_LANGUAGE: "
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->log(Ljava/lang/String;)V
+
+    const/4 v14, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
+
+    :cond_2a
+    const-string/jumbo v14, "apply_option_service_key"
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Landroid/preference/PreferenceScreen;
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
+
+    if-eqz v14, :cond_7
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
+
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
+    const-string/jumbo v14, "removePreference  APPLY_OPTION_SVC: "
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->log(Ljava/lang/String;)V
+
+    const/4 v14, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
 
     goto/16 :goto_2
 
-    :cond_28
-    const-string/jumbo v19, "removePreference : "
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v19
-
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->log(Ljava/lang/String;)V
-
-    const-string/jumbo v19, "switch_clir_key"
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/SwitchPreference;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_29
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
-
-    move-object/from16 v19, v0
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const-string/jumbo v19, "removePreference  SWITCH_CLIR_KEY"
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v19
-
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->log(Ljava/lang/String;)V
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
-
-    :cond_29
-    const-string/jumbo v19, "feature_sbm"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_2a
-
-    const-string/jumbo v19, "meterial_button_clir_key"
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v15
-
-    if-eqz v15, :cond_2a
-
-    move-object/from16 v0, v16
-
-    invoke-virtual {v0, v15}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
-
-    :cond_2a
-    const-string/jumbo v19, "change_guide_language_key"
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/ListPreference;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_2b
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
-
-    move-object/from16 v19, v0
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const-string/jumbo v19, "removePreference  CHANGE_GUIDE_LANGUAGE: "
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v19
-
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->log(Ljava/lang/String;)V
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeGuideLanguae:Landroid/preference/ListPreference;
-
     :cond_2b
-    const-string/jumbo v19, "apply_option_service_key"
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v19
-
-    check-cast v19, Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_7
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
-
-    move-object/from16 v19, v0
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    const-string/jumbo v19, "removePreference  APPLY_OPTION_SVC: "
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v19
-
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->log(Ljava/lang/String;)V
-
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mApplyOptionSVC:Landroid/preference/PreferenceScreen;
+    const/4 v14, 0x1
 
     goto/16 :goto_3
 
     :cond_2c
-    const/16 v19, 0x1
+    if-eqz v12, :cond_2d
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
+
+    if-eqz v14, :cond_2d
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
+
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
+    :cond_2d
+    const/4 v14, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
 
     goto/16 :goto_4
 
-    :cond_2d
-    if-eqz v16, :cond_2e
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_2e
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
-
-    move-object/from16 v19, v0
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
     :cond_2e
-    const/16 v19, 0x0
+    if-eqz v12, :cond_2f
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
 
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonHAC:Landroid/preference/CheckBoxPreference;
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
+    :cond_2f
+    const/4 v14, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
 
     goto/16 :goto_5
 
-    :cond_2f
-    if-eqz v16, :cond_30
+    :cond_30
+    if-eqz v12, :cond_31
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v12, v14}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    move-object/from16 v0, v16
+    :cond_31
+    const/4 v14, 0x0
 
-    move-object/from16 v1, v19
+    move-object/from16 v0, p0
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    :cond_30
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mButtonTTY:Lcom/android/phone/TtyListPreference;
+    iput-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
 
     goto/16 :goto_6
 
-    :cond_31
-    if-eqz v16, :cond_32
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
-
-    move-object/from16 v19, v0
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
     :cond_32
-    const/16 v19, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDropDownTTY:Lcom/android/phone/DropDownPreference;
+    const/4 v14, 0x0
 
     goto/16 :goto_7
 
     :cond_33
-    const/16 v19, 0x0
+    const/4 v14, 0x1
 
-    goto/16 :goto_8
+    move-object/from16 v0, p0
 
-    :cond_34
-    const/16 v19, 0x1
+    iput-boolean v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIsForeground:Z
 
-    move/from16 v0, v19
+    const/4 v14, 0x0
 
-    move-object/from16 v1, p0
+    move-object/from16 v0, p0
 
-    iput-boolean v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIsForeground:Z
-
-    const/16 v19, 0x0
-
-    move/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput-boolean v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCanShowDialog:Z
+    iput-boolean v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCanShowDialog:Z
 
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->checkNotSupportSSQuery()Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_3c
+    if-eqz v14, :cond_3b
 
-    const-string/jumbo v19, "feature_multisim"
+    const-string/jumbo v14, "feature_multisim"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_39
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_35
+    if-eqz v14, :cond_38
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v19, v0
+    if-eqz v14, :cond_34
 
-    sget v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+    move-object/from16 v0, p0
 
-    const/16 v21, 0x1
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v0, v19
+    sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    move-object/from16 v1, p0
+    const/16 v16, 0x1
 
-    move/from16 v2, v21
+    move-object/from16 v0, p0
 
-    move/from16 v3, v20
+    move/from16 v1, v16
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
+    invoke-virtual {v14, v0, v1, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
+
+    :cond_34
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+
+    if-eqz v14, :cond_35
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+
+    sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+
+    const/16 v16, 0x1
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v16
+
+    invoke-virtual {v14, v0, v1, v15}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
 
     :cond_35
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_36
+    if-eqz v14, :cond_36
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
+    sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    sget v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+    const/16 v16, 0x1
 
-    const/16 v21, 0x1
+    move-object/from16 v0, p0
 
-    move-object/from16 v0, v19
+    move/from16 v1, v16
 
-    move-object/from16 v1, p0
-
-    move/from16 v2, v21
-
-    move/from16 v3, v20
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
+    invoke-virtual {v14, v0, v1, v15}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
 
     :cond_36
+    :goto_b
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_37
+    if-eqz v14, :cond_37
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
+    const/4 v15, 0x1
 
-    sget v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+    invoke-virtual {v14, v15}, Lcom/android/phone/CLIRListPreference;->setEnabled(Z)V
 
-    const/16 v21, 0x1
+    move-object/from16 v0, p0
 
-    move-object/from16 v0, v19
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v1, p0
+    const-string/jumbo v15, ""
 
-    move/from16 v2, v21
-
-    move/from16 v3, v20
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
+    invoke-virtual {v14, v15}, Lcom/android/phone/CLIRListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     :cond_37
-    :goto_c
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_38
+    if-eqz v14, :cond_23
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
+    const/4 v15, 0x1
 
-    const/16 v20, 0x1
-
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CLIRListPreference;->setEnabled(Z)V
+    invoke-virtual {v14, v15}, Lcom/android/phone/CLIRDropDownPreference;->setEnabled(Z)V
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
+    const-string/jumbo v15, ""
 
-    const-string/jumbo v20, ""
+    invoke-virtual {v14, v15}, Lcom/android/phone/CLIRDropDownPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CLIRListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    goto/16 :goto_8
 
     :cond_38
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_22
+    if-eqz v14, :cond_39
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x1
-
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CLIRDropDownPreference;->setEnabled(Z)V
+    const/4 v15, 0x1
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
-
-    move-object/from16 v19, v0
-
-    const-string/jumbo v20, ""
-
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CLIRDropDownPreference;->setSummary(Ljava/lang/CharSequence;)V
-
-    goto/16 :goto_9
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
 
     :cond_39
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_3a
+    if-eqz v14, :cond_3a
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
+    const/4 v15, 0x1
 
-    const/16 v20, 0x1
+    move-object/from16 v0, p0
 
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v20
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
 
     :cond_3a
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_3b
+    if-eqz v14, :cond_36
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
+    const/4 v15, 0x1
 
-    const/16 v20, 0x1
+    move-object/from16 v0, p0
 
-    move-object/from16 v0, v19
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
 
-    move-object/from16 v1, p0
-
-    move/from16 v2, v20
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    goto :goto_b
 
     :cond_3b
-    move-object/from16 v0, p0
+    const-string/jumbo v14, "support_uicc_mobility"
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-object/from16 v19, v0
+    move-result v14
 
-    if-eqz v19, :cond_37
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
-
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x1
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v20
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
-
-    goto/16 :goto_c
-
-    :cond_3c
-    const-string/jumbo v19, "support_uicc_mobility"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_3e
+    if-eqz v14, :cond_3d
 
     invoke-static {}, Lcom/android/phone/PhoneUtils;->isLGTSIM()Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_3e
+    if-eqz v14, :cond_3d
 
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    const-string/jumbo v20, "USIM is LGT SIM"
+    const-string/jumbo v15, "USIM is LGT SIM"
 
-    const/16 v21, 0x1
+    const/16 v16, 0x1
 
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_3d
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x0
-
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CLIRListPreference;->setEnabled(Z)V
+    if-eqz v14, :cond_3c
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
+    const/4 v15, 0x0
 
-    const-string/jumbo v20, ""
+    invoke-virtual {v14, v15}, Lcom/android/phone/CLIRListPreference;->setEnabled(Z)V
 
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CLIRListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+
+    const-string/jumbo v15, ""
+
+    invoke-virtual {v14, v15}, Lcom/android/phone/CLIRListPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    :cond_3c
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+
+    if-eqz v14, :cond_23
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+
+    const/4 v15, 0x0
+
+    invoke-virtual {v14, v15}, Lcom/android/phone/CLIRDropDownPreference;->setEnabled(Z)V
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+
+    const-string/jumbo v15, ""
+
+    invoke-virtual {v14, v15}, Lcom/android/phone/CLIRDropDownPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    goto/16 :goto_8
 
     :cond_3d
-    move-object/from16 v0, p0
+    sget v14, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    invoke-static {v14}, Lcom/android/phone/TelephonyConfig;->isCMCCSIM(I)Z
 
-    move-object/from16 v19, v0
+    move-result v14
 
-    if-eqz v19, :cond_22
+    if-nez v14, :cond_3e
 
-    move-object/from16 v0, p0
+    sget v14, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    invoke-static {v14}, Lcom/android/phone/TelephonyConfig;->isCUSIM(I)Z
 
-    move-object/from16 v19, v0
+    move-result v14
 
-    const/16 v20, 0x0
+    if-nez v14, :cond_3e
 
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CLIRDropDownPreference;->setEnabled(Z)V
+    sget v14, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    move-object/from16 v0, p0
+    invoke-static {v14}, Lcom/android/phone/TelephonyConfig;->isCTCSIM(I)Z
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    move-result v14
 
-    move-object/from16 v19, v0
-
-    const-string/jumbo v20, ""
-
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CLIRDropDownPreference;->setSummary(Ljava/lang/CharSequence;)V
-
-    goto/16 :goto_9
+    if-eqz v14, :cond_3f
 
     :cond_3e
-    sget v19, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+    const-string/jumbo v14, "feature_cu"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TelephonyConfig;->isCMCCSIM(I)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-nez v19, :cond_3f
-
-    sget v19, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TelephonyConfig;->isCUSIM(I)Z
-
-    move-result v19
-
-    if-nez v19, :cond_3f
-
-    sget v19, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TelephonyConfig;->isCTCSIM(I)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_40
+    if-eqz v14, :cond_41
 
     :cond_3f
-    const-string/jumbo v19, "feature_cu"
+    if-nez p1, :cond_50
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    move-result v19
+    const-string/jumbo v15, "start to init "
 
-    if-eqz v19, :cond_42
+    const/16 v16, 0x1
 
-    :cond_40
-    if-nez p1, :cond_51
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    const-string/jumbo v14, "feature_kdi"
 
-    const-string/jumbo v20, "start to init "
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    const/16 v21, 0x1
+    move-result v14
 
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    if-eqz v14, :cond_48
 
-    const-string/jumbo v19, "feature_kdi"
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    const-string/jumbo v15, "Do not init CLIR value when KDDI"
 
-    move-result v19
+    const/16 v16, 0x1
 
-    if-eqz v19, :cond_49
-
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
-
-    const-string/jumbo v20, "Do not init CLIR value when KDDI"
-
-    const/16 v21, 0x1
-
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
     invoke-static {}, Lcom/android/phone/PhoneUtils;->isDataRoaming()Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_41
+    if-eqz v14, :cond_40
 
     invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isAvailableVoLTE()Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_48
+    if-eqz v14, :cond_47
+
+    :cond_40
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+    if-eqz v14, :cond_23
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+    const/4 v15, 0x1
+
+    invoke-virtual {v14, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->setEnabled(Z)V
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+    const/4 v15, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+
+    goto/16 :goto_8
 
     :cond_41
-    move-object/from16 v0, p0
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    const-string/jumbo v15, "SIM is CMCC or CU or CTC SIM. Disable CLIR."
 
-    move-object/from16 v19, v0
+    const/16 v16, 0x1
 
-    if-eqz v19, :cond_22
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
-
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x1
-
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CallWaitingSwitchPreference;->setEnabled(Z)V
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
+    if-eqz v14, :cond_42
 
-    const/16 v20, 0x0
+    move-object/from16 v0, p0
 
-    move-object/from16 v0, v19
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v1, p0
+    const/4 v15, 0x0
 
-    move/from16 v2, v20
+    invoke-virtual {v14, v15}, Lcom/android/phone/CLIRListPreference;->setEnabled(Z)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    move-object/from16 v0, p0
 
-    goto/16 :goto_9
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+
+    const-string/jumbo v15, ""
+
+    invoke-virtual {v14, v15}, Lcom/android/phone/CLIRListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     :cond_42
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    move-object/from16 v0, p0
 
-    const-string/jumbo v20, "SIM is CMCC or CU or CTC SIM. Disable CLIR."
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    const/16 v21, 0x1
-
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    if-eqz v14, :cond_43
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
+    const/4 v15, 0x0
 
-    if-eqz v19, :cond_43
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
-
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x0
-
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CLIRListPreference;->setEnabled(Z)V
+    invoke-virtual {v14, v15}, Lcom/android/phone/CLIRDropDownPreference;->setEnabled(Z)V
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
+    const-string/jumbo v15, ""
 
-    const-string/jumbo v20, ""
-
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CLIRListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v14, v15}, Lcom/android/phone/CLIRDropDownPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     :cond_43
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPreferences:Ljava/util/ArrayList;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v14}, Ljava/util/ArrayList;->size()I
 
-    if-eqz v19, :cond_44
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
-
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x0
-
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CLIRDropDownPreference;->setEnabled(Z)V
+    move-result v14
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iput v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mInitIndex:I
 
-    move-object/from16 v19, v0
+    const-string/jumbo v14, "remove_additional_call_setting"
 
-    const-string/jumbo v20, ""
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CLIRDropDownPreference;->setSummary(Ljava/lang/CharSequence;)V
+    move-result v14
+
+    if-nez v14, :cond_23
+
+    const-string/jumbo v14, "feature_multisim"
+
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_44
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+    if-eqz v14, :cond_23
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+    sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+
+    const/16 v16, 0x0
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v16
+
+    invoke-virtual {v14, v0, v1, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
+
+    goto/16 :goto_8
 
     :cond_44
-    move-object/from16 v0, p0
+    invoke-static {v10}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPreferences:Ljava/util/ArrayList;
+    move-result v14
 
-    move-object/from16 v19, v0
+    if-nez v14, :cond_46
 
-    invoke-virtual/range {v19 .. v19}, Ljava/util/ArrayList;->size()I
+    const-string/jumbo v14, "VZW"
 
-    move-result v19
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move/from16 v0, v19
+    move-result v14
 
-    move-object/from16 v1, p0
+    if-nez v14, :cond_45
 
-    iput v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mInitIndex:I
+    const-string/jumbo v14, "SPR"
 
-    const-string/jumbo v19, "remove_additional_call_setting"
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    move-result v14
 
-    move-result v19
+    if-nez v14, :cond_45
 
-    if-nez v19, :cond_22
+    const-string/jumbo v14, "XAS"
 
-    const-string/jumbo v19, "feature_multisim"
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    move-result v14
 
-    move-result v19
+    if-nez v14, :cond_45
 
-    if-eqz v19, :cond_45
+    const-string/jumbo v14, "USC"
 
-    move-object/from16 v0, p0
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    move-result v14
 
-    move-object/from16 v19, v0
+    if-nez v14, :cond_45
 
-    if-eqz v19, :cond_22
+    const-string/jumbo v14, "LRA"
 
-    move-object/from16 v0, p0
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    move-result v14
 
-    move-object/from16 v19, v0
-
-    sget v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
-
-    const/16 v21, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v21
-
-    move/from16 v3, v20
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
-
-    goto/16 :goto_9
+    if-eqz v14, :cond_46
 
     :cond_45
-    invoke-static {v14}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    move-result v19
+    const-string/jumbo v15, "Do not init CW value."
 
-    if-nez v19, :cond_47
+    const/16 v16, 0x1
 
-    const-string/jumbo v19, "VZW"
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_46
-
-    const-string/jumbo v19, "SPR"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_46
-
-    const-string/jumbo v19, "XAS"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_46
-
-    const-string/jumbo v19, "USC"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_46
-
-    const-string/jumbo v19, "LRA"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_47
+    goto/16 :goto_8
 
     :cond_46
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    move-object/from16 v0, p0
 
-    const-string/jumbo v20, "Do not init CW value."
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    const/16 v21, 0x1
+    if-eqz v14, :cond_23
 
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    move-object/from16 v0, p0
 
-    goto/16 :goto_9
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+    const/4 v15, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+
+    goto/16 :goto_8
 
     :cond_47
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
+
+    const-string/jumbo v15, "Roaming area. Disable CW menu."
+
+    const/16 v16, 0x1
+
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_22
+    if-eqz v14, :cond_23
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v19, v0
+    const/4 v15, 0x0
 
-    const/16 v20, 0x0
+    invoke-virtual {v14, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->setEnabled(Z)V
 
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v20
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
-
-    goto/16 :goto_9
+    goto/16 :goto_8
 
     :cond_48
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    const-string/jumbo v14, "feature_multisim"
 
-    const-string/jumbo v20, "Roaming area. Disable CW menu."
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    const/16 v21, 0x1
+    move-result v14
 
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_22
+    if-eqz v14, :cond_4a
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
+    if-eqz v14, :cond_49
 
-    const/16 v20, 0x0
+    move-object/from16 v0, p0
 
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CallWaitingSwitchPreference;->setEnabled(Z)V
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    goto/16 :goto_9
+    sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+
+    const/16 v16, 0x0
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v16
+
+    invoke-virtual {v14, v0, v1, v15}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
 
     :cond_49
-    const-string/jumbo v19, "feature_multisim"
+    move-object/from16 v0, p0
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-result v19
-
-    if-eqz v19, :cond_4b
+    if-eqz v14, :cond_23
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
+    sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    if-eqz v19, :cond_4a
+    const/16 v16, 0x0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    move/from16 v1, v16
 
-    move-object/from16 v19, v0
+    invoke-virtual {v14, v0, v1, v15}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
 
-    sget v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
-
-    const/16 v21, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v21
-
-    move/from16 v3, v20
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
+    goto/16 :goto_8
 
     :cond_4a
+    const-string/jumbo v14, "feature_sbm"
+
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_4c
+
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
+
+    const-string/jumbo v15, "init mCLIRSwitch_SBM and mCWSwitch"
+
+    const/16 v16, 0x1
+
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_22
+    if-eqz v14, :cond_4b
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
 
-    move-object/from16 v19, v0
+    const/4 v15, 0x0
 
-    sget v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+    move-object/from16 v0, p0
 
-    const/16 v21, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v21
-
-    move/from16 v3, v20
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
-
-    goto/16 :goto_9
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CLIRSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
 
     :cond_4b
-    const-string/jumbo v19, "feature_sbm"
+    move-object/from16 v0, p0
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-result v19
-
-    if-eqz v19, :cond_4d
-
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
-
-    const-string/jumbo v20, "init mCLIRSwitch_SBM and mCWSwitch"
-
-    const/16 v21, 0x1
-
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    if-eqz v14, :cond_23
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_4c
+    const/4 v15, 0x0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
 
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v20
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CLIRSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    goto/16 :goto_8
 
     :cond_4c
-    move-object/from16 v0, p0
+    invoke-static {v10}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    move-result v14
 
-    move-object/from16 v19, v0
+    if-nez v14, :cond_4e
 
-    if-eqz v19, :cond_22
+    const-string/jumbo v14, "VZW"
 
-    move-object/from16 v0, p0
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    move-result v14
 
-    move-object/from16 v19, v0
+    if-nez v14, :cond_4d
 
-    const/16 v20, 0x0
+    const-string/jumbo v14, "SPR"
 
-    move-object/from16 v0, v19
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-object/from16 v1, p0
+    move-result v14
 
-    move/from16 v2, v20
+    if-nez v14, :cond_4d
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    const-string/jumbo v14, "XAS"
 
-    goto/16 :goto_9
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-nez v14, :cond_4d
+
+    const-string/jumbo v14, "USC"
+
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-nez v14, :cond_4d
+
+    const-string/jumbo v14, "LRA"
+
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_4e
 
     :cond_4d
-    invoke-static {v14}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    move-result v19
+    const-string/jumbo v15, "Do not init CLIR value."
 
-    if-nez v19, :cond_4f
+    const/16 v16, 0x1
 
-    const-string/jumbo v19, "VZW"
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_4e
-
-    const-string/jumbo v19, "SPR"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_4e
-
-    const-string/jumbo v19, "XAS"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_4e
-
-    const-string/jumbo v19, "USC"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_4e
-
-    const-string/jumbo v19, "LRA"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_4f
+    goto/16 :goto_8
 
     :cond_4e
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    const-string/jumbo v14, "cdma_additional_setting_enable"
 
-    const-string/jumbo v20, "Do not init CLIR value."
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    const/16 v21, 0x1
+    move-result v14
 
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    if-nez v14, :cond_23
 
-    goto/16 :goto_9
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    invoke-virtual {v14}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
+
+    move-result v14
+
+    const/4 v15, 0x2
+
+    if-eq v14, v15, :cond_23
+
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
+
+    new-instance v15, Ljava/lang/StringBuilder;
+
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v16, "mPhone.getPhoneType() = "
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    move-object/from16 v16, v0
+
+    invoke-virtual/range {v16 .. v16}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
+
+    move-result v16
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    const/16 v16, 0x1
+
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+
+    if-eqz v14, :cond_4f
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+
+    const/4 v15, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
 
     :cond_4f
-    const-string/jumbo v19, "cdma_additional_setting_enable"
+    move-object/from16 v0, p0
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-result v19
-
-    if-nez v19, :cond_22
+    if-eqz v14, :cond_23
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
-
-    invoke-virtual/range {v19 .. v19}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
-
-    move-result v19
-
-    const/16 v20, 0x2
-
-    move/from16 v0, v19
-
-    move/from16 v1, v20
-
-    if-eq v0, v1, :cond_22
-
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
-
-    new-instance v20, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v21, "mPhone.getPhoneType() = "
-
-    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v20
+    const/4 v15, 0x0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
 
-    move-object/from16 v21, v0
-
-    invoke-virtual/range {v21 .. v21}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
-
-    move-result v21
-
-    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v20
-
-    invoke-virtual/range {v20 .. v20}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v20
-
-    const/16 v21, 0x1
-
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_50
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
-
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v20
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    goto/16 :goto_8
 
     :cond_50
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
+
+    const-string/jumbo v15, "restore stored states"
+
+    const/16 v16, 0x1
+
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPreferences:Ljava/util/ArrayList;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v14}, Ljava/util/ArrayList;->size()I
 
-    if-eqz v19, :cond_22
+    move-result v14
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iput v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mInitIndex:I
 
-    move-object/from16 v19, v0
+    const-string/jumbo v14, "feature_kdi"
 
-    const/16 v20, 0x0
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-object/from16 v0, v19
+    move-result v14
 
-    move-object/from16 v1, p0
+    if-eqz v14, :cond_58
 
-    move/from16 v2, v20
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    const-string/jumbo v15, "Do not init CLIR value when KDDI"
 
-    goto/16 :goto_9
+    const/16 v16, 0x1
+
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
     :cond_51
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    :goto_c
+    const-string/jumbo v14, "remove_additional_call_setting"
 
-    const-string/jumbo v20, "restore stored states"
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    const/16 v21, 0x1
+    move-result v14
 
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    if-nez v14, :cond_53
 
-    move-object/from16 v0, p0
+    const-string/jumbo v14, "feature_kdi"
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPreferences:Ljava/util/ArrayList;
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-object/from16 v19, v0
+    move-result v14
 
-    invoke-virtual/range {v19 .. v19}, Ljava/util/ArrayList;->size()I
-
-    move-result v19
-
-    move/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mInitIndex:I
-
-    const-string/jumbo v19, "feature_kdi"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_59
-
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
-
-    const-string/jumbo v20, "Do not init CLIR value when KDDI"
-
-    const/16 v21, 0x1
-
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-
-    :cond_52
-    :goto_d
-    const-string/jumbo v19, "remove_additional_call_setting"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_54
-
-    const-string/jumbo v19, "feature_kdi"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_61
+    if-eqz v14, :cond_60
 
     invoke-static {}, Lcom/android/phone/PhoneUtils;->isDataRoaming()Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_53
+    if-eqz v14, :cond_52
 
     invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isAvailableVoLTE()Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_60
+    if-eqz v14, :cond_5f
+
+    :cond_52
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+    if-eqz v14, :cond_53
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+    const/4 v15, 0x1
+
+    invoke-virtual {v14, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->setEnabled(Z)V
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+    const/4 v15, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
 
     :cond_53
-    move-object/from16 v0, p0
+    :goto_d
+    const-string/jumbo v14, "feature_kdi"
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-object/from16 v19, v0
+    move-result v14
 
-    if-eqz v19, :cond_54
+    if-nez v14, :cond_64
 
-    move-object/from16 v0, p0
+    const-string/jumbo v14, "feature_sbm"
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-object/from16 v19, v0
+    move-result v14
 
-    const/16 v20, 0x1
+    if-nez v14, :cond_64
 
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CallWaitingSwitchPreference;->setEnabled(Z)V
+    sget v14, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    move-object/from16 v0, p0
+    invoke-static {v14}, Lcom/android/phone/TelephonyConfig;->isCMCCSIM(I)Z
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    move-result v14
 
-    move-object/from16 v19, v0
+    if-nez v14, :cond_54
 
-    const/16 v20, 0x0
+    sget v14, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    move-object/from16 v0, v19
+    invoke-static {v14}, Lcom/android/phone/TelephonyConfig;->isCUSIM(I)Z
 
-    move-object/from16 v1, p0
+    move-result v14
 
-    move/from16 v2, v20
+    if-nez v14, :cond_54
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    sget v14, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+
+    invoke-static {v14}, Lcom/android/phone/TelephonyConfig;->isCTCSIM(I)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_55
 
     :cond_54
-    :goto_e
-    const-string/jumbo v19, "feature_kdi"
+    const-string/jumbo v14, "feature_cu"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-nez v19, :cond_65
-
-    const-string/jumbo v19, "feature_sbm"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_65
-
-    sget v19, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TelephonyConfig;->isCMCCSIM(I)Z
-
-    move-result v19
-
-    if-nez v19, :cond_55
-
-    sget v19, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TelephonyConfig;->isCUSIM(I)Z
-
-    move-result v19
-
-    if-nez v19, :cond_55
-
-    sget v19, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TelephonyConfig;->isCTCSIM(I)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_56
+    if-eqz v14, :cond_64
 
     :cond_55
-    const-string/jumbo v19, "feature_cu"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_65
-
-    :cond_56
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_57
+    if-eqz v14, :cond_56
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v14}, Lcom/android/phone/CLIRListPreference;->getKey()Ljava/lang/String;
 
-    invoke-virtual/range {v19 .. v19}, Lcom/android/phone/CLIRListPreference;->getKey()Ljava/lang/String;
-
-    move-result-object v19
+    move-result-object v14
 
     move-object/from16 v0, p1
 
-    move-object/from16 v1, v19
+    invoke-virtual {v0, v14}, Landroid/os/Bundle;->getIntArray(Ljava/lang/String;)[I
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getIntArray(Ljava/lang/String;)[I
+    move-result-object v6
 
-    move-result-object v8
+    if-eqz v6, :cond_65
 
-    if-eqz v8, :cond_66
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    new-instance v15, Ljava/lang/StringBuilder;
 
-    new-instance v20, Ljava/lang/StringBuilder;
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
+    const-string/jumbo v16, "onCreate:  clirArray[0]="
 
-    const-string/jumbo v21, "onCreate:  clirArray[0]="
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v15
 
-    move-result-object v20
+    const/16 v16, 0x0
 
-    const/16 v21, 0x0
+    aget v16, v6, v16
 
-    aget v21, v8, v21
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v15
 
-    move-result-object v20
+    const-string/jumbo v16, ", clirArray[1]="
 
-    const-string/jumbo v21, ", clirArray[1]="
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v15
 
-    move-result-object v20
+    const/16 v16, 0x1
 
-    const/16 v21, 0x1
+    aget v16, v6, v16
 
-    aget v21, v8, v21
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v15
 
-    move-result-object v20
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual/range {v20 .. v20}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v15
 
-    move-result-object v20
-
-    invoke-static/range {v19 .. v20}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v14, v15}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v14, v6}, Lcom/android/phone/CLIRListPreference;->handleGetCLIRResult([I)V
 
-    move-object/from16 v0, v19
+    :cond_56
+    :goto_e
+    invoke-static {v10}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    invoke-virtual {v0, v8}, Lcom/android/phone/CLIRListPreference;->handleGetCLIRResult([I)V
+    move-result v14
+
+    if-nez v14, :cond_67
+
+    const-string/jumbo v14, "VZW"
+
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-nez v14, :cond_57
+
+    const-string/jumbo v14, "SPR"
+
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-nez v14, :cond_57
+
+    const-string/jumbo v14, "XAS"
+
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-nez v14, :cond_57
+
+    const-string/jumbo v14, "USC"
+
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-nez v14, :cond_57
+
+    const-string/jumbo v14, "LRA"
+
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_67
 
     :cond_57
-    :goto_f
-    invoke-static {v14}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    move-result v19
+    const-string/jumbo v15, "Do not init CLIR value."
 
-    if-nez v19, :cond_68
+    const/16 v16, 0x1
 
-    const-string/jumbo v19, "VZW"
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_58
-
-    const-string/jumbo v19, "SPR"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_58
-
-    const-string/jumbo v19, "XAS"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_58
-
-    const-string/jumbo v19, "USC"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_58
-
-    const-string/jumbo v19, "LRA"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_68
+    goto/16 :goto_8
 
     :cond_58
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    const-string/jumbo v14, "feature_multisim"
 
-    const-string/jumbo v20, "Do not init CLIR value."
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    const/16 v21, 0x1
+    move-result v14
 
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    if-eqz v14, :cond_5a
 
-    goto/16 :goto_9
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+
+    if-eqz v14, :cond_59
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+
+    sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+
+    const/16 v16, 0x0
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v16
+
+    invoke-virtual {v14, v0, v1, v15}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
 
     :cond_59
-    const-string/jumbo v19, "feature_multisim"
+    move-object/from16 v0, p0
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-result v19
-
-    if-eqz v19, :cond_5b
+    if-eqz v14, :cond_51
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
+    sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    if-eqz v19, :cond_5a
+    const/16 v16, 0x0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    move/from16 v1, v16
 
-    move-object/from16 v19, v0
+    invoke-virtual {v14, v0, v1, v15}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
 
-    sget v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
-
-    const/16 v21, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v21
-
-    move/from16 v3, v20
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
+    goto/16 :goto_c
 
     :cond_5a
+    const-string/jumbo v14, "feature_sbm"
+
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_5b
+
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
+
+    const-string/jumbo v15, "init mCLIRSwitch_SBM"
+
+    const/16 v16, 0x1
+
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_52
+    const/4 v15, 0x0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CLIRSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
 
-    move-object/from16 v19, v0
-
-    sget v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
-
-    const/16 v21, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v21
-
-    move/from16 v3, v20
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
-
-    goto/16 :goto_d
+    goto/16 :goto_c
 
     :cond_5b
-    const-string/jumbo v19, "feature_sbm"
+    invoke-static {v10}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    move-result v14
 
-    move-result v19
+    if-nez v14, :cond_5d
 
-    if-eqz v19, :cond_5c
+    const-string/jumbo v14, "VZW"
 
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const-string/jumbo v20, "init mCLIRSwitch_SBM"
+    move-result v14
 
-    const/16 v21, 0x1
+    if-nez v14, :cond_5c
 
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    const-string/jumbo v14, "SPR"
 
-    move-object/from16 v0, p0
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch_SBM:Lcom/android/phone/CLIRSwitchPreference;
+    move-result v14
 
-    move-object/from16 v19, v0
+    if-nez v14, :cond_5c
 
-    const/16 v20, 0x0
+    const-string/jumbo v14, "XAS"
 
-    move-object/from16 v0, v19
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-object/from16 v1, p0
+    move-result v14
 
-    move/from16 v2, v20
+    if-nez v14, :cond_5c
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CLIRSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    const-string/jumbo v14, "USC"
 
-    goto/16 :goto_d
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-nez v14, :cond_5c
+
+    const-string/jumbo v14, "LRA"
+
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_5d
 
     :cond_5c
-    invoke-static {v14}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    move-result v19
+    const-string/jumbo v15, "Do not init CLIR value."
 
-    if-nez v19, :cond_5e
+    const/16 v16, 0x1
 
-    const-string/jumbo v19, "VZW"
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_5d
-
-    const-string/jumbo v19, "SPR"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_5d
-
-    const-string/jumbo v19, "XAS"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_5d
-
-    const-string/jumbo v19, "USC"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_5d
-
-    const-string/jumbo v19, "LRA"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_5e
+    goto/16 :goto_c
 
     :cond_5d
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    const-string/jumbo v14, "cdma_additional_setting_enable"
 
-    const-string/jumbo v20, "Do not init CLIR value."
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    const/16 v21, 0x1
+    move-result v14
 
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    if-nez v14, :cond_51
 
-    goto/16 :goto_d
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    invoke-virtual {v14}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
+
+    move-result v14
+
+    const/4 v15, 0x2
+
+    if-eq v14, v15, :cond_51
+
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
+
+    new-instance v15, Ljava/lang/StringBuilder;
+
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v16, "mPhone.getPhoneType() = "
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    move-object/from16 v16, v0
+
+    invoke-virtual/range {v16 .. v16}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
+
+    move-result v16
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    const/16 v16, 0x1
+
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+
+    if-eqz v14, :cond_5e
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+
+    const/4 v15, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
 
     :cond_5e
-    const-string/jumbo v19, "cdma_additional_setting_enable"
+    move-object/from16 v0, p0
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-result v19
-
-    if-nez v19, :cond_52
+    if-eqz v14, :cond_51
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
-
-    invoke-virtual/range {v19 .. v19}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
-
-    move-result v19
-
-    const/16 v20, 0x2
-
-    move/from16 v0, v19
-
-    move/from16 v1, v20
-
-    if-eq v0, v1, :cond_52
-
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
-
-    new-instance v20, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v21, "mPhone.getPhoneType() = "
-
-    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v20
+    const/4 v15, 0x0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
 
-    move-object/from16 v21, v0
-
-    invoke-virtual/range {v21 .. v21}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
-
-    move-result v21
-
-    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v20
-
-    invoke-virtual/range {v20 .. v20}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v20
-
-    const/16 v21, 0x1
-
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_5f
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
-
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v20
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    goto/16 :goto_c
 
     :cond_5f
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
+
+    const-string/jumbo v15, "Roaming area. Disable CW menu."
+
+    const/16 v16, 0x1
+
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_52
+    if-eqz v14, :cond_53
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v19, v0
+    const/4 v15, 0x0
 
-    const/16 v20, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v20
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    invoke-virtual {v14, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->setEnabled(Z)V
 
     goto/16 :goto_d
 
     :cond_60
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    const-string/jumbo v14, "feature_multisim"
 
-    const-string/jumbo v20, "Roaming area. Disable CW menu."
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    const/16 v21, 0x1
+    move-result v14
 
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_54
+    if-eqz v14, :cond_61
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    move-object/from16 v19, v0
+    if-eqz v14, :cond_53
 
-    const/16 v20, 0x0
+    move-object/from16 v0, p0
 
-    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/CallWaitingSwitchPreference;->setEnabled(Z)V
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    goto/16 :goto_e
+    sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+
+    const/16 v16, 0x0
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v16
+
+    invoke-virtual {v14, v0, v1, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
+
+    goto/16 :goto_d
 
     :cond_61
-    const-string/jumbo v19, "feature_multisim"
+    invoke-static {v10}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    move-result v14
 
-    move-result v19
+    if-nez v14, :cond_63
 
-    if-eqz v19, :cond_62
+    const-string/jumbo v14, "VZW"
 
-    move-object/from16 v0, p0
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    move-result v14
 
-    move-object/from16 v19, v0
+    if-nez v14, :cond_62
 
-    if-eqz v19, :cond_54
+    const-string/jumbo v14, "SPR"
 
-    move-object/from16 v0, p0
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    move-result v14
 
-    move-object/from16 v19, v0
+    if-nez v14, :cond_62
 
-    sget v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+    const-string/jumbo v14, "XAS"
 
-    const/16 v21, 0x0
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-object/from16 v0, v19
+    move-result v14
 
-    move-object/from16 v1, p0
+    if-nez v14, :cond_62
 
-    move/from16 v2, v21
+    const-string/jumbo v14, "USC"
 
-    move/from16 v3, v20
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
+    move-result v14
 
-    goto/16 :goto_e
+    if-nez v14, :cond_62
+
+    const-string/jumbo v14, "LRA"
+
+    invoke-virtual {v14, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_63
 
     :cond_62
-    invoke-static {v14}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    move-result v19
+    const-string/jumbo v15, "Do not init CW value."
 
-    if-nez v19, :cond_64
+    const/16 v16, 0x1
 
-    const-string/jumbo v19, "VZW"
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_63
-
-    const-string/jumbo v19, "SPR"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_63
-
-    const-string/jumbo v19, "XAS"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_63
-
-    const-string/jumbo v19, "USC"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_63
-
-    const-string/jumbo v19, "LRA"
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_64
+    goto/16 :goto_d
 
     :cond_63
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    const-string/jumbo v14, "cdma_additional_setting_enable"
 
-    const-string/jumbo v20, "Do not init CW value."
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    const/16 v21, 0x1
+    move-result v14
 
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    if-nez v14, :cond_53
 
-    goto/16 :goto_e
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+    if-eqz v14, :cond_53
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+
+    const/4 v15, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+
+    goto/16 :goto_d
 
     :cond_64
-    const-string/jumbo v19, "cdma_additional_setting_enable"
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    const-string/jumbo v15, "Do not get CLIR value."
 
-    move-result v19
+    const/16 v16, 0x1
 
-    if-nez v19, :cond_54
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    goto/16 :goto_8
+
+    :cond_65
+    const-string/jumbo v14, "feature_multisim"
+
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_66
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-object/from16 v19, v0
+    sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    if-eqz v19, :cond_54
+    const/16 v16, 0x0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
+    move/from16 v1, v16
 
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v20
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    invoke-virtual {v14, v0, v1, v15}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
 
     goto/16 :goto_e
 
-    :cond_65
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
-
-    const-string/jumbo v20, "Do not get CLIR value."
-
-    const/16 v21, 0x1
-
-    invoke-static/range {v19 .. v21}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-
-    goto/16 :goto_9
-
     :cond_66
-    const-string/jumbo v19, "feature_multisim"
+    move-object/from16 v0, p0
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    move-result v19
-
-    if-eqz v19, :cond_67
+    const/4 v15, 0x0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
 
-    move-object/from16 v19, v0
-
-    sget v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
-
-    const/16 v21, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v21
-
-    move/from16 v3, v20
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
-
-    goto/16 :goto_f
+    goto/16 :goto_e
 
     :cond_67
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v20
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CLIRListPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
-
-    goto/16 :goto_f
-
-    :cond_68
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
-
-    move-object/from16 v19, v0
-
-    if-eqz v19, :cond_22
+    if-eqz v14, :cond_23
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v14}, Lcom/android/phone/CLIRDropDownPreference;->getKey()Ljava/lang/String;
 
-    invoke-virtual/range {v19 .. v19}, Lcom/android/phone/CLIRDropDownPreference;->getKey()Ljava/lang/String;
-
-    move-result-object v19
+    move-result-object v14
 
     move-object/from16 v0, p1
 
-    move-object/from16 v1, v19
+    invoke-virtual {v0, v14}, Landroid/os/Bundle;->getIntArray(Ljava/lang/String;)[I
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getIntArray(Ljava/lang/String;)[I
+    move-result-object v6
 
-    move-result-object v8
+    if-eqz v6, :cond_68
 
-    if-eqz v8, :cond_69
+    const-string/jumbo v14, "GsmUmtsAdditionalCallOptions"
 
-    const-string/jumbo v19, "GsmUmtsAdditionalCallOptions"
+    new-instance v15, Ljava/lang/StringBuilder;
 
-    new-instance v20, Ljava/lang/StringBuilder;
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
+    const-string/jumbo v16, "onCreate:  clirArray[0]="
 
-    const-string/jumbo v21, "onCreate:  clirArray[0]="
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v15
 
-    move-result-object v20
+    const/16 v16, 0x0
 
-    const/16 v21, 0x0
+    aget v16, v6, v16
 
-    aget v21, v8, v21
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v15
 
-    move-result-object v20
+    const-string/jumbo v16, ", clirArray[1]="
 
-    const-string/jumbo v21, ", clirArray[1]="
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v15
 
-    move-result-object v20
+    const/16 v16, 0x1
 
-    const/16 v21, 0x1
+    aget v16, v6, v16
 
-    aget v21, v8, v21
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v15
 
-    move-result-object v20
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual/range {v20 .. v20}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v15
 
-    move-result-object v20
-
-    invoke-static/range {v19 .. v20}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v14, v15}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v14, v6}, Lcom/android/phone/CLIRDropDownPreference;->handleGetCLIRResult([I)V
 
-    move-object/from16 v0, v19
+    goto/16 :goto_8
 
-    invoke-virtual {v0, v8}, Lcom/android/phone/CLIRDropDownPreference;->handleGetCLIRResult([I)V
+    :cond_68
+    const-string/jumbo v14, "feature_multisim"
 
-    goto/16 :goto_9
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_69
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+
+    sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+
+    const/16 v16, 0x0
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v16
+
+    invoke-virtual {v14, v0, v1, v15}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
+
+    goto/16 :goto_8
 
     :cond_69
-    const-string/jumbo v19, "feature_multisim"
+    const-string/jumbo v14, "cdma_additional_setting_enable"
 
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v14}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v19
+    move-result v14
 
-    if-eqz v19, :cond_6a
+    if-nez v14, :cond_23
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    move-object/from16 v19, v0
+    invoke-virtual {v14}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
 
-    sget v20, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+    move-result v14
 
-    const/16 v21, 0x0
+    const/4 v15, 0x2
 
-    move-object/from16 v0, v19
+    if-eq v14, v15, :cond_23
 
-    move-object/from16 v1, p0
+    move-object/from16 v0, p0
 
-    move/from16 v2, v21
+    iget-object v14, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    move/from16 v3, v20
+    const/4 v15, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
+    move-object/from16 v0, p0
 
-    goto/16 :goto_9
+    invoke-virtual {v14, v0, v15}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+
+    goto/16 :goto_8
 
     :cond_6a
-    const-string/jumbo v19, "cdma_additional_setting_enable"
-
-    invoke-static/range {v19 .. v19}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v19
-
-    if-nez v19, :cond_22
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
-
-    move-object/from16 v19, v0
-
-    invoke-virtual/range {v19 .. v19}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
-
-    move-result v19
-
-    const/16 v20, 0x2
-
-    move/from16 v0, v19
-
-    move/from16 v1, v20
-
-    if-eq v0, v1, :cond_22
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
-
-    move-object/from16 v19, v0
-
-    const/16 v20, 0x0
-
-    move-object/from16 v0, v19
-
-    move-object/from16 v1, p0
-
-    move/from16 v2, v20
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/phone/CLIRDropDownPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
+    const/4 v14, 0x0
 
     goto/16 :goto_9
 
     :cond_6b
-    const/16 v19, 0x0
-
-    goto/16 :goto_a
-
-    :cond_6c
-    const/16 v19, 0x0
+    const/4 v14, 0x0
 
     move-object/from16 v0, p0
 
-    move/from16 v1, v19
+    invoke-direct {v0, v14}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->initializeOthersCallSetting(Z)V
 
-    invoke-direct {v0, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->initializeOthersCallSetting(Z)V
-
-    goto/16 :goto_b
+    goto/16 :goto_a
 .end method
 
 .method public onDestroy()V
@@ -10838,30 +9392,13 @@
 
     invoke-super {p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onDestroy()V
 
-    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedReceiver:Landroid/content/BroadcastReceiver;
-
-    if-eqz v2, :cond_0
-
-    :try_start_0
-    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getActivity()Landroid/app/Activity;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedReceiver:Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v2, v3}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :cond_0
-    :goto_0
     const-string/jumbo v2, "tty_to_default_wired_headset_plugged_out"
 
     invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_1
+    if-eqz v2, :cond_0
 
     invoke-virtual {p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getActivity()Landroid/app/Activity;
 
@@ -10871,7 +9408,7 @@
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    :cond_1
+    :cond_0
     const-string/jumbo v2, "GsmUmtsAdditionalCallOptions"
 
     const-string/jumbo v3, "Unregister for air plane mode listener in"
@@ -10880,7 +9417,7 @@
 
     iget-boolean v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIsAirplainModeObserverRegister:Z
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_1
 
     iput-boolean v6, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIsAirplainModeObserverRegister:Z
 
@@ -10896,12 +9433,49 @@
 
     invoke-virtual {v2, v3}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
-    :cond_2
+    :cond_1
     iget-boolean v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIsHotSwapRegister:Z
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_2
 
     iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapReceiver:Landroid/content/BroadcastReceiver;
+
+    if-eqz v2, :cond_2
+
+    :try_start_0
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getActivity()Landroid/app/Activity;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v2, v3}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    iput-boolean v6, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIsHotSwapRegister:Z
+
+    :cond_2
+    iput-object v5, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeDDSDialog:Landroid/app/AlertDialog;
+
+    const-string/jumbo v2, "feature_chn"
+
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    const-string/jumbo v2, "feature_multisim"
+
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedReceiver:Landroid/content/BroadcastReceiver;
 
     if-eqz v2, :cond_3
 
@@ -10910,18 +9484,14 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mHotSwapReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v3, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDataChangedReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    :goto_1
-    iput-boolean v6, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIsHotSwapRegister:Z
-
     :cond_3
-    iput-object v5, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeDDSDialog:Landroid/app/AlertDialog;
-
+    :goto_1
     invoke-virtual {p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
@@ -10938,9 +9508,8 @@
 
     invoke-virtual {v1, v2, v6}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
+    :cond_4
     iput-object v5, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mTcpListener:Lcom/android/phone/TimeConsumingPreferenceListener;
-
-    iput-object v5, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mWfcRegistrationStateChangeHandler:Landroid/os/Handler;
 
     iput-object v5, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mOnKeyListener:Landroid/view/View$OnKeyListener;
 
@@ -11217,40 +9786,13 @@
 
     if-eqz v2, :cond_2
 
-    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
-
-    move-result-object v2
-
-    const-string/jumbo v3, "CscFeature_Common_SupportSecWFC"
-
-    invoke-virtual {v2, v3}, Lcom/samsung/android/feature/SemCscFeature;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_8
-
-    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    invoke-virtual {v2}, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;->isRegisteredOverWifi()Z
-
-    move-result v2
-
-    if-nez v2, :cond_2
-
-    check-cast v1, Lcom/android/phone/CallWaitingSwitchPreference;
-
-    invoke-virtual {v1, p0, v6}, Lcom/android/phone/CallWaitingSwitchPreference;->init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
-
-    goto/16 :goto_0
-
-    :cond_8
     const-string/jumbo v2, "feature_multisim"
 
     invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_9
+    if-eqz v2, :cond_8
 
     check-cast v1, Lcom/android/phone/CallWaitingSwitchPreference;
 
@@ -11260,14 +9802,14 @@
 
     goto/16 :goto_0
 
-    :cond_9
+    :cond_8
     const-string/jumbo v2, "feature_sbm"
 
     invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v2
 
-    if-nez v2, :cond_a
+    if-nez v2, :cond_9
 
     const-string/jumbo v2, "feature_kdi"
 
@@ -11275,7 +9817,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_a
+    if-nez v2, :cond_9
 
     const-string/jumbo v2, "cdma_additional_setting_enable"
 
@@ -11283,9 +9825,9 @@
 
     move-result v2
 
-    if-eqz v2, :cond_b
+    if-eqz v2, :cond_a
 
-    :cond_a
+    :cond_9
     const-string/jumbo v2, "GsmUmtsAdditionalCallOptions"
 
     const-string/jumbo v3, "onFinished. Do not init CallWaitingSwitchPreference"
@@ -11298,7 +9840,7 @@
 
     goto/16 :goto_0
 
-    :cond_b
+    :cond_a
     const-string/jumbo v2, "cdma_additional_setting_enable"
 
     invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
@@ -11365,30 +9907,13 @@
 
     iput-boolean v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mForeground:Z
 
-    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
-
-    move-result-object v0
-
-    const-string/jumbo v1, "CscFeature_Common_SupportSecWFC"
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/feature/SemCscFeature;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    invoke-virtual {v0}, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;->unregisterObserver()V
-
-    :cond_0
     const-string/jumbo v0, "support_bixby"
 
     invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
 
@@ -11408,7 +9933,7 @@
 
     iput-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
 
-    :cond_1
+    :cond_0
     return-void
 .end method
 
@@ -11430,13 +9955,13 @@
     const/4 v1, 0x1
 
     :goto_0
-    const v5, 0x7f0d01fc
+    const v5, 0x7f0d0259
 
     invoke-virtual {p0, v5}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
-    const v6, 0x7f0d025c
+    const v6, 0x7f0d02bb
 
     invoke-virtual {p0, v6}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
@@ -11650,13 +10175,13 @@
 
     check-cast v3, Ljava/lang/Boolean;
 
-    const v5, 0x7f0d01fc
+    const v5, 0x7f0d0259
 
     invoke-virtual {p0, v5}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const v5, 0x7f0d029f
+    const v5, 0x7f0d02ff
 
     invoke-virtual {p0, v5}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
@@ -11813,13 +10338,13 @@
 
     check-cast v3, Ljava/lang/Boolean;
 
-    const v5, 0x7f0d01fc
+    const v5, 0x7f0d0259
 
     invoke-virtual {p0, v5}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const v5, 0x7f0d02a3
+    const v5, 0x7f0d0303
 
     invoke-virtual {p0, v5}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
@@ -12135,13 +10660,13 @@
     if-ne p2, v10, :cond_17
 
     :cond_a
-    const v10, 0x7f0d01fc
+    const v10, 0x7f0d0259
 
     invoke-virtual {p0, v10}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v10
 
-    const v11, 0x7f0d025a
+    const v11, 0x7f0d02b9
 
     invoke-virtual {p0, v11}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
@@ -12163,7 +10688,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d02c9
+    const v12, 0x7f0d0329
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -12199,13 +10724,13 @@
 
     if-ne p2, v10, :cond_d
 
-    const v10, 0x7f0d01fc
+    const v10, 0x7f0d0259
 
     invoke-virtual {p0, v10}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v10
 
-    const v11, 0x7f0d02a0
+    const v11, 0x7f0d0300
 
     invoke-virtual {p0, v11}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
@@ -12213,7 +10738,7 @@
 
     invoke-static {v10, v11}, Lcom/android/phone/utils/SALogging;->sendSAEventLog(Ljava/lang/String;Ljava/lang/String;)V
 
-    const v10, 0x7f0d0210
+    const v10, 0x7f0d026e
 
     invoke-virtual {p0, v10}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
@@ -12221,13 +10746,13 @@
 
     invoke-static {v10}, Lcom/android/phone/utils/SALogging;->sendSAViewFlowLog(Ljava/lang/String;)V
 
-    const v10, 0x7f0d0210
+    const v10, 0x7f0d026e
 
     invoke-virtual {p0, v10}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v10
 
-    const v11, 0x7f0d0229
+    const v11, 0x7f0d0287
 
     invoke-virtual {p0, v11}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
@@ -12252,13 +10777,13 @@
 
     if-ne p2, v10, :cond_e
 
-    const v10, 0x7f0d01fc
+    const v10, 0x7f0d0259
 
     invoke-virtual {p0, v10}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v10
 
-    const v11, 0x7f0d02a1
+    const v11, 0x7f0d0301
 
     invoke-virtual {p0, v11}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
@@ -12273,13 +10798,13 @@
 
     if-ne p2, v10, :cond_f
 
-    const v10, 0x7f0d01fc
+    const v10, 0x7f0d0259
 
     invoke-virtual {p0, v10}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v10
 
-    const v11, 0x7f0d02a6
+    const v11, 0x7f0d0306
 
     invoke-virtual {p0, v11}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
@@ -12362,9 +10887,9 @@
 
     iget-object v10, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mDialog:Landroid/app/AlertDialog;
 
-    new-instance v11, Lcom/android/phone/GsmUmtsAdditionalCallOptions$15;
+    new-instance v11, Lcom/android/phone/GsmUmtsAdditionalCallOptions$16;
 
-    invoke-direct {v11, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$15;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v11, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$16;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
     invoke-virtual {v10, v11}, Landroid/app/AlertDialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
@@ -12389,9 +10914,9 @@
     :goto_7
     invoke-virtual {v11, v10}, Landroid/widget/Button;->setEnabled(Z)V
 
-    new-instance v10, Lcom/android/phone/GsmUmtsAdditionalCallOptions$16;
+    new-instance v10, Lcom/android/phone/GsmUmtsAdditionalCallOptions$17;
 
-    invoke-direct {v10, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$16;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v10, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$17;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
     invoke-virtual {v4, v10}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -12496,7 +11021,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d064c
+    const v12, 0x7f0d06b0
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -12533,7 +11058,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d0c27
+    const v12, 0x7f0d0c98
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -12547,7 +11072,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d0c26
+    const v12, 0x7f0d0c97
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -12557,21 +11082,21 @@
 
     move-result-object v10
 
-    new-instance v11, Lcom/android/phone/GsmUmtsAdditionalCallOptions$17;
+    new-instance v11, Lcom/android/phone/GsmUmtsAdditionalCallOptions$18;
 
-    invoke-direct {v11, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$17;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v11, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$18;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    const v12, 0x7f0d02ca
+    const v12, 0x7f0d032a
 
     invoke-virtual {v10, v12, v11}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v10
 
-    new-instance v11, Lcom/android/phone/GsmUmtsAdditionalCallOptions$18;
+    new-instance v11, Lcom/android/phone/GsmUmtsAdditionalCallOptions$19;
 
-    invoke-direct {v11, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$18;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v11, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$19;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    const v12, 0x7f0d02c7
+    const v12, 0x7f0d0327
 
     invoke-virtual {v10, v12, v11}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -12632,13 +11157,13 @@
     if-ne p2, v10, :cond_1c
 
     :cond_18
-    const v10, 0x7f0d01fc
+    const v10, 0x7f0d0259
 
     invoke-virtual {p0, v10}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v10
 
-    const v11, 0x7f0d025b
+    const v11, 0x7f0d02ba
 
     invoke-virtual {p0, v11}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
@@ -12660,7 +11185,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d02c9
+    const v12, 0x7f0d0329
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -12769,7 +11294,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d064d
+    const v12, 0x7f0d06b1
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -12806,7 +11331,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d0c27
+    const v12, 0x7f0d0c98
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -12820,7 +11345,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d0c26
+    const v12, 0x7f0d0c97
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -12830,21 +11355,21 @@
 
     move-result-object v10
 
-    new-instance v11, Lcom/android/phone/GsmUmtsAdditionalCallOptions$19;
+    new-instance v11, Lcom/android/phone/GsmUmtsAdditionalCallOptions$20;
 
-    invoke-direct {v11, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$19;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v11, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$20;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    const v12, 0x7f0d02ca
+    const v12, 0x7f0d032a
 
     invoke-virtual {v10, v12, v11}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v10
 
-    new-instance v11, Lcom/android/phone/GsmUmtsAdditionalCallOptions$20;
+    new-instance v11, Lcom/android/phone/GsmUmtsAdditionalCallOptions$21;
 
-    invoke-direct {v11, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$20;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-direct {v11, p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions$21;-><init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
 
-    const v12, 0x7f0d02c7
+    const v12, 0x7f0d0327
 
     invoke-virtual {v10, v12, v11}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -12880,13 +11405,13 @@
 
     if-ne p2, v10, :cond_1d
 
-    const v10, 0x7f0d01fc
+    const v10, 0x7f0d0259
 
     invoke-virtual {p0, v10}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v10
 
-    const v11, 0x7f0d025d
+    const v11, 0x7f0d02bc
 
     invoke-virtual {p0, v11}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
@@ -13176,7 +11701,7 @@
 
     iput-boolean v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mForeground:Z
 
-    const v15, 0x7f0d01fc
+    const v15, 0x7f0d0259
 
     move-object/from16 v0, p0
 
@@ -13264,7 +11789,7 @@
 
     move-result v15
 
-    if-nez v15, :cond_19
+    if-nez v15, :cond_18
 
     const/4 v15, 0x0
 
@@ -13272,7 +11797,7 @@
 
     move-result v15
 
-    if-eqz v15, :cond_19
+    if-eqz v15, :cond_18
 
     const/4 v15, 0x0
 
@@ -13312,7 +11837,7 @@
 
     move-result v15
 
-    if-eqz v15, :cond_1c
+    if-eqz v15, :cond_1b
 
     sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
@@ -13320,7 +11845,7 @@
 
     move/from16 v0, v16
 
-    if-ne v15, v0, :cond_1c
+    if-ne v15, v0, :cond_1b
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -13362,7 +11887,7 @@
 
     move-result v15
 
-    if-lez v15, :cond_1a
+    if-lez v15, :cond_19
 
     const/4 v15, 0x1
 
@@ -13393,7 +11918,7 @@
 
     move-result v15
 
-    if-lez v15, :cond_1b
+    if-lez v15, :cond_1a
 
     const/4 v15, 0x1
 
@@ -13428,7 +11953,7 @@
 
     move-object/from16 v16, v0
 
-    if-eqz v7, :cond_1f
+    if-eqz v7, :cond_1e
 
     const/4 v15, 0x1
 
@@ -13450,7 +11975,7 @@
 
     move-object/from16 v16, v0
 
-    if-eqz v7, :cond_20
+    if-eqz v7, :cond_1f
 
     const/4 v15, 0x1
 
@@ -13494,7 +12019,7 @@
 
     move-result v15
 
-    if-eqz v15, :cond_21
+    if-eqz v15, :cond_20
 
     move-object/from16 v0, p0
 
@@ -13527,6 +12052,27 @@
 
     move-result v15
 
+    if-eqz v15, :cond_21
+
+    invoke-virtual {v4}, Lcom/android/internal/telephony/CallManager;->getState()Lcom/android/internal/telephony/PhoneConstants$State;
+
+    move-result-object v15
+
+    sget-object v16, Lcom/android/internal/telephony/PhoneConstants$State;->IDLE:Lcom/android/internal/telephony/PhoneConstants$State;
+
+    move-object/from16 v0, v16
+
+    if-eq v15, v0, :cond_21
+
+    const/4 v15, 0x1
+
+    :goto_7
+    if-nez v15, :cond_6
+
+    invoke-static {}, Lcom/android/phone/PhoneUtils;->getHasVzwVideoCall()Z
+
+    move-result v15
+
     if-eqz v15, :cond_22
 
     invoke-virtual {v4}, Lcom/android/internal/telephony/CallManager;->getState()Lcom/android/internal/telephony/PhoneConstants$State;
@@ -13538,27 +12084,6 @@
     move-object/from16 v0, v16
 
     if-eq v15, v0, :cond_22
-
-    const/4 v15, 0x1
-
-    :goto_7
-    if-nez v15, :cond_6
-
-    invoke-static {}, Lcom/android/phone/PhoneUtils;->getHasVzwVideoCall()Z
-
-    move-result v15
-
-    if-eqz v15, :cond_23
-
-    invoke-virtual {v4}, Lcom/android/internal/telephony/CallManager;->getState()Lcom/android/internal/telephony/PhoneConstants$State;
-
-    move-result-object v15
-
-    sget-object v16, Lcom/android/internal/telephony/PhoneConstants$State;->IDLE:Lcom/android/internal/telephony/PhoneConstants$State;
-
-    move-object/from16 v0, v16
-
-    if-eq v15, v0, :cond_23
 
     :cond_6
     const/4 v2, 0x0
@@ -13693,6 +12218,27 @@
 
     move-result v15
 
+    if-eqz v15, :cond_25
+
+    invoke-virtual {v4}, Lcom/android/internal/telephony/CallManager;->getState()Lcom/android/internal/telephony/PhoneConstants$State;
+
+    move-result-object v15
+
+    sget-object v16, Lcom/android/internal/telephony/PhoneConstants$State;->IDLE:Lcom/android/internal/telephony/PhoneConstants$State;
+
+    move-object/from16 v0, v16
+
+    if-eq v15, v0, :cond_25
+
+    const/4 v15, 0x1
+
+    :goto_9
+    if-nez v15, :cond_8
+
+    invoke-static {}, Lcom/android/phone/PhoneUtils;->getHasVzwVideoCall()Z
+
+    move-result v15
+
     if-eqz v15, :cond_26
 
     invoke-virtual {v4}, Lcom/android/internal/telephony/CallManager;->getState()Lcom/android/internal/telephony/PhoneConstants$State;
@@ -13704,27 +12250,6 @@
     move-object/from16 v0, v16
 
     if-eq v15, v0, :cond_26
-
-    const/4 v15, 0x1
-
-    :goto_9
-    if-nez v15, :cond_8
-
-    invoke-static {}, Lcom/android/phone/PhoneUtils;->getHasVzwVideoCall()Z
-
-    move-result v15
-
-    if-eqz v15, :cond_27
-
-    invoke-virtual {v4}, Lcom/android/internal/telephony/CallManager;->getState()Lcom/android/internal/telephony/PhoneConstants$State;
-
-    move-result-object v15
-
-    sget-object v16, Lcom/android/internal/telephony/PhoneConstants$State;->IDLE:Lcom/android/internal/telephony/PhoneConstants$State;
-
-    move-object/from16 v0, v16
-
-    if-eq v15, v0, :cond_27
 
     :cond_8
     const/4 v2, 0x0
@@ -13858,7 +12383,7 @@
 
     move-result v15
 
-    if-lez v15, :cond_2a
+    if-lez v15, :cond_29
 
     const/4 v15, 0x1
 
@@ -13868,49 +12393,13 @@
     invoke-virtual {v0, v15}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :cond_b
-    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
-
-    move-result-object v15
-
-    const-string/jumbo v16, "CscFeature_Common_SupportSecWFC"
-
-    invoke-virtual/range {v15 .. v16}, Lcom/samsung/android/feature/SemCscFeature;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v15
-
-    if-eqz v15, :cond_c
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    invoke-virtual {v15}, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;->registerObserver()V
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    invoke-virtual {v15}, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;->isRegisteredOverWifi()Z
-
-    move-result v15
-
-    if-eqz v15, :cond_2b
-
-    const/4 v15, 0x0
-
-    :goto_c
-    move-object/from16 v0, p0
-
-    invoke-direct {v0, v15}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->switchAdditionalCallSettingsButtonsState(Z)V
-
-    :cond_c
     sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
     invoke-static {v15}, Lcom/android/phone/TelephonyConfig;->isCMCCSIM(I)Z
 
     move-result v15
 
-    if-nez v15, :cond_d
+    if-nez v15, :cond_c
 
     sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
@@ -13918,7 +12407,7 @@
 
     move-result v15
 
-    if-nez v15, :cond_d
+    if-nez v15, :cond_c
 
     sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
@@ -13926,26 +12415,26 @@
 
     move-result v15
 
-    if-eqz v15, :cond_e
+    if-eqz v15, :cond_d
 
-    :cond_d
+    :cond_c
     const-string/jumbo v15, "feature_cu"
 
     invoke-static {v15}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v15
 
-    if-eqz v15, :cond_2c
+    if-eqz v15, :cond_2a
 
-    :cond_e
-    :goto_d
+    :cond_d
+    :goto_c
     const-string/jumbo v15, "feature_multisim"
 
     invoke-static {v15}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v15
 
-    if-eqz v15, :cond_10
+    if-eqz v15, :cond_f
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getApplicationContext()Landroid/content/Context;
 
@@ -13977,7 +12466,7 @@
 
     move/from16 v0, v16
 
-    if-lt v15, v0, :cond_10
+    if-lt v15, v0, :cond_f
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -13995,11 +12484,11 @@
 
     move/from16 v0, v16
 
-    if-ne v15, v0, :cond_10
+    if-ne v15, v0, :cond_f
 
     const/4 v15, 0x1
 
-    if-ne v13, v15, :cond_2e
+    if-ne v13, v15, :cond_2c
 
     sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
@@ -14007,10 +12496,10 @@
 
     move/from16 v0, v16
 
-    if-ne v15, v0, :cond_2e
+    if-ne v15, v0, :cond_2c
 
-    :cond_f
-    :goto_e
+    :cond_e
+    :goto_d
     const-string/jumbo v15, "GsmUmtsAdditionalCallOptions"
 
     const-string/jumbo v16, "DSA_IS_ACTIVATE"
@@ -14021,7 +12510,7 @@
 
     iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCWSwitch:Lcom/android/phone/CallWaitingSwitchPreference;
 
-    if-eqz v15, :cond_10
+    if-eqz v15, :cond_f
 
     move-object/from16 v0, p0
 
@@ -14031,14 +12520,14 @@
 
     invoke-virtual/range {v15 .. v16}, Lcom/android/phone/CallWaitingSwitchPreference;->setEnabled(Z)V
 
-    :cond_10
+    :cond_f
     const-string/jumbo v15, "support_softphone"
 
     invoke-static {v15}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v15
 
-    if-eqz v15, :cond_12
+    if-eqz v15, :cond_11
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -14058,27 +12547,27 @@
 
     move-result-object v9
 
-    if-eqz v9, :cond_11
+    if-eqz v9, :cond_10
 
     invoke-virtual {v9, v8}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    :cond_11
+    :cond_10
     const-string/jumbo v15, "button_gsm_voicecall_forwarding"
 
     invoke-virtual {v10, v15}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v9
 
-    if-eqz v9, :cond_12
+    if-eqz v9, :cond_11
 
     invoke-virtual {v9, v8}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    :cond_12
+    :cond_11
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRSwitch:Landroid/preference/SwitchPreference;
 
-    if-eqz v15, :cond_13
+    if-eqz v15, :cond_12
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -14098,16 +12587,16 @@
 
     move-object/from16 v16, v0
 
-    if-eqz v14, :cond_30
+    if-eqz v14, :cond_2e
 
     const/4 v15, 0x1
 
-    :goto_f
+    :goto_e
     move-object/from16 v0, v16
 
     invoke-virtual {v0, v15}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    :cond_13
+    :cond_12
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->updateOthresCallSetting()V
 
     const-string/jumbo v15, "GsmUmtsAdditionalCallOptions"
@@ -14174,30 +12663,30 @@
 
     iget-boolean v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSwitchData:Z
 
-    if-eqz v15, :cond_14
+    if-eqz v15, :cond_13
 
     move-object/from16 v0, p0
 
     iget-boolean v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mChangeDataBack:Z
 
-    if-eqz v15, :cond_31
+    if-eqz v15, :cond_2f
 
-    :cond_14
-    :goto_10
+    :cond_13
+    :goto_f
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->isAirplaneModeOn()Z
 
     move-result v15
 
-    if-eqz v15, :cond_15
+    if-eqz v15, :cond_14
 
     invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isAvailableMoreMenu4VoWiFi()Z
 
     move-result v15
 
-    if-eqz v15, :cond_32
+    if-eqz v15, :cond_30
 
-    :cond_15
-    :goto_11
+    :cond_14
+    :goto_10
     const-string/jumbo v15, "GsmUmtsAdditionalCallOptions"
 
     new-instance v16, Ljava/lang/StringBuilder;
@@ -14254,7 +12743,7 @@
 
     move-result v15
 
-    if-eqz v15, :cond_18
+    if-eqz v15, :cond_17
 
     new-instance v15, Lcom/android/phone/ia/GsmUmtsAdditionalCallOptionsStateListener;
 
@@ -14292,7 +12781,7 @@
 
     move-result v15
 
-    if-eqz v15, :cond_17
+    if-eqz v15, :cond_16
 
     move-object/from16 v0, p0
 
@@ -14302,13 +12791,13 @@
 
     move-result v15
 
-    if-nez v15, :cond_17
+    if-nez v15, :cond_16
 
     invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
 
     move-result v15
 
-    if-eqz v15, :cond_17
+    if-eqz v15, :cond_16
 
     const-string/jumbo v15, "MoreSettings"
 
@@ -14320,24 +12809,24 @@
 
     move-result v15
 
-    if-eqz v15, :cond_17
+    if-eqz v15, :cond_16
 
     invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingLastState()Z
 
     move-result v15
 
-    if-eqz v15, :cond_16
+    if-eqz v15, :cond_15
 
     const-string/jumbo v15, "MoreSettings"
 
     invoke-static {v15}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
 
-    :cond_16
+    :cond_15
     sget-object v15, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v15}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
-    :cond_17
+    :cond_16
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
@@ -14346,29 +12835,29 @@
 
     invoke-virtual/range {v15 .. v16}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logEnterState(Ljava/lang/String;)V
 
-    :cond_18
+    :cond_17
     invoke-super/range {p0 .. p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onResume()V
 
     return-void
 
-    :cond_19
+    :cond_18
     const/4 v15, 0x1
 
     sput v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
     goto/16 :goto_0
 
-    :cond_1a
+    :cond_19
     const/4 v15, 0x0
 
     goto/16 :goto_1
 
-    :cond_1b
+    :cond_1a
     const/4 v15, 0x0
 
     goto/16 :goto_2
 
-    :cond_1c
+    :cond_1b
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v15
@@ -14409,11 +12898,11 @@
 
     move-result v15
 
-    if-lez v15, :cond_1d
+    if-lez v15, :cond_1c
 
     const/4 v15, 0x1
 
-    :goto_12
+    :goto_11
     move/from16 v0, v16
 
     if-eq v0, v15, :cond_3
@@ -14440,16 +12929,21 @@
 
     move-result v15
 
-    if-lez v15, :cond_1e
+    if-lez v15, :cond_1d
 
     const/4 v15, 0x1
 
-    :goto_13
+    :goto_12
     move-object/from16 v0, v16
 
     invoke-virtual {v0, v15}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto/16 :goto_3
+
+    :cond_1c
+    const/4 v15, 0x0
+
+    goto :goto_11
 
     :cond_1d
     const/4 v15, 0x0
@@ -14459,31 +12953,26 @@
     :cond_1e
     const/4 v15, 0x0
 
-    goto :goto_13
+    goto/16 :goto_4
 
     :cond_1f
     const/4 v15, 0x0
 
-    goto/16 :goto_4
-
-    :cond_20
-    const/4 v15, 0x0
-
     goto/16 :goto_5
 
-    :cond_21
+    :cond_20
     move-object/from16 v0, p0
 
     invoke-direct {v0, v12}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->updatePreferredTtyModeSummary(I)V
 
     goto/16 :goto_6
 
-    :cond_22
+    :cond_21
     const/4 v15, 0x0
 
     goto/16 :goto_7
 
-    :cond_23
+    :cond_22
     invoke-virtual {v4}, Lcom/android/internal/telephony/CallManager;->getState()Lcom/android/internal/telephony/PhoneConstants$State;
 
     move-result-object v15
@@ -14492,36 +12981,36 @@
 
     move-object/from16 v0, v16
 
-    if-eq v15, v0, :cond_25
+    if-eq v15, v0, :cond_24
 
     invoke-static {v6}, Lcom/android/phone/PhoneUtils;->isConferenceCall(Lcom/android/internal/telephony/Call;)Z
 
     move-result v15
 
-    if-nez v15, :cond_24
+    if-nez v15, :cond_23
 
     invoke-static {v3}, Lcom/android/phone/PhoneUtils;->isConferenceCall(Lcom/android/internal/telephony/Call;)Z
 
     move-result v15
 
-    if-eqz v15, :cond_25
+    if-eqz v15, :cond_24
+
+    :cond_23
+    const/4 v2, 0x0
+
+    goto/16 :goto_8
 
     :cond_24
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     goto/16 :goto_8
 
     :cond_25
-    const/4 v2, 0x1
-
-    goto/16 :goto_8
-
-    :cond_26
     const/4 v15, 0x0
 
     goto/16 :goto_9
 
-    :cond_27
+    :cond_26
     invoke-virtual {v4}, Lcom/android/internal/telephony/CallManager;->getState()Lcom/android/internal/telephony/PhoneConstants$State;
 
     move-result-object v15
@@ -14530,41 +13019,36 @@
 
     move-object/from16 v0, v16
 
-    if-eq v15, v0, :cond_29
+    if-eq v15, v0, :cond_28
 
     invoke-static {v6}, Lcom/android/phone/PhoneUtils;->isConferenceCall(Lcom/android/internal/telephony/Call;)Z
 
     move-result v15
 
-    if-nez v15, :cond_28
+    if-nez v15, :cond_27
 
     invoke-static {v3}, Lcom/android/phone/PhoneUtils;->isConferenceCall(Lcom/android/internal/telephony/Call;)Z
 
     move-result v15
 
-    if-eqz v15, :cond_29
+    if-eqz v15, :cond_28
 
-    :cond_28
+    :cond_27
     const/4 v2, 0x0
 
     goto/16 :goto_a
 
-    :cond_29
+    :cond_28
     const/4 v2, 0x1
 
     goto/16 :goto_a
 
-    :cond_2a
+    :cond_29
     const/4 v15, 0x0
 
     goto/16 :goto_b
 
-    :cond_2b
-    const/4 v15, 0x1
-
-    goto/16 :goto_c
-
-    :cond_2c
+    :cond_2a
     const-string/jumbo v15, "GsmUmtsAdditionalCallOptions"
 
     const-string/jumbo v16, "SIM is CMCC or CU or CTC SIM. Disable CLIR."
@@ -14577,7 +13061,7 @@
 
     iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRButton:Lcom/android/phone/CLIRListPreference;
 
-    if-eqz v15, :cond_2d
+    if-eqz v15, :cond_2b
 
     move-object/from16 v0, p0
 
@@ -14595,12 +13079,12 @@
 
     invoke-virtual/range {v15 .. v16}, Lcom/android/phone/CLIRListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    :cond_2d
+    :cond_2b
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mCLIRDropDown:Lcom/android/phone/CLIRDropDownPreference;
 
-    if-eqz v15, :cond_e
+    if-eqz v15, :cond_d
 
     move-object/from16 v0, p0
 
@@ -14618,46 +13102,46 @@
 
     invoke-virtual/range {v15 .. v16}, Lcom/android/phone/CLIRDropDownPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    goto/16 :goto_d
+    goto/16 :goto_c
 
-    :cond_2e
+    :cond_2c
     const/4 v15, 0x2
 
-    if-ne v13, v15, :cond_2f
+    if-ne v13, v15, :cond_2d
 
     sget v15, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
 
-    if-eqz v15, :cond_f
+    if-eqz v15, :cond_e
 
-    :cond_2f
-    if-nez v13, :cond_10
+    :cond_2d
+    if-nez v13, :cond_f
+
+    goto/16 :goto_d
+
+    :cond_2e
+    const/4 v15, 0x0
 
     goto/16 :goto_e
 
-    :cond_30
-    const/4 v15, 0x0
-
-    goto/16 :goto_f
-
-    :cond_31
+    :cond_2f
     move-object/from16 v0, p0
 
     iget-boolean v15, v0, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mIsChangeDataProcess:Z
 
-    if-nez v15, :cond_14
+    if-nez v15, :cond_13
 
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->changeDataServiceBackForMultisim()Z
 
     move-result v15
 
-    if-eqz v15, :cond_14
+    if-eqz v15, :cond_13
 
-    goto/16 :goto_10
+    goto/16 :goto_f
 
-    :cond_32
+    :cond_30
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->UpdateAirPlaneModeChange()V
 
-    goto/16 :goto_11
+    goto/16 :goto_10
 .end method
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V

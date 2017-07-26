@@ -585,7 +585,7 @@
 .method private final LGTRebootPopup()V
     .locals 7
 
-    const v6, 0x7f0d086b
+    const v6, 0x7f0d08cf
 
     const-string/jumbo v4, "NetworkNotificationUI"
 
@@ -613,7 +613,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d086c
+    const v5, 0x7f0d08d0
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -623,7 +623,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d086a
+    const v5, 0x7f0d08ce
 
     invoke-virtual {v4, v5, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -728,7 +728,7 @@
 
     invoke-direct {v0, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f0d063c
+    const v6, 0x7f0d06a0
 
     invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -738,7 +738,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d02ca
+    const v7, 0x7f0d032a
 
     invoke-virtual {v6, v7, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -805,7 +805,7 @@
 
     sget-object v4, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0d085d
+    const v5, 0x7f0d08c1
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1022,7 +1022,7 @@
 .method private addRoamingCurrentOperatorNotification()V
     .locals 15
 
-    const v14, 0x7f020172
+    const v14, 0x7f020176
 
     const v13, 0xd904
 
@@ -1137,7 +1137,7 @@
 
     sget-object v7, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0d0975
+    const v8, 0x7f0d09db
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1212,7 +1212,7 @@
 
     sget-object v7, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0d0c3a
+    const v8, 0x7f0d0cab
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1438,7 +1438,7 @@
 
     sget-object v3, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0d085e
+    const v4, 0x7f0d08c2
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1448,7 +1448,7 @@
 
     sget-object v3, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0d085f
+    const v4, 0x7f0d08c3
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1578,7 +1578,7 @@
 
     sget-object v6, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f0d063c
+    const v7, 0x7f0d06a0
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1586,7 +1586,7 @@
 
     sget-object v7, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0d0973
+    const v8, 0x7f0d09d9
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1644,7 +1644,7 @@
 
     sget-object v5, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0d085d
+    const v6, 0x7f0d08c1
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1654,7 +1654,7 @@
 
     sget-object v5, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0d0860
+    const v6, 0x7f0d08c4
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1910,9 +1910,9 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v3, 0x7f0d0bdf
+    const v3, 0x7f0d0c4a
 
-    const v4, 0x7f0d0be0
+    const v4, 0x7f0d0c4b
 
     filled-new-array {v3, v4}, [I
 
@@ -2004,7 +2004,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f0d09b1
+    const v1, 0x7f0d0a17
 
     return v1
 
@@ -2029,17 +2029,17 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f0d09b2
+    const v1, 0x7f0d0a18
 
     return v1
 
     :cond_1
-    const v1, 0x7f0d09b3
+    const v1, 0x7f0d0a19
 
     return v1
 
     :cond_2
-    const v1, 0x7f0d09b4
+    const v1, 0x7f0d0a1a
 
     return v1
 
@@ -2052,7 +2052,7 @@
 
     if-eqz v1, :cond_4
 
-    const v1, 0x7f0d09b6
+    const v1, 0x7f0d0a1c
 
     return v1
 
@@ -2065,12 +2065,12 @@
 
     if-eqz v1, :cond_5
 
-    const v1, 0x7f0d09b7
+    const v1, 0x7f0d0a1d
 
     return v1
 
     :cond_5
-    const v1, 0x7f0d09b8
+    const v1, 0x7f0d0a1e
 
     return v1
 .end method
@@ -2487,7 +2487,7 @@
 
     sget-object v22, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v23, 0x7f0d0a1f
+    const v23, 0x7f0d0a86
 
     invoke-virtual/range {v22 .. v23}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2702,7 +2702,7 @@
 
     check-cast v13, Landroid/net/NetworkInfo;
 
-    if-eqz v13, :cond_2c
+    if-eqz v13, :cond_2e
 
     invoke-virtual {v13}, Landroid/net/NetworkInfo;->isConnected()Z
 
@@ -2966,7 +2966,7 @@
 
     move-result v20
 
-    if-eqz v20, :cond_2d
+    if-eqz v20, :cond_2f
 
     const-string/jumbo v20, "POPUPUI"
 
@@ -2984,7 +2984,7 @@
 
     move-result v20
 
-    if-eqz v20, :cond_2d
+    if-eqz v20, :cond_2f
 
     invoke-direct/range {p0 .. p1}, Lcom/android/phone/NetworkNotificationUI;->notifyRTS(Landroid/content/Intent;)V
 
@@ -3058,7 +3058,7 @@
 
     move-result v20
 
-    if-nez v20, :cond_2f
+    if-nez v20, :cond_31
 
     invoke-static {}, Lcom/android/phone/PhoneUtils;->isLGTSIM()Z
 
@@ -3070,7 +3070,7 @@
 
     move-result v20
 
-    if-eqz v20, :cond_2f
+    if-eqz v20, :cond_31
 
     :cond_d
     const-string/jumbo v20, "5"
@@ -3107,7 +3107,7 @@
 
     move-result v20
 
-    if-eqz v20, :cond_2f
+    if-eqz v20, :cond_31
 
     :cond_e
     const-string/jumbo v20, "NetworkNotificationUI"
@@ -3140,7 +3140,7 @@
 
     move-result v20
 
-    if-nez v20, :cond_2e
+    if-nez v20, :cond_30
 
     const-string/jumbo v20, "support_softphone"
 
@@ -3423,7 +3423,7 @@
 
     move-result v20
 
-    if-eqz v20, :cond_30
+    if-eqz v20, :cond_32
 
     return-void
 
@@ -3586,7 +3586,7 @@
 
     const-string/jumbo v22, "dataUsageReachToLimit"
 
-    if-eqz v10, :cond_35
+    if-eqz v10, :cond_37
 
     const/16 v20, 0x1
 
@@ -3673,7 +3673,7 @@
 
     sget-object v22, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v23, 0x7f0d0a20
+    const v23, 0x7f0d0a87
 
     invoke-virtual/range {v22 .. v23}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3845,7 +3845,7 @@
 
     move-result v20
 
-    if-eqz v20, :cond_26
+    if-eqz v20, :cond_28
 
     const-string/jumbo v20, "feature_multisim"
 
@@ -3853,7 +3853,7 @@
 
     move-result v20
 
-    if-eqz v20, :cond_25
+    if-eqz v20, :cond_26
 
     const/16 v20, 0x0
 
@@ -3869,7 +3869,7 @@
 
     move-result v20
 
-    if-eqz v20, :cond_0
+    if-eqz v20, :cond_25
 
     :cond_24
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/NetworkNotificationUI;->showRoamingDataSelectionPopUp()V
@@ -3877,24 +3877,42 @@
     goto/16 :goto_0
 
     :cond_25
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    invoke-static/range {v20 .. v21}, Lcom/android/phone/NetworkNotificationUI;->sendDataConnectionIntent(ZZ)V
+
+    goto/16 :goto_0
+
+    :cond_26
     invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/NetworkProxy;->isNetworkRoaming()Z
 
     move-result v20
 
-    if-eqz v20, :cond_0
+    if-eqz v20, :cond_27
 
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/NetworkNotificationUI;->showRoamingDataSelectionPopUp()V
 
     goto/16 :goto_0
 
-    :cond_26
+    :cond_27
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    invoke-static/range {v20 .. v21}, Lcom/android/phone/NetworkNotificationUI;->sendDataConnectionIntent(ZZ)V
+
+    goto/16 :goto_0
+
+    :cond_28
     sget-object v20, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
     invoke-static/range {v20 .. v20}, Lcom/android/phone/mobilenetworks/MobileNetworkUtils;->isOtaRegistering(Landroid/content/Context;)Z
 
     move-result v20
 
-    if-eqz v20, :cond_27
+    if-eqz v20, :cond_29
 
     const/16 v20, 0x0
 
@@ -3904,18 +3922,18 @@
 
     goto/16 :goto_0
 
-    :cond_27
+    :cond_29
     invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/NetworkProxy;->isNetworkRoaming()Z
 
     move-result v20
 
-    if-nez v20, :cond_2a
+    if-nez v20, :cond_2c
 
     invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/SettingProxy;->getDoNotShowDataSelectionPopupIsSet()Z
 
     move-result v20
 
-    if-eqz v20, :cond_28
+    if-eqz v20, :cond_2a
 
     invoke-static {}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->getInstance()Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;
 
@@ -3925,38 +3943,18 @@
 
     goto/16 :goto_0
 
-    :cond_28
+    :cond_2a
     invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/SettingProxy;->isMobileDataOn()Z
 
     move-result v20
 
-    if-eqz v20, :cond_29
+    if-eqz v20, :cond_2b
 
     const/16 v20, 0x1
 
     const/16 v21, 0x0
 
     invoke-static/range {v20 .. v21}, Lcom/android/phone/NetworkNotificationUI;->sendDataConnectionIntent(ZZ)V
-
-    goto/16 :goto_0
-
-    :cond_29
-    const/16 v20, 0x0
-
-    const/16 v21, 0x0
-
-    invoke-static/range {v20 .. v21}, Lcom/android/phone/NetworkNotificationUI;->sendDataConnectionIntent(ZZ)V
-
-    goto/16 :goto_0
-
-    :cond_2a
-    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/NetworkProxy;->isNetworkRoaming()Z
-
-    move-result v20
-
-    if-eqz v20, :cond_2b
-
-    invoke-direct/range {p0 .. p0}, Lcom/android/phone/NetworkNotificationUI;->showRoamingDataSelectionPopUp()V
 
     goto/16 :goto_0
 
@@ -3970,11 +3968,31 @@
     goto/16 :goto_0
 
     :cond_2c
+    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/NetworkProxy;->isNetworkRoaming()Z
+
+    move-result v20
+
+    if-eqz v20, :cond_2d
+
+    invoke-direct/range {p0 .. p0}, Lcom/android/phone/NetworkNotificationUI;->showRoamingDataSelectionPopUp()V
+
+    goto/16 :goto_0
+
+    :cond_2d
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    invoke-static/range {v20 .. v21}, Lcom/android/phone/NetworkNotificationUI;->sendDataConnectionIntent(ZZ)V
+
+    goto/16 :goto_0
+
+    :cond_2e
     const/16 v20, 0x0
 
     goto/16 :goto_1
 
-    :cond_2d
+    :cond_2f
     const-string/jumbo v20, "DISMISS"
 
     const-string/jumbo v21, "RTS"
@@ -3997,12 +4015,12 @@
 
     goto/16 :goto_0
 
-    :cond_2e
+    :cond_30
     const/4 v11, 0x1
 
     goto/16 :goto_2
 
-    :cond_2f
+    :cond_31
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/NetworkNotificationUI;->isRtsPopupAllowed()Z
 
     move-result v20
@@ -4013,19 +4031,19 @@
 
     goto/16 :goto_0
 
-    :cond_30
+    :cond_32
     sget-object v20, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
     invoke-static/range {v20 .. v20}, Lcom/android/phone/mobilenetworks/MobileNetworkUtils;->isOtaRegistering(Landroid/content/Context;)Z
 
     move-result v20
 
-    if-eqz v20, :cond_31
+    if-eqz v20, :cond_33
 
     return-void
 
-    :cond_31
-    if-eqz v16, :cond_32
+    :cond_33
+    if-eqz v16, :cond_34
 
     const/16 v20, 0x1
 
@@ -4033,9 +4051,9 @@
 
     move/from16 v1, v20
 
-    if-ne v0, v1, :cond_33
+    if-ne v0, v1, :cond_35
 
-    :cond_32
+    :cond_34
     new-instance v9, Landroid/app/AlertDialog$Builder;
 
     sget-object v20, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
@@ -4044,7 +4062,7 @@
 
     invoke-direct {v9, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v20, 0x7f0d09ba
+    const v20, 0x7f0d0a20
 
     move/from16 v0, v20
 
@@ -4052,7 +4070,7 @@
 
     move-result-object v20
 
-    const v21, 0x7f0d09bb
+    const v21, 0x7f0d0a21
 
     invoke-virtual/range {v20 .. v21}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -4080,23 +4098,23 @@
 
     goto/16 :goto_0
 
-    :cond_33
+    :cond_35
     invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/NetworkProxy;->isNetworkRoaming()Z
 
     move-result v20
 
-    if-eqz v20, :cond_34
+    if-eqz v20, :cond_36
 
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/NetworkNotificationUI;->showRoamingDataSelectionPopUp()V
 
     goto/16 :goto_0
 
-    :cond_34
+    :cond_36
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/NetworkNotificationUI;->showDataSelectionPopUpByDataKey()V
 
     goto/16 :goto_0
 
-    :cond_35
+    :cond_37
     const/16 v20, 0x0
 
     goto/16 :goto_3
@@ -4816,11 +4834,11 @@
     goto :goto_1
 
     :pswitch_1
-    const v14, 0x7f0d0839
+    const v14, 0x7f0d089d
 
     if-nez v5, :cond_6
 
-    const v14, 0x7f0d083e
+    const v14, 0x7f0d08a2
 
     :cond_6
     :goto_2
@@ -5063,44 +5081,44 @@
     return-void
 
     :pswitch_3
-    const v14, 0x7f0d083a
+    const v14, 0x7f0d089e
 
     if-nez v5, :cond_6
 
-    const v14, 0x7f0d083f
+    const v14, 0x7f0d08a3
 
     goto/16 :goto_2
 
     :pswitch_4
-    const v14, 0x7f0d083b
+    const v14, 0x7f0d089f
 
     if-nez v5, :cond_6
 
-    const v14, 0x7f0d0840
+    const v14, 0x7f0d08a4
 
     goto/16 :goto_2
 
     :pswitch_5
-    const v14, 0x7f0d0841
+    const v14, 0x7f0d08a5
 
     if-nez v5, :cond_6
 
-    const v14, 0x7f0d0842
+    const v14, 0x7f0d08a6
 
     goto/16 :goto_2
 
     :pswitch_6
-    const v14, 0x7f0d0843
+    const v14, 0x7f0d08a7
 
     goto/16 :goto_2
 
     :pswitch_7
-    const v14, 0x7f0d0842
+    const v14, 0x7f0d08a6
 
     goto/16 :goto_2
 
     :pswitch_8
-    const v14, 0x7f0d0844
+    const v14, 0x7f0d08a8
 
     goto/16 :goto_2
 
@@ -5159,7 +5177,7 @@
 
     if-eqz v17, :cond_d
 
-    const v14, 0x7f0d0853
+    const v14, 0x7f0d08b7
 
     packed-switch v10, :pswitch_data_1
 
@@ -5174,7 +5192,7 @@
     goto/16 :goto_2
 
     :pswitch_b
-    const v14, 0x7f0d0854
+    const v14, 0x7f0d08b8
 
     goto/16 :goto_2
 
@@ -5208,9 +5226,9 @@
     packed-switch v10, :pswitch_data_2
 
     :pswitch_c
-    const v16, 0x7f0d085d
+    const v16, 0x7f0d08c1
 
-    const v14, 0x7f0d0860
+    const v14, 0x7f0d08c4
 
     const/4 v8, 0x0
 
@@ -5220,30 +5238,30 @@
     return-void
 
     :pswitch_e
-    const v16, 0x7f0d085d
+    const v16, 0x7f0d08c1
 
-    const v14, 0x7f0d086d
+    const v14, 0x7f0d08d1
 
     goto/16 :goto_2
 
     :pswitch_f
-    const v16, 0x7f0d086f
+    const v16, 0x7f0d08d3
 
-    const v14, 0x7f0d0870
+    const v14, 0x7f0d08d4
 
     goto/16 :goto_2
 
     :pswitch_10
-    const v16, 0x7f0d085d
+    const v16, 0x7f0d08c1
 
-    const v14, 0x7f0d0860
+    const v14, 0x7f0d08c4
 
     goto/16 :goto_2
 
     :pswitch_11
-    const v16, 0x7f0d0872
+    const v16, 0x7f0d08d6
 
-    const v14, 0x7f0d0873
+    const v14, 0x7f0d08d7
 
     goto/16 :goto_2
 
@@ -5251,11 +5269,11 @@
     packed-switch v10, :pswitch_data_3
 
     :pswitch_12
-    const v14, 0x7f0d085a
+    const v14, 0x7f0d08be
 
     if-nez v5, :cond_6
 
-    const v14, 0x7f0d0863
+    const v14, 0x7f0d08c7
 
     goto/16 :goto_2
 
@@ -5263,38 +5281,38 @@
     return-void
 
     :pswitch_14
-    const v14, 0x7f0d0858
+    const v14, 0x7f0d08bc
 
     if-nez v5, :cond_6
 
-    const v14, 0x7f0d0861
+    const v14, 0x7f0d08c5
 
     goto/16 :goto_2
 
     :pswitch_15
-    const v14, 0x7f0d0859
+    const v14, 0x7f0d08bd
 
     if-nez v5, :cond_6
 
-    const v14, 0x7f0d0862
+    const v14, 0x7f0d08c6
 
     goto/16 :goto_2
 
     :pswitch_16
-    const v14, 0x7f0d085a
+    const v14, 0x7f0d08be
 
     if-nez v5, :cond_6
 
-    const v14, 0x7f0d0863
+    const v14, 0x7f0d08c7
 
     goto/16 :goto_2
 
     :pswitch_17
-    const v14, 0x7f0d085b
+    const v14, 0x7f0d08bf
 
     if-nez v5, :cond_6
 
-    const v14, 0x7f0d0864
+    const v14, 0x7f0d08c8
 
     goto/16 :goto_2
 
@@ -5523,7 +5541,7 @@
     :goto_7
     sget-object v17, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v18, 0x7f0d085c
+    const v18, 0x7f0d08c0
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -6053,11 +6071,11 @@
     goto :goto_1
 
     :pswitch_1
-    const v11, 0x7f0d0839
+    const v11, 0x7f0d089d
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0834
+    const v11, 0x7f0d0898
 
     :cond_5
     :goto_2
@@ -6331,53 +6349,53 @@
     return-void
 
     :pswitch_2
-    const v11, 0x7f0d083a
+    const v11, 0x7f0d089e
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0835
+    const v11, 0x7f0d0899
 
     goto/16 :goto_2
 
     :pswitch_3
-    const v11, 0x7f0d083b
+    const v11, 0x7f0d089f
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0836
+    const v11, 0x7f0d089a
 
     goto/16 :goto_2
 
     :pswitch_4
-    const v11, 0x7f0d083c
+    const v11, 0x7f0d08a0
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0837
+    const v11, 0x7f0d089b
 
     goto/16 :goto_2
 
     :pswitch_5
-    const v11, 0x7f0d0833
+    const v11, 0x7f0d0897
 
     goto/16 :goto_2
 
     :pswitch_6
-    const v11, 0x7f0d083d
+    const v11, 0x7f0d08a1
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0838
+    const v11, 0x7f0d089c
 
     goto/16 :goto_2
 
     :pswitch_7
-    const v11, 0x7f0d0831
+    const v11, 0x7f0d0895
 
     goto/16 :goto_2
 
     :pswitch_8
-    const v11, 0x7f0d0832
+    const v11, 0x7f0d0896
 
     goto/16 :goto_2
 
@@ -6399,42 +6417,42 @@
     return-void
 
     :sswitch_0
-    const v11, 0x7f0d0847
+    const v11, 0x7f0d08ab
 
     goto/16 :goto_2
 
     :sswitch_1
-    const v11, 0x7f0d0848
+    const v11, 0x7f0d08ac
 
     goto/16 :goto_2
 
     :sswitch_2
-    const v11, 0x7f0d0845
+    const v11, 0x7f0d08a9
 
     goto/16 :goto_2
 
     :sswitch_3
-    const v11, 0x7f0d084c
+    const v11, 0x7f0d08b0
 
     goto/16 :goto_2
 
     :sswitch_4
-    const v11, 0x7f0d084d
+    const v11, 0x7f0d08b1
 
     goto/16 :goto_2
 
     :sswitch_5
-    const v11, 0x7f0d0846
+    const v11, 0x7f0d08aa
 
     goto/16 :goto_2
 
     :sswitch_6
-    const v11, 0x7f0d0849
+    const v11, 0x7f0d08ad
 
     goto/16 :goto_2
 
     :sswitch_7
-    const v11, 0x7f0d0847
+    const v11, 0x7f0d08ab
 
     goto/16 :goto_2
 
@@ -6460,9 +6478,9 @@
     packed-switch v8, :pswitch_data_1
 
     :pswitch_9
-    const v13, 0x7f0d085d
+    const v13, 0x7f0d08c1
 
-    const v11, 0x7f0d0860
+    const v11, 0x7f0d08c4
 
     const/4 v6, 0x0
 
@@ -6472,30 +6490,30 @@
     return-void
 
     :pswitch_b
-    const v13, 0x7f0d085d
+    const v13, 0x7f0d08c1
 
-    const v11, 0x7f0d086d
+    const v11, 0x7f0d08d1
 
     goto/16 :goto_2
 
     :pswitch_c
-    const v13, 0x7f0d086f
+    const v13, 0x7f0d08d3
 
-    const v11, 0x7f0d0870
+    const v11, 0x7f0d08d4
 
     goto/16 :goto_2
 
     :pswitch_d
-    const v13, 0x7f0d085d
+    const v13, 0x7f0d08c1
 
-    const v11, 0x7f0d0860
+    const v11, 0x7f0d08c4
 
     goto/16 :goto_2
 
     :pswitch_e
-    const v13, 0x7f0d0872
+    const v13, 0x7f0d08d6
 
-    const v11, 0x7f0d0873
+    const v11, 0x7f0d08d7
 
     goto/16 :goto_2
 
@@ -6509,11 +6527,11 @@
     packed-switch v8, :pswitch_data_2
 
     :pswitch_f
-    const v11, 0x7f0d085a
+    const v11, 0x7f0d08be
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0863
+    const v11, 0x7f0d08c7
 
     goto/16 :goto_2
 
@@ -6521,105 +6539,105 @@
     return-void
 
     :pswitch_11
-    const v11, 0x7f0d0858
+    const v11, 0x7f0d08bc
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0861
+    const v11, 0x7f0d08c5
 
     goto/16 :goto_2
 
     :pswitch_12
-    const v11, 0x7f0d0859
+    const v11, 0x7f0d08bd
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0862
+    const v11, 0x7f0d08c6
 
     goto/16 :goto_2
 
     :pswitch_13
-    const v11, 0x7f0d085a
+    const v11, 0x7f0d08be
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0863
+    const v11, 0x7f0d08c7
 
     goto/16 :goto_2
 
     :pswitch_14
-    const v11, 0x7f0d085b
+    const v11, 0x7f0d08bf
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0864
+    const v11, 0x7f0d08c8
 
     goto/16 :goto_2
 
     :cond_10
     sparse-switch v8, :sswitch_data_1
 
-    const v11, 0x7f0d0855
+    const v11, 0x7f0d08b9
 
     goto/16 :goto_2
 
     :sswitch_8
-    const v11, 0x7f0d084e
+    const v11, 0x7f0d08b2
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0869
+    const v11, 0x7f0d08cd
 
     goto/16 :goto_2
 
     :sswitch_9
-    const v11, 0x7f0d084f
+    const v11, 0x7f0d08b3
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0866
+    const v11, 0x7f0d08ca
 
     goto/16 :goto_2
 
     :sswitch_a
-    const v11, 0x7f0d0850
+    const v11, 0x7f0d08b4
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0867
+    const v11, 0x7f0d08cb
 
     goto/16 :goto_2
 
     :sswitch_b
-    const v11, 0x7f0d0831
+    const v11, 0x7f0d0895
 
     goto/16 :goto_2
 
     :sswitch_c
-    const v11, 0x7f0d0851
+    const v11, 0x7f0d08b5
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0868
+    const v11, 0x7f0d08cc
 
     goto/16 :goto_2
 
     :sswitch_d
-    const v11, 0x7f0d0832
+    const v11, 0x7f0d0896
 
     goto/16 :goto_2
 
     :sswitch_e
-    const v11, 0x7f0d0855
+    const v11, 0x7f0d08b9
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0865
+    const v11, 0x7f0d08c9
 
     goto/16 :goto_2
 
     :sswitch_f
-    const v11, 0x7f0d0852
+    const v11, 0x7f0d08b6
 
     goto/16 :goto_2
 
@@ -6636,11 +6654,11 @@
 
     if-eqz v14, :cond_11
 
-    const v11, 0x7f0d0855
+    const v11, 0x7f0d08b9
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0865
+    const v11, 0x7f0d08c9
 
     goto/16 :goto_2
 
@@ -6651,7 +6669,7 @@
 
     if-eqz v14, :cond_12
 
-    const v11, 0x7f0d0856
+    const v11, 0x7f0d08ba
 
     goto/16 :goto_2
 
@@ -6662,16 +6680,16 @@
 
     if-eqz v14, :cond_13
 
-    const v11, 0x7f0d0857
+    const v11, 0x7f0d08bb
 
     goto/16 :goto_2
 
     :cond_13
-    const v11, 0x7f0d0855
+    const v11, 0x7f0d08b9
 
     if-nez v3, :cond_5
 
-    const v11, 0x7f0d0865
+    const v11, 0x7f0d08c9
 
     goto/16 :goto_2
 
@@ -6693,7 +6711,7 @@
 
     sparse-switch v14, :sswitch_data_2
 
-    const v11, 0x7f0d0877
+    const v11, 0x7f0d08db
 
     goto/16 :goto_2
 
@@ -6701,17 +6719,17 @@
     return-void
 
     :sswitch_13
-    const v11, 0x7f0d0874
+    const v11, 0x7f0d08d8
 
     goto/16 :goto_2
 
     :sswitch_14
-    const v11, 0x7f0d0875
+    const v11, 0x7f0d08d9
 
     goto/16 :goto_2
 
     :sswitch_15
-    const v11, 0x7f0d0876
+    const v11, 0x7f0d08da
 
     goto/16 :goto_2
 
@@ -6870,7 +6888,7 @@
     :goto_8
     sget-object v14, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v15, 0x7f0d085c
+    const v15, 0x7f0d08c0
 
     invoke-virtual {v14, v15}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -7214,7 +7232,7 @@
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    const v4, 0x7f0d02ca
+    const v4, 0x7f0d032a
 
     invoke-virtual {v3, v4, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -7255,7 +7273,7 @@
     return-void
 
     :cond_0
-    const v4, 0x7f0d063c
+    const v4, 0x7f0d06a0
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -7269,7 +7287,7 @@
 
     sget-object v2, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0d06f4
+    const v3, 0x7f0d0758
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -7324,7 +7342,7 @@
     return-void
 
     :pswitch_0
-    const v5, 0x7f0d06f5
+    const v5, 0x7f0d0759
 
     :goto_0
     sget-object v6, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
@@ -7344,17 +7362,17 @@
     return-void
 
     :pswitch_1
-    const v5, 0x7f0d06f6
+    const v5, 0x7f0d075a
 
     goto :goto_0
 
     :pswitch_2
-    const v5, 0x7f0d06f7
+    const v5, 0x7f0d075b
 
     goto :goto_0
 
     :pswitch_3
-    const v5, 0x7f0d06f8
+    const v5, 0x7f0d075c
 
     goto :goto_0
 
@@ -7369,7 +7387,7 @@
 
     invoke-direct {v2, v6}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f0d063c
+    const v6, 0x7f0d06a0
 
     invoke-virtual {v2, v6}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -7379,7 +7397,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d02ca
+    const v7, 0x7f0d032a
 
     invoke-virtual {v6, v7, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -8386,13 +8404,13 @@
 
     invoke-direct {v0, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d06fb
+    const v4, 0x7f0d075f
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v4
 
-    const v5, 0x7f0d06fc
+    const v5, 0x7f0d0760
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -8404,13 +8422,13 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d06f9
+    const v5, 0x7f0d075d
 
     invoke-virtual {v4, v5, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v4
 
-    const v5, 0x7f0d06fa
+    const v5, 0x7f0d075e
 
     invoke-virtual {v4, v5, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -8495,7 +8513,7 @@
 
     invoke-direct {v3, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d0756
+    const v4, 0x7f0d07ba
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -8593,13 +8611,13 @@
 
     invoke-direct {v4, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f0d063c
+    const v5, 0x7f0d06a0
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v5
 
-    const v6, 0x7f0d0974
+    const v6, 0x7f0d09da
 
     invoke-virtual {v5, v6}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -8609,13 +8627,13 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d02ca
+    const v6, 0x7f0d032a
 
     invoke-virtual {v5, v6, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v5
 
-    const v6, 0x7f0d02c7
+    const v6, 0x7f0d0327
 
     invoke-virtual {v5, v6, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -8663,13 +8681,13 @@
 
     invoke-direct {v0, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d084a
+    const v4, 0x7f0d08ae
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v4
 
-    const v5, 0x7f0d084b
+    const v5, 0x7f0d08af
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -8681,13 +8699,13 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d06f9
+    const v5, 0x7f0d075d
 
     invoke-virtual {v4, v5, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v4
 
-    const v5, 0x7f0d06fa
+    const v5, 0x7f0d075e
 
     invoke-virtual {v4, v5, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

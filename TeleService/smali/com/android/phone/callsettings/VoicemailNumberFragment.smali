@@ -290,7 +290,7 @@
 
     iput-boolean v3, p0, Lcom/android/phone/CallFeaturesSetting;->mEnterVoicemailSetting:Z
 
-    const v0, 0x7f0d0206
+    const v0, 0x7f0d0263
 
     invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/VoicemailNumberFragment;->getString(I)Ljava/lang/String;
 

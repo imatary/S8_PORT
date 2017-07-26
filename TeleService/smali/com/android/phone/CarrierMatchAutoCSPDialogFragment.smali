@@ -63,7 +63,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0a68
+    const v3, 0x7f0d0acf
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -73,7 +73,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/CarrierMatchAutoCSPDialogFragment$1;-><init>(Lcom/android/phone/CarrierMatchAutoCSPDialogFragment;)V
 
-    const v4, 0x7f0d02ca
+    const v4, 0x7f0d032a
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -83,7 +83,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/CarrierMatchAutoCSPDialogFragment$2;-><init>(Lcom/android/phone/CarrierMatchAutoCSPDialogFragment;)V
 
-    const v4, 0x7f0d02c7
+    const v4, 0x7f0d0327
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

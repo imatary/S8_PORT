@@ -212,13 +212,13 @@
 
     iget-object v2, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$ActionModeCallback;->mCancel:Landroid/widget/LinearLayout;
 
-    const v4, 0x7f020165
+    const v4, 0x7f020169
 
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
     iget-object v2, p0, Lcom/android/phone/emergencydialer/SyncGroupItemContainer$ActionModeCallback;->mDone:Landroid/widget/LinearLayout;
 
-    const v4, 0x7f020166
+    const v4, 0x7f02016a
 
     invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
@@ -343,7 +343,7 @@
 
     const/4 v1, 0x0
 
-    const v0, 0x7f1002e2
+    const v0, 0x7f1002e5
 
     invoke-interface {p2, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 

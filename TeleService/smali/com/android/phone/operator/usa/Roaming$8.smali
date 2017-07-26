@@ -65,11 +65,13 @@
 
     invoke-static {v0}, Lcom/android/phone/operator/usa/Roaming;->-wrap2(Lcom/android/phone/operator/usa/Roaming;)V
 
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isInternationalRoamingInService()Z
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isInternationalDataRoamingInService()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
+
+    invoke-static {v2}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
 
     iget-boolean v0, p0, Lcom/android/phone/operator/usa/Roaming$8;->val$internationalCdmaDataRoamingGuardValue:Z
 

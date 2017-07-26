@@ -116,7 +116,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0d0d28
+    const v2, 0x7f0d0d99
 
     invoke-virtual {p0, v2, v1}, Lcom/android/phone/callsettings/AboutPhoneActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -128,7 +128,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AboutPhoneActivity;->mAvailableText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d0d2a
+    const v1, 0x7f0d0d9b
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/AboutPhoneActivity;->getString(I)Ljava/lang/String;
 
@@ -148,7 +148,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/phone/callsettings/AboutPhoneActivity;->mAvailableText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d0d29
+    const v1, 0x7f0d0d9a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/AboutPhoneActivity;->getString(I)Ljava/lang/String;
 
@@ -165,7 +165,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/phone/callsettings/AboutPhoneActivity;->mAvailableText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d0d34
+    const v1, 0x7f0d0da5
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/AboutPhoneActivity;->getString(I)Ljava/lang/String;
 
@@ -175,7 +175,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AboutPhoneActivity;->mUpdateButton:Landroid/widget/Button;
 
-    const v1, 0x7f0d0d2d
+    const v1, 0x7f0d0d9e
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/AboutPhoneActivity;->getString(I)Ljava/lang/String;
 
@@ -345,7 +345,7 @@
 
     aput-object v4, v3, v2
 
-    const v4, 0x7f0d0d28
+    const v4, 0x7f0d0d99
 
     invoke-virtual {p0, v4, v3}, Lcom/android/phone/callsettings/AboutPhoneActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -405,7 +405,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0d0d31
+    const v3, 0x7f0d0da2
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/AboutPhoneActivity;->getString(I)Ljava/lang/String;
 
@@ -658,7 +658,7 @@
 
     invoke-direct {v3, v4, v5}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
 
-    const v4, 0x7f0d0d33
+    const v4, 0x7f0d0da4
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/AboutPhoneActivity;->getString(I)Ljava/lang/String;
 
@@ -761,7 +761,7 @@
 
     new-array v1, v4, [Ljava/lang/Object;
 
-    const v2, 0x7f0d02b4
+    const v2, 0x7f0d0314
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/AboutPhoneActivity;->getString(I)Ljava/lang/String;
 
@@ -771,7 +771,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0d0d27
+    const v2, 0x7f0d0d98
 
     invoke-virtual {p0, v2, v1}, Lcom/android/phone/callsettings/AboutPhoneActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

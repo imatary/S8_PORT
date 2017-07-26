@@ -87,7 +87,7 @@
     .sparse-switch
         0x7f100121 -> :sswitch_1
         0x7f10016a -> :sswitch_1
-        0x7f1002e2 -> :sswitch_0
+        0x7f1002e5 -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -575,7 +575,7 @@
 
     invoke-static {v0, v1}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v0, 0x7f1002e2
+    const v0, 0x7f1002e5
 
     invoke-interface {p2, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -690,7 +690,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d09f7
+    const v5, 0x7f0d0a5e
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

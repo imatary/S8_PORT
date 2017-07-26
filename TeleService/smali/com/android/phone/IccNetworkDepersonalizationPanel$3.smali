@@ -39,7 +39,7 @@
 
     iget-object v2, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel$3;->this$0:Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
-    invoke-static {v2}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->-get4(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Landroid/widget/EditText;
+    invoke-static {v2}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->-get5(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Landroid/widget/EditText;
 
     move-result-object v2
 
@@ -82,7 +82,7 @@
 
     iget-object v2, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel$3;->this$0:Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
-    invoke-static {v2}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->-get3(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Lcom/android/internal/telephony/Phone;
+    invoke-static {v2}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->-get4(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Lcom/android/internal/telephony/Phone;
 
     move-result-object v2
 
@@ -123,21 +123,9 @@
     goto :goto_0
 
     :cond_1
-    const-string/jumbo v2, "feature_multisim"
-
-    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
     iget-object v2, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel$3;->this$0:Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
-    invoke-static {v2}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->-get7(Lcom/android/phone/IccNetworkDepersonalizationPanel;)I
-
-    move-result v2
-
-    invoke-static {v2}, Lcom/android/phone/PhoneUtilsMultiSIM;->getPhone(I)Lcom/android/internal/telephony/Phone;
+    invoke-static {v2}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->-get4(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Lcom/android/internal/telephony/Phone;
 
     move-result-object v2
 
@@ -163,43 +151,13 @@
 
     invoke-interface {v2, v1, v3, v4}, Lcom/android/internal/telephony/IccCard;->supplyNetworkDepersonalization(Ljava/lang/String;ILandroid/os/Message;)V
 
-    :goto_1
     iget-object v2, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel$3;->this$0:Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
     invoke-static {v2}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->-wrap2(Lcom/android/phone/IccNetworkDepersonalizationPanel;)V
 
     return-void
 
-    :cond_2
-    iget-object v2, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel$3;->this$0:Lcom/android/phone/IccNetworkDepersonalizationPanel;
-
-    invoke-static {v2}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->-get3(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Lcom/android/internal/telephony/Phone;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/android/internal/telephony/Phone;->getIccCard()Lcom/android/internal/telephony/IccCard;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel$3;->this$0:Lcom/android/phone/IccNetworkDepersonalizationPanel;
-
-    invoke-static {v3}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->-get2(Lcom/android/phone/IccNetworkDepersonalizationPanel;)I
-
-    move-result v3
-
-    iget-object v4, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel$3;->this$0:Lcom/android/phone/IccNetworkDepersonalizationPanel;
-
-    invoke-static {v4}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->-get1(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Landroid/os/Handler;
-
-    move-result-object v4
-
-    invoke-static {v4, v0}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
-
-    move-result-object v4
-
-    invoke-interface {v2, v1, v3, v4}, Lcom/android/internal/telephony/IccCard;->supplyNetworkDepersonalization(Ljava/lang/String;ILandroid/os/Message;)V
-
-    goto :goto_1
+    nop
 
     :pswitch_data_0
     .packed-switch 0x4

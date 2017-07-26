@@ -154,7 +154,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0200b1
+    const v7, 0x7f0200b4
 
     invoke-static {v6, v7}, Landroid/graphics/drawable/Icon;->createWithResource(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Icon;
 

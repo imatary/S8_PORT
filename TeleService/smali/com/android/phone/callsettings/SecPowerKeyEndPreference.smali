@@ -128,7 +128,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d0570
+    const v6, 0x7f0d05d4
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -138,7 +138,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0571
+    const v5, 0x7f0d05d5
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -148,7 +148,7 @@
 
     invoke-direct {v5, p0}, Lcom/android/phone/callsettings/SecPowerKeyEndPreference$1;-><init>(Lcom/android/phone/callsettings/SecPowerKeyEndPreference;)V
 
-    const v6, 0x7f0d050c
+    const v6, 0x7f0d056c
 
     invoke-virtual {v4, v6, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -158,7 +158,7 @@
 
     invoke-direct {v5, p0}, Lcom/android/phone/callsettings/SecPowerKeyEndPreference$2;-><init>(Lcom/android/phone/callsettings/SecPowerKeyEndPreference;)V
 
-    const v6, 0x7f0d050d
+    const v6, 0x7f0d056d
 
     invoke-virtual {v4, v6, v5}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -182,7 +182,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d01f5
+    const v5, 0x7f0d0252
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -194,7 +194,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d0249
+    const v6, 0x7f0d02a8
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

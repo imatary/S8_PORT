@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/VzwAdvancedCallingSettings;->showTTYOnDialog()V
+    value = Lcom/android/phone/VzwAdvancedCallingSettings;->displayMobileDataOffDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

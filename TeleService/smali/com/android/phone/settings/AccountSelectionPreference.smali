@@ -298,7 +298,7 @@
 
     iget-object v6, p0, Lcom/android/phone/settings/AccountSelectionPreference;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0d02ec
+    const v8, 0x7f0d034c
 
     invoke-virtual {v6, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

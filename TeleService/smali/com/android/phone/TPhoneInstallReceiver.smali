@@ -442,7 +442,7 @@
 
     invoke-static {v4, v5, v6}, Lcom/android/services/telephony/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    const v2, 0x7f020136
+    const v2, 0x7f02013a
 
     new-instance v4, Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -462,7 +462,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d09fa
+    const v6, 0x7f0d0a61
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -478,7 +478,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d09fb
+    const v6, 0x7f0d0a62
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -488,7 +488,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f020136
+    const v5, 0x7f02013a
 
     invoke-virtual {v4, v5}, Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
 

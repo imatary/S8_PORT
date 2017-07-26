@@ -133,11 +133,11 @@
 
     iput-object v0, p0, Lcom/android/phone/photoring/PhotoringAgreement;->s:Ljava/lang/String;
 
-    const v0, 0x7f0d0904
+    const v0, 0x7f0d096a
 
-    const v1, 0x7f0d0905
+    const v1, 0x7f0d096b
 
-    const v2, 0x7f0d0903
+    const v2, 0x7f0d0969
 
     filled-new-array {v0, v1, v2}, [I
 
@@ -217,7 +217,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d07f7
+    const v3, 0x7f0d085b
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

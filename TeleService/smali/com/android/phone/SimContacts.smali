@@ -435,7 +435,7 @@
 .method private importOneSimContact(I)V
     .locals 7
 
-    const v6, 0x7f0d047f
+    const v6, 0x7f0d04df
 
     const/4 v5, 0x0
 
@@ -465,7 +465,7 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f0d047e
+    const v2, 0x7f0d04de
 
     invoke-static {v0, v2, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -710,7 +710,7 @@
     :cond_0
     const/4 v2, 0x1
 
-    const v3, 0x7f0d047a
+    const v3, 0x7f0d04da
 
     invoke-interface {p1, v4, v2, v4, v3}, Landroid/view/ContextMenu;->add(IIII)Landroid/view/MenuItem;
 
@@ -727,7 +727,7 @@
 
     const/4 v0, 0x2
 
-    const v1, 0x7f0d047b
+    const v1, 0x7f0d04db
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -857,13 +857,13 @@
     goto :goto_2
 
     :sswitch_1
-    const v6, 0x7f0d047b
+    const v6, 0x7f0d04db
 
     invoke-virtual {p0, v6}, Lcom/android/phone/SimContacts;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
-    const v6, 0x7f0d047c
+    const v6, 0x7f0d04dc
 
     invoke-virtual {p0, v6}, Lcom/android/phone/SimContacts;->getString(I)Ljava/lang/String;
 
@@ -910,7 +910,7 @@
 
     iget-object v6, p0, Lcom/android/phone/SimContacts;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    const v7, 0x7f0d02c7
+    const v7, 0x7f0d0327
 
     invoke-virtual {p0, v7}, Lcom/android/phone/SimContacts;->getString(I)Ljava/lang/String;
 

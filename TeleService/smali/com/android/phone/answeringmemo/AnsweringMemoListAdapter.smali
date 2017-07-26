@@ -669,7 +669,7 @@
 
     iget-object v12, v8, Lcom/android/phone/answeringmemo/AnsweringMemoListAdapter$ViewHolder;->heardStatus:Landroid/widget/ImageView;
 
-    const v13, 0x7f020131
+    const v13, 0x7f020135
 
     invoke-virtual {v12, v13}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -782,7 +782,7 @@
     :cond_3
     iget-object v12, v8, Lcom/android/phone/answeringmemo/AnsweringMemoListAdapter$ViewHolder;->heardStatus:Landroid/widget/ImageView;
 
-    const v13, 0x7f020132
+    const v13, 0x7f020136
 
     invoke-virtual {v12, v13}, Landroid/widget/ImageView;->setImageResource(I)V
 

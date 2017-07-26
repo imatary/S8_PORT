@@ -140,7 +140,7 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f0d0438
+    const v0, 0x7f0d0498
 
     :goto_0
     invoke-virtual {v1, v0}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
@@ -164,7 +164,7 @@
     return-void
 
     :cond_1
-    const v0, 0x7f0d0439
+    const v0, 0x7f0d0499
 
     goto :goto_0
 
@@ -179,7 +179,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d043a
+    const v1, 0x7f0d049a
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -322,7 +322,7 @@
 
     if-eqz v1, :cond_1
 
-    const v0, 0x7f0d0436
+    const v0, 0x7f0d0496
 
     :goto_1
     invoke-virtual {p0}, Lcom/android/phone/EnableIccPinScreen;->getResources()Landroid/content/res/Resources;
@@ -343,7 +343,7 @@
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f0d0435
+    const v0, 0x7f0d0495
 
     goto :goto_1
 .end method

@@ -32,6 +32,8 @@
 
 .field private mAlertDialogListener:Landroid/content/DialogInterface$OnClickListener;
 
+.field mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
 .field private mFailDialog:Landroid/app/AlertDialog;
 
 .field private final mHandler:Landroid/os/Handler;
@@ -41,6 +43,8 @@
 .field private mImsManager:Lcom/sec/ims/ImsManager;
 
 .field mPhoneStateListener:Landroid/telephony/PhoneStateListener;
+
+.field mStateListener:Lcom/android/phone/ia/IAInterimListener;
 
 .field private mVoLTEEnabled:Landroid/preference/CheckBoxPreference;
 
@@ -361,7 +365,9 @@
 .end method
 
 .method protected onPause()V
-    .locals 3
+    .locals 4
+
+    const/4 v3, 0x0
 
     const/4 v2, 0x0
 
@@ -369,7 +375,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EnhancedLteServices;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
-    invoke-static {v0, v2}, Lcom/android/phone/mobilenetworks/boundary/NetworkProxy;->listen(Landroid/telephony/PhoneStateListener;I)V
+    invoke-static {v0, v3}, Lcom/android/phone/mobilenetworks/boundary/NetworkProxy;->listen(Landroid/telephony/PhoneStateListener;I)V
 
     sget-boolean v0, Lcom/android/phone/EnhancedLteServices;->mIsImsRegistered:Z
 
@@ -385,9 +391,39 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/ims/ImsManager;->unregisterImsOngoingFtEventListener(Lcom/sec/ims/ft/IImsOngoingFtEventListener;)V
 
-    sput-boolean v2, Lcom/android/phone/EnhancedLteServices;->mIsImsRegistered:Z
+    sput-boolean v3, Lcom/android/phone/EnhancedLteServices;->mIsImsRegistered:Z
 
     :cond_0
+    const-string/jumbo v0, "support_bixby"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/android/phone/EnhancedLteServices;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/phone/EnhancedLteServices;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    invoke-virtual {v0}, Lcom/samsung/android/sdk/bixby/BixbyApi;->clearInterimStateListener()V
+
+    iget-object v0, p0, Lcom/android/phone/EnhancedLteServices;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v1, "EnhancedLteServices"
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logExitState(Ljava/lang/String;)V
+
+    :cond_1
+    iget-object v0, p0, Lcom/android/phone/EnhancedLteServices;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    invoke-interface {v0}, Lcom/android/phone/ia/IAInterimListener;->clear()V
+
+    iput-object v2, p0, Lcom/android/phone/EnhancedLteServices;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    :cond_2
     return-void
 .end method
 
@@ -442,13 +478,13 @@
 
     invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d08cd
+    const v4, 0x7f0d0931
 
     invoke-virtual {v2, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v2
 
-    const v4, 0x7f0d08ce
+    const v4, 0x7f0d0932
 
     invoke-virtual {v2, v4}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -539,7 +575,7 @@
 
     if-eqz v2, :cond_4
 
-    const v2, 0x7f0d08ca
+    const v2, 0x7f0d092e
 
     :goto_2
     invoke-virtual {v3, v2}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
@@ -574,7 +610,7 @@
     goto :goto_1
 
     :cond_4
-    const v2, 0x7f0d08d4
+    const v2, 0x7f0d0938
 
     goto :goto_2
 
@@ -607,7 +643,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0d0c55
+    const v5, 0x7f0d0cc6
 
     invoke-static {v3, v5, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -673,7 +709,7 @@
 
     move-result v3
 
-    if-nez v3, :cond_6
+    if-nez v3, :cond_9
 
     move v3, v4
 
@@ -696,7 +732,7 @@
 
     sget-boolean v3, Lcom/android/phone/EnhancedLteServices;->forcingVolteMenuEnable:Z
 
-    if-eqz v3, :cond_7
+    if-eqz v3, :cond_a
 
     :cond_2
     iget-object v3, p0, Lcom/android/phone/EnhancedLteServices;->mVoLTEEnabled:Landroid/preference/CheckBoxPreference;
@@ -709,7 +745,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_8
+    if-eqz v3, :cond_b
 
     const-string/jumbo v3, "GATE"
 
@@ -832,26 +868,97 @@
     invoke-virtual {v3, v5}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_5
-    return-void
+    const-string/jumbo v3, "support_bixby"
+
+    invoke-static {v3}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_8
+
+    invoke-static {}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getInstance()Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    move-result-object v3
+
+    iput-object v3, p0, Lcom/android/phone/EnhancedLteServices;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    new-instance v3, Lcom/android/phone/ia/EnhancedLteServicesStateListener;
+
+    invoke-direct {v3, p0}, Lcom/android/phone/ia/EnhancedLteServicesStateListener;-><init>(Landroid/preference/PreferenceActivity;)V
+
+    iput-object v3, p0, Lcom/android/phone/EnhancedLteServices;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    iget-object v3, p0, Lcom/android/phone/EnhancedLteServices;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    if-eqz v3, :cond_8
+
+    iget-object v3, p0, Lcom/android/phone/EnhancedLteServices;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    iget-object v4, p0, Lcom/android/phone/EnhancedLteServices;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    invoke-virtual {v3, v4}, Lcom/samsung/android/sdk/bixby/BixbyApi;->setInterimStateListener(Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;)V
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_7
+
+    const-string/jumbo v3, "EnhancedLteServices"
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_7
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingLastState()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_6
+
+    const-string/jumbo v3, "EnhancedLteServices"
+
+    invoke-static {v3}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
 
     :cond_6
+    sget-object v3, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v3}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    :cond_7
+    iget-object v3, p0, Lcom/android/phone/EnhancedLteServices;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v4, "EnhancedLteServices"
+
+    invoke-virtual {v3, v4}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logEnterState(Ljava/lang/String;)V
+
+    :cond_8
+    return-void
+
+    :cond_9
     move v3, v5
 
     goto/16 :goto_0
 
-    :cond_7
+    :cond_a
     iget-object v3, p0, Lcom/android/phone/EnhancedLteServices;->mVoLTEEnabled:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto/16 :goto_1
 
-    :cond_8
+    :cond_b
     const-string/jumbo v3, "GATE"
 
     const-string/jumbo v4, "<GATE-M>IMS_STATUS_DISABLED</GATE-M>"
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_2
+    goto/16 :goto_2
 .end method

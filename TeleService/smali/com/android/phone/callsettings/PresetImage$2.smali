@@ -76,7 +76,7 @@
 
     invoke-direct {v0, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f0d04d5
+    const v5, 0x7f0d0535
 
     invoke-virtual {v0, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -144,7 +144,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/PresetImage$2;->this$0:Lcom/android/phone/callsettings/PresetImage;
 
-    const v6, 0x7f0d0205
+    const v6, 0x7f0d0262
 
     invoke-virtual {v5, v6}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -152,7 +152,7 @@
 
     iget-object v6, p0, Lcom/android/phone/callsettings/PresetImage$2;->this$0:Lcom/android/phone/callsettings/PresetImage;
 
-    const v7, 0x7f0d0273
+    const v7, 0x7f0d02d2
 
     invoke-virtual {v6, v7}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 

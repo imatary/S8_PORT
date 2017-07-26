@@ -593,6 +593,7 @@
     <item type="id" name="search_nearby_places_explain2">false</item>
     <item type="id" name="header2">false</item>
     <item type="id" name="search_nearby_places_explain3">false</item>
+    <item type="id" name="show_privacy_notice">false</item>
     <item type="id" name="autoreject_delete_layer">false</item>
     <item type="id" name="delete_button">false</item>
     <item type="id" name="unknown_divider">false</item>
@@ -612,9 +613,9 @@
     <item type="id" name="rejectmsg_item_text">false</item>
     <item type="id" name="mobiledata_text">false</item>
     <item type="id" name="mobiledata_checkbox">false</item>
-    <item type="id" name="edittext_glance_reply_editor">false</item>
     <item type="id" name="edge_img">false</item>
     <item type="id" name="textview_glance_reply_explain">false</item>
+    <item type="id" name="edittext_glance_reply_editor">false</item>
     <item type="id" name="drawer_layout">false</item>
     <item type="id" name="content_parent">false</item>
     <item type="id" name="content_frame">false</item>
@@ -638,11 +639,13 @@
     <item type="id" name="privacy_notice_text1">false</item>
     <item type="id" name="privacy_notice_dream">false</item>
     <item type="id" name="privacy_notice_text2">false</item>
+    <item type="id" name="bottom_button_layout">false</item>
     <item type="id" name="privacy_decline_button">false</item>
     <item type="id" name="privacy_agree_button">false</item>
     <item type="id" name="notification_divider">false</item>
     <item type="id" name="dialog_text_scroller">false</item>
     <item type="id" name="notification">false</item>
+    <item type="id" name="show_prvacy_notice">false</item>
     <item type="id" name="animation">false</item>
     <item type="id" name="auto_update_via_wlan">false</item>
     <item type="id" name="do_not_show_check">false</item>

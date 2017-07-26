@@ -217,6 +217,8 @@
 
 .field private mIsExpired:Z
 
+.field private mIsLegacyLatching:Z
+
 .field private mNumber:Ljava/lang/String;
 
 .field private mPidf:Ljava/lang/String;
@@ -1524,9 +1526,9 @@
 
     iput-wide v0, p0, Lcom/sec/ims/options/Capabilities;->mId:J
 
-    iput-object v2, p0, Lcom/sec/ims/options/Capabilities;->mNumber:Ljava/lang/String;
+    iput-object v3, p0, Lcom/sec/ims/options/Capabilities;->mNumber:Ljava/lang/String;
 
-    iput-boolean v3, p0, Lcom/sec/ims/options/Capabilities;->mIsAvailable:Z
+    iput-boolean v2, p0, Lcom/sec/ims/options/Capabilities;->mIsAvailable:Z
 
     iput-wide v4, p0, Lcom/sec/ims/options/Capabilities;->mFeatures:J
 
@@ -1538,11 +1540,13 @@
 
     iput-object v0, p0, Lcom/sec/ims/options/Capabilities;->mExtFeatures:Ljava/util/List;
 
-    iput-boolean v3, p0, Lcom/sec/ims/options/Capabilities;->mSupportPresence:Z
+    iput-boolean v2, p0, Lcom/sec/ims/options/Capabilities;->mSupportPresence:Z
 
-    iput-boolean v3, p0, Lcom/sec/ims/options/Capabilities;->mIsExpired:Z
+    iput-boolean v2, p0, Lcom/sec/ims/options/Capabilities;->mIsExpired:Z
 
-    iput-object v2, p0, Lcom/sec/ims/options/Capabilities;->mPidf:Ljava/lang/String;
+    iput-boolean v2, p0, Lcom/sec/ims/options/Capabilities;->mIsLegacyLatching:Z
+
+    iput-object v3, p0, Lcom/sec/ims/options/Capabilities;->mPidf:Ljava/lang/String;
 
     const-string/jumbo v0, "sip:foo@examcple.com"
 
@@ -1552,9 +1556,9 @@
 
     iput-object v0, p0, Lcom/sec/ims/options/Capabilities;->mUri:Lcom/sec/ims/util/ImsUri;
 
-    iput-object v2, p0, Lcom/sec/ims/options/Capabilities;->mContactId:Ljava/lang/String;
+    iput-object v3, p0, Lcom/sec/ims/options/Capabilities;->mContactId:Ljava/lang/String;
 
-    iput-object v2, p0, Lcom/sec/ims/options/Capabilities;->mDisplayName:Ljava/lang/String;
+    iput-object v3, p0, Lcom/sec/ims/options/Capabilities;->mDisplayName:Ljava/lang/String;
 
     sget v0, Lcom/sec/ims/options/Capabilities;->FEATURE_NONE:I
 
@@ -1615,6 +1619,8 @@
     iput-boolean v2, p0, Lcom/sec/ims/options/Capabilities;->mSupportPresence:Z
 
     iput-boolean v2, p0, Lcom/sec/ims/options/Capabilities;->mIsExpired:Z
+
+    iput-boolean v2, p0, Lcom/sec/ims/options/Capabilities;->mIsLegacyLatching:Z
 
     iput-object v3, p0, Lcom/sec/ims/options/Capabilities;->mPidf:Ljava/lang/String;
 

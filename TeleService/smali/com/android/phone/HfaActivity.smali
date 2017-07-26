@@ -79,13 +79,13 @@
 
     invoke-direct {v0, p0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
-    const v1, 0x7f0d0489
+    const v1, 0x7f0d04e9
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0d048a
+    const v1, 0x7f0d04ea
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -95,7 +95,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/HfaActivity$2;-><init>(Lcom/android/phone/HfaActivity;)V
 
-    const v2, 0x7f0d048d
+    const v2, 0x7f0d04ed
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -149,7 +149,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/HfaActivity$3;-><init>(Lcom/android/phone/HfaActivity;)V
 
-    const v3, 0x7f0d048d
+    const v3, 0x7f0d04ed
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -159,7 +159,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/HfaActivity$4;-><init>(Lcom/android/phone/HfaActivity;)V
 
-    const v3, 0x7f0d0499
+    const v3, 0x7f0d04f9
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

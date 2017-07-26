@@ -63,7 +63,7 @@
 
     iget-object v1, v1, Lcom/android/phone/callsettings/SecDeletePrefixList$DeletePrefixAdapter;->this$0:Lcom/android/phone/callsettings/SecDeletePrefixList;
 
-    const v2, 0x7f0d05c3
+    const v2, 0x7f0d0627
 
     invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/SecDeletePrefixList;->getString(I)Ljava/lang/String;
 

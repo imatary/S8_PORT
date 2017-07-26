@@ -933,7 +933,7 @@
 .method public handleRingtonePicked(Landroid/net/Uri;I)V
     .locals 10
 
-    const v9, 0x7f0d0994
+    const v9, 0x7f0d09fa
 
     const/4 v8, 0x0
 
@@ -1382,13 +1382,13 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    const v2, 0x7f0d01f1
+    const v2, 0x7f0d024e
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v5, 0x7f0d0235
+    const v5, 0x7f0d0293
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->getString(I)Ljava/lang/String;
 
@@ -2316,7 +2316,7 @@
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 10
 
-    const v5, 0x7f0d020b
+    const v5, 0x7f0d0268
 
     const/4 v2, 0x0
 
@@ -2364,7 +2364,7 @@
 
     move-result-object v5
 
-    const v4, 0x7f0d0283
+    const v4, 0x7f0d02e2
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->getString(I)Ljava/lang/String;
 
@@ -2416,7 +2416,7 @@
 
     move-result-object v5
 
-    const v4, 0x7f0d0284
+    const v4, 0x7f0d02e3
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->getString(I)Ljava/lang/String;
 
@@ -2457,7 +2457,7 @@
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 6
 
-    const v4, 0x7f0d020b
+    const v4, 0x7f0d0268
 
     const/4 v2, 0x1
 
@@ -2512,7 +2512,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0282
+    const v3, 0x7f0d02e1
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->getString(I)Ljava/lang/String;
 
@@ -2599,7 +2599,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0281
+    const v4, 0x7f0d02e0
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->getString(I)Ljava/lang/String;
 
@@ -2621,7 +2621,7 @@
 
     invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onResume()V
 
-    const v3, 0x7f0d020b
+    const v3, 0x7f0d0268
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->getString(I)Ljava/lang/String;
 

@@ -437,7 +437,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0423
+    const v3, 0x7f0d0483
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -504,7 +504,7 @@
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f0d044e
+    const v2, 0x7f0d04ae
 
     invoke-virtual {p0, v2}, Lcom/android/phone/DeleteFdnContactScreen;->getString(I)Ljava/lang/String;
 
@@ -512,7 +512,7 @@
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f0d0448
+    const v2, 0x7f0d04a8
 
     invoke-virtual {p0, v2}, Lcom/android/phone/DeleteFdnContactScreen;->getString(I)Ljava/lang/String;
 
@@ -524,7 +524,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/DeleteFdnContactScreen$1;-><init>(Lcom/android/phone/DeleteFdnContactScreen;)V
 
-    const v3, 0x7f0d02c7
+    const v3, 0x7f0d0327
 
     invoke-virtual {v0, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -561,7 +561,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0424
+    const v3, 0x7f0d0484
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -590,7 +590,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0444
+    const v3, 0x7f0d04a4
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -605,7 +605,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0332
+    const v3, 0x7f0d0392
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -803,7 +803,7 @@
 
     move-result-object v0
 
-    const v4, 0x7f0d0422
+    const v4, 0x7f0d0482
 
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

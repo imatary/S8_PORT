@@ -59,11 +59,11 @@
 
     invoke-virtual {v0, v2}, Landroid/media/AudioManager;->setSpeakerphoneOn(Z)V
 
-    invoke-static {v2}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->-set1(I)I
+    invoke-static {v2}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->-set0(I)I
 
     iget-object v0, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList$6;->val$speaker:Landroid/widget/ImageButton;
 
-    const v1, 0x7f020143
+    const v1, 0x7f020147
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -71,7 +71,7 @@
     return-void
 
     :cond_0
-    invoke-static {v1}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->-set1(I)I
+    invoke-static {v1}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->-set0(I)I
 
     iget-object v0, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList$6;->this$0:Lcom/android/phone/answeringmemo/AnsweringMemoList;
 
@@ -83,7 +83,7 @@
 
     iget-object v0, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList$6;->val$speaker:Landroid/widget/ImageButton;
 
-    const v1, 0x7f020144
+    const v1, 0x7f020148
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setImageResource(I)V
 

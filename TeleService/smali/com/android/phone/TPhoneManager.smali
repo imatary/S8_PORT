@@ -425,7 +425,7 @@
 
     if-eqz v3, :cond_1
 
-    const v3, 0x7f0d0938
+    const v3, 0x7f0d099e
 
     invoke-static {v3}, Lcom/android/phone/PhoneUtils;->displayToast(I)V
 
@@ -976,7 +976,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f0d0938
+    const v1, 0x7f0d099e
 
     invoke-static {v1}, Lcom/android/phone/PhoneUtils;->displayToast(I)V
 

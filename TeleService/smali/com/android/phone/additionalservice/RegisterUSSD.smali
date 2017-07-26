@@ -781,7 +781,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f0d0ad3
+    const v3, 0x7f0d0b3a
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -791,7 +791,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/additionalservice/RegisterUSSD$8;-><init>(Lcom/android/phone/additionalservice/RegisterUSSD;)V
 
-    const v4, 0x7f0d0511
+    const v4, 0x7f0d0571
 
     invoke-virtual {v0, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -799,7 +799,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/additionalservice/RegisterUSSD$9;-><init>(Lcom/android/phone/additionalservice/RegisterUSSD;)V
 
-    const v4, 0x7f0d050d
+    const v4, 0x7f0d056d
 
     invoke-virtual {v0, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -976,7 +976,7 @@
 
     const-wide/16 v12, 0xc8
 
-    const v11, 0x7f0d05c4
+    const v11, 0x7f0d0628
 
     const/16 v9, 0x8
 
@@ -1042,7 +1042,7 @@
     if-nez v6, :cond_2
 
     :cond_0
-    const v6, 0x7f0d0acc
+    const v6, 0x7f0d0b33
 
     invoke-virtual {p0, v6}, Lcom/android/phone/additionalservice/RegisterUSSD;->getString(I)Ljava/lang/String;
 
@@ -1193,7 +1193,7 @@
     return-void
 
     :cond_3
-    const v6, 0x7f0d0ace
+    const v6, 0x7f0d0b35
 
     invoke-virtual {p0, v6}, Lcom/android/phone/additionalservice/RegisterUSSD;->getString(I)Ljava/lang/String;
 
@@ -1640,7 +1640,7 @@
 
     new-array v5, v7, [Ljava/lang/CharSequence;
 
-    const v7, 0x7f0d050e
+    const v7, 0x7f0d056e
 
     invoke-virtual {p0, v7}, Lcom/android/phone/additionalservice/RegisterUSSD;->getText(I)Ljava/lang/CharSequence;
 
@@ -1648,7 +1648,7 @@
 
     aput-object v7, v5, v10
 
-    const v7, 0x7f0d0510
+    const v7, 0x7f0d0570
 
     invoke-virtual {p0, v7}, Lcom/android/phone/additionalservice/RegisterUSSD;->getText(I)Ljava/lang/CharSequence;
 
@@ -1699,7 +1699,7 @@
 
     invoke-virtual {v1, v10}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v7, 0x7f0d0aa4
+    const v7, 0x7f0d0b0b
 
     invoke-virtual {p0, v7}, Lcom/android/phone/additionalservice/RegisterUSSD;->getText(I)Ljava/lang/CharSequence;
 
@@ -1710,7 +1710,7 @@
     return-object v1
 
     :sswitch_2
-    const v6, 0x7f0d0332
+    const v6, 0x7f0d0392
 
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
@@ -1724,7 +1724,7 @@
 
     invoke-virtual {v3, v7}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v7, 0x7f0d050c
+    const v7, 0x7f0d056c
 
     invoke-virtual {p0, v7}, Lcom/android/phone/additionalservice/RegisterUSSD;->getText(I)Ljava/lang/CharSequence;
 
@@ -1767,13 +1767,13 @@
 
     const/4 v0, 0x4
 
-    const v1, 0x7f0d050d
+    const v1, 0x7f0d056d
 
     invoke-interface {p1, v2, v0, v3, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f020006
+    const v1, 0x7f020008
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -1787,13 +1787,13 @@
 
     const/4 v0, 0x3
 
-    const v1, 0x7f0d050c
+    const v1, 0x7f0d056c
 
     invoke-interface {p1, v2, v0, v3, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f020007
+    const v1, 0x7f020009
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -2036,7 +2036,7 @@
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 8
 
-    const v6, 0x7f0d050f
+    const v6, 0x7f0d056f
 
     const/4 v7, 0x3
 
@@ -2094,7 +2094,7 @@
     invoke-interface {p1, v4, v3, v4, v2}, Landroid/view/Menu;->add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
 
     :cond_0
-    const v2, 0x7f0d0510
+    const v2, 0x7f0d0570
 
     invoke-virtual {p0, v2}, Lcom/android/phone/additionalservice/RegisterUSSD;->getText(I)Ljava/lang/CharSequence;
 
@@ -2319,7 +2319,7 @@
     return-void
 
     :cond_2
-    const v3, 0x7f0d05c3
+    const v3, 0x7f0d0627
 
     invoke-virtual {p0, v3}, Lcom/android/phone/additionalservice/RegisterUSSD;->getString(I)Ljava/lang/String;
 

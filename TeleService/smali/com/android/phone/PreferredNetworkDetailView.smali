@@ -896,7 +896,7 @@
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 10
 
-    const v7, 0x7f0d0334
+    const v7, 0x7f0d0394
 
     invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->getApplicationContext()Landroid/content/Context;
 
@@ -960,7 +960,7 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    const v5, 0x7f0d07e7
+    const v5, 0x7f0d084b
 
     invoke-virtual {v1, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -985,7 +985,7 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    const v5, 0x7f0d07e8
+    const v5, 0x7f0d084c
 
     invoke-virtual {v1, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1026,7 +1026,7 @@
 
     invoke-virtual {v5, v6, v8, v9}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    const v5, 0x7f0d07e9
+    const v5, 0x7f0d084d
 
     invoke-virtual {v1, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1061,7 +1061,7 @@
 
     if-nez v0, :cond_0
 
-    const v0, 0x7f0d063b
+    const v0, 0x7f0d069f
 
     invoke-virtual {p0, v0}, Lcom/android/phone/PreferredNetworkDetailView;->getString(I)Ljava/lang/String;
 
@@ -1071,12 +1071,12 @@
 
     move-result-object v0
 
-    const v1, 0x7f020098
+    const v1, 0x7f02009b
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
     :cond_0
-    const v0, 0x7f0d041e
+    const v0, 0x7f0d047e
 
     invoke-virtual {p0, v0}, Lcom/android/phone/PreferredNetworkDetailView;->getString(I)Ljava/lang/String;
 
@@ -1088,11 +1088,11 @@
 
     move-result-object v0
 
-    const v1, 0x7f020007
+    const v1, 0x7f020009
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
-    const v0, 0x7f0d07f5
+    const v0, 0x7f0d0859
 
     invoke-virtual {p0, v0}, Lcom/android/phone/PreferredNetworkDetailView;->getString(I)Ljava/lang/String;
 
@@ -1104,7 +1104,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020006
+    const v1, 0x7f020008
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -1195,7 +1195,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d07fa
+    const v1, 0x7f0d085e
 
     invoke-static {v0, v1, v10}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1294,7 +1294,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d07f4
+    const v1, 0x7f0d0858
 
     invoke-static {v0, v1, v10}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1339,7 +1339,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d07fb
+    const v1, 0x7f0d085f
 
     invoke-static {v0, v1, v10}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1475,7 +1475,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d07f9
+    const v1, 0x7f0d085d
 
     invoke-static {v0, v1, v10}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

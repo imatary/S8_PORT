@@ -458,7 +458,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0358
+    const v2, 0x7f0d03b8
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -708,7 +708,7 @@
 .method public static getRejectCauseLocationRegFail(I)I
     .locals 1
 
-    const v0, 0x7f0d0846
+    const v0, 0x7f0d08aa
 
     sparse-switch p0, :sswitch_data_0
 
@@ -718,32 +718,32 @@
     return v0
 
     :sswitch_0
-    const v0, 0x7f0d0845
+    const v0, 0x7f0d08a9
 
     goto :goto_0
 
     :sswitch_1
-    const v0, 0x7f0d084c
+    const v0, 0x7f0d08b0
 
     goto :goto_0
 
     :sswitch_2
-    const v0, 0x7f0d084d
+    const v0, 0x7f0d08b1
 
     goto :goto_0
 
     :sswitch_3
-    const v0, 0x7f0d0846
+    const v0, 0x7f0d08aa
 
     goto :goto_0
 
     :sswitch_4
-    const v0, 0x7f0d0849
+    const v0, 0x7f0d08ad
 
     goto :goto_0
 
     :sswitch_5
-    const v0, 0x7f0d0847
+    const v0, 0x7f0d08ab
 
     goto :goto_0
 

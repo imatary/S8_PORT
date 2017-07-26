@@ -35,7 +35,24 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 0
+    .locals 1
 
+    iget-object v0, p0, Lcom/android/phone/smartcall/SearchNearbyPlacesActivity$2;->this$0:Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;
+
+    invoke-static {v0}, Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;->-get0(Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;)Landroid/widget/Switch;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/phone/smartcall/SearchNearbyPlacesActivity$2;->this$0:Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;
+
+    invoke-static {v0}, Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;->-get0(Lcom/android/phone/smartcall/SearchNearbyPlacesActivity;)Landroid/widget/Switch;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/widget/Switch;->performClick()Z
+
+    :cond_0
     return-void
 .end method

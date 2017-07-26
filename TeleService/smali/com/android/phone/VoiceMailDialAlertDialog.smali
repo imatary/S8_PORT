@@ -175,7 +175,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v2, 0x7f0d02cd
+    const v2, 0x7f0d032d
 
     invoke-static {p0, v2, v6}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -256,7 +256,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0460
+    const v3, 0x7f0d04c0
 
     invoke-virtual {p0, v3}, Lcom/android/phone/VoiceMailDialAlertDialog;->getString(I)Ljava/lang/String;
 
@@ -284,7 +284,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/VoiceMailDialAlertDialog$1;-><init>(Lcom/android/phone/VoiceMailDialAlertDialog;)V
 
-    const v4, 0x7f0d02ca
+    const v4, 0x7f0d032a
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -294,7 +294,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/VoiceMailDialAlertDialog$2;-><init>(Lcom/android/phone/VoiceMailDialAlertDialog;)V
 
-    const v4, 0x7f0d02c7
+    const v4, 0x7f0d0327
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

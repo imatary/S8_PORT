@@ -59,7 +59,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0b9c
+    const v1, 0x7f0d0c03
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -77,7 +77,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -95,7 +95,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/CallWaitingActivity$2;-><init>(Lcom/android/phone/CallWaitingActivity;)V
 
-    const v3, 0x7f0d0639
+    const v3, 0x7f0d069d
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -105,7 +105,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/CallWaitingActivity$3;-><init>(Lcom/android/phone/CallWaitingActivity;)V
 
-    const v3, 0x7f0d063a
+    const v3, 0x7f0d069e
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -125,7 +125,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0b9c
+    const v1, 0x7f0d0c03
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -143,7 +143,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -161,7 +161,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/CallWaitingActivity$4;-><init>(Lcom/android/phone/CallWaitingActivity;)V
 
-    const v3, 0x7f0d0639
+    const v3, 0x7f0d069d
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -171,7 +171,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/CallWaitingActivity$5;-><init>(Lcom/android/phone/CallWaitingActivity;)V
 
-    const v3, 0x7f0d063a
+    const v3, 0x7f0d069e
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

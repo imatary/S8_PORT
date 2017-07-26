@@ -163,7 +163,7 @@
 
     check-cast v3, Landroid/widget/Button;
 
-    const v4, 0x7f0d041e
+    const v4, 0x7f0d047e
 
     invoke-virtual {v3, v4}, Landroid/widget/Button;->setText(I)V
 
@@ -180,9 +180,9 @@
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 8
 
-    const v7, 0x7f0d0511
+    const v7, 0x7f0d0571
 
-    const v6, 0x7f0d050d
+    const v6, 0x7f0d056d
 
     const/4 v5, 0x6
 
@@ -223,7 +223,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f020092
+    const v4, 0x7f020095
 
     invoke-interface {v1, v4}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -260,7 +260,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f020095
+    const v2, 0x7f020098
 
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -524,7 +524,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0661
+    const v5, 0x7f0d06c5
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/EditIpCallScreen;->getString(I)Ljava/lang/String;
 

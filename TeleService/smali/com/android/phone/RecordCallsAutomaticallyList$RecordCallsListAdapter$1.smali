@@ -69,7 +69,7 @@
 
     iget-object v1, v1, Lcom/android/phone/RecordCallsAutomaticallyList$RecordCallsListAdapter;->this$0:Lcom/android/phone/RecordCallsAutomaticallyList;
 
-    const v2, 0x7f0d01fb
+    const v2, 0x7f0d0258
 
     invoke-virtual {v1, v2}, Lcom/android/phone/RecordCallsAutomaticallyList;->getString(I)Ljava/lang/String;
 
@@ -79,7 +79,7 @@
 
     iget-object v2, v2, Lcom/android/phone/RecordCallsAutomaticallyList$RecordCallsListAdapter;->this$0:Lcom/android/phone/RecordCallsAutomaticallyList;
 
-    const v3, 0x7f0d021c
+    const v3, 0x7f0d027a
 
     invoke-virtual {v2, v3}, Lcom/android/phone/RecordCallsAutomaticallyList;->getString(I)Ljava/lang/String;
 

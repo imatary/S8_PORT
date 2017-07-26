@@ -1122,7 +1122,7 @@
 
     const v14, 0x10400c5
 
-    const v15, 0x7f0d02cf
+    const v15, 0x7f0d032f
 
     move-object/from16 v0, p1
 
@@ -1355,7 +1355,7 @@
 
     invoke-direct/range {v16 .. v16}, Lcom/android/phone/PhoneUtils$4;-><init>()V
 
-    const v17, 0x7f0d02ca
+    const v17, 0x7f0d032a
 
     move/from16 v0, v17
 
@@ -1397,7 +1397,7 @@
 
     sget-object v15, Lcom/android/phone/PhoneUtils;->sUssdDialog:Landroid/app/AlertDialog;
 
-    const v16, 0x7f0d0a7f
+    const v16, 0x7f0d0ae6
 
     move-object/from16 v0, p1
 
@@ -1465,7 +1465,7 @@
 
     move-result-object v16
 
-    const v17, 0x7f0d038e
+    const v17, 0x7f0d03ee
 
     invoke-virtual/range {v16 .. v17}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1546,7 +1546,7 @@
 
     if-eq v12, v15, :cond_e
 
-    const v15, 0x7f0d0b61
+    const v15, 0x7f0d0bc8
 
     move-object/from16 v0, p1
 
@@ -1560,7 +1560,7 @@
 
     if-nez v15, :cond_e
 
-    const v15, 0x7f0d0b64
+    const v15, 0x7f0d0bcb
 
     move-object/from16 v0, p1
 
@@ -1626,7 +1626,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0d02ca
+    const v16, 0x7f0d032a
 
     invoke-virtual/range {v15 .. v16}, Landroid/widget/Button;->setText(I)V
 
@@ -1651,7 +1651,7 @@
 
     invoke-direct/range {v16 .. v16}, Lcom/android/phone/PhoneUtils$6;-><init>()V
 
-    const v17, 0x7f0d02ca
+    const v17, 0x7f0d032a
 
     move/from16 v0, v17
 
@@ -1736,7 +1736,7 @@
 
     move-result-object v16
 
-    const v17, 0x7f0d038e
+    const v17, 0x7f0d03ee
 
     invoke-virtual/range {v16 .. v17}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1823,7 +1823,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0d02ca
+    const v16, 0x7f0d032a
 
     invoke-virtual/range {v15 .. v16}, Landroid/widget/Button;->setText(I)V
 
@@ -1945,7 +1945,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0d02cb
+    const v16, 0x7f0d032b
 
     move/from16 v0, v16
 
@@ -1953,7 +1953,7 @@
 
     move-result-object v15
 
-    const v16, 0x7f0d02c7
+    const v16, 0x7f0d0327
 
     move/from16 v0, v16
 
@@ -2168,7 +2168,7 @@
     :goto_0
     if-nez v0, :cond_3
 
-    const v2, 0x7f0d02c4
+    const v2, 0x7f0d0324
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -2601,7 +2601,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d02bd
+    const v7, 0x7f0d031d
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3677,7 +3677,7 @@
     move-result-object v0
 
     :cond_0
-    const v5, 0x7f0d0576
+    const v5, 0x7f0d05da
 
     invoke-virtual {v1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8385,13 +8385,13 @@
 
     invoke-static {v5, v7}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v5, 0x7f0d0778
+    const v5, 0x7f0d07dc
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v5
 
-    const v7, 0x7f0d0779
+    const v7, 0x7f0d07dd
 
     invoke-virtual {v5, v7}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -8403,13 +8403,13 @@
 
     move-result-object v5
 
-    const v7, 0x7f0d06f9
+    const v7, 0x7f0d075d
 
     invoke-virtual {v5, v7, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v5
 
-    const v7, 0x7f0d06fa
+    const v7, 0x7f0d075e
 
     invoke-virtual {v5, v7, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

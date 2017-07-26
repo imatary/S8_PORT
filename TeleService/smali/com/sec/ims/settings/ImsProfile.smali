@@ -647,7 +647,7 @@
 
     sput-object v0, Lcom/sec/ims/settings/ImsProfile;->tapiServices:[Ljava/lang/String;
 
-    new-array v0, v6, [Ljava/lang/String;
+    new-array v0, v7, [Ljava/lang/String;
 
     const-string/jumbo v1, "im"
 
@@ -660,6 +660,10 @@
     const-string/jumbo v1, "slm"
 
     aput-object v1, v0, v5
+
+    const-string/jumbo v1, "ft_http"
+
+    aput-object v1, v0, v6
 
     sput-object v0, Lcom/sec/ims/settings/ImsProfile;->chatServices:[Ljava/lang/String;
 

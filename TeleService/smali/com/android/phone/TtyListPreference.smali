@@ -146,34 +146,34 @@
 
     iget-object v0, p0, Lcom/android/phone/TtyListPreference;->builder:Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d08e6
+    const v1, 0x7f0d094c
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Lcom/android/phone/TtyListPreference;->builder:Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d08e9
+    const v1, 0x7f0d094f
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v0, 0x7f0d08ea
+    const v0, 0x7f0d0950
 
     return v0
 
     :cond_0
     iget-object v0, p0, Lcom/android/phone/TtyListPreference;->builder:Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d08e8
+    const v1, 0x7f0d094e
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Lcom/android/phone/TtyListPreference;->builder:Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d08ec
+    const v1, 0x7f0d0952
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v0, 0x7f0d08eb
+    const v0, 0x7f0d0951
 
     return v0
 .end method
@@ -207,7 +207,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f1002c0
+    const v5, 0x7f1002c3
 
     invoke-virtual {v3, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -427,7 +427,7 @@
 
     packed-switch p1, :pswitch_data_0
 
-    const v2, 0x7f0d08ed
+    const v2, 0x7f0d0953
 
     invoke-virtual {p0, v2}, Lcom/android/phone/TtyListPreference;->setSummary(I)V
 
@@ -456,7 +456,7 @@
 
     const/4 v4, 0x0
 
-    const v3, 0x7f0d0413
+    const v3, 0x7f0d0473
 
     const-string/jumbo v2, "button_tty_mode_key"
 
