@@ -308,6 +308,7 @@ crutha"</string>
     <string name="camera_label">Ceamara</string>
     <string name="camera_modes">Móid cheamara</string>
     <string name="camera_security_enter">Cuireann an beartas slándála srian ar úsáid an Cheamara</string>
+    <string name="can_not_use_voice_control">Ní féidir Rialú gutha a úsáid agus Múscailt ghutha Bixby casta air.</string>
     <string name="cancel">Cuir ar ceal</string>
     <string name="cannot_start_camcorder_msg">Ní féidir físeanna a thaifeadadh le linn glao.</string>
     <string name="cannot_start_camera_msg">Ní féidir an Ceamara a úsáid le linn glaonna.</string>
@@ -604,6 +605,7 @@ Má aontaíonn tú leis seo, tabharfar an cead seo do Chlib seat agus ní iarrfa
     <string name="task_edge_title_selfie">"Glac
 féinphic"</string>
     <string name="temperature">Teocht</string>
+    <string name="temperature_too_high_camera_off">Tá an teocht ró-ard le %1$s a úsáid. Fan go mbeidh an fón fuaraithe sula n-úsáidfidh tú %2$s.</string>
     <string name="temperature_too_high_flash_off">Ní féidir an splanc a chasadh air. Triail arís nuair a bheidh do ghléas fuaraithe.</string>
     <string name="temperature_too_high_record">Ní féidir físeán a thaifeadadh. Triail arís é nuair a bhíonn an gléas fuar.</string>
     <string name="temperature_too_high_recording_disable">Scoireadh taifeadadh. Is féidir leat taifeadadh nuair a bheidh do ghléas fuaraithe.</string>

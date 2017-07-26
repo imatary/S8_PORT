@@ -1393,7 +1393,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09022f
+    const v4, 0x7f090230
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1952,7 +1952,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09022f
+    const v4, 0x7f090230
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2699,7 +2699,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f090201
+    const v1, 0x7f090202
 
     invoke-static {v0, v1, v3}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -4457,7 +4457,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090163
+    const v4, 0x7f090164
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4972,7 +4972,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f09022f
+    const v9, 0x7f090230
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

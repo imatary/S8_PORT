@@ -13,13 +13,27 @@
 
 
 # static fields
+.field public static final BASIC_FILTER_SETTING_AVAILABLE_NO:I = 0x3d
+
+.field public static final BASIC_FILTER_SETTING_AVAILABLE_YES:I = 0x3c
+
+.field public static final BEAUTY_FILTER_SETTING_AVAILABLE_NO:I = 0x3f
+
+.field public static final BEAUTY_FILTER_SETTING_AVAILABLE_YES:I = 0x3e
+
 .field public static final CAMERA_MODE_ALREADY_SET_NO:I = 0x11
 
 .field public static final CAMERA_MODE_ALREADY_SET_YES:I = 0x10
 
+.field public static final CAMERA_MODE_EDIT_AVAILABLE_NO:I = 0x38
+
+.field public static final CAMERA_MODE_EDIT_AVAILABLE_YES:I = 0x37
+
 .field public static final CAMERA_MODE_VALUE_FRONT:I = 0x23
 
 .field public static final CAMERA_MODE_VALUE_REAR:I = 0x24
+
+.field public static final CONTINUOUS_SHOT_AVAILABLE_YES:I = 0x3b
 
 .field public static final CURRENT_FILTER_ADJUST_AVAILABLE_NO:I = 0x16
 
@@ -59,6 +73,20 @@
 
 .field public static final LAUNCH_CAMERA_SETTING_AVAILABLE_YES:I = 0x35
 
+.field public static final LIVE_FOCUS_MODE_ALREADYSET_NO:I = 0x4f
+
+.field public static final LIVE_FOCUS_MODE_ALREADYSET_YES:I = 0x4e
+
+.field public static final LIVE_FOCUS_MODE_AVAILABLE_NO:I = 0x52
+
+.field public static final LIVE_FOCUS_MODE_EXIST_NO:I = 0x51
+
+.field public static final LIVE_FOCUS_MODE_VALID_NO:I = 0x50
+
+.field public static final LIVE_STICKER_SETTING_AVAILABLE_NO:I = 0x41
+
+.field public static final LIVE_STICKER_SETTING_AVAILABLE_YES:I = 0x40
+
 .field public static final MEMORY_CARD_INSERTED_NO:I = 0x29
 
 .field public static final MODE_ALREADY_SET_NO:I = 0x7
@@ -70,10 +98,6 @@
 .field public static final MODE_DOWNLOADABLE_NO:I = 0x5
 
 .field public static final MODE_DOWNLOADABLE_YES:I = 0x4
-
-.field public static final MODE_EDIT_AVAILABLE_NO:I = 0x38
-
-.field public static final MODE_EDIT_AVAILABLE_YES:I = 0x37
 
 .field public static final MODE_EXIST_NO:I = 0x2
 
@@ -89,9 +113,13 @@
 
 .field public static final NLG_ERROR_ALREADY_SET:I = 0x2
 
+.field public static final NLG_ERROR_CAMERA_MODE_MISMATCH:I = 0xd
+
 .field public static final NLG_ERROR_CAMERA_TYPE_MISMATCH:I = 0x4
 
 .field public static final NLG_ERROR_CANNOT_ADJUST:I = 0x9
+
+.field public static final NLG_ERROR_CANNOT_CAPTURE_AS_SHORT_PRESS:I = 0xc
 
 .field public static final NLG_ERROR_CANNOT_EDIT_IN_CURRENT_MODE:I = 0xb
 
@@ -123,11 +151,17 @@
 
 .field private static final NLG_STRING_AVAILABLE:Ljava/lang/String; = "Available"
 
+.field public static final NLG_STRING_BASIC_FILTER_SETTING:Ljava/lang/String; = "BasicFilterSetting"
+
+.field public static final NLG_STRING_BEAUTY_FILTER_SETTING:Ljava/lang/String; = "BeautyFilterSetting"
+
 .field public static final NLG_STRING_BEAUTY_SETTING:Ljava/lang/String; = "BeautySetting"
 
 .field public static final NLG_STRING_CAMERA_MODE:Ljava/lang/String; = "CameraMode"
 
 .field public static final NLG_STRING_CAMERA_MODE_EDIT:Ljava/lang/String; = "CameraModeEdit"
+
+.field public static final NLG_STRING_CONTINUOUS_SHOT:Ljava/lang/String; = "ContinuousShot"
 
 .field public static final NLG_STRING_CURRENT_FILTER:Ljava/lang/String; = "CurrentFilter"
 
@@ -153,11 +187,17 @@
 
 .field public static final NLG_STRING_LAUNCH_CAMERA_SETTING:Ljava/lang/String; = "CameraSetting"
 
+.field public static final NLG_STRING_LIVE_FOCUS_MODE:Ljava/lang/String; = "LiveFocusMode"
+
+.field public static final NLG_STRING_LIVE_STICKER_SETTING:Ljava/lang/String; = "LiveStickerSetting"
+
 .field public static final NLG_STRING_MEMORY_CARD:Ljava/lang/String; = "MemoryCard"
 
 .field public static final NLG_STRING_MODE:Ljava/lang/String; = "Mode"
 
 .field private static final NLG_STRING_NO:Ljava/lang/String; = "no"
+
+.field private static final NLG_STRING_PICTURE:Ljava/lang/String; = "Picture"
 
 .field public static final NLG_STRING_PICTURE_SIZE:Ljava/lang/String; = "PictureSize"
 
@@ -169,11 +209,17 @@
 
 .field public static final NLG_STRING_REAR_MODE:Ljava/lang/String; = "RearMode"
 
+.field public static final NLG_STRING_RECENT_FILTER:Ljava/lang/String; = "RecentFilter"
+
+.field public static final NLG_STRING_RECENT_STICKER:Ljava/lang/String; = "RecentSticker"
+
 .field public static final NLG_STRING_REMOVE_EFFECT:Ljava/lang/String; = "RemoveEffect"
 
 .field public static final NLG_STRING_SELFIE_MODE:Ljava/lang/String; = "SelfieMode"
 
 .field public static final NLG_STRING_SHOOTING_METHOD:Ljava/lang/String; = "ShootingMethod"
+
+.field public static final NLG_STRING_SHOOTING_MODE:Ljava/lang/String; = "ShootingMode"
 
 .field public static final NLG_STRING_TIMER_SETTING:Ljava/lang/String; = "TimerSetting"
 
@@ -183,11 +229,21 @@
 
 .field private static final NLG_STRING_VALUE:Ljava/lang/String; = "Value"
 
+.field private static final NLG_STRING_VIDEO:Ljava/lang/String; = "Video"
+
 .field public static final NLG_STRING_VIDEO_SIZE:Ljava/lang/String; = "VideoSize"
 
 .field public static final NLG_STRING_VOLUME_KEY_FUNCTION_SETTING:Ljava/lang/String; = "VolumekeyFunctionSetting"
 
 .field private static final NLG_STRING_YES:Ljava/lang/String; = "yes"
+
+.field public static final NLG_STRING_ZOOM:Ljava/lang/String; = "Zoom"
+
+.field public static final NLG_TYPE_ADD_SHORTCUT_ON_HOME_SCREEN:I = 0x16
+
+.field public static final NLG_TYPE_BASIC_FILTER_SETTING:I = 0x12
+
+.field public static final NLG_TYPE_BEAUTY_FILTER_SETTING:I = 0x13
 
 .field public static final NLG_TYPE_CHANGE_SHOOTING_MODE:I = 0x1
 
@@ -199,7 +255,9 @@
 
 .field public static final NLG_TYPE_LAUNCH_CAMERA_SETTING:I = 0xf
 
-.field public static final NLG_TYPE_RECORDING:I = 0xd
+.field public static final NLG_TYPE_LIVE_FOCUS_BLUR_LEVEL:I = 0x17
+
+.field public static final NLG_TYPE_LIVE_STICKER_SETTING:I = 0x14
 
 .field public static final NLG_TYPE_REMOVE_EFFECT:I = 0xe
 
@@ -219,11 +277,15 @@
 
 .field public static final NLG_TYPE_SET_VIDEO_RESOLUTION:I = 0x9
 
-.field public static final NLG_TYPE_SET_WAYTOTAKEPICTURES_SETTING:I = 0x11
+.field public static final NLG_TYPE_SET_WAY_TO_TAKE_PICTURES_SETTING:I = 0x11
+
+.field public static final NLG_TYPE_SHOOTING_SELECT:I = 0xd
 
 .field public static final NLG_TYPE_SWITCH_CAMERA:I = 0x3
 
 .field public static final NLG_TYPE_UNKNOWN:I = 0x0
+
+.field public static final NLG_TYPE_ZOOM_LEVEL:I = 0x15
 
 .field public static final PICTURE_SIZE_ALREADY_SET_NO:I = 0x1d
 
@@ -249,9 +311,33 @@
 
 .field public static final REAR_MODE_ALREADY_SET_YES:I = 0x28
 
+.field public static final RECENT_FILTER_EXIST_NO:I = 0x55
+
+.field public static final RECENT_FILTER_EXIST_YES:I = 0x54
+
+.field public static final RECENT_STICKER_EXIST_NO:I = 0x57
+
+.field public static final RECENT_STICKER_EXIST_YES:I = 0x56
+
 .field public static final SELFIE_MODE_VALID_NO:I = 0x31
 
 .field public static final SELFIE_MODE_VALID_YES:I = 0x30
+
+.field public static final SHOOTING_METHOD_AVAILABLE_NO:I = 0x3a
+
+.field public static final SHOOTING_METHOD_AVAILABLE_YES:I = 0x39
+
+.field public static final SHOOTING_MODE_TYPE_PICTURE:I = 0x42
+
+.field public static final SHOOTING_MODE_TYPE_VIDEO:I = 0x43
+
+.field public static final SHORTCUT_ON_HOME_SCREEN_MODE_AVAILABLE_NO:I = 0x4b
+
+.field public static final SHORTCUT_ON_HOME_SCREEN_MODE_AVAILABLE_YES:I = 0x4a
+
+.field public static final SHORTCUT_ON_HOME_SCREEN_MODE_EXIST_NO:I = 0x4c
+
+.field public static final SHORTCUT_ON_HOME_SCREEN_MODE_VALID_NO:I = 0x4d
 
 .field private static final TAG:Ljava/lang/String; = "NlgIdMap"
 
@@ -265,9 +351,13 @@
 
 .field public static final VIDEO_SIZE_VALID_NO:I = 0x20
 
-.field public static final WAYTOTAKEPICTURES_SETTING_AVAILABLE_NO:I = 0x3a
+.field public static final ZOOM_ALREADYSET_NO:I = 0x47
 
-.field public static final WAYTOTAKEPICTURES_SETTING_AVAILABLE_YES:I = 0x39
+.field public static final ZOOM_ALREADYSET_YES:I = 0x46
+
+.field public static final ZOOM_EXIST_NO:I = 0x49
+
+.field public static final ZOOM_VALID_NO:I = 0x48
 
 .field private static mNlgScreenParamDepot:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
@@ -871,6 +961,266 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    const/16 v0, 0x3b
+
+    const-string v1, "ContinuousShot"
+
+    const-string v2, "Available"
+
+    const-string v3, "yes"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x3c
+
+    const-string v1, "BasicFilterSetting"
+
+    const-string v2, "Available"
+
+    const-string v3, "yes"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x3d
+
+    const-string v1, "BasicFilterSetting"
+
+    const-string v2, "Available"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x3e
+
+    const-string v1, "BeautyFilterSetting"
+
+    const-string v2, "Available"
+
+    const-string v3, "yes"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x3f
+
+    const-string v1, "BeautyFilterSetting"
+
+    const-string v2, "Available"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x40
+
+    const-string v1, "LiveStickerSetting"
+
+    const-string v2, "Available"
+
+    const-string v3, "yes"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x41
+
+    const-string v1, "LiveStickerSetting"
+
+    const-string v2, "Available"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x46
+
+    const-string v1, "Zoom"
+
+    const-string v2, "AlreadySet"
+
+    const-string v3, "yes"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x47
+
+    const-string v1, "Zoom"
+
+    const-string v2, "AlreadySet"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x48
+
+    const-string v1, "Zoom"
+
+    const-string v2, "Valid"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x49
+
+    const-string v1, "Zoom"
+
+    const-string v2, "Exist"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x4a
+
+    const-string v1, "Mode"
+
+    const-string v2, "Available"
+
+    const-string v3, "yes"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x4b
+
+    const-string v1, "Mode"
+
+    const-string v2, "Available"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x4c
+
+    const-string v1, "Mode"
+
+    const-string v2, "Exist"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x4d
+
+    const-string v1, "Mode"
+
+    const-string v2, "Valid"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x42
+
+    const-string v1, "ShootingMode"
+
+    const-string v2, "Type"
+
+    const-string v3, "Picture"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x43
+
+    const-string v1, "ShootingMode"
+
+    const-string v2, "Type"
+
+    const-string v3, "Video"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x51
+
+    const-string v1, "LiveFocusMode"
+
+    const-string v2, "Exist"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x50
+
+    const-string v1, "LiveFocusMode"
+
+    const-string v2, "Valid"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x4e
+
+    const-string v1, "LiveFocusMode"
+
+    const-string v2, "AlreadySet"
+
+    const-string v3, "yes"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x4f
+
+    const-string v1, "LiveFocusMode"
+
+    const-string v2, "AlreadySet"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x52
+
+    const-string v1, "LiveFocusMode"
+
+    const-string v2, "Available"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x54
+
+    const-string v1, "RecentFilter"
+
+    const-string v2, "Exist"
+
+    const-string v3, "yes"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x55
+
+    const-string v1, "RecentFilter"
+
+    const-string v2, "Exist"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x56
+
+    const-string v1, "RecentSticker"
+
+    const-string v2, "Exist"
+
+    const-string v3, "yes"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 v0, 0x57
+
+    const-string v1, "RecentSticker"
+
+    const-string v2, "Exist"
+
+    const-string v3, "no"
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
     return-void
 .end method
 
@@ -1014,6 +1364,36 @@
 
     goto :goto_0
 
+    :pswitch_12
+    const/16 v0, 0x12
+
+    goto :goto_0
+
+    :pswitch_13
+    const/16 v0, 0x13
+
+    goto :goto_0
+
+    :pswitch_14
+    const/16 v0, 0x14
+
+    goto :goto_0
+
+    :pswitch_15
+    const/16 v0, 0x15
+
+    goto :goto_0
+
+    :pswitch_16
+    const/16 v0, 0x16
+
+    goto :goto_0
+
+    :pswitch_17
+    const/16 v0, 0x17
+
+    goto :goto_0
+
     nop
 
     :pswitch_data_0
@@ -1070,7 +1450,7 @@
         :pswitch_0
         :pswitch_0
         :pswitch_0
-        :pswitch_2
+        :pswitch_6
         :pswitch_1
         :pswitch_6
         :pswitch_4
@@ -1196,6 +1576,54 @@
         :pswitch_3
         :pswitch_f
         :pswitch_10
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_c
+        :pswitch_2
+        :pswitch_0
+        :pswitch_3
+        :pswitch_15
+        :pswitch_15
+        :pswitch_15
+        :pswitch_3
+        :pswitch_4
+        :pswitch_4
+        :pswitch_3
+        :pswitch_12
+        :pswitch_12
+        :pswitch_13
+        :pswitch_13
+        :pswitch_0
+        :pswitch_14
+        :pswitch_6
+        :pswitch_16
+        :pswitch_3
+        :pswitch_0
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_17
+        :pswitch_17
+        :pswitch_17
+        :pswitch_0
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_b
+        :pswitch_6
+        :pswitch_c
+        :pswitch_c
+        :pswitch_b
+        :pswitch_b
+        :pswitch_8
+        :pswitch_8
     .end packed-switch
 .end method
 

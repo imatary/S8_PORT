@@ -882,7 +882,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0901d0
+    const v3, 0x7f0901d1
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1097,7 +1097,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0901d7
+    const v10, 0x7f0901d8
 
     invoke-virtual {v9, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1440,7 +1440,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090165
+    const v3, 0x7f090166
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1522,7 +1522,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0901a2
+    const v3, 0x7f0901a3
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2561,7 +2561,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901a3
+    const v4, 0x7f0901a4
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2660,7 +2660,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090163
+    const v3, 0x7f090164
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3210,7 +3210,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901d3
+    const v4, 0x7f0901d4
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3933,7 +3933,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0901d7
+    const v10, 0x7f0901d8
 
     invoke-virtual {v9, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4969,7 +4969,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ModeListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v3, 0x7f0901cb
+    const v3, 0x7f0901cc
 
     invoke-static {v2, v3, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -5561,6 +5561,65 @@
     move-result-object v0
 
     goto :goto_0
+.end method
+
+.method private getModeItemData(II)Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;
+    .locals 5
+
+    const/4 v3, 0x1
+
+    if-ne p1, v3, :cond_0
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/ModeListMenu;->mMenuResourceDepot:Lcom/sec/android/app/camera/menu/MenuResourceDepot;
+
+    const/16 v4, 0x64
+
+    invoke-virtual {v3, v4}, Lcom/sec/android/app/camera/menu/MenuResourceDepot;->getResource(I)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
+
+    move-result-object v2
+
+    :goto_0
+    const/4 v0, 0x0
+
+    :goto_1
+    invoke-virtual {v2}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;->getNumberOfItems()I
+
+    move-result v3
+
+    if-ge v0, v3, :cond_1
+
+    invoke-virtual {v2, v0}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;->getItem(I)Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;
+
+    invoke-virtual {v1}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->getCommandId()I
+
+    move-result v3
+
+    if-eq v3, p2, :cond_2
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_1
+
+    :cond_0
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/ModeListMenu;->mMenuResourceDepot:Lcom/sec/android/app/camera/menu/MenuResourceDepot;
+
+    const/4 v4, 0x2
+
+    invoke-virtual {v3, v4}, Lcom/sec/android/app/camera/menu/MenuResourceDepot;->getResource(I)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
+
+    move-result-object v2
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    :cond_2
+    return-object v1
 .end method
 
 .method private getShortCutImageId(I)I
@@ -9252,6 +9311,115 @@
     invoke-virtual {v0, v3, v1}, Lcom/samsung/android/glview/GLGridList;->updateStartOffset(FI)V
 
     goto :goto_1
+.end method
+
+.method public requestShootingModeShortcut(II)V
+    .locals 7
+
+    invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/menu/ModeListMenu;->getModeItemData(II)Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->getCommandId()I
+
+    move-result v2
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->getName()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage;->getShootingMode(ILjava/lang/String;)Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;
+
+    move-result-object v1
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->getCommandId()I
+
+    move-result v2
+
+    invoke-static {v2}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->isSeparatedShootingMode(I)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/menu/ModeListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    iget-object v3, v1, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;->modeTitle:Ljava/lang/String;
+
+    iget-object v4, v1, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;->packageName:Ljava/lang/String;
+
+    iget-object v5, v1, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;->activityName:Ljava/lang/String;
+
+    iget-object v6, v1, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;->activityName:Ljava/lang/String;
+
+    invoke-direct {p0, v6}, Lcom/sec/android/app/camera/menu/ModeListMenu;->getShortCutImageId(Ljava/lang/String;)I
+
+    move-result v6
+
+    invoke-interface {v2, v3, v4, v5, v6}, Lcom/sec/android/app/camera/interfaces/CameraContext;->installShootingModeShortcut(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+
+    :goto_0
+    return-void
+
+    :cond_0
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->getCommandId()I
+
+    move-result v2
+
+    invoke-static {v2}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->isSeparatedAndPreloadedShootingMode(I)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/menu/ModeListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    iget-object v3, v1, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;->modeTitle:Ljava/lang/String;
+
+    iget-object v4, v1, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;->packageName:Ljava/lang/String;
+
+    iget-object v5, v1, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;->activityName:Ljava/lang/String;
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->getCommandId()I
+
+    move-result v6
+
+    invoke-direct {p0, v6}, Lcom/sec/android/app/camera/menu/ModeListMenu;->getShortCutImageId(I)I
+
+    move-result v6
+
+    invoke-interface {v2, v3, v4, v5, v6}, Lcom/sec/android/app/camera/interfaces/CameraContext;->installShootingModeShortcut(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v2, p0, Lcom/sec/android/app/camera/menu/ModeListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->getCommandId()I
+
+    move-result v3
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->getTitleId()I
+
+    move-result v4
+
+    invoke-static {v4}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    iget-object v5, v1, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;->activityName:Ljava/lang/String;
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->getCommandId()I
+
+    move-result v6
+
+    invoke-direct {p0, v6}, Lcom/sec/android/app/camera/menu/ModeListMenu;->getShortCutImageId(I)I
+
+    move-result v6
+
+    invoke-interface {v2, v3, v4, v5, v6}, Lcom/sec/android/app/camera/interfaces/CameraContext;->installShootingModeShortcut(ILjava/lang/String;Ljava/lang/String;I)V
+
+    goto :goto_0
 .end method
 
 .method public setOnShowAnimationListener(Lcom/sec/android/app/camera/menu/ModeListMenu$OnShowAnimationListener;)V

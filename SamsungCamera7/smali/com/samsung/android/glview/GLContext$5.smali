@@ -32,17 +32,9 @@
 
 # virtual methods
 .method public onChange(Z)V
-    .locals 0
-
-    invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
-
-    return-void
-.end method
-
-.method public onChange(ZLandroid/net/Uri;)V
     .locals 2
 
-    invoke-super {p0, p1, p2}, Landroid/database/ContentObserver;->onChange(ZLandroid/net/Uri;)V
+    invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
     const-string v0, "GLContext"
 
@@ -54,9 +46,7 @@
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->access$400(Lcom/samsung/android/glview/GLContext;)V
 
-    iget-object v0, p0, Lcom/samsung/android/glview/GLContext$5;->this$0:Lcom/samsung/android/glview/GLContext;
-
-    invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->access$500(Lcom/samsung/android/glview/GLContext;)Z
+    invoke-static {}, Lcom/samsung/android/glview/GLContext;->isTalkBackEnabled()Z
 
     move-result v0
 
@@ -68,15 +58,6 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLContext;->enableAccessibilityService(Landroid/content/Context;)V
 
-    :goto_0
-    return-void
-
     :cond_0
-    iget-object v0, p0, Lcom/samsung/android/glview/GLContext$5;->this$0:Lcom/samsung/android/glview/GLContext;
-
-    sget-object v1, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLContext;->disableAccessibilityService(Landroid/content/Context;)V
-
-    goto :goto_0
+    return-void
 .end method

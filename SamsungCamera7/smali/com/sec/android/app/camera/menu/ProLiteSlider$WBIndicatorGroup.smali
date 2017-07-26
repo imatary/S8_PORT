@@ -104,11 +104,11 @@
 
     const/4 v5, 0x0
 
-    invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2600(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
+    invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2300(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v6
 
-    invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2600(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
+    invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2300(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v7
 
@@ -170,19 +170,19 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setFocusable(Z)V
 
-    invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2700(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorTouchListener;
+    invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2400(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorTouchListener;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2700(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorTouchListener;
+    invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2400(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorTouchListener;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setKeyListener(Lcom/samsung/android/glview/GLView$KeyListener;)V
 
-    invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
+    invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2500(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v3
 
@@ -250,4 +250,23 @@
 
     :cond_2
     return-void
+.end method
+
+
+# virtual methods
+.method public getList()Ljava/util/ArrayList;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/ArrayList",
+            "<",
+            "Lcom/samsung/android/glview/GLView;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorGroup;->mList:Ljava/util/ArrayList;
+
+    return-object v0
 .end method

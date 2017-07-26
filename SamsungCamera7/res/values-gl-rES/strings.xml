@@ -308,6 +308,7 @@ formas"</string>
     <string name="camera_label">Cámara</string>
     <string name="camera_modes">Modos de cámara</string>
     <string name="camera_security_enter">A política de seguridade limita o uso da Cámara</string>
+    <string name="can_not_use_voice_control">Non se pode usar Control por voz con Activación mediante voz de Bixby activado.</string>
     <string name="cancel">Cancelar</string>
     <string name="cannot_start_camcorder_msg">Non se poden gravar vídeos durante a chamada</string>
     <string name="cannot_start_camera_msg">Non se pode utilizar a cámara durante as chamadas.</string>
@@ -604,6 +605,7 @@ Se aceptas isto, concederase este permiso a Etiquetar toma e non se che volverá
     <string name="task_edge_title_selfie">"Tomar
 selfie"</string>
     <string name="temperature">Temperatura</string>
+    <string name="temperature_too_high_camera_off">A temperatura é demasiado elevada para usar %1$s. Agarda a que o teléfono arrefríe antes de usar %2$s.</string>
     <string name="temperature_too_high_flash_off">Non se pode activar o flash. Téntao de novo cando se arrefríe o dispositivo.</string>
     <string name="temperature_too_high_record">Non se pode gravar vídeo. Téntao de novo cando se arrefríe o dispositivo.</string>
     <string name="temperature_too_high_recording_disable">A gravación detívose. Poderás volver gravar cando se arrefríe o dispositivo.</string>

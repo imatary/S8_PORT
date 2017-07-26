@@ -308,6 +308,7 @@
     <string name="camera_label">କ୍ୟାମେରା</string>
     <string name="camera_modes">କ୍ୟାମେରା ମୋଡଗୁଡିକ</string>
     <string name="camera_security_enter">ସୁରକ୍ଷା ନୀତି କ୍ୟାମେରା ବ୍ୟବହାର ପ୍ରତିବନ୍ଧିତ କରିଛି।</string>
+    <string name="can_not_use_voice_control">Bixby Voice‌ ୱେକ୍-ଅପ୍ ଅନ୍ ଥିବା ସମୟରେ ଭଏସ୍ ନିୟନ୍ତ୍ରଣ ବ୍ୟବହାର କରିପାରିବେ ନାହିଁ।</string>
     <string name="cancel">ବାତିଲ୍</string>
     <string name="cannot_start_camcorder_msg">କଲ୍ ସମୟରେ ଭିଡିଓ ରେକର୍ଡ କରିବାକୁ ଅସମର୍ଥ।</string>
     <string name="cannot_start_camera_msg">କଲ୍‌ ସମୟରେ କ୍ୟାମେରା ବ୍ୟବହାର କରିବାକୁ ଅସମର୍ଥ।</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"ସେଲଫି
 ନିଅନ୍ତୁ"</string>
     <string name="temperature">ତାପମାତ୍ରା</string>
+    <string name="temperature_too_high_camera_off">%1$s ବ୍ୟବହାର କରିବାକୁ ତାପମାତ୍ରା ବହୁତ ଅଧିକ ଅଟେ। %2$s ବ୍ୟବହାର କରିବା ପୂର୍ବରୁ ଫୋନ୍ ଥଣ୍ଡା ହେବାକୁ ଅପେକ୍ଷା କରନ୍ତୁ।</string>
     <string name="temperature_too_high_flash_off">ଫ୍ଲାସ୍‌ ଟର୍ନ୍ ଅନ୍ କରିବାକୁ ଅସମର୍ଥ। ଆପଣଙ୍କର ଡିଭାଇସ୍‌ ଶାନ୍ତ ହେଲେ ପୁନଃଚେଷ୍ଟା କରନ୍ତୁ।</string>
     <string name="temperature_too_high_record">ଭିଡିଓ ରେକର୍ଡ କରିବାକୁ ଅସମର୍ଥ। ଡିଭାଇସ୍ ଥଣ୍ଡା ହେଲେ ପୁନଃଚେଷ୍ଟା କରନ୍ତୁ।</string>
     <string name="temperature_too_high_recording_disable">ରେକର୍ଡିଂ ବନ୍ଦ ହୋଇଛି। ଆପଣ ଆପଣଙ୍କର ଡିଭାଇସ୍‌ ଶାନ୍ତ ହୋଇଥିଲେ ରେକର୍ଡ୍ କରିପାରିବେ।</string>

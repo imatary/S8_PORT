@@ -104,6 +104,8 @@
 
 .field private mDisplaySizeObserver:Landroid/database/ContentObserver;
 
+.field private mEnabledAccessibilityServicesContentObserver:Landroid/database/ContentObserver;
+
 .field private mEstimatedFPS:I
 
 .field private mFocusIndicatorColor:I
@@ -469,11 +471,19 @@
 
     new-instance v1, Lcom/samsung/android/glview/GLContext$6;
 
+    iget-object v2, p0, Lcom/samsung/android/glview/GLContext;->mMainHandler:Landroid/os/Handler;
+
+    invoke-direct {v1, p0, v2}, Lcom/samsung/android/glview/GLContext$6;-><init>(Lcom/samsung/android/glview/GLContext;Landroid/os/Handler;)V
+
+    iput-object v1, p0, Lcom/samsung/android/glview/GLContext;->mEnabledAccessibilityServicesContentObserver:Landroid/database/ContentObserver;
+
+    new-instance v1, Lcom/samsung/android/glview/GLContext$7;
+
     new-instance v2, Landroid/os/Handler;
 
     invoke-direct {v2}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v1, p0, v2}, Lcom/samsung/android/glview/GLContext$6;-><init>(Lcom/samsung/android/glview/GLContext;Landroid/os/Handler;)V
+    invoke-direct {v1, p0, v2}, Lcom/samsung/android/glview/GLContext$7;-><init>(Lcom/samsung/android/glview/GLContext;Landroid/os/Handler;)V
 
     iput-object v1, p0, Lcom/samsung/android/glview/GLContext;->mSettingInteractionControlObserver:Landroid/database/ContentObserver;
 
@@ -590,9 +600,9 @@
 
     iput v1, p0, Lcom/samsung/android/glview/GLContext;->mHoverIndicatorThickness:I
 
-    new-instance v1, Lcom/samsung/android/glview/GLContext$7;
+    new-instance v1, Lcom/samsung/android/glview/GLContext$8;
 
-    invoke-direct {v1, p0}, Lcom/samsung/android/glview/GLContext$7;-><init>(Lcom/samsung/android/glview/GLContext;)V
+    invoke-direct {v1, p0}, Lcom/samsung/android/glview/GLContext$8;-><init>(Lcom/samsung/android/glview/GLContext;)V
 
     iput-object v1, p0, Lcom/samsung/android/glview/GLContext;->mAccessibilityDelegate:Landroid/view/View$AccessibilityDelegate;
 
@@ -654,20 +664,12 @@
 .method static synthetic access$500(Lcom/samsung/android/glview/GLContext;)Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/samsung/android/glview/GLContext;->mIsTouchExplorationEnabled:Z
-
-    return v0
-.end method
-
-.method static synthetic access$600(Lcom/samsung/android/glview/GLContext;)Z
-    .locals 1
-
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLContext;->mPaused:Z
 
     return v0
 .end method
 
-.method static synthetic access$700(Lcom/samsung/android/glview/GLContext;)V
+.method static synthetic access$600(Lcom/samsung/android/glview/GLContext;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/samsung/android/glview/GLContext;->disableOrientationListener()V
@@ -675,7 +677,7 @@
     return-void
 .end method
 
-.method static synthetic access$800(Lcom/samsung/android/glview/GLContext;I)V
+.method static synthetic access$700(Lcom/samsung/android/glview/GLContext;I)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/samsung/android/glview/GLContext;->handleOrientationChanged(I)V
@@ -683,7 +685,7 @@
     return-void
 .end method
 
-.method static synthetic access$902(Lcom/samsung/android/glview/GLContext;Landroid/view/Choreographer;)Landroid/view/Choreographer;
+.method static synthetic access$802(Lcom/samsung/android/glview/GLContext;Landroid/view/Choreographer;)Landroid/view/Choreographer;
     .locals 0
 
     iput-object p1, p0, Lcom/samsung/android/glview/GLContext;->mChoreographer:Landroid/view/Choreographer;
@@ -1551,11 +1553,11 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance v1, Lcom/samsung/android/glview/GLContext$8;
+    new-instance v1, Lcom/samsung/android/glview/GLContext$9;
 
     sget-object v2, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
 
-    invoke-direct {v1, p0, v2}, Lcom/samsung/android/glview/GLContext$8;-><init>(Lcom/samsung/android/glview/GLContext;Landroid/content/Context;)V
+    invoke-direct {v1, p0, v2}, Lcom/samsung/android/glview/GLContext$9;-><init>(Lcom/samsung/android/glview/GLContext;Landroid/content/Context;)V
 
     iput-object v1, p0, Lcom/samsung/android/glview/GLContext;->mOrientationListener:Landroid/view/OrientationEventListener;
 
@@ -1591,9 +1593,9 @@
 
     iget-object v0, p0, Lcom/samsung/android/glview/GLContext;->mFrameHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/samsung/android/glview/GLContext$9;
+    new-instance v1, Lcom/samsung/android/glview/GLContext$10;
 
-    invoke-direct {v1, p0}, Lcom/samsung/android/glview/GLContext$9;-><init>(Lcom/samsung/android/glview/GLContext;)V
+    invoke-direct {v1, p0}, Lcom/samsung/android/glview/GLContext$10;-><init>(Lcom/samsung/android/glview/GLContext;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -4994,6 +4996,16 @@
 
     move-result-object v0
 
+    iget-object v1, p0, Lcom/samsung/android/glview/GLContext;->mEnabledAccessibilityServicesContentObserver:Landroid/database/ContentObserver;
+
+    invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
+
+    sget-object v0, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
     iget-object v1, p0, Lcom/samsung/android/glview/GLContext;->mSettingInteractionControlObserver:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
@@ -5032,130 +5044,51 @@
 .end method
 
 .method public onResume()V
-    .locals 10
+    .locals 11
 
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
-    const/4 v8, 0x1
+    const/4 v9, 0x1
 
     invoke-direct {p0}, Lcom/samsung/android/glview/GLContext;->updateScreenSize()V
 
-    new-instance v4, Landroid/os/HandlerThread;
+    new-instance v5, Landroid/os/HandlerThread;
 
-    const-string v5, "GLContextHandlerThread"
+    const-string v6, "GLContextHandlerThread"
 
-    invoke-direct {v4, v5}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5, v6}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    iput-object v4, p0, Lcom/samsung/android/glview/GLContext;->mMainHandlerThread:Landroid/os/HandlerThread;
-
-    iget-object v4, p0, Lcom/samsung/android/glview/GLContext;->mMainHandlerThread:Landroid/os/HandlerThread;
-
-    invoke-virtual {v4}, Landroid/os/HandlerThread;->start()V
-
-    new-instance v4, Landroid/os/Handler;
+    iput-object v5, p0, Lcom/samsung/android/glview/GLContext;->mMainHandlerThread:Landroid/os/HandlerThread;
 
     iget-object v5, p0, Lcom/samsung/android/glview/GLContext;->mMainHandlerThread:Landroid/os/HandlerThread;
 
-    invoke-virtual {v5}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
+    invoke-virtual {v5}, Landroid/os/HandlerThread;->start()V
+
+    new-instance v5, Landroid/os/Handler;
+
+    iget-object v6, p0, Lcom/samsung/android/glview/GLContext;->mMainHandlerThread:Landroid/os/HandlerThread;
+
+    invoke-virtual {v6}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
+
+    move-result-object v6
+
+    invoke-direct {v5, v6}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    iput-object v5, p0, Lcom/samsung/android/glview/GLContext;->mMainHandler:Landroid/os/Handler;
+
+    iput-boolean v10, p0, Lcom/samsung/android/glview/GLContext;->mRenderRequested:Z
+
+    iput-boolean v10, p0, Lcom/samsung/android/glview/GLContext;->mPaused:Z
+
+    sget-object v5, Lcom/samsung/android/glview/GLContext;->mResources:Landroid/content/res/Resources;
+
+    invoke-virtual {v5}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
     move-result-object v5
 
-    invoke-direct {v4, v5}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    iget v5, v5, Landroid/content/res/Configuration;->semMobileKeyboardCovered:I
 
-    iput-object v4, p0, Lcom/samsung/android/glview/GLContext;->mMainHandler:Landroid/os/Handler;
-
-    iput-boolean v9, p0, Lcom/samsung/android/glview/GLContext;->mRenderRequested:Z
-
-    iput-boolean v9, p0, Lcom/samsung/android/glview/GLContext;->mPaused:Z
-
-    sget-object v4, Lcom/samsung/android/glview/GLContext;->mResources:Landroid/content/res/Resources;
-
-    invoke-virtual {v4}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v4
-
-    iget v4, v4, Landroid/content/res/Configuration;->semMobileKeyboardCovered:I
-
-    if-eq v4, v8, :cond_0
-
-    sget-object v4, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v5, "access_control_enabled"
-
-    invoke-static {v4, v5, v9}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v4
-
-    if-nez v4, :cond_0
-
-    invoke-virtual {p0}, Lcom/samsung/android/glview/GLContext;->enableOrientationListener()V
-
-    :cond_0
-    iget-object v4, p0, Lcom/samsung/android/glview/GLContext;->mHoverBaseView:Landroid/view/View;
-
-    invoke-virtual {v4, p0}, Landroid/view/View;->setOnHoverListener(Landroid/view/View$OnHoverListener;)V
-
-    sget-object v4, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v5, "accessibility_enabled"
-
-    invoke-static {v4, v5, v9}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v4
-
-    if-ne v4, v8, :cond_1
-
-    sget-object v4, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v5, "enabled_accessibility_services"
-
-    invoke-static {v4, v5}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_1
-
-    sget-object v4, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v5, "enabled_accessibility_services"
-
-    invoke-static {v4, v5}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v5, "(?i).*talkback.*"
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    new-instance v4, Landroid/speech/tts/TextToSpeech;
-
-    sget-object v5, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
-
-    invoke-direct {v4, v5, p0}, Landroid/speech/tts/TextToSpeech;-><init>(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V
-
-    iput-object v4, p0, Lcom/samsung/android/glview/GLContext;->mTts:Landroid/speech/tts/TextToSpeech;
-
-    iget-object v4, p0, Lcom/samsung/android/glview/GLContext;->mTts:Landroid/speech/tts/TextToSpeech;
+    if-eq v5, v9, :cond_0
 
     sget-object v5, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
 
@@ -5163,123 +5096,239 @@
 
     move-result-object v5
 
-    const-string v6, "tts_default_pitch"
+    const-string v6, "access_control_enabled"
 
-    const/16 v7, 0x64
-
-    invoke-static {v5, v6, v7}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v5, v6, v10}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v5
 
-    int-to-float v5, v5
+    if-nez v5, :cond_0
 
-    const/high16 v6, 0x42c80000    # 100.0f
+    invoke-virtual {p0}, Lcom/samsung/android/glview/GLContext;->enableOrientationListener()V
 
-    div-float/2addr v5, v6
+    :cond_0
+    iget-object v5, p0, Lcom/samsung/android/glview/GLContext;->mHoverBaseView:Landroid/view/View;
 
-    invoke-virtual {v4, v5}, Landroid/speech/tts/TextToSpeech;->setPitch(F)I
+    invoke-virtual {v5, p0}, Landroid/view/View;->setOnHoverListener(Landroid/view/View$OnHoverListener;)V
 
-    iget-object v4, p0, Lcom/samsung/android/glview/GLContext;->mTts:Landroid/speech/tts/TextToSpeech;
+    sget-object v5, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
 
-    new-instance v5, Landroid/media/AudioAttributes$Builder;
-
-    invoke-direct {v5}, Landroid/media/AudioAttributes$Builder;-><init>()V
-
-    const/16 v6, 0xb
-
-    invoke-virtual {v5, v6}, Landroid/media/AudioAttributes$Builder;->setUsage(I)Landroid/media/AudioAttributes$Builder;
+    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
-    invoke-virtual {v5, v8}, Landroid/media/AudioAttributes$Builder;->setContentType(I)Landroid/media/AudioAttributes$Builder;
+    const-string v6, "accessibility_enabled"
+
+    invoke-static {v5, v6, v10}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v5
+
+    if-ne v5, v9, :cond_1
+
+    sget-object v5, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+
+    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Landroid/media/AudioAttributes$Builder;->build()Landroid/media/AudioAttributes;
+    const-string v6, "enabled_accessibility_services"
+
+    invoke-static {v5, v6}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Landroid/speech/tts/TextToSpeech;->setAudioAttributes(Landroid/media/AudioAttributes;)I
+    if-eqz v5, :cond_1
+
+    sget-object v5, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+
+    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v5
+
+    const-string v6, "enabled_accessibility_services"
+
+    invoke-static {v5, v6}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v6, "(?i).*talkback.*"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    new-instance v5, Landroid/speech/tts/TextToSpeech;
+
+    sget-object v6, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+
+    invoke-direct {v5, v6, p0}, Landroid/speech/tts/TextToSpeech;-><init>(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V
+
+    iput-object v5, p0, Lcom/samsung/android/glview/GLContext;->mTts:Landroid/speech/tts/TextToSpeech;
+
+    iget-object v5, p0, Lcom/samsung/android/glview/GLContext;->mTts:Landroid/speech/tts/TextToSpeech;
+
+    sget-object v6, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+
+    invoke-virtual {v6}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v6
+
+    const-string v7, "tts_default_pitch"
+
+    const/16 v8, 0x64
+
+    invoke-static {v6, v7, v8}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v6
+
+    int-to-float v6, v6
+
+    const/high16 v7, 0x42c80000    # 100.0f
+
+    div-float/2addr v6, v7
+
+    invoke-virtual {v5, v6}, Landroid/speech/tts/TextToSpeech;->setPitch(F)I
+
+    iget-object v5, p0, Lcom/samsung/android/glview/GLContext;->mTts:Landroid/speech/tts/TextToSpeech;
+
+    new-instance v6, Landroid/media/AudioAttributes$Builder;
+
+    invoke-direct {v6}, Landroid/media/AudioAttributes$Builder;-><init>()V
+
+    const/16 v7, 0xb
+
+    invoke-virtual {v6, v7}, Landroid/media/AudioAttributes$Builder;->setUsage(I)Landroid/media/AudioAttributes$Builder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v9}, Landroid/media/AudioAttributes$Builder;->setContentType(I)Landroid/media/AudioAttributes$Builder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Landroid/media/AudioAttributes$Builder;->build()Landroid/media/AudioAttributes;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Landroid/speech/tts/TextToSpeech;->setAudioAttributes(Landroid/media/AudioAttributes;)I
 
     :cond_1
-    iget-object v4, p0, Lcom/samsung/android/glview/GLContext;->mGLSurfaceView:Landroid/opengl/GLSurfaceView;
+    iget-object v5, p0, Lcom/samsung/android/glview/GLContext;->mGLSurfaceView:Landroid/opengl/GLSurfaceView;
 
-    if-eqz v4, :cond_2
+    if-eqz v5, :cond_2
 
-    iget-object v4, p0, Lcom/samsung/android/glview/GLContext;->mGLSurfaceView:Landroid/opengl/GLSurfaceView;
+    iget-object v5, p0, Lcom/samsung/android/glview/GLContext;->mGLSurfaceView:Landroid/opengl/GLSurfaceView;
 
-    invoke-virtual {v4}, Landroid/opengl/GLSurfaceView;->requestRender()V
+    invoke-virtual {v5}, Landroid/opengl/GLSurfaceView;->requestRender()V
 
     :cond_2
     invoke-direct {p0}, Lcom/samsung/android/glview/GLContext;->updateTouchExplorationEnabled()V
 
-    iget-boolean v4, p0, Lcom/samsung/android/glview/GLContext;->mIsTouchExplorationEnabled:Z
+    iget-boolean v5, p0, Lcom/samsung/android/glview/GLContext;->mIsTouchExplorationEnabled:Z
 
-    if-eqz v4, :cond_3
+    if-eqz v5, :cond_3
 
-    sget-object v4, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+    sget-object v5, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
 
-    invoke-virtual {p0, v4}, Lcom/samsung/android/glview/GLContext;->enableAccessibilityService(Landroid/content/Context;)V
+    invoke-virtual {p0, v5}, Lcom/samsung/android/glview/GLContext;->enableAccessibilityService(Landroid/content/Context;)V
 
     :cond_3
-    const-string v4, "touch_exploration_enabled"
+    const-string v5, "touch_exploration_enabled"
 
-    invoke-static {v4}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_4
-
-    sget-object v4, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v5}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/samsung/android/glview/GLContext;->mTouchExplorationEnabledContentObserver:Landroid/database/ContentObserver;
+    if-eqz v4, :cond_4
 
-    invoke-virtual {v4, v3, v8, v5}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+    sget-object v5, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+
+    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v5
+
+    iget-object v6, p0, Lcom/samsung/android/glview/GLContext;->mTouchExplorationEnabledContentObserver:Landroid/database/ContentObserver;
+
+    invoke-virtual {v5, v4, v9, v6}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     :cond_4
-    const-string v4, "access_control_enabled"
+    const-string v5, "enabled_accessibility_services"
 
-    invoke-static {v4}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {v5}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v2
 
     if-eqz v2, :cond_5
 
-    sget-object v4, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+    sget-object v5, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
 
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v4
+    move-result-object v5
 
-    iget-object v5, p0, Lcom/samsung/android/glview/GLContext;->mSettingInteractionControlObserver:Landroid/database/ContentObserver;
+    iget-object v6, p0, Lcom/samsung/android/glview/GLContext;->mEnabledAccessibilityServicesContentObserver:Landroid/database/ContentObserver;
 
-    invoke-virtual {v4, v2, v8, v5}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+    invoke-virtual {v5, v2, v9, v6}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     :cond_5
-    const-string v4, "accessibility_cursor_color"
+    const-string v5, "access_control_enabled"
 
-    invoke-static {v4}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {v5}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_6
+
+    sget-object v5, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+
+    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v5
+
+    iget-object v6, p0, Lcom/samsung/android/glview/GLContext;->mSettingInteractionControlObserver:Landroid/database/ContentObserver;
+
+    invoke-virtual {v5, v3, v9, v6}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+
+    :cond_6
+    const-string v5, "accessibility_cursor_color"
+
+    invoke-static {v5}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_7
 
-    sget-object v4, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+    sget-object v5, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
 
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v4
+    move-result-object v5
 
-    iget-object v5, p0, Lcom/samsung/android/glview/GLContext;->mCursorColorObserver:Landroid/database/ContentObserver;
+    iget-object v6, p0, Lcom/samsung/android/glview/GLContext;->mCursorColorObserver:Landroid/database/ContentObserver;
 
-    invoke-virtual {v4, v0, v8, v5}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+    invoke-virtual {v5, v0, v9, v6}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    :cond_6
-    iget v4, p0, Lcom/samsung/android/glview/GLContext;->mHoverIndicatorColor:I
+    :cond_7
+    iget v5, p0, Lcom/samsung/android/glview/GLContext;->mHoverIndicatorColor:I
+
+    invoke-static {}, Lcom/samsung/android/glview/GLContext;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v6
+
+    const-string v7, "accessibility_cursor_color"
+
+    sget v8, Lcom/samsung/android/glview/GLContext;->FOCUS_INDICATOR_DEFAULT_COLOR:I
+
+    invoke-static {v6, v7, v8}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v6
+
+    if-eq v5, v6, :cond_8
 
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getApplicationContext()Landroid/content/Context;
 
@@ -5297,67 +5346,49 @@
 
     move-result v5
 
-    if-eq v4, v5, :cond_7
+    iput v5, p0, Lcom/samsung/android/glview/GLContext;->mHoverIndicatorColor:I
 
-    invoke-static {}, Lcom/samsung/android/glview/GLContext;->getApplicationContext()Landroid/content/Context;
+    iget-object v5, p0, Lcom/samsung/android/glview/GLContext;->mCursorColorObserver:Landroid/database/ContentObserver;
 
-    move-result-object v4
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v5, "accessibility_cursor_color"
-
-    sget v6, Lcom/samsung/android/glview/GLContext;->FOCUS_INDICATOR_DEFAULT_COLOR:I
-
-    invoke-static {v4, v5, v6}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v4
-
-    iput v4, p0, Lcom/samsung/android/glview/GLContext;->mHoverIndicatorColor:I
-
-    iget-object v4, p0, Lcom/samsung/android/glview/GLContext;->mCursorColorObserver:Landroid/database/ContentObserver;
-
-    invoke-virtual {v4, v9}, Landroid/database/ContentObserver;->onChange(Z)V
-
-    :cond_7
-    sget-object v4, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v5, "show_button_background"
-
-    invoke-static {v4, v5, v9}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v4
-
-    if-ne v4, v8, :cond_8
-
-    iput-boolean v8, p0, Lcom/samsung/android/glview/GLContext;->mShowButtonBackgroundEnabled:Z
+    invoke-virtual {v5, v10}, Landroid/database/ContentObserver;->onChange(Z)V
 
     :cond_8
-    const-string v4, "display_size_forced"
+    sget-object v5, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
 
-    invoke-static {v4}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v5
+
+    const-string v6, "show_button_background"
+
+    invoke-static {v5, v6, v10}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v5
+
+    if-ne v5, v9, :cond_9
+
+    iput-boolean v9, p0, Lcom/samsung/android/glview/GLContext;->mShowButtonBackgroundEnabled:Z
+
+    :cond_9
+    const-string v5, "display_size_forced"
+
+    invoke-static {v5}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
-    if-eqz v1, :cond_9
+    if-eqz v1, :cond_a
 
-    sget-object v4, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+    sget-object v5, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
 
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v4
+    move-result-object v5
 
-    iget-object v5, p0, Lcom/samsung/android/glview/GLContext;->mDisplaySizeObserver:Landroid/database/ContentObserver;
+    iget-object v6, p0, Lcom/samsung/android/glview/GLContext;->mDisplaySizeObserver:Landroid/database/ContentObserver;
 
-    invoke-virtual {v4, v1, v8, v5}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+    invoke-virtual {v5, v1, v9, v6}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    :cond_9
+    :cond_a
     return-void
 .end method
 

@@ -117,7 +117,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09012e
+    const v2, 0x7f09012f
 
     invoke-static {v1, v2, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 

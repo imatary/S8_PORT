@@ -619,9 +619,9 @@
 
     const-string v6, "id"
 
-    const/4 v7, -0x1
+    const-wide/16 v8, -0x1
 
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v7
 
@@ -710,6 +710,8 @@
     invoke-interface {v6, v5}, Lcom/samsung/android/apex/service/IMotionPhotoComposer;->setParameters(Ljava/lang/String;)V
 
     goto/16 :goto_0
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x2
@@ -1565,18 +1567,16 @@
 .end method
 
 .method public store(Lcom/samsung/android/apex/motionphoto/model/SemApexStoreData;)J
-    .locals 11
+    .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
         }
     .end annotation
 
-    const/4 v10, 0x3
+    const/4 v9, 0x4
 
     const-wide/16 v4, -0x1
-
-    const/4 v9, 0x4
 
     invoke-virtual {p0}, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer;->getTag()Ljava/lang/String;
 
@@ -1651,7 +1651,7 @@
 
     packed-switch v2, :pswitch_data_0
 
-    :goto_3
+    :pswitch_0
     invoke-virtual {p0}, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer;->getTag()Ljava/lang/String;
 
     move-result-object v2
@@ -1675,7 +1675,7 @@
 
     goto :goto_2
 
-    :pswitch_0
+    :pswitch_1
     sget-object v2, Lcom/samsung/android/apex/motionphoto/composer/State;->STARTED:Lcom/samsung/android/apex/motionphoto/composer/State;
 
     iget-object v3, p0, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer;->mComposerHandler:Landroid/os/Handler;
@@ -1686,8 +1686,10 @@
 
     invoke-virtual {p0, v2, v3}, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer;->queueCommand(Lcom/samsung/android/apex/motionphoto/composer/State;Landroid/os/Message;)V
 
-    :goto_4
-    invoke-virtual {v1, v10}, Lcom/samsung/android/apex/motionphoto/command/Result$Synchronizer;->awaitResponse(I)Lcom/samsung/android/apex/motionphoto/command/Result;
+    :goto_3
+    const/4 v2, 0x3
+
+    invoke-virtual {v1, v2}, Lcom/samsung/android/apex/motionphoto/command/Result$Synchronizer;->awaitResponse(I)Lcom/samsung/android/apex/motionphoto/command/Result;
 
     move-result-object v0
 
@@ -1713,7 +1715,7 @@
 
     goto :goto_1
 
-    :pswitch_1
+    :pswitch_2
     iget-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer;->mComposerHandler:Landroid/os/Handler;
 
     iget-object v3, p0, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer;->mComposerHandler:Landroid/os/Handler;
@@ -1723,23 +1725,6 @@
     move-result-object v3
 
     invoke-virtual {v2, v3}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    goto :goto_4
-
-    :pswitch_2
-    iget-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer;->mComposerHandler:Landroid/os/Handler;
-
-    invoke-virtual {v2, v10}, Landroid/os/Handler;->sendEmptyMessage(I)Z
-
-    sget-object v2, Lcom/samsung/android/apex/motionphoto/composer/State;->STARTED:Lcom/samsung/android/apex/motionphoto/composer/State;
-
-    iget-object v3, p0, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer;->mComposerHandler:Landroid/os/Handler;
-
-    invoke-virtual {v3, v9, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
-
-    move-result-object v3
-
-    invoke-virtual {p0, v2, v3}, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer;->queueCommand(Lcom/samsung/android/apex/motionphoto/composer/State;Landroid/os/Message;)V
 
     goto :goto_3
 
@@ -1756,13 +1741,11 @@
 
     goto :goto_1
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0x2
-        :pswitch_0
+        :pswitch_1
+        :pswitch_1
         :pswitch_0
         :pswitch_2
-        :pswitch_1
     .end packed-switch
 .end method

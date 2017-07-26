@@ -42,9 +42,11 @@
 .end method
 
 .method private handleTouchEvent(Lcom/samsung/android/glview/GLView;)V
-    .locals 4
+    .locals 5
 
     const/4 v2, 0x0
+
+    const/4 v4, -0x1
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
@@ -125,6 +127,14 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->setCurrentStep(I)Z
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
+
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->hideValueText()V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
@@ -193,9 +203,7 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/ProSlider;->mProSliderValueSelectListener:Lcom/sec/android/app/camera/menu/ProSlider$ProSliderValueSelectListener;
 
-    const/4 v1, -0x1
-
-    invoke-interface {v0, v1}, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderValueSelectListener;->onManualFocusValueMenuSelect(I)V
+    invoke-interface {v0, v4}, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderValueSelectListener;->onManualFocusValueMenuSelect(I)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
@@ -206,6 +214,8 @@
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderLoggingListener;->onManualFocusAutoLoggingEvent(Ljava/lang/String;)V
 
     goto :goto_0
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x1

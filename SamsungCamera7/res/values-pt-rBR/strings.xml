@@ -27,7 +27,7 @@
     <string name="Abb_Title_More_Settings">Mais configurações</string>
     <string name="Abb_Title_SaveAsFlipped">Salvar invertido</string>
     <string name="Abb_Title_ShutterSound">Som de disparo</string>
-    <string name="Abb_Title_Storage">Local de armazen.</string>
+    <string name="Abb_Title_Storage">Local de armazenamento</string>
     <string name="Abb_Title_VideoStabilisation">"Estabiliza-
 ção vídeo"</string>
     <string name="Abb_Title_VoiceCapture">Controle por voz</string>
@@ -307,6 +307,7 @@ de forma"</string>
     <string name="camera_label">Câmera</string>
     <string name="camera_modes">Modos da câmera</string>
     <string name="camera_security_enter">A política de segurança restringe a utilização da Câmera.</string>
+    <string name="can_not_use_voice_control">Não é possível usar Controle de voz com a ativação do Bixby Voice ativada.</string>
     <string name="cancel">Cancelar</string>
     <string name="cannot_start_camcorder_msg">Impossível gravar vídeos durante chamada.</string>
     <string name="cannot_start_camera_msg">Não é possível usar a Câmera durante chamadas.</string>
@@ -603,6 +604,7 @@ Se você concordar com isto, a Marca de foto receberá essa permissão e a solic
     <string name="task_edge_title_selfie">"Tirar
 selfie"</string>
     <string name="temperature">Temperatura</string>
+    <string name="temperature_too_high_camera_off">A temperatura está muito alta para usar %1$s. Aguarde o telefone esfriar antes de usar %2$s.</string>
     <string name="temperature_too_high_flash_off">Não é possível ligar o flash. Tente novamente quando o dispositivo tiver esfriado.</string>
     <string name="temperature_too_high_record">Não é possível gravar vídeo. Tente novamente quando o dispositivo tiver esfriado.</string>
     <string name="temperature_too_high_recording_disable">A gravação foi encerrada. Você pode gravar quando o dispositivo tiver esfriado.</string>

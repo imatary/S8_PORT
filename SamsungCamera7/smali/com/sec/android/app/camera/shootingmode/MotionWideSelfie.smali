@@ -6553,7 +6553,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0902bf
+    const v2, 0x7f0902c1
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6576,7 +6576,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0902c0
+    const v2, 0x7f0902c2
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6599,7 +6599,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0902c1
+    const v2, 0x7f0902c3
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6897,13 +6897,13 @@
 .method private showWarningText(I)V
     .locals 6
 
-    const v5, 0x7f0902c7
+    const v5, 0x7f0902c9
 
-    const v4, 0x7f0902c5
+    const v4, 0x7f0902c7
 
-    const v3, 0x7f0902c4
+    const v3, 0x7f0902c6
 
-    const v2, 0x7f0902c3
+    const v2, 0x7f0902c5
 
     const/4 v1, 0x2
 
@@ -7105,7 +7105,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0902c6
+    const v2, 0x7f0902c8
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -10505,7 +10505,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090163
+    const v3, 0x7f090164
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -11924,7 +11924,7 @@
 
     move-result v1
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_3
 
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -12046,7 +12046,7 @@
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->showPreviewGroup()V
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_4
 
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -12054,8 +12054,33 @@
 
     move-result v5
 
-    if-ne v5, v9, :cond_3
+    if-ne v5, v9, :cond_4
 
+    iget v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCurrentOrientation:I
+
+    mul-int/lit8 v5, v5, 0x5a
+
+    if-eq v1, v5, :cond_2
+
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getSelfFlip()I
+
+    move-result v5
+
+    if-ne v5, v9, :cond_4
+
+    add-int/lit16 v5, v1, 0xb4
+
+    rem-int/lit16 v5, v5, 0x168
+
+    iget v6, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCurrentOrientation:I
+
+    mul-int/lit8 v6, v6, 0x5a
+
+    if-ne v5, v6, :cond_4
+
+    :cond_2
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getPopupLayoutController()Lcom/sec/android/app/camera/interfaces/PopupLayoutController;
@@ -12102,7 +12127,7 @@
 
     goto :goto_0
 
-    :cond_2
+    :cond_3
     const-string v5, "MotionWideSelfie"
 
     const-string v6, "output file error"
@@ -12111,7 +12136,7 @@
 
     goto :goto_0
 
-    :cond_3
+    :cond_4
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleSendCompletedMessageToBixby()V

@@ -308,6 +308,7 @@
     <string name="camera_label">ਕੈਮਰਾ</string>
     <string name="camera_modes">ਕੈਮਰਾ ਮੋਡਸ</string>
     <string name="camera_security_enter">ਸੁਰੱਖਿਆ ਨੀਤੀ ਕੈਮਰੇ ਦੀ ਵਰਤੋਂ ਨੂੰ ਪ੍ਰਤੀਬੰਧਿਤ ਕਰਦੀ ਹੈ।</string>
+    <string name="can_not_use_voice_control">Bixby Voice ਵੇਕ-ਅਪ ਦੇ ਚਾਲੂ ਹੋਣ ਦੌਰਾਨ ਵਾੱਇਸ ਨਿਯੰਤ੍ਰਣ ਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ।</string>
     <string name="cancel">ਰੱਦ ਕਰੋ</string>
     <string name="cannot_start_camcorder_msg">ਕਾੱਲ ਦੇ ਦੌਰਾਨ ਵੀਡਿਓਜ਼ ਰਿਕਾਰਡ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ।</string>
     <string name="cannot_start_camera_msg">ਕਾੱਲਸ ਦੇ ਦੌਰਾਨ ਕੈਮਰੇ ਦਾ ਉਪਯੋਗ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ।</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"ਸੈਲਫੀ
 ਲਉ"</string>
     <string name="temperature">ਤਾਪਮਾਨ</string>
+    <string name="temperature_too_high_camera_off">%1$s ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਤਾਪਮਾਨ ਬਹੁਤ ਜ਼ਿਆਦਾ ਹੈ। %2$s ਦੀ ਵਰਤੋਂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਫ਼ੋਨ ਦੇ ਠੰਡੇ ਹੋਣ ਦੀ ਉਡੀਕ ਕਰੋ।</string>
     <string name="temperature_too_high_flash_off">ਫਲੈਸ਼ ਚਾਲੂ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ। ਜਦੋਂ ਤੁਹਾਡਾ ਡਿਵਾਈਸ ਠੰਡਾ ਹੋ ਜਾਵੇ, ਤਾਂ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="temperature_too_high_record">ਵੀਡਿਓ ਰਿਕਾਰਡ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ। ਜਦੋਂ ਡਿਵਾਈਸ ਠੰਡਾ ਹੋ ਜਾਵੇ ਤਾਂ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="temperature_too_high_recording_disable">ਰਿਕਾਰਡਿੰਗ ਬੰਦ ਹੋ ਗਈ ਹੈ। ਤੁਸੀਂ ਆਪਣਾ ਡਿਵਾਈਸ ਠੰਡਾ ਹੋ ਜਾਣ ਤੇ ਰਿਕਾਰਡ ਕਰ ਸਕਦੇ ਹੋ।</string>

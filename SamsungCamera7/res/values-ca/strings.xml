@@ -308,6 +308,7 @@ correcció"</string>
     <string name="camera_label">Càmera</string>
     <string name="camera_modes">Modes de càmera</string>
     <string name="camera_security_enter">"La política de seguretat restringeix l'ús de la càmera"</string>
+    <string name="can_not_use_voice_control">No es pot utilitzar el Control de veu mentre el despertador de Bixby Voice estigui activat.</string>
     <string name="cancel">Cancel·lar</string>
     <string name="cannot_start_camcorder_msg">No es poden gravar vídeos durant una trucada</string>
     <string name="cannot_start_camera_msg">No es pot utilitzar la Càmera durant les trucades.</string>
@@ -604,6 +605,7 @@ Si ho accepta, Etiquetar foto també obtindrà aquest permís i no se li tornar�
     <string name="task_edge_title_selfie">"Fer
 autofoto"</string>
     <string name="temperature">Temperatura</string>
+    <string name="temperature_too_high_camera_off">"La temperatura és massa alta per utilitzar %1$s. Esperi que el telèfon es refredi abans d'utilitzar %2$s."</string>
     <string name="temperature_too_high_flash_off">"No es pot activar el flaix. Torni-ho a intentar quan s'hagi refredat el dispositiu."</string>
     <string name="temperature_too_high_record">"No es poden gravar vídeos. Torni-ho a intentar quan s'hagi refredat el dispositiu."</string>
     <string name="temperature_too_high_recording_disable">"S'ha aturat la gravació. Pot gravar quan el dispositiu s'hagi refredat."</string>

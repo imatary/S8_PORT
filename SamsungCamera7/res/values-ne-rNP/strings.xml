@@ -303,6 +303,7 @@
     <string name="camera_label">क्यामेरा</string>
     <string name="camera_modes">क्‍यामेरा मोडहरू</string>
     <string name="camera_security_enter">सुरक्षा नितीले क्यामेराको प्रयोग माथि प्रतिबन्ध लगाउँछ।</string>
+    <string name="can_not_use_voice_control">Bixby Voice वेक-अप अन भएको बेला भ्वाइस नियन्त्रण प्रयोग गर्न सकिँदैन।</string>
     <string name="cancel">रद्द गर्नुहोस्</string>
     <string name="cannot_start_camcorder_msg">कलमा भिडियो रेकर्ड गर्न सकिएन।</string>
     <string name="cannot_start_camera_msg">कलहरूको अवधिमा क्यामेरा प्रयोग गर्न असक्षम।</string>
@@ -593,6 +594,7 @@
     <string name="task_edge_title_selfie">"सेल्फी
 लिनुहोस्"</string>
     <string name="temperature">तापक्रम</string>
+    <string name="temperature_too_high_camera_off">%1$s प्रयोग गर्नका लागि तापक्रम अत्यन्त उच्च छ। %2$s प्रयोग गर्नु अघि फोन चिसो हुने प्रतीक्षा गर्नुहोस्।</string>
     <string name="temperature_too_high_flash_off">फ्ल्यास बन्द गर्न सकिएन। आफ्नो यन्त्र चिसो भएको बेला पुन: प्रयास गर्नुहोस्।</string>
     <string name="temperature_too_high_record">भिडियो रेकर्ड गर्न असक्षम। यन्त्र चिसो भएपछि पुन: प्रयास गर्नुहोस्।</string>
     <string name="temperature_too_high_recording_disable">रेकर्डिङ बन्द भएको छ। तपाईले आफ्नो यन्त्र चिसो भएको बेला रेकर्ड गर्न सक्नुहुन्छ।</string>

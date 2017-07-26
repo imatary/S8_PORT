@@ -4077,6 +4077,14 @@
 
     if-eqz v0, :cond_0
 
+    iget-object v0, p0, Lcom/sec/android/app/camera/engine/AeAfManagerImpl;->mEngine:Lcom/sec/android/app/camera/engine/CommonEngine;
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->isRecording()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
     invoke-virtual {p0}, Lcom/sec/android/app/camera/engine/AeAfManagerImpl;->isTouchAfActive()Z
 
     move-result v0

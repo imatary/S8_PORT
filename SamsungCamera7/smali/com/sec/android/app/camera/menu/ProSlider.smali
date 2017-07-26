@@ -1126,7 +1126,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090360
+    const v3, 0x7f090362
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1157,7 +1157,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f09035f
+    const v3, 0x7f090361
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1188,7 +1188,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090362
+    const v3, 0x7f090364
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1219,7 +1219,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090361
+    const v3, 0x7f090363
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4644,9 +4644,11 @@
 .end method
 
 .method public updateSliderValue(I)V
-    .locals 6
+    .locals 7
 
-    const/4 v5, 0x1
+    const/4 v6, 0x1
+
+    const/4 v5, -0x1
 
     const/4 v4, 0x4
 
@@ -4751,9 +4753,7 @@
 
     if-ne v1, v4, :cond_5
 
-    const/4 v1, -0x1
-
-    if-eq p1, v1, :cond_7
+    if-eq p1, v5, :cond_7
 
     :cond_5
     iget v1, p0, Lcom/sec/android/app/camera/menu/ProSlider;->mSliderId:I
@@ -4767,7 +4767,7 @@
     :cond_6
     iget v1, p0, Lcom/sec/android/app/camera/menu/ProSlider;->mSliderId:I
 
-    if-ne v1, v5, :cond_a
+    if-ne v1, v6, :cond_a
 
     if-nez p1, :cond_a
 
@@ -4780,6 +4780,10 @@
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->setMarkerVisible(I)V
 
+    iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider;->mSlider:Lcom/sec/android/app/camera/widget/gl/TickSlider;
+
+    invoke-virtual {v1, v5}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->setCurrentStep(I)Z
+
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider;->mAutoButton:Lcom/samsung/android/glview/GLButton;
 
     iget v2, p0, Lcom/sec/android/app/camera/menu/ProSlider;->LABEL_SELECTED_COLOR:I
@@ -4788,7 +4792,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider;->mAutoButton:Lcom/samsung/android/glview/GLButton;
 
-    invoke-virtual {v1, v5}, Lcom/samsung/android/glview/GLButton;->setSelected(Z)V
+    invoke-virtual {v1, v6}, Lcom/samsung/android/glview/GLButton;->setSelected(Z)V
 
     :cond_8
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider;->mSelectedLabel:Lcom/samsung/android/glview/GLView;

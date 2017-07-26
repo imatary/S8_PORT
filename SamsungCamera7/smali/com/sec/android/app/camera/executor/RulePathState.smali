@@ -36,13 +36,19 @@
 
 .field public static final STATE_ID_AS_PREVIEWED_MODE:I = 0x15
 
+.field public static final STATE_ID_BASIC_FILTER_CHANGE:I = 0xc4
+
 .field public static final STATE_ID_BEAUTY:I = 0x95
+
+.field public static final STATE_ID_BEAUTY_FILTER_CHANGE:I = 0xc6
 
 .field public static final STATE_ID_CAMERA:I = 0x1
 
 .field public static final STATE_ID_CAMERA_SETTING:I = 0x4d
 
 .field public static final STATE_ID_CAPTURE_MODE:I = 0xb
+
+.field public static final STATE_ID_CHANGE_COMMON_HDR_SETTING:I = 0xd5
 
 .field public static final STATE_ID_CHANGE_COMMON_TIMER:I = 0x47
 
@@ -54,6 +60,24 @@
 
 .field public static final STATE_ID_COLORTUNE_RESET_STATE:I = 0x8d
 
+.field public static final STATE_ID_COMMON_FILTER_MODE:I = 0xc3
+
+.field public static final STATE_ID_COMMON_HDR_AUTO:I = 0xd8
+
+.field public static final STATE_ID_COMMON_HDR_OFF:I = 0xd6
+
+.field public static final STATE_ID_COMMON_HDR_ON:I = 0xd7
+
+.field public static final STATE_ID_COMMON_MODE:I = 0xbb
+
+.field public static final STATE_ID_COMMON_PICTURESIZE:I = 0xb9
+
+.field public static final STATE_ID_COMMON_PICTURESIZE_SETTING:I = 0xb8
+
+.field public static final STATE_ID_COMMON_PICTURE_MODE:I = 0xb6
+
+.field public static final STATE_ID_COMMON_PICTURE_SETTING:I = 0xb7
+
 .field public static final STATE_ID_COMMON_TAKE_3SHOTS_OFF:I = 0x4c
 
 .field public static final STATE_ID_COMMON_TAKE_3SHOTS_ON:I = 0x4b
@@ -62,13 +86,27 @@
 
 .field public static final STATE_ID_COMMON_TIMER_OFF:I = 0x4a
 
+.field public static final STATE_ID_COMMON_VIDEOSIZE:I = 0xdc
+
+.field public static final STATE_ID_COMMON_VIDEOSIZE_SETTING:I = 0xdb
+
+.field public static final STATE_ID_COMMON_VIDEO_MODE:I = 0xd9
+
+.field public static final STATE_ID_COMMON_VIDEO_SETTING:I = 0xda
+
 .field public static final STATE_ID_CONTACTUS:I = 0x73
 
 .field public static final STATE_ID_CROSS_SHARE:I = 0x4e
 
 .field public static final STATE_ID_DUAL_CAMERA_MODE:I = 0x21
 
+.field public static final STATE_ID_EDIT_BASIC_FILTER:I = 0xc5
+
+.field public static final STATE_ID_EDIT_BEAUTY_FILTER:I = 0xc7
+
 .field public static final STATE_ID_EDIT_MODE_SCREEN:I = 0xb3
+
+.field public static final STATE_ID_EDIT_STICKER:I = 0xc9
 
 .field public static final STATE_ID_EV:I = 0x89
 
@@ -122,6 +160,10 @@
 
 .field public static final STATE_ID_FRONT_VIDEO_SETTING:I = 0x2a
 
+.field public static final STATE_ID_FULL_VIEW_OFF:I = 0xc2
+
+.field public static final STATE_ID_FULL_VIEW_ON:I = 0xc1
+
 .field public static final STATE_ID_GALLERY:I = 0x38
 
 .field public static final STATE_ID_GALLERY_MODE:I = 0x7d
@@ -152,7 +194,25 @@
 
 .field public static final STATE_ID_ISO_CONTROLBAR:I = 0x84
 
+.field public static final STATE_ID_LANDING_AUTO_MODE:I = 0xe4
+
 .field public static final STATE_ID_LARGE_EYES:I = 0x9a
+
+.field public static final STATE_ID_LIVE_FOCUS_BLUR_LEVEL:I = 0xd2
+
+.field public static final STATE_ID_LIVE_FOCUS_BLUR_MAXIMUM:I = 0xd3
+
+.field public static final STATE_ID_LIVE_FOCUS_BLUR_MINIMUM:I = 0xd4
+
+.field public static final STATE_ID_LIVE_FOCUS_DUAL_CAPTURE_OFF:I = 0xd1
+
+.field public static final STATE_ID_LIVE_FOCUS_DUAL_CAPTURE_ON:I = 0xd0
+
+.field public static final STATE_ID_LIVE_FOCUS_MODE:I = 0xcd
+
+.field public static final STATE_ID_LIVE_FOCUS_MODE_OFF:I = 0xcf
+
+.field public static final STATE_ID_LIVE_FOCUS_MODE_ON:I = 0xce
 
 .field public static final STATE_ID_LOCATION_TAGS_MODE:I = 0xa6
 
@@ -162,7 +222,19 @@
 
 .field public static final STATE_ID_LOCATION_TAGS_SETTING:I = 0x7b
 
+.field public static final STATE_ID_MAXIMUM_PICTURESIZE:I = 0xde
+
+.field public static final STATE_ID_MAXIMUM_VIDEOSIZE:I = 0xe0
+
+.field public static final STATE_ID_MAXIMUM_ZOOM:I = 0xbe
+
 .field public static final STATE_ID_METERING:I = 0x82
+
+.field public static final STATE_ID_MINIMUM_PICTURESIZE:I = 0xdf
+
+.field public static final STATE_ID_MINIMUM_VIDEOSIZE:I = 0xe1
+
+.field public static final STATE_ID_MINIMUM_ZOOM:I = 0xbf
 
 .field public static final STATE_ID_MODE_DOWNLOAD:I = 0x50
 
@@ -212,6 +284,8 @@
 
 .field public static final STATE_ID_RADIAL_BLUR_ON:I = 0x93
 
+.field public static final STATE_ID_REAR_AUTO_MODE:I = 0xcc
+
 .field public static final STATE_ID_REAR_PICTURESIZE:I = 0x55
 
 .field public static final STATE_ID_REAR_PICTURESIZE_SETTING:I = 0x30
@@ -228,11 +302,19 @@
 
 .field public static final STATE_ID_REAR_VIDEO_SETTING:I = 0x31
 
+.field public static final STATE_ID_RECENT_FILTER:I = 0xe2
+
+.field public static final STATE_ID_RECENT_STICKER:I = 0xe3
+
 .field public static final STATE_ID_RECORDING:I = 0x36
 
 .field public static final STATE_ID_RECORD_MODE:I = 0x4
 
 .field public static final STATE_ID_REMOVE_GUIDE:I = 0xb4
+
+.field public static final STATE_ID_RESOLUTION_CHANGE_MODE:I = 0xc0
+
+.field public static final STATE_ID_RETURN_TO_CAMERA:I = 0xb5
 
 .field public static final STATE_ID_REVIEW_PICTURES_OFF:I = 0x6c
 
@@ -284,6 +366,10 @@
 
 .field public static final STATE_ID_SHARE_MODE:I = 0x18
 
+.field public static final STATE_ID_SHOOTING_SELECT:I = 0xba
+
+.field public static final STATE_ID_SHORTCUT_ON_HOME_SCREEN_MODE:I = 0xcb
+
 .field public static final STATE_ID_SHUTTER_SOUND_OFF:I = 0xa4
 
 .field public static final STATE_ID_SHUTTER_SOUND_ON:I = 0xa3
@@ -307,6 +393,12 @@
 .field public static final STATE_ID_STABILIZATION_SETTING:I = 0x2c
 
 .field public static final STATE_ID_STAMP_FILTER:I = 0x4f
+
+.field public static final STATE_ID_STICKER_CHANGE:I = 0xc8
+
+.field public static final STATE_ID_STICKER_DOWNLOAD_PAGE:I = 0xca
+
+.field public static final STATE_ID_STICKER_FILTER:I = 0xdd
 
 .field public static final STATE_ID_STORAGE_LOCATION_INTERNAL_STORAGE:I = 0xa1
 
@@ -376,7 +468,13 @@
 
 .field public static final STATE_ID_WIDE_SELFIE_MODE:I = 0x20
 
+.field public static final STATE_ID_ZOOM_LEVEL:I = 0xbd
+
+.field public static final STATE_ID_ZOOM_MODE:I = 0xbc
+
 .field public static final STATE_TYPE_ACTION_CAPTURE:I = 0x8
+
+.field public static final STATE_TYPE_CHANGE_CAMERA_FACING:I = 0xa
 
 .field public static final STATE_TYPE_CHANGE_SETTING_BY_MULTI_VALUE:I = 0x5
 
@@ -384,9 +482,13 @@
 
 .field public static final STATE_TYPE_CHANGE_SHOOTING_MODE:I = 0x1
 
+.field public static final STATE_TYPE_INSTALL_SHORTCUT:I = 0xb
+
 .field public static final STATE_TYPE_LAUNCH_SETTING:I = 0x2
 
 .field public static final STATE_TYPE_LAUNCH_TO_OTHER_APP:I = 0x7
+
+.field public static final STATE_TYPE_RETURN_CAMERA:I = 0x9
 
 .field public static final STATE_TYPE_SHOW_MENU:I = 0x6
 
@@ -414,11 +516,11 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    const/16 v8, 0x23
+    const/16 v8, 0xc
 
-    const/16 v7, 0x47
+    const/4 v7, 0x6
 
-    const/16 v6, 0x61
+    const/4 v6, 0x1
 
     const/16 v5, 0x35
 
@@ -430,11 +532,9 @@
 
     sput-object v0, Lcom/sec/android/app/camera/executor/RulePathState;->mStateInfoDepot:Landroid/util/SparseArray;
 
-    const/4 v0, 0x1
+    const-string v0, "Camera"
 
-    const-string v1, "Camera"
-
-    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+    invoke-static {v6, v0, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
     const/4 v0, 0x3
 
@@ -460,11 +560,9 @@
 
     invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
-    const/4 v0, 0x6
+    const-string v0, "HDRMode"
 
-    const-string v1, "HDRMode"
-
-    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+    invoke-static {v7, v0, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
     const/4 v0, 0x7
 
@@ -640,9 +738,11 @@
 
     invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
-    const-string v0, "AsPreviewSetting"
+    const/16 v0, 0x23
 
-    invoke-static {v8, v0, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+    const-string v1, "AsPreviewSetting"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
     const/16 v0, 0x24
 
@@ -810,25 +910,19 @@
 
     const-string v1, "HDROff"
 
-    const/4 v2, 0x1
-
-    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+    invoke-static {v0, v1, v6}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
     const/16 v0, 0x3d
 
     const-string v1, "HDROn"
 
-    const/4 v2, 0x1
-
-    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+    invoke-static {v0, v1, v6}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
     const/16 v0, 0x3e
 
     const-string v1, "HDRAuto"
 
-    const/4 v2, 0x1
-
-    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+    invoke-static {v0, v1, v6}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
     const/16 v0, 0x3f
 
@@ -940,11 +1034,9 @@
 
     const-string v1, "RearPictureSize"
 
-    const/4 v2, 0x6
+    const/16 v2, 0x30
 
-    const/16 v3, 0x30
-
-    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    invoke-static {v0, v1, v7, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x56
 
@@ -970,11 +1062,9 @@
 
     const-string v1, "RearVideoSize"
 
-    const/16 v2, 0xc
+    const/16 v2, 0x32
 
-    const/16 v3, 0x32
-
-    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    invoke-static {v0, v1, v8, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x59
 
@@ -1020,21 +1110,17 @@
 
     const-string v1, "FrontPictureSize"
 
-    const/4 v2, 0x6
+    const/16 v2, 0x29
 
-    const/16 v3, 0x29
-
-    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    invoke-static {v0, v1, v7, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x5e
 
     const-string v1, "FrontVideoSize"
 
-    const/16 v2, 0xc
+    const/16 v2, 0x2b
 
-    const/16 v3, 0x2b
-
-    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    invoke-static {v0, v1, v8, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x5f
 
@@ -1042,7 +1128,9 @@
 
     const/16 v2, 0xe
 
-    invoke-static {v0, v1, v2, v8}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v3, 0x23
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x60
 
@@ -1050,11 +1138,15 @@
 
     const/16 v2, 0xe
 
-    invoke-static {v0, v1, v2, v8}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v3, 0x23
 
-    const-string v0, "Waytotakepictures"
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
-    invoke-static {v6, v0, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+    const/16 v0, 0x61
+
+    const-string v1, "Waytotakepictures"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
     const/16 v0, 0x62
 
@@ -1062,7 +1154,9 @@
 
     const/16 v2, 0x1d
 
-    invoke-static {v0, v1, v2, v6}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v3, 0x61
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x63
 
@@ -1070,7 +1164,9 @@
 
     const/16 v2, 0x1d
 
-    invoke-static {v0, v1, v2, v6}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v3, 0x61
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x64
 
@@ -1078,7 +1174,9 @@
 
     const/16 v2, 0x13
 
-    invoke-static {v0, v1, v2, v6}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v3, 0x61
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x65
 
@@ -1086,7 +1184,9 @@
 
     const/16 v2, 0x13
 
-    invoke-static {v0, v1, v2, v6}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v3, 0x61
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x66
 
@@ -1094,7 +1194,9 @@
 
     const/16 v2, 0x1e
 
-    invoke-static {v0, v1, v2, v6}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v3, 0x61
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x67
 
@@ -1102,7 +1204,9 @@
 
     const/16 v2, 0x1e
 
-    invoke-static {v0, v1, v2, v6}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v3, 0x61
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x68
 
@@ -1456,17 +1560,21 @@
 
     const-string v1, "AssistantShutterOn"
 
-    const/16 v2, 0x34
+    const/16 v2, 0x23
 
-    invoke-static {v0, v1, v8, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v3, 0x34
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0xa0
 
     const-string v1, "AssistantShutterOff"
 
-    const/16 v2, 0x34
+    const/16 v2, 0x23
 
-    invoke-static {v0, v1, v8, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v3, 0x34
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0xa1
 
@@ -1566,11 +1674,9 @@
 
     invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
-    const/16 v0, 0xc
+    const-string v0, "SwitchCameraMode"
 
-    const-string v1, "SwitchCameraMode"
-
-    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+    invoke-static {v8, v0, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
     const/16 v0, 0x74
 
@@ -1600,39 +1706,55 @@
 
     invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
-    const-string v0, "ChangeCommonTimer"
+    const/16 v0, 0x47
 
-    invoke-static {v7, v0, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+    const-string v1, "ChangeCommonTimer"
+
+    const/4 v2, 0x7
+
+    const/16 v3, 0x47
+
+    invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x48
 
     const-string v1, "CommonTimer"
 
-    invoke-static {v0, v1, v4, v7}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v2, 0x47
+
+    invoke-static {v0, v1, v4, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x49
 
     const-string v1, "TakeCommonTimer"
 
-    invoke-static {v0, v1, v4, v7}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v2, 0x47
+
+    invoke-static {v0, v1, v4, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x4a
 
     const-string v1, "CommonTimerOff"
 
-    invoke-static {v0, v1, v4, v7}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v2, 0x47
+
+    invoke-static {v0, v1, v4, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x4b
 
     const-string v1, "CommonTake3shotsOn"
 
-    invoke-static {v0, v1, v4, v7}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v2, 0x47
+
+    invoke-static {v0, v1, v4, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x4c
 
     const-string v1, "CommonTake3shotsOff"
 
-    invoke-static {v0, v1, v4, v7}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+    const/16 v2, 0x47
+
+    invoke-static {v0, v1, v4, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
 
     const/16 v0, 0x4d
 
@@ -1661,6 +1783,320 @@
     const/16 v0, 0xb4
 
     const-string v1, "RemoveGuide"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xb5
+
+    const-string v1, "ReturnToCamera"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xb6
+
+    const-string v1, "CommonPictureMode"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xb7
+
+    const-string v1, "CommonPictureSetting"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xb8
+
+    const-string v1, "CommonPictureSizeSetting"
+
+    const/16 v2, 0xb8
+
+    invoke-static {v0, v1, v7, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xb9
+
+    const-string v1, "CommonPictureSize"
+
+    const/16 v2, 0xb8
+
+    invoke-static {v0, v1, v7, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xba
+
+    const-string v1, "ShootingSelect"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xd5
+
+    const-string v1, "ChangeCommonHDRSetting"
+
+    const/16 v2, 0xd5
+
+    invoke-static {v0, v1, v4, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xd6
+
+    const-string v1, "CommonHDROff"
+
+    invoke-static {v0, v1, v6}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xd7
+
+    const-string v1, "CommonHDROn"
+
+    invoke-static {v0, v1, v6}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xd8
+
+    const-string v1, "CommonHDRAuto"
+
+    invoke-static {v0, v1, v6}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xbb
+
+    const-string v1, "CommonMode"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xbc
+
+    const-string v1, "ZoomMode"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xbd
+
+    const-string v1, "ZoomLevel"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xbe
+
+    const-string v1, "MaximumZoom"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xbf
+
+    const-string v1, "MinimumZoom"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xc0
+
+    const-string v1, "ResolutionChangeMode"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xc1
+
+    const-string v1, "FullViewOn"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xc2
+
+    const-string v1, "FullViewOff"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xc3
+
+    const-string v1, "CommonFilterMode"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xc4
+
+    const-string v1, "BasicFilterChange"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xc5
+
+    const-string v1, "EditBasicFilter"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xc6
+
+    const-string v1, "BeautyFilterChange"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xc7
+
+    const-string v1, "EditBeautyFilter"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xc8
+
+    const-string v1, "StickerChange"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xc9
+
+    const-string v1, "EditSticker"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xca
+
+    const-string v1, "StickerDownloadpage"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xcb
+
+    const-string v1, "ShortcutonHomescreenMode"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xcc
+
+    const-string v1, "RearAutoMode"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xcd
+
+    const-string v1, "LiveFocusMode"
+
+    const/16 v2, 0xce
+
+    invoke-static {v0, v1, v4, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xce
+
+    const-string v1, "LiveFocusModeOn"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xcf
+
+    const-string v1, "LiveFocusModeOff"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xd0
+
+    const-string v1, "LiveFocusDualCaptureOn"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xd1
+
+    const-string v1, "LiveFocusDualCaptureOff"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xd2
+
+    const-string v1, "LiveFocusBlurLevel"
+
+    const/16 v2, 0xcd
+
+    invoke-static {v0, v1, v4, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xd4
+
+    const-string v1, "LiveFocusBlurMinimum"
+
+    const/16 v2, 0xcd
+
+    invoke-static {v0, v1, v4, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xd3
+
+    const-string v1, "LiveFocusBlurMaximum"
+
+    const/16 v2, 0xcd
+
+    invoke-static {v0, v1, v4, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xd9
+
+    const-string v1, "CommonVideoMode"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xda
+
+    const-string v1, "CommonVideoSetting"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xdb
+
+    const-string v1, "CommonVideoSizeSetting"
+
+    const/16 v2, 0xdb
+
+    invoke-static {v0, v1, v8, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xdc
+
+    const-string v1, "CommonVideoSize"
+
+    const/16 v2, 0xdb
+
+    invoke-static {v0, v1, v8, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xdd
+
+    const-string v1, "StickerFilter"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xde
+
+    const-string v1, "MaximumPictureSize"
+
+    const/16 v2, 0xb8
+
+    invoke-static {v0, v1, v7, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xdf
+
+    const-string v1, "MinimumPictureSize"
+
+    const/16 v2, 0xb8
+
+    invoke-static {v0, v1, v7, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xe0
+
+    const-string v1, "MaximumVideoSize"
+
+    const/16 v2, 0xdb
+
+    invoke-static {v0, v1, v8, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xe1
+
+    const-string v1, "MinimumVideoSize"
+
+    const/16 v2, 0xdb
+
+    invoke-static {v0, v1, v8, v2}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;II)V
+
+    const/16 v0, 0xe2
+
+    const-string v1, "RecentFilter"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xe3
+
+    const-string v1, "RecentSticker"
+
+    invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
+
+    const/16 v0, 0xe4
+
+    const-string v1, "LandingAutoMode"
 
     invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/executor/RulePathState;->add(ILjava/lang/String;I)V
 
@@ -1730,231 +2166,298 @@
 
     packed-switch p0, :pswitch_data_0
 
+    :pswitch_0
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    :pswitch_0
-    const/4 v0, 0x1
-
-    goto :goto_0
-
     :pswitch_1
-    const/4 v0, 0x2
+    const/16 v0, 0xb
 
     goto :goto_0
 
     :pswitch_2
-    const/4 v0, 0x6
+    const/16 v0, 0xa
 
     goto :goto_0
 
     :pswitch_3
-    const/4 v0, 0x5
+    const/4 v0, 0x1
 
     goto :goto_0
 
     :pswitch_4
-    const/4 v0, 0x7
+    const/4 v0, 0x2
 
     goto :goto_0
 
     :pswitch_5
-    const/16 v0, 0x8
+    const/4 v0, 0x6
 
     goto :goto_0
 
     :pswitch_6
-    const/4 v0, 0x3
+    const/4 v0, 0x5
 
     goto :goto_0
 
     :pswitch_7
+    const/4 v0, 0x7
+
+    goto :goto_0
+
+    :pswitch_8
+    const/16 v0, 0x8
+
+    goto :goto_0
+
+    :pswitch_9
+    const/4 v0, 0x3
+
+    goto :goto_0
+
+    :pswitch_a
     const/4 v0, 0x4
 
     goto :goto_0
 
+    :pswitch_b
+    const/16 v0, 0x9
+
+    goto :goto_0
+
+    nop
+
     :pswitch_data_0
     .packed-switch 0x2
+        :pswitch_8
+        :pswitch_8
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_a
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_5
+        :pswitch_4
+        :pswitch_5
+        :pswitch_4
+        :pswitch_6
+        :pswitch_4
+        :pswitch_4
+        :pswitch_5
+        :pswitch_4
+        :pswitch_5
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_8
+        :pswitch_2
+        :pswitch_7
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_5
+        :pswitch_6
+        :pswitch_6
         :pswitch_5
         :pswitch_5
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
+        :pswitch_6
+        :pswitch_6
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_5
         :pswitch_7
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_2
-        :pswitch_1
-        :pswitch_2
-        :pswitch_1
+        :pswitch_5
+        :pswitch_a
+        :pswitch_7
+        :pswitch_a
+        :pswitch_7
+        :pswitch_5
+        :pswitch_6
+        :pswitch_9
+        :pswitch_9
+        :pswitch_6
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_6
+        :pswitch_6
+        :pswitch_9
+        :pswitch_9
+        :pswitch_5
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_6
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_6
+        :pswitch_6
+        :pswitch_7
+        :pswitch_9
+        :pswitch_a
+        :pswitch_a
+        :pswitch_a
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_4
+        :pswitch_4
         :pswitch_3
-        :pswitch_1
-        :pswitch_1
-        :pswitch_2
-        :pswitch_1
-        :pswitch_2
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
+        :pswitch_a
+        :pswitch_9
+        :pswitch_9
+        :pswitch_6
+        :pswitch_6
+        :pswitch_6
+        :pswitch_a
+        :pswitch_6
+        :pswitch_a
+        :pswitch_6
+        :pswitch_a
+        :pswitch_6
+        :pswitch_6
+        :pswitch_5
+        :pswitch_9
+        :pswitch_5
+        :pswitch_a
+        :pswitch_6
+        :pswitch_a
+        :pswitch_6
+        :pswitch_5
+        :pswitch_9
+        :pswitch_9
+        :pswitch_5
+        :pswitch_6
+        :pswitch_6
+        :pswitch_6
+        :pswitch_6
+        :pswitch_6
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_7
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_5
+        :pswitch_6
+        :pswitch_9
+        :pswitch_9
+        :pswitch_3
+        :pswitch_5
+        :pswitch_6
+        :pswitch_5
+        :pswitch_3
+        :pswitch_9
         :pswitch_5
         :pswitch_0
-        :pswitch_4
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_2
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_2
-        :pswitch_3
-        :pswitch_3
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_2
-        :pswitch_4
-        :pswitch_3
-        :pswitch_7
-        :pswitch_4
-        :pswitch_7
-        :pswitch_4
-        :pswitch_2
-        :pswitch_3
-        :pswitch_6
-        :pswitch_6
-        :pswitch_3
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_3
-        :pswitch_3
-        :pswitch_6
-        :pswitch_6
-        :pswitch_2
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_3
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_3
+        :pswitch_b
         :pswitch_3
         :pswitch_4
+        :pswitch_5
         :pswitch_6
+        :pswitch_8
+        :pswitch_3
+        :pswitch_3
+        :pswitch_6
+        :pswitch_9
+        :pswitch_9
+        :pswitch_3
+        :pswitch_9
+        :pswitch_9
+        :pswitch_3
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
+        :pswitch_a
+        :pswitch_5
         :pswitch_7
-        :pswitch_7
-        :pswitch_7
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
         :pswitch_1
-        :pswitch_1
-        :pswitch_0
-        :pswitch_7
-        :pswitch_6
-        :pswitch_6
         :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_7
-        :pswitch_3
-        :pswitch_7
-        :pswitch_3
-        :pswitch_7
-        :pswitch_3
-        :pswitch_3
-        :pswitch_2
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
         :pswitch_6
-        :pswitch_2
-        :pswitch_7
+        :pswitch_9
+        :pswitch_9
+        :pswitch_5
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
         :pswitch_3
-        :pswitch_7
-        :pswitch_3
-        :pswitch_2
-        :pswitch_6
-        :pswitch_6
-        :pswitch_2
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
-        :pswitch_6
         :pswitch_4
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_2
-        :pswitch_3
+        :pswitch_5
         :pswitch_6
-        :pswitch_6
-        :pswitch_0
-        :pswitch_3
-        :pswitch_3
-        :pswitch_2
-        :pswitch_0
-        :pswitch_6
-        :pswitch_2
+        :pswitch_5
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_9
+        :pswitch_5
+        :pswitch_5
+        :pswitch_9
     .end packed-switch
 .end method
 
@@ -2154,13 +2657,13 @@
         }
     .end annotation
 
-    const/16 v7, 0x1c
+    const/16 v7, 0x22
 
-    const/16 v6, 0x14
+    const/16 v6, 0x13
 
-    const/16 v5, 0x13
+    const/16 v5, 0x12
 
-    const/16 v4, 0xe
+    const/16 v4, 0x17
 
     const-string v1, "RulePathState"
 
@@ -2235,7 +2738,7 @@
     if-eqz v1, :cond_0
 
     :cond_1
-    const/16 v1, 0x16
+    const/16 v1, 0x1b
 
     new-array v1, v1, [I
 
@@ -2272,9 +2775,7 @@
     if-eqz v1, :cond_0
 
     :cond_2
-    const/16 v1, 0xf
-
-    new-array v1, v1, [I
+    new-array v1, v6, [I
 
     fill-array-data v1, :array_3
 
@@ -2291,7 +2792,7 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v5, [I
+    new-array v1, v4, [I
 
     fill-array-data v1, :array_4
 
@@ -2306,7 +2807,7 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v5, [I
+    new-array v1, v4, [I
 
     fill-array-data v1, :array_5
 
@@ -2330,7 +2831,7 @@
     if-eqz v1, :cond_0
 
     :cond_4
-    new-array v1, v6, [I
+    new-array v1, v4, [I
 
     fill-array-data v1, :array_6
 
@@ -2347,7 +2848,9 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v5, [I
+    const/16 v1, 0x16
+
+    new-array v1, v1, [I
 
     fill-array-data v1, :array_7
 
@@ -2362,9 +2865,7 @@
 
     if-eqz v1, :cond_0
 
-    const/16 v1, 0x10
-
-    new-array v1, v1, [I
+    new-array v1, v6, [I
 
     fill-array-data v1, :array_8
 
@@ -2379,7 +2880,9 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v4, [I
+    const/16 v1, 0x11
+
+    new-array v1, v1, [I
 
     fill-array-data v1, :array_9
 
@@ -2394,7 +2897,9 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v6, [I
+    const/16 v1, 0x19
+
+    new-array v1, v1, [I
 
     fill-array-data v1, :array_a
 
@@ -2411,7 +2916,7 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v4, [I
+    new-array v1, v5, [I
 
     fill-array-data v1, :array_b
 
@@ -2426,7 +2931,7 @@
 
     if-eqz v1, :cond_0
 
-    new-array v1, v4, [I
+    new-array v1, v5, [I
 
     fill-array-data v1, :array_c
 
@@ -2441,7 +2946,7 @@
 
     if-eqz v1, :cond_0
 
-    const/16 v1, 0xd
+    const/16 v1, 0x10
 
     new-array v1, v1, [I
 
@@ -2475,7 +2980,7 @@
 
     if-eqz v1, :cond_0
 
-    const/16 v1, 0x11
+    const/16 v1, 0x14
 
     new-array v1, v1, [I
 
@@ -2494,7 +2999,7 @@
 
     if-eqz v1, :cond_0
 
-    const/4 v1, 0x4
+    const/4 v1, 0x5
 
     new-array v1, v1, [I
 
@@ -2511,7 +3016,7 @@
 
     if-eqz v1, :cond_0
 
-    const/4 v1, 0x5
+    const/4 v1, 0x6
 
     new-array v1, v1, [I
 
@@ -2524,7 +3029,7 @@
     goto/16 :goto_0
 
     :sswitch_e
-    const/4 v1, 0x2
+    const/4 v1, 0x3
 
     new-array v1, v1, [I
 
@@ -2592,9 +3097,15 @@
         0xa7
         0x7d
         0xad
-        0x1e
         0xa6
         0xb1
+        0xb6
+        0xd9
+        0xbb
+        0xbc
+        0xc0
+        0xc3
+        0xcc
     .end array-data
 
     :array_1
@@ -2621,6 +3132,11 @@
         0xa7
         0x7d
         0xa6
+        0xb6
+        0xd9
+        0xbb
+        0xbc
+        0xc0
     .end array-data
 
     :array_2
@@ -2653,6 +3169,12 @@
         0xa6
         0x17
         0xb1
+        0xb6
+        0xd9
+        0xbb
+        0xbc
+        0xc0
+        0xc3
     .end array-data
 
     :array_3
@@ -2660,6 +3182,7 @@
         0x1a
         0xb
         0x4
+        0x7
         0x9
         0xc
         0xa
@@ -2672,6 +3195,9 @@
         0xa7
         0x7d
         0xa6
+        0xb6
+        0xd9
+        0xbb
     .end array-data
 
     :array_4
@@ -2695,6 +3221,10 @@
         0xa7
         0x7d
         0xa6
+        0xb6
+        0xd9
+        0xbb
+        0xc0
     .end array-data
 
     :array_5
@@ -2718,6 +3248,10 @@
         0xa7
         0x7d
         0xa6
+        0xb6
+        0xd9
+        0xbb
+        0xc0
     .end array-data
 
     :array_6
@@ -2742,13 +3276,16 @@
         0xa7
         0x7d
         0xa6
+        0xb6
+        0xd9
+        0xbb
     .end array-data
 
     :array_7
     .array-data 4
         0xb
         0x4
-        0x5
+        0x7
         0x9
         0xc
         0xa
@@ -2765,13 +3302,16 @@
         0xa7
         0x7d
         0xa6
+        0xb6
+        0xd9
+        0xbb
     .end array-data
 
     :array_8
     .array-data 4
         0xb
         0x4
-        0x5
+        0x7
         0x9
         0xc
         0xa
@@ -2785,6 +3325,9 @@
         0xa7
         0x7d
         0xa6
+        0xb6
+        0xd9
+        0xbb
     .end array-data
 
     :array_9
@@ -2803,6 +3346,9 @@
         0xa7
         0x7d
         0xa6
+        0xb6
+        0xd9
+        0xbb
     .end array-data
 
     :array_a
@@ -2810,7 +3356,7 @@
         0x1d
         0xb
         0x4
-        0x5
+        0x7
         0x9
         0xc
         0xa
@@ -2827,6 +3373,11 @@
         0xa7
         0x7d
         0xa6
+        0xb6
+        0xd9
+        0xbb
+        0xbc
+        0xc0
     .end array-data
 
     :array_b
@@ -2834,6 +3385,7 @@
         0x4
         0x6
         0x9
+        0x7
         0xc
         0xa
         0xe
@@ -2845,6 +3397,9 @@
         0xa7
         0x7d
         0xa6
+        0xb6
+        0xd9
+        0xbb
     .end array-data
 
     :array_c
@@ -2852,6 +3407,7 @@
         0x4
         0x5
         0x6
+        0x7
         0x9
         0xc
         0xa
@@ -2863,6 +3419,9 @@
         0xa7
         0x7d
         0xa6
+        0xb6
+        0xd9
+        0xbb
     .end array-data
 
     :array_d
@@ -2880,6 +3439,9 @@
         0xa7
         0x7d
         0xa6
+        0xb6
+        0xd9
+        0xbb
     .end array-data
 
     :array_e
@@ -2901,6 +3463,9 @@
         0x16
         0x17
         0xa6
+        0xb6
+        0xd9
+        0xbb
     .end array-data
 
     :array_f
@@ -2909,6 +3474,7 @@
         0xc
         0x4
         0x12
+        0xbb
     .end array-data
 
     :array_10
@@ -2918,12 +3484,14 @@
         0xc
         0x4
         0xf
+        0xbb
     .end array-data
 
     :array_11
     .array-data 4
         0xa
         0xb
+        0xbb
     .end array-data
 .end method
 

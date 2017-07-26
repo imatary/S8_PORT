@@ -50,7 +50,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    invoke-static {v2}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
+    invoke-static {v2}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
 
     move-result v2
 
@@ -81,7 +81,7 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    invoke-static {v1, v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2100(Lcom/sec/android/app/camera/menu/ProLiteSlider;I)V
+    invoke-static {v1, v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2900(Lcom/sec/android/app/camera/menu/ProLiteSlider;I)V
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
@@ -146,7 +146,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2900(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLView;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2600(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLView;
 
     move-result-object v0
 
@@ -154,7 +154,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2900(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLView;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2600(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLView;
 
     move-result-object v0
 
@@ -179,7 +179,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2902(Lcom/sec/android/app/camera/menu/ProLiteSlider;Lcom/samsung/android/glview/GLView;)Lcom/samsung/android/glview/GLView;
+    invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2602(Lcom/sec/android/app/camera/menu/ProLiteSlider;Lcom/samsung/android/glview/GLView;)Lcom/samsung/android/glview/GLView;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorTouchListener;->handleIndicatorTouchEvent(Lcom/samsung/android/glview/GLView;)V
 
@@ -189,7 +189,7 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$3000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2700(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
 
     move-result v0
 

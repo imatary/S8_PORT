@@ -308,6 +308,7 @@
     <string name="camera_label">Камера</string>
     <string name="camera_modes">Камера режимдери</string>
     <string name="camera_security_enter">Коопсуздук саясаты Камераны колдонууну чектейт</string>
+    <string name="can_not_use_voice_control">Bixby Voice ойготуусу күйгүзүлгөн убакта, Үн көлөмүн көзөмөлдөөнү колдоно албайсыз.</string>
     <string name="cancel">Артка</string>
     <string name="cannot_start_camcorder_msg">Чалуу учурунда видео жаздыруу мүмкүн эмес</string>
     <string name="cannot_start_camera_msg">Чалуулар убагында Камераны колдонуу мүмкүн эмес.</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"Селфи
 тартуу"</string>
     <string name="temperature">Температура</string>
+    <string name="temperature_too_high_camera_off">%1$s колдонууга температура өтө эле жогору. %2$s колдонууга чейин телефондун муздоосун күтүңүз.</string>
     <string name="temperature_too_high_flash_off">Жаркыракты күйгүзө албады. Түзмөгүңүздүн ысыгы тарагандан кийин дагы аракет кылыңыз.</string>
     <string name="temperature_too_high_record">Видео жаздыруу мүмкүн эмес. Түзмөк суугандан кийин кайра кайталап көрүңүз.</string>
     <string name="temperature_too_high_recording_disable">Жаздыруу токтотулду. Түзмөгүңүздүн ысыгы тарагандан кийин жаздыра аласыз.</string>

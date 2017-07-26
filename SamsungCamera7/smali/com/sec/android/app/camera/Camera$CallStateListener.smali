@@ -114,7 +114,7 @@
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$4400(Lcom/sec/android/app/camera/Camera;)Z
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$4500(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v0
 
@@ -130,7 +130,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-static {v0, v4}, Lcom/sec/android/app/camera/Camera;->access$4402(Lcom/sec/android/app/camera/Camera;Z)Z
+    invoke-static {v0, v4}, Lcom/sec/android/app/camera/Camera;->access$4502(Lcom/sec/android/app/camera/Camera;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -155,7 +155,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$4300(Lcom/sec/android/app/camera/Camera;)Z
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$4400(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v0
 
@@ -190,7 +190,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-static {v0, v3}, Lcom/sec/android/app/camera/Camera;->access$4402(Lcom/sec/android/app/camera/Camera;Z)Z
+    invoke-static {v0, v3}, Lcom/sec/android/app/camera/Camera;->access$4502(Lcom/sec/android/app/camera/Camera;Z)Z
 
     :cond_3
     :goto_2
@@ -255,7 +255,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$4500(Lcom/sec/android/app/camera/Camera;)Z
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$4600(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v0
 
@@ -263,11 +263,11 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-static {v0, v3}, Lcom/sec/android/app/camera/Camera;->access$4502(Lcom/sec/android/app/camera/Camera;Z)Z
+    invoke-static {v0, v3}, Lcom/sec/android/app/camera/Camera;->access$4602(Lcom/sec/android/app/camera/Camera;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$4600(Lcom/sec/android/app/camera/Camera;)V
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$4700(Lcom/sec/android/app/camera/Camera;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -287,7 +287,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-static {v0, v3}, Lcom/sec/android/app/camera/Camera;->access$4700(Lcom/sec/android/app/camera/Camera;Z)V
+    invoke-static {v0, v3}, Lcom/sec/android/app/camera/Camera;->access$4800(Lcom/sec/android/app/camera/Camera;Z)V
 
     :cond_6
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -333,12 +333,12 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-static {v0, v4}, Lcom/sec/android/app/camera/Camera;->access$4700(Lcom/sec/android/app/camera/Camera;Z)V
+    invoke-static {v0, v4}, Lcom/sec/android/app/camera/Camera;->access$4800(Lcom/sec/android/app/camera/Camera;Z)V
 
     :cond_8
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-static {v0, v4}, Lcom/sec/android/app/camera/Camera;->access$4502(Lcom/sec/android/app/camera/Camera;Z)Z
+    invoke-static {v0, v4}, Lcom/sec/android/app/camera/Camera;->access$4602(Lcom/sec/android/app/camera/Camera;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 

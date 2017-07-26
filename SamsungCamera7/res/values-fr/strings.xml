@@ -117,7 +117,7 @@ vidéo"</string>
     <string name="R_3344x3344">1:1 (11 mégapixels)</string>
     <string name="R_3456x3456">1:1 (12 mégapixels)</string>
     <string name="R_3984x2988">4:3 (12 mégapixels)</string>
-    <string name="R_4032x1960">18,5:9 (7,9 MP)</string>
+    <string name="R_4032x1960">18,5:9 (7,9 mégapixels)</string>
     <string name="R_4032x2268">16:9 (9,1 mégapixels)</string>
     <string name="R_4032x3024">4:3 (12 mégapixels)</string>
     <string name="R_4128x2322">16:9 (9,6 mégapixels)</string>
@@ -308,6 +308,7 @@ de forme"</string>
     <string name="camera_label">Caméra</string>
     <string name="camera_modes">"Modes de l'appareil photo"</string>
     <string name="camera_security_enter">"La politique de sécurité limite l'utilisation de l'appareil photo."</string>
+    <string name="can_not_use_voice_control">"Impossible d'utiliser le contrôle vocal lorsque le réveil vocal Bixby est activé."</string>
     <string name="cancel">Annuler</string>
     <string name="cannot_start_camcorder_msg">"Impossible d'enregistrer des vidéos pendant un appel."</string>
     <string name="cannot_start_camera_msg">"Impossible d'utiliser l'appareil photo pendant les appels."</string>
@@ -603,6 +604,7 @@ En acceptant l'envoi de ces informations, vous autoriserez la fonction Photo ave
 (Auto)"</string>
     <string name="task_edge_title_selfie">Prendre un selfie</string>
     <string name="temperature">Température</string>
+    <string name="temperature_too_high_camera_off">"La température est trop élevée pour utiliser %1$s. Attendez que le téléphone refroidisse avant d'utiliser %2$s."</string>
     <string name="temperature_too_high_flash_off">"Impossible d'activer le flash. Réessayez lorsque votre appareil aura refroidi."</string>
     <string name="temperature_too_high_record">"Impossible d'enregistrer la vidéo. Réessayez lorsque votre appareil aura refroidi."</string>
     <string name="temperature_too_high_recording_disable">"L'enregistrement a été interrompu. Vous pourrez enregistrer lorsque votre appareil aura refroidi."</string>

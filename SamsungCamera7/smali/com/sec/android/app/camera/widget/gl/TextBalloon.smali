@@ -663,7 +663,7 @@
 
     iget-object v2, v0, Lcom/sec/android/app/camera/widget/gl/TextBalloon;->mCloseButton:Lcom/samsung/android/glview/GLButton;
 
-    const v3, 0x7f090156
+    const v3, 0x7f090157
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

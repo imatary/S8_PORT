@@ -316,6 +316,7 @@
     <string name="camera_label">Камер</string>
     <string name="camera_modes">Камерын горимууд</string>
     <string name="camera_security_enter">Хамгаалалтын бодлого Камерын ашиглалтыг хязгаарлана</string>
+    <string name="can_not_use_voice_control">Bixby Voice сэрээх асаалттай үед Дуут удирдлага ашиглах боломжгүй.</string>
     <string name="cancel">Цуцлах</string>
     <string name="cannot_start_camcorder_msg">Дуудлагын явцад видео бичих боломжгүй</string>
     <string name="cannot_start_camera_msg">Дуудлагын явцад Камер ашиглах боломжгүй.</string>
@@ -612,6 +613,7 @@
     <string name="task_edge_title_selfie">"Өөрөг
 авах"</string>
     <string name="temperature">Температур</string>
+    <string name="temperature_too_high_camera_off">%1$s-г ашиглахад температур хэт өндөр байна. %2$s-г ашиглахаасаа өмнө утсыг хөртөл хүлээнэ үү.</string>
     <string name="temperature_too_high_flash_off">Гялсгуурыг асаах боломжгүй. Таны төхөөрөмж хөрсөн үед дахин оролд</string>
     <string name="temperature_too_high_record">Видео бичлэг хийх боломжгүй. Төхөөрөмж хөрсөн үед дахин оролд.</string>
     <string name="temperature_too_high_recording_disable">Бичлэг хийхийг зогсоосон. Та төхөөрөмжөө хөрсөн үед бичлэг хийх боломжтой</string>

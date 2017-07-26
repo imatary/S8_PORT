@@ -308,6 +308,7 @@
     <string name="camera_label">কেমেৰা</string>
     <string name="camera_modes">"কেমেৰা ম'ডসমূহ"</string>
     <string name="camera_security_enter">কেমেৰা ব্যৱহাৰৰ নিৰাপত্তা আঁচনি প্ৰতিবন্ধিত৷</string>
+    <string name="can_not_use_voice_control">Bixby Voice ৱেক-আপ অন হৈ থাকোতে মাত নিয়ন্ত্ৰণ ব্যৱহাৰ কৰিব নোৱাৰে।</string>
     <string name="cancel">বাতিল</string>
     <string name="cannot_start_camcorder_msg">"কলৰ সময়ত ভিডিঅ' ৰেকৰ্ড কৰিবলৈ অক্ষম৷"</string>
     <string name="cannot_start_camera_msg">কলৰ সময়ত কেমেৰা ব্যৱহাৰ কৰিবলৈ অক্ষম৷</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"চেলফি
 লওক"</string>
     <string name="temperature">তাপমাত্ৰা</string>
+    <string name="temperature_too_high_camera_off">%1$s ব্যৱহাৰ কৰিবলৈ তাপমাত্ৰা বহুত বেছি। %2$s ব্যৱহাৰ কৰাৰ পূৰ্বে ঠাণ্ডা কৰিবলৈ ফোনৰ বাবে অপেক্ষা কৰক।</string>
     <string name="temperature_too_high_flash_off">ফ্লাশ্ব অন কৰিবলৈ অক্ষম। আপোনাৰ ডিভাইচটো ঠাণ্ডা হোৱাৰ পিছত পুনৰ চেষ্টা কৰক।</string>
     <string name="temperature_too_high_record">"ভিডিঅ' ৰেকৰ্ড কৰিবলৈ অক্ষম৷ ডিভাইচ ঠাণ্ডা হোৱাৰ পিছত পুনৰ চেষ্টা কৰক৷"</string>
     <string name="temperature_too_high_recording_disable">ৰেকৰ্ডিং বন্ধ হৈছে। আপোনাৰ ডিভাইচটো ঠাণ্ডা হোৱাৰ পিছত আপুনি ৰেকৰ্ড কৰিব পাৰে।</string>

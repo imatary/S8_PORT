@@ -32,69 +32,28 @@
 
 # virtual methods
 .method public onChange(Z)V
-    .locals 3
+    .locals 2
 
-    const/4 v2, 0x0
-
-    iget-object v0, p0, Lcom/samsung/android/glview/GLContext$6;->this$0:Lcom/samsung/android/glview/GLContext;
-
-    invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->access$600(Lcom/samsung/android/glview/GLContext;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
+    invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
     const-string v0, "GLContext"
 
-    const-string v1, "GLContext is pausing, not updated"
+    const-string v1, "Enabled Accessibility Services ContentObserver onChange"
 
-    invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-static {}, Lcom/samsung/android/glview/GLContext;->isTalkBackEnabled()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/samsung/android/glview/GLContext$6;->this$0:Lcom/samsung/android/glview/GLContext;
+
+    sget-object v1, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLContext;->disableAccessibilityService(Landroid/content/Context;)V
 
     :cond_0
-    :goto_0
     return-void
-
-    :cond_1
-    sget-object v0, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    const-string v1, "access_control_enabled"
-
-    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    iget-object v0, p0, Lcom/samsung/android/glview/GLContext$6;->this$0:Lcom/samsung/android/glview/GLContext;
-
-    invoke-virtual {v0}, Lcom/samsung/android/glview/GLContext;->enableOrientationListener()V
-
-    goto :goto_0
-
-    :cond_2
-    sget-object v0, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    const-string v1, "access_control_enabled"
-
-    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/android/glview/GLContext$6;->this$0:Lcom/samsung/android/glview/GLContext;
-
-    invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->access$700(Lcom/samsung/android/glview/GLContext;)V
-
-    goto :goto_0
 .end method

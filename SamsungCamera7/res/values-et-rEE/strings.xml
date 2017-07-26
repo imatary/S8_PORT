@@ -310,6 +310,7 @@ korrektuur"</string>
     <string name="camera_label">Kaamera</string>
     <string name="camera_modes">Kaamerarežiimid</string>
     <string name="camera_security_enter">Turvalisuse poliis piirab kaamera kasutuse.</string>
+    <string name="can_not_use_voice_control">Hääljuhtimist ei saa kasutada, kui Bixby häälega aktiveerimine on sisse lülitatud.</string>
     <string name="cancel">Tühista</string>
     <string name="cannot_start_camcorder_msg">Kõne ajal ei saa videoid salvestada.</string>
     <string name="cannot_start_camera_msg">Kaamerat ei saa kõnede ajal kasutada.</string>
@@ -606,6 +607,7 @@ Kui nõustute sellega, antakse sildistamisega võttele see luba ja teilt ei küs
     <string name="task_edge_title_selfie">"Tee
 selfie"</string>
     <string name="temperature">Temperatuur</string>
+    <string name="temperature_too_high_camera_off">Temperatuur on liiga kõrge rakenduse %1$s kasutamiseks. Laske telefonil enne rakenduse %2$s kasutamist jahtuda.</string>
     <string name="temperature_too_high_flash_off">Välku ei saa sisse lülitada. Proovige uuesti, kui seade on jahtunud.</string>
     <string name="temperature_too_high_record">Videot ei saa salvestada. Proovige uuesti, kui seade on jahtunud.</string>
     <string name="temperature_too_high_recording_disable">Salvestamine on lõpetatud. Saate salvestada siis, kui seade on jahtunud.</string>

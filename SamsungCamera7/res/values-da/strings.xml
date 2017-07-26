@@ -314,6 +314,7 @@ korrektur"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Kameratilstande</string>
     <string name="camera_security_enter">Sikkerhedspolitik begrænser brug af kamera.</string>
+    <string name="can_not_use_voice_control">Kan ikke bruge Stemmekontrol, når Stemmevækning med Bixby Voice er aktiveret.</string>
     <string name="cancel">Annuller</string>
     <string name="cannot_start_camcorder_msg">Kunne ikke optage videoer under samtale.</string>
     <string name="cannot_start_camera_msg">Kan ikke bruge Kamera under opkald.</string>
@@ -610,6 +611,7 @@ Hvis du accepterer dette, vil Marker billede med tag få denne tilladelse, og du
     <string name="task_edge_title_selfie">"Tag en
 selfie"</string>
     <string name="temperature">Temperatur</string>
+    <string name="temperature_too_high_camera_off">Temperaturen er for høj til at bruge %1$s. Vent på, at telefonen køler af, før du bruger %2$s.</string>
     <string name="temperature_too_high_flash_off">Kan ikke tænde for kameralyset. Prøv igen, når din enhed er kølet af.</string>
     <string name="temperature_too_high_record">Kan ikke optage video. Prøv igen, når din enhed er kølet af.</string>
     <string name="temperature_too_high_recording_disable">Optagelse er stoppet. Du kan optage, når din enhed er kølet af.</string>

@@ -3293,7 +3293,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0901b6
+    const v2, 0x7f0901b7
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3499,7 +3499,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090210
+    const v2, 0x7f090211
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4253,7 +4253,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090135
+    const v2, 0x7f090136
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -4307,7 +4307,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0901b7
+    const v2, 0x7f0901b8
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -4344,7 +4344,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090211
+    const v2, 0x7f090212
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -4775,7 +4775,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f090161
+    const v1, 0x7f090162
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

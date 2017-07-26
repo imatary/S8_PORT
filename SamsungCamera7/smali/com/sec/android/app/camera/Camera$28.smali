@@ -226,6 +226,45 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
+    invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->getIntent()Landroid/content/Intent;
+
+    move-result-object v2
+
+    const-string v3, "from-bixby"
+
+    invoke-virtual {v2, v3}, Landroid/content/Intent;->removeExtra(Ljava/lang/String;)V
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$4200(Lcom/sec/android/app/camera/Camera;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$400(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/Engine;
+
+    move-result-object v2
+
+    const/16 v3, 0x12c
+
+    invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleWait(I)V
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$400(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/Engine;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleSendCompletedMessageToBixby()V
+
+    goto/16 :goto_0
+
+    :cond_5
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
+
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$4100(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/CameraExecutorManager;
 
     move-result-object v2
@@ -238,7 +277,9 @@
 
     move-result-object v2
 
-    const-string v3, "Camera"
+    invoke-static {v7}, Lcom/sec/android/app/camera/executor/RulePathState;->getName(I)Ljava/lang/String;
+
+    move-result-object v3
 
     invoke-virtual {v2, v7, v3}, Lcom/sec/android/app/camera/CameraExecutorManager;->sendResult(ZLjava/lang/String;)V
 
