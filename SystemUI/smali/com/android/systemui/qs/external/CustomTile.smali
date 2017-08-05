@@ -1492,7 +1492,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d0247
+    const v7, 0x7f0d0248
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1524,7 +1524,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d0471
+    const v8, 0x7f0d0472
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getFloat(I)F
 
@@ -1545,8 +1545,6 @@
     move-result-object v6
 
     invoke-virtual {v3, v6}, Lcom/android/systemui/statusbar/ScalingDrawableWrapper;->setCloneDrawable(Landroid/graphics/drawable/Drawable;)V
-
-    invoke-virtual {p0, v3, p1}, Lcom/android/systemui/qs/external/CustomTile;->setDefaultColor(Landroid/graphics/drawable/Drawable;Lcom/android/systemui/qs/QSTile$State;)V
 
     new-instance v6, Lcom/android/systemui/qs/QSTile$DrawableIcon;
 
@@ -1614,8 +1612,6 @@
     goto :goto_2
 
     :cond_6
-    invoke-virtual {p0, v0, p1}, Lcom/android/systemui/qs/external/CustomTile;->setDefaultColor(Landroid/graphics/drawable/Drawable;Lcom/android/systemui/qs/QSTile$State;)V
-
     new-instance v6, Lcom/android/systemui/qs/QSTile$DrawableIcon;
 
     invoke-direct {v6, v0}, Lcom/android/systemui/qs/QSTile$DrawableIcon;-><init>(Landroid/graphics/drawable/Drawable;)V
@@ -1727,192 +1723,6 @@
     invoke-direct {p0}, Lcom/android/systemui/qs/external/CustomTile;->setTileIcon()V
 
     return-void
-.end method
-
-.method public setDefaultColor(Landroid/graphics/drawable/Drawable;Lcom/android/systemui/qs/QSTile$State;)V
-    .locals 9
-
-    const v8, 0x7f0c0088
-
-    const/high16 v7, -0x1000000
-
-    const v5, 0x7f0b0100
-
-    const v6, 0x7f0b00ff
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    instance-of v3, p2, Lcom/android/systemui/qs/QSTile$BooleanState;
-
-    if-eqz v3, :cond_2
-
-    move-object v1, p2
-
-    check-cast v1, Lcom/android/systemui/qs/QSTile$BooleanState;
-
-    iget-boolean v3, v1, Lcom/android/systemui/qs/QSTile$BooleanState;->dim:Z
-
-    if-eqz v3, :cond_0
-
-    iget-object v3, p0, Lcom/android/systemui/qs/external/CustomTile;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3, v6}, Landroid/content/Context;->getColor(I)I
-
-    move-result v3
-
-    ushr-int/lit8 v3, v3, 0x18
-
-    int-to-float v3, v3
-
-    iget-object v4, p0, Lcom/android/systemui/qs/external/CustomTile;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    const v5, 0x7f0c0086
-
-    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getFloat(I)F
-
-    move-result v4
-
-    mul-float v0, v3, v4
-
-    iget-object v3, p0, Lcom/android/systemui/qs/external/CustomTile;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3, v6}, Landroid/content/Context;->getColor(I)I
-
-    move-result v2
-
-    :goto_0
-    if-eqz p1, :cond_3
-
-    invoke-virtual {p1, v2}, Landroid/graphics/drawable/Drawable;->setTint(I)V
-
-    float-to-int v3, v0
-
-    invoke-virtual {p1, v3}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
-
-    :goto_1
-    return-void
-
-    :cond_0
-    iget-boolean v3, v1, Lcom/android/systemui/qs/QSTile$BooleanState;->value:Z
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, p0, Lcom/android/systemui/qs/external/CustomTile;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3, v6}, Landroid/content/Context;->getColor(I)I
-
-    move-result v3
-
-    ushr-int/lit8 v3, v3, 0x18
-
-    int-to-float v3, v3
-
-    iget-object v4, p0, Lcom/android/systemui/qs/external/CustomTile;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    const v5, 0x7f0c0087
-
-    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getFloat(I)F
-
-    move-result v4
-
-    mul-float v0, v3, v4
-
-    iget-object v3, p0, Lcom/android/systemui/qs/external/CustomTile;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3, v6}, Landroid/content/Context;->getColor(I)I
-
-    move-result v2
-
-    goto :goto_0
-
-    :cond_1
-    iget-object v3, p0, Lcom/android/systemui/qs/external/CustomTile;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3, v5}, Landroid/content/Context;->getColor(I)I
-
-    move-result v3
-
-    ushr-int/lit8 v3, v3, 0x18
-
-    int-to-float v3, v3
-
-    iget-object v4, p0, Lcom/android/systemui/qs/external/CustomTile;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v8}, Landroid/content/res/Resources;->getFloat(I)F
-
-    move-result v4
-
-    mul-float v0, v3, v4
-
-    iget-object v3, p0, Lcom/android/systemui/qs/external/CustomTile;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3, v5}, Landroid/content/Context;->getColor(I)I
-
-    move-result v3
-
-    or-int v2, v3, v7
-
-    goto :goto_0
-
-    :cond_2
-    iget-object v3, p0, Lcom/android/systemui/qs/external/CustomTile;->TAG:Ljava/lang/String;
-
-    const-string/jumbo v4, "setDefaultColor : state is not BooleanState"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v3, p0, Lcom/android/systemui/qs/external/CustomTile;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3, v5}, Landroid/content/Context;->getColor(I)I
-
-    move-result v3
-
-    ushr-int/lit8 v3, v3, 0x18
-
-    int-to-float v3, v3
-
-    iget-object v4, p0, Lcom/android/systemui/qs/external/CustomTile;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v8}, Landroid/content/res/Resources;->getFloat(I)F
-
-    move-result v4
-
-    mul-float v0, v3, v4
-
-    iget-object v3, p0, Lcom/android/systemui/qs/external/CustomTile;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3, v5}, Landroid/content/Context;->getColor(I)I
-
-    move-result v3
-
-    or-int v2, v3, v7
-
-    goto :goto_0
-
-    :cond_3
-    iget-object v3, p0, Lcom/android/systemui/qs/external/CustomTile;->TAG:Ljava/lang/String;
-
-    const-string/jumbo v4, "setDefaultColor : drawable == null"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_1
 .end method
 
 .method public setListening(Z)V
