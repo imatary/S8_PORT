@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:paddingBottom="10.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/moreinfo_set_padding_right"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:gravity="center_horizontal" layout="@layout/moreinfo_item_icon" />
-    <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/moreinfo_details_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <include layout="@layout/moreinfo_item_title" />
-    </LinearLayout>
-</LinearLayout>

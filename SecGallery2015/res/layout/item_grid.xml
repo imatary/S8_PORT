@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_item_grid_margin_bottom"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <ImageView android:id="@id/grid_item_image" android:background="@drawable/search_thumbnail_border" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
-        <ImageView android:id="@id/grid_item_poi" android:visibility="gone" android:layout_width="@dimen/search_item_grid_poi_size" android:layout_height="@dimen/search_item_grid_poi_size" android:src="@drawable/gallery_ic_mapview_fouraquare" android:tint="@color/white_color" />
-    </FrameLayout>
-    <TextView android:textSize="@dimen/search_album_title_text_size" android:textColor="@color/visual_search_card_label_no_theme" android:ellipsize="end" android:gravity="start|center" android:id="@id/grid_item_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_item_card_text_margin_top" android:maxLines="1" android:fontFamily="sec-roboto-light" />
-</LinearLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sec.samsung.gallery.view.gallerysearch.filter.FilterEdgeView android:id="@id/filter_edge_top" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/filter_edge_frame_height" android:layout_marginTop="@dimen/filter_main_padding_top" android:layout_alignParentTop="true" />
-    <com.sec.samsung.gallery.view.gallerysearch.filter.FilterEdgeView android:id="@id/filter_edge_bottom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/filter_edge_frame_height" android:layout_alignParentBottom="true" />
-</RelativeLayout>

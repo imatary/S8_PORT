@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/tab_color_selector" android:gravity="center" android:id="@id/notification_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:textAllCaps="true" android:fontFamily="sec-roboto-condensed" />
-    <TextView android:textSize="@dimen/channel_notification_tab_layout_badge_text_size" android:textColor="@color/header_count_text_color" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/notification_tab_title_badge" android:background="@drawable/tw_noti_badge_mtrl_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/channel_notification_tab_layout_badge_margin_top" android:minWidth="@dimen/channel_notification_tab_layout_badge_min_width" android:layout_alignEnd="@id/notification_title" android:backgroundTint="@color/count_view_bg_color" />
-</RelativeLayout>

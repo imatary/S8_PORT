@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:id="@id/main_relativelayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sec.android.gallery3d.glcore.GlRootView android:id="@id/gl_presentation_view" android:background="@color/default_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</RelativeLayout>

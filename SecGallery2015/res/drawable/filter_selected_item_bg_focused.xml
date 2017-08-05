@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/filter_selected_item_bg_focused_color" />
-    <corners android:radius="@dimen/filter_selected_item_radius" />
-</shape>

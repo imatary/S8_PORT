@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="mapview_marker_resize_album_count_text_height">0.9f</string>
-    <string name="thumbnail_view_split_album_seprator_ratio_divider_height">1</string>
-</resources>

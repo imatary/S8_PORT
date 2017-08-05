@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/review_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/slideShowResume" android:background="@drawable/slideshow_ripple_effect_play_icon" android:focusable="true" android:clickable="true" android:layout_width="@dimen/slideshow_resume_icon_width" android:layout_height="@dimen/slideshow_resume_icon_height" android:contentDescription="@string/slideshow_play" />
-</LinearLayout>

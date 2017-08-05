@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<assistant-list>
-    <button name="@string/drawer" resource="@drawable/assistant_menu_icon_general_drawer" action="android.intent.action.drawer" />
-    <button name="@string/slideshow" resource="@drawable/assistant_menu_ic_gallery_slideshow" action="android.intent.action.slideshow" />
-    <button name="@string/switch_to_camera" resource="@drawable/assistant_menu_ic_gallery_camera" action="android.intent.action.camera" />
-    <button name="@string/delete" resource="@drawable/assistant_menu_ic_gallery_delete" action="android.intent.action.delete" />
-</assistant-list>

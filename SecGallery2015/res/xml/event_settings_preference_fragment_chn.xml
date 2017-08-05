@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen android:title="@string/share_event" android:key="setting_activity_top_title"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Preference android:layout="@layout/event_sharing_summary_text_view" android:selectable="false" />
-    <SwitchPreference android:title="@string/upload_via_wlan_only" android:key="setting_wifi_only" android:summary="@string/upload_via_wlan_only_help" android:defaultValue="true" />
-    <SwitchPreference android:title="@string/share_notification" android:key="share_notification" android:summary="@string/share_notification_description" android:defaultValue="true" />
-    <Preference android:title="@string/share_event_register_info" android:key="register_info" android:summary="@string/share_event_register_info" />
-</PreferenceScreen>

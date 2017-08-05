@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset android:insetLeft="4.0dip" android:insetRight="0.0dip" android:insetTop="@dimen/spinner_ripple_inset_top_bottom" android:insetBottom="@dimen/spinner_ripple_inset_top_bottom"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape android:shape="rectangle">
-        <corners android:radius="1.0dip" />
-        <solid android:color="@color/spinner_ripple_background_color" />
-        <padding android:left="8.0dip" android:right="8.0dip" />
-    </shape>
-</inset>

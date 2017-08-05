@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/action_share" android:title="@string/share_short" android:showAsAction="never" />
-    <item android:id="@id/action_select" android:title="@string/edit" android:showAsAction="never" />
-    <item android:id="@id/action_delete" android:title="@string/delete" android:showAsAction="never" />
-    <item android:id="@id/action_delete_done" android:visible="false" android:title="@string/done" android:showAsAction="ifRoom" />
-</menu>

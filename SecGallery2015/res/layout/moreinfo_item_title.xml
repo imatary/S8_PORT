@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/moreinfo_edit_icon_margin_right"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@id/moreinfo_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/moreInfo_item_title_margin_top" android:layout_marginBottom="@dimen/moreInfo_item_title_margin_bottom" android:minHeight="@dimen/moreInfo_item_title_height" android:singleLine="true" style="@style/MoreInfo_item_title_text_style" />
-    <ImageButton android:layout_gravity="end|bottom|center" android:id="@id/moreinfo_item_title_addcontent_imageview" android:background="@drawable/moreinfo_ripple_background" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/moreInfo_item_icon_margin_top" android:src="@drawable/gallery_info_ic_add_nor" android:contentDescription="@string/add_location" android:layout_alignParentEnd="true" />
-</RelativeLayout>

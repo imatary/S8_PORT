@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="start|center" android:orientation="vertical" android:background="@android:color/transparent" android:paddingTop="@dimen/moreInfo_set_padding_top_blur" android:paddingBottom="@dimen/moreInfo_set_padding_top_blur" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="@dimen/moreinfo_set_padding_right_blur"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/moreinfo_item_title_blur" />
-    <include layout="@layout/moreinfo_item_content_blur" />
-</LinearLayout>

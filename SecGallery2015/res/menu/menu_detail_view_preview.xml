@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:icon="@drawable/actionbar_ic_delete" android:id="@id/action_remove_from_category" android:visible="false" android:title="@string/remove_from_category" android:showAsAction="never" />
-    <item android:icon="@drawable/actionbar_ic_delete" android:id="@id/action_remove_from_event" android:visible="false" android:title="@string/remove" android:showAsAction="never" />
-    <item android:icon="@drawable/ic_menu_download" android:id="@id/action_download_via_download_manager" android:visible="false" android:title="@string/download" android:showAsAction="never" />
-    <item android:icon="@null" android:id="@id/action_collage" android:visible="false" android:title="@string/sa_collage" android:showAsAction="never" />
-    <item android:icon="@null" android:id="@id/action_auto_adjust" android:visible="false" android:title="@string/auto_adjust" android:showAsAction="never" />
-</menu>

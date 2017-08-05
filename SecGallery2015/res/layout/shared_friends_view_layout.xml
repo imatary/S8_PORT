@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:background="@color/shared_member_listview_bg" android:paddingTop="?android:actionBarSize" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <TextView android:textSize="@dimen/description_text_size" android:textColor="@color/description_text_color" android:id="@id/guidetext" android:background="@color/description_text_background" android:padding="@dimen/description_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/guide_text_for_sms" />
-        <ListView android:id="@id/contactList" android:background="@color/shared_member_listview_bg" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_item_selector" android:divider="@null" android:dividerHeight="-1.0dip" android:layout_above="@id/stopShareButton" android:layout_below="@id/guidetext" />
-        <Button android:id="@id/stopShareButton" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/delete_group_btn_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/delete_group_btn_margin" android:layout_marginEnd="@dimen/delete_group_btn_margin" />
-    </RelativeLayout>
-</ScrollView>

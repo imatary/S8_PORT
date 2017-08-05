@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/moreinfo_edit_location_done_and_cancel_ripple_background" />
-    <item android:drawable="@drawable/moreinfo_btn_shape_drawable_with_inset_cancel_save" />
-</layer-list>

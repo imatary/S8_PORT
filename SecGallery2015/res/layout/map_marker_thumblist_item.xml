@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/map_list_thumb_container" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/map_list_thumb" android:layout_width="@dimen/mapview_marker_thumbnail_list_thumb_size" android:layout_height="@dimen/mapview_marker_thumbnail_list_thumb_size" android:scaleType="centerCrop" />
-    <ImageView android:id="@id/map_list_thumb_icon" android:focusable="false" android:visibility="gone" android:layout_width="@dimen/mapview_marker_thumbnail_list_thumb_size" android:layout_height="@dimen/mapview_marker_thumbnail_list_thumb_size" android:scaleType="centerCrop" />
-</RelativeLayout>

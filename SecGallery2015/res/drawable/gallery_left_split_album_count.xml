@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/white_color" />
-    <stroke android:width="@dimen/splitview_photo_count_line" android:color="@color/splitview_count_stroke" />
-    <corners android:radius="@dimen/splitview_photo_count_corner" />
-</shape>

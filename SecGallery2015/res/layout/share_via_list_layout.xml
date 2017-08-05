@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@drawable/tw_menu_dropdown_panel_holo_light" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ListView android:id="@id/share_via_list" android:layout_width="@dimen/share_via_list_width" android:layout_height="wrap_content" android:divider="@drawable/tw_spinner_divider_horizontal_light" />
-</LinearLayout>

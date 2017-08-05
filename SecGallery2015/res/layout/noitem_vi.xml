@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/container" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.altamirasoft.path_animation.PathLineAnimationView android:layout_gravity="center_horizontal" android:id="@id/view" android:layout_width="48.0dip" android:layout_height="48.0dip" android:alpha="0.5" />
-    <TextView android:textSize="@dimen/noitem_main_text_size" android:textColor="@color/noitem_text_color_for_grace" android:layout_gravity="center_horizontal" android:id="@id/label" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="52.0dip" android:textIsSelectable="false" android:alpha="0.0" android:textAlignment="center" />
-    <TextView android:textSize="@dimen/noitem_description_text_size" android:textColor="@color/noitem_detail_text_color" android:layout_gravity="center_horizontal" android:id="@id/description" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:textIsSelectable="false" android:alpha="0.0" android:textAlignment="gravity" />
-</FrameLayout>

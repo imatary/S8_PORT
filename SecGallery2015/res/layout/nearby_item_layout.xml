@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/slinkview_list_item_min_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/list_item_icon" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="@dimen/slinkview_icon_view_width" android:layout_height="@dimen/slinkview_icon_view_height" android:src="@android:color/transparent" android:layout_centerVertical="true" android:layout_marginStart="@dimen/slinkview_item_view_margin" />
-    <TextView android:textSize="19.0sp" android:textColor="@color/dialog_content_text_color" android:layout_gravity="center_vertical" android:id="@id/list_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:fontFamily="sec-roboto-light" android:textDirection="anyRtl" android:layout_marginStart="@dimen/slinkview_item_view_margin" android:layout_toEndOf="@id/list_item_icon" />
-    <ImageView android:gravity="center_vertical" android:id="@id/list_top_divider" android:background="@color/list_search_divider_color" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/slinkview_list_divider_margin_start" android:layout_marginEnd="@dimen/slinkview_item_view_margin" />
-</RelativeLayout>

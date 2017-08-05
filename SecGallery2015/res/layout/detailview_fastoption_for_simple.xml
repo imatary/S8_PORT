@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_gravity="bottom|center" android:id="@id/container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/fastoptioncontainerview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/fast_menu_bg_height_for_simple" android:layout_alignParentBottom="true" />
-    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/fastoptioncontainer" android:background="@drawable/fastoption_white_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
-</RelativeLayout>

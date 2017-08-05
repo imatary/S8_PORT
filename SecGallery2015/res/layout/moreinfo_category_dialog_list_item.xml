@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:gravity="center_vertical" android:background="?android:selectableItemBackground" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckedTextView android:textSize="@dimen/moreinfo_category_list_item_text_size" android:textColor="@color/moreinfo_list_item_text_color" android:gravity="center_vertical" android:id="@id/moreinfo_category_dialog_listitem_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkMark="?android:listChoiceIndicatorMultiple" android:minHeight="?android:listPreferredItemHeightSmall" />
-</FrameLayout>

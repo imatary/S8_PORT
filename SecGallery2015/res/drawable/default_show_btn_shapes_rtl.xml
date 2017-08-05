@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset android:insetLeft="@dimen/default_show_btn_shapes_inset_right" android:insetRight="@dimen/default_show_btn_shapes_inset_left" android:insetTop="10.0dip" android:insetBottom="10.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape android:shape="rectangle">
-        <corners android:radius="2.0dip" />
-        <stroke android:width="2.0px" android:color="#ffb2b2b2" />
-    </shape>
-</inset>

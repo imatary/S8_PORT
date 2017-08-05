@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/tw_divider_ab_holo_light" android:layout_centerVertical="true" android:showDividers="middle" android:dividerPadding="@dimen/action_bar_divider_padding"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:layout_width="1.0dip" android:layout_height="1.0dip" />
-    <ImageButton android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_icon_up_selector" android:scaleType="center" android:contentDescription="@string/up_button" style="@style/Holo.ActionBarItem" />
-    <ImageButton android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_icon_home_selector" android:scaleType="center" android:contentDescription="@string/home" android:layout_marginStart="1.0dip" style="@style/Holo.ActionBarItem" />
-</LinearLayout>

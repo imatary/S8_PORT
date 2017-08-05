@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/moreinfo_edit_location_gps_popup_txt_size" android:textColor="@color/dialog_content_text_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/moreinfo_edit_location_gps_popup_up_down_margin" android:layout_marginBottom="@dimen/moreinfo_edit_location_gps_popup_up_down_margin" android:text="@string/moreinfo_location_editor_gps_popup_body" android:layout_marginStart="@dimen/moreinfo_edit_location_gps_popup_left_right_margin" android:layout_marginEnd="@dimen/moreinfo_edit_location_gps_popup_left_right_margin" />
-</LinearLayout>
