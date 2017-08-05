@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" package="com.sec.android.app.sysscope" platformBuildVersionCode="23" platformBuildVersionName="6.0.1">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" package="com.sec.android.app.sysscope" platformBuildVersionCode="23" platformBuildVersionName="6.0.1">
     <protected-broadcast android:name="com.sec.intent.action.SYSSCOPESTATUS"/>
     <protected-broadcast android:name="com.verizon.security.ROOT_STATUS"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>

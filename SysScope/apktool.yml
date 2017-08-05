@@ -20,7 +20,7 @@ usesFramework:
   ids:
   - 1
   tag: null
-version: 2.2.2
+version: 2.2.4
 versionInfo:
   versionCode: '141700200'
   versionName: 1.4.17
