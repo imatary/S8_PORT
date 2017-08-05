@@ -114,6 +114,14 @@
 
     sget-object v0, Lcom/sec/ims/settings/ImsSettings$GlobalTable;->mTableMap:Ljava/util/HashMap;
 
+    const-string/jumbo v1, "rcs_network_type"
+
+    const-string/jumbo v2, "TEXT"
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcom/sec/ims/settings/ImsSettings$GlobalTable;->mTableMap:Ljava/util/HashMap;
+
     const-string/jumbo v1, "rcs_disable_under_upsm"
 
     const-string/jumbo v2, "INT"
@@ -851,6 +859,38 @@
     sget-object v0, Lcom/sec/ims/settings/ImsSettings$GlobalTable;->mTableMap:Ljava/util/HashMap;
 
     const-string/jumbo v1, "iwlan_pani_format"
+
+    const-string/jumbo v2, "TEXT"
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcom/sec/ims/settings/ImsSettings$GlobalTable;->mTableMap:Ljava/util/HashMap;
+
+    const-string/jumbo v1, "user_agent"
+
+    const-string/jumbo v2, "TEXT"
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcom/sec/ims/settings/ImsSettings$GlobalTable;->mTableMap:Ljava/util/HashMap;
+
+    const-string/jumbo v1, "legacy_latching"
+
+    const-string/jumbo v2, "INT"
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcom/sec/ims/settings/ImsSettings$GlobalTable;->mTableMap:Ljava/util/HashMap;
+
+    const-string/jumbo v1, "rcs_groupchat_auto_rejoin"
+
+    const-string/jumbo v2, "INT"
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcom/sec/ims/settings/ImsSettings$GlobalTable;->mTableMap:Ljava/util/HashMap;
+
+    const-string/jumbo v1, "support_configserver"
 
     const-string/jumbo v2, "TEXT"
 

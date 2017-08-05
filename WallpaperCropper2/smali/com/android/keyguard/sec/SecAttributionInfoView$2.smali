@@ -57,7 +57,6 @@
 
     const/4 v4, 0x0
 
-    # invokes: Lcom/android/keyguard/sec/SecAttributionInfoView;->startActivityForCurrentUser(Landroid/content/Intent;Landroid/os/Bundle;Landroid/os/Handler;Ljava/lang/Runnable;)V
     invoke-static {v1, v0, v2, v3, v4}, Lcom/android/keyguard/sec/SecAttributionInfoView;->access$200(Lcom/android/keyguard/sec/SecAttributionInfoView;Landroid/content/Intent;Landroid/os/Bundle;Landroid/os/Handler;Ljava/lang/Runnable;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0

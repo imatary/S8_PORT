@@ -49,7 +49,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSplitClockView$1;->this$0:Lcom/android/keyguard/sec/KeyguardSplitClockView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardSplitClockView;->updatePatterns()V
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSplitClockView;->access$000(Lcom/android/keyguard/sec/KeyguardSplitClockView;)V
 
     :cond_1
@@ -99,7 +98,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSplitClockView$1;->this$0:Lcom/android/keyguard/sec/KeyguardSplitClockView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardSplitClockView;->updateChildView()V
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSplitClockView;->access$100(Lcom/android/keyguard/sec/KeyguardSplitClockView;)V
 
     goto :goto_0

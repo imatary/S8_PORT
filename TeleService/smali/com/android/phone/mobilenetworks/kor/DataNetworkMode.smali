@@ -114,7 +114,7 @@
 
     aput-object v1, v0, v3
 
-    const v1, 0x7f0d0c58
+    const v1, 0x7f0d0cc9
 
     invoke-virtual {p0, v1, v0}, Lcom/android/phone/mobilenetworks/kor/DataNetworkMode;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -169,7 +169,7 @@
 
     if-nez v0, :cond_3
 
-    const v0, 0x7f0d0c59
+    const v0, 0x7f0d0cca
 
     invoke-virtual {p0, v0}, Lcom/android/phone/mobilenetworks/kor/DataNetworkMode;->getString(I)Ljava/lang/String;
 
@@ -211,7 +211,7 @@
 
     if-ne v0, v4, :cond_4
 
-    const v0, 0x7f0d0c5a
+    const v0, 0x7f0d0ccb
 
     invoke-virtual {p0, v0}, Lcom/android/phone/mobilenetworks/kor/DataNetworkMode;->getString(I)Ljava/lang/String;
 
@@ -459,7 +459,7 @@
 
     new-array v2, v5, [Ljava/lang/String;
 
-    const v5, 0x7f0d0c56
+    const v5, 0x7f0d0cc7
 
     invoke-virtual {p0, v5}, Lcom/android/phone/mobilenetworks/kor/DataNetworkMode;->getString(I)Ljava/lang/String;
 
@@ -467,7 +467,7 @@
 
     aput-object v5, v2, v6
 
-    const v5, 0x7f0d0c57
+    const v5, 0x7f0d0cc8
 
     invoke-virtual {p0, v5}, Lcom/android/phone/mobilenetworks/kor/DataNetworkMode;->getString(I)Ljava/lang/String;
 
@@ -541,7 +541,7 @@
 
     if-nez v1, :cond_0
 
-    const v1, 0x7f0d0c5b
+    const v1, 0x7f0d0ccc
 
     invoke-virtual {p0, v1}, Lcom/android/phone/mobilenetworks/kor/DataNetworkMode;->getString(I)Ljava/lang/String;
 

@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView$3;->this$0:Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->updateButtonVisibility(I)V
     invoke-static {v0, p1}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$400(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;I)V
 
     return-void

@@ -2296,9 +2296,9 @@
 .method private updateScreen(Lcom/android/phone/UsimDownload$ScreenMode;)V
     .locals 9
 
-    const v8, 0x7f0d06df
+    const v8, 0x7f0d0743
 
-    const v5, 0x7f0201bc
+    const v5, 0x7f0201c5
 
     const/16 v4, 0x8
 
@@ -2365,13 +2365,13 @@
     :pswitch_0
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06d8
+    const v2, 0x7f0d073c
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06d7
+    const v2, 0x7f0d073b
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -2414,19 +2414,19 @@
     :pswitch_1
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06ef
+    const v2, 0x7f0d0753
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d09eb
+    const v2, 0x7f0d0a52
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mImageView2:Landroid/widget/ImageView;
 
-    const v2, 0x7f0201c4
+    const v2, 0x7f0201cd
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2467,7 +2467,7 @@
     :pswitch_2
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06ef
+    const v2, 0x7f0d0753
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -2477,7 +2477,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v3, 0x7f0d09ec
+    const v3, 0x7f0d0a53
 
     invoke-virtual {p0, v3}, Lcom/android/phone/UsimDownload;->getString(I)Ljava/lang/String;
 
@@ -2493,7 +2493,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d06e7
+    const v3, 0x7f0d074b
 
     invoke-virtual {p0, v3}, Lcom/android/phone/UsimDownload;->getString(I)Ljava/lang/String;
 
@@ -2554,7 +2554,7 @@
     :pswitch_3
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06ef
+    const v2, 0x7f0d0753
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -2564,7 +2564,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v3, 0x7f0d09ec
+    const v3, 0x7f0d0a53
 
     invoke-virtual {p0, v3}, Lcom/android/phone/UsimDownload;->getString(I)Ljava/lang/String;
 
@@ -2580,7 +2580,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d06ee
+    const v3, 0x7f0d0752
 
     invoke-virtual {p0, v3}, Lcom/android/phone/UsimDownload;->getString(I)Ljava/lang/String;
 
@@ -2666,7 +2666,7 @@
     :pswitch_4
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06d9
+    const v2, 0x7f0d073d
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -2698,7 +2698,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v3, 0x7f0d06ea
+    const v3, 0x7f0d074e
 
     invoke-virtual {p0, v3}, Lcom/android/phone/UsimDownload;->getString(I)Ljava/lang/String;
 
@@ -2714,7 +2714,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d06ee
+    const v3, 0x7f0d0752
 
     invoke-virtual {p0, v3}, Lcom/android/phone/UsimDownload;->getString(I)Ljava/lang/String;
 
@@ -2848,7 +2848,7 @@
     :cond_7
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06e8
+    const v2, 0x7f0d074c
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -2867,7 +2867,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06e9
+    const v2, 0x7f0d074d
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -2886,7 +2886,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06e8
+    const v2, 0x7f0d074c
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -2936,7 +2936,7 @@
     :pswitch_5
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06f1
+    const v2, 0x7f0d0755
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -2991,7 +2991,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06d2
+    const v2, 0x7f0d0736
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -3036,7 +3036,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06db
+    const v2, 0x7f0d073f
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -3083,7 +3083,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06dc
+    const v2, 0x7f0d0740
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -3128,7 +3128,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06dd
+    const v2, 0x7f0d0741
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -3208,7 +3208,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06de
+    const v2, 0x7f0d0742
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -3253,7 +3253,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06e1
+    const v2, 0x7f0d0745
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -3320,7 +3320,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06da
+    const v2, 0x7f0d073e
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -3371,7 +3371,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06e0
+    const v2, 0x7f0d0744
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -3412,13 +3412,13 @@
     :pswitch_e
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06d6
+    const v2, 0x7f0d073a
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06e3
+    const v2, 0x7f0d0747
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -3459,13 +3459,13 @@
     :pswitch_f
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06d6
+    const v2, 0x7f0d073a
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06e4
+    const v2, 0x7f0d0748
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -3514,13 +3514,13 @@
     :pswitch_10
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06d6
+    const v2, 0x7f0d073a
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06e7
+    const v2, 0x7f0d074b
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -3569,19 +3569,19 @@
     :pswitch_11
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06d6
+    const v2, 0x7f0d073a
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06e2
+    const v2, 0x7f0d0746
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mImageView2:Landroid/widget/ImageView;
 
-    const v2, 0x7f0201c4
+    const v2, 0x7f0201cd
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3622,19 +3622,19 @@
     :pswitch_12
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06d6
+    const v2, 0x7f0d073a
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v2, 0x7f0d06e6
+    const v2, 0x7f0d074a
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mImageView2:Landroid/widget/ImageView;
 
-    const v2, 0x7f0201c4
+    const v2, 0x7f0201cd
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -4045,7 +4045,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/UsimDownload;->updateNetworkStatus()V
 
-    const v10, 0x7f1002aa
+    const v10, 0x7f1002ad
 
     invoke-virtual {p0, v10}, Lcom/android/phone/UsimDownload;->findViewById(I)Landroid/view/View;
 
@@ -4055,7 +4055,7 @@
 
     iput-object v10, p0, Lcom/android/phone/UsimDownload;->mTitle:Landroid/widget/TextView;
 
-    const v10, 0x7f1002ad
+    const v10, 0x7f1002b0
 
     invoke-virtual {p0, v10}, Lcom/android/phone/UsimDownload;->findViewById(I)Landroid/view/View;
 
@@ -4065,7 +4065,7 @@
 
     iput-object v10, p0, Lcom/android/phone/UsimDownload;->mMessage:Landroid/widget/TextView;
 
-    const v10, 0x7f1002ae
+    const v10, 0x7f1002b1
 
     invoke-virtual {p0, v10}, Lcom/android/phone/UsimDownload;->findViewById(I)Landroid/view/View;
 
@@ -4075,7 +4075,7 @@
 
     iput-object v10, p0, Lcom/android/phone/UsimDownload;->mEmergencyButton:Landroid/widget/Button;
 
-    const v10, 0x7f1002af
+    const v10, 0x7f1002b2
 
     invoke-virtual {p0, v10}, Lcom/android/phone/UsimDownload;->findViewById(I)Landroid/view/View;
 
@@ -4085,7 +4085,7 @@
 
     iput-object v10, p0, Lcom/android/phone/UsimDownload;->mOkButton:Landroid/widget/Button;
 
-    const v10, 0x7f1002b0
+    const v10, 0x7f1002b3
 
     invoke-virtual {p0, v10}, Lcom/android/phone/UsimDownload;->findViewById(I)Landroid/view/View;
 
@@ -4095,7 +4095,7 @@
 
     iput-object v10, p0, Lcom/android/phone/UsimDownload;->mRegisterButton:Landroid/widget/Button;
 
-    const v10, 0x7f1002b1
+    const v10, 0x7f1002b4
 
     invoke-virtual {p0, v10}, Lcom/android/phone/UsimDownload;->findViewById(I)Landroid/view/View;
 
@@ -4105,7 +4105,7 @@
 
     iput-object v10, p0, Lcom/android/phone/UsimDownload;->mRetryYesButton:Landroid/widget/Button;
 
-    const v10, 0x7f1002b2
+    const v10, 0x7f1002b5
 
     invoke-virtual {p0, v10}, Lcom/android/phone/UsimDownload;->findViewById(I)Landroid/view/View;
 
@@ -4115,7 +4115,7 @@
 
     iput-object v10, p0, Lcom/android/phone/UsimDownload;->mRetryNoButton:Landroid/widget/Button;
 
-    const v10, 0x7f1002ab
+    const v10, 0x7f1002ae
 
     invoke-virtual {p0, v10}, Lcom/android/phone/UsimDownload;->findViewById(I)Landroid/view/View;
 
@@ -4125,7 +4125,7 @@
 
     iput-object v10, p0, Lcom/android/phone/UsimDownload;->mImageView:Landroid/widget/ImageView;
 
-    const v10, 0x7f1002ac
+    const v10, 0x7f1002af
 
     invoke-virtual {p0, v10}, Lcom/android/phone/UsimDownload;->findViewById(I)Landroid/view/View;
 
@@ -5125,7 +5125,7 @@
 .method public toastNotInService()V
     .locals 2
 
-    const v0, 0x7f0d06e5
+    const v0, 0x7f0d0749
 
     const/4 v1, 0x0
 
@@ -5141,7 +5141,7 @@
 .method public toastRebootSystem()V
     .locals 2
 
-    const v0, 0x7f0d06ec
+    const v0, 0x7f0d0750
 
     const/4 v1, 0x0
 

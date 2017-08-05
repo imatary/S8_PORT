@@ -59,7 +59,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu$2;->this$0:Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->mCommonLevelText:Lcom/samsung/android/glview/GLText;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->access$100(Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;)Lcom/samsung/android/glview/GLText;
 
     move-result-object v0

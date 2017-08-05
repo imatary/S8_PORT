@@ -51,7 +51,6 @@
 
     invoke-direct {v1, v2, v3}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
 
-    # setter for: Lcom/sec/android/app/camera/provider/CameraGestureManager;->mGestureDetector:Landroid/view/GestureDetector;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/provider/CameraGestureManager;->access$002(Lcom/sec/android/app/camera/provider/CameraGestureManager;Landroid/view/GestureDetector;)Landroid/view/GestureDetector;
 
     return-void

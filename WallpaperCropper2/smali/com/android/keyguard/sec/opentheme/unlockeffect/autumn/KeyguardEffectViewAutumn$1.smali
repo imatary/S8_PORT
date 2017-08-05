@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn$1;->this$0:Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;
 
-    # getter for: Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0}, Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;->access$000(Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;)Landroid/media/SoundPool;
 
     move-result-object v0
@@ -51,7 +50,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn$1;->this$0:Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;
 
-    # setter for: Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;->releaseSoundRunnable:Ljava/lang/Runnable;
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;->access$102(Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;Ljava/lang/Runnable;)Ljava/lang/Runnable;
 
     return-void
@@ -59,7 +57,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn$1;->this$0:Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;
 
-    # getter for: Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0}, Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;->access$000(Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;)Landroid/media/SoundPool;
 
     move-result-object v0
@@ -68,7 +65,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn$1;->this$0:Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;
 
-    # setter for: Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;->access$002(Lcom/android/keyguard/sec/opentheme/unlockeffect/autumn/KeyguardEffectViewAutumn;Landroid/media/SoundPool;)Landroid/media/SoundPool;
 
     goto :goto_0

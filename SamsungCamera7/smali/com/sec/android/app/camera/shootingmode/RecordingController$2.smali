@@ -39,12 +39,11 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$2;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$400(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
-    const v1, 0x7f090273
+    const v1, 0x7f090275
 
     const/4 v2, 0x1
 

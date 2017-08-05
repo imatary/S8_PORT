@@ -2825,7 +2825,7 @@
 .end method
 
 .method declared-synchronized processCpbrCommand(Landroid/bluetooth/BluetoothDevice;)I
-    .locals 23
+    .locals 24
 
     monitor-enter p0
 
@@ -2838,9 +2838,9 @@
 
     const/4 v8, 0x0
 
-    new-instance v20, Ljava/lang/StringBuilder;
+    new-instance v21, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string/jumbo v1, "SM"
 
@@ -2871,11 +2871,11 @@
 
     invoke-direct {v0, v1, v2}, Lcom/android/bluetooth/hfp/AtPhonebook;->getPhonebookResult(Ljava/lang/String;Z)Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    move-result-object v17
+    move-result-object v18
 
-    if-nez v17, :cond_2
+    if-nez v18, :cond_2
 
     const/4 v7, 0x3
 
@@ -2894,7 +2894,7 @@
 
     :cond_2
     :try_start_1
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
@@ -2911,13 +2911,13 @@
     if-gtz v1, :cond_5
 
     :cond_3
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
     if-eqz v1, :cond_4
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
@@ -2925,11 +2925,11 @@
 
     const/4 v1, 0x0
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iput-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :cond_4
     const/4 v1, 0x1
@@ -2954,7 +2954,7 @@
 
     iget v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook;->mCpbrIndex1:I
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v2, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
@@ -2968,7 +2968,7 @@
 
     iget v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook;->mCpbrIndex2:I
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v2, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
@@ -2978,7 +2978,7 @@
 
     if-le v1, v2, :cond_6
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
@@ -2993,7 +2993,7 @@
     :cond_6
     const/4 v10, -0x1
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
@@ -3045,41 +3045,41 @@
 
     move-object/from16 v0, p0
 
-    iget v12, v0, Lcom/android/bluetooth/hfp/AtPhonebook;->mCpbrIndex1:I
+    iget v13, v0, Lcom/android/bluetooth/hfp/AtPhonebook;->mCpbrIndex1:I
 
     :goto_0
     move-object/from16 v0, p0
 
     iget v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook;->mCpbrIndex2:I
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    if-gt v12, v1, :cond_19
+    if-gt v13, v1, :cond_19
 
-    const/4 v15, 0x0
+    const/16 v16, 0x0
 
     :try_start_3
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget v2, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->numberColumn:I
 
     invoke-interface {v1, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
     :try_end_3
     .catch Ljava/lang/NullPointerException; {:try_start_3 .. :try_end_3} :catch_0
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    move-result-object v15
+    move-result-object v16
 
-    const/4 v13, 0x0
+    const/4 v14, 0x0
 
-    const/16 v22, -0x1
+    const/16 v23, -0x1
 
     :try_start_4
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->nameColumn:I
 
@@ -3087,11 +3087,11 @@
 
     if-ne v1, v2, :cond_16
 
-    if-eqz v15, :cond_16
+    if-eqz v16, :cond_16
 
-    invoke-virtual {v15}, Ljava/lang/String;->length()I
+    invoke-virtual/range {v16 .. v16}, Ljava/lang/String;->length()I
     :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     move-result v1
 
@@ -3106,7 +3106,11 @@
 
     sget-object v2, Landroid/provider/ContactsContract$PhoneLookup;->CONTENT_FILTER_URI:Landroid/net/Uri;
 
-    invoke-static {v2, v15}, Landroid/net/Uri;->withAppendedPath(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static/range {v16 .. v16}, Landroid/net/Uri;->encode(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/net/Uri;->withAppendedPath(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v2
 
@@ -3134,12 +3138,12 @@
 
     invoke-virtual/range {v1 .. v6}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     :try_end_5
-    .catch Ljava/lang/SecurityException; {:try_start_5 .. :try_end_5} :catch_1
+    .catch Ljava/lang/SecurityException; {:try_start_5 .. :try_end_5} :catch_2
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_1
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     move-result-object v9
 
-    :goto_1
     if-eqz v9, :cond_8
 
     :try_start_6
@@ -3153,23 +3157,24 @@
 
     invoke-interface {v9, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v14
 
     const/4 v1, 0x1
 
     invoke-interface {v9, v1}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v22
+    move-result v23
 
     :cond_7
     invoke-interface {v9}, Landroid/database/Cursor;->close()V
 
     :cond_8
+    :goto_1
     sget-boolean v1, Lcom/android/bluetooth/hfp/AtPhonebook;->DBG:Z
 
     if-eqz v1, :cond_9
 
-    if-nez v13, :cond_9
+    if-nez v14, :cond_9
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3181,7 +3186,9 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, v16
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -3193,16 +3200,16 @@
 
     :cond_9
     :goto_2
-    if-nez v13, :cond_a
+    if-nez v14, :cond_a
 
-    const-string/jumbo v13, ""
+    const-string/jumbo v14, ""
 
     :cond_a
-    invoke-virtual {v13}, Ljava/lang/String;->trim()Ljava/lang/String;
+    invoke-virtual {v14}, Ljava/lang/String;->trim()Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v14
 
-    invoke-virtual {v13}, Ljava/lang/String;->length()I
+    invoke-virtual {v14}, Ljava/lang/String;->length()I
 
     move-result v1
 
@@ -3214,12 +3221,12 @@
 
     const/16 v2, 0x1c
 
-    invoke-virtual {v13, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {v14, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v14
 
     :cond_b
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->typeColumn:I
 
@@ -3227,23 +3234,23 @@
 
     if-eq v1, v2, :cond_c
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget v2, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->typeColumn:I
 
     invoke-interface {v1, v2}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v22
+    move-result v23
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v1, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -3253,7 +3260,7 @@
 
     move-result-object v1
 
-    invoke-static/range {v22 .. v22}, Lcom/android/bluetooth/hfp/AtPhonebook;->getPhoneType(I)Ljava/lang/String;
+    invoke-static/range {v23 .. v23}, Lcom/android/bluetooth/hfp/AtPhonebook;->getPhoneType(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3263,31 +3270,31 @@
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v14
 
     :cond_c
-    if-nez v15, :cond_d
+    if-nez v16, :cond_d
 
-    const-string/jumbo v15, ""
+    const-string/jumbo v16, ""
 
     :cond_d
-    invoke-static {v15}, Landroid/telephony/PhoneNumberUtils;->toaFromString(Ljava/lang/String;)I
+    invoke-static/range {v16 .. v16}, Landroid/telephony/PhoneNumberUtils;->toaFromString(Ljava/lang/String;)I
 
-    move-result v19
+    move-result v20
 
-    invoke-virtual {v15}, Ljava/lang/String;->trim()Ljava/lang/String;
+    invoke-virtual/range {v16 .. v16}, Ljava/lang/String;->trim()Ljava/lang/String;
 
-    move-result-object v15
+    move-result-object v16
 
-    invoke-static {v15}, Landroid/telephony/PhoneNumberUtils;->convertKeypadLettersToDigits(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {v16 .. v16}, Landroid/telephony/PhoneNumberUtils;->convertKeypadLettersToDigits(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v1}, Landroid/telephony/PhoneNumberUtils;->stripSeparators(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v15
+    move-result-object v16
 
-    invoke-virtual {v15}, Ljava/lang/String;->length()I
+    invoke-virtual/range {v16 .. v16}, Ljava/lang/String;->length()I
 
     move-result v1
 
@@ -3299,14 +3306,16 @@
 
     const/16 v2, 0x1e
 
-    invoke-virtual {v15, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    move-object/from16 v0, v16
 
-    move-result-object v15
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v16
 
     :cond_e
-    const/16 v16, 0x1
+    const/16 v17, 0x1
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->numberPresentationColumn:I
 
@@ -3314,28 +3323,30 @@
 
     if-eq v1, v2, :cond_f
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget v2, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->numberPresentationColumn:I
 
     invoke-interface {v1, v2}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v16
+    move-result v17
 
     :cond_f
     const/4 v1, 0x1
 
-    move/from16 v0, v16
+    move/from16 v0, v17
 
     if-ne v0, v1, :cond_10
 
     const-string/jumbo v1, "-1"
 
-    invoke-virtual {v15, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-object/from16 v0, v16
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -3343,7 +3354,9 @@
 
     const-string/jumbo v1, "-2"
 
-    invoke-virtual {v15, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-object/from16 v0, v16
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -3351,14 +3364,16 @@
 
     const-string/jumbo v1, "-3"
 
-    invoke-virtual {v15, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-object/from16 v0, v16
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_11
 
     :cond_10
-    const-string/jumbo v15, ""
+    const-string/jumbo v16, ""
 
     move-object/from16 v0, p0
 
@@ -3368,12 +3383,12 @@
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v14
 
     :cond_11
     const-string/jumbo v1, ""
 
-    invoke-virtual {v13, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v14, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -3391,11 +3406,11 @@
 
     if-eqz v1, :cond_12
 
-    invoke-static {v13}, Lcom/android/internal/telephony/GsmAlphabet;->stringToGsm8BitPacked(Ljava/lang/String;)[B
+    invoke-static {v14}, Lcom/android/internal/telephony/GsmAlphabet;->stringToGsm8BitPacked(Ljava/lang/String;)[B
 
-    move-result-object v14
+    move-result-object v15
 
-    if-nez v14, :cond_18
+    if-nez v15, :cond_18
 
     move-object/from16 v0, p0
 
@@ -3405,7 +3420,7 @@
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v14
 
     :cond_12
     :goto_3
@@ -3427,7 +3442,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -3437,7 +3452,9 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, v16
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -3447,7 +3464,7 @@
 
     move-result-object v1
 
-    move/from16 v0, v19
+    move/from16 v0, v20
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3459,7 +3476,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -3471,13 +3488,13 @@
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v18
+    move-result-object v19
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v19
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3491,9 +3508,9 @@
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v18
+    move-result-object v19
 
-    move-object/from16 v8, v18
+    move-object/from16 v8, v19
 
     sget-boolean v1, Lcom/android/bluetooth/hfp/AtPhonebook;->DBG:Z
 
@@ -3509,7 +3526,7 @@
 
     move-result-object v1
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v19
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3530,17 +3547,17 @@
 
     move-result-object v2
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v19
 
     invoke-virtual {v1, v0, v2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->atResponseStringNative(Ljava/lang/String;[B)Z
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
     if-eqz v1, :cond_14
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
@@ -3551,7 +3568,7 @@
     if-eqz v1, :cond_19
 
     :cond_14
-    add-int/lit8 v12, v12, 0x1
+    add-int/lit8 v13, v13, 0x1
 
     goto/16 :goto_0
 
@@ -3560,13 +3577,13 @@
 
     const/16 v7, 0x15
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
     if-eqz v1, :cond_15
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
@@ -3574,11 +3591,11 @@
 
     const/4 v1, 0x0
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iput-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
     :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
+    .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
     :cond_15
     const/4 v1, 0x1
@@ -3588,7 +3605,7 @@
     return v1
 
     :catch_1
-    move-exception v21
+    move-exception v12
 
     :try_start_7
     const-string/jumbo v1, "BluetoothAtPhonebook"
@@ -3597,15 +3614,61 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "processCpbrCommand - can\'t get cursor : "
+    const-string/jumbo v3, "processCpbrCommand - URI is not valid : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    move-object/from16 v0, v21
+    invoke-virtual {v2, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string/jumbo v1, "BluetoothAtPhonebook"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "Current cursor info : number = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v0, v16
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v3, ", pbr.numberColumn = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v0, v18
+
+    iget v3, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->numberColumn:I
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v3, ", index = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -3622,13 +3685,53 @@
     :catchall_0
     move-exception v1
 
+    :try_start_8
+    throw v1
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_1
+
+    :catchall_1
+    move-exception v1
+
     monitor-exit p0
 
     throw v1
 
+    :catch_2
+    move-exception v22
+
+    :try_start_9
+    const-string/jumbo v1, "BluetoothAtPhonebook"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "processCpbrCommand - can\'t get cursor : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v0, v22
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_0
+
+    goto/16 :goto_1
+
     :cond_16
-    :try_start_8
-    move-object/from16 v0, v17
+    :try_start_a
+    move-object/from16 v0, v18
 
     iget v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->nameColumn:I
 
@@ -3636,17 +3739,17 @@
 
     if-eq v1, v2, :cond_17
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget v2, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->nameColumn:I
 
     invoke-interface {v1, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v14
 
     goto/16 :goto_2
 
@@ -3658,22 +3761,22 @@
     goto/16 :goto_2
 
     :cond_18
-    new-instance v13, Ljava/lang/String;
+    new-instance v14, Ljava/lang/String;
 
-    invoke-direct {v13, v14}, Ljava/lang/String;-><init>([B)V
+    invoke-direct {v14, v15}, Ljava/lang/String;-><init>([B)V
 
     goto/16 :goto_3
 
     :cond_19
-    if-eqz v17, :cond_1a
+    if-eqz v18, :cond_1a
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
     if-eqz v1, :cond_1a
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
 
@@ -3681,11 +3784,11 @@
 
     const/4 v1, 0x0
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     iput-object v1, v0, Lcom/android/bluetooth/hfp/AtPhonebook$PhonebookResult;->cursor:Landroid/database/Cursor;
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_0
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_1
 
     :cond_1a
     const/4 v1, 0x1

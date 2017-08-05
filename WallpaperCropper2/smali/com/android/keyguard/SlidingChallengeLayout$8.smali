@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/SlidingChallengeLayout$8;->this$0:Lcom/android/keyguard/SlidingChallengeLayout;
 
-    # getter for: Lcom/android/keyguard/SlidingChallengeLayout;->mScrimView:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/SlidingChallengeLayout;->access$000(Lcom/android/keyguard/SlidingChallengeLayout;)Landroid/view/View;
 
     move-result-object v0

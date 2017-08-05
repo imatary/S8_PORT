@@ -74,7 +74,6 @@
 
     :cond_0
     :goto_1
-    # setter for: Lcom/android/keyguard/sec/SecPopupManager;->mHelpOverlyDialog:Landroid/app/Dialog;
     invoke-static {v4}, Lcom/android/keyguard/sec/SecPopupManager;->access$302(Landroid/app/Dialog;)Landroid/app/Dialog;
 
     const-string/jumbo v0, "SecPopupManager"

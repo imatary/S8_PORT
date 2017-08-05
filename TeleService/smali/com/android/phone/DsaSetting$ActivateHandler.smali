@@ -335,10 +335,8 @@
 
     if-ne v2, v0, :cond_7
 
-    move v4, v0
-
-    :cond_7
-    invoke-virtual {v8, v1, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+    :goto_2
+    invoke-virtual {v8, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     invoke-virtual {v9}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
 
@@ -346,7 +344,16 @@
 
     invoke-virtual {v0, v8}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
+    iget-object v0, p0, Lcom/android/phone/DsaSetting$ActivateHandler;->this$0:Lcom/android/phone/DsaSetting;
+
+    invoke-virtual {v0, v4}, Lcom/android/phone/DsaSetting;->setUpdateDialogCount(Z)V
+
     goto/16 :goto_1
+
+    :cond_7
+    move v0, v4
+
+    goto :goto_2
 
     :cond_8
     iget v1, p1, Landroid/os/Message;->arg2:I
@@ -448,7 +455,7 @@
 
     if-ne v2, v0, :cond_c
 
-    :goto_2
+    :goto_3
     invoke-virtual {v8, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     invoke-virtual {v9}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
@@ -457,12 +464,16 @@
 
     invoke-virtual {v0, v8}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
+    iget-object v0, p0, Lcom/android/phone/DsaSetting$ActivateHandler;->this$0:Lcom/android/phone/DsaSetting;
+
+    invoke-virtual {v0, v4}, Lcom/android/phone/DsaSetting;->setUpdateDialogCount(Z)V
+
     goto/16 :goto_1
 
     :cond_c
     move v0, v4
 
-    goto :goto_2
+    goto :goto_3
 .end method
 
 .method private handleGetCallWaitingResponse(Landroid/os/Message;)V
@@ -688,6 +699,12 @@
     move-result-object v0
 
     invoke-virtual {v0, v8}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+
+    iget-object v0, p0, Lcom/android/phone/DsaSetting$ActivateHandler;->this$0:Lcom/android/phone/DsaSetting;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/android/phone/DsaSetting;->setUpdateDialogCount(Z)V
 
     new-instance v7, Lcom/android/phone/DsaResult;
 
@@ -1042,6 +1059,12 @@
     move-result-object v0
 
     invoke-virtual {v0, v8}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+
+    iget-object v0, p0, Lcom/android/phone/DsaSetting$ActivateHandler;->this$0:Lcom/android/phone/DsaSetting;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/android/phone/DsaSetting;->setUpdateDialogCount(Z)V
 
     new-instance v7, Lcom/android/phone/DsaResult;
 

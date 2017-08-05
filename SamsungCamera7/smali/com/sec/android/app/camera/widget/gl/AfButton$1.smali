@@ -51,7 +51,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/AfButton$1;->this$0:Lcom/sec/android/app/camera/widget/gl/AfButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/AfButton;->PAF_CONTROL_DURATION:I
     invoke-static {}, Lcom/sec/android/app/camera/widget/gl/AfButton;->access$100()I
 
     move-result v0
@@ -62,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/AfButton$1;->this$0:Lcom/sec/android/app/camera/widget/gl/AfButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/AfButton;->mDegrees:F
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/AfButton;->access$200(Lcom/sec/android/app/camera/widget/gl/AfButton;)F
 
     move-result v5
@@ -73,7 +71,6 @@
 
     sget-boolean v7, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_PHASE_AF:Z
 
-    # invokes: Lcom/sec/android/app/camera/widget/gl/AfButton;->startPhaseInfoAnimation(JFFLandroid/view/animation/Interpolator;Z)V
     invoke-static/range {v1 .. v7}, Lcom/sec/android/app/camera/widget/gl/AfButton;->access$300(Lcom/sec/android/app/camera/widget/gl/AfButton;JFFLandroid/view/animation/Interpolator;Z)V
 
     return-void

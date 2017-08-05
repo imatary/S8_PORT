@@ -1588,7 +1588,7 @@
 
     iget-object v5, p0, Lcom/android/bluetooth/sap/SapServer;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0a00da
+    const v6, 0x7f0a00f3
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1600,7 +1600,7 @@
 
     iget-object v5, p0, Lcom/android/bluetooth/sap/SapServer;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0a00de
+    const v6, 0x7f0a00f7
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1627,7 +1627,7 @@
     :goto_0
     aput-object v4, v7, v10
 
-    const v4, 0x7f0a00df
+    const v4, 0x7f0a00f8
 
     invoke-virtual {v6, v4, v7}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1643,7 +1643,7 @@
 
     iget-object v5, p0, Lcom/android/bluetooth/sap/SapServer;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0a00dc
+    const v6, 0x7f0a00f5
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1715,7 +1715,7 @@
 
     iget-object v5, p0, Lcom/android/bluetooth/sap/SapServer;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0a00de
+    const v6, 0x7f0a00f7
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1742,7 +1742,7 @@
     :goto_2
     aput-object v4, v7, v10
 
-    const v4, 0x7f0a00df
+    const v4, 0x7f0a00f8
 
     invoke-virtual {v6, v4, v7}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1758,7 +1758,7 @@
 
     iget-object v5, p0, Lcom/android/bluetooth/sap/SapServer;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0a00dc
+    const v6, 0x7f0a00f5
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1823,7 +1823,7 @@
     :cond_3
     iget-object v4, p0, Lcom/android/bluetooth/sap/SapServer;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0a00e0
+    const v8, 0x7f0a00f9
 
     invoke-virtual {v4, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1834,7 +1834,7 @@
     :cond_4
     iget-object v4, p0, Lcom/android/bluetooth/sap/SapServer;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0a00e0
+    const v8, 0x7f0a00f9
 
     invoke-virtual {v4, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -30,6 +30,8 @@
 
 .field private mActivateHandler:Lcom/android/phone/DsaSetting$ActivateHandler;
 
+.field private mUpdateDialogCount:I
+
 .field phone_sim1:Lcom/android/internal/telephony/Phone;
 
 .field phone_sim2:Lcom/android/internal/telephony/Phone;
@@ -104,6 +106,10 @@
     .locals 2
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/android/phone/DsaSetting;->mUpdateDialogCount:I
 
     new-instance v0, Lcom/android/phone/DsaSetting$ActivateHandler;
 
@@ -468,4 +474,36 @@
         :pswitch_0
         :pswitch_1
     .end packed-switch
+.end method
+
+.method public getUpdateDialogCount()I
+    .locals 1
+
+    iget v0, p0, Lcom/android/phone/DsaSetting;->mUpdateDialogCount:I
+
+    return v0
+.end method
+
+.method public setUpdateDialogCount(Z)V
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    iget v0, p0, Lcom/android/phone/DsaSetting;->mUpdateDialogCount:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    iput v0, p0, Lcom/android/phone/DsaSetting;->mUpdateDialogCount:I
+
+    :goto_0
+    return-void
+
+    :cond_0
+    iget v0, p0, Lcom/android/phone/DsaSetting;->mUpdateDialogCount:I
+
+    add-int/lit8 v0, v0, -0x1
+
+    iput v0, p0, Lcom/android/phone/DsaSetting;->mUpdateDialogCount:I
+
+    goto :goto_0
 .end method

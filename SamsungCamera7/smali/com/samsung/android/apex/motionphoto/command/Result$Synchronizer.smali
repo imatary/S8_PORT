@@ -55,7 +55,6 @@
 .method public awaitResponse()Lcom/samsung/android/apex/motionphoto/command/Result;
     .locals 3
 
-    # getter for: Lcom/samsung/android/apex/motionphoto/command/Result;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/apex/motionphoto/command/Result;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -91,7 +90,6 @@
 .method public awaitResponse(I)Lcom/samsung/android/apex/motionphoto/command/Result;
     .locals 4
 
-    # getter for: Lcom/samsung/android/apex/motionphoto/command/Result;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/apex/motionphoto/command/Result;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -155,7 +153,6 @@
 .method public respond(Lcom/samsung/android/apex/motionphoto/command/Result;)V
     .locals 4
 
-    # getter for: Lcom/samsung/android/apex/motionphoto/command/Result;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/apex/motionphoto/command/Result;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -191,7 +188,6 @@
     :catch_0
     move-exception v0
 
-    # getter for: Lcom/samsung/android/apex/motionphoto/command/Result;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/apex/motionphoto/command/Result;->access$000()Ljava/lang/String;
 
     move-result-object v1

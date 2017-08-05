@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/spinner_list_header_title_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:gravity="center_vertical" android:id="@id/list_top_divider" android:background="@color/spinner_header_divider" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="@dimen/spinner_list_header_divider_margin_top_bottom" android:layout_marginBottom="@dimen/spinner_list_header_divider_margin_top_bottom" android:layout_marginStart="@dimen/spinner_list_header_divider_margin_start_end" android:layout_marginEnd="@dimen/spinner_list_header_divider_margin_start_end" />
-    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/spinner_list_header_title_height" android:layout_below="@id/list_top_divider" android:paddingStart="@dimen/drawer_list_items_padding_start" android:paddingEnd="@dimen/drawer_list_items_padding_end">
-        <TextView android:textSize="@dimen/spinner_header_title_text_size" android:textStyle="bold" android:textColor="@color/spinner_header_title_color" android:gravity="center_vertical" android:id="@id/list_header_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" android:fontFamily="sec-roboto-light" />
-    </LinearLayout>
-</RelativeLayout>

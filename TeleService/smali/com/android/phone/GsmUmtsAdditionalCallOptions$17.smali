@@ -3,7 +3,7 @@
 .source "GsmUmtsAdditionalCallOptions.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/text/TextWatcher;
 
 
 # annotations
@@ -34,26 +34,36 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
+.method public afterTextChanged(Landroid/text/Editable;)V
+    .locals 2
 
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$17;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+    iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$17;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    invoke-static {v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap1(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/Context;
-
-    move-result-object v1
-
-    const-string/jumbo v2, "phone"
-
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-get2(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/app/AlertDialog;
 
     move-result-object v0
 
-    check-cast v0, Landroid/telephony/TelephonyManager;
+    const/4 v1, -0x1
+
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->getButton(I)Landroid/widget/Button;
+
+    move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/telephony/TelephonyManager;->setDataEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
+
+    return-void
+.end method
+
+.method public beforeTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
 
     return-void
 .end method

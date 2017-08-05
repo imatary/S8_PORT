@@ -308,6 +308,7 @@ i formës"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Regjimet e kamerës</string>
     <string name="camera_security_enter">Rregullorja e sigurisë kufizon përdorimin e kamerës.</string>
+    <string name="can_not_use_voice_control">S’mund të përdorësh Kontrollin zanor kur është ndezur zgjimi Bixby Voice.</string>
     <string name="cancel">Anullo</string>
     <string name="cannot_start_camcorder_msg">Nuk mund të regjistrojë video gjatë thirrjes.</string>
     <string name="cannot_start_camera_msg">Nuk mund të përdor Kamerën gjatë thirrjeve.</string>
@@ -604,6 +605,7 @@ Nëse je dakord me këtë, Shkrepjes etiketë do t‘i jepet kjo leje dhe ti nuk
     <string name="task_edge_title_selfie">"Nxirr
 selfie"</string>
     <string name="temperature">Temperatura</string>
+    <string name="temperature_too_high_camera_off">Temperatura tepër e lartë për të përdorur %1$s. Prit që të ftohet telefoni para se të përdorësh %2$s.</string>
     <string name="temperature_too_high_flash_off">Nuk mund të ndez flashin. Provo sërish kur të jetë ftohur pajisja.</string>
     <string name="temperature_too_high_record">Nuk mund të regjistroj video. Provo sërish kur të jetë ftohur pajisja.</string>
     <string name="temperature_too_high_recording_disable">Regjistrimi u ndal. Mund të regjistrosh kur pajisja të jetë ftohur.</string>

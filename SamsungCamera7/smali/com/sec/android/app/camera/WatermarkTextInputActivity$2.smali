@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/WatermarkTextInputActivity$2;->this$0:Lcom/sec/android/app/camera/WatermarkTextInputActivity;
 
-    # getter for: Lcom/sec/android/app/camera/WatermarkTextInputActivity;->mRemainText:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/sec/android/app/camera/WatermarkTextInputActivity;->access$100(Lcom/sec/android/app/camera/WatermarkTextInputActivity;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -66,7 +65,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/app/camera/WatermarkTextInputActivity;->mNewString:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/WatermarkTextInputActivity;->access$002(Lcom/sec/android/app/camera/WatermarkTextInputActivity;Ljava/lang/String;)Ljava/lang/String;
 
     return-void

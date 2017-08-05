@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textSize="@dimen/edit_menu_item_text_size" android:textColor="@color/edit_item_text_color" android:ellipsize="marquee" android:gravity="center" android:orientation="vertical" android:id="@id/edit_item_textview" android:background="@drawable/fastoptionview_edit_ripple_background" android:paddingTop="11.0dip" android:paddingBottom="11.0dip" android:focusable="true" android:layout_width="@dimen/edit_menu_item_width" android:layout_height="@dimen/edit_menu_item_height" android:singleLine="true" android:drawablePadding="@dimen/edit_menu_item_imageview_bottom_margin" android:fontFamily="sec-roboto-light"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/CheckLongPressHelper$CheckForLongPress;->this$0:Lcom/android/keyguard/CheckLongPressHelper;
 
-    # getter for: Lcom/android/keyguard/CheckLongPressHelper;->mView:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/CheckLongPressHelper;->access$000(Lcom/android/keyguard/CheckLongPressHelper;)Landroid/view/View;
 
     move-result-object v0
@@ -59,7 +58,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/CheckLongPressHelper$CheckForLongPress;->this$0:Lcom/android/keyguard/CheckLongPressHelper;
 
-    # getter for: Lcom/android/keyguard/CheckLongPressHelper;->mView:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/CheckLongPressHelper;->access$000(Lcom/android/keyguard/CheckLongPressHelper;)Landroid/view/View;
 
     move-result-object v0
@@ -72,7 +70,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/CheckLongPressHelper$CheckForLongPress;->this$0:Lcom/android/keyguard/CheckLongPressHelper;
 
-    # getter for: Lcom/android/keyguard/CheckLongPressHelper;->mHasPerformedLongPress:Z
     invoke-static {v0}, Lcom/android/keyguard/CheckLongPressHelper;->access$100(Lcom/android/keyguard/CheckLongPressHelper;)Z
 
     move-result v0
@@ -81,7 +78,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/CheckLongPressHelper$CheckForLongPress;->this$0:Lcom/android/keyguard/CheckLongPressHelper;
 
-    # getter for: Lcom/android/keyguard/CheckLongPressHelper;->mView:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/CheckLongPressHelper;->access$000(Lcom/android/keyguard/CheckLongPressHelper;)Landroid/view/View;
 
     move-result-object v0
@@ -94,7 +90,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/CheckLongPressHelper$CheckForLongPress;->this$0:Lcom/android/keyguard/CheckLongPressHelper;
 
-    # getter for: Lcom/android/keyguard/CheckLongPressHelper;->mView:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/CheckLongPressHelper;->access$000(Lcom/android/keyguard/CheckLongPressHelper;)Landroid/view/View;
 
     move-result-object v0
@@ -105,7 +100,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/android/keyguard/CheckLongPressHelper;->mHasPerformedLongPress:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/CheckLongPressHelper;->access$102(Lcom/android/keyguard/CheckLongPressHelper;Z)Z
 
     goto :goto_0

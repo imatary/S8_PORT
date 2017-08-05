@@ -117,7 +117,6 @@
 
     aget-object v2, v2, v1
 
-    # invokes: Lcom/google/gson/internal/$Gson$Types;->checkNotPrimitive(Ljava/lang/reflect/Type;)V
     invoke-static {v2}, Lcom/google/gson/internal/$Gson$Types;->access$000(Ljava/lang/reflect/Type;)V
 
     iget-object v2, p0, Lcom/google/gson/internal/$Gson$Types$ParameterizedTypeImpl;->typeArguments:[Ljava/lang/reflect/Type;
@@ -229,7 +228,6 @@
 
     iget-object v1, p0, Lcom/google/gson/internal/$Gson$Types$ParameterizedTypeImpl;->ownerType:Ljava/lang/reflect/Type;
 
-    # invokes: Lcom/google/gson/internal/$Gson$Types;->hashCodeOrZero(Ljava/lang/Object;)I
     invoke-static {v1}, Lcom/google/gson/internal/$Gson$Types;->access$100(Ljava/lang/Object;)I
 
     move-result v1

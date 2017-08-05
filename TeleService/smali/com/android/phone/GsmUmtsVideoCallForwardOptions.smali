@@ -274,7 +274,7 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
 
-    const v9, 0x7f0d04fb
+    const v9, 0x7f0d055b
 
     const/4 v5, 0x0
 
@@ -991,7 +991,7 @@
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 2
 
-    const v1, 0x7f0d01ff
+    const v1, 0x7f0d025c
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->mButtonCFU:Lcom/android/phone/CallForwardEditPreference;
 
@@ -1001,7 +1001,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0264
+    const v1, 0x7f0d02c3
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -1026,7 +1026,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0265
+    const v1, 0x7f0d02c4
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -1045,7 +1045,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0266
+    const v1, 0x7f0d02c5
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -1064,7 +1064,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0267
+    const v1, 0x7f0d02c6
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -1084,7 +1084,7 @@
 
     invoke-super {p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onResume()V
 
-    const v5, 0x7f0d01ff
+    const v5, 0x7f0d025c
 
     invoke-virtual {p0, v5}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getString(I)Ljava/lang/String;
 

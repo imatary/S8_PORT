@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:gravity="bottom" android:layout_gravity="center" android:id="@id/sub_layout_MM" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom|center" android:id="@id/decoration_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/decoration_drawer_height" android:layout_alignParentBottom="true">
-        <include layout="@layout/tray_skelton_slidingdrawer_combined_arrow" />
-    </LinearLayout>
-</RelativeLayout>

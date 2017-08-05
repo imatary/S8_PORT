@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectListMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/EffectListMenu;->access$100(Lcom/sec/android/app/camera/menu/EffectListMenu;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     move-result-object v0
@@ -68,7 +67,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectListMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/EffectListMenu;->access$100(Lcom/sec/android/app/camera/menu/EffectListMenu;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     move-result-object v1
@@ -79,7 +77,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectListMenu;->mItemList:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/EffectListMenu;->access$200(Lcom/sec/android/app/camera/menu/EffectListMenu;)Landroid/util/SparseArray;
 
     move-result-object v1
@@ -122,7 +119,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectListMenu;->EFFECT_ITEM_WIDTH:I
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/EffectListMenu;->access$300(Lcom/sec/android/app/camera/menu/EffectListMenu;)I
 
     move-result v3
@@ -139,7 +135,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectListMenu;->EFFECT_ITEM_HEIGHT:I
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/EffectListMenu;->access$400(Lcom/sec/android/app/camera/menu/EffectListMenu;)I
 
     move-result v3
@@ -153,7 +148,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectListMenu;->mMute:Z
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/EffectListMenu;->access$600(Lcom/sec/android/app/camera/menu/EffectListMenu;)Z
 
     move-result v1
@@ -162,7 +156,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectListMenu;->mList:Lcom/samsung/android/glview/GLList;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/EffectListMenu;->access$700(Lcom/sec/android/app/camera/menu/EffectListMenu;)Lcom/samsung/android/glview/GLList;
 
     move-result-object v1
@@ -179,7 +172,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectListMenu;->mItemList:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/EffectListMenu;->access$200(Lcom/sec/android/app/camera/menu/EffectListMenu;)Landroid/util/SparseArray;
 
     move-result-object v1
@@ -197,14 +189,12 @@
     :cond_1
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectListMenu;->EFFECT_ITEM_HEIGHT:I
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/EffectListMenu;->access$400(Lcom/sec/android/app/camera/menu/EffectListMenu;)I
 
     move-result v3
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/EffectListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectListMenu;->EFFECT_LINE_THICKNESS:I
     invoke-static {v5}, Lcom/sec/android/app/camera/menu/EffectListMenu;->access$500(Lcom/sec/android/app/camera/menu/EffectListMenu;)I
 
     move-result v5

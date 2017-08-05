@@ -103,7 +103,6 @@
     if-ne v1, v2, :cond_0
 
     :cond_2
-    # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController;->checkRecordingTickTime()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$1200(Lcom/sec/android/app/camera/shootingmode/RecordingController;)V
 
     goto :goto_0

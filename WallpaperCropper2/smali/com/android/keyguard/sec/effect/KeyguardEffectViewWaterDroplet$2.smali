@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->mView:Lcom/samsung/android/visualeffect/lock/waterdroplet/WaterDropletEffect;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->access$200(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;)Lcom/samsung/android/visualeffect/lock/waterdroplet/WaterDropletEffect;
 
     move-result-object v0

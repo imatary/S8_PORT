@@ -883,213 +883,213 @@
     packed-switch p1, :pswitch_data_0
 
     :pswitch_0
-    const v0, 0x7f0902bc
+    const v0, 0x7f0902be
 
     :goto_0
     return v0
 
     :pswitch_1
-    const v0, 0x7f090293
-
-    goto :goto_0
-
-    :pswitch_2
-    const v0, 0x7f090294
-
-    goto :goto_0
-
-    :pswitch_3
     const v0, 0x7f090295
 
     goto :goto_0
 
-    :pswitch_4
+    :pswitch_2
     const v0, 0x7f090296
 
     goto :goto_0
 
-    :pswitch_5
+    :pswitch_3
     const v0, 0x7f090297
 
     goto :goto_0
 
-    :pswitch_6
+    :pswitch_4
     const v0, 0x7f090298
 
     goto :goto_0
 
-    :pswitch_7
+    :pswitch_5
     const v0, 0x7f090299
 
     goto :goto_0
 
-    :pswitch_8
+    :pswitch_6
     const v0, 0x7f09029a
 
     goto :goto_0
 
-    :pswitch_9
+    :pswitch_7
     const v0, 0x7f09029b
 
     goto :goto_0
 
-    :pswitch_a
+    :pswitch_8
     const v0, 0x7f09029c
 
     goto :goto_0
 
-    :pswitch_b
+    :pswitch_9
     const v0, 0x7f09029d
 
     goto :goto_0
 
-    :pswitch_c
+    :pswitch_a
     const v0, 0x7f09029e
 
     goto :goto_0
 
-    :pswitch_d
+    :pswitch_b
     const v0, 0x7f09029f
 
     goto :goto_0
 
-    :pswitch_e
+    :pswitch_c
     const v0, 0x7f0902a0
 
     goto :goto_0
 
-    :pswitch_f
+    :pswitch_d
     const v0, 0x7f0902a1
 
     goto :goto_0
 
-    :pswitch_10
+    :pswitch_e
     const v0, 0x7f0902a2
 
     goto :goto_0
 
-    :pswitch_11
+    :pswitch_f
     const v0, 0x7f0902a3
 
     goto :goto_0
 
-    :pswitch_12
+    :pswitch_10
     const v0, 0x7f0902a4
 
     goto :goto_0
 
-    :pswitch_13
+    :pswitch_11
     const v0, 0x7f0902a5
 
     goto :goto_0
 
-    :pswitch_14
+    :pswitch_12
     const v0, 0x7f0902a6
 
     goto :goto_0
 
-    :pswitch_15
+    :pswitch_13
     const v0, 0x7f0902a7
 
     goto :goto_0
 
-    :pswitch_16
+    :pswitch_14
     const v0, 0x7f0902a8
 
     goto :goto_0
 
-    :pswitch_17
+    :pswitch_15
     const v0, 0x7f0902a9
 
     goto :goto_0
 
-    :pswitch_18
+    :pswitch_16
     const v0, 0x7f0902aa
 
     goto :goto_0
 
-    :pswitch_19
+    :pswitch_17
     const v0, 0x7f0902ab
 
     goto :goto_0
 
-    :pswitch_1a
+    :pswitch_18
     const v0, 0x7f0902ac
 
     goto :goto_0
 
-    :pswitch_1b
+    :pswitch_19
     const v0, 0x7f0902ad
 
     goto :goto_0
 
-    :pswitch_1c
+    :pswitch_1a
     const v0, 0x7f0902ae
 
     goto :goto_0
 
-    :pswitch_1d
+    :pswitch_1b
     const v0, 0x7f0902af
 
     goto :goto_0
 
-    :pswitch_1e
+    :pswitch_1c
     const v0, 0x7f0902b0
 
     goto :goto_0
 
-    :pswitch_1f
+    :pswitch_1d
     const v0, 0x7f0902b1
 
     goto :goto_0
 
-    :pswitch_20
+    :pswitch_1e
     const v0, 0x7f0902b2
 
     goto :goto_0
 
-    :pswitch_21
+    :pswitch_1f
     const v0, 0x7f0902b3
 
-    goto/16 :goto_0
+    goto :goto_0
 
-    :pswitch_22
+    :pswitch_20
     const v0, 0x7f0902b4
 
-    goto/16 :goto_0
+    goto :goto_0
 
-    :pswitch_23
+    :pswitch_21
     const v0, 0x7f0902b5
 
     goto/16 :goto_0
 
-    :pswitch_24
+    :pswitch_22
     const v0, 0x7f0902b6
 
     goto/16 :goto_0
 
-    :pswitch_25
+    :pswitch_23
     const v0, 0x7f0902b7
 
     goto/16 :goto_0
 
-    :pswitch_26
+    :pswitch_24
     const v0, 0x7f0902b8
 
     goto/16 :goto_0
 
-    :pswitch_27
+    :pswitch_25
     const v0, 0x7f0902b9
 
     goto/16 :goto_0
 
-    :pswitch_28
+    :pswitch_26
     const v0, 0x7f0902ba
 
     goto/16 :goto_0
 
-    :pswitch_29
+    :pswitch_27
     const v0, 0x7f0902bb
+
+    goto/16 :goto_0
+
+    :pswitch_28
+    const v0, 0x7f0902bc
+
+    goto/16 :goto_0
+
+    :pswitch_29
+    const v0, 0x7f0902bd
 
     goto/16 :goto_0
 
@@ -1178,7 +1178,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;->mTemperature:Ljava/lang/String;
 
-    # invokes: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->getChinaNumString(Ljava/lang/String;)Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->access$500(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1

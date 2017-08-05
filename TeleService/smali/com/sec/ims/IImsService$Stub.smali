@@ -1102,17 +1102,15 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-result-object v44
-
-    invoke-static/range {v44 .. v44}, Lcom/sec/ims/IDialogEventListener$Stub;->asInterface(Landroid/os/IBinder;)Lcom/sec/ims/IDialogEventListener;
-
-    move-result-object v9
+    move-result-object v20
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v9}, Lcom/sec/ims/IImsService$Stub;->registerDialogEventListener(Lcom/sec/ims/IDialogEventListener;)V
+    move-object/from16 v1, v20
+
+    invoke-virtual {v0, v1}, Lcom/sec/ims/IImsService$Stub;->sendVerificationCode(Ljava/lang/String;)V
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
@@ -1139,7 +1137,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v9}, Lcom/sec/ims/IImsService$Stub;->unregisterDialogEventListener(Lcom/sec/ims/IDialogEventListener;)V
+    invoke-virtual {v0, v9}, Lcom/sec/ims/IImsService$Stub;->registerDialogEventListener(Lcom/sec/ims/IDialogEventListener;)V
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
@@ -1160,13 +1158,13 @@
 
     move-result-object v44
 
-    invoke-static/range {v44 .. v44}, Lcom/sec/ims/IDialogSubscribeStatusListener$Stub;->asInterface(Landroid/os/IBinder;)Lcom/sec/ims/IDialogSubscribeStatusListener;
+    invoke-static/range {v44 .. v44}, Lcom/sec/ims/IDialogEventListener$Stub;->asInterface(Landroid/os/IBinder;)Lcom/sec/ims/IDialogEventListener;
 
-    move-result-object v10
+    move-result-object v9
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v10}, Lcom/sec/ims/IImsService$Stub;->registerDialogSubscribeStatusListener(Lcom/sec/ims/IDialogSubscribeStatusListener;)V
+    invoke-virtual {v0, v9}, Lcom/sec/ims/IImsService$Stub;->unregisterDialogEventListener(Lcom/sec/ims/IDialogEventListener;)V
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
@@ -1193,7 +1191,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v10}, Lcom/sec/ims/IImsService$Stub;->unregisterDialogSubscribeStatusListener(Lcom/sec/ims/IDialogSubscribeStatusListener;)V
+    invoke-virtual {v0, v10}, Lcom/sec/ims/IImsService$Stub;->registerDialogSubscribeStatusListener(Lcom/sec/ims/IDialogSubscribeStatusListener;)V
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
@@ -1202,6 +1200,33 @@
     return v44
 
     :sswitch_23
+    const-string/jumbo v44, "com.sec.ims.IImsService"
+
+    move-object/from16 v0, p2
+
+    move-object/from16 v1, v44
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
+
+    move-result-object v44
+
+    invoke-static/range {v44 .. v44}, Lcom/sec/ims/IDialogSubscribeStatusListener$Stub;->asInterface(Landroid/os/IBinder;)Lcom/sec/ims/IDialogSubscribeStatusListener;
+
+    move-result-object v10
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v10}, Lcom/sec/ims/IImsService$Stub;->unregisterDialogSubscribeStatusListener(Lcom/sec/ims/IDialogSubscribeStatusListener;)V
+
+    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
+
+    const/16 v44, 0x1
+
+    return v44
+
+    :sswitch_24
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1252,7 +1277,7 @@
 
     goto :goto_8
 
-    :sswitch_24
+    :sswitch_25
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1283,7 +1308,7 @@
 
     return v44
 
-    :sswitch_25
+    :sswitch_26
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1314,7 +1339,7 @@
 
     return v44
 
-    :sswitch_26
+    :sswitch_27
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1345,7 +1370,7 @@
 
     return v44
 
-    :sswitch_27
+    :sswitch_28
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1374,7 +1399,7 @@
 
     return v44
 
-    :sswitch_28
+    :sswitch_29
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1403,7 +1428,7 @@
 
     return v44
 
-    :sswitch_29
+    :sswitch_2a
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1442,7 +1467,7 @@
 
     return v44
 
-    :sswitch_2a
+    :sswitch_2b
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1487,7 +1512,7 @@
 
     return v44
 
-    :sswitch_2b
+    :sswitch_2c
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1522,7 +1547,7 @@
 
     goto :goto_9
 
-    :sswitch_2c
+    :sswitch_2d
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1557,7 +1582,7 @@
 
     goto :goto_a
 
-    :sswitch_2d
+    :sswitch_2e
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1592,7 +1617,7 @@
 
     goto :goto_b
 
-    :sswitch_2e
+    :sswitch_2f
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1635,7 +1660,7 @@
 
     goto :goto_c
 
-    :sswitch_2f
+    :sswitch_30
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1684,7 +1709,7 @@
 
     goto :goto_d
 
-    :sswitch_30
+    :sswitch_31
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1719,7 +1744,7 @@
 
     goto :goto_e
 
-    :sswitch_31
+    :sswitch_32
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1754,7 +1779,7 @@
 
     goto :goto_f
 
-    :sswitch_32
+    :sswitch_33
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1795,7 +1820,7 @@
 
     goto :goto_10
 
-    :sswitch_33
+    :sswitch_34
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1830,7 +1855,7 @@
 
     goto :goto_11
 
-    :sswitch_34
+    :sswitch_35
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1865,7 +1890,7 @@
 
     goto :goto_12
 
-    :sswitch_35
+    :sswitch_36
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1892,7 +1917,7 @@
 
     return v44
 
-    :sswitch_36
+    :sswitch_37
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1919,7 +1944,7 @@
 
     return v44
 
-    :sswitch_37
+    :sswitch_38
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1942,7 +1967,7 @@
 
     return v44
 
-    :sswitch_38
+    :sswitch_39
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -1985,7 +2010,7 @@
 
     return v44
 
-    :sswitch_39
+    :sswitch_3a
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2008,7 +2033,7 @@
 
     return v44
 
-    :sswitch_3a
+    :sswitch_3b
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2025,7 +2050,7 @@
 
     return v44
 
-    :sswitch_3b
+    :sswitch_3c
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2066,7 +2091,7 @@
 
     goto :goto_13
 
-    :sswitch_3c
+    :sswitch_3d
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2107,7 +2132,7 @@
 
     goto :goto_14
 
-    :sswitch_3d
+    :sswitch_3e
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2150,7 +2175,7 @@
 
     goto :goto_15
 
-    :sswitch_3e
+    :sswitch_3f
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2193,7 +2218,7 @@
 
     goto :goto_16
 
-    :sswitch_3f
+    :sswitch_40
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2216,7 +2241,7 @@
 
     return v44
 
-    :sswitch_40
+    :sswitch_41
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2233,7 +2258,7 @@
 
     return v44
 
-    :sswitch_41
+    :sswitch_42
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2250,7 +2275,7 @@
 
     return v44
 
-    :sswitch_42
+    :sswitch_43
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2303,7 +2328,7 @@
 
     goto :goto_17
 
-    :sswitch_43
+    :sswitch_44
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2326,7 +2351,7 @@
 
     return v44
 
-    :sswitch_44
+    :sswitch_45
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2342,35 +2367,6 @@
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v5}, Lcom/sec/ims/IImsService$Stub;->resumeVideoBySession(I)V
-
-    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
-
-    const/16 v44, 0x1
-
-    return v44
-
-    :sswitch_45
-    const-string/jumbo v44, "com.sec.ims.IImsService"
-
-    move-object/from16 v0, p2
-
-    move-object/from16 v1, v44
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
-
-    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
-
-    move-result-object v44
-
-    invoke-static/range {v44 .. v44}, Lcom/sec/ims/volte2/IImsVideoListener$Stub;->asInterface(Landroid/os/IBinder;)Lcom/sec/ims/volte2/IImsVideoListener;
-
-    move-result-object v19
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Lcom/sec/ims/IImsService$Stub;->registerVideoListener(Lcom/sec/ims/volte2/IImsVideoListener;)V
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
@@ -2399,7 +2395,7 @@
 
     move-object/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Lcom/sec/ims/IImsService$Stub;->unregisterVideoListener(Lcom/sec/ims/volte2/IImsVideoListener;)V
+    invoke-virtual {v0, v1}, Lcom/sec/ims/IImsService$Stub;->registerVideoListener(Lcom/sec/ims/volte2/IImsVideoListener;)V
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
@@ -2408,6 +2404,35 @@
     return v44
 
     :sswitch_47
+    const-string/jumbo v44, "com.sec.ims.IImsService"
+
+    move-object/from16 v0, p2
+
+    move-object/from16 v1, v44
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
+
+    move-result-object v44
+
+    invoke-static/range {v44 .. v44}, Lcom/sec/ims/volte2/IImsVideoListener$Stub;->asInterface(Landroid/os/IBinder;)Lcom/sec/ims/volte2/IImsVideoListener;
+
+    move-result-object v19
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v19
+
+    invoke-virtual {v0, v1}, Lcom/sec/ims/IImsService$Stub;->unregisterVideoListener(Lcom/sec/ims/volte2/IImsVideoListener;)V
+
+    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
+
+    const/16 v44, 0x1
+
+    return v44
+
+    :sswitch_48
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2440,7 +2465,7 @@
 
     return v44
 
-    :sswitch_48
+    :sswitch_49
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2463,7 +2488,7 @@
 
     return v44
 
-    :sswitch_49
+    :sswitch_4a
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2506,7 +2531,7 @@
 
     return v44
 
-    :sswitch_4a
+    :sswitch_4b
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2531,7 +2556,7 @@
 
     return v44
 
-    :sswitch_4b
+    :sswitch_4c
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2556,7 +2581,7 @@
 
     return v44
 
-    :sswitch_4c
+    :sswitch_4d
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2573,7 +2598,7 @@
 
     return v44
 
-    :sswitch_4d
+    :sswitch_4e
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2614,7 +2639,7 @@
 
     goto :goto_18
 
-    :sswitch_4e
+    :sswitch_4f
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2639,7 +2664,7 @@
 
     return v44
 
-    :sswitch_4f
+    :sswitch_50
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2698,7 +2723,7 @@
 
     goto :goto_19
 
-    :sswitch_50
+    :sswitch_51
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2765,7 +2790,7 @@
 
     goto :goto_1b
 
-    :sswitch_51
+    :sswitch_52
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2800,7 +2825,7 @@
 
     goto :goto_1c
 
-    :sswitch_52
+    :sswitch_53
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2835,7 +2860,7 @@
 
     goto :goto_1d
 
-    :sswitch_53
+    :sswitch_54
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2870,7 +2895,7 @@
 
     goto :goto_1e
 
-    :sswitch_54
+    :sswitch_55
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2895,7 +2920,7 @@
 
     return v44
 
-    :sswitch_55
+    :sswitch_56
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2918,7 +2943,7 @@
 
     return v44
 
-    :sswitch_56
+    :sswitch_57
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2941,7 +2966,7 @@
 
     return v44
 
-    :sswitch_57
+    :sswitch_58
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2966,7 +2991,7 @@
 
     return v44
 
-    :sswitch_58
+    :sswitch_59
     const-string/jumbo v44, "com.sec.ims.IImsService"
 
     move-object/from16 v0, p2
@@ -2984,33 +3009,6 @@
     move-object/from16 v1, v20
 
     invoke-virtual {v0, v1}, Lcom/sec/ims/IImsService$Stub;->sendRttMessage(Ljava/lang/String;)V
-
-    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
-
-    const/16 v44, 0x1
-
-    return v44
-
-    :sswitch_59
-    const-string/jumbo v44, "com.sec.ims.IImsService"
-
-    move-object/from16 v0, p2
-
-    move-object/from16 v1, v44
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
-
-    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
-
-    move-result-object v44
-
-    invoke-static/range {v44 .. v44}, Lcom/sec/ims/IRttEventListener$Stub;->asInterface(Landroid/os/IBinder;)Lcom/sec/ims/IRttEventListener;
-
-    move-result-object v13
-
-    move-object/from16 v0, p0
-
-    invoke-virtual {v0, v13}, Lcom/sec/ims/IImsService$Stub;->registerRttEventListener(Lcom/sec/ims/IRttEventListener;)V
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
@@ -3037,7 +3035,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v13}, Lcom/sec/ims/IImsService$Stub;->unregisterRttEventListener(Lcom/sec/ims/IRttEventListener;)V
+    invoke-virtual {v0, v13}, Lcom/sec/ims/IImsService$Stub;->registerRttEventListener(Lcom/sec/ims/IRttEventListener;)V
 
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
@@ -3045,7 +3043,32 @@
 
     return v44
 
-    nop
+    :sswitch_5b
+    const-string/jumbo v44, "com.sec.ims.IImsService"
+
+    move-object/from16 v0, p2
+
+    move-object/from16 v1, v44
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
+
+    move-result-object v44
+
+    invoke-static/range {v44 .. v44}, Lcom/sec/ims/IRttEventListener$Stub;->asInterface(Landroid/os/IBinder;)Lcom/sec/ims/IRttEventListener;
+
+    move-result-object v13
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v13}, Lcom/sec/ims/IImsService$Stub;->unregisterRttEventListener(Lcom/sec/ims/IRttEventListener;)V
+
+    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
+
+    const/16 v44, 0x1
+
+    return v44
 
     :sswitch_data_0
     .sparse-switch
@@ -3139,6 +3162,7 @@
         0x58 -> :sswitch_58
         0x59 -> :sswitch_59
         0x5a -> :sswitch_5a
+        0x5b -> :sswitch_5b
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method

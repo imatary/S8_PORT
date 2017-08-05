@@ -20,9 +20,13 @@
 
 
 # static fields
+.field private static final ACTION_VR_BTN:Ljava/lang/String; = "com.samsung.bt.hfp.intent.action.VR_BTN"
+
 .field private static final ADD_INBANDRING_STATE:I = 0x1
 
 .field private static final ALLOWED_BVRA:I = 0x1
+
+.field private static final AT_CMD_VR_BTN:Ljava/lang/String; = "VR_BTN"
 
 .field private static final AUDIOPATH_AUDIOON_MAINTAIN:I = 0x2
 
@@ -99,6 +103,8 @@
 .field private static final BRSF_HF_VOICE_REG_ACT:I = 0x8
 
 .field static final CALL_STATE_CHANGED:I = 0x9
+
+.field private static final CATEGORY_VR_BTN:Ljava/lang/String; = "com.samsung.bt.hfp.intent.category.VR_BTN"
 
 .field private static final CLCC_RSP_TIMEOUT:I = 0x68
 
@@ -189,6 +195,8 @@
 .field private static final EXTRA_CALL_DIRECTCALL:Ljava/lang/String; = "android.phone.extra.CALL_DIRECTCALL"
 
 .field private static final EXTRA_SCO_SAMPLERATE:Ljava/lang/String; = "android.bluetooth.hfp.extra.SCO_SAMPLERATE"
+
+.field private static final EXTRA_VR_BTN_VALUE:Ljava/lang/String; = "com.samsung.bt.hfp.intent.extra.VR_BTN_VALUE"
 
 .field private static final HANDSFREE_INFORMATION:Ljava/lang/String; = "BHFI"
 
@@ -1507,6 +1515,18 @@
 
     sget-object v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->VENDOR_SPECIFIC_AT_COMMAND_COMPANY_ID:Ljava/util/Map;
 
+    const-string/jumbo v1, "+SAMSUNG"
+
+    const/16 v2, 0x75
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->VENDOR_SPECIFIC_AT_COMMAND_COMPANY_ID:Ljava/util/Map;
+
     const-string/jumbo v1, "+XEVENT"
 
     const/16 v2, 0x55
@@ -1839,7 +1859,7 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_4
 
     iget-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mConnection:Landroid/content/ServiceConnection;
 
@@ -1849,7 +1869,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_4
 
     :goto_0
     const-string/jumbo v0, "audio"
@@ -1907,7 +1927,7 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_5
 
     iget-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mVoIPConnection:Landroid/content/ServiceConnection;
 
@@ -1917,7 +1937,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_5
 
     :goto_1
     iget v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->max_hf_connections:I
@@ -2105,7 +2125,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_7
+    if-nez v0, :cond_6
 
     const/4 v2, 0x1
 
@@ -2118,15 +2138,15 @@
 
     move-result v10
 
-    if-eq v2, v10, :cond_c
+    if-eq v2, v10, :cond_b
 
     const/4 v0, -0x1
 
-    if-ne v2, v0, :cond_9
+    if-ne v2, v0, :cond_8
 
     const/4 v0, 0x1
 
-    if-ne v10, v0, :cond_8
+    if-ne v10, v0, :cond_7
 
     const/4 v0, 0x1
 
@@ -2256,7 +2276,7 @@
 
     move-result-object v6
 
-    if-eqz v6, :cond_4
+    if-eqz v6, :cond_e
 
     invoke-virtual {v6}, Lcom/android/bluetooth/btservice/AdapterService;->getDownloadableDbObject()Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;
 
@@ -2264,12 +2284,24 @@
 
     iput-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mBTDownloadableDb:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->refreshNotAllowedVoiceRecognitionDeviceList()V
+    iget-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mBTDownloadableDb:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;
 
-    :cond_4
+    if-nez v0, :cond_d
+
+    const-string/jumbo v0, "HeadsetStateMachine"
+
+    const-string/jumbo v1, "DDB is null"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string/jumbo v0, "HFSM-DDB is null"
+
+    invoke-static {v0}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
+
+    :goto_4
     return-void
 
-    :cond_5
+    :cond_4
     const-string/jumbo v0, "HeadsetStateMachine"
 
     const-string/jumbo v1, "Could not bind to Bluetooth Headset Phone Service"
@@ -2278,7 +2310,7 @@
 
     goto/16 :goto_0
 
-    :cond_6
+    :cond_5
     const-string/jumbo v0, "HeadsetStateMachine"
 
     const-string/jumbo v1, "Could not bind to Bluetooth Headset VoIP Service"
@@ -2287,7 +2319,7 @@
 
     goto/16 :goto_1
 
-    :cond_7
+    :cond_6
     const/4 v2, 0x0
 
     goto/16 :goto_2
@@ -2325,14 +2357,14 @@
 
     goto/16 :goto_2
 
-    :cond_8
+    :cond_7
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mSystemAudioInbandSupported:Z
 
     goto/16 :goto_3
 
-    :cond_9
+    :cond_8
     iget-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mService:Lcom/android/bluetooth/hfp/HeadsetService;
 
     const-string/jumbo v3, "HeadsetStateMachine"
@@ -2347,14 +2379,14 @@
 
     move-result v0
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_9
 
     move v10, v2
 
-    :goto_4
+    :goto_5
     const/4 v0, 0x1
 
-    if-ne v2, v0, :cond_b
+    if-ne v2, v0, :cond_a
 
     const/4 v0, 0x1
 
@@ -2362,7 +2394,7 @@
 
     goto/16 :goto_3
 
-    :cond_a
+    :cond_9
     const-string/jumbo v0, "HeadsetStateMachine"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2405,32 +2437,50 @@
 
     invoke-static {v0}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
 
-    goto :goto_4
+    goto :goto_5
+
+    :cond_a
+    const/4 v0, 0x0
+
+    sput-boolean v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mSystemAudioInbandSupported:Z
+
+    goto/16 :goto_3
 
     :cond_b
-    const/4 v0, 0x0
+    const/4 v0, 0x1
+
+    if-ne v2, v0, :cond_c
+
+    const/4 v0, 0x1
 
     sput-boolean v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mSystemAudioInbandSupported:Z
 
     goto/16 :goto_3
 
     :cond_c
-    const/4 v0, 0x1
-
-    if-ne v2, v0, :cond_d
-
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     sput-boolean v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mSystemAudioInbandSupported:Z
 
     goto/16 :goto_3
 
     :cond_d
-    const/4 v0, 0x0
+    invoke-virtual {p0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->refreshNotAllowedVoiceRecognitionDeviceList()V
 
-    sput-boolean v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mSystemAudioInbandSupported:Z
+    goto/16 :goto_4
 
-    goto/16 :goto_3
+    :cond_e
+    const-string/jumbo v0, "HeadsetStateMachine"
+
+    const-string/jumbo v1, "AdapterService is null"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string/jumbo v0, "HFSM-AdapterService is null"
+
+    invoke-static {v0}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
+
+    goto/16 :goto_4
 .end method
 
 .method private native bindResponseNative(IZ[B)Z
@@ -6236,7 +6286,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0a0095
+    const v2, 0x7f0a0096
 
     invoke-virtual {v0, v2, v1}, Lcom/android/bluetooth/hfp/HeadsetService;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -6260,7 +6310,7 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mService:Lcom/android/bluetooth/hfp/HeadsetService;
 
-    const v2, 0x7f0a0093
+    const v2, 0x7f0a0094
 
     invoke-virtual {v0, v2}, Lcom/android/bluetooth/hfp/HeadsetService;->getString(I)Ljava/lang/String;
 
@@ -6364,7 +6414,7 @@
     :cond_5
     iget-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mService:Lcom/android/bluetooth/hfp/HeadsetService;
 
-    const v2, 0x7f0a0094
+    const v2, 0x7f0a0095
 
     invoke-virtual {v0, v2}, Lcom/android/bluetooth/hfp/HeadsetService;->getString(I)Ljava/lang/String;
 
@@ -11667,35 +11717,115 @@
 .end method
 
 .method private processIntentScoVolume(Landroid/content/Intent;Landroid/bluetooth/BluetoothDevice;)V
-    .locals 3
+    .locals 5
 
-    const/4 v2, 0x0
+    const/4 v4, -0x1
 
-    const-string/jumbo v1, "android.media.EXTRA_VOLUME_STREAM_VALUE"
+    const-string/jumbo v2, "android.media.EXTRA_VOLUME_STREAM_VALUE"
 
-    invoke-virtual {p1, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
-
-    move-result v0
-
-    iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
-
-    invoke-virtual {v1}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getSpeakerVolume()I
+    invoke-virtual {p1, v2, v4}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
+    const-string/jumbo v2, "android.media.EXTRA_PREV_VOLUME_STREAM_VALUE"
+
+    invoke-virtual {p1, v2, v4}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result v0
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "processIntentScoVolume : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v3, " to "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->log(Ljava/lang/String;)V
+
+    if-ne v1, v4, :cond_1
+
+    if-ne v0, v4, :cond_1
+
+    :cond_0
+    const-string/jumbo v2, "HeadsetStateMachine"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "Bad volume value : "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string/jumbo v4, " to "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_1
     if-eq v1, v0, :cond_0
 
-    iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+    iget-object v2, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
 
-    invoke-virtual {v1, v0}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->setSpeakerVolume(I)V
+    invoke-virtual {v2, v1, v0}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->getSpeakerVolumeList(II)I
+
+    move-result v2
+
+    if-eq v2, v1, :cond_2
+
+    iget-object v2, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+
+    invoke-virtual {v2, v1}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->setSpeakerVolume(I)V
 
     invoke-direct {p0, p2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {p0, v2, v0, v1}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->setVolumeNative(II[B)Z
+    const/4 v3, 0x0
 
-    :cond_0
+    invoke-direct {p0, v3, v1, v2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->setVolumeNative(II[B)Z
+
+    :cond_2
     return-void
 .end method
 
@@ -12182,9 +12312,20 @@
 
     iput-boolean v5, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mInbandRingAfterVR:Z
 
-    iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mVoiceRecognitionDevice:Landroid/bluetooth/BluetoothDevice;
+    iget-boolean v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mWaitingForVoiceRecognition:Z
 
     if-eqz v1, :cond_c
+
+    invoke-direct {p0, p2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
+
+    move-result-object v1
+
+    invoke-virtual {p0, v5, v4, v1}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->atResponseCodeNative(II[B)Z
+
+    :cond_c
+    iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mVoiceRecognitionDevice:Landroid/bluetooth/BluetoothDevice;
+
+    if-eqz v1, :cond_d
 
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mVoiceRecognitionDevice:Landroid/bluetooth/BluetoothDevice;
 
@@ -12196,18 +12337,18 @@
 
     move-result v1
 
-    if-eqz v1, :cond_c
+    if-eqz v1, :cond_d
 
     invoke-direct {p0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->isInCallforVR()Z
 
     move-result v1
 
-    if-eqz v1, :cond_e
+    if-eqz v1, :cond_f
 
-    :cond_c
+    :cond_d
     iget-boolean v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mWaitingForVoiceRecognition:Z
 
-    if-eqz v1, :cond_d
+    if-eqz v1, :cond_e
 
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mAudioManager:Landroid/media/AudioManager;
 
@@ -12215,7 +12356,7 @@
 
     invoke-virtual {v1, v2}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
 
-    :cond_d
+    :cond_e
     :goto_3
     iput-boolean v4, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mWaitingForVoiceRecognition:Z
 
@@ -12223,7 +12364,7 @@
 
     goto/16 :goto_2
 
-    :cond_e
+    :cond_f
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mVoiceRecognitionDevice:Landroid/bluetooth/BluetoothDevice;
 
     iget-object v2, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mActiveScoDevice:Landroid/bluetooth/BluetoothDevice;
@@ -12232,7 +12373,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_f
+    if-eqz v1, :cond_10
 
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mVoiceRecognitionDevice:Landroid/bluetooth/BluetoothDevice;
 
@@ -12242,7 +12383,7 @@
 
     invoke-direct {p0, v1}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->disconnectAudioNative([B)Z
 
-    :cond_f
+    :cond_10
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mAudioManager:Landroid/media/AudioManager;
 
     const-string/jumbo v2, "A2dpSuspended=false"
@@ -13633,55 +13774,21 @@
 .end method
 
 .method private processVendorSpecificAt(Ljava/lang/String;Landroid/bluetooth/BluetoothDevice;)Z
-    .locals 11
-
-    const/4 v10, 0x1
-
-    const/4 v9, 0x0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v2, "processVendorSpecificAt - atString = "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->log(Ljava/lang/String;)V
-
-    const-string/jumbo v0, "="
-
-    invoke-virtual {p1, v0}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
-
-    move-result v8
-
-    const/4 v0, -0x1
-
-    if-ne v8, v0, :cond_0
-
-    const-string/jumbo v0, "HeadsetStateMachine"
+    .locals 18
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "processVendorSpecificAt: command type error in "
+    const-string/jumbo v4, "processVendorSpecificAt - atString = "
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, p1
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -13689,112 +13796,492 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    move-object/from16 v0, p0
 
-    return v9
+    invoke-virtual {v0, v2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->log(Ljava/lang/String;)V
 
-    :cond_0
-    invoke-virtual {p1, v9, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    const-string/jumbo v2, "="
 
-    move-result-object v1
+    move-object/from16 v0, p1
 
-    sget-object v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->VENDOR_SPECIFIC_AT_COMMAND_COMPANY_ID:Ljava/util/Map;
+    invoke-virtual {v0, v2}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
-    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    move-result v12
 
-    move-result-object v7
+    const/4 v2, -0x1
 
-    check-cast v7, Ljava/lang/Integer;
+    if-ne v12, v2, :cond_0
 
-    if-nez v7, :cond_1
+    const-string/jumbo v2, "HeadsetStateMachine"
 
-    const-string/jumbo v0, "HeadsetStateMachine"
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    const-string/jumbo v5, "processVendorSpecificAt: command type error in "
 
-    const-string/jumbo v3, "processVendorSpecificAt: unsupported command: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v9
-
-    :cond_1
-    add-int/lit8 v0, v8, 0x1
-
-    invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    const-string/jumbo v0, "?"
-
-    invoke-virtual {v6, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    const-string/jumbo v0, "HeadsetStateMachine"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "processVendorSpecificAt: command type error in "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v9
-
-    :cond_2
-    invoke-static {v6}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->generateArgs(Ljava/lang/String;)[Ljava/lang/Object;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
+    move-object/from16 v0, p1
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v2, 0x0
+
+    return v2
+
+    :cond_0
+    const/4 v2, 0x0
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v0, v2, v12}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v3
+
+    sget-object v2, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->VENDOR_SPECIFIC_AT_COMMAND_COMPANY_ID:Ljava/util/Map;
+
+    invoke-interface {v2, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v10
+
+    check-cast v10, Ljava/lang/Integer;
+
+    if-nez v10, :cond_1
+
+    const-string/jumbo v2, "HeadsetStateMachine"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "processVendorSpecificAt: unsupported command: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v2, 0x0
+
+    return v2
+
+    :cond_1
+    add-int/lit8 v2, v12, 0x1
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    const-string/jumbo v2, "?"
+
+    invoke-virtual {v8, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
 
-    const/4 v3, 0x2
+    if-eqz v2, :cond_2
 
-    move-object v0, p0
+    const-string/jumbo v2, "HeadsetStateMachine"
 
-    move-object v5, p2
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->broadcastVendorSpecificEventIntent(Ljava/lang/String;II[Ljava/lang/Object;Landroid/bluetooth/BluetoothDevice;)V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {p0, p2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
+    const-string/jumbo v5, "processVendorSpecificAt: command type error in "
 
-    move-result-object v0
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, v10, v9, v0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->atResponseCodeNative(II[B)Z
+    move-result-object v4
 
-    return v10
+    move-object/from16 v0, p1
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v2, 0x0
+
+    return v2
+
+    :cond_2
+    invoke-static {v8}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->generateArgs(Ljava/lang/String;)[Ljava/lang/Object;
+
+    move-result-object v6
+
+    :try_start_0
+    invoke-virtual {v10}, Ljava/lang/Integer;->intValue()I
+
+    move-result v2
+
+    const/16 v4, 0x75
+
+    if-ne v2, v4, :cond_6
+
+    array-length v2, v6
+
+    const/4 v4, 0x1
+
+    if-le v2, v4, :cond_6
+
+    const/4 v2, 0x0
+
+    aget-object v2, v6, v2
+
+    const-string/jumbo v4, "VR_BTN"
+
+    invoke-virtual {v2, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_6
+
+    const/4 v2, 0x1
+
+    aget-object v2, v6, v2
+
+    check-cast v2, Ljava/lang/Integer;
+
+    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+
+    move-result v9
+
+    if-eqz v9, :cond_3
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mService:Lcom/android/bluetooth/hfp/HeadsetService;
+
+    invoke-virtual {v2}, Lcom/android/bluetooth/hfp/HeadsetService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v13
+
+    new-instance v2, Landroid/content/Intent;
+
+    const-string/jumbo v4, "android.intent.action.VOICE_COMMAND"
+
+    invoke-direct {v2, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v13, v2, v4}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+
+    move-result-object v17
+
+    if-eqz v17, :cond_5
+
+    move-object/from16 v0, v17
+
+    iget-object v2, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    iget-object v2, v2, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget-object v0, v2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+
+    move-object/from16 v16, v0
+
+    new-instance v14, Landroid/content/Intent;
+
+    const-string/jumbo v2, "com.samsung.bt.hfp.intent.action.VR_BTN"
+
+    invoke-direct {v14, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v0, v16
+
+    invoke-virtual {v14, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v13, v14, v2}, Landroid/content/pm/PackageManager;->resolveService(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+
+    move-result-object v15
+
+    if-eqz v15, :cond_4
+
+    const-string/jumbo v2, "com.samsung.bt.hfp.intent.category.VR_BTN"
+
+    invoke-virtual {v14, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string/jumbo v2, "android.bluetooth.device.extra.DEVICE"
+
+    move-object/from16 v0, p2
+
+    invoke-virtual {v14, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    const-string/jumbo v2, "com.samsung.bt.hfp.intent.extra.VR_BTN_VALUE"
+
+    invoke-virtual {v14, v2, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    const/high16 v2, 0x10000000
+
+    invoke-virtual {v14, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mService:Lcom/android/bluetooth/hfp/HeadsetService;
+
+    sget-object v4, Landroid/os/UserHandle;->CURRENT:Landroid/os/UserHandle;
+
+    invoke-virtual {v2, v14, v4}, Lcom/android/bluetooth/hfp/HeadsetService;->startServiceAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)Landroid/content/ComponentName;
+
+    :cond_3
+    const-string/jumbo v2, "HeadsetStateMachine"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "VR_BTN event : "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    invoke-direct {v0, v1}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
+
+    move-result-object v2
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v4, v5, v2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->atResponseCodeNative(II[B)Z
+
+    const/4 v2, 0x1
+
+    return v2
+
+    :cond_4
+    const-string/jumbo v2, "HeadsetStateMachine"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "VR_BTN event("
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string/jumbo v5, ") : vrBtnResolveInfo is null for "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    move-object/from16 v0, v16
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    invoke-direct {v0, v1}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
+
+    move-result-object v2
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v4, v5, v2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->atResponseCodeNative(II[B)Z
+
+    const/4 v2, 0x1
+
+    return v2
+
+    :cond_5
+    const-string/jumbo v2, "HeadsetStateMachine"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "VR_BTN event("
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string/jumbo v5, ") : vrResolveInfo is null"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    invoke-direct {v0, v1}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
+
+    move-result-object v2
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v4, v5, v2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->atResponseCodeNative(II[B)Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/4 v2, 0x1
+
+    return v2
+
+    :catch_0
+    move-exception v11
+
+    const-string/jumbo v2, "HeadsetStateMachine"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "VR_BTN event : error "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    invoke-direct {v0, v1}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
+
+    move-result-object v2
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v4, v5, v2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->atResponseCodeNative(II[B)Z
+
+    const/4 v2, 0x1
+
+    return v2
+
+    :cond_6
+    invoke-virtual {v10}, Ljava/lang/Integer;->intValue()I
+
+    move-result v4
+
+    const/4 v5, 0x2
+
+    move-object/from16 v2, p0
+
+    move-object/from16 v7, p2
+
+    invoke-direct/range {v2 .. v7}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->broadcastVendorSpecificEventIntent(Ljava/lang/String;II[Ljava/lang/Object;Landroid/bluetooth/BluetoothDevice;)V
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    invoke-direct {v0, v1}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
+
+    move-result-object v2
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v4, v5, v2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->atResponseCodeNative(II[B)Z
+
+    const/4 v2, 0x1
+
+    return v2
 .end method
 
 .method private processVirtualAnswerCall(Landroid/bluetooth/BluetoothDevice;)V
@@ -14020,6 +14507,8 @@
 .method private processVolumeEvent(IILandroid/bluetooth/BluetoothDevice;)V
     .locals 4
 
+    const/4 v3, 0x6
+
     if-eqz p3, :cond_0
 
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mActiveScoDevice:Landroid/bluetooth/BluetoothDevice;
@@ -14028,14 +14517,26 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_2
 
     :cond_0
-    if-nez p1, :cond_3
+    if-nez p1, :cond_4
 
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
 
     invoke-virtual {v1, p2}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->setSpeakerVolume(I)V
+
+    iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mAudioManager:Landroid/media/AudioManager;
+
+    invoke-virtual {v1, v3}, Landroid/media/AudioManager;->getStreamVolume(I)I
+
+    move-result v1
+
+    if-eq v1, p2, :cond_1
+
+    iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
+
+    invoke-virtual {v1, p2}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->setSpeakerVolumeList(I)V
 
     invoke-virtual {p0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -14043,21 +14544,20 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mAudioOn:Lcom/android/bluetooth/hfp/HeadsetStateMachine$AudioOn;
 
-    if-ne v1, v2, :cond_2
+    if-ne v1, v2, :cond_3
 
     const/4 v0, 0x1
 
     :goto_0
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mAudioManager:Landroid/media/AudioManager;
 
-    const/4 v2, 0x6
+    invoke-virtual {v1, v3, p2, v0}, Landroid/media/AudioManager;->setStreamVolume(III)V
 
-    invoke-virtual {v1, v2, p2, v0}, Landroid/media/AudioManager;->setStreamVolume(III)V
-
+    :cond_1
     :goto_1
     return-void
 
-    :cond_1
+    :cond_2
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
 
     invoke-virtual {v1}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->isInCall()Z
@@ -14074,15 +14574,15 @@
 
     return-void
 
-    :cond_2
+    :cond_3
     const/4 v0, 0x0
 
     goto :goto_0
 
-    :cond_3
+    :cond_4
     const/4 v1, 0x1
 
-    if-ne p1, v1, :cond_4
+    if-ne p1, v1, :cond_5
 
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
 
@@ -14090,14 +14590,14 @@
 
     goto :goto_1
 
-    :cond_4
+    :cond_5
     const-string/jumbo v1, "HeadsetStateMachine"
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "Bad voluem type: "
+    const-string/jumbo v3, "Bad volume type: "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -14220,11 +14720,33 @@
 
     move-result v3
 
-    if-nez v3, :cond_1
+    if-nez v3, :cond_2
 
     const-string/jumbo v3, "HeadsetStateMachine"
 
-    const-string/jumbo v4, "processVrEvent : Not allowed BVRA by 3rd party app"
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "processVrEvent : Not allowed BVRA "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string/jumbo v5, " by 3rd party app"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -14234,26 +14756,53 @@
 
     invoke-virtual {p0, v7, v6, v3}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->atResponseCodeNative(II[B)Z
 
-    const-string/jumbo v3, "HFSM-Not allowed BVRA"
+    if-ne p1, v7, :cond_1
+
+    const-string/jumbo v3, "+BVRA: 0"
+
+    invoke-direct {p0, p2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
+
+    move-result-object v4
+
+    invoke-virtual {p0, v3, v4}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->atResponseStringNative(Ljava/lang/String;[B)Z
+
+    :cond_1
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "HFSM-Not allowed BVRA "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
 
     invoke-static {v3}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
 
     return-void
 
-    :cond_1
-    if-ne p1, v7, :cond_6
+    :cond_2
+    if-ne p1, v7, :cond_7
 
     iget-boolean v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mVoiceRecognitionStarted:Z
 
-    if-nez v3, :cond_2
+    if-nez v3, :cond_3
 
     invoke-direct {p0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->isVirtualCallInProgress()Z
 
     move-result v3
 
-    if-eqz v3, :cond_3
+    if-eqz v3, :cond_4
 
-    :cond_2
+    :cond_3
     invoke-direct {p0, p2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
 
     move-result-object v3
@@ -14262,12 +14811,12 @@
 
     return-void
 
-    :cond_3
+    :cond_4
     invoke-direct {p0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->isInCallforVR()Z
 
     move-result v3
 
-    if-nez v3, :cond_2
+    if-nez v3, :cond_3
 
     iget-object v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mDualScoManager:Lcom/samsung/bt/hfp/DualScoManager;
 
@@ -14275,7 +14824,7 @@
 
     move-result v3
 
-    if-nez v3, :cond_2
+    if-nez v3, :cond_3
 
     iget-object v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mAudioManager:Landroid/media/AudioManager;
 
@@ -14293,7 +14842,7 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_5
 
     :try_start_0
     const-string/jumbo v3, "voice-command"
@@ -14302,7 +14851,7 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
 
-    :cond_4
+    :cond_5
     :goto_0
     :try_start_1
     sget-object v3, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->sVoiceCommandIntent:Landroid/content/Intent;
@@ -14325,7 +14874,7 @@
 
     invoke-direct {p0, p2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->expectVoiceRecognition(Landroid/bluetooth/BluetoothDevice;)V
 
-    :cond_5
+    :cond_6
     :goto_1
     return-void
 
@@ -14346,24 +14895,24 @@
 
     return-void
 
-    :cond_6
-    if-nez p1, :cond_b
+    :cond_7
+    if-nez p1, :cond_c
 
     invoke-direct {p0, v6}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->setVrStateChanged(Z)V
 
     iget-boolean v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mVoiceRecognitionStarted:Z
 
-    if-nez v3, :cond_7
+    if-nez v3, :cond_8
 
     iget-boolean v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mWaitingForVoiceRecognition:Z
 
-    if-nez v3, :cond_7
+    if-nez v3, :cond_8
 
     iget-boolean v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mStartVrExpired:Z
 
-    if-eqz v3, :cond_a
+    if-eqz v3, :cond_b
 
-    :cond_7
+    :cond_8
     invoke-direct {p0, p2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
 
     move-result-object v3
@@ -14382,11 +14931,11 @@
 
     move-result v3
 
-    if-nez v3, :cond_9
+    if-nez v3, :cond_a
 
     iget-object v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mActiveScoDevice:Landroid/bluetooth/BluetoothDevice;
 
-    if-eqz v3, :cond_8
+    if-eqz v3, :cond_9
 
     iget-object v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mActiveScoDevice:Landroid/bluetooth/BluetoothDevice;
 
@@ -14396,20 +14945,7 @@
 
     invoke-direct {p0, v3}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->disconnectAudioNative([B)Z
 
-    :cond_8
-    iget-object v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    const-string/jumbo v4, "A2dpSuspended=false"
-
-    invoke-virtual {v3, v4}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
-
-    goto :goto_1
-
     :cond_9
-    iget-boolean v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mWaitingForVoiceRecognition:Z
-
-    if-eqz v3, :cond_5
-
     iget-object v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mAudioManager:Landroid/media/AudioManager;
 
     const-string/jumbo v4, "A2dpSuspended=false"
@@ -14419,6 +14955,19 @@
     goto :goto_1
 
     :cond_a
+    iget-boolean v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mWaitingForVoiceRecognition:Z
+
+    if-eqz v3, :cond_6
+
+    iget-object v3, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mAudioManager:Landroid/media/AudioManager;
+
+    const-string/jumbo v4, "A2dpSuspended=false"
+
+    invoke-virtual {v3, v4}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
+
+    goto :goto_1
+
+    :cond_b
     invoke-direct {p0, p2}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
 
     move-result-object v3
@@ -14427,7 +14976,7 @@
 
     goto :goto_1
 
-    :cond_b
+    :cond_c
     const-string/jumbo v3, "HeadsetStateMachine"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -15207,9 +15756,7 @@
 .end method
 
 .method public cleanup()V
-    .locals 5
-
-    const/4 v4, 0x0
+    .locals 4
 
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneProxy:Landroid/bluetooth/IBluetoothHeadsetPhone;
 
@@ -15253,10 +15800,6 @@
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
 
     if-eqz v1, :cond_2
-
-    iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
-
-    invoke-virtual {v1, v4}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->listenForPhoneState(Z)V
 
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mPhoneState:Lcom/android/bluetooth/hfp/HeadsetPhoneState;
 
@@ -15305,7 +15848,9 @@
 
     invoke-direct {p0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->cleanupNative()V
 
-    iput-boolean v4, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mNativeAvailable:Z
+    const/4 v1, 0x0
+
+    iput-boolean v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mNativeAvailable:Z
 
     :cond_7
     iget-object v1, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mCurrentSLCDevicesList:Ljava/util/ArrayList;
@@ -18063,9 +18608,11 @@
 .method refreshNotAllowedVoiceRecognitionDeviceList()V
     .locals 2
 
-    const-string/jumbo v0, "refreshNotAllowedVoiceRecognitionDeviceList"
+    const-string/jumbo v0, "HeadsetStateMachine"
 
-    invoke-virtual {p0, v0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->log(Ljava/lang/String;)V
+    const-string/jumbo v1, "refreshNotAllowedVoiceRecognitionDeviceList()"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     iget-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mBTDownloadableDb:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;
 
@@ -18095,6 +18642,12 @@
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mNotAllowedVoiceRecognitionDeviceList:Ljava/util/ArrayList;
+
+    iget-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->mNotAllowedVoiceRecognitionDeviceList:Ljava/util/ArrayList;
+
+    const-string/jumbo v1, "A8:54:B2"
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     :cond_1
     return-void

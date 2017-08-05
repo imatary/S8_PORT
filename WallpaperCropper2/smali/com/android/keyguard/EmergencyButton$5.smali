@@ -68,12 +68,10 @@
 
     move-result v1
 
-    # setter for: Lcom/android/keyguard/EmergencyButton;->mServiceState:I
     invoke-static {v0, v1}, Lcom/android/keyguard/EmergencyButton;->access$102(Lcom/android/keyguard/EmergencyButton;I)I
 
     iget-object v0, p0, Lcom/android/keyguard/EmergencyButton$5;->this$0:Lcom/android/keyguard/EmergencyButton;
 
-    # invokes: Lcom/android/keyguard/EmergencyButton;->updateEmergencyCallButton()V
     invoke-static {v0}, Lcom/android/keyguard/EmergencyButton;->access$000(Lcom/android/keyguard/EmergencyButton;)V
 
     return-void

@@ -991,7 +991,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0315
+    const v5, 0x7f0d0375
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1013,7 +1013,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d04d1
+    const v5, 0x7f0d0531
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1032,7 +1032,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0316
+    const v5, 0x7f0d0376
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1044,9 +1044,9 @@
 .method private updateSummaryTextKDDI()V
     .locals 15
 
-    const v14, 0x7f0d0bc8
+    const v14, 0x7f0d0c33
 
-    const v13, 0x7f0d0bbc
+    const v13, 0x7f0d0c27
 
     const/4 v12, 0x2
 
@@ -1327,7 +1327,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d0315
+    const v8, 0x7f0d0375
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1346,7 +1346,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d04d1
+    const v8, 0x7f0d0531
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1365,7 +1365,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d0316
+    const v8, 0x7f0d0376
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1556,7 +1556,7 @@
 
     invoke-direct {v1, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f0d0334
+    const v3, 0x7f0d0394
 
     invoke-virtual {v1, v3, v8}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1564,7 +1564,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0d032d
+    const v5, 0x7f0d038d
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1576,7 +1576,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0d0331
+    const v5, 0x7f0d0391
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -2583,7 +2583,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f0d0314
+    const v5, 0x7f0d0374
 
     invoke-virtual {v2, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

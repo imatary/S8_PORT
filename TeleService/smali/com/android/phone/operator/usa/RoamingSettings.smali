@@ -178,7 +178,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0685
+    const v2, 0x7f0d06e9
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -204,7 +204,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/usa/RoamingSettings$3;-><init>(Lcom/android/phone/operator/usa/RoamingSettings;)V
 
-    const v2, 0x7f0d04a2
+    const v2, 0x7f0d0502
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -214,7 +214,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/usa/RoamingSettings$4;-><init>(Lcom/android/phone/operator/usa/RoamingSettings;)V
 
-    const v2, 0x7f0d04a3
+    const v2, 0x7f0d0503
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -295,7 +295,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0684
+    const v2, 0x7f0d06e8
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -321,7 +321,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/usa/RoamingSettings$1;-><init>(Lcom/android/phone/operator/usa/RoamingSettings;)V
 
-    const v2, 0x7f0d04a2
+    const v2, 0x7f0d0502
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -331,7 +331,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/usa/RoamingSettings$2;-><init>(Lcom/android/phone/operator/usa/RoamingSettings;)V
 
-    const v2, 0x7f0d04a3
+    const v2, 0x7f0d0503
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -445,7 +445,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0686
+    const v2, 0x7f0d06ea
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -471,7 +471,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/usa/RoamingSettings$7;-><init>(Lcom/android/phone/operator/usa/RoamingSettings;)V
 
-    const v2, 0x7f0d04a2
+    const v2, 0x7f0d0502
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -481,7 +481,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/usa/RoamingSettings$8;-><init>(Lcom/android/phone/operator/usa/RoamingSettings;)V
 
-    const v2, 0x7f0d04a3
+    const v2, 0x7f0d0503
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -562,7 +562,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0684
+    const v2, 0x7f0d06e8
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -588,7 +588,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/usa/RoamingSettings$5;-><init>(Lcom/android/phone/operator/usa/RoamingSettings;)V
 
-    const v2, 0x7f0d04a2
+    const v2, 0x7f0d0502
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -598,7 +598,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/usa/RoamingSettings$6;-><init>(Lcom/android/phone/operator/usa/RoamingSettings;)V
 
-    const v2, 0x7f0d04a3
+    const v2, 0x7f0d0503
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1363,7 +1363,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0880
+    const v3, 0x7f0d08e4
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setTitle(I)V
 
@@ -1373,7 +1373,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0882
+    const v3, 0x7f0d08e6
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setTitle(I)V
 

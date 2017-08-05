@@ -53,7 +53,7 @@
 .method private moveStatusToMessage(I)Ljava/lang/CharSequence;
     .locals 1
 
-    const v0, 0x7f0b16b1
+    const v0, 0x7f0b1740
 
     packed-switch p1, :pswitch_data_0
 
@@ -72,7 +72,7 @@
     return-object v0
 
     :pswitch_2
-    const v0, 0x7f0b16b6
+    const v0, 0x7f0b1745
 
     invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;->getString(I)Ljava/lang/String;
 
@@ -81,7 +81,7 @@
     return-object v0
 
     :pswitch_3
-    const v0, 0x7f0b16b2
+    const v0, 0x7f0b1741
 
     invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;->getString(I)Ljava/lang/String;
 
@@ -90,7 +90,7 @@
     return-object v0
 
     :pswitch_4
-    const v0, 0x7f0b16b3
+    const v0, 0x7f0b1742
 
     invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;->getString(I)Ljava/lang/String;
 
@@ -99,7 +99,7 @@
     return-object v0
 
     :pswitch_5
-    const v0, 0x7f0b16b4
+    const v0, 0x7f0b1743
 
     invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;->getString(I)Ljava/lang/String;
 
@@ -108,7 +108,7 @@
     return-object v0
 
     :pswitch_6
-    const v0, 0x7f0b16b5
+    const v0, 0x7f0b1744
 
     invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;->getString(I)Ljava/lang/String;
 
@@ -149,7 +149,7 @@
     return-void
 
     :cond_0
-    const v2, 0x7f0402e7
+    const v2, 0x7f0402eb
 
     invoke-virtual {p0, v2}, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;->setContentView(I)V
 
@@ -191,7 +191,7 @@
 
     aput-object v0, v2, v6
 
-    const v3, 0x7f0b156d
+    const v3, 0x7f0b15fc
 
     invoke-virtual {p0, v3, v2}, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;->setHeaderText(I[Ljava/lang/String;)V
 
@@ -203,7 +203,7 @@
 
     aput-object v0, v2, v5
 
-    const v3, 0x7f0b156e
+    const v3, 0x7f0b15fd
 
     invoke-virtual {p0, v3, v2}, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;->setBodyText(I[Ljava/lang/String;)V
 

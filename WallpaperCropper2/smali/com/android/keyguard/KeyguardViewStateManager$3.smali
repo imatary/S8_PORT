@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewStateManager$3;->this$0:Lcom/android/keyguard/KeyguardViewStateManager;
 
-    # getter for: Lcom/android/keyguard/KeyguardViewStateManager;->mKeyguardWidgetPager:Lcom/android/keyguard/KeyguardWidgetPager;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardViewStateManager;->access$100(Lcom/android/keyguard/KeyguardViewStateManager;)Lcom/android/keyguard/KeyguardWidgetPager;
 
     move-result-object v0
@@ -52,7 +51,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewStateManager$3;->this$0:Lcom/android/keyguard/KeyguardViewStateManager;
 
-    # getter for: Lcom/android/keyguard/KeyguardViewStateManager;->mKeyguardWidgetPager:Lcom/android/keyguard/KeyguardWidgetPager;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardViewStateManager;->access$100(Lcom/android/keyguard/KeyguardViewStateManager;)Lcom/android/keyguard/KeyguardWidgetPager;
 
     move-result-object v0

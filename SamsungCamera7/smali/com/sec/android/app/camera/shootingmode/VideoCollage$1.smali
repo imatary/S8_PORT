@@ -39,14 +39,12 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VideoCollage;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$300(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VideoCollage;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$200(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v1

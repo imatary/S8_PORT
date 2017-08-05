@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="@dimen/spuit_layout_width_v42" android:layout_height="@dimen/spuit_layout_height_v42"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageButton android:id="@id/spen_setting_spuit_handle" android:layout_width="@dimen/spuit_handle_width" android:layout_height="@dimen/spuit_handle_height" android:layout_marginLeft="@dimen/spuit_handle_margin_left" android:layout_centerVertical="true" />
-    <ImageView android:id="@id/spen_setting_spuit_icon" android:layout_width="@dimen/spuit_icon_size" android:layout_height="@dimen/spuit_icon_size" android:layout_marginLeft="@dimen/spuit_icon_margin_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-    <ImageView android:id="@id/spen_setting_spuit_color" android:layout_width="@dimen/spuit_color_size" android:layout_height="@dimen/spuit_color_size" android:layout_marginLeft="@dimen/spuit_color_margin_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-    <View android:background="#ffbbbbbb" android:layout_width="0.0px" android:layout_height="35.0dip" android:layout_marginLeft="78.0dip" />
-    <RelativeLayout android:gravity="center" android:id="@id/spen_setting_spuit_close" android:layout_width="@dimen/spuit_close_size" android:layout_height="@dimen/spuit_close_size" android:layout_marginRight="@dimen/spuit_color_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>

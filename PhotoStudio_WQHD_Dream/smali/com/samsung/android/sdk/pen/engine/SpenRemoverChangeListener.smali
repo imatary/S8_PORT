@@ -1,8 +1,0 @@
-.class public interface abstract Lcom/samsung/android/sdk/pen/engine/SpenRemoverChangeListener;
-.super Ljava/lang/Object;
-.source "SpenRemoverChangeListener.java"
-
-
-# virtual methods
-.method public abstract onChanged(Lcom/samsung/android/sdk/pen/SpenSettingRemoverInfo;)V
-.end method

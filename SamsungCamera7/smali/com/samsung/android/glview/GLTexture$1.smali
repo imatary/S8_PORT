@@ -49,7 +49,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLTexture$1;->this$0:Lcom/samsung/android/glview/GLTexture;
 
-    # setter for: Lcom/samsung/android/glview/GLTexture;->mAsyncLoadingInProgress:Z
     invoke-static {v1, v8}, Lcom/samsung/android/glview/GLTexture;->access$002(Lcom/samsung/android/glview/GLTexture;Z)Z
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLTexture$1;->this$0:Lcom/samsung/android/glview/GLTexture;
@@ -255,7 +254,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLTexture$1;->this$0:Lcom/samsung/android/glview/GLTexture;
 
-    # setter for: Lcom/samsung/android/glview/GLTexture;->mAsyncLoadingInProgress:Z
     invoke-static {v1, v7}, Lcom/samsung/android/glview/GLTexture;->access$002(Lcom/samsung/android/glview/GLTexture;Z)Z
 
     goto/16 :goto_0

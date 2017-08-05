@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$4;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
-    # getter for: Lcom/android/keyguard/KeyguardTransportControlView;->mSeekEnabled:Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardTransportControlView;->access$1100(Lcom/android/keyguard/KeyguardTransportControlView;)Z
 
     move-result v0

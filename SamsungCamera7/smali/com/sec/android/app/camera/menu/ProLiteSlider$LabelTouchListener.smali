@@ -48,7 +48,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mSlider:Lcom/sec/android/app/camera/widget/gl/TickSlider;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
 
     move-result-object v0
@@ -63,7 +62,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mSlider:Lcom/sec/android/app/camera/widget/gl/TickSlider;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
 
     move-result-object v0
@@ -73,8 +71,7 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mAutoButton:Lcom/samsung/android/glview/GLButton;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLButton;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$500(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLView;
 
     move-result-object v0
 
@@ -82,72 +79,31 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mAutoButton:Lcom/samsung/android/glview/GLButton;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLButton;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->isSelected()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
-
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mAutoButton:Lcom/samsung/android/glview/GLButton;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLButton;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
-
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_NORMAL_COLOR:I
-    invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$600(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setTint(I)V
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
-
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mAutoButton:Lcom/samsung/android/glview/GLButton;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLButton;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLButton;->setSelected(Z)V
-
-    :cond_1
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
-
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mSelectedLabel:Lcom/samsung/android/glview/GLView;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$500(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLView;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
-
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mSelectedLabel:Lcom/samsung/android/glview/GLView;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$500(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLView;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_NORMAL_COLOR:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$600(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLView;->setTint(I)V
 
-    :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_SELECTED_COLOR:I
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$500(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLView;
+
+    move-result-object v0
+
+    const/16 v1, 0x3e9
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLView;->setShaderProgram(I)V
+
+    :cond_1
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
+
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$900(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
 
     move-result v0
@@ -156,12 +112,10 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    # setter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mSelectedLabel:Lcom/samsung/android/glview/GLView;
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$502(Lcom/sec/android/app/camera/menu/ProLiteSlider;Lcom/samsung/android/glview/GLView;)Lcom/samsung/android/glview/GLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mSlider:Lcom/sec/android/app/camera/widget/gl/TickSlider;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
 
     move-result-object v0
@@ -170,12 +124,57 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->moveStep(I)Z
+    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->setCurrentStep(I)Z
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
+
+    invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->getTag()I
+
+    move-result v1
+
+    invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2200(Lcom/sec/android/app/camera/menu/ProLiteSlider;I)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->restartSliderMenuTimer()V
 
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
+
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLButton;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
+
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLButton;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->isSelected()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
+
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLButton;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->resetTint()V
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProLiteSlider;
+
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/samsung/android/glview/GLButton;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLButton;->setSelected(Z)V
+
+    :cond_2
     return-void
 .end method
 

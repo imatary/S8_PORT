@@ -60,7 +60,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/PagedView$3;->this$0:Lcom/android/keyguard/PagedView;
 
-    # getter for: Lcom/android/keyguard/PagedView;->mScrollIndicator:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/PagedView;->access$300(Lcom/android/keyguard/PagedView;)Landroid/view/View;
 
     move-result-object v0

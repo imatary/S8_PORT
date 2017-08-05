@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/face_image" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="@dimen/moreinfo_addtags_edittext_margin_top" android:layout_marginBottom="@dimen/moreinfo_addtags_mytags_margin_bottom" android:contentDescription="@null" />
-    <TextView android:textSize="@dimen/search_recommend_item_text_size" android:layout_gravity="center" android:id="@id/face_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moreinfo_addtags_mytags_margin_bottom" android:textIsSelectable="false" />
-    <GridView android:id="@id/facetag_list" android:background="@color/search_view_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="4" />
-</LinearLayout>

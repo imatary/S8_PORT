@@ -48,7 +48,7 @@
 
     const/4 v4, 0x1
 
-    const v3, 0x7f0d01fa
+    const v3, 0x7f0d0257
 
     const-string/jumbo v0, "RecordCallsAutomaticallyActivity"
 
@@ -82,7 +82,7 @@
 
     iget-object v1, p0, Lcom/android/phone/RecordCallsAutomaticallyActivity$1;->this$0:Lcom/android/phone/RecordCallsAutomaticallyActivity;
 
-    const v2, 0x7f0d0252
+    const v2, 0x7f0d02b1
 
     invoke-virtual {v1, v2}, Lcom/android/phone/RecordCallsAutomaticallyActivity;->getString(I)Ljava/lang/String;
 
@@ -129,7 +129,7 @@
 
     iget-object v1, p0, Lcom/android/phone/RecordCallsAutomaticallyActivity$1;->this$0:Lcom/android/phone/RecordCallsAutomaticallyActivity;
 
-    const v2, 0x7f0d0254
+    const v2, 0x7f0d02b3
 
     invoke-virtual {v1, v2}, Lcom/android/phone/RecordCallsAutomaticallyActivity;->getString(I)Ljava/lang/String;
 
@@ -156,7 +156,7 @@
 
     iget-object v1, p0, Lcom/android/phone/RecordCallsAutomaticallyActivity$1;->this$0:Lcom/android/phone/RecordCallsAutomaticallyActivity;
 
-    const v2, 0x7f0d0253
+    const v2, 0x7f0d02b2
 
     invoke-virtual {v1, v2}, Lcom/android/phone/RecordCallsAutomaticallyActivity;->getString(I)Ljava/lang/String;
 

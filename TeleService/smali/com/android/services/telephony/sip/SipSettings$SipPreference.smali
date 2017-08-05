@@ -62,7 +62,7 @@
 
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipSettings$SipPreference;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
-    const v1, 0x7f0d0184
+    const v1, 0x7f0d01e1
 
     invoke-virtual {v0, v1}, Lcom/android/services/telephony/sip/SipSettings;->getString(I)Ljava/lang/String;
 
@@ -76,7 +76,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipSettings$SipPreference;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
-    const v1, 0x7f0d0187
+    const v1, 0x7f0d01e4
 
     invoke-virtual {v0, v1}, Lcom/android/services/telephony/sip/SipSettings;->getString(I)Ljava/lang/String;
 
@@ -122,7 +122,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f0d018f
+    const v4, 0x7f0d01ec
 
     invoke-virtual {v2, v4, v3}, Lcom/android/services/telephony/sip/SipSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

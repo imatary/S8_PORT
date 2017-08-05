@@ -3,7 +3,7 @@
 .source "GsmUmtsAdditionalCallOptions.java"
 
 # interfaces
-.implements Landroid/preference/Preference$OnPreferenceChangeListener;
+.implements Landroid/preference/Preference$OnPreferenceClickListener;
 
 
 # annotations
@@ -34,14 +34,58 @@
 
 
 # virtual methods
-.method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
-    .locals 1
+.method public onPreferenceClick(Landroid/preference/Preference;)Z
+    .locals 6
 
-    iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$12;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+    const/4 v5, 0x1
 
-    invoke-static {v0, p2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap6(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/Object;)V
+    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$12;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    const/4 v0, 0x1
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    return v0
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "call_au_service_key buttonMode: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap8(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
+
+    new-instance v1, Landroid/content/Intent;
+
+    const-string/jumbo v2, "android.intent.action.CALL"
+
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string/jumbo v2, "tel:157"
+
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    :try_start_0
+    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$12;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+
+    invoke-virtual {v2, v1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return v5
+
+    :catch_0
+    move-exception v0
+
+    return v5
 .end method

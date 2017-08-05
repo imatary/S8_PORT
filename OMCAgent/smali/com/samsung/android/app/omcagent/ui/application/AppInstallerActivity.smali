@@ -580,6 +580,12 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
 
+    iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->installBtn:Landroid/widget/TextView;
+
+    const v1, 0x4d252525    # 1.73167184E8f
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+
     :goto_0
     return-void
 
@@ -589,6 +595,12 @@
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+
+    iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->installBtn:Landroid/widget/TextView;
+
+    const v1, -0x33dadadb    # -4.3291796E7f
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     goto :goto_0
 .end method

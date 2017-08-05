@@ -1,11 +1,14 @@
 .class Lcom/android/phone/GsmUmtsCallForwardOptions$4;
-.super Landroid/content/BroadcastReceiver;
+.super Ljava/lang/Object;
 .source "GsmUmtsCallForwardOptions.java"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/GsmUmtsCallForwardOptions;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/phone/GsmUmtsCallForwardOptions;->showAlertDialogPlayVoicemailMessage()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,55 +27,23 @@
 
     iput-object p1, p0, Lcom/android/phone/GsmUmtsCallForwardOptions$4;->this$0:Lcom/android/phone/GsmUmtsCallForwardOptions;
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+.method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string/jumbo v1, "com.samsung.intent.action.SIMHOTSWAP"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string/jumbo v1, "com.samsung.settings.SIMCARD_MGT_ACTIVATED"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    :cond_0
-    const-string/jumbo v0, "GsmUmtsCallForwardOptions"
-
-    const-string/jumbo v1, "ACTION_HOT_SWAP_TYPE_SIM or ACTION_SIM_MGT_ACTIVATED_CHANGED (app finish !!)"
-
-    invoke-static {v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsCallForwardOptions$4;->this$0:Lcom/android/phone/GsmUmtsCallForwardOptions;
 
-    invoke-virtual {v0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getActivity()Landroid/app/Activity;
+    const-string/jumbo v1, "tel:1417"
 
-    move-result-object v0
+    invoke-static {v0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->-wrap0(Lcom/android/phone/GsmUmtsCallForwardOptions;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
-
-    :cond_1
     return-void
 .end method

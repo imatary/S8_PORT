@@ -145,105 +145,90 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mOutputFormat:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$000(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mOutputFormat:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mMaxDuration:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$100(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mMaxDuration:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mRecordingMode:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$200(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mRecordingMode:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mVideoWidth:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$300(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mVideoWidth:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mVideoHeight:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$400(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mVideoHeight:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mVideoEncoder:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$500(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mVideoEncoder:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mVideoFrameRate:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$600(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mVideoFrameRate:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mVideoSource:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$700(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mVideoSource:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mVideoEncodingBitrate:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$800(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mVideoEncodingBitrate:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mFileSizeInterval:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$900(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mFileSizeInterval:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mAudioEncoder:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$1000(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mAudioEncoder:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mAudioEncodingBitrate:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$1100(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mAudioEncodingBitrate:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mAudioChannels:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$1200(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mAudioChannels:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mAudioSamplingRate:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$1300(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mAudioSamplingRate:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mAudioSource:I
     invoke-static {p1}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->access$1400(Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;)I
 
     move-result v0

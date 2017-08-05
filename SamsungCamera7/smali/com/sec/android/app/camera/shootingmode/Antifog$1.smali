@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Antifog$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Antifog;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Antifog;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Antifog;->access$000(Lcom/sec/android/app/camera/shootingmode/Antifog;)Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Antifog$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Antifog;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Antifog;->mAntifogSliderMenuButton:Lcom/samsung/android/glview/GLButton;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Antifog;->access$100(Lcom/sec/android/app/camera/shootingmode/Antifog;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v0
@@ -67,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Antifog$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Antifog;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Antifog;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Antifog;->access$200(Lcom/sec/android/app/camera/shootingmode/Antifog;)Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     move-result-object v0

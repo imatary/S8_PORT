@@ -73,54 +73,54 @@
 
     :array_0
     .array-data 4
-        0x7f020167
-        0x7f020168
-        0x7f02016f
-        0x7f020170
-        0x7f02016d
-        0x7f02016c
         0x7f02016b
+        0x7f02016c
+        0x7f020173
+        0x7f020174
+        0x7f020171
+        0x7f020170
+        0x7f02016f
+        0x7f020172
         0x7f02016e
-        0x7f02016a
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f020167
-        0x7f020168
-        0x7f02016f
-        0x7f020170
-        0x7f02016d
-        0x7f02016c
         0x7f02016b
+        0x7f02016c
+        0x7f020173
+        0x7f020174
+        0x7f020171
+        0x7f020170
+        0x7f02016f
+        0x7f020172
         0x7f02016e
-        0x7f02016a
     .end array-data
 
     :array_2
     .array-data 4
-        0x7f020182
-        0x7f020183
-        0x7f02017c
-        0x7f020184
-        0x7f020180
-        0x7f02017f
-        0x7f02017e
-        0x7f020181
-        0x7f02017d
+        0x7f02018b
+        0x7f02018c
+        0x7f020185
+        0x7f02018d
+        0x7f020189
+        0x7f020188
+        0x7f020187
+        0x7f02018a
+        0x7f020186
     .end array-data
 
     :array_3
     .array-data 4
-        0x7f020046
         0x7f020048
-        0x7f0200ea
+        0x7f02004a
         0x7f0200ed
-        0x7f0200e8
-        0x7f0200e7
-        0x7f0200e6
+        0x7f0200f0
+        0x7f0200eb
+        0x7f0200ea
         0x7f0200e9
-        0x7f0200e5
+        0x7f0200ec
+        0x7f0200e8
     .end array-data
 .end method
 
@@ -413,11 +413,7 @@
 
     const/4 v0, 0x0
 
-    invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->getPhoneCount()I
+    invoke-static {}, Lcom/android/phone/PhoneUtilsMultiSIM;->getPhoneCount()I
 
     move-result v1
 
@@ -1047,17 +1043,25 @@
 .end method
 
 .method public static getPhoneCount()I
-    .locals 1
+    .locals 3
 
-    invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
+    invoke-static {}, Lcom/android/phone/PhoneUtilsMultiSIM;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/telephony/TelephonyManager;->getPhoneCount()I
+    const-string/jumbo v2, "phone"
 
-    move-result v0
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    return v0
+    move-result-object v1
+
+    check-cast v1, Landroid/telephony/TelephonyManager;
+
+    invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getPhoneCount()I
+
+    move-result v2
+
+    return v2
 .end method
 
 .method public static getPhoneFromIccId(Ljava/lang/String;)Lcom/android/internal/telephony/Phone;
@@ -1893,7 +1897,7 @@
 
     packed-switch p1, :pswitch_data_0
 
-    const v0, 0x7f020167
+    const v0, 0x7f02016b
 
     :goto_0
     return v0
@@ -1953,13 +1957,13 @@
     return-object v4
 
     :cond_0
-    const v4, 0x7f0d06c7
+    const v4, 0x7f0d072b
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v4, 0x7f0d06c8
+    const v4, 0x7f0d072c
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2478,35 +2482,43 @@
 .end method
 
 .method public static isNetworkRoaming(I)Z
-    .locals 5
+    .locals 6
 
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
-    invoke-static {p0}, Landroid/telephony/SubscriptionManager;->getSubId(I)[I
+    invoke-static {}, Lcom/android/phone/PhoneUtilsMultiSIM;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    :try_start_0
-    invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
+    const-string/jumbo v4, "phone"
+
+    invoke-virtual {v1, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
-    const/4 v3, 0x0
+    check-cast v2, Landroid/telephony/TelephonyManager;
 
-    aget v3, v1, v3
+    invoke-static {p0}, Landroid/telephony/SubscriptionManager;->getSubId(I)[I
 
-    invoke-virtual {v2, v3}, Landroid/telephony/TelephonyManager;->isNetworkRoaming(I)Z
+    move-result-object v3
+
+    const/4 v4, 0x0
+
+    :try_start_0
+    aget v4, v3, v4
+
+    invoke-virtual {v2, v4}, Landroid/telephony/TelephonyManager;->isNetworkRoaming(I)Z
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result v2
+    move-result v4
 
-    return v2
+    return v4
 
     :catch_0
     move-exception v0
 
-    return v4
+    return v5
 .end method
 
 .method public static isQcomModemNotSupportCrossMapping()Z

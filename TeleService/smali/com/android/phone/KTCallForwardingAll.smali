@@ -202,7 +202,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d07ac
+    const v2, 0x7f0d0810
 
     const/4 v3, 0x0
 
@@ -332,7 +332,7 @@
 
     if-eqz v5, :cond_3
 
-    const v5, 0x7f0d079e
+    const v5, 0x7f0d0802
 
     invoke-static {v1, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -357,7 +357,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d07a0
+    const v7, 0x7f0d0804
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -377,7 +377,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0d07be
+    const v7, 0x7f0d0822
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -615,7 +615,7 @@
 
     if-eqz v5, :cond_7
 
-    const v5, 0x7f0d079f
+    const v5, 0x7f0d0803
 
     invoke-static {v1, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -626,7 +626,7 @@
     goto/16 :goto_1
 
     :cond_7
-    const v5, 0x7f0d07a1
+    const v5, 0x7f0d0805
 
     invoke-static {v1, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -704,13 +704,13 @@
 
     iget-object v0, p0, Lcom/android/phone/KTCallForwardingAll;->mSettingOn:Landroid/preference/EditTextPreference;
 
-    const v1, 0x7f0d0793
+    const v1, 0x7f0d07f7
 
     invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setDialogTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/KTCallForwardingAll;->mSettingOn:Landroid/preference/EditTextPreference;
 
-    const v1, 0x7f0d0796
+    const v1, 0x7f0d07fa
 
     invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setDialogMessage(I)V
 
@@ -795,7 +795,7 @@
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 12
 
-    const v11, 0x7f0d079d
+    const v11, 0x7f0d0801
 
     const/4 v10, 0x0
 
@@ -994,11 +994,11 @@
 
     invoke-direct {v6, v7}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f0d0799
+    const v0, 0x7f0d07fd
 
     invoke-virtual {v6, v0}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v0, 0x7f0d079a
+    const v0, 0x7f0d07fe
 
     invoke-virtual {v6, v0}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -1006,7 +1006,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/phone/KTCallForwardingAll$2;-><init>(Lcom/android/phone/KTCallForwardingAll;)V
 
-    const v2, 0x7f0d02ca
+    const v2, 0x7f0d032a
 
     invoke-virtual {v6, v2, v0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1022,9 +1022,9 @@
 .method showReturnError(Ljava/lang/Throwable;)Z
     .locals 13
 
-    const v12, 0x7f0d07a5
+    const v12, 0x7f0d0809
 
-    const v11, 0x7f0d07a2
+    const v11, 0x7f0d0806
 
     const/4 v10, 0x0
 
@@ -1171,7 +1171,7 @@
 
     if-eqz v5, :cond_5
 
-    const v5, 0x7f0d07a3
+    const v5, 0x7f0d0807
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1190,7 +1190,7 @@
 
     if-eqz v5, :cond_6
 
-    const v5, 0x7f0d07a4
+    const v5, 0x7f0d0808
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1243,7 +1243,7 @@
 
     if-eqz v5, :cond_9
 
-    const v5, 0x7f0d07a6
+    const v5, 0x7f0d080a
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1262,7 +1262,7 @@
 
     if-eqz v5, :cond_a
 
-    const v5, 0x7f0d07a7
+    const v5, 0x7f0d080b
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1281,7 +1281,7 @@
 
     if-eqz v5, :cond_b
 
-    const v5, 0x7f0d07a8
+    const v5, 0x7f0d080c
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1300,7 +1300,7 @@
 
     if-eqz v5, :cond_c
 
-    const v5, 0x7f0d07a9
+    const v5, 0x7f0d080d
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1319,7 +1319,7 @@
 
     if-eqz v5, :cond_d
 
-    const v5, 0x7f0d07aa
+    const v5, 0x7f0d080e
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1338,7 +1338,7 @@
 
     if-eqz v5, :cond_e
 
-    const v5, 0x7f0d07ab
+    const v5, 0x7f0d080f
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1357,7 +1357,7 @@
 
     if-eqz v5, :cond_f
 
-    const v5, 0x7f0d07ac
+    const v5, 0x7f0d0810
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1376,7 +1376,7 @@
 
     if-eqz v5, :cond_10
 
-    const v5, 0x7f0d07ad
+    const v5, 0x7f0d0811
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1395,7 +1395,7 @@
 
     if-eqz v5, :cond_11
 
-    const v5, 0x7f0d07ae
+    const v5, 0x7f0d0812
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1414,7 +1414,7 @@
 
     if-eqz v5, :cond_12
 
-    const v5, 0x7f0d07af
+    const v5, 0x7f0d0813
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1433,7 +1433,7 @@
 
     if-eqz v5, :cond_13
 
-    const v5, 0x7f0d07b0
+    const v5, 0x7f0d0814
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1452,7 +1452,7 @@
 
     if-eqz v5, :cond_14
 
-    const v5, 0x7f0d07b1
+    const v5, 0x7f0d0815
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1471,7 +1471,7 @@
 
     if-eqz v5, :cond_15
 
-    const v5, 0x7f0d07b2
+    const v5, 0x7f0d0816
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1490,7 +1490,7 @@
 
     if-eqz v5, :cond_16
 
-    const v5, 0x7f0d07b3
+    const v5, 0x7f0d0817
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1509,7 +1509,7 @@
 
     if-eqz v5, :cond_17
 
-    const v5, 0x7f0d07b4
+    const v5, 0x7f0d0818
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1528,7 +1528,7 @@
 
     if-eqz v5, :cond_18
 
-    const v5, 0x7f0d07b5
+    const v5, 0x7f0d0819
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1547,7 +1547,7 @@
 
     if-eqz v5, :cond_19
 
-    const v5, 0x7f0d07b6
+    const v5, 0x7f0d081a
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1566,7 +1566,7 @@
 
     if-eqz v5, :cond_1a
 
-    const v5, 0x7f0d07b7
+    const v5, 0x7f0d081b
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1585,7 +1585,7 @@
 
     if-eqz v5, :cond_1b
 
-    const v5, 0x7f0d07b7
+    const v5, 0x7f0d081b
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1604,7 +1604,7 @@
 
     if-eqz v5, :cond_1c
 
-    const v5, 0x7f0d07b8
+    const v5, 0x7f0d081c
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1623,7 +1623,7 @@
 
     if-eqz v5, :cond_1d
 
-    const v5, 0x7f0d07b9
+    const v5, 0x7f0d081d
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1642,7 +1642,7 @@
 
     if-eqz v5, :cond_1e
 
-    const v5, 0x7f0d07ba
+    const v5, 0x7f0d081e
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1661,7 +1661,7 @@
 
     if-eqz v5, :cond_1f
 
-    const v5, 0x7f0d07bb
+    const v5, 0x7f0d081f
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1680,7 +1680,7 @@
 
     if-eqz v5, :cond_20
 
-    const v5, 0x7f0d07bc
+    const v5, 0x7f0d0820
 
     invoke-static {v0, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

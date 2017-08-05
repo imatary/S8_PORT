@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$4;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->openCameraDevice()V
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$900(Lcom/sec/android/app/camera/engine/CommonEngine;)V
 
     return-void

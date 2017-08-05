@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/ModeInfoListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->mOrientation:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->access$000(Lcom/sec/android/app/camera/menu/ModeInfoListMenu;)I
 
     move-result v1

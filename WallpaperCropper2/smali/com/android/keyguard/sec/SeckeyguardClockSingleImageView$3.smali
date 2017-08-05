@@ -62,7 +62,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$3;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # invokes: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->updateClockTime()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$200(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)V
 
     return-void

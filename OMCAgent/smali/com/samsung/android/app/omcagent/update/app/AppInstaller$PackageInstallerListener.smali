@@ -158,7 +158,6 @@
 
     iget-object v5, p0, Lcom/samsung/android/app/omcagent/update/app/AppInstaller$PackageInstallerListener;->this$0:Lcom/samsung/android/app/omcagent/update/app/AppInstaller;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->mPackageName:Ljava/lang/String;
     invoke-static {v5}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$100(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;)Ljava/lang/String;
 
     move-result-object v5
@@ -175,7 +174,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/update/app/AppInstaller$PackageInstallerListener;->this$0:Lcom/samsung/android/app/omcagent/update/app/AppInstaller;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->mPackageName:Ljava/lang/String;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$100(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;)Ljava/lang/String;
 
     move-result-object v3
@@ -188,7 +186,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/update/app/AppInstaller$PackageInstallerListener;->this$0:Lcom/samsung/android/app/omcagent/update/app/AppInstaller;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->mPackageName:Ljava/lang/String;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$100(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;)Ljava/lang/String;
 
     move-result-object v3
@@ -227,17 +224,14 @@
 
     iget-object v5, p0, Lcom/samsung/android/app/omcagent/update/app/AppInstaller$PackageInstallerListener;->this$0:Lcom/samsung/android/app/omcagent/update/app/AppInstaller;
 
-    # invokes: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->getInstallErrCode(Ljava/lang/String;)Ljava/lang/String;
     invoke-static {v5, v0}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$600(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    # invokes: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->notifyResult(ZLjava/lang/String;)V
     invoke-static {v3, v4, v5}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$300(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;ZLjava/lang/String;)V
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/update/app/AppInstaller$PackageInstallerListener;->this$0:Lcom/samsung/android/app/omcagent/update/app/AppInstaller;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->installObserver:Lcom/samsung/android/app/omcagent/update/app/PackageInstallObserver;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$400(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;)Lcom/samsung/android/app/omcagent/update/app/PackageInstallObserver;
 
     move-result-object v3
@@ -247,7 +241,6 @@
     :cond_1
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/update/app/AppInstaller$PackageInstallerListener;->this$0:Lcom/samsung/android/app/omcagent/update/app/AppInstaller;
 
-    # invokes: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->destroyReceiver()V
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$500(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;)V
 
     goto :goto_0
@@ -261,7 +254,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/update/app/AppInstaller$PackageInstallerListener;->this$0:Lcom/samsung/android/app/omcagent/update/app/AppInstaller;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$200(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;)Landroid/content/Context;
 
     move-result-object v4
@@ -293,12 +285,10 @@
 
     const-string v4, "0"
 
-    # invokes: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->notifyResult(ZLjava/lang/String;)V
     invoke-static {v3, v6, v4}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$300(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;ZLjava/lang/String;)V
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/update/app/AppInstaller$PackageInstallerListener;->this$0:Lcom/samsung/android/app/omcagent/update/app/AppInstaller;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->installObserver:Lcom/samsung/android/app/omcagent/update/app/PackageInstallObserver;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$400(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;)Lcom/samsung/android/app/omcagent/update/app/PackageInstallObserver;
 
     move-result-object v3
@@ -308,7 +298,6 @@
     :cond_2
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/update/app/AppInstaller$PackageInstallerListener;->this$0:Lcom/samsung/android/app/omcagent/update/app/AppInstaller;
 
-    # invokes: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->destroyReceiver()V
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$500(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;)V
 
     goto :goto_0

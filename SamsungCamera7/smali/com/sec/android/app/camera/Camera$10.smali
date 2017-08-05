@@ -41,7 +41,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mBaseLayout:Landroid/view/ViewGroup;
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$2000(Lcom/sec/android/app/camera/Camera;)Landroid/view/ViewGroup;
 
     move-result-object v2
@@ -65,7 +64,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mBaseLayout:Landroid/view/ViewGroup;
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$2000(Lcom/sec/android/app/camera/Camera;)Landroid/view/ViewGroup;
 
     move-result-object v2
@@ -76,21 +74,18 @@
 
     iget v3, v1, Landroid/graphics/Rect;->left:I
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mCurrentWindowLeft:I
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/Camera;->access$2102(Lcom/sec/android/app/camera/Camera;I)I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget v3, v1, Landroid/graphics/Rect;->top:I
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mCurrentWindowTop:I
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/Camera;->access$2202(Lcom/sec/android/app/camera/Camera;I)I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mBaseLayout:Landroid/view/ViewGroup;
     invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$2000(Lcom/sec/android/app/camera/Camera;)Landroid/view/ViewGroup;
 
     move-result-object v3
@@ -99,14 +94,12 @@
 
     move-result v3
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mCurrentWindowWidth:I
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/Camera;->access$1602(Lcom/sec/android/app/camera/Camera;I)I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mBaseLayout:Landroid/view/ViewGroup;
     invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$2000(Lcom/sec/android/app/camera/Camera;)Landroid/view/ViewGroup;
 
     move-result-object v3
@@ -115,7 +108,6 @@
 
     move-result v3
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mCurrentWindowHeight:I
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/Camera;->access$1702(Lcom/sec/android/app/camera/Camera;I)I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -130,12 +122,10 @@
 
     move-result v3
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mCurrentWindowOrientation:I
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/Camera;->access$1502(Lcom/sec/android/app/camera/Camera;I)I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mLastWindowOrientation:I
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$1800(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v2
@@ -148,25 +138,21 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCurrentWindowOrientation:I
     invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$1500(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v3
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mLastWindowOrientation:I
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/Camera;->access$1802(Lcom/sec/android/app/camera/Camera;I)I
 
     :cond_2
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mMainHandler:Lcom/sec/android/app/camera/Camera$MainHandler;
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/Camera$MainHandler;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mLayoutChangedRunnable:Ljava/lang/Runnable;
     invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$2300(Lcom/sec/android/app/camera/Camera;)Ljava/lang/Runnable;
 
     move-result-object v3
@@ -175,14 +161,12 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mMainHandler:Lcom/sec/android/app/camera/Camera$MainHandler;
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/Camera$MainHandler;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mLayoutChangedRunnable:Ljava/lang/Runnable;
     invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$2300(Lcom/sec/android/app/camera/Camera;)Ljava/lang/Runnable;
 
     move-result-object v3
@@ -193,7 +177,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$10;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mBaseLayout:Landroid/view/ViewGroup;
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$2000(Lcom/sec/android/app/camera/Camera;)Landroid/view/ViewGroup;
 
     move-result-object v2

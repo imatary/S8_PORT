@@ -194,7 +194,7 @@
 
     iget-object v1, v1, Lcom/android/bluetooth/btservice/AdapterState;->btDownloadableDb:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;
 
-    invoke-virtual {v1}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->initBluetoothDatabase()V
+    invoke-virtual {v1}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->initDdbFromAdapter()V
 
     :cond_1
     iget-object v1, p0, Lcom/android/bluetooth/btservice/AdapterState$OffState;->this$0:Lcom/android/bluetooth/btservice/AdapterState;

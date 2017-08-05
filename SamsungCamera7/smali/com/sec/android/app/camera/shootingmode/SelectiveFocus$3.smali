@@ -41,12 +41,11 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus$3;->this$0:Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->access$200(Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
 
-    const v2, 0x7f09021d
+    const v2, 0x7f09021e
 
     const/16 v3, 0x3e8
 
@@ -54,12 +53,10 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mSelectiveFocusToast:Landroid/widget/Toast;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->access$502(Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;Landroid/widget/Toast;)Landroid/widget/Toast;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus$3;->this$0:Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mSelectiveFocusToast:Landroid/widget/Toast;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->access$500(Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;)Landroid/widget/Toast;
 
     move-result-object v0

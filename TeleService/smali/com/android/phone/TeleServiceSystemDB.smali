@@ -422,6 +422,33 @@
     goto :goto_0
 .end method
 
+.method public static isConnectedMirrorLink()Z
+    .locals 2
+
+    const-string/jumbo v0, "net.mirrorlink.on"
+
+    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "1"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method public static isEasyModeOn()Z
     .locals 7
 

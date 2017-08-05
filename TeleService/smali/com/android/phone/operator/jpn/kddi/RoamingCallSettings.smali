@@ -140,7 +140,7 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d0a6d
+    const v4, 0x7f0d0ad4
 
     invoke-virtual {p0, v4}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -160,7 +160,7 @@
 
     aput-object v4, v2, v5
 
-    const v4, 0x7f0d0a6e
+    const v4, 0x7f0d0ad5
 
     invoke-virtual {p0, v4}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getText(I)Ljava/lang/CharSequence;
 
@@ -172,7 +172,7 @@
 
     invoke-virtual {v1, v3}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v4, 0x7f0d04c3
+    const v4, 0x7f0d0523
 
     invoke-virtual {p0, v4}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -184,7 +184,7 @@
 
     invoke-virtual {v1, v4, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v4, 0x7f0d050d
+    const v4, 0x7f0d056d
 
     invoke-virtual {p0, v4}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -208,7 +208,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0a6f
+    const v1, 0x7f0d0ad6
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -216,7 +216,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d0a70
+    const v1, 0x7f0d0ad7
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -224,7 +224,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d04c3
+    const v1, 0x7f0d0523
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -236,7 +236,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d050d
+    const v1, 0x7f0d056d
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -260,7 +260,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0a78
+    const v1, 0x7f0d0adf
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -268,7 +268,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d0a79
+    const v1, 0x7f0d0ae0
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -276,7 +276,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d04c3
+    const v1, 0x7f0d0523
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -288,7 +288,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d050d
+    const v1, 0x7f0d056d
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -312,7 +312,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0a76
+    const v1, 0x7f0d0add
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -320,7 +320,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d0a77
+    const v1, 0x7f0d0ade
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -328,7 +328,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d04c3
+    const v1, 0x7f0d0523
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -340,7 +340,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d050d
+    const v1, 0x7f0d056d
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -364,7 +364,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0a74
+    const v1, 0x7f0d0adb
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -372,7 +372,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d0a75
+    const v1, 0x7f0d0adc
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -380,7 +380,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d04c3
+    const v1, 0x7f0d0523
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -392,7 +392,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d050d
+    const v1, 0x7f0d056d
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -416,7 +416,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0a71
+    const v1, 0x7f0d0ad8
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -424,7 +424,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d0a73
+    const v1, 0x7f0d0ada
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -432,7 +432,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d04c3
+    const v1, 0x7f0d0523
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -444,7 +444,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d050d
+    const v1, 0x7f0d056d
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getString(I)Ljava/lang/String;
 
@@ -476,7 +476,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f0e0095
+    const v1, 0x7f0e0096
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->setTheme(I)V
 
@@ -629,11 +629,11 @@
     if-ne p1, v4, :cond_1
 
     :cond_0
-    const v3, 0x7f0d032d
+    const v3, 0x7f0d038d
 
     sparse-switch p1, :sswitch_data_0
 
-    const v2, 0x7f0d0332
+    const v2, 0x7f0d0392
 
     :goto_0
     new-instance v1, Landroid/app/AlertDialog$Builder;
@@ -656,7 +656,7 @@
 
     invoke-virtual {v1, v4}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v4, 0x7f0d050c
+    const v4, 0x7f0d056c
 
     invoke-virtual {p0, v4}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->getText(I)Ljava/lang/CharSequence;
 
@@ -688,17 +688,17 @@
     return-object v4
 
     :sswitch_0
-    const v2, 0x7f0d0331
+    const v2, 0x7f0d0391
 
     goto :goto_0
 
     :sswitch_1
-    const v2, 0x7f0d0333
+    const v2, 0x7f0d0393
 
     goto :goto_0
 
     :sswitch_2
-    const v2, 0x7f0d05b6
+    const v2, 0x7f0d061a
 
     goto :goto_0
 

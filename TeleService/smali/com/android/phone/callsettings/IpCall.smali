@@ -1285,7 +1285,7 @@
 .method private saveIpNumber(Ljava/lang/String;)V
     .locals 12
 
-    const v10, 0x7f0d0664
+    const v10, 0x7f0d06c8
 
     const/16 v11, 0x8
 
@@ -1322,7 +1322,7 @@
 
     move-result-object v5
 
-    const v7, 0x7f0d05c4
+    const v7, 0x7f0d0628
 
     invoke-virtual {v5, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1633,7 +1633,7 @@
 .method private setDefaultIpNumber(Ljava/lang/String;)V
     .locals 3
 
-    const v0, 0x7f0d063d
+    const v0, 0x7f0d06a1
 
     invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
@@ -1861,7 +1861,7 @@
 
     if-eqz v10, :cond_6
 
-    const v10, 0x7f0d063d
+    const v10, 0x7f0d06a1
 
     invoke-virtual {p0, v10}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
@@ -2230,7 +2230,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v5, 0x7f0d0661
+    const v5, 0x7f0d06c5
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
@@ -2333,7 +2333,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d09f7
+    const v5, 0x7f0d0a5e
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2343,7 +2343,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d087d
+    const v5, 0x7f0d08e1
 
     invoke-virtual {v4, v5}, Landroid/app/Activity;->setTitle(I)V
 
@@ -2478,7 +2478,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d0661
+    const v6, 0x7f0d06c5
 
     invoke-virtual {v5, v6}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -2498,7 +2498,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/callsettings/IpCall$4;-><init>(Lcom/android/phone/callsettings/IpCall;)V
 
-    const v7, 0x7f0d050d
+    const v7, 0x7f0d056d
 
     invoke-virtual {v5, v7, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2633,7 +2633,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0525
+    const v2, 0x7f0d0585
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2643,7 +2643,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0524
+    const v2, 0x7f0d0584
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -2653,7 +2653,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/IpCall$16;-><init>(Lcom/android/phone/callsettings/IpCall;)V
 
-    const v3, 0x7f0d050c
+    const v3, 0x7f0d056c
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2663,7 +2663,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/IpCall$17;-><init>(Lcom/android/phone/callsettings/IpCall;)V
 
-    const v3, 0x7f0d050d
+    const v3, 0x7f0d056d
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2794,7 +2794,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d050e
+    const v6, 0x7f0d056e
 
     invoke-virtual {v5, v6}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -2804,7 +2804,7 @@
 
     invoke-direct {v6, p0, v1}, Lcom/android/phone/callsettings/IpCall$13;-><init>(Lcom/android/phone/callsettings/IpCall;Landroid/widget/EditText;)V
 
-    const v7, 0x7f0d050c
+    const v7, 0x7f0d056c
 
     invoke-virtual {v5, v7, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2814,7 +2814,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/callsettings/IpCall$14;-><init>(Lcom/android/phone/callsettings/IpCall;)V
 
-    const v7, 0x7f0d050d
+    const v7, 0x7f0d056d
 
     invoke-virtual {v5, v7, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3461,7 +3461,7 @@
 
     new-array v2, v3, [Ljava/lang/CharSequence;
 
-    const v3, 0x7f0d050e
+    const v3, 0x7f0d056e
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/IpCall;->getText(I)Ljava/lang/CharSequence;
 
@@ -3471,7 +3471,7 @@
 
     aput-object v3, v2, v4
 
-    const v3, 0x7f0d0510
+    const v3, 0x7f0d0570
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/IpCall;->getText(I)Ljava/lang/CharSequence;
 
@@ -3560,7 +3560,7 @@
 
     const/4 v5, 0x2
 
-    const v4, 0x7f0d0510
+    const v4, 0x7f0d0570
 
     const/4 v3, 0x0
 
@@ -3574,7 +3574,7 @@
 
     if-nez v0, :cond_0
 
-    const v0, 0x7f0d050b
+    const v0, 0x7f0d056b
 
     invoke-interface {p1, v3, v2, v2, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -3602,13 +3602,13 @@
     return-void
 
     :cond_0
-    const v0, 0x7f0d050b
+    const v0, 0x7f0d056b
 
     invoke-interface {p1, v3, v2, v2, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f020008
+    const v1, 0x7f02000a
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -3620,7 +3620,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020098
+    const v1, 0x7f02009b
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -3634,7 +3634,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020098
+    const v1, 0x7f02009b
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -3642,7 +3642,7 @@
 
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setShowAsActionFlags(I)Landroid/view/MenuItem;
 
-    const v0, 0x7f0d050d
+    const v0, 0x7f0d056d
 
     invoke-interface {p1, v3, v6, v2, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -3660,13 +3660,13 @@
 
     const/4 v0, 0x5
 
-    const v1, 0x7f0d050d
+    const v1, 0x7f0d056d
 
     invoke-interface {p1, v3, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f020006
+    const v1, 0x7f020008
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -3684,7 +3684,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020098
+    const v1, 0x7f02009b
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -3702,7 +3702,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020007
+    const v1, 0x7f020009
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@android:color/transparent" android:focusable="true" style="@style/extra_menu_thumbnail_button_h_portrait_effects"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/icon" android:layout_marginTop="@dimen/sub_bottom_effect_background_margin_top" android:layout_marginBottom="@dimen/sub_bottom_background_margin_bottom" style="@style/extra_menu_image_style_h_portrait_effects" />
-    <ImageView android:id="@id/icon_gradiation" android:layout_marginTop="@dimen/sub_bottom_effect_background_margin_top" android:layout_marginBottom="@dimen/sub_bottom_background_margin_bottom" android:src="@drawable/effect_gradiation" style="@style/extra_menu_image_style_h_portrait_effects" />
-    <TextView android:id="@id/text" style="@style/extra_menu_text_style_effects" />
-    <ImageView android:id="@id/icon_overlay" android:background="@drawable/subbtn_ripple_background" android:duplicateParentState="true" android:layout_marginTop="@dimen/sub_bottom_effect_background_margin_top" android:layout_marginBottom="@dimen/sub_bottom_background_margin_bottom" style="@style/extra_menu_image_style_h_portrait_effects" />
-</FrameLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <size android:height="@dimen/spinner_count_height" android:width="@dimen/spinner_count_width" />
-    <solid android:color="@color/spinner_count_bg_color" />
-    <padding android:left="@dimen/spinner_count_padding" android:right="@dimen/spinner_count_padding" />
-    <corners android:radius="@dimen/spinner_count_radius" />
-    <stroke android:width="@dimen/spinner_count_stroke_width" android:color="@color/spinner_count_stroke_color" />
-</shape>

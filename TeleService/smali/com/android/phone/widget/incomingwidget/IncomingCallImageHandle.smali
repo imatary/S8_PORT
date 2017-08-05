@@ -355,43 +355,43 @@
 
     iput v4, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->CHANGE_ARROW_DELAY:I
 
-    const v0, 0x7f0200b8
+    const v0, 0x7f0200bb
 
     iput v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mLeftHandleNormalRes:I
 
-    const v0, 0x7f0200b6
+    const v0, 0x7f0200b9
 
     iput v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mRightHandleNormalRes:I
 
-    const v0, 0x7f0200f2
+    const v0, 0x7f0200f5
 
     iput v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mLeftTabNormalRes:I
 
-    const v0, 0x7f0201b9
+    const v0, 0x7f0201c2
 
     iput v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mRightTabNormalRes:I
 
-    const v0, 0x7f0200b9
+    const v0, 0x7f0200bc
 
     iput v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mLeftHandlePressRes:I
 
-    const v0, 0x7f0200b7
+    const v0, 0x7f0200ba
 
     iput v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mRightHandlePressRes:I
 
-    const v0, 0x7f0200f3
+    const v0, 0x7f0200f6
 
     iput v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mLeftTabPressRes:I
 
-    const v0, 0x7f0201ba
+    const v0, 0x7f0201c3
 
     iput v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mRightTabPressRes:I
 
-    const v0, 0x7f020015
+    const v0, 0x7f020017
 
-    const v1, 0x7f020016
+    const v1, 0x7f020018
 
-    const v2, 0x7f020017
+    const v2, 0x7f020019
 
     filled-new-array {v0, v1, v2}, [I
 
@@ -399,11 +399,11 @@
 
     iput-object v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mArrowLeftAnimation:[I
 
-    const v0, 0x7f02003f
+    const v0, 0x7f020041
 
-    const v1, 0x7f020040
+    const v1, 0x7f020042
 
-    const v2, 0x7f020041
+    const v2, 0x7f020043
 
     filled-new-array {v0, v1, v2}, [I
 
@@ -612,15 +612,15 @@
 .method private init()V
     .locals 7
 
-    const v6, 0x7f0201b8
+    const v6, 0x7f0201c1
 
-    const v5, 0x7f0200f2
+    const v5, 0x7f0200f5
 
-    const v4, 0x7f0200b8
+    const v4, 0x7f0200bb
 
     const/4 v2, 0x1
 
-    const v3, 0x7f0200f1
+    const v3, 0x7f0200f4
 
     iget-object v1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mContext:Landroid/content/Context;
 
@@ -751,7 +751,7 @@
     :cond_1
     iget-object v1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mTabCircle:Landroid/widget/ImageView;
 
-    const v2, 0x7f0201b9
+    const v2, 0x7f0201c2
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -765,7 +765,7 @@
 
     iget-object v1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mHandleImageView:Landroid/widget/ImageView;
 
-    const v2, 0x7f0200b6
+    const v2, 0x7f0200b9
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 

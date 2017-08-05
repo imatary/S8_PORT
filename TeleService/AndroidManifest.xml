@@ -132,10 +132,12 @@
     <uses-permission android:name="com.sec.vsimservice.WRITE_PERMISSION"/>
     <uses-permission android:name="com.sec.vsimservice.PERMISSION"/>
     <uses-permission android:name="com.sec.vowifispg.permission.VOWIFI_PROVISIONING"/>
+    <uses-permission android:name="com.samsung.android.unifiedwfc.VOWIFI_PROVISIONING_PERMISSION"/>
     <uses-permission android:name="com.sec.android.providers.iwlansettings.permission.WRITE_IWLANSETTINGS"/>
     <uses-permission android:name="com.sec.android.providers.iwlansettings.permission.READ_IWLANSETTINGS"/>
     <uses-permission android:name="com.sec.android.phone.permission.MOBILE_NETWORK_SETTING_ACCESS"/>
     <uses-permission android:name="IntentDelayedImsRegistration"/>
+    <uses-permission android:name="com.samsung.contacts.permission.CONTACT_SETTINGS_PROVIDER_WRITE"/>
     <uses-permission android:name="com.samsung.permission.HQM_NOTIFICATION_PERMISSION"/>
     <uses-permission android:name="com.wssnps.permission.COM_WSSNPS"/>
     <permission android:name="com.sec.android.kies.calllog.BROADCAST_DETECT" android:protectionLevel="signatureOrSystem"/>
@@ -954,7 +956,7 @@
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/dsa_dual_sim_always_on" android:launchMode="singleTop" android:name="DsaMain" android:theme="@style/Theme.DsaNumberAndSIMTheme">
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:label="@string/dsa_dual_sim_always_on" android:launchMode="singleTop" android:name="DsaMain" android:theme="@style/Theme.DsaNumberAndSIMTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
@@ -1057,7 +1059,7 @@
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
         </provider>
         <provider android:authorities="com.android.phone.external.callsetting" android:exported="true" android:name=".callsettings.ExternalCallsettingsProvider" android:permission="com.sec.android.phone.permission.EXTERNAL_CALLSETTINGS_PROVIDER" android:singleUser="true"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/smart_call_title" android:name=".smartcall.SmartCallSettings" android:theme="@style/Theme.Settings">
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/smart_call_title" android:name=".smartcall.SmartCallSettings" android:theme="@style/Theme.Settings">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>

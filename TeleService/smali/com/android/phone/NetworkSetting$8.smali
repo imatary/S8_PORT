@@ -103,7 +103,7 @@
     invoke-static {v0, v3}, Lcom/android/phone/NetworkSetting;->-wrap17(Lcom/android/phone/NetworkSetting;Z)V
 
     :cond_1
-    const-string/jumbo v0, "usa_gsm_support_femto_cell_network"
+    const-string/jumbo v0, "usa_gsm_network_setting"
 
     invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 

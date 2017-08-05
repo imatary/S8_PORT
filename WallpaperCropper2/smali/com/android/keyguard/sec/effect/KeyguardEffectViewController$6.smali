@@ -97,7 +97,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->setWallpaperFileObserver()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$700(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)V
 
     const-string/jumbo v0, "KeyguardEffectViewController"
@@ -128,7 +127,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -142,7 +140,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -159,7 +156,6 @@
     :cond_3
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -173,7 +169,6 @@
     :goto_2
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -185,7 +180,6 @@
     :cond_4
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -197,7 +191,6 @@
     :cond_5
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -211,7 +204,6 @@
     :goto_3
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -223,7 +215,6 @@
     :cond_6
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -235,7 +226,6 @@
     :cond_7
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -249,7 +239,6 @@
     :goto_4
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -261,7 +250,6 @@
     :cond_8
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -321,7 +309,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -335,7 +322,6 @@
     :goto_5
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -347,7 +333,6 @@
     :cond_a
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -359,7 +344,6 @@
     :cond_b
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -375,12 +359,10 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mEmergencyModeStateChanged:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$2002(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -392,7 +374,6 @@
     :cond_c
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -404,7 +385,6 @@
     :cond_d
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -418,7 +398,6 @@
     :goto_7
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -430,7 +409,6 @@
     :cond_e
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -442,7 +420,6 @@
     :cond_f
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$6;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0

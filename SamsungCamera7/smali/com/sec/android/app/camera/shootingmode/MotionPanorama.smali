@@ -249,6 +249,8 @@
 
 .field private mMediaRecorder:Landroid/media/MediaRecorder;
 
+.field private mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
+
 .field private mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
 .field private mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -276,6 +278,8 @@
 .field private mThumbnailPreviewPreallocatedBuffer:[I
 
 .field private mThumbnailPreviewWidth:I
+
+.field private mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
 .field private mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
 
@@ -756,6 +760,10 @@
 
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaThumbnailBitmap:Landroid/graphics/Bitmap;
 
+    iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
+
+    iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
+
     new-instance v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$1;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$1;-><init>(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)V
@@ -1033,7 +1041,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->access$500(Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;)V
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -1762,7 +1769,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090163
+    const v2, 0x7f090164
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1862,7 +1869,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0901e5
+    const v7, 0x7f0901e6
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9526,10 +9533,6 @@
 
     iput-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCapturing:Z
 
-    iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
-
-    iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
-
     goto :goto_0
 .end method
 
@@ -12139,6 +12142,8 @@
 
     iput-object p4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
+    iput-object p5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
+
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->createPanoramaView()V
 
     return-void
@@ -12894,6 +12899,10 @@
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->setPostCaptureProgress(I)V
 
     if-nez p1, :cond_1
+
+    iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
+
+    iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
@@ -13948,7 +13957,97 @@
 .end method
 
 .method public onTimerEvent(I)V
-    .locals 0
+    .locals 4
 
+    const/16 v3, 0x3d
+
+    const-string v0, "MotionPanoramaApp"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "onTimerEvent: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
+
+    invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuManager;->isActive(I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
+
+    invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuManager;->showMenu(I)Lcom/sec/android/app/camera/interfaces/MenuBase;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;
+
+    iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
+
+    :cond_0
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
+
+    invoke-virtual {v0, p1}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->updateTime(I)V
+
+    :cond_1
+    if-nez p1, :cond_3
+
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->clearPanoramaRect()V
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isCapturing()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
+
+    const/16 v1, 0x40
+
+    invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->disableView(I)V
+
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->showPreviewGroup()V
+
+    :cond_2
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
+
+    const/16 v1, 0x80
+
+    invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
+
+    const/16 v1, 0x100
+
+    invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->sendCompletedMessageToBixby()V
+
+    :cond_3
     return-void
 .end method

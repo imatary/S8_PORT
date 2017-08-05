@@ -88,7 +88,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d02e7
+    const v4, 0x7f0d0347
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/android/phone/SubscriptionInfoHelper;->setActionBarTitle(Landroid/app/ActionBar;Landroid/content/res/Resources;I)V
 

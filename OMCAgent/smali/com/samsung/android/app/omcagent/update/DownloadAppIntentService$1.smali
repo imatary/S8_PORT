@@ -80,7 +80,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->packageName:Ljava/lang/String;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$000(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;)Ljava/lang/String;
 
     move-result-object v1
@@ -104,12 +103,10 @@
 
     move-result v2
 
-    # setter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->isCancel:Z
     invoke-static {v1, v2}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$102(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;Z)Z
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->isCancel:Z
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$100(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;)Z
 
     move-result v1
@@ -128,7 +125,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->isCancel:Z
     invoke-static {v2}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$100(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;)Z
 
     move-result v2
@@ -174,24 +170,20 @@
 
     move-result v2
 
-    # setter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->cancelAll:Z
     invoke-static {v1, v2}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$202(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;Z)Z
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;
 
     iget-object v2, p0, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->cancelAll:Z
     invoke-static {v2}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$200(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;)Z
 
     move-result v2
 
-    # setter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->isCancel:Z
     invoke-static {v1, v2}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$102(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;Z)Z
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->isCancel:Z
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$100(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;)Z
 
     move-result v1
@@ -210,7 +202,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->isCancel:Z
     invoke-static {v2}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$100(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;)Z
 
     move-result v2
@@ -223,7 +214,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->cancelAll:Z
     invoke-static {v2}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$200(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;)Z
 
     move-result v2
@@ -269,7 +259,6 @@
 
     move-result v2
 
-    # setter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->pause:Z
     invoke-static {v1, v2}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$302(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;Z)Z
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;
@@ -278,7 +267,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->pause:Z
     invoke-static {v2}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$300(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;)Z
 
     move-result v2
@@ -305,7 +293,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->pause:Z
     invoke-static {v2}, Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;->access$300(Lcom/samsung/android/app/omcagent/update/DownloadAppIntentService;)Z
 
     move-result v2

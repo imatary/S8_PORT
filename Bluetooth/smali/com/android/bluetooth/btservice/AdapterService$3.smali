@@ -40,9 +40,9 @@
 
     const/4 v11, 0x1
 
-    const/4 v8, 0x0
-
     const/4 v10, 0x0
+
+    const/4 v8, 0x0
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -332,7 +332,7 @@
 
     const-string/jumbo v6, "bluetooth_a2dp_sink_mode"
 
-    invoke-virtual {v5, v6, v11}, Lcom/android/bluetooth/btservice/AdapterService;->setA2dpPreference(Ljava/lang/String;I)Z
+    invoke-virtual {v5, v6, v11}, Lcom/android/bluetooth/btservice/AdapterService;->setA2dpPreference(Ljava/lang/String;I)V
 
     const-string/jumbo v5, "BluetoothAdapterService"
 
@@ -374,17 +374,13 @@
 
     const-string/jumbo v6, "bluetooth_a2dp_sink_mode"
 
-    invoke-virtual {v5, v6, v9}, Lcom/android/bluetooth/btservice/AdapterService;->setA2dpPreference(Ljava/lang/String;I)Z
+    invoke-virtual {v5, v6, v9}, Lcom/android/bluetooth/btservice/AdapterService;->setA2dpPreference(Ljava/lang/String;I)V
 
     const-string/jumbo v5, "BluetoothAdapterService"
 
     const-string/jumbo v6, "A2DP_SINK_MODE : TURNING_OFF"
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v5, p0, Lcom/android/bluetooth/btservice/AdapterService$3;->this$0:Lcom/android/bluetooth/btservice/AdapterService;
-
-    invoke-static {v5, v10}, Lcom/android/bluetooth/btservice/AdapterService;->-wrap13(Lcom/android/bluetooth/btservice/AdapterService;Z)V
 
     iget-object v5, p0, Lcom/android/bluetooth/btservice/AdapterService$3;->this$0:Lcom/android/bluetooth/btservice/AdapterService;
 

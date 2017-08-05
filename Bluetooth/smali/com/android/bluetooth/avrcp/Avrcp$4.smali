@@ -38,13 +38,7 @@
 
     iget-object v5, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    const/4 v6, 0x1
-
-    invoke-static {v5, v6}, Lcom/android/bluetooth/avrcp/Avrcp;->-set3(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
-
-    iget-object v5, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get14(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/browse/MediaBrowser;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get13(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/browse/MediaBrowser;
 
     move-result-object v5
 
@@ -63,6 +57,29 @@
     return-void
 
     :cond_0
+    iget-object v5, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get14(Lcom/android/bluetooth/avrcp/Avrcp;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    const-string/jumbo v5, "Avrcp"
+
+    const-string/jumbo v6, "media browser already connected"
+
+    invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_1
+    iget-object v5, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    const/4 v6, 0x1
+
+    invoke-static {v5, v6}, Lcom/android/bluetooth/avrcp/Avrcp;->-set3(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+
     const-string/jumbo v5, "Avrcp"
 
     const-string/jumbo v6, "MediaBrowser connected"
@@ -71,7 +88,7 @@
 
     iget-object v5, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get14(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/browse/MediaBrowser;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get13(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/browse/MediaBrowser;
 
     move-result-object v5
 
@@ -81,7 +98,7 @@
 
     iget-object v5, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get14(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/browse/MediaBrowser;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get13(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/browse/MediaBrowser;
 
     move-result-object v5
 
@@ -121,7 +138,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-nez v4, :cond_1
+    if-nez v4, :cond_2
 
     const-string/jumbo v5, "Avrcp"
 
@@ -131,7 +148,7 @@
 
     return-void
 
-    :cond_1
+    :cond_2
     invoke-virtual {v3}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
@@ -143,15 +160,15 @@
     :try_start_0
     iget-object v5, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
-    if-eqz v5, :cond_2
+    if-eqz v5, :cond_3
 
     iget-object v5, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
@@ -165,14 +182,14 @@
 
     move-result v5
 
-    if-eqz v5, :cond_2
+    if-eqz v5, :cond_3
 
     :goto_0
     monitor-exit v6
 
     iget-object v5, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get13(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get11(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
 
     move-result-object v5
 
@@ -184,7 +201,7 @@
 
     iget-object v5, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get14(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/browse/MediaBrowser;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get13(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/browse/MediaBrowser;
 
     move-result-object v5
 
@@ -204,11 +221,11 @@
 
     iget-object v5, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5, v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap27(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)V
+    invoke-static {v5, v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap28(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)V
 
     return-void
 
-    :cond_2
+    :cond_3
     :try_start_1
     new-instance v1, Landroid/media/session/MediaController;
 
@@ -255,7 +272,9 @@
 .end method
 
 .method public onConnectionSuspended()V
-    .locals 3
+    .locals 4
+
+    const/16 v3, 0xdc
 
     const-string/jumbo v1, "Avrcp"
 
@@ -271,19 +290,44 @@
 
     iget-object v1, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v1}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v1}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v1
 
-    const/16 v2, 0xdc
+    invoke-virtual {v1, v3}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->hasMessages(I)Z
 
-    invoke-virtual {v1, v2}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->obtainMessage(I)Landroid/os/Message;
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const-string/jumbo v1, "Avrcp"
+
+    const-string/jumbo v2, "remove MSG_REGISTER_MEDIA_BROWSER"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v1, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v1}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v3}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->removeMessages(I)V
+
+    :cond_0
+    iget-object v1, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v1}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v3}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/bluetooth/avrcp/Avrcp$4;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v1}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v1}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v1
 

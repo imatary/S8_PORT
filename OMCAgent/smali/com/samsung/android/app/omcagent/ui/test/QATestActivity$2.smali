@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$2;->this$0:Lcom/samsung/android/app/omcagent/ui/test/QATestActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/test/QATestActivity;->runCommand(Landroid/content/Context;)V
     invoke-static {v0, v1}, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity;->access$100(Lcom/samsung/android/app/omcagent/ui/test/QATestActivity;Landroid/content/Context;)V
 
     return-void

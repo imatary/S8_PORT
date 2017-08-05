@@ -45,7 +45,6 @@
 
     iget-object v2, p0, Lcom/samsung/android/glview/GLView$5;->this$0:Lcom/samsung/android/glview/GLView;
 
-    # getter for: Lcom/samsung/android/glview/GLView;->mAnimation:Landroid/view/animation/Animation;
     invoke-static {v2}, Lcom/samsung/android/glview/GLView;->access$700(Lcom/samsung/android/glview/GLView;)Landroid/view/animation/Animation;
 
     move-result-object v2

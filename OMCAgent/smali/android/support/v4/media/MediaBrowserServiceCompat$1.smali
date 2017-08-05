@@ -78,7 +78,6 @@
 
     iget-object v2, p0, Landroid/support/v4/media/MediaBrowserServiceCompat$1;->this$0:Landroid/support/v4/media/MediaBrowserServiceCompat;
 
-    # getter for: Landroid/support/v4/media/MediaBrowserServiceCompat;->mConnections:Landroid/support/v4/util/ArrayMap;
     invoke-static {v2}, Landroid/support/v4/media/MediaBrowserServiceCompat;->access$200(Landroid/support/v4/media/MediaBrowserServiceCompat;)Landroid/support/v4/util/ArrayMap;
 
     move-result-object v2
@@ -99,7 +98,6 @@
 
     if-eq v2, v3, :cond_1
 
-    # getter for: Landroid/support/v4/media/MediaBrowserServiceCompat;->DEBUG:Z
     invoke-static {}, Landroid/support/v4/media/MediaBrowserServiceCompat;->access$1100()Z
 
     move-result v2
@@ -157,7 +155,6 @@
 
     iget-object v3, p0, Landroid/support/v4/media/MediaBrowserServiceCompat$1;->val$options:Landroid/os/Bundle;
 
-    # invokes: Landroid/support/v4/media/MediaBrowserServiceCompat;->applyOptions(Ljava/util/List;Landroid/os/Bundle;)Ljava/util/List;
     invoke-static {v2, p1, v3}, Landroid/support/v4/media/MediaBrowserServiceCompat;->access$1200(Landroid/support/v4/media/MediaBrowserServiceCompat;Ljava/util/List;Landroid/os/Bundle;)Ljava/util/List;
 
     move-result-object v1

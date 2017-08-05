@@ -1271,7 +1271,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f0901b5
+    const v30, 0x7f0901b6
 
     invoke-virtual/range {v29 .. v30}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1330,7 +1330,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f0901b5
+    const v30, 0x7f0901b6
 
     invoke-virtual/range {v29 .. v30}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1377,13 +1377,13 @@
     goto/16 :goto_1
 
     :pswitch_3
-    const v29, 0x7f090292
+    const v29, 0x7f090294
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901a4
+    const v29, 0x7f0901a5
 
     move-object/from16 v0, p0
 
@@ -1580,7 +1580,7 @@
     move-result-object v8
 
     :cond_4
-    const v29, 0x7f090136
+    const v29, 0x7f090137
 
     move-object/from16 v0, p0
 
@@ -1618,7 +1618,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f090137
+    const v30, 0x7f090138
 
     move-object/from16 v0, p0
 
@@ -1664,7 +1664,7 @@
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090129
+    const v29, 0x7f09012a
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnNegativeButtonClickListener;
 
@@ -1684,7 +1684,7 @@
 
     invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901e2
+    const v29, 0x7f0901e3
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -1788,7 +1788,7 @@
 
     invoke-static/range {v29 .. v30}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v29, 0x7f090138
+    const v29, 0x7f090139
 
     move-object/from16 v0, p0
 
@@ -1807,7 +1807,7 @@
 
     invoke-static/range {v29 .. v30}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v29, 0x7f09015d
+    const v29, 0x7f09015e
 
     move-object/from16 v0, p0
 
@@ -1821,13 +1821,13 @@
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901df
+    const v29, 0x7f0901e0
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901e2
+    const v29, 0x7f0901e3
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -1866,19 +1866,19 @@
     goto/16 :goto_1
 
     :pswitch_4
-    const v29, 0x7f09012c
+    const v29, 0x7f09012d
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f09012d
+    const v29, 0x7f09012e
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090156
+    const v29, 0x7f090157
 
     const/16 v30, 0x0
 
@@ -1907,19 +1907,19 @@
     goto/16 :goto_1
 
     :pswitch_5
-    const v29, 0x7f09012b
+    const v29, 0x7f09012c
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f09012d
+    const v29, 0x7f09012e
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090156
+    const v29, 0x7f090157
 
     const/16 v30, 0x0
 
@@ -1969,7 +1969,7 @@
 
     move-result-object v30
 
-    const v31, 0x7f09023a
+    const v31, 0x7f09023b
 
     invoke-virtual/range {v30 .. v31}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1989,7 +1989,7 @@
 
     move-result-object v30
 
-    const v31, 0x7f09023b
+    const v31, 0x7f09023c
 
     invoke-virtual/range {v30 .. v31}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2061,7 +2061,7 @@
 
     move-result-object v30
 
-    const v31, 0x7f090238
+    const v31, 0x7f090239
 
     invoke-virtual/range {v30 .. v31}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2077,7 +2077,7 @@
 
     :cond_a
     :goto_5
-    const v29, 0x7f09023c
+    const v29, 0x7f09023d
 
     move/from16 v0, v29
 
@@ -2162,7 +2162,7 @@
 
     move-result-object v30
 
-    const v31, 0x7f090239
+    const v31, 0x7f09023a
 
     invoke-virtual/range {v30 .. v31}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2207,7 +2207,7 @@
 
     if-ne v0, v1, :cond_d
 
-    const v29, 0x7f090292
+    const v29, 0x7f090294
 
     move/from16 v0, v29
 
@@ -2229,7 +2229,7 @@
 
     if-nez v29, :cond_c
 
-    const v29, 0x7f090221
+    const v29, 0x7f090222
 
     :goto_6
     move/from16 v0, v29
@@ -2275,7 +2275,7 @@
     goto/16 :goto_1
 
     :cond_c
-    const v29, 0x7f09021f
+    const v29, 0x7f090220
 
     goto :goto_6
 
@@ -2355,7 +2355,7 @@
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901cd
+    const v29, 0x7f0901ce
 
     move/from16 v0, v29
 
@@ -2396,7 +2396,7 @@
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901ce
+    const v29, 0x7f0901cf
 
     move/from16 v0, v29
 
@@ -2455,7 +2455,7 @@
 
     invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v30, 0x7f0901cd
+    const v30, 0x7f0901ce
 
     move-object/from16 v0, p0
 
@@ -2531,7 +2531,7 @@
 
     invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v30, 0x7f0901cd
+    const v30, 0x7f0901ce
 
     move-object/from16 v0, p0
 
@@ -2600,7 +2600,7 @@
 
     invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v30, 0x7f0901ce
+    const v30, 0x7f0901cf
 
     move-object/from16 v0, p0
 
@@ -2676,7 +2676,7 @@
 
     invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v30, 0x7f0901ce
+    const v30, 0x7f0901cf
 
     move-object/from16 v0, p0
 
@@ -2729,7 +2729,7 @@
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090156
+    const v29, 0x7f090157
 
     const/16 v30, 0x0
 
@@ -2766,7 +2766,7 @@
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090156
+    const v29, 0x7f090157
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -2805,19 +2805,65 @@
     goto/16 :goto_1
 
     :pswitch_10
-    const v29, 0x7f090292
+    const v29, 0x7f090294
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090117
+    const v29, 0x7f09024c
 
-    move/from16 v0, v29
+    const/16 v30, 0x2
 
-    invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    move/from16 v0, v30
 
-    const v29, 0x7f090156
+    new-array v0, v0, [Ljava/lang/Object;
+
+    move-object/from16 v30, v0
+
+    const/16 v31, 0x0
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/CameraDialog;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v32
+
+    const v33, 0x7f090126
+
+    invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v32
+
+    aput-object v32, v30, v31
+
+    const/16 v31, 0x1
+
+    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/CameraDialog;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v32
+
+    const v33, 0x7f090126
+
+    invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v32
+
+    aput-object v32, v30, v31
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v29
+
+    move-object/from16 v2, v30
+
+    invoke-virtual {v0, v1, v2}, Lcom/sec/android/app/camera/CameraDialog;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v29
+
+    move-object/from16 v0, v29
+
+    invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    const v29, 0x7f090157
 
     const/16 v30, 0x0
 
@@ -2852,7 +2898,7 @@
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901f0
+    const v29, 0x7f0901f1
 
     move/from16 v0, v29
 
@@ -2916,13 +2962,13 @@
     goto/16 :goto_1
 
     :pswitch_13
-    const v29, 0x7f090292
+    const v29, 0x7f090294
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901fd
+    const v29, 0x7f0901fe
 
     move/from16 v0, v29
 
@@ -3020,14 +3066,14 @@
 
     if-eqz v29, :cond_13
 
-    const v29, 0x7f090284
+    const v29, 0x7f090286
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     :goto_9
-    const v29, 0x7f09016a
+    const v29, 0x7f09016b
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -3070,7 +3116,7 @@
     goto/16 :goto_1
 
     :cond_13
-    const v29, 0x7f090245
+    const v29, 0x7f090246
 
     move/from16 v0, v29
 
@@ -3095,7 +3141,7 @@
 
     if-eqz v29, :cond_14
 
-    const v29, 0x7f090285
+    const v29, 0x7f090287
 
     move/from16 v0, v29
 
@@ -3145,7 +3191,7 @@
     goto/16 :goto_1
 
     :cond_14
-    const v29, 0x7f090246
+    const v29, 0x7f090247
 
     move/from16 v0, v29
 
@@ -3174,13 +3220,13 @@
 
     if-eqz v29, :cond_15
 
-    const v29, 0x7f090207
+    const v29, 0x7f090208
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090208
+    const v29, 0x7f090209
 
     const/16 v30, 0x2
 
@@ -3196,7 +3242,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09015b
+    const v33, 0x7f09015c
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3239,7 +3285,7 @@
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090206
+    const v29, 0x7f090207
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -3282,7 +3328,7 @@
     goto/16 :goto_1
 
     :cond_15
-    const v29, 0x7f090207
+    const v29, 0x7f090208
 
     move/from16 v0, v29
 
@@ -3345,7 +3391,7 @@
 
     if-eqz v29, :cond_17
 
-    const v29, 0x7f0901ba
+    const v29, 0x7f0901bb
 
     const/16 v30, 0x1
 
@@ -3361,7 +3407,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09017e
+    const v33, 0x7f09017f
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3443,7 +3489,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f09017d
+    const v30, 0x7f09017e
 
     move-object/from16 v0, p0
 
@@ -3477,13 +3523,13 @@
 
     invoke-virtual {v5, v13}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901be
+    const v29, 0x7f0901bf
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090272
+    const v29, 0x7f090274
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -3526,7 +3572,7 @@
     goto/16 :goto_1
 
     :cond_17
-    const v29, 0x7f0901ba
+    const v29, 0x7f0901bb
 
     const/16 v30, 0x1
 
@@ -3542,7 +3588,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09019b
+    const v33, 0x7f09019c
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3577,7 +3623,7 @@
 
     if-eqz v29, :cond_19
 
-    const v29, 0x7f0901bc
+    const v29, 0x7f0901bd
 
     const/16 v30, 0x1
 
@@ -3593,7 +3639,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09017e
+    const v33, 0x7f09017f
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3614,7 +3660,7 @@
     goto/16 :goto_c
 
     :cond_19
-    const v29, 0x7f0901bc
+    const v29, 0x7f0901bd
 
     const/16 v30, 0x1
 
@@ -3630,7 +3676,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09019b
+    const v33, 0x7f09019c
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3683,7 +3729,7 @@
 
     invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v30, 0x7f0901bb
+    const v30, 0x7f0901bc
 
     move-object/from16 v0, p0
 
@@ -3734,7 +3780,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f0901ba
+    const v30, 0x7f0901bb
 
     const/16 v31, 0x1
 
@@ -3750,7 +3796,7 @@
 
     move-result-object v33
 
-    const v34, 0x7f09017e
+    const v34, 0x7f09017f
 
     invoke-virtual/range {v33 .. v34}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3860,7 +3906,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f09017d
+    const v30, 0x7f09017e
 
     move-object/from16 v0, p0
 
@@ -3940,7 +3986,7 @@
 
     invoke-virtual {v5, v13}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901bf
+    const v29, 0x7f0901c0
 
     move/from16 v0, v29
 
@@ -3993,7 +4039,7 @@
 
     invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v30, 0x7f0901bd
+    const v30, 0x7f0901be
 
     move-object/from16 v0, p0
 
@@ -4032,7 +4078,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f0901ba
+    const v30, 0x7f0901bb
 
     const/16 v31, 0x1
 
@@ -4048,7 +4094,7 @@
 
     move-result-object v33
 
-    const v34, 0x7f09019b
+    const v34, 0x7f09019c
 
     invoke-virtual/range {v33 .. v34}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4141,7 +4187,7 @@
 
     if-eqz v29, :cond_1e
 
-    const v29, 0x7f0901ba
+    const v29, 0x7f0901bb
 
     const/16 v30, 0x1
 
@@ -4157,7 +4203,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09017e
+    const v33, 0x7f09017f
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4239,7 +4285,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f09017d
+    const v30, 0x7f09017e
 
     move-object/from16 v0, p0
 
@@ -4273,13 +4319,13 @@
 
     invoke-virtual {v5, v13}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901be
+    const v29, 0x7f0901bf
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090272
+    const v29, 0x7f090274
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -4322,7 +4368,7 @@
     goto/16 :goto_1
 
     :cond_1e
-    const v29, 0x7f0901ba
+    const v29, 0x7f0901bb
 
     const/16 v30, 0x1
 
@@ -4338,7 +4384,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09019b
+    const v33, 0x7f09019c
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4373,7 +4419,7 @@
 
     if-eqz v29, :cond_20
 
-    const v29, 0x7f0901bc
+    const v29, 0x7f0901bd
 
     const/16 v30, 0x1
 
@@ -4389,7 +4435,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09017e
+    const v33, 0x7f09017f
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4410,7 +4456,7 @@
     goto/16 :goto_f
 
     :cond_20
-    const v29, 0x7f0901bc
+    const v29, 0x7f0901bd
 
     const/16 v30, 0x1
 
@@ -4426,7 +4472,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09019b
+    const v33, 0x7f09019c
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4497,7 +4543,7 @@
 
     if-eqz v29, :cond_22
 
-    const v29, 0x7f0901ba
+    const v29, 0x7f0901bb
 
     const/16 v30, 0x1
 
@@ -4513,7 +4559,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09017e
+    const v33, 0x7f09017f
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4595,7 +4641,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f09017d
+    const v30, 0x7f09017e
 
     move-object/from16 v0, p0
 
@@ -4629,13 +4675,13 @@
 
     invoke-virtual {v5, v13}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901be
+    const v29, 0x7f0901bf
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090272
+    const v29, 0x7f090274
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -4678,7 +4724,7 @@
     goto/16 :goto_1
 
     :cond_22
-    const v29, 0x7f0901ba
+    const v29, 0x7f0901bb
 
     const/16 v30, 0x1
 
@@ -4694,7 +4740,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09019b
+    const v33, 0x7f09019c
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4729,7 +4775,7 @@
 
     if-eqz v29, :cond_24
 
-    const v29, 0x7f0901bc
+    const v29, 0x7f0901bd
 
     const/16 v30, 0x1
 
@@ -4745,7 +4791,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09017e
+    const v33, 0x7f09017f
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4766,7 +4812,7 @@
     goto/16 :goto_10
 
     :cond_24
-    const v29, 0x7f0901bc
+    const v29, 0x7f0901bd
 
     const/16 v30, 0x1
 
@@ -4782,7 +4828,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f09019b
+    const v33, 0x7f09019c
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4831,7 +4877,7 @@
 
     invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v30, 0x7f0901bb
+    const v30, 0x7f0901bc
 
     move-object/from16 v0, p0
 
@@ -4882,7 +4928,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f0901ba
+    const v30, 0x7f0901bb
 
     const/16 v31, 0x1
 
@@ -4898,7 +4944,7 @@
 
     move-result-object v33
 
-    const v34, 0x7f09017e
+    const v34, 0x7f09017f
 
     invoke-virtual/range {v33 .. v34}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -5008,7 +5054,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f09017d
+    const v30, 0x7f09017e
 
     move-object/from16 v0, p0
 
@@ -5074,7 +5120,7 @@
 
     invoke-virtual {v5, v13}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901bf
+    const v29, 0x7f0901c0
 
     move/from16 v0, v29
 
@@ -5127,7 +5173,7 @@
 
     invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v30, 0x7f0901bd
+    const v30, 0x7f0901be
 
     move-object/from16 v0, p0
 
@@ -5166,7 +5212,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f0901ba
+    const v30, 0x7f0901bb
 
     const/16 v31, 0x1
 
@@ -5182,7 +5228,7 @@
 
     move-result-object v33
 
-    const v34, 0x7f09019b
+    const v34, 0x7f09019c
 
     invoke-virtual/range {v33 .. v34}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -5243,7 +5289,7 @@
 
     check-cast v27, Landroid/widget/TextView;
 
-    const v29, 0x7f0901be
+    const v29, 0x7f0901bf
 
     move-object/from16 v0, v27
 
@@ -5289,7 +5335,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f09017d
+    const v30, 0x7f09017e
 
     move-object/from16 v0, p0
 
@@ -5323,7 +5369,7 @@
 
     invoke-virtual {v5, v13}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090272
+    const v29, 0x7f090274
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -5388,7 +5434,7 @@
 
     check-cast v27, Landroid/widget/TextView;
 
-    const v29, 0x7f0901bb
+    const v29, 0x7f0901bc
 
     move-object/from16 v0, v27
 
@@ -5434,7 +5480,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f09017d
+    const v30, 0x7f09017e
 
     move-object/from16 v0, p0
 
@@ -5531,7 +5577,7 @@
 
     invoke-virtual {v5, v13}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901bf
+    const v29, 0x7f0901c0
 
     move/from16 v0, v29
 
@@ -5621,7 +5667,7 @@
 
     if-ne v0, v1, :cond_29
 
-    const v29, 0x7f0901f3
+    const v29, 0x7f0901f4
 
     move-object/from16 v0, p0
 
@@ -5636,7 +5682,7 @@
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     :goto_14
-    const v29, 0x7f0901f2
+    const v29, 0x7f0901f3
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -5656,7 +5702,7 @@
 
     invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090271
+    const v29, 0x7f090273
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnNegativeButtonClickListener;
 
@@ -5679,7 +5725,7 @@
     goto/16 :goto_1
 
     :cond_29
-    const v29, 0x7f0901f4
+    const v29, 0x7f0901f5
 
     move-object/from16 v0, p0
 
@@ -5696,13 +5742,13 @@
     goto :goto_14
 
     :pswitch_1f
-    const v29, 0x7f090277
+    const v29, 0x7f090279
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090218
+    const v29, 0x7f090219
 
     move-object/from16 v0, p0
 
@@ -5765,13 +5811,13 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/CameraDialog;->mSeparatedShootingModeMessage:Ljava/lang/String;
 
-    const v29, 0x7f090277
+    const v29, 0x7f090279
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f09021b
+    const v29, 0x7f09021c
 
     const/16 v30, 0x1
 
@@ -5842,133 +5888,7 @@
     goto/16 :goto_1
 
     :pswitch_21
-    const v29, 0x7f090277
-
-    move/from16 v0, v29
-
-    invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
-
-    const v29, 0x7f090219
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/CameraDialog;->getString(I)Ljava/lang/String;
-
-    move-result-object v29
-
-    move-object/from16 v0, v29
-
-    invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
-
-    const v29, 0x104000a
-
-    new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
-
-    const/16 v31, 0x0
-
-    move-object/from16 v0, v30
-
-    move-object/from16 v1, p0
-
-    move-object/from16 v2, v31
-
-    invoke-direct {v0, v1, v2}, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;-><init>(Lcom/sec/android/app/camera/CameraDialog;Lcom/sec/android/app/camera/CameraDialog$1;)V
-
-    move/from16 v0, v29
-
-    move-object/from16 v1, v30
-
-    invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    const/high16 v29, 0x1040000
-
-    new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnNegativeButtonClickListener;
-
-    const/16 v31, 0x0
-
-    move-object/from16 v0, v30
-
-    move-object/from16 v1, p0
-
-    move-object/from16 v2, v31
-
-    invoke-direct {v0, v1, v2}, Lcom/sec/android/app/camera/CameraDialog$OnNegativeButtonClickListener;-><init>(Lcom/sec/android/app/camera/CameraDialog;Lcom/sec/android/app/camera/CameraDialog$1;)V
-
-    move/from16 v0, v29
-
-    move-object/from16 v1, v30
-
-    invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    goto/16 :goto_1
-
-    :pswitch_22
-    const v29, 0x7f090277
-
-    move/from16 v0, v29
-
-    invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
-
-    const v29, 0x7f090219
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v29
-
-    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/CameraDialog;->getString(I)Ljava/lang/String;
-
-    move-result-object v29
-
-    move-object/from16 v0, v29
-
-    invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
-
-    const v29, 0x104000a
-
-    new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
-
-    const/16 v31, 0x0
-
-    move-object/from16 v0, v30
-
-    move-object/from16 v1, p0
-
-    move-object/from16 v2, v31
-
-    invoke-direct {v0, v1, v2}, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;-><init>(Lcom/sec/android/app/camera/CameraDialog;Lcom/sec/android/app/camera/CameraDialog$1;)V
-
-    move/from16 v0, v29
-
-    move-object/from16 v1, v30
-
-    invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    const/high16 v29, 0x1040000
-
-    new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnNegativeButtonClickListener;
-
-    const/16 v31, 0x0
-
-    move-object/from16 v0, v30
-
-    move-object/from16 v1, p0
-
-    move-object/from16 v2, v31
-
-    invoke-direct {v0, v1, v2}, Lcom/sec/android/app/camera/CameraDialog$OnNegativeButtonClickListener;-><init>(Lcom/sec/android/app/camera/CameraDialog;Lcom/sec/android/app/camera/CameraDialog$1;)V
-
-    move/from16 v0, v29
-
-    move-object/from16 v1, v30
-
-    invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    goto/16 :goto_1
-
-    :pswitch_23
-    const v29, 0x7f090277
+    const v29, 0x7f090279
 
     move/from16 v0, v29
 
@@ -6030,14 +5950,140 @@
 
     goto/16 :goto_1
 
-    :pswitch_24
-    const v29, 0x7f090277
+    :pswitch_22
+    const v29, 0x7f090279
+
+    move/from16 v0, v29
+
+    invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
+
+    const v29, 0x7f09021a
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v29
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/CameraDialog;->getString(I)Ljava/lang/String;
+
+    move-result-object v29
+
+    move-object/from16 v0, v29
+
+    invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    const v29, 0x104000a
+
+    new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
+
+    const/16 v31, 0x0
+
+    move-object/from16 v0, v30
+
+    move-object/from16 v1, p0
+
+    move-object/from16 v2, v31
+
+    invoke-direct {v0, v1, v2}, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;-><init>(Lcom/sec/android/app/camera/CameraDialog;Lcom/sec/android/app/camera/CameraDialog$1;)V
+
+    move/from16 v0, v29
+
+    move-object/from16 v1, v30
+
+    invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    const/high16 v29, 0x1040000
+
+    new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnNegativeButtonClickListener;
+
+    const/16 v31, 0x0
+
+    move-object/from16 v0, v30
+
+    move-object/from16 v1, p0
+
+    move-object/from16 v2, v31
+
+    invoke-direct {v0, v1, v2}, Lcom/sec/android/app/camera/CameraDialog$OnNegativeButtonClickListener;-><init>(Lcom/sec/android/app/camera/CameraDialog;Lcom/sec/android/app/camera/CameraDialog$1;)V
+
+    move/from16 v0, v29
+
+    move-object/from16 v1, v30
+
+    invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    goto/16 :goto_1
+
+    :pswitch_23
+    const v29, 0x7f090279
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     const v29, 0x7f09021b
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, v29
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/CameraDialog;->getString(I)Ljava/lang/String;
+
+    move-result-object v29
+
+    move-object/from16 v0, v29
+
+    invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    const v29, 0x104000a
+
+    new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
+
+    const/16 v31, 0x0
+
+    move-object/from16 v0, v30
+
+    move-object/from16 v1, p0
+
+    move-object/from16 v2, v31
+
+    invoke-direct {v0, v1, v2}, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;-><init>(Lcom/sec/android/app/camera/CameraDialog;Lcom/sec/android/app/camera/CameraDialog$1;)V
+
+    move/from16 v0, v29
+
+    move-object/from16 v1, v30
+
+    invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    const/high16 v29, 0x1040000
+
+    new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnNegativeButtonClickListener;
+
+    const/16 v31, 0x0
+
+    move-object/from16 v0, v30
+
+    move-object/from16 v1, p0
+
+    move-object/from16 v2, v31
+
+    invoke-direct {v0, v1, v2}, Lcom/sec/android/app/camera/CameraDialog$OnNegativeButtonClickListener;-><init>(Lcom/sec/android/app/camera/CameraDialog;Lcom/sec/android/app/camera/CameraDialog$1;)V
+
+    move/from16 v0, v29
+
+    move-object/from16 v1, v30
+
+    invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    goto/16 :goto_1
+
+    :pswitch_24
+    const v29, 0x7f090279
+
+    move/from16 v0, v29
+
+    invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(I)Landroid/app/AlertDialog$Builder;
+
+    const v29, 0x7f09021c
 
     const/16 v30, 0x1
 
@@ -6053,7 +6099,7 @@
 
     move-result-object v32
 
-    const v33, 0x7f090283
+    const v33, 0x7f090285
 
     invoke-virtual/range {v32 .. v33}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6124,7 +6170,7 @@
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f09012d
+    const v29, 0x7f09012e
 
     move/from16 v0, v29
 
@@ -6132,7 +6178,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f090156
+    const v30, 0x7f090157
 
     const/16 v31, 0x0
 
@@ -6157,13 +6203,13 @@
     goto/16 :goto_1
 
     :pswitch_26
-    const v29, 0x7f09013c
+    const v29, 0x7f09013d
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f09013b
+    const v29, 0x7f09013c
 
     const/16 v30, 0x0
 
@@ -6173,7 +6219,7 @@
 
     invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090215
+    const v29, 0x7f090216
 
     const/16 v30, 0x0
 
@@ -6186,13 +6232,13 @@
     goto/16 :goto_1
 
     :pswitch_27
-    const v29, 0x7f09013e
+    const v29, 0x7f09013f
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f09013d
+    const v29, 0x7f09013e
 
     const/16 v30, 0x0
 
@@ -6202,7 +6248,7 @@
 
     invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090139
+    const v29, 0x7f09013a
 
     const/16 v30, 0x0
 
@@ -6215,13 +6261,13 @@
     goto/16 :goto_1
 
     :pswitch_28
-    const v29, 0x7f09013a
+    const v29, 0x7f09013b
 
     move/from16 v0, v29
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090129
+    const v29, 0x7f09012a
 
     const/16 v30, 0x0
 
@@ -6231,7 +6277,7 @@
 
     invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f09013b
+    const v29, 0x7f09013c
 
     const/16 v30, 0x0
 
@@ -6482,7 +6528,7 @@
 
     invoke-virtual {v5, v13}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090227
+    const v29, 0x7f090228
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -6632,7 +6678,7 @@
     goto/16 :goto_1
 
     :pswitch_2d
-    const v29, 0x7f090243
+    const v29, 0x7f090244
 
     move/from16 v0, v29
 
@@ -6642,7 +6688,7 @@
 
     invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v30, 0x7f090242
+    const v30, 0x7f090243
 
     move-object/from16 v0, p0
 
@@ -6662,7 +6708,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f090241
+    const v30, 0x7f090242
 
     move-object/from16 v0, p0
 
@@ -6684,7 +6730,7 @@
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f09023f
+    const v29, 0x7f090240
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -6704,7 +6750,7 @@
 
     invoke-virtual {v5, v0, v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090240
+    const v29, 0x7f090241
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnNegativeButtonClickListener;
 
@@ -6793,7 +6839,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f09017d
+    const v30, 0x7f09017e
 
     move-object/from16 v0, p0
 
@@ -6831,7 +6877,7 @@
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f090272
+    const v29, 0x7f090274
 
     new-instance v30, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;
 
@@ -6955,7 +7001,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f0901d4
+    const v30, 0x7f0901d5
 
     const/16 v31, 0x1
 
@@ -7015,7 +7061,7 @@
 
     move-result-object v29
 
-    const v30, 0x7f0901d5
+    const v30, 0x7f0901d6
 
     move-object/from16 v0, p0
 
@@ -7071,7 +7117,7 @@
 
     invoke-virtual {v5, v0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    const v29, 0x7f0901d6
+    const v29, 0x7f0901d7
 
     move/from16 v0, v29
 

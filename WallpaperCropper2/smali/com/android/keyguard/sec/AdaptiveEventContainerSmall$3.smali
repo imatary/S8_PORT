@@ -38,7 +38,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall$3;->this$0:Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;
 
-    # invokes: Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->getCPName()Ljava/lang/String;
     invoke-static {v1}, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->access$1900(Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;)Ljava/lang/String;
 
     move-result-object v1
@@ -47,14 +46,12 @@
 
     move-result-object v1
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->mWeatherImageArchive:Lcom/android/keyguard/sec/AbstractWeatherImageArchive;
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->access$1802(Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;Lcom/android/keyguard/sec/AbstractWeatherImageArchive;)Lcom/android/keyguard/sec/AbstractWeatherImageArchive;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall$3;->this$0:Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;
 
     iget-object v1, p0, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall$3;->this$0:Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->access$2000(Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;)Landroid/content/Context;
 
     move-result-object v1

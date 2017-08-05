@@ -593,7 +593,6 @@
 
     check-cast v2, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->isPeeking:Z
     invoke-static {v2}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$200(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)Z
 
     move-result v3
@@ -1231,12 +1230,10 @@
 
     const/4 v1, 0x0
 
-    # setter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v0, v1}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$002(Landroid/support/v4/widget/DrawerLayout$LayoutParams;F)F
 
     const/4 v1, 0x0
 
-    # setter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->openState:I
     invoke-static {v0, v1}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$102(Landroid/support/v4/widget/DrawerLayout$LayoutParams;I)I
 
     :goto_0
@@ -1247,7 +1244,6 @@
     :cond_1
     const/4 v1, 0x4
 
-    # |= operator for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->openState:I
     invoke-static {v0, v1}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$176(Landroid/support/v4/widget/DrawerLayout$LayoutParams;I)I
 
     const/4 v1, 0x3
@@ -1332,7 +1328,6 @@
 
     if-eqz p1, :cond_1
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->isPeeking:Z
     invoke-static {v4}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$200(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)Z
 
     move-result v6
@@ -1375,7 +1370,6 @@
     :goto_2
     const/4 v6, 0x0
 
-    # setter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->isPeeking:Z
     invoke-static {v4, v6}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$202(Landroid/support/v4/widget/DrawerLayout$LayoutParams;Z)Z
 
     goto :goto_1
@@ -1442,7 +1436,6 @@
 
     check-cast v4, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v4}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$000(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)F
 
     move-result v2
@@ -1491,7 +1484,6 @@
 
     check-cast v2, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->openState:I
     invoke-static {v2}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$100(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)I
 
     move-result v4
@@ -1502,7 +1494,6 @@
 
     if-ne v4, v5, :cond_1
 
-    # setter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->openState:I
     invoke-static {v2, v6}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$102(Landroid/support/v4/widget/DrawerLayout$LayoutParams;I)I
 
     iget-object v4, p0, Landroid/support/v4/widget/DrawerLayout;->mListeners:Ljava/util/List;
@@ -1568,7 +1559,6 @@
 
     check-cast v2, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->openState:I
     invoke-static {v2}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$100(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)I
 
     move-result v3
@@ -1577,7 +1567,6 @@
 
     if-nez v3, :cond_2
 
-    # setter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->openState:I
     invoke-static {v2, v4}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$102(Landroid/support/v4/widget/DrawerLayout$LayoutParams;I)I
 
     iget-object v3, p0, Landroid/support/v4/widget/DrawerLayout;->mListeners:Ljava/util/List;
@@ -2162,7 +2151,6 @@
 
     check-cast v2, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->openState:I
     invoke-static {v2}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$100(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)I
 
     move-result v4
@@ -2521,7 +2509,6 @@
 
     check-cast v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v0}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$000(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)F
 
     move-result v0
@@ -2631,7 +2618,6 @@
 
     check-cast v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->openState:I
     invoke-static {v0}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$100(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)I
 
     move-result v2
@@ -2762,7 +2748,6 @@
 
     check-cast v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v0}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$000(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)F
 
     move-result v0
@@ -3235,7 +3220,6 @@
 
     move/from16 v19, v0
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v13}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$000(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)F
 
     move-result v20
@@ -3265,7 +3249,6 @@
     div-float v14, v18, v19
 
     :goto_2
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v13}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$000(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)F
 
     move-result v18
@@ -3313,7 +3296,6 @@
     invoke-virtual {v0, v5, v14}, Landroid/support/v4/widget/DrawerLayout;->setDrawerViewOffset(Landroid/view/View;F)V
 
     :cond_3
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v13}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$000(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)F
 
     move-result v18
@@ -3344,7 +3326,6 @@
 
     move/from16 v18, v0
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v13}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$000(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)F
 
     move-result v19
@@ -4170,7 +4151,6 @@
 
     check-cast v5, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->openState:I
     invoke-static {v5}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$100(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)I
 
     move-result v10
@@ -4180,7 +4160,6 @@
     move v4, v8
 
     :goto_1
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->openState:I
     invoke-static {v5}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$100(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)I
 
     move-result v10
@@ -4495,10 +4474,8 @@
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    # setter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v0, v1}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$002(Landroid/support/v4/widget/DrawerLayout$LayoutParams;F)F
 
-    # setter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->openState:I
     invoke-static {v0, v2}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$102(Landroid/support/v4/widget/DrawerLayout$LayoutParams;I)I
 
     invoke-direct {p0, p1, v2}, Landroid/support/v4/widget/DrawerLayout;->updateChildrenImportantForAccessibility(Landroid/view/View;Z)V
@@ -4511,7 +4488,6 @@
     :cond_1
     const/4 v1, 0x2
 
-    # |= operator for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->openState:I
     invoke-static {v0, v1}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$176(Landroid/support/v4/widget/DrawerLayout$LayoutParams;I)I
 
     const/4 v1, 0x3
@@ -4990,7 +4966,6 @@
 
     check-cast v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v0}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$000(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)F
 
     move-result v1
@@ -5003,7 +4978,6 @@
     return-void
 
     :cond_0
-    # setter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v0, p2}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$002(Landroid/support/v4/widget/DrawerLayout$LayoutParams;F)F
 
     invoke-virtual {p0, p1, p2}, Landroid/support/v4/widget/DrawerLayout;->dispatchOnDrawerSlide(Landroid/view/View;F)V
@@ -5116,7 +5090,6 @@
 
     check-cast v3, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v3}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$000(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)F
 
     move-result v6
@@ -5182,7 +5155,6 @@
     goto :goto_0
 
     :cond_5
-    # getter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->onScreen:F
     invoke-static {v3}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$000(Landroid/support/v4/widget/DrawerLayout$LayoutParams;)F
 
     move-result v6

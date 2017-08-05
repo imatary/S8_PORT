@@ -399,7 +399,7 @@
 
     if-nez v0, :cond_0
 
-    const v2, 0x7f0d076a
+    const v2, 0x7f0d07ce
 
     invoke-static {p0, v2, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -467,7 +467,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    const v2, 0x7f0d0769
+    const v2, 0x7f0d07cd
 
     invoke-static {p0, v2, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

@@ -45,7 +45,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/keyguard/PagedView;->mDeferringForDelete:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/PagedView;->access$802(Lcom/android/keyguard/PagedView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/PagedView$9$1$1;->this$2:Lcom/android/keyguard/PagedView$9$1;

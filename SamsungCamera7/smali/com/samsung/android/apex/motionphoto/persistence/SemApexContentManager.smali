@@ -182,6 +182,119 @@
     return-void
 .end method
 
+.method public insertGifToMedia(Landroid/content/ContentValues;)Landroid/net/Uri;
+    .locals 6
+
+    const/4 v2, 0x0
+
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "insertGifToMedia start: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string v5, "_data"
+
+    invoke-virtual {p1, v5}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :try_start_0
+    iget-object v3, p0, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->mResolver:Landroid/content/ContentResolver;
+
+    sget-object v4, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+
+    invoke-virtual {v3, v4, p1}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+    :try_end_0
+    .catch Landroid/database/sqlite/SQLiteFullException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/UnsupportedOperationException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_4
+
+    move-result-object v2
+
+    :goto_0
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    const-string v4, "insertGifToMedia end"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object v2
+
+    :catch_0
+    move-exception v1
+
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    const-string v4, "Not enough space in database"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    const-string v4, "insert failed"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :catch_2
+    move-exception v0
+
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    const-string v4, "insert failed"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :catch_3
+    move-exception v0
+
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    const-string v4, "insert failed"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :catch_4
+    move-exception v0
+
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    const-string v4, "ContentResolver insert failed"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+.end method
+
 .method public insertImageToMedia(Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 6
 
@@ -562,6 +675,139 @@
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     return v0
+.end method
+
+.method public removeVideoFromMedia(Ljava/lang/String;)I
+    .locals 7
+
+    const/4 v0, 0x0
+
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "removeVideoFromMedia start : "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :try_start_0
+    iget-object v3, p0, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->mResolver:Landroid/content/ContentResolver;
+
+    sget-object v4, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "_data = \""
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    const-string v6, "\""
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    const/4 v6, 0x0
+
+    invoke-virtual {v3, v4, v5, v6}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+    :try_end_0
+    .catch Landroid/database/sqlite/SQLiteFullException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/UnsupportedOperationException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_4
+
+    move-result v0
+
+    :goto_0
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    const-string v4, "removeVideoFromMedia end"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v0
+
+    :catch_0
+    move-exception v2
+
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    const-string v4, "Not enough space in database"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v1
+
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    const-string v4, "remove failed"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :catch_2
+    move-exception v1
+
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    const-string v4, "remove failed"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :catch_3
+    move-exception v1
+
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    const-string v4, "remove failed"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :catch_4
+    move-exception v1
+
+    sget-object v3, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
+
+    const-string v4, "ContentResolver insert failed"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
 .end method
 
 .method public updateSefFileType(Ljava/lang/String;)I

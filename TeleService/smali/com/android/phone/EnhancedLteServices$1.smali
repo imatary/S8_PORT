@@ -34,9 +34,9 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 6
 
-    const v1, 0x7f0d08d4
+    const v1, 0x7f0d0938
 
-    const v0, 0x7f0d08ca
+    const v0, 0x7f0d092e
 
     const/4 v5, 0x1
 

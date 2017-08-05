@@ -71,7 +71,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$3;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # setter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mIsVisionIntelligenceAnimationCompleted:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$102(Lcom/sec/android/app/camera/menu/OverlayLayout;Z)Z
 
     goto :goto_1

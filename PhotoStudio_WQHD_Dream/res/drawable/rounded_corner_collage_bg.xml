@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/submenu_tone_white" />
-    <corners android:topLeftRadius="@dimen/radius_for_collage_bg_submenu_corners" android:topRightRadius="@dimen/radius_for_collage_bg_submenu_corners" android:bottomLeftRadius="@dimen/radius_for_collage_bg_submenu_corners" android:bottomRightRadius="@dimen/radius_for_collage_bg_submenu_corners" />
-    <stroke android:width="1.0px" android:color="#73c8c8c8" />
-</shape>

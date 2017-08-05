@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecAttributionInfoView$8;->this$0:Lcom/android/keyguard/sec/SecAttributionInfoView;
 
-    # getter for: Lcom/android/keyguard/sec/SecAttributionInfoView;->mAttributionRootView:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecAttributionInfoView;->access$1000(Lcom/android/keyguard/sec/SecAttributionInfoView;)Landroid/view/View;
 
     move-result-object v0
@@ -53,7 +52,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecAttributionInfoView$8;->this$0:Lcom/android/keyguard/sec/SecAttributionInfoView;
 
-    # getter for: Lcom/android/keyguard/sec/SecAttributionInfoView;->mAttributionRootView:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecAttributionInfoView;->access$1000(Lcom/android/keyguard/sec/SecAttributionInfoView;)Landroid/view/View;
 
     move-result-object v0
@@ -98,7 +96,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SecAttributionInfoView$8;->this$0:Lcom/android/keyguard/sec/SecAttributionInfoView;
 
-    # invokes: Lcom/android/keyguard/sec/SecAttributionInfoView;->launchBrowser(Ljava/lang/String;)V
     invoke-static {v1, v0}, Lcom/android/keyguard/sec/SecAttributionInfoView;->access$800(Lcom/android/keyguard/sec/SecAttributionInfoView;Ljava/lang/String;)V
 
     goto :goto_0

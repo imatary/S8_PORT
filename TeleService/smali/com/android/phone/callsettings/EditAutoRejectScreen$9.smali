@@ -37,7 +37,7 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 7
 
-    const v6, 0x7f0d0995
+    const v6, 0x7f0d09fb
 
     const/4 v5, 0x1
 

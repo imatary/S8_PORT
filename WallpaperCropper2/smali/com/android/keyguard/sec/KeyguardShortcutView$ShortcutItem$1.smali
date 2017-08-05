@@ -41,14 +41,12 @@
 
     iget-object v0, v0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardShortcutView;->launchApplication()V
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2500(Lcom/android/keyguard/sec/KeyguardShortcutView;)V
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem$1;->this$1:Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;
 
     iget-object v0, v0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1500(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v0
@@ -63,7 +61,6 @@
 
     iget-object v0, v0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1500(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v0

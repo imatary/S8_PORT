@@ -539,7 +539,6 @@
 
     check-cast v8, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallbackApi21;
 
-    # getter for: Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallbackApi21;->mSubscriptionCallbackObj:Ljava/lang/Object;
     invoke-static {v8}, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallbackApi21;->access$1800(Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallbackApi21;)Ljava/lang/Object;
 
     move-result-object v8
@@ -653,7 +652,6 @@
     :cond_1
     iget-object v3, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;->mBrowserObj:Ljava/lang/Object;
 
-    # getter for: Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallbackApi21;->mSubscriptionCallbackObj:Ljava/lang/Object;
     invoke-static {v0}, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallbackApi21;->access$1800(Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallbackApi21;)Ljava/lang/Object;
 
     move-result-object v4

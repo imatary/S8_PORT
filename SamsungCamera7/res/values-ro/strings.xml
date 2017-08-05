@@ -308,6 +308,7 @@ formă"</string>
     <string name="camera_label">Cameră foto</string>
     <string name="camera_modes">Modurile camerei</string>
     <string name="camera_security_enter">Politica de securitate restricționează utilizarea camerei foto.</string>
+    <string name="can_not_use_voice_control">Nu se poate utiliza funcția Control vocal în timp ce Activarea vocală Bixby este pornită.</string>
     <string name="cancel">Anulare</string>
     <string name="cannot_start_camcorder_msg">Imposibil de înregistrat videoclipuri în timpul unui apel</string>
     <string name="cannot_start_camera_msg">Camera foto nu se poate utiliza în timpul apelurilor.</string>
@@ -604,6 +605,7 @@ Dacă sunteți de acord cu acest lucru, opțiunea Etichetare va primi această p
     <string name="task_edge_title_selfie">"Obținere
 autoportr."</string>
     <string name="temperature">Temperatură</string>
+    <string name="temperature_too_high_camera_off">Temperatură prea ridicată pentru a utiliza %1$s. Așteptați răcirea telefonului înainte de a utiliza %2$s.</string>
     <string name="temperature_too_high_flash_off">Blițul nu poate fi pornit. Încercați din nou după ce temperatura dispozitivului scade.</string>
     <string name="temperature_too_high_record">Nu se poate înregistra videoclipul. Încercați din nou după ce temperatura dispozitivului scade.</string>
     <string name="temperature_too_high_recording_disable">Înregistrarea s-a oprit. Puteți înregistra când temperatura dispozitivului scade.</string>

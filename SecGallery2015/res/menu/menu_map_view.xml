@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/action_view_selected" android:title="@string/view_selected" android:showAsAction="ifRoom" />
-    <item android:id="@id/action_view_all" android:title="@string/view_all" android:showAsAction="ifRoom" />
-</menu>

@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite$2;->this$0:Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->misWideSelfieCapturing:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->access$300(Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;)Z
 
     move-result v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite$2;->this$0:Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->access$400(Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;)Lcom/sec/android/app/camera/interfaces/Engine;
 
     move-result-object v0
@@ -59,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite$2;->this$0:Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->access$400(Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;)Lcom/sec/android/app/camera/interfaces/Engine;
 
     move-result-object v0
@@ -72,17 +69,14 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite$2;->this$0:Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->misWideSelfieStopping:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->access$502(Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite$2;->this$0:Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->setCaptureError(Z)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->access$600(Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;Z)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite$2;->this$0:Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->access$400(Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;)Lcom/sec/android/app/camera/interfaces/Engine;
 
     move-result-object v0
@@ -92,7 +86,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite$2;->this$0:Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->hideStopButton()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->access$700(Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;)V
 
     :cond_1

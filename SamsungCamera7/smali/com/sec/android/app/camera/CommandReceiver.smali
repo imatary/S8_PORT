@@ -197,7 +197,7 @@
     :pswitch_0
     iget-object v2, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
-    const v3, 0x7f0901b4
+    const v3, 0x7f0901b5
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -205,7 +205,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
-    const v3, 0x7f0901b3
+    const v3, 0x7f0901b4
 
     const/4 v4, 0x2
 
@@ -230,7 +230,7 @@
     :pswitch_1
     iget-object v2, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
-    const v3, 0x7f0901b2
+    const v3, 0x7f0901b3
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -238,7 +238,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
-    const v3, 0x7f0901b1
+    const v3, 0x7f0901b2
 
     new-array v4, v6, [Ljava/lang/Object;
 
@@ -630,7 +630,7 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
-    const v4, 0x7f0901ea
+    const v4, 0x7f0901eb
 
     invoke-static {v3, v4, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -1123,7 +1123,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
-    const v2, 0x7f0901ea
+    const v2, 0x7f0901eb
 
     invoke-static {v1, v2, v0}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -1591,7 +1591,10 @@
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
+    :try_end_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
 
+    :try_start_1
     iget-object v4, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getEffectCategory()I
@@ -1605,6 +1608,9 @@
     iget-object v4, v2, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->packageName:Ljava/lang/String;
 
     invoke-static {v4}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->getStickerType(Ljava/lang/String;)I
+    :try_end_1
+    .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
     move-result v4
 
@@ -1613,6 +1619,7 @@
     :goto_1
     const v4, 0x4000020
 
+    :try_start_2
     invoke-virtual {v1, v4}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     iget-object v4, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
@@ -1622,8 +1629,8 @@
     move-result-object v4
 
     invoke-virtual {v4, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
-    :try_end_0
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    :try_end_2
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_1
 
     iget-object v3, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1653,7 +1660,7 @@
     goto :goto_0
 
     :pswitch_0
-    :try_start_1
+    :try_start_3
     const-string v4, "samsungapps://CategoryList/0000005218"
 
     invoke-static {v4}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -1661,12 +1668,27 @@
     move-result-object v4
 
     invoke-virtual {v1, v4}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
-    :try_end_1
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
+    :try_end_3
+    .catch Ljava/lang/RuntimeException; {:try_start_3 .. :try_end_3} :catch_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_1
 
     goto :goto_1
 
     :catch_0
+    move-exception v0
+
+    :try_start_4
+    const-string v4, "CommandReceiver"
+
+    const-string v5, "PlugInStickerStorage isn\'t ready yet."
+
+    invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_4
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_1
+
+    goto :goto_1
+
+    :catch_1
     move-exception v0
 
     iget-object v4, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
@@ -1688,7 +1710,7 @@
     goto/16 :goto_0
 
     :pswitch_1
-    :try_start_2
+    :try_start_5
     const-string v4, "samsungapps://CategoryList/0000005219"
 
     invoke-static {v4}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -1696,12 +1718,11 @@
     move-result-object v4
 
     invoke-virtual {v1, v4}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
-    :try_end_2
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_0
+    :try_end_5
+    .catch Ljava/lang/RuntimeException; {:try_start_5 .. :try_end_5} :catch_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_5 .. :try_end_5} :catch_1
 
     goto :goto_1
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x1
@@ -1903,7 +1924,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
-    const v2, 0x7f0901ea
+    const v2, 0x7f0901eb
 
     invoke-static {v1, v2, v0}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -2075,7 +2096,7 @@
 .method public onToggleSelect(I)Z
     .locals 11
 
-    const v10, 0x7f0901c9
+    const v10, 0x7f0901ca
 
     const/16 v9, 0x91
 
@@ -2130,7 +2151,7 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
-    const v6, 0x7f0901ea
+    const v6, 0x7f0901eb
 
     invoke-static {v5, v6, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -2246,7 +2267,7 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
-    const v7, 0x7f0901e9
+    const v7, 0x7f0901ea
 
     invoke-static {v6, v7, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -2273,7 +2294,7 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
-    const v7, 0x7f09024b
+    const v7, 0x7f09024d
 
     invoke-static {v6, v7, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -2443,7 +2464,7 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
-    const v7, 0x7f0901e9
+    const v7, 0x7f0901ea
 
     invoke-static {v6, v7, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -2470,7 +2491,7 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/CommandReceiver;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
-    const v7, 0x7f09024b
+    const v7, 0x7f09024d
 
     invoke-static {v6, v7, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 

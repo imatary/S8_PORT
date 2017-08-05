@@ -36,7 +36,6 @@
 
     const/4 v3, 0x1
 
-    # getter for: Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;->access$100()Ljava/lang/String;
 
     move-result-object v0
@@ -63,7 +62,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper$2;->this$0:Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;
 
-    # getter for: Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;->mFinishInitHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;->access$200(Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;)Landroid/os/Handler;
 
     move-result-object v0
@@ -77,7 +75,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper$2;->this$0:Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;
 
-    # getter for: Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;->mFinishInitHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;->access$200(Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;)Landroid/os/Handler;
 
     move-result-object v0
@@ -89,7 +86,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper$2;->this$0:Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;
 
-    # getter for: Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;->mFinishInitHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;->access$200(Lcom/android/keyguard/sec/rich/KeyguardEffectViewLiveWallpaper;)Landroid/os/Handler;
 
     move-result-object v0

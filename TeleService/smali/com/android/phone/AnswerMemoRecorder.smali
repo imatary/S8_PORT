@@ -940,7 +940,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0600
+    const v1, 0x7f0d0664
 
     invoke-virtual {v0, v1}, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;->displayAnswerMessageToast(I)V
 
@@ -961,7 +961,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0601
+    const v1, 0x7f0d0665
 
     invoke-virtual {v0, v1}, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;->displayAnswerMessageToast(I)V
 
@@ -982,7 +982,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d05ff
+    const v1, 0x7f0d0663
 
     invoke-virtual {v0, v1}, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;->displayAnswerMessageToast(I)V
 
@@ -1107,7 +1107,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d09c9
+    const v3, 0x7f0d0a2f
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1156,7 +1156,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d09ca
+    const v3, 0x7f0d0a30
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

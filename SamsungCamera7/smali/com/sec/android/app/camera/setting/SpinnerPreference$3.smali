@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$3;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mSpinner:Landroid/widget/Spinner;
     invoke-static {v0}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$800(Lcom/sec/android/app/camera/setting/SpinnerPreference;)Landroid/widget/Spinner;
 
     move-result-object v0

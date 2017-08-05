@@ -934,9 +934,13 @@
 
     invoke-static {v7, v12}, Lcom/android/bluetooth/btservice/AdapterState;->-wrap6(Lcom/android/bluetooth/btservice/AdapterState;I)V
 
-    goto/16 :goto_0
+    iget-object v7, p0, Lcom/android/bluetooth/btservice/AdapterState$PendingCommandState;->this$0:Lcom/android/bluetooth/btservice/AdapterState;
 
-    nop
+    iget v8, p1, Landroid/os/Message;->what:I
+
+    invoke-static {v7, v8}, Lcom/android/bluetooth/btservice/AdapterState;->-wrap1(Lcom/android/bluetooth/btservice/AdapterState;I)V
+
+    goto/16 :goto_0
 
     :sswitch_data_0
     .sparse-switch

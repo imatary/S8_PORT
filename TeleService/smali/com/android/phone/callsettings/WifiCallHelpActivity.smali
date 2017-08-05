@@ -117,7 +117,7 @@
     return-void
 
     :cond_3
-    const v5, 0x7f0d04ab
+    const v5, 0x7f0d050b
 
     invoke-virtual {v0, v5}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -179,7 +179,7 @@
     move-result-object v2
 
     :goto_0
-    const v3, 0x7f1002d0
+    const v3, 0x7f1002d3
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -189,7 +189,7 @@
 
     iput-object v3, p0, Lcom/android/phone/callsettings/WifiCallHelpActivity;->mWfcHelpGoToSetting:Landroid/widget/TextView;
 
-    const v3, 0x7f1002cc
+    const v3, 0x7f1002cf
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -199,7 +199,7 @@
 
     iput-object v3, p0, Lcom/android/phone/callsettings/WifiCallHelpActivity;->mWfcHelpText1:Landroid/widget/TextView;
 
-    const v3, 0x7f1002cd
+    const v3, 0x7f1002d0
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -209,7 +209,7 @@
 
     iput-object v3, p0, Lcom/android/phone/callsettings/WifiCallHelpActivity;->mWfcHelpText2:Landroid/widget/TextView;
 
-    const v3, 0x7f1002cf
+    const v3, 0x7f1002d2
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -219,7 +219,7 @@
 
     iput-object v3, p0, Lcom/android/phone/callsettings/WifiCallHelpActivity;->mWfcHelpText3:Landroid/widget/TextView;
 
-    const v3, 0x7f1002ca
+    const v3, 0x7f1002cd
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -229,7 +229,7 @@
 
     iput-object v3, p0, Lcom/android/phone/callsettings/WifiCallHelpActivity;->mWfcHelpScroll:Landroid/widget/ScrollView;
 
-    const v3, 0x7f1002d1
+    const v3, 0x7f1002d4
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -302,7 +302,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/WifiCallHelpActivity;->mWfcHelpText1:Landroid/widget/TextView;
 
-    const v4, 0x7f0d0cea
+    const v4, 0x7f0d0d5b
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/WifiCallHelpActivity;->getString(I)Ljava/lang/String;
 
@@ -342,7 +342,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/WifiCallHelpActivity;->mWfcHelpText1:Landroid/widget/TextView;
 
-    const v4, 0x7f0d0cec
+    const v4, 0x7f0d0d5d
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/WifiCallHelpActivity;->getString(I)Ljava/lang/String;
 
@@ -375,7 +375,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/WifiCallHelpActivity;->mWfcHelpText1:Landroid/widget/TextView;
 
-    const v4, 0x7f0d0cef
+    const v4, 0x7f0d0d60
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/WifiCallHelpActivity;->getString(I)Ljava/lang/String;
 
@@ -385,7 +385,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/WifiCallHelpActivity;->mWfcHelpText3:Landroid/widget/TextView;
 
-    const v4, 0x7f0d0cf0
+    const v4, 0x7f0d0d61
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/WifiCallHelpActivity;->getString(I)Ljava/lang/String;
 
@@ -402,7 +402,7 @@
     :cond_5
     iget-object v3, p0, Lcom/android/phone/callsettings/WifiCallHelpActivity;->mWfcHelpText1:Landroid/widget/TextView;
 
-    const v4, 0x7f0d0ced
+    const v4, 0x7f0d0d5e
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/WifiCallHelpActivity;->getString(I)Ljava/lang/String;
 
@@ -412,7 +412,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/WifiCallHelpActivity;->mWfcHelpText3:Landroid/widget/TextView;
 
-    const v4, 0x7f0d0cee
+    const v4, 0x7f0d0d5f
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/WifiCallHelpActivity;->getString(I)Ljava/lang/String;
 

@@ -81,7 +81,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mActivity:Lcom/sec/android/app/camera/setting/CameraSettingActivity;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$400(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingActivity;
 
     move-result-object v19
@@ -140,7 +139,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$000(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     move-result-object v19
@@ -286,7 +284,6 @@
 
     move-object/from16 v19, v0
 
-    # invokes: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->darkScreenTurnOffPopup()V
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$100(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)V
 
     goto/16 :goto_1
@@ -327,7 +324,7 @@
 
     move-object/from16 v19, v0
 
-    const v20, 0x7f0901f1
+    const v20, 0x7f0901f2
 
     invoke-virtual/range {v19 .. v20}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->getString(I)Ljava/lang/String;
 
@@ -367,7 +364,6 @@
 
     :cond_b
     :goto_6
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mEventIdByPreferenceKeyMap:Ljava/util/HashMap;
     invoke-static {}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$200()Ljava/util/HashMap;
 
     move-result-object v19
@@ -529,7 +525,6 @@
 
     :cond_c
     :goto_8
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mEventIdByPreferenceKeyMap:Ljava/util/HashMap;
     invoke-static {}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$200()Ljava/util/HashMap;
 
     move-result-object v19
@@ -606,7 +601,6 @@
     invoke-virtual/range {v19 .. v20}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->showCameraDialog(Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;)V
 
     :goto_a
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mEventIdByPreferenceKeyMap:Ljava/util/HashMap;
     invoke-static {}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$200()Ljava/util/HashMap;
 
     move-result-object v19
@@ -680,7 +674,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mMenuDimController:Lcom/sec/android/app/camera/DimController;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$300(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/DimController;
 
     move-result-object v20
@@ -757,7 +750,6 @@
 
     move-object/from16 v19, v0
 
-    # invokes: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->darkScreenTurnOffPopup()V
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$100(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)V
 
     goto/16 :goto_6
@@ -984,7 +976,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$000(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     move-result-object v19
@@ -993,7 +984,6 @@
 
     invoke-virtual {v0, v14}, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->setCamcorderResolution(I)Z
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mEventIdByPreferenceKeyMap:Ljava/util/HashMap;
     invoke-static {}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$200()Ljava/util/HashMap;
 
     move-result-object v19
@@ -1156,7 +1146,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$000(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     move-result-object v19
@@ -1229,7 +1218,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$000(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     move-result-object v19
@@ -1246,7 +1234,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mActivity:Lcom/sec/android/app/camera/setting/CameraSettingActivity;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$400(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingActivity;
 
     move-result-object v19
@@ -1263,7 +1250,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$000(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     move-result-object v19
@@ -1330,7 +1316,6 @@
     invoke-static {v0, v4}, Lcom/sec/android/app/camera/util/Util;->broadcastGeneralEventForLogging(Landroid/content/Context;Landroid/content/ContentValues;)V
 
     :cond_1c
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mEventIdByPreferenceKeyMap:Ljava/util/HashMap;
     invoke-static {}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$200()Ljava/util/HashMap;
 
     move-result-object v19
@@ -1372,7 +1357,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mActivity:Lcom/sec/android/app/camera/setting/CameraSettingActivity;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$400(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingActivity;
 
     move-result-object v19
@@ -1454,7 +1438,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$000(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     move-result-object v19
@@ -1471,7 +1454,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mActivity:Lcom/sec/android/app/camera/setting/CameraSettingActivity;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$400(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingActivity;
 
     move-result-object v19
@@ -1488,7 +1470,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$000(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     move-result-object v19
@@ -1510,7 +1491,6 @@
 
     move-object/from16 v19, v0
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mActivity:Lcom/sec/android/app/camera/setting/CameraSettingActivity;
     invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$400(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingActivity;
 
     move-result-object v19
@@ -1647,7 +1627,6 @@
     goto/16 :goto_1
 
     :pswitch_b
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mEventIdByPreferenceKeyMap:Ljava/util/HashMap;
     invoke-static {}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$200()Ljava/util/HashMap;
 
     move-result-object v19

@@ -46,7 +46,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/app/camera/widget/gl/TickSlider;->mIsExpanded:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->access$102(Lcom/sec/android/app/camera/widget/gl/TickSlider;Z)Z
 
     return-void

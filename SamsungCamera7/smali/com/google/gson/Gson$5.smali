@@ -116,7 +116,6 @@
 
     float-to-double v2, v0
 
-    # invokes: Lcom/google/gson/Gson;->checkValidFloatingPoint(D)V
     invoke-static {v1, v2, v3}, Lcom/google/gson/Gson;->access$000(Lcom/google/gson/Gson;D)V
 
     invoke-virtual {p1, p2}, Lcom/google/gson/stream/JsonWriter;->value(Ljava/lang/Number;)Lcom/google/gson/stream/JsonWriter;

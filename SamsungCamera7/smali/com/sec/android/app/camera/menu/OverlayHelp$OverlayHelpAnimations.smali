@@ -294,7 +294,6 @@
 
     const/4 v3, 0x0
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->ONE_HAND_ZOOM_ANIMATION_OFFSET:F
     invoke-static {}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$2000()F
 
     move-result v4
@@ -335,7 +334,6 @@
 
     const/4 v4, 0x0
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->ONE_HAND_ZOOM_ANIMATION_OFFSET:F
     invoke-static {}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$2000()F
 
     move-result v5
@@ -374,7 +372,6 @@
 
     const/4 v5, 0x0
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->ONE_HAND_ZOOM_ANIMATION_OFFSET:F
     invoke-static {}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$2000()F
 
     move-result v6

@@ -53,7 +53,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->mKeyguardWindowCallback:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$KeyguardWindowCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;)Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$KeyguardWindowCallback;
 
     move-result-object v0
@@ -68,7 +67,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->mKeyguardWindowCallback:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$KeyguardWindowCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;)Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$KeyguardWindowCallback;
 
     move-result-object v0
@@ -80,14 +78,12 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->mView:Lcom/samsung/android/visualeffect/lock/sparklingbubbles/SparklingBubblesEffect;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->access$200(Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;)Lcom/samsung/android/visualeffect/lock/sparklingbubbles/SparklingBubblesEffect;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->setBackground()Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->access$100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -100,7 +96,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->mTouchFlagForMobileKeyboard:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->access$302(Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;Z)Z
 
     const-string/jumbo v0, "SparklingBubbles_Keyguard"
@@ -117,7 +112,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->mTouchFlagForMobileKeyboard:Z
     invoke-static {v2}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->access$300(Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;)Z
 
     move-result v2

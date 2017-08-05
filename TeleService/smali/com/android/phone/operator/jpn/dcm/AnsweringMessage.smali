@@ -329,7 +329,7 @@
 
     sget-object v2, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0d0500
+    const v5, 0x7f0d0560
 
     invoke-virtual {v2, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -568,15 +568,15 @@
 .end method
 
 .method public displayAnswerMessageToast(Ljava/lang/String;)V
-    .locals 4
+    .locals 3
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
     move-result-object v1
 
-    invoke-static {v1, p1, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    invoke-static {v1, p1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object v0
 
@@ -589,15 +589,9 @@
 
     move-result-object v1
 
-    invoke-static {v1, p1, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    invoke-static {v1, p1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object v0
-
-    const/16 v1, 0x30
-
-    const/16 v2, 0xfa
-
-    invoke-virtual {v0, v1, v3, v2}, Landroid/widget/Toast;->setGravity(III)V
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
@@ -1037,7 +1031,7 @@
     :cond_5
     sget-object v1, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0d09cc
+    const v2, 0x7f0d0a32
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1051,7 +1045,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f02014e
+    const v2, 0x7f020152
 
     invoke-virtual {v1, v2}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -1090,7 +1084,7 @@
 
     invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v1, 0x7f02014e
+    const v1, 0x7f020152
 
     invoke-virtual {v7, v1}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -1098,7 +1092,7 @@
 
     sget-object v2, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0d09cd
+    const v3, 0x7f0d0a33
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1110,7 +1104,7 @@
 
     sget-object v2, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0d09ce
+    const v3, 0x7f0d0a34
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1205,7 +1199,7 @@
 
     aput-object v3, v2, v5
 
-    const v3, 0x7f0d09cf
+    const v3, 0x7f0d0a35
 
     invoke-virtual {v1, v3, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1325,13 +1319,13 @@
 
     invoke-direct {v3, v1}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
-    const v7, 0x7f0d09c8
+    const v7, 0x7f0d0a2e
 
     invoke-virtual {v1, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v7, 0x7f02014d
+    const v7, 0x7f020151
 
     invoke-virtual {v3, v7}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 

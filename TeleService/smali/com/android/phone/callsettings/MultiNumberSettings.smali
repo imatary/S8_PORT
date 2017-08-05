@@ -128,7 +128,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/MultiNumberSettings;->mMultiNumberHelpPref:Lcom/android/phone/callsettings/UnclickablePreference;
 
-    const v1, 0x7f0d0ca8
+    const v1, 0x7f0d0d19
 
     invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/UnclickablePreference;->setTitle(I)V
 
@@ -760,7 +760,7 @@
 
     if-eqz p1, :cond_1
 
-    const v0, 0x7f0d0bcf
+    const v0, 0x7f0d0c3a
 
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(I)V
@@ -769,7 +769,7 @@
     return-void
 
     :cond_1
-    const v0, 0x7f0d0bd0
+    const v0, 0x7f0d0c3b
 
     goto :goto_0
 .end method

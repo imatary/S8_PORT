@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mIsFirstStartingAfterCreate:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3300(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v0
@@ -55,7 +54,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mDvfsManagerForeMMC:Lcom/samsung/android/os/SemDvfsManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3400(Lcom/sec/android/app/camera/Camera;)Lcom/samsung/android/os/SemDvfsManager;
 
     move-result-object v0
@@ -76,13 +74,11 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mDvfsManagerForeMMC:Lcom/samsung/android/os/SemDvfsManager;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/Camera;->access$3402(Lcom/sec/android/app/camera/Camera;Lcom/samsung/android/os/SemDvfsManager;)Lcom/samsung/android/os/SemDvfsManager;
 
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mDvfsManagerForeMMC:Lcom/samsung/android/os/SemDvfsManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3400(Lcom/sec/android/app/camera/Camera;)Lcom/samsung/android/os/SemDvfsManager;
 
     move-result-object v0

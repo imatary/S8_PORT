@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/Review$4;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/Review;->access$200(Lcom/sec/android/app/camera/menu/Review;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/Review$4;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/Review;->access$200(Lcom/sec/android/app/camera/menu/Review;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -61,7 +59,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/Review$4;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/Review;->access$200(Lcom/sec/android/app/camera/menu/Review;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -72,7 +69,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/Review$4;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mReviewTimeOutCallback:Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/Review;->access$400(Lcom/sec/android/app/camera/menu/Review;)Ljava/lang/Runnable;
 
     move-result-object v1
@@ -87,7 +83,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/Review$4;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/Review;->access$200(Lcom/sec/android/app/camera/menu/Review;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -98,12 +93,10 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/Review$4;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mReviewTimeOutCallback:Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/Review;->access$400(Lcom/sec/android/app/camera/menu/Review;)Ljava/lang/Runnable;
 
     move-result-object v1
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->REVIEW_DISPLAY_TIMEOUT:I
     invoke-static {}, Lcom/sec/android/app/camera/menu/Review;->access$500()I
 
     move-result v2

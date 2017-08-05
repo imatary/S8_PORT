@@ -66,7 +66,6 @@
 
     aget-object v0, p2, v2
 
-    # invokes: Lcom/google/gson/internal/$Gson$Types;->checkNotPrimitive(Ljava/lang/reflect/Type;)V
     invoke-static {v0}, Lcom/google/gson/internal/$Gson$Types;->access$000(Ljava/lang/reflect/Type;)V
 
     aget-object v0, p1, v2
@@ -115,7 +114,6 @@
 
     aget-object v0, p1, v2
 
-    # invokes: Lcom/google/gson/internal/$Gson$Types;->checkNotPrimitive(Ljava/lang/reflect/Type;)V
     invoke-static {v0}, Lcom/google/gson/internal/$Gson$Types;->access$000(Ljava/lang/reflect/Type;)V
 
     const/4 v0, 0x0

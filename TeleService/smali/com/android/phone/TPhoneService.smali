@@ -1285,7 +1285,7 @@
 .method private updateAutoRejectNotification()V
     .locals 14
 
-    const v13, 0x7f0d0522
+    const v13, 0x7f0d0582
 
     const/4 v11, 0x1
 
@@ -1354,7 +1354,7 @@
 
     const-wide/16 v10, 0x0
 
-    const v9, 0x7f020174
+    const v9, 0x7f02017d
 
     invoke-direct {v5, v9, v8, v10, v11}, Landroid/app/Notification;-><init>(ILjava/lang/CharSequence;J)V
 
@@ -1372,7 +1372,7 @@
 
     iget-object v9, p0, Lcom/android/phone/TPhoneService;->context:Landroid/content/Context;
 
-    const v10, 0x7f0d0523
+    const v10, 0x7f0d0583
 
     invoke-virtual {v9, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -2471,7 +2471,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0d01ee
+    const v5, 0x7f0d024b
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2481,7 +2481,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0d01ef
+    const v5, 0x7f0d024c
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3556,7 +3556,7 @@
 
     invoke-static {v0, v3, v5}, Lcom/android/services/telephony/Log;->d(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    const v3, 0x7f0d04a1
+    const v3, 0x7f0d0501
 
     const/4 v5, 0x1
 

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item type="drawable" name="black_dim_color">#40000000</item>
-    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
-    <item type="drawable" name="semitransparent_black">#29000000</item>
-    <item type="drawable" name="semitransparent_white">#40ffffff</item>
-</resources>

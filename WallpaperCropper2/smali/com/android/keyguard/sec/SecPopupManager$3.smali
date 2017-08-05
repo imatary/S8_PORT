@@ -39,7 +39,6 @@
 
     const/4 v2, 0x0
 
-    # getter for: Lcom/android/keyguard/sec/SecPopupManager;->mDialogDismissHandler:Landroid/os/Handler;
     invoke-static {}, Lcom/android/keyguard/sec/SecPopupManager;->access$100()Landroid/os/Handler;
 
     move-result-object v0
@@ -52,7 +51,6 @@
     if-nez v0, :cond_1
 
     :goto_1
-    # setter for: Lcom/android/keyguard/sec/SecPopupManager;->mPopupDialog:Landroid/app/Dialog;
     invoke-static {v2}, Lcom/android/keyguard/sec/SecPopupManager;->access$202(Landroid/app/Dialog;)Landroid/app/Dialog;
 
     const-string/jumbo v0, "SecPopupManager"
@@ -64,7 +62,6 @@
     return-void
 
     :cond_0
-    # getter for: Lcom/android/keyguard/sec/SecPopupManager;->mDialogDismissHandler:Landroid/os/Handler;
     invoke-static {}, Lcom/android/keyguard/sec/SecPopupManager;->access$100()Landroid/os/Handler;
 
     move-result-object v0

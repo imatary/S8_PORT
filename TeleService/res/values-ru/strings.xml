@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dч %2$dм</string>
-    <string name="battery_history_minutes_no_seconds">%dм</string>
+    <string name="battery_history_hours_no_seconds">%1$d час %2$d мин.</string>
+    <string name="battery_history_minutes_no_seconds">%d мин.</string>
     <string name="wifi_fail_to_scan">Не удалось начать поиск сетей.</string>
     <string name="wifi_failed_to_obtain_IP">Не удается получить IP-адрес.</string>
     <string name="wifi_security_none">Нет</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">Невозможно подключиться к %s.</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">Не удается подключиться к %1$s. Проверьте настройки в %2$s и повторите попытку.</string>
     <string name="bluetooth_pairing_rejected_error_message">Соединение отклонено абонентом %s.</string>
+    <string name="bluetooth_getting_remote_device_name">Получение имени устройства…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">Имя устройства будет отображено при его подключении.</string>
     <string name="accessibility_wifi_off">Wi-Fi выключен</string>
     <string name="accessibility_no_wifi">Wi-Fi отключен</string>
     <string name="accessibility_wifi_one_bar">Wi-Fi: одно деление</string>
@@ -839,7 +841,7 @@
     <string name="singleContactImportedMsg">Контакт импортирован</string>
     <string name="failedToImportSingleContactMsg">Не удалось импортировать контакт</string>
     <string name="hac_mode_title">Слуховые аппараты</string>
-    <string name="hac_mode_summary">Улучшите качество звука устройства, чтобы использовать его со слуховым аппаратом.</string>
+    <string name="hac_mode_summary">Оптимизируйте качество звука телефона для использования слухового аппарата.</string>
     <string name="dtmf_tones_title">DTMF-сигналы</string>
     <string name="dtmf_tones_summary">Настройка тонов DTMF.</string>
     <string name="network_info_message">Сообщение сети</string>
@@ -1022,6 +1024,10 @@
     <string name="add_call_block_number_toast">Вы не будете получать звонки с этого номера.</string>
     <string name="delete_call_block_number_toast">Теперь вы можете принимать звонки с этого номера.</string>
     <string name="emergency_call_block_number_toast">Невозможно заблокировать экстренные номера.</string>
+    <string name="call_block_dialog_title">Редактирование блокировки номеров</string>
+    <string name="call_block_dialog_contents">Начиная с версии Android Nougat, режим “Блокировка вызовов” заменен функцией “Заблокировать номер”. Она будет автоматически блокировать не только вызовы, но и сообщения.</string>
+    <string name="call_block_dialog_settings">Коснитесь НАСТРОЙКИ для настройки функции “Заблокировать номер”.</string>
+    <string name="call_block_dialog_button">Настройки</string>
     <string name="no_block_number_description">Здесь будут отображаться добавленные номера.</string>
     <string name="no_messages_description">Здесь будут отображаться добавленные сообщения.</string>
     <string name="callsettings_vipmode_blacklist_title">Черный список</string>
@@ -1071,7 +1077,7 @@
     <string name="callsettings_answering_volume_key_title">Ответ клавишей увелич.громкости</string>
     <string name="callsettings_answering_key_summary">Отвечать на входящие вызовы нажатием клавиши “Домой”.</string>
     <string name="callsettings_PowerkeyEndsCalls_title">Заверш. вызовов клавишей пит.</string>
-    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Заверш. вызовов клавишей пит.</string>
+    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Завершение вызовов нажатием клавиши питания</string>
     <string name="callsettings_PowerkeyEndsCalls_summary">Нажмите клавишу питания, чтобы завершить вызов при включенном экране. Экран не погаснет.</string>
     <string name="Dialog_PowerkeyEndsCalls">Невозможно настроить завершение вызовова клавишей питания, когда выключен датчик расстояния. Датчик расстояния будет включен. При поднесении устройства к уху во время вызова экран будет отключаться.</string>
     <string name="Dialog_PowerkeyEndsCalls_title">Включить датчик расстояния</string>
@@ -1343,7 +1349,7 @@ Injured/Dead
     <string name="roaming_alerts_sbody">Изменение голосовых настроек, настроек сообщений и данных в роуминге, включая параметры международного роуминга.</string>
     <string name="roaming_alerts_voice_body">Голосовой роуминг</string>
     <string name="roaming_alerts_data_body">Роуминг данных</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">Исходящий текстовый роуминг</string>
     <string name="roaming_domestic_category">Домашний роуминг</string>
     <string name="roaming_international_category">Международный роуминг</string>
     <string name="roaming_voice_body">Голосовой и текстовый роуминг</string>
@@ -1513,9 +1519,7 @@ Injured/Dead
     <string name="data_usage_disable_mobile_vzw_chn">"Без сети WLAN вы не сможете использовать Интернет, эл. почту и другие приложения, для которых требуется передача данных.
 
 Передача мобильных данных будет отключена."</string>
-    <string name="mobile_data_off_dialog_text_common">"Без сети Wi-Fi вы не сможете использовать Интернет, почту и другие приложения, для которых требуется передача данных.
-
-Передача мобильных данных будет отключена."</string>
+    <string name="mobile_data_off_dialog_text_common">Без подключения к сети Wi-Fi вы не сможете пользоваться Интернетом, электронной почтой и другими приложениями, требующими подключения к сети.</string>
     <string name="mobile_data_off_dialog_button_turn_off">Выключить</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"Без сети Wi-Fi вы не сможете использовать Интернет, почту и другие приложения, для которых требуется передача данных.
 
@@ -1595,8 +1599,9 @@ Mobile data will be turned off."</string>
 Если не используется безлимитный тариф, за это может взиматься дополнительная плата."</string>
     <string name="data_3gwarning_popup_title">Мобильные данные</string>
     <string name="roaming_data_off_msg">Чтобы использовать передачу данных в роуминге, перейдите в меню “Настройки” > “Подключения” > “Международный роуминг” и включите “Данные в роуминге”.</string>
-    <string name="data_3gwarning_popup_noti">Если не используется безлимитный тариф, при подключении к мобильным сетям может взиматься дополнительная плата. Подключиться?</string>
-    <string name="lgt_4gwarning_popup_mobiledata">Мобильные данные будут включены. Ваш поставщик услуг может взимать дополнительную плату в зависимости от вашего тарифного плана.</string>
+    <string name="data_3gwarning_popup_noti">Передача мобильных данных будет включена. За подключение к мобильной сети может взиматься дополнительная плата (в зависимости от вашего тарифного плана).</string>
+    <string name="data_3gwarning_popup_noti_ktt">Для использования технологии GiGA LTE будут включены мобильные данные. За это может взиматься дополнительная плата, которая зависит от вашего тарифного плана.</string>
+    <string name="lgt_4gwarning_popup_mobiledata">Передача мобильных данных будет включена. За подключение к мобильной сети может взиматься дополнительная плата (в зависимости от вашего тарифного плана).</string>
     <string name="lgt_lte_data_roaming_warningmsg">"При включении передачи данных в роуминге &lt;u>&lt;font color=\"%1$s\">вместо платы за передачу данных в домашнем роуминге будет взиматься плата за передачу данных в международном роуминге.&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">В целях снижения расходов рекомендуем включить ограничение фоновых данных&lt;/font>&lt;/u>, отключив такие функции, как уведомления IM и автоматические обновления"</string>
@@ -1967,6 +1972,8 @@ Data roaming may be modified and/or turned off in “Roaming settings”."</stri
     <string name="volte_call_summary_ops">Голосовые вызовы в формате HD через сеть 4G.</string>
     <string name="voice_over_lte_title_cct">Вызовы VoLTE</string>
     <string name="volte_call_summary_cct">Включение дополнительных функций вызовов по сотовой сети 4G LTE при наличии подключения к ней.</string>
+    <string name="voice_over_lte_title_o2">Вызовы 4G</string>
+    <string name="volte_call_summary_o2">Использование данных 4G для расширения возможностей общения.</string>
     <string name="volte_tty_description_on">While TTY is on, you will not be able to make and receive video calls or have conference calls.</string>
     <string name="volte_prepaid_tty_description_on">TTY mode will be enabled. You will not be able to make or receive conference calls.</string>
     <string name="volte_tty_description_off">While TTY is off, you will not be able to make and receive TTY calls.</string>
@@ -2156,9 +2163,13 @@ Data roaming may be modified and/or turned off in “Roaming settings”."</stri
     <string name="group_voice_call_disable_on_3G">Групповые вызовы доступны только в сети LTE</string>
     <string name="group_voice_call_outgoing_voice_call">Исходящий голосовой вызов</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"Без сети Wi-Fi вы не сможете использовать Интернет, Email и другие приложения, для которых требуется передача данных.
+
+Передача мобильных данных будет отключена."</string>
     <string name="data_usage_disable_mobile_warning">"Без сети Wi-Fi вы не сможете использовать Интернет, почту и другие приложения, для которых требуется передача данных.
 
 Передача мобильных данных будет отключена."</string>
+    <string name="data_usage_enable_mobile_warning_skt">Передача мобильных данных будет включена. За подключение к мобильной сети может взиматься дополнительная плата (в зависимости от вашего тарифного плана).</string>
     <string name="data_usage_enable_mobile_warning">За передачу данных может взиматься дополнительная плата в соответствии с тарифным планом. Продолжить?</string>
     <string name="insert_sim_card">Вставьте SIM-карту</string>
     <string name="insert_sim_card_message">Вставьте SIM-карту для доступа к услугам сети.</string>
@@ -2194,6 +2205,7 @@ Data roaming may be modified and/or turned off in “Roaming settings”."</stri
     <string name="disconnect_network_title">Отключиться от используемой сети</string>
     <string name="lte_only_warning_message">"В этом режиме вы не сможете совершать / принимать звонки. 
  Вы также можете потерять службу из-за отсутствия покрытия 4G."</string>
+    <string name="disable2g_warning_message">Эта настройка отключает использование стандарта связи 2G. При отключении 2G некоторые приложения и функции могут не работать в зонах, где недоступны LTE или 3G.</string>
     <string name="data_roaming_restrict_title">Данные в роуминге откл.</string>
     <string name="data_roaming_restrict_body">Коснитесь здесь для включения передачи данных в роуминге.</string>
     <string name="data_network_mode">Передача данных</string>
@@ -2394,6 +2406,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">Удалить этот номер?</string>
     <string name="change_guide_language_kddi">Изменить язык руководства</string>
     <string name="apply_option_service_kddi">Перейти к парам.службы %s</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">Служба поддержки</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">Руков. на японском (%d)</string>
     <string name="English_guidance_kddi">Руков. на англ. яз. (%d)</string>
     <string name="voicecall_kddi">Голосовая почта</string>
@@ -2448,11 +2464,13 @@ Try again later."</string>
     <string name="spam_call_mute_first_ring_summary">Отключение звука первого звонка при получении вызова от несохраненных контактов.</string>
     <string name="spam_call_auto_reject_title">Автоотклонение вызовов</string>
     <string name="smart_call_title">Опред. номера и защита от спама</string>
-    <string name="smart_call_title_usa">Определение спам-номеров</string>
     <string name="smart_call_title_for_notice">Определитель номера и защита от спама</string>
-    <string name="smart_call_description">Идентифицировать несохраненных абонентов и отправителей на экране вызовов, в журнале телефона и в сообщениях.</string>
-    <string name="smart_call_usa_description">Отображает сведения о нежелательных абонентах на экране вызова и в журнале вызовов.</string>
+    <string name="smart_call_description">"Используйте умный вызов для определения спама и мошенников.
+
+Данная служба отображает имена и фото профилей звонивших и присылавших сообщения абонентов, которых нет в ваших контактах."</string>
     <string name="smart_call_description_roaming">Эта служба недоступна в других странах.</string>
+    <string name="smart_call_noti_description_1">Коснитесь здесь, чтобы бесплатно защитить себя от спамеров.</string>
+    <string name="smart_call_noti_description_2">Коснитесь здесь, чтобы пометить абонента как спамера или скаммера.</string>
     <string name="smart_call_share_name_number_title">Отправить имя и номер</string>
     <string name="smart_call_share_name_number_summary">Зарегистрируйте имя и номер на сервере, чтобы абоненты, не знающие вашего номера, могли определить, когда вы им звоните или присылаете сообщения.</string>
     <string name="smart_call_legal_info_category">Юридическая информация</string>
@@ -2469,12 +2487,16 @@ Try again later."</string>
 Нажмите соответствующую кнопку ниже, чтобы указать, что вы согласны с изложенным выше и хотите включить функцию %s."</string>
     <string name="smart_call_privacy_notice_donotshow">Не показывать повторно уведомление, отображающее информацию о функции распознания несохраненных номеров</string>
     <string name="smart_call_privacy_notice_dream">Эта услуга доступна, если во время получения или осуществления звонков мобильное устройство подключено к мобильной сети, но в роуминге возможности использования услуги будут ограничены. Использование мобильных сетей может привести к взиманию дополнительной платы в зависимости от тарифного плана, действующего в сети вашего мобильного оператора.</string>
+    <string name="show_privacy_notice_title">Политика конфиденциал.</string>
     <string name="search_for_places_nearby_title">Поиск мест поблизости</string>
     <string name="search_for_places_nearby_help_description1">Поиск номеров телефонов и другой информации о компаниях и заведениях поблизости.</string>
     <string name="search_for_places_nearby_help_description2">Для работы этой службе требуется информация о местоположении.</string>
     <string name="search_for_places_nearby_help_description3">Чтобы повысить точность определения местоположения, перейдите в “Настройки” > “Подключения” > “Местоположение” > “Метод обнаружения” и выберите “Высокая точность”.</string>
     <string name="search_for_places_nearby_help_description3_vzw">To optimize the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
     <string name="search_for_places_nearby_help_description4">За использование мобильных сетей вместо сетей Wi-Fi может взиматься дополнительная плата в зависимости от тарифного плана.</string>
+    <string name="withdraw_menu_title">Остановить эту службу</string>
+    <string name="withdraw_dialog_description">В случае прекращения использования %1$s данная служба будет отключена и все ваши данные %2$s, хранящиеся у поставщика услуг, будут удалены.</string>
+    <string name="withdraw_dialog_button">Остановить службу</string>
     <string name="record_call_setting_title">Автоматическая запись вызовов</string>
     <string name="record_call_setting_selected_number">Выбранные номера</string>
     <string name="record_call_setting_all_number">Все номера</string>
@@ -2487,6 +2509,8 @@ Try again later."</string>
     <string name="record_call_noti_setting_title">Уведомления о записи</string>
     <string name="record_call_noti_setting_summary">Получение уведомлений после записи вызовов.</string>
     <string name="record_call_help_summary">Автоматическая запись телефонных разговоров с выбранными абонентами.</string>
+    <string name="record_call_setting_on_description">Автоматическая запись включена</string>
+    <string name="record_call_setting_off_description">Автоматическая запись отключена</string>
     <string name="visual_call_title_callsetting">Экран меню вызовов IVR</string>
     <string name="preference_update_DB_visual_call">Обновление БД вызовов IVR</string>
     <string name="preference_update_DB_visual_call_summary">Автом. обновл. только через WLAN</string>
@@ -2729,6 +2753,7 @@ To do Video Calling, turn ON Mobile Data or Video Calling in settings after the 
     <string name="about_phone_open_source_licenses">Лицензии открытого ПО</string>
     <string name="no_network_connection">Не подключено к сети</string>
     <string name="unable_to_check_for_updates">Невозможно проверить наличие обновлений. Нет подключения к сети.</string>
+    <string name="phoneAppLabel_dcm">Dial</string>
     <string name="dcm_vt_fail_cause_not_in_4g">Не удалось выполнить видеовызов, вы находитесь вне зоны покрытия 4G.</string>
     <string name="ss_do_not_show_again_us">Do not show again</string>
     <string name="disable_advanced_calling_warning_msg">Your phone will not be able to make or receive HD voice and video calls when you turn this setting off.</string>
@@ -2762,6 +2787,8 @@ In the future if you want to use Wi-Fi for voice calling you can turn on Wi-Fi C
     <string name="save_text">Сохранить</string>
     <string name="wfc_enable_dialog_title">Включение вызовов по Wi-Fi</string>
     <string name="wfc_enable_dialog">Включение вызовов через Wi-Fi отключит режим энергосбережения. Это может привести к увеличению расхода заряда аккумулятора. Некоторые поставщики услуг могут не поддерживать эту функцию.</string>
+    <string name="group_call_not_support_emergency_number">Невозможно добавить номера экстренных служб в групповые вызовы.</string>
+    <string name="group_call_not_support_emergency_number_all">Невозможно добавить номера экстренных служб в групповые вызовы. Добавление остальных выбранных контактов выполнено успешно.</string>
     <string name="enable_data_popup_message">Для включения этой функции следует включить мобильные данные.</string>
     <string name="enable_data_popup_tittle">Не удалось вкл. функцию</string>
 </resources>

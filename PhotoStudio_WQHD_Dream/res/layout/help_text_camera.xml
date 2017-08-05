@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="#fffafafa" android:layout_gravity="center_horizontal" android:id="@id/tvHelpText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/swipe_up_for_full_screen" android:strokeColor="#4d000000" android:strokeWidth="2.0" />
-</LinearLayout>

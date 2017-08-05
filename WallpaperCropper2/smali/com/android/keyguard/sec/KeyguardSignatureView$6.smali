@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignServiceRunningLock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$700(Lcom/android/keyguard/sec/KeyguardSignatureView;)Ljava/lang/Object;
 
     move-result-object v1
@@ -53,7 +52,6 @@
 
     move-result-object v2
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignService:Lcom/android/internal/policy/ISignServiceInterface;
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$102(Lcom/android/keyguard/sec/KeyguardSignatureView;Lcom/android/internal/policy/ISignServiceInterface;)Lcom/android/internal/policy/ISignServiceInterface;
 
     const-string/jumbo v0, "KeyguardSignatureView"
@@ -70,7 +68,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignService:Lcom/android/internal/policy/ISignServiceInterface;
     invoke-static {v3}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$100(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/policy/ISignServiceInterface;
 
     move-result-object v3
@@ -89,7 +86,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->initRunnable:Ljava/lang/Runnable;
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$800(Lcom/android/keyguard/sec/KeyguardSignatureView;)Ljava/lang/Runnable;
 
     move-result-object v2
@@ -117,7 +113,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignServiceRunningLock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$700(Lcom/android/keyguard/sec/KeyguardSignatureView;)Ljava/lang/Object;
 
     move-result-object v1
@@ -135,14 +130,12 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignService:Lcom/android/internal/policy/ISignServiceInterface;
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$102(Lcom/android/keyguard/sec/KeyguardSignatureView;Lcom/android/internal/policy/ISignServiceInterface;)Lcom/android/internal/policy/ISignServiceInterface;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mEngineStarted:Z
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$302(Lcom/android/keyguard/sec/KeyguardSignatureView;Z)Z
 
     monitor-exit v1

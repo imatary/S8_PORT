@@ -6066,7 +6066,7 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    const v1, 0x1040a23
+    const v1, 0x1040a30
 
     invoke-static {v1}, Lcom/android/server/enterprise/RestrictionToastManager;->show(I)V
 
@@ -8268,7 +8268,7 @@
 
     invoke-static {v4, v5}, Lcom/android/server/enterprise/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    const v4, 0x1040a2d
+    const v4, 0x1040a3a
 
     invoke-static {v4}, Lcom/android/server/enterprise/RestrictionToastManager;->show(I)V
 
@@ -8281,7 +8281,7 @@
 
     invoke-static {v4, v5}, Lcom/android/server/enterprise/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    const v4, 0x1040a2e
+    const v4, 0x1040a3b
 
     invoke-static {v4}, Lcom/android/server/enterprise/RestrictionToastManager;->show(I)V
 

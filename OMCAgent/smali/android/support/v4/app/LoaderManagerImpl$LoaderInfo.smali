@@ -133,7 +133,6 @@
 
     iget-object v1, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v1}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v1
@@ -142,7 +141,6 @@
 
     iget-object v1, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v1}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v1
@@ -153,7 +151,6 @@
 
     iget-object v1, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v1}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v1
@@ -215,7 +212,6 @@
 
     iget-object v1, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v1}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v1
@@ -224,7 +220,6 @@
 
     iget-object v1, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v1}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v1
@@ -246,7 +241,6 @@
 
     iget-object v2, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v2}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v2
@@ -255,7 +249,6 @@
 
     iget-object v2, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v2}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v2
@@ -419,7 +412,6 @@
 
     iget-object v2, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v2}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v2
@@ -428,7 +420,6 @@
 
     iget-object v2, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v2}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v2
@@ -439,7 +430,6 @@
 
     iget-object v2, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v2}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v2
@@ -462,7 +452,6 @@
 
     iget-object v2, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v2}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v2
@@ -471,7 +460,6 @@
 
     iget-object v2, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v2}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v2
@@ -527,7 +515,6 @@
 
     iget-object v3, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v3}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v3
@@ -536,7 +523,6 @@
 
     iget-object v3, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v3}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v3
@@ -1151,7 +1137,6 @@
     :cond_8
     iget-object v2, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v2}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v2
@@ -1168,7 +1153,6 @@
 
     iget-object v2, p0, Landroid/support/v4/app/LoaderManagerImpl$LoaderInfo;->this$0:Landroid/support/v4/app/LoaderManagerImpl;
 
-    # getter for: Landroid/support/v4/app/LoaderManagerImpl;->mHost:Landroid/support/v4/app/FragmentHostCallback;
     invoke-static {v2}, Landroid/support/v4/app/LoaderManagerImpl;->access$000(Landroid/support/v4/app/LoaderManagerImpl;)Landroid/support/v4/app/FragmentHostCallback;
 
     move-result-object v2

@@ -39,12 +39,10 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$5;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/BeautyListMenu;->updateSpotLightPosition(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$800(Lcom/sec/android/app/camera/menu/BeautyListMenu;I)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$5;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/BeautyListMenu;->restartSliderMenuTimer()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$500(Lcom/sec/android/app/camera/menu/BeautyListMenu;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$5;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
@@ -95,7 +93,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$5;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/BeautyListMenu;->speakSpotLightPosition(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$900(Lcom/sec/android/app/camera/menu/BeautyListMenu;I)V
 
     :cond_0

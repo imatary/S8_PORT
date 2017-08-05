@@ -60,13 +60,13 @@
 
     iput-object v0, p0, Lcom/android/phone/RecordCallsMenu;->prefSet:Landroid/preference/PreferenceScreen;
 
-    const v0, 0x7f0d01f1
+    const v0, 0x7f0d024e
 
     invoke-virtual {p0, v0}, Lcom/android/phone/RecordCallsMenu;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f0d0238
+    const v1, 0x7f0d0296
 
     invoke-virtual {p0, v1}, Lcom/android/phone/RecordCallsMenu;->getString(I)Ljava/lang/String;
 
@@ -201,7 +201,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d01f1
+    const v2, 0x7f0d024e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -215,7 +215,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d023b
+    const v3, 0x7f0d0299
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -278,7 +278,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0215
+    const v2, 0x7f0d0273
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -292,7 +292,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0239
+    const v3, 0x7f0d0297
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -452,7 +452,7 @@
 
     iget-object v0, p0, Lcom/android/phone/RecordCallsMenu;->mRecordSetting:Landroid/preference/SemSwitchPreferenceScreen;
 
-    const v1, 0x7f0d0c15
+    const v1, 0x7f0d0c84
 
     invoke-virtual {v0, v1}, Landroid/preference/SemSwitchPreferenceScreen;->setSummary(I)V
 

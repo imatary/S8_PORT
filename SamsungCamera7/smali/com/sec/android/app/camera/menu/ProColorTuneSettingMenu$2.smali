@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$2;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->TONE_SLIDE_VALUE_OFFSET:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->access$500(Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;)I
 
     move-result v1
@@ -57,7 +56,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$2;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->isTtsEnabled()Z
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->access$200(Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;)Z
 
     move-result v1
@@ -72,7 +70,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$2;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->mToneSlider:[Lcom/samsung/android/glview/GLSlider;
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->access$600(Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;)[Lcom/samsung/android/glview/GLSlider;
 
     move-result-object v3
@@ -107,7 +104,6 @@
 
     move-result-object v2
 
-    # invokes: Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->speakTtsString(Ljava/lang/String;)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->access$400(Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;Ljava/lang/String;)V
 
     :cond_0
@@ -138,7 +134,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$2;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->mColorTuneSettingSliderBarListener:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$ColorTuneSettingSliderBarListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->access$100(Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;)Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$ColorTuneSettingSliderBarListener;
 
     move-result-object v1
@@ -172,7 +167,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$2;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->mColorTuneSettingSliderBarListener:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$ColorTuneSettingSliderBarListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->access$100(Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;)Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$ColorTuneSettingSliderBarListener;
 
     move-result-object v1
@@ -206,7 +200,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$2;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->mColorTuneSettingSliderBarListener:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$ColorTuneSettingSliderBarListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->access$100(Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;)Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$ColorTuneSettingSliderBarListener;
 
     move-result-object v1
@@ -240,7 +233,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$2;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->mColorTuneSettingSliderBarListener:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$ColorTuneSettingSliderBarListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->access$100(Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;)Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$ColorTuneSettingSliderBarListener;
 
     move-result-object v1
@@ -274,7 +266,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$2;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->mColorTuneSettingSliderBarListener:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$ColorTuneSettingSliderBarListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->access$100(Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;)Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$ColorTuneSettingSliderBarListener;
 
     move-result-object v1
@@ -308,7 +299,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$2;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->mColorTuneSettingSliderBarListener:Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$ColorTuneSettingSliderBarListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->access$100(Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;)Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu$ColorTuneSettingSliderBarListener;
 
     move-result-object v1

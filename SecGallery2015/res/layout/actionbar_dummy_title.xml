@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:nextFocusRight="@id/action_camera" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/action_bar_spinner_text_size" android:textColor="@color/actionbar_title_color" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="?android:actionBarSize" android:singleLine="true" android:paddingStart="@dimen/action_bar_navigation_spinner_button_text_padding_start" android:paddingEnd="@dimen/action_bar_navigation_spinner_button_text_padding_start" />
-    <RelativeLayout android:id="@id/indicator_text_badge_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/indicator_text_badge_container_min_width" android:layout_centerInParent="true" android:layout_alignEnd="@id/title">
-        <TextView android:textSize="@dimen/indicator_text_badge_icon_text_size" android:textColor="@color/header_count_text_color" android:gravity="center" android:id="@id/indicator_text_badge_icon" android:background="@drawable/tw_noti_badge_mtrl" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:paddingStart="@dimen/indicator_text_badge_icon_text_padding" android:paddingEnd="@dimen/indicator_text_badge_icon_text_padding" android:layout_marginStart="@dimen/indicator_text_badge_icon_margin_start" android:layout_alignParentStart="true" android:backgroundTint="@color/count_view_bg_color" />
-    </RelativeLayout>
-</RelativeLayout>

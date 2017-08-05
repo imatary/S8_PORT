@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mSenserCounter:I
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$000(Lcom/sec/android/app/camera/shootingmode/TagShot;)I
 
     move-result v1
@@ -56,7 +55,6 @@
 
     const/4 v2, 0x2
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mSenserCounter:I
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$002(Lcom/sec/android/app/camera/shootingmode/TagShot;I)I
 
     iget-object v0, p1, Landroid/hardware/SensorEvent;->values:[F
@@ -67,13 +65,11 @@
 
     aget v2, v0, v2
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/TagShot;->updateCurrentPressure(F)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$100(Lcom/sec/android/app/camera/shootingmode/TagShot;F)V
 
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # operator-- for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mSenserCounter:I
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$010(Lcom/sec/android/app/camera/shootingmode/TagShot;)I
 
     return-void

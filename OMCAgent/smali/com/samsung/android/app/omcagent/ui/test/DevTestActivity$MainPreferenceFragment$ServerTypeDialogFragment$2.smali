@@ -45,7 +45,6 @@
 
     move-result-object v2
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;->serverTypeIndex:I
     invoke-static {}, Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;->access$100()I
 
     move-result v3
@@ -72,12 +71,10 @@
 
     check-cast v0, Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity;->mainPreferenceFragment:Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity;->access$200(Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity;)Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;
 
     move-result-object v1
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;->getServerType()V
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;->access$300(Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;)V
 
     return-void

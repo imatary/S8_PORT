@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView$8;->this$0:Lcom/android/keyguard/KeyguardHostView;
 
-    # getter for: Lcom/android/keyguard/KeyguardHostView;->mAppWidgetContainer:Lcom/android/keyguard/KeyguardWidgetPager;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardHostView;->access$400(Lcom/android/keyguard/KeyguardHostView;)Lcom/android/keyguard/KeyguardWidgetPager;
 
     move-result-object v0

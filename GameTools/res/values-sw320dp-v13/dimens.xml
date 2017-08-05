@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="ln_recent_bottom_margin">20.0dip</dimen>
-    <dimen name="ln_recent_height">76.0dip</dimen>
-    <dimen name="ln_recent_width">66.0dip</dimen>
-</resources>

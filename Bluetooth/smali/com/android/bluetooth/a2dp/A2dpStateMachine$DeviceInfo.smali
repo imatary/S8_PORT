@@ -123,7 +123,12 @@
 
     goto :goto_0
 
-    nop
+    :pswitch_6
+    invoke-virtual {p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;->getDelayReprot()I
+
+    move-result v0
+
+    goto :goto_0
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -133,6 +138,7 @@
         :pswitch_3
         :pswitch_4
         :pswitch_5
+        :pswitch_6
     .end packed-switch
 .end method
 
@@ -333,6 +339,11 @@
 
     goto :goto_0
 
+    :pswitch_6
+    invoke-virtual {p1, p3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;->setDelayReprot(I)V
+
+    goto :goto_0
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -341,6 +352,7 @@
         :pswitch_3
         :pswitch_4
         :pswitch_5
+        :pswitch_6
     .end packed-switch
 .end method
 

@@ -1,8 +1,0 @@
-.class public interface abstract Lcom/samsung/android/sdk/pen/engine/SpenSelectionChangeListener;
-.super Ljava/lang/Object;
-.source "SpenSelectionChangeListener.java"
-
-
-# virtual methods
-.method public abstract onChanged(Lcom/samsung/android/sdk/pen/SpenSettingSelectionInfo;)V
-.end method

@@ -67,7 +67,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPinBasedInputView$9;->this$0:Lcom/android/keyguard/KeyguardPinBasedInputView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPinBasedInputView;->mDeleteButton:Landroid/widget/ImageButton;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->access$000(Lcom/android/keyguard/KeyguardPinBasedInputView;)Landroid/widget/ImageButton;
 
     move-result-object v0
@@ -81,7 +80,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPinBasedInputView$9;->this$0:Lcom/android/keyguard/KeyguardPinBasedInputView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPinBasedInputView;->mDeleteButton:Landroid/widget/ImageButton;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPinBasedInputView;->access$000(Lcom/android/keyguard/KeyguardPinBasedInputView;)Landroid/widget/ImageButton;
 
     move-result-object v0

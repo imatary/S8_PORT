@@ -368,7 +368,7 @@
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     :goto_2
-    const v3, 0x7f0d02f9
+    const v3, 0x7f0d0359
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getString(I)Ljava/lang/String;
 
@@ -437,7 +437,7 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    const v3, 0x7f0d02f0
+    const v3, 0x7f0d0350
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getString(I)Ljava/lang/String;
 
@@ -468,7 +468,7 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    const v3, 0x7f0d04ca
+    const v3, 0x7f0d052a
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getString(I)Ljava/lang/String;
 
@@ -495,7 +495,7 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    const v3, 0x7f0d0caa
+    const v3, 0x7f0d0d1b
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getString(I)Ljava/lang/String;
 
@@ -1093,7 +1093,7 @@
 
     const/4 v6, 0x1
 
-    const v5, 0x7f10029c
+    const v5, 0x7f10029f
 
     const-string/jumbo v2, "CallSettingsTabFragment"
 

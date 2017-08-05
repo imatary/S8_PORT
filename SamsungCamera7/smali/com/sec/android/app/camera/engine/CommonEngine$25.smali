@@ -100,7 +100,6 @@
 
     iget-object v12, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v12}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v12
@@ -119,7 +118,6 @@
 
     move-result v12
 
-    # setter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mBurstNumBulkInsert:I
     invoke-static {v11, v12}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4302(Lcom/sec/android/app/camera/engine/CommonEngine;I)I
 
     const-string v11, "CommonEngine"
@@ -165,7 +163,6 @@
     :cond_0
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->insertBurstInfoToSEF(Ljava/lang/String;J)V
     invoke-static {v11, v1, v2, v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4400(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/String;J)V
 
     move v5, v4
@@ -208,7 +205,6 @@
     :goto_1
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->insertBurstInfoToSEF(Ljava/lang/String;J)V
     invoke-static {v11, v0, v2, v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4400(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/String;J)V
 
     :cond_1
@@ -231,7 +227,6 @@
     :cond_4
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->lastImageUpdate(Landroid/content/ContentValues;)V
     invoke-static {v11, v10}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4500(Lcom/sec/android/app/camera/engine/CommonEngine;Landroid/content/ContentValues;)V
 
     :cond_5
@@ -246,7 +241,6 @@
 
     const/4 v12, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mBurstDBupdateThread:Ljava/lang/Thread;
     invoke-static {v11, v12}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4602(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/Thread;)Ljava/lang/Thread;
 
     :goto_3
@@ -274,12 +268,11 @@
 
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v11}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v11
 
-    const v12, 0x7f0901c8
+    const v12, 0x7f0901c9
 
     const/4 v13, 0x0
 

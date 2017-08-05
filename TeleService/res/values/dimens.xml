@@ -548,4 +548,5 @@
     <dimen name="emergency_zero_contact_item_height">98.0dip</dimen>
     <dimen name="emergency_zero_contact_item_width">69.0dip</dimen>
     <dimen name="emergency_contact_dialer_edittext_size">40.0dip</dimen>
+    <dimen name="emergency_actionbar_divider_height">1.0px</dimen>
 </resources>

@@ -70,7 +70,6 @@
 
     iget v2, p1, Landroid/os/Message;->arg2:I
 
-    # invokes: Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->handleNotification(II)V
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->access$100(Lcom/sec/android/app/camera/setting/CameraSettingsImpl;II)V
 
     goto :goto_0

@@ -245,7 +245,7 @@ Panlama çekimi: Hareketli nesnelerin fotoğraflarını çekerken hareket hissi 
     <string name="Title_Rear_CameraResolution_TTS">Arka kamera fotoğraf boyutu</string>
     <string name="Title_RecordingMotionSpeed">Hız seç</string>
     <string name="Title_Review">Resimleri incele</string>
-    <string name="Title_SaveAsFlipped">Fotoğrafları önizlendiği gibi kaydet</string>
+    <string name="Title_SaveAsFlipped">Fotoğrafları ön izlendiği gibi kaydet</string>
     <string name="Title_Save_Richtone">Farklı kaydet</string>
     <string name="Title_ShootingMode">Çekim modu</string>
     <string name="Title_Shooting_Method">Çekim yöntemleri</string>
@@ -308,6 +308,7 @@ düzeltmesi"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Kamera modları</string>
     <string name="camera_security_enter">Güvenlik ilkesi Kamera kullanımını kısıtlıyor.</string>
+    <string name="can_not_use_voice_control">Bixby Voice uyandırma açıkken Sesli kontrol kullanılamaz.</string>
     <string name="cancel">İptal</string>
     <string name="cannot_start_camcorder_msg">Arama sırasında video kaydedilemez.</string>
     <string name="cannot_start_camera_msg">Arama sırasında Kamera kullanılamaz.</string>
@@ -524,8 +525,8 @@ Harika fotoğraflar çekmeye devam etmek için kameranızın merceğini temizley
     <string name="recording_call_rinning_msg">Aramayı yanıtladığınızda kayıt durdurulur ve kaydedilir.</string>
     <string name="recording_fail_lack_of_hw_resource">"Video codec öğesi, şu anda diğer uygulamalar tarafından kullanılıyor. Görev Yöneticisi'nden diğer etkin video uygulamalarını kapatın ve tekrar deneyin."</string>
     <string name="recording_failed_msg">Kayıt başarısız.</string>
-    <string name="recording_help_popup_description">Kaydetmeden önce en-boy oranını önizlemek için Kayıt tuşuna dokunup basılı tutun.</string>
-    <string name="recording_help_popup_title">Videolarınızı önizleyin</string>
+    <string name="recording_help_popup_description">Kaydetmeden önce en-boy oranını ön izlemek için Kayıt tuşuna dokunup basılı tutun.</string>
+    <string name="recording_help_popup_title">Videolarınızı ön izleyin</string>
     <string name="recording_using_earphone_mic">Ses, kulaklık yoluyla kaydediliyor.</string>
     <string name="remove_effect">Efekti kaldır</string>
     <string name="request_runtime_permission_message">%s açılamıyor. AYARLAR öğesine dokunun, Uygulama bilgileri > İzinler bölümüne gidin, ardından aşağıdaki izinleri verip tekrar deneyin:</string>
@@ -547,7 +548,7 @@ Harika fotoğraflar çekmeye devam etmek için kameranızın merceğini temizley
     <string name="runtime_permission_secure_lock_in_video_collage">Video kolajı oluşturulamıyor. Cihazınızın kilidini açın, ardından ilgili izinleri verin.</string>
     <string name="saturation">Doygunluk</string>
     <string name="save">Kaydet</string>
-    <string name="save_as_flipped_summary">Çektiğiniz tüm fotoğrafları ters dönmüş görüntüler halinde değil, önizlemede gösterildiği şekilde kaydeder.</string>
+    <string name="save_as_flipped_summary">Çektiğiniz tüm fotoğrafları ters dönmüş görüntüler halinde değil, ön izlemede gösterildiği şekilde kaydeder.</string>
     <string name="save_burst_in_device_storage_message">SD karta çoklu çekimler kaydedilemez. Bunun yerine dahili depolamaya kaydediliyor…</string>
     <string name="secured_lock_in_contact_us">Cihazınızın kilidini açıp bize ulaşmak için Tamam öğesine dokunun.</string>
     <string name="secured_lock_in_download_effect">Yeni efektler indirmek için telefonunuzun kilidini açmanız gerekir.</string>
@@ -604,6 +605,7 @@ Bunu kabul ediyorsanız Etiketli çekim için bu izin verilecek ve size tekrar s
     <string name="task_edge_title_selfie">"Selfie
 çek"</string>
     <string name="temperature">Sıcaklık</string>
+    <string name="temperature_too_high_camera_off">Sıcaklık, %1$s uygulamasını kullanmak için çok yüksek. %2$s uygulamasını kullanmadan önce telefonun soğumasını bekleyin.</string>
     <string name="temperature_too_high_flash_off">Flaş açılamadı. Cihazınız soğuduğunda tekrar deneyin.</string>
     <string name="temperature_too_high_record">Video kaydedilemiyor. Cihaz soğuduğunda tekrar deneyin.</string>
     <string name="temperature_too_high_recording_disable">Kaydetme durdu. Cihazınız soğuduğunda kaydedebilirsiniz.</string>
@@ -629,14 +631,14 @@ Bunu kabul ediyorsanız Etiketli çekim için bu izin verilecek ve size tekrar s
     <string name="toast_multi_af_on">AF alanı: Çoklu</string>
     <string name="toast_sound_and_shot_mode_auto">Çekim öncesi etkin.</string>
     <string name="toast_sound_and_shot_mode_manual">Çekim sonrası etkin.</string>
-    <string name="tracking_af_summary">Önizleme ekranında seçilen bir nesneye odaklanın ve nesneyi takip edin.</string>
-    <string name="tts_front_camera">Ön kamera, önizleme</string>
+    <string name="tracking_af_summary">Ön izleme ekranında seçilen bir subjeye odaklanın ve subjeyi takip edin.</string>
+    <string name="tts_front_camera">Ön kamera, ön izleme</string>
     <string name="tts_hour">Saat</string>
     <string name="tts_hours">Saat</string>
     <string name="tts_minute">Dakika</string>
     <string name="tts_minutes">Dakika</string>
     <string name="tts_not_selected">Seçili değil</string>
-    <string name="tts_rear_camera">Arka kamera, önizleme</string>
+    <string name="tts_rear_camera">Arka kamera, ön izleme</string>
     <string name="tts_second">Saniye</string>
     <string name="tts_seconds">Saniye</string>
     <string name="tts_selected">Seçildi</string>
@@ -658,7 +660,7 @@ Bunu kabul ediyorsanız Etiketli çekim için bu izin verilecek ve size tekrar s
     <string name="video_size_option_comma">,</string>
     <string name="viewmode_fullmview">Tam ekran</string>
     <string name="viewmode_normalview">Standart</string>
-    <string name="viewmode_tag_summary">Tam ekran özelliğiyle resimleri ve videoları önizleyin.</string>
+    <string name="viewmode_tag_summary">Tam ekran özelliğiyle resimleri ve videoları ön izleyin.</string>
     <string name="vision_intelligence_description">"Bixby Vision'ı açıp kameranızı bir nesne veya konuma doğrultarak ürünleri çevrimiçi arayın, yakındaki yeni yerleri keşfedin veya metinleri çevirin."</string>
     <string name="vision_intelligence_title">Bixby Vision</string>
     <string name="voice_assistant_dialog_msg">"Kamerada Voice Assistant'ı geliştirmek için Sesli kontrol etkinleştirilecek."</string>

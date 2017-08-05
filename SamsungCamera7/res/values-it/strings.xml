@@ -308,6 +308,7 @@ forma"</string>
     <string name="camera_label">Camera</string>
     <string name="camera_modes">Modalità fotocamera</string>
     <string name="camera_security_enter">"I criteri di sicurezza limitano l'uso della fotocamera."</string>
+    <string name="can_not_use_voice_control">"Impossibile utilizzare il controllo vocale quando l'attivazione vocale Bixby è attiva."</string>
     <string name="cancel">Annulla</string>
     <string name="cannot_start_camcorder_msg">Impossibile registrare video durante una chiamata.</string>
     <string name="cannot_start_camera_msg">Impossibile utilizzare la fotocamera durante le chiamate.</string>
@@ -604,6 +605,7 @@ Se accettate, verrà concessa l'autorizzazione alla funzione Aggiungi tag in sca
     <string name="task_edge_title_selfie">"Scatta
 selfie"</string>
     <string name="temperature">Temperatura colore</string>
+    <string name="temperature_too_high_camera_off">La temperatura è troppo elevata per utilizzare %1$s. Attendete che il telefono si raffreddi prima di utilizzare %2$s.</string>
     <string name="temperature_too_high_flash_off">Impossibile attivare il flash. Riprovate quando il dispositivo in uso si sarà raffreddato.</string>
     <string name="temperature_too_high_record">Impossibile registrare video. Riprovate quando il dispositivo si sarà raffreddato.</string>
     <string name="temperature_too_high_recording_disable">La registrazione è stata interrotta. Potrete effettuare nuove registrazioni dopo che il dispositivo in uso si sarà raffreddato.</string>

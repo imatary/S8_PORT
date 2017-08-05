@@ -135,7 +135,6 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecording:Z
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$000(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)Z
 
     move-result v1
@@ -144,12 +143,11 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$100(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
 
-    const v3, 0x7f090201
+    const v3, 0x7f090202
 
     invoke-static {v1, v3, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -162,7 +160,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$200(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v1
@@ -175,7 +172,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setHRMSensor(Z)V
     invoke-static {v1, v3}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$300(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;Z)V
 
     goto :goto_1
@@ -183,7 +179,6 @@
     :pswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$200(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v1
@@ -196,7 +191,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$100(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -215,7 +209,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$100(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -224,7 +217,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v4}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$100(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v4
@@ -233,7 +225,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f090292
+    const v5, 0x7f090294
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -241,7 +233,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v5}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$100(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v5
@@ -250,7 +241,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0901a0
+    const v6, 0x7f0901a1
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -261,7 +252,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setHRMSensor(Z)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$300(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;Z)V
 
     goto/16 :goto_1
@@ -269,7 +259,6 @@
     :pswitch_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$400(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
@@ -278,7 +267,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$100(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -289,7 +277,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$400(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)Landroid/content/BroadcastReceiver;
 
     move-result-object v2
@@ -299,7 +286,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->clear()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$500(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)V
 
     goto/16 :goto_1

@@ -730,7 +730,7 @@
 
     if-eqz v14, :cond_26
 
-    const v14, 0x7f0d0646
+    const v14, 0x7f0d06aa
 
     invoke-static {v14}, Lcom/android/phone/PhoneUtils;->displayLongToast(I)V
 
@@ -1291,7 +1291,7 @@
 
     if-eqz v14, :cond_15
 
-    const v14, 0x7f0d0937
+    const v14, 0x7f0d099d
 
     invoke-static {v14}, Lcom/android/phone/PhoneUtils;->displayLongToast(I)V
 

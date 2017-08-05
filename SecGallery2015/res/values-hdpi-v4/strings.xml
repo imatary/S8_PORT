@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="mapview_marker_resize_album_count_text_height">0.85f</string>
-    <string name="timeview_speedRatio">1.2f</string>
-</resources>

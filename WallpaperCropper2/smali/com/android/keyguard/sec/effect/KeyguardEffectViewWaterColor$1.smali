@@ -53,7 +53,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor;->mHandler:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor$EffectHandler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor;)Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor$EffectHandler;
 
     move-result-object v0
@@ -64,7 +63,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor;->mHandler:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor$EffectHandler;
     invoke-static {v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor;)Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor$EffectHandler;
 
     move-result-object v1
@@ -85,7 +83,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor;->mHandler:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor$EffectHandler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor;)Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterColor$EffectHandler;
 
     move-result-object v0

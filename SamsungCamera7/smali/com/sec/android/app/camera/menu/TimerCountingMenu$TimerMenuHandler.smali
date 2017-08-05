@@ -76,7 +76,6 @@
 
     move-result v0
 
-    # getter for: Lcom/sec/android/app/camera/menu/TimerCountingMenu;->mCurrentAnimationTime:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->access$200(Lcom/sec/android/app/camera/menu/TimerCountingMenu;)I
 
     move-result v2
@@ -85,13 +84,11 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/menu/TimerCountingMenu;->mCurrentAnimationTime:I
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->access$202(Lcom/sec/android/app/camera/menu/TimerCountingMenu;I)I
 
     goto :goto_0
 
     :cond_1
-    # invokes: Lcom/sec/android/app/camera/menu/TimerCountingMenu;->updateProgressWheelTime(I)V
     invoke-static {v1, v0}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->access$500(Lcom/sec/android/app/camera/menu/TimerCountingMenu;I)V
 
     goto :goto_0

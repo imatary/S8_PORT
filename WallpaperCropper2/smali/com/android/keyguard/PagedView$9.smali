@@ -147,7 +147,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/PagedView$9;->this$0:Lcom/android/keyguard/PagedView;
 
-    # getter for: Lcom/android/keyguard/PagedView;->DELETE_SLIDE_IN_SIDE_PAGE_DURATION:I
     invoke-static {v1}, Lcom/android/keyguard/PagedView;->access$700(Lcom/android/keyguard/PagedView;)I
 
     move-result v1

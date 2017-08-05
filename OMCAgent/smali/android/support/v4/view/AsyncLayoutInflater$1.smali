@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Landroid/support/v4/view/AsyncLayoutInflater$1;->this$0:Landroid/support/v4/view/AsyncLayoutInflater;
 
-    # getter for: Landroid/support/v4/view/AsyncLayoutInflater;->mInflater:Landroid/view/LayoutInflater;
     invoke-static {v1}, Landroid/support/v4/view/AsyncLayoutInflater;->access$000(Landroid/support/v4/view/AsyncLayoutInflater;)Landroid/view/LayoutInflater;
 
     move-result-object v1
@@ -77,7 +76,6 @@
 
     iget-object v1, p0, Landroid/support/v4/view/AsyncLayoutInflater$1;->this$0:Landroid/support/v4/view/AsyncLayoutInflater;
 
-    # getter for: Landroid/support/v4/view/AsyncLayoutInflater;->mInflateThread:Landroid/support/v4/view/AsyncLayoutInflater$InflateThread;
     invoke-static {v1}, Landroid/support/v4/view/AsyncLayoutInflater;->access$100(Landroid/support/v4/view/AsyncLayoutInflater;)Landroid/support/v4/view/AsyncLayoutInflater$InflateThread;
 
     move-result-object v1

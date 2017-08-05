@@ -524,7 +524,7 @@
 
     move-result-object v31
 
-    const v32, 0x7f0d0878
+    const v32, 0x7f0d08dc
 
     invoke-virtual/range {v31 .. v32}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -582,7 +582,7 @@
 
     move-result-object v31
 
-    const v32, 0x7f0d0879
+    const v32, 0x7f0d08dd
 
     invoke-virtual/range {v31 .. v32}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -827,7 +827,7 @@
 
     move-result-object v23
 
-    const v31, 0x7f0200be
+    const v31, 0x7f0200c1
 
     const/16 v32, 0x0
 
@@ -1325,7 +1325,7 @@
 
     aput-object v25, v32, v33
 
-    const v33, 0x7f0d087a
+    const v33, 0x7f0d08de
 
     move-object/from16 v0, v31
 
@@ -1461,7 +1461,7 @@
 
     aput-object v25, v33, v34
 
-    const v34, 0x7f0d087a
+    const v34, 0x7f0d08de
 
     move-object/from16 v0, v32
 

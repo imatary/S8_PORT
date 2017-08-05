@@ -309,6 +309,7 @@
     <string name="camera_label">กล้องถ่ายรูป</string>
     <string name="camera_modes">โหมดกล้องถ่ายรูป</string>
     <string name="camera_security_enter">นโยบาย​ความ​ปลอดภัย​จำกัด​การ​ใช้​กล้อง​ถ่าย​รูป</string>
+    <string name="can_not_use_voice_control">ไม่สามารถใช้การควบคุมด้วยเสียงขณะเปิดการปลุกด้ว Bixby Voice อยู่</string>
     <string name="cancel">ยกเลิก</string>
     <string name="cannot_start_camcorder_msg">บันทึก​วี​ดี​โอ​ไม่​ได้​ขณะ​โทร</string>
     <string name="cannot_start_camera_msg">ไม่สามารถใช้กล้องระหว่างการโทรได้</string>
@@ -607,6 +608,7 @@
     <string name="task_edge_title_selfie">"ถ่าย
 เซลฟี่"</string>
     <string name="temperature">อุณหภูมิ</string>
+    <string name="temperature_too_high_camera_off">อุณหภูมิสูงเกินไปสำหรับการใช้ %1$s โปรดรอให้โทรศัพท์เย็นลงก่อนใช้ %2$s</string>
     <string name="temperature_too_high_flash_off">ไม่สามารถเปิดแฟลชได้ ลองอีกครั้งเมื่ออุปกรณ์ของคุณเย็นลงแล้ว</string>
     <string name="temperature_too_high_record">ไม่สามารถบันทึกวิดีโอได้ ลองอีกครั้งเมื่ออุปกรณ์เย็นลง</string>
     <string name="temperature_too_high_recording_disable">การบันทึกหยุดแล้ว คุณสามารถบันทึกได้ เมื่ออุปกรณ์ของคุณเย็นลงแล้ว</string>

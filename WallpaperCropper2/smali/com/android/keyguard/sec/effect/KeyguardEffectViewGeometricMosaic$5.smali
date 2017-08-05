@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewGeometricMosaic$5;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewGeometricMosaic;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewGeometricMosaic;->fadeOutSound()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewGeometricMosaic;->access$300(Lcom/android/keyguard/sec/effect/KeyguardEffectViewGeometricMosaic;)V
 
     return-void

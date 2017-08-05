@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper;->mScreenOnAnim:Landroid/animation/ValueAnimator;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper;->access$100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper;)Landroid/animation/ValueAnimator;
 
     move-result-object v0

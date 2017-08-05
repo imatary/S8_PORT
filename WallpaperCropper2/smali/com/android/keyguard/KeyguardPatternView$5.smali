@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$5;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$500(Lcom/android/keyguard/KeyguardPatternView;)Landroid/content/Context;
 
     move-result-object v0

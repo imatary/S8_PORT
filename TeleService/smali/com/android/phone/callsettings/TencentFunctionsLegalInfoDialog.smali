@@ -223,7 +223,7 @@
 
     invoke-direct {v0, v6}, Landroid/text/style/BackgroundColorSpan;-><init>(I)V
 
-    const v6, 0x7f0d0c24
+    const v6, 0x7f0d0c95
 
     invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/TencentFunctionsLegalInfoDialog;->getString(I)Ljava/lang/String;
 
@@ -300,7 +300,7 @@
 .method private getPopupText()Ljava/lang/String;
     .locals 8
 
-    const v7, 0x7f0d0693
+    const v7, 0x7f0d06f7
 
     const/4 v3, 0x3
 
@@ -310,7 +310,7 @@
 
     const/4 v4, 0x0
 
-    const v1, 0x7f0d0c24
+    const v1, 0x7f0d0c95
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/TencentFunctionsLegalInfoDialog;->getString(I)Ljava/lang/String;
 
@@ -322,7 +322,7 @@
 
     if-ne v1, v2, :cond_0
 
-    const v1, 0x7f0d0be6
+    const v1, 0x7f0d0c51
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/TencentFunctionsLegalInfoDialog;->getString(I)Ljava/lang/String;
 
@@ -345,7 +345,7 @@
 
     if-ne v1, v2, :cond_1
 
-    const v1, 0x7f0d06a6
+    const v1, 0x7f0d070a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/TencentFunctionsLegalInfoDialog;->getString(I)Ljava/lang/String;
 
@@ -372,7 +372,7 @@
     return-object v1
 
     :cond_1
-    const v1, 0x7f0d06a9
+    const v1, 0x7f0d070d
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/TencentFunctionsLegalInfoDialog;->getString(I)Ljava/lang/String;
 
@@ -380,7 +380,7 @@
 
     new-array v2, v3, [Ljava/lang/Object;
 
-    const v3, 0x7f0d0be3
+    const v3, 0x7f0d0c4e
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/TencentFunctionsLegalInfoDialog;->getString(I)Ljava/lang/String;
 
@@ -448,7 +448,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/TencentFunctionsLegalInfoDialog;->mView:Landroid/view/View;
 
-    const v2, 0x7f100294
+    const v2, 0x7f100297
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -464,7 +464,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/TencentFunctionsLegalInfoDialog;->mView:Landroid/view/View;
 
-    const v2, 0x7f100295
+    const v2, 0x7f100298
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -562,7 +562,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0c20
+    const v1, 0x7f0d0c91
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -584,7 +584,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/TencentFunctionsLegalInfoDialog$2;-><init>(Lcom/android/phone/callsettings/TencentFunctionsLegalInfoDialog;)V
 
-    const v3, 0x7f0d0c22
+    const v3, 0x7f0d0c93
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -594,7 +594,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/TencentFunctionsLegalInfoDialog$3;-><init>(Lcom/android/phone/callsettings/TencentFunctionsLegalInfoDialog;)V
 
-    const v3, 0x7f0d0c23
+    const v3, 0x7f0d0c94
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

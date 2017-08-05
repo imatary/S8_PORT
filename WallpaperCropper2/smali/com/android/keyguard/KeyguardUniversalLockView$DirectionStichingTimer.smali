@@ -61,7 +61,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/android/keyguard/KeyguardUniversalLockView;->isSleeping:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$302(Lcom/android/keyguard/KeyguardUniversalLockView;Z)Z
 
     const-wide/16 v0, 0x3e8
@@ -72,14 +71,12 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/keyguard/KeyguardUniversalLockView;->isSleeping:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$302(Lcom/android/keyguard/KeyguardUniversalLockView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$DirectionStichingTimer;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/android/keyguard/KeyguardUniversalLockView;->isChecking:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$402(Lcom/android/keyguard/KeyguardUniversalLockView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$DirectionStichingTimer;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
@@ -104,7 +101,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/keyguard/KeyguardUniversalLockView;->isChecking:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$402(Lcom/android/keyguard/KeyguardUniversalLockView;Z)Z
 
     :goto_1
@@ -113,7 +109,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$DirectionStichingTimer;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionView:Lcom/android/internal/widget/DirectionLockView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$000(Lcom/android/keyguard/KeyguardUniversalLockView;)Lcom/android/internal/widget/DirectionLockView;
 
     move-result-object v0
@@ -132,7 +127,6 @@
 
     iget-object v0, v0, Lcom/android/keyguard/KeyguardUniversalLockView;->mUniversalLockWrongPasswordhandler:Landroid/os/Handler;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->WRONG_PASSWORD_DETECTED:I
     invoke-static {}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$500()I
 
     move-result v1
@@ -148,7 +142,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$DirectionStichingTimer;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # setter for: Lcom/android/keyguard/KeyguardUniversalLockView;->isSleeping:Z
     invoke-static {v0, v2}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$302(Lcom/android/keyguard/KeyguardUniversalLockView;Z)Z
 
     const-string/jumbo v0, "KeyguardUniversalLockView"
@@ -165,7 +158,6 @@
 
     iget-object v0, v0, Lcom/android/keyguard/KeyguardUniversalLockView;->mUniversalLockWrongPasswordhandler:Landroid/os/Handler;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->RIGHT_PASSWORD_DETECTED:I
     invoke-static {}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$600()I
 
     move-result v1

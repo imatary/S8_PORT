@@ -2,7 +2,7 @@
 <FrameLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <FrameLayout android:id="@id/home_crop_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ImageView android:id="@id/blending_effect_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/blending_effect_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-1.0px" />
         <FrameLayout android:id="@id/title_name_linear" android:layout_width="fill_parent" android:layout_height="@dimen/home_lock_cropview_top_margin">
             <TextView android:textSize="@dimen/wallpaper_preview_lock_title_textsize" android:layout_gravity="center_horizontal" android:id="@id/wallpaper_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallpaper_type_title_top_margin" android:text="@string/home_screen" android:textAllCaps="true" style="@style/WallpaperTypeTitle" />
         </FrameLayout>

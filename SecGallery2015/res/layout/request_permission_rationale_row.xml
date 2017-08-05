@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:id="@id/request_permission_rationale_image_layout" android:layout_width="@dimen/request_permission_rationale_popup_listview_row_img_layout_size" android:layout_height="@dimen/request_permission_rationale_popup_listview_row_height" android:layout_centerVertical="true">
-        <ImageView android:id="@id/request_permission_rationale_image" android:layout_width="@dimen/request_permission_rationale_popup_listview_row_img_size" android:layout_height="@dimen/request_permission_rationale_popup_listview_row_img_size" android:tint="@color/request_permission_rationale_popup_image_background_color" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
-    </RelativeLayout>
-    <TextView android:textSize="@dimen/request_permission_rationale_popup_listview_row_text_size" android:textColor="@color/dialog_content_text_color" android:gravity="center_vertical" android:id="@id/request_permission_rationale_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/request_permission_rationale_popup_listview_row_text_padding" android:layout_toEndOf="@id/request_permission_rationale_image_layout" />
-</RelativeLayout>

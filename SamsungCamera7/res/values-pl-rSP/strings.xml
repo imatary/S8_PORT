@@ -114,7 +114,7 @@
     <string name="R_3344x3344">1:1 (11 Mpx)</string>
     <string name="R_3456x3456">1:1 (12 Mpx)</string>
     <string name="R_3984x2988">4:3 (12 Mpx)</string>
-    <string name="R_4032x1960">18,5:9 (7,9 M)</string>
+    <string name="R_4032x1960">18,5:9 (7,9 Mpx)</string>
     <string name="R_4032x2268">16:9 (9,1 Mpx)</string>
     <string name="R_4032x3024">4:3 (12 Mpx)</string>
     <string name="R_4128x2322">16:9 (9,6 Mpx)</string>
@@ -305,6 +305,7 @@ ksztōłtu"</string>
     <string name="camera_label">Fotoaparat</string>
     <string name="camera_modes">Tryby fotoaparatu</string>
     <string name="camera_security_enter">Prŏwidła zabezpieczyń ôgraniczajōm użycie fotoaparatu.</string>
+    <string name="can_not_use_voice_control">Nie można używać sterowania głosem, gdy budzenie głosowe Bixby jest włączone.</string>
     <string name="cancel">Pociep</string>
     <string name="cannot_start_camcorder_msg">Niy idzie nagrywać video w czasie gŏdki</string>
     <string name="cannot_start_camera_msg">Niy do się używać aplikacyji Fotoaparat, kej gŏdŏsz</string>
@@ -601,6 +602,7 @@ Eli na to przizwŏlisz, take uprŏwniynie bydzie prziznane zdjyńciu tagu i pyta
     <string name="task_edge_title_selfie">"Złōnacz 
 selfie"</string>
     <string name="temperature">Ciepłota</string>
+    <string name="temperature_too_high_camera_off">Za srogŏ tympyratura, coby używać aplikacyji %1$s. Doczkej aż telefōn ôchłōdnie, nim użyjesz aplikacyji %2$s.</string>
     <string name="temperature_too_high_flash_off">Niy idzie załōnczyć blyndy. Sprōbuj jeszcze rŏz po ôstygniyńciu masziny.</string>
     <string name="temperature_too_high_record">Niy idzie nagrac filmu. Sprōbuj jeszcze rŏz, jak maszina ôchłōdnie.</string>
     <string name="temperature_too_high_recording_disable">Zatrzimano nagrywanie. Poradzisz kōntynuować nagrywanie po ôstygniyńciu masziny.</string>

@@ -179,7 +179,7 @@
 
     iput-object v3, v2, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList$AutoRejectAdapter$ViewHolder;->text:Landroid/widget/TextView;
 
-    const v3, 0x7f100262
+    const v3, 0x7f100263
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

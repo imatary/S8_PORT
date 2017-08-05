@@ -43,7 +43,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->mNeedShowBaseMenu:Z
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->access$602(Lcom/sec/android/app/camera/menu/ModeInfoListMenu;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu$MenuAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/ModeInfoListMenu$MenuAdapter;

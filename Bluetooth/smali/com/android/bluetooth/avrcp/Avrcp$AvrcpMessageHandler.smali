@@ -40,7 +40,7 @@
 
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
-    .locals 72
+    .locals 76
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
@@ -77,11 +77,11 @@
     :cond_0
     invoke-virtual/range {p1 .. p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
-    move-result-object v28
+    move-result-object v27
 
     const-string/jumbo v5, "BdAddress"
 
-    move-object/from16 v0, v28
+    move-object/from16 v0, v27
 
     invoke-virtual {v0, v5}, Landroid/os/Bundle;->getByteArray(Ljava/lang/String;)[B
 
@@ -89,15 +89,19 @@
 
     invoke-static {v6}, Lcom/android/bluetooth/Utils;->getAddressStringFromByte([B)Ljava/lang/String;
 
-    move-result-object v45
+    move-result-object v48
 
-    new-instance v52, Landroid/os/Bundle;
+    new-instance v54, Landroid/os/Bundle;
 
-    invoke-direct/range {v52 .. v52}, Landroid/os/Bundle;-><init>()V
+    invoke-direct/range {v54 .. v54}, Landroid/os/Bundle;-><init>()V
 
-    new-instance v44, Ljava/util/ArrayList;
+    new-instance v46, Ljava/util/ArrayList;
 
-    invoke-direct/range {v44 .. v44}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct/range {v46 .. v46}, Ljava/util/ArrayList;-><init>()V
+
+    const/16 v26, 0x0
+
+    const/16 v39, 0x0
 
     move-object/from16 v0, p1
 
@@ -107,7 +111,7 @@
 
     :cond_1
     :goto_0
-    if-nez v44, :cond_2
+    if-nez v46, :cond_2
 
     const-string/jumbo v5, "Avrcp"
 
@@ -181,7 +185,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v5
 
@@ -189,7 +193,7 @@
 
     invoke-virtual {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->obtainMessage(I)Landroid/os/Message;
 
-    move-result-object v48
+    move-result-object v50
 
     move-object/from16 v0, p0
 
@@ -215,19 +219,19 @@
 
     move-result-wide v12
 
-    invoke-static {v7, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-set12(Lcom/android/bluetooth/avrcp/Avrcp;J)J
+    invoke-static {v7, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-set13(Lcom/android/bluetooth/avrcp/Avrcp;J)J
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v5
 
     const-wide/16 v12, 0x5dc
 
-    move-object/from16 v0, v48
+    move-object/from16 v0, v50
 
     invoke-virtual {v5, v0, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
@@ -250,9 +254,9 @@
 
     invoke-virtual {v5}, Ljava/lang/Long;->longValue()J
 
-    move-result-wide v70
+    move-result-wide v74
 
-    move-wide/from16 v0, v70
+    move-wide/from16 v0, v74
 
     invoke-static {v7, v6, v12, v0, v1}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap44(Lcom/android/bluetooth/avrcp/Avrcp;[BIJ)V
 
@@ -299,13 +303,13 @@
 
     const/4 v12, 0x0
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
     invoke-virtual {v5, v0, v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->compareEventFlag(Ljava/lang/String;II)Ljava/util/ArrayList;
 
-    move-result-object v44
+    move-result-object v46
 
-    if-eqz v44, :cond_1
+    if-eqz v46, :cond_1
 
     move-object/from16 v0, p0
 
@@ -319,7 +323,7 @@
 
     const/4 v12, 0x1
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
     invoke-virtual {v5, v0, v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->setDeviceEvent(Ljava/util/ArrayList;II)V
 
@@ -344,7 +348,7 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get32(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get33(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
 
     move-result-object v7
 
@@ -352,7 +356,7 @@
 
     move-result-wide v12
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
     invoke-static {v5, v6, v0, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap36(Lcom/android/bluetooth/avrcp/Avrcp;[BLjava/util/ArrayList;J)V
 
@@ -377,7 +381,7 @@
 
     move-result-object v7
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -394,7 +398,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v5
 
@@ -423,7 +427,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v5
 
@@ -436,7 +440,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
     invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap42(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)V
 
@@ -452,13 +456,13 @@
 
     const/4 v12, 0x0
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
     invoke-virtual {v5, v0, v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->compareEventFlag(Ljava/lang/String;II)Ljava/util/ArrayList;
 
-    move-result-object v44
+    move-result-object v46
 
-    if-eqz v44, :cond_1
+    if-eqz v46, :cond_1
 
     move-object/from16 v0, p0
 
@@ -472,7 +476,7 @@
 
     const/4 v12, 0x1
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
     invoke-virtual {v5, v0, v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->setDeviceEvent(Ljava/util/ArrayList;II)V
 
@@ -499,15 +503,15 @@
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_b
-    const-wide/16 v58, 0x1
+    const-wide/16 v60, 0x1
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
-    move-wide/from16 v1, v58
+    move-wide/from16 v1, v60
 
     invoke-static {v5, v6, v0, v1, v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap36(Lcom/android/bluetooth/avrcp/Avrcp;[BLjava/util/ArrayList;J)V
 
@@ -515,7 +519,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v5
 
@@ -523,19 +527,19 @@
 
     invoke-virtual {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->obtainMessage(I)Landroid/os/Message;
 
-    move-result-object v49
+    move-result-object v52
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v5
 
     const-wide/16 v12, 0x12c
 
-    move-object/from16 v0, v49
+    move-object/from16 v0, v52
 
     invoke-virtual {v5, v0, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
@@ -550,7 +554,7 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get32(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get33(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
 
     move-result-object v7
 
@@ -558,7 +562,7 @@
 
     move-result-wide v12
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
     invoke-static {v5, v6, v0, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap36(Lcom/android/bluetooth/avrcp/Avrcp;[BLjava/util/ArrayList;J)V
 
@@ -573,13 +577,13 @@
 
     invoke-virtual {v5}, Lcom/samsung/bt/avrcp/BluetoothMediaBrowser;->getNowPlayingList()[J
 
-    move-result-object v46
+    move-result-object v49
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move-object/from16 v0, v46
+    move-object/from16 v0, v49
 
     invoke-virtual {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->checkNowPlayingList([J)Z
 
@@ -591,7 +595,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
     invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap42(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)V
 
@@ -607,13 +611,13 @@
 
     const/4 v12, 0x0
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
     invoke-virtual {v5, v0, v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->compareEventFlag(Ljava/lang/String;II)Ljava/util/ArrayList;
 
-    move-result-object v44
+    move-result-object v46
 
-    if-eqz v44, :cond_1
+    if-eqz v46, :cond_1
 
     move-object/from16 v0, p0
 
@@ -627,7 +631,7 @@
 
     const/4 v12, 0x1
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
     invoke-virtual {v5, v0, v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->setDeviceEvent(Ljava/util/ArrayList;II)V
 
@@ -654,15 +658,15 @@
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_d
-    const-wide/16 v58, 0x1
+    const-wide/16 v60, 0x1
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
-    move-wide/from16 v1, v58
+    move-wide/from16 v1, v60
 
     invoke-static {v5, v6, v0, v1, v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap36(Lcom/android/bluetooth/avrcp/Avrcp;[BLjava/util/ArrayList;J)V
 
@@ -670,7 +674,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v5
 
@@ -678,19 +682,19 @@
 
     invoke-virtual {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->obtainMessage(I)Landroid/os/Message;
 
-    move-result-object v49
+    move-result-object v52
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v5
 
     const-wide/16 v12, 0x12c
 
-    move-object/from16 v0, v49
+    move-object/from16 v0, v52
 
     invoke-virtual {v5, v0, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
@@ -705,7 +709,7 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get32(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get33(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
 
     move-result-object v7
 
@@ -713,14 +717,14 @@
 
     move-result-wide v12
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
     invoke-static {v5, v6, v0, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap36(Lcom/android/bluetooth/avrcp/Avrcp;[BLjava/util/ArrayList;J)V
 
     goto/16 :goto_0
 
     :sswitch_5
-    if-nez v45, :cond_f
+    if-nez v48, :cond_f
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
@@ -747,7 +751,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get34(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get35(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
 
     move-result-object v5
 
@@ -757,7 +761,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get34(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get35(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
 
     move-result-object v5
 
@@ -771,7 +775,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get34(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get35(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
 
     move-result-object v5
 
@@ -848,23 +852,23 @@
 
     invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v43
+    move-result-object v45
 
     :cond_11
     :goto_1
-    invoke-interface/range {v43 .. v43}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface/range {v45 .. v45}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v5
 
     if-eqz v5, :cond_13
 
-    invoke-interface/range {v43 .. v43}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface/range {v45 .. v45}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v42
+    move-result-object v44
 
-    check-cast v42, Landroid/media/browse/MediaBrowser$MediaItem;
+    check-cast v44, Landroid/media/browse/MediaBrowser$MediaItem;
 
-    invoke-virtual/range {v42 .. v42}, Landroid/media/browse/MediaBrowser$MediaItem;->getDescription()Landroid/media/MediaDescription;
+    invoke-virtual/range {v44 .. v44}, Landroid/media/browse/MediaBrowser$MediaItem;->getDescription()Landroid/media/MediaDescription;
 
     move-result-object v5
 
@@ -874,9 +878,9 @@
 
     invoke-interface {v5}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
-    move-result-object v67
+    move-result-object v71
 
-    invoke-virtual/range {v67 .. v67}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
+    invoke-virtual/range {v71 .. v71}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
     move-result-object v5
 
@@ -919,7 +923,7 @@
 
     move-result-object v5
 
-    move-object/from16 v0, v42
+    move-object/from16 v0, v44
 
     invoke-interface {v5, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -936,7 +940,7 @@
 
     invoke-interface {v5}, Ljava/util/List;->size()I
 
-    move-result v51
+    move-result v53
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
@@ -956,7 +960,7 @@
 
     move-result-object v7
 
-    move/from16 v0, v51
+    move/from16 v0, v53
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -977,7 +981,7 @@
 
     const/4 v12, 0x0
 
-    move/from16 v0, v51
+    move/from16 v0, v53
 
     invoke-static {v5, v6, v7, v12, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap13(Lcom/android/bluetooth/avrcp/Avrcp;[BBII)Z
 
@@ -985,7 +989,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get34(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get35(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
 
     move-result-object v5
 
@@ -995,7 +999,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap26(Lcom/android/bluetooth/avrcp/Avrcp;)V
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap27(Lcom/android/bluetooth/avrcp/Avrcp;)V
 
     goto/16 :goto_0
 
@@ -1011,7 +1015,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get34(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get35(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
 
     move-result-object v5
 
@@ -1021,7 +1025,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get34(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get35(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
 
     move-result-object v5
 
@@ -1049,7 +1053,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get34(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get35(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/Stack;
 
     move-result-object v5
 
@@ -1147,13 +1151,22 @@
 
     check-cast v22, Ljava/lang/String;
 
-    if-eqz v22, :cond_1c
+    if-nez v22, :cond_1a
 
+    const-string/jumbo v5, "Avrcp"
+
+    const-string/jumbo v7, "rc addr is null"
+
+    invoke-static {v5, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    :cond_1a
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get9(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/bluetooth/BluetoothAdapter;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get8(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object v5
 
@@ -1161,9 +1174,8 @@
 
     invoke-virtual {v5, v0}, Landroid/bluetooth/BluetoothAdapter;->getRemoteDevice(Ljava/lang/String;)Landroid/bluetooth/BluetoothDevice;
 
-    move-result-object v57
+    move-result-object v59
 
-    :goto_2
     const-string/jumbo v5, "Avrcp"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -1180,7 +1192,7 @@
 
     iget-object v12, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move-object/from16 v0, v57
+    move-object/from16 v0, v59
 
     invoke-virtual {v12, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
 
@@ -1210,16 +1222,13 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-eqz v57, :cond_1a
+    move-object/from16 v0, v46
 
-    move-object/from16 v0, v44
-
-    move-object/from16 v1, v57
+    move-object/from16 v1, v59
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    :cond_1a
-    if-eqz v44, :cond_1b
+    if-eqz v46, :cond_1b
 
     move-object/from16 v0, p0
 
@@ -1235,118 +1244,20 @@
 
     const/4 v12, 0x0
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
     invoke-virtual {v5, v0, v12, v7}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->setDeviceEvent(Ljava/util/ArrayList;II)V
 
     :cond_1b
-    new-instance v61, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v61 .. v61}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, p1
-
-    iget v5, v0, Landroid/os/Message;->arg1:I
-
-    invoke-static {v5}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
-
-    move-result-object v33
-
-    const-string/jumbo v5, "{"
-
-    move-object/from16 v0, v61
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v5, "\"FEATURE\":\""
-
-    move-object/from16 v0, v61
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-object/from16 v0, v61
-
-    move-object/from16 v1, v33
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    const-string/jumbo v7, "\","
-
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v5, "\"OUI\":\""
-
-    move-object/from16 v0, v61
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    if-eqz v22, :cond_1d
-
-    const/4 v5, 0x0
-
-    const/16 v7, 0x8
-
-    move-object/from16 v0, v22
-
-    invoke-virtual {v0, v5, v7}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v5
-
-    move-object/from16 v0, v61
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    const-string/jumbo v7, "\","
-
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    :goto_3
-    const-string/jumbo v5, "\"NAME\":\""
-
-    move-object/from16 v0, v61
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move-object/from16 v0, v57
+    move-object/from16 v0, v59
 
-    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap0(Lcom/android/bluetooth/avrcp/Avrcp;Landroid/bluetooth/BluetoothDevice;)Z
+    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap24(Lcom/android/bluetooth/avrcp/Avrcp;Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
 
-    move-result v5
-
-    if-nez v5, :cond_1f
-
-    invoke-virtual/range {v57 .. v57}, Landroid/bluetooth/BluetoothDevice;->getName()Ljava/lang/String;
-
-    move-result-object v50
-
-    if-eqz v50, :cond_1e
-
-    move-object/from16 v0, v61
-
-    move-object/from16 v1, v50
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    const-string/jumbo v7, "\""
-
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    :goto_4
-    const-string/jumbo v5, "}"
-
-    move-object/from16 v0, v61
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v30
 
     move-object/from16 v0, p0
 
@@ -1354,11 +1265,58 @@
 
     const-string/jumbo v7, "RCSF"
 
-    invoke-virtual/range {v61 .. v61}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-object/from16 v0, v30
+
+    invoke-virtual {v5, v7, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->sendBigdata(Ljava/lang/String;Ljava/lang/String;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get17(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/content/Context;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v5
+
+    const v7, 0x7f0a00e7
+
+    invoke-virtual {v5, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get17(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/content/Context;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v5
+
+    const v12, 0x7f0a00e9
+
+    invoke-virtual {v5, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v12
 
-    invoke-static {v5, v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap30(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;Ljava/lang/String;)V
+    move-object/from16 v0, p1
+
+    iget v5, v0, Landroid/os/Message;->arg1:I
+
+    and-int/lit8 v5, v5, 0x2
+
+    if-eqz v5, :cond_1c
+
+    const-string/jumbo v5, "1"
+
+    :goto_2
+    invoke-static {v7, v12, v5}, Lcom/android/bluetooth/Utils;->insertEventLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
@@ -1374,26 +1332,20 @@
 
     and-int/lit8 v5, v5, 0x4
 
-    if-eqz v5, :cond_20
+    if-eqz v5, :cond_1d
 
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    move-object/from16 v0, v22
-
-    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap16(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)[B
+    invoke-static/range {v22 .. v22}, Lcom/android/bluetooth/Utils;->getBytesFromAddress(Ljava/lang/String;)[B
 
     move-result-object v21
 
-    const/16 v34, 0x0
+    const/16 v36, 0x0
 
-    :goto_5
+    :goto_3
     const/4 v5, 0x6
 
-    move/from16 v0, v34
+    move/from16 v0, v36
 
-    if-ge v0, v5, :cond_20
+    if-ge v0, v5, :cond_1d
 
     move-object/from16 v0, p0
 
@@ -1403,52 +1355,117 @@
 
     move-result-object v5
 
-    aget-byte v7, v21, v34
+    aget-byte v7, v21, v36
 
-    aput-byte v7, v5, v34
+    aput-byte v7, v5, v36
 
-    add-int/lit8 v34, v34, 0x1
-
-    goto :goto_5
-
-    :cond_1c
-    const/16 v57, 0x0
-
-    goto/16 :goto_2
-
-    :cond_1d
-    const-string/jumbo v5, "\","
-
-    move-object/from16 v0, v61
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    add-int/lit8 v36, v36, 0x1
 
     goto :goto_3
 
+    :cond_1c
+    const-string/jumbo v5, "2"
+
+    goto :goto_2
+
+    :cond_1d
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v5
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get19(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/lang/String;
+
+    move-result-object v7
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x2
+
+    invoke-virtual {v5, v7, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->compareEventFlag(Ljava/lang/String;II)Ljava/util/ArrayList;
+
+    move-result-object v31
+
+    if-eqz v31, :cond_1e
+
+    invoke-virtual/range {v31 .. v31}, Ljava/util/ArrayList;->size()I
+
+    move-result v5
+
+    if-lez v5, :cond_1e
+
+    new-instance v40, Landroid/content/Intent;
+
+    const-string/jumbo v5, "com.samsung.bluetooth.a2dp.intent.action.AVRCP_CONNECTED_WITH_AVC"
+
+    move-object/from16 v0, v40
+
+    invoke-direct {v0, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get17(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/content/Context;
+
+    move-result-object v5
+
+    move-object/from16 v0, v40
+
+    invoke-virtual {v5, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+
     :cond_1e
-    const-string/jumbo v5, "\""
+    move-object/from16 v0, p0
 
-    move-object/from16 v0, v61
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap22(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/lang/String;
 
-    goto :goto_4
+    move-result-object v5
+
+    move-object/from16 v0, v22
+
+    invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1f
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get9(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/AudioManager;
+
+    move-result-object v5
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    move-object/from16 v0, v22
+
+    invoke-static {v7, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap2(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)Z
+
+    move-result v7
+
+    move-object/from16 v0, v22
+
+    invoke-virtual {v5, v0, v7}, Landroid/media/AudioManager;->avrcpSupportsAbsoluteVolume(Ljava/lang/String;Z)V
 
     :cond_1f
-    const-string/jumbo v5, "PersonalDevice\""
-
-    move-object/from16 v0, v61
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_4
-
-    :cond_20
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_21
+    if-eqz v5, :cond_1
 
     const-string/jumbo v5, "Avrcp"
 
@@ -1480,33 +1497,6 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_21
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get10(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/AudioManager;
-
-    move-result-object v5
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get19(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/lang/String;
-
-    move-result-object v7
-
-    move-object/from16 v0, p0
-
-    iget-object v12, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-virtual {v12}, Lcom/android/bluetooth/avrcp/Avrcp;->isAbsoluteVolumeSupported()Z
-
-    move-result v12
-
-    invoke-virtual {v5, v7, v12}, Landroid/media/AudioManager;->avrcpSupportsAbsoluteVolume(Ljava/lang/String;Z)V
-
     goto/16 :goto_0
 
     :sswitch_7
@@ -1514,7 +1504,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_22
+    if-eqz v5, :cond_20
 
     const-string/jumbo v5, "Avrcp"
 
@@ -1522,7 +1512,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_22
+    :cond_20
     const-wide/16 v8, 0x0
 
     const-wide/16 v10, 0x0
@@ -1535,11 +1525,11 @@
 
     move-result-wide v12
 
-    const-wide/16 v70, 0x0
+    const-wide/16 v74, 0x0
 
-    cmp-long v5, v12, v70
+    cmp-long v5, v12, v74
 
-    if-lez v5, :cond_23
+    if-lez v5, :cond_21
 
     move-object/from16 v0, p0
 
@@ -1553,17 +1543,17 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap24(Lcom/android/bluetooth/avrcp/Avrcp;)J
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap25(Lcom/android/bluetooth/avrcp/Avrcp;)J
 
     move-result-wide v10
 
     cmp-long v5, v10, v8
 
-    if-lez v5, :cond_23
+    if-lez v5, :cond_21
 
     move-wide v10, v8
 
-    :cond_23
+    :cond_21
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -1580,11 +1570,11 @@
 
     move-result v12
 
-    invoke-static {v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap17(Lcom/android/bluetooth/avrcp/Avrcp;I)I
+    invoke-static {v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap16(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
     move-result v7
 
-    invoke-static/range {v5 .. v11}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap2(Lcom/android/bluetooth/avrcp/Avrcp;[BIJJ)Z
+    invoke-static/range {v5 .. v11}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap1(Lcom/android/bluetooth/avrcp/Avrcp;[BIJJ)Z
 
     goto/16 :goto_0
 
@@ -1595,7 +1585,7 @@
 
     int-to-byte v0, v5
 
-    move/from16 v53, v0
+    move/from16 v55, v0
 
     move-object/from16 v0, p1
 
@@ -1609,7 +1599,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_24
+    if-eqz v5, :cond_22
 
     const-string/jumbo v5, "Avrcp"
 
@@ -1623,7 +1613,7 @@
 
     move-result-object v7
 
-    move/from16 v0, v53
+    move/from16 v0, v55
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1635,31 +1625,31 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_24
-    move/from16 v0, v53
+    :cond_22
+    move/from16 v0, v55
 
     new-array v0, v0, [I
 
     move-object/from16 v23, v0
 
-    move/from16 v0, v53
+    move/from16 v0, v55
 
     new-array v0, v0, [Ljava/lang/String;
 
-    move-object/from16 v66, v0
+    move-object/from16 v70, v0
 
-    const/16 v34, 0x0
+    const/16 v36, 0x0
 
-    :goto_6
-    move/from16 v0, v34
+    :goto_4
+    move/from16 v0, v36
 
-    move/from16 v1, v53
+    move/from16 v1, v55
 
-    if-ge v0, v1, :cond_25
+    if-ge v0, v1, :cond_23
 
     move-object/from16 v0, v24
 
-    move/from16 v1, v34
+    move/from16 v1, v36
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1671,36 +1661,36 @@
 
     move-result v5
 
-    aput v5, v23, v34
+    aput v5, v23, v36
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    aget v7, v23, v34
+    aget v7, v23, v36
 
     invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap23(Lcom/android/bluetooth/avrcp/Avrcp;I)Ljava/lang/String;
 
     move-result-object v5
 
-    aput-object v5, v66, v34
+    aput-object v5, v70, v36
 
-    add-int/lit8 v34, v34, 0x1
+    add-int/lit8 v36, v36, 0x1
 
-    goto :goto_6
+    goto :goto_4
 
-    :cond_25
+    :cond_23
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move/from16 v0, v53
+    move/from16 v0, v55
 
     move-object/from16 v1, v23
 
-    move-object/from16 v2, v66
+    move-object/from16 v2, v70
 
-    invoke-static {v5, v6, v0, v1, v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap1(Lcom/android/bluetooth/avrcp/Avrcp;[BB[I[Ljava/lang/String;)Z
+    invoke-static {v5, v6, v0, v1, v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap0(Lcom/android/bluetooth/avrcp/Avrcp;[BB[I[Ljava/lang/String;)Z
 
     goto/16 :goto_0
 
@@ -1709,7 +1699,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_26
+    if-eqz v5, :cond_24
 
     const-string/jumbo v5, "Avrcp"
 
@@ -1751,7 +1741,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_26
+    :cond_24
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -1773,7 +1763,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_27
+    if-eqz v5, :cond_25
 
     const-string/jumbo v5, "Avrcp"
 
@@ -1781,7 +1771,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_27
+    :cond_25
     move-object/from16 v0, p1
 
     iget-object v5, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -1808,9 +1798,9 @@
 
     invoke-virtual {v5, v0, v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->compareEventFlag(Ljava/lang/String;II)Ljava/util/ArrayList;
 
-    move-result-object v44
+    move-result-object v46
 
-    if-eqz v44, :cond_1
+    if-eqz v46, :cond_1
 
     move-object/from16 v0, p0
 
@@ -1824,7 +1814,7 @@
 
     const/4 v12, 0x1
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
     invoke-virtual {v5, v0, v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->setDeviceEvent(Ljava/util/ArrayList;II)V
 
@@ -1834,11 +1824,11 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap24(Lcom/android/bluetooth/avrcp/Avrcp;)J
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap25(Lcom/android/bluetooth/avrcp/Avrcp;)J
 
     move-result-wide v12
 
-    move-object/from16 v0, v52
+    move-object/from16 v0, v54
 
     invoke-virtual {v0, v5, v12, v13}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
@@ -1854,45 +1844,20 @@
 
     const/4 v12, 0x1
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
-    move-object/from16 v1, v52
+    move-object/from16 v1, v54
 
     invoke-virtual {v5, v0, v7, v12, v1}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->sendNotificationRsp(Ljava/util/ArrayList;IILandroid/os/Bundle;)V
 
     goto/16 :goto_0
 
     :sswitch_b
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-virtual {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->isAbsoluteVolumeSupported()Z
-
-    move-result v5
-
-    if-nez v5, :cond_28
-
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_1
-
-    const-string/jumbo v5, "Avrcp"
-
-    const-string/jumbo v7, "ignore MESSAGE_VOLUME_CHANGED"
-
-    invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto/16 :goto_0
-
-    :cond_28
-    invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_29
+    if-eqz v5, :cond_26
 
     const-string/jumbo v5, "Avrcp"
 
@@ -1938,8 +1903,8 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_29
-    const/16 v68, 0x0
+    :cond_26
+    const/16 v72, 0x0
 
     move-object/from16 v0, p1
 
@@ -1947,7 +1912,7 @@
 
     const/16 v7, 0x9
 
-    if-eq v5, v7, :cond_2a
+    if-eq v5, v7, :cond_27
 
     move-object/from16 v0, p1
 
@@ -1955,9 +1920,9 @@
 
     const/16 v7, 0xa
 
-    if-ne v5, v7, :cond_2c
+    if-ne v5, v7, :cond_29
 
-    :cond_2a
+    :cond_27
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -1966,7 +1931,7 @@
 
     move-result v5
 
-    if-nez v5, :cond_2b
+    if-nez v5, :cond_28
 
     move-object/from16 v0, p0
 
@@ -1976,7 +1941,7 @@
 
     move-result v5
 
-    if-nez v5, :cond_2b
+    if-nez v5, :cond_28
 
     const-string/jumbo v5, "Avrcp"
 
@@ -1986,7 +1951,7 @@
 
     goto/16 :goto_0
 
-    :cond_2b
+    :cond_28
     const/16 v5, 0x9
 
     move-object/from16 v0, p0
@@ -1999,15 +1964,7 @@
 
     invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get50(Lcom/android/bluetooth/avrcp/Avrcp;)Z
 
-    move-result v68
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    const/4 v7, 0x0
-
-    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set19(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+    move-result v72
 
     move-object/from16 v0, p0
 
@@ -2023,9 +1980,17 @@
 
     const/4 v7, 0x0
 
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set21(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    const/4 v7, 0x0
+
     invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set2(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
-    :cond_2c
+    :cond_29
     move-object/from16 v0, p1
 
     iget v5, v0, Landroid/os/Message;->arg1:I
@@ -2040,15 +2005,67 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5, v4}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap20(Lcom/android/bluetooth/avrcp/Avrcp;I)I
+    invoke-static {v5, v4}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap19(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
-    move-result v69
+    move-result v73
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    const/4 v7, 0x0
+
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set19(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+
+    move-object/from16 v0, p1
+
+    iget-object v5, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast v5, [B
+
+    invoke-static {v5}, Lcom/android/bluetooth/Utils;->getAddressStringFromByte([B)Ljava/lang/String;
+
+    move-result-object v62
+
+    if-eqz v62, :cond_32
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get8(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/bluetooth/BluetoothAdapter;
+
+    move-result-object v5
+
+    move-object/from16 v0, v62
+
+    invoke-virtual {v5, v0}, Landroid/bluetooth/BluetoothAdapter;->getRemoteDevice(Ljava/lang/String;)Landroid/bluetooth/BluetoothDevice;
+
+    move-result-object v63
+
+    :goto_5
+    if-eqz v63, :cond_2a
+
+    move-object/from16 v0, v46
+
+    move-object/from16 v1, v63
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_2a
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v5
+
+    const/16 v7, 0x8
+
+    move-object/from16 v0, v62
+
+    invoke-virtual {v5, v0, v7}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->getDeviceEvent(Ljava/lang/String;I)I
 
     move-result v5
 
@@ -2056,57 +2073,13 @@
 
     if-ne v5, v7, :cond_2e
 
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5, v4}, Lcom/android/bluetooth/avrcp/Avrcp;->-set5(Lcom/android/bluetooth/avrcp/Avrcp;I)I
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get8(Lcom/android/bluetooth/avrcp/Avrcp;)I
-
-    move-result v5
-
-    if-lez v5, :cond_2e
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get8(Lcom/android/bluetooth/avrcp/Avrcp;)I
-
-    move-result v5
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get11(Lcom/android/bluetooth/avrcp/Avrcp;)I
-
-    move-result v7
-
-    if-ge v5, v7, :cond_2e
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get8(Lcom/android/bluetooth/avrcp/Avrcp;)I
-
-    move-result v5
-
-    move/from16 v0, v69
-
-    if-le v0, v5, :cond_2e
+    if-eqz v46, :cond_2e
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_2d
+    if-eqz v5, :cond_2b
 
     const-string/jumbo v5, "Avrcp"
 
@@ -2114,33 +2087,13 @@
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v12, "remote inital volume too high "
+    const-string/jumbo v12, "set remote initial volume : "
 
     invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
-    move/from16 v0, v69
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v12, ">"
-
-    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    move-object/from16 v0, p0
-
-    iget-object v12, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-get8(Lcom/android/bluetooth/avrcp/Avrcp;)I
-
-    move-result v12
-
-    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
@@ -2150,12 +2103,134 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_2d
+    :cond_2b
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v5
+
+    const/16 v7, 0x8
+
+    move-object/from16 v0, v46
+
+    invoke-virtual {v5, v0, v7, v4}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->setDeviceEvent(Ljava/util/ArrayList;II)V
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v5
+
+    const/16 v7, 0x9
+
+    move-object/from16 v0, v62
+
+    invoke-virtual {v5, v0, v7}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->getDeviceEvent(Ljava/lang/String;I)I
+
+    move-result v5
+
+    if-eq v5, v4, :cond_2c
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v5
+
+    const/16 v7, 0x9
+
+    move-object/from16 v0, v46
+
+    invoke-virtual {v5, v0, v7, v4}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->setDeviceEvent(Ljava/util/ArrayList;II)V
+
+    :cond_2c
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    move-object/from16 v0, v62
+
+    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap2(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2d
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get12(Lcom/android/bluetooth/avrcp/Avrcp;)I
+
+    move-result v5
+
+    move/from16 v0, v73
+
+    if-gt v0, v5, :cond_2d
+
+    if-eqz v62, :cond_2d
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap22(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/lang/String;
+
+    move-result-object v5
+
+    move-object/from16 v0, v62
+
+    invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2d
+
+    const-string/jumbo v5, "Avrcp"
+
+    const-string/jumbo v7, "update initial local volume"
+
+    invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    move/from16 v0, v73
+
+    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap32(Lcom/android/bluetooth/avrcp/Avrcp;I)V
+
+    :cond_2d
+    if-eqz v62, :cond_2e
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap22(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/lang/String;
+
+    move-result-object v5
+
+    move-object/from16 v0, v62
+
+    invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2e
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get9(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/AudioManager;
 
     move-result-object v5
 
@@ -2163,66 +2238,71 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get8(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    move-object/from16 v0, v62
+
+    invoke-static {v7, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap2(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)Z
 
     move-result v7
 
-    const/16 v12, 0x8
+    move-object/from16 v0, v62
 
-    const/4 v13, 0x0
-
-    invoke-virtual {v5, v12, v7, v13}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->obtainMessage(III)Landroid/os/Message;
-
-    move-result-object v47
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
-
-    move-result-object v5
-
-    move-object/from16 v0, v47
-
-    invoke-virtual {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->sendMessage(Landroid/os/Message;)Z
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5, v4}, Lcom/android/bluetooth/avrcp/Avrcp;->-set13(Lcom/android/bluetooth/avrcp/Avrcp;I)I
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    move/from16 v0, v69
-
-    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-set10(Lcom/android/bluetooth/avrcp/Avrcp;I)I
-
-    goto/16 :goto_0
+    invoke-virtual {v5, v0, v7}, Landroid/media/AudioManager;->avrcpSupportsAbsoluteVolume(Ljava/lang/String;Z)V
 
     :cond_2e
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get28(Lcom/android/bluetooth/avrcp/Avrcp;)I
-
-    move-result v5
-
-    move/from16 v0, v69
-
-    if-eq v5, v0, :cond_35
+    iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
     move-object/from16 v0, p1
 
-    iget v5, v0, Landroid/os/Message;->arg2:I
+    iget-object v5, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    const/16 v7, 0x9
+    check-cast v5, [B
 
-    if-eq v5, v7, :cond_2f
+    invoke-static {v5}, Lcom/android/bluetooth/Utils;->getAddressStringFromByte([B)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v7, v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap2(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_33
+
+    invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2f
+
+    const-string/jumbo v5, "Avrcp"
+
+    const-string/jumbo v7, "ignore MESSAGE_VOLUME_CHANGED"
+
+    invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2f
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get17(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/content/Context;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v5
+
+    const-string/jumbo v7, "bluetooth_avc_mode"
+
+    const/4 v12, 0x1
+
+    invoke-static {v5, v7, v12}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v5
+
+    if-nez v5, :cond_1
 
     move-object/from16 v0, p1
 
@@ -2230,28 +2310,295 @@
 
     const/16 v7, 0xd
 
-    if-ne v5, v7, :cond_34
+    if-eq v5, v7, :cond_30
 
-    :cond_2f
-    move-object/from16 v0, p0
+    move-object/from16 v0, p1
 
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+    iget v5, v0, Landroid/os/Message;->arg2:I
 
-    move/from16 v0, v69
+    const/16 v7, 0xf
 
-    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-set10(Lcom/android/bluetooth/avrcp/Avrcp;I)I
+    if-ne v5, v7, :cond_1
 
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get26(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    :cond_30
+    invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    const/4 v7, -0x1
+    if-eqz v5, :cond_31
 
-    if-eq v5, v7, :cond_31
+    const-string/jumbo v5, "Avrcp"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v12, "ignore MESSAGE_VOLUME_CHANGED and just update remote volume : "
+
+    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_31
+    if-eqz v46, :cond_1
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v5
+
+    const/16 v7, 0x9
+
+    move-object/from16 v0, v62
+
+    invoke-virtual {v5, v0, v7}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->getDeviceEvent(Ljava/lang/String;I)I
+
+    move-result v5
+
+    if-eq v5, v4, :cond_1
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v5
+
+    const/16 v7, 0x9
+
+    move-object/from16 v0, v46
+
+    invoke-virtual {v5, v0, v7, v4}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->setDeviceEvent(Ljava/util/ArrayList;II)V
+
+    goto/16 :goto_0
+
+    :cond_32
+    const/16 v63, 0x0
+
+    goto/16 :goto_5
+
+    :cond_33
+    move-object/from16 v0, p1
+
+    iget v5, v0, Landroid/os/Message;->arg2:I
+
+    const/16 v7, 0xd
+
+    if-eq v5, v7, :cond_34
+
+    move-object/from16 v0, p1
+
+    iget v5, v0, Landroid/os/Message;->arg2:I
+
+    const/16 v7, 0xf
+
+    if-ne v5, v7, :cond_36
+
+    :cond_34
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get12(Lcom/android/bluetooth/avrcp/Avrcp;)I
+
+    move-result v5
+
+    move/from16 v0, v73
+
+    if-le v0, v5, :cond_36
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get9(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/AudioManager;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/media/AudioManager;->isSafeMediaVolumeStateActive()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_36
+
+    const-string/jumbo v5, "Avrcp"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v12, "reset volume to "
+
+    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)I
+
+    move-result v12
+
+    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string/jumbo v12, " from "
+
+    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    move/from16 v0, v73
+
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+
+    move-result-object v5
+
+    const/4 v7, 0x7
+
+    invoke-virtual {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->removeMessages(I)V
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+
+    move-result-object v5
+
+    const/16 v7, 0x8
+
+    invoke-virtual {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->removeMessages(I)V
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+
+    move-result-object v7
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)I
+
+    move-result v5
+
+    const/4 v12, -0x1
+
+    if-eq v5, v12, :cond_35
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)I
+
+    move-result v5
+
+    :goto_6
+    const/16 v12, 0x8
+
+    const/4 v13, 0x0
+
+    invoke-virtual {v7, v12, v5, v13}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->obtainMessage(III)Landroid/os/Message;
+
+    move-result-object v51
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+
+    move-result-object v5
+
+    move-object/from16 v0, v51
+
+    invoke-virtual {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->sendMessage(Landroid/os/Message;)Z
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    const/4 v7, 0x0
+
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set5(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+
+    move-object/from16 v0, p1
+
+    iget v5, v0, Landroid/os/Message;->arg2:I
+
+    const/16 v7, 0xd
+
+    if-ne v5, v7, :cond_1
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    move/from16 v0, v73
+
+    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap32(Lcom/android/bluetooth/avrcp/Avrcp;I)V
+
+    goto/16 :goto_0
+
+    :cond_35
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get12(Lcom/android/bluetooth/avrcp/Avrcp;)I
+
+    move-result v5
+
+    goto :goto_6
+
+    :cond_36
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)I
+
+    move-result v5
+
+    move/from16 v0, v73
+
+    if-eq v5, v0, :cond_3f
 
     move-object/from16 v0, p1
 
@@ -2259,25 +2606,64 @@
 
     const/16 v7, 0x9
 
-    if-ne v5, v7, :cond_31
+    if-eq v5, v7, :cond_37
+
+    move-object/from16 v0, p1
+
+    iget v5, v0, Landroid/os/Message;->arg2:I
+
+    const/16 v7, 0xd
+
+    if-ne v5, v7, :cond_3e
+
+    :cond_37
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    move/from16 v0, v73
+
+    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-set10(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get26(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get27(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
     move-result v5
 
-    move/from16 v0, v69
+    const/4 v7, -0x1
 
-    if-eq v5, v0, :cond_31
+    if-eq v5, v7, :cond_40
+
+    move-object/from16 v0, p1
+
+    iget v5, v0, Landroid/os/Message;->arg2:I
+
+    const/16 v7, 0x9
+
+    if-ne v5, v7, :cond_40
+
+    const/16 v66, 0x0
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get27(Lcom/android/bluetooth/avrcp/Avrcp;)I
+
+    move-result v5
+
+    move/from16 v0, v73
+
+    if-eq v5, v0, :cond_3a
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_30
+    if-eqz v5, :cond_38
 
     const-string/jumbo v5, "Avrcp"
 
@@ -2295,7 +2681,7 @@
 
     iget-object v12, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-get26(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-get27(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
     move-result v12
 
@@ -2309,7 +2695,7 @@
 
     move-result-object v7
 
-    move/from16 v0, v69
+    move/from16 v0, v73
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2321,7 +2707,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_30
+    :cond_38
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -2330,90 +2716,37 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get28(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
     move-result v7
 
     invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set7(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
-    :cond_31
-    if-eqz v68, :cond_33
-
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get52(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/HashMap;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get28(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
-    move-result-object v7
+    move-result v5
 
-    monitor-enter v7
-
-    :try_start_0
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get52(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/HashMap;
-
-    move-result-object v5
-
-    invoke-static/range {v69 .. v69}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v12
-
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v13
-
-    invoke-virtual {v5, v12, v13}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    if-eq v5, v4, :cond_3a
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_32
+    if-eqz v5, :cond_39
 
     const-string/jumbo v5, "Avrcp"
 
-    new-instance v12, Ljava/lang/StringBuilder;
+    const-string/jumbo v7, "update local volume"
 
-    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const-string/jumbo v13, "remember volume mapping "
+    :cond_39
+    const/16 v66, 0x1
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    move/from16 v0, v69
-
-    invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    const-string/jumbo v13, "-"
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-static {v5, v12}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    :cond_32
-    monitor-exit v7
-
-    :cond_33
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -2422,27 +2755,91 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get28(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
     move-result v7
 
     invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap32(Lcom/android/bluetooth/avrcp/Avrcp;I)V
 
+    :cond_3a
+    if-nez v66, :cond_3b
+
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5, v4}, Lcom/android/bluetooth/avrcp/Avrcp;->-set13(Lcom/android/bluetooth/avrcp/Avrcp;I)I
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Z
 
+    move-result v5
+
+    if-eqz v5, :cond_3b
+
+    const-string/jumbo v5, "Avrcp"
+
+    const-string/jumbo v7, "update local volume related to ear shock"
+
+    invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)I
+
+    move-result v7
+
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap32(Lcom/android/bluetooth/avrcp/Avrcp;I)V
+
+    :cond_3b
+    :goto_7
+    if-eqz v46, :cond_3c
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v5
+
+    const/16 v7, 0x9
+
+    move-object/from16 v0, v62
+
+    invoke-virtual {v5, v0, v7}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->getDeviceEvent(Ljava/lang/String;I)I
+
+    move-result v5
+
+    if-eq v5, v4, :cond_3c
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v5
+
+    const/16 v7, 0x9
+
+    move-object/from16 v0, v46
+
+    invoke-virtual {v5, v0, v7, v4}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->setDeviceEvent(Ljava/util/ArrayList;II)V
+
+    :cond_3c
     int-to-long v12, v4
 
-    const-wide/16 v70, 0x64
+    const-wide/16 v74, 0x64
 
-    mul-long v12, v12, v70
+    mul-long v12, v12, v74
 
-    const-wide/16 v70, 0x7f
+    const-wide/16 v74, 0x7f
 
-    div-long v54, v12, v70
+    div-long v56, v12, v74
 
     const-string/jumbo v5, "Avrcp"
 
@@ -2456,15 +2853,63 @@
 
     move-result-object v7
 
-    move-wide/from16 v0, v54
+    move-wide/from16 v0, v56
 
     invoke-virtual {v7, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
-    const-string/jumbo v12, "%"
+    const-string/jumbo v12, "%, mLocalVolume: "
 
     invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)I
+
+    move-result v12
+
+    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string/jumbo v12, ", remoteVolume: "
+
+    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v13
+
+    const/16 v74, 0x9
+
+    move-object/from16 v0, v62
+
+    move/from16 v1, v74
+
+    invoke-virtual {v13, v0, v1}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->getDeviceEvent(Ljava/lang/String;I)I
+
+    move-result v13
+
+    invoke-static {v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap19(Lcom/android/bluetooth/avrcp/Avrcp;I)I
+
+    move-result v12
+
+    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
@@ -2472,27 +2917,37 @@
 
     move-result-object v7
 
-    invoke-static {v5, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_3d
+    :goto_8
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    const/4 v7, 0x0
+
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set5(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
 
     goto/16 :goto_0
 
-    :cond_34
+    :cond_3e
     move-object/from16 v0, p1
 
     iget v5, v0, Landroid/os/Message;->arg2:I
 
     const/16 v7, 0xf
 
-    if-eq v5, v7, :cond_2f
+    if-eq v5, v7, :cond_37
 
-    :cond_35
+    :cond_3f
     move-object/from16 v0, p1
 
     iget v5, v0, Landroid/os/Message;->arg2:I
 
     const/16 v7, 0xa
 
-    if-ne v5, v7, :cond_36
+    if-ne v5, v7, :cond_42
 
     const-string/jumbo v5, "Avrcp"
 
@@ -2500,39 +2955,56 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto/16 :goto_0
+    goto :goto_8
 
-    :catchall_0
-    move-exception v5
-
-    monitor-exit v7
-
-    throw v5
-
-    :cond_36
-    if-eqz v68, :cond_1
+    :cond_40
+    if-eqz v62, :cond_41
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get27(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap22(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/lang/String;
+
+    move-result-object v5
+
+    move-object/from16 v0, v62
+
+    invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
-    if-lez v5, :cond_1
+    if-eqz v5, :cond_41
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get27(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    move-object/from16 v0, p0
 
-    move-result v5
+    iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    const/16 v7, 0x7f
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
-    if-ge v5, v7, :cond_1
+    move-result v7
+
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap32(Lcom/android/bluetooth/avrcp/Avrcp;I)V
+
+    goto/16 :goto_7
+
+    :cond_41
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    const/4 v7, 0x1
+
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set19(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+
+    goto/16 :goto_7
+
+    :cond_42
+    if-eqz v72, :cond_3d
 
     move-object/from16 v0, p0
 
@@ -2542,9 +3014,31 @@
 
     move-result v5
 
-    move/from16 v0, v69
+    if-lez v5, :cond_3d
 
-    if-ne v5, v0, :cond_1
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get28(Lcom/android/bluetooth/avrcp/Avrcp;)I
+
+    move-result v5
+
+    const/16 v7, 0x7f
+
+    if-ge v5, v7, :cond_3d
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)I
+
+    move-result v5
+
+    move/from16 v0, v73
+
+    if-ne v5, v0, :cond_3d
 
     move-object/from16 v0, p1
 
@@ -2552,13 +3046,13 @@
 
     const/16 v7, 0x9
 
-    if-ne v5, v7, :cond_1
+    if-ne v5, v7, :cond_3d
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_37
+    if-eqz v5, :cond_43
 
     const-string/jumbo v5, "Avrcp"
 
@@ -2566,12 +3060,12 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_37
+    :cond_43
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get27(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get28(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
     move-result v5
 
@@ -2579,7 +3073,7 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get25(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get26(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
     move-result v7
 
@@ -2595,25 +3089,37 @@
 
     invoke-static {v7, v5}, Ljava/lang/Math;->min(II)I
 
-    move-result v60
+    move-result v65
+
+    move-object/from16 v0, p1
+
+    iget-object v0, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    move-object/from16 v26, v0
+
+    check-cast v26, [B
+
+    if-eqz v26, :cond_3d
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move/from16 v0, v60
+    move-object/from16 v0, v26
 
-    invoke-static {v5, v6, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap15(Lcom/android/bluetooth/avrcp/Avrcp;[BI)Z
+    move/from16 v1, v65
+
+    invoke-static {v5, v0, v1}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap15(Lcom/android/bluetooth/avrcp/Avrcp;[BI)Z
 
     move-result v5
 
-    if-eqz v5, :cond_1
+    if-eqz v5, :cond_3d
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move/from16 v0, v60
+    move/from16 v0, v65
 
     invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-set9(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
@@ -2637,20 +3143,47 @@
 
     const/4 v7, 0x1
 
-    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set19(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set20(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
 
-    goto/16 :goto_0
+    goto/16 :goto_8
 
     :sswitch_c
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-virtual {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->isAbsoluteVolumeSupported()Z
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap22(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/lang/String;
+
+    move-result-object v48
+
+    if-nez v48, :cond_44
+
+    invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-nez v5, :cond_38
+    if-eqz v5, :cond_1
+
+    const-string/jumbo v5, "Avrcp"
+
+    const-string/jumbo v7, "No available connected device."
+
+    invoke-static {v5, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    :cond_44
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    move-object/from16 v0, v48
+
+    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap2(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_45
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
@@ -2666,13 +3199,7 @@
 
     goto/16 :goto_0
 
-    :cond_38
-    invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_39
-
+    :cond_45
     const-string/jumbo v5, "Avrcp"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -2699,7 +3226,6 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_39
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -2708,7 +3234,7 @@
 
     move-result v5
 
-    if-nez v5, :cond_3a
+    if-nez v5, :cond_46
 
     move-object/from16 v0, p0
 
@@ -2718,9 +3244,9 @@
 
     move-result v5
 
-    if-eqz v5, :cond_3b
+    if-eqz v5, :cond_47
 
-    :cond_3a
+    :cond_46
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
@@ -2735,18 +3261,26 @@
 
     goto/16 :goto_0
 
-    :cond_3b
+    :cond_47
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v5
+
+    const/16 v7, 0x8
+
+    move-object/from16 v0, v48
+
+    invoke-virtual {v5, v0, v7}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->getDeviceEvent(Ljava/lang/String;I)I
 
     move-result v5
 
     const/4 v7, -0x1
 
-    if-ne v5, v7, :cond_3c
+    if-ne v5, v7, :cond_48
 
     const-string/jumbo v5, "Avrcp"
 
@@ -2760,7 +3294,7 @@
 
     move-result-object v7
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2782,24 +3316,32 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
-    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap25(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)V
+    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap26(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
-    :cond_3c
+    :cond_48
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get38(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v5
+
+    const/16 v7, 0x9
+
+    move-object/from16 v0, v48
+
+    invoke-virtual {v5, v0, v7}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->getDeviceEvent(Ljava/lang/String;I)I
 
     move-result v5
 
     const/4 v7, -0x1
 
-    if-eq v5, v7, :cond_46
+    if-eq v5, v7, :cond_50
 
     move-object/from16 v0, p1
 
@@ -2807,7 +3349,7 @@
 
     const/4 v7, -0x1
 
-    if-eq v5, v7, :cond_3d
+    if-eq v5, v7, :cond_49
 
     move-object/from16 v0, p1
 
@@ -2815,210 +3357,143 @@
 
     const/4 v7, 0x1
 
-    if-ne v5, v7, :cond_46
+    if-ne v5, v7, :cond_50
 
-    :cond_3d
-    const/16 v62, -0x1
-
-    const/16 v65, -0x1
+    :cond_49
+    const/16 v47, -0x1
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get28(Lcom/android/bluetooth/avrcp/Avrcp;)I
-
-    move-result v5
-
-    if-nez v5, :cond_3e
-
-    move-object/from16 v0, p1
-
-    iget v5, v0, Landroid/os/Message;->arg1:I
-
-    const/4 v7, -0x1
-
-    if-ne v5, v7, :cond_3e
-
-    invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    const-string/jumbo v5, "Avrcp"
-
-    const-string/jumbo v7, "No need to Vol down from 0."
-
-    invoke-static {v5, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto/16 :goto_0
-
-    :cond_3e
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get28(Lcom/android/bluetooth/avrcp/Avrcp;)I
-
-    move-result v5
 
     move-object/from16 v0, p0
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get11(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v7
+
+    const/16 v12, 0x9
+
+    move-object/from16 v0, v48
+
+    invoke-virtual {v7, v0, v12}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->getDeviceEvent(Ljava/lang/String;I)I
 
     move-result v7
 
-    if-ne v5, v7, :cond_3f
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap19(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
-    move-object/from16 v0, p1
+    move-result v64
 
-    iget v5, v0, Landroid/os/Message;->arg1:I
-
-    const/4 v7, 0x1
-
-    if-ne v5, v7, :cond_3f
-
-    invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    const-string/jumbo v5, "Avrcp"
-
-    const-string/jumbo v7, "No need to Vol up from max."
-
-    invoke-static {v5, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto/16 :goto_0
-
-    :cond_3f
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get28(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get25(Lcom/android/bluetooth/avrcp/Avrcp;)Z
 
     move-result v5
 
-    move-object/from16 v0, p1
+    if-eqz v5, :cond_4c
 
-    iget v7, v0, Landroid/os/Message;->arg1:I
-
-    add-int v65, v5, v7
-
-    invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_40
-
-    const-string/jumbo v5, "Avrcp"
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "Adjusting volume to  "
-
-    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    move/from16 v0, v65
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_40
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get52(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/HashMap;
-
-    move-result-object v7
-
-    monitor-enter v7
-
-    :try_start_1
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get52(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/HashMap;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get9(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/AudioManager;
 
     move-result-object v5
 
-    invoke-static/range {v65 .. v65}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/4 v7, 0x3
 
-    move-result-object v12
+    invoke-virtual {v5, v7}, Landroid/media/AudioManager;->semGetFineVolume(I)I
 
-    invoke-virtual {v5, v12}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    move-result v47
 
-    move-result-object v35
+    :goto_9
+    move-object/from16 v0, p0
 
-    check-cast v35, Ljava/lang/Integer;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    monitor-exit v7
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get12(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
-    if-eqz v35, :cond_43
+    move-result v5
 
-    invoke-virtual/range {v35 .. v35}, Ljava/lang/Integer;->byteValue()B
+    move/from16 v0, v47
 
-    move-result v62
+    if-le v0, v5, :cond_4a
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get38(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get9(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/AudioManager;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/media/AudioManager;->isSafeMediaVolumeStateActive()Z
 
     move-result v5
 
-    move/from16 v0, v62
+    if-nez v5, :cond_4b
 
-    if-ne v0, v5, :cond_42
+    :cond_4a
+    move/from16 v0, v64
 
-    invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
+    move/from16 v1, v47
 
-    move-result v5
+    if-ne v0, v1, :cond_4d
 
-    if-eqz v5, :cond_41
-
+    :cond_4b
     const-string/jumbo v5, "Avrcp"
 
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v12, "got same volume from mapping for "
+    const-string/jumbo v12, "local volume: "
 
     invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
-    move/from16 v0, v65
+    move/from16 v0, v47
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
-    const-string/jumbo v12, ", ignore."
+    const-string/jumbo v12, ", remote volume: "
 
     invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    move/from16 v0, v64
+
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string/jumbo v12, ", SafeVolumeState: "
+
+    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-get9(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/AudioManager;
+
+    move-result-object v12
+
+    invoke-virtual {v12}, Landroid/media/AudioManager;->isSafeMediaVolumeStateActive()Z
+
+    move-result v12
+
+    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
@@ -3026,74 +3501,41 @@
 
     move-result-object v7
 
-    invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_41
-    const/16 v62, -0x1
+    goto/16 :goto_0
 
-    :cond_42
-    invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
+    :cond_4c
+    move-object/from16 v0, p0
 
-    move-result v5
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    if-eqz v5, :cond_43
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get9(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/AudioManager;
 
-    const-string/jumbo v5, "Avrcp"
+    move-result-object v5
 
-    new-instance v7, Ljava/lang/StringBuilder;
+    const/4 v7, 0x3
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v5, v7}, Landroid/media/AudioManager;->getStreamVolume(I)I
 
-    const-string/jumbo v12, "set volume from mapping "
+    move-result v47
 
-    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto :goto_9
 
-    move-result-object v7
-
-    move/from16 v0, v65
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v12, "-"
-
-    invoke-virtual {v7, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    move/from16 v0, v62
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_43
-    const/4 v5, -0x1
-
-    move/from16 v0, v62
-
-    if-ne v0, v5, :cond_44
-
+    :cond_4d
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
     const/4 v7, 0x0
 
-    move/from16 v0, v65
+    move/from16 v0, v47
 
     invoke-static {v7, v0}, Ljava/lang/Math;->max(II)I
 
     move-result v7
 
-    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap21(Lcom/android/bluetooth/avrcp/Avrcp;I)I
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap20(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
     move-result v5
 
@@ -3101,13 +3543,13 @@
 
     invoke-static {v7, v5}, Ljava/lang/Math;->min(II)I
 
-    move-result v62
+    move-result v67
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_44
+    if-eqz v5, :cond_4e
 
     const-string/jumbo v5, "Avrcp"
 
@@ -3121,7 +3563,7 @@
 
     move-result-object v7
 
-    move/from16 v0, v65
+    move/from16 v0, v47
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3133,7 +3575,7 @@
 
     move-result-object v7
 
-    move/from16 v0, v62
+    move/from16 v0, v67
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3145,18 +3587,26 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_44
+    :cond_4e
+    invoke-static/range {v48 .. v48}, Lcom/android/bluetooth/Utils;->getBytesFromAddress(Ljava/lang/String;)[B
+
+    move-result-object v26
+
+    if-eqz v26, :cond_4f
+
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move/from16 v0, v62
+    move-object/from16 v0, v26
 
-    invoke-static {v5, v6, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap15(Lcom/android/bluetooth/avrcp/Avrcp;[BI)Z
+    move/from16 v1, v67
+
+    invoke-static {v5, v0, v1}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap15(Lcom/android/bluetooth/avrcp/Avrcp;[BI)Z
 
     move-result v5
 
-    if-eqz v5, :cond_45
+    if-eqz v5, :cond_4f
 
     const/16 v5, 0x9
 
@@ -3178,7 +3628,7 @@
 
     const/4 v7, 0x1
 
-    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set19(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set20(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
 
     move-object/from16 v0, p0
 
@@ -3194,7 +3644,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move/from16 v0, v62
+    move/from16 v0, v67
 
     invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-set9(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
@@ -3202,20 +3652,13 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move/from16 v0, v65
+    move/from16 v0, v47
 
     invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-set7(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
     goto/16 :goto_0
 
-    :catchall_1
-    move-exception v5
-
-    monitor-exit v7
-
-    throw v5
-
-    :cond_45
+    :cond_4f
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
@@ -3230,7 +3673,7 @@
 
     goto/16 :goto_0
 
-    :cond_46
+    :cond_50
     const-string/jumbo v5, "Avrcp"
 
     const-string/jumbo v7, "Unknown direction in MESSAGE_ADJUST_VOLUME"
@@ -3244,11 +3687,38 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-virtual {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->isAbsoluteVolumeSupported()Z
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap22(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/lang/String;
+
+    move-result-object v48
+
+    if-nez v48, :cond_51
+
+    invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-nez v5, :cond_47
+    if-eqz v5, :cond_1
+
+    const-string/jumbo v5, "Avrcp"
+
+    const-string/jumbo v7, "No available connected device."
+
+    invoke-static {v5, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    :cond_51
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    move-object/from16 v0, v48
+
+    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap2(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_52
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
@@ -3264,12 +3734,12 @@
 
     goto/16 :goto_0
 
-    :cond_47
+    :cond_52
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_48
+    if-eqz v5, :cond_53
 
     const-string/jumbo v5, "Avrcp"
 
@@ -3277,7 +3747,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_48
+    :cond_53
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -3286,7 +3756,7 @@
 
     move-result v5
 
-    if-nez v5, :cond_49
+    if-nez v5, :cond_54
 
     move-object/from16 v0, p0
 
@@ -3296,9 +3766,9 @@
 
     move-result v5
 
-    if-eqz v5, :cond_4a
+    if-eqz v5, :cond_55
 
-    :cond_49
+    :cond_54
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
@@ -3313,24 +3783,32 @@
 
     goto/16 :goto_0
 
-    :cond_4a
+    :cond_55
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get22(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
+
+    move-result-object v5
+
+    const/16 v7, 0x8
+
+    move-object/from16 v0, v48
+
+    invoke-virtual {v5, v0, v7}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->getDeviceEvent(Ljava/lang/String;I)I
 
     move-result v5
 
     const/4 v7, -0x1
 
-    if-ne v5, v7, :cond_4c
+    if-ne v5, v7, :cond_57
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_4b
+    if-eqz v5, :cond_56
 
     const-string/jumbo v5, "Avrcp"
 
@@ -3344,7 +3822,7 @@
 
     move-result-object v7
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3362,18 +3840,18 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_4b
+    :cond_56
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
-    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap25(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)V
+    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap26(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
-    :cond_4c
+    :cond_57
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -3382,7 +3860,7 @@
 
     iget v7, v0, Landroid/os/Message;->arg1:I
 
-    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap21(Lcom/android/bluetooth/avrcp/Avrcp;I)I
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap20(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
     move-result v25
 
@@ -3404,7 +3882,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_4d
+    if-eqz v5, :cond_58
 
     const-string/jumbo v5, "Avrcp"
 
@@ -3444,18 +3922,26 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_4d
+    :cond_58
+    invoke-static/range {v48 .. v48}, Lcom/android/bluetooth/Utils;->getBytesFromAddress(Ljava/lang/String;)[B
+
+    move-result-object v26
+
+    if-eqz v26, :cond_59
+
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move/from16 v0, v25
+    move-object/from16 v0, v26
 
-    invoke-static {v5, v6, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap15(Lcom/android/bluetooth/avrcp/Avrcp;[BI)Z
+    move/from16 v1, v25
+
+    invoke-static {v5, v0, v1}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap15(Lcom/android/bluetooth/avrcp/Avrcp;[BI)Z
 
     move-result v5
 
-    if-eqz v5, :cond_4e
+    if-eqz v5, :cond_59
 
     const/16 v5, 0x9
 
@@ -3477,7 +3963,7 @@
 
     const/4 v7, 0x1
 
-    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set20(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set21(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
 
     move-object/from16 v0, p0
 
@@ -3499,7 +3985,7 @@
 
     goto/16 :goto_0
 
-    :cond_4e
+    :cond_59
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
@@ -3519,7 +4005,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_4f
+    if-eqz v5, :cond_5a
 
     const-string/jumbo v5, "Avrcp"
 
@@ -3527,15 +4013,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_4f
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    const/4 v7, 0x0
-
-    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set19(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
-
+    :cond_5a
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -3548,13 +4026,54 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
+    const/4 v7, 0x0
+
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set21(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    const/4 v7, 0x0
+
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set5(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap22(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/lang/String;
+
+    move-result-object v48
+
+    if-nez v48, :cond_5b
+
+    invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    const-string/jumbo v5, "Avrcp"
+
+    const-string/jumbo v7, "No available connected device."
+
+    invoke-static {v5, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    :cond_5b
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
     invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get7(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
     move-result v5
 
     const/4 v7, 0x3
 
-    if-lt v5, v7, :cond_50
+    if-lt v5, v7, :cond_5c
 
     move-object/from16 v0, p0
 
@@ -3568,13 +4087,13 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
-    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap25(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)V
+    invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap26(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
-    :cond_50
+    :cond_5c
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -3587,6 +4106,12 @@
 
     invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set2(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
+    invoke-static/range {v48 .. v48}, Lcom/android/bluetooth/Utils;->getBytesFromAddress(Ljava/lang/String;)[B
+
+    move-result-object v26
+
+    if-eqz v26, :cond_1
+
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -3595,11 +4120,13 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get27(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get28(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
     move-result v7
 
-    invoke-static {v5, v6, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap15(Lcom/android/bluetooth/avrcp/Avrcp;[BI)Z
+    move-object/from16 v0, v26
+
+    invoke-static {v5, v0, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap15(Lcom/android/bluetooth/avrcp/Avrcp;[BI)Z
 
     move-result v5
 
@@ -3625,22 +4152,22 @@
 
     const/4 v7, 0x1
 
-    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set20(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set21(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
 
     goto/16 :goto_0
 
     :sswitch_f
-    const/16 v64, 0x0
+    const/16 v69, 0x0
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
-    if-nez v5, :cond_51
+    if-nez v5, :cond_5d
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
@@ -3656,14 +4183,14 @@
 
     goto/16 :goto_0
 
-    :cond_51
+    :cond_5d
     move-object/from16 v0, p1
 
     iget v5, v0, Landroid/os/Message;->what:I
 
     const/16 v7, 0x12d
 
-    if-eq v5, v7, :cond_52
+    if-eq v5, v7, :cond_5e
 
     move-object/from16 v0, p1
 
@@ -3671,16 +4198,16 @@
 
     const/16 v7, 0x12e
 
-    if-ne v5, v7, :cond_5c
+    if-ne v5, v7, :cond_68
 
-    :cond_52
+    :cond_5e
     const/16 v5, 0x12d
 
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v5}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->removeMessages(I)V
 
-    const/16 v63, 0x7d0
+    const/16 v68, 0x7d0
 
     move-object/from16 v0, p0
 
@@ -3690,7 +4217,7 @@
 
     move-result-object v5
 
-    if-eqz v5, :cond_54
+    if-eqz v5, :cond_60
 
     move-object/from16 v0, p0
 
@@ -3702,9 +4229,9 @@
 
     iget-boolean v5, v5, Lcom/android/bluetooth/avrcp/Avrcp$SupportActionState;->ff:Z
 
-    if-eqz v5, :cond_54
+    if-eqz v5, :cond_60
 
-    const/16 v64, 0x1
+    const/16 v69, 0x1
 
     move-object/from16 v0, p1
 
@@ -3712,18 +4239,18 @@
 
     const/4 v7, 0x1
 
-    if-ne v5, v7, :cond_58
+    if-ne v5, v7, :cond_64
 
-    const/16 v41, 0x0
+    const/16 v43, 0x0
 
-    :goto_7
-    new-instance v40, Landroid/view/KeyEvent;
+    :goto_a
+    new-instance v42, Landroid/view/KeyEvent;
 
     const/16 v5, 0x5a
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v42
 
-    move/from16 v1, v41
+    move/from16 v1, v43
 
     invoke-direct {v0, v1, v5}, Landroid/view/KeyEvent;-><init>(II)V
 
@@ -3733,13 +4260,13 @@
 
     const/4 v7, 0x1
 
-    if-ne v5, v7, :cond_59
+    if-ne v5, v7, :cond_65
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_53
+    if-eqz v5, :cond_5f
 
     const-string/jumbo v5, "Avrcp"
 
@@ -3747,7 +4274,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_53
+    :cond_5f
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -3756,22 +4283,22 @@
 
     invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set17(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
 
-    :goto_8
+    :goto_b
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v42
 
     invoke-virtual {v5, v0}, Landroid/media/session/MediaController;->dispatchMediaButtonEvent(Landroid/view/KeyEvent;)Z
 
-    :cond_54
-    :goto_9
-    if-eqz v64, :cond_1
+    :cond_60
+    :goto_c
+    if-eqz v69, :cond_1
 
     const/16 v5, 0xc
 
@@ -3781,7 +4308,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_55
+    if-eqz v5, :cond_61
 
     move-object/from16 v0, p0
 
@@ -3791,9 +4318,9 @@
 
     move-result v5
 
-    move/from16 v0, v63
+    move/from16 v0, v68
 
-    if-eq v0, v5, :cond_55
+    if-eq v0, v5, :cond_61
 
     const-string/jumbo v5, "Avrcp"
 
@@ -3825,7 +4352,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_55
+    :cond_61
     const/16 v5, 0xc
 
     move-object/from16 v0, p0
@@ -3834,7 +4361,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_56
+    if-eqz v5, :cond_62
 
     move-object/from16 v0, p0
 
@@ -3844,11 +4371,11 @@
 
     move-result v5
 
-    move/from16 v0, v63
+    move/from16 v0, v68
 
-    if-eq v0, v5, :cond_57
+    if-eq v0, v5, :cond_63
 
-    :cond_56
+    :cond_62
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -3859,7 +4386,7 @@
 
     invoke-static {v5, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-set16(Lcom/android/bluetooth/avrcp/Avrcp;J)J
 
-    :cond_57
+    :cond_63
     const/16 v5, 0xc
 
     move-object/from16 v0, p0
@@ -3872,13 +4399,13 @@
 
     const/4 v7, 0x1
 
-    if-ne v5, v7, :cond_62
+    if-ne v5, v7, :cond_6e
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    move/from16 v0, v63
+    move/from16 v0, v68
 
     invoke-static {v5, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-set15(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
@@ -3900,17 +4427,17 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap22(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap21(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
     move-result v7
 
     int-to-long v0, v7
 
-    move-wide/from16 v70, v0
+    move-wide/from16 v74, v0
 
-    mul-long v12, v12, v70
+    mul-long v12, v12, v74
 
-    invoke-static {v5, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap28(Lcom/android/bluetooth/avrcp/Avrcp;J)V
+    invoke-static {v5, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap29(Lcom/android/bluetooth/avrcp/Avrcp;J)V
 
     const/16 v5, 0xc
 
@@ -3918,11 +4445,11 @@
 
     invoke-virtual {v0, v5}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->obtainMessage(I)Landroid/os/Message;
 
-    move-result-object v56
+    move-result-object v58
 
     const/4 v5, 0x1
 
-    move-object/from16 v0, v56
+    move-object/from16 v0, v58
 
     iput v5, v0, Landroid/os/Message;->arg1:I
 
@@ -3930,29 +4457,29 @@
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v56
+    move-object/from16 v1, v58
 
     invoke-virtual {v0, v1, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     goto/16 :goto_0
 
-    :cond_58
-    const/16 v41, 0x1
+    :cond_64
+    const/16 v43, 0x1
 
-    goto/16 :goto_7
+    goto/16 :goto_a
 
-    :cond_59
+    :cond_65
     move-object/from16 v0, p1
 
     iget v5, v0, Landroid/os/Message;->arg1:I
 
-    if-nez v5, :cond_5b
+    if-nez v5, :cond_67
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_5a
+    if-eqz v5, :cond_66
 
     const-string/jumbo v5, "Avrcp"
 
@@ -3960,7 +4487,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_5a
+    :cond_66
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -3977,25 +4504,25 @@
 
     invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set18(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
 
-    goto/16 :goto_8
+    goto/16 :goto_b
 
-    :cond_5b
+    :cond_67
     const-string/jumbo v5, "Avrcp"
 
     const-string/jumbo v7, "key state error"
 
     invoke-static {v5, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto/16 :goto_8
+    goto/16 :goto_b
 
-    :cond_5c
+    :cond_68
     const/16 v5, 0x12f
 
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v5}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->removeMessages(I)V
 
-    const/16 v63, -0x7d0
+    const/16 v68, -0x7d0
 
     move-object/from16 v0, p0
 
@@ -4005,7 +4532,7 @@
 
     move-result-object v5
 
-    if-eqz v5, :cond_54
+    if-eqz v5, :cond_60
 
     move-object/from16 v0, p0
 
@@ -4017,9 +4544,9 @@
 
     iget-boolean v5, v5, Lcom/android/bluetooth/avrcp/Avrcp$SupportActionState;->rew:Z
 
-    if-eqz v5, :cond_54
+    if-eqz v5, :cond_60
 
-    const/16 v64, 0x1
+    const/16 v69, 0x1
 
     move-object/from16 v0, p1
 
@@ -4027,18 +4554,18 @@
 
     const/4 v7, 0x1
 
-    if-ne v5, v7, :cond_5e
+    if-ne v5, v7, :cond_6a
 
-    const/16 v41, 0x0
+    const/16 v43, 0x0
 
-    :goto_a
-    new-instance v40, Landroid/view/KeyEvent;
+    :goto_d
+    new-instance v42, Landroid/view/KeyEvent;
 
     const/16 v5, 0x59
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v42
 
-    move/from16 v1, v41
+    move/from16 v1, v43
 
     invoke-direct {v0, v1, v5}, Landroid/view/KeyEvent;-><init>(II)V
 
@@ -4048,13 +4575,13 @@
 
     const/4 v7, 0x1
 
-    if-ne v5, v7, :cond_5f
+    if-ne v5, v7, :cond_6b
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_5d
+    if-eqz v5, :cond_69
 
     const-string/jumbo v5, "Avrcp"
 
@@ -4062,7 +4589,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_5d
+    :cond_69
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -4071,38 +4598,38 @@
 
     invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set18(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
 
-    :goto_b
+    :goto_e
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v42
 
     invoke-virtual {v5, v0}, Landroid/media/session/MediaController;->dispatchMediaButtonEvent(Landroid/view/KeyEvent;)Z
 
-    goto/16 :goto_9
+    goto/16 :goto_c
 
-    :cond_5e
-    const/16 v41, 0x1
+    :cond_6a
+    const/16 v43, 0x1
 
-    goto :goto_a
+    goto :goto_d
 
-    :cond_5f
+    :cond_6b
     move-object/from16 v0, p1
 
     iget v5, v0, Landroid/os/Message;->arg1:I
 
-    if-nez v5, :cond_61
+    if-nez v5, :cond_6d
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_60
+    if-eqz v5, :cond_6c
 
     const-string/jumbo v5, "Avrcp"
 
@@ -4110,7 +4637,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_60
+    :cond_6c
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -4127,18 +4654,18 @@
 
     invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set17(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
 
-    goto :goto_b
+    goto :goto_e
 
-    :cond_61
+    :cond_6d
     const-string/jumbo v5, "Avrcp"
 
     const-string/jumbo v7, "key state error"
 
     invoke-static {v5, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_b
+    goto :goto_e
 
-    :cond_62
+    :cond_6e
     move-object/from16 v0, p1
 
     iget v5, v0, Landroid/os/Message;->arg1:I
@@ -4149,13 +4676,13 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get36(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get37(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
     move-result v5
 
     const/16 v7, 0xff
 
-    if-eq v5, v7, :cond_63
+    if-eq v5, v7, :cond_6f
 
     move-object/from16 v0, p0
 
@@ -4165,7 +4692,7 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get36(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get37(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
     move-result v7
 
@@ -4173,7 +4700,7 @@
 
     iget-object v12, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap24(Lcom/android/bluetooth/avrcp/Avrcp;)J
+    invoke-static {v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap25(Lcom/android/bluetooth/avrcp/Avrcp;)J
 
     move-result-wide v12
 
@@ -4181,7 +4708,7 @@
 
     goto/16 :goto_0
 
-    :cond_63
+    :cond_6f
     const-string/jumbo v5, "Avrcp"
 
     const-string/jumbo v7, "Key release state error : changed PLAYSTATE_PLAYING"
@@ -4196,7 +4723,7 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap24(Lcom/android/bluetooth/avrcp/Avrcp;)J
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap25(Lcom/android/bluetooth/avrcp/Avrcp;)J
 
     move-result-wide v12
 
@@ -4211,11 +4738,11 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
-    if-nez v5, :cond_64
+    if-nez v5, :cond_70
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
@@ -4231,10 +4758,10 @@
 
     goto/16 :goto_0
 
-    :cond_64
-    new-instance v29, Landroid/os/Bundle;
+    :cond_70
+    new-instance v34, Landroid/os/Bundle;
 
-    invoke-direct/range {v29 .. v29}, Landroid/os/Bundle;-><init>()V
+    invoke-direct/range {v34 .. v34}, Landroid/os/Bundle;-><init>()V
 
     const-string/jumbo v7, "repeat"
 
@@ -4248,7 +4775,7 @@
 
     move-result v5
 
-    move-object/from16 v0, v29
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v7, v5}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -4266,11 +4793,11 @@
 
     move-result v12
 
-    invoke-static {v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap19(Lcom/android/bluetooth/avrcp/Avrcp;I)I
+    invoke-static {v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap18(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
     move-result v7
 
-    move-object/from16 v0, v29
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v5, v7}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -4278,7 +4805,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
@@ -4288,7 +4815,7 @@
 
     const-string/jumbo v7, "com.samsung.android.bt.AVRCP"
 
-    move-object/from16 v0, v29
+    move-object/from16 v0, v34
 
     invoke-virtual {v5, v7, v0}, Landroid/media/session/MediaController$TransportControls;->sendCustomAction(Ljava/lang/String;Landroid/os/Bundle;)V
 
@@ -4299,11 +4826,11 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
-    if-nez v5, :cond_65
+    if-nez v5, :cond_71
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
@@ -4319,10 +4846,10 @@
 
     goto/16 :goto_0
 
-    :cond_65
-    new-instance v32, Landroid/os/Bundle;
+    :cond_71
+    new-instance v35, Landroid/os/Bundle;
 
-    invoke-direct/range {v32 .. v32}, Landroid/os/Bundle;-><init>()V
+    invoke-direct/range {v35 .. v35}, Landroid/os/Bundle;-><init>()V
 
     const-string/jumbo v5, "repeat"
 
@@ -4338,11 +4865,11 @@
 
     move-result v12
 
-    invoke-static {v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap18(Lcom/android/bluetooth/avrcp/Avrcp;I)I
+    invoke-static {v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap17(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
     move-result v7
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v35
 
     invoke-virtual {v0, v5, v7}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -4358,7 +4885,7 @@
 
     move-result v5
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v35
 
     invoke-virtual {v0, v7, v5}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
@@ -4366,7 +4893,7 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
@@ -4376,7 +4903,7 @@
 
     const-string/jumbo v7, "com.samsung.android.bt.AVRCP"
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v35
 
     invoke-virtual {v5, v7, v0}, Landroid/media/session/MediaController$TransportControls;->sendCustomAction(Ljava/lang/String;Landroid/os/Bundle;)V
 
@@ -4393,7 +4920,7 @@
 
     check-cast v5, Landroid/os/Bundle;
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
     invoke-static {v7, v0, v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap40(Lcom/android/bluetooth/avrcp/Avrcp;Ljava/lang/String;Landroid/os/Bundle;)V
 
@@ -4404,7 +4931,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_66
+    if-eqz v5, :cond_72
 
     const-string/jumbo v5, "Avrcp"
 
@@ -4432,16 +4959,16 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_66
+    :cond_72
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
-    if-nez v5, :cond_67
+    if-nez v5, :cond_73
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
@@ -4457,7 +4984,7 @@
 
     goto/16 :goto_0
 
-    :cond_67
+    :cond_73
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -4466,15 +4993,15 @@
 
     move-result v5
 
-    if-eqz v5, :cond_69
+    if-eqz v5, :cond_75
 
-    new-instance v40, Landroid/view/KeyEvent;
+    new-instance v42, Landroid/view/KeyEvent;
 
     const/4 v5, 0x0
 
     const/16 v7, 0x5a
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v42
 
     invoke-direct {v0, v5, v7}, Landroid/view/KeyEvent;-><init>(II)V
 
@@ -4482,16 +5009,16 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v42
 
     invoke-virtual {v5, v0}, Landroid/media/session/MediaController;->dispatchMediaButtonEvent(Landroid/view/KeyEvent;)Z
 
-    :cond_68
-    :goto_c
+    :cond_74
+    :goto_f
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -4510,17 +5037,17 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap22(Lcom/android/bluetooth/avrcp/Avrcp;)I
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap21(Lcom/android/bluetooth/avrcp/Avrcp;)I
 
     move-result v7
 
     int-to-long v0, v7
 
-    move-wide/from16 v70, v0
+    move-wide/from16 v74, v0
 
-    mul-long v12, v12, v70
+    mul-long v12, v12, v74
 
-    invoke-static {v5, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap28(Lcom/android/bluetooth/avrcp/Avrcp;J)V
+    invoke-static {v5, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap29(Lcom/android/bluetooth/avrcp/Avrcp;J)V
 
     move-object/from16 v0, p1
 
@@ -4530,7 +5057,7 @@
 
     const/16 v7, 0x4e20
 
-    if-ge v5, v7, :cond_6a
+    if-ge v5, v7, :cond_76
 
     const/16 v5, 0xc
 
@@ -4538,7 +5065,7 @@
 
     invoke-virtual {v0, v5}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->obtainMessage(I)Landroid/os/Message;
 
-    move-result-object v56
+    move-result-object v58
 
     move-object/from16 v0, p1
 
@@ -4546,7 +5073,7 @@
 
     add-int/lit8 v5, v5, 0x1
 
-    move-object/from16 v0, v56
+    move-object/from16 v0, v58
 
     iput v5, v0, Landroid/os/Message;->arg1:I
 
@@ -4554,13 +5081,13 @@
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v56
+    move-object/from16 v1, v58
 
     invoke-virtual {v0, v1, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     goto/16 :goto_0
 
-    :cond_69
+    :cond_75
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -4569,15 +5096,15 @@
 
     move-result v5
 
-    if-eqz v5, :cond_68
+    if-eqz v5, :cond_74
 
-    new-instance v40, Landroid/view/KeyEvent;
+    new-instance v42, Landroid/view/KeyEvent;
 
     const/4 v5, 0x0
 
     const/16 v7, 0x59
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v42
 
     invoke-direct {v0, v5, v7}, Landroid/view/KeyEvent;-><init>(II)V
 
@@ -4585,22 +5112,22 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v42
 
     invoke-virtual {v5, v0}, Landroid/media/session/MediaController;->dispatchMediaButtonEvent(Landroid/view/KeyEvent;)Z
 
-    goto :goto_c
+    goto :goto_f
 
-    :cond_6a
+    :cond_76
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_6b
+    if-eqz v5, :cond_77
 
     const-string/jumbo v5, "Avrcp"
 
@@ -4608,7 +5135,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_6b
+    :cond_77
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -4617,15 +5144,15 @@
 
     move-result v5
 
-    if-eqz v5, :cond_6d
+    if-eqz v5, :cond_79
 
-    new-instance v40, Landroid/view/KeyEvent;
+    new-instance v42, Landroid/view/KeyEvent;
 
     const/4 v5, 0x1
 
     const/16 v7, 0x5a
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v42
 
     invoke-direct {v0, v5, v7}, Landroid/view/KeyEvent;-><init>(II)V
 
@@ -4633,16 +5160,16 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v42
 
     invoke-virtual {v5, v0}, Landroid/media/session/MediaController;->dispatchMediaButtonEvent(Landroid/view/KeyEvent;)Z
 
-    :cond_6c
-    :goto_d
+    :cond_78
+    :goto_10
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -4661,7 +5188,7 @@
 
     goto/16 :goto_0
 
-    :cond_6d
+    :cond_79
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -4670,15 +5197,15 @@
 
     move-result v5
 
-    if-eqz v5, :cond_6c
+    if-eqz v5, :cond_78
 
-    new-instance v40, Landroid/view/KeyEvent;
+    new-instance v42, Landroid/view/KeyEvent;
 
     const/4 v5, 0x1
 
     const/16 v7, 0x59
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v42
 
     invoke-direct {v0, v5, v7}, Landroid/view/KeyEvent;-><init>(II)V
 
@@ -4686,22 +5213,22 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get29(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/session/MediaController;
 
     move-result-object v5
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v42
 
     invoke-virtual {v5, v0}, Landroid/media/session/MediaController;->dispatchMediaButtonEvent(Landroid/view/KeyEvent;)Z
 
-    goto :goto_d
+    goto :goto_10
 
     :sswitch_14
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
 
-    if-eqz v5, :cond_6e
+    if-eqz v5, :cond_7a
 
     const-string/jumbo v5, "Avrcp"
 
@@ -4729,7 +5256,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_6e
+    :cond_7a
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -4738,7 +5265,7 @@
 
     move-result-object v5
 
-    if-nez v5, :cond_6f
+    if-nez v5, :cond_7b
 
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
@@ -4754,28 +5281,51 @@
 
     goto/16 :goto_0
 
-    :cond_6f
+    :cond_7b
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get12(Lcom/android/bluetooth/avrcp/Avrcp;)Z
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get10(Lcom/android/bluetooth/avrcp/Avrcp;)Z
 
     move-result v5
 
-    if-eqz v5, :cond_70
+    if-eqz v5, :cond_7d
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get31(Lcom/android/bluetooth/avrcp/Avrcp;)Z
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get32(Lcom/android/bluetooth/avrcp/Avrcp;)Z
 
     move-result v5
 
-    if-eqz v5, :cond_71
+    if-nez v5, :cond_7c
 
-    :cond_70
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get9(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/media/AudioManager;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/media/AudioManager;->isMusicActive()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_7e
+
+    :cond_7c
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
+
+    const/4 v7, 0x1
+
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set11(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+
+    :cond_7d
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -4788,7 +5338,7 @@
 
     goto/16 :goto_0
 
-    :cond_71
+    :cond_7e
     invoke-static {}, Lcom/android/bluetooth/avrcp/Avrcp;->-get0()Z
 
     move-result v5
@@ -4804,11 +5354,11 @@
     goto/16 :goto_0
 
     :sswitch_15
-    new-instance v38, Landroid/content/Intent;
+    new-instance v40, Landroid/content/Intent;
 
     const-string/jumbo v5, "com.samsung.musicplus.intent.action.PLAY_CONTENTS"
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v40
 
     invoke-direct {v0, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -4816,7 +5366,7 @@
 
     sget-object v7, Landroid/provider/MediaStore$Audio$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v40
 
     invoke-virtual {v0, v5, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
@@ -4828,7 +5378,7 @@
 
     check-cast v5, [J
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v40
 
     invoke-virtual {v0, v7, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[J)Landroid/content/Intent;
 
@@ -4838,7 +5388,7 @@
 
     move-result v7
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v40
 
     invoke-virtual {v0, v5, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -4850,7 +5400,7 @@
 
     move-result-object v5
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v40
 
     invoke-virtual {v5, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
@@ -4860,7 +5410,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_72
+    if-eqz v5, :cond_7f
 
     invoke-static {}, Lcom/android/bluetooth/Utils;->getBtEnabledContainers()Ljava/util/List;
 
@@ -4868,20 +5418,20 @@
 
     invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v37
+    move-result-object v38
 
-    :goto_e
-    invoke-interface/range {v37 .. v37}, Ljava/util/Iterator;->hasNext()Z
+    :goto_11
+    invoke-interface/range {v38 .. v38}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v5
 
-    if-eqz v5, :cond_72
+    if-eqz v5, :cond_7f
 
-    invoke-interface/range {v37 .. v37}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface/range {v38 .. v38}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v36
+    move-result-object v37
 
-    check-cast v36, Ljava/lang/Integer;
+    check-cast v37, Ljava/lang/Integer;
 
     move-object/from16 v0, p0
 
@@ -4893,19 +5443,19 @@
 
     new-instance v7, Landroid/os/UserHandle;
 
-    invoke-virtual/range {v36 .. v36}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual/range {v37 .. v37}, Ljava/lang/Integer;->intValue()I
 
     move-result v12
 
     invoke-direct {v7, v12}, Landroid/os/UserHandle;-><init>(I)V
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v40
 
     invoke-virtual {v5, v0, v7}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    goto :goto_e
+    goto :goto_11
 
-    :cond_72
+    :cond_7f
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -4924,7 +5474,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_73
+    if-eqz v5, :cond_80
 
     const/16 v5, 0xd2
 
@@ -4932,12 +5482,12 @@
 
     invoke-virtual {v0, v5}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->removeMessages(I)V
 
-    :cond_73
+    :cond_80
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v5
 
@@ -4945,19 +5495,19 @@
 
     invoke-virtual {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->obtainMessage(I)Landroid/os/Message;
 
-    move-result-object v48
+    move-result-object v50
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v5
 
     const-wide/16 v12, 0xbb8
 
-    move-object/from16 v0, v48
+    move-object/from16 v0, v50
 
     invoke-virtual {v5, v0, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
@@ -4968,7 +5518,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_74
+    if-eqz v5, :cond_81
 
     const-string/jumbo v5, "Avrcp"
 
@@ -4976,7 +5526,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_74
+    :cond_81
     move-object/from16 v0, p0
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -5000,7 +5550,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_75
+    if-eqz v5, :cond_82
 
     const-string/jumbo v5, "Avrcp"
 
@@ -5008,12 +5558,12 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_75
+    :cond_82
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get33(Lcom/android/bluetooth/avrcp/Avrcp;)Z
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get34(Lcom/android/bluetooth/avrcp/Avrcp;)Z
 
     move-result v5
 
@@ -5025,7 +5575,7 @@
 
     const/4 v7, 0x0
 
-    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set11(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
+    invoke-static {v5, v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-set12(Lcom/android/bluetooth/avrcp/Avrcp;Z)Z
 
     move-object/from16 v0, p0
 
@@ -5047,7 +5597,7 @@
 
     const/4 v7, 0x2
 
-    if-eq v5, v7, :cond_76
+    if-eq v5, v7, :cond_83
 
     move-object/from16 v0, p0
 
@@ -5061,12 +5611,12 @@
 
     if-ne v5, v7, :cond_1
 
-    :cond_76
+    :cond_83
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get37(Lcom/android/bluetooth/avrcp/Avrcp;)Z
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get38(Lcom/android/bluetooth/avrcp/Avrcp;)Z
 
     move-result v5
 
@@ -5076,7 +5626,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_77
+    if-eqz v5, :cond_84
 
     const-string/jumbo v5, "Avrcp"
 
@@ -5084,7 +5634,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_77
+    :cond_84
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -5110,13 +5660,13 @@
 
     const/4 v12, 0x0
 
-    move-object/from16 v0, v45
+    move-object/from16 v0, v48
 
     invoke-virtual {v5, v0, v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->compareEventFlag(Ljava/lang/String;II)Ljava/util/ArrayList;
 
-    move-result-object v44
+    move-result-object v46
 
-    if-eqz v44, :cond_1
+    if-eqz v46, :cond_1
 
     move-object/from16 v0, p0
 
@@ -5130,7 +5680,7 @@
 
     const/4 v12, 0x1
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
     invoke-virtual {v5, v0, v7, v12}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->setDeviceEvent(Ljava/util/ArrayList;II)V
 
@@ -5138,7 +5688,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_78
+    if-eqz v5, :cond_85
 
     const-string/jumbo v5, "Avrcp"
 
@@ -5146,7 +5696,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_78
+    :cond_85
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -5155,7 +5705,7 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get32(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get33(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
 
     move-result-object v7
 
@@ -5163,7 +5713,7 @@
 
     move-result-wide v12
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v46
 
     invoke-static {v5, v6, v0, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap36(Lcom/android/bluetooth/avrcp/Avrcp;[BLjava/util/ArrayList;J)V
 
@@ -5189,7 +5739,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_79
+    if-eqz v5, :cond_86
 
     const-string/jumbo v5, "Avrcp"
 
@@ -5197,7 +5747,7 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_79
+    :cond_86
     const/16 v5, 0xd2
 
     move-object/from16 v0, p0
@@ -5206,7 +5756,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_7a
+    if-eqz v5, :cond_87
 
     const/16 v5, 0xd2
 
@@ -5214,10 +5764,10 @@
 
     invoke-virtual {v0, v5}, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->removeMessages(I)V
 
-    :cond_7a
+    :cond_87
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
-    move-result-wide v26
+    move-result-wide v28
 
     move-object/from16 v0, p0
 
@@ -5227,7 +5777,7 @@
 
     move-result-wide v12
 
-    sub-long v30, v26, v12
+    sub-long v32, v28, v12
 
     move-object/from16 v0, p0
 
@@ -5237,13 +5787,13 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get35(Lcom/android/bluetooth/avrcp/Avrcp;)J
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get36(Lcom/android/bluetooth/avrcp/Avrcp;)J
 
     move-result-wide v12
 
-    add-long v12, v12, v30
+    add-long v12, v12, v32
 
-    invoke-static {v5, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-set12(Lcom/android/bluetooth/avrcp/Avrcp;J)J
+    invoke-static {v5, v12, v13}, Lcom/android/bluetooth/avrcp/Avrcp;->-set13(Lcom/android/bluetooth/avrcp/Avrcp;J)J
 
     move-object/from16 v0, p0
 
@@ -5253,7 +5803,7 @@
 
     iget-object v7, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get35(Lcom/android/bluetooth/avrcp/Avrcp;)J
+    invoke-static {v7}, Lcom/android/bluetooth/avrcp/Avrcp;->-get36(Lcom/android/bluetooth/avrcp/Avrcp;)J
 
     move-result-wide v12
 
@@ -5268,23 +5818,23 @@
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/ArrayList;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get31(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/ArrayList;
 
     move-result-object v5
 
-    if-eqz v5, :cond_7b
+    if-eqz v5, :cond_88
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get30(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/ArrayList;
+    invoke-static {v5}, Lcom/android/bluetooth/avrcp/Avrcp;->-get31(Lcom/android/bluetooth/avrcp/Avrcp;)Ljava/util/ArrayList;
 
     move-result-object v5
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
-    :cond_7b
+    :cond_88
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
@@ -5302,7 +5852,7 @@
     :sswitch_1c
     const-string/jumbo v5, "Start"
 
-    move-object/from16 v0, v28
+    move-object/from16 v0, v27
 
     invoke-virtual {v0, v5}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
 
@@ -5310,7 +5860,7 @@
 
     const-string/jumbo v5, "End"
 
-    move-object/from16 v0, v28
+    move-object/from16 v0, v27
 
     invoke-virtual {v0, v5}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
 
@@ -5318,7 +5868,7 @@
 
     const-string/jumbo v5, "FolderItems"
 
-    move-object/from16 v0, v28
+    move-object/from16 v0, v27
 
     invoke-virtual {v0, v5}, Landroid/os/Bundle;->getByteArray(Ljava/lang/String;)[B
 
@@ -5332,7 +5882,7 @@
 
     move-object v13, v6
 
-    invoke-static/range {v12 .. v19}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap29(Lcom/android/bluetooth/avrcp/Avrcp;[BJJ[BZ)V
+    invoke-static/range {v12 .. v19}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap30(Lcom/android/bluetooth/avrcp/Avrcp;[BJJ[BZ)V
 
     goto/16 :goto_0
 
@@ -5341,7 +5891,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_7c
+    if-eqz v5, :cond_89
 
     const-string/jumbo v5, "Avrcp"
 
@@ -5349,8 +5899,8 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_7c
-    const/16 v39, 0x1
+    :cond_89
+    const/16 v41, 0x1
 
     move-object/from16 v0, p0
 
@@ -5372,7 +5922,7 @@
 
     move-result v12
 
-    move/from16 v0, v39
+    move/from16 v0, v41
 
     invoke-static {v5, v7, v12, v0}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap31(Lcom/android/bluetooth/avrcp/Avrcp;[BIZ)V
 

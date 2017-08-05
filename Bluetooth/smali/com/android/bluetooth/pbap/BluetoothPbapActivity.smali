@@ -140,7 +140,7 @@
 
     aput-object v1, v0, v2
 
-    const v1, 0x7f0a00ca
+    const v1, 0x7f0a00d2
 
     invoke-virtual {p0, v1, v0}, Lcom/android/bluetooth/pbap/BluetoothPbapActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -327,7 +327,7 @@
 
     aput-object v2, v1, v4
 
-    const v2, 0x7f0a00cd
+    const v2, 0x7f0a00d5
 
     invoke-virtual {p0, v2, v1}, Lcom/android/bluetooth/pbap/BluetoothPbapActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -464,7 +464,7 @@
     return-void
 
     :pswitch_0
-    const v1, 0x7f0a00cb
+    const v1, 0x7f0a00d3
 
     invoke-virtual {p0, v1}, Lcom/android/bluetooth/pbap/BluetoothPbapActivity;->getString(I)Ljava/lang/String;
 

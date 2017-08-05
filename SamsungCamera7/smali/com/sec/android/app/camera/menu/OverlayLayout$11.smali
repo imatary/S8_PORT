@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$11;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mEffectEditButton:Lcom/samsung/android/glview/GLButton;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$800(Lcom/sec/android/app/camera/menu/OverlayLayout;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$11;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$900(Lcom/sec/android/app/camera/menu/OverlayLayout;)Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     move-result-object v0

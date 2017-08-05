@@ -79,7 +79,6 @@
     :cond_0
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardUnlockView$7;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mUnlockView:Lcom/android/keyguard/sec/effect/KeyguardEffectViewBase;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$300(Lcom/android/keyguard/sec/KeyguardUnlockView;)Lcom/android/keyguard/sec/effect/KeyguardEffectViewBase;
 
     move-result-object v1

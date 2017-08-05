@@ -126,7 +126,6 @@
     :goto_1
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->dismissCameraDialog()V
     invoke-static {v1}, Lcom/sec/android/app/camera/CameraDialog;->access$1000(Lcom/sec/android/app/camera/CameraDialog;)V
 
     move v1, v2
@@ -158,7 +157,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->dismissCameraDialog()V
     invoke-static {v1}, Lcom/sec/android/app/camera/CameraDialog;->access$1000(Lcom/sec/android/app/camera/CameraDialog;)V
 
     move v1, v2
@@ -191,7 +189,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->dismissCameraDialog()V
     invoke-static {v1}, Lcom/sec/android/app/camera/CameraDialog;->access$1000(Lcom/sec/android/app/camera/CameraDialog;)V
 
     move v1, v2
@@ -201,7 +198,6 @@
     :sswitch_3
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->dismissCameraDialog()V
     invoke-static {v1}, Lcom/sec/android/app/camera/CameraDialog;->access$1000(Lcom/sec/android/app/camera/CameraDialog;)V
 
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;

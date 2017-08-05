@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$1;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    # invokes: Lcom/sec/android/app/camera/setting/ListSettingFragment;->setPictureFormat(Z)V
     invoke-static {v0, p2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->access$000(Lcom/sec/android/app/camera/setting/ListSettingFragment;Z)V
 
     const-string v2, "6042"

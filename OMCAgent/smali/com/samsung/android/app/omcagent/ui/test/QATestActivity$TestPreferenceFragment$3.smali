@@ -49,7 +49,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment$3;->this$0:Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;->virtualSIMInfoPref:Landroid/preference/SwitchPreference;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;->access$400(Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;)Landroid/preference/SwitchPreference;
 
     move-result-object v0

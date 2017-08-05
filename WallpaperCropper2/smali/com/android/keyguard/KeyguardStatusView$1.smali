@@ -64,12 +64,10 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardStatusView$1;->this$0:Lcom/android/keyguard/KeyguardStatusView;
 
-    # invokes: Lcom/android/keyguard/KeyguardStatusView;->refresh()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardStatusView;->access$000(Lcom/android/keyguard/KeyguardStatusView;)V
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardStatusView$1;->this$0:Lcom/android/keyguard/KeyguardStatusView;
 
-    # invokes: Lcom/android/keyguard/KeyguardStatusView;->updateOwnerInfo()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardStatusView;->access$100(Lcom/android/keyguard/KeyguardStatusView;)V
 
     goto :goto_0
@@ -82,7 +80,6 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/android/keyguard/KeyguardStatusView;->setEnableMarquee(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardStatusView;->access$200(Lcom/android/keyguard/KeyguardStatusView;Z)V
 
     return-void
@@ -95,7 +92,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/android/keyguard/KeyguardStatusView;->setEnableMarquee(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardStatusView;->access$200(Lcom/android/keyguard/KeyguardStatusView;Z)V
 
     return-void
@@ -106,7 +102,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardStatusView$1;->this$0:Lcom/android/keyguard/KeyguardStatusView;
 
-    # invokes: Lcom/android/keyguard/KeyguardStatusView;->refresh()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardStatusView;->access$000(Lcom/android/keyguard/KeyguardStatusView;)V
 
     return-void
@@ -117,12 +112,10 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardStatusView$1;->this$0:Lcom/android/keyguard/KeyguardStatusView;
 
-    # invokes: Lcom/android/keyguard/KeyguardStatusView;->refresh()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardStatusView;->access$000(Lcom/android/keyguard/KeyguardStatusView;)V
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardStatusView$1;->this$0:Lcom/android/keyguard/KeyguardStatusView;
 
-    # invokes: Lcom/android/keyguard/KeyguardStatusView;->updateOwnerInfo()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardStatusView;->access$100(Lcom/android/keyguard/KeyguardStatusView;)V
 
     return-void

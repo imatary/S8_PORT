@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sub_description_bullet" android:paddingStart="@dimen/game_tools_description_text_indent" android:paddingEnd="@dimen/game_tools_bullet_right_padding" android:layout_marginStart="@dimen/game_tools_description_side_padding_port" style="@style/normal_14_line_4_color_6b" />
-</LinearLayout>

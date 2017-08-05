@@ -47,7 +47,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v5}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->-set1(I)I
+    invoke-static {v5}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->-set0(I)I
 
     iget-object v0, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList$2;->this$0:Lcom/android/phone/answeringmemo/AnsweringMemoList;
 

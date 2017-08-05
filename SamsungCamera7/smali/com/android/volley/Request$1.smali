@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/android/volley/Request$1;->this$0:Lcom/android/volley/Request;
 
-    # getter for: Lcom/android/volley/Request;->mEventLog:Lcom/android/volley/VolleyLog$MarkerLog;
     invoke-static {v0}, Lcom/android/volley/Request;->access$000(Lcom/android/volley/Request;)Lcom/android/volley/VolleyLog$MarkerLog;
 
     move-result-object v0
@@ -60,7 +59,6 @@
 
     iget-object v0, p0, Lcom/android/volley/Request$1;->this$0:Lcom/android/volley/Request;
 
-    # getter for: Lcom/android/volley/Request;->mEventLog:Lcom/android/volley/VolleyLog$MarkerLog;
     invoke-static {v0}, Lcom/android/volley/Request;->access$000(Lcom/android/volley/Request;)Lcom/android/volley/VolleyLog$MarkerLog;
 
     move-result-object v0

@@ -43,7 +43,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/samsung/android/app/omcagent/ui/test/OmcInfoActivity;->command:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/samsung/android/app/omcagent/ui/test/OmcInfoActivity;->access$002(Lcom/samsung/android/app/omcagent/ui/test/OmcInfoActivity;Ljava/lang/String;)Ljava/lang/String;
 
     return-void

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">无法打开%s。请点击【设置】，进入【应用程序中心】 > 【权限】，然后授予以下权限并重试：</string>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">无法打开%s。请点击【设置】，进入【应用程序】 > 【权限】，然后授予以下权限并重试：</string>
     <string name="all_sim">全部</string>
     <string name="app_name">壁纸</string>
     <string name="apply">应用</string>
@@ -36,7 +36,7 @@
     <string name="unable_set_wallpaper_image_deleted">图片已删除，无法将其设为壁纸。</string>
     <string name="unable_to_download">无法下载。</string>
     <string name="wallpaper_applied_home">壁纸已应用至主屏幕</string>
-    <string name="wallpaper_applied_home_and_lock">壁纸已应用到主屏幕和锁定屏幕</string>
+    <string name="wallpaper_applied_home_and_lock">壁纸已应用到主屏幕与锁定屏幕</string>
     <string name="wallpaper_applied_lock">壁纸已应用至锁定屏幕</string>
     <string name="wallpaper_applied_multi_lock">%d 张壁纸已应用至锁定屏幕</string>
     <string name="wallpaper_applied_sview">壁纸已应用到智能窗口</string>

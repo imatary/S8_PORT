@@ -52,7 +52,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/sec/KeyguardUnlockView$8;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mFadeView:Landroid/view/View;
     invoke-static {v3}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$400(Lcom/android/keyguard/sec/KeyguardUnlockView;)Landroid/view/View;
 
     move-result-object v3
@@ -63,7 +62,6 @@
 
     iget-object v4, p0, Lcom/android/keyguard/sec/KeyguardUnlockView$8;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mAttributionView:Landroid/view/View;
     invoke-static {v4}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$500(Lcom/android/keyguard/sec/KeyguardUnlockView;)Landroid/view/View;
 
     move-result-object v4
@@ -74,7 +72,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardUnlockView$8;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mIsHelpTextEnabled:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$600(Lcom/android/keyguard/sec/KeyguardUnlockView;)Z
 
     move-result v0
@@ -94,7 +91,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardUnlockView$8;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mTextChageHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$900(Lcom/android/keyguard/sec/KeyguardUnlockView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -110,7 +106,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardUnlockView$8;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mTextChageHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$900(Lcom/android/keyguard/sec/KeyguardUnlockView;)Landroid/os/Handler;
 
     move-result-object v0

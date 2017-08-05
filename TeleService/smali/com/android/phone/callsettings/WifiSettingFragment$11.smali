@@ -3,7 +3,7 @@
 .source "WifiSettingFragment.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnKeyListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
@@ -34,14 +34,10 @@
 
 
 # virtual methods
-.method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
+.method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
     const/4 v1, 0x0
-
-    const/4 v0, 0x4
-
-    if-ne p2, v0, :cond_2
 
     iget-object v0, p0, Lcom/android/phone/callsettings/WifiSettingFragment$11;->this$0:Lcom/android/phone/callsettings/WifiSettingFragment;
 
@@ -77,12 +73,5 @@
     invoke-virtual {v0, v1}, Landroid/preference/SemSwitchPreferenceScreen;->setChecked(Z)V
 
     :cond_1
-    invoke-interface {p1}, Landroid/content/DialogInterface;->cancel()V
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_2
-    return v1
+    return-void
 .end method

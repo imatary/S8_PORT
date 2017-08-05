@@ -67,17 +67,14 @@
 
     sget-object v1, Lcom/android/keyguard/KeyguardPatternView$OneHandMode;->Left:Lcom/android/keyguard/KeyguardPatternView$OneHandMode;
 
-    # invokes: Lcom/android/keyguard/KeyguardPatternView;->movePatternLock(Lcom/android/keyguard/KeyguardPatternView$OneHandMode;)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardPatternView;->access$2900(Lcom/android/keyguard/KeyguardPatternView;Lcom/android/keyguard/KeyguardPatternView$OneHandMode;)V
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$10;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # setter for: Lcom/android/keyguard/KeyguardPatternView;->mRightPressed:Z
     invoke-static {v0, v3}, Lcom/android/keyguard/KeyguardPatternView;->access$3002(Lcom/android/keyguard/KeyguardPatternView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$10;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$3100(Lcom/android/keyguard/KeyguardPatternView;)Landroid/content/Context;
 
     move-result-object v0
@@ -97,17 +94,14 @@
 
     sget-object v1, Lcom/android/keyguard/KeyguardPatternView$OneHandMode;->Right:Lcom/android/keyguard/KeyguardPatternView$OneHandMode;
 
-    # invokes: Lcom/android/keyguard/KeyguardPatternView;->movePatternLock(Lcom/android/keyguard/KeyguardPatternView$OneHandMode;)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardPatternView;->access$2900(Lcom/android/keyguard/KeyguardPatternView;Lcom/android/keyguard/KeyguardPatternView$OneHandMode;)V
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$10;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # setter for: Lcom/android/keyguard/KeyguardPatternView;->mRightPressed:Z
     invoke-static {v0, v4}, Lcom/android/keyguard/KeyguardPatternView;->access$3002(Lcom/android/keyguard/KeyguardPatternView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$10;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$3200(Lcom/android/keyguard/KeyguardPatternView;)Landroid/content/Context;
 
     move-result-object v0

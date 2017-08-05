@@ -82,7 +82,6 @@
 
     iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip$PageListener;->this$0:Landroid/support/v4/view/PagerTitleStrip;
 
-    # getter for: Landroid/support/v4/view/PagerTitleStrip;->mLastKnownPositionOffset:F
     invoke-static {v1}, Landroid/support/v4/view/PagerTitleStrip;->access$100(Landroid/support/v4/view/PagerTitleStrip;)F
 
     move-result v1
@@ -93,7 +92,6 @@
 
     iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip$PageListener;->this$0:Landroid/support/v4/view/PagerTitleStrip;
 
-    # getter for: Landroid/support/v4/view/PagerTitleStrip;->mLastKnownPositionOffset:F
     invoke-static {v0}, Landroid/support/v4/view/PagerTitleStrip;->access$100(Landroid/support/v4/view/PagerTitleStrip;)F
 
     move-result v0
@@ -180,7 +178,6 @@
 
     iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip$PageListener;->this$0:Landroid/support/v4/view/PagerTitleStrip;
 
-    # getter for: Landroid/support/v4/view/PagerTitleStrip;->mLastKnownPositionOffset:F
     invoke-static {v1}, Landroid/support/v4/view/PagerTitleStrip;->access$100(Landroid/support/v4/view/PagerTitleStrip;)F
 
     move-result v1
@@ -191,7 +188,6 @@
 
     iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip$PageListener;->this$0:Landroid/support/v4/view/PagerTitleStrip;
 
-    # getter for: Landroid/support/v4/view/PagerTitleStrip;->mLastKnownPositionOffset:F
     invoke-static {v0}, Landroid/support/v4/view/PagerTitleStrip;->access$100(Landroid/support/v4/view/PagerTitleStrip;)F
 
     move-result v0

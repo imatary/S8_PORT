@@ -72,7 +72,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0ccd
+    const v2, 0x7f0d0d3e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -150,7 +150,7 @@
 
     iget-object v0, p0, Lcom/android/phone/answeringmemo/AnswerMemoOptionDeleteActivity$2;->this$0:Lcom/android/phone/answeringmemo/AnswerMemoOptionDeleteActivity;
 
-    const v1, 0x7f0d0cc4
+    const v1, 0x7f0d0d35
 
     const/4 v2, 0x0
 
@@ -185,7 +185,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0ccd
+    const v2, 0x7f0d0d3e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

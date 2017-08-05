@@ -24,6 +24,9 @@
 .method public abstract isPopupEnabled(Lcom/sec/android/app/camera/interfaces/PopupLayoutController$PopupID;)Z
 .end method
 
+.method public abstract isPopupShowing()Z
+.end method
+
 .method public abstract isReviewShowing()Z
 .end method
 

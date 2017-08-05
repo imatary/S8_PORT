@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$10;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->resetErrorMessage()V
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$2000(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)V
 
     return-void

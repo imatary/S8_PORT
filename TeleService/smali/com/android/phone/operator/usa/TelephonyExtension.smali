@@ -456,6 +456,75 @@
     return-void
 .end method
 
+.method public static isDomesticDataRoamingInService()Z
+    .locals 6
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->getServiceState()Landroid/telephony/ServiceState;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/telephony/ServiceState;->getDataRegState()I
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    const/4 v0, 0x1
+
+    :goto_0
+    const-string/jumbo v3, "TelephonyExtension"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "isDomesticDataRoamingInService : dataRegStateInService : "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    if-eqz v0, :cond_2
+
+    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->IsDomesticRoaming()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->IsDomesticLteRoaming()Z
+
+    move-result v1
+
+    :cond_0
+    :goto_1
+    return v1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_2
+    move v1, v2
+
+    goto :goto_1
+.end method
+
 .method public static isDomesticRoamingInService()Z
     .locals 6
 
@@ -584,6 +653,75 @@
     const/4 v1, 0x0
 
     goto :goto_0
+.end method
+
+.method public static isInternationalDataRoamingInService()Z
+    .locals 6
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->getServiceState()Landroid/telephony/ServiceState;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/telephony/ServiceState;->getDataRegState()I
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    const/4 v0, 0x1
+
+    :goto_0
+    const-string/jumbo v3, "TelephonyExtension"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "isInternationalDataRoamingInService : dataRegStateInService : "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    if-eqz v0, :cond_2
+
+    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->IsInternationalRoaming()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->IsInternationalLteRoaming()Z
+
+    move-result v1
+
+    :cond_0
+    :goto_1
+    return v1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_2
+    move v1, v2
+
+    goto :goto_1
 .end method
 
 .method public static isInternationalRoamingInService()Z
@@ -778,7 +916,7 @@
 .method public static notifyAllowDataAccess(Landroid/content/Context;Landroid/app/NotificationManager;I)V
     .locals 10
 
-    const v9, 0x7f0d080d
+    const v9, 0x7f0d0871
 
     const/4 v8, 0x0
 
@@ -858,7 +996,7 @@
 
     const/4 v7, 0x0
 
-    const v6, 0x7f0d066a
+    const v6, 0x7f0d06ce
 
     invoke-virtual {p0, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -882,13 +1020,13 @@
 
     aput-object v4, v6, v7
 
-    const v7, 0x7f0d0666
+    const v7, 0x7f0d06ca
 
     invoke-virtual {p0, v7, v6}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v5
 
-    const v6, 0x7f0d0665
+    const v6, 0x7f0d06c9
 
     invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -900,7 +1038,7 @@
 
     move-result-wide v6
 
-    const v8, 0x7f020140
+    const v8, 0x7f020144
 
     invoke-direct {v3, v8, v5, v6, v7}, Landroid/app/Notification;-><init>(ILjava/lang/CharSequence;J)V
 
@@ -1487,9 +1625,11 @@
 
     move-result v0
 
-    const/4 v1, 0x2
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticDataRoamingInService()Z
 
-    if-ne v0, v1, :cond_2
+    move-result v1
+
+    if-eqz v1, :cond_1
 
     const-string/jumbo v1, "TelephonyExtension"
 
@@ -1497,7 +1637,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "phoneType : "
+    const-string/jumbo v3, "setSecureSettingDataRoaming phoneType : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1515,45 +1655,7 @@
 
     const-string/jumbo v3, "roam_setting_data_domestic"
 
-    invoke-static {v3, v4}, Lcom/android/phone/operator/usa/TelephonyExtension;->getSecureSettingBoolean(Ljava/lang/String;I)Z
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2, v4}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-
-    const-string/jumbo v1, "TelephonyExtension"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "phoneType : "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string/jumbo v3, " / data_roaming - international_cdma_data_roaming_setting : "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string/jumbo v3, "roam_setting_data_international"
-
-    invoke-static {v3, v4}, Lcom/android/phone/operator/usa/TelephonyExtension;->getSecureSettingBoolean(Ljava/lang/String;I)Z
+    invoke-static {v3, v5}, Lcom/android/phone/operator/usa/TelephonyExtension;->getSecureSettingBoolean(Ljava/lang/String;I)Z
 
     move-result v3
 
@@ -1569,25 +1671,13 @@
 
     const-string/jumbo v1, "roam_setting_data_domestic"
 
-    invoke-static {v1, v4}, Lcom/android/phone/operator/usa/TelephonyExtension;->getSecureSettingBoolean(Ljava/lang/String;I)Z
+    invoke-static {v1, v5}, Lcom/android/phone/operator/usa/TelephonyExtension;->getSecureSettingBoolean(Ljava/lang/String;I)Z
 
     move-result v1
 
-    if-nez v1, :cond_0
-
-    const-string/jumbo v1, "roam_setting_data_international"
-
-    invoke-static {v1, v4}, Lcom/android/phone/operator/usa/TelephonyExtension;->getSecureSettingBoolean(Ljava/lang/String;I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
+    invoke-static {v1}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
 
     :cond_0
-    const-string/jumbo v1, "data_roaming"
-
-    invoke-static {v1, v4}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
-
     :goto_0
     const-string/jumbo v1, "TelephonyExtension"
 
@@ -1595,7 +1685,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "phoneType : "
+    const-string/jumbo v3, "setSecureSettingDataRoaming phoneType : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1630,27 +1720,19 @@
     return-void
 
     :cond_1
-    const-string/jumbo v1, "data_roaming"
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isInternationalDataRoamingInService()Z
 
-    invoke-static {v1, v5}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
+    move-result v1
 
-    goto :goto_0
+    if-eqz v1, :cond_0
 
-    :cond_2
-    if-eq v0, v4, :cond_3
-
-    const/4 v1, 0x3
-
-    if-ne v0, v1, :cond_5
-
-    :cond_3
     const-string/jumbo v1, "TelephonyExtension"
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "phoneType : "
+    const-string/jumbo v3, "setSecureSettingDataRoaming phoneType : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1661,44 +1743,6 @@
     move-result-object v2
 
     const-string/jumbo v3, " / data_roaming - international_gsm_data_roaming_setting : "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string/jumbo v3, "sprint_gsm_data_roaming"
-
-    invoke-static {v3, v4}, Lcom/android/phone/operator/usa/TelephonyExtension;->getSecureSettingBoolean(Ljava/lang/String;I)Z
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2, v4}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-
-    const-string/jumbo v1, "TelephonyExtension"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "phoneType : "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string/jumbo v3, " / data_roaming - international_cdma_data_roaming_setting : "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1720,64 +1764,15 @@
 
     invoke-static {v1, v2, v4}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    const-string/jumbo v1, "sprint_gsm_data_roaming"
-
-    invoke-static {v1, v4}, Lcom/android/phone/operator/usa/TelephonyExtension;->getSecureSettingBoolean(Ljava/lang/String;I)Z
-
-    move-result v1
-
-    if-nez v1, :cond_4
-
     const-string/jumbo v1, "roam_setting_data_international"
 
     invoke-static {v1, v4}, Lcom/android/phone/operator/usa/TelephonyExtension;->getSecureSettingBoolean(Ljava/lang/String;I)Z
 
     move-result v1
 
-    if-eqz v1, :cond_6
+    invoke-static {v1}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setDataRoamingEnabled(Z)V
 
-    :cond_4
-    const-string/jumbo v1, "data_roaming"
-
-    invoke-static {v1, v4}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
-
-    goto/16 :goto_0
-
-    :cond_5
-    const/4 v1, 0x5
-
-    if-eq v0, v1, :cond_3
-
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "Unexpected phone type: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    :cond_6
-    const-string/jumbo v1, "data_roaming"
-
-    invoke-static {v1, v5}, Lcom/android/phone/operator/usa/TelephonyExtension;->setSecureSettingValue(Ljava/lang/String;I)V
-
-    goto/16 :goto_0
+    goto :goto_0
 .end method
 
 .method public static setSecureSettingValue(Ljava/lang/String;I)V

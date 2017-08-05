@@ -3,12 +3,12 @@
 .source "GlanceReply.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnKeyListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/edge/GlanceReply;->alertEmptyMessage(Z)Z
+    value = Lcom/android/phone/edge/GlanceReply;->alertEmptyMessage()Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,12 +34,8 @@
 
 
 # virtual methods
-.method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
+.method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-
-    const/4 v0, 0x4
-
-    if-ne p2, v0, :cond_0
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->cancel()V
 
@@ -47,10 +43,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/phone/edge/GlanceReply;->-wrap3(Lcom/android/phone/edge/GlanceReply;Z)V
+    invoke-static {v0, v1}, Lcom/android/phone/edge/GlanceReply;->-wrap0(Lcom/android/phone/edge/GlanceReply;Z)V
 
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
+    return-void
 .end method

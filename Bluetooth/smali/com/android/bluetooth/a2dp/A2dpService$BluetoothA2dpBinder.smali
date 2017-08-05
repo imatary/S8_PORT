@@ -318,6 +318,48 @@
     return v1
 .end method
 
+.method public isAbsoluteVolumeControl()Z
+    .locals 2
+
+    invoke-direct {p0}, Lcom/android/bluetooth/a2dp/A2dpService$BluetoothA2dpBinder;->getService()Lcom/android/bluetooth/a2dp/A2dpService;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    const/4 v1, 0x0
+
+    return v1
+
+    :cond_0
+    invoke-virtual {v0}, Lcom/android/bluetooth/a2dp/A2dpService;->isAbsoluteVolumeControl()Z
+
+    move-result v1
+
+    return v1
+.end method
+
+.method public isAvrcpAbsoluteVolumeDeviceActive()Z
+    .locals 2
+
+    invoke-direct {p0}, Lcom/android/bluetooth/a2dp/A2dpService$BluetoothA2dpBinder;->getService()Lcom/android/bluetooth/a2dp/A2dpService;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    const/4 v1, 0x0
+
+    return v1
+
+    :cond_0
+    invoke-virtual {v0}, Lcom/android/bluetooth/a2dp/A2dpService;->isAvrcpAbsoluteVolumeDeviceActive()Z
+
+    move-result v1
+
+    return v1
+.end method
+
 .method public isAvrcpAbsoluteVolumeSupported()Z
     .locals 2
 
@@ -446,6 +488,27 @@
     monitor-exit p0
 
     throw v1
+.end method
+
+.method public setAbsoluteVolumeControl(Z)Z
+    .locals 2
+
+    invoke-direct {p0}, Lcom/android/bluetooth/a2dp/A2dpService$BluetoothA2dpBinder;->getService()Lcom/android/bluetooth/a2dp/A2dpService;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    const/4 v1, 0x0
+
+    return v1
+
+    :cond_0
+    invoke-virtual {v0, p1}, Lcom/android/bluetooth/a2dp/A2dpService;->setAbsoluteVolumeControl(Z)Z
+
+    move-result v1
+
+    return v1
 .end method
 
 .method public setAvrcpAbsoluteVolume(I)V

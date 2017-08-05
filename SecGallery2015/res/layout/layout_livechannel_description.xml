@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/layout_livechannel_description" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="5.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:gravity="center_horizontal" android:id="@id/layout_livechannel_no_item" android:background="@color/channel_notification_bg_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
-        <TextView android:textSize="19.0sp" android:textColor="@color/channel_photo_no_itme_text_color" android:gravity="center_horizontal" android:id="@id/no_item_text" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_set_description_no_items" android:layout_centerInParent="true" android:fontFamily="sec-roboto-light" />
-        <TextView android:textSize="15.0dip" android:textColor="@color/channel_photo_no_itme_description_text_color" android:id="@id/text_event_noitems_description" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/channel_photo_no_item_description" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:fontFamily="sec-roboto-light" />
-    </RelativeLayout>
-    <View android:background="@color/channel_notification_bg_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
-</LinearLayout>

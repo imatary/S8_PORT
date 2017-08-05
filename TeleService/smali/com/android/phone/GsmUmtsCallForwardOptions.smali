@@ -6,14 +6,6 @@
 .implements Lcom/android/phone/EditPhoneNumberPreference$GetDefaultNumberListener;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/phone/GsmUmtsCallForwardOptions$1;
-    }
-.end annotation
-
-
 # static fields
 .field private static final NUM_PROJECTION:[Ljava/lang/String;
 
@@ -66,22 +58,10 @@
 
 .field mToast:Landroid/widget/Toast;
 
-.field private mWfcRegistrationStateChangeHandler:Landroid/os/Handler;
-
-.field private mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
 .field private prefVal:Z
 
 
 # direct methods
-.method static synthetic -get0(Lcom/android/phone/GsmUmtsCallForwardOptions;)Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    return-object v0
-.end method
-
 .method static synthetic -wrap0(Lcom/android/phone/GsmUmtsCallForwardOptions;Ljava/lang/String;)V
     .locals 0
 
@@ -102,14 +82,6 @@
     .locals 0
 
     invoke-direct {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->showAlertDialogPlayVoicemailMessage()V
-
-    return-void
-.end method
-
-.method static synthetic -wrap3(Lcom/android/phone/GsmUmtsCallForwardOptions;Z)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->updatePreferenceScreen(Z)V
 
     return-void
 .end method
@@ -158,12 +130,6 @@
     iput-boolean v1, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->bSlot2RoamingNetwork:Z
 
     iput-boolean v1, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->disableScreen:Z
-
-    new-instance v0, Lcom/android/phone/GsmUmtsCallForwardOptions$1;
-
-    invoke-direct {v0, p0}, Lcom/android/phone/GsmUmtsCallForwardOptions$1;-><init>(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
-
-    iput-object v0, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mWfcRegistrationStateChangeHandler:Landroid/os/Handler;
 
     return-void
 .end method
@@ -283,7 +249,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0bb4
+    const v1, 0x7f0d0c1b
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -291,7 +257,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d0a7a
+    const v1, 0x7f0d0ae1
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -299,19 +265,19 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d04c3
+    const v1, 0x7f0d0523
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/phone/GsmUmtsCallForwardOptions$6;
+    new-instance v2, Lcom/android/phone/GsmUmtsCallForwardOptions$5;
 
-    invoke-direct {v2, p0}, Lcom/android/phone/GsmUmtsCallForwardOptions$6;-><init>(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
+    invoke-direct {v2, p0}, Lcom/android/phone/GsmUmtsCallForwardOptions$5;-><init>(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d050d
+    const v1, 0x7f0d056d
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -339,7 +305,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0a71
+    const v1, 0x7f0d0ad8
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -347,7 +313,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d0a73
+    const v1, 0x7f0d0ada
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -355,19 +321,19 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d04c3
+    const v1, 0x7f0d0523
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/phone/GsmUmtsCallForwardOptions$5;
+    new-instance v2, Lcom/android/phone/GsmUmtsCallForwardOptions$4;
 
-    invoke-direct {v2, p0}, Lcom/android/phone/GsmUmtsCallForwardOptions$5;-><init>(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
+    invoke-direct {v2, p0}, Lcom/android/phone/GsmUmtsCallForwardOptions$4;-><init>(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d050d
+    const v1, 0x7f0d056d
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -446,28 +412,6 @@
 
     :cond_2
     add-int/lit8 v3, v3, 0x1
-
-    goto :goto_0
-.end method
-
-.method private updatePreferenceScreen(Z)V
-    .locals 2
-
-    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
-
-    move-result-object v0
-
-    if-eqz p1, :cond_0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
-
-    return-void
-
-    :cond_0
-    const/4 v1, 0x1
 
     goto :goto_0
 .end method
@@ -811,7 +755,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_c
+    if-eqz v4, :cond_b
 
     iget-object v4, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mButtonCFU:Lcom/android/phone/CallForwardEditPreference;
 
@@ -923,7 +867,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_d
+    if-eqz v4, :cond_c
 
     :cond_5
     :goto_1
@@ -939,7 +883,7 @@
 
     iget-boolean v4, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->disableScreen:Z
 
-    if-eqz v4, :cond_e
+    if-eqz v4, :cond_d
 
     move v4, v5
 
@@ -952,7 +896,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_f
+    if-nez v4, :cond_e
 
     const-string/jumbo v4, "voicemail_category_key"
 
@@ -987,7 +931,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_10
+    if-nez v4, :cond_f
 
     const-string/jumbo v4, "play_voicemail_key"
 
@@ -1034,9 +978,9 @@
 
     invoke-virtual {v4, v7}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    new-instance v4, Lcom/android/phone/GsmUmtsCallForwardOptions$4;
+    new-instance v4, Lcom/android/phone/GsmUmtsCallForwardOptions$3;
 
-    invoke-direct {v4, p0}, Lcom/android/phone/GsmUmtsCallForwardOptions$4;-><init>(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
+    invoke-direct {v4, p0}, Lcom/android/phone/GsmUmtsCallForwardOptions$3;-><init>(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
 
     iput-object v4, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mHotSwapReceiver:Landroid/content/BroadcastReceiver;
 
@@ -1052,52 +996,11 @@
 
     iput-boolean v6, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mIsHotSwapRegister:Z
 
-    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
-
-    move-result-object v4
-
-    const-string/jumbo v7, "CscFeature_Common_SupportSecWFC"
-
-    invoke-virtual {v4, v7}, Lcom/samsung/android/feature/SemCscFeature;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_a
-
-    new-instance v4, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getActivity()Landroid/app/Activity;
-
-    move-result-object v7
-
-    invoke-direct {v4, v7}, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;-><init>(Landroid/content/Context;)V
-
-    iput-object v4, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    iget-object v4, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    iget-object v7, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mWfcRegistrationStateChangeHandler:Landroid/os/Handler;
-
-    invoke-virtual {v4, v7}, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;->registerHandlerForWfcRegistrationStateChage(Landroid/os/Handler;)V
-
-    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    invoke-static {v4}, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper;->isImsRegisteredOverWifi(Landroid/content/ContentResolver;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_a
-
-    invoke-virtual {v2, v5}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
-
-    :cond_a
     invoke-direct {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->checkNotSupportSSQuery()Z
 
     move-result v4
 
-    if-eqz v4, :cond_b
+    if-eqz v4, :cond_a
 
     invoke-virtual {v2, v5}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
@@ -1109,7 +1012,7 @@
 
     move-result-object v5
 
-    const v7, 0x7f0d02c9
+    const v7, 0x7f0d0329
 
     invoke-virtual {v5, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1121,10 +1024,10 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    :cond_b
+    :cond_a
     return-void
 
-    :cond_c
+    :cond_b
     iget-object v4, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mButtonCFU:Lcom/android/phone/CallForwardEditPreference;
 
     iget-object v7, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mButtonCFU:Lcom/android/phone/CallForwardEditPreference;
@@ -1159,12 +1062,12 @@
 
     goto/16 :goto_0
 
-    :cond_d
+    :cond_c
     invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    const v7, 0x7f0d04fa
+    const v7, 0x7f0d055a
 
     invoke-virtual {p0, v7}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -1174,17 +1077,17 @@
 
     goto/16 :goto_1
 
-    :cond_e
+    :cond_d
     move v4, v6
 
     goto/16 :goto_2
 
-    :cond_f
+    :cond_e
     invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    const v7, 0x7f0d045b
+    const v7, 0x7f0d04bb
 
     invoke-virtual {p0, v7}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -1194,7 +1097,7 @@
 
     goto/16 :goto_3
 
-    :cond_10
+    :cond_f
     const-string/jumbo v4, "play_voicemail_key"
 
     invoke-virtual {p0, v4}, Lcom/android/phone/GsmUmtsCallForwardOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -1207,9 +1110,9 @@
 
     iget-object v4, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mPlayVoicemail:Landroid/preference/PreferenceScreen;
 
-    new-instance v7, Lcom/android/phone/GsmUmtsCallForwardOptions$2;
+    new-instance v7, Lcom/android/phone/GsmUmtsCallForwardOptions$1;
 
-    invoke-direct {v7, p0}, Lcom/android/phone/GsmUmtsCallForwardOptions$2;-><init>(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
+    invoke-direct {v7, p0}, Lcom/android/phone/GsmUmtsCallForwardOptions$1;-><init>(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
 
     invoke-virtual {v4, v7}, Landroid/preference/PreferenceScreen;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -1225,9 +1128,9 @@
 
     iget-object v4, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mEditReplyMSG:Landroid/preference/PreferenceScreen;
 
-    new-instance v7, Lcom/android/phone/GsmUmtsCallForwardOptions$3;
+    new-instance v7, Lcom/android/phone/GsmUmtsCallForwardOptions$2;
 
-    invoke-direct {v7, p0}, Lcom/android/phone/GsmUmtsCallForwardOptions$3;-><init>(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
+    invoke-direct {v7, p0}, Lcom/android/phone/GsmUmtsCallForwardOptions$2;-><init>(Lcom/android/phone/GsmUmtsCallForwardOptions;)V
 
     invoke-virtual {v4, v7}, Landroid/preference/PreferenceScreen;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -1749,7 +1652,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v3, 0x7f0d02f3
+    const v3, 0x7f0d0353
 
     invoke-virtual {p0, v3}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -1856,34 +1759,17 @@
 .end method
 
 .method public onPause()V
-    .locals 2
+    .locals 0
 
     invoke-super {p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onPause()V
 
-    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
-
-    move-result-object v0
-
-    const-string/jumbo v1, "CscFeature_Common_SupportSecWFC"
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/feature/SemCscFeature;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    invoke-virtual {v0}, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;->unregisterObserver()V
-
-    :cond_0
     return-void
 .end method
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 2
 
-    const v1, 0x7f0d01fe
+    const v1, 0x7f0d025b
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mButtonCFU:Lcom/android/phone/CallForwardEditPreference;
 
@@ -1893,7 +1779,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0260
+    const v1, 0x7f0d02bf
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -1918,7 +1804,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0261
+    const v1, 0x7f0d02c0
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -1937,7 +1823,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0262
+    const v1, 0x7f0d02c1
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -1956,7 +1842,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0263
+    const v1, 0x7f0d02c2
 
     invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -1972,7 +1858,7 @@
 
     invoke-super {p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onResume()V
 
-    const v12, 0x7f0d01fe
+    const v12, 0x7f0d025b
 
     invoke-virtual {p0, v12}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getString(I)Ljava/lang/String;
 
@@ -1980,60 +1866,29 @@
 
     invoke-static {v12}, Lcom/android/phone/utils/SALogging;->sendSAViewFlowLog(Ljava/lang/String;)V
 
-    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
+    const-string/jumbo v12, "enabled"
 
-    move-result-object v12
-
-    const-string/jumbo v13, "CscFeature_Common_SupportSecWFC"
-
-    invoke-virtual {v12, v13}, Lcom/samsung/android/feature/SemCscFeature;->getBoolean(Ljava/lang/String;)Z
+    invoke-static {v12}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v12
 
     if-eqz v12, :cond_0
-
-    iget-object v12, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
-
-    invoke-virtual {v12}, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;->registerObserver()V
-
-    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v12
-
-    invoke-static {v12}, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper;->isImsRegisteredOverWifi(Landroid/content/ContentResolver;)Z
-
-    move-result v12
-
-    if-eqz v12, :cond_0
-
-    const/4 v12, 0x1
-
-    invoke-direct {p0, v12}, Lcom/android/phone/GsmUmtsCallForwardOptions;->updatePreferenceScreen(Z)V
-
-    return-void
-
-    :cond_0
-    invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isAvailableVoLTE()Z
-
-    move-result v12
-
-    if-eqz v12, :cond_1
 
     sget v12, Lcom/android/phone/GsmUmtsCallForwardOptions;->mSimId:I
 
-    invoke-static {v12}, Lcom/android/phone/PhoneUtilsCommon;->isTWAPT(I)Z
+    invoke-static {v12}, Lcom/android/phone/PhoneUtilsCommon;->isTWAPTSIM(I)Z
 
     move-result v12
 
-    if-eqz v12, :cond_1
+    if-eqz v12, :cond_0
 
     iget-object v12, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mButtonCFNRc:Lcom/android/phone/CallForwardEditPreference;
 
-    if-eqz v12, :cond_1
+    if-eqz v12, :cond_0
 
     const-string/jumbo v12, "GsmUmtsCallForwardOptions"
 
-    const-string/jumbo v13, "Under VoLTE, cfnrc removed for TW APT operator"
+    const-string/jumbo v13, " cfnrc removed for TW APT new operator"
 
     invoke-static {v12, v13}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -2055,14 +1910,14 @@
 
     iput-object v12, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mButtonCFNRc:Lcom/android/phone/CallForwardEditPreference;
 
-    :cond_1
+    :cond_0
     iget-boolean v12, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mFirstResume:Z
 
-    if-eqz v12, :cond_9
+    if-eqz v12, :cond_8
 
     iget-object v12, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mIcicle:Landroid/os/Bundle;
 
-    if-nez v12, :cond_3
+    if-nez v12, :cond_2
 
     const-string/jumbo v12, "GsmUmtsCallForwardOptions"
 
@@ -2092,7 +1947,7 @@
 
     move-result v12
 
-    if-eqz v12, :cond_2
+    if-eqz v12, :cond_1
 
     const-string/jumbo v12, "video_call_not_support"
 
@@ -2100,20 +1955,20 @@
 
     move-result v12
 
-    if-eqz v12, :cond_2
+    if-eqz v12, :cond_1
 
     const/4 v12, 0x0
 
     sput-boolean v12, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->IsAdditionSetting:Z
 
-    :cond_2
+    :cond_1
     const-string/jumbo v12, "feature_multisim"
 
     invoke-static {v12}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v12
 
-    if-eqz v12, :cond_8
+    if-eqz v12, :cond_7
 
     invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -2126,7 +1981,7 @@
     const/4 v3, 0x0
 
     :goto_0
-    if-ge v3, v2, :cond_6
+    if-ge v3, v2, :cond_5
 
     invoke-virtual {v10, v3}, Landroid/preference/PreferenceScreen;->getPreference(I)Landroid/preference/Preference;
 
@@ -2136,7 +1991,7 @@
 
     move-result v12
 
-    if-eqz v12, :cond_5
+    if-eqz v12, :cond_4
 
     invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isAvailableMoreMenu4VoWiFi()Z
 
@@ -2149,7 +2004,7 @@
 
     goto :goto_0
 
-    :cond_3
+    :cond_2
     iget-object v12, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mPreferences:Ljava/util/ArrayList;
 
     invoke-virtual {v12}, Ljava/util/ArrayList;->size()I
@@ -2169,7 +2024,7 @@
 
     move-result v12
 
-    if-eqz v12, :cond_2
+    if-eqz v12, :cond_1
 
     invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -2231,7 +2086,7 @@
 
     iget-boolean v12, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->disableScreen:Z
 
-    if-eqz v12, :cond_4
+    if-eqz v12, :cond_3
 
     const/4 v12, 0x0
 
@@ -2246,19 +2101,19 @@
 
     goto :goto_2
 
-    :cond_4
+    :cond_3
     iget-boolean v12, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->prefVal:Z
 
     invoke-virtual {v5, v12}, Lcom/android/phone/CallForwardEditPreference;->setEnabled(Z)V
 
     goto :goto_3
 
-    :cond_5
+    :cond_4
     const/4 v12, 0x1
 
     goto :goto_1
 
-    :cond_6
+    :cond_5
     invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v12
@@ -2305,17 +2160,17 @@
 
     const/4 v13, 0x1
 
-    if-ne v12, v13, :cond_8
+    if-ne v12, v13, :cond_7
 
     const/4 v12, 0x1
 
-    if-ne v11, v12, :cond_d
+    if-ne v11, v12, :cond_c
 
     sget v12, Lcom/android/phone/GsmUmtsCallForwardOptions;->mSimId:I
 
-    if-nez v12, :cond_d
+    if-nez v12, :cond_c
 
-    :cond_7
+    :cond_6
     :goto_4
     const-string/jumbo v12, "GsmUmtsCallForwardOptions"
 
@@ -2343,7 +2198,7 @@
 
     invoke-virtual {v4, v12}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    :cond_8
+    :cond_7
     const/4 v12, 0x0
 
     iput-boolean v12, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mFirstResume:Z
@@ -2352,20 +2207,20 @@
 
     iput-object v12, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mIcicle:Landroid/os/Bundle;
 
-    :cond_9
+    :cond_8
     const-string/jumbo v12, "support_bixby"
 
     invoke-static {v12}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v12
 
-    if-eqz v12, :cond_c
+    if-eqz v12, :cond_b
 
     invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
 
     move-result v12
 
-    if-eqz v12, :cond_c
+    if-eqz v12, :cond_b
 
     const-string/jumbo v12, "ShowVoiceCallForwarding"
 
@@ -2377,7 +2232,7 @@
 
     move-result v12
 
-    if-nez v12, :cond_a
+    if-nez v12, :cond_9
 
     const-string/jumbo v12, "CallForwarding"
 
@@ -2389,14 +2244,14 @@
 
     move-result v12
 
-    if-eqz v12, :cond_c
+    if-eqz v12, :cond_b
 
-    :cond_a
+    :cond_9
     invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingLastState()Z
 
     move-result v12
 
-    if-eqz v12, :cond_b
+    if-eqz v12, :cond_a
 
     invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
 
@@ -2404,27 +2259,27 @@
 
     invoke-static {v12}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
 
-    :cond_b
+    :cond_a
     sget-object v12, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v12}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
-    :cond_c
+    :cond_b
     return-void
 
-    :cond_d
+    :cond_c
     const/4 v12, 0x2
 
-    if-ne v11, v12, :cond_e
+    if-ne v11, v12, :cond_d
 
     sget v12, Lcom/android/phone/GsmUmtsCallForwardOptions;->mSimId:I
 
     const/4 v13, 0x1
 
-    if-eq v12, v13, :cond_7
+    if-eq v12, v13, :cond_6
 
-    :cond_e
-    if-nez v11, :cond_8
+    :cond_d
+    if-nez v11, :cond_7
 
     goto :goto_4
 .end method

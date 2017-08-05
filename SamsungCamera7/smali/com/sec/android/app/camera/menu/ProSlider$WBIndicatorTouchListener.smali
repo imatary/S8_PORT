@@ -50,7 +50,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->getOffset()I
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3800(Lcom/sec/android/app/camera/menu/ProSlider;)I
 
     move-result v2
@@ -65,7 +64,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSliderId:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1300(Lcom/sec/android/app/camera/menu/ProSlider;)I
 
     move-result v1
@@ -83,7 +81,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->setValueText(I)V
     invoke-static {v1, v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3900(Lcom/sec/android/app/camera/menu/ProSlider;I)V
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
@@ -149,7 +146,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mWBSelectedIndicator:Lcom/samsung/android/glview/GLView;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3600(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/samsung/android/glview/GLView;
 
     move-result-object v0
@@ -158,7 +154,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mWBSelectedIndicator:Lcom/samsung/android/glview/GLView;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3600(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/samsung/android/glview/GLView;
 
     move-result-object v0
@@ -176,7 +171,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->LABEL_SELECTED_COLOR:I
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1700(Lcom/sec/android/app/camera/menu/ProSlider;)I
 
     move-result v0
@@ -185,7 +179,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # setter for: Lcom/sec/android/app/camera/menu/ProSlider;->mWBSelectedIndicator:Lcom/samsung/android/glview/GLView;
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3602(Lcom/sec/android/app/camera/menu/ProSlider;Lcom/samsung/android/glview/GLView;)Lcom/samsung/android/glview/GLView;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->handleIndicatorTouchEvent(Lcom/samsung/android/glview/GLView;)V
@@ -196,7 +189,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSliderId:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1300(Lcom/sec/android/app/camera/menu/ProSlider;)I
 
     move-result v1
@@ -209,7 +201,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->LABEL_PRESSED_COLOR:I
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3700(Lcom/sec/android/app/camera/menu/ProSlider;)I
 
     move-result v0

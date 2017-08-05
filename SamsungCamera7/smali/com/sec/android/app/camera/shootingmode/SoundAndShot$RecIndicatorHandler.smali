@@ -86,7 +86,6 @@
 
     if-ne v1, v2, :cond_0
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->updateRecMicImage()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$800(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;)V
 
     goto :goto_0

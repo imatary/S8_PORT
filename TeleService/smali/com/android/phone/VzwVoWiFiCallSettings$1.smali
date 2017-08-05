@@ -1,14 +1,11 @@
 .class Lcom/android/phone/VzwVoWiFiCallSettings$1;
-.super Ljava/lang/Object;
+.super Landroid/os/Handler;
 .source "VzwVoWiFiCallSettings.java"
-
-# interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/VzwVoWiFiCallSettings;->onCreate(Landroid/os/Bundle;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/phone/VzwVoWiFiCallSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,27 +24,44 @@
 
     iput-object p1, p0, Lcom/android/phone/VzwVoWiFiCallSettings$1;->this$0:Lcom/android/phone/VzwVoWiFiCallSettings;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+.method public handleMessage(Landroid/os/Message;)V
     .locals 2
 
-    const-string/jumbo v0, "VzwVoWiFiCallSettings"
+    iget v0, p1, Landroid/os/Message;->what:I
 
-    const-string/jumbo v1, "Vowifi switch clicked"
+    packed-switch v0, :pswitch_data_0
 
-    invoke-static {v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :goto_0
+    return-void
 
+    :pswitch_0
+    iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings$1;->this$0:Lcom/android/phone/VzwVoWiFiCallSettings;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/android/phone/VzwVoWiFiCallSettings;->bixbyEnableWifiCall(Z)V
+
+    goto :goto_0
+
+    :pswitch_1
     iget-object v0, p0, Lcom/android/phone/VzwVoWiFiCallSettings$1;->this$0:Lcom/android/phone/VzwVoWiFiCallSettings;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, p2, v1}, Lcom/android/phone/VzwVoWiFiCallSettings;->-wrap0(Lcom/android/phone/VzwVoWiFiCallSettings;ZZ)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/VzwVoWiFiCallSettings;->bixbyEnableWifiCall(Z)V
 
-    return-void
+    goto :goto_0
+
+    :pswitch_data_0
+    .packed-switch 0x3e8
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

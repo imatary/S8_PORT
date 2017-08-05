@@ -46,7 +46,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple$SoundPoolThread;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->soundNum:I
     invoke-static {v2}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;)I
 
     move-result v2
@@ -57,7 +56,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple$SoundPoolThread;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->isSystemSoundChecked:Z
     invoke-static {v2}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->access$100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;)Z
 
     move-result v2
@@ -66,7 +64,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple$SoundPoolThread;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v2}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->access$200(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;)Landroid/media/SoundPool;
 
     move-result-object v2
@@ -78,7 +75,6 @@
     :goto_0
     iget-object v5, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple$SoundPoolThread;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->soundNum:I
     invoke-static {v5}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;)I
 
     move-result v5
@@ -109,7 +105,6 @@
     :goto_1
     iget-object v5, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple$SoundPoolThread;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v5}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->access$200(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;)Landroid/media/SoundPool;
 
     move-result-object v5
@@ -118,7 +113,6 @@
 
     iget-object v5, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple$SoundPoolThread;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v5}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->access$200(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;)Landroid/media/SoundPool;
 
     move-result-object v5
@@ -129,7 +123,6 @@
 
     iget-object v5, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple$SoundPoolThread;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->soundTime:I
     invoke-static {v5}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->access$300(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;)I
 
     move-result v5

@@ -96,14 +96,12 @@
     goto :goto_0
 
     :pswitch_0
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Food;->hideEffectGuide()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Food;->access$600(Lcom/sec/android/app/camera/shootingmode/Food;)V
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Food;->setMaskingEffect(Ljava/lang/Boolean;)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/Food;->access$700(Lcom/sec/android/app/camera/shootingmode/Food;Ljava/lang/Boolean;)V
 
     goto :goto_0
@@ -125,14 +123,12 @@
     goto :goto_0
 
     :pswitch_2
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Food;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Food;->access$800(Lcom/sec/android/app/camera/shootingmode/Food;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v1
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->resetOverriddenFocusMode()V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Food;->mAeAfManager:Lcom/sec/android/app/camera/interfaces/AeAfManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Food;->access$900(Lcom/sec/android/app/camera/shootingmode/Food;)Lcom/sec/android/app/camera/interfaces/AeAfManager;
 
     move-result-object v1
@@ -200,7 +196,6 @@
 
     move-result-object v1
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Food;->setMaskingEffect(Ljava/lang/Boolean;)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/Food;->access$700(Lcom/sec/android/app/camera/shootingmode/Food;Ljava/lang/Boolean;)V
 
     goto :goto_0

@@ -51,7 +51,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/provider/CameraOrientationEventManager$1;->this$0:Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;
 
-    # getter for: Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;->mLastOrientation:I
     invoke-static {v0}, Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;->access$000(Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;)I
 
     move-result v0
@@ -60,19 +59,16 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/provider/CameraOrientationEventManager$1;->this$0:Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;
 
-    # setter for: Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;->mLastOrientation:I
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;->access$002(Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/provider/CameraOrientationEventManager$1;->this$0:Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/provider/CameraOrientationEventManager$1;->this$0:Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;
 
-    # getter for: Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;->mLastOrientation:I
     invoke-static {v1}, Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;->access$000(Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;)I
 
     move-result v1
 
-    # invokes: Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;->notifyOrientationChanged(I)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;->access$100(Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;I)V
 
     goto :goto_0

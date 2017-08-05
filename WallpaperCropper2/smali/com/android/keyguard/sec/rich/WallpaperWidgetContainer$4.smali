@@ -44,7 +44,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer$4;->this$0:Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;
 
-    # getter for: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->mPowerManager:Landroid/os/PowerManager;
     invoke-static {v0}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$300(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;)Landroid/os/PowerManager;
 
     move-result-object v0
@@ -68,7 +67,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer$4;->this$0:Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;
 
-    # getter for: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->mPowerManager:Landroid/os/PowerManager;
     invoke-static {v0}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$300(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;)Landroid/os/PowerManager;
 
     move-result-object v0
@@ -90,12 +88,10 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer$4;->this$0:Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;
 
-    # invokes: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->setVisibilityView(I)V
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$400(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;I)V
 
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer$4;->this$0:Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;
 
-    # invokes: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->startBackgroundAnim(I)V
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$500(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;I)V
 
     goto :goto_1
@@ -109,7 +105,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer$4;->this$0:Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;
 
-    # invokes: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->startRemoteAnimation(I)V
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$600(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;I)V
 
     goto :goto_1
@@ -117,12 +112,10 @@
     :pswitch_2
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer$4;->this$0:Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;
 
-    # invokes: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->startBackgroundAnim(I)V
     invoke-static {v0, v3}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$500(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;I)V
 
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer$4;->this$0:Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;
 
-    # invokes: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->startRemoteAnimation(I)V
     invoke-static {v0, v3}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$600(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;I)V
 
     goto :goto_1
@@ -144,7 +137,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer$4;->this$0:Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;
 
-    # getter for: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->mPinUpState:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$000(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;)Z
 
     move-result v0
@@ -158,7 +150,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer$4;->this$0:Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;
 
-    # getter for: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$700(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;)Landroid/content/Context;
 
     move-result-object v0
@@ -173,7 +164,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer$4;->this$0:Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;
 
-    # getter for: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->mPinUpState:Z
     invoke-static {v3}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$000(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;)Z
 
     move-result v3
@@ -181,7 +171,6 @@
     if-eqz v3, :cond_2
 
     :goto_3
-    # invokes: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->setPinUpState(Z)V
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$800(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;Z)V
 
     goto :goto_1
@@ -211,7 +200,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer$4;->this$0:Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;
 
-    # getter for: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$700(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;)Landroid/content/Context;
 
     move-result-object v1

@@ -95,15 +95,12 @@
 
     float-to-int v0, v0
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mIconHeight:I
     invoke-static {p1, v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$502(Lcom/android/keyguard/sec/KeyguardShortcutView;I)I
 
     move-result v0
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mIconWidth:I
     invoke-static {p1, v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$402(Lcom/android/keyguard/sec/KeyguardShortcutView;I)I
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->DBG:Z
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$600(Lcom/android/keyguard/sec/KeyguardShortcutView;)Z
 
     move-result v0
@@ -111,7 +108,6 @@
     if-nez v0, :cond_2
 
     :goto_1
-    # invokes: Lcom/android/keyguard/sec/KeyguardShortcutView;->getLaunchIntent(Landroid/content/ComponentName;)Landroid/content/Intent;
     invoke-static {p1, p3}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$700(Lcom/android/keyguard/sec/KeyguardShortcutView;Landroid/content/ComponentName;)Landroid/content/Intent;
 
     move-result-object v0
@@ -148,7 +144,6 @@
 
     :cond_0
     :goto_2
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mPm:Landroid/content/pm/PackageManager;
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1000(Lcom/android/keyguard/sec/KeyguardShortcutView;)Landroid/content/pm/PackageManager;
 
     move-result-object v0
@@ -167,7 +162,6 @@
 
     move-result-object v0
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardShortcutView;->createIconThumbnail(Landroid/graphics/drawable/Drawable;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
     invoke-static {p1, v0, p2}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1100(Lcom/android/keyguard/sec/KeyguardShortcutView;Landroid/graphics/drawable/Drawable;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -181,7 +175,6 @@
     invoke-virtual {v0, v1}, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     :try_start_0
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mPm:Landroid/content/pm/PackageManager;
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1000(Lcom/android/keyguard/sec/KeyguardShortcutView;)Landroid/content/pm/PackageManager;
 
     move-result-object v0
@@ -192,7 +185,6 @@
 
     move-result-object v0
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mIsTouchExplorationEnabled:Z
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1200(Lcom/android/keyguard/sec/KeyguardShortcutView;)Z
 
     move-result v1
@@ -203,7 +195,6 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mPm:Landroid/content/pm/PackageManager;
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1000(Lcom/android/keyguard/sec/KeyguardShortcutView;)Landroid/content/pm/PackageManager;
 
     move-result-object v2
@@ -253,7 +244,6 @@
     goto/16 :goto_0
 
     :cond_2
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->TAG:Ljava/lang/String;
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$100(Lcom/android/keyguard/sec/KeyguardShortcutView;)Ljava/lang/String;
 
     move-result-object v0
@@ -268,7 +258,6 @@
 
     move-result-object v1
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mIconWidth:I
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$400(Lcom/android/keyguard/sec/KeyguardShortcutView;)I
 
     move-result v2
@@ -286,7 +275,6 @@
     goto/16 :goto_1
 
     :cond_3
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->DBG:Z
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$600(Lcom/android/keyguard/sec/KeyguardShortcutView;)Z
 
     move-result v0
@@ -299,7 +287,6 @@
     return-void
 
     :cond_4
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->TAG:Ljava/lang/String;
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$100(Lcom/android/keyguard/sec/KeyguardShortcutView;)Ljava/lang/String;
 
     move-result-object v0
@@ -317,12 +304,10 @@
 
     move-result-object v0
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->BADGE_URI:Landroid/net/Uri;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$800()Landroid/net/Uri;
 
     move-result-object v1
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->BADGE_COLUMNS:[Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$900()[Ljava/lang/String;
 
     move-result-object v2
@@ -400,7 +385,6 @@
     goto :goto_5
 
     :cond_7
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->DBG:Z
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$600(Lcom/android/keyguard/sec/KeyguardShortcutView;)Z
 
     move-result v0
@@ -413,7 +397,6 @@
     return-void
 
     :cond_8
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->TAG:Ljava/lang/String;
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$100(Lcom/android/keyguard/sec/KeyguardShortcutView;)Ljava/lang/String;
 
     move-result-object v0
@@ -430,7 +413,6 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mPm:Landroid/content/pm/PackageManager;
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1000(Lcom/android/keyguard/sec/KeyguardShortcutView;)Landroid/content/pm/PackageManager;
 
     move-result-object v2
@@ -546,7 +528,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->DBG:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$600(Lcom/android/keyguard/sec/KeyguardShortcutView;)Z
 
     move-result v0
@@ -556,7 +537,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mIsFirst:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1300(Lcom/android/keyguard/sec/KeyguardShortcutView;)Z
 
     move-result v0
@@ -577,7 +557,6 @@
 
     iget-object v5, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mFadeOutAnimation:Landroid/view/animation/AlphaAnimation;
     invoke-static {v5}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1400(Lcom/android/keyguard/sec/KeyguardShortcutView;)Landroid/view/animation/AlphaAnimation;
 
     move-result-object v5
@@ -599,7 +578,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mUnlockView:Lcom/android/keyguard/sec/effect/KeyguardEffectViewBase;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2300(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/sec/effect/KeyguardEffectViewBase;
 
     move-result-object v0
@@ -611,7 +589,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->TAG:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$100(Lcom/android/keyguard/sec/KeyguardShortcutView;)Ljava/lang/String;
 
     move-result-object v0
@@ -628,7 +605,6 @@
     :cond_3
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->TAG:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$100(Lcom/android/keyguard/sec/KeyguardShortcutView;)Ljava/lang/String;
 
     move-result-object v0
@@ -642,7 +618,6 @@
     :pswitch_1
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1500(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v2
@@ -651,7 +626,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->TAG:Ljava/lang/String;
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$100(Lcom/android/keyguard/sec/KeyguardShortcutView;)Ljava/lang/String;
 
     move-result-object v2
@@ -662,29 +636,24 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mStartX:F
     invoke-static {v2, v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1602(Lcom/android/keyguard/sec/KeyguardShortcutView;F)F
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mStartY:F
     invoke-static {v0, v3}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1702(Lcom/android/keyguard/sec/KeyguardShortcutView;F)F
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mDistance:D
     invoke-static {v0, v6, v7}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1802(Lcom/android/keyguard/sec/KeyguardShortcutView;D)D
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardShortcutView;->hideOtherShortcuts(Landroid/view/View;Z)V
     invoke-static {v0, p0, v1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1900(Lcom/android/keyguard/sec/KeyguardShortcutView;Landroid/view/View;Z)V
 
     invoke-virtual {p0, v1}, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->onPressed(Z)V
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHelpTextCallback:Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2000(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;
 
     move-result-object v0
@@ -693,7 +662,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHelpTextCallback:Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2000(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;
 
     move-result-object v0
@@ -705,7 +673,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mDistance:D
     invoke-static {v0, v6, v7}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1802(Lcom/android/keyguard/sec/KeyguardShortcutView;D)D
 
     goto :goto_1
@@ -713,7 +680,6 @@
     :pswitch_3
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->TAG:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$100(Lcom/android/keyguard/sec/KeyguardShortcutView;)Ljava/lang/String;
 
     move-result-object v0
@@ -730,7 +696,6 @@
 
     iget-object v4, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mDistance:D
     invoke-static {v4}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1800(Lcom/android/keyguard/sec/KeyguardShortcutView;)D
 
     move-result-wide v4
@@ -747,7 +712,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mFirstBorder:I
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2100(Lcom/android/keyguard/sec/KeyguardShortcutView;)I
 
     move-result v0
@@ -756,7 +720,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mDistance:D
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1800(Lcom/android/keyguard/sec/KeyguardShortcutView;)D
 
     move-result-wide v6
@@ -767,14 +730,12 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mDistance:D
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1800(Lcom/android/keyguard/sec/KeyguardShortcutView;)D
 
     move-result-wide v4
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mSecondBorder:I
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2200(Lcom/android/keyguard/sec/KeyguardShortcutView;)I
 
     move-result v0
@@ -793,14 +754,12 @@
     :cond_4
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mDistance:D
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1800(Lcom/android/keyguard/sec/KeyguardShortcutView;)D
 
     move-result-wide v4
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mSecondBorder:I
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2200(Lcom/android/keyguard/sec/KeyguardShortcutView;)I
 
     move-result v0
@@ -814,12 +773,10 @@
     :cond_5
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mIsFirst:Z
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1302(Lcom/android/keyguard/sec/KeyguardShortcutView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mUnlockView:Lcom/android/keyguard/sec/effect/KeyguardEffectViewBase;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2300(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/sec/effect/KeyguardEffectViewBase;
 
     move-result-object v0
@@ -828,7 +785,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1500(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v0
@@ -839,7 +795,6 @@
     :goto_3
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mIsFirst:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1300(Lcom/android/keyguard/sec/KeyguardShortcutView;)Z
 
     move-result v0
@@ -848,14 +803,12 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardShortcutView;->hideOtherShortcuts(Landroid/view/View;Z)V
     invoke-static {v0, p0, v2}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1900(Lcom/android/keyguard/sec/KeyguardShortcutView;Landroid/view/View;Z)V
 
     invoke-virtual {p0, v2}, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->onPressed(Z)V
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHelpTextCallback:Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2000(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;
 
     move-result-object v0
@@ -864,7 +817,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHelpTextCallback:Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2000(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;
 
     move-result-object v0
@@ -889,7 +841,6 @@
 
     check-cast v0, Landroid/content/Intent;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mLaunchIntent:Landroid/content/Intent;
     invoke-static {v3, v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2402(Lcom/android/keyguard/sec/KeyguardShortcutView;Landroid/content/Intent;)Landroid/content/Intent;
 
     new-instance v0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem$1;
@@ -898,7 +849,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mUnlockView:Lcom/android/keyguard/sec/effect/KeyguardEffectViewBase;
     invoke-static {v3}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2300(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/sec/effect/KeyguardEffectViewBase;
 
     move-result-object v3
@@ -914,7 +864,6 @@
     :pswitch_4
     iget-object v4, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v4}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1500(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v4
@@ -987,7 +936,6 @@
 
     iget-object v4, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mStartX:F
     invoke-static {v4}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1600(Lcom/android/keyguard/sec/KeyguardShortcutView;)F
 
     move-result v4
@@ -998,7 +946,6 @@
 
     iget-object v4, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mStartY:F
     invoke-static {v4}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1700(Lcom/android/keyguard/sec/KeyguardShortcutView;)F
 
     move-result v4
@@ -1027,12 +974,10 @@
 
     move-result-wide v6
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mDistance:D
     invoke-static {v4, v6, v7}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1802(Lcom/android/keyguard/sec/KeyguardShortcutView;D)D
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->DBG:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$600(Lcom/android/keyguard/sec/KeyguardShortcutView;)Z
 
     move-result v0
@@ -1042,14 +987,12 @@
     :goto_4
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mDistance:D
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1800(Lcom/android/keyguard/sec/KeyguardShortcutView;)D
 
     move-result-wide v4
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mSecondBorder:I
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2200(Lcom/android/keyguard/sec/KeyguardShortcutView;)I
 
     move-result v0
@@ -1062,12 +1005,10 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mIsFirst:Z
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1302(Lcom/android/keyguard/sec/KeyguardShortcutView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mUnlockView:Lcom/android/keyguard/sec/effect/KeyguardEffectViewBase;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2300(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/sec/effect/KeyguardEffectViewBase;
 
     move-result-object v0
@@ -1076,7 +1017,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1500(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v0
@@ -1093,7 +1033,6 @@
 
     check-cast v0, Landroid/content/Intent;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mLaunchIntent:Landroid/content/Intent;
     invoke-static {v2, v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2402(Lcom/android/keyguard/sec/KeyguardShortcutView;Landroid/content/Intent;)Landroid/content/Intent;
 
     new-instance v0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem$2;
@@ -1102,7 +1041,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mUnlockView:Lcom/android/keyguard/sec/effect/KeyguardEffectViewBase;
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2300(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/sec/effect/KeyguardEffectViewBase;
 
     move-result-object v2
@@ -1118,7 +1056,6 @@
     :cond_9
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->TAG:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$100(Lcom/android/keyguard/sec/KeyguardShortcutView;)Ljava/lang/String;
 
     move-result-object v0
@@ -1135,7 +1072,6 @@
 
     iget-object v4, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mDistance:D
     invoke-static {v4}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$1800(Lcom/android/keyguard/sec/KeyguardShortcutView;)D
 
     move-result-wide v4

@@ -125,7 +125,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/ProLite$1;->this$0:Lcom/sec/android/app/camera/shootingmode/ProLite;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/ProLite;->handleProModeForBixby(Ljava/lang/String;I)V
     invoke-static {v2, v0, v1}, Lcom/sec/android/app/camera/shootingmode/ProLite;->access$000(Lcom/sec/android/app/camera/shootingmode/ProLite;Ljava/lang/String;I)V
 
     goto :goto_1

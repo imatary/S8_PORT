@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/MultiPaneChallengeLayout$3;->this$0:Lcom/android/keyguard/MultiPaneChallengeLayout;
 
-    # getter for: Lcom/android/keyguard/MultiPaneChallengeLayout;->mScrimView:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/MultiPaneChallengeLayout;->access$000(Lcom/android/keyguard/MultiPaneChallengeLayout;)Landroid/view/View;
 
     move-result-object v0

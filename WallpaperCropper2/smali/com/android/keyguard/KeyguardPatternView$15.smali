@@ -38,7 +38,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$15;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # invokes: Lcom/android/keyguard/KeyguardPatternView;->isOnehandMode()Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$3400(Lcom/android/keyguard/KeyguardPatternView;)Z
 
     move-result v0
@@ -52,7 +51,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$15;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$3500(Lcom/android/keyguard/KeyguardPatternView;)Landroid/content/Context;
 
     move-result-object v0
@@ -65,7 +63,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$15;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mRightPressed:Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$3000(Lcom/android/keyguard/KeyguardPatternView;)Z
 
     move-result v0
@@ -76,7 +73,6 @@
 
     sget-object v1, Lcom/android/keyguard/KeyguardPatternView$OneHandMode;->Left:Lcom/android/keyguard/KeyguardPatternView$OneHandMode;
 
-    # invokes: Lcom/android/keyguard/KeyguardPatternView;->movePatternLock(Lcom/android/keyguard/KeyguardPatternView$OneHandMode;)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardPatternView;->access$2900(Lcom/android/keyguard/KeyguardPatternView;Lcom/android/keyguard/KeyguardPatternView$OneHandMode;)V
 
     goto :goto_0
@@ -84,7 +80,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$15;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mLeftArrowImage:Landroid/widget/ImageButton;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$3600(Lcom/android/keyguard/KeyguardPatternView;)Landroid/widget/ImageButton;
 
     move-result-object v0
@@ -94,7 +89,6 @@
     :goto_1
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$15;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mRightArrowImage:Landroid/widget/ImageButton;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$3700(Lcom/android/keyguard/KeyguardPatternView;)Landroid/widget/ImageButton;
 
     move-result-object v0
@@ -104,7 +98,6 @@
     :goto_2
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$15;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mOnehandLockPattern:Landroid/widget/LinearLayout;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$3800(Lcom/android/keyguard/KeyguardPatternView;)Landroid/widget/LinearLayout;
 
     move-result-object v0
@@ -113,7 +106,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$15;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mOnehandLockPattern:Landroid/widget/LinearLayout;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$3800(Lcom/android/keyguard/KeyguardPatternView;)Landroid/widget/LinearLayout;
 
     move-result-object v0
@@ -127,7 +119,6 @@
     :cond_3
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$15;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mLeftArrowImage:Landroid/widget/ImageButton;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$3600(Lcom/android/keyguard/KeyguardPatternView;)Landroid/widget/ImageButton;
 
     move-result-object v0
@@ -139,7 +130,6 @@
     :cond_4
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$15;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mRightArrowImage:Landroid/widget/ImageButton;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$3700(Lcom/android/keyguard/KeyguardPatternView;)Landroid/widget/ImageButton;
 
     move-result-object v0
@@ -153,7 +143,6 @@
 
     sget-object v1, Lcom/android/keyguard/KeyguardPatternView$OneHandMode;->Right:Lcom/android/keyguard/KeyguardPatternView$OneHandMode;
 
-    # invokes: Lcom/android/keyguard/KeyguardPatternView;->movePatternLock(Lcom/android/keyguard/KeyguardPatternView$OneHandMode;)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardPatternView;->access$2900(Lcom/android/keyguard/KeyguardPatternView;Lcom/android/keyguard/KeyguardPatternView$OneHandMode;)V
 
     goto :goto_0

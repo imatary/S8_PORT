@@ -66,7 +66,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->updateUIState(Landroid/content/Intent;)V
     invoke-static {v0, p2}, Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->access$000(Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;Landroid/content/Intent;)V
 
     :cond_0
@@ -92,7 +91,6 @@
 
     move-result-object v1
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->showInformation(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->access$100(Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;Ljava/lang/String;)V
 
     goto :goto_0
@@ -108,7 +106,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->updateUIState2(Landroid/content/Intent;)V
     invoke-static {v0, p2}, Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->access$200(Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;Landroid/content/Intent;)V
 
     goto :goto_0

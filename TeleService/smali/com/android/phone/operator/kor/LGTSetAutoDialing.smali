@@ -550,7 +550,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f0d0771
+    const v1, 0x7f0d07d5
 
     invoke-static {p0, v1, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -585,7 +585,7 @@
     return v1
 
     :cond_1
-    const v1, 0x7f0d0772
+    const v1, 0x7f0d07d6
 
     invoke-static {p0, v1, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

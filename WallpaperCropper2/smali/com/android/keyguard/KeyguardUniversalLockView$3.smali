@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$800(Lcom/android/keyguard/KeyguardUniversalLockView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v1
@@ -69,7 +68,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mLastPokeTime:J
     invoke-static {v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1200(Lcom/android/keyguard/KeyguardUniversalLockView;)J
 
     move-result-wide v4
@@ -93,18 +91,15 @@
 
     move-result-wide v2
 
-    # setter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mLastPokeTime:J
     invoke-static {v0, v2, v3}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1202(Lcom/android/keyguard/KeyguardUniversalLockView;J)J
 
     :cond_3
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # invokes: Lcom/android/keyguard/KeyguardUniversalLockView;->resetmTimer()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$100(Lcom/android/keyguard/KeyguardUniversalLockView;)V
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionLockTextView:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1300(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -113,7 +108,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionLockTextView:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1300(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -124,7 +118,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionLockTextView:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1300(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -154,7 +147,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionImageView:Landroid/widget/ImageView;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$900(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/widget/ImageView;
 
     move-result-object v1
@@ -163,14 +155,12 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionImageView:Landroid/widget/ImageView;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$900(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/widget/ImageView;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mOutgoingArrowAnimator:Landroid/view/animation/AlphaAnimation;
     invoke-static {v2}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1000(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/view/animation/AlphaAnimation;
 
     move-result-object v2
@@ -182,7 +172,6 @@
     :cond_7
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionImageView:Landroid/widget/ImageView;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$900(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/widget/ImageView;
 
     move-result-object v1
@@ -191,14 +180,12 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionImageView:Landroid/widget/ImageView;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$900(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/widget/ImageView;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mIncomingArrowAnimator:Landroid/view/animation/AlphaAnimation;
     invoke-static {v2}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1100(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/view/animation/AlphaAnimation;
 
     move-result-object v2
@@ -243,7 +230,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionView:Lcom/android/internal/widget/DirectionLockView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$000(Lcom/android/keyguard/KeyguardUniversalLockView;)Lcom/android/internal/widget/DirectionLockView;
 
     move-result-object v0
@@ -262,7 +248,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # invokes: Lcom/android/keyguard/KeyguardUniversalLockView;->handleAndPerformDotAnimations()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1500(Lcom/android/keyguard/KeyguardUniversalLockView;)V
 
     goto :goto_2
@@ -277,7 +262,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->isChecking:Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$400(Lcom/android/keyguard/KeyguardUniversalLockView;)Z
 
     move-result v0
@@ -286,7 +270,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->isSleeping:Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$300(Lcom/android/keyguard/KeyguardUniversalLockView;)Z
 
     move-result v0
@@ -297,7 +280,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionView:Lcom/android/internal/widget/DirectionLockView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$000(Lcom/android/keyguard/KeyguardUniversalLockView;)Lcom/android/internal/widget/DirectionLockView;
 
     move-result-object v0
@@ -312,7 +294,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$3;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionView:Lcom/android/internal/widget/DirectionLockView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$000(Lcom/android/keyguard/KeyguardUniversalLockView;)Lcom/android/internal/widget/DirectionLockView;
 
     move-result-object v0

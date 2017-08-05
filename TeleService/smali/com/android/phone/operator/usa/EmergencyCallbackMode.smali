@@ -320,11 +320,11 @@
 
     check-cast v0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageWidget;
 
-    const v2, 0x7f0d0669
+    const v2, 0x7f0d06cd
 
     invoke-virtual {v0, v2}, Lcom/android/phone/widget/incomingwidget/IncomingCallImageWidget;->setLeftHintText(I)V
 
-    const v2, 0x7f0d0668
+    const v2, 0x7f0d06cc
 
     invoke-virtual {v0, v2}, Lcom/android/phone/widget/incomingwidget/IncomingCallImageWidget;->setRightHintText(I)V
 
@@ -386,13 +386,13 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d0667
+    const v2, 0x7f0d06cb
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0d066b
+    const v2, 0x7f0d06cf
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 

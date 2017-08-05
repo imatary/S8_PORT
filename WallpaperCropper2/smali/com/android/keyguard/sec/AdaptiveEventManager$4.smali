@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$700(Lcom/android/keyguard/sec/AdaptiveEventManager;)Landroid/content/Context;
 
     move-result-object v0
@@ -54,7 +53,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$700(Lcom/android/keyguard/sec/AdaptiveEventManager;)Landroid/content/Context;
 
     move-result-object v0
@@ -69,12 +67,10 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mCurrentUserId:I
     invoke-static {v1}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$800(Lcom/android/keyguard/sec/AdaptiveEventManager;)I
 
     move-result v1
 
-    # invokes: Lcom/android/keyguard/sec/AdaptiveEventManager;->sendWeatherTriggerBroadcast(I)V
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$900(Lcom/android/keyguard/sec/AdaptiveEventManager;I)V
 
     const-string/jumbo v0, "AdaptiveEventManager"
@@ -121,7 +117,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$700(Lcom/android/keyguard/sec/AdaptiveEventManager;)Landroid/content/Context;
 
     move-result-object v0
@@ -143,7 +138,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mRegistered:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1000(Lcom/android/keyguard/sec/AdaptiveEventManager;)Z
 
     move-result v0
@@ -153,7 +147,6 @@
     :goto_1
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mIsSameUser:Z
     invoke-static {v0, v6}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1202(Lcom/android/keyguard/sec/AdaptiveEventManager;Z)Z
 
     new-instance v3, Landroid/content/IntentFilter;
@@ -162,7 +155,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->ACTION_SEC_CHANGE_SETTING:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$200(Lcom/android/keyguard/sec/AdaptiveEventManager;)Ljava/lang/String;
 
     move-result-object v0
@@ -171,7 +163,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->ACTION_SEC_AUTO_REFRESH:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$300(Lcom/android/keyguard/sec/AdaptiveEventManager;)Ljava/lang/String;
 
     move-result-object v0
@@ -180,7 +171,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->ACTION_SEC_CHANGE_WEATHER_DATA:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$400(Lcom/android/keyguard/sec/AdaptiveEventManager;)Ljava/lang/String;
 
     move-result-object v0
@@ -189,7 +179,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->ACTION_WEATHER_DATE_SYNC:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$500(Lcom/android/keyguard/sec/AdaptiveEventManager;)Ljava/lang/String;
 
     move-result-object v0
@@ -205,14 +194,12 @@
     :goto_2
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$700(Lcom/android/keyguard/sec/AdaptiveEventManager;)Landroid/content/Context;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v1}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1100(Lcom/android/keyguard/sec/AdaptiveEventManager;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
@@ -227,24 +214,20 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mRegistered:Z
     invoke-static {v0, v7}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1002(Lcom/android/keyguard/sec/AdaptiveEventManager;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mCurrentUserId:I
     invoke-static {v0, p1}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$802(Lcom/android/keyguard/sec/AdaptiveEventManager;I)I
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mWeatherInfoUserList:Ljava/util/HashMap;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1300(Lcom/android/keyguard/sec/AdaptiveEventManager;)Ljava/util/HashMap;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mCurrentUserId:I
     invoke-static {v1}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$800(Lcom/android/keyguard/sec/AdaptiveEventManager;)I
 
     move-result v1
@@ -267,19 +250,16 @@
 
     invoke-direct {v1, v2}, Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;-><init>(Lcom/android/keyguard/sec/AdaptiveEventManager;)V
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mWeatherInfo:Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1402(Lcom/android/keyguard/sec/AdaptiveEventManager;Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;)Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mWeatherInfoUserList:Ljava/util/HashMap;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1300(Lcom/android/keyguard/sec/AdaptiveEventManager;)Ljava/util/HashMap;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mCurrentUserId:I
     invoke-static {v1}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$800(Lcom/android/keyguard/sec/AdaptiveEventManager;)I
 
     move-result v1
@@ -290,7 +270,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mWeatherInfo:Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;
     invoke-static {v2}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1400(Lcom/android/keyguard/sec/AdaptiveEventManager;)Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;
 
     move-result-object v2
@@ -300,7 +279,6 @@
     :goto_3
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$700(Lcom/android/keyguard/sec/AdaptiveEventManager;)Landroid/content/Context;
 
     move-result-object v0
@@ -334,14 +312,12 @@
     :cond_3
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$700(Lcom/android/keyguard/sec/AdaptiveEventManager;)Landroid/content/Context;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v1}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1100(Lcom/android/keyguard/sec/AdaptiveEventManager;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
@@ -350,7 +326,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mRegistered:Z
     invoke-static {v0, v6}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1002(Lcom/android/keyguard/sec/AdaptiveEventManager;Z)Z
 
     goto/16 :goto_1
@@ -367,14 +342,12 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mWeatherInfoUserList:Ljava/util/HashMap;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1300(Lcom/android/keyguard/sec/AdaptiveEventManager;)Ljava/util/HashMap;
 
     move-result-object v0
 
     iget-object v2, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mCurrentUserId:I
     invoke-static {v2}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$800(Lcom/android/keyguard/sec/AdaptiveEventManager;)I
 
     move-result v2
@@ -389,7 +362,6 @@
 
     check-cast v0, Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mWeatherInfo:Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;
     invoke-static {v1, v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1402(Lcom/android/keyguard/sec/AdaptiveEventManager;Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;)Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;
 
     goto :goto_3
@@ -397,7 +369,6 @@
     :cond_6
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mWeatherInfo:Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$1400(Lcom/android/keyguard/sec/AdaptiveEventManager;)Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;
 
     move-result-object v0
@@ -419,7 +390,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # invokes: Lcom/android/keyguard/sec/AdaptiveEventManager;->sendWeatherTriggerBroadcast(I)V
     invoke-static {v0, p1}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$900(Lcom/android/keyguard/sec/AdaptiveEventManager;I)V
 
     const-string/jumbo v0, "AdaptiveEventManager"
@@ -436,7 +406,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mCurrentUserId:I
     invoke-static {v2}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$800(Lcom/android/keyguard/sec/AdaptiveEventManager;)I
 
     move-result v2
@@ -475,7 +444,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$700(Lcom/android/keyguard/sec/AdaptiveEventManager;)Landroid/content/Context;
 
     move-result-object v0

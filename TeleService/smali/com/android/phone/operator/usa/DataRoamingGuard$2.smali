@@ -34,7 +34,7 @@
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 2
 
-    invoke-virtual {p1}, Landroid/telephony/ServiceState;->getState()I
+    invoke-virtual {p1}, Landroid/telephony/ServiceState;->getDataRegState()I
 
     move-result v0
 
@@ -42,7 +42,7 @@
 
     if-eq v0, v1, :cond_0
 
-    invoke-virtual {p1}, Landroid/telephony/ServiceState;->getState()I
+    invoke-virtual {p1}, Landroid/telephony/ServiceState;->getDataRegState()I
 
     move-result v0
 

@@ -70,7 +70,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppList:Ljava/util/LinkedHashMap;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$000(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Ljava/util/LinkedHashMap;
 
     move-result-object v3
@@ -89,7 +88,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->loadNoItemView()V
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$100(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)V
 
     :cond_0
@@ -99,12 +97,10 @@
     :cond_1
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->loadView()V
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$200(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)V
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppListview:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$300(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
     move-result-object v3
@@ -113,7 +109,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->loadDescription()V
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$400(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)V
 
     goto :goto_0
@@ -156,7 +151,6 @@
     :cond_3
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppList:Ljava/util/LinkedHashMap;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$000(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Ljava/util/LinkedHashMap;
 
     move-result-object v3
@@ -224,7 +218,6 @@
     :cond_6
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppList:Ljava/util/LinkedHashMap;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$000(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Ljava/util/LinkedHashMap;
 
     move-result-object v3
@@ -260,7 +253,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppAdapter:Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$500(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
 
     move-result-object v3
@@ -318,7 +310,6 @@
     :cond_a
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppList:Ljava/util/LinkedHashMap;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$000(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Ljava/util/LinkedHashMap;
 
     move-result-object v3
@@ -370,7 +361,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppListview:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$300(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
     move-result-object v3
@@ -380,12 +370,10 @@
     :cond_c
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->loadDescription()V
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$400(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)V
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppAdapter:Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$500(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
 
     move-result-object v3
@@ -427,7 +415,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppListview:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$300(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
     move-result-object v3
@@ -490,7 +477,6 @@
     :cond_f
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppList:Ljava/util/LinkedHashMap;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$000(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Ljava/util/LinkedHashMap;
 
     move-result-object v3
@@ -518,7 +504,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppAdapter:Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$500(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
 
     move-result-object v3
@@ -527,7 +512,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppListview:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$300(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
     move-result-object v3
@@ -536,7 +520,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->mAppAdapter:Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$500(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
 
     move-result-object v3
@@ -545,12 +528,10 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->updateInstallBtn()V
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$600(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)V
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->loadDescription()V
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;->access$400(Lcom/samsung/android/app/omcagent/ui/application/AppInstallerActivity;)V
 
     goto/16 :goto_0

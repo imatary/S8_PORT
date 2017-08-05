@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAccountView$3;->this$0:Lcom/android/keyguard/KeyguardAccountView;
 
-    # getter for: Lcom/android/keyguard/KeyguardAccountView;->mLogin:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardAccountView;->access$000(Lcom/android/keyguard/KeyguardAccountView;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -59,7 +58,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAccountView$3;->this$0:Lcom/android/keyguard/KeyguardAccountView;
 
-    # getter for: Lcom/android/keyguard/KeyguardAccountView;->mShowImeAtScreenOn:Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardAccountView;->access$100(Lcom/android/keyguard/KeyguardAccountView;)Z
 
     move-result v0
@@ -72,7 +70,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardAccountView$3;->this$0:Lcom/android/keyguard/KeyguardAccountView;
 
-    # getter for: Lcom/android/keyguard/KeyguardAccountView;->mLogin:Landroid/widget/EditText;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardAccountView;->access$000(Lcom/android/keyguard/KeyguardAccountView;)Landroid/widget/EditText;
 
     move-result-object v1

@@ -718,13 +718,38 @@
 
     move-result v2
 
-    if-eqz v2, :cond_0
+    if-nez v2, :cond_0
 
+    const-string/jumbo v2, "46006"
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    const-string/jumbo v2, "46009"
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    const-string/jumbo v2, "45407"
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    :cond_0
     const/4 v2, 0x1
 
     return v2
 
-    :cond_0
+    :cond_1
     const/4 v2, 0x0
 
     return v2
@@ -743,13 +768,38 @@
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-nez v1, :cond_0
 
+    const-string/jumbo v1, "46006"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string/jumbo v1, "46009"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string/jumbo v1, "45407"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    :cond_0
     const/4 v1, 0x1
 
     return v1
 
-    :cond_0
+    :cond_1
     const/4 v1, 0x0
 
     return v1
@@ -835,6 +885,42 @@
     return v1
 
     :cond_0
+    const/4 v1, 0x0
+
+    return v1
+.end method
+
+.method public static isClaroBrSim()Z
+    .locals 2
+
+    const-string/jumbo v1, "gsm.sim.operator.numeric"
+
+    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "72402"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string/jumbo v1, "72405"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    :cond_0
+    const/4 v1, 0x1
+
+    return v1
+
+    :cond_1
     const/4 v1, 0x0
 
     return v1

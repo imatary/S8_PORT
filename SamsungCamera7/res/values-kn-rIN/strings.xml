@@ -308,6 +308,7 @@
     <string name="camera_label">ಕ್ಯಾಮರಾ</string>
     <string name="camera_modes">ಕ್ಯಾಮರಾ ಮೋಡ್‌‌ಗಳು</string>
     <string name="camera_security_enter">ಸುರಕ್ಷತಾ ನಿಯಮವು ಕ್ಯಾಮರಾದ ಬಳಕೆಯನ್ನು ನಿರ್ಬಂಧಿಸುತ್ತದೆ.</string>
+    <string name="can_not_use_voice_control">Bixby Voice ವೇಕಪ್ ಆನ್ ಆಗಿರುವಾಗ ದ್ವನಿ ನಿಯಂತ್ರಣ ಬಳಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</string>
     <string name="cancel">ರದ್ದು</string>
     <string name="cannot_start_camcorder_msg">ಕರೆಯ ಸಮಯದಲ್ಲಿ ವೀಡಿಯೊ ರೆಕಾರ್ಡ್ ಮಾಡಲು ಅಸಮರ್ಥ.</string>
     <string name="cannot_start_camera_msg">ಕರೆಗಳ ಸಮಯದಲ್ಲಿ ಕ್ಯಾಮರಾ ಬಳಸಲು ಅಸಮರ್ಥ.</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"ಸೆಲ್ಫೀ
 ತೆಗೆಯಿರಿ"</string>
     <string name="temperature">ಉಷ್ಣತೆ</string>
+    <string name="temperature_too_high_camera_off">%1$s ಬಳಸಲು ತಾಪಮಾನ ತುಂಬಾ ಹೆಚ್ಚಿದೆ. %2$s ಬಳಸುವುದಕ್ಕೂ ಮೊದಲು ಫೋನ್ ತಂಪಾಗುವವರೆಗೆ ಕಾಯಿರಿ.</string>
     <string name="temperature_too_high_flash_off">ಫ್ಲ್ಯಾಶ್ ಆನ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ. ನಿಮ್ಮ ಸಾಧನವು ತಂಪಾದಾಗ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
     <string name="temperature_too_high_record">ವೀಡಿಯೋ ರೆಕಾರ್ಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಸಾಧನವು ತಂಪಾದಾಗ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
     <string name="temperature_too_high_recording_disable">ರೆಕಾರ್ಡಿಂಗ್ ನಿಂತಿದೆ. ನಿಮ್ಮ ಸಾಧನವು ತಂಪಾದಾಗ ನೀವು ರೆಕಾರ್ಡ್ ಮಾಡಬಹುದು.</string>

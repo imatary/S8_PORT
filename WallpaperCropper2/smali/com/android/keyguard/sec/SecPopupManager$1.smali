@@ -31,7 +31,6 @@
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
 
-    # invokes: Lcom/android/keyguard/sec/SecPopupManager;->dismissdDialog()V
     invoke-static {}, Lcom/android/keyguard/sec/SecPopupManager;->access$000()V
 
     const/4 v0, 0x0

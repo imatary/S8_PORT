@@ -8,6 +8,10 @@
 
 .field private static final DBG:Z
 
+.field private static final HCI_BLE_ENH_RECEIVER_TEST:I = 0x2033
+
+.field private static final HCI_BLE_ENH_TRANSMITTER_TEST:I = 0x2034
+
 .field private static final HCI_BLE_RECEIVER_TEST:I = 0x201d
 
 .field private static final HCI_BLE_TEST_END:I = 0x201f
@@ -2307,12 +2311,6 @@
 
     monitor-enter v4
 
-    if-nez p2, :cond_0
-
-    const/16 v3, 0x201f
-
-    if-ne p1, v3, :cond_1
-
     :try_start_0
     new-instance v2, Landroid/content/Intent;
 
@@ -2320,10 +2318,28 @@
 
     invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
+    const-string/jumbo v3, "android.bluetooth.adapter.extra.EXTRA_LE_TEST_STATUS"
+
+    invoke-virtual {v2, v3, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    if-nez p2, :cond_1
+
+    const/16 v3, 0x201f
+
+    if-ne p1, v3, :cond_0
+
+    const-string/jumbo v3, "android.bluetooth.adapter.extra.EXTRA_IS_LE_TEST_END"
+
+    const/4 v5, 0x1
+
+    invoke-virtual {v2, v3, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
     const-string/jumbo v3, "android.bluetooth.adapter.extra.EXTRA_LE_PACKET_COUNTS"
 
     invoke-virtual {v2, v3, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
+    :cond_0
+    :goto_0
     iget-object v3, p0, Lcom/android/bluetooth/btservice/AdapterProperties;->mService:Lcom/android/bluetooth/btservice/AdapterService;
 
     const-string/jumbo v5, "android.permission.BLUETOOTH_ADMIN"
@@ -2336,7 +2352,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_1
+    if-eqz v3, :cond_2
 
     invoke-static {}, Lcom/android/bluetooth/Utils;->getBtEnabledContainers()Ljava/util/List;
 
@@ -2346,12 +2362,12 @@
 
     move-result-object v1
 
-    :goto_0
+    :goto_1
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
 
-    if-eqz v3, :cond_1
+    if-eqz v3, :cond_2
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -2375,7 +2391,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catchall_0
     move-exception v3
@@ -2384,7 +2400,7 @@
 
     throw v3
 
-    :cond_0
+    :cond_1
     :try_start_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2408,7 +2424,9 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    :cond_1
+    goto :goto_0
+
+    :cond_2
     monitor-exit v4
 
     return-void

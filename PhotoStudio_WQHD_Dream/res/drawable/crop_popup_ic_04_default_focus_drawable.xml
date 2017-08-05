@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<bitmap android:src="@drawable/crop_popup_ic_04" android:tint="@color/portrait_submenu_focus_state_color" android:tintMode="src_atop"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

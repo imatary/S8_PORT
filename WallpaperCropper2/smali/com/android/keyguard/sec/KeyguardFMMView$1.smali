@@ -45,7 +45,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/sec/KeyguardFMMView$1;->this$0:Lcom/android/keyguard/sec/KeyguardFMMView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardFMMView;->mFMMPhoneNumber:Ljava/lang/String;
     invoke-static {v3}, Lcom/android/keyguard/sec/KeyguardFMMView;->access$000(Lcom/android/keyguard/sec/KeyguardFMMView;)Ljava/lang/String;
 
     move-result-object v3
@@ -64,7 +63,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardFMMView$1;->this$0:Lcom/android/keyguard/sec/KeyguardFMMView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardFMMView;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardFMMView;->access$100(Lcom/android/keyguard/sec/KeyguardFMMView;)Landroid/content/Context;
 
     move-result-object v1

@@ -317,6 +317,7 @@ düzəld"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Kamera rejimləri</string>
     <string name="camera_security_enter">Təhlükəsizlik siyasəti Kameradan istifadəni məhdudlaşdırır.</string>
+    <string name="can_not_use_voice_control">Bixby Voice oyanış əmri yanılı olan zaman Səsli nəzarətdən istifadə etmək olmur.</string>
     <string name="cancel">Ləğv et</string>
     <string name="cannot_start_camcorder_msg">Zəng zamanı videoları yazmaq olmur.</string>
     <string name="cannot_start_camera_msg">Zəng zamanı Kameradan istifadə etmək mümkün deyil.</string>
@@ -613,6 +614,7 @@ Bununla razısınızsa, bu icazə Tag shot-a veriləcək və sizdən bir daha so
     <string name="task_edge_title_selfie">"Selfi
 çək"</string>
     <string name="temperature">Temperatur</string>
+    <string name="temperature_too_high_camera_off">Temperatur %1$s-dən istifadə etmək üçün çox yüksəkdir. %2$s istifadə etməzdən öncə telefonun soyumasını gözləyin.</string>
     <string name="temperature_too_high_flash_off">Flaşı yandırmağı aktiv et. Cihaz soyuduqdan sonra yenidən cəhd edin</string>
     <string name="temperature_too_high_record">Video çəkmək mümkün deyil. Cihaz soyuduqda yenidən cəhd edin.</string>
     <string name="temperature_too_high_recording_disable">Çəkiliş dayandırılıb. Cihaz soyuduqdan sonra çəkilişə başlaya bilərsiniz</string>

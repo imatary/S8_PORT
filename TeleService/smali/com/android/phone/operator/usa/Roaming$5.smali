@@ -45,7 +45,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/android/phone/operator/usa/Roaming;->-wrap3(Lcom/android/phone/operator/usa/Roaming;II)V
 
-    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticRoamingInService()Z
+    invoke-static {}, Lcom/android/phone/operator/usa/TelephonyExtension;->isDomesticDataRoamingInService()Z
 
     move-result v0
 

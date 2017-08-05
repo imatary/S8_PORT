@@ -46,7 +46,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$4;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mFaceCircle:[Lcom/samsung/android/glview/GLCircle;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$200(Lcom/sec/android/app/camera/menu/OverlayLayout;)[Lcom/samsung/android/glview/GLCircle;
 
     move-result-object v1
@@ -59,7 +58,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$4;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mFaceCircle:[Lcom/samsung/android/glview/GLCircle;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$200(Lcom/sec/android/app/camera/menu/OverlayLayout;)[Lcom/samsung/android/glview/GLCircle;
 
     move-result-object v1

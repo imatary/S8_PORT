@@ -49,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$300(Lcom/sec/android/app/camera/shootingmode/Selfie;)Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     move-result-object v0
@@ -60,12 +59,10 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Selfie;->hideBeautyMenuButton()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$400(Lcom/sec/android/app/camera/shootingmode/Selfie;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$500(Lcom/sec/android/app/camera/shootingmode/Selfie;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v0
@@ -82,29 +79,24 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mIsActivatedSpotLightSlider:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$602(Lcom/sec/android/app/camera/shootingmode/Selfie;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Selfie;->updateSpotLightVI()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$700(Lcom/sec/android/app/camera/shootingmode/Selfie;)V
 
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Selfie;->hideVisionIntelligenceButton()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$800(Lcom/sec/android/app/camera/shootingmode/Selfie;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Selfie;->hideVisionIntelligenceEffect()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$900(Lcom/sec/android/app/camera/shootingmode/Selfie;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Selfie;->hideStickerShortcutButton()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$1000(Lcom/sec/android/app/camera/shootingmode/Selfie;)V
 
     const-string v0, "1006"
@@ -116,7 +108,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$300(Lcom/sec/android/app/camera/shootingmode/Selfie;)Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     move-result-object v0
@@ -127,7 +118,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Selfie;->hideBeautyMenuButton()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$400(Lcom/sec/android/app/camera/shootingmode/Selfie;)V
 
     goto :goto_0

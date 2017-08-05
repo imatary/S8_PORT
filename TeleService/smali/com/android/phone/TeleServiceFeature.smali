@@ -3688,20 +3688,6 @@
 
     move-result v17
 
-    if-nez v17, :cond_f
-
-    const-string/jumbo v17, "XSG"
-
-    sget-object v20, Lcom/android/phone/TeleServiceFeature;->salesCode:Ljava/lang/String;
-
-    move-object/from16 v0, v17
-
-    move-object/from16 v1, v20
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v17
-
     :goto_a
     invoke-static/range {v17 .. v17}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -7798,26 +7784,6 @@
     move-result v7
 
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v7
-
-    invoke-virtual {v3, v6, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    sget-object v3, Lcom/android/phone/TeleServiceFeature;->mFeatureList:Ljava/util/HashMap;
-
-    const-string/jumbo v6, "emergency_contacts"
-
-    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v7
-
-    invoke-virtual {v3, v6, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    sget-object v3, Lcom/android/phone/TeleServiceFeature;->mFeatureList:Ljava/util/HashMap;
-
-    const-string/jumbo v6, "emergency_dialer_expandable_dial"
-
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v7
 
@@ -15301,6 +15267,18 @@
     move-result-object v33
 
     invoke-virtual/range {v31 .. v33}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v31, Lcom/android/phone/TeleServiceFeature;->mFeatureList:Ljava/util/HashMap;
+
+    const-string/jumbo v32, "feature_usc"
+
+    move-object/from16 v0, v31
+
+    move-object/from16 v1, v32
+
+    move-object/from16 v2, v23
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     sget-object v31, Lcom/android/phone/TeleServiceFeature;->mFeatureList:Ljava/util/HashMap;
 

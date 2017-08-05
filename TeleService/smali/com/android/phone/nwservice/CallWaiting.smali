@@ -329,7 +329,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0b02
+    const v4, 0x7f0d0b69
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -357,7 +357,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0b04
+    const v4, 0x7f0d0b6b
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -804,9 +804,9 @@
 .method protected onCreateDialog(ILandroid/os/Bundle;)Landroid/app/Dialog;
     .locals 11
 
-    const v10, 0x7f0d0a7f
+    const v10, 0x7f0d0ae6
 
-    const v9, 0x7f0d050c
+    const v9, 0x7f0d056c
 
     const/4 v8, 0x1
 
@@ -836,7 +836,7 @@
 
     invoke-virtual {v1, v7}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v6, 0x7f0d0aa4
+    const v6, 0x7f0d0b0b
 
     invoke-virtual {p0, v6}, Lcom/android/phone/nwservice/CallWaiting;->getText(I)Ljava/lang/CharSequence;
 
@@ -862,7 +862,7 @@
 
     sparse-switch p1, :sswitch_data_1
 
-    const v4, 0x7f0d0b04
+    const v4, 0x7f0d0b6b
 
     :goto_0
     invoke-virtual {v0, v8}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
@@ -917,7 +917,7 @@
 
     sparse-switch p1, :sswitch_data_2
 
-    const v4, 0x7f0d0332
+    const v4, 0x7f0d0392
 
     :goto_1
     invoke-virtual {v2, v7}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
@@ -945,17 +945,17 @@
     return-object v3
 
     :sswitch_1
-    const v4, 0x7f0d0b02
+    const v4, 0x7f0d0b69
 
     goto :goto_0
 
     :sswitch_2
-    const v4, 0x7f0d0b03
+    const v4, 0x7f0d0b6a
 
     goto :goto_0
 
     :sswitch_3
-    const v4, 0x7f0d0ade
+    const v4, 0x7f0d0b45
 
     invoke-virtual {p0, v10}, Lcom/android/phone/nwservice/CallWaiting;->getText(I)Ljava/lang/CharSequence;
 
@@ -966,7 +966,7 @@
     goto :goto_0
 
     :sswitch_4
-    const v4, 0x7f0d0adf
+    const v4, 0x7f0d0b46
 
     invoke-virtual {p0, v10}, Lcom/android/phone/nwservice/CallWaiting;->getText(I)Ljava/lang/CharSequence;
 
@@ -992,17 +992,17 @@
     return-object v6
 
     :sswitch_5
-    const v4, 0x7f0d0331
+    const v4, 0x7f0d0391
 
     goto :goto_1
 
     :sswitch_6
-    const v4, 0x7f0d0333
+    const v4, 0x7f0d0393
 
     goto :goto_1
 
     :sswitch_7
-    const v4, 0x7f0d05b6
+    const v4, 0x7f0d061a
 
     goto :goto_1
 

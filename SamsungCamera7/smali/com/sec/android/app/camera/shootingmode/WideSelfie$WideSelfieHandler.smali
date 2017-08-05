@@ -128,15 +128,12 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->clearWideSelfieRect()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$1100(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)V
 
     const/4 v2, 0x0
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->setHapticEnabled(Z)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$1200(Lcom/sec/android/app/camera/shootingmode/WideSelfie;Z)V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -147,7 +144,6 @@
 
     if-eqz v2, :cond_2
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -157,13 +153,10 @@
     invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->setTouchToCaptureStarted(Z)V
 
     :cond_2
-    # invokes: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->cancelWideSelfieCapture()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$1300(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)V
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->reset()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$1400(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -174,7 +167,6 @@
 
     invoke-interface {v2, v3, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->playCameraSound(Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;I)V
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->showPreviewGroup()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$1500(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
@@ -203,14 +195,12 @@
 
     invoke-virtual {p0, v6}, Lcom/sec/android/app/camera/shootingmode/WideSelfie$WideSelfieHandler;->removeMessages(I)V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mWideSelfieWarning:Z
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$1600(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Z
 
     move-result v2
@@ -232,21 +222,18 @@
 
     invoke-virtual {p0, v7}, Lcom/sec/android/app/camera/shootingmode/WideSelfie$WideSelfieHandler;->removeMessages(I)V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mWideSelfieWarning:Z
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$1600(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -255,7 +242,6 @@
 
     invoke-interface {v2, v3, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->playCameraSound(Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;I)V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -275,7 +261,6 @@
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/shootingmode/WideSelfie$WideSelfieHandler;->removeMessages(I)V
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->hideGuideText()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$1700(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)V
 
     goto/16 :goto_0
@@ -285,7 +270,6 @@
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/shootingmode/WideSelfie$WideSelfieHandler;->removeMessages(I)V
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mSkipCapture:Z
     invoke-static {v1, v5}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$1802(Lcom/sec/android/app/camera/shootingmode/WideSelfie;Z)Z
 
     goto/16 :goto_0
@@ -295,13 +279,11 @@
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/shootingmode/WideSelfie$WideSelfieHandler;->removeMessages(I)V
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->setSkipCheckWarning(Z)V
     invoke-static {v1, v5}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$1900(Lcom/sec/android/app/camera/shootingmode/WideSelfie;Z)V
 
     goto/16 :goto_0
 
     :pswitch_6
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -316,7 +298,6 @@
 
     if-eqz v2, :cond_3
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mWideSelfieMsgHandler:Lcom/sec/android/app/camera/shootingmode/WideSelfie$WideSelfieHandler;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$2000(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Lcom/sec/android/app/camera/shootingmode/WideSelfie$WideSelfieHandler;
 
     move-result-object v2
@@ -332,23 +313,19 @@
     goto/16 :goto_0
 
     :cond_3
-    # invokes: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->showPreviewGroup()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$1500(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)V
 
     goto/16 :goto_0
 
     :pswitch_7
-    # invokes: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->setPostCaptureProgress(I)V
     invoke-static {v1, v5}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$2100(Lcom/sec/android/app/camera/shootingmode/WideSelfie;I)V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$2200(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     move-result-object v2
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->endShutterProgressWheel()V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfie;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/WideSelfie;->access$300(Lcom/sec/android/app/camera/shootingmode/WideSelfie;)Lcom/sec/android/app/camera/interfaces/Engine;
 
     move-result-object v2

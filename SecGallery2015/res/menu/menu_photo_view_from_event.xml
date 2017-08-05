@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/action_camera" android:title="@string/switch_to_camera" android:showAsAction="ifRoom" android:actionLayout="@layout/default_action_bar_common_button_layout" />
-    <item android:id="@id/action_select" android:title="@string/edit" android:showAsAction="never" />
-    <item android:id="@id/action_share" android:title="@string/share_short" android:showAsAction="never" />
-    <item android:id="@id/action_add_content" android:title="@string/add_content" android:showAsAction="never" />
-</menu>

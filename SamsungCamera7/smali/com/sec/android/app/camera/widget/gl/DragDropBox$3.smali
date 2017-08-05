@@ -43,7 +43,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/widget/gl/DragDropBox;->mRelocating:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/widget/gl/DragDropBox;->access$602(Lcom/sec/android/app/camera/widget/gl/DragDropBox;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/DragDropBox$3;->this$0:Lcom/sec/android/app/camera/widget/gl/DragDropBox;

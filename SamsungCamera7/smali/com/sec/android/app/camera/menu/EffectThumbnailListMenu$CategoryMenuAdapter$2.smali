@@ -43,14 +43,12 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # setter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mIsNeedShowBaseMenu:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$2402(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter$2;->this$1:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # setter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mIsNeedToSetScreenId:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$2502(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter$2;->this$1:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;
@@ -69,7 +67,6 @@
 
     move-result-object v1
 
-    # invokes: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->uninstallStickerPackage(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$2600(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;Ljava/lang/String;)V
 
     const-string v0, "5042"

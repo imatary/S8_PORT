@@ -3741,7 +3741,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v3, 0x7f0d097e
+    const v3, 0x7f0d09e4
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->getString(I)Ljava/lang/String;
 
@@ -4795,7 +4795,7 @@
 
     const/4 v0, 0x0
 
-    const v1, 0x7f0d0638
+    const v1, 0x7f0d069c
 
     invoke-interface {p1, v0, v2, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -5281,7 +5281,7 @@
 
     move-result-object v1
 
-    const v2, 0x1020469
+    const v2, 0x1020472
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

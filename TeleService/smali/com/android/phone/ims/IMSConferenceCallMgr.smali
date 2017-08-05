@@ -2043,7 +2043,7 @@
 
     aput-object v10, v9, v11
 
-    const v10, 0x7f0d0934
+    const v10, 0x7f0d099a
 
     invoke-virtual {v8, v10, v9}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2141,7 +2141,7 @@
 
     aput-object v6, v5, v7
 
-    const v6, 0x7f0d0934
+    const v6, 0x7f0d099a
 
     invoke-virtual {v4, v6, v5}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3077,7 +3077,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d0932
+    const v8, 0x7f0d0998
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3218,7 +3218,7 @@
 .method public makeNameAndNumberForStartIMSConference()Ljava/lang/String;
     .locals 14
 
-    const v13, 0x7f0d0934
+    const v13, 0x7f0d099a
 
     const/4 v12, 0x2
 
@@ -4234,7 +4234,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d09aa
+    const v2, 0x7f0d0a10
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4250,7 +4250,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0935
+    const v2, 0x7f0d099b
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4308,7 +4308,7 @@
 
     aput-object v1, v3, v4
 
-    const v4, 0x7f0d0931
+    const v4, 0x7f0d0997
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -4405,70 +4405,70 @@
     :sswitch_0
     const-string/jumbo v11, "(403)"
 
-    const v14, 0x7f0d099c
+    const v14, 0x7f0d0a02
 
     goto :goto_0
 
     :sswitch_1
     const-string/jumbo v11, "(404)"
 
-    const v14, 0x7f0d099f
+    const v14, 0x7f0d0a05
 
     goto :goto_0
 
     :sswitch_2
     const-string/jumbo v11, "(408)"
 
-    const v14, 0x7f0d09a1
+    const v14, 0x7f0d0a07
 
     goto :goto_0
 
     :sswitch_3
     const-string/jumbo v11, "(480)"
 
-    const v14, 0x7f0d099d
+    const v14, 0x7f0d0a03
 
     goto :goto_0
 
     :sswitch_4
     const-string/jumbo v11, "(486)"
 
-    const v14, 0x7f0d09a3
+    const v14, 0x7f0d0a09
 
     goto :goto_0
 
     :sswitch_5
     const-string/jumbo v11, "(499)"
 
-    const v14, 0x7f0d09a4
+    const v14, 0x7f0d0a0a
 
     goto :goto_0
 
     :sswitch_6
     const-string/jumbo v11, "(500)"
 
-    const v14, 0x7f0d09a1
+    const v14, 0x7f0d0a07
 
     goto :goto_0
 
     :sswitch_7
     const-string/jumbo v11, "(503)"
 
-    const v14, 0x7f0d09a2
+    const v14, 0x7f0d0a08
 
     goto :goto_0
 
     :sswitch_8
     const-string/jumbo v11, "(603)"
 
-    const v14, 0x7f0d099e
+    const v14, 0x7f0d0a04
 
     goto :goto_0
 
     :sswitch_9
     const-string/jumbo v11, "(606)"
 
-    const v14, 0x7f0d09a0
+    const v14, 0x7f0d0a06
 
     goto :goto_0
 

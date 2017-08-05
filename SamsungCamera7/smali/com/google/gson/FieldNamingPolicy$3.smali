@@ -36,12 +36,10 @@
 
     const-string v1, " "
 
-    # invokes: Lcom/google/gson/FieldNamingPolicy;->separateCamelCase(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/google/gson/FieldNamingPolicy;->access$200(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    # invokes: Lcom/google/gson/FieldNamingPolicy;->upperCaseFirstLetter(Ljava/lang/String;)Ljava/lang/String;
     invoke-static {v0}, Lcom/google/gson/FieldNamingPolicy;->access$100(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0

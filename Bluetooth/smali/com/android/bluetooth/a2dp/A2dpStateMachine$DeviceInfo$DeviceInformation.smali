@@ -23,6 +23,8 @@
 
 .field private mDelayDisconnectedBroadcast:I
 
+.field private mDelayReport:I
+
 .field private mPeerCodecs:I
 
 .field private mSupportedScmst:I
@@ -34,27 +36,13 @@
 
 # direct methods
 .method private constructor <init>(Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;)V
-    .locals 0
+    .locals 2
+
+    const/4 v1, 0x0
 
     iput-object p1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;->this$1:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method synthetic constructor <init>(Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;-><init>(Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;)V
-
-    return-void
-.end method
-
-.method private DeviceInformation()V
-    .locals 2
-
-    const/4 v1, 0x0
 
     const/16 v0, 0xff
 
@@ -73,6 +61,16 @@
     iput v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;->mDelayDisconnectedBroadcast:I
 
     iput v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;->mConnectionState:I
+
+    iput v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;->mDelayReport:I
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;-><init>(Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;)V
 
     return-void
 .end method
@@ -107,6 +105,14 @@
     .locals 1
 
     iget v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;->mDelayDisconnectedBroadcast:I
+
+    return v0
+.end method
+
+.method public getDelayReprot()I
+    .locals 1
+
+    iget v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;->mDelayReport:I
 
     return v0
 .end method
@@ -163,6 +169,14 @@
     .locals 0
 
     iput p1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;->mDelayDisconnectedBroadcast:I
+
+    return-void
+.end method
+
+.method public setDelayReprot(I)V
+    .locals 0
+
+    iput p1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo$DeviceInformation;->mDelayReport:I
 
     return-void
 .end method

@@ -45,7 +45,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$1100(Lcom/sec/android/app/camera/shootingmode/Selfie;)Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     move-result-object v2
@@ -60,7 +59,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$500(Lcom/sec/android/app/camera/shootingmode/Selfie;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v2
@@ -73,7 +71,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$100(Lcom/sec/android/app/camera/shootingmode/Selfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -90,7 +87,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$100(Lcom/sec/android/app/camera/shootingmode/Selfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -120,7 +116,6 @@
     :try_start_0
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$100(Lcom/sec/android/app/camera/shootingmode/Selfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -133,7 +128,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$100(Lcom/sec/android/app/camera/shootingmode/Selfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2

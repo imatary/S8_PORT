@@ -770,19 +770,19 @@
 
     move-result v11
 
-    if-eqz v11, :cond_6
+    if-eqz v11, :cond_7
 
     :cond_0
     const/4 v7, 0x0
 
     :goto_0
-    if-eqz p0, :cond_5
+    if-eqz p0, :cond_6
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/Connection;->getCallDetails()Lcom/android/internal/telephony/CallDetails;
 
     move-result-object v2
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_6
 
     const-string/jumbo v11, "modifiable"
 
@@ -837,16 +837,23 @@
     const/4 v10, 0x0
 
     :cond_3
-    if-eqz v7, :cond_4
+    if-nez v7, :cond_4
 
-    const/4 v10, 0x0
+    invoke-static {}, Lcom/android/phone/TeleServiceSystemDB;->isConnectedMirrorLink()Z
+
+    move-result v11
+
+    if-eqz v11, :cond_5
 
     :cond_4
+    const/4 v10, 0x0
+
+    :cond_5
     invoke-interface {v4, v0, v8}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
     invoke-interface {v4}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    :cond_5
+    :cond_6
     const-string/jumbo v11, "PhoneUtilsIMS"
 
     new-instance v12, Ljava/lang/StringBuilder;
@@ -871,7 +878,7 @@
 
     return v10
 
-    :cond_6
+    :cond_7
     const/4 v7, 0x1
 
     goto :goto_0

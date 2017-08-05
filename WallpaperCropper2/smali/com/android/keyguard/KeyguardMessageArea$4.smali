@@ -44,7 +44,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/keyguard/KeyguardMessageArea;->mCached:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardMessageArea;->access$802(Lcom/android/keyguard/KeyguardMessageArea;Z)Z
 
     return-void

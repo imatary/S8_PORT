@@ -31,7 +31,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    # getter for: Lcom/android/keyguard/sec/SecPopupManager;->mHelpOverlyDialog:Landroid/app/Dialog;
     invoke-static {}, Lcom/android/keyguard/sec/SecPopupManager;->access$300()Landroid/app/Dialog;
 
     move-result-object v0
@@ -42,7 +41,6 @@
     return-void
 
     :cond_0
-    # getter for: Lcom/android/keyguard/sec/SecPopupManager;->mHelpOverlyDialog:Landroid/app/Dialog;
     invoke-static {}, Lcom/android/keyguard/sec/SecPopupManager;->access$300()Landroid/app/Dialog;
 
     move-result-object v0

@@ -48,7 +48,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardUnlockView$9;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$1100(Lcom/android/keyguard/sec/KeyguardUnlockView;)Landroid/content/Context;
 
     move-result-object v0
@@ -80,7 +79,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardUnlockView$9;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$200(Lcom/android/keyguard/sec/KeyguardUnlockView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -94,7 +92,6 @@
     :goto_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardUnlockView$9;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$200(Lcom/android/keyguard/sec/KeyguardUnlockView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -108,7 +105,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardUnlockView$9;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$200(Lcom/android/keyguard/sec/KeyguardUnlockView;)Landroid/os/Handler;
 
     move-result-object v0

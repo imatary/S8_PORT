@@ -47,7 +47,7 @@
 
     const/4 v5, 0x1
 
-    const v6, 0x7f0d0995
+    const v6, 0x7f0d09fb
 
     const-string/jumbo v4, "ts_rearrange_preset_image_setting"
 
@@ -307,7 +307,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/PresetImage$DefaultClickListener;->this$0:Lcom/android/phone/callsettings/PresetImage;
 
-    const v6, 0x7f0d04d7
+    const v6, 0x7f0d0537
 
     invoke-virtual {v5, v6}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 

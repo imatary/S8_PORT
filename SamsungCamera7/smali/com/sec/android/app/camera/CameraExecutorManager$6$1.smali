@@ -37,13 +37,13 @@
 .method public run()V
     .locals 5
 
-    const/16 v4, 0xb3
+    const/16 v4, 0x7a
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$6$1;->this$1:Lcom/sec/android/app/camera/CameraExecutorManager$6;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/CameraExecutorManager$6;->val$backCameraMenu:Lcom/sec/android/app/camera/menu/ModeListMenu;
 
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ModeListMenu;->showModeEditMenu()V
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ModeListMenu;->showModeInfoMenu()V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$6$1;->this$1:Lcom/sec/android/app/camera/CameraExecutorManager$6;
 
@@ -57,7 +57,6 @@
 
     const/16 v3, 0x64
 
-    # invokes: Lcom/sec/android/app/camera/CameraExecutorManager;->sendResultWithNLG(ZILjava/lang/String;I)V
     invoke-static {v0, v1, v4, v2, v3}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1100(Lcom/sec/android/app/camera/CameraExecutorManager;ZILjava/lang/String;I)V
 
     return-void

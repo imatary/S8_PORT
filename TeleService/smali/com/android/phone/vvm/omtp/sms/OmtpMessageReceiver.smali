@@ -292,11 +292,13 @@
 
     if-nez v6, :cond_1
 
-    invoke-static {}, Lcom/android/phone/TelephonyConfig;->isORANGESIM()Z
+    const-string/jumbo v6, "OmtpMessageReceiver"
 
-    move-result v6
+    const-string/jumbo v7, "Received vvm message for disabled vvm source."
 
-    if-eqz v6, :cond_3
+    invoke-static {v6, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
 
     :cond_1
     invoke-static {p2}, Landroid/provider/Telephony$Sms$Intents;->getMessagesFromIntent(Landroid/content/Intent;)[Landroid/telephony/SmsMessage;
@@ -312,7 +314,7 @@
     :goto_0
     array-length v6, v5
 
-    if-ge v0, v6, :cond_4
+    if-ge v0, v6, :cond_3
 
     aget-object v6, v5, v0
 
@@ -334,20 +336,11 @@
     goto :goto_0
 
     :cond_3
-    const-string/jumbo v6, "OmtpMessageReceiver"
-
-    const-string/jumbo v7, "Received vvm message for disabled vvm source."
-
-    invoke-static {v6, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    :cond_4
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v6
 
-    if-eqz v6, :cond_5
+    if-eqz v6, :cond_4
 
     const-string/jumbo v6, "OmtpMessageReceiver"
 
@@ -381,7 +374,7 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_5
+    :cond_4
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v6
@@ -390,7 +383,7 @@
 
     move-result-object v4
 
-    if-eqz v4, :cond_6
+    if-eqz v4, :cond_5
 
     invoke-virtual {v4}, Lcom/android/phone/vvm/omtp/sms/WrappedMessageData;->getPrefix()Ljava/lang/String;
 
@@ -398,7 +391,7 @@
 
     const-string/jumbo v7, "//VVM:SYNC:"
 
-    if-ne v6, v7, :cond_7
+    if-ne v6, v7, :cond_6
 
     new-instance v2, Lcom/android/phone/vvm/omtp/sms/SyncMessage;
 
@@ -458,18 +451,18 @@
 
     invoke-direct {p0, v2}, Lcom/android/phone/vvm/omtp/sms/OmtpMessageReceiver;->processSync(Lcom/android/phone/vvm/omtp/sms/SyncMessage;)V
 
-    :cond_6
+    :cond_5
     :goto_1
     return-void
 
-    :cond_7
+    :cond_6
     invoke-virtual {v4}, Lcom/android/phone/vvm/omtp/sms/WrappedMessageData;->getPrefix()Ljava/lang/String;
 
     move-result-object v6
 
     const-string/jumbo v7, "//VVM:STATUS:"
 
-    if-ne v6, v7, :cond_8
+    if-ne v6, v7, :cond_7
 
     const-string/jumbo v6, "OmtpMessageReceiver"
 
@@ -491,7 +484,7 @@
 
     goto :goto_1
 
-    :cond_8
+    :cond_7
     const-string/jumbo v6, "OmtpMessageReceiver"
 
     const-string/jumbo v7, "This should never have happened"

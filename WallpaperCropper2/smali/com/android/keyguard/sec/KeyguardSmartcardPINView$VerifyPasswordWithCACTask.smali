@@ -69,7 +69,6 @@
 .method protected varargs doInBackground([Ljava/lang/String;)Ljava/lang/Integer;
     .locals 4
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$100()Ljava/lang/String;
 
     move-result-object v0
@@ -86,7 +85,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSmartcardPINView$VerifyPasswordWithCACTask;->this$0:Lcom/android/keyguard/sec/KeyguardSmartcardPINView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$500(Lcom/android/keyguard/sec/KeyguardSmartcardPINView;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v0
@@ -101,7 +99,6 @@
 
     move-result-object v0
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$100()Ljava/lang/String;
 
     move-result-object v1
@@ -148,7 +145,6 @@
 
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$100()Ljava/lang/String;
 
     move-result-object v0
@@ -157,7 +153,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$100()Ljava/lang/String;
 
     move-result-object v0
@@ -199,14 +194,12 @@
     iput v0, p0, Lcom/android/keyguard/sec/KeyguardSmartcardPINView$VerifyPasswordWithCACTask;->errorMsgId:I
 
     :goto_1
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->mCurrent:Ljava/lang/ref/WeakReference;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$600()Ljava/lang/ref/WeakReference;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->mCurrent:Ljava/lang/ref/WeakReference;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$600()Ljava/lang/ref/WeakReference;
 
     move-result-object v0
@@ -219,14 +212,12 @@
 
     if-eqz v0, :cond_1
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$700(Lcom/android/keyguard/sec/KeyguardSmartcardPINView;)Landroid/os/Handler;
 
     move-result-object v1
 
     if-eqz v1, :cond_2
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$700(Lcom/android/keyguard/sec/KeyguardSmartcardPINView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -272,7 +263,6 @@
     goto :goto_0
 
     :cond_0
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$100()Ljava/lang/String;
 
     move-result-object v0
@@ -284,7 +274,6 @@
     return-void
 
     :cond_1
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$100()Ljava/lang/String;
 
     move-result-object v0
@@ -296,7 +285,6 @@
     return-void
 
     :cond_2
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$100()Ljava/lang/String;
 
     move-result-object v0
@@ -340,7 +328,6 @@
 
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$100()Ljava/lang/String;
 
     move-result-object v0
@@ -351,7 +338,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSmartcardPINView$VerifyPasswordWithCACTask;->this$0:Lcom/android/keyguard/sec/KeyguardSmartcardPINView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$200(Lcom/android/keyguard/sec/KeyguardSmartcardPINView;)Lcom/android/keyguard/SecurityMessageDisplay;
 
     move-result-object v0
@@ -364,14 +350,12 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->setPasswordEntryEnabled(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$300(Lcom/android/keyguard/sec/KeyguardSmartcardPINView;Z)V
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSmartcardPINView$VerifyPasswordWithCACTask;->this$0:Lcom/android/keyguard/sec/KeyguardSmartcardPINView;
 
     invoke-virtual {v0, v2}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->setKeepScreenOn(Z)V
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->mSmartcardAuthProgress:Z
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardSmartcardPINView;->access$402(Z)Z
 
     return-void

@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$4;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$100(Lcom/sec/android/app/camera/shootingmode/Selfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -62,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$4;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$1100(Lcom/sec/android/app/camera/shootingmode/Selfie;)Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     move-result-object v0

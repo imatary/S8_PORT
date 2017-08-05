@@ -41,7 +41,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCurrentOrientation:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$900(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     move-result v2
@@ -50,7 +49,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCurrentOrientation:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$900(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     move-result v2
@@ -67,7 +65,6 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1000(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     move-result v2
@@ -78,20 +75,17 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v2, v0}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1002(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;I)I
 
     :cond_1
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideArrow:[Lcom/samsung/android/glview/GLImage;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1100(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)[Lcom/samsung/android/glview/GLImage;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v3}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1000(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     move-result v3
@@ -104,7 +98,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationDirection:Z
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1200(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)Z
 
     move-result v2
@@ -113,7 +106,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1000(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     move-result v2
@@ -122,20 +114,17 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # operator-- for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1010(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     :goto_1
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideArrow:[Lcom/samsung/android/glview/GLImage;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1100(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)[Lcom/samsung/android/glview/GLImage;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v3}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1000(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     move-result v3
@@ -144,7 +133,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimation:Landroid/view/animation/AlphaAnimation;
     invoke-static {v3}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1300(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)Landroid/view/animation/AlphaAnimation;
 
     move-result-object v3
@@ -153,14 +141,12 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideArrow:[Lcom/samsung/android/glview/GLImage;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1100(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)[Lcom/samsung/android/glview/GLImage;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v3}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1000(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     move-result v3
@@ -171,14 +157,12 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideArrow:[Lcom/samsung/android/glview/GLImage;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1100(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)[Lcom/samsung/android/glview/GLImage;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v3}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1000(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     move-result v3
@@ -191,12 +175,10 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v3}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1000(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     move-result v3
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->showGuideRect(I)V
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1400(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;I)V
 
     return-void
@@ -211,12 +193,10 @@
     :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # operator++ for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1008(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationDirection:Z
     invoke-static {v2, v4}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1202(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;Z)Z
 
     goto :goto_1
@@ -224,7 +204,6 @@
     :cond_4
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1000(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     move-result v2
@@ -233,7 +212,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # operator++ for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1008(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     goto :goto_1
@@ -241,14 +219,12 @@
     :cond_5
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # operator-- for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1010(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     const/4 v3, 0x1
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationDirection:Z
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1202(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;Z)Z
 
     goto :goto_1

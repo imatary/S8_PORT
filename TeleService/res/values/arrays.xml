@@ -761,16 +761,19 @@
     <string-array name="network_mode_list_tmo">
         <item>@string/mode_lte_4g_3g_2g_autoconnect</item>
         <item>@string/mode_4g_3g_2g_autoconnect</item>
+        <item>@string/mode_lte_4g_3g_autoconnect</item>
         <item>@string/mode_2g_only</item>
     </string-array>
     <string-array name="network_mode_list_values_tmo">
         <item>9</item>
         <item>0</item>
+        <item>12</item>
         <item>1</item>
     </string-array>
     <string-array name="network_mode_list_values_tdscdma_tmo">
         <item>20</item>
         <item>18</item>
+        <item>19</item>
         <item>1</item>
     </string-array>
     <string-array name="network_mode_list_via">
@@ -1112,7 +1115,7 @@
         <item>111</item>
         <item>117</item>
         <item>118</item>
-        <item>1521044</item>
+        <item>1583</item>
     </string-array>
     <string-array name="emergency_roaming_name_list_for_skt_no_sim">
         <item>@string/user_input</item>

@@ -40,7 +40,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/keyguard/PagedView;->mWarpAnimation:Landroid/view/ViewPropertyAnimator;
     invoke-static {v0, v1}, Lcom/android/keyguard/PagedView;->access$1002(Lcom/android/keyguard/PagedView;Landroid/view/ViewPropertyAnimator;)Landroid/view/ViewPropertyAnimator;
 
     return-void
@@ -55,7 +54,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/keyguard/PagedView;->mWarpAnimation:Landroid/view/ViewPropertyAnimator;
     invoke-static {v0, v1}, Lcom/android/keyguard/PagedView;->access$1002(Lcom/android/keyguard/PagedView;Landroid/view/ViewPropertyAnimator;)Landroid/view/ViewPropertyAnimator;
 
     iget-object v0, p0, Lcom/android/keyguard/PagedView$13;->this$0:Lcom/android/keyguard/PagedView;
@@ -81,7 +79,6 @@
 
     const-string/jumbo v1, "onScreen end"
 
-    # invokes: Lcom/android/keyguard/PagedView;->animateWarpPageOffScreen(Ljava/lang/String;Z)V
     invoke-static {v0, v1, v2}, Lcom/android/keyguard/PagedView;->access$1100(Lcom/android/keyguard/PagedView;Ljava/lang/String;Z)V
 
     goto :goto_0

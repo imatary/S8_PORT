@@ -163,6 +163,8 @@
 
 .field private mSelectedVertex:I
 
+.field private mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
+
 .field private mZoomSliderMenu:Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
 
 
@@ -380,6 +382,8 @@
 
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mPreviewRect:Landroid/graphics/Rect;
 
+    iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
+
     new-instance v0, Lcom/sec/android/app/camera/shootingmode/Food$1;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/camera/shootingmode/Food$1;-><init>(Lcom/sec/android/app/camera/shootingmode/Food;)V
@@ -476,7 +480,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mFoodMsgHandler:Lcom/sec/android/app/camera/shootingmode/Food$FoodHandler;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Food$FoodHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Food$FoodHandler;->access$500(Lcom/sec/android/app/camera/shootingmode/Food$FoodHandler;)V
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mFoodMsgHandler:Lcom/sec/android/app/camera/shootingmode/Food$FoodHandler;
@@ -3420,9 +3423,131 @@
 .end method
 
 .method public onTimerEvent(I)V
-    .locals 0
+    .locals 4
 
+    const/16 v3, 0x3d
+
+    const-string v0, "Food"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "onTimerEvent: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
+
+    invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuManager;->isActive(I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
+
+    invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuManager;->showMenu(I)Lcom/sec/android/app/camera/interfaces/MenuBase;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;
+
+    iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
+
+    :cond_0
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
+
+    invoke-virtual {v0, p1}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->updateTime(I)V
+
+    :cond_1
+    if-nez p1, :cond_3
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mFoodMsgHandler:Lcom/sec/android/app/camera/shootingmode/Food$FoodHandler;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/Food$FoodHandler;->sendEmptyMessage(I)Z
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isCapturing()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->getIntervalCaptureCount()I
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->getIntervalCaptureCount()I
+
+    move-result v0
+
+    const/4 v1, 0x3
+
+    if-lt v0, v1, :cond_3
+
+    :cond_2
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
+
+    const/4 v1, -0x1
+
+    invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
+
+    const/16 v1, 0x2c0
+
+    invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
+
+    :cond_3
+    :goto_0
     return-void
+
+    :cond_4
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
+
+    const/16 v1, 0x180
+
+    invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
+
+    const/16 v1, 0x80
+
+    invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    const/4 v1, 0x0
+
+    invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showEffectLayout(Z)V
+
+    goto :goto_0
 .end method
 
 .method public onTouch(Lcom/samsung/android/glview/GLView;Landroid/view/MotionEvent;)Z

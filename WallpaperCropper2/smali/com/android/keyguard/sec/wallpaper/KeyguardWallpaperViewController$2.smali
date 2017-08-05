@@ -65,7 +65,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # getter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$400(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -79,7 +78,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # getter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$400(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -123,12 +121,10 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # invokes: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->setWallpaperFileObserver()V
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$500(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)V
 
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # getter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$400(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -142,7 +138,6 @@
     :goto_2
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # getter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$400(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -154,7 +149,6 @@
     :cond_5
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # getter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$400(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -202,7 +196,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # getter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$400(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -216,7 +209,6 @@
     :goto_3
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # getter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$400(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -228,7 +220,6 @@
     :cond_7
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # getter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$400(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -240,7 +231,6 @@
     :cond_8
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # getter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$400(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -256,12 +246,10 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mEmergencyModeStateChanged:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$602(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # getter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$400(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -273,7 +261,6 @@
     :cond_9
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # getter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$400(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -285,7 +272,6 @@
     :cond_a
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$2;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # getter for: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$400(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)Landroid/os/Handler;
 
     move-result-object v0

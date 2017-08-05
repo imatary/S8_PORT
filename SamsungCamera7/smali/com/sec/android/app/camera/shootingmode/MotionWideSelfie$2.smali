@@ -45,12 +45,10 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->stopMotionWideSelfieCapture()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$600(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->hideStopButton()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$700(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)V
 
     const-string v0, "4121"

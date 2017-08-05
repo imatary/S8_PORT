@@ -152,7 +152,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$Helper;->mMessageArea:Lcom/android/keyguard/KeyguardMessageArea;
 
-    # invokes: Lcom/android/keyguard/KeyguardMessageArea;->showMessage(I)V
     invoke-static {v0, p1}, Lcom/android/keyguard/KeyguardMessageArea;->access$300(Lcom/android/keyguard/KeyguardMessageArea;I)V
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$Helper;->mMessageArea:Lcom/android/keyguard/KeyguardMessageArea;
@@ -554,7 +553,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$Helper;->mMessageArea:Lcom/android/keyguard/KeyguardMessageArea;
 
-    # invokes: Lcom/android/keyguard/KeyguardMessageArea;->setShortcutReleasedLayout()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardMessageArea;->access$200(Lcom/android/keyguard/KeyguardMessageArea;)V
 
     return-void
@@ -595,7 +593,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$Helper;->mMessageArea:Lcom/android/keyguard/KeyguardMessageArea;
 
-    # invokes: Lcom/android/keyguard/KeyguardMessageArea;->hideMessage(IZ)V
     invoke-static {v0, p1, v1}, Lcom/android/keyguard/KeyguardMessageArea;->access$000(Lcom/android/keyguard/KeyguardMessageArea;IZ)V
 
     goto :goto_0

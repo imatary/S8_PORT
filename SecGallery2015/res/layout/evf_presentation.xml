@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sec.android.gallery3d.glcore.GlRootView android:id="@id/gl_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <Button android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/close_btn" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/close" android:fontFamily="sec-roboto-light" />
-    <FrameLayout android:id="@id/surfaceviewlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.sec.samsung.gallery.view.slideshowview.SlideShowPresentationVideoView android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</FrameLayout>

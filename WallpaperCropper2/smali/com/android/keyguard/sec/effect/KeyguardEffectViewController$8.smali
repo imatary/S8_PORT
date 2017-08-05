@@ -56,7 +56,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$8;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mNotificationPanel:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$2100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/widget/FrameLayout;
 
     move-result-object v0
@@ -87,7 +86,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$8;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mNotificationPanel:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$2100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/widget/FrameLayout;
 
     move-result-object v0
@@ -98,14 +96,12 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$8;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$8;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mResetPreviewRunnable:Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$2200(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Ljava/lang/Runnable;
 
     move-result-object v1
@@ -126,7 +122,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$8;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mNotificationPanel:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$2100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/widget/FrameLayout;
 
     move-result-object v0

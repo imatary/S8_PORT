@@ -40,7 +40,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$8;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->initializeMultiTrackRecording()V
     invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1300(Lcom/sec/android/app/camera/engine/CommonEngine;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/btn_action_bar_done" android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/actionbar_cancel_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/custom_bar" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <TextView android:textSize="17.0dip" android:textStyle="normal" android:textColor="@color/redo_text" android:id="@id/text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:lines="1" android:shadowColor="#cc000000" android:shadowDy="1.0" android:shadowRadius="0.3" android:fontFamily="sans-serif" />
-    </LinearLayout>
-</LinearLayout>

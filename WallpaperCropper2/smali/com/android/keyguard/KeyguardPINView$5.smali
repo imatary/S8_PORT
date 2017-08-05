@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPINView$5;->this$0:Lcom/android/keyguard/KeyguardPINView;
 
-    # invokes: Lcom/android/keyguard/KeyguardPINView;->setOnehandPINView()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPINView;->access$500(Lcom/android/keyguard/KeyguardPINView;)V
 
     return-void

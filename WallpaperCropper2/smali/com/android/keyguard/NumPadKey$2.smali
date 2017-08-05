@@ -66,7 +66,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/NumPadKey$2;->this$0:Lcom/android/keyguard/NumPadKey;
 
-    # getter for: Lcom/android/keyguard/NumPadKey;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/android/keyguard/NumPadKey;->access$300(Lcom/android/keyguard/NumPadKey;)Landroid/content/Context;
 
     move-result-object v3

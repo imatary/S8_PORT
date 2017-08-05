@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter$1;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;->isExpand:Z
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;->access$000(Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;)Z
 
     move-result v0

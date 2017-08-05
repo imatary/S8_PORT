@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Nu se poate deschide %s. Atingeţi SETĂRI, accesaţi meniul Informaţii despre aplicaţie > Permisiuni, apoi acordaţi următoarele permisiuni şi încercaţi din nou:</string>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Nu se poate deschide %s. Atingeți SETĂRI, accesați meniul Informații despre aplicație > Permisiuni, apoi acordați următoarele permisiuni și încercați din nou:</string>
     <string name="all_sim">Toate</string>
     <string name="app_name">Fundaluri</string>
     <string name="apply">Aplicaţi</string>

@@ -326,7 +326,7 @@
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_8
-    invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isRemoveGsmAdditionalSetting()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isRemoveGsmAdditionalSetting()Z
 
     move-result v0
 
@@ -341,7 +341,7 @@
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_9
-    invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isRemoveCdmaAdditionalSetting()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isRemoveCdmaAdditionalSetting()Z
 
     move-result v0
 
@@ -397,6 +397,21 @@
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_d
+    invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isRemoveCallerInfoSetting()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_e
+
+    new-instance v0, Lcom/android/phone/callsettings/GeneralSettingManager$Preferences;
+
+    const-string/jumbo v1, "material_caller_info_card_preference_key"
+
+    invoke-direct {v0, v1}, Lcom/android/phone/callsettings/GeneralSettingManager$Preferences;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_e
     return-void
 .end method
 
@@ -878,28 +893,11 @@
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_0
-    const-string/jumbo v0, "show_caller_info_setting"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    new-instance v0, Lcom/android/phone/callsettings/GeneralSettingManager$Preferences;
-
-    const-string/jumbo v1, "material_caller_info_card_preference_key"
-
-    invoke-direct {v0, v1}, Lcom/android/phone/callsettings/GeneralSettingManager$Preferences;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :cond_1
     invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isRemoveUSCdmaCallForwarding()Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
     new-instance v0, Lcom/android/phone/callsettings/GeneralSettingManager$Preferences;
 
@@ -909,12 +907,12 @@
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    :cond_2
+    :cond_1
     invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isRemoveTMOWFCSetting()Z
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_2
 
     new-instance v0, Lcom/android/phone/callsettings/GeneralSettingManager$Preferences;
 
@@ -924,7 +922,7 @@
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    :cond_3
+    :cond_2
     return-void
 .end method
 
@@ -1176,128 +1174,43 @@
     return v0
 .end method
 
-.method private isRemoveCdmaAdditionalSetting()Z
-    .locals 4
+.method private isRemoveCallerInfoSetting()Z
+    .locals 2
 
-    const/4 v3, 0x0
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
-
-    const-string/jumbo v0, "feature_ctc"
+    const-string/jumbo v0, "show_caller_info_setting"
 
     invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    :cond_0
+    invoke-static {}, Lcom/android/phone/TeleServiceSystemDB;->isUltraPowerSavingMode()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingManager;->mPhone:Lcom/android/internal/telephony/Phone;
-
-    invoke-virtual {v0}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
-
-    move-result v0
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_0
-
-    invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isDualSIMAlwaysOn()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_8
-
-    :cond_0
-    return v2
+    return v1
 
     :cond_1
-    const-string/jumbo v0, "chn_cdma_setting_on_all_rat"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    const-string/jumbo v0, "CDMA"
-
-    invoke-static {}, Lcom/android/phone/PhoneUtils;->getPropertySimSixmode()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-static {}, Lcom/android/phone/TeleServiceSystemDB;->isEmergencyMode()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isDualSIMAlwaysOn()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
+    return v1
 
     :cond_2
-    return v2
+    const/4 v0, 0x0
 
-    :cond_3
-    return v3
-
-    :cond_4
-    const-string/jumbo v0, "feature_lgt"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_5
-
-    const-string/jumbo v0, "call_setting_ui_kdi"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    :cond_5
-    const-string/jumbo v0, "disable_auto_area_code"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_7
-
-    return v2
-
-    :cond_6
-    const-string/jumbo v0, "single_lte"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_7
-
-    return v2
-
-    :cond_7
-    return v2
-
-    :cond_8
-    const-string/jumbo v0, "feature_dcm"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_9
-
-    return v2
-
-    :cond_9
-    return v3
+    return v0
 .end method
 
 .method private isRemoveDeclineMessageSetting()Z
@@ -1355,130 +1268,6 @@
     return v1
 
     :cond_3
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method private isRemoveGsmAdditionalSetting()Z
-    .locals 3
-
-    const/4 v2, 0x1
-
-    const-string/jumbo v0, "feature_ctc"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_5
-
-    const-string/jumbo v0, "chn_cdma_setting_on_all_rat"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    const-string/jumbo v0, "CDMA"
-
-    invoke-static {}, Lcom/android/phone/PhoneUtils;->getPropertySimSixmode()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isDualSIMAlwaysOn()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    :cond_0
-    const-string/jumbo v0, "feature_dcm"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    return v2
-
-    :cond_1
-    return v2
-
-    :cond_2
-    const-string/jumbo v0, "feature_lgt"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_3
-
-    const-string/jumbo v0, "call_setting_ui_kdi"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    :cond_3
-    return v2
-
-    :cond_4
-    const-string/jumbo v0, "single_lte"
-
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    return v2
-
-    :cond_5
-    iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingManager;->mPhone:Lcom/android/internal/telephony/Phone;
-
-    invoke-virtual {v0}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
-
-    move-result v0
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_0
-
-    invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isDualSIMAlwaysOn()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    return v2
-
-    :cond_6
-    invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isSupportVoLTE()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_7
-
-    invoke-static {}, Lcom/android/phone/TelephonyConfig;->isSEATELSIMActiveOnly()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_7
-
-    return v2
-
-    :cond_7
     const/4 v0, 0x0
 
     return v0
@@ -1921,6 +1710,254 @@
     invoke-direct {p0, v0}, Lcom/android/phone/callsettings/GeneralSettingManager;->getCommonRemovePreferences(Ljava/util/ArrayList;)V
 
     return-object v0
+.end method
+
+.method public isRemoveCdmaAdditionalSetting()Z
+    .locals 4
+
+    const/4 v3, 0x0
+
+    const/4 v2, 0x1
+
+    const-string/jumbo v0, "feature_ctc"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingManager;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    invoke-virtual {v0}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_0
+
+    invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isDualSIMAlwaysOn()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_8
+
+    :cond_0
+    return v2
+
+    :cond_1
+    const-string/jumbo v0, "chn_cdma_setting_on_all_rat"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    const-string/jumbo v0, "CDMA"
+
+    invoke-static {}, Lcom/android/phone/PhoneUtils;->getPropertySimSixmode()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isDualSIMAlwaysOn()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    :cond_2
+    return v2
+
+    :cond_3
+    return v3
+
+    :cond_4
+    const-string/jumbo v0, "feature_lgt"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    const-string/jumbo v0, "call_setting_ui_kdi"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    :cond_5
+    const-string/jumbo v0, "disable_auto_area_code"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    return v2
+
+    :cond_6
+    const-string/jumbo v0, "single_lte"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    return v2
+
+    :cond_7
+    return v2
+
+    :cond_8
+    const-string/jumbo v0, "feature_dcm"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_9
+
+    return v2
+
+    :cond_9
+    return v3
+.end method
+
+.method public isRemoveGsmAdditionalSetting()Z
+    .locals 3
+
+    const/4 v2, 0x1
+
+    const-string/jumbo v0, "feature_ctc"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    const-string/jumbo v0, "chn_cdma_setting_on_all_rat"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const-string/jumbo v0, "CDMA"
+
+    invoke-static {}, Lcom/android/phone/PhoneUtils;->getPropertySimSixmode()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isDualSIMAlwaysOn()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const-string/jumbo v0, "feature_dcm"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    return v2
+
+    :cond_1
+    return v2
+
+    :cond_2
+    const-string/jumbo v0, "feature_lgt"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    const-string/jumbo v0, "call_setting_ui_kdi"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    :cond_3
+    return v2
+
+    :cond_4
+    const-string/jumbo v0, "single_lte"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return v2
+
+    :cond_5
+    iget-object v0, p0, Lcom/android/phone/callsettings/GeneralSettingManager;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    invoke-virtual {v0}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_0
+
+    invoke-direct {p0}, Lcom/android/phone/callsettings/GeneralSettingManager;->isDualSIMAlwaysOn()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    return v2
+
+    :cond_6
+    invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isSupportVoLTE()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    invoke-static {}, Lcom/android/phone/TelephonyConfig;->isSEATELSIMActiveOnly()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    return v2
+
+    :cond_7
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
 .method public removePreferences(Landroid/preference/PreferenceCategory;)V

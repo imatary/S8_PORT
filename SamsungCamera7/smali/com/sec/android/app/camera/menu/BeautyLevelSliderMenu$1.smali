@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyLevelSliderMenu$1;->this$0:Lcom/sec/android/app/camera/menu/BeautyLevelSliderMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyLevelSliderMenu;->mCommandId:I
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BeautyLevelSliderMenu;->access$000(Lcom/sec/android/app/camera/menu/BeautyLevelSliderMenu;)I
 
     move-result v0
@@ -67,7 +66,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyLevelSliderMenu$1;->this$0:Lcom/sec/android/app/camera/menu/BeautyLevelSliderMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyLevelSliderMenu;->mLevelText:Lcom/samsung/android/glview/GLText;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BeautyLevelSliderMenu;->access$100(Lcom/sec/android/app/camera/menu/BeautyLevelSliderMenu;)Lcom/samsung/android/glview/GLText;
 
     move-result-object v0

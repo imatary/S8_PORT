@@ -89,6 +89,18 @@
 
 .field private static final HOTPLUG_ON:Ljava/lang/String; = "1"
 
+.field public static final HQM_KEY_COMP_ID:Ljava/lang/String; = "Bluetooth"
+
+.field public static final HQM_KEY_COMP_MANUFACTURE:Ljava/lang/String; = "sec"
+
+.field public static final HQM_KEY_COMP_VER:Ljava/lang/String; = "0.0"
+
+.field public static final HQM_KEY_FEATURE:Ljava/lang/String; = "SINK"
+
+.field public static final HQM_KEY_HIT_TYPE:Ljava/lang/String; = "ph"
+
+.field public static final HQM_KEY_TYPE:I = 0x0
+
 .field private static final IS_INVALID_DEVICE:I = 0x0
 
 .field private static final IS_VALID_DEVICE:I = 0x1
@@ -119,7 +131,11 @@
 
 .field private static final MESSAGE_WA_NO_START_FROM_TV:I = 0xb
 
+.field private static final MODE_BIG_DATA:I = 0x0
+
 .field private static final MODE_DEFAULT:I = -0x1
+
+.field private static final MODE_HQM:I = 0x1
 
 .field private static final MODE_OFF:I = 0x0
 

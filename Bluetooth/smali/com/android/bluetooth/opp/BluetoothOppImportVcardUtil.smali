@@ -344,7 +344,7 @@
     move-object v1, v2
 
     :goto_2
-    if-eqz v13, :cond_6
+    if-eqz v13, :cond_7
 
     const/4 v14, 0x2
 
@@ -470,12 +470,15 @@
     move-exception v8
 
     :goto_8
+    if-eqz v10, :cond_4
+
     :try_start_9
     invoke-virtual {v10}, Ljava/io/InputStream;->close()V
     :try_end_9
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_4
     .catchall {:try_start_9 .. :try_end_9} :catchall_0
 
+    :cond_4
     :goto_9
     const/4 v13, 0x1
 
@@ -498,7 +501,7 @@
 
     iget-boolean v15, v0, Lcom/android/bluetooth/opp/BluetoothOppImportVcardUtil;->mExceptionHandling:Z
 
-    if-eqz v15, :cond_5
+    if-eqz v15, :cond_6
 
     move-object/from16 v0, p0
 
@@ -520,7 +523,7 @@
 
     move/from16 v0, v16
 
-    if-ne v15, v0, :cond_5
+    if-ne v15, v0, :cond_6
 
     new-instance v11, Lcom/android/vcard/VCardParser_V30;
 
@@ -564,7 +567,7 @@
     .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_d
     .catchall {:try_start_d .. :try_end_d} :catchall_5
 
-    if-eqz v10, :cond_4
+    if-eqz v10, :cond_5
 
     :try_start_e
     invoke-virtual {v10}, Ljava/io/InputStream;->close()V
@@ -572,7 +575,7 @@
     .catch Ljava/io/IOException; {:try_start_e .. :try_end_e} :catch_7
     .catch Lcom/android/vcard/exception/VCardNestedException; {:try_start_e .. :try_end_e} :catch_9
 
-    :cond_4
+    :cond_5
     :goto_b
     move-object v3, v4
 
@@ -585,7 +588,7 @@
 
     goto :goto_9
 
-    :cond_5
+    :cond_6
     :try_start_f
     new-instance v11, Lcom/android/vcard/VCardParser_V30;
 
@@ -657,7 +660,7 @@
 
     goto/16 :goto_6
 
-    :cond_6
+    :cond_7
     const/4 v14, 0x1
 
     goto/16 :goto_3

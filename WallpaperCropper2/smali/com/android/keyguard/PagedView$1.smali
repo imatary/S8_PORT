@@ -73,7 +73,6 @@
 
     int-to-float v1, v1
 
-    # setter for: Lcom/android/keyguard/PagedView;->mDownScrollX:F
     invoke-static {v0, v1}, Lcom/android/keyguard/PagedView;->access$002(Lcom/android/keyguard/PagedView;F)F
 
     iget-object v0, p0, Lcom/android/keyguard/PagedView$1;->this$0:Lcom/android/keyguard/PagedView;
@@ -152,7 +151,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/PagedView$1;->this$0:Lcom/android/keyguard/PagedView;
 
-    # setter for: Lcom/android/keyguard/PagedView;->mSidePageHoverIndex:I
     invoke-static {v0, v3}, Lcom/android/keyguard/PagedView;->access$102(Lcom/android/keyguard/PagedView;I)I
 
     return-void

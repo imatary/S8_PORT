@@ -6,8 +6,8 @@
 .implements Lcom/android/phone/ia/IAInterimListener;
 
 
-# instance fields
-.field mFragment:Lcom/android/phone/CallFeaturesSetting;
+# static fields
+.field public static mFragment:Lcom/android/phone/CallFeaturesSetting;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sput-object p1, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
 
     const/4 v0, 0x0
 
-    iget-object v2, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v2, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     invoke-static {v2, p2}, Lcom/android/phone/ia/IAUtil;->getMenuPreference(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;Ljava/lang/String;)Landroid/preference/Preference;
 
@@ -115,12 +115,12 @@
 
     invoke-static {v2, p3, v3, v4}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v2, Lcom/android/phone/ia/IAConstants;->RESPONSE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+    sget-object v2, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v2}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
     :goto_0
-    iget-object v2, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v2, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     invoke-static {v2, p2}, Lcom/android/phone/ia/IAUtil;->scrolltoMenu(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;Ljava/lang/String;)V
 
@@ -128,9 +128,11 @@
     return-void
 
     :cond_0
-    iget-object v2, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-static {v2, p2}, Lcom/android/phone/ia/IAUtil;->simulateMenuPreferenceClick(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;Ljava/lang/String;)I
+    move-result-object v2
+
+    invoke-static {p2, v2}, Lcom/android/phone/ia/IAUtil;->simulateMenuPreferenceChange(Ljava/lang/String;Ljava/lang/Object;)I
 
     const-string/jumbo v2, "CallSettings"
 
@@ -161,7 +163,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sput-object v0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     return-void
 .end method
@@ -197,7 +199,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v3, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     iget-boolean v3, v3, Lcom/android/phone/CallFeaturesSetting;->mEnterVoicemailSetting:Z
 
@@ -211,7 +213,7 @@
 
     invoke-static {v1, v2}, Lcom/android/phone/ia/IAUtil;->log(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v1, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     iget-boolean v1, v1, Lcom/android/phone/CallFeaturesSetting;->mEnterVoicemailSetting:Z
 
@@ -291,7 +293,7 @@
 
     if-eqz v7, :cond_0
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "black_list_preference"
 
@@ -312,7 +314,7 @@
 
     if-eqz v7, :cond_1
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "decline_message_preference"
 
@@ -333,7 +335,7 @@
 
     if-eqz v7, :cond_2
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "meterial_phone_app_mode"
 
@@ -341,13 +343,13 @@
 
     move-result v5
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "meterial_phone_app_mode"
 
     invoke-static {v7, v8}, Lcom/android/phone/ia/IAUtil;->scrolltoMenu(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;Ljava/lang/String;)V
 
-    if-ne v5, v10, :cond_34
+    if-ne v5, v10, :cond_38
 
     const-string/jumbo v7, "CallSettings"
 
@@ -369,7 +371,7 @@
 
     if-eqz v7, :cond_3
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "photoring_setting_preference"
 
@@ -390,7 +392,7 @@
 
     if-eqz v7, :cond_4
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "intcallsetting_pref"
 
@@ -411,7 +413,7 @@
 
     if-eqz v7, :cond_5
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "call_answer_preference"
 
@@ -466,7 +468,7 @@
 
     if-eqz v7, :cond_8
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "call_alert_preference"
 
@@ -487,7 +489,7 @@
 
     if-eqz v7, :cond_9
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "callsettings_ringtones_keytones_preference"
 
@@ -508,7 +510,7 @@
 
     if-eqz v7, :cond_a
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "spam_call_setting"
 
@@ -529,7 +531,7 @@
 
     if-eqz v7, :cond_b
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "search_nearby_places_key"
 
@@ -550,7 +552,7 @@
 
     if-eqz v7, :cond_c
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "record_calls_menu_key"
 
@@ -569,9 +571,38 @@
 
     move-result v7
 
+    if-eqz v7, :cond_f
+
+    invoke-static {}, Lcom/android/phone/callsettings/GeneralSettingManager;->getInstance()Lcom/android/phone/callsettings/GeneralSettingManager;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Lcom/android/phone/callsettings/GeneralSettingManager;->isRemoveGsmAdditionalSetting()Z
+
+    move-result v7
+
     if-eqz v7, :cond_d
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+
+    const-string/jumbo v8, "button_cdma_additional_more_expand_key"
+
+    invoke-static {v7, v8}, Lcom/android/phone/ia/IAUtil;->simulateMenuPreferenceClick(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;Ljava/lang/String;)I
+
+    move-result v5
+
+    :cond_d
+    invoke-static {}, Lcom/android/phone/callsettings/GeneralSettingManager;->getInstance()Lcom/android/phone/callsettings/GeneralSettingManager;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Lcom/android/phone/callsettings/GeneralSettingManager;->isRemoveCdmaAdditionalSetting()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_e
+
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "button_more_expand_key"
 
@@ -579,20 +610,29 @@
 
     move-result v5
 
+    :cond_e
+    invoke-static {}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getInstance()Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    move-result-object v7
+
+    const/16 v8, 0x3c
+
+    invoke-virtual {v7, v8}, Lcom/samsung/android/sdk/bixby/BixbyApi;->extendTimeout(I)V
+
     invoke-static {v5}, Lcom/android/phone/ia/IAUtil;->supportedMenu(I)V
 
     return-void
 
-    :cond_d
+    :cond_f
     const-string/jumbo v7, "SupplementaryService"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_e
+    if-eqz v7, :cond_10
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "button_kt_additional_service"
 
@@ -600,7 +640,7 @@
 
     move-result v7
 
-    if-ne v7, v10, :cond_35
+    if-ne v7, v10, :cond_39
 
     const-string/jumbo v7, "SupplementaryService"
 
@@ -613,16 +653,16 @@
     :goto_1
     return-void
 
-    :cond_e
+    :cond_10
     const-string/jumbo v7, "CallForwarding"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_f
+    if-eqz v7, :cond_11
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "us_cdma_voicecall_forwarding"
 
@@ -634,14 +674,14 @@
 
     return-void
 
-    :cond_f
+    :cond_11
     const-string/jumbo v7, "SwipeToCallOrSendMessageOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_10
+    if-eqz v7, :cond_12
 
     const-string/jumbo v7, "button_swipe_callmessage_key"
 
@@ -651,14 +691,14 @@
 
     return-void
 
-    :cond_10
+    :cond_12
     const-string/jumbo v7, "SwipeToCallOrSendMessageOff"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_11
+    if-eqz v7, :cond_13
 
     const-string/jumbo v7, "button_swipe_callmessage_key"
 
@@ -668,14 +708,14 @@
 
     return-void
 
-    :cond_11
+    :cond_13
     const-string/jumbo v7, "ContactWithNumbersOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_12
+    if-eqz v7, :cond_14
 
     const-string/jumbo v7, "button_only_contactwithphone_key"
 
@@ -685,14 +725,14 @@
 
     return-void
 
-    :cond_12
+    :cond_14
     const-string/jumbo v7, "ContactWithNumbersOff"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_13
+    if-eqz v7, :cond_15
 
     const-string/jumbo v7, "button_only_contactwithphone_key"
 
@@ -702,16 +742,16 @@
 
     return-void
 
-    :cond_13
+    :cond_15
     const-string/jumbo v7, "VoicemailNumber"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_14
+    if-eqz v7, :cond_16
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "button_voicemail_setting_key"
 
@@ -723,14 +763,14 @@
 
     return-void
 
-    :cond_14
+    :cond_16
     const-string/jumbo v7, "AddVoicemailNumber"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_15
+    if-eqz v7, :cond_17
 
     invoke-interface {v2, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -746,7 +786,7 @@
 
     move-result v7
 
-    if-eqz v7, :cond_36
+    if-eqz v7, :cond_3a
 
     const-string/jumbo v7, "VoicemailNumber"
 
@@ -761,42 +801,8 @@
     :goto_2
     return-void
 
-    :cond_15
-    const-string/jumbo v7, "VibrateVoicemailSettingsOn"
-
-    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_16
-
-    const-string/jumbo v7, "button_meterial_voicemail_notification_vibrate_key"
-
-    const-string/jumbo v8, "VibrateVoicemailOn"
-
-    invoke-direct {p0, v10, v7, v8}, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->setEnable(ZLjava/lang/String;Ljava/lang/String;)V
-
-    return-void
-
-    :cond_16
-    const-string/jumbo v7, "VibrateVoicemailSettingsOff"
-
-    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_17
-
-    const-string/jumbo v7, "button_meterial_voicemail_notification_vibrate_key"
-
-    const-string/jumbo v8, "VibrateVoicemailOff"
-
-    invoke-direct {p0, v11, v7, v8}, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->setEnable(ZLjava/lang/String;Ljava/lang/String;)V
-
-    return-void
-
     :cond_17
-    const-string/jumbo v7, "AlertSoundVoicemailSettings"
+    const-string/jumbo v7, "ShowServiceProvider"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -804,17 +810,23 @@
 
     if-eqz v7, :cond_18
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
-    const-string/jumbo v8, "button_voicemail_notification_ringtone_key"
+    const-string/jumbo v8, "button_voicemail_provider_key"
 
     invoke-static {v7, v8}, Lcom/android/phone/ia/IAUtil;->simulateMenuPreferenceClick(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;Ljava/lang/String;)I
 
-    move-result v7
+    move-result v5
 
-    if-ne v7, v10, :cond_37
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
-    const-string/jumbo v7, "AlertSoundVoicemailSettings"
+    const-string/jumbo v8, "button_voicemail_provider_key"
+
+    invoke-static {v7, v8}, Lcom/android/phone/ia/IAUtil;->scrolltoMenu(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;Ljava/lang/String;)V
+
+    if-ne v5, v10, :cond_3b
+
+    const-string/jumbo v7, "CallSettings"
 
     invoke-static {v7}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
 
@@ -826,7 +838,7 @@
     return-void
 
     :cond_18
-    const-string/jumbo v7, "RoamingAssistance"
+    const-string/jumbo v7, "VibrateVoicemailSettingsOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -834,7 +846,71 @@
 
     if-eqz v7, :cond_19
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    const-string/jumbo v7, "button_meterial_voicemail_notification_vibrate_key"
+
+    const-string/jumbo v8, "VibrateVoicemailOn"
+
+    invoke-direct {p0, v10, v7, v8}, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->setEnable(ZLjava/lang/String;Ljava/lang/String;)V
+
+    return-void
+
+    :cond_19
+    const-string/jumbo v7, "VibrateVoicemailSettingsOff"
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_1a
+
+    const-string/jumbo v7, "button_meterial_voicemail_notification_vibrate_key"
+
+    const-string/jumbo v8, "VibrateVoicemailOff"
+
+    invoke-direct {p0, v11, v7, v8}, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->setEnable(ZLjava/lang/String;Ljava/lang/String;)V
+
+    return-void
+
+    :cond_1a
+    const-string/jumbo v7, "AlertSoundVoicemailSettings"
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_1b
+
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+
+    const-string/jumbo v8, "button_voicemail_notification_ringtone_key"
+
+    invoke-static {v7, v8}, Lcom/android/phone/ia/IAUtil;->simulateMenuPreferenceClick(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;Ljava/lang/String;)I
+
+    move-result v7
+
+    if-ne v7, v10, :cond_3c
+
+    const-string/jumbo v7, "AlertSoundVoicemailSettings"
+
+    invoke-static {v7}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
+
+    sget-object v7, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v7}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    :goto_4
+    return-void
+
+    :cond_1b
+    const-string/jumbo v7, "RoamingAssistance"
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_1c
+
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "roaming_assistance_setting_key"
 
@@ -846,14 +922,14 @@
 
     return-void
 
-    :cond_19
+    :cond_1c
     const-string/jumbo v7, "CallpopupOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_1a
+    if-eqz v7, :cond_1d
 
     const-string/jumbo v7, "button_call_popup_key"
 
@@ -863,14 +939,14 @@
 
     return-void
 
-    :cond_1a
+    :cond_1d
     const-string/jumbo v7, "CallpopupOff"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_1b
+    if-eqz v7, :cond_1e
 
     const-string/jumbo v7, "button_call_popup_key"
 
@@ -880,14 +956,14 @@
 
     return-void
 
-    :cond_1b
+    :cond_1e
     const-string/jumbo v7, "DisplayHDVoiceOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_1c
+    if-eqz v7, :cond_1f
 
     const-string/jumbo v7, "meterial_volte_noti_preference"
 
@@ -897,14 +973,14 @@
 
     return-void
 
-    :cond_1c
+    :cond_1f
     const-string/jumbo v7, "DisplayHDVoiceOff"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_1d
+    if-eqz v7, :cond_20
 
     const-string/jumbo v7, "meterial_volte_noti_preference"
 
@@ -914,14 +990,14 @@
 
     return-void
 
-    :cond_1d
+    :cond_20
     const-string/jumbo v7, "VoiceCallProtectionOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_1e
+    if-eqz v7, :cond_21
 
     const-string/jumbo v7, "meterial_voicecall_protection_preference"
 
@@ -931,14 +1007,14 @@
 
     return-void
 
-    :cond_1e
+    :cond_21
     const-string/jumbo v7, "VoiceCallProtectionOff"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_1f
+    if-eqz v7, :cond_22
 
     const-string/jumbo v7, "meterial_voicecall_protection_preference"
 
@@ -948,16 +1024,16 @@
 
     return-void
 
-    :cond_1f
+    :cond_22
     const-string/jumbo v7, "InstantLettering"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_20
+    if-eqz v7, :cond_23
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "volte_instant_lettering_preference"
 
@@ -965,7 +1041,7 @@
 
     move-result v7
 
-    if-ne v7, v10, :cond_38
+    if-ne v7, v10, :cond_3d
 
     const-string/jumbo v7, "InstantLettering"
 
@@ -975,17 +1051,17 @@
 
     invoke-static {v7}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
-    :goto_4
+    :goto_5
     return-void
 
-    :cond_20
+    :cond_23
     const-string/jumbo v7, "PersonalizeCallSoundOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_21
+    if-eqz v7, :cond_24
 
     const-string/jumbo v7, "personalise_call_sound_key"
 
@@ -995,14 +1071,14 @@
 
     return-void
 
-    :cond_21
+    :cond_24
     const-string/jumbo v7, "PersonalizeCallSoundOff"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_22
+    if-eqz v7, :cond_25
 
     const-string/jumbo v7, "personalise_call_sound_key"
 
@@ -1012,14 +1088,14 @@
 
     return-void
 
-    :cond_22
+    :cond_25
     const-string/jumbo v7, "SwitchToVoiceCallOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_23
+    if-eqz v7, :cond_26
 
     const-string/jumbo v7, "meterial_auto_divert_to_voice_call"
 
@@ -1029,14 +1105,14 @@
 
     return-void
 
-    :cond_23
+    :cond_26
     const-string/jumbo v7, "SwitchToVoiceCallOff"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_24
+    if-eqz v7, :cond_27
 
     const-string/jumbo v7, "meterial_auto_divert_to_voice_call"
 
@@ -1046,14 +1122,14 @@
 
     return-void
 
-    :cond_24
+    :cond_27
     const-string/jumbo v7, "VideoCallInfoOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_25
+    if-eqz v7, :cond_28
 
     const-string/jumbo v7, "meterial_video_call_quality_info"
 
@@ -1063,14 +1139,14 @@
 
     return-void
 
-    :cond_25
+    :cond_28
     const-string/jumbo v7, "VideoCallInfoOff"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_26
+    if-eqz v7, :cond_29
 
     const-string/jumbo v7, "meterial_video_call_quality_info"
 
@@ -1080,14 +1156,14 @@
 
     return-void
 
-    :cond_26
+    :cond_29
     const-string/jumbo v7, "VideoSpeakerOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_27
+    if-eqz v7, :cond_2a
 
     const-string/jumbo v7, "meterial_video_call_speaker"
 
@@ -1097,14 +1173,14 @@
 
     return-void
 
-    :cond_27
+    :cond_2a
     const-string/jumbo v7, "VideoSpeakerOff"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_28
+    if-eqz v7, :cond_2b
 
     const-string/jumbo v7, "meterial_video_call_speaker"
 
@@ -1114,16 +1190,16 @@
 
     return-void
 
-    :cond_28
+    :cond_2b
     const-string/jumbo v7, "PhoneNumberLocator"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_29
+    if-eqz v7, :cond_2c
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "numberregion_list_preference"
 
@@ -1135,14 +1211,14 @@
 
     return-void
 
-    :cond_29
+    :cond_2c
     const-string/jumbo v7, "MuteFirstRingOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_2a
+    if-eqz v7, :cond_2d
 
     const-string/jumbo v7, "button_mute_first_ring"
 
@@ -1152,14 +1228,14 @@
 
     return-void
 
-    :cond_2a
+    :cond_2d
     const-string/jumbo v7, "MuteFirstRingOff"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_2b
+    if-eqz v7, :cond_2e
 
     const-string/jumbo v7, "button_mute_first_ring"
 
@@ -1169,16 +1245,16 @@
 
     return-void
 
-    :cond_2b
+    :cond_2e
     const-string/jumbo v7, "IVRCallScreenMenu"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_2c
+    if-eqz v7, :cond_2f
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "visual_call_callsetting"
 
@@ -1190,16 +1266,16 @@
 
     return-void
 
-    :cond_2c
+    :cond_2f
     const-string/jumbo v7, "CallBlocking"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_2d
+    if-eqz v7, :cond_30
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "button_call_rejection_key"
 
@@ -1211,16 +1287,16 @@
 
     return-void
 
-    :cond_2d
+    :cond_30
     const-string/jumbo v7, "IPCallList"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_2e
+    if-eqz v7, :cond_31
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "call_ipcall_preference"
 
@@ -1232,14 +1308,14 @@
 
     return-void
 
-    :cond_2e
+    :cond_31
     const-string/jumbo v7, "VideoCallOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_2f
+    if-eqz v7, :cond_32
 
     invoke-direct {p0}, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->getVideoCallMenuKey()Ljava/lang/String;
 
@@ -1251,14 +1327,14 @@
 
     return-void
 
-    :cond_2f
+    :cond_32
     const-string/jumbo v7, "VideoCallOff"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_30
+    if-eqz v7, :cond_33
 
     invoke-direct {p0}, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->getVideoCallMenuKey()Ljava/lang/String;
 
@@ -1270,16 +1346,16 @@
 
     return-void
 
-    :cond_30
+    :cond_33
     const-string/jumbo v7, "WifiCallingOn"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_32
+    if-eqz v7, :cond_35
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {v7}, Lcom/android/phone/CallFeaturesSetting;->getActivity()Landroid/app/Activity;
 
@@ -1289,9 +1365,9 @@
 
     move-result v7
 
-    if-eqz v7, :cond_31
+    if-eqz v7, :cond_34
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "wfc_settings_key"
 
@@ -1301,9 +1377,9 @@
 
     move-result v7
 
-    if-nez v7, :cond_39
+    if-nez v7, :cond_3e
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {v7}, Lcom/android/phone/CallFeaturesSetting;->getActivity()Landroid/app/Activity;
 
@@ -1317,7 +1393,7 @@
 
     invoke-static {v7, v8}, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper;->setRegister(Landroid/content/ContentResolver;Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegisterContract$State;)V
 
-    const-string/jumbo v7, "MoreSettings"
+    const-string/jumbo v7, "CallSettings"
 
     const-string/jumbo v8, "WifiCallingOn"
 
@@ -1327,24 +1403,24 @@
 
     invoke-static {v7, v8, v9, v10}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v7, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+    sget-object v7, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v7}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
-    :cond_31
-    :goto_5
+    :cond_34
+    :goto_6
     return-void
 
-    :cond_32
+    :cond_35
     const-string/jumbo v7, "WifiCallingOff"
 
     invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_3b
+    if-eqz v7, :cond_37
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {v7}, Lcom/android/phone/CallFeaturesSetting;->getActivity()Landroid/app/Activity;
 
@@ -1354,9 +1430,9 @@
 
     move-result v7
 
-    if-eqz v7, :cond_33
+    if-eqz v7, :cond_36
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     const-string/jumbo v8, "wfc_settings_key"
 
@@ -1366,9 +1442,9 @@
 
     move-result v7
 
-    if-eqz v7, :cond_3a
+    if-eqz v7, :cond_3f
 
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {v7}, Lcom/android/phone/CallFeaturesSetting;->getActivity()Landroid/app/Activity;
 
@@ -1382,7 +1458,7 @@
 
     invoke-static {v7, v8}, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper;->setRegister(Landroid/content/ContentResolver;Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegisterContract$State;)V
 
-    const-string/jumbo v7, "MoreSettings"
+    const-string/jumbo v7, "CallSettings"
 
     const-string/jumbo v8, "WifiCallingOff"
 
@@ -1392,26 +1468,56 @@
 
     invoke-static {v7, v8, v9, v10}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v7, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+    sget-object v7, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v7}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
-    :cond_33
-    :goto_6
+    :cond_36
+    :goto_7
     return-void
 
-    :cond_34
+    :cond_37
+    const-string/jumbo v7, "AboutPhone"
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_41
+
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+
+    const-string/jumbo v8, "button_about_phone_key"
+
+    invoke-static {v7, v8}, Lcom/android/phone/ia/IAUtil;->simulateMenuPreferenceClick(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;Ljava/lang/String;)I
+
+    move-result v7
+
+    if-ne v7, v10, :cond_40
+
+    const-string/jumbo v7, "AboutPhone"
+
+    invoke-static {v7}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
+
+    sget-object v7, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v7}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    :goto_8
+    return-void
+
+    :cond_38
     invoke-static {v5}, Lcom/android/phone/ia/IAUtil;->supportedMenu(I)V
 
     goto/16 :goto_0
 
-    :cond_35
+    :cond_39
     invoke-static {v5}, Lcom/android/phone/ia/IAUtil;->supportedMenu(I)V
 
     goto/16 :goto_1
 
-    :cond_36
-    iget-object v7, p0, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+    :cond_3a
+    sget-object v7, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {v7, v1}, Lcom/android/phone/CallFeaturesSetting;->handleIASetVoiceMailNumber(Ljava/lang/String;)V
 
@@ -1431,18 +1537,23 @@
 
     goto/16 :goto_2
 
-    :cond_37
+    :cond_3b
     invoke-static {v5}, Lcom/android/phone/ia/IAUtil;->supportedMenu(I)V
 
     goto/16 :goto_3
 
-    :cond_38
+    :cond_3c
     invoke-static {v5}, Lcom/android/phone/ia/IAUtil;->supportedMenu(I)V
 
     goto/16 :goto_4
 
-    :cond_39
-    const-string/jumbo v7, "MoreSettings"
+    :cond_3d
+    invoke-static {v5}, Lcom/android/phone/ia/IAUtil;->supportedMenu(I)V
+
+    goto/16 :goto_5
+
+    :cond_3e
+    const-string/jumbo v7, "CallSettings"
 
     const-string/jumbo v8, "WifiCallingOn"
 
@@ -1452,14 +1563,14 @@
 
     invoke-static {v7, v8, v9, v10}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v7, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+    sget-object v7, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v7}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
-    goto/16 :goto_5
+    goto/16 :goto_6
 
-    :cond_3a
-    const-string/jumbo v7, "MoreSettings"
+    :cond_3f
+    const-string/jumbo v7, "CallSettings"
 
     const-string/jumbo v8, "WifiCallingOff"
 
@@ -1469,13 +1580,18 @@
 
     invoke-static {v7, v8, v9, v10}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v7, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+    sget-object v7, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v7}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
-    goto :goto_6
+    goto :goto_7
 
-    :cond_3b
+    :cond_40
+    invoke-static {v5}, Lcom/android/phone/ia/IAUtil;->supportedMenu(I)V
+
+    goto :goto_8
+
+    :cond_41
     sget-object v7, Lcom/android/phone/ia/IAConstants;->RESPONSE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v7}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V

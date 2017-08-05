@@ -207,7 +207,6 @@
 
     check-cast v1, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->stickerList:Ljava/util/LinkedHashMap;
     invoke-static {v1}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->access$000(Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;)Ljava/util/LinkedHashMap;
 
     move-result-object v1
@@ -303,7 +302,6 @@
 
     check-cast v1, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->stickerList:Ljava/util/LinkedHashMap;
     invoke-static {v1}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->access$000(Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;)Ljava/util/LinkedHashMap;
 
     move-result-object v4
@@ -758,7 +756,6 @@
 
     check-cast v0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->stickerList:Ljava/util/LinkedHashMap;
     invoke-static {v0}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->access$000(Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;)Ljava/util/LinkedHashMap;
 
     move-result-object v0
@@ -777,7 +774,6 @@
 
     check-cast v0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->stickerList:Ljava/util/LinkedHashMap;
     invoke-static {v0}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->access$000(Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;)Ljava/util/LinkedHashMap;
 
     move-result-object v0
@@ -858,7 +854,6 @@
 
     check-cast v0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->stickerList:Ljava/util/LinkedHashMap;
     invoke-static {v0}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->access$000(Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;)Ljava/util/LinkedHashMap;
 
     move-result-object v0
@@ -877,7 +872,6 @@
 
     check-cast v0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->stickerList:Ljava/util/LinkedHashMap;
     invoke-static {v0}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->access$000(Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;)Ljava/util/LinkedHashMap;
 
     move-result-object v0
@@ -1196,7 +1190,6 @@
 
     check-cast v1, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->stickerList:Ljava/util/LinkedHashMap;
     invoke-static {v1}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->access$000(Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;)Ljava/util/LinkedHashMap;
 
     move-result-object v1

@@ -35,7 +35,9 @@
 
 # virtual methods
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
-    .locals 4
+    .locals 5
+
+    const/4 v4, 0x1
 
     const/4 v3, 0x0
 
@@ -56,11 +58,36 @@
     :try_start_0
     iget-object v2, p0, Lcom/android/phone/VzwAdvancedCalling$3;->this$0:Lcom/android/phone/VzwAdvancedCalling;
 
+    invoke-static {v2}, Lcom/android/phone/VzwAdvancedCalling;->-get0(Lcom/android/phone/VzwAdvancedCalling;)Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/android/phone/VzwAdvancedCallingUtils;->isUnifiedWfcEnabled(Landroid/content/Context;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    new-instance v1, Landroid/content/Intent;
+
+    const-string/jumbo v2, "android.intent.action.LAUNCH_UNIFIED_WFC"
+
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    iget-object v2, p0, Lcom/android/phone/VzwAdvancedCalling$3;->this$0:Lcom/android/phone/VzwAdvancedCalling;
+
+    invoke-virtual {v2, v1}, Lcom/android/phone/VzwAdvancedCalling;->startActivity(Landroid/content/Intent;)V
+
+    return v4
+
+    :cond_0
+    iget-object v2, p0, Lcom/android/phone/VzwAdvancedCalling$3;->this$0:Lcom/android/phone/VzwAdvancedCalling;
+
     invoke-static {v2}, Lcom/android/phone/VzwAdvancedCalling;->-wrap0(Lcom/android/phone/VzwAdvancedCalling;)Z
 
     move-result v2
 
-    if-nez v2, :cond_0
+    if-nez v2, :cond_1
 
     new-instance v1, Landroid/content/Intent;
 
@@ -85,11 +112,9 @@
     invoke-virtual {v2, v1, v3}, Lcom/android/phone/VzwAdvancedCalling;->startActivityForResult(Landroid/content/Intent;I)V
 
     :goto_0
-    const/4 v2, 0x1
+    return v4
 
-    return v2
-
-    :cond_0
+    :cond_1
     new-instance v1, Landroid/content/Intent;
 
     const-string/jumbo v2, "com.samsung.phone.action.VZW_VOWIFI_CALL_SETTING"

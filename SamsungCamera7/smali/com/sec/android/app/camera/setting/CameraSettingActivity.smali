@@ -10,6 +10,8 @@
 # static fields
 .field public static final RESULT_RESET:I = 0x64
 
+.field public static final RESULT_RETURN_TO_CAMERA_FROM_BIXBY:I = 0xc8
+
 .field protected static final TAG:Ljava/lang/String; = "CameraSettingActivity"
 
 
@@ -128,6 +130,14 @@
     return-object v0
 .end method
 
+.method static synthetic access$300(Lcom/sec/android/app/camera/setting/CameraSettingActivity;I)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/sec/android/app/camera/setting/CameraSettingActivity;->returnToCamera(I)V
+
+    return-void
+.end method
+
 .method private deinitIntentFilter()V
     .locals 4
 
@@ -224,6 +234,46 @@
 
     :cond_0
     return-void
+.end method
+
+.method private returnToCamera(I)V
+    .locals 3
+
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    iget-object v1, p0, Lcom/sec/android/app/camera/setting/CameraSettingActivity;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
+
+    invoke-virtual {v1}, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->getCameraFacing()I
+
+    move-result v1
+
+    if-eq v1, p1, :cond_0
+
+    const-string v1, "isNeedToSwitchCamera"
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    :goto_0
+    const/16 v1, 0xc8
+
+    invoke-virtual {p0, v1, v0}, Lcom/sec/android/app/camera/setting/CameraSettingActivity;->setResult(ILandroid/content/Intent;)V
+
+    invoke-virtual {p0}, Lcom/sec/android/app/camera/setting/CameraSettingActivity;->finish()V
+
+    return-void
+
+    :cond_0
+    const-string v1, "isNeedToSwitchCamera"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    goto :goto_0
 .end method
 
 
@@ -1520,7 +1570,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090226
+    const v2, 0x7f090227
 
     invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -1704,7 +1754,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0901e0
+    const v1, 0x7f0901e1
 
     const/4 v2, 0x1
 
@@ -1714,7 +1764,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090226
+    const v4, 0x7f090227
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1779,7 +1829,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090226
+    const v2, 0x7f090227
 
     invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -2345,7 +2395,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0901e0
+    const v3, 0x7f0901e1
 
     new-array v4, v8, [Ljava/lang/Object;
 
@@ -2353,7 +2403,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f090226
+    const v6, 0x7f090227
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -43,7 +43,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet$3;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->registerAccelrometer()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->access$400(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;)V
 
     return-void

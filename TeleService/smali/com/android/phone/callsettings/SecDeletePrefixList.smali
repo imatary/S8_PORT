@@ -859,7 +859,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v3, 0x7f0d09fe
+    const v3, 0x7f0d0a65
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/SecDeletePrefixList;->getString(I)Ljava/lang/String;
 
@@ -959,7 +959,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d05c4
+    const v1, 0x7f0d0628
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

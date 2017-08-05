@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer$1;->this$0:Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;
 
-    # getter for: Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0}, Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;->access$000(Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;)Landroid/media/SoundPool;
 
     move-result-object v0
@@ -51,7 +50,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer$1;->this$0:Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;
 
-    # setter for: Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;->releaseSoundRunnable:Ljava/lang/Runnable;
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;->access$102(Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;Ljava/lang/Runnable;)Ljava/lang/Runnable;
 
     return-void
@@ -59,7 +57,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer$1;->this$0:Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;
 
-    # getter for: Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0}, Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;->access$000(Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;)Landroid/media/SoundPool;
 
     move-result-object v0
@@ -68,7 +65,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer$1;->this$0:Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;
 
-    # setter for: Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;->access$002(Lcom/android/keyguard/sec/opentheme/unlockeffect/summer/KeyguardEffectViewSummer;Landroid/media/SoundPool;)Landroid/media/SoundPool;
 
     goto :goto_0

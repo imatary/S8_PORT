@@ -290,7 +290,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0901b0
+    const v5, 0x7f0901b1
 
     new-array v6, v3, [Ljava/lang/Object;
 
@@ -911,7 +911,7 @@
 
     :cond_6
     :goto_4
-    const v1, 0x7f090226
+    const v1, 0x7f090227
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/setting/TimerSettingFragment;->getString(I)Ljava/lang/String;
 

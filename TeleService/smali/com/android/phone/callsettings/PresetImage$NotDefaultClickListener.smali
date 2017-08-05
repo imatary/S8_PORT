@@ -51,7 +51,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0d0995
+    const v6, 0x7f0d09fb
 
     const-string/jumbo v4, "ts_rearrange_preset_image_setting"
 
@@ -150,7 +150,7 @@
 
     iget-object v6, p0, Lcom/android/phone/callsettings/PresetImage$NotDefaultClickListener;->this$0:Lcom/android/phone/callsettings/PresetImage;
 
-    const v7, 0x7f0d04da
+    const v7, 0x7f0d053a
 
     invoke-virtual {v6, v7}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
@@ -164,7 +164,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f02015f
+    const v5, 0x7f020163
 
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -412,7 +412,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/PresetImage$NotDefaultClickListener;->this$0:Lcom/android/phone/callsettings/PresetImage;
 
-    const v6, 0x7f0d04d7
+    const v6, 0x7f0d0537
 
     invoke-virtual {v5, v6}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 

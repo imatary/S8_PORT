@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/share_via_list_item_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/applist_image" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginStart="20.0dip" />
-    <TextView android:textSize="@dimen/share_via_list_item_textsize" android:textColor="@color/tab_list_item_text_color_white" android:gravity="center_vertical" android:id="@id/applist_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="0.0dip" android:layout_marginEnd="20.0dip" />
-</LinearLayout>

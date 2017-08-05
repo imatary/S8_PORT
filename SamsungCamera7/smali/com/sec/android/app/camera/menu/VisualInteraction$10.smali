@@ -39,8 +39,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$10;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1200(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/interfaces/Engine;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$500(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/interfaces/Engine;
 
     move-result-object v0
 

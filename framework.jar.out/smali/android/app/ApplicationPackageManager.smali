@@ -2367,7 +2367,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x10803f9
+    const v1, 0x10803e3
 
     return v1
 
@@ -2386,7 +2386,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x10803fa
+    const v1, 0x10803e4
 
     return v1
 
@@ -2403,7 +2403,7 @@
 
     if-eqz v1, :cond_4
 
-    const v1, 0x10804d0
+    const v1, 0x10804ba
 
     return v1
 
@@ -2420,12 +2420,12 @@
 
     if-eqz v1, :cond_3
 
-    const v1, 0x10803d3
+    const v1, 0x10803bd
 
     return v1
 
     :cond_3
-    const v1, 0x10803c8
+    const v1, 0x10803b2
 
     return v1
 
@@ -3644,7 +3644,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x10803d4
+    const v0, 0x10803be
 
     invoke-direct {p0, v0, p3}, Landroid/app/ApplicationPackageManager;->getDrawableForDensity(II)Landroid/graphics/drawable/Drawable;
 
@@ -3943,7 +3943,7 @@
 
     move-result-object v34
 
-    const v35, 0x1080392
+    const v35, 0x108037c
 
     move-object/from16 v0, v34
 
@@ -4002,7 +4002,7 @@
 
     move-result-object v34
 
-    const v35, 0x1080392
+    const v35, 0x108037c
 
     invoke-virtual/range {v34 .. v35}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -4042,7 +4042,7 @@
 
     move-result-object v34
 
-    const v35, 0x1080390
+    const v35, 0x108037a
 
     move-object/from16 v0, v34
 
@@ -4152,7 +4152,7 @@
 
     move-result-object v34
 
-    const v35, 0x1080390
+    const v35, 0x108037a
 
     invoke-virtual/range {v34 .. v35}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -4662,7 +4662,7 @@
 
     move-result-object v34
 
-    const v35, 0x1080393
+    const v35, 0x108037d
 
     move-object/from16 v0, v34
 
@@ -5009,7 +5009,7 @@
 
     move-result-object v34
 
-    const v35, 0x1080394
+    const v35, 0x108037e
 
     invoke-virtual/range {v34 .. v35}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -5187,7 +5187,7 @@
 
     move-result-object v34
 
-    const v35, 0x1080391
+    const v35, 0x108037b
 
     move-object/from16 v0, v34
 
@@ -5261,7 +5261,7 @@
 
     move-result-object v34
 
-    const v35, 0x1080392
+    const v35, 0x108037c
 
     move-object/from16 v0, v34
 
@@ -5399,7 +5399,7 @@
 
     move-result-object v34
 
-    const v35, 0x1080390
+    const v35, 0x108037a
 
     move-object/from16 v0, v34
 
@@ -5596,7 +5596,7 @@
 
     move-result-object v34
 
-    const v35, 0x1080392
+    const v35, 0x108037c
 
     invoke-virtual/range {v34 .. v35}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -5618,7 +5618,7 @@
 
     move-result-object v34
 
-    const v35, 0x1080390
+    const v35, 0x108037a
 
     invoke-virtual/range {v34 .. v35}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -9534,7 +9534,7 @@
 .method public getManagedUserBadgedDrawable(Landroid/graphics/drawable/Drawable;Landroid/graphics/Rect;I)Landroid/graphics/drawable/Drawable;
     .locals 2
 
-    const v1, 0x10803c4
+    const v1, 0x10803ae
 
     invoke-direct {p0, v1, p3}, Landroid/app/ApplicationPackageManager;->getDrawableForDensity(II)Landroid/graphics/drawable/Drawable;
 
@@ -11744,7 +11744,7 @@
 
     move-result-object v7
 
-    const v8, 0x10803fc
+    const v8, 0x10803e6
 
     invoke-virtual {v7, v8, p2}, Landroid/content/res/Resources;->getDrawableForDensity(II)Landroid/graphics/drawable/Drawable;
 
@@ -11771,7 +11771,7 @@
 
     move-result-object v7
 
-    const v8, 0x10803fb
+    const v8, 0x10803e5
 
     invoke-virtual {v7, v8, p2}, Landroid/content/res/Resources;->getDrawableForDensity(II)Landroid/graphics/drawable/Drawable;
 
@@ -11830,7 +11830,7 @@
 
     move-result-object v7
 
-    const v8, 0x10804d1
+    const v8, 0x10804bb
 
     invoke-virtual {v7, v8, p2}, Landroid/content/res/Resources;->getDrawableForDensity(II)Landroid/graphics/drawable/Drawable;
 
@@ -11859,7 +11859,7 @@
 
     move-result-object v7
 
-    const v8, 0x10803f9
+    const v8, 0x10803e3
 
     invoke-virtual {v7, v8, p2}, Landroid/content/res/Resources;->getDrawableForDensity(II)Landroid/graphics/drawable/Drawable;
 
@@ -11868,7 +11868,7 @@
     return-object v7
 
     :cond_6
-    const v7, 0x10803c4
+    const v7, 0x10803ae
 
     invoke-direct {p0, p1, v7, p2}, Landroid/app/ApplicationPackageManager;->getManagedProfileIconForDensity(Landroid/os/UserHandle;II)Landroid/graphics/drawable/Drawable;
 
@@ -11880,7 +11880,7 @@
 .method public getUserBadgeForDensityNoBackground(Landroid/os/UserHandle;I)Landroid/graphics/drawable/Drawable;
     .locals 1
 
-    const v0, 0x10803c5
+    const v0, 0x10803af
 
     invoke-direct {p0, p1, v0, p2}, Landroid/app/ApplicationPackageManager;->getManagedProfileIconForDensity(Landroid/os/UserHandle;II)Landroid/graphics/drawable/Drawable;
 
@@ -12459,7 +12459,7 @@
 
     aput-object p1, v1, v2
 
-    const v2, 0x10405c4
+    const v2, 0x10405c6
 
     invoke-virtual {v0, v2, v1}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -13665,7 +13665,7 @@
 
     iget-object v11, p0, Landroid/app/ApplicationPackageManager;->mResources:Landroid/content/res/Resources;
 
-    const v12, 0x10600da
+    const v12, 0x10600e0
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getColor(I)I
 

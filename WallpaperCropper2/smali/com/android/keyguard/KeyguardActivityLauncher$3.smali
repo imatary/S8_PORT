@@ -102,7 +102,6 @@
 
     move-result-object v0
 
-    # getter for: Lcom/android/keyguard/KeyguardActivityLauncher;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/KeyguardActivityLauncher;->access$200()Ljava/lang/String;
 
     move-result-object v1
@@ -182,7 +181,6 @@
     :catch_0
     move-exception v0
 
-    # getter for: Lcom/android/keyguard/KeyguardActivityLauncher;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/KeyguardActivityLauncher;->access$200()Ljava/lang/String;
 
     move-result-object v1
@@ -196,7 +194,6 @@
     :catch_1
     move-exception v0
 
-    # getter for: Lcom/android/keyguard/KeyguardActivityLauncher;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/KeyguardActivityLauncher;->access$200()Ljava/lang/String;
 
     move-result-object v1

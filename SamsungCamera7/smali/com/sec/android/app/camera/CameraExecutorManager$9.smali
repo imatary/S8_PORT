@@ -3,12 +3,12 @@
 .source "CameraExecutorManager.java"
 
 # interfaces
-.implements Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;
+.implements Lcom/sec/android/app/camera/menu/ModeListMenu$OnShowAnimationListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/CameraExecutorManager;->registerInterimStateListener()V
+    value = Lcom/sec/android/app/camera/CameraExecutorManager;->showModeShortcutMenu(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,82 +34,55 @@
 
 
 # virtual methods
-.method public onParamFillingReceived(Lcom/samsung/android/sdk/bixby/data/ParamFilling;)Z
-    .locals 2
-
-    const-string v0, "CameraExecutorManager"
-
-    const-string v1, "onParamFillingReceived"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public onRuleCanceled(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "CameraExecutorManager"
-
-    const-string v1, "onRuleCanceled"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-.end method
-
-.method public onScreenStatesRequested()Lcom/samsung/android/sdk/bixby/data/ScreenStateInfo;
-    .locals 3
-
-    const-string v1, "CameraExecutorManager"
-
-    const-string v2, "onScreenStatesRequested"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/CameraExecutorManager$9;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
-
-    # invokes: Lcom/sec/android/app/camera/CameraExecutorManager;->getSupportedModeSetInCurrentState()Ljava/util/LinkedHashSet;
-    invoke-static {v1}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1200(Lcom/sec/android/app/camera/CameraExecutorManager;)Ljava/util/LinkedHashSet;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljava/util/LinkedHashSet;->isEmpty()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    new-instance v1, Lcom/samsung/android/sdk/bixby/data/ScreenStateInfo;
-
-    invoke-direct {v1, v0}, Lcom/samsung/android/sdk/bixby/data/ScreenStateInfo;-><init>(Ljava/util/LinkedHashSet;)V
-
-    :goto_0
-    return-object v1
-
-    :cond_0
-    const/4 v1, 0x0
-
-    goto :goto_0
-.end method
-
-.method public onStateReceived(Lcom/samsung/android/sdk/bixby/data/State;)V
-    .locals 2
-
-    const-string v0, "CameraExecutorManager"
-
-    const-string v1, "onStateReceived"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+.method public onShowAnimationComplete()V
+    .locals 5
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$9;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # invokes: Lcom/sec/android/app/camera/CameraExecutorManager;->processState(Lcom/samsung/android/sdk/bixby/data/State;)V
-    invoke-static {v0, p1}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1300(Lcom/sec/android/app/camera/CameraExecutorManager;Lcom/samsung/android/sdk/bixby/data/State;)V
+    iget-object v0, v0, Lcom/sec/android/app/camera/CameraExecutorManager;->mBackCameraMenu:Lcom/sec/android/app/camera/menu/ModeListMenu;
 
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ModeListMenu;->showModeShortcutMenu()V
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$9;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
+
+    invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1500(Lcom/sec/android/app/camera/CameraExecutorManager;)I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$9;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
+
+    const/4 v1, 0x1
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/CameraExecutorManager$9;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
+
+    invoke-static {v2}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$600(Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/samsung/android/sdk/bixby/data/State;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/samsung/android/sdk/bixby/data/State;->getStateId()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/sec/android/app/camera/executor/RulePathState;->getStateIDbyName(Ljava/lang/String;)I
+
+    move-result v2
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/CameraExecutorManager$9;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
+
+    invoke-static {v3}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$600(Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/samsung/android/sdk/bixby/data/State;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/samsung/android/sdk/bixby/data/State;->getStateId()Ljava/lang/String;
+
+    move-result-object v3
+
+    const/16 v4, 0x64
+
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1100(Lcom/sec/android/app/camera/CameraExecutorManager;ZILjava/lang/String;I)V
+
+    :cond_0
     return-void
 .end method

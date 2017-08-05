@@ -33,6 +33,8 @@
 
 .field private mLockType:I
 
+.field private mPersoSubstate:Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;
+
 .field private mPhone:Lcom/android/internal/telephony/Phone;
 
 .field private mPinEntry:Landroid/widget/EditText;
@@ -91,7 +93,15 @@
     return v0
 .end method
 
-.method static synthetic -get3(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Lcom/android/internal/telephony/Phone;
+.method static synthetic -get3(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPersoSubstate:Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;
+
+    return-object v0
+.end method
+
+.method static synthetic -get4(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Lcom/android/internal/telephony/Phone;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPhone:Lcom/android/internal/telephony/Phone;
@@ -99,7 +109,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get4(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Landroid/widget/EditText;
+.method static synthetic -get5(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Landroid/widget/EditText;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPinEntry:Landroid/widget/EditText;
@@ -107,7 +117,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get5(Lcom/android/phone/IccNetworkDepersonalizationPanel;)I
+.method static synthetic -get6(Lcom/android/phone/IccNetworkDepersonalizationPanel;)I
     .locals 1
 
     iget v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mRetryCount:I
@@ -115,20 +125,12 @@
     return v0
 .end method
 
-.method static synthetic -get6(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Landroid/widget/TextView;
+.method static synthetic -get7(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Landroid/widget/TextView;
     .locals 1
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mRetryLabel:Landroid/widget/TextView;
 
     return-object v0
-.end method
-
-.method static synthetic -get7(Lcom/android/phone/IccNetworkDepersonalizationPanel;)I
-    .locals 1
-
-    iget v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mSimId:I
-
-    return v0
 .end method
 
 .method static synthetic -get8(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Landroid/widget/Button;
@@ -422,12 +424,28 @@
 .method static synthetic -set0(Lcom/android/phone/IccNetworkDepersonalizationPanel;I)I
     .locals 0
 
+    iput p1, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mLockType:I
+
+    return p1
+.end method
+
+.method static synthetic -set1(Lcom/android/phone/IccNetworkDepersonalizationPanel;Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;)Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPersoSubstate:Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;
+
+    return-object p1
+.end method
+
+.method static synthetic -set2(Lcom/android/phone/IccNetworkDepersonalizationPanel;I)I
+    .locals 0
+
     iput p1, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mRetryCount:I
 
     return p1
 .end method
 
-.method static synthetic -set1(Lcom/android/phone/IccNetworkDepersonalizationPanel;I)I
+.method static synthetic -set3(Lcom/android/phone/IccNetworkDepersonalizationPanel;I)I
     .locals 0
 
     iput p1, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->retryCount:I
@@ -435,7 +453,7 @@
     return p1
 .end method
 
-.method static synthetic -set2(Lcom/android/phone/IccNetworkDepersonalizationPanel;I)I
+.method static synthetic -set4(Lcom/android/phone/IccNetworkDepersonalizationPanel;I)I
     .locals 0
 
     iput p1, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->time:I
@@ -748,8 +766,6 @@
 .method private getSimLockInfo(I)V
     .locals 5
 
-    const/4 v4, 0x1
-
     const/4 v1, 0x0
 
     packed-switch p1, :pswitch_data_0
@@ -760,19 +776,7 @@
     const/4 v1, 0x5
 
     :goto_0
-    const-string/jumbo v2, "feature_multisim"
-
-    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    iget v2, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mSimId:I
-
-    invoke-static {v2}, Lcom/android/phone/PhoneUtilsMultiSIM;->getPhone(I)Lcom/android/internal/telephony/Phone;
-
-    move-result-object v2
+    iget-object v2, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-virtual {v2}, Lcom/android/internal/telephony/Phone;->getIccCard()Lcom/android/internal/telephony/IccCard;
 
@@ -784,9 +788,10 @@
 
     move-result-object v3
 
+    const/4 v4, 0x1
+
     invoke-interface {v2, v4, v1, v3}, Lcom/android/internal/telephony/IccCard;->getSimLockInfo(IILandroid/os/Message;)V
 
-    :goto_1
     return-void
 
     :pswitch_1
@@ -802,25 +807,6 @@
     const/4 v1, 0x7
 
     goto :goto_0
-
-    :cond_0
-    iget-object v2, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPhone:Lcom/android/internal/telephony/Phone;
-
-    invoke-virtual {v2}, Lcom/android/internal/telephony/Phone;->getIccCard()Lcom/android/internal/telephony/IccCard;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mHandler:Landroid/os/Handler;
-
-    invoke-static {v3, v0}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
-
-    move-result-object v3
-
-    invoke-interface {v2, v4, v1, v3}, Lcom/android/internal/telephony/IccCard;->getSimLockInfo(IILandroid/os/Message;)V
-
-    goto :goto_1
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x4
@@ -901,7 +887,7 @@
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d02db
+    const v1, 0x7f0d033b
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -929,7 +915,7 @@
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d02dc
+    const v1, 0x7f0d033c
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -938,7 +924,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d02da
+    const v1, 0x7f0d033a
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -956,7 +942,7 @@
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d02de
+    const v1, 0x7f0d033e
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -984,7 +970,7 @@
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d02df
+    const v1, 0x7f0d033f
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -993,7 +979,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d02dd
+    const v1, 0x7f0d033d
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1011,7 +997,7 @@
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d02e1
+    const v1, 0x7f0d0341
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1039,7 +1025,7 @@
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d02e2
+    const v1, 0x7f0d0342
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1048,7 +1034,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusText:Landroid/widget/TextView;
 
-    const v1, 0x7f0d02e0
+    const v1, 0x7f0d0340
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1088,7 +1074,7 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
 
-    const v10, 0x7f0d02d0
+    const v10, 0x7f0d0330
 
     const/4 v12, 0x0
 
@@ -1105,13 +1091,24 @@
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->setContentView(I)V
 
     :goto_0
-    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getPhone()Lcom/android/internal/telephony/Phone;
+    const-string/jumbo v7, "feature_multisim"
+
+    invoke-static {v7}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    iget v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mSimId:I
+
+    invoke-static {v7}, Lcom/android/phone/PhoneUtilsMultiSIM;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
     move-result-object v7
 
     iput-object v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    const v7, 0x7f10027b
+    :goto_1
+    const v7, 0x7f10027c
 
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
@@ -1119,7 +1116,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v7, 0x7f100285
+    const v7, 0x7f100286
 
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
@@ -1127,7 +1124,7 @@
 
     check-cast v4, Landroid/widget/TextView;
 
-    const v7, 0x7f10027d
+    const v7, 0x7f10027e
 
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
@@ -1135,7 +1132,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v7, 0x7f10027e
+    const v7, 0x7f10027f
 
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
@@ -1143,7 +1140,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v7, 0x7f10027f
+    const v7, 0x7f100280
 
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
@@ -1151,7 +1148,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    const v7, 0x7f10027c
+    const v7, 0x7f10027d
 
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
@@ -1163,18 +1160,18 @@
 
     iget-boolean v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->isVzwOperator:Z
 
-    if-eqz v7, :cond_4
+    if-eqz v7, :cond_5
 
-    const v7, 0x7f0d0d1c
+    const v7, 0x7f0d0d8d
 
     invoke-virtual {v0, v7}, Landroid/widget/TextView;->setText(I)V
 
-    const v7, 0x7f0d0d1d
+    const v7, 0x7f0d0d8e
 
     invoke-virtual {v4, v7}, Landroid/widget/TextView;->setText(I)V
 
-    :goto_1
-    const v7, 0x7f100280
+    :goto_2
+    const v7, 0x7f100281
 
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
@@ -1202,15 +1199,15 @@
 
     move-result v7
 
-    if-eqz v7, :cond_b
+    if-eqz v7, :cond_c
 
     :cond_0
     iget-object v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPinEntry:Landroid/widget/EditText;
 
     invoke-virtual {v7, v11}, Landroid/widget/EditText;->setVisibility(I)V
 
-    :goto_2
-    const v7, 0x7f10027a
+    :goto_3
+    const v7, 0x7f10027b
 
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
@@ -1220,7 +1217,7 @@
 
     iput-object v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mEntryPanel:Landroid/widget/LinearLayout;
 
-    const v7, 0x7f100281
+    const v7, 0x7f100282
 
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
@@ -1248,15 +1245,15 @@
 
     move-result v7
 
-    if-eqz v7, :cond_c
+    if-eqz v7, :cond_d
 
     :cond_1
     iget-object v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mUnlockButton:Landroid/widget/Button;
 
     invoke-virtual {v7, v11}, Landroid/widget/Button;->setVisibility(I)V
 
-    :goto_3
-    const v7, 0x7f100282
+    :goto_4
+    const v7, 0x7f100283
 
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
@@ -1298,7 +1295,7 @@
 
     move-result v7
 
-    if-nez v7, :cond_d
+    if-nez v7, :cond_e
 
     iget-object v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mDismissButton:Landroid/widget/Button;
 
@@ -1324,13 +1321,13 @@
 
     iget-object v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mDismissButton:Landroid/widget/Button;
 
-    const v8, 0x7f0d02d9
+    const v8, 0x7f0d0339
 
     invoke-virtual {v7, v8}, Landroid/widget/Button;->setText(I)V
 
     :cond_2
-    :goto_4
-    const v7, 0x7f100283
+    :goto_5
+    const v7, 0x7f100284
 
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
@@ -1340,7 +1337,7 @@
 
     iput-object v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusPanel:Landroid/widget/LinearLayout;
 
-    const v7, 0x7f100284
+    const v7, 0x7f100285
 
     invoke-virtual {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
@@ -1362,15 +1359,24 @@
     goto/16 :goto_0
 
     :cond_4
+    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getPhone()Lcom/android/internal/telephony/Phone;
+
+    move-result-object v7
+
+    iput-object v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    goto/16 :goto_1
+
+    :cond_5
     const-string/jumbo v7, "disable_enter_nck"
 
     invoke-static {v7}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_5
+    if-eqz v7, :cond_6
 
-    const v7, 0x7f0d078e
+    const v7, 0x7f0d07f2
 
     invoke-virtual {v0, v7}, Landroid/widget/TextView;->setText(I)V
 
@@ -1378,9 +1384,9 @@
 
     invoke-virtual {v3, v11}, Landroid/widget/TextView;->setVisibility(I)V
 
-    goto/16 :goto_1
+    goto/16 :goto_2
 
-    :cond_5
+    :cond_6
     invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
 
     move-result-object v7
@@ -1391,23 +1397,23 @@
 
     move-result v7
 
-    if-eqz v7, :cond_6
+    if-eqz v7, :cond_7
 
     invoke-virtual {v1, v11}, Landroid/widget/ImageView;->setVisibility(I)V
 
     invoke-virtual {v0, v11}, Landroid/widget/TextView;->setVisibility(I)V
 
-    const v7, 0x7f0d02d4
+    const v7, 0x7f0d0334
 
     invoke-virtual {v2, v7}, Landroid/widget/TextView;->setText(I)V
 
-    const v7, 0x7f0d02d5
+    const v7, 0x7f0d0335
 
     invoke-virtual {v3, v7}, Landroid/widget/TextView;->setText(I)V
 
-    goto/16 :goto_1
+    goto/16 :goto_2
 
-    :cond_6
+    :cond_7
     invoke-virtual {v1, v11}, Landroid/widget/ImageView;->setVisibility(I)V
 
     invoke-virtual {v2, v11}, Landroid/widget/TextView;->setVisibility(I)V
@@ -1420,7 +1426,7 @@
 
     move-result v7
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_8
 
     const-string/jumbo v7, "InvalidSIM"
 
@@ -1438,7 +1444,7 @@
 
     move-result v7
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_8
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -1452,7 +1458,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d078f
+    const v9, 0x7f0d07f3
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1490,20 +1496,20 @@
 
     invoke-virtual {v0, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    goto/16 :goto_1
+    goto/16 :goto_2
 
-    :cond_7
+    :cond_8
     iget v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mLockType:I
 
     const/4 v8, 0x4
 
-    if-ne v7, v8, :cond_8
+    if-ne v7, v8, :cond_9
 
-    const v7, 0x7f0d02d2
+    const v7, 0x7f0d0332
 
     invoke-virtual {v0, v7}, Landroid/widget/TextView;->setText(I)V
 
-    :goto_5
+    :goto_6
     invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
 
     move-result-object v7
@@ -1514,40 +1520,40 @@
 
     move-result v7
 
-    if-eqz v7, :cond_a
+    if-eqz v7, :cond_b
 
     iget v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mLockType:I
 
     invoke-direct {p0, v7}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->getSimLockInfo(I)V
 
-    goto/16 :goto_1
+    goto/16 :goto_2
 
-    :cond_8
+    :cond_9
     iget v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mLockType:I
 
     const/4 v8, 0x6
 
-    if-ne v7, v8, :cond_9
+    if-ne v7, v8, :cond_a
 
-    const v7, 0x7f0d02d3
+    const v7, 0x7f0d0333
 
     invoke-virtual {v0, v7}, Landroid/widget/TextView;->setText(I)V
 
-    goto :goto_5
-
-    :cond_9
-    invoke-virtual {v0, v10}, Landroid/widget/TextView;->setText(I)V
-
-    goto :goto_5
+    goto :goto_6
 
     :cond_a
+    invoke-virtual {v0, v10}, Landroid/widget/TextView;->setText(I)V
+
+    goto :goto_6
+
+    :cond_b
     iget-object v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mRetryLabel:Landroid/widget/TextView;
 
     invoke-virtual {v7, v11}, Landroid/widget/TextView;->setVisibility(I)V
 
-    goto/16 :goto_1
+    goto/16 :goto_2
 
-    :cond_b
+    :cond_c
     iget-object v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPinEntry:Landroid/widget/EditText;
 
     invoke-static {}, Landroid/text/method/DialerKeyListener;->getInstance()Landroid/text/method/DialerKeyListener;
@@ -1582,23 +1588,23 @@
 
     invoke-interface {v5, v7, v12, v8, v9}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
-    goto/16 :goto_2
+    goto/16 :goto_3
 
-    :cond_c
+    :cond_d
     iget-object v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mUnlockButton:Landroid/widget/Button;
 
     iget-object v8, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mUnlockListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v7, v8}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    goto/16 :goto_3
+    goto/16 :goto_4
 
-    :cond_d
+    :cond_e
     iget-object v7, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mDismissButton:Landroid/widget/Button;
 
     invoke-virtual {v7, v11}, Landroid/widget/Button;->setVisibility(I)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 .end method
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
@@ -1623,46 +1629,68 @@
 .method public updatePanel()V
     .locals 3
 
-    iget-boolean v1, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->isVzwOperator:Z
+    iget-boolean v2, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->isVzwOperator:Z
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
     return-void
 
     :cond_0
-    const v1, 0x7f10027b
+    const v2, 0x7f10027c
 
-    invoke-virtual {p0, v1}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v2, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    invoke-virtual {v1}, Lcom/android/internal/telephony/Phone;->getIccCard()Lcom/android/internal/telephony/IccCard;
+    invoke-virtual {v2}, Lcom/android/internal/telephony/Phone;->getIccCard()Lcom/android/internal/telephony/IccCard;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Lcom/android/internal/telephony/IccCard;->getPersoSubState()Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;
 
     move-result-object v1
 
-    invoke-interface {v1}, Lcom/android/internal/telephony/IccCard;->getPersoSubState()Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;
-
-    move-result-object v1
-
-    sget-object v2, Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;->PERSOSUBSTATE_SIM_NETWORK_PUK:Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;
+    sget-object v2, Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;->PERSOSUBSTATE_SIM_NETWORK:Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;
 
     if-ne v1, v2, :cond_1
 
-    const v1, 0x7f0d02d1
+    const v2, 0x7f0d0330
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
     :goto_0
     return-void
 
     :cond_1
-    const v1, 0x7f0d02d0
+    sget-object v2, Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;->PERSOSUBSTATE_SIM_NETWORK_SUBSET:Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
+    if-ne v1, v2, :cond_2
+
+    const v2, 0x7f0d0332
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
+
+    goto :goto_0
+
+    :cond_2
+    sget-object v2, Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;->PERSOSUBSTATE_SIM_SERVICE_PROVIDER:Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$PersoSubState;
+
+    if-ne v1, v2, :cond_3
+
+    const v2, 0x7f0d0333
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
+
+    goto :goto_0
+
+    :cond_3
+    const v2, 0x7f0d0331
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_0
 .end method

@@ -832,7 +832,7 @@
 
     if-ne v4, v8, :cond_14
 
-    const v5, 0x7f0b1b37
+    const v5, 0x7f0b1bc6
 
     invoke-virtual {p0, v5}, Lcom/android/settings/datausage/DataUsageSummary;->getString(I)Ljava/lang/String;
 
@@ -970,7 +970,7 @@
     goto/16 :goto_6
 
     :cond_14
-    const v5, 0x7f0b1b38
+    const v5, 0x7f0b1bc7
 
     invoke-virtual {p0, v5}, Lcom/android/settings/datausage/DataUsageSummary;->getString(I)Ljava/lang/String;
 
@@ -1602,7 +1602,7 @@
 
     aput-object v7, v6, v5
 
-    const v7, 0x7f0b10a6
+    const v7, 0x7f0b1127
 
     invoke-virtual {p0, v7, v6}, Lcom/android/settings/datausage/DataUsageSummary;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1699,7 +1699,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0b0505
+    const v1, 0x7f0b0568
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1758,7 +1758,7 @@
 
     iget-object v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mSummaryPreference:Lcom/samsung/android/settings/SecSummaryPreference;
 
-    if-eqz v14, :cond_a
+    if-eqz v14, :cond_9
 
     move-object/from16 v0, p0
 
@@ -1790,11 +1790,11 @@
 
     iget-boolean v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mIsVZW:Z
 
-    if-eqz v14, :cond_7
+    if-eqz v14, :cond_6
 
     sget v14, Lcom/android/settings/datausage/DataUsageSummary;->mSelectDisplayUnit:I
 
-    if-eqz v14, :cond_7
+    if-eqz v14, :cond_6
 
     const/4 v14, 0x1
 
@@ -1890,37 +1890,6 @@
     iget-wide v8, v5, Lcom/android/settingslib/net/DataUsageController$DataUsageInfo;->usageLevel:J
 
     :cond_3
-    move-object/from16 v0, p0
-
-    iget-boolean v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->isKnoxmode:Z
-
-    if-eqz v14, :cond_4
-
-    invoke-static {}, Lcom/android/settings/Utils;->isSupportCHNSmartManager()Z
-
-    move-result v14
-
-    if-eqz v14, :cond_4
-
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/datausage/DataUsageSummary;->getContext()Landroid/content/Context;
-
-    move-result-object v14
-
-    invoke-static {v14}, Lcom/android/settings/datausage/DataUsageSummary;->hasMobileData(Landroid/content/Context;)Z
-
-    move-result v14
-
-    if-eqz v14, :cond_4
-
-    move-object/from16 v0, p0
-
-    iget-boolean v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mIsSIMCardInserted:Z
-
-    if-eqz v14, :cond_4
-
-    const-wide v8, 0x80000000L
-
-    :cond_4
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings/datausage/DataUsageSummary;->getContext()Landroid/content/Context;
 
     move-result-object v14
@@ -1939,7 +1908,7 @@
 
     const/4 v15, 0x1
 
-    if-ne v14, v15, :cond_8
+    if-ne v14, v15, :cond_7
 
     const/4 v6, 0x1
 
@@ -1970,7 +1939,7 @@
 
     invoke-virtual/range {v14 .. v16}, Lcom/samsung/android/settings/SecSummaryPreference;->setLabels(Ljava/lang/String;Ljava/lang/String;)V
 
-    if-eqz v6, :cond_9
+    if-eqz v6, :cond_8
 
     move-object/from16 v0, p0
 
@@ -2032,13 +2001,13 @@
 
     invoke-virtual {v14, v7, v15, v11}, Lcom/samsung/android/settings/SecSummaryPreference;->setColors(III)V
 
-    :cond_5
+    :cond_4
     :goto_2
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mLimitPreference:Landroid/preference/Preference;
 
-    if-eqz v14, :cond_6
+    if-eqz v14, :cond_5
 
     iget-wide v14, v5, Lcom/android/settingslib/net/DataUsageController$DataUsageInfo;->warningLevel:J
 
@@ -2058,7 +2027,7 @@
 
     cmp-long v14, v14, v16
 
-    if-ltz v14, :cond_c
+    if-ltz v14, :cond_b
 
     move-object/from16 v0, p0
 
@@ -2072,9 +2041,9 @@
 
     cmp-long v14, v16, v18
 
-    if-gtz v14, :cond_b
+    if-gtz v14, :cond_a
 
-    const v14, 0x7f0b1c61
+    const v14, 0x7f0b1cf0
 
     :goto_3
     const/16 v16, 0x2
@@ -2103,7 +2072,7 @@
 
     invoke-virtual {v15, v14}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
-    :cond_6
+    :cond_5
     :goto_4
     const-string/jumbo v14, "DataUsageSummary"
 
@@ -2149,7 +2118,35 @@
 
     move-result-object v12
 
-    const/4 v4, 0x1
+    move-object/from16 v0, p0
+
+    iget-boolean v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->isKnoxmode:Z
+
+    if-eqz v14, :cond_d
+
+    invoke-static {}, Lcom/android/settings/Utils;->isSupportCHNSmartManager()Z
+
+    move-result v14
+
+    if-eqz v14, :cond_d
+
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/datausage/DataUsageSummary;->getContext()Landroid/content/Context;
+
+    move-result-object v14
+
+    invoke-static {v14}, Lcom/android/settings/datausage/DataUsageSummary;->hasMobileData(Landroid/content/Context;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_d
+
+    move-object/from16 v0, p0
+
+    iget-boolean v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mIsSIMCardInserted:Z
+
+    if-eqz v14, :cond_d
+
+    const/4 v4, 0x0
 
     :goto_5
     invoke-virtual {v12}, Landroid/preference/PreferenceScreen;->getPreferenceCount()I
@@ -2174,17 +2171,17 @@
 
     goto :goto_5
 
-    :cond_7
+    :cond_6
     const/4 v14, 0x0
 
     goto/16 :goto_0
 
-    :cond_8
+    :cond_7
     const/4 v6, 0x0
 
     goto/16 :goto_1
 
-    :cond_9
+    :cond_8
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mSummaryPreference:Lcom/samsung/android/settings/SecSummaryPreference;
@@ -2227,12 +2224,12 @@
 
     goto/16 :goto_2
 
-    :cond_a
+    :cond_9
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->summaryLayoutChn:Lcom/samsung/android/settings/datausage/trafficmanager/SecSummaryLayoutCHN;
 
-    if-eqz v14, :cond_5
+    if-eqz v14, :cond_4
 
     move-object/from16 v0, p0
 
@@ -2248,19 +2245,19 @@
 
     goto/16 :goto_2
 
-    :cond_b
-    const v14, 0x7f0b1c62
+    :cond_a
+    const v14, 0x7f0b1cf1
 
     goto/16 :goto_3
 
-    :cond_c
+    :cond_b
     iget-wide v14, v5, Lcom/android/settingslib/net/DataUsageController$DataUsageInfo;->limitLevel:J
 
     const-wide/16 v16, 0x0
 
     cmp-long v14, v14, v16
 
-    if-lez v14, :cond_d
+    if-lez v14, :cond_c
 
     move-object/from16 v0, p0
 
@@ -2274,7 +2271,7 @@
 
     aput-object v10, v15, v16
 
-    const v16, 0x7f0b0507
+    const v16, 0x7f0b056a
 
     move-object/from16 v0, p0
 
@@ -2288,7 +2285,7 @@
 
     goto/16 :goto_4
 
-    :cond_d
+    :cond_c
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mLimitPreference:Landroid/preference/Preference;
@@ -2298,6 +2295,32 @@
     invoke-virtual {v14, v15}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     goto/16 :goto_4
+
+    :cond_d
+    const/4 v4, 0x1
+
+    :goto_6
+    invoke-virtual {v12}, Landroid/preference/PreferenceScreen;->getPreferenceCount()I
+
+    move-result v14
+
+    if-ge v4, v14, :cond_e
+
+    invoke-virtual {v12, v4}, Landroid/preference/PreferenceScreen;->getPreference(I)Landroid/preference/Preference;
+
+    move-result-object v14
+
+    check-cast v14, Lcom/android/settings/datausage/TemplatePreferenceCategory;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/android/settings/datausage/DataUsageSummary;->services:Lcom/android/settings/datausage/TemplatePreference$NetworkServices;
+
+    invoke-virtual {v14, v15}, Lcom/android/settings/datausage/TemplatePreferenceCategory;->pushTemplates(Lcom/android/settings/datausage/TemplatePreference$NetworkServices;)V
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_6
 
     :cond_e
     move-object/from16 v0, p0
@@ -2312,7 +2335,7 @@
 
     move-result v14
 
-    if-eqz v14, :cond_14
+    if-eqz v14, :cond_15
 
     move-object/from16 v0, p0
 
@@ -2323,7 +2346,7 @@
     invoke-virtual {v14, v15}, Landroid/preference/Preference;->setEnabled(Z)V
 
     :cond_f
-    :goto_6
+    :goto_7
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mDataSaverPreference:Lcom/android/settings/datausage/DataSaverPreference;
@@ -2344,7 +2367,7 @@
 
     move-result v14
 
-    if-eqz v14, :cond_15
+    if-eqz v14, :cond_16
 
     move-object/from16 v0, p0
 
@@ -2354,7 +2377,7 @@
 
     move-result v14
 
-    if-eqz v14, :cond_15
+    if-eqz v14, :cond_16
 
     :cond_10
     move-object/from16 v0, p0
@@ -2366,7 +2389,7 @@
     invoke-virtual {v14, v15}, Lcom/android/settings/datausage/DataSaverPreference;->setEnabled(Z)V
 
     :cond_11
-    :goto_7
+    :goto_8
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mConfirmAtBootPreference:Landroid/preference/SwitchPreference;
@@ -2401,11 +2424,11 @@
 
     move/from16 v0, v16
 
-    if-ne v14, v0, :cond_16
+    if-ne v14, v0, :cond_17
 
     const/4 v14, 0x1
 
-    :goto_8
+    :goto_9
     invoke-virtual {v15, v14}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     :cond_12
@@ -2428,9 +2451,30 @@
     invoke-virtual {v14}, Lcom/android/settings/datausage/DataSavingChnPreference;->updateSwitchState()V
 
     :cond_13
-    return-void
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mDataSaverPreference:Lcom/android/settings/datausage/DataSaverPreference;
+
+    if-eqz v14, :cond_14
+
+    move-object/from16 v0, p0
+
+    iget-boolean v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->isKnoxmode:Z
+
+    if-eqz v14, :cond_14
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mDataSaverPreference:Lcom/android/settings/datausage/DataSaverPreference;
+
+    const/4 v15, 0x0
+
+    invoke-virtual {v14, v15}, Lcom/android/settings/datausage/DataSaverPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     :cond_14
+    return-void
+
+    :cond_15
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mMobileDataATT:Landroid/preference/Preference;
@@ -2439,9 +2483,9 @@
 
     invoke-virtual {v14, v15}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    goto :goto_6
+    goto/16 :goto_7
 
-    :cond_15
+    :cond_16
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/settings/datausage/DataUsageSummary;->mDataSaverPreference:Lcom/android/settings/datausage/DataSaverPreference;
@@ -2450,12 +2494,12 @@
 
     invoke-virtual {v14, v15}, Lcom/android/settings/datausage/DataSaverPreference;->setEnabled(Z)V
 
-    goto :goto_7
+    goto :goto_8
 
-    :cond_16
+    :cond_17
     const/4 v14, 0x0
 
-    goto :goto_8
+    goto :goto_9
 .end method
 
 .method private updateStateForDynamicUnits()V
@@ -3150,24 +3194,7 @@
 
     iput-object v0, v1, Lcom/android/settings/datausage/DataUsageSummary;->mDefaultTemplate:Landroid/net/NetworkTemplate;
 
-    if-eqz v6, :cond_5
-
-    move-object/from16 v0, p0
-
-    iget-boolean v0, v0, Lcom/android/settings/datausage/DataUsageSummary;->isKnoxmode:Z
-
-    move/from16 v17, v0
-
-    if-eqz v17, :cond_19
-
-    invoke-static {}, Lcom/android/settings/Utils;->isSupportCHNSmartManager()Z
-
-    move-result v17
-
-    if-eqz v17, :cond_19
-
-    :cond_5
-    if-eqz v16, :cond_6
+    if-eqz v6, :cond_19
 
     const-string/jumbo v17, "limit_summary"
 
@@ -3179,9 +3206,13 @@
 
     move-result-object v17
 
-    invoke-virtual/range {v16 .. v17}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
+    move-object/from16 v0, v17
 
-    :cond_6
+    move-object/from16 v1, p0
+
+    iput-object v0, v1, Lcom/android/settings/datausage/DataUsageSummary;->mLimitPreference:Landroid/preference/Preference;
+
+    :cond_5
     :goto_4
     const/4 v13, 0x0
 
@@ -3197,7 +3228,7 @@
 
     move-result v17
 
-    if-eqz v17, :cond_7
+    if-eqz v17, :cond_6
 
     const-string/jumbo v17, "restrict_background"
 
@@ -3275,31 +3306,31 @@
 
     const/4 v13, 0x1
 
-    :cond_7
+    :cond_6
     :goto_5
-    if-eqz v6, :cond_9
+    if-eqz v6, :cond_8
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings/datausage/DataUsageSummary;->isAdmin()Z
 
     move-result v17
 
-    if-nez v17, :cond_8
+    if-nez v17, :cond_7
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/datausage/DataUsageSummary;->getActivity()Landroid/app/Activity;
-
-    move-result-object v17
-
-    invoke-static/range {v17 .. v17}, Lcom/samsung/android/knox/SemPersonaManager;->isKioskModeEnabled(Landroid/content/Context;)Z
+    invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
     move-result v17
 
-    if-eqz v17, :cond_9
+    invoke-static/range {v17 .. v17}, Lcom/samsung/android/knox/SemPersonaManager;->isKnoxId(I)Z
 
-    :cond_8
+    move-result v17
+
+    if-eqz v17, :cond_8
+
+    :cond_7
     if-eqz v13, :cond_1b
 
-    :cond_9
-    if-eqz v16, :cond_a
+    :cond_8
+    if-eqz v16, :cond_9
 
     const-string/jumbo v17, "restrict_background"
 
@@ -3313,8 +3344,35 @@
 
     invoke-virtual/range {v16 .. v17}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
-    :cond_a
+    :cond_9
     :goto_6
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/settings/datausage/DataUsageSummary;->mDataSaverPreference:Lcom/android/settings/datausage/DataSaverPreference;
+
+    move-object/from16 v17, v0
+
+    if-eqz v17, :cond_a
+
+    move-object/from16 v0, p0
+
+    iget-boolean v0, v0, Lcom/android/settings/datausage/DataUsageSummary;->isKnoxmode:Z
+
+    move/from16 v17, v0
+
+    if-eqz v17, :cond_a
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/settings/datausage/DataUsageSummary;->mDataSaverPreference:Lcom/android/settings/datausage/DataSaverPreference;
+
+    move-object/from16 v17, v0
+
+    const/16 v18, 0x0
+
+    invoke-virtual/range {v17 .. v18}, Lcom/android/settings/datausage/DataSaverPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    :cond_a
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/settings/datausage/DataUsageSummary;->mMobileSectionCategories:Ljava/util/List;
@@ -3335,6 +3393,23 @@
 
     :cond_b
     if-eqz v6, :cond_c
+
+    move-object/from16 v0, p0
+
+    iget-boolean v0, v0, Lcom/android/settings/datausage/DataUsageSummary;->isKnoxmode:Z
+
+    move/from16 v17, v0
+
+    if-eqz v17, :cond_21
+
+    move-object/from16 v0, p0
+
+    iget-boolean v0, v0, Lcom/android/settings/datausage/DataUsageSummary;->mIsCHNSmartManager:Z
+
+    move/from16 v17, v0
+
+    :goto_7
+    if-nez v17, :cond_c
 
     const/16 v17, 0x1
 
@@ -3383,14 +3458,14 @@
 
     move/from16 v17, v0
 
-    if-eqz v17, :cond_21
+    if-eqz v17, :cond_22
 
     :cond_f
-    if-eqz v6, :cond_24
+    if-eqz v6, :cond_25
 
-    const v17, 0x7f0b1c5e
+    const v17, 0x7f0b1ced
 
-    :goto_7
+    :goto_8
     move/from16 v0, v17
 
     move-object/from16 v1, p0
@@ -3621,6 +3696,8 @@
     goto/16 :goto_3
 
     :cond_19
+    if-eqz v16, :cond_5
+
     const-string/jumbo v17, "limit_summary"
 
     move-object/from16 v0, p0
@@ -3631,11 +3708,7 @@
 
     move-result-object v17
 
-    move-object/from16 v0, v17
-
-    move-object/from16 v1, p0
-
-    iput-object v0, v1, Lcom/android/settings/datausage/DataUsageSummary;->mLimitPreference:Landroid/preference/Preference;
+    invoke-virtual/range {v16 .. v17}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     goto/16 :goto_4
 
@@ -3714,7 +3787,7 @@
     :cond_1e
     const/4 v8, 0x0
 
-    :goto_8
+    :goto_9
     if-eqz v15, :cond_c
 
     invoke-interface {v15}, Ljava/util/List;->size()I
@@ -3756,7 +3829,7 @@
 
     const/16 v17, 0x1
 
-    :goto_9
+    :goto_a
     move-object/from16 v0, p0
 
     move/from16 v1, v18
@@ -3779,14 +3852,19 @@
 
     add-int/lit8 v8, v8, 0x1
 
-    goto :goto_8
+    goto :goto_9
 
     :cond_20
     const/16 v17, 0x0
 
-    goto :goto_9
+    goto :goto_a
 
     :cond_21
+    const/16 v17, 0x0
+
+    goto/16 :goto_7
+
+    :cond_22
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/settings/datausage/DataUsageSummary;->services:Lcom/android/settings/datausage/TemplatePreference$NetworkServices;
@@ -3803,23 +3881,23 @@
 
     move-result-object v15
 
-    if-eqz v15, :cond_22
+    if-eqz v15, :cond_23
 
     invoke-interface {v15}, Ljava/util/List;->size()I
 
     move-result v17
 
-    if-nez v17, :cond_23
+    if-nez v17, :cond_24
 
-    :cond_22
+    :cond_23
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v4}, Lcom/android/settings/datausage/DataUsageSummary;->addEnt1Section(I)V
 
-    :cond_23
+    :cond_24
     const/4 v8, 0x0
 
-    :goto_a
+    :goto_b
     if-eqz v15, :cond_f
 
     invoke-interface {v15}, Ljava/util/List;->size()I
@@ -3848,19 +3926,19 @@
 
     add-int/lit8 v8, v8, 0x1
 
-    goto :goto_a
-
-    :cond_24
-    if-eqz v7, :cond_25
-
-    const v17, 0x7f0b1c5f    # 1.8491E38f
-
-    goto/16 :goto_7
+    goto :goto_b
 
     :cond_25
-    const v17, 0x7f0b1c60
+    if-eqz v7, :cond_26
 
-    goto/16 :goto_7
+    const v17, 0x7f0b1cee
+
+    goto/16 :goto_8
+
+    :cond_26
+    const v17, 0x7f0b1cef
+
+    goto/16 :goto_8
 .end method
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
@@ -3907,7 +3985,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f040214
+    const v0, 0x7f040216
 
     const/4 v1, 0x0
 
@@ -4139,7 +4217,7 @@
     :pswitch_1
     const-string/jumbo v2, "com.android.settings.datausage.DataUsageHelp"
 
-    const v3, 0x7f0b19ee
+    const v3, 0x7f0b1a7d
 
     const/4 v5, 0x0
 
@@ -4166,7 +4244,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f1109ba
+    .packed-switch 0x7f1109c0
         :pswitch_0
         :pswitch_2
         :pswitch_1
@@ -4398,7 +4476,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b109c
+    const v2, 0x7f0b111d
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4467,7 +4545,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0b1099
+    const v3, 0x7f0b111a
 
     move-object v4, v2
 
@@ -4766,7 +4844,7 @@
 
     const/4 v4, 0x0
 
-    const v2, 0x7f1109ba
+    const v2, 0x7f1109c0
 
     invoke-interface {p1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -4777,7 +4855,7 @@
     invoke-interface {v1, v4}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
     :cond_0
-    const v2, 0x7f1109bc
+    const v2, 0x7f1109c2
 
     invoke-interface {p1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -4795,7 +4873,7 @@
 
     :cond_1
     :goto_0
-    const v2, 0x7f1109bb
+    const v2, 0x7f1109c1
 
     invoke-interface {p1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 

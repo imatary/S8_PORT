@@ -663,7 +663,7 @@
 
     aput-object v15, v14, v16
 
-    const v15, 0x7f0d0c63
+    const v15, 0x7f0d0cd4
 
     invoke-virtual {v13, v15, v14}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -797,10 +797,39 @@
 
     goto/16 :goto_0
 
+    :sswitch_b
+    const-string/jumbo v13, "NETWORK_START_AUTO_SELECT_FOR_SWITCH_BUTTON"
+
+    invoke-static {v13}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->-wrap7(Ljava/lang/String;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT$1;->this$0:Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;
+
+    invoke-static {v13}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->-get2(Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;)Landroid/os/Handler;
+
+    move-result-object v13
+
+    const/16 v14, 0x7d6
+
+    invoke-virtual {v13, v14}, Landroid/os/Handler;->removeMessages(I)V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT$1;->this$0:Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;
+
+    const/4 v14, 0x0
+
+    invoke-static {v13, v14}, Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;->-wrap10(Lcom/android/phone/mobilenetworks/kor/NetworkOperatorsLGT;I)V
+
+    goto/16 :goto_0
+
     :catch_0
     move-exception v6
 
     goto/16 :goto_1
+
+    nop
 
     :sswitch_data_0
     .sparse-switch
@@ -816,5 +845,6 @@
         0x7d2 -> :sswitch_6
         0x7d3 -> :sswitch_9
         0x7d5 -> :sswitch_a
+        0x7d6 -> :sswitch_b
     .end sparse-switch
 .end method

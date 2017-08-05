@@ -308,6 +308,7 @@
     <string name="camera_label">کیمرہ</string>
     <string name="camera_modes">کیمرے کے موڈ</string>
     <string name="camera_security_enter">سلامتی پالیسی کے تحت کیمرے کے استعمال پر پابندی ہے</string>
+    <string name="can_not_use_voice_control">‏Bixby Voice بیدار ہو کے آن ہونے کے دوران وائس کنٹرول کا استعمال نہیں کرسکتے۔</string>
     <string name="cancel">منسوخ</string>
     <string name="cannot_start_camcorder_msg">کال کے دوران ویڈیوز ریکارڈ کرنے سے قاصر۔</string>
     <string name="cannot_start_camera_msg">کالوں کے دوران کیمرا استعمال کرنے سے قاصر ہے۔</string>
@@ -603,6 +604,7 @@
 (خودکار)"</string>
     <string name="task_edge_title_selfie">سيلفی لیں</string>
     <string name="temperature">درجہ حرارت</string>
+    <string name="temperature_too_high_camera_off">%1$s استعمال کرنے کے لیے درجہ حرارت بہت زیادہ ہے۔ %2$s استعمال کرنے سے قبل فون کے ٹھنڈا ہونے کا انتظار کریں۔</string>
     <string name="temperature_too_high_flash_off">فلیش آن کرنے سے قاصر۔ جب آپ کا آلہ ٹھنڈا ہوجائے تو دوبارہ کوشش کریں۔</string>
     <string name="temperature_too_high_record">ویڈیو ریکارڈ کرنے سے قاصر۔ آلہ ٹھنڈا ہونے پر دوبارہ کوشش کریں۔</string>
     <string name="temperature_too_high_recording_disable">ریکارڈنگ رک گئی ہے۔ جب آپ کا آلہ ٹھنڈا ہو جائے تو آپ ریکارڈ کر سکتے ہیں۔</string>

@@ -82,7 +82,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/BeautyListMenu;->refreshSlider(I)V
     invoke-static {v2, v0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$200(Lcom/sec/android/app/camera/menu/BeautyListMenu;I)V
 
     const/4 v2, 0x3
@@ -91,7 +90,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->mItemList:Landroid/util/SparseArray;
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$300(Lcom/sec/android/app/camera/menu/BeautyListMenu;)Landroid/util/SparseArray;
 
     move-result-object v2

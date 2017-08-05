@@ -374,7 +374,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/IpCall$IpCallListAdapter;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    const v6, 0x7f0d063d
+    const v6, 0x7f0d06a1
 
     invoke-virtual {v5, v6}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 

@@ -45,7 +45,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/android/keyguard/KeyguardPatternView;->enableClipping(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardPatternView;->access$3300(Lcom/android/keyguard/KeyguardPatternView;Z)V
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$12;->val$finishRunnable:Ljava/lang/Runnable;

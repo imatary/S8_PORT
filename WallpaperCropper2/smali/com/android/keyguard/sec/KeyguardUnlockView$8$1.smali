@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/android/keyguard/sec/KeyguardUnlockView$8;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$700(Lcom/android/keyguard/sec/KeyguardUnlockView;)Lcom/android/keyguard/SecurityMessageDisplay;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, v0, Lcom/android/keyguard/sec/KeyguardUnlockView$8;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$700(Lcom/android/keyguard/sec/KeyguardUnlockView;)Lcom/android/keyguard/SecurityMessageDisplay;
 
     move-result-object v0
@@ -65,7 +63,6 @@
 
     iget-object v1, v1, Lcom/android/keyguard/sec/KeyguardUnlockView$8;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockView;->mShortcutMessageDisplayHelpText:Ljava/lang/String;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardUnlockView;->access$800(Lcom/android/keyguard/sec/KeyguardUnlockView;)Ljava/lang/String;
 
     move-result-object v1

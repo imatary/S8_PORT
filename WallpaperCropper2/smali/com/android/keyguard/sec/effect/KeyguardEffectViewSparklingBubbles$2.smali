@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->mView:Lcom/samsung/android/visualeffect/lock/sparklingbubbles/SparklingBubblesEffect;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->access$200(Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;)Lcom/samsung/android/visualeffect/lock/sparklingbubbles/SparklingBubblesEffect;
 
     move-result-object v0

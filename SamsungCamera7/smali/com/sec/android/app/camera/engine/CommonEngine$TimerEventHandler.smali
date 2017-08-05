@@ -96,7 +96,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mTimerEventListener:Lcom/sec/android/app/camera/interfaces/Engine$TimerEventListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5700(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$TimerEventListener;
 
     move-result-object v1
@@ -109,7 +108,6 @@
 
     if-nez v1, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -130,20 +128,16 @@
 
     if-nez v1, :cond_2
 
-    # setter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIsScreenFlashStarted:Z
     invoke-static {v0, v6}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5802(Lcom/sec/android/app/camera/engine/CommonEngine;Z)Z
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->enableScreenFlash(Z)V
     invoke-static {v0, v6}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5900(Lcom/sec/android/app/camera/engine/CommonEngine;Z)V
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mScreenFlashEventListener:Lcom/sec/android/app/camera/interfaces/Engine$ScreenFlashEventListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6000(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$ScreenFlashEventListener;
 
     move-result-object v1
 
     if-eqz v1, :cond_2
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mScreenFlashEventListener:Lcom/sec/android/app/camera/interfaces/Engine$ScreenFlashEventListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6000(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$ScreenFlashEventListener;
 
     move-result-object v1

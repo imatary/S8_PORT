@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/AfAeButton$1;->this$0:Lcom/sec/android/app/camera/widget/gl/AfAeButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/AfAeButton;->mAeText:Lcom/samsung/android/glview/GLText;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/AfAeButton;->access$000(Lcom/sec/android/app/camera/widget/gl/AfAeButton;)Lcom/samsung/android/glview/GLText;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/AfAeButton$1;->this$0:Lcom/sec/android/app/camera/widget/gl/AfAeButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/AfAeButton;->mAeAfText:Lcom/samsung/android/glview/GLText;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/AfAeButton;->access$100(Lcom/sec/android/app/camera/widget/gl/AfAeButton;)Lcom/samsung/android/glview/GLText;
 
     move-result-object v0

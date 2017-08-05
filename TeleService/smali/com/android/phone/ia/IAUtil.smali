@@ -239,6 +239,158 @@
     return-object v6
 .end method
 
+.method private static getPreferenceFragment(Ljava/lang/String;)Ljava/lang/String;
+    .locals 4
+
+    const-string/jumbo v1, "IAUtil"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "getPreferenceFragment preferenceKey - "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-class v1, Lcom/android/phone/callsettings/PhoneSettingFragment;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/android/phone/CallFeaturesSetting;->mCallCategory:Landroid/preference/PreferenceCategory;
+
+    if-eqz v1, :cond_0
+
+    invoke-static {}, Lcom/android/phone/callsettings/GeneralSettingManager;->getInstance()Lcom/android/phone/callsettings/GeneralSettingManager;
+
+    sget-object v1, Lcom/android/phone/CallFeaturesSetting;->mCallCategory:Landroid/preference/PreferenceCategory;
+
+    sget-object v2, Lcom/android/phone/callsettings/CallsettingsConstants;->SwitchPreference:Ljava/lang/String;
+
+    invoke-static {v1, p0, v2}, Lcom/android/phone/callsettings/GeneralSettingManager;->findPreference(Landroid/preference/PreferenceCategory;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    const-class v1, Lcom/android/phone/callsettings/GeneralSettingFragment;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v0
+
+    :cond_0
+    sget-object v1, Lcom/android/phone/CallFeaturesSetting;->mVideoCategory:Landroid/preference/PreferenceCategory;
+
+    if-eqz v1, :cond_1
+
+    invoke-static {}, Lcom/android/phone/callsettings/VideoSettingManager;->getInstance()Lcom/android/phone/callsettings/VideoSettingManager;
+
+    sget-object v1, Lcom/android/phone/CallFeaturesSetting;->mVideoCategory:Landroid/preference/PreferenceCategory;
+
+    sget-object v2, Lcom/android/phone/callsettings/CallsettingsConstants;->SwitchPreference:Ljava/lang/String;
+
+    invoke-static {v1, p0, v2}, Lcom/android/phone/callsettings/VideoSettingManager;->findPreference(Landroid/preference/PreferenceCategory;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    const-class v1, Lcom/android/phone/callsettings/VideoSettingFragment;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v0
+
+    :cond_1
+    sget-object v1, Lcom/android/phone/CallFeaturesSetting;->mWifiCategory:Landroid/preference/PreferenceCategory;
+
+    if-eqz v1, :cond_2
+
+    invoke-static {}, Lcom/android/phone/callsettings/WifiSettingManager;->getInstance()Lcom/android/phone/callsettings/WifiSettingManager;
+
+    move-result-object v1
+
+    sget-object v2, Lcom/android/phone/CallFeaturesSetting;->mWifiCategory:Landroid/preference/PreferenceCategory;
+
+    sget-object v3, Lcom/android/phone/callsettings/CallsettingsConstants;->SwitchPreference:Ljava/lang/String;
+
+    invoke-virtual {v1, v2, p0, v3}, Lcom/android/phone/callsettings/WifiSettingManager;->findPreference(Landroid/preference/PreferenceCategory;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_2
+
+    const-class v1, Lcom/android/phone/callsettings/WifiSettingFragment;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v0
+
+    :cond_2
+    sget-object v1, Lcom/android/phone/CallFeaturesSetting;->mVoicemailCategory:Landroid/preference/PreferenceCategory;
+
+    if-eqz v1, :cond_3
+
+    invoke-static {}, Lcom/android/phone/callsettings/VoicemailSettingManager;->getInstance()Lcom/android/phone/callsettings/VoicemailSettingManager;
+
+    sget-object v1, Lcom/android/phone/CallFeaturesSetting;->mVoicemailPreferenceScreen:Landroid/preference/PreferenceScreen;
+
+    sget-object v2, Lcom/android/phone/CallFeaturesSetting;->mVoicemailCategory:Landroid/preference/PreferenceCategory;
+
+    sget-object v3, Lcom/android/phone/callsettings/CallsettingsConstants;->SwitchPreference:Ljava/lang/String;
+
+    invoke-static {v1, v2, p0, v3}, Lcom/android/phone/callsettings/VoicemailSettingManager;->findPreference(Landroid/preference/PreferenceScreen;Landroid/preference/PreferenceCategory;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_3
+
+    const-class v1, Lcom/android/phone/CallFeaturesSetting;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v0
+
+    :cond_3
+    const-string/jumbo v1, "IAUtil"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "getPreferenceFragment fragmentName - "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object v0
+.end method
+
 .method public static hideBixbyFullUI()V
     .locals 2
 
@@ -1207,6 +1359,292 @@
     sput-object p0, Lcom/android/phone/ia/IAUtil;->sExecutingState:Lcom/samsung/android/sdk/bixby/data/State;
 
     return-void
+.end method
+
+.method public static simulateMenuPreferenceChange(Ljava/lang/String;Ljava/lang/Object;)I
+    .locals 6
+
+    const/4 v1, 0x0
+
+    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    return v1
+
+    :cond_0
+    const-string/jumbo v2, "IAUtil"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "simulateMenuPreferenceChange preferenceKey - "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string/jumbo v4, ", enable - "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-static {p0}, Lcom/android/phone/ia/IAUtil;->getPreferenceFragment(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-class v2, Lcom/android/phone/callsettings/GeneralSettingFragment;
+
+    invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    sget-object v2, Lcom/android/phone/CallFeaturesSetting;->mCallSettingCategory:Lcom/android/phone/callsettings/GeneralSettingFragment;
+
+    invoke-static {}, Lcom/android/phone/callsettings/GeneralSettingManager;->getInstance()Lcom/android/phone/callsettings/GeneralSettingManager;
+
+    sget-object v3, Lcom/android/phone/CallFeaturesSetting;->mCallCategory:Landroid/preference/PreferenceCategory;
+
+    sget-object v4, Lcom/android/phone/callsettings/CallsettingsConstants;->SwitchPreference:Ljava/lang/String;
+
+    invoke-static {v3, p0, v4}, Lcom/android/phone/callsettings/GeneralSettingManager;->findPreference(Landroid/preference/PreferenceCategory;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3, p1}, Lcom/android/phone/callsettings/GeneralSettingFragment;->onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
+
+    invoke-static {}, Lcom/android/phone/callsettings/GeneralSettingManager;->getInstance()Lcom/android/phone/callsettings/GeneralSettingManager;
+
+    sget-object v2, Lcom/android/phone/CallFeaturesSetting;->mCallCategory:Landroid/preference/PreferenceCategory;
+
+    sget-object v3, Lcom/android/phone/callsettings/CallsettingsConstants;->SwitchPreference:Ljava/lang/String;
+
+    invoke-static {v2, p0, v3}, Lcom/android/phone/callsettings/GeneralSettingManager;->findPreference(Landroid/preference/PreferenceCategory;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/preference/SwitchPreference;
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+
+    :goto_0
+    const/4 v1, 0x1
+
+    return v1
+
+    :cond_1
+    const-class v2, Lcom/android/phone/callsettings/VideoSettingFragment;
+
+    invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    sget-object v2, Lcom/android/phone/CallFeaturesSetting;->mVideoSettingCategory:Lcom/android/phone/callsettings/VideoSettingFragment;
+
+    invoke-static {}, Lcom/android/phone/callsettings/VideoSettingManager;->getInstance()Lcom/android/phone/callsettings/VideoSettingManager;
+
+    sget-object v3, Lcom/android/phone/CallFeaturesSetting;->mVideoCategory:Landroid/preference/PreferenceCategory;
+
+    sget-object v4, Lcom/android/phone/callsettings/CallsettingsConstants;->SwitchPreference:Ljava/lang/String;
+
+    invoke-static {v3, p0, v4}, Lcom/android/phone/callsettings/VideoSettingManager;->findPreference(Landroid/preference/PreferenceCategory;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3, p1}, Lcom/android/phone/callsettings/VideoSettingFragment;->onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
+
+    invoke-static {}, Lcom/android/phone/callsettings/VideoSettingManager;->getInstance()Lcom/android/phone/callsettings/VideoSettingManager;
+
+    sget-object v2, Lcom/android/phone/CallFeaturesSetting;->mVideoCategory:Landroid/preference/PreferenceCategory;
+
+    sget-object v3, Lcom/android/phone/callsettings/CallsettingsConstants;->SwitchPreference:Ljava/lang/String;
+
+    invoke-static {v2, p0, v3}, Lcom/android/phone/callsettings/VideoSettingManager;->findPreference(Landroid/preference/PreferenceCategory;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/preference/SwitchPreference;
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+
+    goto :goto_0
+
+    :cond_2
+    const-class v2, Lcom/android/phone/callsettings/WifiSettingFragment;
+
+    invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    sget-object v2, Lcom/android/phone/CallFeaturesSetting;->mWifiSettingCategory:Lcom/android/phone/callsettings/WifiSettingFragment;
+
+    invoke-static {}, Lcom/android/phone/callsettings/WifiSettingManager;->getInstance()Lcom/android/phone/callsettings/WifiSettingManager;
+
+    move-result-object v3
+
+    sget-object v4, Lcom/android/phone/CallFeaturesSetting;->mWifiCategory:Landroid/preference/PreferenceCategory;
+
+    sget-object v5, Lcom/android/phone/callsettings/CallsettingsConstants;->SwitchPreference:Ljava/lang/String;
+
+    invoke-virtual {v3, v4, p0, v5}, Lcom/android/phone/callsettings/WifiSettingManager;->findPreference(Landroid/preference/PreferenceCategory;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3, p1}, Lcom/android/phone/callsettings/WifiSettingFragment;->onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
+
+    invoke-static {}, Lcom/android/phone/callsettings/WifiSettingManager;->getInstance()Lcom/android/phone/callsettings/WifiSettingManager;
+
+    move-result-object v2
+
+    sget-object v3, Lcom/android/phone/CallFeaturesSetting;->mWifiCategory:Landroid/preference/PreferenceCategory;
+
+    sget-object v4, Lcom/android/phone/callsettings/CallsettingsConstants;->SwitchPreference:Ljava/lang/String;
+
+    invoke-virtual {v2, v3, p0, v4}, Lcom/android/phone/callsettings/WifiSettingManager;->findPreference(Landroid/preference/PreferenceCategory;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/preference/SwitchPreference;
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+
+    goto :goto_0
+
+    :cond_3
+    const-class v2, Lcom/android/phone/CallFeaturesSetting;
+
+    invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    sget-object v2, Lcom/android/phone/ia/CallFeaturesSettingStateListener;->mFragment:Lcom/android/phone/CallFeaturesSetting;
+
+    invoke-static {}, Lcom/android/phone/callsettings/VoicemailSettingManager;->getInstance()Lcom/android/phone/callsettings/VoicemailSettingManager;
+
+    sget-object v3, Lcom/android/phone/CallFeaturesSetting;->mVoicemailPreferenceScreen:Landroid/preference/PreferenceScreen;
+
+    sget-object v4, Lcom/android/phone/CallFeaturesSetting;->mVoicemailCategory:Landroid/preference/PreferenceCategory;
+
+    sget-object v5, Lcom/android/phone/callsettings/CallsettingsConstants;->SwitchPreference:Ljava/lang/String;
+
+    invoke-static {v3, v4, p0, v5}, Lcom/android/phone/callsettings/VoicemailSettingManager;->findPreference(Landroid/preference/PreferenceScreen;Landroid/preference/PreferenceCategory;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3, p1}, Lcom/android/phone/CallFeaturesSetting;->onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
+
+    invoke-static {}, Lcom/android/phone/callsettings/VoicemailSettingManager;->getInstance()Lcom/android/phone/callsettings/VoicemailSettingManager;
+
+    sget-object v2, Lcom/android/phone/CallFeaturesSetting;->mVoicemailPreferenceScreen:Landroid/preference/PreferenceScreen;
+
+    sget-object v3, Lcom/android/phone/CallFeaturesSetting;->mVoicemailCategory:Landroid/preference/PreferenceCategory;
+
+    sget-object v4, Lcom/android/phone/callsettings/CallsettingsConstants;->SwitchPreference:Ljava/lang/String;
+
+    invoke-static {v2, v3, p0, v4}, Lcom/android/phone/callsettings/VoicemailSettingManager;->findPreference(Landroid/preference/PreferenceScreen;Landroid/preference/PreferenceCategory;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/preference/SwitchPreference;
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+
+    goto/16 :goto_0
+
+    :cond_4
+    sget-object v2, Lcom/android/phone/CallFeaturesSetting;->mPhoneSettingCategory:Lcom/android/phone/callsettings/PhoneSettingFragment;
+
+    sget-object v3, Lcom/android/phone/CallFeaturesSetting;->mPhoneCategory:Landroid/preference/PreferenceCategory;
+
+    invoke-virtual {v3, p0}, Landroid/preference/PreferenceCategory;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3, p1}, Lcom/android/phone/callsettings/PhoneSettingFragment;->onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
+
+    sget-object v2, Lcom/android/phone/CallFeaturesSetting;->mPhoneCategory:Landroid/preference/PreferenceCategory;
+
+    invoke-virtual {v2, p0}, Landroid/preference/PreferenceCategory;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/preference/SwitchPreference;
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+
+    goto/16 :goto_0
 .end method
 
 .method public static simulateMenuPreferenceClick(Landroid/preference/PreferenceActivity;Ljava/lang/String;)I

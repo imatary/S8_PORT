@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$1;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSecurityTextViewDisplay:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$000(Lcom/android/keyguard/sec/KeyguardSignatureView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -52,7 +51,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$1;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSecurityTextViewDisplay:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$000(Lcom/android/keyguard/sec/KeyguardSignatureView;)Landroid/widget/TextView;
 
     move-result-object v0

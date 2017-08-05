@@ -46,7 +46,6 @@
 
     iput-object p2, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->requestClass:Ljava/lang/String;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager;->mContext:Landroid/content/Context;
     invoke-static {p1}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$700(Lcom/android/keyguard/sec/AdaptiveEventManager;)Landroid/content/Context;
 
     move-result-object v0

@@ -76,14 +76,12 @@
 
     iget-object v2, p1, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_WIDTH:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$000(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v3
 
     int-to-float v3, v3
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_HEIGHT:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$100(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v4
@@ -102,19 +100,16 @@
 
     iget-object v2, p1, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_WIDTH:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$000(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v3
 
     int-to-float v3, v3
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_HEIGHT:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$100(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v4
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_OFFSET:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$200(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v5
@@ -135,19 +130,16 @@
 
     iget-object v2, p1, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_WIDTH:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$000(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v3
 
     int-to-float v3, v3
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_HEIGHT:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$100(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v4
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_OFFSET:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$200(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v5
@@ -198,14 +190,12 @@
 
     iget-object v2, p1, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_WIDTH:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$000(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v3
 
     int-to-float v3, v3
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_HEIGHT:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$100(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v4
@@ -224,19 +214,16 @@
 
     iget-object v2, p1, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_WIDTH:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$000(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v3
 
     int-to-float v3, v3
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_HEIGHT:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$100(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v4
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_OFFSET:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$200(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v5
@@ -288,7 +275,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->menuPadding:Landroid/graphics/Rect;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$402(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;Landroid/graphics/Rect;)Landroid/graphics/Rect;
 
     new-instance v0, Lcom/samsung/android/glview/GLViewGroup;
@@ -303,7 +289,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->this$0:Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->menuPadding:Landroid/graphics/Rect;
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$400(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)Landroid/graphics/Rect;
 
     move-result-object v2
@@ -314,7 +299,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->this$0:Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->menuPadding:Landroid/graphics/Rect;
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$400(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)Landroid/graphics/Rect;
 
     move-result-object v3
@@ -325,7 +309,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->this$0:Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->TYPE_MENU_WIDTH:I
     invoke-static {v4}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$500(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v4
@@ -354,7 +337,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->this$0:Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->menuPadding:Landroid/graphics/Rect;
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$400(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)Landroid/graphics/Rect;
 
     move-result-object v2
@@ -365,7 +347,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->this$0:Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->menuPadding:Landroid/graphics/Rect;
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$400(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)Landroid/graphics/Rect;
 
     move-result-object v3
@@ -376,7 +357,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->this$0:Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_ITEM_WIDTH:I
     invoke-static {v4}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$000(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v4
@@ -385,14 +365,12 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->this$0:Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->SCREEN_HEIGHT:I
     invoke-static {v5}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$600(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v5
 
     iget-object v6, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->this$0:Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->menuPadding:Landroid/graphics/Rect;
     invoke-static {v6}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$400(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)Landroid/graphics/Rect;
 
     move-result-object v6
@@ -403,7 +381,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->this$0:Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->menuPadding:Landroid/graphics/Rect;
     invoke-static {v6}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$400(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)Landroid/graphics/Rect;
 
     move-result-object v6
@@ -434,7 +411,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->this$0:Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->LIST_SCROLL_PADDING:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$700(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v1
@@ -463,7 +439,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->this$0:Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->TYPE_MENU_BOTTOM_PADDING:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$900(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;)I
 
     move-result v1
@@ -484,7 +459,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->this$0:Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->refreshButtonSelected(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;->access$300(Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu;I)V
 
     return-void

@@ -87,7 +87,6 @@
 
     invoke-interface {v0}, Landroid/app/IActivityManager;->resumeAppSwitches()V
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleCameraView;->mSurveyLogging:Z
     invoke-static {}, Lcom/android/keyguard/sec/SecKeyguardCircleCameraView;->access$000()Z
 
     move-result v0
@@ -99,7 +98,6 @@
 
     iget-object v0, v0, Lcom/android/keyguard/sec/SecKeyguardCircleCameraView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleCameraView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleCameraView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleCameraView;->access$200(Lcom/android/keyguard/sec/SecKeyguardCircleCameraView;)Landroid/content/Context;
 
     move-result-object v0
@@ -193,7 +191,6 @@
 
     iget-object v0, v0, Lcom/android/keyguard/sec/SecKeyguardCircleCameraView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleCameraView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardCircleCameraView;->insertLog()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleCameraView;->access$100(Lcom/android/keyguard/sec/SecKeyguardCircleCameraView;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0

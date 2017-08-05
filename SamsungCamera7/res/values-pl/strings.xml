@@ -117,7 +117,7 @@ wideo"</string>
     <string name="R_3344x3344">1:1 (11 Mpx)</string>
     <string name="R_3456x3456">1:1 (12 Mpx)</string>
     <string name="R_3984x2988">4:3 (12 Mpx)</string>
-    <string name="R_4032x1960">18,5:9 (7,9 M)</string>
+    <string name="R_4032x1960">18,5:9 (7,9 Mpx)</string>
     <string name="R_4032x2268">16:9 (9,1 Mpx)</string>
     <string name="R_4032x3024">4:3 (12 Mpx)</string>
     <string name="R_4128x2322">16:9 (9,6 Mpx)</string>
@@ -308,6 +308,7 @@ kształtu"</string>
     <string name="camera_label">Aparat</string>
     <string name="camera_modes">Tryby aparatu</string>
     <string name="camera_security_enter">Zasady zabezpieczeń ograniczają użycie aparatu.</string>
+    <string name="can_not_use_voice_control">Nie można używać sterowania głosem, gdy budzenie głosowe Bixby jest włączone.</string>
     <string name="cancel">Anuluj</string>
     <string name="cannot_start_camcorder_msg">Nie można nagrywać wideo podczas połączenia.</string>
     <string name="cannot_start_camera_msg">Nie można korzystać z aplikacji Aparat podczas połączeń.</string>
@@ -604,6 +605,7 @@ Jeśli wyrazisz na to zgodę, takie uprawnienie zostanie przyznane zdjęciu etyk
     <string name="task_edge_title_selfie">"Zrób auto-
 portret"</string>
     <string name="temperature">Temperatura</string>
+    <string name="temperature_too_high_camera_off">Zbyt wysoka temperatura, aby używać aplikacji %1$s. Poczekaj na ostygnięcie telefonu, zanim użyjesz aplikacji %2$s.</string>
     <string name="temperature_too_high_flash_off">Nie można włączyć lampy błyskowej. Spróbuj ponownie po ostygnięciu urządzenia.</string>
     <string name="temperature_too_high_record">Nie można nagrywać wideo. Spróbuj ponownie po ostygnięciu urządzenia.</string>
     <string name="temperature_too_high_recording_disable">Zatrzymano nagrywanie. Możesz kontynuować nagrywanie po ostygnięciu urządzenia.</string>

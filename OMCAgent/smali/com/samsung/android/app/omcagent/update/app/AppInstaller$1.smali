@@ -47,7 +47,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/update/app/AppInstaller$1;->this$0:Lcom/samsung/android/app/omcagent/update/app/AppInstaller;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->listeners:Ljava/util/Vector;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$000(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;)Ljava/util/Vector;
 
     move-result-object v1
@@ -80,7 +79,6 @@
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/update/app/AppInstaller$1;->this$0:Lcom/samsung/android/app/omcagent/update/app/AppInstaller;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->listeners:Ljava/util/Vector;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/update/app/AppInstaller;->access$000(Lcom/samsung/android/app/omcagent/update/app/AppInstaller;)Ljava/util/Vector;
 
     move-result-object v1

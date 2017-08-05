@@ -1796,7 +1796,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0901d7
+    const v9, 0x7f0901d8
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2019,7 +2019,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090165
+    const v2, 0x7f090166
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2344,7 +2344,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090163
+    const v2, 0x7f090164
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2830,7 +2830,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0901d3
+    const v3, 0x7f0901d4
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -7179,7 +7179,7 @@
 .method private showRemoveEffectButton()V
     .locals 15
 
-    const v0, 0x7f090202
+    const v0, 0x7f090203
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -7231,7 +7231,7 @@
 
     int-to-float v5, v5
 
-    const v6, 0x7f090202
+    const v6, 0x7f090203
 
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -7444,7 +7444,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mRemoveEffectButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f090202
+    const v1, 0x7f090203
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -7517,7 +7517,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mStickerSoundMuteButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f090236
+    const v1, 0x7f090237
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -9175,7 +9175,7 @@
 
     const-string v5, "G014"
 
-    const v6, 0x7f090165
+    const v6, 0x7f090166
 
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -12130,7 +12130,7 @@
     goto :goto_0
 
     :pswitch_0
-    const v1, 0x7f090168
+    const v1, 0x7f090169
 
     goto :goto_2
 
@@ -12140,7 +12140,7 @@
     goto :goto_2
 
     :pswitch_2
-    const v1, 0x7f090230
+    const v1, 0x7f090231
 
     goto :goto_2
 
@@ -12156,5 +12156,217 @@
         :pswitch_0
         :pswitch_1
         :pswitch_2
+    .end packed-switch
+.end method
+
+.method public updateSelectedEffect()V
+    .locals 9
+
+    const/4 v8, 0x0
+
+    const-string v6, "EffectThumbnailListMenu"
+
+    const-string v7, "updateSelectedEffect"
+
+    invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v1, 0x0
+
+    const/4 v3, 0x0
+
+    iget-object v6, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-static {v6}, Lcom/sec/android/app/camera/plugin/ExternalFilterLoader;->instance(Lcom/sec/android/app/camera/interfaces/CameraContext;)Lcom/sec/android/app/camera/plugin/ExternalFilterLoader;
+
+    move-result-object v6
+
+    iget-object v7, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v7}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    move-result-object v7
+
+    invoke-interface {v7}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraSingleEffect()I
+
+    move-result v7
+
+    invoke-virtual {v6, v7}, Lcom/sec/android/app/camera/plugin/ExternalFilterLoader;->getEffectCategoryByEffectId(I)I
+
+    move-result v0
+
+    packed-switch v0, :pswitch_data_0
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :pswitch_0
+    iget-object v6, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mDragDropItemList:Ljava/util/ArrayList;
+
+    invoke-virtual {v6}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v6
+
+    :cond_1
+    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/sec/android/app/camera/widget/gl/EffectMenuDragDropBox;
+
+    invoke-virtual {v2}, Lcom/sec/android/app/camera/widget/gl/EffectMenuDragDropBox;->getPrevious()Lcom/sec/android/app/camera/widget/gl/DragDropBox;
+
+    move-result-object v7
+
+    if-nez v7, :cond_1
+
+    move-object v1, v2
+
+    :cond_2
+    if-nez v1, :cond_3
+
+    const-string v6, "EffectThumbnailListMenu"
+
+    const-string v7, "Cannot find the first item in the list. Return."
+
+    invoke-static {v6, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_3
+    invoke-virtual {v1}, Lcom/sec/android/app/camera/widget/gl/EffectMenuDragDropBox;->getNext()Lcom/sec/android/app/camera/widget/gl/DragDropBox;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/sec/android/app/camera/widget/gl/EffectMenuDragDropBox;
+
+    const/4 v4, 0x0
+
+    :goto_1
+    if-eqz v3, :cond_0
+
+    invoke-virtual {v3}, Lcom/sec/android/app/camera/widget/gl/EffectMenuDragDropBox;->getEffectItem()Lcom/sec/android/app/camera/widget/gl/EffectItem;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->getSelected()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_4
+
+    iget-object v6, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v6}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    move-result-object v6
+
+    add-int/lit16 v7, v4, 0x1fa4
+
+    invoke-interface {v6, v7, v8}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setCameraEffect(IZ)V
+
+    goto :goto_0
+
+    :cond_4
+    add-int/lit8 v4, v4, 0x1
+
+    invoke-virtual {v3}, Lcom/sec/android/app/camera/widget/gl/EffectMenuDragDropBox;->getNext()Lcom/sec/android/app/camera/widget/gl/DragDropBox;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/sec/android/app/camera/widget/gl/EffectMenuDragDropBox;
+
+    goto :goto_1
+
+    :pswitch_1
+    iget-object v6, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mBeautyDragDropItemList:Ljava/util/ArrayList;
+
+    invoke-virtual {v6}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v6
+
+    :cond_5
+    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_6
+
+    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/sec/android/app/camera/widget/gl/EffectMenuDragDropBox;
+
+    invoke-virtual {v2}, Lcom/sec/android/app/camera/widget/gl/EffectMenuDragDropBox;->getPrevious()Lcom/sec/android/app/camera/widget/gl/DragDropBox;
+
+    move-result-object v7
+
+    if-nez v7, :cond_5
+
+    move-object v1, v2
+
+    :cond_6
+    if-nez v1, :cond_7
+
+    const-string v6, "EffectThumbnailListMenu"
+
+    const-string v7, "Cannot find the first item in the list. Return."
+
+    invoke-static {v6, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_7
+    move-object v3, v1
+
+    const/4 v5, 0x0
+
+    :goto_2
+    if-eqz v3, :cond_0
+
+    invoke-virtual {v3}, Lcom/sec/android/app/camera/widget/gl/EffectMenuDragDropBox;->getEffectItem()Lcom/sec/android/app/camera/widget/gl/EffectItem;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->getSelected()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_8
+
+    iget-object v6, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v6}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    move-result-object v6
+
+    add-int/lit16 v7, v5, 0x2008
+
+    invoke-interface {v6, v7, v8}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setCameraEffect(IZ)V
+
+    goto/16 :goto_0
+
+    :cond_8
+    add-int/lit8 v5, v5, 0x1
+
+    invoke-virtual {v3}, Lcom/sec/android/app/camera/widget/gl/EffectMenuDragDropBox;->getNext()Lcom/sec/android/app/camera/widget/gl/DragDropBox;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/sec/android/app/camera/widget/gl/EffectMenuDragDropBox;
+
+    goto :goto_2
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
     .end packed-switch
 .end method

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/PasswordTextView$CharState$10;->this$1:Lcom/android/keyguard/PasswordTextView$CharState;
 
-    # invokes: Lcom/android/keyguard/PasswordTextView$CharState;->performSwap()V
     invoke-static {v0}, Lcom/android/keyguard/PasswordTextView$CharState;->access$1000(Lcom/android/keyguard/PasswordTextView$CharState;)V
 
     iget-object v0, p0, Lcom/android/keyguard/PasswordTextView$CharState$10;->this$1:Lcom/android/keyguard/PasswordTextView$CharState;

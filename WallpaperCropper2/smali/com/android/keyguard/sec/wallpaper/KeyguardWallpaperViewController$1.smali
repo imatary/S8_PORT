@@ -50,7 +50,6 @@
     :sswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$1;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # invokes: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->handleEffectChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$000(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)V
 
     goto :goto_0
@@ -58,7 +57,6 @@
     :sswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$1;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # invokes: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->handleWallpaperImageChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$100(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)V
 
     goto :goto_0
@@ -66,7 +64,6 @@
     :sswitch_2
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController$1;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;
 
-    # invokes: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->handleSetGradationLayer()V
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$200(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;)V
 
     goto :goto_0
@@ -78,7 +75,6 @@
 
     check-cast v0, Landroid/view/MotionEvent;
 
-    # invokes: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->handleTouchEvent(Landroid/view/MotionEvent;)V
     invoke-static {v1, v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;->access$300(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperViewController;Landroid/view/MotionEvent;)V
 
     goto :goto_0

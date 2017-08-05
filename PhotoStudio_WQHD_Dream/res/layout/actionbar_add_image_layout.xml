@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center|right" android:orientation="horizontal" android:background="@drawable/btn_action_bar_done" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
-        <TextView android:textSize="15.0dip" android:textColor="@color/redo_text" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collage_popup_add_new_image" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDy="-1.0" android:shadowRadius="0.2" />
-    </LinearLayout>
-</LinearLayout>

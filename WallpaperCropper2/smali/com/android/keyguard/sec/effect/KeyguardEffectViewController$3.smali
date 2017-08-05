@@ -44,7 +44,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mBootCompleted:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1402(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;Z)Z
 
     return-void

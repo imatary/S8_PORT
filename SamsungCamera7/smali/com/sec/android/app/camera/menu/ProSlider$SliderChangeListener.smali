@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$SliderChangeListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->setChangedStep(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3000(Lcom/sec/android/app/camera/menu/ProSlider;I)V
 
     return-void

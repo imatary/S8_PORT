@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/album_view_new_album" android:visible="true" android:title="@string/new_album" android:showAsAction="never" />
-    <item android:id="@id/action_settings" android:visible="true" android:title="@string/more_options_setting" android:showAsAction="never" />
-    <item android:id="@id/action_contact_us" android:visible="true" android:title="@string/contact_us" android:showAsAction="never" />
-</menu>

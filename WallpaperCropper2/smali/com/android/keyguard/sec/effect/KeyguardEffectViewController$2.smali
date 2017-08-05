@@ -46,12 +46,10 @@
 
     move-result-wide v0
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mSlidingScreenOffTime:J
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1002(J)J
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mRegisterReceiver:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Z
 
     move-result v0
@@ -72,14 +70,12 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1300(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/content/Context;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mAdminReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1200(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
@@ -88,7 +84,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mRegisterReceiver:Z
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1102(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;Z)Z
 
     goto :goto_0
@@ -99,7 +94,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->chenckSlidingWallpaperByScreenon()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$900(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)V
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
@@ -138,7 +132,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mCurrentUserId:I
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$400(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)I
 
     move-result v0
@@ -149,22 +142,18 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mUserSwitching:Z
     invoke-static {v0, v3}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$602(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->handleWallpaperTypeChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)V
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->setWallpaperFileObserver()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$700(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)V
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mNeedUpdateEffectScreen:Z
     invoke-static {v0, v3}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$802(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;Z)Z
 
     return-void
@@ -172,7 +161,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mWallpaperProcessSeparated:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$500(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Z
 
     move-result v0

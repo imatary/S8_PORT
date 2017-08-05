@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$10;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDotList:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$3200(Lcom/android/keyguard/KeyguardUniversalLockView;)Ljava/util/ArrayList;
 
     move-result-object v0

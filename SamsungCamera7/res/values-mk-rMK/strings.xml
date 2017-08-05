@@ -308,6 +308,7 @@
     <string name="camera_label">Камера</string>
     <string name="camera_modes">Режими на камерата</string>
     <string name="camera_security_enter">Политиката на безбедност го ограничува користењето камера.</string>
+    <string name="can_not_use_voice_control">Не може да се користи Говорна контрола додека е вклучено будење на Bixby Voice.</string>
     <string name="cancel">Откажи</string>
     <string name="cannot_start_camcorder_msg">Не може да се снимаат видеа за време на разговор.</string>
     <string name="cannot_start_camera_msg">Не може да се користи Камерата при повик.</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"Сними
 селфи"</string>
     <string name="temperature">Температура</string>
+    <string name="temperature_too_high_camera_off">Температурата е превисока за да се користи %1$s. Почекајте телефонот да се излади пред да користите %2$s.</string>
     <string name="temperature_too_high_flash_off">Не може да се исклучи блицот. Обидете се повторно кога ќе се излади уредот.</string>
     <string name="temperature_too_high_record">Не може да се снима видео. Обидете се повторно кога уредот ќе се излади.</string>
     <string name="temperature_too_high_recording_disable">Снимањето престана. Може да снимате кога уредот ќе се излади.</string>

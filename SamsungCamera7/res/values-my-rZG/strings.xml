@@ -117,7 +117,7 @@
     <string name="R_3344x3344">1:1 (11 M)</string>
     <string name="R_3456x3456">1:1 (12 M)</string>
     <string name="R_3984x2988">4:3 (12 M)</string>
-    <string name="R_4032x1960">၁၈.၅:၉ (၇.၉ မီဂါပစ္ဇယ္)</string>
+    <string name="R_4032x1960">18.5:9 (7.9 M)</string>
     <string name="R_4032x2268">16:9 (9.1 M)</string>
     <string name="R_4032x3024">4:3 (12 M)</string>
     <string name="R_4128x2322">16:9 (9.6 M)</string>
@@ -308,6 +308,7 @@
     <string name="camera_label">ကင္မရာ</string>
     <string name="camera_modes">ကင္မရာ အေနအထားမ်ား</string>
     <string name="camera_security_enter">လံုၿခံဳေရး မူဝါဒသည္ ကင္မရာသံုးျခင္းကို ကန္႔သတ္ထားပါသည္။</string>
+    <string name="can_not_use_voice_control">Bixby Voice ျဖင့္ ႏိႈး-ျခင္းကုိ ဖြင့္ထားစဥ္ အသံျဖင့္ ထိန္းခ်ဳပ္မႈကုိ သံုး၍ မရပါ။</string>
     <string name="cancel">ပယ္ဖ်က္ပါ</string>
     <string name="cannot_start_camcorder_msg">ဖုန္းေခၚေနစဥ္ ဗီဒီယိုအား ကူးထား၍မရပါ။</string>
     <string name="cannot_start_camera_msg">ဖုန္းေခၚျခင္းမ်ားအတြင္း ကင္မရာ သံုး၍ မရႏိုင္ပါ။</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"ကိုယ္တိုင္
 ႐ိုက္ယူပါ"</string>
     <string name="temperature">အေရာင္အပူခ်ိန္</string>
+    <string name="temperature_too_high_camera_off">%1$s ကိုအသုံးျပဳရန္ အပူခ်ိန္အလြန္ျမင့္ေနသည္။ %2$s ကို အသုံးမျပဳမီ ဖုန္း အပူခ်ိန္က်သြားသည္အထိ ေစာင့္ပါ။</string>
     <string name="temperature_too_high_flash_off">ဖလက္မီး ဖြင့္မရႏိုင္ပါ။ သင့္ကိရိယာ ေအးသြားသည့္အခါ ျပန္ၾကိဳးစားပါ။</string>
     <string name="temperature_too_high_record">ဗီဒီယို ရိုက္မရႏိုင္ပါ။ ကိရိယာ ေအးသြားသည့္အခါ ျပန္ၾကိဳးစားပါ။</string>
     <string name="temperature_too_high_recording_disable">ဖမ္းယူျခင္း ရပ္ထားသည္။ သင့္ကိရိယာ ေအးသြားသည့္အခါ ဖမ္းယူႏိုင္သည္။</string>

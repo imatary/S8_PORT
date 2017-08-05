@@ -61,7 +61,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardCircleView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardCircleView;->onScreenTurnedOff()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleView;->access$100(Lcom/android/keyguard/sec/SecKeyguardCircleView;)V
 
     return-void
@@ -72,7 +71,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardCircleView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardCircleView;->onScreenTurnedOn()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleView;->access$000(Lcom/android/keyguard/sec/SecKeyguardCircleView;)V
 
     return-void

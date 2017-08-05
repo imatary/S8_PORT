@@ -101,7 +101,6 @@
 
     const/4 v2, 0x0
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->restoreSettings(IZ)V
     invoke-static {v1, v0, v2}, Lcom/sec/android/app/camera/DimController;->access$000(Lcom/sec/android/app/camera/DimController;IZ)V
 
     goto :goto_1
@@ -126,7 +125,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
-    # getter for: Lcom/sec/android/app/camera/DimController;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/DimController;->access$100(Lcom/sec/android/app/camera/DimController;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -165,7 +163,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto :goto_1
@@ -179,7 +176,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
@@ -190,7 +186,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto :goto_1
@@ -204,7 +199,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto :goto_1
@@ -218,7 +212,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto :goto_1
@@ -240,7 +233,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto :goto_1
@@ -254,7 +246,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto :goto_1
@@ -268,7 +259,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto :goto_1
@@ -288,7 +278,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto :goto_1
@@ -302,7 +291,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -316,7 +304,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -330,7 +317,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -344,7 +330,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -358,7 +343,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -372,7 +356,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -392,7 +375,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -406,7 +388,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -420,7 +401,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -440,7 +420,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -454,7 +433,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -468,7 +446,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -482,7 +459,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -496,7 +472,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -510,7 +485,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -524,7 +498,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -538,7 +511,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -558,7 +530,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -578,7 +549,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -592,7 +562,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -612,7 +581,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -626,7 +594,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -640,7 +607,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1
@@ -654,7 +620,6 @@
 
     move-result v6
 
-    # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
     goto/16 :goto_1

@@ -196,11 +196,11 @@
 
     invoke-virtual {v0, v6}, Landroid/app/Notification$Builder;->setPriority(I)Landroid/app/Notification$Builder;
 
-    const v6, 0x7f0200b4
+    const v6, 0x7f0200b7
 
     invoke-virtual {v0, v6}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
-    const v6, 0x7f0d049d
+    const v6, 0x7f0d04fd
 
     invoke-virtual {p0, v6}, Lcom/android/phone/EmergencyCallbackModeService;->getText(I)Ljava/lang/CharSequence;
 
@@ -208,7 +208,7 @@
 
     invoke-virtual {v0, v6}, Landroid/app/Notification$Builder;->setTicker(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
-    const v6, 0x7f0d049e
+    const v6, 0x7f0d04fe
 
     invoke-virtual {p0, v6}, Lcom/android/phone/EmergencyCallbackModeService;->getText(I)Ljava/lang/CharSequence;
 
@@ -250,7 +250,7 @@
 
     if-eqz v6, :cond_3
 
-    const v6, 0x7f0d049f
+    const v6, 0x7f0d04ff
 
     invoke-virtual {p0, v6}, Lcom/android/phone/EmergencyCallbackModeService;->getText(I)Ljava/lang/CharSequence;
 
@@ -269,7 +269,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d049e
+    const v8, 0x7f0d04fe
 
     invoke-virtual {v6, v8, v7}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
@@ -565,7 +565,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyCallbackModeService;->mNotificationManager:Landroid/app/NotificationManager;
 
-    const v1, 0x7f0d049e
+    const v1, 0x7f0d04fe
 
     invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->cancel(I)V
 

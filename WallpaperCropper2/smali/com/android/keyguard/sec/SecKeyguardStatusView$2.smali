@@ -51,7 +51,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$2;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardStatusView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$200(Lcom/android/keyguard/sec/SecKeyguardStatusView;)Landroid/content/Context;
 
     move-result-object v0
@@ -62,7 +61,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$2;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardStatusView;->mIsNetworkRoaming:Z
     invoke-static {v1}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$300(Lcom/android/keyguard/sec/SecKeyguardStatusView;)Z
 
     move-result v1
@@ -71,12 +69,10 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$2;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # setter for: Lcom/android/keyguard/sec/SecKeyguardStatusView;->mIsNetworkRoaming:Z
     invoke-static {v1, v0}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$302(Lcom/android/keyguard/sec/SecKeyguardStatusView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$2;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardStatusView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$400(Lcom/android/keyguard/sec/SecKeyguardStatusView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -90,7 +86,6 @@
     :goto_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$2;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardStatusView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$400(Lcom/android/keyguard/sec/SecKeyguardStatusView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -102,7 +97,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$2;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardStatusView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$400(Lcom/android/keyguard/sec/SecKeyguardStatusView;)Landroid/os/Handler;
 
     move-result-object v0

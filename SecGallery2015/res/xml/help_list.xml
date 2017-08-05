@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<help-headers>
-    <section name="gallery" title="@string/section_gallery" summary="@string/section_gallery_summary">
-        <item name="gallery_viewing_picture" action="com.samsung.gallery.help.VIEWING_PICTURE" title="@string/item_gallery_viewing_picture" />
-        <item name="gallery_viewing_album" action="com.samsung.gallery.help.VIEWING_ALBUM" title="@string/item_gallery_viewing_album" />
-        <item name="gallery_sharing_picture" action="com.samsung.gallery.help.SHARING_PICTURE" title="@string/item_gallery_sharing_picture_title" />
-        <item name="gallery_delete_picture" action="com.samsung.gallery.help.DELETE_PICTURE" title="@string/item_gallery_deleting_picture_title" />
-    </section>
-</help-headers>

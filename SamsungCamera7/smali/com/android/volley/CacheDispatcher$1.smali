@@ -44,7 +44,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/volley/CacheDispatcher$1;->this$0:Lcom/android/volley/CacheDispatcher;
 
-    # getter for: Lcom/android/volley/CacheDispatcher;->mNetworkQueue:Ljava/util/concurrent/BlockingQueue;
     invoke-static {v0}, Lcom/android/volley/CacheDispatcher;->access$000(Lcom/android/volley/CacheDispatcher;)Ljava/util/concurrent/BlockingQueue;
 
     move-result-object v0

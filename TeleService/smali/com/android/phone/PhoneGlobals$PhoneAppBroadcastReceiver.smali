@@ -168,7 +168,7 @@
 
     move-result v41
 
-    if-eqz v41, :cond_23
+    if-eqz v41, :cond_24
 
     const-string/jumbo v41, "subscription"
 
@@ -636,7 +636,7 @@
 
     move-result v41
 
-    if-eqz v41, :cond_1a
+    if-eqz v41, :cond_1b
 
     const-string/jumbo v41, "apnFailed"
 
@@ -648,7 +648,7 @@
 
     move-result v41
 
-    if-eqz v41, :cond_1a
+    if-eqz v41, :cond_1b
 
     :cond_a
     if-eqz v15, :cond_b
@@ -869,7 +869,7 @@
 
     move-result v41
 
-    if-eqz v41, :cond_19
+    if-eqz v41, :cond_1a
 
     :cond_10
     :goto_5
@@ -916,7 +916,7 @@
 
     move-result v41
 
-    if-eqz v41, :cond_1f
+    if-eqz v41, :cond_20
 
     const-string/jumbo v41, "null"
 
@@ -969,7 +969,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_1e
+    if-nez v41, :cond_1f
 
     const-string/jumbo v41, "DISCONNECTED"
 
@@ -987,7 +987,7 @@
 
     move-result v41
 
-    if-eqz v41, :cond_1e
+    if-eqz v41, :cond_1f
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -997,13 +997,13 @@
 
     move-result v41
 
-    if-eqz v41, :cond_1e
+    if-eqz v41, :cond_1f
 
     invoke-static {}, Lcom/android/phone/PhoneUtils;->isDataRoaming()Z
 
     move-result v41
 
-    if-eqz v41, :cond_1e
+    if-eqz v41, :cond_1f
 
     :cond_14
     const-string/jumbo v41, "PhoneApp"
@@ -1180,6 +1180,16 @@
     goto/16 :goto_4
 
     :cond_18
+    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getPhone()Lcom/android/internal/telephony/Phone;
+
+    move-result-object v41
+
+    invoke-virtual/range {v41 .. v41}, Lcom/android/internal/telephony/Phone;->getDataRoamingEnabled()Z
+
+    move-result v41
+
+    if-nez v41, :cond_19
+
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/phone/PhoneGlobals$PhoneAppBroadcastReceiver;->this$0:Lcom/android/phone/PhoneGlobals;
@@ -1205,6 +1215,31 @@
     goto/16 :goto_4
 
     :cond_19
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/phone/PhoneGlobals$PhoneAppBroadcastReceiver;->this$0:Lcom/android/phone/PhoneGlobals;
+
+    move-object/from16 v41, v0
+
+    move-object/from16 v0, v41
+
+    iget-object v0, v0, Lcom/android/phone/PhoneGlobals;->mHandler:Landroid/os/Handler;
+
+    move-object/from16 v41, v0
+
+    const/16 v42, 0xb
+
+    invoke-virtual/range {v41 .. v42}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+
+    const-string/jumbo v41, "PhoneApp"
+
+    const-string/jumbo v42, "DISCONNECTED/roamingOn - hideDataDisconnectedRoaming() bcz data_roaming is on"
+
+    invoke-static/range {v41 .. v42}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_4
+
+    :cond_1a
     const-string/jumbo v41, "0"
 
     move-object/from16 v0, v41
@@ -1235,7 +1270,7 @@
 
     goto/16 :goto_5
 
-    :cond_1a
+    :cond_1b
     const-string/jumbo v41, "CONNECTED"
 
     move-object/from16 v0, v41
@@ -1248,15 +1283,15 @@
 
     if-eqz v41, :cond_12
 
-    if-eqz v15, :cond_1b
+    if-eqz v15, :cond_1c
 
-    if-eqz v14, :cond_1b
+    if-eqz v14, :cond_1c
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->-get2()Z
 
     move-result v41
 
-    if-eqz v41, :cond_1b
+    if-eqz v41, :cond_1c
 
     const-string/jumbo v41, "PhoneApp"
 
@@ -1282,16 +1317,16 @@
 
     invoke-static/range {v41 .. v41}, Lcom/android/phone/PhoneGlobals;->-set1(Z)Z
 
-    :cond_1b
-    if-eqz v14, :cond_1d
-
-    if-nez v16, :cond_1c
-
-    if-nez v15, :cond_1c
-
-    if-eqz v17, :cond_1d
-
     :cond_1c
+    if-eqz v14, :cond_1e
+
+    if-nez v16, :cond_1d
+
+    if-nez v15, :cond_1d
+
+    if-eqz v17, :cond_1e
+
+    :cond_1d
     const-string/jumbo v41, "PhoneApp"
 
     const-string/jumbo v42, "CONNECTED - hideDataDisconnectedRoaming()"
@@ -1314,7 +1349,7 @@
 
     invoke-virtual/range {v41 .. v42}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    :cond_1d
+    :cond_1e
     if-eqz v16, :cond_12
 
     if-eqz v14, :cond_12
@@ -1337,7 +1372,7 @@
 
     goto/16 :goto_6
 
-    :cond_1e
+    :cond_1f
     const-string/jumbo v41, "PhoneApp"
 
     new-instance v42, Ljava/lang/StringBuilder;
@@ -1382,7 +1417,7 @@
 
     goto/16 :goto_3
 
-    :cond_1f
+    :cond_20
     const-string/jumbo v41, "PhoneApp"
 
     new-instance v42, Ljava/lang/StringBuilder;
@@ -1585,13 +1620,13 @@
 
     invoke-static/range {v41 .. v42}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-nez v10, :cond_20
+    if-nez v10, :cond_21
 
     invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->getDataRoamingEnabled()Z
 
     move-result v41
 
-    if-nez v41, :cond_22
+    if-nez v41, :cond_23
 
     const-string/jumbo v41, "DISCONNECTED"
 
@@ -1609,7 +1644,7 @@
 
     move-result v41
 
-    if-eqz v41, :cond_22
+    if-eqz v41, :cond_23
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -1619,15 +1654,15 @@
 
     move-result v41
 
-    if-eqz v41, :cond_22
+    if-eqz v41, :cond_23
 
     invoke-static {}, Lcom/android/phone/PhoneUtils;->isDataRoaming()Z
 
     move-result v41
 
-    if-eqz v41, :cond_22
+    if-eqz v41, :cond_23
 
-    :cond_20
+    :cond_21
     const-string/jumbo v41, "PhoneApp"
 
     new-instance v42, Ljava/lang/StringBuilder;
@@ -1664,7 +1699,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_21
+    if-nez v41, :cond_22
 
     const-string/jumbo v41, "dataEnabled"
 
@@ -1676,7 +1711,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_21
+    if-nez v41, :cond_22
 
     const-string/jumbo v41, "connected"
 
@@ -1688,7 +1723,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_21
+    if-nez v41, :cond_22
 
     const-string/jumbo v41, "nwTypeChanged"
 
@@ -1702,7 +1737,7 @@
 
     if-eqz v41, :cond_5
 
-    :cond_21
+    :cond_22
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/phone/PhoneGlobals$PhoneAppBroadcastReceiver;->this$0:Lcom/android/phone/PhoneGlobals;
@@ -1727,7 +1762,7 @@
 
     goto/16 :goto_3
 
-    :cond_22
+    :cond_23
     const-string/jumbo v41, "PhoneApp"
 
     new-instance v42, Ljava/lang/StringBuilder;
@@ -1772,7 +1807,7 @@
 
     goto/16 :goto_3
 
-    :cond_23
+    :cond_24
     const-string/jumbo v41, "android.intent.action.SIM_STATE_CHANGED"
 
     move-object/from16 v0, v41
@@ -1793,7 +1828,7 @@
 
     move-result-object v41
 
-    if-eqz v41, :cond_24
+    if-eqz v41, :cond_25
 
     move-object/from16 v0, p0
 
@@ -1843,7 +1878,7 @@
 
     invoke-virtual/range {v41 .. v42}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    :cond_24
+    :cond_25
     const-string/jumbo v41, "KCL"
 
     invoke-static {}, Lcom/android/phone/TeleServiceFeature;->getSalesCode()Ljava/lang/String;
@@ -1854,7 +1889,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_25
+    if-nez v41, :cond_26
 
     const-string/jumbo v41, "ERO"
 
@@ -1866,7 +1901,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_25
+    if-nez v41, :cond_26
 
     const-string/jumbo v41, "OPT"
 
@@ -1878,7 +1913,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_25
+    if-nez v41, :cond_26
 
     const-string/jumbo v41, "TMN"
 
@@ -1890,7 +1925,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_25
+    if-nez v41, :cond_26
 
     const-string/jumbo v41, "TEB"
 
@@ -1902,7 +1937,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_25
+    if-nez v41, :cond_26
 
     const-string/jumbo v41, "TWO"
 
@@ -1914,7 +1949,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_25
+    if-nez v41, :cond_26
 
     const-string/jumbo v41, "XTE"
 
@@ -1926,7 +1961,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_25
+    if-nez v41, :cond_26
 
     const-string/jumbo v41, "SMA"
 
@@ -1938,7 +1973,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_25
+    if-nez v41, :cond_26
 
     const-string/jumbo v41, "GLB"
 
@@ -1950,7 +1985,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_25
+    if-nez v41, :cond_26
 
     const-string/jumbo v41, "MTL"
 
@@ -1962,7 +1997,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_25
+    if-nez v41, :cond_26
 
     const-string/jumbo v41, "VVT"
 
@@ -1974,7 +2009,7 @@
 
     move-result v41
 
-    if-nez v41, :cond_25
+    if-nez v41, :cond_26
 
     const-string/jumbo v41, "MBC"
 
@@ -1986,9 +2021,9 @@
 
     move-result v41
 
-    if-eqz v41, :cond_27
+    if-eqz v41, :cond_28
 
-    :cond_25
+    :cond_26
     const-string/jumbo v41, "ss"
 
     move-object/from16 v0, p2
@@ -2005,7 +2040,7 @@
 
     move-result v41
 
-    if-eqz v41, :cond_27
+    if-eqz v41, :cond_28
 
     move-object/from16 v0, p0
 
@@ -2019,7 +2054,7 @@
 
     move/from16 v41, v0
 
-    if-nez v41, :cond_26
+    if-nez v41, :cond_27
 
     move-object/from16 v0, p0
 
@@ -2033,9 +2068,9 @@
 
     move/from16 v41, v0
 
-    if-eqz v41, :cond_27
+    if-eqz v41, :cond_28
 
-    :cond_26
+    :cond_27
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/phone/PhoneGlobals$PhoneAppBroadcastReceiver;->this$0:Lcom/android/phone/PhoneGlobals;
@@ -2110,7 +2145,7 @@
 
     invoke-static/range {v41 .. v42}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_27
+    :cond_28
     :goto_7
     const-string/jumbo v41, "lost_phone_lock"
 
@@ -2118,13 +2153,13 @@
 
     move-result v41
 
-    if-eqz v41, :cond_28
+    if-eqz v41, :cond_29
 
     invoke-static {}, Lcom/android/phone/TeleServiceSystemDB;->isLostPhoneLock()Z
 
     move-result v41
 
-    if-eqz v41, :cond_28
+    if-eqz v41, :cond_29
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -2135,35 +2170,6 @@
     move-object/from16 v1, p2
 
     invoke-static {v0, v1}, Lcom/android/phone/emergencydialer/EmergencyDialerUtils;->checkPendingEmergencyDialer(Landroid/content/Context;Landroid/content/Intent;)V
-
-    :cond_28
-    const-string/jumbo v41, "support_uicc_mobility"
-
-    invoke-static/range {v41 .. v41}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v41
-
-    if-eqz v41, :cond_29
-
-    const-string/jumbo v41, "NOT_READY"
-
-    const-string/jumbo v42, "ss"
-
-    move-object/from16 v0, p2
-
-    move-object/from16 v1, v42
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v42
-
-    invoke-virtual/range {v41 .. v42}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v41
-
-    if-nez v41, :cond_29
-
-    invoke-static {}, Lcom/android/phone/operator/kor/PhoneUtilsKOR;->checkUICCMovement()V
 
     :cond_29
     invoke-static {}, Lcom/android/phone/TelephonyConfig;->isSimMccMncReady()Z
@@ -4236,7 +4242,7 @@
     if-eqz v41, :cond_1
 
     :cond_50
-    const v41, 0x7f0d0a2e
+    const v41, 0x7f0d0a95
 
     const/16 v42, 0x1
 

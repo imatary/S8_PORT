@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VideoCollage;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$200(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v0
@@ -58,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VideoCollage;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$1500(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     move-result-object v0
@@ -69,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VideoCollage;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$1500(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     move-result-object v0
@@ -80,12 +77,10 @@
 
     check-cast v0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mZoomSliderMenu:Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
     invoke-static {v1, v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$1602(Lcom/sec/android/app/camera/shootingmode/VideoCollage;Lcom/sec/android/app/camera/menu/ZoomSliderMenu;)Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VideoCollage;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mZoomSliderMenu:Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$1600(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
 
     move-result-object v0
@@ -96,7 +91,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VideoCollage;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mZoomSliderMenu:Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$1600(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
 
     move-result-object v0
@@ -114,7 +108,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VideoCollage;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$1500(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     move-result-object v0
@@ -127,12 +120,10 @@
 
     check-cast v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mEffectThumbnailListMenu:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
     invoke-static {v1, v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$1702(Lcom/sec/android/app/camera/shootingmode/VideoCollage;Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VideoCollage;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mEffectThumbnailListMenu:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$1700(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     move-result-object v0

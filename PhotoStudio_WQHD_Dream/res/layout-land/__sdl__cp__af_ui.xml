@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.samsung.android.sdk.rclcamera.impl.sdl.ui.layout.AfView android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/af_base" android:layout_width="@dimen/__cp__af_base_width" android:layout_height="@dimen/__cp__af_base_height" android:src="@drawable/__cp__camera_af_base" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
-    <ImageView android:id="@id/af_control" android:layout_width="@dimen/__cp__af_control_width" android:layout_height="@dimen/__cp__af_control_height" android:src="@drawable/__cp__camera_af_control" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
-</com.samsung.android.sdk.rclcamera.impl.sdl.ui.layout.AfView>

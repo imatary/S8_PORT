@@ -2656,12 +2656,6 @@
 
     if-nez v1, :cond_2
 
-    const-string/jumbo v1, "FmNativehandler"
-
-    const-string/jumbo v2, "SKW Send disable service"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
     iget-object v1, p0, Lcom/broadcom/fm/fmreceiver/FmNativehandler;->mHandler:Landroid/os/Handler;
 
     const/4 v2, 0x2

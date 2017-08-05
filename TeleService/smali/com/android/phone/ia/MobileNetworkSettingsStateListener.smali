@@ -226,7 +226,7 @@
 
     invoke-static {v1, p2, v2, v3}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    sget-object v1, Lcom/android/phone/ia/IAConstants;->RESPONSE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+    sget-object v1, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v1}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
@@ -454,9 +454,9 @@
 .method public onStateReceived(Lcom/samsung/android/sdk/bixby/data/State;)V
     .locals 11
 
-    const/4 v10, 0x1
+    const/4 v10, 0x0
 
-    const/4 v9, 0x0
+    const/4 v9, 0x1
 
     invoke-virtual {p1}, Lcom/samsung/android/sdk/bixby/data/State;->getStateId()Ljava/lang/String;
 
@@ -500,7 +500,7 @@
 
     if-lez v6, :cond_0
 
-    invoke-interface {v4, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v4, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -527,7 +527,7 @@
 
     const-string/jumbo v6, ":settings:show_fragment_as_subsetting"
 
-    invoke-virtual {v2, v6, v10}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+    invoke-virtual {v2, v6, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     :try_start_0
     iget-object v6, p0, Lcom/android/phone/ia/MobileNetworkSettingsStateListener;->mPreferenceActivity:Landroid/preference/PreferenceActivity;
@@ -542,13 +542,13 @@
 
     invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
     :try_end_0
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_4
 
     :goto_0
     return-void
 
     :cond_1
-    const-string/jumbo v6, "DataRoamingOn"
+    const-string/jumbo v6, "MobileData"
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -556,61 +556,30 @@
 
     if-eqz v6, :cond_2
 
-    const-string/jumbo v3, "DataRoamingOn"
+    new-instance v2, Landroid/content/Intent;
 
-    invoke-static {v10}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    const-string/jumbo v6, "com.android.phone.Enhanced4GLTE"
 
-    move-result-object v6
+    invoke-direct {v2, v6}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {p0, v6, v3}, Lcom/android/phone/ia/MobileNetworkSettingsStateListener;->setEnable(Ljava/lang/Boolean;Ljava/lang/String;)V
+    const-string/jumbo v6, ":settings:show_fragment_as_subsetting"
 
-    goto :goto_0
+    invoke-virtual {v2, v6, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    :cond_2
-    const-string/jumbo v6, "DataRoamingOff"
-
-    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_3
-
-    const-string/jumbo v3, "DataRoamingOff"
-
-    invoke-static {v9}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v6
-
-    invoke-direct {p0, v6, v3}, Lcom/android/phone/ia/MobileNetworkSettingsStateListener;->setEnable(Ljava/lang/Boolean;Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_3
-    const-string/jumbo v6, "StatusbarIndicator"
-
-    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_5
-
+    :try_start_1
     iget-object v6, p0, Lcom/android/phone/ia/MobileNetworkSettingsStateListener;->mPreferenceActivity:Landroid/preference/PreferenceActivity;
 
-    const-string/jumbo v7, "button_network_status_key"
+    invoke-virtual {v6, v2}, Landroid/preference/PreferenceActivity;->startActivity(Landroid/content/Intent;)V
 
-    invoke-static {v6, v7}, Lcom/android/phone/ia/IAUtil;->simulateMenuPreferenceClick(Landroid/preference/PreferenceActivity;Ljava/lang/String;)I
-
-    move-result v6
-
-    if-ne v6, v10, :cond_4
-
-    const-string/jumbo v6, "StatusbarIndicator"
+    const-string/jumbo v6, "MobileData"
 
     invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
 
     sget-object v6, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+    :try_end_1
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_0
 
@@ -641,15 +610,298 @@
 
     goto :goto_0
 
-    :cond_4
-    invoke-static {v9}, Lcom/android/phone/ia/IAUtil;->supportedMenu(I)V
+    :cond_2
+    const-string/jumbo v6, "InternationalDataRoaming"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_3
+
+    new-instance v2, Landroid/content/Intent;
+
+    const-string/jumbo v6, "com.android.phone.InternationalEnhanced4GLTE"
+
+    invoke-direct {v2, v6}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string/jumbo v6, ":settings:show_fragment_as_subsetting"
+
+    invoke-virtual {v2, v6, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    :try_start_2
+    iget-object v6, p0, Lcom/android/phone/ia/MobileNetworkSettingsStateListener;->mPreferenceActivity:Landroid/preference/PreferenceActivity;
+
+    invoke-virtual {v6, v2}, Landroid/preference/PreferenceActivity;->startActivity(Landroid/content/Intent;)V
+
+    const-string/jumbo v6, "InternationalDataRoaming"
+
+    invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
+
+    sget-object v6, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+    :try_end_2
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_2 .. :try_end_2} :catch_1
 
     goto :goto_0
 
+    :catch_1
+    move-exception v1
+
+    const-string/jumbo v6, "MobileNetworkSettingsStateListener"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v8, "startActivity() failed: "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    :cond_3
+    const-string/jumbo v6, "EnhancedLteServices"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_4
+
+    new-instance v2, Landroid/content/Intent;
+
+    const-string/jumbo v6, "com.android.phone.EnhancedLteServices"
+
+    invoke-direct {v2, v6}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string/jumbo v6, ":settings:show_fragment_as_subsetting"
+
+    invoke-virtual {v2, v6, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    :try_start_3
+    iget-object v6, p0, Lcom/android/phone/ia/MobileNetworkSettingsStateListener;->mPreferenceActivity:Landroid/preference/PreferenceActivity;
+
+    invoke-virtual {v6, v2}, Landroid/preference/PreferenceActivity;->startActivity(Landroid/content/Intent;)V
+
+    const-string/jumbo v6, "EnhancedLteServices"
+
+    invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
+
+    sget-object v6, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+    :try_end_3
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_3 .. :try_end_3} :catch_2
+
+    goto/16 :goto_0
+
+    :catch_2
+    move-exception v1
+
+    const-string/jumbo v6, "MobileNetworkSettingsStateListener"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v8, "startActivity() failed: "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    :cond_4
+    const-string/jumbo v6, "Roaming"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_5
+
+    new-instance v2, Landroid/content/Intent;
+
+    const-string/jumbo v6, "com.android.phone.Roaming"
+
+    invoke-direct {v2, v6}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string/jumbo v6, ":settings:show_fragment_as_subsetting"
+
+    invoke-virtual {v2, v6, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    :try_start_4
+    iget-object v6, p0, Lcom/android/phone/ia/MobileNetworkSettingsStateListener;->mPreferenceActivity:Landroid/preference/PreferenceActivity;
+
+    invoke-virtual {v6, v2}, Landroid/preference/PreferenceActivity;->startActivity(Landroid/content/Intent;)V
+
+    const-string/jumbo v6, "Roaming"
+
+    invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
+
+    sget-object v6, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+    :try_end_4
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_4 .. :try_end_4} :catch_3
+
+    goto/16 :goto_0
+
+    :catch_3
+    move-exception v1
+
+    const-string/jumbo v6, "MobileNetworkSettingsStateListener"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v8, "startActivity() failed: "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
     :cond_5
+    const-string/jumbo v6, "DataRoamingOn"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_6
+
+    const-string/jumbo v3, "DataRoamingOn"
+
+    invoke-static {v9}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v6
+
+    invoke-direct {p0, v6, v3}, Lcom/android/phone/ia/MobileNetworkSettingsStateListener;->setEnable(Ljava/lang/Boolean;Ljava/lang/String;)V
+
+    goto/16 :goto_0
+
+    :cond_6
+    const-string/jumbo v6, "DataRoamingOff"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_7
+
+    const-string/jumbo v3, "DataRoamingOff"
+
+    invoke-static {v10}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v6
+
+    invoke-direct {p0, v6, v3}, Lcom/android/phone/ia/MobileNetworkSettingsStateListener;->setEnable(Ljava/lang/Boolean;Ljava/lang/String;)V
+
+    goto/16 :goto_0
+
+    :cond_7
+    const-string/jumbo v6, "StatusbarIndicator"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_9
+
+    iget-object v6, p0, Lcom/android/phone/ia/MobileNetworkSettingsStateListener;->mPreferenceActivity:Landroid/preference/PreferenceActivity;
+
+    const-string/jumbo v7, "button_network_status_key"
+
+    invoke-static {v6, v7}, Lcom/android/phone/ia/IAUtil;->simulateMenuPreferenceClick(Landroid/preference/PreferenceActivity;Ljava/lang/String;)I
+
+    move-result v6
+
+    if-ne v6, v9, :cond_8
+
+    const-string/jumbo v6, "StatusbarIndicator"
+
+    invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
+
+    sget-object v6, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    goto/16 :goto_0
+
+    :catch_4
+    move-exception v1
+
+    const-string/jumbo v6, "MobileNetworkSettingsStateListener"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v8, "startActivity() failed: "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    :cond_8
+    invoke-static {v10}, Lcom/android/phone/ia/IAUtil;->supportedMenu(I)V
+
+    goto/16 :goto_0
+
+    :cond_9
     sget-object v6, Lcom/android/phone/ia/IAConstants;->RESPONSE_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
 
     invoke-static {v6}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
 
-    goto :goto_0
+    goto/16 :goto_0
 .end method

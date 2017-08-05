@@ -103,13 +103,10 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->cancelPanoramaCapture()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$700(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)V
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->reset()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$800(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$600(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -146,7 +143,6 @@
 
     invoke-virtual {p0, v5}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama$PanoramaHandler;->removeMessages(I)V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mIsPanoramaWarning:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$900(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)Z
 
     move-result v2
@@ -168,14 +164,12 @@
 
     invoke-virtual {p0, v4}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama$PanoramaHandler;->removeMessages(I)V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mIsPanoramaWarning:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$900(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$600(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -193,13 +187,11 @@
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama$PanoramaHandler;->removeMessages(I)V
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->hideGuideText()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$1000(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)V
 
     goto :goto_0
 
     :pswitch_5
-    # getter for: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$600(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -214,14 +206,12 @@
 
     if-eqz v2, :cond_2
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/BurstPanorama$PanoramaHandler;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$1100(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)Lcom/sec/android/app/camera/shootingmode/BurstPanorama$PanoramaHandler;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/BurstPanorama$PanoramaHandler;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$1100(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)Lcom/sec/android/app/camera/shootingmode/BurstPanorama$PanoramaHandler;
 
     move-result-object v2
@@ -235,7 +225,6 @@
     goto/16 :goto_0
 
     :cond_2
-    # invokes: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->showPreviewGroup()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$1200(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)V
 
     goto/16 :goto_0

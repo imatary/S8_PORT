@@ -281,7 +281,7 @@
 
     move-result-object v9
 
-    const v12, 0x7f1002b5
+    const v12, 0x7f1002b8
 
     invoke-virtual {v9, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -297,7 +297,7 @@
 
     if-eqz v12, :cond_5
 
-    const v12, 0x7f0d0c85
+    const v12, 0x7f0d0cf6
 
     invoke-virtual {p0, v12}, Lcom/android/phone/VisualCallSettingActivity;->getString(I)Ljava/lang/String;
 
@@ -320,7 +320,7 @@
 
     move-result-object v7
 
-    const v12, 0x7f0d0c24
+    const v12, 0x7f0d0c95
 
     invoke-virtual {p0, v12}, Lcom/android/phone/VisualCallSettingActivity;->getString(I)Ljava/lang/String;
 
@@ -392,7 +392,7 @@
 
     invoke-virtual {v1, v12}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    const v12, 0x7f1002b9
+    const v12, 0x7f1002bc
 
     invoke-virtual {v9, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -404,7 +404,7 @@
 
     invoke-virtual {v2, v12}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v12, 0x7f1002b7
+    const v12, 0x7f1002ba
 
     invoke-virtual {v9, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -419,7 +419,7 @@
     invoke-virtual {v11, v12}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     :cond_1
-    const v12, 0x7f1002b6
+    const v12, 0x7f1002b9
 
     invoke-virtual {v9, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -458,7 +458,7 @@
     :cond_4
     invoke-virtual {v0, v9}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v12, 0x7f0d0c20
+    const v12, 0x7f0d0c91
 
     invoke-virtual {v0, v12}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -470,7 +470,7 @@
 
     invoke-direct {v12, p0, v1, v11}, Lcom/android/phone/VisualCallSettingActivity$4;-><init>(Lcom/android/phone/VisualCallSettingActivity;Landroid/widget/CheckBox;Landroid/widget/CheckBox;)V
 
-    const v13, 0x7f0d0c22
+    const v13, 0x7f0d0c93
 
     invoke-virtual {v0, v13, v12}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -478,7 +478,7 @@
 
     invoke-direct {v12, p0}, Lcom/android/phone/VisualCallSettingActivity$5;-><init>(Lcom/android/phone/VisualCallSettingActivity;)V
 
-    const v13, 0x7f0d0c23
+    const v13, 0x7f0d0c94
 
     invoke-virtual {v0, v13, v12}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -501,7 +501,7 @@
     return-void
 
     :cond_5
-    const v12, 0x7f0d0c21
+    const v12, 0x7f0d0c92
 
     invoke-virtual {p0, v12}, Lcom/android/phone/VisualCallSettingActivity;->getString(I)Ljava/lang/String;
 
@@ -849,7 +849,7 @@
 
     iget-object v1, p0, Lcom/android/phone/VisualCallSettingActivity;->mUpdateVisulaCallListPreference:Lcom/android/phone/CustomListPreference;
 
-    const v2, 0x7f0d0c1c
+    const v2, 0x7f0d0c8d
 
     invoke-virtual {v1, v2}, Lcom/android/phone/CustomListPreference;->setSummary(I)V
 
@@ -944,7 +944,7 @@
 
     iget-object v1, p0, Lcom/android/phone/VisualCallSettingActivity;->mUpdateVisulaCallListPreference:Lcom/android/phone/CustomListPreference;
 
-    const v2, 0x7f0d0c1f
+    const v2, 0x7f0d0c90
 
     invoke-virtual {v1, v2}, Lcom/android/phone/CustomListPreference;->setSummary(I)V
 
@@ -953,7 +953,7 @@
     :cond_7
     iget-object v1, p0, Lcom/android/phone/VisualCallSettingActivity;->mUpdateVisulaCallListPreference:Lcom/android/phone/CustomListPreference;
 
-    const v2, 0x7f0d0c1d
+    const v2, 0x7f0d0c8e
 
     invoke-virtual {v1, v2}, Lcom/android/phone/CustomListPreference;->setSummary(I)V
 
@@ -1144,7 +1144,7 @@
 
     iget-object v3, p0, Lcom/android/phone/VisualCallSettingActivity;->mUpdateVisulaCallListPreference:Lcom/android/phone/CustomListPreference;
 
-    const v5, 0x7f0d0c1c
+    const v5, 0x7f0d0c8d
 
     invoke-virtual {v3, v5}, Lcom/android/phone/CustomListPreference;->setSummary(I)V
 
@@ -1155,7 +1155,7 @@
 
     iget-object v3, p0, Lcom/android/phone/VisualCallSettingActivity;->mUpdateVisulaCallListPreference:Lcom/android/phone/CustomListPreference;
 
-    const v5, 0x7f0d0c1f
+    const v5, 0x7f0d0c90
 
     invoke-virtual {v3, v5}, Lcom/android/phone/CustomListPreference;->setSummary(I)V
 
@@ -1164,7 +1164,7 @@
     :cond_3
     iget-object v3, p0, Lcom/android/phone/VisualCallSettingActivity;->mUpdateVisulaCallListPreference:Lcom/android/phone/CustomListPreference;
 
-    const v5, 0x7f0d0c1d
+    const v5, 0x7f0d0c8e
 
     invoke-virtual {v3, v5}, Lcom/android/phone/CustomListPreference;->setSummary(I)V
 
@@ -1399,7 +1399,7 @@
 
     iget-object v1, p0, Lcom/android/phone/VisualCallSettingActivity;->mUpdateVisulaCallListPreference:Lcom/android/phone/CustomListPreference;
 
-    const v2, 0x7f0d0c1c
+    const v2, 0x7f0d0c8d
 
     invoke-virtual {v1, v2}, Lcom/android/phone/CustomListPreference;->setSummary(I)V
 
@@ -1411,7 +1411,7 @@
 
     iget-object v1, p0, Lcom/android/phone/VisualCallSettingActivity;->mUpdateVisulaCallListPreference:Lcom/android/phone/CustomListPreference;
 
-    const v2, 0x7f0d0c1f
+    const v2, 0x7f0d0c90
 
     invoke-virtual {v1, v2}, Lcom/android/phone/CustomListPreference;->setSummary(I)V
 
@@ -1420,7 +1420,7 @@
     :cond_1
     iget-object v1, p0, Lcom/android/phone/VisualCallSettingActivity;->mUpdateVisulaCallListPreference:Lcom/android/phone/CustomListPreference;
 
-    const v2, 0x7f0d0c1d
+    const v2, 0x7f0d0c8e
 
     invoke-virtual {v1, v2}, Lcom/android/phone/CustomListPreference;->setSummary(I)V
 
@@ -1461,7 +1461,7 @@
 
     move-result-object v4
 
-    const v8, 0x7f0d0c19
+    const v8, 0x7f0d0c8a
 
     invoke-virtual {v4, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1517,7 +1517,7 @@
 
     move-result-object v4
 
-    const v8, 0x7f0d0c1a
+    const v8, 0x7f0d0c8b
 
     invoke-virtual {v4, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

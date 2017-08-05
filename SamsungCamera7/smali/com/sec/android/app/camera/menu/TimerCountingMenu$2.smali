@@ -67,7 +67,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu$2;->this$0:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
-    # setter for: Lcom/sec/android/app/camera/menu/TimerCountingMenu;->mProgressDegree:I
     invoke-static {v0, v2}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->access$102(Lcom/sec/android/app/camera/menu/TimerCountingMenu;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu$2;->this$0:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
@@ -82,7 +81,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu$2;->this$0:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/TimerCountingMenu;->mProgressWheelTimer:Lcom/sec/android/app/camera/widget/gl/ProgressWheel;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->access$400(Lcom/sec/android/app/camera/menu/TimerCountingMenu;)Lcom/sec/android/app/camera/widget/gl/ProgressWheel;
 
     move-result-object v0

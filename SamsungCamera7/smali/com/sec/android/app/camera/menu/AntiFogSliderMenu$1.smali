@@ -69,7 +69,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu$1;->this$0:Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->refreshSlider()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->access$000(Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;)V
 
     goto :goto_1

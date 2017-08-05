@@ -163,7 +163,6 @@
 
     invoke-virtual {v5, v4, v0, v7}, Landroid/support/v4/widget/ViewDragHelper;->smoothSlideViewTo(Landroid/view/View;II)Z
 
-    # setter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->isPeeking:Z
     invoke-static {v2, v6}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$202(Landroid/support/v4/widget/DrawerLayout$LayoutParams;Z)Z
 
     iget-object v5, p0, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;->this$0:Landroid/support/v4/widget/DrawerLayout;
@@ -376,7 +375,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Landroid/support/v4/widget/DrawerLayout$LayoutParams;->isPeeking:Z
     invoke-static {v0, v1}, Landroid/support/v4/widget/DrawerLayout$LayoutParams;->access$202(Landroid/support/v4/widget/DrawerLayout$LayoutParams;Z)Z
 
     invoke-direct {p0}, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;->closeOtherDrawer()V

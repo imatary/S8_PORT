@@ -34,7 +34,6 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
 
-    # getter for: Lcom/android/keyguard/KeyguardSecurityModel;->sLock:Ljava/lang/Object;
     invoke-static {}, Lcom/android/keyguard/KeyguardSecurityModel;->access$000()Ljava/lang/Object;
 
     move-result-object v1
@@ -42,7 +41,6 @@
     monitor-enter v1
 
     :try_start_0
-    # getter for: Lcom/android/keyguard/KeyguardSecurityModel;->sLock:Ljava/lang/Object;
     invoke-static {}, Lcom/android/keyguard/KeyguardSecurityModel;->access$000()Ljava/lang/Object;
 
     move-result-object v0

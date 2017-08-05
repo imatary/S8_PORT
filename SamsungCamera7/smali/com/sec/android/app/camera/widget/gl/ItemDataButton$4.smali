@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemDataButton$4;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemDataButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemDataButton;->mTouchListener:Lcom/samsung/android/glview/GLView$TouchListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/ItemDataButton;->access$600(Lcom/sec/android/app/camera/widget/gl/ItemDataButton;)Lcom/samsung/android/glview/GLView$TouchListener;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemDataButton$4;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemDataButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemDataButton;->mTouchListener:Lcom/samsung/android/glview/GLView$TouchListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/ItemDataButton;->access$700(Lcom/sec/android/app/camera/widget/gl/ItemDataButton;)Lcom/samsung/android/glview/GLView$TouchListener;
 
     move-result-object v0

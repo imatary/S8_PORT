@@ -2593,7 +2593,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->mRecordingTimerIndicatorHandler:Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator$RecordingHandler;
 
-    # invokes: Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator$RecordingHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator$RecordingHandler;->access$000(Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator$RecordingHandler;)V
 
     const/4 v0, 0x0

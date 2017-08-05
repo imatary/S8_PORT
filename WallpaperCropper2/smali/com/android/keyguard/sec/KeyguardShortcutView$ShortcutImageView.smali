@@ -112,7 +112,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutImageView;->mPaint:Landroid/graphics/Paint;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->sFontSizeDefault:I
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2600()I
 
     move-result v1
@@ -123,7 +122,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutImageView;->mPaint:Landroid/graphics/Paint;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mBadgeCountColor:I
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2700()I
 
     move-result v1
@@ -154,7 +152,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutImageView;->mPaint:Landroid/graphics/Paint;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->sFontSizeDefault:I
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2600()I
 
     move-result v1
@@ -164,7 +161,6 @@
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setTextSize(F)V
 
     :goto_0
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->sBadgeDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3900()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -193,7 +189,6 @@
 
     add-int v7, v3, v0
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->sBadgeDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3900()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -204,7 +199,6 @@
 
     sub-int v4, v0, v6
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->sBadgeDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3900()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -268,14 +262,12 @@
 
     invoke-direct {v6, v3}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->sBadgeDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3900()Landroid/graphics/drawable/Drawable;
 
     move-result-object v7
 
     invoke-virtual {v7, v11, v11, v2, v0}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->sBadgeDrawable:Landroid/graphics/drawable/Drawable;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3900()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -318,7 +310,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutImageView;->mPaint:Landroid/graphics/Paint;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->sFontSizeSmall:I
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3800()I
 
     move-result v1
@@ -417,7 +408,6 @@
 
     move-result v0
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->sIconTopToTopOffset:I
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2800()I
 
     move-result v2
@@ -434,7 +424,6 @@
 
     div-int/lit8 v0, v3, 0x2
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->sIconCenterXOffset:I
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$2900()I
 
     move-result v5
@@ -480,24 +469,20 @@
     goto :goto_2
 
     :cond_3
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHolographicPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3100()Landroid/graphics/Paint;
 
     move-result-object v0
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->sCoarseClipTable:Landroid/graphics/MaskFilter;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3000()Landroid/graphics/MaskFilter;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setMaskFilter(Landroid/graphics/MaskFilter;)Landroid/graphics/MaskFilter;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHolographicPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3100()Landroid/graphics/Paint;
 
     move-result-object v0
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mOuterGlowColor:I
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3200()I
 
     move-result v1
@@ -510,14 +495,12 @@
 
     if-nez v0, :cond_4
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mSaturationPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3300()Landroid/graphics/Paint;
 
     move-result-object v0
 
     invoke-virtual {v0, v8}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHolographicPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3100()Landroid/graphics/Paint;
 
     move-result-object v0
@@ -547,12 +530,10 @@
 
     move-result-object v0
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mShortcutImageViewWidth:I
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3400()I
 
     move-result v1
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mShortcutImageViewHeight:I
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3500()I
 
     move-result v2
@@ -581,19 +562,16 @@
 
     invoke-direct {v2, v3, v7, v4, v5}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mSaturationPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3300()Landroid/graphics/Paint;
 
     move-result-object v3
 
     invoke-virtual {p1, v0, v9, v2, v3}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mBlurPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3600()Landroid/graphics/Paint;
 
     move-result-object v2
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mTempOffset:[I
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3700()[I
 
     move-result-object v3
@@ -626,7 +604,6 @@
 
     invoke-direct {v2, v3, v4, v1, v5}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHolographicPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3100()Landroid/graphics/Paint;
 
     move-result-object v1
@@ -652,14 +629,12 @@
 
     if-gez v0, :cond_5
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mSaturationPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3300()Landroid/graphics/Paint;
 
     move-result-object v0
 
     invoke-virtual {v0, v8}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHolographicPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3100()Landroid/graphics/Paint;
 
     move-result-object v0
@@ -677,14 +652,12 @@
 
     if-gez v0, :cond_6
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mSaturationPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3300()Landroid/graphics/Paint;
 
     move-result-object v0
 
     invoke-virtual {v0, v6}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHolographicPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3100()Landroid/graphics/Paint;
 
     move-result-object v0
@@ -702,14 +675,12 @@
 
     if-gez v0, :cond_7
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mSaturationPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3300()Landroid/graphics/Paint;
 
     move-result-object v0
 
     invoke-virtual {v0, v6}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHolographicPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3100()Landroid/graphics/Paint;
 
     move-result-object v0
@@ -737,14 +708,12 @@
     goto/16 :goto_3
 
     :cond_7
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mSaturationPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3300()Landroid/graphics/Paint;
 
     move-result-object v0
 
     invoke-virtual {v0, v6}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHolographicPaint:Landroid/graphics/Paint;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$3100()Landroid/graphics/Paint;
 
     move-result-object v0

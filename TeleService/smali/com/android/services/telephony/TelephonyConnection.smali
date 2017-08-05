@@ -856,6 +856,18 @@
     invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
 
     :cond_1
+    iget-object v0, p0, Lcom/android/services/telephony/TelephonyConnection;->mOriginalConnection:Lcom/android/internal/telephony/Connection;
+
+    iget-object v1, p0, Lcom/android/services/telephony/TelephonyConnection;->mPostDialListener:Lcom/android/internal/telephony/Connection$PostDialListener;
+
+    invoke-virtual {v0, v1}, Lcom/android/internal/telephony/Connection;->removePostDialListener(Lcom/android/internal/telephony/Connection$PostDialListener;)V
+
+    iget-object v0, p0, Lcom/android/services/telephony/TelephonyConnection;->mOriginalConnection:Lcom/android/internal/telephony/Connection;
+
+    iget-object v1, p0, Lcom/android/services/telephony/TelephonyConnection;->mOriginalConnectionListener:Lcom/android/internal/telephony/Connection$Listener;
+
+    invoke-virtual {v0, v1}, Lcom/android/internal/telephony/Connection;->removeListener(Lcom/android/internal/telephony/Connection$Listener;)V
+
     iput-object v4, p0, Lcom/android/services/telephony/TelephonyConnection;->mOriginalConnection:Lcom/android/internal/telephony/Connection;
 
     iput-boolean v2, p0, Lcom/android/services/telephony/TelephonyConnection;->mNeedHangupWhenConnected:Z
@@ -1672,7 +1684,7 @@
     :cond_0
     if-eqz v1, :cond_1
 
-    const v2, 0x7f0d0c8c
+    const v2, 0x7f0d0cfd
 
     :goto_0
     invoke-virtual {p0}, Lcom/android/services/telephony/TelephonyConnection;->getPhone()Lcom/android/internal/telephony/Phone;
@@ -1693,7 +1705,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0200c5
+    const v6, 0x7f0200c8
 
     invoke-static {v5, v6}, Landroid/graphics/drawable/Icon;->createWithResource(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Icon;
 
@@ -1707,7 +1719,7 @@
     return-void
 
     :cond_1
-    const v2, 0x7f0d0c8d
+    const v2, 0x7f0d0cfe
 
     goto :goto_0
 

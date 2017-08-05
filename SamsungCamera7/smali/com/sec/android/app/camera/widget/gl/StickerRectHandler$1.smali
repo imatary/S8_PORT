@@ -48,7 +48,6 @@
     :goto_1
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$1;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkTextEditBG:[Lcom/samsung/android/glview/GLRectangle;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->access$000(Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;)[Lcom/samsung/android/glview/GLRectangle;
 
     move-result-object v1
@@ -59,7 +58,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$1;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkTextEditBG:[Lcom/samsung/android/glview/GLRectangle;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->access$000(Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;)[Lcom/samsung/android/glview/GLRectangle;
 
     move-result-object v1
@@ -80,7 +78,6 @@
     :goto_2
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$1;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkTextEditBG:[Lcom/samsung/android/glview/GLRectangle;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->access$000(Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;)[Lcom/samsung/android/glview/GLRectangle;
 
     move-result-object v1
@@ -91,7 +88,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$1;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkTextEditBG:[Lcom/samsung/android/glview/GLRectangle;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->access$000(Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;)[Lcom/samsung/android/glview/GLRectangle;
 
     move-result-object v1

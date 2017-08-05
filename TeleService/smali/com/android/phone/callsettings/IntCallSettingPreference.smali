@@ -210,7 +210,7 @@
 
     move-result-object v0
 
-    const v5, 0x7f0d0952
+    const v5, 0x7f0d09b8
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/IntCallSettingPreference;->getString(I)Ljava/lang/String;
 
@@ -218,7 +218,7 @@
 
     if-lez v4, :cond_4
 
-    const v5, 0x7f0d0950
+    const v5, 0x7f0d09b6
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/IntCallSettingPreference;->getString(I)Ljava/lang/String;
 
@@ -241,7 +241,7 @@
 
     if-eqz v5, :cond_2
 
-    const v5, 0x7f0d0953
+    const v5, 0x7f0d09b9
 
     invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/IntCallSettingPreference;->getString(I)Ljava/lang/String;
 
@@ -526,7 +526,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d05ea
+    const v5, 0x7f0d064e
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -540,7 +540,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/callsettings/IntCallSettingPreference$4;-><init>(Lcom/android/phone/callsettings/IntCallSettingPreference;)V
 
-    const v5, 0x7f0d02ca
+    const v5, 0x7f0d032a
 
     invoke-virtual {v2, v5, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -639,7 +639,7 @@
 
     invoke-direct {v2, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d05e8
+    const v4, 0x7f0d064c
 
     invoke-virtual {v2, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -649,7 +649,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d05ea
+    const v5, 0x7f0d064e
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -663,7 +663,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/callsettings/IntCallSettingPreference$3;-><init>(Lcom/android/phone/callsettings/IntCallSettingPreference;)V
 
-    const v5, 0x7f0d02ca
+    const v5, 0x7f0d032a
 
     invoke-virtual {v2, v5, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

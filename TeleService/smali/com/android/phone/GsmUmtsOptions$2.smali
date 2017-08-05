@@ -47,7 +47,7 @@
 
     const-string/jumbo v1, "com.sec.android.app.samsungapps"
 
-    const-string/jumbo v2, "com.sec.android.app.samsungapps.SamsungAppsMainActivity"
+    const-string/jumbo v2, "com.sec.android.app.samsungapps.Main"
 
     invoke-static {v0, v1, v2}, Lcom/android/phone/GsmUmtsOptions;->-wrap0(Lcom/android/phone/GsmUmtsOptions;Ljava/lang/String;Ljava/lang/String;)V
 

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/action_remove" android:visible="false" android:title="@string/remove_from_event" android:showAsAction="never" android:actionLayout="@layout/default_action_bar_common_button_layout" />
-</menu>

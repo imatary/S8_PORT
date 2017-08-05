@@ -36,14 +36,12 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecAttributionInfoView$1;->this$0:Lcom/android/keyguard/sec/SecAttributionInfoView;
 
-    # invokes: Lcom/android/keyguard/sec/SecAttributionInfoView;->unregisterLogoImageFileObserver()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecAttributionInfoView;->access$000(Lcom/android/keyguard/sec/SecAttributionInfoView;)V
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecAttributionInfoView$1;->this$0:Lcom/android/keyguard/sec/SecAttributionInfoView;
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/android/keyguard/sec/SecAttributionInfoView;->updateLogoImage(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/SecAttributionInfoView;->access$100(Lcom/android/keyguard/sec/SecAttributionInfoView;Z)V
 
     return-void

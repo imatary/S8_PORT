@@ -47,12 +47,10 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$8;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsBlurImageAnimating:Z
     invoke-static {v0, v2}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$302(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$8;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mHideSwitchingAnimationLock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1400(Lcom/sec/android/app/camera/menu/VisualInteraction;)Ljava/lang/Object;
 
     move-result-object v1
@@ -62,7 +60,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$8;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsHideSwitchingAnimationWaiting:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1500(Lcom/sec/android/app/camera/menu/VisualInteraction;)Z
 
     move-result v0
@@ -71,14 +68,12 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$8;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # invokes: Lcom/sec/android/app/camera/menu/VisualInteraction;->hideCameraSwitchingAnimation()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1600(Lcom/sec/android/app/camera/menu/VisualInteraction;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$8;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsHideSwitchingAnimationWaiting:Z
     invoke-static {v0, v2}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1502(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
 
     :cond_0
@@ -109,7 +104,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsBlurImageAnimating:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$302(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
 
     return-void

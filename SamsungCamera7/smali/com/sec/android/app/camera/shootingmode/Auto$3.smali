@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$700(Lcom/sec/android/app/camera/shootingmode/Auto;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -62,7 +61,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$500(Lcom/sec/android/app/camera/shootingmode/Auto;)Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     move-result-object v0

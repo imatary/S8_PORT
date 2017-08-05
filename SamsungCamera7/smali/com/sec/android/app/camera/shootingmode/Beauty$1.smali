@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Beauty$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Beauty;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Beauty;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Beauty;->access$000(Lcom/sec/android/app/camera/shootingmode/Beauty;)Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     move-result-object v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Beauty$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Beauty;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Beauty;->mBeautyLiteMenuButton:Lcom/samsung/android/glview/GLButton;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Beauty;->access$100(Lcom/sec/android/app/camera/shootingmode/Beauty;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v0

@@ -55,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama$1;->this$0:Lcom/sec/android/app/camera/shootingmode/BurstPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mIsPanoramaCapturing:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$100(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)Z
 
     move-result v0
@@ -64,7 +63,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama$1;->this$0:Lcom/sec/android/app/camera/shootingmode/BurstPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mCaptureCount:I
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$200(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)I
 
     move-result v0
@@ -86,7 +84,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama$1;->this$0:Lcom/sec/android/app/camera/shootingmode/BurstPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mIsPanoramaStopping:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$300(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)Z
 
     move-result v0
@@ -104,7 +101,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama$1;->this$0:Lcom/sec/android/app/camera/shootingmode/BurstPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$400(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v0
@@ -113,7 +109,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama$1;->this$0:Lcom/sec/android/app/camera/shootingmode/BurstPanorama;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->stopPanoramaCapturing()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->access$500(Lcom/sec/android/app/camera/shootingmode/BurstPanorama;)V
 
     goto :goto_0

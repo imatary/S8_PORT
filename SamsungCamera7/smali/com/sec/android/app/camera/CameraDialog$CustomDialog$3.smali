@@ -37,7 +37,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 4
 
-    # getter for: Lcom/sec/android/app/camera/CameraDialog;->mListeners:Ljava/util/List;
     invoke-static {}, Lcom/sec/android/app/camera/CameraDialog;->access$600()Ljava/util/List;
 
     move-result-object v2
@@ -45,7 +44,6 @@
     monitor-enter v2
 
     :try_start_0
-    # getter for: Lcom/sec/android/app/camera/CameraDialog;->mListeners:Ljava/util/List;
     invoke-static {}, Lcom/sec/android/app/camera/CameraDialog;->access$600()Ljava/util/List;
 
     move-result-object v1
@@ -69,7 +67,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog$3;->this$1:Lcom/sec/android/app/camera/CameraDialog$CustomDialog;
 
-    # getter for: Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->mDialogID:Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
     invoke-static {v3}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->access$700(Lcom/sec/android/app/camera/CameraDialog$CustomDialog;)Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
     move-result-object v3
@@ -95,7 +92,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog$3;->this$1:Lcom/sec/android/app/camera/CameraDialog$CustomDialog;
 
-    # getter for: Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->access$900(Lcom/sec/android/app/camera/CameraDialog$CustomDialog;)Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object v1
@@ -104,7 +100,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog$3;->this$1:Lcom/sec/android/app/camera/CameraDialog$CustomDialog;
 
-    # getter for: Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->access$900(Lcom/sec/android/app/camera/CameraDialog$CustomDialog;)Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object v1

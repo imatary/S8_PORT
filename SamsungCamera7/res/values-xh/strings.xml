@@ -306,6 +306,7 @@ correction"</string>
     <string name="camera_label">Ikhamera</string>
     <string name="camera_modes">Camera modes</string>
     <string name="camera_security_enter">Ipolisi yokhuseleko ithintela ukusetyenziswa kweKhamera.</string>
+    <string name="can_not_use_voice_control">"Can't use Voice control while Bixby Voice wake-up is on."</string>
     <string name="cancel">Yiyekise</string>
     <string name="cannot_start_camcorder_msg">Ayikwazi ukurekhoda iividiyo ebudeni bomnxeba.</string>
     <string name="cannot_start_camera_msg">Unable to use Camera during calls.</string>
@@ -602,6 +603,7 @@ If you agree to this, Tag shot will be granted this permission and you will not 
     <string name="task_edge_title_selfie">"Take
 selfie"</string>
     <string name="temperature">Temperature</string>
+    <string name="temperature_too_high_camera_off">Temperature too high to use %1$s. Wait for phone to cool down before using %2$s.</string>
     <string name="temperature_too_high_flash_off">Ayikwazi ukulayita ifleshi. Zama kwakhona xa isixhobo sakho sipholile.</string>
     <string name="temperature_too_high_record">Unable to record video. Try again when device cooled down.</string>
     <string name="temperature_too_high_recording_disable">Urekhodo lumile. Unako ukurekhoda xa isixhobo sakho sipholile.</string>

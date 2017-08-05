@@ -41,34 +41,28 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$15;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->setOrientationAndUpdateParameter()V
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2200(Lcom/sec/android/app/camera/engine/CommonEngine;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$15;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->updateGpsParameters()V
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1600(Lcom/sec/android/app/camera/engine/CommonEngine;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$15;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$15;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mParameters:Lcom/samsung/android/camera/core/SemCamera$Parameters;
     invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1900(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/samsung/android/camera/core/SemCamera$Parameters;
 
     move-result-object v1
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->setParameters(Lcom/samsung/android/camera/core/SemCamera$Parameters;)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2000(Lcom/sec/android/app/camera/engine/CommonEngine;Lcom/samsung/android/camera/core/SemCamera$Parameters;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$15;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->setShootingModeCallbacks(Z)V
     invoke-static {v0, v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2400(Lcom/sec/android/app/camera/engine/CommonEngine;Z)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$15;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -79,7 +73,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$15;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$700(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/samsung/android/camera/core/SemCamera;
 
     move-result-object v0
@@ -88,7 +81,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$15;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mStartPanoramaListener:Lcom/sec/android/app/camera/interfaces/Engine$StartPanoramaListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$StartPanoramaListener;
 
     move-result-object v0
@@ -97,7 +89,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$15;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mStartPanoramaListener:Lcom/sec/android/app/camera/interfaces/Engine$StartPanoramaListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$StartPanoramaListener;
 
     move-result-object v0

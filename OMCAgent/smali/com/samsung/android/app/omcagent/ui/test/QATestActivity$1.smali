@@ -43,7 +43,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/samsung/android/app/omcagent/ui/test/QATestActivity;->command:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity;->access$002(Lcom/samsung/android/app/omcagent/ui/test/QATestActivity;Ljava/lang/String;)Ljava/lang/String;
 
     return-void

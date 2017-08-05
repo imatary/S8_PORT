@@ -350,7 +350,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d05ff
+    const v3, 0x7f0d0663
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -401,7 +401,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0600
+    const v3, 0x7f0d0664
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -444,7 +444,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0601
+    const v3, 0x7f0d0665
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1288,7 +1288,7 @@
 
     const/4 v5, 0x0
 
-    const v1, 0x7f0d05fc
+    const v1, 0x7f0d0660
 
     iget-object v2, p0, Lcom/android/phone/phonevoicerecorder/PhoneVoiceRecorder;->mHandler:Landroid/os/Handler;
 
@@ -1618,7 +1618,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d05fd
+    const v3, 0x7f0d0661
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

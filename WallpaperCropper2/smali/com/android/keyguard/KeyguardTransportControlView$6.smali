@@ -38,7 +38,6 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/android/keyguard/KeyguardTransportControlView;->setEnableMarquee(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardTransportControlView;->access$1600(Lcom/android/keyguard/KeyguardTransportControlView;Z)V
 
     return-void
@@ -51,7 +50,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/android/keyguard/KeyguardTransportControlView;->setEnableMarquee(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardTransportControlView;->access$1600(Lcom/android/keyguard/KeyguardTransportControlView;Z)V
 
     return-void

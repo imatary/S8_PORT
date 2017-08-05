@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/event_view_suggestion_bg" />
-    <corners android:radius="@dimen/event_view_suggetion_bg_radius" />
-</shape>

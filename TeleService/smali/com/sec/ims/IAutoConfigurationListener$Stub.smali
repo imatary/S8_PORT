@@ -110,6 +110,17 @@
 
     invoke-virtual {p2, v2}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
+    invoke-virtual {p0}, Lcom/sec/ims/IAutoConfigurationListener$Stub;->onVerificationCodeNeeded()V
+
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    return v1
+
+    :sswitch_2
+    const-string/jumbo v2, "com.sec.ims.IAutoConfigurationListener"
+
+    invoke-virtual {p2, v2}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
@@ -125,11 +136,10 @@
 
     return v1
 
-    nop
-
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_1
+        0x2 -> :sswitch_2
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method

@@ -92,13 +92,11 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/TagShot;->updateTagInfo()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$2600(Lcom/sec/android/app/camera/shootingmode/TagShot;)V
 
     goto :goto_0
 
     :pswitch_1
-    # invokes: Lcom/sec/android/app/camera/shootingmode/TagShot;->restoreDefaultShootingMode()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$2700(Lcom/sec/android/app/camera/shootingmode/TagShot;)V
 
     goto :goto_0

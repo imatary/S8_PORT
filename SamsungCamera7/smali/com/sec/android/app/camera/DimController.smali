@@ -3860,38 +3860,6 @@
 
     invoke-direct {p0, v2}, Lcom/sec/android/app/camera/DimController;->setSettingDefault([I)V
 
-    sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY:Z
-
-    if-eqz v2, :cond_12
-
-    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getBeautyLevel()I
-
-    move-result v2
-
-    invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setBeautyLevel(I)V
-
-    sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY_SLIMFACE:Z
-
-    if-eqz v2, :cond_11
-
-    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getSlimFaceLevel()I
-
-    move-result v2
-
-    invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setSlimFaceLevel(I)V
-
-    :cond_11
-    sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY_EYEENLARGE:Z
-
-    if-eqz v2, :cond_12
-
-    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getEyeEnlargeLevel()I
-
-    move-result v2
-
-    invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setEyeEnlargeLevel(I)V
-
-    :cond_12
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isStickerMode()Z
 
     move-result v2
@@ -4370,7 +4338,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_13
+    if-eqz v2, :cond_11
 
     const/4 v2, 0x1
 
@@ -4400,7 +4368,7 @@
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setSelfFlip(I)V
 
-    :cond_13
+    :cond_11
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setVideoCollageResolution()V
 
     goto/16 :goto_1
@@ -4530,7 +4498,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_14
+    if-nez v2, :cond_12
 
     iget-object v2, p0, Lcom/sec/android/app/camera/DimController;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
@@ -4542,9 +4510,9 @@
 
     move-result v2
 
-    if-eqz v2, :cond_15
+    if-eqz v2, :cond_13
 
-    :cond_14
+    :cond_12
     const/4 v2, 0x1
 
     new-array v2, v2, [I
@@ -4569,7 +4537,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/DimController$DimArray;->saveSettingMulti([I)V
 
-    :cond_15
+    :cond_13
     const/4 v2, 0x0
 
     invoke-static {v2}, Lcom/sec/android/app/camera/util/StorageUtils;->getUpdatedStorageStatus(I)I
@@ -4617,7 +4585,7 @@
     goto/16 :goto_1
 
     :sswitch_21
-    if-ne p2, v5, :cond_16
+    if-ne p2, v5, :cond_14
 
     const/4 v2, 0x6
 
@@ -4645,12 +4613,12 @@
 
     goto/16 :goto_1
 
-    :cond_16
+    :cond_14
     if-ne p2, v6, :cond_2
 
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_GPU_EFFECT:Z
 
-    if-eqz v2, :cond_18
+    if-eqz v2, :cond_16
 
     const/16 v2, 0xb
 
@@ -4687,7 +4655,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_17
+    if-eqz v2, :cond_15
 
     const/4 v2, 0x1
 
@@ -4701,7 +4669,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/DimController$DimArray;->setDimMulti([I)V
 
-    :cond_17
+    :cond_15
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCamcorderResolution()I
 
     move-result v2
@@ -4714,7 +4682,7 @@
 
     goto/16 :goto_1
 
-    :cond_18
+    :cond_16
     const/16 v2, 0xa
 
     new-array v2, v2, [I
@@ -4867,7 +4835,7 @@
 
     move-result v2
 
-    if-ne p2, v2, :cond_19
+    if-ne p2, v2, :cond_17
 
     const/4 v2, 0x4
 
@@ -4895,7 +4863,7 @@
 
     goto/16 :goto_1
 
-    :cond_19
+    :cond_17
     iget-object v2, p0, Lcom/sec/android/app/camera/DimController;->mCameraContext:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->getEngine()Lcom/sec/android/app/camera/interfaces/Engine;
@@ -5160,15 +5128,15 @@
     goto/16 :goto_1
 
     :sswitch_2d
-    if-eq p2, v5, :cond_1a
+    if-eq p2, v5, :cond_18
 
-    if-eq p2, v6, :cond_1a
+    if-eq p2, v6, :cond_18
 
     const/4 v2, 0x3
 
     if-ne p2, v2, :cond_2
 
-    :cond_1a
+    :cond_18
     const/4 v2, 0x3
 
     new-array v2, v2, [I
@@ -5226,8 +5194,6 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     goto/16 :goto_1
-
-    nop
 
     :sswitch_data_0
     .sparse-switch

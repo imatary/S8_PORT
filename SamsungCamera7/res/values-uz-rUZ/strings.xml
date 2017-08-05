@@ -313,6 +313,7 @@ tuzatish"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Kamera rejimlari</string>
     <string name="camera_security_enter">Xavfsizlik qonun-qoidalari Kameradan foydalanishni cheklaydi.</string>
+    <string name="can_not_use_voice_control">Bixby Voice ovoz bilan uyg‘otish yoqilgan vaqtda Ovoz bilan boshqarishdan foydalanib bo‘lmaydi.</string>
     <string name="cancel">Bekor qilish</string>
     <string name="cannot_start_camcorder_msg">Qo‘ng‘iroq mobaynida video yozib bo‘lmaydi.</string>
     <string name="cannot_start_camera_msg">Qo‘ng‘iroqlar vaqtida Kameradan foydalanib bo‘lmaydi.</string>
@@ -609,6 +610,7 @@ Agar bunga rozi bo‘lsangiz, Teg kadriga ruxsat beriladi va Sizdan boshqa savol
     <string name="task_edge_title_selfie">"Selfi
 olish"</string>
     <string name="temperature">Harorat</string>
+    <string name="temperature_too_high_camera_off">%1$s’dan foydalanish uchun harorat juda yuqori. %2$s’ni ishlatishdan oldin telefon sovishini kuting.</string>
     <string name="temperature_too_high_flash_off">Fleshni yoqib bo‘lmaydi. Qurilmangiz soviganda, qayta urinib ko‘ring</string>
     <string name="temperature_too_high_record">Videoni yozib olib bo‘lmaydi. Qurilma sovigandan so‘ng qayta urinib ko‘ring.</string>
     <string name="temperature_too_high_recording_disable">Yozib olish to‘xtatildi. Qurilmangiz soviganda, yozib olishingiz mumkin</string>

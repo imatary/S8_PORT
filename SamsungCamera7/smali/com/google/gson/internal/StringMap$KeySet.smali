@@ -94,7 +94,6 @@
 
     iget-object v1, p0, Lcom/google/gson/internal/StringMap$KeySet;->this$0:Lcom/google/gson/internal/StringMap;
 
-    # getter for: Lcom/google/gson/internal/StringMap;->size:I
     invoke-static {v1}, Lcom/google/gson/internal/StringMap;->access$500(Lcom/google/gson/internal/StringMap;)I
 
     move-result v0
@@ -105,7 +104,6 @@
 
     iget-object v1, p0, Lcom/google/gson/internal/StringMap$KeySet;->this$0:Lcom/google/gson/internal/StringMap;
 
-    # getter for: Lcom/google/gson/internal/StringMap;->size:I
     invoke-static {v1}, Lcom/google/gson/internal/StringMap;->access$500(Lcom/google/gson/internal/StringMap;)I
 
     move-result v1
@@ -128,7 +126,6 @@
 
     iget-object v0, p0, Lcom/google/gson/internal/StringMap$KeySet;->this$0:Lcom/google/gson/internal/StringMap;
 
-    # getter for: Lcom/google/gson/internal/StringMap;->size:I
     invoke-static {v0}, Lcom/google/gson/internal/StringMap;->access$500(Lcom/google/gson/internal/StringMap;)I
 
     move-result v0

@@ -38,7 +38,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/android/keyguard/KeyguardPatternView;->mEMAPress:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardPatternView;->access$102(Lcom/android/keyguard/KeyguardPatternView;Z)Z
 
     return-void

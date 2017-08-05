@@ -75,7 +75,6 @@
 .method public static extractMessagingStyleFromNotification(Landroid/app/Notification;)Landroid/support/v4/app/NotificationCompat$MessagingStyle;
     .locals 4
 
-    # getter for: Landroid/support/v4/app/NotificationCompat;->IMPL:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
     invoke-static {}, Landroid/support/v4/app/NotificationCompat;->access$300()Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
 
     move-result-object v3

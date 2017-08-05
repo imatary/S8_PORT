@@ -3,12 +3,12 @@
 .source "WifiCallActivity.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/content/DialogInterface$OnKeyListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/callsettings/WifiCallActivity;->showLocationInfoDialog()V
+    value = Lcom/android/phone/callsettings/WifiCallActivity;->showWfcOPLDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,12 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/phone/callsettings/WifiCallActivity;
 
-.field final synthetic val$checkBox:Landroid/widget/CheckBox;
-
 
 # direct methods
-.method constructor <init>(Lcom/android/phone/callsettings/WifiCallActivity;Landroid/widget/CheckBox;)V
+.method constructor <init>(Lcom/android/phone/callsettings/WifiCallActivity;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/phone/callsettings/WifiCallActivity$11;->this$0:Lcom/android/phone/callsettings/WifiCallActivity;
-
-    iput-object p2, p0, Lcom/android/phone/callsettings/WifiCallActivity$11;->val$checkBox:Landroid/widget/CheckBox;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,56 +34,29 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 3
+.method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
+    .locals 2
 
-    const/4 v2, 0x1
+    const/4 v1, 0x0
 
-    iget-object v0, p0, Lcom/android/phone/callsettings/WifiCallActivity$11;->val$checkBox:Landroid/widget/CheckBox;
+    const/4 v0, 0x4
 
-    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
+    if-ne p2, v0, :cond_0
 
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const-string/jumbo v0, "wfc_dialog_show_never_again"
-
-    invoke-static {v0, v2}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
-
-    :cond_0
     iget-object v0, p0, Lcom/android/phone/callsettings/WifiCallActivity$11;->this$0:Lcom/android/phone/callsettings/WifiCallActivity;
 
-    invoke-virtual {v0}, Lcom/android/phone/callsettings/WifiCallActivity;->getApplicationContext()Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/phone/callsettings/WifiCallActivity;->-get1(Lcom/android/phone/callsettings/WifiCallActivity;)Landroid/widget/Switch;
 
     move-result-object v0
 
-    const-string/jumbo v1, "wifi_call_enable"
+    invoke-virtual {v0, v1}, Landroid/widget/Switch;->setChecked(Z)V
 
-    invoke-static {v0, v1, v2}, Lcom/android/phone/VoWifiSettingsDataBaseManager;->setInt(Landroid/content/Context;Ljava/lang/String;I)V
+    invoke-interface {p1}, Landroid/content/DialogInterface;->cancel()V
 
-    const-string/jumbo v0, "vowifi_in_can"
+    const/4 v0, 0x1
 
-    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    return v0
 
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-static {}, Lcom/android/phone/callsettings/WifiCallActivity;->-get3()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    :cond_1
-    :goto_0
-    return-void
-
-    :cond_2
-    iget-object v0, p0, Lcom/android/phone/callsettings/WifiCallActivity$11;->this$0:Lcom/android/phone/callsettings/WifiCallActivity;
-
-    invoke-static {v0}, Lcom/android/phone/callsettings/WifiCallActivity;->-wrap4(Lcom/android/phone/callsettings/WifiCallActivity;)V
-
-    goto :goto_0
+    :cond_0
+    return v1
 .end method

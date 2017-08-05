@@ -57,7 +57,7 @@
 
     iget-object v0, v0, Lcom/android/phone/answeringmemo/AnsweringMemoList;->playIcon:Landroid/widget/ImageButton;
 
-    const v1, 0x7f020142
+    const v1, 0x7f020146
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -76,7 +76,7 @@
 
     iget-object v0, v0, Lcom/android/phone/answeringmemo/AnsweringMemoList;->playIcon:Landroid/widget/ImageButton;
 
-    const v1, 0x7f020141
+    const v1, 0x7f020145
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setImageResource(I)V
 

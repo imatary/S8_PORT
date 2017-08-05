@@ -45,9 +45,9 @@
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 9
 
-    const v8, 0x7f090278
+    const v8, 0x7f09027a
 
-    const v7, 0x7f09024f
+    const v7, 0x7f090251
 
     const/4 v6, 0x1
 
@@ -104,7 +104,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/ListSettingFragment;->mList:[Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->access$100(Lcom/sec/android/app/camera/setting/ListSettingFragment;)[Ljava/lang/String;
 
     move-result-object v3
@@ -121,7 +120,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionIdList:[I
     invoke-static {v4}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->access$200(Lcom/sec/android/app/camera/setting/ListSettingFragment;)[I
 
     move-result-object v4
@@ -145,7 +143,6 @@
     :goto_1
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/ListSettingFragment;->mActivity:Lcom/sec/android/app/camera/setting/CameraSettingActivity;
     invoke-static {v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->access$300(Lcom/sec/android/app/camera/setting/ListSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingActivity;
 
     move-result-object v2
@@ -158,14 +155,12 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/ListSettingFragment;->mActivity:Lcom/sec/android/app/camera/setting/CameraSettingActivity;
     invoke-static {v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->access$300(Lcom/sec/android/app/camera/setting/ListSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingActivity;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionIdList:[I
     invoke-static {v3}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->access$200(Lcom/sec/android/app/camera/setting/ListSettingFragment;)[I
 
     move-result-object v3
@@ -195,7 +190,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/ListSettingFragment;->mListType:I
     invoke-static {v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->access$400(Lcom/sec/android/app/camera/setting/ListSettingFragment;)I
 
     move-result v2
@@ -204,7 +198,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/ListSettingFragment;->mListType:I
     invoke-static {v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->access$400(Lcom/sec/android/app/camera/setting/ListSettingFragment;)I
 
     move-result v2
@@ -224,7 +217,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionIdList:[I
     invoke-static {v4}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->access$200(Lcom/sec/android/app/camera/setting/ListSettingFragment;)[I
 
     move-result-object v4
@@ -313,7 +305,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionIdList:[I
     invoke-static {v4}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->access$200(Lcom/sec/android/app/camera/setting/ListSettingFragment;)[I
 
     move-result-object v4

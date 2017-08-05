@@ -921,7 +921,7 @@
 
     iput-object v0, p0, Lcom/android/phone/callsettings/SubNumberManager;->listView:Landroid/widget/ListView;
 
-    const v0, 0x7f10029b
+    const v0, 0x7f10029e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1102,7 +1102,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d05c4
+    const v6, 0x7f0d0628
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1170,7 +1170,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d05c4
+    const v6, 0x7f0d0628
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1658,7 +1658,7 @@
 .method private updateTitleBar()V
     .locals 2
 
-    const v1, 0x7f0d0caa
+    const v1, 0x7f0d0d1b
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SubNumberManager;->getString(I)Ljava/lang/String;
 
@@ -2389,7 +2389,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/SubNumberManager;->mSubNumberHelp:Landroid/preference/PreferenceCategory;
 
-    const v2, 0x7f0d0cab
+    const v2, 0x7f0d0d1c
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/SubNumberManager;->getString(I)Ljava/lang/String;
 
@@ -2714,7 +2714,7 @@
     return v4
 
     :cond_3
-    const v1, 0x7f0d0cac
+    const v1, 0x7f0d0d1d
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SubNumberManager;->getString(I)Ljava/lang/String;
 
@@ -2827,7 +2827,7 @@
 
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
-    const v1, 0x7f0d050b
+    const v1, 0x7f0d056b
 
     invoke-interface {p1, v3, v2, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -2835,7 +2835,7 @@
 
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
-    const v1, 0x7f0d0510
+    const v1, 0x7f0d0570
 
     invoke-interface {p1, v3, v6, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 

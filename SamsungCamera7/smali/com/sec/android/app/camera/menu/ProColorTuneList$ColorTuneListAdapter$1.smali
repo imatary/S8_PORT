@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mProColorTuneListSelectListener:Lcom/sec/android/app/camera/menu/ProColorTuneList$ProColorTuneListSelectListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$800(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Lcom/sec/android/app/camera/menu/ProColorTuneList$ProColorTuneListSelectListener;
 
     move-result-object v0
@@ -52,7 +51,6 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mProColorTuneListSelectListener:Lcom/sec/android/app/camera/menu/ProColorTuneList$ProColorTuneListSelectListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$800(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Lcom/sec/android/app/camera/menu/ProColorTuneList$ProColorTuneListSelectListener;
 
     move-result-object v0

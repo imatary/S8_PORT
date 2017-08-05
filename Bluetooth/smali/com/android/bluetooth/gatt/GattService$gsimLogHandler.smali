@@ -253,6 +253,52 @@
 
     move-result v6
 
+    if-ne v3, v7, :cond_3
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
+
+    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap17(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
+
+    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap30(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
+
+    move-object/from16 v0, p1
+
+    iget v14, v0, Landroid/os/Message;->arg1:I
+
+    invoke-static {v13, v10, v14, v2}, Lcom/android/bluetooth/gatt/GattService;->-wrap29(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;II)V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
+
+    move-object/from16 v0, p1
+
+    iget v14, v0, Landroid/os/Message;->arg2:I
+
+    invoke-static {v13, v10, v14}, Lcom/android/bluetooth/gatt/GattService;->-wrap26(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;I)V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
+
+    invoke-static {v13, v12}, Lcom/android/bluetooth/gatt/GattService;->-wrap18(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
+
+    invoke-static {v13, v6}, Lcom/android/bluetooth/gatt/GattService;->-wrap15(Lcom/android/bluetooth/gatt/GattService;Z)V
+
     const-string/jumbo v13, "BATCH_SCAN"
 
     invoke-virtual {v13, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -265,55 +311,9 @@
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v12, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap24(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap16(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     :cond_2
-    if-ne v3, v7, :cond_3
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
-
-    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap15(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
-
-    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap29(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
-
-    move-object/from16 v0, p1
-
-    iget v14, v0, Landroid/os/Message;->arg1:I
-
-    invoke-static {v13, v10, v14, v2}, Lcom/android/bluetooth/gatt/GattService;->-wrap28(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;II)V
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
-
-    move-object/from16 v0, p1
-
-    iget v14, v0, Landroid/os/Message;->arg2:I
-
-    invoke-static {v13, v10, v14}, Lcom/android/bluetooth/gatt/GattService;->-wrap25(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;I)V
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
-
-    invoke-static {v13, v12}, Lcom/android/bluetooth/gatt/GattService;->-wrap16(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
-
-    invoke-static {v13, v6}, Lcom/android/bluetooth/gatt/GattService;->-wrap14(Lcom/android/bluetooth/gatt/GattService;Z)V
-
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
@@ -340,12 +340,12 @@
 
     iget v14, v0, Landroid/os/Message;->arg2:I
 
-    invoke-static {v13, v14}, Lcom/android/bluetooth/gatt/GattService;->-wrap19(Lcom/android/bluetooth/gatt/GattService;I)V
+    invoke-static {v13, v14}, Lcom/android/bluetooth/gatt/GattService;->-wrap21(Lcom/android/bluetooth/gatt/GattService;I)V
 
     goto/16 :goto_1
 
     :cond_3
-    if-nez v7, :cond_4
+    if-nez v7, :cond_5
 
     move-object/from16 v0, p0
 
@@ -369,13 +369,13 @@
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap15(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap17(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap29(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap30(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
@@ -385,7 +385,7 @@
 
     iget v14, v0, Landroid/os/Message;->arg1:I
 
-    invoke-static {v13, v10, v14, v2}, Lcom/android/bluetooth/gatt/GattService;->-wrap28(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;II)V
+    invoke-static {v13, v10, v14, v2}, Lcom/android/bluetooth/gatt/GattService;->-wrap29(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;II)V
 
     move-object/from16 v0, p0
 
@@ -395,20 +395,35 @@
 
     iget v14, v0, Landroid/os/Message;->arg2:I
 
-    invoke-static {v13, v10, v14}, Lcom/android/bluetooth/gatt/GattService;->-wrap25(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;I)V
+    invoke-static {v13, v10, v14}, Lcom/android/bluetooth/gatt/GattService;->-wrap26(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;I)V
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v12}, Lcom/android/bluetooth/gatt/GattService;->-wrap16(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+    invoke-static {v13, v12}, Lcom/android/bluetooth/gatt/GattService;->-wrap18(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v6}, Lcom/android/bluetooth/gatt/GattService;->-wrap14(Lcom/android/bluetooth/gatt/GattService;Z)V
+    invoke-static {v13, v6}, Lcom/android/bluetooth/gatt/GattService;->-wrap15(Lcom/android/bluetooth/gatt/GattService;Z)V
 
+    const-string/jumbo v13, "BATCH_SCAN"
+
+    invoke-virtual {v13, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v13
+
+    if-eqz v13, :cond_4
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
+
+    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap16(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+
+    :cond_4
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
@@ -419,7 +434,7 @@
 
     goto/16 :goto_1
 
-    :cond_4
+    :cond_5
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
@@ -442,7 +457,7 @@
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap29(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap30(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
@@ -452,7 +467,7 @@
 
     iget v14, v0, Landroid/os/Message;->arg1:I
 
-    invoke-static {v13, v10, v14, v2}, Lcom/android/bluetooth/gatt/GattService;->-wrap28(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;II)V
+    invoke-static {v13, v10, v14, v2}, Lcom/android/bluetooth/gatt/GattService;->-wrap29(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;II)V
 
     move-object/from16 v0, p0
 
@@ -462,32 +477,47 @@
 
     iget v14, v0, Landroid/os/Message;->arg2:I
 
-    invoke-static {v13, v10, v14}, Lcom/android/bluetooth/gatt/GattService;->-wrap25(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;I)V
+    invoke-static {v13, v10, v14}, Lcom/android/bluetooth/gatt/GattService;->-wrap26(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;I)V
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13}, Lcom/android/bluetooth/gatt/GattService;->-wrap23(Lcom/android/bluetooth/gatt/GattService;)V
+    invoke-static {v13}, Lcom/android/bluetooth/gatt/GattService;->-wrap25(Lcom/android/bluetooth/gatt/GattService;)V
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap15(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap17(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v12}, Lcom/android/bluetooth/gatt/GattService;->-wrap16(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+    invoke-static {v13, v12}, Lcom/android/bluetooth/gatt/GattService;->-wrap18(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v6}, Lcom/android/bluetooth/gatt/GattService;->-wrap14(Lcom/android/bluetooth/gatt/GattService;Z)V
+    invoke-static {v13, v6}, Lcom/android/bluetooth/gatt/GattService;->-wrap15(Lcom/android/bluetooth/gatt/GattService;Z)V
 
+    const-string/jumbo v13, "BATCH_SCAN"
+
+    invoke-virtual {v13, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v13
+
+    if-eqz v13, :cond_6
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
+
+    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap16(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+
+    :cond_6
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
@@ -523,7 +553,7 @@
 
     move-result v13
 
-    if-eqz v13, :cond_6
+    if-eqz v13, :cond_8
 
     move-object/from16 v0, p0
 
@@ -548,7 +578,7 @@
 
     cmp-long v13, v8, v14
 
-    if-eqz v13, :cond_5
+    if-eqz v13, :cond_7
 
     const-string/jumbo v13, ""
 
@@ -556,9 +586,9 @@
 
     move-result v13
 
-    if-eqz v13, :cond_7
+    if-eqz v13, :cond_9
 
-    :cond_5
+    :cond_7
     const-string/jumbo v13, "BtGatt.GattService"
 
     const-string/jumbo v14, "[GSIM LOG]: MESSAGE_STOP_SCAN: no scanning process to stop"
@@ -567,7 +597,7 @@
 
     goto/16 :goto_1
 
-    :cond_6
+    :cond_8
     const-wide/16 v8, 0x0
 
     const-string/jumbo v13, "BtGatt.GattService"
@@ -578,8 +608,8 @@
 
     goto :goto_2
 
-    :cond_7
-    if-ne v3, v7, :cond_8
+    :cond_9
+    if-ne v3, v7, :cond_a
 
     move-object/from16 v0, p0
 
@@ -630,8 +660,8 @@
 
     goto/16 :goto_1
 
-    :cond_8
-    if-nez v7, :cond_9
+    :cond_a
+    if-nez v7, :cond_b
 
     const-string/jumbo v13, "BtGatt.GattService"
 
@@ -641,7 +671,7 @@
 
     goto :goto_3
 
-    :cond_9
+    :cond_b
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
@@ -664,7 +694,7 @@
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13}, Lcom/android/bluetooth/gatt/GattService;->-wrap23(Lcom/android/bluetooth/gatt/GattService;)V
+    invoke-static {v13}, Lcom/android/bluetooth/gatt/GattService;->-wrap25(Lcom/android/bluetooth/gatt/GattService;)V
 
     move-object/from16 v0, p0
 
@@ -697,19 +727,19 @@
 
     move-result-object v11
 
-    if-ne v3, v7, :cond_a
+    if-ne v3, v7, :cond_c
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap13(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap14(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v11}, Lcom/android/bluetooth/gatt/GattService;->-wrap26(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+    invoke-static {v13, v11}, Lcom/android/bluetooth/gatt/GattService;->-wrap27(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
@@ -723,7 +753,7 @@
 
     iget v15, v0, Landroid/os/Message;->arg2:I
 
-    invoke-static {v13, v11, v14, v15}, Lcom/android/bluetooth/gatt/GattService;->-wrap27(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;II)V
+    invoke-static {v13, v11, v14, v15}, Lcom/android/bluetooth/gatt/GattService;->-wrap28(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;II)V
 
     move-object/from16 v0, p0
 
@@ -735,8 +765,8 @@
 
     goto/16 :goto_1
 
-    :cond_a
-    if-nez v7, :cond_b
+    :cond_c
+    if-nez v7, :cond_d
 
     move-object/from16 v0, p0
 
@@ -760,13 +790,13 @@
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap13(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap14(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v11}, Lcom/android/bluetooth/gatt/GattService;->-wrap26(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+    invoke-static {v13, v11}, Lcom/android/bluetooth/gatt/GattService;->-wrap27(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
@@ -780,7 +810,7 @@
 
     iget v15, v0, Landroid/os/Message;->arg2:I
 
-    invoke-static {v13, v11, v14, v15}, Lcom/android/bluetooth/gatt/GattService;->-wrap27(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;II)V
+    invoke-static {v13, v11, v14, v15}, Lcom/android/bluetooth/gatt/GattService;->-wrap28(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;II)V
 
     move-object/from16 v0, p0
 
@@ -792,7 +822,7 @@
 
     goto/16 :goto_1
 
-    :cond_b
+    :cond_d
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
@@ -815,7 +845,7 @@
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v11}, Lcom/android/bluetooth/gatt/GattService;->-wrap26(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+    invoke-static {v13, v11}, Lcom/android/bluetooth/gatt/GattService;->-wrap27(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
@@ -829,19 +859,19 @@
 
     iget v15, v0, Landroid/os/Message;->arg2:I
 
-    invoke-static {v13, v11, v14, v15}, Lcom/android/bluetooth/gatt/GattService;->-wrap27(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;II)V
+    invoke-static {v13, v11, v14, v15}, Lcom/android/bluetooth/gatt/GattService;->-wrap28(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;II)V
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13}, Lcom/android/bluetooth/gatt/GattService;->-wrap23(Lcom/android/bluetooth/gatt/GattService;)V
+    invoke-static {v13}, Lcom/android/bluetooth/gatt/GattService;->-wrap25(Lcom/android/bluetooth/gatt/GattService;)V
 
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap13(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
+    invoke-static {v13, v10}, Lcom/android/bluetooth/gatt/GattService;->-wrap14(Lcom/android/bluetooth/gatt/GattService;Ljava/lang/String;)V
 
     move-object/from16 v0, p0
 
@@ -878,7 +908,7 @@
 
     move-result v13
 
-    if-eqz v13, :cond_d
+    if-eqz v13, :cond_f
 
     move-object/from16 v0, p0
 
@@ -903,7 +933,7 @@
 
     cmp-long v13, v8, v14
 
-    if-eqz v13, :cond_c
+    if-eqz v13, :cond_e
 
     const-string/jumbo v13, ""
 
@@ -911,9 +941,9 @@
 
     move-result v13
 
-    if-eqz v13, :cond_e
+    if-eqz v13, :cond_10
 
-    :cond_c
+    :cond_e
     const-string/jumbo v13, "BtGatt.GattService"
 
     const-string/jumbo v14, "[GSIM LOG]: MESSAGE_STOP_ADV: no adv process to stop"
@@ -922,7 +952,7 @@
 
     goto/16 :goto_1
 
-    :cond_d
+    :cond_f
     const-wide/16 v8, 0x0
 
     const-string/jumbo v13, "BtGatt.GattService"
@@ -933,8 +963,8 @@
 
     goto :goto_4
 
-    :cond_e
-    if-ne v3, v7, :cond_f
+    :cond_10
+    if-ne v3, v7, :cond_11
 
     move-object/from16 v0, p0
 
@@ -979,8 +1009,8 @@
 
     goto/16 :goto_1
 
-    :cond_f
-    if-nez v7, :cond_10
+    :cond_11
+    if-nez v7, :cond_12
 
     const-string/jumbo v13, "BtGatt.GattService"
 
@@ -990,7 +1020,7 @@
 
     goto :goto_5
 
-    :cond_10
+    :cond_12
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
@@ -1013,7 +1043,7 @@
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13}, Lcom/android/bluetooth/gatt/GattService;->-wrap23(Lcom/android/bluetooth/gatt/GattService;)V
+    invoke-static {v13}, Lcom/android/bluetooth/gatt/GattService;->-wrap25(Lcom/android/bluetooth/gatt/GattService;)V
 
     move-object/from16 v0, p0
 
@@ -1032,7 +1062,7 @@
 
     iget-object v13, v0, Lcom/android/bluetooth/gatt/GattService$gsimLogHandler;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v13}, Lcom/android/bluetooth/gatt/GattService;->-wrap22(Lcom/android/bluetooth/gatt/GattService;)V
+    invoke-static {v13}, Lcom/android/bluetooth/gatt/GattService;->-wrap24(Lcom/android/bluetooth/gatt/GattService;)V
 
     goto/16 :goto_1
 

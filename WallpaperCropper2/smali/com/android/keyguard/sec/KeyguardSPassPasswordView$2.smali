@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$200(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v0
@@ -52,7 +51,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$300(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v0
@@ -85,7 +83,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mPasswordEntry:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$100(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -106,7 +103,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mPasswordEntry:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$100(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -120,7 +116,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mPasswordEntry:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$100(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/TextView;
 
     move-result-object v0

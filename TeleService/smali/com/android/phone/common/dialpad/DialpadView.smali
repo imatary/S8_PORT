@@ -326,7 +326,7 @@
 
     if-ne v0, v1, :cond_3
 
-    const v21, 0x7f0d01bb
+    const v21, 0x7f0d0218
 
     move-object/from16 v0, v17
 
@@ -343,7 +343,7 @@
 
     move-result-object v21
 
-    const v22, 0x7f02000d
+    const v22, 0x7f02000f
 
     move-object/from16 v0, p0
 
@@ -439,7 +439,7 @@
 
     if-ne v0, v1, :cond_4
 
-    const v21, 0x7f0d01ba
+    const v21, 0x7f0d0217
 
     move-object/from16 v0, v17
 
@@ -567,7 +567,7 @@
 
     check-cast v16, Lcom/android/phone/common/dialpad/DialpadKeyButton;
 
-    const v21, 0x7f0d01cc
+    const v21, 0x7f0d0229
 
     move-object/from16 v0, v17
 
@@ -595,7 +595,7 @@
 
     check-cast v20, Lcom/android/phone/common/dialpad/DialpadKeyButton;
 
-    const v21, 0x7f0d01cb
+    const v21, 0x7f0d0228
 
     move-object/from16 v0, v17
 
@@ -611,18 +611,18 @@
 
     :array_0
     .array-data 4
-        0x7f0d01bc
-        0x7f0d01bd
-        0x7f0d01be
-        0x7f0d01bf
-        0x7f0d01c0
-        0x7f0d01c1
-        0x7f0d01c2
-        0x7f0d01c3
-        0x7f0d01c4
-        0x7f0d01c5
-        0x7f0d01c6
-        0x7f0d01c7
+        0x7f0d0219
+        0x7f0d021a
+        0x7f0d021b
+        0x7f0d021c
+        0x7f0d021d
+        0x7f0d021e
+        0x7f0d021f
+        0x7f0d0220
+        0x7f0d0221
+        0x7f0d0222
+        0x7f0d0223
+        0x7f0d0224
     .end array-data
 .end method
 

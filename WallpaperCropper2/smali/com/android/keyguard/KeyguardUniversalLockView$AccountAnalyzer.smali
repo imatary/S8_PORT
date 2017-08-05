@@ -51,7 +51,6 @@
 
     new-instance v1, Landroid/os/UserHandle;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
     invoke-static {p1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1800(Lcom/android/keyguard/KeyguardUniversalLockView;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v2
@@ -92,7 +91,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mEnableFallback:Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$3500(Lcom/android/keyguard/KeyguardUniversalLockView;)Z
 
     move-result v0
@@ -123,7 +121,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/KeyguardUniversalLockView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
     invoke-static {v3}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1800(Lcom/android/keyguard/KeyguardUniversalLockView;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v3
@@ -204,12 +201,10 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mEnableFallback:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$3502(Lcom/android/keyguard/KeyguardUniversalLockView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mLastFooterMode:Lcom/android/keyguard/KeyguardUniversalLockView$FooterMode;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$3600(Lcom/android/keyguard/KeyguardUniversalLockView;)Lcom/android/keyguard/KeyguardUniversalLockView$FooterMode;
 
     move-result-object v0
@@ -220,7 +215,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mTotalFailedUniversalLockAttempts:I
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1600(Lcom/android/keyguard/KeyguardUniversalLockView;)I
 
     move-result v0
@@ -233,7 +227,6 @@
 
     sget-object v1, Lcom/android/keyguard/KeyguardUniversalLockView$FooterMode;->ForgotLockUniversal:Lcom/android/keyguard/KeyguardUniversalLockView$FooterMode;
 
-    # invokes: Lcom/android/keyguard/KeyguardUniversalLockView;->updateFooter(Lcom/android/keyguard/KeyguardUniversalLockView$FooterMode;)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$3700(Lcom/android/keyguard/KeyguardUniversalLockView;Lcom/android/keyguard/KeyguardUniversalLockView$FooterMode;)V
     :try_end_1
     .catch Landroid/accounts/OperationCanceledException; {:try_start_1 .. :try_end_1} :catch_0
@@ -309,7 +302,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # setter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mEnableFallback:Z
     invoke-static {v0, v2}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$3502(Lcom/android/keyguard/KeyguardUniversalLockView;Z)Z
 
     iput v2, p0, Lcom/android/keyguard/KeyguardUniversalLockView$AccountAnalyzer;->mAccountIndex:I

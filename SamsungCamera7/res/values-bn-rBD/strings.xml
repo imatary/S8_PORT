@@ -306,6 +306,7 @@
     <string name="camera_label">ক্যামেরা</string>
     <string name="camera_modes">ক্যামেরা মোডগুলো</string>
     <string name="camera_security_enter">সুরক্ষা নীতি ক্যামেরার ব্যবহারকে সীমাবদ্ধ করে।</string>
+    <string name="can_not_use_voice_control">Bixby-এর ভয়েসের মাধ্যমে জেগে ওঠা চালু থাকলে ভয়েস নিয়ন্ত্রণ ব্যবহার করা যাবে না৷</string>
     <string name="cancel">বাতিল</string>
     <string name="cannot_start_camcorder_msg">কল করার সময় ভিডিও রেকর্ড করা সম্ভব নয়।</string>
     <string name="cannot_start_camera_msg">কল চলাকালীন ক্যামেরা ব্যবহার করা সম্ভব নয়।</string>
@@ -601,6 +602,7 @@
     <string name="task_edge_title_selfie">"সেলফি
 তুলুন"</string>
     <string name="temperature">তাপমাত্রা</string>
+    <string name="temperature_too_high_camera_off">%1$s ব্যবহার করার পক্ষে তাপমাত্রা অত্যন্ত বেশি৷ %2$s ব্যবহার করার আগে ফোন ঠাণ্ডা হওয়ার জন্য অপেক্ষা করুন৷</string>
     <string name="temperature_too_high_flash_off">ফ্ল্যাশ চালু করতে অক্ষম। আপনার ডিভাইস ঠাণ্ডা হলে আবার চেষ্টা করুন।</string>
     <string name="temperature_too_high_record">ভিডিও রেকর্ড করা সম্ভব নয়। ডিভাইস শীতল হলে পুনরায় চেষ্টা করুন।</string>
     <string name="temperature_too_high_recording_disable">রেকর্ডিং বন্ধ হয়েছে। আপনার ডিভাইস ঠাণ্ডা হওয়ার পরে আপনি রেকর্ড করতে পারেন।</string>

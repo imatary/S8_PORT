@@ -96,15 +96,12 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->cancelPanoramaCapture()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$100(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)V
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->reset()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$200(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)V
 
     sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;->PANORAMA_WARNING:Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->playCameraSound(Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$1100(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
@@ -133,7 +130,6 @@
 
     invoke-virtual {p0, v5}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isPanoramaWarning()Z
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$1200(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)Z
 
     move-result v2
@@ -155,7 +151,6 @@
 
     invoke-virtual {p0, v4}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isPanoramaWarning()Z
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$1200(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)Z
 
     move-result v2
@@ -164,7 +159,6 @@
 
     sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;->PANORAMA_WARNING:Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->playCameraSound(Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$1100(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;)V
 
     invoke-virtual {p0, v5, v6, v7}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->sendEmptyMessageDelayed(IJ)Z
@@ -176,13 +170,11 @@
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideGuideText()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$1300(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)V
 
     goto :goto_0
 
     :pswitch_5
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isCameraSwitchingAnimationRunning()Z
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$1400(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)Z
 
     move-result v2
@@ -198,7 +190,6 @@
     goto :goto_0
 
     :cond_1
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->showPreviewGroup()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$1500(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)V
 
     goto :goto_0

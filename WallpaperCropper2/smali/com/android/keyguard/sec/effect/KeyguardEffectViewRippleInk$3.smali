@@ -45,7 +45,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewRippleInk;->isUnlocked:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewRippleInk;->access$402(Lcom/android/keyguard/sec/effect/KeyguardEffectViewRippleInk;Z)Z
 
     return-void

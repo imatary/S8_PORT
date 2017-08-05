@@ -597,7 +597,7 @@
     invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :cond_0
-    const v4, 0x7f100264
+    const v4, 0x7f100265
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -623,7 +623,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/ListView;->setItemsCanFocus(Z)V
 
-    const v4, 0x7f100263
+    const v4, 0x7f100264
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -651,7 +651,7 @@
 
     iput-object v4, p0, Lcom/android/phone/operator/kor/SecPhotoRingRejectList;->rejectAllSwitch:Landroid/widget/Switch;
 
-    const v4, 0x7f100265
+    const v4, 0x7f100266
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -661,7 +661,7 @@
 
     iput-object v4, p0, Lcom/android/phone/operator/kor/SecPhotoRingRejectList;->mEmptyImage:Lcom/altamirasoft/path_animation/PathLineAnimationView;
 
-    const v4, 0x7f100266
+    const v4, 0x7f100267
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -671,7 +671,7 @@
 
     iput-object v4, p0, Lcom/android/phone/operator/kor/SecPhotoRingRejectList;->mEmptyDesc:Landroid/widget/TextView;
 
-    const v4, 0x7f100267
+    const v4, 0x7f100268
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -728,7 +728,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    const v4, 0x7f0d08f9
+    const v4, 0x7f0d095f
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -827,7 +827,7 @@
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/SecPhotoRingRejectList;->mAddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0201a7
+    const v1, 0x7f0201b0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -837,7 +837,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d07f6
+    const v2, 0x7f0d085a
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -871,7 +871,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/operator/kor/SecPhotoRingRejectList;->mAddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f02015d
+    const v1, 0x7f020161
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -881,7 +881,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d050a
+    const v2, 0x7f0d056a
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1592,7 +1592,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0c11
+    const v2, 0x7f0d0c80
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1623,7 +1623,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d05dc
+    const v2, 0x7f0d0640
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1722,7 +1722,7 @@
     :catch_0
     move-exception v0
 
-    const v1, 0x7f0d0995
+    const v1, 0x7f0d09fb
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/kor/SecPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
@@ -1973,7 +1973,7 @@
 
     if-ne v7, v8, :cond_5
 
-    const v7, 0x7f0d05de
+    const v7, 0x7f0d0642
 
     invoke-virtual {p0, v7}, Lcom/android/phone/operator/kor/SecPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
@@ -1988,7 +1988,7 @@
     goto :goto_0
 
     :cond_5
-    const v7, 0x7f0d05e0
+    const v7, 0x7f0d0644
 
     invoke-virtual {p0, v7}, Lcom/android/phone/operator/kor/SecPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
@@ -1999,7 +1999,7 @@
     goto :goto_3
 
     :cond_6
-    const v7, 0x7f0d05df
+    const v7, 0x7f0d0643
 
     invoke-virtual {p0, v7}, Lcom/android/phone/operator/kor/SecPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
@@ -2043,7 +2043,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0500
+    const v2, 0x7f0d0560
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2071,7 +2071,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d091d
+    const v2, 0x7f0d0983
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2120,7 +2120,7 @@
 
     iput-object v1, p0, Lcom/android/phone/operator/kor/SecPhotoRingRejectList;->mErrorText:Landroid/widget/TextView;
 
-    const v1, 0x7f100268
+    const v1, 0x7f100269
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

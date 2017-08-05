@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$1100(Lcom/sec/android/app/camera/menu/BeautyListMenu;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     move-result-object v0
@@ -70,7 +69,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$1100(Lcom/sec/android/app/camera/menu/BeautyListMenu;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     move-result-object v1
@@ -81,7 +79,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->mItemList:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$300(Lcom/sec/android/app/camera/menu/BeautyListMenu;)Landroid/util/SparseArray;
 
     move-result-object v1
@@ -132,14 +129,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_ITEM_WIDTH:F
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$1200(Lcom/sec/android/app/camera/menu/BeautyListMenu;)F
 
     move-result v4
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_ITEM_HEIGHT:F
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$1300(Lcom/sec/android/app/camera/menu/BeautyListMenu;)F
 
     move-result v5
@@ -157,7 +152,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$1400(Lcom/sec/android/app/camera/menu/BeautyListMenu;)Lcom/samsung/android/glview/GLSlider;
 
     move-result-object v1
@@ -166,7 +160,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->mList:Lcom/samsung/android/glview/GLGridList;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$1500(Lcom/sec/android/app/camera/menu/BeautyListMenu;)Lcom/samsung/android/glview/GLGridList;
 
     move-result-object v1
@@ -179,7 +172,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->mItemList:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$300(Lcom/sec/android/app/camera/menu/BeautyListMenu;)Landroid/util/SparseArray;
 
     move-result-object v1
@@ -203,14 +195,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_ITEM_WIDTH:F
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$1200(Lcom/sec/android/app/camera/menu/BeautyListMenu;)F
 
     move-result v4
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_ITEM_HEIGHT:F
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$1300(Lcom/sec/android/app/camera/menu/BeautyListMenu;)F
 
     move-result v5

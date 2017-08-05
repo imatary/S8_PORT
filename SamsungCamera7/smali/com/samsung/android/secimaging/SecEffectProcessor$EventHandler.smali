@@ -88,7 +88,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/secimaging/SecEffectProcessor$EventHandler;->mEffectProcessor:Lcom/samsung/android/secimaging/SecEffectProcessor;
 
-    # getter for: Lcom/samsung/android/secimaging/SecEffectProcessor;->mNativeContext:J
     invoke-static {v0}, Lcom/samsung/android/secimaging/SecEffectProcessor;->access$000(Lcom/samsung/android/secimaging/SecEffectProcessor;)J
 
     move-result-wide v0
@@ -143,7 +142,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/samsung/android/secimaging/SecEffectProcessor$EventHandler;->this$0:Lcom/samsung/android/secimaging/SecEffectProcessor;
 
-    # getter for: Lcom/samsung/android/secimaging/SecEffectProcessor;->mEffectProcessorListener:Lcom/samsung/android/secimaging/SecEffectProcessor$EffectProcessorListener;
     invoke-static {v0}, Lcom/samsung/android/secimaging/SecEffectProcessor;->access$100(Lcom/samsung/android/secimaging/SecEffectProcessor;)Lcom/samsung/android/secimaging/SecEffectProcessor$EffectProcessorListener;
 
     move-result-object v0
@@ -152,7 +150,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/secimaging/SecEffectProcessor$EventHandler;->this$0:Lcom/samsung/android/secimaging/SecEffectProcessor;
 
-    # getter for: Lcom/samsung/android/secimaging/SecEffectProcessor;->mEffectProcessorListener:Lcom/samsung/android/secimaging/SecEffectProcessor$EffectProcessorListener;
     invoke-static {v0}, Lcom/samsung/android/secimaging/SecEffectProcessor;->access$100(Lcom/samsung/android/secimaging/SecEffectProcessor;)Lcom/samsung/android/secimaging/SecEffectProcessor$EffectProcessorListener;
 
     move-result-object v0
@@ -170,7 +167,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/secimaging/SecEffectProcessor$EventHandler;->this$0:Lcom/samsung/android/secimaging/SecEffectProcessor;
 
-    # getter for: Lcom/samsung/android/secimaging/SecEffectProcessor;->mEffectProcessorListener:Lcom/samsung/android/secimaging/SecEffectProcessor$EffectProcessorListener;
     invoke-static {v0}, Lcom/samsung/android/secimaging/SecEffectProcessor;->access$100(Lcom/samsung/android/secimaging/SecEffectProcessor;)Lcom/samsung/android/secimaging/SecEffectProcessor$EffectProcessorListener;
 
     move-result-object v0
@@ -179,7 +175,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/secimaging/SecEffectProcessor$EventHandler;->this$0:Lcom/samsung/android/secimaging/SecEffectProcessor;
 
-    # getter for: Lcom/samsung/android/secimaging/SecEffectProcessor;->mEffectProcessorListener:Lcom/samsung/android/secimaging/SecEffectProcessor$EffectProcessorListener;
     invoke-static {v0}, Lcom/samsung/android/secimaging/SecEffectProcessor;->access$100(Lcom/samsung/android/secimaging/SecEffectProcessor;)Lcom/samsung/android/secimaging/SecEffectProcessor$EffectProcessorListener;
 
     move-result-object v1

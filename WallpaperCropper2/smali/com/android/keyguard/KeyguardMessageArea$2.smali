@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$2;->this$0:Lcom/android/keyguard/KeyguardMessageArea;
 
-    # invokes: Lcom/android/keyguard/KeyguardMessageArea;->resetShortcutReleasedLayout()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardMessageArea;->access$100(Lcom/android/keyguard/KeyguardMessageArea;)V
 
     return-void

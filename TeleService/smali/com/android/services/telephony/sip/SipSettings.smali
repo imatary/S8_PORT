@@ -530,7 +530,7 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d0181
+    const v2, 0x7f0d01de
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -546,7 +546,7 @@
 
     invoke-direct {v2, p0, p1}, Lcom/android/services/telephony/sip/SipSettings$6;-><init>(Lcom/android/services/telephony/sip/SipSettings;Landroid/net/sip/SipProfile;)V
 
-    const v3, 0x7f0d0183
+    const v3, 0x7f0d01e0
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1128,13 +1128,13 @@
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
-    const v1, 0x7f0d017a
+    const v1, 0x7f0d01d7
 
     invoke-interface {p1, v3, v2, v3, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f0200a2
+    const v1, 0x7f0200a5
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 

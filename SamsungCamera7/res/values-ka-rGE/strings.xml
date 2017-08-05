@@ -118,7 +118,7 @@
     <string name="R_3344x3344">1:1 (11 M)</string>
     <string name="R_3456x3456">1:1 (12 M)</string>
     <string name="R_3984x2988">4:3 (12 M)</string>
-    <string name="R_4032x1960">18,5:9 (7,9 M)</string>
+    <string name="R_4032x1960">18.5:9 (7,9 M)</string>
     <string name="R_4032x2268">16:9 (9,1 M)</string>
     <string name="R_4032x3024">4:3 (12 M)</string>
     <string name="R_4128x2322">16:9 (9,6 M)</string>
@@ -310,6 +310,7 @@
     <string name="camera_label">ფოტოაპარატი</string>
     <string name="camera_modes">კამერის რეჟიმი</string>
     <string name="camera_security_enter">უსაფრთხოების პოლიტიკა ზღუდავს კამერის გამოყენებას.</string>
+    <string name="can_not_use_voice_control">ხმოვანი ბრძანებით მართვის გამოყენება შეუძლებელია, როდესაც Bixby-ის ხმოვანი ბრძანებით გაღვიძება ჩართულია.</string>
     <string name="cancel">გაუქმება</string>
     <string name="cannot_start_camcorder_msg">ვიდეოს ვერ ჩაწერთ ზარის დროს.</string>
     <string name="cannot_start_camera_msg">კამერის გამოყენება შეუძლებელია ზარების დროს.</string>
@@ -606,6 +607,7 @@
     <string name="task_edge_title_selfie">"სელფის
 გადაღება"</string>
     <string name="temperature">ტემპერატურა</string>
+    <string name="temperature_too_high_camera_off">ტემპერატურა იმდენად დიდია, რომ %1$s ვერ გამოიყენება. სანამ შეძლებთ გამოიყენოთ %2$s, დააცადეთ ტელეფონს გაგრილება.</string>
     <string name="temperature_too_high_flash_off">ნათების ჩართვა შეუძლებელია. ისევ მოსინჯეთ, როდესაც აპარატი გაგრილდება</string>
     <string name="temperature_too_high_record">ვიდეოს ჩაწერა შეუძლებელია. ისევ სცადეთ, როდესაც აპარატი გაგრილდება.</string>
     <string name="temperature_too_high_recording_disable">ჩაწერა გაჩერდა. შეგიძლიათ ჩაწეროთ, როდესაც აპარატი გაგრილდება</string>

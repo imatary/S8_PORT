@@ -65,7 +65,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/KeyguardMessageArea$5;->this$0:Lcom/android/keyguard/KeyguardMessageArea;
 
-    # getter for: Lcom/android/keyguard/KeyguardMessageArea;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/android/keyguard/KeyguardMessageArea;->access$1000(Lcom/android/keyguard/KeyguardMessageArea;)Landroid/content/Context;
 
     move-result-object v3
@@ -83,7 +82,6 @@
     if-eq v3, v1, :cond_2
 
     :goto_1
-    # setter for: Lcom/android/keyguard/KeyguardMessageArea;->mUseBlackTextOnWhiteWallpaper:Z
     invoke-static {v2, v0}, Lcom/android/keyguard/KeyguardMessageArea;->access$902(Lcom/android/keyguard/KeyguardMessageArea;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$5;->this$0:Lcom/android/keyguard/KeyguardMessageArea;

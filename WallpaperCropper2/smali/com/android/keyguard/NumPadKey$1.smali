@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/NumPadKey$1;->this$0:Lcom/android/keyguard/NumPadKey;
 
-    # getter for: Lcom/android/keyguard/NumPadKey;->mTextView:Lcom/android/keyguard/PasswordTextView;
     invoke-static {v0}, Lcom/android/keyguard/NumPadKey;->access$000(Lcom/android/keyguard/NumPadKey;)Lcom/android/keyguard/PasswordTextView;
 
     move-result-object v0
@@ -50,7 +49,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/NumPadKey$1;->this$0:Lcom/android/keyguard/NumPadKey;
 
-    # getter for: Lcom/android/keyguard/NumPadKey;->mTextView:Lcom/android/keyguard/PasswordTextView;
     invoke-static {v0}, Lcom/android/keyguard/NumPadKey;->access$000(Lcom/android/keyguard/NumPadKey;)Lcom/android/keyguard/PasswordTextView;
 
     move-result-object v0
@@ -72,7 +70,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/NumPadKey$1;->this$0:Lcom/android/keyguard/NumPadKey;
 
-    # getter for: Lcom/android/keyguard/NumPadKey;->mTextViewResId:I
     invoke-static {v0}, Lcom/android/keyguard/NumPadKey;->access$100(Lcom/android/keyguard/NumPadKey;)I
 
     move-result v0
@@ -87,7 +84,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/NumPadKey$1;->this$0:Lcom/android/keyguard/NumPadKey;
 
-    # getter for: Lcom/android/keyguard/NumPadKey;->mTextViewResId:I
     invoke-static {v1}, Lcom/android/keyguard/NumPadKey;->access$100(Lcom/android/keyguard/NumPadKey;)I
 
     move-result v1
@@ -106,7 +102,6 @@
 
     check-cast v0, Lcom/android/keyguard/PasswordTextView;
 
-    # setter for: Lcom/android/keyguard/NumPadKey;->mTextView:Lcom/android/keyguard/PasswordTextView;
     invoke-static {v1, v0}, Lcom/android/keyguard/NumPadKey;->access$002(Lcom/android/keyguard/NumPadKey;Lcom/android/keyguard/PasswordTextView;)Lcom/android/keyguard/PasswordTextView;
 
     goto :goto_0
@@ -114,7 +109,6 @@
     :cond_3
     iget-object v0, p0, Lcom/android/keyguard/NumPadKey$1;->this$0:Lcom/android/keyguard/NumPadKey;
 
-    # getter for: Lcom/android/keyguard/NumPadKey;->mTextView:Lcom/android/keyguard/PasswordTextView;
     invoke-static {v0}, Lcom/android/keyguard/NumPadKey;->access$000(Lcom/android/keyguard/NumPadKey;)Lcom/android/keyguard/PasswordTextView;
 
     move-result-object v0
@@ -127,14 +121,12 @@
 
     iget-object v0, p0, Lcom/android/keyguard/NumPadKey$1;->this$0:Lcom/android/keyguard/NumPadKey;
 
-    # getter for: Lcom/android/keyguard/NumPadKey;->mTextView:Lcom/android/keyguard/PasswordTextView;
     invoke-static {v0}, Lcom/android/keyguard/NumPadKey;->access$000(Lcom/android/keyguard/NumPadKey;)Lcom/android/keyguard/PasswordTextView;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/NumPadKey$1;->this$0:Lcom/android/keyguard/NumPadKey;
 
-    # getter for: Lcom/android/keyguard/NumPadKey;->mDigit:I
     invoke-static {v1}, Lcom/android/keyguard/NumPadKey;->access$200(Lcom/android/keyguard/NumPadKey;)I
 
     move-result v1

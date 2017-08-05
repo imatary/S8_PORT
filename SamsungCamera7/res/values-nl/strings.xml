@@ -313,6 +313,7 @@ correctie"</string>
     <string name="camera_label">Camera</string>
     <string name="camera_modes">Camerastanden</string>
     <string name="camera_security_enter">Gebruik van camera beperkt door beveiligingsbeleid.</string>
+    <string name="can_not_use_voice_control">Kan Spraakopdracht niet gebruiken terwijl Bixby-stem activeren is ingeschakeld.</string>
     <string name="cancel">Annul.</string>
     <string name="cannot_start_camcorder_msg">Kan geen video opnemen tijdens gesprek.</string>
     <string name="cannot_start_camera_msg">Kan Camera niet gebruiken tijdens oproepen.</string>
@@ -609,6 +610,7 @@ Als u hiermee akkoord gaat, wordt deze machtiging ook verleend aan Opname taggen
     <string name="task_edge_title_selfie">"Selfie
 maken"</string>
     <string name="temperature">Temperatuur</string>
+    <string name="temperature_too_high_camera_off">Temperatuur te hoog om %1$s te gebruiken. Wacht tot telefoon is afgekoeld voordat u %2$s gebruikt.</string>
     <string name="temperature_too_high_flash_off">Kan de flits niet inschakelen. Probeer het opnieuw wanneer het apparaat is afgekoeld.</string>
     <string name="temperature_too_high_record">Kan video niet opnemen. Probeer het opnieuw wanneer het apparaat is afgekoeld.</string>
     <string name="temperature_too_high_recording_disable">Het opnemen is gestopt. U kunt verdergaan wanneer het apparaat is afgekoeld.</string>

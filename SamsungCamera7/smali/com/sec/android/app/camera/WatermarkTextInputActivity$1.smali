@@ -55,7 +55,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/WatermarkTextInputActivity$1;->this$0:Lcom/sec/android/app/camera/WatermarkTextInputActivity;
 
-    # getter for: Lcom/sec/android/app/camera/WatermarkTextInputActivity;->mNewString:Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/android/app/camera/WatermarkTextInputActivity;->access$000(Lcom/sec/android/app/camera/WatermarkTextInputActivity;)Ljava/lang/String;
 
     move-result-object v3

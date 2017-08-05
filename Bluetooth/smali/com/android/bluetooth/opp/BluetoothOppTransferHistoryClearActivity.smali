@@ -37,36 +37,6 @@
     return-void
 .end method
 
-.method private createView()Landroid/view/View;
-    .locals 5
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/opp/BluetoothOppTransferHistoryClearActivity;->getLayoutInflater()Landroid/view/LayoutInflater;
-
-    move-result-object v2
-
-    const v3, 0x7f040008
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v2, v3, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
-
-    move-result-object v1
-
-    const v2, 0x7f0e000a
-
-    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    iget-object v2, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferHistoryClearActivity;->mDescription:Ljava/lang/CharSequence;
-
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    return-object v1
-.end method
-
 
 # virtual methods
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
@@ -207,13 +177,11 @@
 
     iget-object v1, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferHistoryClearActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    invoke-direct {p0}, Lcom/android/bluetooth/opp/BluetoothOppTransferHistoryClearActivity;->createView()Landroid/view/View;
+    iget-object v2, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferHistoryClearActivity;->mDescription:Ljava/lang/CharSequence;
 
-    move-result-object v2
+    iput-object v2, v1, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
-    iput-object v2, v1, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
-
-    const v2, 0x7f0a0080
+    const v2, 0x7f0a0081
 
     invoke-virtual {p0, v2}, Lcom/android/bluetooth/opp/BluetoothOppTransferHistoryClearActivity;->getString(I)Ljava/lang/String;
 

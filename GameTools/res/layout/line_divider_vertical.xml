@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="center" android:background="?android:actionBarDivider" android:layout_width="@dimen/divider_line_height" android:layout_height="29.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # invokes: Lcom/sec/android/app/camera/Camera;->showLocationTagDialog()V
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$2500(Lcom/sec/android/app/camera/Camera;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13$1;->this$1:Lcom/sec/android/app/camera/Camera$13;

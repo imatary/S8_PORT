@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$11;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mBackupPasswordButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1800(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/Button;
 
     move-result-object v0
@@ -52,7 +51,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$11;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mBackupPasswordButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1800(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/Button;
 
     move-result-object v0
@@ -75,7 +73,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$11;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mBackupPasswordButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1800(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/Button;
 
     move-result-object v0
@@ -88,7 +85,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$11;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mBackupPasswordButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1800(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/Button;
 
     move-result-object v0

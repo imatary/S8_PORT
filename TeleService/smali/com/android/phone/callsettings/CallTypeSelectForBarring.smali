@@ -292,7 +292,7 @@
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 2
 
-    const v1, 0x7f0d0200
+    const v1, 0x7f0d025d
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallTypeSelectForBarring;->mVideoCall:Landroid/preference/PreferenceScreen;
 
@@ -302,7 +302,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d025f
+    const v1, 0x7f0d02be
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallTypeSelectForBarring;->getString(I)Ljava/lang/String;
 
@@ -327,7 +327,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d025e
+    const v1, 0x7f0d02bd
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallTypeSelectForBarring;->getString(I)Ljava/lang/String;
 
@@ -343,7 +343,7 @@
 
     invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onResume()V
 
-    const v0, 0x7f0d0200
+    const v0, 0x7f0d025d
 
     invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallTypeSelectForBarring;->getString(I)Ljava/lang/String;
 

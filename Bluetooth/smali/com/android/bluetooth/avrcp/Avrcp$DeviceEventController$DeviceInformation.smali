@@ -21,6 +21,8 @@
 
 .field private mFeature:I
 
+.field private mInitialRemoteVolume:I
+
 .field private mNowPlayingContentChanged:I
 
 .field private mPlayPosChanged:I
@@ -29,6 +31,8 @@
 
 .field private mPlayerSettingChanged:I
 
+.field private mRemoteVolume:I
+
 .field private mTrackChanged:I
 
 .field final synthetic this$1:Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;
@@ -36,7 +40,9 @@
 
 # direct methods
 .method public constructor <init>(Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;)V
-    .locals 2
+    .locals 3
+
+    const/4 v2, -0x1
 
     const/4 v1, 0x1
 
@@ -61,6 +67,10 @@
     iput v1, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->mAvailablePlayersChanged:I
 
     iput v1, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->mAddressedPlayerChanged:I
+
+    iput v2, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->mInitialRemoteVolume:I
+
+    iput v2, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->mRemoteVolume:I
 
     return-void
 .end method
@@ -87,6 +97,14 @@
     .locals 1
 
     iget v0, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->mFeature:I
+
+    return v0
+.end method
+
+.method public getInitialRemoteVolume()I
+    .locals 1
+
+    iget v0, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->mInitialRemoteVolume:I
 
     return v0
 .end method
@@ -123,6 +141,14 @@
     return v0
 .end method
 
+.method public getRemoteVolume()I
+    .locals 1
+
+    iget v0, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->mRemoteVolume:I
+
+    return v0
+.end method
+
 .method public getTrackChangedNT()I
     .locals 1
 
@@ -155,6 +181,14 @@
     return-void
 .end method
 
+.method public setInitialRemoteVolume(I)V
+    .locals 0
+
+    iput p1, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->mInitialRemoteVolume:I
+
+    return-void
+.end method
+
 .method public setNowPlayingContentChangedNT(I)V
     .locals 0
 
@@ -183,6 +217,14 @@
     .locals 0
 
     iput p1, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->mPlayerSettingChanged:I
+
+    return-void
+.end method
+
+.method public setRemoteVolume(I)V
+    .locals 0
+
+    iput p1, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->mRemoteVolume:I
 
     return-void
 .end method

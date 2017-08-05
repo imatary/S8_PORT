@@ -546,7 +546,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mSlotTty:Ljava/lang/String;
 
-    const v2, 0x7f020735
+    const v2, 0x7f02073d
 
     const/4 v4, 0x0
 
@@ -566,7 +566,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mSlotAlarmClock:Ljava/lang/String;
 
-    const v2, 0x7f0205ef
+    const v2, 0x7f0205f7
 
     const/4 v4, 0x0
 
@@ -584,7 +584,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mSlotZen:Ljava/lang/String;
 
-    const v2, 0x7f02076f
+    const v2, 0x7f020778
 
     const/4 v4, 0x0
 
@@ -602,7 +602,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mSlotVolume:Ljava/lang/String;
 
-    const v2, 0x7f02067b
+    const v2, 0x7f020683
 
     const/4 v4, 0x0
 
@@ -622,7 +622,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mSlotCast:Ljava/lang/String;
 
-    const v2, 0x7f0205f7
+    const v2, 0x7f0205ff
 
     const/4 v4, 0x0
 
@@ -654,13 +654,13 @@
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0f0558
+    const v4, 0x7f0f05b5
 
     invoke-virtual {v2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v4, 0x7f020644
+    const v4, 0x7f02064c
 
     invoke-virtual {v0, v1, v4, v2}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -676,13 +676,13 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mSlotDataSaver:Ljava/lang/String;
 
-    const v2, 0x7f0f05d9
+    const v2, 0x7f0f0637
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v4, 0x7f02063b
+    const v4, 0x7f020643
 
     invoke-virtual {v0, v1, v4, v2}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -702,7 +702,7 @@
 
     const-string/jumbo v1, "power_saver"
 
-    const v2, 0x7f02066f
+    const v2, 0x7f020677
 
     const/4 v4, 0x0
 
@@ -861,13 +861,13 @@
 
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0f070a
+    const v5, 0x7f0f0779
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const v5, 0x7f0205ef
+    const v5, 0x7f0205f7
 
     invoke-virtual {v2, v3, v5, v4}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -905,11 +905,11 @@
     return-void
 
     :cond_0
-    const v2, 0x7f0205f8
+    const v2, 0x7f020600
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0f0335
+    const v4, 0x7f0f0392
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -935,11 +935,11 @@
 
     if-eqz v3, :cond_1
 
-    const v2, 0x7f0205f9
+    const v2, 0x7f020601
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0f02cd
+    const v4, 0x7f0f032a
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -960,7 +960,7 @@
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0f070b
+    const v4, 0x7f0f077a
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1074,13 +1074,13 @@
 
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0f0311
+    const v6, 0x7f0f036e
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
-    const v6, 0x7f0205f7
+    const v6, 0x7f0205ff
 
     invoke-virtual {v3, v4, v6, v5}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -1156,7 +1156,7 @@
 
     if-eqz v2, :cond_3
 
-    const v3, 0x7f0f05d7
+    const v3, 0x7f0f0635
 
     :goto_2
     invoke-virtual {v4, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -1169,7 +1169,7 @@
 
     if-eqz v2, :cond_4
 
-    const v3, 0x7f0201a4
+    const v3, 0x7f0201a8
 
     :goto_3
     invoke-virtual {v4, v5, v3, v1}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
@@ -1196,12 +1196,12 @@
     goto :goto_1
 
     :cond_3
-    const v3, 0x7f0f05d6
+    const v3, 0x7f0f0634
 
     goto :goto_2
 
     :cond_4
-    const v3, 0x7f0201a3
+    const v3, 0x7f0201a7
 
     goto :goto_3
 
@@ -1220,9 +1220,9 @@
 
     const/4 v6, 0x0
 
-    const v5, 0x7f0f0558
+    const v5, 0x7f0f05b5
 
-    const v4, 0x7f020644
+    const v4, 0x7f02064c
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mIconController:Lcom/android/systemui/statusbar/phone/StatusBarIconController;
 
@@ -1289,7 +1289,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f020645
+    const v4, 0x7f02064d
 
     invoke-virtual {v1, v2, v4, v3}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -1576,13 +1576,13 @@
 
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0f030e
+    const v5, 0x7f0f036b
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    const v5, 0x7f020735
+    const v5, 0x7f02073d
 
     invoke-virtual {v2, v3, v5, v4}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -1683,7 +1683,7 @@
 
     if-eqz v2, :cond_7
 
-    const v14, 0x7f0205e1
+    const v14, 0x7f0205e9
 
     :goto_0
     move-object/from16 v0, p0
@@ -1756,7 +1756,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0f06ea
+    const v5, 0x7f0f0759
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1808,7 +1808,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0f06ec
+    const v5, 0x7f0f075b
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1879,13 +1879,13 @@
 
     const/16 v18, 0x1
 
-    const v17, 0x7f02067b
+    const v17, 0x7f020683
 
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0f030f
+    const v3, 0x7f0f036c
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1984,7 +1984,7 @@
     return-void
 
     :cond_7
-    const v14, 0x7f0205e0
+    const v14, 0x7f0205e8
 
     goto/16 :goto_0
 
@@ -1997,7 +1997,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0f06eb
+    const v3, 0x7f0f075a
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2029,13 +2029,13 @@
 
     const/16 v18, 0x1
 
-    const v17, 0x7f02067a
+    const v17, 0x7f020682
 
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0f0310
+    const v3, 0x7f0f036d
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2138,13 +2138,13 @@
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0f05d9
+    const v3, 0x7f0f0637
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v3, 0x7f02063b
+    const v3, 0x7f020643
 
     invoke-virtual {v0, v1, v3, v2}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -2185,13 +2185,13 @@
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0f0365
+    const v4, 0x7f0f03c2
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v4, 0x7f02067d
+    const v4, 0x7f020685
 
     invoke-virtual {v1, v2, v4, v3}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -2214,13 +2214,13 @@
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0f0364
+    const v4, 0x7f0f03c1
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v4, 0x7f02067c
+    const v4, 0x7f020684
 
     invoke-virtual {v1, v2, v4, v3}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -2381,7 +2381,7 @@
 
     const-string/jumbo v3, "power_saver"
 
-    const v4, 0x7f020670
+    const v4, 0x7f020678
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -2407,7 +2407,7 @@
 
     const-string/jumbo v3, "power_saver"
 
-    const v4, 0x7f02066f
+    const v4, 0x7f020677
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 

@@ -41,7 +41,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/samsung/android/glview/GLAbsList;->mScrollBarVisible:Z
     invoke-static {v0, v1}, Lcom/samsung/android/glview/GLAbsList;->access$002(Lcom/samsung/android/glview/GLAbsList;Z)Z
 
     return-void

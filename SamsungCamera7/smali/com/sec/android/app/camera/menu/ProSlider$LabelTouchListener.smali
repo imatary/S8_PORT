@@ -48,7 +48,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSlider:Lcom/sec/android/app/camera/widget/gl/TickSlider;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
 
     move-result-object v0
@@ -63,7 +62,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSlider:Lcom/sec/android/app/camera/widget/gl/TickSlider;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
 
     move-result-object v0
@@ -73,7 +71,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSelectedLabel:Lcom/samsung/android/glview/GLView;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1400(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/samsung/android/glview/GLView;
 
     move-result-object v0
@@ -82,14 +79,12 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSelectedLabel:Lcom/samsung/android/glview/GLView;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1400(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/samsung/android/glview/GLView;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->LABEL_NORMAL_COLOR:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1500(Lcom/sec/android/app/camera/menu/ProSlider;)I
 
     move-result v1
@@ -98,7 +93,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSelectedLabel:Lcom/samsung/android/glview/GLView;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1400(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/samsung/android/glview/GLView;
 
     move-result-object v0
@@ -110,7 +104,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->LABEL_SELECTED_COLOR:I
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1700(Lcom/sec/android/app/camera/menu/ProSlider;)I
 
     move-result v0
@@ -119,12 +112,10 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # setter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSelectedLabel:Lcom/samsung/android/glview/GLView;
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1402(Lcom/sec/android/app/camera/menu/ProSlider;Lcom/samsung/android/glview/GLView;)Lcom/samsung/android/glview/GLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSlider:Lcom/sec/android/app/camera/widget/gl/TickSlider;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
 
     move-result-object v0
@@ -141,7 +132,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->setChangedStep(I)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3000(Lcom/sec/android/app/camera/menu/ProSlider;I)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
@@ -150,7 +140,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mAutoButton:Lcom/samsung/android/glview/GLButton;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1600(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v0
@@ -159,7 +148,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mAutoButton:Lcom/samsung/android/glview/GLButton;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1600(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v0
@@ -172,7 +160,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mAutoButton:Lcom/samsung/android/glview/GLButton;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1600(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v0
@@ -181,7 +168,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mAutoButton:Lcom/samsung/android/glview/GLButton;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1600(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v0
@@ -195,7 +181,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$LabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSliderId:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1300(Lcom/sec/android/app/camera/menu/ProSlider;)I
 
     move-result v1

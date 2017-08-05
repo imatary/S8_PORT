@@ -42,6 +42,8 @@
 
 .field private mShareNameNumber:Landroid/preference/SwitchPreference;
 
+.field private mShowPrivacyNotice:Landroid/widget/TextView;
+
 .field mStateListener:Lcom/android/phone/ia/IAInterimListener;
 
 .field private mSubAppBarOnffTextview:Landroid/widget/TextView;
@@ -66,6 +68,14 @@
     iget-object v0, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mSubAppBarView:Landroid/view/View;
 
     return-object v0
+.end method
+
+.method static synthetic -wrap0(Lcom/android/phone/smartcall/SmartCallSettings;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->withdrawPrivateNotice()V
+
+    return-void
 .end method
 
 .method public constructor <init>()V
@@ -97,9 +107,9 @@
 .end method
 
 .method private initLayout()V
-    .locals 5
+    .locals 6
 
-    const/16 v4, 0x8
+    const/16 v3, 0x8
 
     const v2, 0x102000a
 
@@ -149,7 +159,7 @@
 
     iput-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mDescriptionText:Landroid/widget/TextView;
 
-    const v2, 0x7f100293
+    const v2, 0x7f100296
 
     invoke-virtual {p0, v2}, Lcom/android/phone/smartcall/SmartCallSettings;->findViewById(I)Landroid/view/View;
 
@@ -159,19 +169,17 @@
 
     iput-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mAnimationView:Landroid/widget/ImageView;
 
+    const v2, 0x7f100295
+
+    invoke-virtual {p0, v2}, Lcom/android/phone/smartcall/SmartCallSettings;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/TextView;
+
+    iput-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShowPrivacyNotice:Landroid/widget/TextView;
+
     const-string/jumbo v2, "support_smart_call"
-
-    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v2, "feature_usa"
 
     invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
@@ -179,43 +187,22 @@
 
     if-eqz v2, :cond_1
 
-    const v2, 0x7f0d0bf1
-
-    invoke-virtual {p0, v2}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    :goto_0
-    const-string/jumbo v2, " "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const v3, 0x7f0d0bf2
-
-    invoke-virtual {p0, v3}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     iget-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mDescriptionText:Landroid/widget/TextView;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const v4, 0x7f0d0c5a
 
-    move-result-object v3
+    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(I)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
+    :try_start_0
     iget-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mAnimationView:Landroid/widget/ImageView;
 
-    const v3, 0x7f0201bb
+    const v4, 0x7f0201c4
 
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setImageResource(I)V
+    :try_end_0
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
 
+    :goto_0
     iget-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mAnimationView:Landroid/widget/ImageView;
 
     invoke-virtual {v2}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
@@ -236,31 +223,15 @@
 
     iget-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mSubAppBarView:Landroid/view/View;
 
-    new-instance v3, Lcom/android/phone/smartcall/SmartCallSettings$2;
+    new-instance v4, Lcom/android/phone/smartcall/SmartCallSettings$4;
 
-    invoke-direct {v3, p0}, Lcom/android/phone/smartcall/SmartCallSettings$2;-><init>(Lcom/android/phone/smartcall/SmartCallSettings;)V
+    invoke-direct {v4, p0}, Lcom/android/phone/smartcall/SmartCallSettings$4;-><init>(Lcom/android/phone/smartcall/SmartCallSettings;)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const/4 v2, 0x1
+    iget-object v4, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShowPrivacyNotice:Landroid/widget/TextView;
 
-    iput-boolean v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->first:Z
-
-    return-void
-
-    :cond_1
-    const v2, 0x7f0d0bf0
-
-    invoke-virtual {p0, v2}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_0
-
-    :cond_2
-    const-string/jumbo v2, "support_spam_call_reject"
+    const-string/jumbo v2, "support_smart_call"
 
     invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
@@ -268,36 +239,106 @@
 
     if-eqz v2, :cond_3
 
+    const/4 v2, 0x0
+
+    :goto_2
+    invoke-virtual {v4, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    iget-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShowPrivacyNotice:Landroid/widget/TextView;
+
+    iget-object v3, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShowPrivacyNotice:Landroid/widget/TextView;
+
+    invoke-virtual {v3}, Landroid/widget/TextView;->getPaintFlags()I
+
+    move-result v3
+
+    or-int/lit8 v3, v3, 0x8
+
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setPaintFlags(I)V
+
+    iget-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShowPrivacyNotice:Landroid/widget/TextView;
+
+    new-instance v3, Lcom/android/phone/smartcall/SmartCallSettings$5;
+
+    invoke-direct {v3, p0}, Lcom/android/phone/smartcall/SmartCallSettings$5;-><init>(Lcom/android/phone/smartcall/SmartCallSettings;)V
+
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    const/4 v2, 0x1
+
+    iput-boolean v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->first:Z
+
+    return-void
+
+    :catch_0
+    move-exception v1
+
+    const-string/jumbo v2, "SmartCallSettings"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "OutOfMemoryError: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_1
+    const-string/jumbo v2, "support_spam_call_reject"
+
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
     iget-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mDescriptionText:Landroid/widget/TextView;
 
-    const v3, 0x7f0d0be5
+    const v4, 0x7f0d0c50
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mAnimationView:Landroid/widget/ImageView;
 
-    invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    goto :goto_1
+
+    :cond_2
+    iget-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mDescriptionText:Landroid/widget/TextView;
+
+    const v4, 0x7f0d0c4f
+
+    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(I)V
+
+    iget-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mAnimationView:Landroid/widget/ImageView;
+
+    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
     goto :goto_1
 
     :cond_3
-    iget-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mDescriptionText:Landroid/widget/TextView;
+    move v2, v3
 
-    const v3, 0x7f0d0be4
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
-
-    iget-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mAnimationView:Landroid/widget/ImageView;
-
-    invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    goto :goto_1
+    goto :goto_2
 .end method
 
 .method private initSmartCallPreference()V
-    .locals 3
-
-    const/4 v2, 0x0
+    .locals 2
 
     invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -313,34 +354,15 @@
 
     iput-object v1, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShareNameNumber:Landroid/preference/SwitchPreference;
 
-    const-string/jumbo v1, "feature_usa"
-
-    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
     iget-object v1, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShareNameNumber:Landroid/preference/SwitchPreference;
 
     if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShareNameNumber:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
-
-    iput-object v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShareNameNumber:Landroid/preference/SwitchPreference;
-
-    :cond_0
-    iget-object v1, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShareNameNumber:Landroid/preference/SwitchPreference;
-
-    if-eqz v1, :cond_1
 
     iget-object v1, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShareNameNumber:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v1, p0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    :cond_1
+    :cond_0
     return-void
 .end method
 
@@ -491,144 +513,196 @@
     goto :goto_1
 .end method
 
-.method private startProviderActivity()V
-    .locals 9
+.method private showWithdrawDialog()V
+    .locals 7
 
-    const/4 v8, 0x0
+    const/4 v6, 0x1
+
+    const-string/jumbo v3, "SmartCallSettings"
+
+    const-string/jumbo v4, "show withdraw dialog"
+
+    invoke-static {v3, v4, v6}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    new-instance v0, Landroid/app/AlertDialog$Builder;
+
+    invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f0d0c58
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f0d0c76
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    const/4 v4, 0x2
+
+    new-array v4, v4, [Ljava/lang/Object;
+
+    const/4 v5, 0x0
+
+    aput-object v2, v4, v5
+
+    aput-object v2, v4, v6
+
+    invoke-static {v3, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    new-instance v3, Lcom/android/phone/smartcall/SmartCallSettings$2;
+
+    invoke-direct {v3, p0}, Lcom/android/phone/smartcall/SmartCallSettings$2;-><init>(Lcom/android/phone/smartcall/SmartCallSettings;)V
+
+    const v4, 0x7f0d0c77
+
+    invoke-virtual {v0, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    new-instance v3, Lcom/android/phone/smartcall/SmartCallSettings$3;
+
+    invoke-direct {v3, p0}, Lcom/android/phone/smartcall/SmartCallSettings$3;-><init>(Lcom/android/phone/smartcall/SmartCallSettings;)V
+
+    const v4, 0x7f0d0327
+
+    invoke-virtual {v0, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+
+    return-void
+.end method
+
+.method private startProviderActivity(Z)V
+    .locals 8
 
     const/4 v7, 0x1
 
-    const-string/jumbo v5, "SmartCallSettings"
+    const-string/jumbo v4, "SmartCallSettings"
 
-    const-string/jumbo v6, "startProviderActivity"
+    const-string/jumbo v5, "startProviderActivity"
 
-    invoke-static {v5, v6, v7}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    invoke-static {v4, v5, v7}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
     invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v5
+    move-result-object v4
 
-    const-string/jumbo v6, "spam_call_enable"
+    const-string/jumbo v5, "spam_call_enable"
 
-    invoke-static {v5, v6, v8}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    const/4 v6, 0x0
 
-    move-result v5
+    invoke-static {v4, v5, v6}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
-    if-ne v5, v7, :cond_1
+    move-result v4
 
-    const/4 v4, 0x1
-
-    :goto_0
-    invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v5
-
-    const-string/jumbo v6, "smart_call_share_name_number"
-
-    invoke-static {v5, v6, v8}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v5
-
-    if-ne v5, v7, :cond_2
+    if-ne v4, v7, :cond_1
 
     const/4 v3, 0x1
 
-    :goto_1
-    iget-boolean v5, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mIsAlreadySendIntent:Z
+    :goto_0
+    iget-boolean v4, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mIsAlreadySendIntent:Z
 
-    if-nez v5, :cond_0
-
-    if-eqz v4, :cond_0
+    if-nez v4, :cond_0
 
     if-eqz v3, :cond_0
 
+    if-eqz p1, :cond_0
+
     new-instance v2, Landroid/content/Intent;
 
-    const-string/jumbo v5, "com.samsung.android.smartcallprovider.ACTION_REQUEST_PERMISSION"
+    const-string/jumbo v4, "com.samsung.android.smartcallprovider.ACTION_REQUEST_PERMISSION"
 
-    invoke-direct {v2, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->getTnCAgreed()Z
 
-    const/4 v5, 0x1
+    const/4 v4, 0x1
 
     :try_start_0
-    iput-boolean v5, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mIsAlreadySendIntent:Z
+    iput-boolean v4, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mIsAlreadySendIntent:Z
 
-    const/4 v5, 0x1
+    const/4 v4, 0x1
 
-    invoke-virtual {p0, v2, v5}, Lcom/android/phone/smartcall/SmartCallSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v2, v4}, Lcom/android/phone/smartcall/SmartCallSettings;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_0
-    :goto_2
+    :goto_1
     return-void
 
     :cond_1
-    const/4 v4, 0x0
-
-    goto :goto_0
-
-    :cond_2
     const/4 v3, 0x0
 
-    goto :goto_1
+    goto :goto_0
 
     :catch_0
     move-exception v1
 
-    const-string/jumbo v5, "SmartCallSettings"
+    const-string/jumbo v4, "SmartCallSettings"
 
-    new-instance v6, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "SmartCallProvider - Failed to startActivity"
+    const-string/jumbo v6, "SmartCallProvider - Failed to startActivity"
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-static {v5, v6}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v5}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_2
+    goto :goto_1
 
     :catch_1
     move-exception v0
 
-    const-string/jumbo v5, "SmartCallSettings"
+    const-string/jumbo v4, "SmartCallSettings"
 
-    new-instance v6, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "SmartCallProvider activity is not found!"
+    const-string/jumbo v6, "SmartCallProvider activity is not found!"
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-static {v5, v6}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v5}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_2
+    goto :goto_1
 .end method
 
 .method private updateAutoupdate()V
@@ -734,6 +808,8 @@
     invoke-virtual {v0, p1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     :cond_2
+    invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->invalidateOptionsMenu()V
+
     return-void
 .end method
 
@@ -795,7 +871,7 @@
 
     invoke-virtual {v1, v0}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    invoke-direct {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->startProviderActivity()V
+    invoke-direct {p0, v0}, Lcom/android/phone/smartcall/SmartCallSettings;->startProviderActivity(Z)V
 
     :cond_0
     return-void
@@ -806,48 +882,80 @@
     goto :goto_0
 .end method
 
+.method private withdrawPrivateNotice()V
+    .locals 4
+
+    const/4 v3, 0x0
+
+    const-string/jumbo v0, "SmartCallSettings"
+
+    const-string/jumbo v1, "withdraw private notice"
+
+    const/4 v2, 0x1
+
+    invoke-static {v0, v1, v2}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    const-string/jumbo v0, "smart_call_privacy_notice_agree"
+
+    invoke-static {v0, v3}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
+
+    invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "spam_call_enable"
+
+    invoke-static {v0, v1, v3}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->updateTurnOnStatus()V
+
+    invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->invalidateOptionsMenu()V
+
+    return-void
+.end method
+
 
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 11
 
-    const/4 v10, -0x1
+    const/4 v9, -0x1
 
-    const/4 v1, 0x1
+    const/4 v6, 0x0
 
-    const/4 v5, 0x0
+    const/4 v2, 0x1
 
-    const-string/jumbo v4, "SmartCallSettings"
+    const-string/jumbo v5, "SmartCallSettings"
 
-    new-instance v6, Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "onActivityResult requestCode : "
+    const-string/jumbo v8, "onActivityResult requestCode : "
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v7
 
-    const-string/jumbo v7, ", resultCode : "
+    const-string/jumbo v8, ", resultCode : "
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v6, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-static {v4, v6, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    invoke-static {v5, v7, v2}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
     packed-switch p1, :pswitch_data_0
 
@@ -858,127 +966,171 @@
     return-void
 
     :pswitch_0
-    if-ne p2, v10, :cond_3
+    if-ne p2, v9, :cond_3
 
-    const-string/jumbo v4, "RequestPermissions"
+    const-string/jumbo v5, "RequestPermissions"
 
-    invoke-virtual {p3, v4}, Landroid/content/Intent;->getExtra(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, [Ljava/lang/String;
-
-    array-length v7, v3
-
-    move v6, v5
-
-    :goto_1
-    if-ge v6, v7, :cond_3
-
-    aget-object v2, v3, v6
-
-    invoke-virtual {p3, v2}, Landroid/content/Intent;->getExtra(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p3, v5}, Landroid/content/Intent;->getExtra(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v4
 
-    check-cast v4, Ljava/lang/Integer;
+    check-cast v4, [Ljava/lang/String;
 
-    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
+    const/4 v1, 0x0
 
-    move-result v0
+    const/4 v0, 0x0
 
-    const-string/jumbo v4, "SmartCallSettings"
+    array-length v8, v4
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    move v7, v6
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    :goto_1
+    if-ge v7, v8, :cond_1
 
-    const-string/jumbo v9, "onActivityResult grantResult : "
+    aget-object v3, v4, v7
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v9, "SmartCallSettings"
 
-    move-result-object v8
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v8
+    const-string/jumbo v10, "onActivityResult grantResult : "
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v10
 
-    invoke-static {v4, v8, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    invoke-virtual {p3, v3}, Landroid/content/Intent;->getExtra(Ljava/lang/String;)Ljava/lang/Object;
 
-    if-nez v0, :cond_2
+    move-result-object v5
 
-    :cond_1
-    :goto_2
-    add-int/lit8 v4, v6, 0x1
+    check-cast v5, Ljava/lang/Integer;
 
-    move v6, v4
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    move-result v5
+
+    invoke-virtual {v10, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v9, v5, v2}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    invoke-virtual {p3, v3}, Landroid/content/Intent;->getExtra(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/lang/Integer;
+
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    move-result v5
+
+    add-int/2addr v1, v5
+
+    add-int/lit8 v5, v7, 0x1
+
+    move v7, v5
 
     goto :goto_1
 
-    :cond_2
-    if-ne v0, v10, :cond_1
+    :cond_1
+    if-nez v1, :cond_2
 
     invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v4
+    move-result-object v5
 
-    const-string/jumbo v8, "smart_call_share_name_number"
+    const-string/jumbo v6, "smart_call_share_name_number"
 
-    invoke-static {v4, v8, v5}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v5, v6, v2}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    iget-object v5, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShareNameNumber:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {v5, v2}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+
+    :goto_2
+    iput-boolean v2, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mIsAlreadySendIntent:Z
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v5
+
+    const-string/jumbo v7, "smart_call_share_name_number"
+
+    invoke-static {v5, v7, v6}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    iget-object v5, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShareNameNumber:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {v5, v6}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     goto :goto_2
 
     :cond_3
-    iput-boolean v1, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mIsAlreadySendIntent:Z
+    invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
-    goto :goto_0
+    move-result-object v5
+
+    const-string/jumbo v6, "smart_call_share_name_number"
+
+    invoke-static {v5, v6, v2}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    iget-object v5, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mShareNameNumber:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {v5, v2}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+
+    goto :goto_2
 
     :pswitch_1
-    if-ne p2, v10, :cond_4
+    if-ne p2, v9, :cond_4
 
     :goto_3
     invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v4
+    move-result-object v5
 
-    const-string/jumbo v6, "spam_call_enable"
+    const-string/jumbo v7, "spam_call_enable"
 
-    invoke-static {v4, v6, v5}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v5, v7, v6}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
-    move-result v4
+    move-result v5
 
-    if-ne v4, v1, :cond_5
+    if-ne v5, v2, :cond_5
 
     :goto_4
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
-    invoke-direct {p0, v1}, Lcom/android/phone/smartcall/SmartCallSettings;->sendSmartCallOnOffIntent(Z)V
+    invoke-direct {p0, v2}, Lcom/android/phone/smartcall/SmartCallSettings;->sendSmartCallOnOffIntent(Z)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_4
     invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v4
+    move-result-object v5
 
-    const-string/jumbo v6, "spam_call_enable"
+    const-string/jumbo v7, "spam_call_enable"
 
-    invoke-static {v4, v6, v5}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v5, v7, v6}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    const-string/jumbo v4, "smart_call_roaming_backup"
+    const-string/jumbo v5, "smart_call_roaming_backup"
 
-    invoke-static {v4, v5}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
+    invoke-static {v5, v6}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
 
     invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->updateTurnOnStatus()V
 
     goto :goto_3
 
     :cond_5
-    move v1, v5
+    move v2, v6
 
     goto :goto_4
 
@@ -1138,28 +1290,15 @@
 
     move-result v2
 
-    if-eqz v2, :cond_5
-
-    const-string/jumbo v2, "feature_usa"
-
-    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v2
-
     if-eqz v2, :cond_4
 
-    const v2, 0x7f0d0bee
-
-    invoke-virtual {p0, v2}, Lcom/android/phone/smartcall/SmartCallSettings;->setTitle(I)V
-
-    :goto_1
-    const v2, 0x7f0d01f1
+    const v2, 0x7f0d024e
 
     invoke-virtual {p0, v2}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v3, 0x7f0d0236
+    const v3, 0x7f0d0294
 
     invoke-virtual {p0, v3}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
 
@@ -1174,7 +1313,7 @@
     invoke-direct {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->initSmartCallPreference()V
 
     :cond_3
-    :goto_2
+    :goto_1
     return-void
 
     :catch_0
@@ -1202,16 +1341,9 @@
 
     invoke-static {v2, v3, v5}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    goto/16 :goto_0
+    goto :goto_0
 
     :cond_4
-    const v2, 0x7f0d0bed
-
-    invoke-virtual {p0, v2}, Lcom/android/phone/smartcall/SmartCallSettings;->setTitle(I)V
-
-    goto :goto_1
-
-    :cond_5
     const-string/jumbo v2, "support_spam_call"
 
     invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
@@ -1236,7 +1368,27 @@
 
     invoke-static {v2, v3, v4}, Lcom/android/phone/utils/AppLogging;->insertLog(Landroid/content/Context;Lcom/android/phone/utils/AppLogging$AppLoggingAction;Ljava/lang/String;)V
 
-    goto :goto_2
+    goto :goto_1
+.end method
+
+.method public onCreateOptionsMenu(Landroid/view/Menu;)Z
+    .locals 3
+
+    const/4 v2, 0x1
+
+    const/4 v1, 0x0
+
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
+
+    const v0, 0x7f0d0c75
+
+    invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {p1, v1, v2, v1, v0}, Landroid/view/Menu;->add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
+
+    return v2
 .end method
 
 .method public onDestroy()V
@@ -1252,7 +1404,9 @@
 .end method
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
-    .locals 3
+    .locals 4
+
+    const/4 v3, 0x1
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1270,13 +1424,13 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f0d01f7
+    const v1, 0x7f0d0254
 
     invoke-virtual {p0, v1}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f0d0217
+    const v2, 0x7f0d0275
 
     invoke-virtual {p0, v2}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
 
@@ -1287,11 +1441,16 @@
     :cond_0
     invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->finish()V
 
-    const/4 v1, 0x1
-
-    return v1
+    return v3
 
     :cond_1
+    if-ne v0, v3, :cond_2
+
+    invoke-direct {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->showWithdrawDialog()V
+
+    return v3
+
+    :cond_2
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v1
@@ -1337,9 +1496,9 @@
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 10
 
-    const/4 v4, 0x0
-
     const/4 v3, 0x1
+
+    const/4 v4, 0x0
 
     const-string/jumbo v2, "SmartCallSettings"
 
@@ -1466,13 +1625,13 @@
 
     if-eqz v2, :cond_4
 
-    const v2, 0x7f0d01f7
+    const v2, 0x7f0d0254
 
     invoke-virtual {p0, v2}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
-    const v2, 0x7f0d0251
+    const v2, 0x7f0d02b0
 
     invoke-virtual {p0, v2}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
 
@@ -1494,11 +1653,7 @@
     invoke-static {v5, v6, v7, v8, v9}, Lcom/android/phone/utils/SALogging;->sendSAEventSettingLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 
     :cond_4
-    invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v5
-
-    const-string/jumbo v6, "smart_call_share_name_number"
+    iput-boolean v4, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mIsAlreadySendIntent:Z
 
     invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -1506,16 +1661,14 @@
 
     if-eqz v2, :cond_7
 
-    move v2, v3
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    :goto_2
-    invoke-static {v5, v6, v2}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    move-result v2
 
-    iput-boolean v4, p0, Lcom/android/phone/smartcall/SmartCallSettings;->mIsAlreadySendIntent:Z
-
-    invoke-direct {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->updateShareNameNumber()V
+    invoke-direct {p0, v2}, Lcom/android/phone/smartcall/SmartCallSettings;->startProviderActivity(Z)V
 
     :cond_5
+    :goto_2
     return v3
 
     :cond_6
@@ -1524,7 +1677,13 @@
     goto :goto_1
 
     :cond_7
-    move v2, v4
+    invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string/jumbo v5, "smart_call_share_name_number"
+
+    invoke-static {v2, v5, v4}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     goto :goto_2
 .end method
@@ -1589,6 +1748,63 @@
     goto :goto_0
 .end method
 
+.method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
+    .locals 4
+
+    const/4 v3, 0x0
+
+    const/4 v2, 0x1
+
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+
+    const/4 v0, 0x0
+
+    const-string/jumbo v1, "support_smart_call"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const-string/jumbo v1, "smart_call_privacy_notice_agree"
+
+    invoke-static {v1, v3}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
+
+    move-result v1
+
+    if-ne v1, v2, :cond_1
+
+    const/4 v0, 0x1
+
+    :cond_0
+    :goto_0
+    if-eqz v0, :cond_2
+
+    invoke-interface {p1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
+
+    :goto_1
+    return v2
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_2
+    invoke-interface {p1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
+
+    move-result-object v1
+
+    invoke-interface {v1, v3}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
+
+    goto :goto_1
+.end method
+
 .method protected onResume()V
     .locals 5
 
@@ -1612,7 +1828,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0d01f7
+    const v0, 0x7f0d0254
 
     invoke-virtual {p0, v0}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
 
@@ -1818,7 +2034,7 @@
 
     move-result-object v1
 
-    const v5, 0x7f0d0bcf
+    const v5, 0x7f0d0c3a
 
     invoke-virtual {v1, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1895,7 +2111,7 @@
 
     move-result-object v1
 
-    const v5, 0x7f0d0bd0
+    const v5, 0x7f0d0c3b
 
     invoke-virtual {v1, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1922,49 +2138,49 @@
 .method public updateTurnOnStatus(Z)V
     .locals 14
 
-    const v10, 0x7f0d0237
+    const v10, 0x7f0d0295
 
-    const v9, 0x7f0d01f7
+    const v9, 0x7f0d0254
 
     const/4 v6, 0x1
 
-    const/4 v5, 0x0
+    const/4 v7, 0x0
 
-    const-string/jumbo v7, "spam_calls_dialog_do_not_show"
+    const-string/jumbo v5, "spam_calls_dialog_do_not_show"
 
-    invoke-static {v7, v5}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
+    invoke-static {v5, v7}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
 
     move-result v0
 
-    const-string/jumbo v7, "smart_call_privacy_notice_donotshow"
+    const-string/jumbo v5, "smart_call_privacy_notice_donotshow"
 
-    invoke-static {v7, v5}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
+    invoke-static {v5, v7}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
 
     move-result v3
 
     invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v7
+    move-result-object v5
 
     const-string/jumbo v8, "spam_call_enable"
 
-    invoke-static {v7, v8, v5}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v5, v8, v7}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v4
 
-    const-string/jumbo v7, "smart_call_privacy_notice_agree"
+    const-string/jumbo v5, "smart_call_privacy_notice_agree"
 
-    invoke-static {v7, v5}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
+    invoke-static {v5, v7}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
 
     move-result v2
 
-    const-string/jumbo v7, "support_spam_call"
+    const-string/jumbo v5, "support_spam_call"
 
-    invoke-static {v7}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v7
+    move-result v5
 
-    if-eqz v7, :cond_0
+    if-eqz v5, :cond_0
 
     if-eqz p1, :cond_0
 
@@ -1972,47 +2188,47 @@
 
     if-nez v4, :cond_0
 
-    iget-boolean v7, p0, Lcom/android/phone/smartcall/SmartCallSettings;->first:Z
+    iget-boolean v5, p0, Lcom/android/phone/smartcall/SmartCallSettings;->first:Z
 
-    if-eqz v7, :cond_4
+    if-eqz v5, :cond_4
 
     :cond_0
-    const-string/jumbo v7, "support_smart_call"
+    const-string/jumbo v5, "support_smart_call"
 
-    invoke-static {v7}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v7
+    move-result v5
 
-    if-eqz v7, :cond_1
+    if-eqz v5, :cond_1
 
     invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isSupportedSmartCallNoti()Z
 
-    move-result v7
+    move-result v5
 
-    if-eqz v7, :cond_1
+    if-eqz v5, :cond_1
 
     if-nez v2, :cond_1
 
     if-eqz p1, :cond_1
 
-    iget-boolean v7, p0, Lcom/android/phone/smartcall/SmartCallSettings;->first:Z
+    iget-boolean v5, p0, Lcom/android/phone/smartcall/SmartCallSettings;->first:Z
 
-    if-eqz v7, :cond_5
+    if-eqz v5, :cond_5
 
     :cond_1
-    iget-boolean v7, p0, Lcom/android/phone/smartcall/SmartCallSettings;->alreadyCheck:Z
+    iget-boolean v5, p0, Lcom/android/phone/smartcall/SmartCallSettings;->alreadyCheck:Z
 
-    if-nez v7, :cond_3
+    if-nez v5, :cond_3
 
     iput-boolean v6, p0, Lcom/android/phone/smartcall/SmartCallSettings;->alreadyCheck:Z
 
-    const-string/jumbo v7, "support_smart_call"
+    const-string/jumbo v5, "support_smart_call"
 
-    invoke-static {v7}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v7
+    move-result v5
 
-    if-eqz v7, :cond_2
+    if-eqz v5, :cond_2
 
     invoke-virtual {p0, v9}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
 
@@ -2026,10 +2242,10 @@
 
     if-eqz p1, :cond_7
 
-    move v7, v6
+    move v5, v6
 
     :goto_0
-    int-to-long v12, v7
+    int-to-long v12, v5
 
     invoke-static {v8, v9, v10, v12, v13}, Lcom/android/phone/utils/SALogging;->sendSAEventSettingLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 
@@ -2042,17 +2258,17 @@
 
     if-eqz p1, :cond_8
 
-    move v7, v6
+    move v5, v6
 
     :goto_1
-    invoke-static {v8, v9, v7}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v8, v9, v5}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    const-string/jumbo v7, "smart_call_roaming_backup"
+    const-string/jumbo v5, "smart_call_roaming_backup"
 
     if-eqz p1, :cond_9
 
     :goto_2
-    invoke-static {v7, v6}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
+    invoke-static {v5, v6}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
 
     invoke-virtual {p0}, Lcom/android/phone/smartcall/SmartCallSettings;->updateTurnOnStatus()V
 
@@ -2086,22 +2302,22 @@
     :cond_5
     invoke-virtual {p0, v9}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v8
 
     invoke-virtual {p0, v10}, Lcom/android/phone/smartcall/SmartCallSettings;->getString(I)Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v9
 
-    const-string/jumbo v9, "spam_call_enable"
+    const-string/jumbo v10, "spam_call_enable"
 
     if-eqz p1, :cond_6
 
     move v5, v6
 
-    :cond_6
-    int-to-long v10, v5
+    :goto_4
+    int-to-long v12, v5
 
-    invoke-static {v7, v8, v9, v10, v11}, Lcom/android/phone/utils/SALogging;->sendSAEventSettingLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
+    invoke-static {v8, v9, v10, v12, v13}, Lcom/android/phone/utils/SALogging;->sendSAEventSettingLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 
     new-instance v1, Landroid/content/Intent;
 
@@ -2109,13 +2325,17 @@
 
     move-result-object v5
 
-    const-class v7, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;
+    const-class v8, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;
 
-    invoke-direct {v1, v5, v7}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-direct {v1, v5, v8}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     const-string/jumbo v5, "smart_call_menu"
 
     invoke-virtual {v1, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    const-string/jumbo v5, "disable_bottom_button"
+
+    invoke-virtual {v1, v5, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     const/4 v5, 0x2
 
@@ -2123,18 +2343,23 @@
 
     goto :goto_3
 
+    :cond_6
+    move v5, v7
+
+    goto :goto_4
+
     :cond_7
-    move v7, v5
+    move v5, v7
 
     goto :goto_0
 
     :cond_8
-    move v7, v5
+    move v5, v7
 
     goto :goto_1
 
     :cond_9
-    move v6, v5
+    move v6, v7
 
     goto :goto_2
 .end method

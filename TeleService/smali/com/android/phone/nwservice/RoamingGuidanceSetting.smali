@@ -281,7 +281,7 @@
 
     invoke-virtual {v0, v5}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v4, 0x7f0d0aa4
+    const v4, 0x7f0d0b0b
 
     invoke-virtual {p0, v4}, Lcom/android/phone/nwservice/RoamingGuidanceSetting;->getText(I)Ljava/lang/CharSequence;
 
@@ -292,7 +292,7 @@
     return-object v0
 
     :sswitch_1
-    const v3, 0x7f0d0332
+    const v3, 0x7f0d0392
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
@@ -306,7 +306,7 @@
 
     invoke-virtual {v1, v4}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v4, 0x7f0d050c
+    const v4, 0x7f0d056c
 
     invoke-virtual {p0, v4}, Lcom/android/phone/nwservice/RoamingGuidanceSetting;->getText(I)Ljava/lang/CharSequence;
 

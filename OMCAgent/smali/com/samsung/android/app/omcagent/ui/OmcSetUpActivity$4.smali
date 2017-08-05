@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$4;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->title_text:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$300(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -52,12 +51,10 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$4;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->startInitAnimation()V
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$400(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)V
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$4;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->startArrowFadeInAnimation()V
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$500(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)V
 
     const/4 v0, 0x1

@@ -49,7 +49,6 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$3;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mTouchListener:Lcom/samsung/android/glview/GLView$TouchListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$900(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/samsung/android/glview/GLView$TouchListener;
 
     move-result-object v1
@@ -58,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$3;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mTouchListener:Lcom/samsung/android/glview/GLView$TouchListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$1000(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/samsung/android/glview/GLView$TouchListener;
 
     move-result-object v0
@@ -75,7 +73,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$3;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mButtonPressed:Lcom/samsung/android/glview/GLRectangle;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$800(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/samsung/android/glview/GLRectangle;
 
     move-result-object v1
@@ -87,7 +84,6 @@
     :pswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$3;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mButtonPressed:Lcom/samsung/android/glview/GLRectangle;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$800(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/samsung/android/glview/GLRectangle;
 
     move-result-object v1

@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor$1;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;->lastTask:Ljava/util/concurrent/atomic/AtomicReference;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;->access$400(Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;)Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object v1

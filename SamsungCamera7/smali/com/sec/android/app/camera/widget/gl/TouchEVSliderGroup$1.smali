@@ -55,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup$1;->this$0:Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->TOUCH_EV_OFFSET:I
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->access$000(Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;)I
 
     move-result v1
@@ -66,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup$1;->this$0:Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->access$100(Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -79,7 +77,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup$1;->this$0:Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->access$100(Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -100,7 +97,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup$1;->this$0:Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->access$100(Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -121,7 +117,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup$1;->this$0:Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->access$100(Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -140,7 +135,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup$1;->this$0:Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->mTouchEVSlider:Lcom/sec/android/app/camera/widget/gl/TouchEVSlider;
     invoke-static {v2}, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->access$200(Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;)Lcom/sec/android/app/camera/widget/gl/TouchEVSlider;
 
     move-result-object v2
@@ -171,7 +165,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup$1;->this$0:Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->access$100(Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -194,7 +187,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup$1;->this$0:Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->TOUCH_EV_OFFSET:I
     invoke-static {v4}, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->access$000(Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;)I
 
     move-result v4

@@ -70,6 +70,8 @@
     .end annotation
 .end field
 
+.field private mPopupShowing:Z
+
 .field private mReview:Lcom/sec/android/app/camera/menu/Review;
 
 .field private mReviewShowing:Z
@@ -84,6 +86,8 @@
     .locals 6
 
     const v1, 0x7f0a0012
+
+    const/4 v3, 0x0
 
     const/4 v2, 0x0
 
@@ -235,9 +239,9 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->mPopupIdList:Ljava/util/ArrayList;
 
-    const/4 v0, 0x0
+    iput-boolean v3, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->mPopupShowing:Z
 
-    iput-boolean v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->mReviewShowing:Z
+    iput-boolean v3, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->mReviewShowing:Z
 
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -464,7 +468,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f09016c
+    const v9, 0x7f09016d
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -476,7 +480,7 @@
 
     move-result-object v9
 
-    const v11, 0x7f09016b
+    const v11, 0x7f09016c
 
     invoke-virtual {v9, v11}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -520,7 +524,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f09016c
+    const v8, 0x7f09016d
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -532,7 +536,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f09016b
+    const v9, 0x7f09016c
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -572,7 +576,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f09016c
+    const v8, 0x7f09016d
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -584,7 +588,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f09016b
+    const v9, 0x7f09016c
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -626,7 +630,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f09016c
+    const v8, 0x7f09016d
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -638,7 +642,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f09016b
+    const v9, 0x7f09016c
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -717,9 +721,9 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->VIDEO_PREVIEW_POPUP_BOTTOM_MARGIN:F
 
-    const v6, 0x7f090200
+    const v6, 0x7f090201
 
-    const v7, 0x7f0901ff
+    const v7, 0x7f090200
 
     const v8, 0x7f0201f1
 
@@ -763,9 +767,9 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->VISION_INTELLIGENC_POPUP_BOTTOM_MARGIN:F
 
-    const v6, 0x7f090283
+    const v6, 0x7f090285
 
-    const v7, 0x7f090282
+    const v7, 0x7f090284
 
     const v8, 0x7f0201f0
 
@@ -840,6 +844,10 @@
     goto :goto_0
 
     :cond_0
+    const/4 v1, 0x0
+
+    iput-boolean v1, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->mPopupShowing:Z
+
     return-void
 .end method
 
@@ -1113,6 +1121,14 @@
     .end packed-switch
 .end method
 
+.method public isPopupShowing()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->mPopupShowing:Z
+
+    return v0
+.end method
+
 .method public isReviewShowing()Z
     .locals 1
 
@@ -1264,6 +1280,8 @@
 .method public showPopup(Lcom/sec/android/app/camera/interfaces/PopupLayoutController$PopupID;)V
     .locals 4
 
+    const/4 v2, 0x1
+
     sget-object v0, Lcom/sec/android/app/camera/menu/PopupLayout$4;->$SwitchMap$com$sec$android$app$camera$interfaces$PopupLayoutController$PopupID:[I
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/interfaces/PopupLayoutController$PopupID;->ordinal()I
@@ -1290,6 +1308,8 @@
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/TextBalloon;->showTextBalloon()V
 
+    iput-boolean v2, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->mPopupShowing:Z
+
     goto :goto_0
 
     :pswitch_1
@@ -1303,6 +1323,8 @@
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->mVisionIntelligencePopup:Lcom/sec/android/app/camera/widget/gl/TextBalloon;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/TextBalloon;->showTextBalloon()V
+
+    iput-boolean v2, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->mPopupShowing:Z
 
     goto :goto_0
 
@@ -1339,6 +1361,8 @@
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto :goto_0
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x1

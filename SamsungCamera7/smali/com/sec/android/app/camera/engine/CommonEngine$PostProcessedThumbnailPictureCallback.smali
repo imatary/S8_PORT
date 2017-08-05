@@ -71,7 +71,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$PostProcessedThumbnailPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentThumbnailWidth:I
     invoke-static {v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4700(Lcom/sec/android/app/camera/engine/CommonEngine;)I
 
     move-result v2
@@ -88,7 +87,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$PostProcessedThumbnailPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentThumbnailHeight:I
     invoke-static {v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4800(Lcom/sec/android/app/camera/engine/CommonEngine;)I
 
     move-result v2
@@ -105,7 +103,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$PostProcessedThumbnailPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentState:Lcom/sec/android/app/camera/engine/AbstractCeState;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1100(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/engine/AbstractCeState;
 
     move-result-object v0
@@ -130,7 +127,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$PostProcessedThumbnailPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->makeAndUpdateThumbnail([B)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7300(Lcom/sec/android/app/camera/engine/CommonEngine;[B)V
 
     const-string v0, "CommonEngine"

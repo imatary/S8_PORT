@@ -34,8 +34,6 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 10
 
-    const/4 v8, 0x1
-
     const/4 v7, 0x0
 
     const/4 v6, 0x0
@@ -309,7 +307,7 @@
 
     const-string/jumbo v4, "bluetooth_a2dp_sink_mode"
 
-    invoke-virtual {v3, v4, v7}, Lcom/android/bluetooth/btservice/AdapterService;->setA2dpPreference(Ljava/lang/String;I)Z
+    invoke-virtual {v3, v4, v7}, Lcom/android/bluetooth/btservice/AdapterService;->setA2dpPreference(Ljava/lang/String;I)V
 
     const-string/jumbo v3, "BluetoothAdapterService"
 
@@ -334,11 +332,9 @@
 
     iget-object v3, p0, Lcom/android/bluetooth/btservice/AdapterService$1;->this$0:Lcom/android/bluetooth/btservice/AdapterService;
 
-    invoke-static {v3, v8}, Lcom/android/bluetooth/btservice/AdapterService;->-wrap13(Lcom/android/bluetooth/btservice/AdapterService;Z)V
+    const/4 v4, 0x1
 
-    iget-object v3, p0, Lcom/android/bluetooth/btservice/AdapterService$1;->this$0:Lcom/android/bluetooth/btservice/AdapterService;
-
-    invoke-static {v3, v8}, Lcom/android/bluetooth/btservice/AdapterService;->-wrap12(Lcom/android/bluetooth/btservice/AdapterService;Z)V
+    invoke-static {v3, v4}, Lcom/android/bluetooth/btservice/AdapterService;->-wrap12(Lcom/android/bluetooth/btservice/AdapterService;Z)V
 
     const-string/jumbo v3, "BluetoothAdapterService"
 
@@ -347,8 +343,6 @@
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
-
-    nop
 
     :sswitch_data_0
     .sparse-switch

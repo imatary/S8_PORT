@@ -584,15 +584,7 @@
 .end method
 
 .method public dump(Ljava/io/FileDescriptor;[Ljava/lang/String;)V
-    .locals 3
-
-    new-instance v1, Ljava/io/PrintWriter;
-
-    new-instance v2, Ljava/io/FileOutputStream;
-
-    invoke-direct {v2, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/FileDescriptor;)V
-
-    invoke-direct {v1, v2}, Ljava/io/PrintWriter;-><init>(Ljava/io/OutputStream;)V
+    .locals 1
 
     invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService$AdapterServiceBinder;->getService()Lcom/android/bluetooth/btservice/AdapterService;
 
@@ -603,7 +595,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {v0, p1, v1, p2}, Lcom/android/bluetooth/btservice/AdapterService;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    invoke-virtual {v0, p1, p2}, Lcom/android/bluetooth/btservice/AdapterService;->dump(Ljava/io/FileDescriptor;[Ljava/lang/String;)V
 
     return-void
 .end method
@@ -2010,8 +2002,81 @@
     return v1
 .end method
 
-.method public leTestMode(IIII)Z
-    .locals 4
+.method public leReadPhy(Landroid/bluetooth/BluetoothDevice;)Z
+    .locals 2
+
+    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService$AdapterServiceBinder;->getService()Lcom/android/bluetooth/btservice/AdapterService;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    const/4 v1, 0x0
+
+    return v1
+
+    :cond_0
+    invoke-virtual {v0, p1}, Lcom/android/bluetooth/btservice/AdapterService;->leReadPhy(Landroid/bluetooth/BluetoothDevice;)Z
+
+    move-result v1
+
+    return v1
+.end method
+
+.method public leSetDefaultPhy(III)Z
+    .locals 2
+
+    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService$AdapterServiceBinder;->getService()Lcom/android/bluetooth/btservice/AdapterService;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    const/4 v1, 0x0
+
+    return v1
+
+    :cond_0
+    invoke-virtual {v0, p1, p2, p3}, Lcom/android/bluetooth/btservice/AdapterService;->leSetDefaultPhy(III)Z
+
+    move-result v1
+
+    return v1
+.end method
+
+.method public leSetPhy(Landroid/bluetooth/BluetoothDevice;IIII)Z
+    .locals 6
+
+    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService$AdapterServiceBinder;->getService()Lcom/android/bluetooth/btservice/AdapterService;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    const/4 v1, 0x0
+
+    return v1
+
+    :cond_0
+    move-object v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    move v5, p5
+
+    invoke-virtual/range {v0 .. v5}, Lcom/android/bluetooth/btservice/AdapterService;->leSetPhy(Landroid/bluetooth/BluetoothDevice;IIII)Z
+
+    move-result v1
+
+    return v1
+.end method
+
+.method public leTestMode(IIIIII)Z
+    .locals 7
 
     const/4 v3, 0x0
 
@@ -2039,7 +2104,19 @@
     return v3
 
     :cond_1
-    invoke-virtual {v0, p1, p2, p3, p4}, Lcom/android/bluetooth/btservice/AdapterService;->leTestMode(IIII)Z
+    move v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    move v5, p5
+
+    move v6, p6
+
+    invoke-virtual/range {v0 .. v6}, Lcom/android/bluetooth/btservice/AdapterService;->leTestMode(IIIIII)Z
 
     move-result v1
 
@@ -2547,6 +2624,42 @@
 
     :cond_1
     invoke-virtual {v0, p1, p2, p3}, Lcom/android/bluetooth/btservice/AdapterService;->sendRawHci(I[BI)I
+
+    move-result v1
+
+    return v1
+.end method
+
+.method public setBTAdaptivityTest()Z
+    .locals 4
+
+    const/4 v3, 0x0
+
+    invoke-static {}, Lcom/android/bluetooth/Utils;->checkCaller()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string/jumbo v1, "BluetoothAdapterService"
+
+    const-string/jumbo v2, "setBTAdaptivityTest(): not allowed for non-active user"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v3
+
+    :cond_0
+    invoke-virtual {p0}, Lcom/android/bluetooth/btservice/AdapterService$AdapterServiceBinder;->getService()Lcom/android/bluetooth/btservice/AdapterService;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    return v3
+
+    :cond_1
+    invoke-virtual {v0}, Lcom/android/bluetooth/btservice/AdapterService;->setBTAdaptivityTest()Z
 
     move-result v1
 

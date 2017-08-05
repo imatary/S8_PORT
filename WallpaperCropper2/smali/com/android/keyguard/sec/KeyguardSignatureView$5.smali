@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$5;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mBackupPIN:Landroid/widget/ImageButton;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$600(Lcom/android/keyguard/sec/KeyguardSignatureView;)Landroid/widget/ImageButton;
 
     move-result-object v0

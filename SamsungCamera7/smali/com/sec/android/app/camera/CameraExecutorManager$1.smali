@@ -85,7 +85,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$1;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mAudioManager:Landroid/media/AudioManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$000(Lcom/sec/android/app/camera/CameraExecutorManager;)Landroid/media/AudioManager;
 
     move-result-object v0
@@ -96,7 +95,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$1;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$100(Lcom/sec/android/app/camera/CameraExecutorManager;)Landroid/content/Context;
 
     move-result-object v0
@@ -109,13 +107,11 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    # setter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mAudioManager:Landroid/media/AudioManager;
     invoke-static {v2, v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$002(Lcom/sec/android/app/camera/CameraExecutorManager;Landroid/media/AudioManager;)Landroid/media/AudioManager;
 
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$1;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mIsCameraActivity:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$200(Lcom/sec/android/app/camera/CameraExecutorManager;)Z
 
     move-result v0
@@ -124,7 +120,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$1;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$300(Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v0
@@ -133,7 +128,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$1;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$300(Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v0
@@ -150,7 +144,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$1;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$300(Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v0
@@ -162,7 +155,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$1;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mAudioManager:Landroid/media/AudioManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$000(Lcom/sec/android/app/camera/CameraExecutorManager;)Landroid/media/AudioManager;
 
     move-result-object v0
@@ -173,7 +165,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$1;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$100(Lcom/sec/android/app/camera/CameraExecutorManager;)Landroid/content/Context;
 
     move-result-object v0
@@ -186,13 +177,11 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    # setter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mAudioManager:Landroid/media/AudioManager;
     invoke-static {v2, v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$002(Lcom/sec/android/app/camera/CameraExecutorManager;Landroid/media/AudioManager;)Landroid/media/AudioManager;
 
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$1;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mIsCameraActivity:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$200(Lcom/sec/android/app/camera/CameraExecutorManager;)Z
 
     move-result v0
@@ -201,7 +190,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$1;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$300(Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v0
@@ -210,7 +198,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$1;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$300(Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v0
@@ -227,7 +214,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$1;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$300(Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v0

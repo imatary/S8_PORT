@@ -88,7 +88,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$4;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->getDataFromSlideshow(Landroid/content/Context;)V
     invoke-static {v0, p1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1500(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;Landroid/content/Context;)V
 
     goto :goto_0
@@ -96,7 +95,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$4;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -110,7 +108,6 @@
     :goto_1
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$4;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -122,7 +119,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$4;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0

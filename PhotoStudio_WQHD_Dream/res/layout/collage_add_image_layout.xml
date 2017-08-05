@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <FrameLayout android:layout_gravity="center" android:id="@id/add_collage_icon_container" android:background="@drawable/add_image_ripple_drawable" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <ImageView android:layout_gravity="center" android:id="@id/_add_collage_image_icon" android:background="@drawable/add_image_focus_drawable" android:focusable="true" android:clickable="false" android:layout_width="@dimen/collage_add_icon_size" android:layout_height="@dimen/collage_add_icon_size" android:src="@drawable/collage_ic_plus" android:scaleType="center" android:contentDescription="@string/collage_popup_add_new_image" />
-        </FrameLayout>
-    </FrameLayout>
-</merge>

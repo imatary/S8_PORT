@@ -38,7 +38,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider$2;->this$0:Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider;
 
-    # getter for: Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider;->mSlideAnim:Landroid/animation/AnimatorSet;
     invoke-static {v0}, Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider;->access$100(Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider;)Landroid/animation/AnimatorSet;
 
     move-result-object v0
@@ -47,7 +46,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider$2;->this$0:Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider;
 
-    # invokes: Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider;->handleStopSlideEffect()V
     invoke-static {v0}, Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider;->access$200(Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider;)V
 
     return-void

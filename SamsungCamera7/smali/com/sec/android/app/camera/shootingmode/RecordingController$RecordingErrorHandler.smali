@@ -77,7 +77,6 @@
 
     iget v1, p1, Landroid/os/Message;->what:I
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController;->handleRecordingError(I)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$900(Lcom/sec/android/app/camera/shootingmode/RecordingController;I)V
 
     :cond_0

@@ -42,7 +42,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/glview/GLContext$4;->this$0:Lcom/samsung/android/glview/GLContext;
 
-    # getter for: Lcom/samsung/android/glview/GLContext;->mRootView:Lcom/samsung/android/glview/GLViewGroup;
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->access$300(Lcom/samsung/android/glview/GLContext;)Lcom/samsung/android/glview/GLViewGroup;
 
     move-result-object v0
@@ -51,7 +50,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/glview/GLContext$4;->this$0:Lcom/samsung/android/glview/GLContext;
 
-    # getter for: Lcom/samsung/android/glview/GLContext;->mRootView:Lcom/samsung/android/glview/GLViewGroup;
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->access$300(Lcom/samsung/android/glview/GLContext;)Lcom/samsung/android/glview/GLViewGroup;
 
     move-result-object v0

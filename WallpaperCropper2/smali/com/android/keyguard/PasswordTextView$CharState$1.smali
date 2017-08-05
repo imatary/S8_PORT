@@ -58,7 +58,6 @@
 
     iget-object v0, v0, Lcom/android/keyguard/PasswordTextView$CharState;->this$0:Lcom/android/keyguard/PasswordTextView;
 
-    # getter for: Lcom/android/keyguard/PasswordTextView;->mTextChars:Ljava/util/ArrayList;
     invoke-static {v0}, Lcom/android/keyguard/PasswordTextView;->access$700(Lcom/android/keyguard/PasswordTextView;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -71,7 +70,6 @@
 
     iget-object v0, v0, Lcom/android/keyguard/PasswordTextView$CharState;->this$0:Lcom/android/keyguard/PasswordTextView;
 
-    # getter for: Lcom/android/keyguard/PasswordTextView;->mCharPool:Ljava/util/Stack;
     invoke-static {v0}, Lcom/android/keyguard/PasswordTextView;->access$800(Lcom/android/keyguard/PasswordTextView;)Ljava/util/Stack;
 
     move-result-object v0
@@ -90,7 +88,6 @@
 
     iget-object v1, v1, Lcom/android/keyguard/PasswordTextView$CharState;->textTranslateAnimator:Landroid/animation/ValueAnimator;
 
-    # invokes: Lcom/android/keyguard/PasswordTextView$CharState;->cancelAnimator(Landroid/animation/Animator;)V
     invoke-static {v0, v1}, Lcom/android/keyguard/PasswordTextView$CharState;->access$900(Lcom/android/keyguard/PasswordTextView$CharState;Landroid/animation/Animator;)V
 
     iget-object v0, p0, Lcom/android/keyguard/PasswordTextView$CharState$1;->this$1:Lcom/android/keyguard/PasswordTextView$CharState;

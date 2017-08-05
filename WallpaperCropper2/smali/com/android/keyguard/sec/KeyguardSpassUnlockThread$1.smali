@@ -54,7 +54,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSpassUnlockThread$1;->this$0:Lcom/android/keyguard/sec/KeyguardSpassUnlockThread;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSpassUnlockThread;->mSpassThreadHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSpassUnlockThread;->access$000(Lcom/android/keyguard/sec/KeyguardSpassUnlockThread;)Landroid/os/Handler;
 
     move-result-object v0
@@ -63,14 +62,12 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSpassUnlockThread$1;->this$0:Lcom/android/keyguard/sec/KeyguardSpassUnlockThread;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSpassUnlockThread;->mSpassThreadHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSpassUnlockThread;->access$000(Lcom/android/keyguard/sec/KeyguardSpassUnlockThread;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardSpassUnlockThread$1;->this$0:Lcom/android/keyguard/sec/KeyguardSpassUnlockThread;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSpassUnlockThread;->mSpassThreadHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardSpassUnlockThread;->access$000(Lcom/android/keyguard/sec/KeyguardSpassUnlockThread;)Landroid/os/Handler;
 
     move-result-object v1

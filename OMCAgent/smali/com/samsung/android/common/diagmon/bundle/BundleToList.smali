@@ -143,7 +143,6 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/common/diagmon/bundle/BundleToList$TraverseToList;->traverseWithoutException()V
 
-    # getter for: Lcom/samsung/android/common/diagmon/bundle/BundleToList$TraverseToList;->list:Ljava/util/List;
     invoke-static {v0}, Lcom/samsung/android/common/diagmon/bundle/BundleToList$TraverseToList;->access$100(Lcom/samsung/android/common/diagmon/bundle/BundleToList$TraverseToList;)Ljava/util/List;
 
     move-result-object v1

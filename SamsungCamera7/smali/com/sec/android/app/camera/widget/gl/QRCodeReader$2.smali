@@ -43,12 +43,10 @@
 
     move-result-object v2
 
-    # setter for: Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->mBinder:Lcom/samsung/android/app/qragent/service/IQRService;
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->access$002(Lcom/sec/android/app/camera/widget/gl/QRCodeReader;Lcom/samsung/android/app/qragent/service/IQRService;)Lcom/samsung/android/app/qragent/service/IQRService;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader$2;->this$0:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->mBinder:Lcom/samsung/android/app/qragent/service/IQRService;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->access$000(Lcom/sec/android/app/camera/widget/gl/QRCodeReader;)Lcom/samsung/android/app/qragent/service/IQRService;
 
     move-result-object v1
@@ -57,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader$2;->this$0:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->mFoundURL:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->access$100(Lcom/sec/android/app/camera/widget/gl/QRCodeReader;)Ljava/lang/String;
 
     move-result-object v1
@@ -67,14 +64,12 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader$2;->this$0:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->mBinder:Lcom/samsung/android/app/qragent/service/IQRService;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->access$000(Lcom/sec/android/app/camera/widget/gl/QRCodeReader;)Lcom/samsung/android/app/qragent/service/IQRService;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader$2;->this$0:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->mFoundURL:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->access$100(Lcom/sec/android/app/camera/widget/gl/QRCodeReader;)Ljava/lang/String;
 
     move-result-object v2
@@ -87,7 +82,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader$2;->this$0:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->mConnection:Landroid/content/ServiceConnection;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->access$200(Lcom/sec/android/app/camera/widget/gl/QRCodeReader;)Landroid/content/ServiceConnection;
 
     move-result-object v1
@@ -96,7 +90,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader$2;->this$0:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->access$300(Lcom/sec/android/app/camera/widget/gl/QRCodeReader;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -107,7 +100,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader$2;->this$0:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->mConnection:Landroid/content/ServiceConnection;
     invoke-static {v2}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->access$200(Lcom/sec/android/app/camera/widget/gl/QRCodeReader;)Landroid/content/ServiceConnection;
 
     move-result-object v2
@@ -156,7 +148,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->mBinder:Lcom/samsung/android/app/qragent/service/IQRService;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->access$002(Lcom/sec/android/app/camera/widget/gl/QRCodeReader;Lcom/samsung/android/app/qragent/service/IQRService;)Lcom/samsung/android/app/qragent/service/IQRService;
 
     return-void

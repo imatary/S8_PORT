@@ -84,7 +84,6 @@
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$2;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->mAppList:Ljava/util/LinkedHashMap;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$000(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)Ljava/util/LinkedHashMap;
 
     move-result-object v0
@@ -97,7 +96,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$2;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->mAppListView:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$200(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
     move-result-object v0
@@ -133,7 +131,6 @@
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$2;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->mAppListView:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$200(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
     move-result-object v0
@@ -151,7 +148,6 @@
     :cond_3
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$2;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->mAppListView:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$200(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
     move-result-object v0

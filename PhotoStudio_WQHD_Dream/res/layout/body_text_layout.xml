@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sec.android.mimage.photoretouching.Decoration.InputText android:textSize="@dimen/label_edit_text_size" android:textStyle="normal" android:id="@id/inputtext_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/label_edittext_margin_top" android:cursorVisible="true" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" android:selectAllOnFocus="true" android:capitalize="sentences" android:autoText="false" android:imeOptions="actionDone|flagNoExtractUi" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/label_edittext_margin_start" android:layout_marginEnd="@dimen/label_edittext_margin_end" />
-</LinearLayout>

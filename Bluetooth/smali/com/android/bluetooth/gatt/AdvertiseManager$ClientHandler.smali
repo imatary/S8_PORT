@@ -29,79 +29,12 @@
     return-void
 .end method
 
-.method private advertisingClientSize()I
-    .locals 6
-
-    const/4 v2, 0x0
-
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get1(Lcom/android/bluetooth/gatt/AdvertiseManager;)Ljava/util/Set;
-
-    move-result-object v3
-
-    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_0
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/android/bluetooth/gatt/AdvertiseClient;
-
-    iget-object v3, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
-
-    invoke-virtual {v3}, Landroid/bluetooth/le/AdvertiseSettings;->getIsStandardAdv()Z
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const-string/jumbo v3, "BtGatt.AdvertiseManager"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "size of list is ="
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v2
-.end method
-
 .method private handleStartAdvertising(Lcom/android/bluetooth/gatt/AdvertiseClient;)V
     .locals 8
 
     const/4 v7, 0x4
 
-    const/4 v3, 0x3
+    const/4 v2, 0x3
 
     const/4 v6, 0x2
 
@@ -111,7 +44,7 @@
 
     iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get5(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
+    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get6(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
 
     move-result-object v1
 
@@ -125,25 +58,21 @@
 
     move-result-object v1
 
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-interface {v1, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+    invoke-interface {v1, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    invoke-direct {p0, v3, v5}, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->logClientsSet(IZ)V
+    invoke-direct {p0, v2, v5}, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->logClientsSet(IZ)V
 
     iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-static {v1, v0, v3}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-wrap2(Lcom/android/bluetooth/gatt/AdvertiseManager;II)V
+    invoke-static {v1, v0, v2}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-wrap2(Lcom/android/bluetooth/gatt/AdvertiseManager;II)V
 
     iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get5(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
+    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get6(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
 
     move-result-object v1
 
@@ -190,15 +119,13 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v1, p1, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
+    iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-virtual {v1}, Landroid/bluetooth/le/AdvertiseSettings;->getIsStandardAdv()Z
+    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get1(Lcom/android/bluetooth/gatt/AdvertiseManager;)Ljava/util/Set;
 
-    move-result v1
+    move-result-object v1
 
-    if-nez v1, :cond_1
-
-    invoke-direct {p0}, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->advertisingClientSize()I
+    invoke-interface {v1}, Ljava/util/Set;->size()I
 
     move-result v1
 
@@ -206,7 +133,7 @@
 
     move-result v2
 
-    if-lt v1, v2, :cond_2
+    if-lt v1, v2, :cond_1
 
     invoke-direct {p0, v6, v5}, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->logClientsSet(IZ)V
 
@@ -216,7 +143,7 @@
 
     iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get5(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
+    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get6(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
 
     move-result-object v1
 
@@ -233,39 +160,6 @@
     :cond_1
     iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-static {v1, v0}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-set2(Lcom/android/bluetooth/gatt/AdvertiseManager;I)I
-
-    const-string/jumbo v1, "BtGatt.AdvertiseManager"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "Standard advertising standardAdvClientIf = "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get6(Lcom/android/bluetooth/gatt/AdvertiseManager;)I
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_2
-    iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
-
     invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get2(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;
 
     move-result-object v1
@@ -274,7 +168,7 @@
 
     move-result v1
 
-    if-nez v1, :cond_3
+    if-nez v1, :cond_2
 
     invoke-direct {p0, v7, v5}, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->logClientsSet(IZ)V
 
@@ -316,7 +210,7 @@
 
     iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get5(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
+    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get6(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
 
     move-result-object v1
 
@@ -330,7 +224,7 @@
 
     return-void
 
-    :cond_3
+    :cond_2
     iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
     invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get1(Lcom/android/bluetooth/gatt/AdvertiseManager;)Ljava/util/Set;
@@ -353,7 +247,7 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-static {v0}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get5(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
+    invoke-static {v0}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get6(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
 
     move-result-object v0
 
@@ -426,7 +320,7 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-static {v0}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get5(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
+    invoke-static {v0}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get6(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
 
     move-result-object v0
 
@@ -463,71 +357,6 @@
     invoke-direct {p0, v0, v1}, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->logClientsSet(IZ)V
 
     return-void
-.end method
-
-.method private hasAdvertiseClientForQuickConnect(Lcom/android/bluetooth/gatt/AdvertiseClient;)Z
-    .locals 5
-
-    const/16 v4, 0x64
-
-    const/4 v3, 0x1
-
-    iget-object v2, p1, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
-
-    invoke-virtual {v2}, Landroid/bluetooth/le/AdvertiseSettings;->getMode()I
-
-    move-result v2
-
-    if-ne v2, v4, :cond_0
-
-    return v3
-
-    :cond_0
-    iget-object v2, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
-
-    invoke-static {v2}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get1(Lcom/android/bluetooth/gatt/AdvertiseManager;)Ljava/util/Set;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_1
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/android/bluetooth/gatt/AdvertiseClient;
-
-    iget-object v2, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
-
-    invoke-virtual {v2}, Landroid/bluetooth/le/AdvertiseSettings;->getMode()I
-
-    move-result v2
-
-    if-ne v2, v4, :cond_1
-
-    iget-object v2, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
-
-    invoke-virtual {v2}, Landroid/bluetooth/le/AdvertiseSettings;->getIsStandardAdv()Z
-
-    move-result v2
-
-    if-nez v2, :cond_1
-
-    return v3
-
-    :cond_2
-    const/4 v2, 0x0
-
-    return v2
 .end method
 
 .method private logClientsSet(IZ)V

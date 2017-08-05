@@ -34,7 +34,6 @@
 
     move-result-object v0
 
-    # invokes: Lcom/google/gson/FieldNamingPolicy;->upperCaseFirstLetter(Ljava/lang/String;)Ljava/lang/String;
     invoke-static {v0}, Lcom/google/gson/FieldNamingPolicy;->access$100(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0

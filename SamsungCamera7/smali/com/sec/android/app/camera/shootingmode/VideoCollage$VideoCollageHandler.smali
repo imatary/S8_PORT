@@ -86,44 +86,36 @@
     goto :goto_0
 
     :pswitch_0
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->launchEditor()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$3800(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)V
 
     goto :goto_0
 
     :pswitch_1
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->updateRecIndicatorIcon()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$3700(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)V
 
     goto :goto_0
 
     :pswitch_2
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->isCameraSwitchingAnimationRunning()Z
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$3900(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->sendShowUIMessageDelayed()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$4000(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)V
 
     goto :goto_0
 
     :cond_1
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->showView()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$4100(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)V
 
     goto :goto_0
 
     :pswitch_3
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->prepareSwitchCamera()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$4200(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)V
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->switchCamera()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$4300(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)V
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VideoCollage;->handleSwitchCameraCompleted()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->access$4400(Lcom/sec/android/app/camera/shootingmode/VideoCollage;)V
 
     goto :goto_0

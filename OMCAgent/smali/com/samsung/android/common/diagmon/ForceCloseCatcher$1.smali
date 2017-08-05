@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/common/diagmon/ForceCloseCatcher$1;->this$0:Lcom/samsung/android/common/diagmon/ForceCloseCatcher;
 
-    # getter for: Lcom/samsung/android/common/diagmon/ForceCloseCatcher;->orignalHandler:Ljava/lang/Thread$UncaughtExceptionHandler;
     invoke-static {v0}, Lcom/samsung/android/common/diagmon/ForceCloseCatcher;->access$000(Lcom/samsung/android/common/diagmon/ForceCloseCatcher;)Ljava/lang/Thread$UncaughtExceptionHandler;
 
     move-result-object v0

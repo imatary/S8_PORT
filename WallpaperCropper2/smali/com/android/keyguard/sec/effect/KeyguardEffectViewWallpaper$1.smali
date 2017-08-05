@@ -49,12 +49,10 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper;
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper;->mScreenOnAnimationValue:F
     invoke-static {v1, v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper;->access$002(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper;F)F
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper;->mScreenOnAnimationValue:F
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWallpaper;)F
 
     move-result v0

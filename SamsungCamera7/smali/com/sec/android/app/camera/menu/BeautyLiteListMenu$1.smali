@@ -39,12 +39,10 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->updateLevel(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->access$100(Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;I)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->restartSliderMenuTimer()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->access$200(Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
@@ -101,7 +99,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->speakBeautyLevel(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->access$300(Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;I)V
 
     :cond_0

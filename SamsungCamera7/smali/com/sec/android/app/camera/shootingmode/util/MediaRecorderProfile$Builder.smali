@@ -139,7 +139,6 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile$Builder;->mVideoEncodingBitrate:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->mVideoSizeIntervalTable:Landroid/util/SparseArray;
     invoke-static {}, Lcom/sec/android/app/camera/shootingmode/util/MediaRecorderProfile;->access$1500()Landroid/util/SparseArray;
 
     move-result-object v0

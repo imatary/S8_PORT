@@ -481,7 +481,7 @@
 
     const/4 v7, 0x0
 
-    const v10, 0x7f0d02ca
+    const v10, 0x7f0d032a
 
     const/4 v8, 0x0
 
@@ -507,7 +507,7 @@
 
     invoke-virtual {v1, v8}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v6, 0x7f0d0aa4
+    const v6, 0x7f0d0b0b
 
     invoke-virtual {p0, v6}, Lcom/android/phone/nwservice/CLIRSetting;->getText(I)Ljava/lang/CharSequence;
 
@@ -567,7 +567,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/nwservice/CLIRSetting$2;-><init>(Lcom/android/phone/nwservice/CLIRSetting;)V
 
-    const v7, 0x7f0d0a89
+    const v7, 0x7f0d0af0
 
     invoke-virtual {v0, v7, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -575,7 +575,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/nwservice/CLIRSetting$3;-><init>(Lcom/android/phone/nwservice/CLIRSetting;)V
 
-    const v7, 0x7f0d0a8a
+    const v7, 0x7f0d0af1
 
     invoke-virtual {v0, v7, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -594,9 +594,9 @@
     return-object v6
 
     :sswitch_2
-    const v5, 0x7f0d0a7c
+    const v5, 0x7f0d0ae3
 
-    const v4, 0x7f0d0b07
+    const v4, 0x7f0d0b6e
 
     const-string/jumbo v6, "CLIRSetting"
 
@@ -625,9 +625,9 @@
     goto :goto_0
 
     :sswitch_3
-    const v5, 0x7f0d0a7e
+    const v5, 0x7f0d0ae5
 
-    const v4, 0x7f0d0b08
+    const v4, 0x7f0d0b6f
 
     const-string/jumbo v6, "CLIRSetting"
 
@@ -686,9 +686,9 @@
     return-object v6
 
     :sswitch_5
-    const v5, 0x7f0d0a7f
+    const v5, 0x7f0d0ae6
 
-    const v4, 0x7f0d0b09
+    const v4, 0x7f0d0b70
 
     const-string/jumbo v6, "CLIRSetting"
 
@@ -717,9 +717,9 @@
     goto :goto_1
 
     :sswitch_6
-    const v5, 0x7f0d0a7f
+    const v5, 0x7f0d0ae6
 
-    const v4, 0x7f0d0b0a
+    const v4, 0x7f0d0b71
 
     const-string/jumbo v6, "CLIRSetting"
 
@@ -748,9 +748,9 @@
     goto :goto_1
 
     :sswitch_7
-    const v5, 0x7f0d0a7f
+    const v5, 0x7f0d0ae6
 
-    const v4, 0x7f0d030b
+    const v4, 0x7f0d036b
 
     const-string/jumbo v6, "CLIRSetting"
 
@@ -783,7 +783,7 @@
 
     invoke-direct {v3, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d0332
+    const v4, 0x7f0d0392
 
     const-string/jumbo v6, "CLIRSetting"
 

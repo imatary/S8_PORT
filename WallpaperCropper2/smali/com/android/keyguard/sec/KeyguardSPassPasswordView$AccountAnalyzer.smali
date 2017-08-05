@@ -51,7 +51,6 @@
 
     new-instance v1, Landroid/os/UserHandle;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
     invoke-static {p1}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$600(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v2
@@ -86,7 +85,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mEnableFallback:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$700(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Z
 
     move-result v0
@@ -117,7 +115,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
     invoke-static {v3}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$800(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v3
@@ -192,12 +189,10 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mEnableFallback:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$702(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mForgotPatternButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$900(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/Button;
 
     move-result-object v0
@@ -212,7 +207,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mForgotPatternButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$900(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/Button;
 
     move-result-object v0
@@ -232,7 +226,6 @@
     :goto_2
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$1100(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/content/Context;
 
     move-result-object v0
@@ -243,7 +236,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$1000(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v1
@@ -260,7 +252,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mDPM:Landroid/app/admin/DevicePolicyManager;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$1200(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/app/admin/DevicePolicyManager;
 
     move-result-object v1
@@ -273,7 +264,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mEmergencyArea:Landroid/widget/LinearLayout;
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$1300(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/LinearLayout;
 
     move-result-object v2
@@ -284,7 +274,6 @@
     :goto_3
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mForgotPatternButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$900(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/Button;
 
     move-result-object v0
@@ -319,7 +308,6 @@
     :try_start_2
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mForgotPatternButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$900(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/Button;
 
     move-result-object v0
@@ -358,7 +346,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mForgotPatternButton:Landroid/widget/Button;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$900(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/Button;
 
     move-result-object v1
@@ -367,7 +354,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mForgotPatternButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$900(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/Button;
 
     move-result-object v0
@@ -400,7 +386,6 @@
     :try_start_3
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mAccountEmergencyArea:Landroid/widget/LinearLayout;
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$1400(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/LinearLayout;
 
     move-result-object v2
@@ -415,7 +400,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mEmergencyArea:Landroid/widget/LinearLayout;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$1300(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/LinearLayout;
 
     move-result-object v0
@@ -426,7 +410,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mAccountEmergencyArea:Landroid/widget/LinearLayout;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$1400(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/LinearLayout;
 
     move-result-object v0
@@ -476,7 +459,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mEnableFallback:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$702(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;Z)Z
 
     iput v1, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$AccountAnalyzer;->mAccountIndex:I

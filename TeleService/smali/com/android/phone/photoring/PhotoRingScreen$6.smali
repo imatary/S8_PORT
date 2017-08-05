@@ -632,7 +632,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0d0917
+    const v15, 0x7f0d097d
 
     invoke-static {v13, v15, v14}, Lcom/android/phone/photoring/PhotoRingScreen;->-wrap11(Lcom/android/phone/photoring/PhotoRingScreen;ILandroid/content/DialogInterface$OnClickListener;)V
 
@@ -659,7 +659,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0d0a08
+    const v15, 0x7f0d0a6f
 
     invoke-static {v13, v15, v14}, Lcom/android/phone/photoring/PhotoRingScreen;->-wrap11(Lcom/android/phone/photoring/PhotoRingScreen;ILandroid/content/DialogInterface$OnClickListener;)V
 
@@ -678,7 +678,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0d0917
+    const v15, 0x7f0d097d
 
     invoke-static {v13, v15, v14}, Lcom/android/phone/photoring/PhotoRingScreen;->-wrap11(Lcom/android/phone/photoring/PhotoRingScreen;ILandroid/content/DialogInterface$OnClickListener;)V
 
@@ -846,7 +846,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0d0a0a
+    const v15, 0x7f0d0a71
 
     invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -885,7 +885,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0d0a08
+    const v15, 0x7f0d0a6f
 
     invoke-static {v13, v15, v14}, Lcom/android/phone/photoring/PhotoRingScreen;->-wrap11(Lcom/android/phone/photoring/PhotoRingScreen;ILandroid/content/DialogInterface$OnClickListener;)V
 
@@ -904,7 +904,7 @@
 
     move-result-object v14
 
-    const v15, 0x7f0d0917
+    const v15, 0x7f0d097d
 
     invoke-static {v13, v15, v14}, Lcom/android/phone/photoring/PhotoRingScreen;->-wrap11(Lcom/android/phone/photoring/PhotoRingScreen;ILandroid/content/DialogInterface$OnClickListener;)V
 
@@ -1317,7 +1317,7 @@
     goto/16 :goto_0
 
     :cond_17
-    const v2, 0x7f0d0920
+    const v2, 0x7f0d0986
 
     const-string/jumbo v13, "feature_ktt"
 
@@ -1327,7 +1327,7 @@
 
     if-eqz v13, :cond_18
 
-    const v2, 0x7f0d0921
+    const v2, 0x7f0d0987
 
     :cond_18
     move-object/from16 v0, p0

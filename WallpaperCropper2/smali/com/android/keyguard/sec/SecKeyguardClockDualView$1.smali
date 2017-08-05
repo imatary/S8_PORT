@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockDualView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockDualView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockDualView;->handleDateOnSettngsChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockDualView;->access$000(Lcom/android/keyguard/sec/SecKeyguardClockDualView;)V
 
     goto :goto_0
@@ -52,7 +51,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockDualView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockDualView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockDualView;->handleShowClockDateOnSettngsChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockDualView;->access$100(Lcom/android/keyguard/sec/SecKeyguardClockDualView;)V
 
     goto :goto_0
@@ -71,7 +69,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockDualView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockDualView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockDualView;->setClockContentDesciption()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockDualView;->access$200(Lcom/android/keyguard/sec/SecKeyguardClockDualView;)V
 
     goto :goto_0

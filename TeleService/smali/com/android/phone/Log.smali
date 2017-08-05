@@ -90,6 +90,25 @@
     return v0
 .end method
 
+.method public static e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Z)I
+    .locals 1
+
+    if-eqz p3, :cond_0
+
+    invoke-static {p0, p1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    invoke-static {p0, p1, p2}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public static e(Ljava/lang/String;Ljava/lang/String;Z)I
     .locals 1
 

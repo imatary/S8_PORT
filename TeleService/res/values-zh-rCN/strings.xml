@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$d小时 %2$d分</string>
+    <string name="battery_history_hours_no_seconds">%1$d 小时 %2$d 分钟</string>
     <string name="battery_history_minutes_no_seconds">%d 分钟</string>
     <string name="wifi_fail_to_scan">无法扫描网络</string>
     <string name="wifi_failed_to_obtain_IP">获取 IP 地址失败</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">无法连接至 %s</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">无法连接至%1$s。请在%2$s中检查您的设置并重试。</string>
     <string name="bluetooth_pairing_rejected_error_message">%s 已拒绝配对。</string>
+    <string name="bluetooth_getting_remote_device_name">正在获取设备名称…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">在连接此设备后，将显示设备名称。</string>
     <string name="accessibility_wifi_off">WLAN 已关闭。</string>
     <string name="accessibility_no_wifi">WLAN 连接已断开。</string>
     <string name="accessibility_wifi_one_bar">WLAN 信号强度为一格。</string>
@@ -848,7 +850,7 @@
     <string name="singleContactImportedMsg">已导入联系人</string>
     <string name="failedToImportSingleContactMsg">无法导入联系人</string>
     <string name="hac_mode_title">助听器</string>
-    <string name="hac_mode_summary">提升设备的声音质量，以搭配听力辅助工具使用。</string>
+    <string name="hac_mode_summary">优化手机在使用听力辅助工具时的音质</string>
     <string name="dtmf_tones_title">DTMF音调</string>
     <string name="dtmf_tones_summary">设置DTMF长度。</string>
     <string name="network_info_message">网络信息</string>
@@ -964,7 +966,7 @@
     <string name="callsettings_rejectmessage_list5_kor">我正在驾驶。我会稍后打给您</string>
     <string name="callsettings_rejectmessage_list1_dream">我会稍后给您回电话。</string>
     <string name="callsettings_rejectmessage_list2_dream">您可以稍后再打过来吗？</string>
-    <string name="callsettings_rejectmessage_list3_dream">请给我发短信</string>
+    <string name="callsettings_rejectmessage_list3_dream">请给我发短信。</string>
     <string name="end_call">结束通话</string>
     <string name="call">通话</string>
     <string name="video_call">视频通话</string>
@@ -1032,6 +1034,10 @@
     <string name="add_call_block_number_toast">您将不会收到此号码的来电。</string>
     <string name="delete_call_block_number_toast">您现在可以收到来自此号码的来电</string>
     <string name="emergency_call_block_number_toast">无法拦截紧急号码</string>
+    <string name="call_block_dialog_title">编辑阻止号码</string>
+    <string name="call_block_dialog_contents">从 Android Nougat 开始，呼叫阻止模式将被拦截号码替代。【拦截号码】功能不仅能阻止来电，而且能自动信息。</string>
+    <string name="call_block_dialog_settings">请点击【设置】来编辑【拦截号码】。</string>
+    <string name="call_block_dialog_button">设置</string>
     <string name="no_block_number_description">您添加的号码将显示在此处。</string>
     <string name="no_messages_description">您添加的信息将显示在此处。</string>
     <string name="callsettings_vipmode_blacklist_title">黑名单</string>
@@ -1354,7 +1360,7 @@ Injured/Dead
     <string name="roaming_alerts_sbody">更改语音、文本和数据漫游设置，包括国际漫游。</string>
     <string name="roaming_alerts_voice_body">语音漫游</string>
     <string name="roaming_alerts_data_body">数据漫游</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">发送漫游短信</string>
     <string name="roaming_domestic_category">国内漫游</string>
     <string name="roaming_international_category">国际漫游</string>
     <string name="roaming_voice_body">语音及短信漫游</string>
@@ -1524,9 +1530,7 @@ Injured/Dead
     <string name="data_usage_disable_mobile_vzw_chn">"除非您使用 WLAN，否则您将不能再使用互联网、电子邮件或需要数据连接的其他应用程序。
 
 移动数据将被禁用。"</string>
-    <string name="mobile_data_off_dialog_text_common">除非您使用 <cst>Wi-Fi</cst>"，否则您将不能再使用互联网、电子邮件或需要数据连接的其他应用程序。
-
-移动数据将关闭。"</string>
+    <string name="mobile_data_off_dialog_text_common">除非连接至 <cst>Wi-Fi</cst> 网络，否则您将无法使用浏览器、邮件或需要网络连接的其他应用程序。</string>
     <string name="mobile_data_off_dialog_button_turn_off">关闭</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">除非您使用 <cst>Wi-Fi</cst>"，否则您将不能再使用互联网、电子邮件或需要数据连接的其他应用程序。
 
@@ -1606,8 +1610,9 @@ Injured/Dead
 如果您未使用统一收费的流量套餐，可能产生额外费用。"</string>
     <string name="data_3gwarning_popup_title">移动数据</string>
     <string name="roaming_data_off_msg">若要使用数据漫游，请进入【设置】>【连接】>【全球漫游】，然后启用数据漫游。</string>
-    <string name="data_3gwarning_popup_noti">如果您未使用固定资费套餐，连接至移动网络可能产生额外费用。是否连接？</string>
-    <string name="lgt_4gwarning_popup_mobiledata">将打开移动数据。根据您的资费套餐，运营商可能会收取额外费用。</string>
+    <string name="data_3gwarning_popup_noti">将打开移动数据。根据您的资费套餐，连接至移动网络可能产生额外费用。</string>
+    <string name="data_3gwarning_popup_noti_ktt">将开启移动数据以使用 Giga LTE。根据您的资费套餐，这可能会产生额外费用。</string>
+    <string name="lgt_4gwarning_popup_mobiledata">将打开移动数据。根据您的资费套餐，连接至移动网络可能产生额外费用。</string>
     <string name="lgt_lte_data_roaming_warningmsg">"当启用数据漫游时，&lt;u>&lt;font color=\"%1$s\">将应用国际长途数据漫游费用，而非国内数据费用。&lt;/font>&lt;/u>
 
 通过禁用 IM 通知和自动更新等功能&lt;u>&lt;font color=\"%1$s\">启用限制后台数据以减少数据漫游费用&lt;/font>&lt;/u>"</string>
@@ -1978,6 +1983,8 @@ Injured/Dead
     <string name="volte_call_summary_ops">通过 4G 网络进行 HD 语音通话</string>
     <string name="voice_over_lte_title_cct">Volte 通话</string>
     <string name="volte_call_summary_cct">在 4G LTE 手机网络可用时启用高级通话功能</string>
+    <string name="voice_over_lte_title_o2">4G 通话</string>
+    <string name="volte_call_summary_o2">通过使用 4G 流量来享受增强的通话质量。</string>
     <string name="volte_tty_description_on">TTY 开启时，您将无法拨打视频电话或进行电话会议。</string>
     <string name="volte_prepaid_tty_description_on">将启用 TTY 模式，您将无法拨打或接听电话会议。</string>
     <string name="volte_tty_description_off">TTY 关闭时，您将无法拨打和接听 TTY 电话。</string>
@@ -2171,9 +2178,13 @@ Injured/Dead
     <string name="group_voice_call_disable_on_3G">在 LTE 网络时，群组通话可用。</string>
     <string name="group_voice_call_outgoing_voice_call">拨出语音通话</string>
     <string name="voice_party_call_fail_network">无法进行语音多方通话，请检查网络连接。</string>
+    <string name="data_usage_disable_mobile_warning_skt">除非您使用 <cst>Wi-Fi</cst>"，否则您将不能再使用互联网、电子邮件或需要数据连接的其他应用程序。
+
+移动数据将关闭。"</string>
     <string name="data_usage_disable_mobile_warning">除非您使用 <cst>Wi-Fi</cst>"，否则您将不能再使用互联网、电子邮件或需要数据连接的其他应用程序。
 
 移动数据将被禁用。"</string>
+    <string name="data_usage_enable_mobile_warning_skt">将打开移动数据。根据您的资费套餐，连接至移动网络可能产生额外费用。</string>
     <string name="data_usage_enable_mobile_warning">通过分组数据连接可能产生额外费用。继续？</string>
     <string name="insert_sim_card">插入 SIM 卡</string>
     <string name="insert_sim_card_message">插入 SIM 卡以访问网络服务。</string>
@@ -2207,6 +2218,7 @@ Injured/Dead
     <string name="turning_off_answer_memo">自动接听与接听信息无法同时启用。自动信息将被禁用。</string>
     <string name="disconnect_network_message">更改数据服务网络将断开当前使用的网络。更改数据服务网络？</string>
     <string name="disconnect_network_title">断开当前网络</string>
+    <string name="disable2g_warning_message">此设置会关闭 2G 服务。如果关闭 2G 服务，在 LTE 或 3G 不可用的地方，部分应用程序和功能可能无法正常使用。</string>
     <string name="data_roaming_restrict_title">数据漫游已禁用</string>
     <string name="data_roaming_restrict_body">点击此处以启用数据漫游</string>
     <string name="data_network_mode">数据网络模式</string>
@@ -2567,6 +2579,10 @@ Injured/Dead
     <string name="delete_this_number_kddi">是否删除该号码？</string>
     <string name="change_guide_language_kddi">更改指南语言</string>
     <string name="apply_option_service_kddi">进入%s服务选项</string>
+    <string name="optional_service_kddi">使用可选服务</string>
+    <string name="au_call_settings_category">客户支持</string>
+    <string name="website_kddi">转到网站</string>
+    <string name="call_au_service_center">呼叫 (157)</string>
     <string name="Janpanese_guidance_kddi">日文指导 (%d)</string>
     <string name="English_guidance_kddi">英文指南 (%d)</string>
     <string name="voicecall_kddi">语音信箱</string>
@@ -2621,11 +2637,13 @@ Injured/Dead
     <string name="spam_call_mute_first_ring_summary">将未保存号码的第一声响铃静音</string>
     <string name="spam_call_auto_reject_title">自动拒接来电</string>
     <string name="smart_call_title">来电显示和防骚扰</string>
-    <string name="smart_call_title_usa">识别垃圾信息号码</string>
     <string name="smart_call_title_for_notice">来电显示和防骚扰</string>
-    <string name="smart_call_description">在通话屏幕、电话记录和信息中识别未保存的呼叫方。</string>
-    <string name="smart_call_usa_description">在通话屏幕和通话记录上显示有关骚扰电话的信息。</string>
+    <string name="smart_call_description">"使用【智能通话】识别骚扰电话和诈骗电话。
+
+此服务将为您显示联系人中未保存过的来电者和信息发件人的名字和头像。"</string>
     <string name="smart_call_description_roaming">此服务在其他国家不可用。</string>
+    <string name="smart_call_noti_description_1">点击此处免费获得骚扰电话防护</string>
+    <string name="smart_call_noti_description_2">点击此处识别骚扰电话和诈骗电话</string>
     <string name="smart_call_share_name_number_title">分享姓名和号码</string>
     <string name="smart_call_share_name_number_summary">在服务器上登记您的姓名和号码，以便没有您号码的接收方在您给他们打电话/发送信息时可以看到。</string>
     <string name="smart_call_legal_info_category">法律信息</string>
@@ -2642,12 +2660,16 @@ Injured/Dead
 请单击下列相应按钮，以表示您是否同意上述内容并同意此时启用 %s 功能。"</string>
     <string name="smart_call_privacy_notice_donotshow">不再显示描述【识别未保存号码】功能的通知</string>
     <string name="smart_call_privacy_notice_dream">如果您的移动设备已连入移动网络，则可以在拨打或接听电话过程中使用本服务，但漫游时本服务将受到限制。使用移动网络可能会产生额外的费用，具体因您与网络供应商之间的数据计划而异。</string>
+    <string name="show_privacy_notice_title">隐私策略</string>
     <string name="search_for_places_nearby_title">搜索附近地点</string>
     <string name="search_for_places_nearby_help_description1">查找附近的当地企业和场馆的电话号码和信息。</string>
     <string name="search_for_places_nearby_help_description2">此服务需要您的位置信息。</string>
     <string name="search_for_places_nearby_help_description3">若要优化位置信息的精确度，请进入【设置】>【连接】>【定位服务】>【定位方法】，然后选择【高精确度】。</string>
     <string name="search_for_places_nearby_help_description3_vzw">若要优化位置信息的精确度，请进入【设置】>【连接】>【定位服务】>【定位方法】，然后选择【高精确度】。</string>
     <string name="search_for_places_nearby_help_description4">根据您的资费套餐，使用移动网络替代 <cst>Wi-Fi</cst> 网络可能产生额外费用。</string>
+    <string name="withdraw_menu_title">停止使用此服务</string>
+    <string name="withdraw_dialog_description">当您停止使用%1$s时，该服务将被停用，并且将删除由该服务提供商存储的您的所有%2$s数据。</string>
+    <string name="withdraw_dialog_button">停止使用服务</string>
     <string name="record_call_setting_title">自动录制通话</string>
     <string name="record_call_setting_selected_number">指定号码</string>
     <string name="record_call_setting_all_number">所有号码</string>
@@ -2660,6 +2682,8 @@ Injured/Dead
     <string name="record_call_noti_setting_title">录音通知</string>
     <string name="record_call_noti_setting_summary">在录制通话后接收通知</string>
     <string name="record_call_help_summary">自动录制与选定号码之间的通话</string>
+    <string name="record_call_setting_on_description">自动录制开启</string>
+    <string name="record_call_setting_off_description">自动录制关闭</string>
     <string name="visual_call_title_callsetting">自助语音服务可视化菜单</string>
     <string name="preference_update_DB_visual_call">更新语音电话数据库</string>
     <string name="preference_update_DB_visual_call_summary">只通过 WLAN 自动更新</string>
@@ -2902,6 +2926,7 @@ Please note that in order to enable your emergency calls (e.g., such as 112 call
     <string name="about_phone_open_source_licenses">开源许可证</string>
     <string name="no_network_connection">无网络连接</string>
     <string name="unable_to_check_for_updates">没有网络连接，无法检查更新。</string>
+    <string name="phoneAppLabel_dcm">拨号</string>
     <string name="dcm_vt_fail_cause_not_in_4g">您不在 4G 覆盖区域中，无法进行视频通话。</string>
     <string name="dial_up_network">拨号网络</string>
     <string name="dun_enable">使用拨号网络连接到天翼宽带数据服务</string>
@@ -2942,6 +2967,8 @@ Please note that in order to enable your emergency calls (e.g., such as 112 call
     <string name="save_text">保存</string>
     <string name="wfc_enable_dialog_title">启用 Wi-Fi 通话</string>
     <string name="wfc_enable_dialog">启用 Wi-Fi 通话将禁用省电模式。这可能会增加电量消耗。部分服务提供商可能不支持该功能。</string>
+    <string name="group_call_not_support_emergency_number">无法添加紧急号码至群组通话</string>
+    <string name="group_call_not_support_emergency_number_all">无法添加紧急号码至群组通话。已添加其他所有选定的联系人。</string>
     <string name="enable_data_popup_message">若要启用该功能，必须打开移动数据。</string>
     <string name="enable_data_popup_tittle">无法启用功能</string>
 </resources>

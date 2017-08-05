@@ -46,7 +46,6 @@
 
     iget-boolean v1, p0, Lcom/android/keyguard/CameraWidgetFrame$7;->mShowing:Z
 
-    # invokes: Lcom/android/keyguard/CameraWidgetFrame;->onKeyguardVisibilityChanged(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/CameraWidgetFrame;->access$1100(Lcom/android/keyguard/CameraWidgetFrame;Z)V
 
     return-void

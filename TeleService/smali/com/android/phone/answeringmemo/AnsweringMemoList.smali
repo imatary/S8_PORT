@@ -34,8 +34,6 @@
 
 .field current:I
 
-.field private deviceInCall:Z
-
 .field isActivityResumed:Z
 
 .field isItemDeleted:Z
@@ -118,15 +116,7 @@
     return v0
 .end method
 
-.method static synthetic -set0(Lcom/android/phone/answeringmemo/AnsweringMemoList;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList;->deviceInCall:Z
-
-    return p1
-.end method
-
-.method static synthetic -set1(I)I
+.method static synthetic -set0(I)I
     .locals 0
 
     sput p0, Lcom/android/phone/answeringmemo/AnsweringMemoList;->speakerEnabled:I
@@ -210,8 +200,6 @@
     iput v0, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList;->FROM_WINDOWFOCUS:I
 
     iput-object v4, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList;->status:Landroid/widget/TextView;
-
-    iput-boolean v1, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList;->deviceInCall:Z
 
     new-instance v0, Landroid/os/Handler;
 
@@ -505,7 +493,7 @@
 
     iput-object v8, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList;->progress:Landroid/widget/SeekBar;
 
-    const v8, 0x7f020145
+    const v8, 0x7f020149
 
     invoke-virtual {v2, v8}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -704,7 +692,7 @@
 
     if-nez v8, :cond_7
 
-    const v8, 0x7f020144
+    const v8, 0x7f020148
 
     invoke-virtual {v7, v8}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -746,7 +734,7 @@
 
     iget-object v8, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList;->playIcon:Landroid/widget/ImageButton;
 
-    const v9, 0x7f020141
+    const v9, 0x7f020145
 
     invoke-virtual {v8, v9}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -808,7 +796,7 @@
 
     if-ne v8, v9, :cond_4
 
-    const v8, 0x7f020143
+    const v8, 0x7f020147
 
     invoke-virtual {v7, v8}, Landroid/widget/ImageButton;->setImageResource(I)V
     :try_end_1
@@ -830,7 +818,7 @@
     :cond_8
     iget-object v8, p0, Lcom/android/phone/answeringmemo/AnsweringMemoList;->playIcon:Landroid/widget/ImageButton;
 
-    const v9, 0x7f020142
+    const v9, 0x7f020146
 
     invoke-virtual {v8, v9}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -1064,11 +1052,11 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f0d0cc1
+    const v3, 0x7f0d0d32
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v3, 0x7f0d0cc0
+    const v3, 0x7f0d0d31
 
     invoke-virtual {p0, v3}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->getString(I)Ljava/lang/String;
 
@@ -1078,7 +1066,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0d0ccb
+    const v6, 0x7f0d0d3c
 
     invoke-virtual {p0, v6}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->getString(I)Ljava/lang/String;
 
@@ -1092,7 +1080,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0d086a
+    const v6, 0x7f0d08ce
 
     invoke-virtual {p0, v6}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->getString(I)Ljava/lang/String;
 
@@ -1145,7 +1133,7 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f0e0095
+    const v2, 0x7f0e0096
 
     invoke-virtual {p0, v2}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->setTheme(I)V
 
@@ -1290,7 +1278,7 @@
 
     const/4 v3, 0x1
 
-    const v4, 0x7f0d0cc1
+    const v4, 0x7f0d0d32
 
     invoke-interface {p1, v5, v3, v5, v4}, Landroid/view/ContextMenu;->add(IIII)Landroid/view/MenuItem;
 
@@ -1439,9 +1427,9 @@
 
     invoke-static {v0, v2, v5}, Landroid/support/v4/content/FileProvider;->getUriForFile(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)Landroid/net/Uri;
 
-    move-result-object v14
+    move-result-object v15
 
-    invoke-virtual {v12, v14, v13}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v12, v15, v13}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
     :try_start_0
     move-object/from16 v0, p0
@@ -1523,12 +1511,37 @@
     goto :goto_0
 
     :cond_3
+    const-string/jumbo v2, "phone"
+
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/android/phone/answeringmemo/AnsweringMemoList;->deviceInCall:Z
+    invoke-virtual {v0, v2}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    if-nez v2, :cond_4
+    move-result-object v14
 
+    check-cast v14, Landroid/telephony/TelephonyManager;
+
+    invoke-virtual {v14}, Landroid/telephony/TelephonyManager;->getCallState()I
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    const v2, 0x7f0d06af
+
+    const/4 v5, 0x0
+
+    move-object/from16 v0, p0
+
+    invoke-static {v0, v2, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
+
+    goto :goto_0
+
+    :cond_4
     const/4 v8, 0x1
 
     move-object/from16 v2, p0
@@ -1540,21 +1553,6 @@
     move/from16 v7, p3
 
     invoke-direct/range {v2 .. v8}, Lcom/android/phone/answeringmemo/AnsweringMemoList;->showPlaybackLayout(Ljava/lang/String;Ljava/lang/String;Landroid/widget/ListView;Landroid/view/View;II)V
-
-    goto :goto_0
-
-    :cond_4
-    const v2, 0x7f0d064b
-
-    const/4 v5, 0x0
-
-    move-object/from16 v0, p0
-
-    invoke-static {v0, v2, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
 
     goto :goto_0
 .end method
@@ -1747,7 +1745,7 @@
     .sparse-switch
         0x2 -> :sswitch_1
         0x102002c -> :sswitch_2
-        0x7f1002e2 -> :sswitch_0
+        0x7f1002e5 -> :sswitch_0
     .end sparse-switch
 .end method
 

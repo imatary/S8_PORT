@@ -51,7 +51,7 @@
     <string name="download_fail_ok">OK</string>
     <string name="download_succ_line5">File ricevuto</string>
     <string name="download_succ_ok">Apri</string>
-    <string name="upload_line1">A: %1$s</string>
+    <string name="upload_line1">A: %s</string>
     <string name="upload_line3_nofilesize">Tipo file: %s</string>
     <string name="upload_line3">Tipo di file: %1$s (%2$s)</string>
     <string name="upload_line5">Invio file…</string>
@@ -106,6 +106,7 @@
     <string name="status_protocol_error">Impossibile gestire correttamente la richiesta.</string>
     <string name="status_unknown_error">Errore sconosciuto.</string>
     <string name="btopp_live_folder">File ricevuti</string>
+    <string name="bt_adv_opp_switch">Passaggio automatico dal Bluetooth a Wi-Fi Direct effettuato per una condivisione rapida dei file.</string>
     <string name="download_success">%s ricevuti</string>
     <string name="upload_success">%s inviati</string>
     <string name="inbound_history_title">Trasferimenti in ingresso</string>
@@ -123,8 +124,8 @@
     <string name="transfer_clear_dlg_title">Cancella</string>
     <string name="transfer_clear_btn">Cancella</string>
     <string name="connection_request_inactive_nap">%s sta chiedendo di eseguire il tethering sul telefono.</string>
-    <string name="allow_conn_req_inactive_nap">OK</string>
-    <string name="deny_conn_req_inactive_nap">Annulla</string>
+    <string name="allow_conn_req_inactive_nap">Consenti</string>
+    <string name="deny_conn_req_inactive_nap">Nega</string>
     <string name="bluetooth_tether_request">Consentire il tethering Bluetooth?</string>
     <string name="bluetooth_tether_connected">Connesso a %s per accedere alla connessione a Internet.</string>
     <string name="bluetooth_pan_nap_connecting_error_message">Impossibile connettersi a %s.</string>
@@ -144,6 +145,16 @@
     <string name="bluetooth_a2dp_playing_via_device">"Riproduzione automatica dell'audio con %s in corso…"</string>
     <string name="bluetooth_a2dp_sound_glitches">Glitch audio rilevati</string>
     <string name="bluetooth_a2dp_turn_off_uhq_upscaler">Toccate qui per disattivare UHQ upscaler.</string>
+    <string name="bluetooth_dual_play_title">Audio doppio</string>
+    <string name="bluetooth_dual_play_content">2 dispositivi Bluetooth sono connessi. Per attivare Audio doppio, andate in Impostazioni.</string>
+    <string name="settings">Impostaz.</string>
+    <string name="bluetooth_dual_play_ongoing_title">Audio doppio attivato</string>
+    <string name="bluetooth_dual_play_ongoing_content">Audio riprodotto sui 2 dispositivi Bluetooth connessi.</string>
+    <string name="bluetooth_avc_title">Controlla volume</string>
+    <string name="bluetooth_avc_content">Potete sincronizzare il volume multimediale del dispositivo mobile con quello del dispositivo Bluetooth connesso.</string>
+    <string name="bluetooth_avc_content_vzw">Potete sincronizzare il volume sul telefono e sul dispositivo Bluetooth connesso tramite la funzione Sincronizza volume supporti.</string>
+    <string name="bluetooth_avc_earshock_protection_title">"Proteggete l'udito"</string>
+    <string name="bluetooth_avc_earshock_protection_content">"L'uso prolungato della modalità di sincronizzazione del volume dei supporti potrebbe danneggiare l'udito. Potete regolare il volume se l'audio è troppo alto."</string>
     <string name="bluetooth_a2dpsink_sound_coming">"Potete riprodurre l'audio del TV solo con cuffie cablate o con l'altoparlante del dispositivo."</string>
     <string name="pbap_session_key_dialog_title">Digita la chiave di sessione per %1$s</string>
     <string name="pbap_session_key_dialog_header">Chiave sessione Bluetooth necessaria</string>
@@ -169,7 +180,7 @@
     <string name="bluetooth_notif_sap_message">Bluetooth connesso con %s.</string>
     <string name="bluetooth_remote_device">Dispositivo Bluetooth</string>
     <string name="hello">Hello World, TestActivity</string>
-    <string name="app_name">Condivisione Bluetooth</string>
+    <string name="app_name">Bluetooth</string>
     <string name="insert_record">Inserisci record</string>
     <string name="update_record">Conferma record</string>
     <string name="ack_record">Record ACK</string>

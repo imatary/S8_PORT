@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dช %2$dน</string>
-    <string name="battery_history_minutes_no_seconds">%dนาที</string>
+    <string name="battery_history_hours_no_seconds">%1$d ชั่วโมง %2$d นาที</string>
+    <string name="battery_history_minutes_no_seconds">%d นาที</string>
     <string name="wifi_fail_to_scan">ไม่สามารถสแกนหาเครือข่าย</string>
     <string name="wifi_failed_to_obtain_IP">ไม่​สามารถ​รับ​ที่​อยู่ IP</string>
     <string name="wifi_security_none">ไม่มี</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">ไม่สามารถเชื่อมต่อกับ %s</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">ไม่สามารถเชื่อมต่อกับ %1$s โปรดตรวจสอบการตั้งค่าของคุณใน %2$s และลองอีกครั้ง</string>
     <string name="bluetooth_pairing_rejected_error_message">การจับ​คู่​ถูก​ปฏิเสธ​โดย %s</string>
+    <string name="bluetooth_getting_remote_device_name">กำลังรับชื่ออุปกรณ์…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">ชื่ออุปกรณ์จะปรากฏเมื่อเชื่อมต่อกับอุปกรณ์นี้แล้ว</string>
     <string name="accessibility_wifi_off">Wi-Fi ปิดอยู่</string>
     <string name="accessibility_no_wifi">ไม่ได้เชื่อมต่อ Wi-Fi</string>
     <string name="accessibility_wifi_one_bar">สัญญาณ Wi-Fi 1 ขีด</string>
@@ -839,7 +841,7 @@
     <string name="singleContactImportedMsg">นำเข้ารายชื่อติดต่อแล้ว</string>
     <string name="failedToImportSingleContactMsg">ไม่สามารถนำเข้ารายชื่อติดต่อ</string>
     <string name="hac_mode_title">เครื่อง​ช่วย​ฟัง</string>
-    <string name="hac_mode_summary">ปรับปรุงคุณภาพเสียงของอุปกรณ์ของคุณ เพื่อใช้กับเครื่องช่วยฟัง</string>
+    <string name="hac_mode_summary">ปรับปรุงคุณภาพเสียงของโทรศัพท์ของคุณ เพื่อใช้กับเครื่องช่วยฟัง</string>
     <string name="dtmf_tones_title">โทน DTMF</string>
     <string name="dtmf_tones_summary">กำหนด​ความ​ยาว​ของ​โทน DTMF</string>
     <string name="network_info_message">ข้อความเครือข่าย</string>
@@ -1025,6 +1027,10 @@
     <string name="add_call_block_number_toast">คุณจะไม่ได้รับสายจากหมายเลขนี้</string>
     <string name="delete_call_block_number_toast">คุณสามารถรับสายจากหมายเลขนี้ได้แล้ว</string>
     <string name="emergency_call_block_number_toast">ไม่สามารถบล็อกหมายเลขฉุกเฉิน</string>
+    <string name="call_block_dialog_title">แก้ไขหมายเลขบล็อก</string>
+    <string name="call_block_dialog_contents">ตั้งแต่ Android Nougat เป็นต้นไป โหมดการบล็อคการโทร จะถูกแทนที่โดย บล็อคหมายเลข บล็อคหมายเลข จะบล็อคทั้งการโทรและข้อความโดยอัตโนมัติ แทนที่จะบล็อคการโทรเท่านั้น</string>
+    <string name="call_block_dialog_settings">แตะ “การตั้งค่า” เพื่อแก้ไขบล็อคหมายเลข</string>
+    <string name="call_block_dialog_button">การตั้งค่า</string>
     <string name="no_block_number_description">หมายเลขที่คุณเพิ่มจะปรากฏที่นี่</string>
     <string name="no_messages_description">ข้อความที่คุณเพิ่มจะปรากฏที่นี่</string>
     <string name="callsettings_vipmode_blacklist_title">บัญชีดำ</string>
@@ -1349,7 +1355,7 @@ Injured/Dead
     <string name="roaming_alerts_sbody">เปลี่ยนการตั้งค่าเสียง ข้อความ และโรมมิ่งข้อมูล รวมทั้งโรมมิ่งระหว่างประเทศ</string>
     <string name="roaming_alerts_voice_body">โรมมิ่งเสียง</string>
     <string name="roaming_alerts_data_body">โรมมิ่งข้อมูล</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">โรมมิ่งการส่งข้อความ</string>
     <string name="roaming_domestic_category">โรมมิ่งในประเทศ</string>
     <string name="roaming_international_category">โรมมิ่งระหว่างประเทศ</string>
     <string name="roaming_voice_body">โรมมิ่งเสียงและข้อความ</string>
@@ -1520,9 +1526,7 @@ Injured/Dead
     <string name="data_usage_disable_mobile_vzw_chn">"ถ้าคุณไม่ใช้เครือข่าย WLAN คุณจะไม่สามารถใช้อินเตอร์เน็ต อีเมล์ หรือแอพอื่นๆ ที่ต้องมีการเชื่อมต่อข้อมูลได้อีกต่อไป
 
 ข้อมูลมือถือจะถูกปิดใช้งาน"</string>
-    <string name="mobile_data_off_dialog_text_common">"หากคุณไม่ใช้ Wi-Fi คุณจะไม่สามารถใช้อินเทอร์เน็ต อีเมล์ หรือแอพอื่นๆ ที่ต้องมีการเชื่อมต่อข้อมูลได้อีกต่อไป
-
-ข้อมูลมือถือจะถูกปิด"</string>
+    <string name="mobile_data_off_dialog_text_common">ยกเว้นคุณจะเชื่อมต่อกับเครือข่าย Wi-Fi คุณจะไม่สามารถใช้อินเทอร์เน็ต อีเมล หรือแอพอื่นๆ ที่ต้องมีการเชื่อมต่อข้อมูล</string>
     <string name="mobile_data_off_dialog_button_turn_off">ปิด</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"หากคุณไม่ใช้ Wi-Fi คุณจะไม่สามารถใช้อินเทอร์เน็ต อีเมล หรือแอพอื่นๆ ที่ต้องมีการเชื่อมต่อข้อมูลได้อีกต่อไป
 
@@ -1602,8 +1606,9 @@ Mobile data will be turned off."</string>
 ถ้าคุณไม่ได้ใช้แผนข้อมูลอัตราคงที่ อาจเกิดค่าใช้จ่ายเพิ่มเติมขึ้น"</string>
     <string name="data_3gwarning_popup_title">ข้อมูล​มือ​ถือ</string>
     <string name="roaming_data_off_msg">เมื่อต้องการใช้โรมมิ่งข้อมูล ไปที่ การตั้งค่า > การเชื่อมต่อ > โรมมิ่งทั่วโลก แล้วเปิดใช้โรมมิ่งข้อมูล</string>
-    <string name="data_3gwarning_popup_noti">การเชื่อมต่อกับเครือข่ายมือถือ อาจมีค่าใช้จ่ายพิเศษ ถ้าคุณไม่ได้ใช้แผนอัตราคงที่ เชื่อมต่อหรือไม่?</string>
-    <string name="lgt_4gwarning_popup_mobiledata">ข้อมูลมือถือจะถูกเปิด อาจมีค่าใช้จ่ายเพิ่มเติม จากผู้ให้บริการของคุณ ขึ้นอยู่กับแผนการชำระเงินของคุณ</string>
+    <string name="data_3gwarning_popup_noti">ข้อมูลมือถือจะถูกเปิด การเชื่อมต่อกับเครือข่ายมือถือ อาจมีค่าใช้จ่ายเพิ่มเติม โดยขึ้นอยู่กับแผนการชำระเงินของคุณ</string>
+    <string name="data_3gwarning_popup_noti_ktt">จะเปิดใช้ข้อมูลมือถือในการใช้งาน Giga LTE อาจมีค่าใช้จ่ายเพิ่มเติม ขึ้นอยู่กับแผนการชำระเงินของคุณ</string>
+    <string name="lgt_4gwarning_popup_mobiledata">ข้อมูลมือถือจะถูกเปิด การเชื่อมต่อกับเครือข่ายมือถือ อาจมีค่าใช้จ่ายเพิ่มเติม โดยขึ้นอยู่กับแผนการชำระเงินของคุณ</string>
     <string name="lgt_lte_data_roaming_warningmsg">"ขณะเปิดใช้งานการโรมมิ่งข้อมูล &lt;u>&lt;font color=\"%1$s\">จะเป็นการใช้งานค่าธรรมเนียม การโรมมิ่งข้อมูลระหว่างประเทศ แทนค่าใช้จ่ายข้อมูลในประเทศ&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">เปิดใช้งานการจำกัดข้อมูลพื้นหลัง เพื่อลดค่าธรรมเนียม การโรมมิ่งข้อมูล&lt;/font>&lt;/u> โดยปิดใช้งานคุณสมบัติ เช่น การแจ้งเตือน IM และอัพเดทอัตโนมัติ"</string>
@@ -1976,6 +1981,8 @@ Data roaming may be modified and/or turned off in “Roaming settings”."</stri
     <string name="volte_call_summary_ops">โทรออกปกติแบบ HD ผ่านเครือข่าย 4G</string>
     <string name="voice_over_lte_title_cct">การโทร Volte</string>
     <string name="volte_call_summary_cct">เปิดใช้งานคุณสมบัติการโทรขั้นสูงบนเครือข่ายมือถือ 4G LTE หากพร้อมใช้งาน</string>
+    <string name="voice_over_lte_title_o2">การโทร 4G</string>
+    <string name="volte_call_summary_o2">เพลิดเพลินกับประสิทธิภาพการสื่อสารที่เพิ่มขึ้น โดยใช้ข้อมูล 4G</string>
     <string name="volte_tty_description_on">While TTY is on, you will not be able to make and receive video calls or have conference calls.</string>
     <string name="volte_prepaid_tty_description_on">TTY mode will be enabled. You will not be able to make or receive conference calls.</string>
     <string name="volte_tty_description_off">While TTY is off, you will not be able to make and receive TTY calls.</string>
@@ -2166,9 +2173,13 @@ Data roaming may be modified and/or turned off in “Roaming settings”."</stri
     <string name="group_voice_call_disable_on_3G">การโทรแบบกลุ่ม สามารถใช้งานได้ผ่าน เครือข่าย LTE เท่านั้น</string>
     <string name="group_voice_call_outgoing_voice_call">การโทรออกปกติ</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"หากคุณไม่ใช้ Wi-Fi คุณจะไม่สามารถใช้อินเทอร์เน็ต อีเมล์ หรือแอพอื่นๆ ที่ต้องมีการเชื่อมต่อข้อมูลได้อีกต่อไป
+
+ข้อมูลมือถือจะถูกปิด"</string>
     <string name="data_usage_disable_mobile_warning">"หากคุณไม่ใช้ Wi-Fi คุณจะไม่สามารถใช้อินเทอร์เน็ต อีเมล หรือแอพอื่นๆ ที่ต้องมีการเชื่อมต่อข้อมูลได้อีกต่อไป
 
 ข้อมูลมือถือจะถูกปิดใช้งาน"</string>
+    <string name="data_usage_enable_mobile_warning_skt">ข้อมูลมือถือจะถูกเปิด การเชื่อมต่อกับเครือข่ายมือถือ อาจมีค่าใช้จ่ายเพิ่มเติม โดยขึ้นอยู่กับแผนการชำระเงินของคุณ</string>
     <string name="data_usage_enable_mobile_warning">การ​เชื่อม​ต่อ​กับ​ใช้​แพ็กเกจดาต้าอาจ​มี​ค่า​ใช้​จ่าย​เพิ่ม​เติม​เกิด​ขึ้น ทำ​ต่อ?</string>
     <string name="insert_sim_card">ใส่ SIM ​การ์ด</string>
     <string name="insert_sim_card_message">"ใส่ SIM การ์ด เพื่อใช้งาน
@@ -2205,6 +2216,7 @@ Data roaming may be modified and/or turned off in “Roaming settings”."</stri
 จะยกเลิกการเชื่อมต่อที่ใช้อยู่
 เปลี่ยนเครือข่ายบริการข้อมูล?"</string>
     <string name="disconnect_network_title">หยุด​เชื่อม​ต่อ​กับ​เครือ​ข่าย​ปัจจุบัน</string>
+    <string name="disable2g_warning_message">การตั้งค่านี้จะปิดบริการ 2G หากบริการ 2G ถูกปิด บางแอพและฟังก์ชั่นอาจไม่ทำงานในตำแหน่งที่ LTE หรือ 3G ไม่พร้อมใช้งาน</string>
     <string name="data_roaming_restrict_title">ปิดใช้งานโรมมิ่งข้อมูลแล้ว</string>
     <string name="data_roaming_restrict_body">แตะที่นี่เพื่อเปิดใช้งานการโรมมิ่งข้อมูล</string>
     <string name="data_network_mode">โหมด​เครือ​ข่าย​ข้อมูล</string>
@@ -2405,6 +2417,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">ลบหมายเลขนี้?</string>
     <string name="change_guide_language_kddi">เปลี่ยนภาษาคำแนะนำ</string>
     <string name="apply_option_service_kddi">ไปที่ตัวเลือกบริการ %s</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">ฝ่ายสนับสนุนลูกค้า</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">คำแนะนำภาษาญี่ปุ่น (%d)</string>
     <string name="English_guidance_kddi">คำแนะนำภาษาอังกฤษ (%d)</string>
     <string name="voicecall_kddi">ข้อ​ความ​เสียง</string>
@@ -2459,11 +2475,13 @@ Try again later."</string>
     <string name="spam_call_mute_first_ring_summary">ปิดเสียงเรียกเข้าครั้งแรกจากหมายเลขที่ไม่ได้บันทึกไว้</string>
     <string name="spam_call_auto_reject_title">ปฏิเสธการโทรอัตโนมัติ</string>
     <string name="smart_call_title">ID ผู้โทรและการป้องกันสแปม</string>
-    <string name="smart_call_title_usa">ระบุหมายเลขสแปม</string>
     <string name="smart_call_title_for_notice">ID ผู้โทรและการป้องกันสแปม</string>
-    <string name="smart_call_description">ระบุผู้โทรและผู้ส่งข้อความที่ไม่ได้บันทึกไว้ บนหน้าจอการโทรใน บันทึกโทรศัพท์ และใน ข้อความ</string>
-    <string name="smart_call_usa_description">แสดงข้อมูลเกี่ยวกับผู้โทรที่เป็นสแปมบนหน้าจอการโทร และในบันทึกโทรศัพท์</string>
+    <string name="smart_call_description">"ใช้ Smart Call เพื่อระบุผู้โทรสแปม และผู้โทรที่เป็นมิจฉาชีพ
+
+บริการนี้แสดงให้คุณเห็นชื่อและรูปภาพโปรไฟล์ของผู้โทร และผู้ส่งข้อความที่ไม่ได้อยู่ในรายชื่อของคุณ"</string>
     <string name="smart_call_description_roaming">บริการนี้ไม่พร้อมใช้งานในประเทศอื่น</string>
+    <string name="smart_call_noti_description_1">แตะที่นี่เพื่อปกป้องตัวคุณเองจากผู้โทรสแปมได้ฟรี</string>
+    <string name="smart_call_noti_description_2">แตะที่นี่เพื่อระบุผู้โทรสแปมและผู้โทรที่เป็นมิจฉาชีพ</string>
     <string name="smart_call_share_name_number_title">แชร์ชื่อและหมายเลข</string>
     <string name="smart_call_share_name_number_summary">ลงทะเบียนชื่อและหมายเลขของคุณกับเซิร์ฟเวอร์ เพื่อผู้รับที่ไม่มีหมายเลขของคุณจะสามารถทราบได้เมื่อคุณโทร/ส่งข้อความถึงผู้รับ</string>
     <string name="smart_call_legal_info_category">ข้อมูล​ทาง​กฎหมาย</string>
@@ -2480,12 +2498,16 @@ Try again later."</string>
 โปรดคลิกปุ่มที่เหมาะสมด้านล่างเพื่อระบุว่าคุณตกลงตามสิ่งที่กล่าวมาข้างต้นและต้องการเปิดใช้งานคุณลักษณะ %s ในเวลานี้"</string>
     <string name="smart_call_privacy_notice_donotshow">ไม่ต้องแสดงการแจ้งเตือนที่อธิบายถึงฟังก์ชั่นหมายเลขที่ไม่ได้บันทึกที่ระบุอีก</string>
     <string name="smart_call_privacy_notice_dream">บริการจะใช้ได้ขณะที่อุปกรณ์มือถือของคุณเชื่อมต่อกับเครือข่ายมือถือของคุณในระหว่างมีสายโทรเข้าหรือโทรออก แต่จะถูกจำกัดเมื่อมีการโรมมิ่ง การใช้เครือข่ายมือถืออาจทำให้มีค่าบริการเพิ่มเติมโดยขึ้นอยู่กับแผนข้อมูลของคุณที่มีกับผู้ให้บริการเครือข่าย</string>
+    <string name="show_privacy_notice_title">นโยบายความส่วนตัว</string>
     <string name="search_for_places_nearby_title">ค้นหาสถานที่ใกล้เคียง</string>
     <string name="search_for_places_nearby_help_description1">ค้นหาเบอร์โทรศัพท์และข้อมูลสำหรับธุรกิจในพื้นที่และสถานที่ใกล้เคียง</string>
     <string name="search_for_places_nearby_help_description2">บริการนี้ต้องการข้อมูลตำแหน่งของคุณ</string>
     <string name="search_for_places_nearby_help_description3">หากต้องการเพิ่มความแม่นยำของข้อมูลตำแหน่งให้สูงที่สุด ให้ไปที่ การตั้งค่า > การเชื่อมต่อ > ตำแหน่ง > วิธีการระบุตำแหน่ง แล้วเลือก “ความแม่นยำสูง”</string>
     <string name="search_for_places_nearby_help_description3_vzw">To optimize the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
     <string name="search_for_places_nearby_help_description4">การใช้เครือข่ายมือถือแทนเครือข่าย Wi-Fi อาจมีค่าใช้จ่ายเพิ่มเติม ขึ้นอยู่กับแผนการชำระเงินของคุณ</string>
+    <string name="withdraw_menu_title">หยุดใช้บริการนี้</string>
+    <string name="withdraw_dialog_description">เมื่อคุณหยุดใช้ %1$s บริการจะปิดใช้งาน และข้อมูล %2$s ทั้งหมดของคุณที่บันทึกโดยผู้ให้บริการจะถูกลบออก</string>
+    <string name="withdraw_dialog_button">หยุดใช้บริการ</string>
     <string name="record_call_setting_title">บันทึกการโทรอัตโนมัติ</string>
     <string name="record_call_setting_selected_number">หมายเลขที่เลือก</string>
     <string name="record_call_setting_all_number">หมายเลขทั้งหมด</string>
@@ -2498,6 +2520,8 @@ Try again later."</string>
     <string name="record_call_noti_setting_title">การบันทึกการแจ้งเตือน</string>
     <string name="record_call_noti_setting_summary">รับการแจ้งเตือนหลังจากบันทึกการโทร</string>
     <string name="record_call_help_summary">บันทึกสายที่โทรออกไปยังเบอร์ที่เลือกไว้หรือได้รับจากเบอร์ที่เลือกไว้โดยอัตโนมัติ</string>
+    <string name="record_call_setting_on_description">เปิดบันทึกอัตโนมัติ</string>
+    <string name="record_call_setting_off_description">ปิดบันทึกอัตโนมัติ</string>
     <string name="visual_call_title_callsetting">เมนูหน้าจอการโทร IVR</string>
     <string name="preference_update_DB_visual_call">อัพเดท IVR call DB</string>
     <string name="preference_update_DB_visual_call_summary">อัพเดทอัตโนมัติผ่าน WLAN เท่านั้น</string>
@@ -2740,6 +2764,7 @@ To do Video Calling, turn ON Mobile Data or Video Calling in settings after the 
     <string name="about_phone_open_source_licenses">ใบอนุญาตของโอเพ่นซอร์ส</string>
     <string name="no_network_connection">ไม่​ได้​เชื่อม​ต่อ​เครือ​ข่าย</string>
     <string name="unable_to_check_for_updates">ไม่สามารถตรวจสอบอัพเดทใหม่ๆ ไม่มีการเชื่อมต่อเครือข่าย</string>
+    <string name="phoneAppLabel_dcm">หน้าปัด</string>
     <string name="dcm_vt_fail_cause_not_in_4g">ไม่สามารถโทรวิดีโอ เนื่องจากคุณไม่อยู่ในพื้นที่ 4G</string>
     <string name="ss_do_not_show_again_us">Do not show again</string>
     <string name="disable_advanced_calling_warning_msg">Your phone will not be able to make or receive HD voice and video calls when you turn this setting off.</string>
@@ -2773,6 +2798,8 @@ In the future if you want to use Wi-Fi for voice calling you can turn on Wi-Fi C
     <string name="save_text">บันทึก</string>
     <string name="wfc_enable_dialog_title">เปิดใช้งานการโทร Wi-Fi</string>
     <string name="wfc_enable_dialog">การเปิดใช้งานการโทรผ่าน Wi-Fi จะเป็นการปิดการใช้งาน โหมดประหยัดพลังงาน ซึ่งอาจเพิ่มการใช้พลังงานแบตเตอรี่ ผู้ให้บริการบางราย อาจไม่รับรองฟังก์ชั่นนี้</string>
+    <string name="group_call_not_support_emergency_number">ไม่สามารถเพิ่มหมายเลขฉุกเฉินไปยังการโทรแบบกลุ่มได้</string>
+    <string name="group_call_not_support_emergency_number_all">ไม่สามารถเพิ่มหมายเลขฉุกเฉินไปยังการโทรกลุ่ม รายชื่ออื่นๆ ที่เลือกทั้งหมดถูกเพิ่มแล้ว</string>
     <string name="enable_data_popup_message">ในการเปิดใช้งานฟังก์ชั่นนี้ จะต้องเปิดใช้งาน ข้อมูลมือถือ</string>
     <string name="enable_data_popup_tittle">ไม่สามารถเปิดใช้งานฟังก์ชั่น</string>
 </resources>

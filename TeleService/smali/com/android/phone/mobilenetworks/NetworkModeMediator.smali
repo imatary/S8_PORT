@@ -716,7 +716,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0345
+    const v2, 0x7f0d03a5
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -914,7 +914,7 @@
 .method public updateState(I)V
     .locals 13
 
-    const/4 v12, 0x1
+    const/16 v12, 0xc
 
     const/16 v11, 0xb
 
@@ -1171,7 +1171,7 @@
 
     move-result v7
 
-    if-eqz v7, :cond_5
+    if-eqz v7, :cond_10
 
     if-eq p1, v11, :cond_f
 
@@ -1201,10 +1201,10 @@
 
     move-result v7
 
-    if-eqz v7, :cond_13
+    if-eqz v7, :cond_16
 
     :cond_6
-    if-nez v6, :cond_13
+    if-nez v6, :cond_16
 
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->LOG_TAG:Ljava/lang/String;
 
@@ -1212,13 +1212,13 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-nez p1, :cond_10
+    if-nez p1, :cond_12
 
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mPreference:Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;
 
     iget-object v8, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f0d03e5
+    const v9, 0x7f0d0445
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1244,7 +1244,9 @@
 
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mPreference:Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;
 
-    invoke-virtual {v7, v12}, Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;->semSetSummaryColorToColorPrimaryDark(Z)V
+    const/4 v8, 0x1
+
+    invoke-virtual {v7, v8}, Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;->semSetSummaryColorToColorPrimaryDark(Z)V
 
     return-void
 
@@ -1253,9 +1255,7 @@
 
     if-ne p1, v7, :cond_1
 
-    const/16 v7, 0xc
-
-    if-ne v4, v7, :cond_1
+    if-ne v4, v12, :cond_1
 
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->LOG_TAG:Ljava/lang/String;
 
@@ -1368,49 +1368,51 @@
     goto/16 :goto_2
 
     :cond_10
-    const/4 v7, 0x2
+    const-string/jumbo v7, "network_mode_list_tmo"
 
-    if-ne p1, v7, :cond_11
+    invoke-static {v7}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mPreference:Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;
+    move-result v7
 
-    iget-object v8, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mContext:Landroid/content/Context;
+    if-eqz v7, :cond_5
 
-    const v9, 0x7f0d03ed
+    if-eq p1, v12, :cond_11
 
-    invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
-    move-result-object v8
+    move-result-object v7
 
-    invoke-virtual {v7, v8}, Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v7}, Lcom/android/phone/PhoneGlobals;->getNotificationMgr()Lcom/android/phone/NotificationMgr;
 
-    goto/16 :goto_3
+    move-result-object v7
+
+    invoke-virtual {v7}, Lcom/android/phone/NotificationMgr;->canceDisable2g()V
+
+    goto/16 :goto_2
 
     :cond_11
-    if-ne p1, v12, :cond_12
+    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
-    iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mPreference:Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;
+    move-result-object v7
 
-    iget-object v8, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mContext:Landroid/content/Context;
+    invoke-virtual {v7}, Lcom/android/phone/PhoneGlobals;->getNotificationMgr()Lcom/android/phone/NotificationMgr;
 
-    const v9, 0x7f0d03ee
+    move-result-object v7
 
-    invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v7}, Lcom/android/phone/NotificationMgr;->notifyDisable2g()V
 
-    move-result-object v8
-
-    invoke-virtual {v7, v8}, Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;->setSummary(Ljava/lang/CharSequence;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     :cond_12
-    if-ne p1, v10, :cond_7
+    const/4 v7, 0x2
+
+    if-ne p1, v7, :cond_13
 
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mPreference:Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;
 
     iget-object v8, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f0d03eb
+    const v9, 0x7f0d044d
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1421,40 +1423,93 @@
     goto/16 :goto_3
 
     :cond_13
+    const/4 v7, 0x1
+
+    if-ne p1, v7, :cond_14
+
+    iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mPreference:Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;
+
+    iget-object v8, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mContext:Landroid/content/Context;
+
+    const v9, 0x7f0d044e
+
+    invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    goto/16 :goto_3
+
+    :cond_14
+    if-ne p1, v10, :cond_15
+
+    iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mPreference:Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;
+
+    iget-object v8, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mContext:Landroid/content/Context;
+
+    const v9, 0x7f0d044b
+
+    invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    goto/16 :goto_3
+
+    :cond_15
+    if-ne p1, v12, :cond_7
+
+    iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mPreference:Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;
+
+    iget-object v8, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mContext:Landroid/content/Context;
+
+    const v9, 0x7f0d044a
+
+    invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;->setSummary(Ljava/lang/CharSequence;)V
+
+    goto/16 :goto_3
+
+    :cond_16
     const-string/jumbo v7, "feature_india"
 
     invoke-static {v7}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_14
+    if-eqz v7, :cond_17
 
-    if-ne p1, v11, :cond_14
+    if-ne p1, v11, :cond_17
 
     invoke-static {v0}, Lcom/android/phone/TelephonyConfig;->isRjioSIM(I)Z
 
     move-result v7
 
-    if-eqz v7, :cond_15
+    if-eqz v7, :cond_18
 
-    :cond_14
+    :cond_17
     const-string/jumbo v7, "network_mode_list_zvv"
 
     invoke-static {v7}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_16
+    if-eqz v7, :cond_19
 
-    if-ne p1, v11, :cond_16
+    if-ne p1, v11, :cond_19
 
-    if-nez v6, :cond_16
+    if-nez v6, :cond_19
 
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mPreference:Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;
 
     iget-object v8, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f0d03df
+    const v9, 0x7f0d043f
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1468,7 +1523,7 @@
 
     goto/16 :goto_4
 
-    :cond_15
+    :cond_18
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->LOG_TAG:Ljava/lang/String;
 
     const-string/jumbo v8, "Do not support lte only."
@@ -1479,7 +1534,7 @@
 
     iget-object v8, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f0d03df
+    const v9, 0x7f0d043f
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1493,8 +1548,8 @@
 
     goto/16 :goto_4
 
-    :cond_16
-    if-nez v6, :cond_1b
+    :cond_19
+    if-nez v6, :cond_1e
 
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->LOG_TAG:Ljava/lang/String;
 
@@ -1524,7 +1579,7 @@
 
     move-result v7
 
-    if-eqz v7, :cond_17
+    if-eqz v7, :cond_1a
 
     const-string/jumbo v7, "remove_network_mode_lte"
 
@@ -1532,9 +1587,9 @@
 
     move-result v7
 
-    if-eqz v7, :cond_19
+    if-eqz v7, :cond_1c
 
-    :cond_17
+    :cond_1a
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->LOG_TAG:Ljava/lang/String;
 
     const-string/jumbo v8, "networkType is changed to PREFERRED_NT_MODE"
@@ -1560,11 +1615,11 @@
 
     move-result v7
 
-    if-eqz v7, :cond_18
+    if-eqz v7, :cond_1b
 
-    if-eqz v5, :cond_1a
+    if-eqz v5, :cond_1d
 
-    :cond_18
+    :cond_1b
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mPreference:Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;
 
     iget-object v8, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mLoader:Lcom/android/phone/mobilenetworks/NetworkModeResourceLoader;
@@ -1577,7 +1632,7 @@
 
     goto/16 :goto_4
 
-    :cond_19
+    :cond_1c
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->LOG_TAG:Ljava/lang/String;
 
     const-string/jumbo v8, "networkType is changed to NT_MODE_LTE_GSM_WCDMA"
@@ -1588,7 +1643,7 @@
 
     goto :goto_5
 
-    :cond_1a
+    :cond_1d
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->LOG_TAG:Ljava/lang/String;
 
     const-string/jumbo v8, "do nothing"
@@ -1597,14 +1652,14 @@
 
     return-void
 
-    :cond_1b
+    :cond_1e
     const-string/jumbo v7, "feature_multisim"
 
     invoke-static {v7}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v7
 
-    if-eqz v7, :cond_1d
+    if-eqz v7, :cond_20
 
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mNetworkModeController:Lcom/android/phone/mobilenetworks/INetworkModeController;
 
@@ -1620,13 +1675,13 @@
 
     move-result v2
 
-    if-lez v2, :cond_1c
+    if-lez v2, :cond_1f
 
     invoke-virtual {p0, v2}, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->updateDefaultSummary(I)V
 
     goto/16 :goto_4
 
-    :cond_1c
+    :cond_1f
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mPreference:Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;
 
     invoke-virtual {v7, v6}, Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;->setSummary(Ljava/lang/CharSequence;)V
@@ -1635,7 +1690,7 @@
 
     goto/16 :goto_4
 
-    :cond_1d
+    :cond_20
     iget-object v7, p0, Lcom/android/phone/mobilenetworks/NetworkModeMediator;->mPreference:Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;
 
     invoke-virtual {v7, v6}, Lcom/android/phone/mobilenetworks/NetworkModeSpinnerPreference;->setSummary(Ljava/lang/CharSequence;)V

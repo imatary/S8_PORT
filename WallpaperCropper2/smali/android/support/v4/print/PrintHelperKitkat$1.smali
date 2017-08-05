@@ -134,7 +134,6 @@
 
     move-result v3
 
-    # invokes: Landroid/support/v4/print/PrintHelperKitkat;->convertBitmapForColorMode(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     invoke-static {v0, v2, v3}, Landroid/support/v4/print/PrintHelperKitkat;->access$000(Landroid/support/v4/print/PrintHelperKitkat;Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
 
     move-result-object v2
@@ -170,7 +169,6 @@
 
     iget v7, p0, Landroid/support/v4/print/PrintHelperKitkat$1;->val$fittingMode:I
 
-    # invokes: Landroid/support/v4/print/PrintHelperKitkat;->getMatrix(IILandroid/graphics/RectF;I)Landroid/graphics/Matrix;
     invoke-static {v4, v5, v6, v3, v7}, Landroid/support/v4/print/PrintHelperKitkat;->access$100(Landroid/support/v4/print/PrintHelperKitkat;IILandroid/graphics/RectF;I)Landroid/graphics/Matrix;
 
     move-result-object v3

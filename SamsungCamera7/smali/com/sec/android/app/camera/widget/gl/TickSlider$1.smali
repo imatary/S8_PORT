@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/TickSlider$1;->this$0:Lcom/sec/android/app/camera/widget/gl/TickSlider;
 
-    # invokes: Lcom/sec/android/app/camera/widget/gl/TickSlider;->updateGaugeMarkerPoint()V
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->access$000(Lcom/sec/android/app/camera/widget/gl/TickSlider;)V
 
     return-void

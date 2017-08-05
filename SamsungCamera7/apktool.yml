@@ -3,8 +3,9 @@ apkFileName: SamsungCamera7.apk
 compressionType: false
 doNotCompress:
 - arsc
-- qio
 - qmg
+- webp
+- png_opti
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
@@ -20,7 +21,7 @@ usesFramework:
   ids:
   - 1
   tag: null
-version: 2.2.2
+version: 2.2.4
 versionInfo:
-  versionCode: '708001100'
-  versionName: 7.0.80
+  versionCode: '709301100'
+  versionName: 7.0.93

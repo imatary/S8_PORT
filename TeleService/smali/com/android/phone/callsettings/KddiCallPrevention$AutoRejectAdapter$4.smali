@@ -45,7 +45,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 6
 
-    const v5, 0x7f0d063b
+    const v5, 0x7f0d069f
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -67,7 +67,7 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/KddiCallPrevention$AutoRejectAdapter;->this$0:Lcom/android/phone/callsettings/KddiCallPrevention;
 
-    const v3, 0x7f0d0bb7
+    const v3, 0x7f0d0c1e
 
     invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/KddiCallPrevention;->getString(I)Ljava/lang/String;
 

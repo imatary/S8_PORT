@@ -105,7 +105,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/SubNumberManager$3;->this$0:Lcom/android/phone/callsettings/SubNumberManager;
 
-    const v4, 0x7f0d05c3
+    const v4, 0x7f0d0627
 
     invoke-virtual {v3, v4}, Lcom/android/phone/callsettings/SubNumberManager;->getString(I)Ljava/lang/String;
 

@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/PagedView$4;->this$0:Lcom/android/keyguard/PagedView;
 
-    # invokes: Lcom/android/keyguard/PagedView;->onPostReorderingAnimationCompleted()V
     invoke-static {v0}, Lcom/android/keyguard/PagedView;->access$400(Lcom/android/keyguard/PagedView;)V
 
     return-void

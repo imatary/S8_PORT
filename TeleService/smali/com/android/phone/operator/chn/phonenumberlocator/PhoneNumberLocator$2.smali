@@ -103,13 +103,13 @@
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d068b
+    const v2, 0x7f0d06ef
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f0d069b
+    const v2, 0x7f0d06ff
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -119,7 +119,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator$2$1;-><init>(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator$2;)V
 
-    const v3, 0x7f0d050c
+    const v3, 0x7f0d056c
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -129,7 +129,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator$2$2;-><init>(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator$2;)V
 
-    const v3, 0x7f0d050d
+    const v3, 0x7f0d056d
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

@@ -43,7 +43,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$4;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardStatusView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$500(Lcom/android/keyguard/sec/SecKeyguardStatusView;)Landroid/content/Context;
 
     move-result-object v0
@@ -54,7 +53,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$4;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardStatusView;->mIsDcmClock:Z
     invoke-static {v1}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$600(Lcom/android/keyguard/sec/SecKeyguardStatusView;)Z
 
     move-result v1
@@ -63,7 +61,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$4;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardStatusView;->updateStatusView()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$100(Lcom/android/keyguard/sec/SecKeyguardStatusView;)V
 
     goto :goto_0
@@ -84,7 +81,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$4;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardStatusView;->updateStatusView()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$100(Lcom/android/keyguard/sec/SecKeyguardStatusView;)V
 
     goto :goto_0
@@ -95,7 +91,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$4;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardStatusView;->updateStatusView()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$100(Lcom/android/keyguard/sec/SecKeyguardStatusView;)V
 
     return-void

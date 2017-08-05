@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecAttributionInfoView$9;->this$0:Lcom/android/keyguard/sec/SecAttributionInfoView;
 
-    # getter for: Lcom/android/keyguard/sec/SecAttributionInfoView;->mLogoChangeHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecAttributionInfoView;->access$1100(Lcom/android/keyguard/sec/SecAttributionInfoView;)Landroid/os/Handler;
 
     move-result-object v0

@@ -2236,7 +2236,6 @@
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mWatermarkWeatherTextLoader:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;
 
-    # invokes: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;->getTemperature()Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;->access$300(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;)Ljava/lang/String;
 
     move-result-object v1
@@ -2252,7 +2251,6 @@
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mWatermarkWeatherTextLoader:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;
 
-    # invokes: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;->getTemperature()Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;->access$300(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;)Ljava/lang/String;
 
     move-result-object v1
@@ -2383,7 +2381,6 @@
     :pswitch_15
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mWatermarkWeatherTextLoader:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;
 
-    # invokes: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;->getWeatherAndTemperature()Ljava/lang/String;
     invoke-static {v0}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;->access$400(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;)Ljava/lang/String;
 
     move-result-object v0

@@ -224,7 +224,7 @@
 
     const/4 v8, 0x0
 
-    const v7, 0x7f0d0334
+    const v7, 0x7f0d0394
 
     const/4 v6, 0x1
 
@@ -306,11 +306,11 @@
 
     invoke-direct {v0, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d032d
+    const v4, 0x7f0d038d
 
     sparse-switch p1, :sswitch_data_0
 
-    const v3, 0x7f0d0332
+    const v3, 0x7f0d0392
 
     iget-object v5, p0, Lcom/android/phone/TimeConsumingPreferenceActivity;->mDismiss:Landroid/content/DialogInterface$OnClickListener;
 
@@ -349,7 +349,7 @@
     return-object v10
 
     :sswitch_0
-    const v3, 0x7f0d0331
+    const v3, 0x7f0d0391
 
     iget-object v5, p0, Lcom/android/phone/TimeConsumingPreferenceActivity;->mDismiss:Landroid/content/DialogInterface$OnClickListener;
 
@@ -358,7 +358,7 @@
     goto :goto_1
 
     :sswitch_1
-    const v3, 0x7f0d0333
+    const v3, 0x7f0d0393
 
     iget-object v5, p0, Lcom/android/phone/TimeConsumingPreferenceActivity;->mDismissAndFinish:Landroid/content/DialogInterface$OnClickListener;
 
@@ -367,9 +367,9 @@
     goto :goto_1
 
     :sswitch_2
-    const v3, 0x7f0d05b6
+    const v3, 0x7f0d061a
 
-    const v4, 0x7f0d0505
+    const v4, 0x7f0d0565
 
     iget-object v5, p0, Lcom/android/phone/TimeConsumingPreferenceActivity;->mDismiss:Landroid/content/DialogInterface$OnClickListener;
 

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset android:insetLeft="@dimen/show_button_shapes_inset_left" android:insetRight="@dimen/show_button_shapes_inset_right" android:insetTop="@dimen/show_button_shapes_inset_top" android:insetBottom="@dimen/show_button_shapes_inset_bottom"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape android:shape="rectangle">
-        <corners android:radius="@dimen/show_button_shapes_corners_radius" />
-        <padding android:left="@dimen/show_button_shapes_padding_left" android:right="@dimen/show_button_shapes_padding_right" />
-        <stroke android:width="@dimen/show_button_shapes_stroke_width" android:color="@color/show_button_shapes_stroke_color" />
-    </shape>
-</inset>
