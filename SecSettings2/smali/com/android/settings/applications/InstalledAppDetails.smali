@@ -418,7 +418,7 @@
 
     invoke-direct {v0, v6}, Landroid/preference/PreferenceCategory;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f0b16c4
+    const v6, 0x7f0b1753
 
     invoke-virtual {v0, v6}, Landroid/preference/PreferenceCategory;->setTitle(I)V
 
@@ -432,7 +432,7 @@
 
     invoke-direct {v4, v6}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f0b16c5
+    const v6, 0x7f0b1754
 
     invoke-virtual {v4, v6}, Landroid/preference/Preference;->setTitle(I)V
 
@@ -446,7 +446,7 @@
 
     aput-object v1, v6, v8
 
-    const v7, 0x7f0b16c6
+    const v7, 0x7f0b1755
 
     invoke-virtual {p0, v7, v6}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -750,7 +750,7 @@
 
     invoke-direct {v0, v5}, Landroid/preference/PreferenceCategory;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f0b1b7f
+    const v5, 0x7f0b1c0e
 
     invoke-virtual {v0, v5}, Landroid/preference/PreferenceCategory;->setTitle(I)V
 
@@ -1587,7 +1587,7 @@
 
     aput-object v7, v6, v8
 
-    const v7, 0x7f0b1b72
+    const v7, 0x7f0b1c01
 
     invoke-virtual {p1, v7, v6}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1615,7 +1615,7 @@
 
     if-nez v6, :cond_7
 
-    const v6, 0x7f0b1b6e
+    const v6, 0x7f0b1bfd
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1629,7 +1629,7 @@
 
     if-eqz v6, :cond_2
 
-    const v6, 0x7f0b1ae7
+    const v6, 0x7f0b1b76
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1649,7 +1649,7 @@
 
     if-lez v1, :cond_3
 
-    const v6, 0x7f0b1b71
+    const v6, 0x7f0b1c00
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1680,7 +1680,7 @@
 
     if-eqz v6, :cond_6
 
-    const v6, 0x7f0b1b6c
+    const v6, 0x7f0b1bfb
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1701,7 +1701,7 @@
 
     if-ge v6, v7, :cond_0
 
-    const v6, 0x7f0b1b6d
+    const v6, 0x7f0b1bfc
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1718,7 +1718,7 @@
 
     if-ne v6, v7, :cond_1
 
-    const v6, 0x7f0b1b6f
+    const v6, 0x7f0b1bfe
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1731,7 +1731,7 @@
     :cond_8
     if-nez v0, :cond_9
 
-    const v6, 0x7f0b1b6b
+    const v6, 0x7f0b1bfa
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1806,7 +1806,7 @@
 .method private handleDisableable(Landroid/widget/Button;)Z
     .locals 4
 
-    const v3, 0x7f0b03a6
+    const v3, 0x7f0b0405
 
     const/4 v0, 0x0
 
@@ -1856,7 +1856,7 @@
     if-eqz v1, :cond_3
 
     :cond_1
-    const v1, 0x7f0b03a7
+    const v1, 0x7f0b0406
 
     invoke-virtual {p1, v1}, Landroid/widget/Button;->setText(I)V
 
@@ -1908,7 +1908,7 @@
 
     iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->mHeader:Lcom/android/settings/applications/SecLayoutPreference;
 
-    const v5, 0x7f1104b3
+    const v5, 0x7f1104b5
 
     invoke-virtual {v4, v5}, Lcom/android/settings/applications/SecLayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -1926,7 +1926,7 @@
 
     iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->mForceStopButton:Landroid/widget/Button;
 
-    const v5, 0x7f0b166a
+    const v5, 0x7f0b16f9
 
     invoke-virtual {v4, v5}, Landroid/widget/Button;->setText(I)V
 
@@ -1946,7 +1946,7 @@
 
     iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->mHeader:Lcom/android/settings/applications/SecLayoutPreference;
 
-    const v5, 0x7f1104b2
+    const v5, 0x7f1104b4
 
     invoke-virtual {v4, v5}, Lcom/android/settings/applications/SecLayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -2353,7 +2353,7 @@
     :cond_c
     iget-object v10, p0, Lcom/android/settings/applications/InstalledAppDetails;->mUninstallButton:Landroid/widget/Button;
 
-    const v11, 0x7f0b1670
+    const v11, 0x7f0b16ff
 
     invoke-virtual {v10, v11}, Landroid/widget/Button;->setText(I)V
 
@@ -3162,7 +3162,7 @@
 
     check-cast v3, Landroid/view/ViewGroup;
 
-    const v5, 0x7f040358
+    const v5, 0x7f04035d
 
     invoke-virtual {v4, v5, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -3186,7 +3186,7 @@
 
     invoke-virtual {v2, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v3, 0x7f11085a
+    const v3, 0x7f11085d
 
     invoke-virtual {p0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3216,7 +3216,7 @@
 
     aput-object v5, v4, v6
 
-    const v5, 0x7f0b16ab
+    const v5, 0x7f0b173a
 
     invoke-virtual {v3, v5, v4}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3498,7 +3498,7 @@
 
     aput-object v4, v3, v6
 
-    const v4, 0x7f0b1bb7
+    const v4, 0x7f0b1c46
 
     invoke-virtual {p0, v4, v3}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3520,7 +3520,7 @@
 
     iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails;->mBatteryPreference:Lcom/samsung/android/settings/ProgressPreference;
 
-    const v3, 0x7f0b1bb8
+    const v3, 0x7f0b1c47
 
     invoke-virtual {p0, v3}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 
@@ -3625,7 +3625,7 @@
 
     iget-object v3, v0, Lcom/android/settings/applications/InstalledAppDetails;->mDataPreference:Lcom/samsung/android/settings/ProgressPreference;
 
-    const v10, 0x7f0b1bea
+    const v10, 0x7f0b1c79
 
     invoke-virtual {v3, v10}, Lcom/samsung/android/settings/ProgressPreference;->setSummary(I)V
 
@@ -3758,7 +3758,7 @@
 
     aput-object v10, v3, v18
 
-    const v10, 0x7f0b03a5
+    const v10, 0x7f0b0404
 
     move-object/from16 v0, p0
 
@@ -3785,7 +3785,7 @@
 
     iget-object v3, v0, Lcom/android/settings/applications/InstalledAppDetails;->mDataPreference:Lcom/samsung/android/settings/ProgressPreference;
 
-    const v10, 0x7f0b16a8
+    const v10, 0x7f0b1737
 
     invoke-virtual {v3, v10}, Lcom/samsung/android/settings/ProgressPreference;->setSummary(I)V
 
@@ -4321,11 +4321,11 @@
 .method protected createDialog(II)Landroid/app/AlertDialog;
     .locals 6
 
-    const v5, 0x7f0b16bf
+    const v5, 0x7f0b174e
 
-    const v2, 0x7f0b03a6
+    const v2, 0x7f0b0405
 
-    const v4, 0x7f0b1699
+    const v4, 0x7f0b1728
 
     const/4 v3, 0x0
 
@@ -4424,7 +4424,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b16b8
+    const v2, 0x7f0b1747
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -4438,7 +4438,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/settings/applications/InstalledAppDetails$11;-><init>(Lcom/android/settings/applications/InstalledAppDetails;)V
 
-    const v2, 0x7f0b16b7
+    const v2, 0x7f0b1746
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -4506,7 +4506,7 @@
     iget-object v11, v0, Lcom/android/settingslib/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
     :cond_0
-    if-eqz v12, :cond_7
+    if-eqz v12, :cond_9
 
     const-string/jumbo v0, "ApplicationInfoBattery"
 
@@ -4616,7 +4616,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_7
 
     sget-object v0, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
 
@@ -4633,13 +4633,53 @@
     goto :goto_0
 
     :cond_7
+    const-string/jumbo v0, "ApplicationInfoSetAsDefault"
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_8
+
+    sget-object v0, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
+
+    sget-object v1, Lcom/samsung/android/settings/bixby/EmSettingsManager;->EM_RESPONSE_RESULT_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    const-string/jumbo v3, "SetAsDefault"
+
+    const-string/jumbo v4, "Valid"
+
+    const-string/jumbo v5, "yes"
+
+    invoke-virtual/range {v0 .. v5}, Lcom/samsung/android/settings/applications/EmHandler;->setResult(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_8
+    const-string/jumbo v0, "ApplicationInfoPermissions"
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    sget-object v0, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
+
+    sget-object v1, Lcom/samsung/android/settings/bixby/EmSettingsManager;->EM_RESPONSE_RESULT_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-virtual {v0, v1, v2}, Lcom/samsung/android/settings/applications/EmHandler;->setResult(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;Ljava/lang/String;)V
+
+    goto/16 :goto_0
+
+    :cond_9
     const-string/jumbo v0, "ApplicationInfoBattery"
 
     invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_c
 
     sget-object v3, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
 
@@ -4663,11 +4703,11 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mBatteryUpdater:Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_a
 
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mBatteryUpdater:Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_b
 
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mBatteryUpdater:Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;
 
@@ -4677,30 +4717,30 @@
 
     sget-object v1, Landroid/os/AsyncTask$Status;->FINISHED:Landroid/os/AsyncTask$Status;
 
-    if-eq v0, v1, :cond_9
+    if-eq v0, v1, :cond_b
 
-    :cond_8
+    :cond_a
     sget-object v0, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
 
     invoke-virtual {v0}, Lcom/samsung/android/settings/applications/EmHandler;->retryAction()V
 
     goto/16 :goto_1
 
-    :cond_9
+    :cond_b
     sget-object v0, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
 
     invoke-virtual {v0}, Lcom/samsung/android/settings/applications/EmHandler;->finish()V
 
     goto/16 :goto_1
 
-    :cond_a
+    :cond_c
     const-string/jumbo v0, "ApplicationInfoStorage"
 
     invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_d
 
     sget-object v3, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
 
@@ -4722,14 +4762,14 @@
 
     goto/16 :goto_1
 
-    :cond_b
+    :cond_d
     const-string/jumbo v0, "Memory"
 
     invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_e
+    if-eqz v0, :cond_10
 
     sget-object v3, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
 
@@ -4747,11 +4787,11 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mMemoryUpdater:Lcom/android/settings/applications/InstalledAppDetails$MemoryUpdater;
 
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_e
 
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mMemoryUpdater:Lcom/android/settings/applications/InstalledAppDetails$MemoryUpdater;
 
-    if-eqz v0, :cond_d
+    if-eqz v0, :cond_f
 
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mMemoryUpdater:Lcom/android/settings/applications/InstalledAppDetails$MemoryUpdater;
 
@@ -4761,30 +4801,30 @@
 
     sget-object v1, Landroid/os/AsyncTask$Status;->FINISHED:Landroid/os/AsyncTask$Status;
 
-    if-eq v0, v1, :cond_d
+    if-eq v0, v1, :cond_f
 
-    :cond_c
+    :cond_e
     sget-object v0, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
 
     invoke-virtual {v0}, Lcom/samsung/android/settings/applications/EmHandler;->retryAction()V
 
     goto/16 :goto_1
 
-    :cond_d
+    :cond_f
     sget-object v0, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
 
     invoke-virtual {v0}, Lcom/samsung/android/settings/applications/EmHandler;->finish()V
 
     goto/16 :goto_1
 
-    :cond_e
+    :cond_10
     const-string/jumbo v0, "MobileData"
 
     invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_f
+    if-eqz v0, :cond_11
 
     sget-object v3, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
 
@@ -4806,8 +4846,37 @@
 
     goto/16 :goto_1
 
-    :cond_f
+    :cond_11
     const-string/jumbo v0, "Storage"
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_12
+
+    sget-object v3, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
+
+    sget-object v4, Lcom/samsung/android/settings/bixby/EmSettingsManager;->EM_RESPONSE_RESULT_FAILURE:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    const-string/jumbo v5, "ApplicationInfo"
+
+    const-string/jumbo v6, "Storage"
+
+    const-string/jumbo v7, "Available"
+
+    const-string/jumbo v8, "no"
+
+    invoke-virtual/range {v3 .. v8}, Lcom/samsung/android/settings/applications/EmHandler;->setResult(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    sget-object v0, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
+
+    invoke-virtual {v0}, Lcom/samsung/android/settings/applications/EmHandler;->finish()V
+
+    goto/16 :goto_1
+
+    :cond_12
+    const-string/jumbo v0, "ApplicationInfoSetAsDefault"
 
     invoke-virtual {v2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -4821,9 +4890,9 @@
 
     const-string/jumbo v5, "ApplicationInfo"
 
-    const-string/jumbo v6, "Storage"
+    const-string/jumbo v6, "SetAsDefault"
 
-    const-string/jumbo v7, "Available"
+    const-string/jumbo v7, "Valid"
 
     const-string/jumbo v8, "no"
 
@@ -5210,7 +5279,7 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mDataPreference:Lcom/samsung/android/settings/ProgressPreference;
 
-    const v1, 0x7f0b18ff
+    const v1, 0x7f0b198e
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/ProgressPreference;->setTitle(I)V
 
@@ -5258,7 +5327,7 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mMemoryPreference:Lcom/samsung/android/settings/ProgressPreference;
 
-    const v1, 0x7f0b1be0
+    const v1, 0x7f0b1c6f
 
     invoke-virtual {p0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 
@@ -5895,7 +5964,7 @@
 
     const/4 v0, 0x2
 
-    const v1, 0x7f0b1676
+    const v1, 0x7f0b1705
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -5903,7 +5972,7 @@
 
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
-    const v0, 0x7f0b1671
+    const v0, 0x7f0b1700
 
     invoke-interface {p1, v2, v3, v3, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -6087,7 +6156,7 @@
 
     const-class v0, Lcom/android/settings/notification/AppNotificationSettings;
 
-    const v1, 0x7f0b1ac7
+    const v1, 0x7f0b1b56
 
     invoke-virtual {p0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 
@@ -6210,7 +6279,7 @@
 
     const-class v0, Lcom/android/settings/datausage/AppDataUsage;
 
-    const v1, 0x7f0b1b65
+    const v1, 0x7f0b1bf4
 
     invoke-virtual {p0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 
@@ -7278,7 +7347,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_8
 
     sget-object v0, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
 
@@ -7287,6 +7356,40 @@
     invoke-virtual {v0, v4, v1, v2}, Lcom/samsung/android/settings/applications/EmHandler;->setAction(ILjava/lang/Object;I)V
 
     goto :goto_0
+
+    :cond_8
+    const-string/jumbo v0, "ApplicationInfoSetAsDefault"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_9
+
+    sget-object v0, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
+
+    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->mLaunchPreference:Landroid/preference/Preference;
+
+    invoke-virtual {v0, v3, v1, v2}, Lcom/samsung/android/settings/applications/EmHandler;->setAction(ILjava/lang/Object;I)V
+
+    goto :goto_0
+
+    :cond_9
+    const-string/jumbo v0, "ApplicationInfoPermissions"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lcom/android/settings/applications/InstalledAppDetails;->mEmHandler:Lcom/samsung/android/settings/applications/EmHandler;
+
+    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->mPermissionsPreference:Landroid/preference/Preference;
+
+    invoke-virtual {v0, v3, v1, v2}, Lcom/samsung/android/settings/applications/EmHandler;->setAction(ILjava/lang/Object;I)V
+
+    goto/16 :goto_0
 .end method
 
 .method public stopAction()V
