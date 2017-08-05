@@ -76,7 +76,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/app/camera/HRMSensorFusion;->mHRMSensorCaptureStart:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/HRMSensorFusion;->access$002(Lcom/sec/android/app/camera/HRMSensorFusion;Z)Z
 
     goto :goto_0
@@ -90,7 +89,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/HRMSensorFusion;->mHRMSensorCaptureStart:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/HRMSensorFusion;->access$002(Lcom/sec/android/app/camera/HRMSensorFusion;Z)Z
 
     goto :goto_0

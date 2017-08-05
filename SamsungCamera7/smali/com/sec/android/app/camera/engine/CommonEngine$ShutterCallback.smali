@@ -87,7 +87,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentState:Lcom/sec/android/app/camera/engine/AbstractCeState;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1100(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/engine/AbstractCeState;
 
     move-result-object v0
@@ -107,7 +106,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$800(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v0
@@ -120,7 +118,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIsShutterSoundDisabled:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7100(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
 
     move-result v0
@@ -129,7 +126,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$700(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/samsung/android/camera/core/SemCamera;
 
     move-result-object v0
@@ -145,7 +141,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$800(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v0
@@ -159,7 +154,6 @@
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$800(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v0
@@ -172,7 +166,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$800(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v0
@@ -186,7 +179,6 @@
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$800(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v0
@@ -199,7 +191,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$800(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v0
@@ -212,7 +203,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIsFlashConditionDetected:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7200(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
 
     move-result v0
@@ -222,7 +212,6 @@
     :cond_5
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0

@@ -39,14 +39,12 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/AfButton$3;->this$0:Lcom/sec/android/app/camera/widget/gl/AfButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/AfButton;->mAfAniGroup:Lcom/samsung/android/glview/GLViewGroup;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/AfButton;->access$500(Lcom/sec/android/app/camera/widget/gl/AfButton;)Lcom/samsung/android/glview/GLViewGroup;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/AfButton$3;->this$0:Lcom/sec/android/app/camera/widget/gl/AfButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/AfButton;->mShrinkScaleAnimation:Landroid/view/animation/Animation;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/AfButton;->access$600(Lcom/sec/android/app/camera/widget/gl/AfButton;)Landroid/view/animation/Animation;
 
     move-result-object v1
@@ -55,7 +53,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/AfButton$3;->this$0:Lcom/sec/android/app/camera/widget/gl/AfButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/AfButton;->mAfAniGroup:Lcom/samsung/android/glview/GLViewGroup;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/AfButton;->access$500(Lcom/sec/android/app/camera/widget/gl/AfButton;)Lcom/samsung/android/glview/GLViewGroup;
 
     move-result-object v0

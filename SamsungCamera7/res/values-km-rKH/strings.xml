@@ -142,7 +142,7 @@
     <string name="SM_AQUA_description">សមស្រប​សម្រាប់​ការថត​រូបភាព​ក្នុង​ទឹក។</string>
     <string name="SM_AUTO">ស្វ័យប្រវត្តិ</string>
     <string name="SM_AUTO_SELFIE">ថតខ្លួនឯង</string>
-    <string name="SM_AUTO_SELFIE_description">ថត​រូប​ខ្លួនឯង និង ប្រើ​បែបផែន​ជាច្រើន ដូចជា​ចម្រោះ និង ជក់ខ្យល់។</string>
+    <string name="SM_AUTO_SELFIE_description">ថត​រូបខ្លួនឯង និង ប្រើ​បែបផែន​ជាច្រើន ដូចជា​ចម្រោះ និង ជក់ខ្យល់។</string>
     <string name="SM_AUTO_description">ឲ្យ​ទូរសព្ទ​របស់​អ្នក​ធ្វើ​ការងារ​ទាំងអស់។ ពណ៌​និង​ពន្លឺប៉ះ​នៃ​រូបថត​នីមួយៗ​នឹង​ត្រូវ​បាន​កំណត់​ដោយ​ស្វ័យប្រវត្តិ។</string>
     <string name="SM_BEAUTY">មុខមានសម្រស់</string>
     <string name="SM_BEAUTY_description">ប្រើ​ជក់ខ្យល់​បោស​អសុក្រឹតភាព​តិចតួច​ដោយ​ស្វ័យប្រវត្តិ នៅពេល​អ្នក​ថត​រូបភាព​មនុស្ស។</string>
@@ -176,8 +176,8 @@
 រូបថត​រំកិល៖ ថត​ទិដ្ឋភាព​ចលនា​មួយ នៅពេល​ថត​រូបភាព​នៃ​វត្ថុ​កំពុង​ផ្លាស់ទី។"</string>
     <string name="SM_NIGHT">ពេល​យប់</string>
     <string name="SM_NIGHT_description">ថត​រូបភាព​ដែល​ភ្លឺ​ច្បាស់​ជាង​មុន ក្នុង​ស្ថានភាព​ពន្លឺ​ខ្សោយ ដោយ​មិន​ប្រើ​ភ្លាស។</string>
-    <string name="SM_PANORAMA">ទេសភាព​ទូលាយ</string>
-    <string name="SM_PANORAMA_description">បង្កើត​ទេសភាព​ទូលាយ​ផ្ដេក​ឬ​បញ្ឈរ ដោយ​ថត​រូបភាព​មួយ​ស៊េរី។</string>
+    <string name="SM_PANORAMA">សព្វទស្សន៍</string>
+    <string name="SM_PANORAMA_description">បង្កើត​សព្វទស្សន៍​ផ្ដេក​ឬ​បញ្ឈរ ដោយ​ថត​រូបភាព​មួយ​ស៊េរី។</string>
     <string name="SM_PRO">Pro</string>
     <string name="SM_PRO_LITE_description">លៃតម្រូវ​ភាពងាយចាប់ ISO, តម្លៃ​ពន្លឺប៉ះ និង តុល្យភាព​ពណ៌ស ដោយដៃ ខណៈពេល​កំពុង​ថត​រូបភាព។</string>
     <string name="SM_PRO_description">ធ្វើ​ការត្រួតត្រា​រូបភាព​របស់​អ្នក។ កំណត់​ពន្លឺប៉ះ, ល្បឿន​ថត, ទឹក​ពណ៌ និង ភាពចាប់ ISO ដោយដៃ។</string>
@@ -233,7 +233,7 @@
     <string name="Title_Manual_Focus_TTS">ផ្ដោត</string>
     <string name="Title_Metering">ទម្រង់​វាស់</string>
     <string name="Title_More_Settings">ការកំណត់</string>
-    <string name="Title_MotionPanorama">ទេសភាព​ទូលាយ​ចលនា</string>
+    <string name="Title_MotionPanorama">សព្វទស្សន៍​ចលនា</string>
     <string name="Title_MotionPhoto">រូបថត​ចលនា</string>
     <string name="Title_MultiAF">តំបន់ AF</string>
     <string name="Title_Picture_Format">រក្សាទុក​ឯកសារ RAW និង JPEG</string>
@@ -308,6 +308,7 @@
     <string name="camera_label">កាមេរ៉ា</string>
     <string name="camera_modes">ទម្រង់​កាមេរ៉ា</string>
     <string name="camera_security_enter">គោលការណ៍​សន្តិសុខ​កំហិត​ការប្រើ​កាមេរ៉ា។</string>
+    <string name="can_not_use_voice_control">មិន​អាច​ប្រើ​សំឡេង​បញ្ជា ខណៈពេល​បាន​បើក​សំឡេង​ដាស់ Bixby Voice។</string>
     <string name="cancel">បោះ​បង់</string>
     <string name="cannot_start_camcorder_msg">មិន​អាច​ថត​វីដេអូ ក្នុង​ពេល​ហៅ។</string>
     <string name="cannot_start_camera_msg">មិន​អាច​ប្រើ​កាមេរ៉ា ក្នុង​អំឡុងពេល​ហៅ។</string>
@@ -497,7 +498,7 @@
     <string name="not_supported_zoom_toast_popup">មិន​អាច​ពង្រីក ឬ បង្រួម​ក្នុង​ទម្រង់​នេះ​បាន​ទេ។</string>
     <string name="okay">ព្រម</string>
     <string name="open_hw_failed_msg">កាមេរ៉ា​បរាជ័យ។</string>
-    <string name="panorama_no_direction">មិន​អាច​បង្កើត​ទេសភាព​ទូលាយ។ ព័ត៌មាន​លម្អិត​មិន​គ្រប់គ្រាន់​ក្នុង​ទេសភាព។</string>
+    <string name="panorama_no_direction">មិន​អាច​បង្កើត​សព្វទស្សន៍។ ព័ត៌មាន​លម្អិត​មិន​គ្រប់គ្រាន់​ក្នុង​ទេសភាព។</string>
     <string name="panorama_warning_text_too_fast">ផ្លាស់ទី​យឺតៗ</string>
     <string name="pause">ផ្អាក</string>
     <string name="permission_shooting_mode">ទម្រង់​សម្រាប់​កាមេរ៉ា</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"ថត
 រូប​ខ្លួនឯង"</string>
     <string name="temperature">សីតុណ្ហភាព</string>
+    <string name="temperature_too_high_camera_off">សីតុណ្ហភាព​ខ្ពស់​ពេក ដើម្បី​ប្រើ %1$s។ រង់ចាំ​ឲ្យ​ទូរសព្ទ​ចុះត្រជាក់​សិន មុនពេល​ប្រើ %2$s។</string>
     <string name="temperature_too_high_flash_off">មិន​អាច​បើក​ភ្លាស។ សាកល្បង​ម្ដងទៀត នៅពេល​ឧបករណ៍​របស់​អ្នក​បាន​ចុះ​ត្រជាក់។</string>
     <string name="temperature_too_high_record">មិន​អាច​ថត​វីដេអូ។ សាកល្បង​ម្ដងទៀត នៅពេល​ឧបករណ៍​បាន​ចុះ​ត្រជាក់។</string>
     <string name="temperature_too_high_recording_disable">ការថត​បាន​ឈប់។ អ្នក​អាច​ថត នៅពេល​ឧបករណ៍​របស់​អ្នក​បាន​ចុះ​ត្រជាក់។</string>
@@ -621,8 +623,8 @@
     <string name="toast_metering_centre">ការវាស់៖ ផ្ដោត​ចំ​កណ្តាល</string>
     <string name="toast_metering_matrix">ការវាស់៖ ម៉ាទ្រិច</string>
     <string name="toast_metering_spot">ការវាស់៖ ចំណុច</string>
-    <string name="toast_motion_panorama_off">បាន​បិទ​ទេសភាព​ទូលាយ​ចលនា។</string>
-    <string name="toast_motion_panorama_on">បាន​បើកប្រើ​ទេសភាព​ទូលាយ​ចលនា។</string>
+    <string name="toast_motion_panorama_off">បាន​បិទ​សព្វទស្សន៍​ចលនា។</string>
+    <string name="toast_motion_panorama_on">បាន​បើកប្រើ​សព្វទស្សន៍​ចលនា។</string>
     <string name="toast_motion_wide_self_shot_off">បាន​បិទ​រូបថត​ខ្លួនឯង​មុំ​ទូលាយ​មាន​ចលនា។</string>
     <string name="toast_motion_wide_self_shot_on">បាន​បើកប្រើ​រូបថត​ខ្លួនឯង​មុំ​ទូលាយ​មាន​ចលនា។</string>
     <string name="toast_multi_af_off">ផ្ទៃ AF៖ កណ្ដាល</string>

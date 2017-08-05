@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$4;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mErrorToast:Landroid/widget/Toast;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$800(Lcom/sec/android/app/camera/shootingmode/Auto;)Landroid/widget/Toast;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$4;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mErrorToast:Landroid/widget/Toast;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$800(Lcom/sec/android/app/camera/shootingmode/Auto;)Landroid/widget/Toast;
 
     move-result-object v0

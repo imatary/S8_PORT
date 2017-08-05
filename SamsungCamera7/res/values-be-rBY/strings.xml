@@ -304,6 +304,7 @@
     <string name="camera_label">Камера</string>
     <string name="camera_modes">Рэжымы камеры</string>
     <string name="camera_security_enter">Палітыка бяспекі абмяжоўвае выкарыстанне Камеры.</string>
+    <string name="can_not_use_voice_control">Немагчыма выкарыстоўваць кіраванне голасам, пакуль уключана галасавое абуджэнне «Bixby».</string>
     <string name="cancel">Скасаваць</string>
     <string name="cannot_start_camcorder_msg">Нельга запісаць відэа падчас выкліку.</string>
     <string name="cannot_start_camera_msg">Скарыстацца камерай падчас выклікаў немагчыма.</string>
@@ -594,6 +595,7 @@
     <string name="task_edge_title_selfie">"Зрабіць
 сэлфі"</string>
     <string name="temperature">Тэмпература</string>
+    <string name="temperature_too_high_camera_off">Для выкарыстання %1$s тэмпература занадта высокая. Перад выкарыстаннем %2$s пачакайце, пакуль тэлефон астыне.</string>
     <string name="temperature_too_high_flash_off">Немагчыма ўключыць успышку. Паўтарыце спробу пазней, калі ваша прылада астыне.</string>
     <string name="temperature_too_high_record">Відэазапіс немагчымы. Паўтарыце спробу, калі прылада астыне.</string>
     <string name="temperature_too_high_recording_disable">Запіс быў спынены. Запіс будзе магчымы, калі прылада астыне.</string>

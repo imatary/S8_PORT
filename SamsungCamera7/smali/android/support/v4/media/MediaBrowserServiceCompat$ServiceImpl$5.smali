@@ -53,7 +53,6 @@
 
     iget-object v2, p0, Landroid/support/v4/media/MediaBrowserServiceCompat$ServiceImpl$5;->val$receiver:Landroid/support/v4/os/ResultReceiver;
 
-    # invokes: Landroid/support/v4/media/MediaBrowserServiceCompat;->performLoadItem(Ljava/lang/String;Landroid/support/v4/os/ResultReceiver;)V
     invoke-static {v0, v1, v2}, Landroid/support/v4/media/MediaBrowserServiceCompat;->access$900(Landroid/support/v4/media/MediaBrowserServiceCompat;Ljava/lang/String;Landroid/support/v4/os/ResultReceiver;)V
 
     return-void

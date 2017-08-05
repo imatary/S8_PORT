@@ -71,7 +71,6 @@
 
     iget-object v2, v2, Lcom/sec/android/app/camera/widget/gl/DragDropBox;->mViewToDrag:Lcom/samsung/android/glview/GLView;
 
-    # invokes: Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/widget/gl/DragDropBox;->access$201(Lcom/sec/android/app/camera/widget/gl/DragDropBox;Lcom/samsung/android/glview/GLView;)V
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/DragDropBox$2;->this$0:Lcom/sec/android/app/camera/widget/gl/DragDropBox;
@@ -90,7 +89,6 @@
 
     iget v4, p0, Lcom/sec/android/app/camera/widget/gl/DragDropBox$2;->val$y:F
 
-    # invokes: Lcom/sec/android/app/camera/widget/gl/DragDropBox;->findDragDropBox(Lcom/samsung/android/glview/GLView;FF)Lcom/sec/android/app/camera/widget/gl/DragDropBox;
     invoke-static {v1, v2, v3, v4}, Lcom/sec/android/app/camera/widget/gl/DragDropBox;->access$300(Lcom/sec/android/app/camera/widget/gl/DragDropBox;Lcom/samsung/android/glview/GLView;FF)Lcom/sec/android/app/camera/widget/gl/DragDropBox;
 
     move-result-object v0
@@ -120,7 +118,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/DragDropBox$2;->this$0:Lcom/sec/android/app/camera/widget/gl/DragDropBox;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/DragDropBox;->mDragListener:Lcom/samsung/android/glview/GLView$DragListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/DragDropBox;->access$400(Lcom/sec/android/app/camera/widget/gl/DragDropBox;)Lcom/samsung/android/glview/GLView$DragListener;
 
     move-result-object v1
@@ -129,7 +126,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/DragDropBox$2;->this$0:Lcom/sec/android/app/camera/widget/gl/DragDropBox;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/DragDropBox;->mDragListener:Lcom/samsung/android/glview/GLView$DragListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/DragDropBox;->access$500(Lcom/sec/android/app/camera/widget/gl/DragDropBox;)Lcom/samsung/android/glview/GLView$DragListener;
 
     move-result-object v1

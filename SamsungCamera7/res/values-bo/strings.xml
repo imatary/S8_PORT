@@ -139,7 +139,7 @@
     <string name="SM_AUTO">རང་འགུལ།</string>
     <string name="SM_AUTO_SELFIE">རང་པར་ལེན་པ་</string>
     <string name="SM_AUTO_SELFIE_description">自拍并应用滤镜和美肌等各种效果。</string>
-    <string name="SM_AUTO_description">将全部工作交给您的手机。自动设置每次拍摄的颜色和曝光。</string>
+    <string name="SM_AUTO_description">ལས་ཀ་ཚང་མ་ཁྱེད་ཀྱི་ཁ་པར་ལ་བྱེད་དུ་འཇུག་པ།རང་འགུལ་ཐོག་ནས་ཐེངས་རེ་པར་ལེན་བྱས་པའི་ཚོན་མདོག་དང་འོད་ཚད་སྒྲིག་ཐུབ།</string>
     <string name="SM_BEAUTY">པགས་པ་མཛེས་འཆོས།</string>
     <string name="SM_BEAUTY_description">拍摄人像时自动修整小瑕疵。</string>
     <string name="SM_CLIP_MOVIE">བརྙན་ཟློས་སྦྱོར་སྡེབ་</string>
@@ -156,7 +156,7 @@
     <string name="SM_ENVIRONMENT_description">པར་རྒྱག་པ་དང་འདྲ་པར་ལ་མིག་སྔའི་གནས་ཡུལ་དང་གནམ་གཤིས་ཆ་འཕྲིན་རྟགས་འགོད་དགོས།</string>
     <string name="SM_FAST_MOTION">མྱུར་མགྱོགས་འགུལ་སྟངས།</string>
     <string name="SM_FOOD">བཟའ་འཐུང་།</string>
-    <string name="SM_FOOD_description">增强您最喜爱食物的鲜艳色彩。</string>
+    <string name="SM_FOOD_description">ཁྱེད་ཀྱི་དད་པའི་ཟས་རིགས་ཀྱི་ཚོན་མདོག་བཀྲག་ཏུ་བཏང་།</string>
     <string name="SM_HYPER_MOTION">ནར་འགྱངས།</string>
     <string name="SM_HYPER_MOTION_description">用不同帧率录制来创建延时视频。帧率会根据场景和手机的运动自动进行调整。</string>
     <string name="SM_INTERACTIVE">རྟོག་བཟོའི་པར་ལེན།</string>
@@ -173,7 +173,7 @@
     <string name="SM_NIGHT">མཚན་ནང་པར་ལེན།</string>
     <string name="SM_NIGHT_description">འཚེར་འོད་གློག་མེད་པའི་གནས་ཚུལ་འོགའོད་གསལ་པོ་མེད་པའི་སྐབས་པར་གསལ་ལ་དྭངས་པ་ཞིག་ལེན་པ།</string>
     <string name="SM_PANORAMA">ལྗོངས་ཡོངས་པར་ལེན།</string>
-    <string name="SM_PANORAMA_description">通过拍摄一系列照片来创建水平方向或垂直方向上的全景。</string>
+    <string name="SM_PANORAMA_description">པར་སྣེ་མང་པར་ལེན་བྱས་ནས་འཕྲེད་ཐད་དམ་གཞུང་ཐད་ཕྱོགས་ཀྱི་ཧྲིལ་ལྗོངས་འཛུགས་པ།</string>
     <string name="SM_PRO">ཆེད་ལས།</string>
     <string name="SM_PRO_LITE_description">པར་རྒྱག་པའི་སྐབས་སུ་ལག་འགུལ་ཐོག་ISOའོད་ལེན་ཚད་དང་འོད་གཏོང་ཚད། དཀར་འོད་དོ་སྙོམས་སྒྲིག་ཆོག</string>
     <string name="SM_PRO_description">完全掌控您的照片。手动设置曝光、快门速度、色调和 ISO 感光度。</string>
@@ -303,6 +303,7 @@
     <string name="camera_label">པར་ཆས།</string>
     <string name="camera_modes">པར་ཆས་རྣམ་པ།</string>
     <string name="camera_security_enter">བདེ་འཇགས་ཇུས་གཞིའི་ཚད་བཀག་གི་རྐྱེན་པས། ༼པར་ཆས་༽བེད་སྤྱོད་མ་ཐུབ།</string>
+    <string name="can_not_use_voice_control">Bixbyསྐད་སྒྲ་འགུལ་སློང་ཁ་ཕྱེ་དུས་སྐད་སྒྲ་གཏོང་འཛིན་བེད་སྤྱོད་མི་ཐུབ།</string>
     <string name="cancel">རྩིས་མེད།</string>
     <string name="cannot_start_camcorder_msg">ཁ་བརྡ་བྱེད་པའི་རྒྱུད་རིམ་ནང་། བརྙན་ཟློས་སྒྲ་ཕབ་མི་ཐུབ།</string>
     <string name="cannot_start_camera_msg">ཁ་པར་གཏོང་བའི་སྐབས་སུ་༼པར་ཆས་༽བེད་སྤྱོད་མི་ཐུབ།</string>
@@ -437,7 +438,7 @@
     <string name="interactive_error_not_enough_frames">请多拍几张照片再保存您的虚拟拍摄</string>
     <string name="interactive_helptext">པར་ཆས་མཐེབ་གནོན་བརྡེབས་རྗེས། གཏད་ཁ་ལྟེ་གནས་སུ་བྱས་ནས་། འཁོར་སྐོར་ནས་པར་ལེན་པ།</string>
     <string name="interval_summary">དུས་བཀག་ཡོ་བྱད་གྲངས་ཀླད་ཀོར་ཐོག་སླེབས་སྐབས་འབྲེལ་ནས་པར་%dལེན་པ། དེ་ཉིད་རང་འགུལ་དང་ཆེད་ལས། རང་པར་ལེན་པའི་པར་ཆས་རྣམ་པའི་འོག་སྤྱོད་ཆོག</string>
-    <string name="invalid_device_version_msg">若要以 %s 模式拍照，您需要先更新相机应用程序。</string>
+    <string name="invalid_device_version_msg">གལ་སྲིད་%sརྣམ་པའི་ཐོག་ནས་པར་ལེན་བྱས་ཚེ།ཁྱེད་ནས་སྔོན་ལ་པར་ཆས་ཉེར་སྤྱོད་བྱ་རིམ་གསར་བརྗེས་བྱེད་དགོས།</string>
     <string name="invalid_device_version_title">是否更新相机？</string>
     <string name="invalid_shooting_mode_version_msg">གལ་སྲིད་%1$sརྣམ་པའི་འོག་པར་ལེན་བྱས་ཚེ།ཁྱེད་ནས་%2$sནང་པར་ཆས་རྣམ་པ་གསར་བརྗེས་བྱེད་དགོས།</string>
     <string name="invalid_shooting_mode_version_title">是否更新相机模式？</string>
@@ -593,6 +594,7 @@
     <string name="task_edge_title_selfie">"རང་ཉིད་
 པར་ལེན།"</string>
     <string name="temperature">དྲོད་ཚད།</string>
+    <string name="temperature_too_high_camera_off">དྲོད་ཚད་མཐོ་དྲགས།%1$sབེད་སྤྱོད་གཏོང་མི་ཐུབ།ལག་ཐོག་ཁ་པར་གྲང་ཐག་ཆོད་རྗེས་བསྐྱར་དུ་%2$sབེད་སྤྱོད་གཏོང་དགོས།</string>
     <string name="temperature_too_high_flash_off">འཚེར་འོད་ཁ་ཕྱེ་མི་ཐུབ་པས་ཁྱེད་ནས་འཕྲུལ་ཆས་གྲང་ཐག་ཆོད་རྗེས་ཚོད་ལྟ་གནང་རོགས།</string>
     <string name="temperature_too_high_record">བརྙན་ཟློས་ཕབ་འཇུག་མི་ཐུབ། འཕྲུལ་ཆས་གྲང་ཐག་ཆོད་རྗེས་ཚོད་ལྟ་གནང་རོགས།</string>
     <string name="temperature_too_high_recording_disable">ཕབ་འཇུག་བྱ་མཚགས་འཇོག་ཟིན། འཕྲུལ་ཆས་གྲང་ཐག་ཆད་ནས་ཕབ་འཇུག་བྱས་ཆོག</string>

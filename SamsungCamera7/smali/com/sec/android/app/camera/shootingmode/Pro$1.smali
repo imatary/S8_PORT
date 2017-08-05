@@ -190,7 +190,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Pro$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Pro;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Pro;->handleProModeForBixby(Ljava/lang/String;I)V
     invoke-static {v2, v0, v1}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$000(Lcom/sec/android/app/camera/shootingmode/Pro;Ljava/lang/String;I)V
 
     goto :goto_1
@@ -200,7 +199,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/Pro$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Pro;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Pro;->mColorTuneEditButton:Lcom/samsung/android/glview/GLButton;
     invoke-static {v3}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$100(Lcom/sec/android/app/camera/shootingmode/Pro;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v3

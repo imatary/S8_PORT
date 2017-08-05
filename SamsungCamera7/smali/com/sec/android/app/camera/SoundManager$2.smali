@@ -90,7 +90,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/SoundManager$2;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v0}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v0
@@ -108,7 +107,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/SoundManager$2;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v0}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v0

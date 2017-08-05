@@ -156,7 +156,7 @@
 
     const/4 v6, 0x0
 
-    const v5, 0x7f09027e
+    const v5, 0x7f090280
 
     const-string v2, ""
 
@@ -279,7 +279,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09027d
+    const v4, 0x7f09027f
 
     invoke-virtual {p0, v4}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
@@ -408,11 +408,11 @@
 .method private getRestrictedVideoResolution()Ljava/lang/String;
     .locals 6
 
-    const v5, 0x7f0902df
+    const v5, 0x7f0902e1
 
     const v3, 0x7f09007d
 
-    const v4, 0x7f09027e
+    const v4, 0x7f090280
 
     const-string v0, ""
 
@@ -424,7 +424,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f0902e1
+    const v1, 0x7f0902e3
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
@@ -573,7 +573,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09027d
+    const v2, 0x7f09027f
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
@@ -867,7 +867,7 @@
 
     check-cast v8, Landroid/widget/TextView;
 
-    const v2, 0x7f09019c
+    const v2, 0x7f09019d
 
     const/4 v3, 0x1
 
@@ -885,7 +885,7 @@
 
     invoke-virtual {v8, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f09019c
+    const v2, 0x7f09019d
 
     const/4 v3, 0x1
 
@@ -1063,7 +1063,7 @@
 
     check-cast v10, Landroid/widget/TextView;
 
-    const v2, 0x7f09020a
+    const v2, 0x7f09020b
 
     const/4 v3, 0x1
 
@@ -1089,7 +1089,7 @@
 
     invoke-virtual {v10, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f09020a
+    const v2, 0x7f09020b
 
     const/4 v3, 0x1
 
@@ -1142,7 +1142,7 @@
 
     check-cast v11, Landroid/widget/TextView;
 
-    const v2, 0x7f09020b
+    const v2, 0x7f09020c
 
     const/4 v3, 0x2
 
@@ -1164,7 +1164,7 @@
 
     invoke-virtual {v11, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f09020b
+    const v2, 0x7f09020c
 
     const/4 v3, 0x2
 
@@ -1460,7 +1460,7 @@
 
     check-cast v8, Landroid/widget/TextView;
 
-    const v2, 0x7f09019c
+    const v2, 0x7f09019d
 
     const/4 v3, 0x1
 
@@ -1478,7 +1478,7 @@
 
     invoke-virtual {v8, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f09019c
+    const v2, 0x7f09019d
 
     const/4 v3, 0x1
 
@@ -1619,7 +1619,7 @@
 
     check-cast v10, Landroid/widget/TextView;
 
-    const v2, 0x7f09020a
+    const v2, 0x7f09020b
 
     const/4 v3, 0x1
 
@@ -1645,7 +1645,7 @@
 
     invoke-virtual {v10, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f09020a
+    const v2, 0x7f09020b
 
     const/4 v3, 0x1
 
@@ -1698,7 +1698,7 @@
 
     check-cast v11, Landroid/widget/TextView;
 
-    const v2, 0x7f09020b
+    const v2, 0x7f09020c
 
     const/4 v3, 0x2
 
@@ -1720,7 +1720,7 @@
 
     invoke-virtual {v11, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f09020b
+    const v2, 0x7f09020c
 
     const/4 v3, 0x2
 
@@ -1991,7 +1991,7 @@
 
     check-cast v18, Landroid/widget/TextView;
 
-    const v2, 0x7f0901e8
+    const v2, 0x7f0901e9
 
     move-object/from16 v0, v18
 
@@ -2630,7 +2630,7 @@
 
     invoke-static {v1}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->setSAScreenId(Ljava/lang/String;)V
 
-    const v1, 0x7f090226
+    const v1, 0x7f090227
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$3;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp;->removeHRMSensorCaptureGuide()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$400(Lcom/sec/android/app/camera/menu/OverlayHelp;)V
 
     return-void

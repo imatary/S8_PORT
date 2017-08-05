@@ -49,7 +49,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ThumbnailButton$1;->this$0:Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;->THUMBNAIL_ANIMATION_DURATION:I
     invoke-static {v2}, Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;->access$000(Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;)I
 
     move-result v2

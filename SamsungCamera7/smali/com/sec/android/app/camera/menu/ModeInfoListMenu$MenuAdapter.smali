@@ -67,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeInfoListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->mMenuResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->access$200(Lcom/sec/android/app/camera/menu/ModeInfoListMenu;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     move-result-object v0
@@ -88,7 +87,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeInfoListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->mMenuResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->access$200(Lcom/sec/android/app/camera/menu/ModeInfoListMenu;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     move-result-object v1
@@ -177,14 +175,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeInfoListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->SCREEN_WIDTH:F
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->access$300(Lcom/sec/android/app/camera/menu/ModeInfoListMenu;)F
 
     move-result v4
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeInfoListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->MODE_INFO_LIST_ITEM_HEIGHT:F
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->access$400(Lcom/sec/android/app/camera/menu/ModeInfoListMenu;)F
 
     move-result v5
@@ -195,7 +191,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeInfoListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->mList:Lcom/samsung/android/glview/GLList;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->access$500(Lcom/sec/android/app/camera/menu/ModeInfoListMenu;)Lcom/samsung/android/glview/GLList;
 
     move-result-object v1
@@ -204,7 +199,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeInfoListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->mList:Lcom/samsung/android/glview/GLList;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->access$500(Lcom/sec/android/app/camera/menu/ModeInfoListMenu;)Lcom/samsung/android/glview/GLList;
 
     move-result-object v1
@@ -229,7 +223,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu$MenuAdapter;->preItem:Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;
 
-    # invokes: Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->setNextFocus(Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;ILcom/sec/android/app/camera/widget/gl/ModeInfoItem;)V
     invoke-static {v1, v0, p1, v2}, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->access$700(Lcom/sec/android/app/camera/menu/ModeInfoListMenu;Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;ILcom/sec/android/app/camera/widget/gl/ModeInfoItem;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu$MenuAdapter;->preItem:Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;

@@ -45,7 +45,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->mIsShapeCorrectionTextHidedByTimeOut:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$002(Lcom/sec/android/app/camera/menu/BeautyListMenu;Z)Z
 
     return-void

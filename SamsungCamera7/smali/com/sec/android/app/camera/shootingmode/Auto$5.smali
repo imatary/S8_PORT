@@ -41,12 +41,11 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$700(Lcom/sec/android/app/camera/shootingmode/Auto;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
 
-    const v2, 0x7f090234
+    const v2, 0x7f090235
 
     const/4 v3, 0x0
 
@@ -54,12 +53,10 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerToast:Landroid/widget/Toast;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$902(Lcom/sec/android/app/camera/shootingmode/Auto;Landroid/widget/Toast;)Landroid/widget/Toast;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerToast:Landroid/widget/Toast;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$900(Lcom/sec/android/app/camera/shootingmode/Auto;)Landroid/widget/Toast;
 
     move-result-object v0
@@ -68,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerToast:Landroid/widget/Toast;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$900(Lcom/sec/android/app/camera/shootingmode/Auto;)Landroid/widget/Toast;
 
     move-result-object v0
@@ -79,7 +75,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyShowStickerToast:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$1002(Lcom/sec/android/app/camera/shootingmode/Auto;Z)Z
 
     :cond_0

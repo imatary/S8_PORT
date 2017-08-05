@@ -58,7 +58,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/plugin/ExternalFilterLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/ExternalFilterLoader;
 
-    # getter for: Lcom/sec/android/app/camera/plugin/ExternalFilterLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v5}, Lcom/sec/android/app/camera/plugin/ExternalFilterLoader;->access$000(Lcom/sec/android/app/camera/plugin/ExternalFilterLoader;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v5

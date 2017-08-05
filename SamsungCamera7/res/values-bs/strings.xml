@@ -303,6 +303,7 @@ oblika"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Režimi kamere</string>
     <string name="camera_security_enter">Pravila sigurnosti ograničavaju korištenje kamere.</string>
+    <string name="can_not_use_voice_control">Ne može se koristiti Glasovna kontrola dok je uključeno Bixby buđenje glasom.</string>
     <string name="cancel">Otkaži</string>
     <string name="cannot_start_camcorder_msg">Nije moguće snimati videozapise tokom poziva.</string>
     <string name="cannot_start_camera_msg">Nije moguće koristiti kameru tokom poziva.</string>
@@ -594,6 +595,7 @@ Ukoliko se slažete sa ovim, opciji Snimak oznake će biti omogućena dozvola, a
     <string name="task_edge_title_selfie">"Snimi
 selfi"</string>
     <string name="temperature">Temperatura</string>
+    <string name="temperature_too_high_camera_off">Temperatura je previsoka za korištenje aplikacije %1$s. Sačekajte da se telefon ohladi prije korištenja aplikacije %2$s.</string>
     <string name="temperature_too_high_flash_off">Isključivanje blica nije moguće. Pokušajte ponovno kada se uređaj ohladi.</string>
     <string name="temperature_too_high_record">Snimanje videozapisa nije moguće. Pokušajte ponovno kada se uređaj ohladi.</string>
     <string name="temperature_too_high_recording_disable">Snimanje je prekinuto. Možete snimati kada se uređaj ohladi.</string>

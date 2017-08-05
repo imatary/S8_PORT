@@ -49,7 +49,6 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton$3;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->mTouchListener:Lcom/samsung/android/glview/GLView$TouchListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->access$800(Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;)Lcom/samsung/android/glview/GLView$TouchListener;
 
     move-result-object v1
@@ -58,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton$3;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->mTouchListener:Lcom/samsung/android/glview/GLView$TouchListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->access$900(Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;)Lcom/samsung/android/glview/GLView$TouchListener;
 
     move-result-object v0
@@ -75,7 +73,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton$3;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->mButtonPressed:Lcom/samsung/android/glview/GLRectangle;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->access$700(Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;)Lcom/samsung/android/glview/GLRectangle;
 
     move-result-object v1
@@ -87,7 +84,6 @@
     :pswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton$3;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->mButtonPressed:Lcom/samsung/android/glview/GLRectangle;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->access$700(Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;)Lcom/samsung/android/glview/GLRectangle;
 
     move-result-object v1

@@ -40,7 +40,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mIsPausing:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$200(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v0
@@ -49,7 +48,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCoverManager:Lcom/samsung/android/sdk/cover/ScoverManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3500(Lcom/sec/android/app/camera/Camera;)Lcom/samsung/android/sdk/cover/ScoverManager;
 
     move-result-object v0
@@ -84,7 +82,6 @@
 
     move-result v1
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mCoverType:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/Camera;->access$3602(Lcom/sec/android/app/camera/Camera;I)I
 
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_HEART_RATE_SENSOR_SHUTTER:Z
@@ -93,7 +90,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCoverType:I
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3600(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v0
@@ -104,7 +100,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCoverType:I
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3600(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v0
@@ -115,7 +110,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCoverType:I
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3600(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v0
@@ -126,7 +120,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mIsCoverAttached:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3700(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v0
@@ -161,7 +154,6 @@
 
     move-result v1
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mIsCoverAttached:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/Camera;->access$3702(Lcom/sec/android/app/camera/Camera;Z)Z
 
     const-string v0, "Camera7"
@@ -178,7 +170,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCoverType:I
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$3600(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v2
@@ -195,7 +186,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mIsCoverAttached:Z
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$3700(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v2
@@ -224,12 +214,10 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mIsCoverOpen:Z
     invoke-static {v0, v3}, Lcom/sec/android/app/camera/Camera;->access$3802(Lcom/sec/android/app/camera/Camera;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # invokes: Lcom/sec/android/app/camera/Camera;->setCoverModeChanged(Z)V
     invoke-static {v0, v3}, Lcom/sec/android/app/camera/Camera;->access$3900(Lcom/sec/android/app/camera/Camera;Z)V
 
     goto/16 :goto_0
@@ -237,7 +225,6 @@
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mIsCoverAttached:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3700(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v0
@@ -275,12 +262,10 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mIsCoverOpen:Z
     invoke-static {v0, v4}, Lcom/sec/android/app/camera/Camera;->access$3802(Lcom/sec/android/app/camera/Camera;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # invokes: Lcom/sec/android/app/camera/Camera;->setCoverModeChanged(Z)V
     invoke-static {v0, v4}, Lcom/sec/android/app/camera/Camera;->access$3900(Lcom/sec/android/app/camera/Camera;Z)V
 
     goto/16 :goto_0

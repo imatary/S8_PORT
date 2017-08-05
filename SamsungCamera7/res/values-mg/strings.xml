@@ -303,6 +303,7 @@ correction"</string>
     <string name="camera_label">Fakan-tsary</string>
     <string name="camera_modes">Maody fakantsary</string>
     <string name="camera_security_enter">Mamehy ny fampiasa ny Fakantsary ny Paikady fiarovana.</string>
+    <string name="can_not_use_voice_control">"Can't use Voice control while Bixby Voice wake-up is on."</string>
     <string name="cancel">Hanafoana</string>
     <string name="cannot_start_camcorder_msg">Tsy afa-mandrakitra ireo fakantsary mandritra ny antso.</string>
     <string name="cannot_start_camera_msg">Tsy afa-mampiasa Fakantsary mandritra ny antso.</string>
@@ -595,6 +596,7 @@ Raha ekenao izany, dia homena an'ity fahazoan-dàlana ity ny Saripika tagy ary t
     <string name="task_edge_title_selfie">"Take
 selfie"</string>
     <string name="temperature">Temperature</string>
+    <string name="temperature_too_high_camera_off">Temperature too high to use %1$s. Wait for phone to cool down before using %2$s.</string>
     <string name="temperature_too_high_flash_off">Tsy afa-mandefa ny flash. Andramo indray rehefa tsy mafana intsony ny fitaovanao.</string>
     <string name="temperature_too_high_record">Tsy afa-mandrakitra horonantsary. Andramo indray rehefa tsy mafana intsony ny fitaovana.</string>
     <string name="temperature_too_high_recording_disable">Nijanona ny fandraketana. Afaka mandrakitra ianao rehefa tsy mafana intsony ny fitaovanao.</string>

@@ -630,9 +630,9 @@
 .method public static onGuidePositionChanged(Lcom/sec/android/app/camera/interfaces/CameraContext;I)V
     .locals 5
 
-    const v4, 0x7f090290
+    const v4, 0x7f090292
 
-    const v3, 0x7f09028f
+    const v3, 0x7f090291
 
     const-string v1, "FaceAreaManager"
 
@@ -756,7 +756,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090291
+    const v2, 0x7f090293
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -773,7 +773,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090288
+    const v2, 0x7f09028a
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -790,7 +790,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09028e
+    const v2, 0x7f090290
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -852,7 +852,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090287
+    const v2, 0x7f090289
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

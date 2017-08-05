@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$000(Lcom/sec/android/app/camera/shootingmode/Auto;)Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     move-result-object v0
@@ -56,27 +55,22 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Auto;->hideBeautyMenuButton()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$100(Lcom/sec/android/app/camera/shootingmode/Auto;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Auto;->hideVisionIntelligenceButton()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$200(Lcom/sec/android/app/camera/shootingmode/Auto;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Auto;->hideVisionIntelligenceEffect()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$300(Lcom/sec/android/app/camera/shootingmode/Auto;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Auto;->hideShortcutStickerButton()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$400(Lcom/sec/android/app/camera/shootingmode/Auto;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$500(Lcom/sec/android/app/camera/shootingmode/Auto;)Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     move-result-object v0
@@ -89,7 +83,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$500(Lcom/sec/android/app/camera/shootingmode/Auto;)Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     move-result-object v0

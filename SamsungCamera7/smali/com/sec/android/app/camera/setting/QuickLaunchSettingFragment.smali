@@ -110,7 +110,7 @@
 .method private darkScreenTurnOffPopup()V
     .locals 9
 
-    const v8, 0x7f09015b
+    const v8, 0x7f09015c
 
     const/4 v7, 0x1
 
@@ -118,7 +118,7 @@
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->dismissAllDialog()V
 
-    const v2, 0x7f090270
+    const v2, 0x7f090272
 
     new-array v3, v7, [Ljava/lang/Object;
 
@@ -136,7 +136,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09026f
+    const v2, 0x7f090271
 
     const/4 v3, 0x2
 
@@ -188,7 +188,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090271
+    const v4, 0x7f090273
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -206,7 +206,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090129
+    const v4, 0x7f09012a
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

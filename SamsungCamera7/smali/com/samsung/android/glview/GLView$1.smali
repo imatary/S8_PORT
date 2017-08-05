@@ -67,7 +67,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/glview/GLView$1;->this$0:Lcom/samsung/android/glview/GLView;
 
-    # getter for: Lcom/samsung/android/glview/GLView;->mDraggable:Z
     invoke-static {v0}, Lcom/samsung/android/glview/GLView;->access$000(Lcom/samsung/android/glview/GLView;)Z
 
     move-result v0
@@ -90,14 +89,12 @@
 
     iget-object v2, p0, Lcom/samsung/android/glview/GLView$1;->this$0:Lcom/samsung/android/glview/GLView;
 
-    # getter for: Lcom/samsung/android/glview/GLView;->mPreviousDragX:F
     invoke-static {v2}, Lcom/samsung/android/glview/GLView;->access$100(Lcom/samsung/android/glview/GLView;)F
 
     move-result v2
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView$1;->this$0:Lcom/samsung/android/glview/GLView;
 
-    # getter for: Lcom/samsung/android/glview/GLView;->mPreviousDragY:F
     invoke-static {v3}, Lcom/samsung/android/glview/GLView;->access$200(Lcom/samsung/android/glview/GLView;)F
 
     move-result v3

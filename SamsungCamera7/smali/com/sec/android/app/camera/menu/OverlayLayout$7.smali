@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$7;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$400(Lcom/sec/android/app/camera/menu/OverlayLayout;)Lcom/sec/android/app/camera/interfaces/Engine;
 
     move-result-object v0

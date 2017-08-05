@@ -113,13 +113,11 @@
     goto :goto_0
 
     :pswitch_1
-    # invokes: Lcom/sec/android/app/camera/shootingmode/RearSelfie;->startSelfShotCapture()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->access$400(Lcom/sec/android/app/camera/shootingmode/RearSelfie;)V
 
     goto :goto_0
 
     :pswitch_2
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RearSelfie;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->access$500(Lcom/sec/android/app/camera/shootingmode/RearSelfie;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v2
@@ -132,7 +130,6 @@
 
     if-ne v2, v3, :cond_1
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RearSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/RearSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -144,7 +141,6 @@
     goto :goto_0
 
     :cond_1
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RearSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/RearSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -170,7 +166,6 @@
     goto :goto_0
 
     :pswitch_3
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RearSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/RearSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2

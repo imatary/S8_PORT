@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$4;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mLightValue:I
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$900(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v0
@@ -64,7 +63,6 @@
 
     float-to-int v1, v1
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mLightValue:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/Camera;->access$902(Lcom/sec/android/app/camera/Camera;I)I
 
     const-string v0, "Camera7"
@@ -91,7 +89,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/Camera$4;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mLightValue:I
     invoke-static {v5}, Lcom/sec/android/app/camera/Camera;->access$900(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v5
@@ -118,7 +115,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$4;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mLightValue:I
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$900(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v0
@@ -127,18 +123,15 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$4;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # invokes: Lcom/sec/android/app/camera/Camera;->initCheckInsidePocket()V
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$1000(Lcom/sec/android/app/camera/Camera;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$4;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # invokes: Lcom/sec/android/app/camera/Camera;->startCheckInsidePocket()V
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$1100(Lcom/sec/android/app/camera/Camera;)V
 
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$4;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mMainHandler:Lcom/sec/android/app/camera/Camera$MainHandler;
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/Camera$MainHandler;
 
     move-result-object v0
@@ -147,7 +140,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$4;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mMainHandler:Lcom/sec/android/app/camera/Camera$MainHandler;
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/Camera$MainHandler;
 
     move-result-object v0

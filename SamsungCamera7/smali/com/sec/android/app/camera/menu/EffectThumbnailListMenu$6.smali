@@ -43,7 +43,7 @@
 
     iget-object v1, v1, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v2, 0x7f0901ca
+    const v2, 0x7f0901cb
 
     const/4 v3, 0x0
 
@@ -51,12 +51,10 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mDragHelpToast:Landroid/widget/Toast;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$802(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;Landroid/widget/Toast;)Landroid/widget/Toast;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$6;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mDragHelpToast:Landroid/widget/Toast;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$800(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)Landroid/widget/Toast;
 
     move-result-object v0
@@ -65,7 +63,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$6;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mDragHelpToast:Landroid/widget/Toast;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$800(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)Landroid/widget/Toast;
 
     move-result-object v0

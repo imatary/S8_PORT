@@ -53,7 +53,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v1
@@ -72,7 +71,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # setter for: Lcom/sec/android/app/camera/SoundManager;->mSoundLoadingThread:Ljava/lang/Thread;
     invoke-static {v1, v8}, Lcom/sec/android/app/camera/SoundManager;->access$102(Lcom/sec/android/app/camera/SoundManager;Ljava/lang/Thread;)Ljava/lang/Thread;
 
     :goto_0
@@ -81,7 +79,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundLoaded:Z
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$200(Lcom/sec/android/app/camera/SoundManager;)Z
 
     move-result v1
@@ -96,7 +93,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # setter for: Lcom/sec/android/app/camera/SoundManager;->mSoundLoadingThread:Ljava/lang/Thread;
     invoke-static {v1, v8}, Lcom/sec/android/app/camera/SoundManager;->access$102(Lcom/sec/android/app/camera/SoundManager;Ljava/lang/Thread;)Ljava/lang/Thread;
 
     goto :goto_0
@@ -110,7 +106,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -123,14 +118,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -149,7 +142,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -162,14 +154,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -188,7 +178,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -201,14 +190,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -227,7 +214,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -240,14 +226,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -266,7 +250,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v2
@@ -279,14 +262,12 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v4
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v1
@@ -310,7 +291,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -323,14 +303,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -349,7 +327,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -362,14 +339,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -388,7 +363,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -401,14 +375,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -427,7 +399,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v1
@@ -444,7 +415,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -457,14 +427,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -483,7 +451,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -496,14 +463,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -523,7 +488,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -536,14 +500,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -562,7 +524,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -575,14 +536,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -601,7 +560,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -614,14 +572,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -640,7 +596,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -653,14 +608,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -669,7 +622,6 @@
 
     move-result-object v4
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mBurstShutterSoundResId:Landroid/util/SparseIntArray;
     invoke-static {}, Lcom/sec/android/app/camera/SoundManager;->access$500()Landroid/util/SparseIntArray;
 
     move-result-object v5
@@ -690,7 +642,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -703,14 +654,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$400(Lcom/sec/android/app/camera/SoundManager;)Landroid/media/SoundPool;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v4}, Lcom/sec/android/app/camera/SoundManager;->access$000(Lcom/sec/android/app/camera/SoundManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v4
@@ -719,7 +668,6 @@
 
     move-result-object v4
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mBurstShutterSoundResId:Landroid/util/SparseIntArray;
     invoke-static {}, Lcom/sec/android/app/camera/SoundManager;->access$500()Landroid/util/SparseIntArray;
 
     move-result-object v5
@@ -743,7 +691,6 @@
     :goto_2
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v1
@@ -776,7 +723,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # getter for: Lcom/sec/android/app/camera/SoundManager;->mSoundPoolId:[I
     invoke-static {v3}, Lcom/sec/android/app/camera/SoundManager;->access$300(Lcom/sec/android/app/camera/SoundManager;)[I
 
     move-result-object v3
@@ -805,12 +751,10 @@
     :cond_4
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # setter for: Lcom/sec/android/app/camera/SoundManager;->mSoundLoadingThread:Ljava/lang/Thread;
     invoke-static {v1, v8}, Lcom/sec/android/app/camera/SoundManager;->access$102(Lcom/sec/android/app/camera/SoundManager;Ljava/lang/Thread;)Ljava/lang/Thread;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/SoundManager$3;->this$0:Lcom/sec/android/app/camera/SoundManager;
 
-    # setter for: Lcom/sec/android/app/camera/SoundManager;->mSoundLoaded:Z
     invoke-static {v1, v9}, Lcom/sec/android/app/camera/SoundManager;->access$202(Lcom/sec/android/app/camera/SoundManager;Z)Z
 
     invoke-static {}, Lcom/sec/android/app/TraceWrapper;->traceEnd()V

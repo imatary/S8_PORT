@@ -47,14 +47,12 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$7;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mExtraMenuId:I
     invoke-static {v1}, Lcom/sec/android/app/camera/Camera;->access$1300(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v1
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$7;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mExtraModeId:I
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$1400(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v2

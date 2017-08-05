@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$12;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mHRMSensorCaptureGuideView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$800(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/view/View;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$12;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mHRMSensorCaptureGuideView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$800(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/view/View;
 
     move-result-object v0
@@ -59,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$12;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mHRMSensorCaptureGuideView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$800(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/view/View;
 
     move-result-object v0
@@ -72,7 +69,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$12;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mHRMSensorCaptureGuideView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$800(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/view/View;
 
     move-result-object v0
@@ -85,7 +81,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$12;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mHRMSensorCaptureGuideView:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$800(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/view/View;
 
     move-result-object v1
@@ -97,7 +92,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mHRMSensorCaptureGuideView:Landroid/view/View;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$802(Lcom/sec/android/app/camera/menu/OverlayHelp;Landroid/view/View;)Landroid/view/View;
 
     :cond_1

@@ -316,6 +316,7 @@
     <string name="camera_label">Խցիկ</string>
     <string name="camera_modes">Խցիկի ռեժիմներ</string>
     <string name="camera_security_enter">Անվտանգության քաղաքականությունը սահմանափակում է Խցիկի օգտագործումը:</string>
+    <string name="can_not_use_voice_control">Հնարավոր չէ օգտագործել Ձայնով կառավարում, քանի դեռ Bixby Voice-ի ակտիվացումը միացված է:</string>
     <string name="cancel">Չեղարկել</string>
     <string name="cannot_start_camcorder_msg">Անհնար է տեսանյութեր տեսագրել կանչի ընթացքում:</string>
     <string name="cannot_start_camera_msg">Անհնար է Խցիկ օգտագործել կանչերի ընթացքում:</string>
@@ -612,6 +613,7 @@
     <string name="task_edge_title_selfie">"Նկարահանել
 ինքնանկար"</string>
     <string name="temperature">Ջերմաստիճան</string>
+    <string name="temperature_too_high_camera_off">Ջերմաստիճանը չափազանց բարձր է %1$s օգտագործելու համար: Սպասեք, մինչև հեռախոսը հովանա, նախքան կօգտագործեք %2$s:</string>
     <string name="temperature_too_high_flash_off">Անհնար է միացնել բռնկոցը: Փորձեք կրկին, երբ ձեր սարքը կսառչի</string>
     <string name="temperature_too_high_record">Անհնար է տեսագրել տեսանյութը: Նորից փորձեք, երբ սարքը հովացած լինի:</string>
     <string name="temperature_too_high_recording_disable">Գրանցումը դադարեցված է: Դուք կարող եք գրանցել, երբ սարքը կսառչի</string>

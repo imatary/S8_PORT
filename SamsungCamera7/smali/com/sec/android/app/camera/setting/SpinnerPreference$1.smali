@@ -54,7 +54,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/android/app/camera/setting/SpinnerPreference;->findIndexOfValue(I)I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$000(Lcom/sec/android/app/camera/setting/SpinnerPreference;I)I
 
     move-result v0
@@ -73,18 +72,15 @@
 
     move-result v2
 
-    # invokes: Lcom/sec/android/app/camera/setting/SpinnerPreference;->findIndexOfValue(I)I
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$000(Lcom/sec/android/app/camera/setting/SpinnerPreference;I)I
 
     move-result v1
 
-    # setter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mPosition:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$102(Lcom/sec/android/app/camera/setting/SpinnerPreference;I)I
 
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$1;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mPosition:I
     invoke-static {v0}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$100(Lcom/sec/android/app/camera/setting/SpinnerPreference;)I
 
     move-result v0
@@ -105,7 +101,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$1;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mPosition:I
     invoke-static {v2}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$100(Lcom/sec/android/app/camera/setting/SpinnerPreference;)I
 
     move-result v2
@@ -134,21 +129,18 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$1;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mEntryValues:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$300(Lcom/sec/android/app/camera/setting/SpinnerPreference;)[I
 
     move-result-object v1
 
     aget v1, v1, p3
 
-    # setter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mValue:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$202(Lcom/sec/android/app/camera/setting/SpinnerPreference;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$1;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$1;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mEntries:[Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$400(Lcom/sec/android/app/camera/setting/SpinnerPreference;)[Ljava/lang/String;
 
     move-result-object v1
@@ -161,19 +153,16 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$1;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mValue:I
     invoke-static {v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$200(Lcom/sec/android/app/camera/setting/SpinnerPreference;)I
 
     move-result v1
 
-    # invokes: Lcom/sec/android/app/camera/setting/SpinnerPreference;->persistInt(I)Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$500(Lcom/sec/android/app/camera/setting/SpinnerPreference;I)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$1;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$1;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mEntryValues:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$300(Lcom/sec/android/app/camera/setting/SpinnerPreference;)[I
 
     move-result-object v1
@@ -184,7 +173,6 @@
 
     move-result-object v1
 
-    # invokes: Lcom/sec/android/app/camera/setting/SpinnerPreference;->callChangeListener(Ljava/lang/Object;)Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$600(Lcom/sec/android/app/camera/setting/SpinnerPreference;Ljava/lang/Object;)Z
 
     :cond_1

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$10;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayLayout;->startVisionIntelligenceEffectAnimation()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$700(Lcom/sec/android/app/camera/menu/OverlayLayout;)V
 
     return-void

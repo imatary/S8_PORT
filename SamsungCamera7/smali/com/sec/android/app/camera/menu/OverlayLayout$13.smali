@@ -73,7 +73,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$300(Lcom/sec/android/app/camera/menu/OverlayLayout;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v3
@@ -144,7 +143,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_POS_Y:[I
     invoke-static {v4}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1000(Lcom/sec/android/app/camera/menu/OverlayLayout;)[I
 
     move-result-object v4
@@ -157,7 +155,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_SIZE:[I
     invoke-static {v5}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1100(Lcom/sec/android/app/camera/menu/OverlayLayout;)[I
 
     move-result-object v5
@@ -176,7 +173,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_POS_X:[I
     invoke-static {v5}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1200(Lcom/sec/android/app/camera/menu/OverlayLayout;)[I
 
     move-result-object v5
@@ -189,7 +185,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_SIZE:[I
     invoke-static {v6}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1100(Lcom/sec/android/app/camera/menu/OverlayLayout;)[I
 
     move-result-object v6
@@ -208,7 +203,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_SIZE:[I
     invoke-static {v6}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1100(Lcom/sec/android/app/camera/menu/OverlayLayout;)[I
 
     move-result-object v6
@@ -223,7 +217,6 @@
 
     iget-object v7, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_SIZE:[I
     invoke-static {v7}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1100(Lcom/sec/android/app/camera/menu/OverlayLayout;)[I
 
     move-result-object v7
@@ -253,7 +246,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_DEFAULT_COLOR:I
     invoke-static {v4}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1300(Lcom/sec/android/app/camera/menu/OverlayLayout;)I
 
     move-result v4
@@ -263,7 +255,6 @@
     :cond_4
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$300(Lcom/sec/android/app/camera/menu/OverlayLayout;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v3
@@ -371,7 +362,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_POS_Y:[I
     invoke-static {v4}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1000(Lcom/sec/android/app/camera/menu/OverlayLayout;)[I
 
     move-result-object v4
@@ -384,7 +374,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_SIZE:[I
     invoke-static {v5}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1100(Lcom/sec/android/app/camera/menu/OverlayLayout;)[I
 
     move-result-object v5
@@ -403,7 +392,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_POS_X:[I
     invoke-static {v5}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1200(Lcom/sec/android/app/camera/menu/OverlayLayout;)[I
 
     move-result-object v5
@@ -416,7 +404,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_SIZE:[I
     invoke-static {v6}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1100(Lcom/sec/android/app/camera/menu/OverlayLayout;)[I
 
     move-result-object v6
@@ -435,7 +422,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_SIZE:[I
     invoke-static {v6}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1100(Lcom/sec/android/app/camera/menu/OverlayLayout;)[I
 
     move-result-object v6
@@ -450,7 +436,6 @@
 
     iget-object v7, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->VI_EFFECT_SIZE:[I
     invoke-static {v7}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$1100(Lcom/sec/android/app/camera/menu/OverlayLayout;)[I
 
     move-result-object v7

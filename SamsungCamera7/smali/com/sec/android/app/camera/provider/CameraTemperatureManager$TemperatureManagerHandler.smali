@@ -55,7 +55,6 @@
 
     check-cast v0, Lcom/sec/android/app/camera/provider/CameraTemperatureManager;
 
-    # invokes: Lcom/sec/android/app/camera/provider/CameraTemperatureManager;->handleMessage(Landroid/os/Message;)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/provider/CameraTemperatureManager;->access$300(Lcom/sec/android/app/camera/provider/CameraTemperatureManager;Landroid/os/Message;)V
 
     const-string v1, "CameraTemperatureMgr"

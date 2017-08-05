@@ -50,7 +50,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CeRequestQueue$RequestHandler;->this$0:Lcom/sec/android/app/camera/engine/CeRequestQueue;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CeRequestQueue;->startFirstRequest()V
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CeRequestQueue;->access$000(Lcom/sec/android/app/camera/engine/CeRequestQueue;)V
 
     :cond_0

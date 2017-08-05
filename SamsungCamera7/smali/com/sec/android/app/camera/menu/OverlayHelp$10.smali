@@ -57,17 +57,14 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$10;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp;->updatePageIndicator(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1500(Lcom/sec/android/app/camera/menu/OverlayHelp;I)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$10;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # setter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mCurrentIndex:I
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1402(Lcom/sec/android/app/camera/menu/OverlayHelp;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$10;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mIsLocaleRTL:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1300(Lcom/sec/android/app/camera/menu/OverlayHelp;)Z
 
     move-result v0
@@ -76,7 +73,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$10;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mCurrentIndex:I
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1400(Lcom/sec/android/app/camera/menu/OverlayHelp;)I
 
     move-result v0
@@ -86,7 +82,6 @@
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$10;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # setter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mIslastPageReached:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$902(Lcom/sec/android/app/camera/menu/OverlayHelp;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$10;->val$guideView:Landroid/view/View;
@@ -99,21 +94,19 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    const v1, 0x7f0901e2
+    const v1, 0x7f0901e3
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$10;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mViewPagerAdapter:Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1600(Lcom/sec/android/app/camera/menu/OverlayHelp;)Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$10;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mCurrentIndex:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1400(Lcom/sec/android/app/camera/menu/OverlayHelp;)I
 
     move-result v1
@@ -125,7 +118,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$10;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mCurrentIndex:I
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1400(Lcom/sec/android/app/camera/menu/OverlayHelp;)I
 
     move-result v0

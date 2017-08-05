@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout$1;->this$0:Lcom/sec/android/app/camera/menu/PopupLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/PopupLayout;->mReview:Lcom/sec/android/app/camera/menu/Review;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/PopupLayout;->access$000(Lcom/sec/android/app/camera/menu/PopupLayout;)Lcom/sec/android/app/camera/menu/Review;
 
     move-result-object v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout$1;->this$0:Lcom/sec/android/app/camera/menu/PopupLayout;
 
-    # getter for: Lcom/sec/android/app/camera/menu/PopupLayout;->mReview:Lcom/sec/android/app/camera/menu/Review;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/PopupLayout;->access$000(Lcom/sec/android/app/camera/menu/PopupLayout;)Lcom/sec/android/app/camera/menu/Review;
 
     move-result-object v0
@@ -59,7 +57,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/menu/PopupLayout;->mReviewShowing:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/PopupLayout;->access$102(Lcom/sec/android/app/camera/menu/PopupLayout;Z)Z
 
     :cond_0

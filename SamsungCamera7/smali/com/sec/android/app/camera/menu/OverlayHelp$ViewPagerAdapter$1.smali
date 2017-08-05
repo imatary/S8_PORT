@@ -49,12 +49,10 @@
 
     invoke-direct {v1, v2}, Lcom/sec/android/app/camera/menu/OverlayHelp$AnimationHandler;-><init>(Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;)V
 
-    # setter for: Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mAnimationHandler:Lcom/sec/android/app/camera/menu/OverlayHelp$AnimationHandler;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->access$2102(Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;Lcom/sec/android/app/camera/menu/OverlayHelp$AnimationHandler;)Lcom/sec/android/app/camera/menu/OverlayHelp$AnimationHandler;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mAnimationHandler:Lcom/sec/android/app/camera/menu/OverlayHelp$AnimationHandler;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->access$2100(Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;)Lcom/sec/android/app/camera/menu/OverlayHelp$AnimationHandler;
 
     move-result-object v0
@@ -67,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mAnimationHandler:Lcom/sec/android/app/camera/menu/OverlayHelp$AnimationHandler;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->access$2100(Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;)Lcom/sec/android/app/camera/menu/OverlayHelp$AnimationHandler;
 
     move-result-object v0

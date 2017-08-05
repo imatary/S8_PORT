@@ -314,6 +314,7 @@ lögun"</string>
     <string name="camera_label">Myndavél</string>
     <string name="camera_modes">Myndvélarstillingar</string>
     <string name="camera_security_enter">Öryggisreglur takmarka notkun myndavélar.</string>
+    <string name="can_not_use_voice_control">Ekki er hægt að nota raddstjórnun þegar kveikt er á raddvakningu Bixby Voice.</string>
     <string name="cancel">Hætta við</string>
     <string name="cannot_start_camcorder_msg">Mistókst að taka upp myndskeið í símtali.</string>
     <string name="cannot_start_camera_msg">Ekki er hægt að nota myndavélina meðan á símtali stendur.</string>
@@ -610,6 +611,7 @@ Ef þú samþykkir þetta fær „Merkja mynd“ þessa heimild og ekki verður 
     <string name="task_edge_title_selfie">"Taka
 sjálfsmynd"</string>
     <string name="temperature">Hitastig</string>
+    <string name="temperature_too_high_camera_off">Síminn er of heitur til að nota %1$s. Bíddu þar til hann hefur kólnað til að nota %2$s.</string>
     <string name="temperature_too_high_flash_off">Ekki er hægt að kveikja á flassinu. Reyndu aftur þegar tækið hefur kólnað.</string>
     <string name="temperature_too_high_record">Ekki er hægt að taka upp myndskeið. Reyndu aftur þegar tækið hefur kólnað.</string>
     <string name="temperature_too_high_recording_disable">Upptakan var stöðvuð. Þú getur tekið upp þegar tækið hefur kólnað.</string>

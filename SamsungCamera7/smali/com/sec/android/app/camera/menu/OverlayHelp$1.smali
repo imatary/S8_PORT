@@ -70,7 +70,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$1;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$000(Lcom/sec/android/app/camera/menu/OverlayHelp;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -81,7 +80,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$1;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$000(Lcom/sec/android/app/camera/menu/OverlayHelp;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -94,7 +92,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$1;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mCommandId:I
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$100(Lcom/sec/android/app/camera/menu/OverlayHelp;)I
 
     move-result v0
@@ -105,7 +102,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$1;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mViewPager:Landroid/support/v4/view/ViewPager;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$200(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/support/v4/view/ViewPager;
 
     move-result-object v0
@@ -114,7 +110,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$1;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mViewPager:Landroid/support/v4/view/ViewPager;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$200(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/support/v4/view/ViewPager;
 
     move-result-object v0

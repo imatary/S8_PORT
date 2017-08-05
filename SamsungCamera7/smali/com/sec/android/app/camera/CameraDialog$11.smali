@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraDialog$11;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->setDialogCheckBoxValueForWatermark(Z)V
     invoke-static {v0, p2}, Lcom/sec/android/app/camera/CameraDialog;->access$500(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     const-string v2, "9022"

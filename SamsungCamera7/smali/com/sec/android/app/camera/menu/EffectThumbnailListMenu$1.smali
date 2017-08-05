@@ -49,7 +49,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCurrentMode:I
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$300(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)I
 
     move-result v3
@@ -67,7 +66,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->getCategoryItemIndex()I
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$400(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)I
 
     move-result v3
@@ -76,7 +74,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCategoryItemList:Landroid/util/SparseArray;
     invoke-static {v4}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$500(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)Landroid/util/SparseArray;
 
     move-result-object v4
@@ -93,7 +90,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCategoryItemList:Landroid/util/SparseArray;
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$500(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)Landroid/util/SparseArray;
 
     move-result-object v2
@@ -104,7 +100,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$600(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v3
@@ -119,7 +114,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCategoryItemList:Landroid/util/SparseArray;
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$500(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)Landroid/util/SparseArray;
 
     move-result-object v3
@@ -128,7 +122,6 @@
 
     move-result v3
 
-    # invokes: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->updateCategoryLayout(II)V
     invoke-static {v2, v3, v5}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$700(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;II)V
 
     :cond_2
@@ -143,7 +136,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->getCategoryItemIndex()I
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$400(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)I
 
     move-result v3
@@ -152,7 +144,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCategoryItemList:Landroid/util/SparseArray;
     invoke-static {v4}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$500(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)Landroid/util/SparseArray;
 
     move-result-object v4
@@ -169,7 +160,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCategoryItemList:Landroid/util/SparseArray;
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$500(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)Landroid/util/SparseArray;
 
     move-result-object v2
@@ -180,7 +170,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$600(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v3
@@ -195,7 +184,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCategoryItemList:Landroid/util/SparseArray;
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$500(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)Landroid/util/SparseArray;
 
     move-result-object v3
@@ -204,7 +192,6 @@
 
     move-result v3
 
-    # invokes: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->updateCategoryLayout(II)V
     invoke-static {v2, v3, v5}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$700(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;II)V
 
     :cond_4

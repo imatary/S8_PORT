@@ -681,21 +681,18 @@
 
     if-eqz v1, :cond_2
 
-    # getter for: Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->mWidth:I
     invoke-static {p1}, Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->access$0(Lcom/quramsoft/qrb/QuramBitmapFactory$Options;)I
 
     move-result v4
 
     if-lt v4, v2, :cond_0
 
-    # getter for: Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->mHeight:I
     invoke-static {p1}, Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->access$1(Lcom/quramsoft/qrb/QuramBitmapFactory$Options;)I
 
     move-result v4
 
     if-lt v4, v2, :cond_0
 
-    # getter for: Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->mWidth:I
     invoke-static {p1}, Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->access$0(Lcom/quramsoft/qrb/QuramBitmapFactory$Options;)I
 
     move-result v3
@@ -710,7 +707,6 @@
 
     double-to-int v3, v4
 
-    # getter for: Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->mHeight:I
     invoke-static {p1}, Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->access$1(Lcom/quramsoft/qrb/QuramBitmapFactory$Options;)I
 
     move-result v4
@@ -2958,12 +2954,10 @@
 
     move-result-wide v0
 
-    # getter for: Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->mMidpoint:[B
     invoke-static {p1}, Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->access$2(Lcom/quramsoft/qrb/QuramBitmapFactory$Options;)[B
 
     move-result-object v2
 
-    # getter for: Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->mMidpointOffset:I
     invoke-static {p1}, Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->access$3(Lcom/quramsoft/qrb/QuramBitmapFactory$Options;)I
 
     move-result v3

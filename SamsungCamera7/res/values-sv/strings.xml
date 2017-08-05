@@ -200,7 +200,7 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="SM_ULTRA_WIDE_SHOT">Vidvinkelselfie</string>
     <string name="SM_ULTRA_WIDE_SHOT_description">Ta selfie-bilder med vidvinkel för att få plats med flera personer i varje bild.</string>
     <string name="SM_WECHAT_VIDEO">WeChat-video</string>
-    <string name="SM_WECHAT_VIDEO_description">Spela in korta videor på upp till 10 sekunder och dela dem via programmet WeChat.</string>
+    <string name="SM_WECHAT_VIDEO_description">Spela in korta videor på upp till 10 sekunder och dela dem via appen WeChat.</string>
     <string name="SS_EDIT_TEXT">Redigera text</string>
     <string name="S_DEVICE">Enhet</string>
     <string name="S_MMC">SD-kort</string>
@@ -280,7 +280,7 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="WB_FLUORESCENT">Lysrör</string>
     <string name="WB_INCANDESCENT">Glödlampa</string>
     <string name="WB_KELVIN">Kelvin</string>
-    <string name="activity_not_found_exception">Inget program för att utföra åtgärden hittades.</string>
+    <string name="activity_not_found_exception">Ingen app för att utföra åtgärden hittades.</string>
     <string name="add_shortcut_on_home_screen">Lägg t. genväg på hemskärmen</string>
     <string name="add_shortcut_on_home_screen_tts">Lägg till genväg på hemskärmen</string>
     <string name="ae_lock">AE-lås</string>
@@ -288,7 +288,7 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="af_lock">AF-lås</string>
     <string name="alert_title">Varning</string>
     <string name="app_name">Kamera</string>
-    <string name="application_disable_toast_message">Det går inte att öppna %s. Bara program som har lagts till på hemskärmen går att använda i maximalt energisparläge.</string>
+    <string name="application_disable_toast_message">Det går inte att öppna %s. Bara appar som har lagts till på hemskärmen går att använda i maximalt energisparläge.</string>
     <string name="aquashot_helptext">Ta bilder med knappen Aktiv och spela in videor med någon av volymknapparna.</string>
     <string name="auto_filter">Auto</string>
     <string name="battery_low">Stäng Kamera. För låg batteritemperatur.</string>
@@ -307,11 +307,12 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="burst_shots_not_supported">Serietagningar stöds inte i svagt ljus.</string>
     <string name="button">Knapp</string>
     <string name="camcorder_label">Videokamera</string>
-    <string name="camera_busy_msg">Det går inte att använda mer än ett program som använder kameran samtidigt. Kameran kommer att stängas.</string>
+    <string name="camera_busy_msg">Det går inte att använda mer än en app som använder kameran samtidigt. Kameran kommer att stängas.</string>
     <string name="camera_key">Ta bilder</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Kameralägen</string>
     <string name="camera_security_enter">Säkerhetspolicy begränsar användningen av kamera.</string>
+    <string name="can_not_use_voice_control">Det går inte att använda Röststyrning när Bixby Voice-uppvakning är på.</string>
     <string name="cancel">Avbryt</string>
     <string name="cannot_start_camcorder_msg">Kan inte spela video under samtal.</string>
     <string name="cannot_start_camera_msg">Det går inte att använda Kamera under samtal.</string>
@@ -448,7 +449,7 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="interactive_error_not_enough_frames">Ta fler bilder innan du sparar den virtuella bilden.</string>
     <string name="interactive_helptext">Tryck på kameraknappen och gå sedan runt motivet medan du behåller det i mitten av rutan.</string>
     <string name="interval_summary">Ta %d bilder i rad när timern har nollställts. Funktionen går bara att använda i kameralägena Auto, Pro och Selfie.</string>
-    <string name="invalid_device_version_msg">Om du vill ta bilder i läget %s måste du uppdatera kameraprogrammet.</string>
+    <string name="invalid_device_version_msg">Om du vill ta bilder i läget %s måste du uppdatera kameraappen.</string>
     <string name="invalid_device_version_title">Uppdatera kamera?</string>
     <string name="invalid_shooting_mode_version_msg">Om du vill ta bilder i läget %1$s måste du uppdatera kameraläget i %2$s.</string>
     <string name="invalid_shooting_mode_version_title">Uppdatera kameraläge?</string>
@@ -487,7 +488,7 @@ Rengör kameralinserna och fortsätt ta fantastiska bilder."</string>
     <string name="navigate_up">Navigera upp</string>
     <string name="network_permission_description">Tillåt vissa av funktionerna i %s att använda nätverskanslutningar och att öppna följande uppgifter:</string>
     <string name="network_permission_item">Din plats</string>
-    <string name="network_permission_title">Tillåta programbehörighet</string>
+    <string name="network_permission_title">Tillåta appbehörighet</string>
     <string name="new_badge_text">N</string>
     <string name="next">Nästa</string>
     <string name="no_images">Inga bilder eller videor att se.</string>
@@ -526,13 +527,13 @@ Rengör kameralinserna och fortsätt ta fantastiska bilder."</string>
     <string name="record">Inspeln.</string>
     <string name="record_key">Sp. in video</string>
     <string name="recording_call_rinning_msg">Inspelningen stoppas och sparas när du svarar på samtal.</string>
-    <string name="recording_fail_lack_of_hw_resource">Videokodeken används för tillfället av andra program. Stäng alla andra aktiva videoprogram i Uppgiftshanteraren och försök igen.</string>
+    <string name="recording_fail_lack_of_hw_resource">Videokodeken används för tillfället av andra appar. Stäng alla andra aktiva videoappar i Uppgiftshanteraren och försök igen.</string>
     <string name="recording_failed_msg">Inspelning misslyckades.</string>
     <string name="recording_help_popup_description">Håll ned knappen Spela in och förhandsgranska bildförhållandet innan du spelar in.</string>
     <string name="recording_help_popup_title">Förhandsgranska videorna</string>
     <string name="recording_using_earphone_mic">Spela in ljud via headset.</string>
     <string name="remove_effect">Ta bort effekt</string>
-    <string name="request_runtime_permission_message">Det går inte att öppna %s. Tryck på INSTÄLLNINGAR, öppna Programinfo > Behörigheter och tillåt sedan följande behörigheter innan du försöker igen:</string>
+    <string name="request_runtime_permission_message">Det går inte att öppna %s. Tryck på INSTÄLLNINGAR, öppna Appinfo > Behörigheter och tillåt sedan följande behörigheter innan du försöker igen:</string>
     <string name="request_runtime_permission_message_for_location_secure_lock">Det går inte att använda Platstaggar. Lås upp enheten, öppna Kamera och tillåt relevanta behörigheter innan du försöker igen.</string>
     <string name="request_runtime_permission_message_secure_lock">Det går inte att öppna kameran från låsskärmen. Lås upp enheter, öppna kameran och tillåt relevanta behörigheter.</string>
     <string name="reset">Återställ</string>
@@ -547,7 +548,7 @@ Rengör kameralinserna och fortsätt ta fantastiska bilder."</string>
     <string name="review_summary_vzw">Granska bilden så fort du tar den.</string>
     <string name="right">Höger</string>
     <string name="right_tts">Höger</string>
-    <string name="runtime_permission_message_for_location">Det går inte att använda %s. Tryck på INSTÄLLNINGAR, öppna Programinfo > Behörigheter och tillåt sedan följande behörigheter innan du försöker igen:</string>
+    <string name="runtime_permission_message_for_location">Det går inte att använda %s. Tryck på INSTÄLLNINGAR, öppna Appinfo > Behörigheter och tillåt sedan följande behörigheter innan du försöker igen:</string>
     <string name="runtime_permission_secure_lock_in_video_collage">Det går inte att skapa videocollaget. Lås upp enheten och tillåt relevanta behörigheter.</string>
     <string name="saturation">Mättnad</string>
     <string name="save">Spara</string>
@@ -608,6 +609,7 @@ Om du accepterar detta får Tagga bild också samma tillstånd och du kommer int
     <string name="task_edge_title_selfie">"Ta
 selfie"</string>
     <string name="temperature">Temperatur</string>
+    <string name="temperature_too_high_camera_off">Temperaturen är för hög för att använda %1$s. Vänta tills telefonen har svalnat innan du använder %2$s igen.</string>
     <string name="temperature_too_high_flash_off">Det går inte att aktivera blixten. Försök igen när enheten har svalnat.</string>
     <string name="temperature_too_high_record">Det gick inte att spela in video. Försök ingen när enheten har svalnat.</string>
     <string name="temperature_too_high_recording_disable">Inspelningen har stoppats. Du kan spela in när enheten har svalnat.</string>

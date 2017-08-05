@@ -308,6 +308,7 @@ labošana"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Kameras režīmi</string>
     <string name="camera_security_enter">Drošības politika ierobežo kameras lietošanu.</string>
+    <string name="can_not_use_voice_control">Balss vadību nevar izmantot, kamēr ir ieslēgta Bixby Voice modināšana.</string>
     <string name="cancel">Atcelt</string>
     <string name="cannot_start_camcorder_msg">Sarunas laikā nevar veikt videoierakstu.</string>
     <string name="cannot_start_camera_msg">Sarunu laikā programmu Kamera nevar izmantot.</string>
@@ -604,6 +605,7 @@ Ja piekrītat tam, funkcijai Fotoattēls ar atzīmi tiks piešķirta šī atļau
     <string name="task_edge_title_selfie">"Uzņemt
 pašbildi"</string>
     <string name="temperature">Temperatūra</string>
+    <string name="temperature_too_high_camera_off">Temperatūra ir pārāk augsta, lai lietotu %1$s. Uzgaidiet, līdz tālrunis atdziest, pirms izmantojat %2$s.</string>
     <string name="temperature_too_high_flash_off">Nevar ieslēgt zibspuldzi. Mēģiniet vēlreiz, kad ierīce būs atdzisusi.</string>
     <string name="temperature_too_high_record">Nevar ierakstīt videoklipu. Mēģiniet vēlreiz, kad ierīce būs atdzisusi.</string>
     <string name="temperature_too_high_recording_disable">Ierakstīšana tika apturēta. Turpināt ierakstīšanu varēsit tad, kad ierīce būs atdzisusi.</string>

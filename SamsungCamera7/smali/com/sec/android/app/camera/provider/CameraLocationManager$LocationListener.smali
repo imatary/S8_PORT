@@ -312,7 +312,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/provider/CameraLocationManager$LocationListener;->this$0:Lcom/sec/android/app/camera/provider/CameraLocationManager;
 
-    # getter for: Lcom/sec/android/app/camera/provider/CameraLocationManager;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/provider/CameraLocationManager;->access$300(Lcom/sec/android/app/camera/provider/CameraLocationManager;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0

@@ -66,7 +66,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingControllerEventListener:Lcom/sec/android/app/camera/shootingmode/RecordingController$EventListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$000(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Lcom/sec/android/app/camera/shootingmode/RecordingController$EventListener;
 
     move-result-object v1
@@ -107,7 +106,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingControllerEventListener:Lcom/sec/android/app/camera/shootingmode/RecordingController$EventListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$000(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Lcom/sec/android/app/camera/shootingmode/RecordingController$EventListener;
 
     move-result-object v1
@@ -275,7 +273,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingControllerEventListener:Lcom/sec/android/app/camera/shootingmode/RecordingController$EventListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$000(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Lcom/sec/android/app/camera/shootingmode/RecordingController$EventListener;
 
     move-result-object v1
@@ -287,7 +284,6 @@
     :pswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$100(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v1
@@ -300,12 +296,10 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByOverHeat:Z
     invoke-static {v1, v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$202(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController;->restrictRecording(Z)V
     invoke-static {v1, v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$300(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)V
 
     goto/16 :goto_0
@@ -313,7 +307,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByOverHeat:Z
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$200(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Z
 
     move-result v1
@@ -322,12 +315,10 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByOverHeat:Z
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$202(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController;->restrictRecording(Z)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$300(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)V
 
     goto/16 :goto_0
@@ -335,7 +326,6 @@
     :pswitch_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByOverHeat:Z
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$200(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Z
 
     move-result v1
@@ -344,12 +334,10 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByOverHeat:Z
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$202(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController;->restrictRecording(Z)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$300(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)V
 
     goto/16 :goto_0
@@ -357,7 +345,6 @@
     :pswitch_4
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingControllerEventListener:Lcom/sec/android/app/camera/shootingmode/RecordingController$EventListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$000(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Lcom/sec/android/app/camera/shootingmode/RecordingController$EventListener;
 
     move-result-object v1
@@ -379,7 +366,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingControllerEventListener:Lcom/sec/android/app/camera/shootingmode/RecordingController$EventListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$000(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Lcom/sec/android/app/camera/shootingmode/RecordingController$EventListener;
 
     move-result-object v1
@@ -401,7 +387,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$100(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v1
@@ -414,12 +399,11 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$400(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
 
-    const v3, 0x7f090201
+    const v3, 0x7f090202
 
     invoke-static {v1, v3, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -432,12 +416,10 @@
     :pswitch_7
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByCallState:Z
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$502(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController;->restrictRecording(Z)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$300(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)V
 
     goto/16 :goto_0
@@ -445,7 +427,6 @@
     :pswitch_8
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByCallState:Z
     invoke-static {v1, v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$502(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)Z
 
     invoke-static {p1}, Lcom/sec/android/app/camera/util/CallState;->isVTCallOngoing(Landroid/content/Context;)Z
@@ -456,7 +437,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController;->restrictRecording(ZZ)V
     invoke-static {v1, v3, v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$600(Lcom/sec/android/app/camera/shootingmode/RecordingController;ZZ)V
 
     goto/16 :goto_0
@@ -464,7 +444,6 @@
     :cond_4
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController;->restrictRecording(Z)V
     invoke-static {v1, v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$300(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)V
 
     goto/16 :goto_0
@@ -472,7 +451,6 @@
     :pswitch_9
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingFailedByVideoCapability:Z
     invoke-static {v1, v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$702(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)Z
 
     goto/16 :goto_0
@@ -480,7 +458,6 @@
     :pswitch_a
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingFailedByWifiDisplayNotAllowed:Z
     invoke-static {v1, v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$802(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)Z
 
     goto/16 :goto_0
@@ -498,7 +475,6 @@
 
     move-result v2
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController;->handleRecordingError(I)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$900(Lcom/sec/android/app/camera/shootingmode/RecordingController;I)V
 
     goto/16 :goto_0

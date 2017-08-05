@@ -308,6 +308,7 @@ oblike"</string>
     <string name="camera_label">Fotoaparat</string>
     <string name="camera_modes">Načini kamere</string>
     <string name="camera_security_enter">Varnostni pravilnik omejuje uporabo kamere.</string>
+    <string name="can_not_use_voice_control">Glasovnega upravljanja ni mogoče uporabljati, ko je vklopljena funkcija glasovno bujenje Bixby.</string>
     <string name="cancel">Prekliči</string>
     <string name="cannot_start_camcorder_msg">Ni mogoče snemati videoposnetkov med klicem.</string>
     <string name="cannot_start_camera_msg">Med klicanjem ni mogoče uporabljati aplikacije Fotoaparat.</string>
@@ -604,6 +605,7 @@ Očistite objektiv fotoaparata, da bodo vaše fotografije še naprej odlične."<
     <string name="task_edge_title_selfie">"Posnemi
 sebe"</string>
     <string name="temperature">Temperatura</string>
+    <string name="temperature_too_high_camera_off">Temperatura je previsoka za uporabo aplikacije %1$s. Pred uporabo aplikacije %2$s počakajte, da se telefon ohladi.</string>
     <string name="temperature_too_high_flash_off">Bliskavice ni mogoče vklopiti. Poskusite znova, ko se naprava ohladi.</string>
     <string name="temperature_too_high_record">Videa ni mogoče snemati. Poskusite znova, ko se naprava ohladi.</string>
     <string name="temperature_too_high_recording_disable">Snemanje je ustavljeno. Znova boste lahko snemali, ko se naprava ohladi.</string>

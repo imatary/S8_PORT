@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$100(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     move-result-object v0
@@ -68,7 +67,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$100(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     move-result-object v1
@@ -79,7 +77,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mItemList:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$200(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Landroid/util/SparseArray;
 
     move-result-object v1
@@ -108,14 +105,12 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$300(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->COLORTUNE_LIST_ITEM_WIDTH:I
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$400(Lcom/sec/android/app/camera/menu/ProColorTuneList;)I
 
     move-result v3
@@ -124,14 +119,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->COLORTUNE_LIST_ITEM_WIDTH:I
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$400(Lcom/sec/android/app/camera/menu/ProColorTuneList;)I
 
     move-result v3
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->COLORTUNE_LIST_TOP_MARGIN:I
     invoke-static {v5}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$500(Lcom/sec/android/app/camera/menu/ProColorTuneList;)I
 
     move-result v5
@@ -158,7 +151,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mList:Lcom/samsung/android/glview/GLList;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$700(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Lcom/samsung/android/glview/GLList;
 
     move-result-object v1
@@ -173,7 +165,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mItemList:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$200(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Landroid/util/SparseArray;
 
     move-result-object v1
@@ -201,14 +192,12 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$300(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->COLORTUNE_LIST_ITEM_WIDTH:I
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$400(Lcom/sec/android/app/camera/menu/ProColorTuneList;)I
 
     move-result v3
@@ -217,14 +206,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->COLORTUNE_LIST_CENTER_ITEM_HEIGHT:I
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$600(Lcom/sec/android/app/camera/menu/ProColorTuneList;)I
 
     move-result v3
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->COLORTUNE_LIST_TOP_MARGIN:I
     invoke-static {v5}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$500(Lcom/sec/android/app/camera/menu/ProColorTuneList;)I
 
     move-result v5
@@ -243,14 +230,12 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mItemList:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$200(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Landroid/util/SparseArray;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$100(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     move-result-object v2
@@ -290,14 +275,12 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$300(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->COLORTUNE_LIST_ITEM_WIDTH:I
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$400(Lcom/sec/android/app/camera/menu/ProColorTuneList;)I
 
     move-result v3
@@ -306,7 +289,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->COLORTUNE_LIST_CENTER_ITEM_HEIGHT:I
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$600(Lcom/sec/android/app/camera/menu/ProColorTuneList;)I
 
     move-result v3
@@ -323,14 +305,12 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mItemList:Landroid/util/SparseArray;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$200(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Landroid/util/SparseArray;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList$ColorTuneListAdapter;->this$0:Lcom/sec/android/app/camera/menu/ProColorTuneList;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProColorTuneList;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/ProColorTuneList;->access$100(Lcom/sec/android/app/camera/menu/ProColorTuneList;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     move-result-object v2

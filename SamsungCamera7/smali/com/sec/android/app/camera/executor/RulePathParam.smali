@@ -4,6 +4,8 @@
 
 
 # static fields
+.field public static final PARAMETER_TYPE_ACTION_CAPTURE:I = 0x7
+
 .field public static final PARAMETER_TYPE_CAMERA_EFFECT:I = 0x4
 
 .field public static final PARAMETER_TYPE_CAMERA_MODE:I = 0x2
@@ -34,11 +36,27 @@
 
 .field public static final PARAM_ID_CAPTURE_MODE:I = 0x8
 
+.field public static final PARAM_ID_CHANGE_COMMON_HDR_SETTING:I = 0x4e
+
 .field public static final PARAM_ID_CHANGE_COMMON_TIMER:I = 0x20
 
 .field public static final PARAM_ID_CHANGE_MODE:I = 0x7
 
+.field public static final PARAM_ID_COMMON_PICTURE_MODE:I = 0x47
+
+.field public static final PARAM_ID_COMMON_PICTURE_SIZE_SETTING:I = 0x48
+
+.field public static final PARAM_ID_COMMON_PIXEL:I = 0x46
+
+.field public static final PARAM_ID_COMMON_RATIO:I = 0x45
+
 .field public static final PARAM_ID_COMMON_TIMER:I = 0x21
+
+.field public static final PARAM_ID_COMMON_VIDEO_MODE:I = 0x4c
+
+.field public static final PARAM_ID_COMMON_VIDEO_SIZE:I = 0x4f
+
+.field public static final PARAM_ID_COMMON_VIDEO_SIZE_SETTING:I = 0x50
 
 .field public static final PARAM_ID_DUAL_CAMERA_MODE:I = 0x1c
 
@@ -58,6 +76,8 @@
 
 .field public static final PARAM_ID_FRONT_RATIO:I = 0x2b
 
+.field public static final PARAM_ID_FRONT_REAR:I = 0x49
+
 .field public static final PARAM_ID_FRONT_VIDEOSIZE:I = 0x2a
 
 .field public static final PARAM_ID_FRONT_VIDEO_MODE:I = 0x10
@@ -73,6 +93,8 @@
 .field public static final PARAM_ID_ISO:I = 0x33
 
 .field public static final PARAM_ID_LARGE_EYES:I = 0x3c
+
+.field public static final PARAM_ID_LIVE_FOCUS_BLUR_LEVEL:I = 0x4d
 
 .field public static final PARAM_ID_LOCATION_TAGS_MODE:I = 0x3e
 
@@ -124,6 +146,8 @@
 
 .field public static final PARAM_ID_SHARE_MODE:I = 0x15
 
+.field public static final PARAM_ID_SHOOTING_SELECT:I = 0x4a
+
 .field public static final PARAM_ID_SHUTTER_SPEED:I = 0x34
 
 .field public static final PARAM_ID_SKINTONE_MODE:I = 0x19
@@ -161,6 +185,8 @@
 .field public static final PARAM_ID_WECHAT_VIDEO_MODE:I = 0x44
 
 .field public static final PARAM_ID_WIDE_SELFIE_MODE:I = 0x1b
+
+.field public static final PARAM_ID_ZOOM_LEVEL:I = 0x4b
 
 .field private static final RESOLUTION_RATIO_16BY9:Ljava/lang/String; = "16:9"
 
@@ -279,6 +305,11 @@
 
     goto :goto_0
 
+    :pswitch_6
+    const/4 v1, 0x7
+
+    goto :goto_0
+
     nop
 
     :pswitch_data_0
@@ -351,7 +382,197 @@
         :pswitch_0
         :pswitch_2
         :pswitch_0
+        :pswitch_3
+        :pswitch_3
+        :pswitch_0
+        :pswitch_1
+        :pswitch_0
+        :pswitch_6
+        :pswitch_2
+        :pswitch_0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_3
+        :pswitch_1
     .end packed-switch
+.end method
+
+.method public static getMaxResolution(ZI)I
+    .locals 4
+
+    const-string v1, "RulePathParam"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "getMaxResolution : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "cameraFacing : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v1, 0x1
+
+    if-ne p1, v1, :cond_1
+
+    if-eqz p0, :cond_0
+
+    sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
+
+    :goto_0
+    invoke-static {v0}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
+
+    move-result v1
+
+    return v1
+
+    :cond_0
+    const-string v0, "2560x1440"
+
+    goto :goto_0
+
+    :cond_1
+    if-eqz p0, :cond_2
+
+    sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
+
+    goto :goto_0
+
+    :cond_2
+    const-string v0, "3840x2160"
+
+    goto :goto_0
+.end method
+
+.method public static getMinResolution(ZI)I
+    .locals 4
+
+    const-string v1, "RulePathParam"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "getMinResolution : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "cameraFacing : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v1, 0x1
+
+    if-ne p1, v1, :cond_1
+
+    if-eqz p0, :cond_0
+
+    sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
+
+    :goto_0
+    const-string v1, "RulePathParam"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "getMinResolution : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "cameraFacing : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "size : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-static {v0}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
+
+    move-result v1
+
+    return v1
+
+    :cond_0
+    const-string v0, "640x480"
+
+    goto :goto_0
+
+    :cond_1
+    if-eqz p0, :cond_2
+
+    sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_MEDIUM:Ljava/lang/String;
+
+    goto :goto_0
+
+    :cond_2
+    const-string v0, "640x480"
+
+    goto :goto_0
 .end method
 
 .method public static getName(I)Ljava/lang/String;
@@ -446,7 +667,11 @@
 
     const-string v0, "large"
 
-    if-ne p0, v0, :cond_15
+    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_15
 
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
@@ -574,7 +799,11 @@
     :cond_a
     const-string v0, "large"
 
-    if-ne p0, v0, :cond_e
+    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_e
 
     const-string v0, "12m"
 
@@ -622,7 +851,11 @@
     :cond_e
     const-string v0, "medium"
 
-    if-ne p0, v0, :cond_14
+    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_14
 
     const-string v0, "6.2m"
 
@@ -692,7 +925,11 @@
     :cond_14
     const-string v0, "super_wide"
 
-    if-ne p0, v0, :cond_15
+    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_15
 
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_18DOT5BY9:Ljava/lang/String;
 
@@ -1475,6 +1712,133 @@
     const-string p0, "NONE"
 
     goto/16 :goto_0
+.end method
+
+.method public static getShooingModeNameFromSeparatedModeParam(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .locals 4
+
+    move-object v1, p1
+
+    const/4 v0, 0x0
+
+    const-string v2, "Video Collage"
+
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    const-string v2, "Virtual shot"
+
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    const-string v2, "Animated GIF"
+
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    const-string v2, "Wechat video"
+
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    :goto_0
+    if-eqz v0, :cond_2
+
+    const-string v2, "0"
+
+    invoke-virtual {p0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Rear "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    :cond_2
+    :goto_1
+    return-object v1
+
+    :cond_3
+    const-string v2, "Selective focus"
+
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_SHOOTINGMODE_SELECTIVE_FOCUS:Z
+
+    if-eqz v2, :cond_1
+
+    sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_SELECTIVE_FOCUS:Z
+
+    if-eqz v2, :cond_1
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_4
+    const-string v2, "1"
+
+    invoke-virtual {p0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Front "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_1
 .end method
 
 .method public static getShootingModeNameFromModeParam(Ljava/lang/String;)Ljava/lang/String;

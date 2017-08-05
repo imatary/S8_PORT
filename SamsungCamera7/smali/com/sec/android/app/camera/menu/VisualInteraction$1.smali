@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$1;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mBlackOverlay:Lcom/samsung/android/glview/GLRectangle;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$000(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLRectangle;
 
     move-result-object v0
@@ -58,14 +57,12 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$1;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mBlackOverlay:Lcom/samsung/android/glview/GLRectangle;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$000(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLRectangle;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLRectangle;->setAnimation(Landroid/view/animation/Animation;)V
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mBlackOverlayGroupLock:Ljava/lang/Object;
     invoke-static {}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$100()Ljava/lang/Object;
 
     move-result-object v1
@@ -75,7 +72,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$1;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mBlackOverlayParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$200(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLViewGroup;
 
     move-result-object v0
@@ -84,14 +80,12 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$1;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mBlackOverlayParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$200(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLViewGroup;
 
     move-result-object v0
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$1;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mBlackOverlay:Lcom/samsung/android/glview/GLRectangle;
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$000(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLRectangle;
 
     move-result-object v2
@@ -102,7 +96,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mBlackOverlayParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
     invoke-static {v0, v2}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$202(Lcom/sec/android/app/camera/menu/VisualInteraction;Lcom/samsung/android/glview/GLViewGroup;)Lcom/samsung/android/glview/GLViewGroup;
 
     :cond_0

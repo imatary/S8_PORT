@@ -937,7 +937,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->access$1100(Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;)V
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
@@ -948,7 +947,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->access$1000(Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;)V
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
@@ -3846,7 +3844,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090163
+    const v2, 0x7f090164
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4078,7 +4076,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->access$1000(Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;)V
 
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
@@ -4090,7 +4087,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->access$1100(Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;)V
 
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
@@ -5149,7 +5145,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901dc
+    const v4, 0x7f0901dd
 
     new-array v5, v0, [Ljava/lang/Object;
 

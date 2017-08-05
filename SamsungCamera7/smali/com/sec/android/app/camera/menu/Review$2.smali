@@ -51,7 +51,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/Review$2;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mLaunchGalleryType:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/Review;->access$100(Lcom/sec/android/app/camera/menu/Review;)Ljava/lang/String;
 
     move-result-object v2
@@ -68,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/Review$2;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/Review;->access$200(Lcom/sec/android/app/camera/menu/Review;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -77,7 +75,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/Review$2;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/Review;->access$200(Lcom/sec/android/app/camera/menu/Review;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -95,14 +92,12 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/Review$2;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/Review;->access$200(Lcom/sec/android/app/camera/menu/Review;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/Review$2;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mLaunchGalleryType:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/Review;->access$100(Lcom/sec/android/app/camera/menu/Review;)Ljava/lang/String;
 
     move-result-object v1
@@ -126,12 +121,10 @@
 
     const-string v1, "quickview"
 
-    # setter for: Lcom/sec/android/app/camera/menu/Review;->mLaunchGalleryType:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/Review;->access$102(Lcom/sec/android/app/camera/menu/Review;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/Review$2;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/Review;->access$200(Lcom/sec/android/app/camera/menu/Review;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0

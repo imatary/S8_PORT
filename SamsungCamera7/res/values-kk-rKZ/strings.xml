@@ -115,7 +115,7 @@
     <string name="R_3344x3344">1:1 (11 М)</string>
     <string name="R_3456x3456">1:1 (12 М)</string>
     <string name="R_3984x2988">4:3 (12 М)</string>
-    <string name="R_4032x1960">18,5:9 (7,9 М)</string>
+    <string name="R_4032x1960">18,5:9 (7,9 M)</string>
     <string name="R_4032x2268">16:9 (9,1 М)</string>
     <string name="R_4032x3024">4:3 (12 М)</string>
     <string name="R_4128x2322">16:9 (9,6 М)</string>
@@ -307,6 +307,7 @@
     <string name="camera_label">Камера</string>
     <string name="camera_modes">Камера режимдері</string>
     <string name="camera_security_enter">Қауіпсіздік саясаты камера пайдаланылуын шектейді.</string>
+    <string name="can_not_use_voice_control">Bixby Ассистенті дауыспен ояту функциясы қосулы кезде “Дауыспен басқаруды” пайдалану мүмкін емес.</string>
     <string name="cancel">Тоқтату</string>
     <string name="cannot_start_camcorder_msg">Қоңырау кезінде бейнежазба түсіру мүмкін емес.</string>
     <string name="cannot_start_camera_msg">Қоңыраулар барысында камераны пайдалану мүмкін емес.</string>
@@ -603,6 +604,7 @@
     <string name="task_edge_title_selfie">"Селфиге
 түсіру"</string>
     <string name="temperature">Температура</string>
+    <string name="temperature_too_high_camera_off">%1$s қолданбасын пайдалану үшін температура өте жоғары. %2$s қолданбасын пайдаланбас бұрын телефонның салқындауын күтіңіз.</string>
     <string name="temperature_too_high_flash_off">Жарқылды өшіру мүмкін емес. Құрылғы салқындағанда әрекетті қайталаңыз</string>
     <string name="temperature_too_high_record">Бейне жазу мүмкін емес. Құрылғы салқындағанда әрекетті қайталаңыз.</string>
     <string name="temperature_too_high_recording_disable">Жазба уақытша тоқтатылды. Құрылғы салқындағанда жазба жасауға болады</string>
@@ -658,8 +660,8 @@
     <string name="viewmode_fullmview">Толық экран</string>
     <string name="viewmode_normalview">Стандартты</string>
     <string name="viewmode_tag_summary">Суреттер мен бейнелерді толық экранда қарап шығыңыз.</string>
-    <string name="vision_intelligence_description">Bixby Vision қолданбасын қосып, өнімдерді онлайн іздеу, жақын жердегі жаңа орындарды табу немесе мәтінді аудару үшін камераны нысанға не орынға қарай бағыттаңыз.</string>
-    <string name="vision_intelligence_title">Bixby Vision</string>
+    <string name="vision_intelligence_description">Bixby Камерасын қосып, өнімдерді онлайн іздеу, жақын жердегі жаңа орындарды табу немесе мәтінді аудару үшін камераны нысанға не орынға қарай бағыттаңыз.</string>
+    <string name="vision_intelligence_title">Bixby Камерасы</string>
     <string name="voice_assistant_dialog_msg">Камерадағы Voice Assistant қызметін жақсарту үшін, “Дауыспен басқару” режимі қосылады.</string>
     <string name="voice_assistant_setting_msg">Дыбыстық нұсқауды қосу мүмкін емес. Voice Assistant қызметін қосып, әрекетті қайталаңыз.</string>
     <string name="voice_control_summary">Суретке “%1$s”, “%2$s”, “%3$s” не “%4$s” сөздерін айту арқылы түсіріңіз немесе бейнелерді “%5$s” сөзін айту арқылы жазыңыз.</string>

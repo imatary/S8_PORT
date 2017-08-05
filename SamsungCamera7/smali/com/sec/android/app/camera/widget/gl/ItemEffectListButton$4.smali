@@ -70,7 +70,6 @@
     :cond_0
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton$4;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->mFocusListener:Lcom/samsung/android/glview/GLView$FocusListener;
     invoke-static {v3}, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->access$1000(Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;)Lcom/samsung/android/glview/GLView$FocusListener;
 
     move-result-object v3
@@ -79,7 +78,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton$4;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->mFocusListener:Lcom/samsung/android/glview/GLView$FocusListener;
     invoke-static {v3}, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->access$1100(Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;)Lcom/samsung/android/glview/GLView$FocusListener;
 
     move-result-object v3

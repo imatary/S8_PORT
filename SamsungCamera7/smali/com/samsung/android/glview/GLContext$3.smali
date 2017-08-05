@@ -42,7 +42,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/glview/GLContext$3;->this$0:Lcom/samsung/android/glview/GLContext;
 
-    # invokes: Lcom/samsung/android/glview/GLContext;->updateScreenSize()V
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->access$200(Lcom/samsung/android/glview/GLContext;)V
 
     return-void

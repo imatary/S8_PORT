@@ -1440,7 +1440,7 @@
 .end method
 
 .method public setCurrentStep(I)Z
-    .locals 2
+    .locals 3
 
     const/4 v0, 0x0
 
@@ -1451,6 +1451,12 @@
     or-int/2addr v0, v1
 
     if-eqz v0, :cond_0
+
+    iget v1, p0, Lcom/sec/android/app/camera/widget/gl/TickSlider;->mCurrentStep:I
+
+    const/4 v2, -0x1
+
+    if-eq v1, v2, :cond_0
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->updateGaugeMarkerPoint()V
 

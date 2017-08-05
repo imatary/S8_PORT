@@ -56,7 +56,6 @@
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView$2;->this$0:Lcom/samsung/android/glview/GLView;
 
-    # getter for: Lcom/samsung/android/glview/GLView;->mLongClickable:Z
     invoke-static {v0}, Lcom/samsung/android/glview/GLView;->access$300(Lcom/samsung/android/glview/GLView;)Z
 
     move-result v0
@@ -65,7 +64,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/glview/GLView$2;->this$0:Lcom/samsung/android/glview/GLView;
 
-    # getter for: Lcom/samsung/android/glview/GLView;->mRepeatClickWhenLongClicked:Z
     invoke-static {v0}, Lcom/samsung/android/glview/GLView;->access$400(Lcom/samsung/android/glview/GLView;)Z
 
     move-result v0
@@ -99,7 +97,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView$2;->this$0:Lcom/samsung/android/glview/GLView;
 
-    # getter for: Lcom/samsung/android/glview/GLView;->mRepeatClickInterval:I
     invoke-static {v1}, Lcom/samsung/android/glview/GLView;->access$500(Lcom/samsung/android/glview/GLView;)I
 
     move-result v1

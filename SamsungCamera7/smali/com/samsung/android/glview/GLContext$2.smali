@@ -66,7 +66,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLContext$2;->this$0:Lcom/samsung/android/glview/GLContext;
 
-    # getter for: Lcom/samsung/android/glview/GLContext;->mGLSurfaceView:Landroid/opengl/GLSurfaceView;
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->access$000(Lcom/samsung/android/glview/GLContext;)Landroid/opengl/GLSurfaceView;
 
     move-result-object v1
@@ -88,7 +87,6 @@
 
     check-cast v1, Landroid/view/accessibility/AccessibilityNodeInfo;
 
-    # setter for: Lcom/samsung/android/glview/GLContext;->mAccNode:Landroid/view/accessibility/AccessibilityNodeInfo;
     invoke-static {v2, v1}, Lcom/samsung/android/glview/GLContext;->access$102(Lcom/samsung/android/glview/GLContext;Landroid/view/accessibility/AccessibilityNodeInfo;)Landroid/view/accessibility/AccessibilityNodeInfo;
 
     goto :goto_0

@@ -47,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ListTypeMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ListTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ListTypeMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ListTypeMenu;->access$100(Lcom/sec/android/app/camera/menu/ListTypeMenu;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     move-result-object v0
@@ -68,7 +67,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ListTypeMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ListTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ListTypeMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ListTypeMenu;->access$100(Lcom/sec/android/app/camera/menu/ListTypeMenu;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     move-result-object v1
@@ -103,14 +101,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/ListTypeMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ListTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ListTypeMenu;->mItemWidth:F
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/ListTypeMenu;->access$200(Lcom/sec/android/app/camera/menu/ListTypeMenu;)F
 
     move-result v4
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/ListTypeMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ListTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ListTypeMenu;->mItemHeight:F
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/ListTypeMenu;->access$300(Lcom/sec/android/app/camera/menu/ListTypeMenu;)F
 
     move-result v5
@@ -121,7 +117,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ListTypeMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ListTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ListTypeMenu;->mList:Lcom/samsung/android/glview/GLList;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ListTypeMenu;->access$400(Lcom/sec/android/app/camera/menu/ListTypeMenu;)Lcom/samsung/android/glview/GLList;
 
     move-result-object v1
@@ -130,7 +125,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ListTypeMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ListTypeMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ListTypeMenu;->mList:Lcom/samsung/android/glview/GLList;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ListTypeMenu;->access$400(Lcom/sec/android/app/camera/menu/ListTypeMenu;)Lcom/samsung/android/glview/GLList;
 
     move-result-object v1

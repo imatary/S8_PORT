@@ -47,7 +47,6 @@
     :cond_0
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
-    # getter for: Lcom/google/gson/stream/JsonReader;->token:Lcom/google/gson/stream/JsonToken;
     invoke-static {p1}, Lcom/google/gson/stream/JsonReader;->access$000(Lcom/google/gson/stream/JsonReader;)Lcom/google/gson/stream/JsonToken;
 
     move-result-object v0
@@ -88,7 +87,6 @@
 
     move-result-object v1
 
-    # invokes: Lcom/google/gson/stream/JsonReader;->getLineNumber()I
     invoke-static {p1}, Lcom/google/gson/stream/JsonReader;->access$100(Lcom/google/gson/stream/JsonReader;)I
 
     move-result v2
@@ -103,7 +101,6 @@
 
     move-result-object v1
 
-    # invokes: Lcom/google/gson/stream/JsonReader;->getColumnNumber()I
     invoke-static {p1}, Lcom/google/gson/stream/JsonReader;->access$200(Lcom/google/gson/stream/JsonReader;)I
 
     move-result v2
@@ -121,22 +118,18 @@
     throw v0
 
     :cond_1
-    # getter for: Lcom/google/gson/stream/JsonReader;->name:Ljava/lang/String;
     invoke-static {p1}, Lcom/google/gson/stream/JsonReader;->access$400(Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
 
     move-result-object v0
 
-    # setter for: Lcom/google/gson/stream/JsonReader;->value:Ljava/lang/String;
     invoke-static {p1, v0}, Lcom/google/gson/stream/JsonReader;->access$302(Lcom/google/gson/stream/JsonReader;Ljava/lang/String;)Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    # setter for: Lcom/google/gson/stream/JsonReader;->name:Ljava/lang/String;
     invoke-static {p1, v0}, Lcom/google/gson/stream/JsonReader;->access$402(Lcom/google/gson/stream/JsonReader;Ljava/lang/String;)Ljava/lang/String;
 
     sget-object v0, Lcom/google/gson/stream/JsonToken;->STRING:Lcom/google/gson/stream/JsonToken;
 
-    # setter for: Lcom/google/gson/stream/JsonReader;->token:Lcom/google/gson/stream/JsonToken;
     invoke-static {p1, v0}, Lcom/google/gson/stream/JsonReader;->access$002(Lcom/google/gson/stream/JsonReader;Lcom/google/gson/stream/JsonToken;)Lcom/google/gson/stream/JsonToken;
 
     goto :goto_0

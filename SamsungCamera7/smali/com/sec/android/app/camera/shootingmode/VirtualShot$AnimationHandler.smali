@@ -89,52 +89,44 @@
     goto :goto_0
 
     :pswitch_0
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$600(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)I
 
     move-result v1
 
     if-ne v1, v2, :cond_0
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->startGuideDeviceNextAnimation()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$1200(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)V
 
     goto :goto_0
 
     :pswitch_1
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$600(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)I
 
     move-result v1
 
     if-ne v1, v2, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentFadeInAni:I
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$1300(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)I
 
     move-result v1
 
     const/4 v2, 0x0
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->virtualShotGuideDeviceAnimation(IZ)V
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$1400(Lcom/sec/android/app/camera/shootingmode/VirtualShot;IZ)V
 
     goto :goto_0
 
     :pswitch_2
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$600(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)I
 
     move-result v1
 
     if-ne v1, v2, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentFadeOutAni:I
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$1500(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)I
 
     move-result v1
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->hideVirtualShotGuideDeviceAnimation(I)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$1600(Lcom/sec/android/app/camera/shootingmode/VirtualShot;I)V
 
     goto :goto_0

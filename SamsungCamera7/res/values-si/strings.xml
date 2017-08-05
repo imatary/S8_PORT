@@ -308,6 +308,7 @@
     <string name="camera_label">කැමරාව</string>
     <string name="camera_modes">කැමරා මාදිලි</string>
     <string name="camera_security_enter">ආරක්‍ෂක ප්‍රතිපත්තිය කැමරාව භාවිතය සීමා කරයි.</string>
+    <string name="can_not_use_voice_control">Bixby Voice අවදි-වීම ක්‍රියාත්මක අතරේ හඬ පාලනය භාවිතා කළ නොහැක.</string>
     <string name="cancel">අවලංගු කරන්න</string>
     <string name="cannot_start_camcorder_msg">ඇමතුමක් අතරතුර වීඩියෝ පටිගත කළ නොහැක.</string>
     <string name="cannot_start_camera_msg">ඇමතුම් අතරතුර කැමරාව භාවිතා කළ නොහැක.</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"සෙල්ෆිය
 ගන්න"</string>
     <string name="temperature">උෂ්ණත්වය</string>
+    <string name="temperature_too_high_camera_off">%1$s භාවිතා කළ නොහැකි තරම් උෂ්ණත්වය ඉතා ඉහළයි. %2$s භාවිතා කිරීමට පෙර දුරකථනය සිසිල් වන තෙක් රැඳෙන්න.</string>
     <string name="temperature_too_high_flash_off">ෆ්ලෑෂ් ආලෝකය දැල්විය නොහැක. ඔබේ උපාංගය සිසිල් වූ පසු නැවත උත්සාහ කරන්න.</string>
     <string name="temperature_too_high_record">වීඩියෝව පටිගත කිරීමට නොහැක. උපාංගය සිසිල් වූ විට නැවත උත්සාහ කරන්න.</string>
     <string name="temperature_too_high_recording_disable">පටිගත කිරීම නැවතී ඇත. ඔබේ උපාංගය නැවත සිසිල් වූ පසු ඔබට පටිගත කළ හැක.</string>

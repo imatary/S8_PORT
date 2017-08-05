@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraDialog$9;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->setDialogCheckBoxValueForLocationTag(Z)V
     invoke-static {v0, p2}, Lcom/sec/android/app/camera/CameraDialog;->access$400(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     const-string v2, "9054"

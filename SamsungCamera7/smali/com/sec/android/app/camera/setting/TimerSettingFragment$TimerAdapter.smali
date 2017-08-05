@@ -89,7 +89,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/TimerSettingFragment$TimerAdapter;->this$0:Lcom/sec/android/app/camera/setting/TimerSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/TimerSettingFragment;->mList:[Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/app/camera/setting/TimerSettingFragment;->access$200(Lcom/sec/android/app/camera/setting/TimerSettingFragment;)[Ljava/lang/String;
 
     move-result-object v2

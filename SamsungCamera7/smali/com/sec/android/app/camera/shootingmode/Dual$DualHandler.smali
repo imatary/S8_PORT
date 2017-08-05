@@ -95,17 +95,14 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Dual;->hideBoundaryRect()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Dual;->access$500(Lcom/sec/android/app/camera/shootingmode/Dual;)V
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Dual;->mDualAreaHandle:Lcom/sec/android/app/camera/widget/gl/RectHandler;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Dual;->access$600(Lcom/sec/android/app/camera/shootingmode/Dual;)Lcom/sec/android/app/camera/widget/gl/RectHandler;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Dual;->mDualAreaHandle:Lcom/sec/android/app/camera/widget/gl/RectHandler;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Dual;->access$600(Lcom/sec/android/app/camera/shootingmode/Dual;)Lcom/sec/android/app/camera/widget/gl/RectHandler;
 
     move-result-object v1
@@ -117,7 +114,6 @@
     goto :goto_0
 
     :pswitch_3
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Dual;->updateVideoThumbnail()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Dual;->access$700(Lcom/sec/android/app/camera/shootingmode/Dual;)V
 
     goto :goto_0

@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader$3;->this$0:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
-    # invokes: Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->bindQRAgentService()V
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->access$400(Lcom/sec/android/app/camera/widget/gl/QRCodeReader;)V
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader$3;->this$0:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
@@ -56,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader$3;->this$0:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->access$300(Lcom/sec/android/app/camera/widget/gl/QRCodeReader;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1

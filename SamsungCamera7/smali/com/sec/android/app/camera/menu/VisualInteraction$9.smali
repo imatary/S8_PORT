@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewAngleChangeAnimationFlagLock:Ljava/lang/Object;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1700(Lcom/sec/android/app/camera/menu/VisualInteraction;)Ljava/lang/Object;
 
     move-result-object v1
@@ -61,7 +60,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsRecordingFOVGuideHideAnimationRequested:Z
     invoke-static {v3}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1800(Lcom/sec/android/app/camera/menu/VisualInteraction;)Z
 
     move-result v3
@@ -80,12 +78,10 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsPreviewAngleChangingAnimationRunning:Z
     invoke-static {v0, v2}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1902(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsRecordingFOVGuideHideAnimationRequested:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1800(Lcom/sec/android/app/camera/menu/VisualInteraction;)Z
 
     move-result v0
@@ -96,12 +92,10 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsRecordingFOVGuideHideAnimationRequested:Z
     invoke-static {v0, v2}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1802(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # invokes: Lcom/sec/android/app/camera/menu/VisualInteraction;->hidePreviewAngleChangingAnimation()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$2000(Lcom/sec/android/app/camera/menu/VisualInteraction;)V
 
     :cond_0
@@ -138,8 +132,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1200(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/interfaces/Engine;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$500(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/interfaces/Engine;
 
     move-result-object v0
 

@@ -87,7 +87,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$28;->val$info:Lcom/sec/android/app/camera/engine/ImageStoringInfo;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->storeImage([BLcom/sec/android/app/camera/engine/ImageStoringInfo;)Z
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5100(Lcom/sec/android/app/camera/engine/CommonEngine;[BLcom/sec/android/app/camera/engine/ImageStoringInfo;)Z
 
     const-string v0, "AXLOG"

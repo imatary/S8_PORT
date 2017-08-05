@@ -1481,7 +1481,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090360
+    const v1, 0x7f090362
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1500,7 +1500,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09035f
+    const v1, 0x7f090361
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1519,7 +1519,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090362
+    const v1, 0x7f090364
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1538,7 +1538,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090361
+    const v1, 0x7f090363
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1603,7 +1603,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090357
+    const v1, 0x7f090359
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1618,7 +1618,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090358
+    const v1, 0x7f09035a
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3625,7 +3625,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mLongEvShotProgressHelpText:Lcom/samsung/android/glview/GLText;
 
-    const v1, 0x7f090133
+    const v1, 0x7f090134
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -3674,7 +3674,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mLongEvShotProgressHelpText:Lcom/samsung/android/glview/GLText;
 
-    const v3, 0x7f090131
+    const v3, 0x7f090132
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -4032,7 +4032,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mShutterProgressThread:Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;->isStopping()Z
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;->access$300(Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;)Z
 
     move-result v0
@@ -4047,7 +4046,6 @@
 
     div-long/2addr v2, v4
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;->setSleepTimeMillis(J)V
     invoke-static {v0, v2, v3}, Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;->access$400(Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;J)V
 
     goto :goto_0
@@ -4160,7 +4158,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mShutterProgressThread:Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;->stopThread()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;->access$500(Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;)V
 
     :cond_0
@@ -4939,7 +4936,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v3, 0x7f0901f7
+    const v3, 0x7f0901f8
 
     invoke-static {v1, v3, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -4986,7 +4983,7 @@
     :cond_7
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v2, 0x7f0901f8
+    const v2, 0x7f0901f9
 
     invoke-static {v1, v2, v3}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -8463,7 +8460,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    const v2, 0x7f090132
+    const v2, 0x7f090133
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -8511,7 +8508,7 @@
 
     iget v13, v0, Lcom/sec/android/app/camera/shootingmode/Pro;->LONG_EV_SHOT_PROGRESS_GROUP_WIDTH:F
 
-    const v2, 0x7f090132
+    const v2, 0x7f090133
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -8619,7 +8616,7 @@
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/Pro;->LONG_EV_SHOT_PROGRESS_GROUP_WIDTH:F
 
-    const v3, 0x7f090131
+    const v3, 0x7f090132
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -8699,7 +8696,7 @@
 
     iget v13, v0, Lcom/sec/android/app/camera/shootingmode/Pro;->LONG_EV_SHOT_PROGRESS_GROUP_WIDTH:F
 
-    const v2, 0x7f090131
+    const v2, 0x7f090132
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -8980,7 +8977,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901e6
+    const v4, 0x7f0901e7
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9080,7 +9077,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09020c
+    const v4, 0x7f09020d
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9220,7 +9217,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090130
+    const v4, 0x7f090131
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9501,7 +9498,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090237
+    const v4, 0x7f090238
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9724,11 +9721,21 @@
 .end method
 
 .method public onFaceDetection([Landroid/graphics/Rect;)Z
-    .locals 3
+    .locals 4
 
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mRecordingController:Lcom/sec/android/app/camera/shootingmode/RecordingController;
+
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;->IDLE:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
+
+    if-ne v0, v1, :cond_1
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -9736,7 +9743,7 @@
 
     move-result v0
 
-    if-ne v0, v2, :cond_1
+    if-ne v0, v3, :cond_1
 
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mOldDetectedFaceCount:I
 
@@ -9746,7 +9753,7 @@
 
     if-nez v0, :cond_2
 
-    invoke-direct {p0, v2}, Lcom/sec/android/app/camera/shootingmode/Pro;->enableMultiAF(Z)V
+    invoke-direct {p0, v3}, Lcom/sec/android/app/camera/shootingmode/Pro;->enableMultiAF(Z)V
 
     :cond_0
     :goto_0
@@ -9755,7 +9762,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mOldDetectedFaceCount:I
 
     :cond_1
-    return v1
+    return v2
 
     :cond_2
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mOldDetectedFaceCount:I
@@ -9766,7 +9773,7 @@
 
     if-lez v0, :cond_0
 
-    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/Pro;->enableMultiAF(Z)V
+    invoke-direct {p0, v2}, Lcom/sec/android/app/camera/shootingmode/Pro;->enableMultiAF(Z)V
 
     goto :goto_0
 .end method
@@ -10527,7 +10534,7 @@
     :cond_5
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v2, 0x7f0901c6
+    const v2, 0x7f0901c7
 
     invoke-static {v1, v2, v0}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -11239,7 +11246,6 @@
 
     if-nez v1, :cond_3
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Pro$ProColorTune;->isDefaultColortuneValues()Z
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Pro$ProColorTune;->access$200(Lcom/sec/android/app/camera/shootingmode/Pro$ProColorTune;)Z
 
     move-result v1
@@ -11362,7 +11368,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v2, 0x7f0901f8
+    const v2, 0x7f0901f9
 
     invoke-static {v1, v2, v6}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -12002,7 +12008,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f09027c
+    const v1, 0x7f09027e
 
     const/4 v2, 0x1
 
@@ -13239,7 +13245,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mShutterProgressThread:Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;->isStopping()Z
     invoke-static {v3}, Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;->access$300(Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;)Z
 
     move-result v3
@@ -13284,7 +13289,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/Pro;->mShutterProgressThread:Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;->isStopping()Z
     invoke-static {v3}, Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;->access$300(Lcom/sec/android/app/camera/shootingmode/Pro$ShutterProgressThread;)Z
 
     move-result v3

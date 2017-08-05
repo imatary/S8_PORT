@@ -69,12 +69,10 @@
 
     iput-boolean v1, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelGroup;->mIsCenterPivot:Z
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->SLIDER_HEIGHT:F
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1400(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v1
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->TICK_BAR_HEIGHT:F
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1500(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v2
@@ -130,7 +128,6 @@
 
     new-instance v8, Lcom/samsung/android/glview/GLImage;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1600(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -145,7 +142,6 @@
 
     invoke-direct {v8, v1, v2, v3, v11}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1600(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -184,33 +180,28 @@
 
     invoke-virtual {v8, v1}, Lcom/samsung/android/glview/GLImage;->setFocusable(Z)V
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mSlider:Lcom/sec/android/app/camera/widget/gl/TickSlider;
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
 
     move-result-object v1
 
     invoke-virtual {v8, v1}, Lcom/samsung/android/glview/GLImage;->setNextFocusRightView(Lcom/samsung/android/glview/GLView;)Z
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mLabelTouchListener:Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
-    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
 
     move-result-object v1
 
     invoke-virtual {v8, v1}, Lcom/samsung/android/glview/GLImage;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mLabelTouchListener:Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
-    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
 
     move-result-object v1
 
     invoke-virtual {v8, v1}, Lcom/samsung/android/glview/GLImage;->setKeyListener(Lcom/samsung/android/glview/GLView$KeyListener;)V
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_TOP_MARGIN:F
-    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1900(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2100(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v1
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->SLIDER_HEIGHT:F
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1400(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v2
@@ -274,7 +265,6 @@
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelGroup;->mIsCenterPivot:Z
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_TEXT_SIZE:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1100(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
 
     move-result v2
@@ -285,7 +275,6 @@
 
     move-result v2
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_MARGIN:F
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1200(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v3
@@ -296,17 +285,14 @@
 
     add-float v5, v2, v3
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_TEXT_HEIGHT:F
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1300(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v6
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->SLIDER_HEIGHT:F
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1400(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v2
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->TICK_BAR_HEIGHT:F
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1500(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v3
@@ -334,7 +320,6 @@
 
     new-instance v1, Lcom/samsung/android/glview/GLText;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1600(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -351,14 +336,12 @@
 
     aget-object v7, p8, v7
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_TEXT_SIZE:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1100(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
 
     move-result v8
 
     int-to-float v8, v8
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_TEXT_COLOR:I
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1700(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
 
     move-result v9
@@ -389,39 +372,48 @@
 
     const/4 v2, 0x1
 
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
+
+    move-result v3
+
+    int-to-float v3, v3
+
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1900(Lcom/sec/android/app/camera/menu/ProLiteSlider;)I
+
+    move-result v4
+
+    invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
+
+    const/4 v2, 0x1
+
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setClickable(Z)V
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setFocusable(Z)V
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mSlider:Lcom/sec/android/app/camera/widget/gl/TickSlider;
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/widget/gl/TickSlider;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setNextFocusRightView(Lcom/samsung/android/glview/GLView;)Z
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mLabelTouchListener:Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
-    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->mLabelTouchListener:Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
-    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1800(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2000(Lcom/sec/android/app/camera/menu/ProLiteSlider;)Lcom/sec/android/app/camera/menu/ProLiteSlider$LabelTouchListener;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setKeyListener(Lcom/samsung/android/glview/GLView$KeyListener;)V
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_TOP_MARGIN:F
-    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1900(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
+    invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$2100(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v2
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->SLIDER_HEIGHT:F
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1400(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v3
@@ -463,7 +455,7 @@
 
     add-int/lit8 v11, v11, 0x1
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_0
     const/4 v2, 0x0
@@ -478,7 +470,6 @@
 
     const/4 v3, 0x0
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_MARGIN:F
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1200(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v4
@@ -489,7 +480,6 @@
 
     const/4 v2, 0x2
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_MARGIN:F
     invoke-static {p1}, Lcom/sec/android/app/camera/menu/ProLiteSlider;->access$1200(Lcom/sec/android/app/camera/menu/ProLiteSlider;)F
 
     move-result v3

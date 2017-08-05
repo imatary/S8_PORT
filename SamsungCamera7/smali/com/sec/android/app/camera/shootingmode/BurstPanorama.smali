@@ -954,7 +954,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/BurstPanorama$PanoramaHandler;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/BurstPanorama$PanoramaHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/BurstPanorama$PanoramaHandler;->access$000(Lcom/sec/android/app/camera/shootingmode/BurstPanorama$PanoramaHandler;)V
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/BurstPanorama$PanoramaHandler;
@@ -1679,7 +1678,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090163
+    const v2, 0x7f090164
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1779,7 +1778,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0901e5
+    const v7, 0x7f0901e6
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

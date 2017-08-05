@@ -310,6 +310,7 @@
     <string name="camera_label">Камера</string>
     <string name="camera_modes">Реҷаҳои камера</string>
     <string name="camera_security_enter">Сиёсати амният истифодаи Камераро маҳдуд мекунад.</string>
+    <string name="can_not_use_voice_control">Истифодаи Идоракунии овозӣ ҳангоми фурӯзон будани бедоркунии овозии Bixby ғайриимкон аст.</string>
     <string name="cancel">Бекор кардан</string>
     <string name="cannot_start_camcorder_msg">Дар вақти занг видеоҳо сабт карда наметвонад.</string>
     <string name="cannot_start_camera_msg">Истифодаи Камера дар давоми суҳбат ғайриимкон аст.</string>
@@ -606,6 +607,7 @@
     <string name="task_edge_title_selfie">"Селфи
 гирифтан"</string>
     <string name="temperature">Ҳарорат</string>
+    <string name="temperature_too_high_camera_off">Ҳарорат барои истифодаи %1$s бениҳоят баланд аст. Қабл аз %2$s-ро истифода бурдан, интизор шавед, ки телефон хунуктар шавад.</string>
     <string name="temperature_too_high_flash_off">Дурахшро фурӯзон карда наметавонад. Вақте ки дастгоҳи шумо хунук мешавад, дубора кӯшиш кунед.</string>
     <string name="temperature_too_high_record">Сабт кардани видео ғайриимкон аст. Баъд аз каме хунук шудани дастгоҳ, кӯшишро такрор кунед.</string>
     <string name="temperature_too_high_recording_disable">Сабткунӣ қатъ шуд. Вақте ки дастгоҳи шумо хунук мешавад, шумо метавонед сабт кунед.</string>

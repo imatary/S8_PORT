@@ -32,6 +32,8 @@
 
 .field private static final mBlackOverlayGroupLock:Ljava/lang/Object;
 
+.field private static final mWhiteOverlayGroupLock:Ljava/lang/Object;
+
 
 # instance fields
 .field private final SCREEN_FLASH_ITEM_HEIGHT:I
@@ -138,6 +140,12 @@
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     sput-object v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mBlackOverlayGroupLock:Ljava/lang/Object;
+
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mWhiteOverlayGroupLock:Ljava/lang/Object;
 
     return-void
 .end method
@@ -596,7 +604,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$1000(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/menu/MenuManagerImpl;
+.method static synthetic access$1002(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsPreviewChangingAnimationRunning:Z
+
+    return p1
+.end method
+
+.method static synthetic access$1100(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/menu/MenuManagerImpl;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mMenuManager:Lcom/sec/android/app/camera/menu/MenuManagerImpl;
@@ -604,7 +620,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1100(Lcom/sec/android/app/camera/menu/VisualInteraction;)Landroid/graphics/Bitmap;
+.method static synthetic access$1200(Lcom/sec/android/app/camera/menu/VisualInteraction;)Landroid/graphics/Bitmap;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mBitmap:Landroid/graphics/Bitmap;
@@ -612,20 +628,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$1102(Lcom/sec/android/app/camera/menu/VisualInteraction;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+.method static synthetic access$1202(Lcom/sec/android/app/camera/menu/VisualInteraction;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mBitmap:Landroid/graphics/Bitmap;
 
     return-object p1
-.end method
-
-.method static synthetic access$1200(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/interfaces/Engine;
-    .locals 1
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
-
-    return-object v0
 .end method
 
 .method static synthetic access$1300(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -756,7 +764,15 @@
     return-object p1
 .end method
 
-.method static synthetic access$502(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
+.method static synthetic access$500(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/interfaces/Engine;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    return-object v0
+.end method
+
+.method static synthetic access$602(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsSwitchCameraAnimationFinished:Z
@@ -764,7 +780,7 @@
     return p1
 .end method
 
-.method static synthetic access$600(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/widget/gl/FOVGuide;
+.method static synthetic access$700(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/widget/gl/FOVGuide;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mRecordingFOVGuide:Lcom/sec/android/app/camera/widget/gl/FOVGuide;
@@ -772,7 +788,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$700(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLViewGroup;
+.method static synthetic access$800(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLViewGroup;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mRecordingFOVGuideParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -780,7 +796,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$800(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLImage;
+.method static synthetic access$900(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLImage;
     .locals 1
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
@@ -788,20 +804,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$802(Lcom/sec/android/app/camera/menu/VisualInteraction;Lcom/samsung/android/glview/GLImage;)Lcom/samsung/android/glview/GLImage;
+.method static synthetic access$902(Lcom/sec/android/app/camera/menu/VisualInteraction;Lcom/samsung/android/glview/GLImage;)Lcom/samsung/android/glview/GLImage;
     .locals 0
 
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
 
     return-object p1
-.end method
-
-.method static synthetic access$902(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsPreviewChangingAnimationRunning:Z
-
-    return p1
 .end method
 
 .method private cancelCameraSwitchingAnimation()V
@@ -900,6 +908,15 @@
     iput-object v2, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mBitmap:Landroid/graphics/Bitmap;
 
     :cond_2
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    if-eqz v0, :cond_3
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleSendCompletedMessageToBixby()V
+
+    :cond_3
     return-void
 .end method
 
@@ -2128,17 +2145,22 @@
 .method private hideWhiteOverlay()V
     .locals 3
 
-    const/4 v2, 0x0
+    sget-object v1, Lcom/sec/android/app/camera/menu/VisualInteraction;->mWhiteOverlayGroupLock:Ljava/lang/Object;
 
+    monitor-enter v1
+
+    :try_start_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mWhiteOverlayParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-nez v0, :cond_0
 
     const-string v0, "Camera7VI"
 
-    const-string v1, "White overlay is already invisible"
+    const-string v2, "White overlay is already invisible"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    monitor-exit v1
 
     :goto_0
     return-void
@@ -2146,29 +2168,44 @@
     :cond_0
     const-string v0, "Camera7VI"
 
-    const-string v1, "hideWhiteOverlay"
+    const-string v2, "hideWhiteOverlay"
 
-    invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mWhiteOverlayParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mWhiteOverlay:Lcom/samsung/android/glview/GLRectangle;
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
+    invoke-static {v0, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mWhiteOverlayParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mScreenFlashImage:Lcom/samsung/android/glview/GLImage;
+    iget-object v2, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mWhiteOverlay:Lcom/samsung/android/glview/GLRectangle;
 
-    invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
+    invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mWhiteOverlayParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mScreenFlashImage:Lcom/samsung/android/glview/GLImage;
+
+    invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mWhiteOverlayParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    const/4 v2, 0x0
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setAnimation(Landroid/view/animation/Animation;)V
 
-    iput-object v2, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mWhiteOverlayParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mWhiteOverlayParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    monitor-exit v1
 
     goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
 .end method
 
 .method private initRecordingAnimation()V
@@ -5639,8 +5676,13 @@
 
     iget v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mCurrentPreviewAnimation:I
 
-    if-nez v0, :cond_1
+    if-eqz v0, :cond_1
 
+    iget-boolean v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsPreviewChangingAnimationRunning:Z
+
+    if-nez v0, :cond_2
+
+    :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mMenuManager:Lcom/sec/android/app/camera/menu/MenuManagerImpl;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/MenuManagerImpl;->getVisualInteractionRoot()Lcom/samsung/android/glview/GLViewGroup;
@@ -5671,7 +5713,7 @@
 
     goto :goto_0
 
-    :cond_1
+    :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->bringToFront()V

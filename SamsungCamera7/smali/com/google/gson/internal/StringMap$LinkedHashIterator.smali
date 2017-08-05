@@ -60,7 +60,6 @@
 
     iget-object v0, p0, Lcom/google/gson/internal/StringMap$LinkedHashIterator;->this$0:Lcom/google/gson/internal/StringMap;
 
-    # getter for: Lcom/google/gson/internal/StringMap;->header:Lcom/google/gson/internal/StringMap$LinkedEntry;
     invoke-static {v0}, Lcom/google/gson/internal/StringMap;->access$300(Lcom/google/gson/internal/StringMap;)Lcom/google/gson/internal/StringMap$LinkedEntry;
 
     move-result-object v0
@@ -93,7 +92,6 @@
 
     iget-object v1, p0, Lcom/google/gson/internal/StringMap$LinkedHashIterator;->this$0:Lcom/google/gson/internal/StringMap;
 
-    # getter for: Lcom/google/gson/internal/StringMap;->header:Lcom/google/gson/internal/StringMap$LinkedEntry;
     invoke-static {v1}, Lcom/google/gson/internal/StringMap;->access$300(Lcom/google/gson/internal/StringMap;)Lcom/google/gson/internal/StringMap$LinkedEntry;
 
     move-result-object v1
@@ -125,7 +123,6 @@
 
     iget-object v1, p0, Lcom/google/gson/internal/StringMap$LinkedHashIterator;->this$0:Lcom/google/gson/internal/StringMap;
 
-    # getter for: Lcom/google/gson/internal/StringMap;->header:Lcom/google/gson/internal/StringMap$LinkedEntry;
     invoke-static {v1}, Lcom/google/gson/internal/StringMap;->access$300(Lcom/google/gson/internal/StringMap;)Lcom/google/gson/internal/StringMap$LinkedEntry;
 
     move-result-object v1

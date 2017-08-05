@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/MenuManagerImpl$4;->this$0:Lcom/sec/android/app/camera/menu/MenuManagerImpl;
 
-    # getter for: Lcom/sec/android/app/camera/menu/MenuManagerImpl;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/MenuManagerImpl;->access$000(Lcom/sec/android/app/camera/menu/MenuManagerImpl;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0

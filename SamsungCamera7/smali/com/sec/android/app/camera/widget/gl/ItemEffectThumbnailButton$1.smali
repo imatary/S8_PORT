@@ -70,7 +70,6 @@
     :cond_0
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$1;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mFocusListener:Lcom/samsung/android/glview/GLView$FocusListener;
     invoke-static {v3}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$000(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/samsung/android/glview/GLView$FocusListener;
 
     move-result-object v3
@@ -79,7 +78,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$1;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mFocusListener:Lcom/samsung/android/glview/GLView$FocusListener;
     invoke-static {v3}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$100(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/samsung/android/glview/GLView$FocusListener;
 
     move-result-object v3

@@ -41,7 +41,6 @@
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/HyperMotion$2;->this$0:Lcom/sec/android/app/camera/shootingmode/HyperMotion;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/HyperMotion;->mRecordingController:Lcom/sec/android/app/camera/shootingmode/RecordingController;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->access$400(Lcom/sec/android/app/camera/shootingmode/HyperMotion;)Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
     move-result-object v1
@@ -56,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/HyperMotion$2;->this$0:Lcom/sec/android/app/camera/shootingmode/HyperMotion;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/HyperMotion;->mRecordingController:Lcom/sec/android/app/camera/shootingmode/RecordingController;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->access$400(Lcom/sec/android/app/camera/shootingmode/HyperMotion;)Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
     move-result-object v1
@@ -80,7 +78,6 @@
     :goto_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/HyperMotion$2;->this$0:Lcom/sec/android/app/camera/shootingmode/HyperMotion;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/HyperMotion;->mRecordingController:Lcom/sec/android/app/camera/shootingmode/RecordingController;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->access$400(Lcom/sec/android/app/camera/shootingmode/HyperMotion;)Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
     move-result-object v1
@@ -95,7 +92,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/HyperMotion$2;->this$0:Lcom/sec/android/app/camera/shootingmode/HyperMotion;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/HyperMotion;->mRecordingController:Lcom/sec/android/app/camera/shootingmode/RecordingController;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->access$400(Lcom/sec/android/app/camera/shootingmode/HyperMotion;)Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
     move-result-object v1
@@ -125,7 +121,6 @@
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/HyperMotion$2;->this$0:Lcom/sec/android/app/camera/shootingmode/HyperMotion;
 
-    # operator++ for: Lcom/sec/android/app/camera/shootingmode/HyperMotion;->mSystemTime:I
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->access$508(Lcom/sec/android/app/camera/shootingmode/HyperMotion;)I
 
     const-string v1, "HyperMotion"
@@ -142,7 +137,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/HyperMotion$2;->this$0:Lcom/sec/android/app/camera/shootingmode/HyperMotion;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/HyperMotion;->mSystemTime:I
     invoke-static {v3}, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->access$500(Lcom/sec/android/app/camera/shootingmode/HyperMotion;)I
 
     move-result v3
@@ -161,17 +155,14 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/HyperMotion$2;->this$0:Lcom/sec/android/app/camera/shootingmode/HyperMotion;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/HyperMotion;->mSystemTime:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->access$500(Lcom/sec/android/app/camera/shootingmode/HyperMotion;)I
 
     move-result v2
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/HyperMotion;->updateSystemTimeIndicator(I)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->access$600(Lcom/sec/android/app/camera/shootingmode/HyperMotion;I)V
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/HyperMotion$2;->this$0:Lcom/sec/android/app/camera/shootingmode/HyperMotion;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/HyperMotion;->mRecordingController:Lcom/sec/android/app/camera/shootingmode/RecordingController;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->access$400(Lcom/sec/android/app/camera/shootingmode/HyperMotion;)Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
     move-result-object v1
@@ -184,7 +175,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/HyperMotion$2;->this$0:Lcom/sec/android/app/camera/shootingmode/HyperMotion;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/HyperMotion;->startRecIconIndicatorBlinking()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->access$700(Lcom/sec/android/app/camera/shootingmode/HyperMotion;)V
 
     goto/16 :goto_0

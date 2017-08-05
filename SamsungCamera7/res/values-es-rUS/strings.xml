@@ -314,6 +314,7 @@ de forma"</string>
     <string name="camera_label">Cámara</string>
     <string name="camera_modes">Modos de la cámara</string>
     <string name="camera_security_enter">La política de seguridad restringe el uso de la cámara.</string>
+    <string name="can_not_use_voice_control">No es posible usar control de voz mientras Activación por voz de Bixby está activada.</string>
     <string name="cancel">Cancelar</string>
     <string name="cannot_start_camcorder_msg">No es posible grabar videos durante la llamada.</string>
     <string name="cannot_start_camera_msg">No se puede usar la cámara durante las llamadas.</string>
@@ -610,6 +611,7 @@ automática"</string>
     <string name="task_edge_title_selfie">"Capturar
 selfie"</string>
     <string name="temperature">Temperatura</string>
+    <string name="temperature_too_high_camera_off">La temperatura es demasiado alta para usar %1$s. Espere a que se enfríe el teléfono para usar %2$s.</string>
     <string name="temperature_too_high_flash_off">No se puede activar el flash. Inténtelo de nuevo una vez que su dispositivo se enfríe.</string>
     <string name="temperature_too_high_record">No se puede grabar video. Vuelva a intentarlo una vez que el dispositivo se haya enfriado.</string>
     <string name="temperature_too_high_recording_disable">Se detuvo la grabación. Puede volver a grabar una vez que su dispositivo se enfríe.</string>

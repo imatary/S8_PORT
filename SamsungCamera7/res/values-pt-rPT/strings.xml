@@ -309,6 +309,7 @@ de forma"</string>
     <string name="camera_label">Câmara</string>
     <string name="camera_modes">Modos de câmara</string>
     <string name="camera_security_enter">A política de segurança restringe a utilização da Câmara.</string>
+    <string name="can_not_use_voice_control">Impossível utilizar Controlo de voz com a Activação por Bixby Voice ligada.</string>
     <string name="cancel">Cancelar</string>
     <string name="cannot_start_camcorder_msg">Impossível gravar vídeos durante chamada.</string>
     <string name="cannot_start_camera_msg">Impossível utilizar a Câmara durante chamadas.</string>
@@ -605,6 +606,7 @@ Se concordar com isso, esta permissão será concedida à função de Disparo de
     <string name="task_edge_title_selfie">"Tirar
 selfie"</string>
     <string name="temperature">Temperatura</string>
+    <string name="temperature_too_high_camera_off">Temperatura demasiado alta para utilizar %1$s. Aguarde que o telefone arrefeça, antes de utilizar %2$s.</string>
     <string name="temperature_too_high_flash_off">Impossível ligar o flash. Tente novamente depois de o seu dispositivo ter arrefecido.</string>
     <string name="temperature_too_high_record">Impossível gravar vídeo. Tente novamente depois de o dispositivo ter arrefecido.</string>
     <string name="temperature_too_high_recording_disable">A gravação parou. Pode gravar quando o seu dispositivo tiver arrefecido.</string>

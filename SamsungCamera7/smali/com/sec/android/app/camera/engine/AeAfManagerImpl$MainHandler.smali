@@ -67,7 +67,6 @@
     return-void
 
     :cond_0
-    # invokes: Lcom/sec/android/app/camera/engine/AeAfManagerImpl;->handleMessage(Landroid/os/Message;)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/engine/AeAfManagerImpl;->access$000(Lcom/sec/android/app/camera/engine/AeAfManagerImpl;Landroid/os/Message;)V
 
     goto :goto_0

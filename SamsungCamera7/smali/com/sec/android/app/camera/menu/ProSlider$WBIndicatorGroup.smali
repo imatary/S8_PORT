@@ -78,7 +78,6 @@
 
     new-instance v1, Lcom/samsung/android/glview/GLButton;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$2400(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -91,12 +90,10 @@
 
     const/4 v4, 0x0
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->AUTO_LABEL_WIDTH:F
     invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3300(Lcom/sec/android/app/camera/menu/ProSlider;)F
 
     move-result v5
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->AUTO_LABEL_WIDTH:F
     invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3300(Lcom/sec/android/app/camera/menu/ProSlider;)F
 
     move-result v6
@@ -111,7 +108,6 @@
 
     invoke-direct/range {v1 .. v10}, Lcom/samsung/android/glview/GLButton;-><init>(Lcom/samsung/android/glview/GLContext;FFFFIIII)V
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$2400(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -152,21 +148,18 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setFocusable(Z)V
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mWBIndicatorTouchListener:Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;
     invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3400(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mWBIndicatorTouchListener:Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;
     invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3400(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setKeyListener(Lcom/samsung/android/glview/GLView$KeyListener;)V
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->WB_LABEL_GROUP_HEIGHT:F
     invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3500(Lcom/sec/android/app/camera/menu/ProSlider;)F
 
     move-result v2

@@ -121,7 +121,6 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->setHRMSensor(Z)V
     invoke-static {v1, v3}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$000(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;Z)V
 
     goto :goto_1
@@ -129,7 +128,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -148,7 +146,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -157,7 +154,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v4}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v4
@@ -166,7 +162,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f090292
+    const v5, 0x7f090294
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -174,7 +170,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v5}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v5
@@ -183,7 +178,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0901a0
+    const v6, 0x7f0901a1
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -194,7 +189,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->setHRMSensor(Z)V
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$000(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;Z)V
 
     goto :goto_1
@@ -202,7 +196,6 @@
     :pswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$200(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
@@ -211,7 +204,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -222,7 +214,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$200(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)Landroid/content/BroadcastReceiver;
 
     move-result-object v2
@@ -232,17 +223,14 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->unregisterCameraOrientationListener()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$300(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)V
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->clearMessageHandler()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$400(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)V
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$500(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)Lcom/sec/android/app/camera/interfaces/Engine;
 
     move-result-object v1

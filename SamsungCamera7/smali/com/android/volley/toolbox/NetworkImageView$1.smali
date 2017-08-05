@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/android/volley/toolbox/NetworkImageView$1;->this$0:Lcom/android/volley/toolbox/NetworkImageView;
 
-    # getter for: Lcom/android/volley/toolbox/NetworkImageView;->mErrorImageId:I
     invoke-static {v0}, Lcom/android/volley/toolbox/NetworkImageView;->access$000(Lcom/android/volley/toolbox/NetworkImageView;)I
 
     move-result v0
@@ -54,7 +53,6 @@
 
     iget-object v1, p0, Lcom/android/volley/toolbox/NetworkImageView$1;->this$0:Lcom/android/volley/toolbox/NetworkImageView;
 
-    # getter for: Lcom/android/volley/toolbox/NetworkImageView;->mErrorImageId:I
     invoke-static {v1}, Lcom/android/volley/toolbox/NetworkImageView;->access$000(Lcom/android/volley/toolbox/NetworkImageView;)I
 
     move-result v1
@@ -106,7 +104,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/volley/toolbox/NetworkImageView$1;->this$0:Lcom/android/volley/toolbox/NetworkImageView;
 
-    # getter for: Lcom/android/volley/toolbox/NetworkImageView;->mDefaultImageId:I
     invoke-static {v0}, Lcom/android/volley/toolbox/NetworkImageView;->access$100(Lcom/android/volley/toolbox/NetworkImageView;)I
 
     move-result v0
@@ -117,7 +114,6 @@
 
     iget-object v1, p0, Lcom/android/volley/toolbox/NetworkImageView$1;->this$0:Lcom/android/volley/toolbox/NetworkImageView;
 
-    # getter for: Lcom/android/volley/toolbox/NetworkImageView;->mDefaultImageId:I
     invoke-static {v1}, Lcom/android/volley/toolbox/NetworkImageView;->access$100(Lcom/android/volley/toolbox/NetworkImageView;)I
 
     move-result v1

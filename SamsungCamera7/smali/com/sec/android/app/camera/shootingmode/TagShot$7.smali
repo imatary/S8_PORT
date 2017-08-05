@@ -51,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$7;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/TagShot;->fetchForecastInfo(Landroid/content/Context;Ljava/lang/String;)V
     invoke-static {v0, p1, p2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$2500(Lcom/sec/android/app/camera/shootingmode/TagShot;Landroid/content/Context;Ljava/lang/String;)V
 
     return-void

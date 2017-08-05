@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$15;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const v1, 0x7f090201
+    const v1, 0x7f090202
 
     const/4 v2, 0x0
 

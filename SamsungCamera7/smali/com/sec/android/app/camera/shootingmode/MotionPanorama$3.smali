@@ -53,12 +53,11 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$000(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
-    const v1, 0x7f0901a1
+    const v1, 0x7f0901a2
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -71,12 +70,11 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$000(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
-    const v1, 0x7f0901e4
+    const v1, 0x7f0901e5
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 

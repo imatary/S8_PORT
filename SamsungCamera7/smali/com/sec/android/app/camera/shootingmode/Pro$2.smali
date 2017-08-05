@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Pro$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Pro;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Pro;->mColorTuneEditButton:Lcom/samsung/android/glview/GLButton;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$100(Lcom/sec/android/app/camera/shootingmode/Pro;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v0
@@ -56,7 +55,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Pro$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Pro;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Pro;->mColorTuneEditButton:Lcom/samsung/android/glview/GLButton;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$100(Lcom/sec/android/app/camera/shootingmode/Pro;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v0

@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$5;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # invokes: Lcom/sec/android/app/camera/Camera;->isInteractionControlEnabled()Z
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$1200(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v0

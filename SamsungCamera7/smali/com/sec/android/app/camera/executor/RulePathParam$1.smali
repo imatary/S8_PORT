@@ -443,5 +443,71 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/executor/RulePathParam$1;->append(ILjava/lang/Object;)V
 
+    const/16 v0, 0x45
+
+    const-string v1, "CommonRatio"
+
+    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/executor/RulePathParam$1;->append(ILjava/lang/Object;)V
+
+    const/16 v0, 0x46
+
+    const-string v1, "CommonPixel"
+
+    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/executor/RulePathParam$1;->append(ILjava/lang/Object;)V
+
+    const/16 v0, 0x47
+
+    const-string v1, "CommonPictureMode"
+
+    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/executor/RulePathParam$1;->append(ILjava/lang/Object;)V
+
+    const/16 v0, 0x48
+
+    const-string v1, "CommonPictureSizeSetting"
+
+    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/executor/RulePathParam$1;->append(ILjava/lang/Object;)V
+
+    const/16 v0, 0x49
+
+    const-string v1, "FrontRear"
+
+    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/executor/RulePathParam$1;->append(ILjava/lang/Object;)V
+
+    const/16 v0, 0x4a
+
+    const-string v1, "ShootingSelect"
+
+    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/executor/RulePathParam$1;->append(ILjava/lang/Object;)V
+
+    const/16 v0, 0x4c
+
+    const-string v1, "CommonVideoMode"
+
+    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/executor/RulePathParam$1;->append(ILjava/lang/Object;)V
+
+    const/16 v0, 0x4d
+
+    const-string v1, "LiveFocusBlurLevel"
+
+    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/executor/RulePathParam$1;->append(ILjava/lang/Object;)V
+
+    const/16 v0, 0x4e
+
+    const-string v1, "ChangeCommonHDRSetting"
+
+    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/executor/RulePathParam$1;->append(ILjava/lang/Object;)V
+
+    const/16 v0, 0x4f
+
+    const-string v1, "CommonVideoSize"
+
+    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/executor/RulePathParam$1;->append(ILjava/lang/Object;)V
+
+    const/16 v0, 0x50
+
+    const-string v1, "CommonVideoSizeSetting"
+
+    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/executor/RulePathParam$1;->append(ILjava/lang/Object;)V
+
     return-void
 .end method

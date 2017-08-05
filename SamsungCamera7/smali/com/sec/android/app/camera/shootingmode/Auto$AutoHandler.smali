@@ -79,14 +79,12 @@
     goto :goto_0
 
     :pswitch_0
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$1100(Lcom/sec/android/app/camera/shootingmode/Auto;)Lcom/samsung/android/glview/GLText;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$1100(Lcom/sec/android/app/camera/shootingmode/Auto;)Lcom/samsung/android/glview/GLText;
 
     move-result-object v1

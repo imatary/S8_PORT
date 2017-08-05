@@ -5218,13 +5218,9 @@
 
 # virtual methods
 .method public clear()V
-    .locals 1
+    .locals 0
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->resetListeners()V
-
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     return-void
 .end method
@@ -5461,7 +5457,7 @@
     if-eqz v0, :cond_1
 
     :cond_0
-    const/4 v0, 0x0
+    sget v0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->DEFAULT_BEAUTY_LEVEL:I
 
     :goto_0
     return v0
@@ -9646,7 +9642,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090252
+    const v1, 0x7f090254
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9661,7 +9657,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090251
+    const v1, 0x7f090253
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9676,7 +9672,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090253
+    const v1, 0x7f090255
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9698,7 +9694,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090257
+    const v1, 0x7f090259
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9713,7 +9709,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090256
+    const v1, 0x7f090258
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9728,7 +9724,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090258
+    const v1, 0x7f09025a
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9750,7 +9746,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090260
+    const v1, 0x7f090262
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9765,7 +9761,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090261
+    const v1, 0x7f090263
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9787,7 +9783,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090254
+    const v1, 0x7f090256
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9802,7 +9798,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090255
+    const v1, 0x7f090257
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9824,7 +9820,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09025c
+    const v1, 0x7f09025e
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9839,7 +9835,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09025d
+    const v1, 0x7f09025f
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9861,7 +9857,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09025e
+    const v1, 0x7f090260
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9876,7 +9872,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09025f
+    const v1, 0x7f090261
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9898,7 +9894,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090259
+    const v1, 0x7f09025b
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9913,7 +9909,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09025b
+    const v1, 0x7f09025d
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9928,7 +9924,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09025a
+    const v1, 0x7f09025c
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9950,7 +9946,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090262
+    const v1, 0x7f090264
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -9965,7 +9961,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090263
+    const v1, 0x7f090265
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -10043,7 +10039,7 @@
 .method public getShapeCorrection()I
     .locals 3
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY_SHAPECORRECTION:Z
 
@@ -10053,32 +10049,33 @@
 
     const/16 v2, 0x37
 
-    if-eq v1, v2, :cond_1
+    if-eq v1, v2, :cond_2
 
     :cond_0
+    const/4 v0, 0x0
+
+    :cond_1
     :goto_0
     return v0
 
-    :cond_1
+    :cond_2
     iget-boolean v1, p0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->mEasyCamera:Z
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     iget-boolean v1, p0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->mSimpleCamera:Z
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
-    iget-object v0, p0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+    iget-object v1, p0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
 
-    move-result-object v0
+    move-result-object v1
 
-    const-string v1, "pref_global_camera_shapecorrection_key"
+    const-string v2, "pref_global_camera_shapecorrection_key"
 
-    const/4 v2, 0x1
-
-    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->loadPreferences(Landroid/content/Context;Ljava/lang/String;I)I
+    invoke-static {v1, v2, v0}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->loadPreferences(Landroid/content/Context;Ljava/lang/String;I)I
 
     move-result v0
 

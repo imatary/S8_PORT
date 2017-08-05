@@ -96,14 +96,12 @@
 
     double-to-float v1, v2
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mRefPressure:F
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$802(Lcom/sec/android/app/camera/shootingmode/TagShot;F)F
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mRefPressure:F
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$800(Lcom/sec/android/app/camera/shootingmode/TagShot;)F
 
     move-result v1
@@ -112,12 +110,10 @@
 
     mul-float/2addr v1, v2
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mRefPressure:F
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$802(Lcom/sec/android/app/camera/shootingmode/TagShot;F)F
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mCurrentPressure:F
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$900(Lcom/sec/android/app/camera/shootingmode/TagShot;)F
 
     move-result v0
@@ -134,14 +130,12 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mRefPressure:F
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$800(Lcom/sec/android/app/camera/shootingmode/TagShot;)F
 
     move-result v1
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mCurrentPressure:F
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$900(Lcom/sec/android/app/camera/shootingmode/TagShot;)F
 
     move-result v2
@@ -150,14 +144,12 @@
 
     move-result v1
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mModifiedPressure:F
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1002(Lcom/sec/android/app/camera/shootingmode/TagShot;F)F
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mModifiedPressure:F
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1000(Lcom/sec/android/app/camera/shootingmode/TagShot;)F
 
     move-result v1
@@ -170,7 +162,6 @@
 
     double-to-int v1, v2
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mModifiedAltitude:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1102(Lcom/sec/android/app/camera/shootingmode/TagShot;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
@@ -179,17 +170,14 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mModifiedAltitude:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1100(Lcom/sec/android/app/camera/shootingmode/TagShot;)I
 
     move-result v2
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/TagShot;->convertMetersToFeet(I)I
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1200(Lcom/sec/android/app/camera/shootingmode/TagShot;I)I
 
     move-result v1
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mModifiedAltitude:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1102(Lcom/sec/android/app/camera/shootingmode/TagShot;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
@@ -208,7 +196,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mModifiedAltitude:I
     invoke-static {v5}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1100(Lcom/sec/android/app/camera/shootingmode/TagShot;)I
 
     move-result v5
@@ -223,7 +210,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mAltitude:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1302(Lcom/sec/android/app/camera/shootingmode/TagShot;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
@@ -232,12 +218,10 @@
 
     iget-object v1, v1, Lcom/sec/android/app/camera/shootingmode/util/AccuForecastInfo$LocationInfo;->LocalizedName:Ljava/lang/String;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mLocation:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1402(Lcom/sec/android/app/camera/shootingmode/TagShot;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mLocationText:Lcom/samsung/android/glview/GLText;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1500(Lcom/sec/android/app/camera/shootingmode/TagShot;)Lcom/samsung/android/glview/GLText;
 
     move-result-object v0
@@ -248,7 +232,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mLocation:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1400(Lcom/sec/android/app/camera/shootingmode/TagShot;)Ljava/lang/String;
 
     move-result-object v2
@@ -265,7 +248,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mAltitude:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1300(Lcom/sec/android/app/camera/shootingmode/TagShot;)Ljava/lang/String;
 
     move-result-object v2
@@ -292,7 +274,6 @@
 
     iget v1, v1, Lcom/sec/android/app/camera/shootingmode/util/AccuForecastInfo$CurrentConditionInfo;->WeatherIcon:I
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mWeatherIcon:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1602(Lcom/sec/android/app/camera/shootingmode/TagShot;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
@@ -301,29 +282,24 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mWeatherIcon:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1600(Lcom/sec/android/app/camera/shootingmode/TagShot;)I
 
     move-result v2
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/TagShot;->getWeatherIconImage(I)I
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1800(Lcom/sec/android/app/camera/shootingmode/TagShot;I)I
 
     move-result v1
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mWeatherImageID:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1702(Lcom/sec/android/app/camera/shootingmode/TagShot;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mWeatherImage:Lcom/samsung/android/glview/GLImage;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1900(Lcom/sec/android/app/camera/shootingmode/TagShot;)Lcom/samsung/android/glview/GLImage;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mWeatherImageID:I
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1700(Lcom/sec/android/app/camera/shootingmode/TagShot;)I
 
     move-result v1
@@ -342,7 +318,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mTemperature:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$2002(Lcom/sec/android/app/camera/shootingmode/TagShot;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
@@ -353,7 +328,6 @@
 
     iget-object v1, v1, Lcom/sec/android/app/camera/shootingmode/util/AccuForecastInfo$TemperatureInfo;->Unit:Ljava/lang/String;
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mTempScale:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$2102(Lcom/sec/android/app/camera/shootingmode/TagShot;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
@@ -366,12 +340,10 @@
 
     move-result-object v1
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mHumidity:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$2202(Lcom/sec/android/app/camera/shootingmode/TagShot;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mTemperatureText:Lcom/samsung/android/glview/GLText;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$2300(Lcom/sec/android/app/camera/shootingmode/TagShot;)Lcom/samsung/android/glview/GLText;
 
     move-result-object v0
@@ -382,7 +354,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mTemperature:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$2000(Lcom/sec/android/app/camera/shootingmode/TagShot;)Ljava/lang/String;
 
     move-result-object v2
@@ -399,7 +370,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mTempScale:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$2100(Lcom/sec/android/app/camera/shootingmode/TagShot;)Ljava/lang/String;
 
     move-result-object v2
@@ -416,7 +386,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mHumidity:Ljava/lang/String;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$2200(Lcom/sec/android/app/camera/shootingmode/TagShot;)Ljava/lang/String;
 
     move-result-object v2
@@ -439,7 +408,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$4;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/TagShot;->showTagInfo()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$2400(Lcom/sec/android/app/camera/shootingmode/TagShot;)V
 
     goto/16 :goto_0
@@ -449,7 +417,6 @@
 
     const-string v1, "31"
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->mAltitude:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$1302(Lcom/sec/android/app/camera/shootingmode/TagShot;Ljava/lang/String;)Ljava/lang/String;
 
     const-string v0, "TagShot"

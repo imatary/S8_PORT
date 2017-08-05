@@ -37,7 +37,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$6;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mIsPausing:Z
     invoke-static {v1}, Lcom/sec/android/app/camera/Camera;->access$200(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v1
@@ -46,7 +45,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$6;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mIsDestroying:Z
     invoke-static {v1}, Lcom/sec/android/app/camera/Camera;->access$300(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v1
@@ -102,7 +100,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$6;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const v2, 0x7f0901c8
+    const v2, 0x7f0901c9
 
     const/4 v3, 0x0
 

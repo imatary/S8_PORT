@@ -59,7 +59,6 @@
     :cond_1
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment$1;->this$0:Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;
 
-    # invokes: Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->getQuickLaunch()I
     invoke-static {v2}, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->access$000(Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;)I
 
     move-result v1
@@ -78,7 +77,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment$1;->this$0:Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->mPowerButton:Lcom/sec/android/app/camera/setting/LeftCheckBoxPreference;
     invoke-static {v2}, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->access$100(Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;)Lcom/sec/android/app/camera/setting/LeftCheckBoxPreference;
 
     move-result-object v2
@@ -91,7 +89,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment$1;->this$0:Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->mHomeButton:Lcom/sec/android/app/camera/setting/LeftCheckBoxPreference;
     invoke-static {v2}, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->access$200(Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;)Lcom/sec/android/app/camera/setting/LeftCheckBoxPreference;
 
     move-result-object v2
@@ -108,7 +105,6 @@
 
     const-string v3, "home_button"
 
-    # invokes: Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->updateRadioButtons(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->access$300(Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;Ljava/lang/String;)V
 
     goto :goto_0
@@ -125,7 +121,6 @@
 
     const-string v3, "power_button"
 
-    # invokes: Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->updateRadioButtons(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->access$300(Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;Ljava/lang/String;)V
 
     goto :goto_0

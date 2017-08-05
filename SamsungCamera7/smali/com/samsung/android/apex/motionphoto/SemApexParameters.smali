@@ -14,6 +14,12 @@
 # static fields
 .field public static final KEY_BUFFERING_MODE:Ljava/lang/String; = "buffering-mode"
 
+.field public static final KEY_CAPTURE_INTERVAL:Ljava/lang/String; = "capture-interval"
+
+.field public static final KEY_DITHER_STRENGTH:Ljava/lang/String; = "dither-strength"
+
+.field public static final KEY_DURATION:Ljava/lang/String; = "record-duration"
+
 .field public static final KEY_EFFECT_MODE:Ljava/lang/String; = "effect-mode"
 
 .field public static final KEY_FPS_FACTOR:Ljava/lang/String; = "fps-factor"
@@ -24,15 +30,27 @@
 
 .field public static final KEY_HEIGHT:Ljava/lang/String; = "height"
 
+.field public static final KEY_INPUT_FILE:Ljava/lang/String; = "input-file"
+
 .field public static final KEY_METADATA_STORED:Ljava/lang/String; = "metadatastored"
+
+.field public static final KEY_OUTPUT_FILE:Ljava/lang/String; = "output-file"
 
 .field public static final KEY_PREVIEW_FORMAT:Ljava/lang/String; = "preview-format"
 
 .field public static final KEY_PREVIEW_SIZE:Ljava/lang/String; = "preview-size"
 
+.field public static final KEY_QUALITY_FACTOR:Ljava/lang/String; = "quality-factor"
+
+.field public static final KEY_REPEAT:Ljava/lang/String; = "repeat"
+
 .field public static final KEY_SAVE_AS_FLIPPED:Ljava/lang/String; = "save-as-flipped"
 
+.field public static final KEY_TRANSPARENT:Ljava/lang/String; = "transparent"
+
 .field public static final KEY_USE_INTRINSIC_TIMESTAMP:Ljava/lang/String; = "use-intrinsic-timestamp"
+
+.field public static final KEY_USE_PROXY_STORETIME:Ljava/lang/String; = "use-proxy-storetime"
 
 .field public static final KEY_VIDEO_FORMAT:Ljava/lang/String; = "video-format"
 
@@ -104,6 +122,28 @@
 
 
 # virtual methods
+.method public clear()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
+
+    return-void
+.end method
+
+.method public contains(Ljava/lang/String;)Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public flatten()Ljava/lang/String;
     .locals 12
 
@@ -749,6 +789,16 @@
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+
+    return-void
+.end method
+
+.method public remove(Ljava/lang/String;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

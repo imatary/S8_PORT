@@ -75,7 +75,6 @@
 
     if-eqz v0, :cond_0
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->handleMessage(Landroid/os/Message;)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$900(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;Landroid/os/Message;)V
 
     :cond_0

@@ -91,7 +91,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RearSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RearSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RearSelfie;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->access$000(Lcom/sec/android/app/camera/shootingmode/RearSelfie;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
@@ -100,7 +99,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RearSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RearSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RearSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->access$100(Lcom/sec/android/app/camera/shootingmode/RearSelfie;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -111,7 +109,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/RearSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RearSelfie;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/RearSelfie;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->access$000(Lcom/sec/android/app/camera/shootingmode/RearSelfie;)Landroid/content/BroadcastReceiver;
 
     move-result-object v2
@@ -121,7 +118,6 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RearSelfie$1;->this$0:Lcom/sec/android/app/camera/shootingmode/RearSelfie;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/RearSelfie;->clearMessageHandler()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->access$200(Lcom/sec/android/app/camera/shootingmode/RearSelfie;)V
 
     goto :goto_1

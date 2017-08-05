@@ -44,7 +44,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator$1;->this$0:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->mUpdateCnt:I
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->access$000(Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;)I
 
     move-result v1
@@ -53,26 +52,22 @@
 
     rem-int/lit8 v1, v1, 0x2
 
-    # setter for: Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->mUpdateCnt:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->access$002(Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator$1;->this$0:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->mRecordAmpIndicatorMicImage:Lcom/samsung/android/glview/GLImage;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->access$200(Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;)Lcom/samsung/android/glview/GLImage;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator$1;->this$0:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->mMicImageArray:[I
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->access$100(Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;)[I
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator$1;->this$0:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->mUpdateCnt:I
     invoke-static {v2}, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->access$000(Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;)I
 
     move-result v2
@@ -83,7 +78,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator$1;->this$0:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->mRecIndicatorHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->access$300(Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;)Landroid/os/Handler;
 
     move-result-object v0

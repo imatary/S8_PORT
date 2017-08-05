@@ -124,7 +124,7 @@
     <string name="R_3344x3344">1:1 (11 М)</string>
     <string name="R_3456x3456">1:1 (12 Мп)</string>
     <string name="R_3984x2988">4:3 (12 М)</string>
-    <string name="R_4032x1960">18.5:9 (7,9 M)</string>
+    <string name="R_4032x1960">18.5:9 (7,9 Mб)</string>
     <string name="R_4032x2268">16:9 (9,1 М)</string>
     <string name="R_4032x3024">4:3 (12 М)</string>
     <string name="R_4128x2322">16:9 (9,6 Мп)</string>
@@ -315,6 +315,7 @@
     <string name="camera_label">Камера</string>
     <string name="camera_modes">Режими камери</string>
     <string name="camera_security_enter">Використання камери обмежено політикою безпеки.</string>
+    <string name="can_not_use_voice_control">Неможливо використовувати голосове керування, поки ввімкнено пробудження Bixby асистента.</string>
     <string name="cancel">Скасувати</string>
     <string name="cannot_start_camcorder_msg">Неможливо записати відео під час виклику.</string>
     <string name="cannot_start_camera_msg">Використання камери не підтримується під час викликів.</string>
@@ -611,6 +612,7 @@
     <string name="task_edge_title_selfie">"Зробити
 селфі"</string>
     <string name="temperature">Температура</string>
+    <string name="temperature_too_high_camera_off">Неможливо використовувати %1$s. Зависока температура телефону. Зачекайте, поки телефон охолоне, та повторіть спробу скористатися %2$s.</string>
     <string name="temperature_too_high_flash_off">Неможливо ввімкнути спалах. Спробуйте ще раз після того, як пристрій охолоне</string>
     <string name="temperature_too_high_record">Неможливо записати відео. Спробуйте ще раз після того, як пристрій охолоне.</string>
     <string name="temperature_too_high_recording_disable">Записування зупинено. Його можна буде поновити після того, як пристрій охолоне</string>
@@ -666,8 +668,8 @@
     <string name="viewmode_fullmview">Повноекр.реж.</string>
     <string name="viewmode_normalview">Стандартний</string>
     <string name="viewmode_tag_summary">Попередній перегляд зображень та відео у повноекранному режимі.</string>
-    <string name="vision_intelligence_description">Увімкніть функцію Bixby Vision та направте камеру на об’єкт або місце для пошуку товарів в Інтернеті, нових місць поблизу, а також перекладу тексту.</string>
-    <string name="vision_intelligence_title">Bixby Vision</string>
+    <string name="vision_intelligence_description">Увімкніть камеру Bixby та направте камеру на об’єкт або місце для пошуку товарів в Інтернеті, нових місць поблизу, а також перекладу тексту.</string>
+    <string name="vision_intelligence_title">Камера Bixby</string>
     <string name="voice_assistant_dialog_msg">Щоб покращити роботу Voice Assistant під час використання камери, буде ввімкнено функцію голосового керування.</string>
     <string name="voice_assistant_setting_msg">Неможливо ввімкнути голосові підказки. Увімкніть Voice Assistant і спробуйте ще раз.</string>
     <string name="voice_control_summary">Фотографуйте за допомогою голосових команд «%1$s», «%2$s», «%3$s» і «%4$s» або записуйте відео за допомогою голосової команди «%5$s».</string>

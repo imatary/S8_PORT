@@ -27,6 +27,8 @@
 
 .field private static final TAG:Ljava/lang/String; = "GLSlider"
 
+.field public static final UNMARKED_STEP:I = -0x1
+
 
 # instance fields
 .field protected mCurrentStep:I
@@ -3362,68 +3364,104 @@
 .end method
 
 .method public setCurrentStep(I)Z
-    .locals 7
+    .locals 9
+
+    const/4 v8, 0x4
+
+    const/4 v7, -0x1
 
     const/4 v6, 0x0
 
+    const/4 v1, 0x0
+
     const/4 v2, 0x1
 
-    if-ltz p1, :cond_3
+    if-lt p1, v7, :cond_0
 
-    iget v1, p0, Lcom/samsung/android/glview/GLSlider;->mNumOfStep:I
+    iget v3, p0, Lcom/samsung/android/glview/GLSlider;->mNumOfStep:I
 
-    if-ge p1, v1, :cond_3
+    if-ge p1, v3, :cond_0
 
     invoke-virtual {p0, p1}, Lcom/samsung/android/glview/GLSlider;->translateStepByOrdering(I)I
 
     move-result v0
 
-    const-string v1, "GLSlider"
+    const-string v3, "GLSlider"
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "setCurrentStep="
+    const-string v5, "setCurrentStep="
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v4
 
-    const-string v4, ", currentStep="
+    const-string v5, ", currentStep="
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v4
 
-    iget v4, p0, Lcom/samsung/android/glview/GLSlider;->mCurrentStep:I
+    iget v5, p0, Lcom/samsung/android/glview/GLSlider;->mCurrentStep:I
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-static {v1, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget v1, p0, Lcom/samsung/android/glview/GLSlider;->mCurrentStep:I
+    iget v3, p0, Lcom/samsung/android/glview/GLSlider;->mCurrentStep:I
 
-    if-ne v1, v0, :cond_0
+    if-ne v3, v0, :cond_1
 
     move v1, v2
 
+    :cond_0
     :goto_0
     return v1
 
-    :cond_0
+    :cond_1
     iput v0, p0, Lcom/samsung/android/glview/GLSlider;->mCurrentStep:I
 
+    if-ne v0, v7, :cond_3
+
+    iget-object v1, p0, Lcom/samsung/android/glview/GLSlider;->mGaugeMarker:Lcom/samsung/android/glview/GLButton;
+
+    if-eqz v1, :cond_2
+
+    iget-object v1, p0, Lcom/samsung/android/glview/GLSlider;->mGaugeMarker:Lcom/samsung/android/glview/GLButton;
+
+    invoke-virtual {v1, v8}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
+
+    iput v8, p0, Lcom/samsung/android/glview/GLSlider;->mGaugeMarkerVisible:I
+
+    :cond_2
+    move v1, v2
+
+    goto :goto_0
+
+    :cond_3
+    iget-object v3, p0, Lcom/samsung/android/glview/GLSlider;->mGaugeMarker:Lcom/samsung/android/glview/GLButton;
+
+    if-eqz v3, :cond_4
+
+    iget-object v3, p0, Lcom/samsung/android/glview/GLSlider;->mGaugeMarker:Lcom/samsung/android/glview/GLButton;
+
+    invoke-virtual {v3, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
+
+    iput v1, p0, Lcom/samsung/android/glview/GLSlider;->mGaugeMarkerVisible:I
+
+    :cond_4
     iget-object v3, p0, Lcom/samsung/android/glview/GLSlider;->mGaugeMarkerPos:Landroid/graphics/PointF;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLSlider;->mStepPosition:Ljava/util/List;
@@ -3454,11 +3492,11 @@
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLSlider;->mGaugeMarker:Lcom/samsung/android/glview/GLButton;
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_5
 
     iget v1, p0, Lcom/samsung/android/glview/GLSlider;->mOrientation:I
 
-    if-ne v1, v2, :cond_2
+    if-ne v1, v2, :cond_6
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLSlider;->mGaugeMarker:Lcom/samsung/android/glview/GLButton;
 
@@ -3468,18 +3506,18 @@
 
     invoke-virtual {v1, v3, v6}, Lcom/samsung/android/glview/GLButton;->translateAbsolute(FF)V
 
-    :cond_1
+    :cond_5
     :goto_1
     move v1, v2
 
     goto :goto_0
 
-    :cond_2
+    :cond_6
     iget v1, p0, Lcom/samsung/android/glview/GLSlider;->mOrientation:I
 
     const/4 v3, 0x2
 
-    if-ne v1, v3, :cond_1
+    if-ne v1, v3, :cond_5
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLSlider;->mGaugeMarker:Lcom/samsung/android/glview/GLButton;
 
@@ -3490,11 +3528,6 @@
     invoke-virtual {v1, v6, v3}, Lcom/samsung/android/glview/GLButton;->translateAbsolute(FF)V
 
     goto :goto_1
-
-    :cond_3
-    const/4 v1, 0x0
-
-    goto :goto_0
 .end method
 
 .method public setGaugeBar(FFI)V
@@ -4194,12 +4227,17 @@
 
     const/16 v1, 0xa
 
-    if-ne v0, v1, :cond_0
+    if-eq v0, v1, :cond_0
 
+    const/4 v0, -0x1
+
+    if-ne p1, v0, :cond_1
+
+    :cond_0
     :goto_0
     return p1
 
-    :cond_0
+    :cond_1
     iget v0, p0, Lcom/samsung/android/glview/GLSlider;->mNumOfStep:I
 
     add-int/lit8 v0, v0, -0x1

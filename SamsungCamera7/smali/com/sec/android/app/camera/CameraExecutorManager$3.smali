@@ -39,26 +39,23 @@
 
 # virtual methods
 .method public onShowAnimationComplete()V
-    .locals 5
-
-    const/16 v4, 0x54
-
-    iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$3;->val$frontCameraMenu:Lcom/sec/android/app/camera/menu/ModeListMenu;
-
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ModeListMenu;->showModeShortcutMenu()V
+    .locals 2
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$3;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    const/4 v1, 0x1
+    invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$300(Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/sec/android/app/camera/Camera;
 
-    invoke-static {v4}, Lcom/sec/android/app/camera/executor/RulePathState;->getName(I)Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v2
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->getActivity()Landroid/app/Activity;
 
-    const/16 v3, 0x64
+    move-result-object v0
 
-    # invokes: Lcom/sec/android/app/camera/CameraExecutorManager;->sendResultWithNLG(ZILjava/lang/String;I)V
-    invoke-static {v0, v1, v4, v2, v3}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$1100(Lcom/sec/android/app/camera/CameraExecutorManager;ZILjava/lang/String;I)V
+    new-instance v1, Lcom/sec/android/app/camera/CameraExecutorManager$3$1;
+
+    invoke-direct {v1, p0}, Lcom/sec/android/app/camera/CameraExecutorManager$3$1;-><init>(Lcom/sec/android/app/camera/CameraExecutorManager$3;)V
+
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
     return-void
 .end method

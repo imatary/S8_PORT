@@ -57,7 +57,6 @@
 
     move-result v3
 
-    # invokes: Lcom/sec/android/app/camera/setting/SpinnerPreference;->findIndexOfValue(I)I
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$000(Lcom/sec/android/app/camera/setting/SpinnerPreference;I)I
 
     move-result v2
@@ -68,7 +67,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerAdapter;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$900(Lcom/sec/android/app/camera/setting/SpinnerPreference;)Landroid/content/Context;
 
     move-result-object v2
@@ -103,7 +101,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerAdapter;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mEntries:[Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$400(Lcom/sec/android/app/camera/setting/SpinnerPreference;)[Ljava/lang/String;
 
     move-result-object v3
@@ -130,7 +127,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerAdapter;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mEntryValues:[I
     invoke-static {v4}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$300(Lcom/sec/android/app/camera/setting/SpinnerPreference;)[I
 
     move-result-object v4
@@ -151,7 +147,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerAdapter;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$900(Lcom/sec/android/app/camera/setting/SpinnerPreference;)Landroid/content/Context;
 
     move-result-object v3
@@ -165,14 +160,12 @@
     :goto_0
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerAdapter;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$900(Lcom/sec/android/app/camera/setting/SpinnerPreference;)Landroid/content/Context;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerAdapter;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mEntryValues:[I
     invoke-static {v3}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$300(Lcom/sec/android/app/camera/setting/SpinnerPreference;)[I
 
     move-result-object v3
@@ -195,7 +188,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerAdapter;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$900(Lcom/sec/android/app/camera/setting/SpinnerPreference;)Landroid/content/Context;
 
     move-result-object v3
@@ -223,7 +215,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerAdapter;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mEntries:[Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$400(Lcom/sec/android/app/camera/setting/SpinnerPreference;)[Ljava/lang/String;
 
     move-result-object v3
@@ -240,7 +231,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerAdapter;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mEntryValues:[I
     invoke-static {v4}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$300(Lcom/sec/android/app/camera/setting/SpinnerPreference;)[I
 
     move-result-object v4
@@ -257,7 +247,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerAdapter;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$900(Lcom/sec/android/app/camera/setting/SpinnerPreference;)Landroid/content/Context;
 
     move-result-object v3
@@ -275,7 +264,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerAdapter;->this$0:Lcom/sec/android/app/camera/setting/SpinnerPreference;
 
-    # getter for: Lcom/sec/android/app/camera/setting/SpinnerPreference;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->access$900(Lcom/sec/android/app/camera/setting/SpinnerPreference;)Landroid/content/Context;
 
     move-result-object v3

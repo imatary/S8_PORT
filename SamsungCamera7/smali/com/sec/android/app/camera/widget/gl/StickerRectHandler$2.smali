@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$2;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkInfo:Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->access$100(Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;)Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;
 
     move-result-object v1
@@ -52,19 +51,16 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$2;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkInfo:Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;
     invoke-static {v2}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->access$100(Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;)Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;
 
     move-result-object v2
 
-    # invokes: Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->getWatermarkImage(ILcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;)Landroid/graphics/Bitmap;
     invoke-static {v1, v4, v2}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->access$200(Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;ILcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$2;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkImageUpdateListener:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$WatermarkImageUpdateListener;
     invoke-static {v1}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->access$300(Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;)Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$WatermarkImageUpdateListener;
 
     move-result-object v1

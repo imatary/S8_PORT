@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/widget/gl/ThumbnailButton$1;->this$0:Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;->mViewToScale:Lcom/samsung/android/glview/GLView;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;->access$100(Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;)Lcom/samsung/android/glview/GLView;
 
     move-result-object v0
@@ -52,7 +51,6 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/widget/gl/ThumbnailButton$1;->this$0:Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;->mViewToScale:Lcom/samsung/android/glview/GLView;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;->access$100(Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;)Lcom/samsung/android/glview/GLView;
 
     move-result-object v1

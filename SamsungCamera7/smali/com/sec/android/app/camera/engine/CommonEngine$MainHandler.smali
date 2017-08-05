@@ -97,14 +97,12 @@
     goto :goto_0
 
     :pswitch_0
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$800(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$800(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v1
@@ -115,12 +113,11 @@
 
     if-ne v1, v4, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
 
-    const v2, 0x7f09012e
+    const v2, 0x7f09012f
 
     invoke-static {v1, v2, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -128,7 +125,6 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$800(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v1
@@ -140,14 +136,12 @@
     goto :goto_0
 
     :pswitch_1
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -218,7 +212,6 @@
 
     if-eqz v1, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -236,7 +229,6 @@
     goto/16 :goto_0
 
     :pswitch_4
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->isRecorderPreparing()Z
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5200(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
 
     move-result v1
@@ -249,7 +241,6 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mMainHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5300(Lcom/sec/android/app/camera/engine/CommonEngine;)Landroid/os/Handler;
 
     move-result-object v1
@@ -261,14 +252,12 @@
     goto/16 :goto_0
 
     :cond_2
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mSendOrientationInfoThread:Ljava/lang/Thread;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5400(Lcom/sec/android/app/camera/engine/CommonEngine;)Ljava/lang/Thread;
 
     move-result-object v1
 
     if-eqz v1, :cond_3
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mSendOrientationInfoThread:Ljava/lang/Thread;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5400(Lcom/sec/android/app/camera/engine/CommonEngine;)Ljava/lang/Thread;
 
     move-result-object v1
@@ -288,10 +277,8 @@
 
     invoke-direct {v1, v2}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    # setter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mSendOrientationInfoThread:Ljava/lang/Thread;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5402(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/Thread;)Ljava/lang/Thread;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mSendOrientationInfoThread:Ljava/lang/Thread;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5400(Lcom/sec/android/app/camera/engine/CommonEngine;)Ljava/lang/Thread;
 
     move-result-object v1
@@ -300,7 +287,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mSendOrientationInfoThread:Ljava/lang/Thread;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5400(Lcom/sec/android/app/camera/engine/CommonEngine;)Ljava/lang/Thread;
 
     move-result-object v1
@@ -322,14 +308,12 @@
     goto/16 :goto_0
 
     :pswitch_6
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mHardwareFaceDetectionListener:Lcom/sec/android/app/camera/interfaces/Engine$HardwareFaceDetectionListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5500(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$HardwareFaceDetectionListener;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mHardwareFaceDetectionListener:Lcom/sec/android/app/camera/interfaces/Engine$HardwareFaceDetectionListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5500(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$HardwareFaceDetectionListener;
 
     move-result-object v1
@@ -341,7 +325,6 @@
     goto/16 :goto_0
 
     :pswitch_7
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -351,12 +334,10 @@
     goto/16 :goto_0
 
     :pswitch_8
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mBurstCaptureSoundId:Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5600(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext$SoundID;
 
     move-result-object v2

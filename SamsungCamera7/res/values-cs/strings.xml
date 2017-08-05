@@ -308,6 +308,7 @@ zkreslení"</string>
     <string name="camera_label">Fotoaparát</string>
     <string name="camera_modes">Režimy fotoaparátu</string>
     <string name="camera_security_enter">Zásady zabezpečení omezují použití fotoaparátu.</string>
+    <string name="can_not_use_voice_control">Když je zapnuté Probuzení Bixby hlasem, nelze použít Ovládání hlasem.</string>
     <string name="cancel">Zrušit</string>
     <string name="cannot_start_camcorder_msg">Během hovoru nelze nahrávat video.</string>
     <string name="cannot_start_camera_msg">Během hovorů nelze použít Fotoaparát.</string>
@@ -604,6 +605,7 @@ Pokud s tím souhlasíte, Snímek se značkou obdrží toto oprávnění a tento
     <string name="task_edge_title_selfie">"Vyfotog.
 selfie"</string>
     <string name="temperature">Teplota</string>
+    <string name="temperature_too_high_camera_off">Teplota je příliš vysoká a nelze použít %1$s. Počkejte až telefon vychladne, a teprve potom použijte %2$s.</string>
     <string name="temperature_too_high_flash_off">Blesk se nepodařilo zapnout. Opakujte akci, až zařízení vychladne.</string>
     <string name="temperature_too_high_record">Video se nepodařilo nahrát. Opakujte akci, až zařízení vychladne.</string>
     <string name="temperature_too_high_recording_disable">Nahrávání bylo zastaveno. Budete moci nahrávat, až zařízení vychladne.</string>

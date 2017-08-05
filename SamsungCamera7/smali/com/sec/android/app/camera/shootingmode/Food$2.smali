@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Food;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Food;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Food;->access$300(Lcom/sec/android/app/camera/shootingmode/Food;)Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     move-result-object v0
@@ -58,7 +57,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Food$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Food;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Food;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Food;->access$400(Lcom/sec/android/app/camera/shootingmode/Food;)Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     move-result-object v0

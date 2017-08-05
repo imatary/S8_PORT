@@ -407,11 +407,11 @@
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 13
 
-    const v12, 0x7f0902c9
+    const v12, 0x7f0902cb
 
-    const v11, 0x7f0901ab
+    const v11, 0x7f0901ac
 
-    const v10, 0x7f0901a5
+    const v10, 0x7f0901a6
 
     const/4 v9, 0x1
 
@@ -441,7 +441,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mIsLocaleRTL:Z
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1300(Lcom/sec/android/app/camera/menu/OverlayHelp;)Z
 
     move-result v1
@@ -469,7 +468,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mBaseLayout:Landroid/view/ViewGroup;
     invoke-static {v4}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$2200(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/view/ViewGroup;
 
     move-result-object v4
@@ -628,7 +626,6 @@
 
     iput-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mBottomArrowText:Landroid/widget/TextView;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->HORIZONTAL_ARROW_ANIMATION_OFFSET:F
     invoke-static {}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$2300()F
 
     move-result v1
@@ -639,14 +636,12 @@
 
     move v3, v0
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->getHorizontalArrowAnimation(FFFFJ)Landroid/view/animation/Animation;
     invoke-static/range {v0 .. v5}, Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->access$2400(FFFFJ)Landroid/view/animation/Animation;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mLeftArrowAnimation:Landroid/view/animation/Animation;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->HORIZONTAL_ARROW_ANIMATION_OFFSET:F
     invoke-static {}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$2300()F
 
     move-result v1
@@ -659,14 +654,12 @@
 
     move v3, v0
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->getHorizontalArrowAnimation(FFFFJ)Landroid/view/animation/Animation;
     invoke-static/range {v0 .. v5}, Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->access$2400(FFFFJ)Landroid/view/animation/Animation;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mRightArrowAnimation:Landroid/view/animation/Animation;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->VERTICAL_ARROW_ANIMATION_OFFSET:F
     invoke-static {}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$2500()F
 
     move-result v3
@@ -677,14 +670,12 @@
 
     move v2, v0
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->getVerticalArrowAnimation(FFFFJ)Landroid/view/animation/Animation;
     invoke-static/range {v0 .. v5}, Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->access$2600(FFFFJ)Landroid/view/animation/Animation;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mTopArrowAnimation:Landroid/view/animation/Animation;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->VERTICAL_ARROW_ANIMATION_OFFSET:F
     invoke-static {}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$2500()F
 
     move-result v1
@@ -697,7 +688,6 @@
 
     move v2, v0
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->getVerticalArrowAnimation(FFFFJ)Landroid/view/animation/Animation;
     invoke-static/range {v0 .. v5}, Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->access$2600(FFFFJ)Landroid/view/animation/Animation;
 
     move-result-object v0
@@ -857,14 +847,12 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mShutterButton:Landroid/widget/ImageView;
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->getShutterButtonShowAnimation(Landroid/view/View;)Landroid/view/animation/Animation;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->access$2700(Landroid/view/View;)Landroid/view/animation/Animation;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mShutterButtonAnimation:Landroid/view/animation/Animation;
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->getOneHandZoomingAnimation()Landroid/view/animation/Animation;
     invoke-static {}, Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->access$2800()Landroid/view/animation/Animation;
 
     move-result-object v0
@@ -873,28 +861,24 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mOneHandZoomShortGuide:Landroid/widget/ImageView;
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->getBaseMenuShowAnimation(Landroid/view/View;)Landroid/view/animation/Animation;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->access$2900(Landroid/view/View;)Landroid/view/animation/Animation;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mOneHandZoomShortGuideAnimation:Landroid/view/animation/Animation;
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->getOneHandZoomShowAnimation()Landroid/view/animation/Animation;
     invoke-static {}, Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->access$3000()Landroid/view/animation/Animation;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mOneHandZoomLongGuideAnimation:Landroid/view/animation/Animation;
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->getOneHandZoomShowAnimation()Landroid/view/animation/Animation;
     invoke-static {}, Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->access$3000()Landroid/view/animation/Animation;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mOneHandZoomPlusAnimation:Landroid/view/animation/Animation;
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->getOneHandZoomShowAnimation()Landroid/view/animation/Animation;
     invoke-static {}, Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->access$3000()Landroid/view/animation/Animation;
 
     move-result-object v0
@@ -903,7 +887,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mRecordingButton:Landroid/widget/ImageView;
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->getBaseMenuShowAnimation(Landroid/view/View;)Landroid/view/animation/Animation;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->access$2900(Landroid/view/View;)Landroid/view/animation/Animation;
 
     move-result-object v0
@@ -912,7 +895,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mThumbnailButton:Landroid/widget/ImageView;
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->getBaseMenuShowAnimation(Landroid/view/View;)Landroid/view/animation/Animation;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp$OverlayHelpAnimations;->access$2900(Landroid/view/View;)Landroid/view/animation/Animation;
 
     move-result-object v0
@@ -921,7 +903,7 @@
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->startOneHandZoomAnimation()V
 
-    const v0, 0x7f0902ca
+    const v0, 0x7f0902cc
 
     invoke-virtual {v8, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -935,7 +917,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v2, 0x7f0902ca
+    const v2, 0x7f0902cc
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -1007,7 +989,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mIsLocaleRTL:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1300(Lcom/sec/android/app/camera/menu/OverlayHelp;)Z
 
     move-result v0
@@ -1121,7 +1102,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->HELP_TITLE_TOP_MARGIN_LAND:I
     invoke-static {v4}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$3100(Lcom/sec/android/app/camera/menu/OverlayHelp;)I
 
     move-result v4
@@ -1233,7 +1213,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->HELP_TITLE_TOP_MARGIN_PORT:I
     invoke-static {v4}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$3200(Lcom/sec/android/app/camera/menu/OverlayHelp;)I
 
     move-result v4

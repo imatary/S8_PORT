@@ -55,7 +55,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$MainHandler$1;->val$engine:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mLastOrientation:I
     invoke-static {v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2500(Lcom/sec/android/app/camera/engine/CommonEngine;)I
 
     move-result v2
@@ -72,7 +71,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$MainHandler$1;->val$engine:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$700(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/samsung/android/camera/core/SemCamera;
 
     move-result-object v0
@@ -81,14 +79,12 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$MainHandler$1;->val$engine:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$700(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/samsung/android/camera/core/SemCamera;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$MainHandler$1;->val$engine:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mLastOrientation:I
     invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2500(Lcom/sec/android/app/camera/engine/CommonEngine;)I
 
     move-result v1

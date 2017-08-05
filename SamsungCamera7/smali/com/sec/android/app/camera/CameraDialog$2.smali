@@ -41,7 +41,6 @@
 
     sget-object v1, Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;->GPS_EULA:Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->showCameraDialog(Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/CameraDialog;->access$300(Lcom/sec/android/app/camera/CameraDialog;Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;)V
 
     return-void

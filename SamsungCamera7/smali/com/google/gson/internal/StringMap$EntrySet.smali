@@ -153,7 +153,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/google/gson/internal/StringMap;->removeMapping(Ljava/lang/Object;Ljava/lang/Object;)Z
     invoke-static {v1, v2, v3}, Lcom/google/gson/internal/StringMap;->access$600(Lcom/google/gson/internal/StringMap;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
@@ -166,7 +165,6 @@
 
     iget-object v0, p0, Lcom/google/gson/internal/StringMap$EntrySet;->this$0:Lcom/google/gson/internal/StringMap;
 
-    # getter for: Lcom/google/gson/internal/StringMap;->size:I
     invoke-static {v0}, Lcom/google/gson/internal/StringMap;->access$500(Lcom/google/gson/internal/StringMap;)I
 
     move-result v0

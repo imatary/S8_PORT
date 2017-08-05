@@ -80,12 +80,10 @@
     const/4 v1, 0x1
 
     :try_start_0
-    # invokes: Lcom/samsung/android/glview/GLAbsList;->enableBoundDeceleration(Z)V
     invoke-static {v0, v1}, Lcom/samsung/android/glview/GLAbsList;->access$100(Lcom/samsung/android/glview/GLAbsList;Z)V
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/samsung/android/glview/GLAbsList;->mIsDecelerationHandlerMessageExecuted:Z
     invoke-static {v0, v1}, Lcom/samsung/android/glview/GLAbsList;->access$202(Lcom/samsung/android/glview/GLAbsList;Z)Z
 
     monitor-exit v2

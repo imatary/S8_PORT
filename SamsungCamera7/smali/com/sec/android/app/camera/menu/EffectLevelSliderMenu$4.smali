@@ -65,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu$4;->this$0:Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;
 
-    # setter for: Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->mStrengthStep:I
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->access$002(Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu$4;->this$0:Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;
@@ -86,7 +85,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu$4;->this$0:Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->mStrengthStep:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->access$000(Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;)I
 
     move-result v1

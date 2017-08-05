@@ -58,7 +58,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentState:Lcom/sec/android/app/camera/engine/AbstractCeState;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1100(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/engine/AbstractCeState;
 
     move-result-object v0
@@ -84,7 +83,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentState:Lcom/sec/android/app/camera/engine/AbstractCeState;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1100(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/engine/AbstractCeState;
 
     move-result-object v0

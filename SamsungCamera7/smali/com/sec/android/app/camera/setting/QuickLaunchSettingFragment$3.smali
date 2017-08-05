@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment$3;->this$0:Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;
 
-    # invokes: Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->handleSwitchBarClickEvent(Z)V
     invoke-static {v0, p2}, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->access$400(Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;Z)V
 
     return-void

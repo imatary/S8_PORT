@@ -52,7 +52,6 @@
 
     sget-object v1, Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;->RUNTIME_PERMISSIONS_ON_SECURE_LOCK:Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
-    # invokes: Lcom/sec/android/app/camera/RequestPermissionActivity;->dismissCameraDialog(Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/RequestPermissionActivity;->access$000(Lcom/sec/android/app/camera/RequestPermissionActivity;Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/RequestPermissionActivity$1;->this$0:Lcom/sec/android/app/camera/RequestPermissionActivity;

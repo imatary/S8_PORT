@@ -1277,7 +1277,6 @@
 
     move-result-object v2
 
-    # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->CHINESE_NUMBER:[Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->access$600()[Ljava/lang/String;
 
     move-result-object v3
@@ -3428,7 +3427,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->getChinaNumString(Ljava/lang/String;)Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->access$500(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -3443,7 +3441,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->getChinaNumString(Ljava/lang/String;)Ljava/lang/String;
     invoke-static {v3}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->access$500(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3

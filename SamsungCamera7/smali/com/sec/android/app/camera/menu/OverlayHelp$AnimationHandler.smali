@@ -80,7 +80,6 @@
     :pswitch_0
     invoke-virtual {p0, v4}, Lcom/sec/android/app/camera/menu/OverlayHelp$AnimationHandler;->removeMessages(I)V
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->startArrowAnimation()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->access$1800(Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;)V
 
     const-wide/16 v2, 0x13a9
@@ -92,7 +91,6 @@
     :pswitch_1
     invoke-virtual {p0, v5}, Lcom/sec/android/app/camera/menu/OverlayHelp$AnimationHandler;->removeMessages(I)V
 
-    # invokes: Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->startOneHandZoomAnimation()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->access$1900(Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;)V
 
     const-wide/16 v2, 0x170c

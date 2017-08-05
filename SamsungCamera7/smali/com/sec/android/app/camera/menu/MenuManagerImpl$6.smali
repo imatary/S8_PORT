@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/MenuManagerImpl$6;->this$0:Lcom/sec/android/app/camera/menu/MenuManagerImpl;
 
-    # getter for: Lcom/sec/android/app/camera/menu/MenuManagerImpl;->mBaseMenu:Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/MenuManagerImpl;->access$100(Lcom/sec/android/app/camera/menu/MenuManagerImpl;)Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
 
     move-result-object v0

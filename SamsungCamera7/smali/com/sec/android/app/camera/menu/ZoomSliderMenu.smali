@@ -1355,7 +1355,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v2, 0x7f0902cb
+    const v2, 0x7f0902cd
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -1482,6 +1482,56 @@
     add-float/2addr v0, v1
 
     goto :goto_0
+.end method
+
+.method public getZoomValue(I)F
+    .locals 3
+
+    iget v0, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->mMaxZoomLevel:I
+
+    :goto_0
+    if-ltz v0, :cond_1
+
+    iget-object v1, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->mStepRatio:Ljava/util/List;
+
+    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, [Ljava/lang/Float;
+
+    const/4 v2, 0x0
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
+
+    move-result v1
+
+    int-to-float v2, p1
+
+    cmpl-float v1, v1, v2
+
+    if-nez v1, :cond_0
+
+    iget v1, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->mMaxZoomLevel:I
+
+    sub-int/2addr v1, v0
+
+    int-to-float v1, v1
+
+    :goto_1
+    return v1
+
+    :cond_0
+    add-int/lit8 v0, v0, -0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/high16 v1, -0x40800000    # -1.0f
+
+    goto :goto_1
 .end method
 
 .method public isPressed()Z

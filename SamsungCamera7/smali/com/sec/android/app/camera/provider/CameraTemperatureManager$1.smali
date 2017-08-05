@@ -68,7 +68,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/provider/CameraTemperatureManager$1;->this$0:Lcom/sec/android/app/camera/provider/CameraTemperatureManager;
 
-    # getter for: Lcom/sec/android/app/camera/provider/CameraTemperatureManager;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/provider/CameraTemperatureManager;->access$000(Lcom/sec/android/app/camera/provider/CameraTemperatureManager;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -81,7 +80,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/provider/CameraTemperatureManager$1;->this$0:Lcom/sec/android/app/camera/provider/CameraTemperatureManager;
 
-    # getter for: Lcom/sec/android/app/camera/provider/CameraTemperatureManager;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/provider/CameraTemperatureManager;->access$000(Lcom/sec/android/app/camera/provider/CameraTemperatureManager;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -114,7 +112,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/provider/CameraTemperatureManager$1;->this$0:Lcom/sec/android/app/camera/provider/CameraTemperatureManager;
 
-    # invokes: Lcom/sec/android/app/camera/provider/CameraTemperatureManager;->handleSIOPLevelChanged(Landroid/content/Intent;)V
     invoke-static {v1, p2}, Lcom/sec/android/app/camera/provider/CameraTemperatureManager;->access$100(Lcom/sec/android/app/camera/provider/CameraTemperatureManager;Landroid/content/Intent;)V
 
     goto :goto_0
@@ -130,7 +127,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/provider/CameraTemperatureManager$1;->this$0:Lcom/sec/android/app/camera/provider/CameraTemperatureManager;
 
-    # invokes: Lcom/sec/android/app/camera/provider/CameraTemperatureManager;->handleBatteryChanged(Landroid/content/Intent;)V
     invoke-static {v1, p2}, Lcom/sec/android/app/camera/provider/CameraTemperatureManager;->access$200(Lcom/sec/android/app/camera/provider/CameraTemperatureManager;Landroid/content/Intent;)V
 
     goto :goto_0

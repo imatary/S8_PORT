@@ -43,7 +43,6 @@
 
     move-result-object v1
 
-    # invokes: Lcom/sec/android/app/camera/setting/SwitchListPreference;->callChangeListener(Ljava/lang/Object;)Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/setting/SwitchListPreference;->access$000(Lcom/sec/android/app/camera/setting/SwitchListPreference;Ljava/lang/Object;)Z
 
     return-void

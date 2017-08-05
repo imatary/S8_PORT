@@ -45,15 +45,13 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$4;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mRecordingFOVGuideParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$700(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLViewGroup;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$800(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLViewGroup;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$4;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mRecordingFOVGuide:Lcom/sec/android/app/camera/widget/gl/FOVGuide;
-    invoke-static {v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$600(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/widget/gl/FOVGuide;
+    invoke-static {v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$700(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/widget/gl/FOVGuide;
 
     move-result-object v1
 
@@ -61,15 +59,13 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$4;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mRecordingFOVGuideParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$700(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLViewGroup;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$800(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLViewGroup;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$4;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
-    invoke-static {v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$800(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLImage;
+    invoke-static {v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$900(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLImage;
 
     move-result-object v1
 
@@ -77,8 +73,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$4;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mRecordingFOVGuide:Lcom/sec/android/app/camera/widget/gl/FOVGuide;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$600(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/widget/gl/FOVGuide;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$700(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/widget/gl/FOVGuide;
 
     move-result-object v0
 
@@ -88,8 +83,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$4;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$800(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLImage;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$900(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLImage;
 
     move-result-object v0
 
@@ -99,8 +93,7 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
-    invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$802(Lcom/sec/android/app/camera/menu/VisualInteraction;Lcom/samsung/android/glview/GLImage;)Lcom/samsung/android/glview/GLImage;
+    invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$902(Lcom/sec/android/app/camera/menu/VisualInteraction;Lcom/samsung/android/glview/GLImage;)Lcom/samsung/android/glview/GLImage;
 
     return-void
 .end method

@@ -38,7 +38,6 @@
 
     if-nez p2, :cond_1
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->access$000()Ljava/lang/String;
 
     move-result-object v4
@@ -62,7 +61,6 @@
 
     if-nez v5, :cond_2
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->access$000()Ljava/lang/String;
 
     move-result-object v4
@@ -115,7 +113,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader$DBObserver;->this$0:Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v4}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->access$100(Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v4

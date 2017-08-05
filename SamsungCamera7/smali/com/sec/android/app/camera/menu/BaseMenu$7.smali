@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu$7;->this$0:Lcom/sec/android/app/camera/menu/BaseMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BaseMenu;->mOneHandZoomPlus:Lcom/samsung/android/glview/GLImage;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BaseMenu;->access$500(Lcom/sec/android/app/camera/menu/BaseMenu;)Lcom/samsung/android/glview/GLImage;
 
     move-result-object v0

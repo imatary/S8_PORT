@@ -309,6 +309,7 @@ düzediş"</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Kamera režimleri</string>
     <string name="camera_security_enter">Howpsuzlyk düzgün Kamera ulanmagyny gadagan edýär.</string>
+    <string name="can_not_use_voice_control">Bixby sesli oýaryş açyk wagty, Sesli dolandyryş ulanyp bolmaýar.</string>
     <string name="cancel">Ýatyr</string>
     <string name="cannot_start_camcorder_msg">Jaň wagty wideony ýazmak mümkinçiligi ýok.</string>
     <string name="cannot_start_camera_msg">Jaň geleninde ýa-da jaň edileninde kamerany ulanyp bolmaýar.</string>
@@ -605,6 +606,7 @@ Eger munuň bilen ylalaşsaňyz, onda Bellijek kadryna şu rugsat berler we soň
     <string name="task_edge_title_selfie">"Selfi
 düşür"</string>
     <string name="temperature">Temperatura</string>
+    <string name="temperature_too_high_camera_off">Temperatura %1$s ulanardan gaty ýokary. %2$s ulanmak üçin, telefon sowaýança garaşyň.</string>
     <string name="temperature_too_high_flash_off">Fleş ýady ýakmaga ukypsyz. Enjamyňyz sowandan soňra, ýene-de synanyşyň.</string>
     <string name="temperature_too_high_record">Wideony ýazmak mümkin däl. Enjam birneme sowandan soň gaýtadan synanyşyň.</string>
     <string name="temperature_too_high_recording_disable">Ýazgy etmek duruzyldy. Siziň enjamyňyz sowanyndan soňra, ýazgy edip bilersiňiz.</string>

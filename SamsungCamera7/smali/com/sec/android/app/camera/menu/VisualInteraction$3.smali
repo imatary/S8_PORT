@@ -47,12 +47,10 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsBlurImageAnimating:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$302(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$3;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mBlurImage:Lcom/samsung/android/glview/GLImage;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$400(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLImage;
 
     move-result-object v0
@@ -63,14 +61,29 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$3;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    const/4 v1, 0x1
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$500(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/interfaces/Engine;
 
-    # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsSwitchCameraAnimationFinished:Z
-    invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$502(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
+    move-result-object v0
+
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$3;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mBlurImage:Lcom/samsung/android/glview/GLImage;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$500(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/sec/android/app/camera/interfaces/Engine;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleSendCompletedMessageToBixby()V
+
+    :cond_0
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$3;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$602(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$3;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
+
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$400(Lcom/sec/android/app/camera/menu/VisualInteraction;)Lcom/samsung/android/glview/GLImage;
 
     move-result-object v0
@@ -81,7 +94,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mBlurImage:Lcom/samsung/android/glview/GLImage;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$402(Lcom/sec/android/app/camera/menu/VisualInteraction;Lcom/samsung/android/glview/GLImage;)Lcom/samsung/android/glview/GLImage;
 
     return-void
@@ -100,7 +112,6 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsBlurImageAnimating:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$302(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
 
     return-void

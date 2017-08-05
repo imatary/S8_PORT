@@ -40,7 +40,6 @@
 
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->qrecorder:Lcom/samsung/android/media/soundshot/SemAudioRecorder;
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$000(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)Lcom/samsung/android/media/soundshot/SemAudioRecorder;
 
     move-result-object v7
@@ -57,7 +56,6 @@
 
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->visualization_duration:J
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$100(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)J
 
     move-result-wide v10
@@ -70,7 +68,6 @@
 
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->visualization_duration:J
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$100(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)J
 
     move-result-wide v10
@@ -83,12 +80,10 @@
 
     new-array v8, v6, [I
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->visualization:[I
     invoke-static {v7, v8}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$202(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;[I)[I
 
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->qrecorder:Lcom/samsung/android/media/soundshot/SemAudioRecorder;
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$000(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)Lcom/samsung/android/media/soundshot/SemAudioRecorder;
 
     move-result-object v7
@@ -99,7 +94,6 @@
     :try_start_0
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->isRunning:Z
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$300(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)Z
 
     move-result v7
@@ -108,7 +102,6 @@
 
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->time_t:J
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$400(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)J
 
     move-result-wide v8
@@ -119,7 +112,6 @@
 
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->time_s:J
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$500(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)J
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -148,7 +140,6 @@
 
     move-result-wide v8
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->time_s:J
     invoke-static {v7, v8, v9}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$502(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;J)J
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
@@ -191,7 +182,6 @@
     :try_start_4
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->releaseRecorder()V
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$900(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
@@ -246,7 +236,6 @@
     :try_start_6
     iget-object v8, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->releaseRecorder()V
     invoke-static {v8}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$900(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)V
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_4
@@ -260,12 +249,10 @@
 
     iget-object v8, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->time_s:J
     invoke-static {v8}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$500(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)J
 
     move-result-wide v8
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->time_t:J
     invoke-static {v7, v8, v9}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$402(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;J)J
 
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
@@ -274,7 +261,6 @@
 
     move-result-wide v8
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->time_s:J
     invoke-static {v7, v8, v9}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$502(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;J)J
 
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
@@ -293,7 +279,6 @@
 
     const/4 v8, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->isRunning:Z
     invoke-static {v7, v8}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$302(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;Z)Z
     :try_end_7
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_0
@@ -303,7 +288,6 @@
     :try_start_8
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->releaseRecorder()V
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$900(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)V
     :try_end_8
     .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_2
@@ -339,7 +323,6 @@
     :try_start_9
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->readAudioStreamBufferSize:I
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$600(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)I
 
     move-result v7
@@ -352,7 +335,6 @@
 
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->readAudioStreamBuffer:[B
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$700(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)[B
 
     move-result-object v7
@@ -365,7 +347,6 @@
 
     iget-object v8, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->readAudioStreamBuffer:[B
     invoke-static {v8}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$700(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)[B
 
     move-result-object v8
@@ -395,7 +376,6 @@
     :cond_3
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->readAudioStreamBufferSize:I
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$600(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)I
 
     move-result v7
@@ -425,7 +405,6 @@
     :cond_4
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->visualization:[I
     invoke-static {v7}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$200(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;)[I
 
     move-result-object v7
@@ -443,7 +422,6 @@
 
     const/4 v8, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->segIdx:I
     invoke-static {v7, v8}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->access$802(Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;I)I
 
     iget-object v7, p0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder$1;->this$0:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;

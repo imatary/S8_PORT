@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/DragDropBox$1;->this$0:Lcom/sec/android/app/camera/widget/gl/DragDropBox;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/DragDropBox;->mIsAreaLineEnabled:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/DragDropBox;->access$000(Lcom/sec/android/app/camera/widget/gl/DragDropBox;)Z
 
     move-result v0
@@ -48,7 +47,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/DragDropBox$1;->this$0:Lcom/sec/android/app/camera/widget/gl/DragDropBox;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/DragDropBox;->mAreaLineRect:Lcom/samsung/android/glview/GLRectangle;
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/DragDropBox;->access$100(Lcom/sec/android/app/camera/widget/gl/DragDropBox;)Lcom/samsung/android/glview/GLRectangle;
 
     move-result-object v0

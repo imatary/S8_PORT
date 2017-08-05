@@ -84,7 +84,6 @@
 .method public addSticker(Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;)V
     .locals 2
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->mStickerPackageMap:Ljava/util/LinkedHashMap;
     invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->access$100()Ljava/util/LinkedHashMap;
 
     move-result-object v1
@@ -123,7 +122,6 @@
         }
     .end annotation
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->mStickerPackageMap:Ljava/util/LinkedHashMap;
     invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->access$100()Ljava/util/LinkedHashMap;
 
     move-result-object v1

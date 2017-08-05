@@ -43,7 +43,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$1;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->KELVIN_LEVEL_START_STEP:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$500(Lcom/sec/android/app/camera/menu/ProSlider;)I
 
     move-result v1
@@ -56,7 +55,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$1;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->KELVIN_LEVEL_START_STEP:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$500(Lcom/sec/android/app/camera/menu/ProSlider;)I
 
     move-result v1
@@ -71,7 +69,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$1;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->isTtsEnabled()Z
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$600(Lcom/sec/android/app/camera/menu/ProSlider;)Z
 
     move-result v0
@@ -86,7 +83,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ProSlider$1;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mKelvinSlider:Lcom/samsung/android/glview/GLSlider;
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/ProSlider;->access$700(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/samsung/android/glview/GLSlider;
 
     move-result-object v2
@@ -101,7 +97,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ProSlider$1;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mKelvinValueText:Lcom/samsung/android/glview/GLText;
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/ProSlider;->access$800(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/samsung/android/glview/GLText;
 
     move-result-object v2
@@ -118,7 +113,6 @@
 
     move-result-object v1
 
-    # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->speakTtsString(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$900(Lcom/sec/android/app/camera/menu/ProSlider;Ljava/lang/String;)V
 
     :cond_0

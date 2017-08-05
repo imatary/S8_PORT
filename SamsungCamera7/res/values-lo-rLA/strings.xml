@@ -308,6 +308,7 @@
     <string name="camera_label">ກ້ອງຖ່າຍຮູບ</string>
     <string name="camera_modes">ໂໝດກ້ອງຖ່າຍຮູບ</string>
     <string name="camera_security_enter">ນະໂຍບາຍດ້ານຄວາມປອດໄພຈຳກັດການໃຊ້ກ້ອງ.</string>
+    <string name="can_not_use_voice_control">ບໍ່ສາມາດໃຊ້ການຄວບຄຸມສຽງ ໃນຂະນະທີ່ການປຸກ Bixby Voice ເປີດຢູ່.</string>
     <string name="cancel">ຍົກເລີກ</string>
     <string name="cannot_start_camcorder_msg">ບໍ່ສາມາດບັນທຶກວິດີໂອໄດ້ໃນລະຫວ່າງການໂທ.</string>
     <string name="cannot_start_camera_msg">ບໍ່ສາມາດໃຊ້ກ້ອງຖ່າຍຮູບ ໃນລະຫວ່າງການໂທໄດ້.</string>
@@ -604,6 +605,7 @@
     <string name="task_edge_title_selfie">"ຖ່າຍຮູບ
 ເຊລຟີ"</string>
     <string name="temperature">ອຸນຫະພູມ</string>
+    <string name="temperature_too_high_camera_off">​ອຸນ​ຫະ​ພູມ​ສູງ​ເກີນ​ໄປ​ທີ່​ຈະ​ໃຊ້ %1$s. ລໍ​ຖ້າ​ໃຫ້​ໂທ​ລະ​ສັບ​​ເຢັນ​ລົງ​ ກ່ອນທີ່ຈະໃຊ້ %2$s.</string>
     <string name="temperature_too_high_flash_off">ບໍ່ສາມາດເປີດແຟຼດໄດ້. ລອງໃໝ່ອີກ ເມື່ອເຄື່ອງຂອງທ່ານເຢັນລົງ.</string>
     <string name="temperature_too_high_record">ບໍ່ສາມາດບັນທຶກວິດີໂອໄດ້. ລອງໃໝ່ອີກ ເມື່ອເຄື່ອງເຢັນລົງແລ້ວ.</string>
     <string name="temperature_too_high_recording_disable">ການບັນທຶກຢຸດ. ທ່ານສາມາດບັນທຶກໄດ້ ເມື່ອເຄື່ອງຂອງທ່ານເຢັນລົງ.</string>

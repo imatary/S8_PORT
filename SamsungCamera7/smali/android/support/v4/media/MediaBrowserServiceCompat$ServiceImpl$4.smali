@@ -59,7 +59,6 @@
 
     iget-object v2, v2, Landroid/support/v4/media/MediaBrowserServiceCompat$ServiceImpl;->this$0:Landroid/support/v4/media/MediaBrowserServiceCompat;
 
-    # getter for: Landroid/support/v4/media/MediaBrowserServiceCompat;->mConnections:Landroid/support/v4/util/ArrayMap;
     invoke-static {v2}, Landroid/support/v4/media/MediaBrowserServiceCompat;->access$500(Landroid/support/v4/media/MediaBrowserServiceCompat;)Landroid/support/v4/util/ArrayMap;
 
     move-result-object v2
@@ -109,7 +108,6 @@
 
     iget-object v4, p0, Landroid/support/v4/media/MediaBrowserServiceCompat$ServiceImpl$4;->val$options:Landroid/os/Bundle;
 
-    # invokes: Landroid/support/v4/media/MediaBrowserServiceCompat;->removeSubscription(Ljava/lang/String;Landroid/support/v4/media/MediaBrowserServiceCompat$ConnectionRecord;Landroid/os/Bundle;)Z
     invoke-static {v2, v3, v1, v4}, Landroid/support/v4/media/MediaBrowserServiceCompat;->access$800(Landroid/support/v4/media/MediaBrowserServiceCompat;Ljava/lang/String;Landroid/support/v4/media/MediaBrowserServiceCompat$ConnectionRecord;Landroid/os/Bundle;)Z
 
     move-result v2

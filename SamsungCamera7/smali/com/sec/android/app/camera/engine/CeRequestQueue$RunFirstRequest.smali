@@ -75,7 +75,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CeRequestQueue$RunFirstRequest;->this$0:Lcom/sec/android/app/camera/engine/CeRequestQueue;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CeRequestQueue;->mCommonEngine:Lcom/sec/android/app/camera/engine/CommonEngine;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CeRequestQueue;->access$100(Lcom/sec/android/app/camera/engine/CeRequestQueue;)Lcom/sec/android/app/camera/engine/CommonEngine;
 
     move-result-object v0

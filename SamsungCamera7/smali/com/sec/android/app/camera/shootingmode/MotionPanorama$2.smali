@@ -55,7 +55,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCapturing:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$600(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)Z
 
     move-result v0
@@ -64,7 +63,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$700(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)I
 
     move-result v0
@@ -86,7 +84,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$800(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)Z
 
     move-result v0
@@ -104,7 +101,6 @@
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$900(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v0
@@ -113,7 +109,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaCapturing()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$1000(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)V
 
     const-string v0, "2103"

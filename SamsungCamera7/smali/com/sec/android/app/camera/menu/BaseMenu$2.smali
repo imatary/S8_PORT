@@ -53,7 +53,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BaseMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BaseMenu;->SCREEN_WIDTH:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/BaseMenu;->access$000(Lcom/sec/android/app/camera/menu/BaseMenu;)I
 
     move-result v1
@@ -66,7 +65,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BaseMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BaseMenu;->SCREEN_WIDTH:I
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BaseMenu;->access$000(Lcom/sec/android/app/camera/menu/BaseMenu;)I
 
     move-result v0
@@ -101,7 +99,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BaseMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BaseMenu;->SCREEN_HEIGHT:I
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/BaseMenu;->access$100(Lcom/sec/android/app/camera/menu/BaseMenu;)I
 
     move-result v1
@@ -114,7 +111,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BaseMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BaseMenu;->SCREEN_HEIGHT:I
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BaseMenu;->access$100(Lcom/sec/android/app/camera/menu/BaseMenu;)I
 
     move-result v0

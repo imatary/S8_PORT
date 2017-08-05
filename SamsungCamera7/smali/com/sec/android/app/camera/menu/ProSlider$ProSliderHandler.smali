@@ -86,17 +86,14 @@
     goto :goto_0
 
     :pswitch_1
-    # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mIsManualFocusAssistPressed:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1000(Lcom/sec/android/app/camera/menu/ProSlider;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->startManualFocusAssist()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1100(Lcom/sec/android/app/camera/menu/ProSlider;)V
 
-    # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->stopManualFocusAssistPressTimer()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1200(Lcom/sec/android/app/camera/menu/ProSlider;)V
 
     goto :goto_0

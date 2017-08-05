@@ -115,12 +115,11 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$000(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
 
-    const v3, 0x7f090133
+    const v3, 0x7f090134
 
     invoke-static {v1, v3, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -130,12 +129,10 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->cancelPanoramaCapture()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$100(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)V
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->reset()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$200(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)V
 
     goto :goto_1
@@ -143,7 +140,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$300(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
@@ -152,7 +148,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$000(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -163,7 +158,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$300(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)Landroid/content/BroadcastReceiver;
 
     move-result-object v2
@@ -173,7 +167,6 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$1;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->clearMessageHandler()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->access$400(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)V
 
     goto :goto_1

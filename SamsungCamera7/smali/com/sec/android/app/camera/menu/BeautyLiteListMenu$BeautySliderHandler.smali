@@ -68,7 +68,6 @@
     goto :goto_0
 
     :pswitch_0
-    # invokes: Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->stopSliderMenuTimer()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->access$400(Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;)V
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->hideMenu()V

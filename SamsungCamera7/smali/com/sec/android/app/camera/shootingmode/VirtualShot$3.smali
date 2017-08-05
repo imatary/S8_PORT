@@ -54,7 +54,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$200(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -63,7 +62,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mFrames:I
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$700(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)I
 
     move-result v0
@@ -74,12 +72,11 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$200(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
-    const v1, 0x7f0901ac
+    const v1, 0x7f0901ad
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -89,7 +86,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopVirtualShot()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$800(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)V
 
     goto :goto_0
@@ -97,12 +93,11 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$200(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
-    const v1, 0x7f0901ae
+    const v1, 0x7f0901af
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -112,7 +107,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->cancelVirtualShot()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$900(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)V
 
     goto :goto_0

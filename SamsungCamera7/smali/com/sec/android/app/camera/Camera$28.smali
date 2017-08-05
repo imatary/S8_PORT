@@ -43,7 +43,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mIsPausing:Z
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$200(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v2
@@ -119,7 +118,6 @@
 
     aput-object v5, v4, v7
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mCallStateListener:[Lcom/sec/android/app/camera/Camera$CallStateListener;
     invoke-static {v3, v4}, Lcom/sec/android/app/camera/Camera;->access$4002(Lcom/sec/android/app/camera/Camera;[Lcom/sec/android/app/camera/Camera$CallStateListener;)[Lcom/sec/android/app/camera/Camera$CallStateListener;
 
     const/4 v0, 0x0
@@ -127,7 +125,6 @@
     :goto_1
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCallStateListener:[Lcom/sec/android/app/camera/Camera$CallStateListener;
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$4000(Lcom/sec/android/app/camera/Camera;)[Lcom/sec/android/app/camera/Camera$CallStateListener;
 
     move-result-object v2
@@ -140,7 +137,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCallStateListener:[Lcom/sec/android/app/camera/Camera$CallStateListener;
     invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$4000(Lcom/sec/android/app/camera/Camera;)[Lcom/sec/android/app/camera/Camera$CallStateListener;
 
     move-result-object v3
@@ -166,14 +162,12 @@
 
     aput-object v4, v3, v8
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mCallStateListener:[Lcom/sec/android/app/camera/Camera$CallStateListener;
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/Camera;->access$4002(Lcom/sec/android/app/camera/Camera;[Lcom/sec/android/app/camera/Camera$CallStateListener;)[Lcom/sec/android/app/camera/Camera$CallStateListener;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCallStateListener:[Lcom/sec/android/app/camera/Camera$CallStateListener;
     invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$4000(Lcom/sec/android/app/camera/Camera;)[Lcom/sec/android/app/camera/Camera$CallStateListener;
 
     move-result-object v3
@@ -185,7 +179,6 @@
     :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraExecutorManager:Lcom/sec/android/app/camera/CameraExecutorManager;
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$4100(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/CameraExecutorManager;
 
     move-result-object v2
@@ -200,20 +193,17 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v5}, Lcom/sec/android/app/camera/Camera;->access$000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v5
 
     invoke-direct {v3, v4, v5}, Lcom/sec/android/app/camera/CameraExecutorManager;-><init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/interfaces/CameraSettings;)V
 
-    # setter for: Lcom/sec/android/app/camera/Camera;->mCameraExecutorManager:Lcom/sec/android/app/camera/CameraExecutorManager;
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/Camera;->access$4102(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/sec/android/app/camera/CameraExecutorManager;
 
     :cond_4
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraExecutorManager:Lcom/sec/android/app/camera/CameraExecutorManager;
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$4100(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/CameraExecutorManager;
 
     move-result-object v2
@@ -236,7 +226,45 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraExecutorManager:Lcom/sec/android/app/camera/CameraExecutorManager;
+    invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->getIntent()Landroid/content/Intent;
+
+    move-result-object v2
+
+    const-string v3, "from-bixby"
+
+    invoke-virtual {v2, v3}, Landroid/content/Intent;->removeExtra(Ljava/lang/String;)V
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$4200(Lcom/sec/android/app/camera/Camera;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$400(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/Engine;
+
+    move-result-object v2
+
+    const/16 v3, 0x12c
+
+    invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleWait(I)V
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$400(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/Engine;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleSendCompletedMessageToBixby()V
+
+    goto/16 :goto_0
+
+    :cond_5
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
+
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$4100(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/CameraExecutorManager;
 
     move-result-object v2
@@ -245,12 +273,13 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$28;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraExecutorManager:Lcom/sec/android/app/camera/CameraExecutorManager;
     invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$4100(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/CameraExecutorManager;
 
     move-result-object v2
 
-    const-string v3, "Camera"
+    invoke-static {v7}, Lcom/sec/android/app/camera/executor/RulePathState;->getName(I)Ljava/lang/String;
+
+    move-result-object v3
 
     invoke-virtual {v2, v7, v3}, Lcom/sec/android/app/camera/CameraExecutorManager;->sendResult(ZLjava/lang/String;)V
 

@@ -65,7 +65,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->setZoomText(I)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->access$000(Lcom/sec/android/app/camera/menu/ZoomSliderMenu;I)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu$1;->this$0:Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
@@ -150,7 +149,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu$1;->this$0:Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->mCommonLevelText:Lcom/samsung/android/glview/GLText;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->access$100(Lcom/sec/android/app/camera/menu/ZoomSliderMenu;)Lcom/samsung/android/glview/GLText;
 
     move-result-object v1

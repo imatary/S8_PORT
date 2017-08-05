@@ -79,17 +79,14 @@
     goto :goto_0
 
     :pswitch_0
-    # getter for: Lcom/sec/android/app/camera/widget/gl/TickSlider;->mIsLongPressStarted:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->access$200(Lcom/sec/android/app/camera/widget/gl/TickSlider;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    # invokes: Lcom/sec/android/app/camera/widget/gl/TickSlider;->startSliderExpandAnimation()V
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->access$300(Lcom/sec/android/app/camera/widget/gl/TickSlider;)V
 
-    # invokes: Lcom/sec/android/app/camera/widget/gl/TickSlider;->stopLongPressTimer()V
     invoke-static {v0}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->access$400(Lcom/sec/android/app/camera/widget/gl/TickSlider;)V
 
     goto :goto_0

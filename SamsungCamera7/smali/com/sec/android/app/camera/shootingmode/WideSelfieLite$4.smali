@@ -54,12 +54,11 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite$4;->this$0:Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->access$100(Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
-    const v1, 0x7f0901a1
+    const v1, 0x7f0901a2
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -72,12 +71,11 @@
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite$4;->this$0:Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->access$100(Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
-    const v1, 0x7f0902c2
+    const v1, 0x7f0902c4
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -90,12 +88,11 @@
     :pswitch_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite$4;->this$0:Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->access$100(Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
-    const v1, 0x7f0902be
+    const v1, 0x7f0902c0
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -108,12 +105,11 @@
     :pswitch_4
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite$4;->this$0:Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;->access$100(Lcom/sec/android/app/camera/shootingmode/WideSelfieLite;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
-    const v1, 0x7f0902bd
+    const v1, 0x7f0902bf
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 

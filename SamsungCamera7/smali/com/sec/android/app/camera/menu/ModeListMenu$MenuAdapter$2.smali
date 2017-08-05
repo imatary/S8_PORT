@@ -74,7 +74,6 @@
 
     const/4 v2, 0x0
 
-    # setter for: Lcom/sec/android/app/camera/menu/ModeListMenu;->mIsNeedShowBaseMenu:Z
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/menu/ModeListMenu;->access$702(Lcom/sec/android/app/camera/menu/ModeListMenu;Z)Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$2;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
@@ -85,7 +84,6 @@
 
     iget-object v2, v2, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeListMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/ModeListMenu;->mOneTimeHideAnimation:Landroid/view/animation/Animation;
     invoke-static {v2}, Lcom/sec/android/app/camera/menu/ModeListMenu;->access$600(Lcom/sec/android/app/camera/menu/ModeListMenu;)Landroid/view/animation/Animation;
 
     move-result-object v2

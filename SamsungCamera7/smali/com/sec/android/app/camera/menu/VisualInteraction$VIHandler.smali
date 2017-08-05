@@ -67,7 +67,6 @@
     return-void
 
     :cond_0
-    # invokes: Lcom/sec/android/app/camera/menu/VisualInteraction;->handleMessage(Landroid/os/Message;)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$2100(Lcom/sec/android/app/camera/menu/VisualInteraction;Landroid/os/Message;)V
 
     goto :goto_0

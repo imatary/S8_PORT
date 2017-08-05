@@ -45,12 +45,10 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu$5;->this$0:Lcom/sec/android/app/camera/menu/BaseMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/BaseMenu;->handleOneHandZoomMessage()V
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/BaseMenu;->access$200(Lcom/sec/android/app/camera/menu/BaseMenu;)V
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu$5;->this$0:Lcom/sec/android/app/camera/menu/BaseMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BaseMenu;->mIsOneHandZoomShowing:Z
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/BaseMenu;->access$300(Lcom/sec/android/app/camera/menu/BaseMenu;)Z
 
     move-result v1
@@ -67,7 +65,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu$5;->this$0:Lcom/sec/android/app/camera/menu/BaseMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/BaseMenu;->mOneHandZoomAnimationHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/BaseMenu;->access$400(Lcom/sec/android/app/camera/menu/BaseMenu;)Landroid/os/Handler;
 
     move-result-object v1

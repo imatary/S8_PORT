@@ -1,11 +1,11 @@
 .class Lcom/samsung/android/glview/GLContext$7;
-.super Landroid/view/View$AccessibilityDelegate;
+.super Landroid/database/ContentObserver;
 .source "GLContext.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/samsung/android/glview/GLContext;-><init>(Landroid/content/Context;Lcom/samsung/android/glview/GLContext$GLInitializeListener;Landroid/opengl/GLSurfaceView;Z)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/samsung/android/glview/GLContext;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,52 +15,86 @@
 
 
 # instance fields
-.field mNodeProvider:Landroid/view/accessibility/AccessibilityNodeProvider;
-
 .field final synthetic this$0:Lcom/samsung/android/glview/GLContext;
 
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/glview/GLContext;)V
-    .locals 1
+.method constructor <init>(Lcom/samsung/android/glview/GLContext;Landroid/os/Handler;)V
+    .locals 0
 
     iput-object p1, p0, Lcom/samsung/android/glview/GLContext$7;->this$0:Lcom/samsung/android/glview/GLContext;
 
-    invoke-direct {p0}, Landroid/view/View$AccessibilityDelegate;-><init>()V
-
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/samsung/android/glview/GLContext$7;->mNodeProvider:Landroid/view/accessibility/AccessibilityNodeProvider;
+    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getAccessibilityNodeProvider(Landroid/view/View;)Landroid/view/accessibility/AccessibilityNodeProvider;
+.method public onChange(Z)V
     .locals 3
 
-    iget-object v0, p0, Lcom/samsung/android/glview/GLContext$7;->mNodeProvider:Landroid/view/accessibility/AccessibilityNodeProvider;
+    const/4 v2, 0x0
 
-    if-nez v0, :cond_0
+    iget-object v0, p0, Lcom/samsung/android/glview/GLContext$7;->this$0:Lcom/samsung/android/glview/GLContext;
 
-    new-instance v0, Lcom/samsung/android/glview/GLAccessibilityNodeProvider;
+    invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->access$500(Lcom/samsung/android/glview/GLContext;)Z
 
-    iget-object v1, p0, Lcom/samsung/android/glview/GLContext$7;->this$0:Lcom/samsung/android/glview/GLContext;
+    move-result v0
 
-    iget-object v2, p0, Lcom/samsung/android/glview/GLContext$7;->this$0:Lcom/samsung/android/glview/GLContext;
+    if-eqz v0, :cond_1
 
-    # getter for: Lcom/samsung/android/glview/GLContext;->mGLSurfaceView:Landroid/opengl/GLSurfaceView;
-    invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->access$000(Lcom/samsung/android/glview/GLContext;)Landroid/opengl/GLSurfaceView;
+    const-string v0, "GLContext"
 
-    move-result-object v2
+    const-string v1, "GLContext is pausing, not updated"
 
-    invoke-direct {v0, v1, v2}, Lcom/samsung/android/glview/GLAccessibilityNodeProvider;-><init>(Lcom/samsung/android/glview/GLContext;Landroid/opengl/GLSurfaceView;)V
-
-    iput-object v0, p0, Lcom/samsung/android/glview/GLContext$7;->mNodeProvider:Landroid/view/accessibility/AccessibilityNodeProvider;
+    invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v0, p0, Lcom/samsung/android/glview/GLContext$7;->mNodeProvider:Landroid/view/accessibility/AccessibilityNodeProvider;
+    :goto_0
+    return-void
 
-    return-object v0
+    :cond_1
+    sget-object v0, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "access_control_enabled"
+
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    iget-object v0, p0, Lcom/samsung/android/glview/GLContext$7;->this$0:Lcom/samsung/android/glview/GLContext;
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLContext;->enableOrientationListener()V
+
+    goto :goto_0
+
+    :cond_2
+    sget-object v0, Lcom/samsung/android/glview/GLContext;->mApplicationContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "access_control_enabled"
+
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    iget-object v0, p0, Lcom/samsung/android/glview/GLContext$7;->this$0:Lcom/samsung/android/glview/GLContext;
+
+    invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->access$600(Lcom/samsung/android/glview/GLContext;)V
+
+    goto :goto_0
 .end method

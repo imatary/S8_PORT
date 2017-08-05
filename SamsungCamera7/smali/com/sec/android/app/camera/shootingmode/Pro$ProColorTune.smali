@@ -74,7 +74,6 @@
 
     iput p2, p0, Lcom/sec/android/app/camera/shootingmode/Pro$ProColorTune;->mColortuneType:I
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Pro;->KEY_CAMERA_COLOR_TUNE_VALUE:[Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$600()[Ljava/lang/String;
 
     move-result-object v1
@@ -83,7 +82,6 @@
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Pro$ProColorTune;->mColorTuneKey:Ljava/lang/String;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Pro;->DEFAULT_CAMERA_COLOR_TUNE_VALUE:[Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$700()[Ljava/lang/String;
 
     move-result-object v1
@@ -180,7 +178,6 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Pro;->COLOR_TUNE_PRESET_DIVIDE_FACTOR:I
     invoke-static {}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$900()I
 
     move-result v0
@@ -189,7 +186,6 @@
     return v0
 
     :cond_0
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Pro;->COLOR_TUNE_TONE_DIVIDE_FACTOR:I
     invoke-static {}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$1000()I
 
     move-result v0
@@ -206,7 +202,6 @@
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Pro;->COLOR_TUNE_PRESET_MAX_OFFSET_VALUE:I
     invoke-static {}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$1100()I
 
     move-result v0
@@ -215,7 +210,6 @@
     return v0
 
     :cond_0
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Pro;->COLOR_TUNE_TONE_MAX_OFFSET_VALUE:I
     invoke-static {}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$1200()I
 
     move-result v0
@@ -633,7 +627,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Pro$ProColorTune;->this$0:Lcom/sec/android/app/camera/shootingmode/Pro;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Pro;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$800(Lcom/sec/android/app/camera/shootingmode/Pro;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v2
@@ -644,7 +637,6 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/Pro$ProColorTune;->mColorTuneKey:Ljava/lang/String;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Pro;->DEFAULT_CAMERA_COLOR_TUNE_VALUE:[Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$700()[Ljava/lang/String;
 
     move-result-object v4
@@ -801,7 +793,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Pro$ProColorTune;->this$0:Lcom/sec/android/app/camera/shootingmode/Pro;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Pro;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Pro;->access$800(Lcom/sec/android/app/camera/shootingmode/Pro;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0

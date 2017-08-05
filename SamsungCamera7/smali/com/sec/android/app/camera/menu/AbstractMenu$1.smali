@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/AbstractMenu$1;->this$0:Lcom/sec/android/app/camera/menu/AbstractMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/AbstractMenu;->mShowAnimation:Landroid/view/animation/Animation;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/AbstractMenu;->access$000(Lcom/sec/android/app/camera/menu/AbstractMenu;)Landroid/view/animation/Animation;
 
     move-result-object v0
@@ -52,7 +51,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/AbstractMenu$1;->this$0:Lcom/sec/android/app/camera/menu/AbstractMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/AbstractMenu;->mOneTimeShowAnimation:Landroid/view/animation/Animation;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/AbstractMenu;->access$100(Lcom/sec/android/app/camera/menu/AbstractMenu;)Landroid/view/animation/Animation;
 
     move-result-object v0
@@ -85,7 +83,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/AbstractMenu$1;->this$0:Lcom/sec/android/app/camera/menu/AbstractMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/AbstractMenu;->mOneTimeHideAnimation:Landroid/view/animation/Animation;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/AbstractMenu;->access$200(Lcom/sec/android/app/camera/menu/AbstractMenu;)Landroid/view/animation/Animation;
 
     move-result-object v0
@@ -115,7 +112,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/AbstractMenu$1;->this$0:Lcom/sec/android/app/camera/menu/AbstractMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/AbstractMenu;->mShowAnimation:Landroid/view/animation/Animation;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/AbstractMenu;->access$000(Lcom/sec/android/app/camera/menu/AbstractMenu;)Landroid/view/animation/Animation;
 
     move-result-object v0
@@ -128,7 +124,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/AbstractMenu$1;->this$0:Lcom/sec/android/app/camera/menu/AbstractMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/AbstractMenu;->mOneTimeShowAnimation:Landroid/view/animation/Animation;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/AbstractMenu;->access$100(Lcom/sec/android/app/camera/menu/AbstractMenu;)Landroid/view/animation/Animation;
 
     move-result-object v0
@@ -161,7 +156,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/AbstractMenu$1;->this$0:Lcom/sec/android/app/camera/menu/AbstractMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/AbstractMenu;->mOneTimeHideAnimation:Landroid/view/animation/Animation;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/AbstractMenu;->access$200(Lcom/sec/android/app/camera/menu/AbstractMenu;)Landroid/view/animation/Animation;
 
     move-result-object v0

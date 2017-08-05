@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$5;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
-    # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
     invoke-static {v0}, Lcom/sec/android/app/camera/CameraExecutorManager;->access$300(Lcom/sec/android/app/camera/CameraExecutorManager;)Lcom/sec/android/app/camera/Camera;
 
     move-result-object v0

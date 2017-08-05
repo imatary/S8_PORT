@@ -88,7 +88,6 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->blinkRecIconIndicator(Z)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->access$100(Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;Z)V
 
     goto :goto_0
@@ -100,7 +99,6 @@
 
     if-ne v1, v2, :cond_0
 
-    # invokes: Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->blinkRecTimeIndicator(Z)V
     invoke-static {v0, v3}, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->access$200(Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;Z)V
 
     goto :goto_0

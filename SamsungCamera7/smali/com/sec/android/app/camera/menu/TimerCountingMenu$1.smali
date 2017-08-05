@@ -108,17 +108,14 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu$1;->this$0:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
-    # invokes: Lcom/sec/android/app/camera/menu/TimerCountingMenu;->resetIntervalCaptureCount()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->access$000(Lcom/sec/android/app/camera/menu/TimerCountingMenu;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu$1;->this$0:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
-    # setter for: Lcom/sec/android/app/camera/menu/TimerCountingMenu;->mProgressDegree:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->access$102(Lcom/sec/android/app/camera/menu/TimerCountingMenu;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu$1;->this$0:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
-    # setter for: Lcom/sec/android/app/camera/menu/TimerCountingMenu;->mCurrentAnimationTime:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->access$202(Lcom/sec/android/app/camera/menu/TimerCountingMenu;I)I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu$1;->this$0:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
@@ -161,7 +158,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu$1;->this$0:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/TimerCountingMenu;->mTimerCancelListener:Lcom/sec/android/app/camera/menu/TimerCountingMenu$TimerCancelListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->access$300(Lcom/sec/android/app/camera/menu/TimerCountingMenu;)Lcom/sec/android/app/camera/menu/TimerCountingMenu$TimerCancelListener;
 
     move-result-object v0
@@ -170,7 +166,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu$1;->this$0:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
-    # getter for: Lcom/sec/android/app/camera/menu/TimerCountingMenu;->mTimerCancelListener:Lcom/sec/android/app/camera/menu/TimerCountingMenu$TimerCancelListener;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->access$300(Lcom/sec/android/app/camera/menu/TimerCountingMenu;)Lcom/sec/android/app/camera/menu/TimerCountingMenu$TimerCancelListener;
 
     move-result-object v0

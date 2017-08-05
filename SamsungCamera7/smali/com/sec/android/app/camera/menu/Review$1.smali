@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/Review$1;->this$0:Lcom/sec/android/app/camera/menu/Review;
 
-    # getter for: Lcom/sec/android/app/camera/menu/Review;->mPopupLayoutController:Lcom/sec/android/app/camera/interfaces/PopupLayoutController;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/Review;->access$000(Lcom/sec/android/app/camera/menu/Review;)Lcom/sec/android/app/camera/interfaces/PopupLayoutController;
 
     move-result-object v0

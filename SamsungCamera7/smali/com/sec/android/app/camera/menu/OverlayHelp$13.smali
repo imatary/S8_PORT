@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mInteractionGuideView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1700(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/view/View;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mInteractionGuideView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1700(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/view/View;
 
     move-result-object v0
@@ -61,7 +59,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mViewPager:Landroid/support/v4/view/ViewPager;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$200(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/support/v4/view/ViewPager;
 
     move-result-object v0
@@ -70,7 +67,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mViewPager:Landroid/support/v4/view/ViewPager;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$200(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/support/v4/view/ViewPager;
 
     move-result-object v0
@@ -80,7 +76,6 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mInteractionGuideView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1700(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/view/View;
 
     move-result-object v0
@@ -93,7 +88,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mInteractionGuideView:Landroid/view/View;
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1700(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/view/View;
 
     move-result-object v0
@@ -106,7 +100,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mInteractionGuideView:Landroid/view/View;
     invoke-static {v1}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1700(Lcom/sec/android/app/camera/menu/OverlayHelp;)Landroid/view/View;
 
     move-result-object v1
@@ -116,7 +109,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$13;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
-    # setter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mInteractionGuideView:Landroid/view/View;
     invoke-static {v0, v2}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$1702(Lcom/sec/android/app/camera/menu/OverlayHelp;Landroid/view/View;)Landroid/view/View;
 
     :cond_2

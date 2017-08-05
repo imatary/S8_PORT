@@ -91,7 +91,6 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Dual$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Dual;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Dual;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/Dual;->access$000(Lcom/sec/android/app/camera/shootingmode/Dual;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
@@ -100,7 +99,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Dual$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Dual;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Dual;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/Dual;->access$100(Lcom/sec/android/app/camera/shootingmode/Dual;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
@@ -111,7 +109,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Dual$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Dual;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/Dual;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/Dual;->access$000(Lcom/sec/android/app/camera/shootingmode/Dual;)Landroid/content/BroadcastReceiver;
 
     move-result-object v2
@@ -121,12 +118,10 @@
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Dual$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Dual;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Dual;->unregisterCameraOrientationListener()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/Dual;->access$200(Lcom/sec/android/app/camera/shootingmode/Dual;)V
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Dual$1;->this$0:Lcom/sec/android/app/camera/shootingmode/Dual;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/Dual;->clearDual()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/Dual;->access$300(Lcom/sec/android/app/camera/shootingmode/Dual;)V
 
     goto :goto_1

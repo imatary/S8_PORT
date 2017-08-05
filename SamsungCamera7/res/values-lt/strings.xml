@@ -310,6 +310,7 @@ taisymas"</string>
     <string name="camera_label">Fotoapar.</string>
     <string name="camera_modes">Fotoaparato režimai</string>
     <string name="camera_security_enter">Saugos strategija riboja naudojimąsi fotoaparatu.</string>
+    <string name="can_not_use_voice_control">Negalima naudoti valdymo balsu, kol įjungtas „Bixby“ žadinimas balsu.</string>
     <string name="cancel">Atšaukti</string>
     <string name="cannot_start_camcorder_msg">Skambučio metu negalima įrašyti vaizdo įrašo.</string>
     <string name="cannot_start_camera_msg">Neįmanoma naudoti fotoaparato skambinant.</string>
@@ -606,6 +607,7 @@ Jei sutinkate, ši teisė bus suteikta „Tag shot“, o jūsų daugiau nebebus 
     <string name="task_edge_title_selfie">"Daryti
 autoport."</string>
     <string name="temperature">Temperatūra</string>
+    <string name="temperature_too_high_camera_off">Temperatūra per aukšta, kad galėtumėte naudoti %1$s. Palaukite, kol telefonas atauš, tada naudokite %2$s.</string>
     <string name="temperature_too_high_flash_off">Neįmanoma įjungti blykstės. Bandykite dar kartą, kai atvės įrenginys.</string>
     <string name="temperature_too_high_record">Neįmanoma įrašyti vaizdo. Pabandykite, kai įrenginys atvės.</string>
     <string name="temperature_too_high_recording_disable">Įrašymas sustabdytas. Galite įrašyti įrenginiui atvėsus.</string>

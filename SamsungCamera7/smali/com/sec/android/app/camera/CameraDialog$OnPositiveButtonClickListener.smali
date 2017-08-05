@@ -84,7 +84,6 @@
 
     iget-object v9, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->dismissCameraDialog()V
     invoke-static {v9}, Lcom/sec/android/app/camera/CameraDialog;->access$1000(Lcom/sec/android/app/camera/CameraDialog;)V
 
     return-void
@@ -300,7 +299,6 @@
 
     const/4 v10, 0x0
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->setChangeStorageSettingDialogEnabled(Z)V
     invoke-static {v9, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1100(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     goto/16 :goto_0
@@ -481,7 +479,6 @@
 
     const/4 v10, 0x0
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->setLocationTagDialogEnabled(Z)V
     invoke-static {v9, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1300(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     goto/16 :goto_0
@@ -534,7 +531,6 @@
 
     const/4 v10, 0x0
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->setLocationTagDialogEnabled(Z)V
     invoke-static {v9, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1300(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     goto/16 :goto_0
@@ -589,7 +585,6 @@
 
     iget-object v9, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->getDialogCheckBoxValueForLocationTag()Z
     invoke-static {v9}, Lcom/sec/android/app/camera/CameraDialog;->access$1400(Lcom/sec/android/app/camera/CameraDialog;)Z
 
     move-result v9
@@ -599,7 +594,6 @@
     const/4 v9, 0x1
 
     :goto_1
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->setLocationTagDialogEnabled(Z)V
     invoke-static {v10, v9}, Lcom/sec/android/app/camera/CameraDialog;->access$1300(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     iget-object v9, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
@@ -673,7 +667,6 @@
 
     iget-object v9, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->getDialogCheckBoxValueForLocationTag()Z
     invoke-static {v9}, Lcom/sec/android/app/camera/CameraDialog;->access$1400(Lcom/sec/android/app/camera/CameraDialog;)Z
 
     move-result v9
@@ -683,7 +676,6 @@
     const/4 v9, 0x1
 
     :goto_2
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->setLocationTagDialogEnabled(Z)V
     invoke-static {v10, v9}, Lcom/sec/android/app/camera/CameraDialog;->access$1300(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     iget-object v9, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
@@ -798,7 +790,6 @@
 
     const/4 v10, 0x0
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->setLocationTagDialogEnabled(Z)V
     invoke-static {v9, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1300(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     goto/16 :goto_0
@@ -819,7 +810,6 @@
     :pswitch_12
     iget-object v9, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    # getter for: Lcom/sec/android/app/camera/CameraDialog;->mSeparatedShootingModeMessage:Ljava/lang/String;
     invoke-static {v9}, Lcom/sec/android/app/camera/CameraDialog;->access$1500(Lcom/sec/android/app/camera/CameraDialog;)Ljava/lang/String;
 
     move-result-object v9
@@ -1146,7 +1136,6 @@
 
     const/4 v10, 0x0
 
-    # invokes: Lcom/sec/android/app/camera/CameraDialog;->setQuickLaunchDialogEnabled(Z)V
     invoke-static {v9, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1200(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     const-string v9, "741"

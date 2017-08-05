@@ -43,7 +43,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$2;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mClickListener:Lcom/samsung/android/glview/GLView$ClickListener;
     invoke-static {v6}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$200(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/samsung/android/glview/GLView$ClickListener;
 
     move-result-object v6
@@ -52,12 +51,10 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$2;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # invokes: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->refreshButton()V
     invoke-static {v6}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$300(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)V
 
     iget-object v6, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$2;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v6}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$400(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v6
@@ -72,7 +69,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$2;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mCommandId:I
     invoke-static {v6}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$500(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)I
 
     move-result v6
@@ -88,7 +84,6 @@
     :goto_0
     iget-object v6, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$2;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mClickListener:Lcom/samsung/android/glview/GLView$ClickListener;
     invoke-static {v6}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$600(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/samsung/android/glview/GLView$ClickListener;
 
     move-result-object v6
@@ -103,7 +98,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$2;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mButton:Lcom/samsung/android/glview/GLSelectButton;
     invoke-static {v6}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$700(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/samsung/android/glview/GLSelectButton;
 
     move-result-object v6
@@ -118,7 +112,6 @@
 
     iget-object v7, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$2;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mCommandId:I
     invoke-static {v7}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$500(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)I
 
     move-result v7
@@ -133,7 +126,6 @@
 
     iget-object v6, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$2;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mButton:Lcom/samsung/android/glview/GLSelectButton;
     invoke-static {v6}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$700(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/samsung/android/glview/GLSelectButton;
 
     move-result-object v6
@@ -143,7 +135,6 @@
     :cond_0
     iget-object v6, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$2;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mButton:Lcom/samsung/android/glview/GLSelectButton;
     invoke-static {v6}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$700(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/samsung/android/glview/GLSelectButton;
 
     move-result-object v6
@@ -156,7 +147,6 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton$2;->this$0:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    # getter for: Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mButton:Lcom/samsung/android/glview/GLSelectButton;
     invoke-static {v4}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->access$700(Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;)Lcom/samsung/android/glview/GLSelectButton;
 
     move-result-object v4

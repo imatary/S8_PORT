@@ -145,7 +145,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader$DBObserver;->this$0:Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v5}, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->access$000(Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v5
@@ -211,7 +210,6 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader$DBObserver;->this$0:Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;
 
-    # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v5}, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->access$000(Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v5

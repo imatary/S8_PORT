@@ -80,7 +80,6 @@
     return-void
 
     :cond_1
-    # getter for: Lcom/sec/android/app/camera/shootingmode/HyperMotion;->mRecordingController:Lcom/sec/android/app/camera/shootingmode/RecordingController;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->access$400(Lcom/sec/android/app/camera/shootingmode/HyperMotion;)Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
     move-result-object v1
@@ -101,7 +100,6 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/HyperMotion;->blinkRecIconIndicator(Z)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/HyperMotion;->access$800(Lcom/sec/android/app/camera/shootingmode/HyperMotion;Z)V
 
     goto :goto_0

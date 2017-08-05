@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/provider/CameraLocationManager$1;->this$0:Lcom/sec/android/app/camera/provider/CameraLocationManager;
 
-    # invokes: Lcom/sec/android/app/camera/provider/CameraLocationManager;->startReceivingLocationUpdates()V
     invoke-static {v0}, Lcom/sec/android/app/camera/provider/CameraLocationManager;->access$000(Lcom/sec/android/app/camera/provider/CameraLocationManager;)V
 
     return-void

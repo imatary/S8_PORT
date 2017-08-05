@@ -126,8 +126,7 @@
 
     invoke-static {v1}, Lcom/sec/android/app/TraceWrapper;->traceBegin(Ljava/lang/String;)V
 
-    # invokes: Lcom/sec/android/app/camera/Camera;->handleMessage(Landroid/os/Message;)V
-    invoke-static {v0, p1}, Lcom/sec/android/app/camera/Camera;->access$4200(Lcom/sec/android/app/camera/Camera;Landroid/os/Message;)V
+    invoke-static {v0, p1}, Lcom/sec/android/app/camera/Camera;->access$4300(Lcom/sec/android/app/camera/Camera;Landroid/os/Message;)V
 
     invoke-static {}, Lcom/sec/android/app/TraceWrapper;->traceEnd()V
 

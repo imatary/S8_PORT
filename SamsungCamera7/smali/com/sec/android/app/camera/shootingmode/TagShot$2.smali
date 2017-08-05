@@ -62,7 +62,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$2;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->ACTION_SEC_CHANGE_SETTING:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$200(Lcom/sec/android/app/camera/shootingmode/TagShot;)Ljava/lang/String;
 
     move-result-object v1
@@ -75,7 +74,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$2;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->ACTION_SEC_AUTO_REFRESH:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$300(Lcom/sec/android/app/camera/shootingmode/TagShot;)Ljava/lang/String;
 
     move-result-object v1
@@ -88,7 +86,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$2;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->ACTION_SEC_CHANGE_WEATHER_DATA:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$400(Lcom/sec/android/app/camera/shootingmode/TagShot;)Ljava/lang/String;
 
     move-result-object v1
@@ -101,7 +98,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$2;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # getter for: Lcom/sec/android/app/camera/shootingmode/TagShot;->ACTION_WEATHER_DATE_SYNC:Ljava/lang/String;
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$500(Lcom/sec/android/app/camera/shootingmode/TagShot;)Ljava/lang/String;
 
     move-result-object v1
@@ -115,7 +111,6 @@
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/TagShot$2;->this$0:Lcom/sec/android/app/camera/shootingmode/TagShot;
 
-    # invokes: Lcom/sec/android/app/camera/shootingmode/TagShot;->setWeatherInfo(Landroid/content/Context;Landroid/content/Intent;)V
     invoke-static {v1, p1, p2}, Lcom/sec/android/app/camera/shootingmode/TagShot;->access$600(Lcom/sec/android/app/camera/shootingmode/TagShot;Landroid/content/Context;Landroid/content/Intent;)V
 
     :cond_1

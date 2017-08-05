@@ -85,7 +85,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$JpegPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentState:Lcom/sec/android/app/camera/engine/AbstractCeState;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1100(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/engine/AbstractCeState;
 
     move-result-object v0
@@ -100,7 +99,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$JpegPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->handlePictureTaken([B)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6100(Lcom/sec/android/app/camera/engine/CommonEngine;[B)V
 
     :goto_0
@@ -109,12 +107,10 @@
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$JpegPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->resetMultiFrameCapture()V
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6200(Lcom/sec/android/app/camera/engine/CommonEngine;)V
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$JpegPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -127,7 +123,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$JpegPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -140,7 +135,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$JpegPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
@@ -150,7 +144,6 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$JpegPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$800(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v0
@@ -176,7 +169,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$JpegPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mEffectProcessor:Lcom/samsung/android/secimaging/SecEffectProcessor;
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$600(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/samsung/android/secimaging/SecEffectProcessor;
 
     move-result-object v0
@@ -188,7 +180,6 @@
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$JpegPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->handlePictureTaken([B)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6100(Lcom/sec/android/app/camera/engine/CommonEngine;[B)V
 
     const-string v0, "AXLOG"

@@ -57,7 +57,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraApplication$1;->this$0:Lcom/sec/android/app/camera/CameraApplication;
 
-    # getter for: Lcom/sec/android/app/camera/CameraApplication;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
     invoke-static {v2}, Lcom/sec/android/app/camera/CameraApplication;->access$000(Lcom/sec/android/app/camera/CameraApplication;)Lcom/samsung/android/sdk/bixby/BixbyApi;
 
     move-result-object v2
@@ -96,7 +95,6 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraApplication$1;->this$0:Lcom/sec/android/app/camera/CameraApplication;
 
-    # getter for: Lcom/sec/android/app/camera/CameraApplication;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
     invoke-static {v2}, Lcom/sec/android/app/camera/CameraApplication;->access$000(Lcom/sec/android/app/camera/CameraApplication;)Lcom/samsung/android/sdk/bixby/BixbyApi;
 
     move-result-object v2

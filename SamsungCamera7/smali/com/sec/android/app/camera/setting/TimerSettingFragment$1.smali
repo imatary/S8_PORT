@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/setting/TimerSettingFragment$1;->this$0:Lcom/sec/android/app/camera/setting/TimerSettingFragment;
 
-    # invokes: Lcom/sec/android/app/camera/setting/TimerSettingFragment;->getTimer()I
     invoke-static {v0}, Lcom/sec/android/app/camera/setting/TimerSettingFragment;->access$000(Lcom/sec/android/app/camera/setting/TimerSettingFragment;)I
 
     move-result v0
@@ -78,7 +77,6 @@
 
     move-result v1
 
-    # invokes: Lcom/sec/android/app/camera/setting/TimerSettingFragment;->setInterval(I)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/setting/TimerSettingFragment;->access$100(Lcom/sec/android/app/camera/setting/TimerSettingFragment;I)V
 
     :cond_0

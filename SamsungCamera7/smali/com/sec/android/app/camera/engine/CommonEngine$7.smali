@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$7;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mRequestQueueEmptyListeners:Ljava/util/List;
     invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1200(Lcom/sec/android/app/camera/engine/CommonEngine;)Ljava/util/List;
 
     move-result-object v2
@@ -49,7 +48,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$7;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mRequestQueueEmptyListeners:Ljava/util/List;
     invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1200(Lcom/sec/android/app/camera/engine/CommonEngine;)Ljava/util/List;
 
     move-result-object v1

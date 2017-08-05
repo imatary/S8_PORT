@@ -57,7 +57,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment$5;->this$0:Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;
 
-    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
     invoke-static {v1}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$000(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     move-result-object v1

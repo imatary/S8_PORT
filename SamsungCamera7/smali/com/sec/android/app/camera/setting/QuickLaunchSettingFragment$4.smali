@@ -39,7 +39,6 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment$4;->this$0:Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;
 
-    # invokes: Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->dismissAllDialog()V
     invoke-static {v1}, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->access$500(Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;)V
 
     iget-object v1, p0, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment$4;->this$0:Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;
@@ -56,7 +55,6 @@
 
     check-cast v0, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;
 
-    # invokes: Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->updateSwitchBar()V
     invoke-static {v0}, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->access$600(Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;)V
 
     return-void
