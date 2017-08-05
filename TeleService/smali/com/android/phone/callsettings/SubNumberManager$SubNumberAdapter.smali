@@ -97,7 +97,7 @@
     move-result-object p2
 
     :cond_0
-    const v4, 0x7f100296
+    const v4, 0x7f100299
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -113,7 +113,7 @@
 
     check-cast v3, Landroid/widget/LinearLayout;
 
-    const v4, 0x7f100298
+    const v4, 0x7f10029b
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -123,7 +123,7 @@
 
     iput-object v4, p0, Lcom/android/phone/callsettings/SubNumberManager$SubNumberAdapter;->mTextViewType:Landroid/widget/TextView;
 
-    const v4, 0x7f100299
+    const v4, 0x7f10029c
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -133,7 +133,7 @@
 
     iput-object v4, p0, Lcom/android/phone/callsettings/SubNumberManager$SubNumberAdapter;->mTextViewPre:Landroid/widget/TextView;
 
-    const v4, 0x7f10029a
+    const v4, 0x7f10029d
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -143,7 +143,7 @@
 
     iput-object v4, p0, Lcom/android/phone/callsettings/SubNumberManager$SubNumberAdapter;->mTextViewPho:Landroid/widget/TextView;
 
-    const v4, 0x7f100297
+    const v4, 0x7f10029a
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -220,7 +220,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0cb1
+    const v5, 0x7f0d0d22
 
     invoke-virtual {v4, v5}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -400,7 +400,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0cb2
+    const v5, 0x7f0d0d23
 
     invoke-virtual {v4, v5}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

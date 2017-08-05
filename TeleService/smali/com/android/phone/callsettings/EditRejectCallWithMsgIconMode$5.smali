@@ -106,7 +106,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0980
+    const v1, 0x7f0d09e6
 
     invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->setTitle(I)V
 

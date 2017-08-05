@@ -649,7 +649,9 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v8, 0x1
+
+    invoke-static {v6, v7, v8}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -671,7 +673,9 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v8, 0x1
+
+    invoke-static {v6, v7, v8}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -691,7 +695,9 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v8, 0x1
+
+    invoke-static {v6, v7, v8}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -711,7 +717,9 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v8, 0x1
+
+    invoke-static {v6, v7, v8}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
@@ -731,7 +739,9 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v8, 0x1
+
+    invoke-static {v6, v7, v8}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
@@ -937,196 +947,6 @@
     invoke-virtual {p0, v0}, Lcom/android/phone/BackupRestoreReceiver;->checkMoreSetting(Ljava/util/ArrayList;)V
 
     return-object v0
-.end method
-
-.method private copy(Ljava/io/File;Ljava/io/File;)V
-    .locals 10
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    const/4 v3, 0x0
-
-    const/4 v6, 0x0
-
-    :try_start_0
-    new-instance v4, Ljava/io/FileInputStream;
-
-    invoke-direct {v4, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
-    :try_end_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    :try_start_1
-    new-instance v7, Ljava/io/FileOutputStream;
-
-    invoke-direct {v7, p2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
-    :try_end_1
-    .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_3
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_4
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    const/16 v8, 0x400
-
-    :try_start_2
-    new-array v0, v8, [B
-
-    :goto_0
-    if-eqz v4, :cond_2
-
-    invoke-virtual {v4, v0}, Ljava/io/InputStream;->read([B)I
-
-    move-result v5
-
-    if-lez v5, :cond_2
-
-    const/4 v8, 0x0
-
-    invoke-virtual {v7, v0, v8, v5}, Ljava/io/OutputStream;->write([BII)V
-    :try_end_2
-    .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_0
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_5
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v1
-
-    move-object v6, v7
-
-    move-object v3, v4
-
-    :goto_1
-    :try_start_3
-    const-string/jumbo v8, "BackupRestoreReceiver"
-
-    invoke-virtual {v1}, Ljava/io/FileNotFoundException;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v8, v9}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    if-eqz v3, :cond_0
-
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
-
-    :cond_0
-    if-eqz v6, :cond_1
-
-    invoke-virtual {v6}, Ljava/io/OutputStream;->close()V
-
-    :cond_1
-    :goto_2
-    return-void
-
-    :cond_2
-    if-eqz v4, :cond_3
-
-    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
-
-    :cond_3
-    if-eqz v7, :cond_4
-
-    invoke-virtual {v7}, Ljava/io/OutputStream;->close()V
-
-    :cond_4
-    move-object v6, v7
-
-    move-object v3, v4
-
-    goto :goto_2
-
-    :catch_1
-    move-exception v2
-
-    :goto_3
-    :try_start_4
-    const-string/jumbo v8, "BackupRestoreReceiver"
-
-    invoke-virtual {v2}, Ljava/io/IOException;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v8, v9}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
-    if-eqz v3, :cond_5
-
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
-
-    :cond_5
-    if-eqz v6, :cond_1
-
-    invoke-virtual {v6}, Ljava/io/OutputStream;->close()V
-
-    goto :goto_2
-
-    :catchall_0
-    move-exception v8
-
-    :goto_4
-    if-eqz v3, :cond_6
-
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
-
-    :cond_6
-    if-eqz v6, :cond_7
-
-    invoke-virtual {v6}, Ljava/io/OutputStream;->close()V
-
-    :cond_7
-    throw v8
-
-    :catchall_1
-    move-exception v8
-
-    move-object v3, v4
-
-    goto :goto_4
-
-    :catchall_2
-    move-exception v8
-
-    move-object v6, v7
-
-    move-object v3, v4
-
-    goto :goto_4
-
-    :catch_2
-    move-exception v1
-
-    goto :goto_1
-
-    :catch_3
-    move-exception v1
-
-    move-object v3, v4
-
-    goto :goto_1
-
-    :catch_4
-    move-exception v2
-
-    move-object v3, v4
-
-    goto :goto_3
-
-    :catch_5
-    move-exception v2
-
-    move-object v6, v7
-
-    move-object v3, v4
-
-    goto :goto_3
 .end method
 
 .method private deleteDecryptedFiles()V
@@ -1429,20 +1249,18 @@
 .end method
 
 .method private getBackupAutoRejectNumber(Ljava/lang/String;)Ljava/io/File;
-    .locals 17
+    .locals 19
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    const/4 v7, 0x0
+    const/4 v8, 0x0
+
+    const/16 v16, 0x0
 
     const/4 v5, 0x0
-
-    const/4 v9, 0x0
-
-    const/4 v13, 0x0
 
     :try_start_0
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/BackupRestoreReceiver;->getAutoRejectNumber()Landroid/database/Cursor;
@@ -1453,314 +1271,477 @@
 
     invoke-interface {v5}, Landroid/database/Cursor;->getCount()I
     :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_b
+    .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
-    move-result v15
+    move-result v14
 
-    if-gtz v15, :cond_2
+    if-gtz v14, :cond_3
 
     :cond_0
-    const/4 v15, 0x0
+    const/4 v14, 0x0
 
     if-eqz v5, :cond_1
 
+    :try_start_1
     invoke-interface {v5}, Landroid/database/Cursor;->close()V
+    :try_end_1
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
 
     :cond_1
-    return-object v15
-
-    :cond_2
-    :try_start_1
-    new-instance v8, Ljava/io/File;
-
-    new-instance v15, Ljava/lang/StringBuilder;
-
-    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    const-string/jumbo v16, "/com.android.phone_autorejectnum.csv"
-
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v15
-
-    invoke-direct {v8, v15}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    :goto_0
+    if-eqz v16, :cond_2
 
     :try_start_2
-    invoke-virtual {v8}, Ljava/io/File;->exists()Z
-
-    move-result v15
-
-    if-nez v15, :cond_3
-
-    invoke-virtual {v8}, Ljava/io/File;->createNewFile()Z
-
-    :cond_3
-    if-eqz v5, :cond_6
-
-    invoke-interface {v5}, Landroid/database/Cursor;->getCount()I
-
-    move-result v15
-
-    if-lez v15, :cond_6
-
-    new-instance v12, Ljava/io/FileOutputStream;
-
-    invoke-direct {v12, v8}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    throw v16
     :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    :try_start_3
-    new-instance v14, Ljava/io/OutputStreamWriter;
-
-    invoke-direct {v14, v12}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
-    :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
-
-    :try_start_4
-    const-string/jumbo v15, "_id,autoreject_number,autoreject_checked,autoreject_match"
-
-    invoke-virtual {v14, v15}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
-
-    const-string/jumbo v15, "\n"
-
-    invoke-virtual {v14, v15}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
-
-    invoke-interface {v5}, Landroid/database/Cursor;->moveToFirst()Z
-
-    move-result v15
-
-    if-eqz v15, :cond_5
-
-    :cond_4
-    const/4 v15, 0x0
-
-    invoke-interface {v5, v15}, Landroid/database/Cursor;->getLong(I)J
-
-    move-result-wide v10
-
-    const/4 v15, 0x1
-
-    invoke-interface {v5, v15}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v4
-
-    const/4 v15, 0x2
-
-    invoke-interface {v5, v15}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v2
-
-    const/4 v15, 0x3
-
-    invoke-interface {v5, v15}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v3
-
-    new-instance v15, Ljava/lang/StringBuilder;
-
-    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v15, v10, v11}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    const-string/jumbo v16, ","
-
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    const-string/jumbo v16, ","
-
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    const-string/jumbo v16, ","
-
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v15
-
-    invoke-virtual {v14, v15}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
-
-    const-string/jumbo v15, "\n"
-
-    invoke-virtual {v14, v15}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
-
-    invoke-interface {v5}, Landroid/database/Cursor;->moveToNext()Z
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
-    .catchall {:try_start_4 .. :try_end_4} :catchall_3
-
-    move-result v15
-
-    if-nez v15, :cond_4
-
-    :cond_5
-    move-object v13, v14
-
-    move-object v9, v12
-
-    :cond_6
-    if-eqz v5, :cond_7
-
-    invoke-interface {v5}, Landroid/database/Cursor;->close()V
-
-    :cond_7
-    if-eqz v13, :cond_8
-
-    invoke-virtual {v13}, Ljava/io/OutputStreamWriter;->close()V
-
-    :cond_8
-    if-eqz v9, :cond_9
-
-    invoke-virtual {v9}, Ljava/io/FileOutputStream;->close()V
-
-    :cond_9
-    move-object v7, v8
-
-    :cond_a
-    :goto_0
-    return-object v7
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
 
     :catch_0
     move-exception v6
 
     :goto_1
-    :try_start_5
-    const-string/jumbo v15, "BackupRestoreReceiver"
+    const-string/jumbo v14, "BackupRestoreReceiver"
 
     invoke-virtual {v6}, Ljava/io/IOException;->toString()Ljava/lang/String;
 
-    move-result-object v16
+    move-result-object v15
 
-    invoke-static/range {v15 .. v16}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+    const/16 v16, 0x1
 
-    if-eqz v5, :cond_b
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    invoke-interface {v5}, Landroid/database/Cursor;->close()V
+    :goto_2
+    return-object v8
 
-    :cond_b
-    if-eqz v13, :cond_c
-
-    invoke-virtual {v13}, Ljava/io/OutputStreamWriter;->close()V
-
-    :cond_c
-    if-eqz v9, :cond_a
-
-    invoke-virtual {v9}, Ljava/io/FileOutputStream;->close()V
+    :catch_1
+    move-exception v16
 
     goto :goto_0
+
+    :cond_2
+    return-object v14
+
+    :cond_3
+    :try_start_3
+    new-instance v9, Ljava/io/File;
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    const-string/jumbo v15, "/com.android.phone_autorejectnum.csv"
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-direct {v9, v14}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    :try_end_3
+    .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_b
+    .catchall {:try_start_3 .. :try_end_3} :catchall_3
+
+    :try_start_4
+    invoke-virtual {v9}, Ljava/io/File;->exists()Z
+
+    move-result v14
+
+    if-nez v14, :cond_4
+
+    invoke-virtual {v9}, Ljava/io/File;->createNewFile()Z
+
+    :cond_4
+    if-eqz v5, :cond_c
+
+    invoke-interface {v5}, Landroid/database/Cursor;->getCount()I
+    :try_end_4
+    .catch Ljava/lang/Throwable; {:try_start_4 .. :try_end_4} :catch_2
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+
+    move-result v14
+
+    if-lez v14, :cond_c
+
+    const/4 v15, 0x0
+
+    const/4 v12, 0x0
+
+    :try_start_5
+    new-instance v13, Ljava/io/OutputStreamWriter;
+
+    new-instance v14, Ljava/io/FileOutputStream;
+
+    invoke-direct {v14, v9}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    invoke-direct {v13, v14}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
+    :try_end_5
+    .catch Ljava/lang/Throwable; {:try_start_5 .. :try_end_5} :catch_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_4
+
+    :try_start_6
+    const-string/jumbo v14, "_id,autoreject_number,autoreject_checked,autoreject_match"
+
+    invoke-virtual {v13, v14}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+
+    const-string/jumbo v14, "\n"
+
+    invoke-virtual {v13, v14}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+
+    invoke-interface {v5}, Landroid/database/Cursor;->moveToFirst()Z
+
+    move-result v14
+
+    if-eqz v14, :cond_6
+
+    :cond_5
+    const/4 v14, 0x0
+
+    invoke-interface {v5, v14}, Landroid/database/Cursor;->getLong(I)J
+
+    move-result-wide v10
+
+    const/4 v14, 0x1
+
+    invoke-interface {v5, v14}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    const/4 v14, 0x2
+
+    invoke-interface {v5, v14}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v2
+
+    const/4 v14, 0x3
+
+    invoke-interface {v5, v14}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v3
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v14, v10, v11}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    const-string/jumbo v17, ","
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    const-string/jumbo v17, ","
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    const-string/jumbo v17, ","
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-virtual {v13, v14}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+
+    const-string/jumbo v14, "\n"
+
+    invoke-virtual {v13, v14}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+
+    invoke-interface {v5}, Landroid/database/Cursor;->moveToNext()Z
+    :try_end_6
+    .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_c
+    .catchall {:try_start_6 .. :try_end_6} :catchall_5
+
+    move-result v14
+
+    if-nez v14, :cond_5
+
+    :cond_6
+    if-eqz v13, :cond_7
+
+    :try_start_7
+    invoke-virtual {v13}, Ljava/io/OutputStreamWriter;->close()V
+    :try_end_7
+    .catch Ljava/lang/Throwable; {:try_start_7 .. :try_end_7} :catch_4
+    .catchall {:try_start_7 .. :try_end_7} :catchall_2
+
+    :cond_7
+    :goto_3
+    if-eqz v15, :cond_c
+
+    :try_start_8
+    throw v15
+    :try_end_8
+    .catch Ljava/lang/Throwable; {:try_start_8 .. :try_end_8} :catch_2
+    .catchall {:try_start_8 .. :try_end_8} :catchall_2
+
+    :catch_2
+    move-exception v14
+
+    move-object v8, v9
+
+    :goto_4
+    :try_start_9
+    throw v14
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_0
 
     :catchall_0
     move-exception v15
 
-    :goto_2
-    if-eqz v5, :cond_d
+    move-object/from16 v18, v15
 
+    move-object v15, v14
+
+    move-object/from16 v14, v18
+
+    :goto_5
+    if-eqz v5, :cond_8
+
+    :try_start_a
     invoke-interface {v5}, Landroid/database/Cursor;->close()V
+    :try_end_a
+    .catch Ljava/lang/Throwable; {:try_start_a .. :try_end_a} :catch_9
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_3
 
-    :cond_d
-    if-eqz v13, :cond_e
+    :cond_8
+    :goto_6
+    if-eqz v15, :cond_10
 
-    invoke-virtual {v13}, Ljava/io/OutputStreamWriter;->close()V
-
-    :cond_e
-    if-eqz v9, :cond_f
-
-    invoke-virtual {v9}, Ljava/io/FileOutputStream;->close()V
-
-    :cond_f
+    :try_start_b
     throw v15
+    :try_end_b
+    .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_3
+
+    :catch_3
+    move-exception v7
+
+    :goto_7
+    const-string/jumbo v14, "BackupRestoreReceiver"
+
+    invoke-virtual {v7}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    const/16 v16, 0x1
+
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    goto/16 :goto_2
+
+    :catch_4
+    move-exception v15
+
+    goto :goto_3
+
+    :catch_5
+    move-exception v14
+
+    :goto_8
+    :try_start_c
+    throw v14
+    :try_end_c
+    .catchall {:try_start_c .. :try_end_c} :catchall_1
 
     :catchall_1
     move-exception v15
 
-    move-object v7, v8
+    move-object/from16 v18, v15
 
-    goto :goto_2
+    move-object v15, v14
+
+    move-object/from16 v14, v18
+
+    :goto_9
+    if-eqz v12, :cond_9
+
+    :try_start_d
+    invoke-virtual {v12}, Ljava/io/OutputStreamWriter;->close()V
+    :try_end_d
+    .catch Ljava/lang/Throwable; {:try_start_d .. :try_end_d} :catch_6
+    .catchall {:try_start_d .. :try_end_d} :catchall_2
+
+    :cond_9
+    :goto_a
+    if-eqz v15, :cond_b
+
+    :try_start_e
+    throw v15
 
     :catchall_2
-    move-exception v15
+    move-exception v14
 
-    move-object v9, v12
+    move-object/from16 v15, v16
 
-    move-object v7, v8
+    move-object v8, v9
 
-    goto :goto_2
+    goto :goto_5
+
+    :catch_6
+    move-exception v17
+
+    if-nez v15, :cond_a
+
+    move-object/from16 v15, v17
+
+    goto :goto_a
+
+    :cond_a
+    move-object/from16 v0, v17
+
+    if-eq v15, v0, :cond_9
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v15, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    goto :goto_a
+
+    :cond_b
+    throw v14
+    :try_end_e
+    .catch Ljava/lang/Throwable; {:try_start_e .. :try_end_e} :catch_2
+    .catchall {:try_start_e .. :try_end_e} :catchall_2
+
+    :cond_c
+    if-eqz v5, :cond_d
+
+    :try_start_f
+    invoke-interface {v5}, Landroid/database/Cursor;->close()V
+    :try_end_f
+    .catch Ljava/lang/Throwable; {:try_start_f .. :try_end_f} :catch_8
+    .catch Ljava/io/IOException; {:try_start_f .. :try_end_f} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_f .. :try_end_f} :catch_a
+
+    :cond_d
+    :goto_b
+    if-eqz v16, :cond_e
+
+    :try_start_10
+    throw v16
+    :try_end_10
+    .catch Ljava/io/IOException; {:try_start_10 .. :try_end_10} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_10 .. :try_end_10} :catch_a
+
+    :catch_7
+    move-exception v6
+
+    move-object v8, v9
+
+    goto/16 :goto_1
+
+    :catch_8
+    move-exception v16
+
+    goto :goto_b
+
+    :cond_e
+    move-object v8, v9
+
+    goto/16 :goto_2
+
+    :catch_9
+    move-exception v16
+
+    if-nez v15, :cond_f
+
+    move-object/from16 v15, v16
+
+    goto :goto_6
+
+    :cond_f
+    move-object/from16 v0, v16
+
+    if-eq v15, v0, :cond_8
+
+    :try_start_11
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    goto :goto_6
+
+    :cond_10
+    throw v14
+    :try_end_11
+    .catch Ljava/io/IOException; {:try_start_11 .. :try_end_11} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_11 .. :try_end_11} :catch_3
+
+    :catch_a
+    move-exception v7
+
+    move-object v8, v9
+
+    goto :goto_7
 
     :catchall_3
-    move-exception v15
+    move-exception v14
 
-    move-object v13, v14
+    move-object/from16 v15, v16
 
-    move-object v9, v12
+    goto :goto_5
 
-    move-object v7, v8
+    :catch_b
+    move-exception v14
 
-    goto :goto_2
+    goto :goto_4
 
-    :catch_1
-    move-exception v6
+    :catchall_4
+    move-exception v14
 
-    move-object v7, v8
+    goto :goto_9
 
-    goto :goto_1
+    :catchall_5
+    move-exception v14
 
-    :catch_2
-    move-exception v6
+    move-object v12, v13
 
-    move-object v9, v12
+    goto :goto_9
 
-    move-object v7, v8
+    :catch_c
+    move-exception v14
 
-    goto :goto_1
+    move-object v12, v13
 
-    :catch_3
-    move-exception v6
-
-    move-object v13, v14
-
-    move-object v9, v12
-
-    move-object v7, v8
-
-    goto :goto_1
+    goto :goto_8
 .end method
 
 .method private getBackupPreference(Ljava/lang/String;)Ljava/io/File;
@@ -1814,7 +1795,7 @@
 
     iget-object v4, p0, Lcom/android/phone/BackupRestoreReceiver;->mDestinationFile:Ljava/io/File;
 
-    invoke-direct {p0, v3, v4}, Lcom/android/phone/BackupRestoreReceiver;->copy(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {v3, v4}, Lcom/android/phone/utils/FileUtils;->copy(Ljava/io/File;Ljava/io/File;)V
 
     invoke-static {}, Ljavax/xml/parsers/DocumentBuilderFactory;->newInstance()Ljavax/xml/parsers/DocumentBuilderFactory;
 
@@ -1850,20 +1831,18 @@
 .end method
 
 .method private getBackupQuickReplyMessage(Ljava/lang/String;)Ljava/io/File;
-    .locals 19
+    .locals 21
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    const/4 v5, 0x0
+    const/4 v6, 0x0
+
+    const/16 v17, 0x0
 
     const/4 v2, 0x0
-
-    const/4 v10, 0x0
-
-    const/4 v14, 0x0
 
     :try_start_0
     invoke-direct/range {p0 .. p0}, Lcom/android/phone/BackupRestoreReceiver;->getQuickReplyMessage()Landroid/database/Cursor;
@@ -1874,284 +1853,1299 @@
 
     invoke-interface {v2}, Landroid/database/Cursor;->getCount()I
     :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_b
+    .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
-    move-result v16
+    move-result v15
 
-    if-gtz v16, :cond_2
+    if-gtz v15, :cond_3
 
     :cond_0
-    const/16 v16, 0x0
+    const/4 v15, 0x0
 
     if-eqz v2, :cond_1
 
+    :try_start_1
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
+    :try_end_1
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
 
     :cond_1
-    return-object v16
-
-    :cond_2
-    :try_start_1
-    new-instance v6, Ljava/io/File;
-
-    new-instance v16, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, p1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v16
-
-    const-string/jumbo v17, "/com.android.phone_quickreplymessage.csv"
-
-    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v16
-
-    invoke-virtual/range {v16 .. v16}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v16
-
-    move-object/from16 v0, v16
-
-    invoke-direct {v6, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    :goto_0
+    if-eqz v17, :cond_2
 
     :try_start_2
-    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+    throw v17
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
 
-    move-result v16
+    :catch_0
+    move-exception v3
 
-    if-nez v16, :cond_3
+    :goto_1
+    const-string/jumbo v15, "BackupRestoreReceiver"
 
-    invoke-virtual {v6}, Ljava/io/File;->createNewFile()Z
+    invoke-virtual {v3}, Ljava/io/IOException;->toString()Ljava/lang/String;
+
+    move-result-object v16
+
+    const/16 v17, 0x1
+
+    invoke-static/range {v15 .. v17}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    :goto_2
+    return-object v6
+
+    :catch_1
+    move-exception v17
+
+    goto :goto_0
+
+    :cond_2
+    return-object v15
 
     :cond_3
-    if-eqz v2, :cond_5
-
-    invoke-interface {v2}, Landroid/database/Cursor;->getCount()I
-
-    move-result v16
-
-    if-lez v16, :cond_5
-
-    new-instance v11, Ljava/io/FileOutputStream;
-
-    invoke-direct {v11, v6}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
     :try_start_3
-    new-instance v15, Ljava/io/OutputStreamWriter;
+    new-instance v7, Ljava/io/File;
 
-    invoke-direct {v15, v11}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
+    new-instance v15, Ljava/lang/StringBuilder;
+
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    const-string/jumbo v16, "/com.android.phone_quickreplymessage.csv"
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-direct {v7, v15}, Ljava/io/File;-><init>(Ljava/lang/String;)V
     :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+    .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_b
+    .catchall {:try_start_3 .. :try_end_3} :catchall_3
 
     :try_start_4
-    const-string/jumbo v16, "_id\tquickreply_message"
+    invoke-virtual {v7}, Ljava/io/File;->exists()Z
 
-    invoke-virtual/range {v15 .. v16}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+    move-result v15
 
-    const-string/jumbo v16, "\n"
+    if-nez v15, :cond_4
 
-    invoke-virtual/range {v15 .. v16}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+    invoke-virtual {v7}, Ljava/io/File;->createNewFile()Z
 
-    invoke-interface {v2}, Landroid/database/Cursor;->moveToFirst()Z
+    :cond_4
+    if-eqz v2, :cond_c
 
-    move-result v16
+    invoke-interface {v2}, Landroid/database/Cursor;->getCount()I
+    :try_end_4
+    .catch Ljava/lang/Throwable; {:try_start_4 .. :try_end_4} :catch_2
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    if-eqz v16, :cond_f
+    move-result v15
+
+    if-lez v15, :cond_c
 
     const/16 v16, 0x0
 
-    move/from16 v0, v16
+    const/4 v13, 0x0
 
-    invoke-interface {v2, v0}, Landroid/database/Cursor;->getLong(I)J
+    :try_start_5
+    new-instance v14, Ljava/io/OutputStreamWriter;
+
+    new-instance v15, Ljava/io/FileOutputStream;
+
+    invoke-direct {v15, v7}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    invoke-direct {v14, v15}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
+    :try_end_5
+    .catch Ljava/lang/Throwable; {:try_start_5 .. :try_end_5} :catch_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_4
+
+    :try_start_6
+    const-string/jumbo v15, "_id\tquickreply_message"
+
+    invoke-virtual {v14, v15}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+
+    const-string/jumbo v15, "\n"
+
+    invoke-virtual {v14, v15}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+
+    invoke-interface {v2}, Landroid/database/Cursor;->moveToFirst()Z
+
+    move-result v15
+
+    if-eqz v15, :cond_6
+
+    const/4 v15, 0x0
+
+    invoke-interface {v2, v15}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v8
 
-    const/16 v16, 0x1
+    const/4 v15, 0x1
 
-    move/from16 v0, v16
+    invoke-interface {v2, v15}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    invoke-interface {v2, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    move-result-object v11
 
-    move-result-object v12
-
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
+    iget-object v15, v0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
 
-    move-object/from16 v16, v0
+    invoke-static {v15}, Lcom/android/phone/edge/GlanceReplyManager;->getGlanceReplyState(Landroid/content/Context;)Z
 
-    invoke-static/range {v16 .. v16}, Lcom/android/phone/edge/GlanceReplyManager;->getGlanceReplyState(Landroid/content/Context;)Z
+    move-result v12
 
-    move-result v13
+    const-string/jumbo v15, "BackupRestoreReceiver"
 
-    const-string/jumbo v16, "BackupRestoreReceiver"
+    new-instance v18, Ljava/lang/StringBuilder;
 
-    new-instance v17, Ljava/lang/StringBuilder;
+    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct/range {v17 .. v17}, Ljava/lang/StringBuilder;-><init>()V
+    const-string/jumbo v19, "original string : "
 
-    const-string/jumbo v18, "original string : "
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v18
 
-    move-result-object v17
+    move-object/from16 v0, v18
 
-    move-object/from16 v0, v17
+    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v18
 
-    move-result-object v17
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual/range {v17 .. v17}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v18
 
-    move-result-object v17
+    const/16 v19, 0x1
 
-    const/16 v18, 0x1
+    move-object/from16 v0, v18
 
-    invoke-static/range {v16 .. v18}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    move/from16 v1, v19
 
-    const-string/jumbo v16, "UTF-8"
+    invoke-static {v15, v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    const-string/jumbo v15, "UTF-8"
+
+    invoke-virtual {v11, v15}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+
+    move-result-object v10
+
+    const/4 v15, 0x2
+
+    invoke-static {v10, v15}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string/jumbo v15, "BackupRestoreReceiver"
+
+    new-instance v18, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v19, "encode string : "
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v18
+
+    const/16 v19, 0x1
+
+    move-object/from16 v0, v18
+
+    move/from16 v1, v19
+
+    invoke-static {v15, v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v15
+
+    if-eqz v15, :cond_5
+
+    new-instance v5, Ljava/lang/String;
+
+    invoke-direct {v5, v11}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :cond_5
+    const-string/jumbo v15, "BackupRestoreReceiver"
+
+    new-instance v18, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v19, "backup quickreplymessage : "
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v18
+
+    const/16 v19, 0x1
+
+    move-object/from16 v0, v18
+
+    move/from16 v1, v19
+
+    invoke-static {v15, v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    new-instance v15, Ljava/lang/StringBuilder;
+
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v15, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    const-string/jumbo v18, "\t"
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    const-string/jumbo v18, "\t"
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15, v12}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-virtual {v14, v15}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+
+    const-string/jumbo v15, "BackupRestoreReceiver"
+
+    new-instance v18, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v19, "outputStream : "
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v18
+
+    const/16 v19, 0x1
+
+    move-object/from16 v0, v18
+
+    move/from16 v1, v19
+
+    invoke-static {v15, v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    :try_end_6
+    .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_c
+    .catchall {:try_start_6 .. :try_end_6} :catchall_5
+
+    :cond_6
+    if-eqz v14, :cond_7
+
+    :try_start_7
+    invoke-virtual {v14}, Ljava/io/OutputStreamWriter;->close()V
+    :try_end_7
+    .catch Ljava/lang/Throwable; {:try_start_7 .. :try_end_7} :catch_4
+    .catchall {:try_start_7 .. :try_end_7} :catchall_2
+
+    :cond_7
+    :goto_3
+    if-eqz v16, :cond_c
+
+    :try_start_8
+    throw v16
+    :try_end_8
+    .catch Ljava/lang/Throwable; {:try_start_8 .. :try_end_8} :catch_2
+    .catchall {:try_start_8 .. :try_end_8} :catchall_2
+
+    :catch_2
+    move-exception v15
+
+    move-object v6, v7
+
+    :goto_4
+    :try_start_9
+    throw v15
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_0
+
+    :catchall_0
+    move-exception v16
+
+    move-object/from16 v20, v16
+
+    move-object/from16 v16, v15
+
+    move-object/from16 v15, v20
+
+    :goto_5
+    if-eqz v2, :cond_8
+
+    :try_start_a
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+    :try_end_a
+    .catch Ljava/lang/Throwable; {:try_start_a .. :try_end_a} :catch_9
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_3
+
+    :cond_8
+    :goto_6
+    if-eqz v16, :cond_10
+
+    :try_start_b
+    throw v16
+    :try_end_b
+    .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_3
+
+    :catch_3
+    move-exception v4
+
+    :goto_7
+    const-string/jumbo v15, "BackupRestoreReceiver"
+
+    invoke-virtual {v4}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v16
+
+    const/16 v17, 0x1
+
+    invoke-static/range {v15 .. v17}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    goto/16 :goto_2
+
+    :catch_4
+    move-exception v16
+
+    goto :goto_3
+
+    :catch_5
+    move-exception v15
+
+    :goto_8
+    :try_start_c
+    throw v15
+    :try_end_c
+    .catchall {:try_start_c .. :try_end_c} :catchall_1
+
+    :catchall_1
+    move-exception v16
+
+    move-object/from16 v20, v16
+
+    move-object/from16 v16, v15
+
+    move-object/from16 v15, v20
+
+    :goto_9
+    if-eqz v13, :cond_9
+
+    :try_start_d
+    invoke-virtual {v13}, Ljava/io/OutputStreamWriter;->close()V
+    :try_end_d
+    .catch Ljava/lang/Throwable; {:try_start_d .. :try_end_d} :catch_6
+    .catchall {:try_start_d .. :try_end_d} :catchall_2
+
+    :cond_9
+    :goto_a
+    if-eqz v16, :cond_b
+
+    :try_start_e
+    throw v16
+
+    :catchall_2
+    move-exception v15
+
+    move-object/from16 v16, v17
+
+    move-object v6, v7
+
+    goto :goto_5
+
+    :catch_6
+    move-exception v18
+
+    if-nez v16, :cond_a
+
+    move-object/from16 v16, v18
+
+    goto :goto_a
+
+    :cond_a
+    move-object/from16 v0, v16
+
+    move-object/from16 v1, v18
+
+    if-eq v0, v1, :cond_9
 
     move-object/from16 v0, v16
 
-    invoke-virtual {v12, v0}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+    move-object/from16 v1, v18
+
+    invoke-virtual {v0, v1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    goto :goto_a
+
+    :cond_b
+    throw v15
+    :try_end_e
+    .catch Ljava/lang/Throwable; {:try_start_e .. :try_end_e} :catch_2
+    .catchall {:try_start_e .. :try_end_e} :catchall_2
+
+    :cond_c
+    if-eqz v2, :cond_d
+
+    :try_start_f
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+    :try_end_f
+    .catch Ljava/lang/Throwable; {:try_start_f .. :try_end_f} :catch_8
+    .catch Ljava/io/IOException; {:try_start_f .. :try_end_f} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_f .. :try_end_f} :catch_a
+
+    :cond_d
+    :goto_b
+    if-eqz v17, :cond_e
+
+    :try_start_10
+    throw v17
+    :try_end_10
+    .catch Ljava/io/IOException; {:try_start_10 .. :try_end_10} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_10 .. :try_end_10} :catch_a
+
+    :catch_7
+    move-exception v3
+
+    move-object v6, v7
+
+    goto/16 :goto_1
+
+    :catch_8
+    move-exception v17
+
+    goto :goto_b
+
+    :cond_e
+    move-object v6, v7
+
+    goto/16 :goto_2
+
+    :catch_9
+    move-exception v17
+
+    if-nez v16, :cond_f
+
+    move-object/from16 v16, v17
+
+    goto :goto_6
+
+    :cond_f
+    move-object/from16 v0, v16
+
+    move-object/from16 v1, v17
+
+    if-eq v0, v1, :cond_8
+
+    :try_start_11
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    goto :goto_6
+
+    :cond_10
+    throw v15
+    :try_end_11
+    .catch Ljava/io/IOException; {:try_start_11 .. :try_end_11} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_11 .. :try_end_11} :catch_3
+
+    :catch_a
+    move-exception v4
+
+    move-object v6, v7
+
+    goto :goto_7
+
+    :catchall_3
+    move-exception v15
+
+    move-object/from16 v16, v17
+
+    goto :goto_5
+
+    :catch_b
+    move-exception v15
+
+    goto :goto_4
+
+    :catchall_4
+    move-exception v15
+
+    goto :goto_9
+
+    :catchall_5
+    move-exception v15
+
+    move-object v13, v14
+
+    goto :goto_9
+
+    :catch_c
+    move-exception v15
+
+    move-object v13, v14
+
+    goto :goto_8
+.end method
+
+.method private getBackupRecordnumber(Ljava/lang/String;)Ljava/io/File;
+    .locals 17
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const/4 v5, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v2, 0x0
+
+    :try_start_0
+    invoke-direct/range {p0 .. p0}, Lcom/android/phone/BackupRestoreReceiver;->getRecordCallsNumber()Landroid/database/Cursor;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v2}, Landroid/database/Cursor;->getCount()I
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_b
+    .catchall {:try_start_0 .. :try_end_0} :catchall_3
+
+    move-result v12
+
+    if-gtz v12, :cond_3
+
+    :cond_0
+    const/4 v12, 0x0
+
+    if-eqz v2, :cond_1
+
+    :try_start_1
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+    :try_end_1
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
+
+    :cond_1
+    :goto_0
+    if-eqz v14, :cond_2
+
+    :try_start_2
+    throw v14
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
+
+    :catch_0
+    move-exception v3
+
+    :goto_1
+    const-string/jumbo v12, "BackupRestoreReceiver"
+
+    invoke-virtual {v3}, Ljava/io/IOException;->toString()Ljava/lang/String;
+
+    move-result-object v13
+
+    const/4 v14, 0x1
+
+    invoke-static {v12, v13, v14}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    :goto_2
+    return-object v5
+
+    :catch_1
+    move-exception v14
+
+    goto :goto_0
+
+    :cond_2
+    return-object v12
+
+    :cond_3
+    :try_start_3
+    new-instance v6, Ljava/io/File;
+
+    new-instance v12, Ljava/lang/StringBuilder;
+
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    const-string/jumbo v13, "/com.android.phone_recordnum.csv"
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-direct {v6, v12}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    :try_end_3
+    .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_b
+    .catchall {:try_start_3 .. :try_end_3} :catchall_3
+
+    :try_start_4
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+
+    move-result v12
+
+    if-nez v12, :cond_4
+
+    invoke-virtual {v6}, Ljava/io/File;->createNewFile()Z
+
+    :cond_4
+    if-eqz v2, :cond_c
+
+    invoke-interface {v2}, Landroid/database/Cursor;->getCount()I
+    :try_end_4
+    .catch Ljava/lang/Throwable; {:try_start_4 .. :try_end_4} :catch_2
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+
+    move-result v12
+
+    if-lez v12, :cond_c
+
+    const/4 v13, 0x0
+
+    const/4 v10, 0x0
+
+    :try_start_5
+    new-instance v11, Ljava/io/OutputStreamWriter;
+
+    new-instance v12, Ljava/io/FileOutputStream;
+
+    invoke-direct {v12, v6}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    invoke-direct {v11, v12}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
+    :try_end_5
+    .catch Ljava/lang/Throwable; {:try_start_5 .. :try_end_5} :catch_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_4
+
+    :try_start_6
+    const-string/jumbo v12, "_id,enhanced_selected_number"
+
+    invoke-virtual {v11, v12}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+
+    const-string/jumbo v12, "\n"
+
+    invoke-virtual {v11, v12}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+
+    invoke-interface {v2}, Landroid/database/Cursor;->moveToFirst()Z
+
+    move-result v12
+
+    if-eqz v12, :cond_6
+
+    :cond_5
+    const/4 v12, 0x0
+
+    invoke-interface {v2, v12}, Landroid/database/Cursor;->getLong(I)J
+
+    move-result-wide v8
+
+    const/4 v12, 0x1
+
+    invoke-interface {v2, v12}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
-    const/16 v16, 0x2
+    new-instance v12, Ljava/lang/StringBuilder;
 
-    move/from16 v0, v16
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {v7, v0}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
+    invoke-virtual {v12, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v12
 
-    const-string/jumbo v16, "BackupRestoreReceiver"
+    const-string/jumbo v15, ","
 
-    new-instance v17, Ljava/lang/StringBuilder;
+    invoke-virtual {v12, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v17 .. v17}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v12
 
-    const-string/jumbo v18, "encode string : "
+    invoke-virtual {v12, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v12
 
-    move-result-object v17
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-object/from16 v0, v17
+    move-result-object v12
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v11, v12}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    move-result-object v17
+    const-string/jumbo v12, "\n"
 
-    invoke-virtual/range {v17 .. v17}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v11, v12}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    move-result-object v17
+    invoke-interface {v2}, Landroid/database/Cursor;->moveToNext()Z
+    :try_end_6
+    .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_c
+    .catchall {:try_start_6 .. :try_end_6} :catchall_5
 
-    const/16 v18, 0x1
+    move-result v12
 
-    invoke-static/range {v16 .. v18}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    if-nez v12, :cond_5
 
-    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    :cond_6
+    if-eqz v11, :cond_7
 
-    move-result v16
+    :try_start_7
+    invoke-virtual {v11}, Ljava/io/OutputStreamWriter;->close()V
+    :try_end_7
+    .catch Ljava/lang/Throwable; {:try_start_7 .. :try_end_7} :catch_4
+    .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
-    if-eqz v16, :cond_4
+    :cond_7
+    :goto_3
+    if-eqz v13, :cond_c
 
-    new-instance v4, Ljava/lang/String;
+    :try_start_8
+    throw v13
+    :try_end_8
+    .catch Ljava/lang/Throwable; {:try_start_8 .. :try_end_8} :catch_2
+    .catchall {:try_start_8 .. :try_end_8} :catchall_2
 
-    invoke-direct {v4, v12}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+    :catch_2
+    move-exception v12
+
+    move-object v5, v6
+
+    :goto_4
+    :try_start_9
+    throw v12
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_0
+
+    :catchall_0
+    move-exception v13
+
+    move-object/from16 v16, v13
+
+    move-object v13, v12
+
+    move-object/from16 v12, v16
+
+    :goto_5
+    if-eqz v2, :cond_8
+
+    :try_start_a
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+    :try_end_a
+    .catch Ljava/lang/Throwable; {:try_start_a .. :try_end_a} :catch_9
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_3
+
+    :cond_8
+    :goto_6
+    if-eqz v13, :cond_10
+
+    :try_start_b
+    throw v13
+    :try_end_b
+    .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_3
+
+    :catch_3
+    move-exception v4
+
+    :goto_7
+    const-string/jumbo v12, "BackupRestoreReceiver"
+
+    invoke-virtual {v4}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v13
+
+    const/4 v14, 0x1
+
+    invoke-static {v12, v13, v14}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    goto/16 :goto_2
+
+    :catch_4
+    move-exception v13
+
+    goto :goto_3
+
+    :catch_5
+    move-exception v12
+
+    :goto_8
+    :try_start_c
+    throw v12
+    :try_end_c
+    .catchall {:try_start_c .. :try_end_c} :catchall_1
+
+    :catchall_1
+    move-exception v13
+
+    move-object/from16 v16, v13
+
+    move-object v13, v12
+
+    move-object/from16 v12, v16
+
+    :goto_9
+    if-eqz v10, :cond_9
+
+    :try_start_d
+    invoke-virtual {v10}, Ljava/io/OutputStreamWriter;->close()V
+    :try_end_d
+    .catch Ljava/lang/Throwable; {:try_start_d .. :try_end_d} :catch_6
+    .catchall {:try_start_d .. :try_end_d} :catchall_2
+
+    :cond_9
+    :goto_a
+    if-eqz v13, :cond_b
+
+    :try_start_e
+    throw v13
+
+    :catchall_2
+    move-exception v12
+
+    move-object v13, v14
+
+    move-object v5, v6
+
+    goto :goto_5
+
+    :catch_6
+    move-exception v15
+
+    if-nez v13, :cond_a
+
+    move-object v13, v15
+
+    goto :goto_a
+
+    :cond_a
+    if-eq v13, v15, :cond_9
+
+    invoke-virtual {v13, v15}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    goto :goto_a
+
+    :cond_b
+    throw v12
+    :try_end_e
+    .catch Ljava/lang/Throwable; {:try_start_e .. :try_end_e} :catch_2
+    .catchall {:try_start_e .. :try_end_e} :catchall_2
+
+    :cond_c
+    if-eqz v2, :cond_d
+
+    :try_start_f
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+    :try_end_f
+    .catch Ljava/lang/Throwable; {:try_start_f .. :try_end_f} :catch_8
+    .catch Ljava/io/IOException; {:try_start_f .. :try_end_f} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_f .. :try_end_f} :catch_a
+
+    :cond_d
+    :goto_b
+    if-eqz v14, :cond_e
+
+    :try_start_10
+    throw v14
+    :try_end_10
+    .catch Ljava/io/IOException; {:try_start_10 .. :try_end_10} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_10 .. :try_end_10} :catch_a
+
+    :catch_7
+    move-exception v3
+
+    move-object v5, v6
+
+    goto/16 :goto_1
+
+    :catch_8
+    move-exception v14
+
+    goto :goto_b
+
+    :cond_e
+    move-object v5, v6
+
+    goto/16 :goto_2
+
+    :catch_9
+    move-exception v14
+
+    if-nez v13, :cond_f
+
+    move-object v13, v14
+
+    goto :goto_6
+
+    :cond_f
+    if-eq v13, v14, :cond_8
+
+    :try_start_11
+    invoke-virtual {v13, v14}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    goto :goto_6
+
+    :cond_10
+    throw v12
+    :try_end_11
+    .catch Ljava/io/IOException; {:try_start_11 .. :try_end_11} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_11 .. :try_end_11} :catch_3
+
+    :catch_a
+    move-exception v4
+
+    move-object v5, v6
+
+    goto :goto_7
+
+    :catchall_3
+    move-exception v12
+
+    move-object v13, v14
+
+    goto :goto_5
+
+    :catch_b
+    move-exception v12
+
+    goto :goto_4
+
+    :catchall_4
+    move-exception v12
+
+    goto :goto_9
+
+    :catchall_5
+    move-exception v12
+
+    move-object v10, v11
+
+    goto :goto_9
+
+    :catch_c
+    move-exception v12
+
+    move-object v10, v11
+
+    goto :goto_8
+.end method
+
+.method private getBackupRejectMessage(Ljava/lang/String;)Ljava/io/File;
+    .locals 20
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const/4 v6, 0x0
+
+    const/16 v16, 0x0
+
+    const/4 v2, 0x0
+
+    :try_start_0
+    invoke-direct/range {p0 .. p0}, Lcom/android/phone/BackupRestoreReceiver;->getRejectMessage()Landroid/database/Cursor;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v2}, Landroid/database/Cursor;->getCount()I
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_b
+    .catchall {:try_start_0 .. :try_end_0} :catchall_3
+
+    move-result v14
+
+    if-gtz v14, :cond_3
+
+    :cond_0
+    const/4 v14, 0x0
+
+    if-eqz v2, :cond_1
+
+    :try_start_1
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+    :try_end_1
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
+
+    :cond_1
+    :goto_0
+    if-eqz v16, :cond_2
+
+    :try_start_2
+    throw v16
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
+
+    :catch_0
+    move-exception v3
+
+    :goto_1
+    const-string/jumbo v14, "BackupRestoreReceiver"
+
+    invoke-virtual {v3}, Ljava/io/IOException;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    const/16 v16, 0x1
+
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    :goto_2
+    return-object v6
+
+    :catch_1
+    move-exception v16
+
+    goto :goto_0
+
+    :cond_2
+    return-object v14
+
+    :cond_3
+    :try_start_3
+    new-instance v7, Ljava/io/File;
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    move-object/from16 v0, p1
+
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    const-string/jumbo v15, "/com.android.phone_rejectmessage_simple.csv"
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-direct {v7, v14}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    :try_end_3
+    .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_b
+    .catchall {:try_start_3 .. :try_end_3} :catchall_3
+
+    :try_start_4
+    invoke-virtual {v7}, Ljava/io/File;->exists()Z
+
+    move-result v14
+
+    if-nez v14, :cond_4
+
+    invoke-virtual {v7}, Ljava/io/File;->createNewFile()Z
 
     :cond_4
-    const-string/jumbo v16, "BackupRestoreReceiver"
+    if-eqz v2, :cond_c
 
-    new-instance v17, Ljava/lang/StringBuilder;
+    invoke-interface {v2}, Landroid/database/Cursor;->getCount()I
+    :try_end_4
+    .catch Ljava/lang/Throwable; {:try_start_4 .. :try_end_4} :catch_2
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    invoke-direct/range {v17 .. v17}, Ljava/lang/StringBuilder;-><init>()V
+    move-result v14
 
-    const-string/jumbo v18, "backup quickreplymessage : "
+    if-lez v14, :cond_c
 
-    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v15, 0x0
 
-    move-result-object v17
+    const/4 v12, 0x0
 
-    move-object/from16 v0, v17
+    :try_start_5
+    new-instance v13, Ljava/io/OutputStreamWriter;
 
-    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v14, Ljava/io/FileOutputStream;
 
-    move-result-object v17
+    invoke-direct {v14, v7}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    move-object/from16 v0, v17
+    invoke-direct {v13, v14}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
+    :try_end_5
+    .catch Ljava/lang/Throwable; {:try_start_5 .. :try_end_5} :catch_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_4
 
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    :try_start_6
+    const-string/jumbo v14, "_id\treject_message\tedit_checked\tremind_time"
 
-    move-result-object v17
+    invoke-virtual {v13, v14}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    invoke-virtual/range {v17 .. v17}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string/jumbo v14, "\n"
 
-    move-result-object v17
+    invoke-virtual {v13, v14}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    const/16 v18, 0x1
+    invoke-interface {v2}, Landroid/database/Cursor;->moveToFirst()Z
 
-    invoke-static/range {v16 .. v18}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    move-result v14
 
-    new-instance v16, Ljava/lang/StringBuilder;
+    if-eqz v14, :cond_6
 
-    invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
+    :cond_5
+    const/4 v14, 0x0
 
-    move-object/from16 v0, v16
+    invoke-interface {v2, v14}, Landroid/database/Cursor;->getLong(I)J
 
-    invoke-virtual {v0, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    move-result-wide v8
 
-    move-result-object v16
+    const/4 v14, 0x1
+
+    invoke-interface {v2, v14}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v10
+
+    const/4 v14, 0x2
+
+    invoke-interface {v2, v14}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v5
+
+    const/4 v14, 0x3
+
+    invoke-interface {v2, v14}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v11
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v14, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v14
 
     const-string/jumbo v17, "\t"
 
-    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, v17
 
-    move-result-object v16
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-object/from16 v0, v16
+    move-result-object v14
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v16
+    move-result-object v14
 
     const-string/jumbo v17, "\t"
 
-    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, v17
 
-    move-result-object v16
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-object/from16 v0, v16
+    move-result-object v14
 
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v16
+    move-result-object v14
 
-    invoke-virtual/range {v16 .. v16}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string/jumbo v17, "\t"
 
-    move-result-object v16
+    move-object/from16 v0, v17
 
-    invoke-virtual/range {v15 .. v16}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v16, "BackupRestoreReceiver"
+    move-result-object v14
+
+    invoke-virtual {v14, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-virtual {v13, v14}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+
+    const-string/jumbo v14, "\n"
+
+    invoke-virtual {v13, v14}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
+
+    const-string/jumbo v14, "BackupRestoreReceiver"
 
     new-instance v17, Ljava/lang/StringBuilder;
 
@@ -2165,7 +3159,43 @@
 
     move-object/from16 v0, v17
 
-    invoke-virtual {v0, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    const-string/jumbo v18, "\t"
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    const-string/jumbo v18, "\t"
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    const-string/jumbo v18, "\t"
+
+    invoke-virtual/range {v17 .. v18}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v17
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v17
 
@@ -2175,848 +3205,269 @@
 
     const/16 v18, 0x1
 
-    invoke-static/range {v16 .. v18}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
-    .catchall {:try_start_4 .. :try_end_4} :catchall_3
+    move-object/from16 v0, v17
 
-    move-object v14, v15
+    move/from16 v1, v18
 
-    move-object v10, v11
-
-    :cond_5
-    :goto_0
-    if-eqz v2, :cond_6
-
-    invoke-interface {v2}, Landroid/database/Cursor;->close()V
-
-    :cond_6
-    if-eqz v14, :cond_7
-
-    invoke-virtual {v14}, Ljava/io/OutputStreamWriter;->close()V
-
-    :cond_7
-    if-eqz v10, :cond_8
-
-    invoke-virtual {v10}, Ljava/io/FileOutputStream;->close()V
-
-    :cond_8
-    move-object v5, v6
-
-    :cond_9
-    :goto_1
-    return-object v5
-
-    :catch_0
-    move-exception v3
-
-    :goto_2
-    :try_start_5
-    const-string/jumbo v16, "BackupRestoreReceiver"
-
-    invoke-virtual {v3}, Ljava/io/IOException;->toString()Ljava/lang/String;
-
-    move-result-object v17
-
-    invoke-static/range {v16 .. v17}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
-
-    if-eqz v2, :cond_a
-
-    invoke-interface {v2}, Landroid/database/Cursor;->close()V
-
-    :cond_a
-    if-eqz v14, :cond_b
-
-    invoke-virtual {v14}, Ljava/io/OutputStreamWriter;->close()V
-
-    :cond_b
-    if-eqz v10, :cond_9
-
-    invoke-virtual {v10}, Ljava/io/FileOutputStream;->close()V
-
-    goto :goto_1
-
-    :catchall_0
-    move-exception v16
-
-    :goto_3
-    if-eqz v2, :cond_c
-
-    invoke-interface {v2}, Landroid/database/Cursor;->close()V
-
-    :cond_c
-    if-eqz v14, :cond_d
-
-    invoke-virtual {v14}, Ljava/io/OutputStreamWriter;->close()V
-
-    :cond_d
-    if-eqz v10, :cond_e
-
-    invoke-virtual {v10}, Ljava/io/FileOutputStream;->close()V
-
-    :cond_e
-    throw v16
-
-    :catchall_1
-    move-exception v16
-
-    move-object v5, v6
-
-    goto :goto_3
-
-    :catchall_2
-    move-exception v16
-
-    move-object v10, v11
-
-    move-object v5, v6
-
-    goto :goto_3
-
-    :catchall_3
-    move-exception v16
-
-    move-object v14, v15
-
-    move-object v10, v11
-
-    move-object v5, v6
-
-    goto :goto_3
-
-    :catch_1
-    move-exception v3
-
-    move-object v5, v6
-
-    goto :goto_2
-
-    :catch_2
-    move-exception v3
-
-    move-object v10, v11
-
-    move-object v5, v6
-
-    goto :goto_2
-
-    :catch_3
-    move-exception v3
-
-    move-object v14, v15
-
-    move-object v10, v11
-
-    move-object v5, v6
-
-    goto :goto_2
-
-    :cond_f
-    move-object v14, v15
-
-    move-object v10, v11
-
-    goto :goto_0
-.end method
-
-.method private getBackupRecordnumber(Ljava/lang/String;)Ljava/io/File;
-    .locals 13
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    const/4 v12, 0x0
-
-    const/4 v2, 0x0
-
-    const/4 v0, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v9, 0x0
-
-    :try_start_0
-    invoke-direct {p0}, Lcom/android/phone/BackupRestoreReceiver;->getRecordCallsNumber()Landroid/database/Cursor;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    move-result v11
-
-    if-gtz v11, :cond_2
-
-    :cond_0
-    if-eqz v0, :cond_1
-
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
-
-    :cond_1
-    return-object v12
-
-    :cond_2
-    :try_start_1
-    new-instance v3, Ljava/io/File;
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v11, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string/jumbo v12, "/com.android.phone_recordnum.csv"
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-direct {v3, v11}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    invoke-virtual {v3}, Ljava/io/File;->exists()Z
-
-    move-result v11
-
-    if-nez v11, :cond_3
-
-    invoke-virtual {v3}, Ljava/io/File;->createNewFile()Z
-
-    :cond_3
-    if-eqz v0, :cond_6
-
-    invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
-
-    move-result v11
-
-    if-lez v11, :cond_6
-
-    new-instance v7, Ljava/io/FileOutputStream;
-
-    invoke-direct {v7, v3}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    :try_start_3
-    new-instance v10, Ljava/io/OutputStreamWriter;
-
-    invoke-direct {v10, v7}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
-    :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
-
-    :try_start_4
-    const-string/jumbo v11, "_id,enhanced_selected_number"
-
-    invoke-virtual {v10, v11}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
-
-    const-string/jumbo v11, "\n"
-
-    invoke-virtual {v10, v11}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
-
-    invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
-
-    move-result v11
-
-    if-eqz v11, :cond_5
-
-    :cond_4
-    const/4 v11, 0x0
-
-    invoke-interface {v0, v11}, Landroid/database/Cursor;->getLong(I)J
-
-    move-result-wide v4
-
-    const/4 v11, 0x1
-
-    invoke-interface {v0, v11}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v8
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v11, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string/jumbo v12, ","
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-virtual {v10, v11}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
-
-    const-string/jumbo v11, "\n"
-
-    invoke-virtual {v10, v11}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
-
-    invoke-interface {v0}, Landroid/database/Cursor;->moveToNext()Z
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
-    .catchall {:try_start_4 .. :try_end_4} :catchall_3
-
-    move-result v11
-
-    if-nez v11, :cond_4
-
-    :cond_5
-    move-object v9, v10
-
-    move-object v6, v7
-
-    :cond_6
-    if-eqz v0, :cond_7
-
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
-
-    :cond_7
-    if-eqz v9, :cond_8
-
-    invoke-virtual {v9}, Ljava/io/OutputStreamWriter;->close()V
-
-    :cond_8
-    if-eqz v6, :cond_9
-
-    invoke-virtual {v6}, Ljava/io/FileOutputStream;->close()V
-
-    :cond_9
-    move-object v2, v3
-
-    :cond_a
-    :goto_0
-    return-object v2
-
-    :catch_0
-    move-exception v1
-
-    :goto_1
-    :try_start_5
-    const-string/jumbo v11, "BackupRestoreReceiver"
-
-    invoke-virtual {v1}, Ljava/io/IOException;->toString()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-static {v11, v12}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
-
-    if-eqz v0, :cond_b
-
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
-
-    :cond_b
-    if-eqz v9, :cond_c
-
-    invoke-virtual {v9}, Ljava/io/OutputStreamWriter;->close()V
-
-    :cond_c
-    if-eqz v6, :cond_a
-
-    invoke-virtual {v6}, Ljava/io/FileOutputStream;->close()V
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v11
-
-    :goto_2
-    if-eqz v0, :cond_d
-
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
-
-    :cond_d
-    if-eqz v9, :cond_e
-
-    invoke-virtual {v9}, Ljava/io/OutputStreamWriter;->close()V
-
-    :cond_e
-    if-eqz v6, :cond_f
-
-    invoke-virtual {v6}, Ljava/io/FileOutputStream;->close()V
-
-    :cond_f
-    throw v11
-
-    :catchall_1
-    move-exception v11
-
-    move-object v2, v3
-
-    goto :goto_2
-
-    :catchall_2
-    move-exception v11
-
-    move-object v6, v7
-
-    move-object v2, v3
-
-    goto :goto_2
-
-    :catchall_3
-    move-exception v11
-
-    move-object v9, v10
-
-    move-object v6, v7
-
-    move-object v2, v3
-
-    goto :goto_2
-
-    :catch_1
-    move-exception v1
-
-    move-object v2, v3
-
-    goto :goto_1
-
-    :catch_2
-    move-exception v1
-
-    move-object v6, v7
-
-    move-object v2, v3
-
-    goto :goto_1
-
-    :catch_3
-    move-exception v1
-
-    move-object v9, v10
-
-    move-object v6, v7
-
-    move-object v2, v3
-
-    goto :goto_1
-.end method
-
-.method private getBackupRejectMessage(Ljava/lang/String;)Ljava/io/File;
-    .locals 18
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    const/4 v5, 0x0
-
-    const/4 v2, 0x0
-
-    const/4 v7, 0x0
-
-    const/4 v13, 0x0
-
-    :try_start_0
-    invoke-direct/range {p0 .. p0}, Lcom/android/phone/BackupRestoreReceiver;->getRejectMessage()Landroid/database/Cursor;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_0
-
-    invoke-interface {v2}, Landroid/database/Cursor;->getCount()I
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    move-result v15
-
-    if-gtz v15, :cond_2
-
-    :cond_0
-    const/4 v15, 0x0
-
-    if-eqz v2, :cond_1
-
-    invoke-interface {v2}, Landroid/database/Cursor;->close()V
-
-    :cond_1
-    return-object v15
-
-    :cond_2
-    :try_start_1
-    new-instance v6, Ljava/io/File;
-
-    new-instance v15, Ljava/lang/StringBuilder;
-
-    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    const-string/jumbo v16, "/com.android.phone_rejectmessage_simple.csv"
-
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v15
-
-    invoke-direct {v6, v15}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    invoke-virtual {v6}, Ljava/io/File;->exists()Z
-
-    move-result v15
-
-    if-nez v15, :cond_3
-
-    invoke-virtual {v6}, Ljava/io/File;->createNewFile()Z
-
-    :cond_3
-    if-eqz v2, :cond_6
-
-    invoke-interface {v2}, Landroid/database/Cursor;->getCount()I
-
-    move-result v15
-
-    if-lez v15, :cond_6
-
-    new-instance v10, Ljava/io/FileOutputStream;
-
-    invoke-direct {v10, v6}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    :try_start_3
-    new-instance v14, Ljava/io/OutputStreamWriter;
-
-    invoke-direct {v14, v10}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
-    :try_end_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
-
-    :try_start_4
-    const-string/jumbo v15, "_id\treject_message\tedit_checked\tremind_time"
-
-    invoke-virtual {v14, v15}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
-
-    const-string/jumbo v15, "\n"
-
-    invoke-virtual {v14, v15}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
-
-    invoke-interface {v2}, Landroid/database/Cursor;->moveToFirst()Z
-
-    move-result v15
-
-    if-eqz v15, :cond_5
-
-    :cond_4
-    const/4 v15, 0x0
-
-    invoke-interface {v2, v15}, Landroid/database/Cursor;->getLong(I)J
-
-    move-result-wide v8
-
-    const/4 v15, 0x1
-
-    invoke-interface {v2, v15}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v11
-
-    const/4 v15, 0x2
-
-    invoke-interface {v2, v15}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v4
-
-    const/4 v15, 0x3
-
-    invoke-interface {v2, v15}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v12
-
-    new-instance v15, Ljava/lang/StringBuilder;
-
-    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v15, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    const-string/jumbo v16, "\t"
-
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    const-string/jumbo v16, "\t"
-
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    const-string/jumbo v16, "\t"
-
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v15
-
-    invoke-virtual {v14, v15}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
-
-    const-string/jumbo v15, "\n"
-
-    invoke-virtual {v14, v15}, Ljava/io/OutputStreamWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
-
-    const-string/jumbo v15, "BackupRestoreReceiver"
-
-    new-instance v16, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v17, "outputStream : "
-
-    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v16
-
-    move-object/from16 v0, v16
-
-    invoke-virtual {v0, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v16
-
-    const-string/jumbo v17, "\t"
-
-    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v16
-
-    move-object/from16 v0, v16
-
-    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v16
-
-    const-string/jumbo v17, "\t"
-
-    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v16
-
-    move-object/from16 v0, v16
-
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v16
-
-    const-string/jumbo v17, "\t"
-
-    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v16
-
-    move-object/from16 v0, v16
-
-    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v16
-
-    invoke-virtual/range {v16 .. v16}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v16
-
-    const/16 v17, 0x1
-
-    invoke-static/range {v15 .. v17}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    invoke-static {v14, v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
     invoke-interface {v2}, Landroid/database/Cursor;->moveToNext()Z
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
-    .catchall {:try_start_4 .. :try_end_4} :catchall_3
+    :try_end_6
+    .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_c
+    .catchall {:try_start_6 .. :try_end_6} :catchall_5
 
-    move-result v15
+    move-result v14
 
-    if-nez v15, :cond_4
-
-    :cond_5
-    move-object v13, v14
-
-    move-object v7, v10
+    if-nez v14, :cond_5
 
     :cond_6
-    if-eqz v2, :cond_7
+    if-eqz v13, :cond_7
 
-    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+    :try_start_7
+    invoke-virtual {v13}, Ljava/io/OutputStreamWriter;->close()V
+    :try_end_7
+    .catch Ljava/lang/Throwable; {:try_start_7 .. :try_end_7} :catch_4
+    .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
     :cond_7
-    if-eqz v13, :cond_8
+    :goto_3
+    if-eqz v15, :cond_c
 
-    invoke-virtual {v13}, Ljava/io/OutputStreamWriter;->close()V
+    :try_start_8
+    throw v15
+    :try_end_8
+    .catch Ljava/lang/Throwable; {:try_start_8 .. :try_end_8} :catch_2
+    .catchall {:try_start_8 .. :try_end_8} :catchall_2
 
-    :cond_8
-    if-eqz v7, :cond_9
+    :catch_2
+    move-exception v14
 
-    invoke-virtual {v7}, Ljava/io/FileOutputStream;->close()V
+    move-object v6, v7
 
-    :cond_9
-    move-object v5, v6
-
-    :cond_a
-    :goto_0
-    return-object v5
-
-    :catch_0
-    move-exception v3
-
-    :goto_1
-    :try_start_5
-    const-string/jumbo v15, "BackupRestoreReceiver"
-
-    invoke-virtual {v3}, Ljava/io/IOException;->toString()Ljava/lang/String;
-
-    move-result-object v16
-
-    invoke-static/range {v15 .. v16}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
-
-    if-eqz v2, :cond_b
-
-    invoke-interface {v2}, Landroid/database/Cursor;->close()V
-
-    :cond_b
-    if-eqz v13, :cond_c
-
-    invoke-virtual {v13}, Ljava/io/OutputStreamWriter;->close()V
-
-    :cond_c
-    if-eqz v7, :cond_a
-
-    invoke-virtual {v7}, Ljava/io/FileOutputStream;->close()V
-
-    goto :goto_0
+    :goto_4
+    :try_start_9
+    throw v14
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_0
 
     :catchall_0
     move-exception v15
 
-    :goto_2
-    if-eqz v2, :cond_d
+    move-object/from16 v19, v15
 
+    move-object v15, v14
+
+    move-object/from16 v14, v19
+
+    :goto_5
+    if-eqz v2, :cond_8
+
+    :try_start_a
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
+    :try_end_a
+    .catch Ljava/lang/Throwable; {:try_start_a .. :try_end_a} :catch_9
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_3
 
-    :cond_d
-    if-eqz v13, :cond_e
+    :cond_8
+    :goto_6
+    if-eqz v15, :cond_10
 
-    invoke-virtual {v13}, Ljava/io/OutputStreamWriter;->close()V
-
-    :cond_e
-    if-eqz v7, :cond_f
-
-    invoke-virtual {v7}, Ljava/io/FileOutputStream;->close()V
-
-    :cond_f
+    :try_start_b
     throw v15
+    :try_end_b
+    .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_3
+
+    :catch_3
+    move-exception v4
+
+    :goto_7
+    const-string/jumbo v14, "BackupRestoreReceiver"
+
+    invoke-virtual {v4}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    const/16 v16, 0x1
+
+    invoke-static/range {v14 .. v16}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    goto/16 :goto_2
+
+    :catch_4
+    move-exception v15
+
+    goto :goto_3
+
+    :catch_5
+    move-exception v14
+
+    :goto_8
+    :try_start_c
+    throw v14
+    :try_end_c
+    .catchall {:try_start_c .. :try_end_c} :catchall_1
 
     :catchall_1
     move-exception v15
 
-    move-object v5, v6
+    move-object/from16 v19, v15
 
-    goto :goto_2
+    move-object v15, v14
+
+    move-object/from16 v14, v19
+
+    :goto_9
+    if-eqz v12, :cond_9
+
+    :try_start_d
+    invoke-virtual {v12}, Ljava/io/OutputStreamWriter;->close()V
+    :try_end_d
+    .catch Ljava/lang/Throwable; {:try_start_d .. :try_end_d} :catch_6
+    .catchall {:try_start_d .. :try_end_d} :catchall_2
+
+    :cond_9
+    :goto_a
+    if-eqz v15, :cond_b
+
+    :try_start_e
+    throw v15
 
     :catchall_2
-    move-exception v15
+    move-exception v14
 
-    move-object v7, v10
+    move-object/from16 v15, v16
 
-    move-object v5, v6
+    move-object v6, v7
 
-    goto :goto_2
+    goto :goto_5
+
+    :catch_6
+    move-exception v17
+
+    if-nez v15, :cond_a
+
+    move-object/from16 v15, v17
+
+    goto :goto_a
+
+    :cond_a
+    move-object/from16 v0, v17
+
+    if-eq v15, v0, :cond_9
+
+    move-object/from16 v0, v17
+
+    invoke-virtual {v15, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    goto :goto_a
+
+    :cond_b
+    throw v14
+    :try_end_e
+    .catch Ljava/lang/Throwable; {:try_start_e .. :try_end_e} :catch_2
+    .catchall {:try_start_e .. :try_end_e} :catchall_2
+
+    :cond_c
+    if-eqz v2, :cond_d
+
+    :try_start_f
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+    :try_end_f
+    .catch Ljava/lang/Throwable; {:try_start_f .. :try_end_f} :catch_8
+    .catch Ljava/io/IOException; {:try_start_f .. :try_end_f} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_f .. :try_end_f} :catch_a
+
+    :cond_d
+    :goto_b
+    if-eqz v16, :cond_e
+
+    :try_start_10
+    throw v16
+    :try_end_10
+    .catch Ljava/io/IOException; {:try_start_10 .. :try_end_10} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_10 .. :try_end_10} :catch_a
+
+    :catch_7
+    move-exception v3
+
+    move-object v6, v7
+
+    goto/16 :goto_1
+
+    :catch_8
+    move-exception v16
+
+    goto :goto_b
+
+    :cond_e
+    move-object v6, v7
+
+    goto/16 :goto_2
+
+    :catch_9
+    move-exception v16
+
+    if-nez v15, :cond_f
+
+    move-object/from16 v15, v16
+
+    goto :goto_6
+
+    :cond_f
+    move-object/from16 v0, v16
+
+    if-eq v15, v0, :cond_8
+
+    :try_start_11
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    goto :goto_6
+
+    :cond_10
+    throw v14
+    :try_end_11
+    .catch Ljava/io/IOException; {:try_start_11 .. :try_end_11} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_11 .. :try_end_11} :catch_3
+
+    :catch_a
+    move-exception v4
+
+    move-object v6, v7
+
+    goto :goto_7
 
     :catchall_3
-    move-exception v15
+    move-exception v14
 
-    move-object v13, v14
+    move-object/from16 v15, v16
 
-    move-object v7, v10
+    goto :goto_5
 
-    move-object v5, v6
+    :catch_b
+    move-exception v14
 
-    goto :goto_2
+    goto :goto_4
 
-    :catch_1
-    move-exception v3
+    :catchall_4
+    move-exception v14
 
-    move-object v5, v6
+    goto :goto_9
 
-    goto :goto_1
+    :catchall_5
+    move-exception v14
 
-    :catch_2
-    move-exception v3
+    move-object v12, v13
 
-    move-object v7, v10
+    goto :goto_9
 
-    move-object v5, v6
+    :catch_c
+    move-exception v14
 
-    goto :goto_1
+    move-object v12, v13
 
-    :catch_3
-    move-exception v3
-
-    move-object v13, v14
-
-    move-object v7, v10
-
-    move-object v5, v6
-
-    goto :goto_1
+    goto :goto_8
 .end method
 
 .method private getOrUpdateTag(Lorg/w3c/dom/Document;Z)V
@@ -4067,246 +4518,360 @@
 .end method
 
 .method private restoreAutoRejectNumber(Ljava/io/File;)V
-    .locals 13
+    .locals 17
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    const/4 v5, 0x0
+    const/4 v13, 0x0
+
+    const/4 v7, 0x0
 
     :try_start_0
-    new-instance v6, Ljava/io/BufferedReader;
+    new-instance v8, Ljava/io/BufferedReader;
 
-    new-instance v10, Ljava/io/FileReader;
+    new-instance v12, Ljava/io/FileReader;
 
-    invoke-direct {v10, p1}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
+    move-object/from16 v0, p1
 
-    invoke-direct {v6, v10}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+    invoke-direct {v12, v0}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
+
+    invoke-direct {v8, v12}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
     :try_end_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_9
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     :try_start_1
-    invoke-virtual {v6}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+    invoke-virtual {v8}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v10
 
     :cond_0
     :goto_0
-    invoke-virtual {v6}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+    invoke-virtual {v8}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v10
 
-    if-eqz v8, :cond_2
+    if-eqz v10, :cond_2
 
-    const-string/jumbo v10, ","
+    const-string/jumbo v12, ","
 
-    invoke-virtual {v8, v10}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v10, v12}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    const/4 v4, 0x0
+    const/4 v6, 0x0
 
-    const/4 v10, 0x1
+    const/4 v12, 0x1
 
-    aget-object v10, v0, v10
+    aget-object v12, v1, v12
 
-    const/4 v11, 0x3
+    const/4 v14, 0x3
 
-    aget-object v11, v0, v11
+    aget-object v14, v1, v14
 
-    invoke-static {v11}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    invoke-static {v14}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    move-result v11
+    move-result v14
 
-    invoke-direct {p0, v10, v11}, Lcom/android/phone/BackupRestoreReceiver;->checkAlreadyInUse(Ljava/lang/String;I)Z
+    move-object/from16 v0, p0
 
-    move-result v4
+    invoke-direct {v0, v12, v14}, Lcom/android/phone/BackupRestoreReceiver;->checkAlreadyInUse(Ljava/lang/String;I)Z
 
-    if-nez v4, :cond_0
+    move-result v6
+
+    if-nez v6, :cond_0
+
+    new-instance v11, Landroid/content/ContentValues;
+
+    invoke-direct {v11}, Landroid/content/ContentValues;-><init>()V
+
+    const-string/jumbo v12, "reject_number"
+
+    const/4 v14, 0x1
+
+    aget-object v14, v1, v14
+
+    invoke-virtual {v11, v12, v14}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v12, "reject_checked"
+
+    const/4 v14, 0x2
+
+    aget-object v14, v1, v14
+
+    invoke-static {v14}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v14
+
+    invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v14
+
+    invoke-virtual {v11, v12, v14}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string/jumbo v12, "reject_match"
+
+    const/4 v14, 0x3
+
+    aget-object v14, v1, v14
+
+    invoke-static {v14}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v14
+
+    invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v14
+
+    invoke-virtual {v11, v12, v14}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v14}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v14
+
+    sget-object v15, Lcom/android/phone/callsettings/ProviderConstants;->AUTOREJECT_CONTENT_URI:Landroid/net/Uri;
+
+    invoke-static {v12, v14, v15, v11}, Landroid/database/sqlite/SqliteWrapper;->insert(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+
+    const/4 v12, 0x3
+
+    aget-object v12, v1, v12
+
+    invoke-static {v12}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v12
+
+    if-nez v12, :cond_0
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v12}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
 
     new-instance v9, Landroid/content/ContentValues;
 
     invoke-direct {v9}, Landroid/content/ContentValues;-><init>()V
 
-    const-string/jumbo v10, "reject_number"
+    const-string/jumbo v12, "original_number"
 
-    const/4 v11, 0x1
+    const/4 v14, 0x1
 
-    aget-object v11, v0, v11
+    aget-object v14, v1, v14
 
-    invoke-virtual {v9, v10, v11}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v9, v12, v14}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string/jumbo v10, "reject_checked"
+    sget-object v12, Landroid/provider/BlockedNumberContract$BlockedNumbers;->CONTENT_URI:Landroid/net/Uri;
 
-    const/4 v11, 0x2
-
-    aget-object v11, v0, v11
-
-    invoke-static {v11}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v11
-
-    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v11
-
-    invoke-virtual {v9, v10, v11}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    const-string/jumbo v10, "reject_match"
-
-    const/4 v11, 0x3
-
-    aget-object v11, v0, v11
-
-    invoke-static {v11}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v11
-
-    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v11
-
-    invoke-virtual {v9, v10, v11}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    iget-object v10, p0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
-
-    iget-object v11, p0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v11}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v11
-
-    sget-object v12, Lcom/android/phone/callsettings/ProviderConstants;->AUTOREJECT_CONTENT_URI:Landroid/net/Uri;
-
-    invoke-static {v10, v11, v12, v9}, Landroid/database/sqlite/SqliteWrapper;->insert(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
-
-    const/4 v10, 0x3
-
-    aget-object v10, v0, v10
-
-    invoke-static {v10}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v10
-
-    if-nez v10, :cond_0
-
-    iget-object v10, p0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v10}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v1
-
-    new-instance v7, Landroid/content/ContentValues;
-
-    invoke-direct {v7}, Landroid/content/ContentValues;-><init>()V
-
-    const-string/jumbo v10, "original_number"
-
-    const/4 v11, 0x1
-
-    aget-object v11, v0, v11
-
-    invoke-virtual {v7, v10, v11}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    sget-object v10, Landroid/provider/BlockedNumberContract$BlockedNumbers;->CONTENT_URI:Landroid/net/Uri;
-
-    invoke-virtual {v1, v10, v7}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+    invoke-virtual {v2, v12, v9}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     :try_end_1
-    .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_3
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :catch_0
-    move-exception v2
+    move-exception v12
 
-    move-object v5, v6
+    move-object v7, v8
 
     :goto_1
     :try_start_2
-    const-string/jumbo v10, "BackupRestoreReceiver"
-
-    invoke-virtual {v2}, Ljava/io/FileNotFoundException;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    throw v12
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    if-eqz v5, :cond_1
+    :catchall_0
+    move-exception v13
 
-    invoke-virtual {v5}, Ljava/io/BufferedReader;->close()V
+    move-object/from16 v16, v13
+
+    move-object v13, v12
+
+    move-object/from16 v12, v16
+
+    :goto_2
+    if-eqz v7, :cond_1
+
+    :try_start_3
+    invoke-virtual {v7}, Ljava/io/BufferedReader;->close()V
+    :try_end_3
+    .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_4
+    .catch Ljava/io/FileNotFoundException; {:try_start_3 .. :try_end_3} :catch_1
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_6
 
     :cond_1
-    :goto_2
-    return-void
+    :goto_3
+    if-eqz v13, :cond_6
 
-    :cond_2
-    if-eqz v6, :cond_3
-
-    invoke-virtual {v6}, Ljava/io/BufferedReader;->close()V
-
-    :cond_3
-    move-object v5, v6
-
-    goto :goto_2
+    :try_start_4
+    throw v13
+    :try_end_4
+    .catch Ljava/io/FileNotFoundException; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_6
 
     :catch_1
     move-exception v3
 
-    :goto_3
-    :try_start_3
-    const-string/jumbo v10, "BackupRestoreReceiver"
-
-    invoke-virtual {v3}, Ljava/io/IOException;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    if-eqz v5, :cond_1
-
-    invoke-virtual {v5}, Ljava/io/BufferedReader;->close()V
-
-    goto :goto_2
-
-    :catchall_0
-    move-exception v10
-
     :goto_4
-    if-eqz v5, :cond_4
+    const-string/jumbo v12, "BackupRestoreReceiver"
 
-    invoke-virtual {v5}, Ljava/io/BufferedReader;->close()V
+    invoke-virtual {v3}, Ljava/io/FileNotFoundException;->toString()Ljava/lang/String;
 
-    :cond_4
-    throw v10
+    move-result-object v13
 
-    :catchall_1
-    move-exception v10
+    const/4 v14, 0x1
 
-    move-object v5, v6
+    invoke-static {v12, v13, v14}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    :goto_5
+    return-void
+
+    :cond_2
+    if-eqz v8, :cond_3
+
+    :try_start_5
+    invoke-virtual {v8}, Ljava/io/BufferedReader;->close()V
+    :try_end_5
+    .catch Ljava/lang/Throwable; {:try_start_5 .. :try_end_5} :catch_3
+    .catch Ljava/io/FileNotFoundException; {:try_start_5 .. :try_end_5} :catch_2
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_8
+
+    :cond_3
+    :goto_6
+    if-eqz v13, :cond_4
+
+    :try_start_6
+    throw v13
+    :try_end_6
+    .catch Ljava/io/FileNotFoundException; {:try_start_6 .. :try_end_6} :catch_2
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_8
+
+    :catch_2
+    move-exception v3
+
+    move-object v7, v8
 
     goto :goto_4
 
-    :catch_2
-    move-exception v2
-
-    goto :goto_1
-
     :catch_3
-    move-exception v3
+    move-exception v13
 
-    move-object v5, v6
+    goto :goto_6
+
+    :cond_4
+    move-object v7, v8
+
+    goto :goto_5
+
+    :catch_4
+    move-exception v14
+
+    if-nez v13, :cond_5
+
+    move-object v13, v14
 
     goto :goto_3
+
+    :cond_5
+    if-eq v13, v14, :cond_1
+
+    :try_start_7
+    invoke-virtual {v13, v14}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    :try_end_7
+    .catch Ljava/io/FileNotFoundException; {:try_start_7 .. :try_end_7} :catch_1
+    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_6
+
+    goto :goto_3
+
+    :catch_5
+    move-exception v4
+
+    :goto_7
+    const-string/jumbo v12, "BackupRestoreReceiver"
+
+    invoke-virtual {v4}, Ljava/io/IOException;->toString()Ljava/lang/String;
+
+    move-result-object v13
+
+    const/4 v14, 0x1
+
+    invoke-static {v12, v13, v14}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    goto :goto_5
+
+    :cond_6
+    :try_start_8
+    throw v12
+    :try_end_8
+    .catch Ljava/io/FileNotFoundException; {:try_start_8 .. :try_end_8} :catch_1
+    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_6
+
+    :catch_6
+    move-exception v5
+
+    :goto_8
+    const-string/jumbo v12, "BackupRestoreReceiver"
+
+    invoke-virtual {v5}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v13
+
+    const/4 v14, 0x1
+
+    invoke-static {v12, v13, v14}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    goto :goto_5
+
+    :catch_7
+    move-exception v4
+
+    move-object v7, v8
+
+    goto :goto_7
+
+    :catch_8
+    move-exception v5
+
+    move-object v7, v8
+
+    goto :goto_8
+
+    :catchall_1
+    move-exception v12
+
+    goto :goto_2
+
+    :catchall_2
+    move-exception v12
+
+    move-object v7, v8
+
+    goto :goto_2
+
+    :catch_9
+    move-exception v12
+
+    goto :goto_1
 .end method
 
 .method private restoreData(Ljava/lang/String;Ljava/lang/String;I)I
@@ -4684,7 +5249,9 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v8, 0x1
+
+    invoke-static {v6, v7, v8}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -4741,7 +5308,9 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v8, 0x1
+
+    invoke-static {v6, v7, v8}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
@@ -4759,7 +5328,9 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v8, 0x1
+
+    invoke-static {v6, v7, v8}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
@@ -4779,7 +5350,9 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v8, 0x1
+
+    invoke-static {v6, v7, v8}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
@@ -4797,7 +5370,9 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v8, 0x1
+
+    invoke-static {v6, v7, v8}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
@@ -4991,369 +5566,298 @@
 .end method
 
 .method private restoreQuickReplyMessage(Ljava/io/File;)V
-    .locals 12
+    .locals 16
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    const/4 v6, 0x0
+    const/4 v12, 0x0
+
+    const/4 v8, 0x0
 
     :try_start_0
-    new-instance v7, Ljava/io/BufferedReader;
+    new-instance v9, Ljava/io/BufferedReader;
 
-    new-instance v9, Ljava/io/FileReader;
+    new-instance v11, Ljava/io/FileReader;
 
-    invoke-direct {v9, p1}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
+    move-object/from16 v0, p1
 
-    invoke-direct {v7, v9}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+    invoke-direct {v11, v0}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
+
+    invoke-direct {v9, v11}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
     :try_end_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_9
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     :try_start_1
-    invoke-virtual {v7}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+    invoke-virtual {v9}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v10
 
     :goto_0
-    invoke-virtual {v7}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+    invoke-virtual {v9}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v10
 
-    if-eqz v8, :cond_1
+    if-eqz v10, :cond_1
 
-    const-string/jumbo v9, "\t"
+    const-string/jumbo v11, "\t"
 
-    invoke-virtual {v8, v9}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v0
-
-    const/4 v5, 0x0
-
-    const/4 v9, 0x1
-
-    aget-object v9, v0, v9
-
-    const/4 v10, 0x2
-
-    invoke-static {v9, v10}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+    invoke-virtual {v10, v11}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v1
 
-    new-instance v2, Ljava/lang/String;
-
-    const-string/jumbo v9, "UTF-8"
-
-    invoke-direct {v2, v1, v9}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
-
-    const-string/jumbo v9, "BackupRestoreReceiver"
-
-    new-instance v10, Ljava/lang/StringBuilder;
-
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v11, "decode quick reply string : "
-
-    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v10
-
-    invoke-virtual {v10, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v10
-
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v10
+    const/4 v7, 0x0
 
     const/4 v11, 0x1
 
-    invoke-static {v9, v10, v11}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    aget-object v11, v1, v11
 
-    iget-object v9, p0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
+    const/4 v13, 0x2
 
-    invoke-static {v9, v2}, Lcom/android/phone/edge/GlanceReplyManager;->setReplyMessageDB(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v11, v13}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
-    iget-object v9, p0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
+    move-result-object v2
 
-    const/4 v10, 0x2
+    new-instance v3, Ljava/lang/String;
 
-    aget-object v10, v0, v10
+    const-string/jumbo v11, "UTF-8"
 
-    invoke-static {v10}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+    invoke-direct {v3, v2, v11}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
 
-    move-result v10
+    const-string/jumbo v11, "BackupRestoreReceiver"
 
-    invoke-static {v9, v10}, Lcom/android/phone/edge/GlanceReplyManager;->setGlanceReplyState(Landroid/content/Context;Z)V
+    new-instance v13, Ljava/lang/StringBuilder;
+
+    invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v14, "decode quick reply string : "
+
+    invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v13
+
+    invoke-virtual {v13, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v13
+
+    const/4 v14, 0x1
+
+    invoke-static {v11, v13, v14}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
+
+    invoke-static {v11, v3}, Lcom/android/phone/edge/GlanceReplyManager;->setReplyMessageDB(Landroid/content/Context;Ljava/lang/String;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
+
+    const/4 v13, 0x1
+
+    invoke-static {v11, v13}, Lcom/android/phone/edge/GlanceReplyManager;->setGlanceReplyState(Landroid/content/Context;Z)V
     :try_end_1
-    .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_3
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
     goto :goto_0
 
     :catch_0
-    move-exception v3
+    move-exception v11
 
-    move-object v6, v7
+    move-object v8, v9
 
     :goto_1
     :try_start_2
-    const-string/jumbo v9, "BackupRestoreReceiver"
-
-    invoke-virtual {v3}, Ljava/io/FileNotFoundException;->toString()Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-static {v9, v10}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    throw v11
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    if-eqz v6, :cond_0
+    :catchall_0
+    move-exception v12
 
-    invoke-virtual {v6}, Ljava/io/BufferedReader;->close()V
+    move-object v15, v12
+
+    move-object v12, v11
+
+    move-object v11, v15
+
+    :goto_2
+    if-eqz v8, :cond_0
+
+    :try_start_3
+    invoke-virtual {v8}, Ljava/io/BufferedReader;->close()V
+    :try_end_3
+    .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_4
+    .catch Ljava/io/FileNotFoundException; {:try_start_3 .. :try_end_3} :catch_1
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_6
 
     :cond_0
-    :goto_2
-    return-void
+    :goto_3
+    if-eqz v12, :cond_5
 
-    :cond_1
-    if-eqz v7, :cond_2
-
-    invoke-virtual {v7}, Ljava/io/BufferedReader;->close()V
-
-    :cond_2
-    move-object v6, v7
-
-    goto :goto_2
+    :try_start_4
+    throw v12
+    :try_end_4
+    .catch Ljava/io/FileNotFoundException; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_6
 
     :catch_1
     move-exception v4
 
-    :goto_3
-    :try_start_3
-    const-string/jumbo v9, "BackupRestoreReceiver"
-
-    invoke-virtual {v4}, Ljava/io/IOException;->toString()Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-static {v9, v10}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    if-eqz v6, :cond_0
-
-    invoke-virtual {v6}, Ljava/io/BufferedReader;->close()V
-
-    goto :goto_2
-
-    :catchall_0
-    move-exception v9
-
     :goto_4
-    if-eqz v6, :cond_3
+    const-string/jumbo v11, "BackupRestoreReceiver"
 
-    invoke-virtual {v6}, Ljava/io/BufferedReader;->close()V
+    invoke-virtual {v4}, Ljava/io/FileNotFoundException;->toString()Ljava/lang/String;
 
-    :cond_3
-    throw v9
+    move-result-object v12
 
-    :catchall_1
-    move-exception v9
+    invoke-static {v11, v12}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-object v6, v7
+    :goto_5
+    return-void
+
+    :cond_1
+    if-eqz v9, :cond_2
+
+    :try_start_5
+    invoke-virtual {v9}, Ljava/io/BufferedReader;->close()V
+    :try_end_5
+    .catch Ljava/lang/Throwable; {:try_start_5 .. :try_end_5} :catch_3
+    .catch Ljava/io/FileNotFoundException; {:try_start_5 .. :try_end_5} :catch_2
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_8
+
+    :cond_2
+    :goto_6
+    if-eqz v12, :cond_3
+
+    :try_start_6
+    throw v12
+    :try_end_6
+    .catch Ljava/io/FileNotFoundException; {:try_start_6 .. :try_end_6} :catch_2
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_8
+
+    :catch_2
+    move-exception v4
+
+    move-object v8, v9
 
     goto :goto_4
 
-    :catch_2
-    move-exception v3
-
-    goto :goto_1
-
     :catch_3
-    move-exception v4
+    move-exception v12
 
-    move-object v6, v7
+    goto :goto_6
+
+    :cond_3
+    move-object v8, v9
+
+    goto :goto_5
+
+    :catch_4
+    move-exception v13
+
+    if-nez v12, :cond_4
+
+    move-object v12, v13
 
     goto :goto_3
+
+    :cond_4
+    if-eq v12, v13, :cond_0
+
+    :try_start_7
+    invoke-virtual {v12, v13}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    :try_end_7
+    .catch Ljava/io/FileNotFoundException; {:try_start_7 .. :try_end_7} :catch_1
+    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_6
+
+    goto :goto_3
+
+    :catch_5
+    move-exception v5
+
+    :goto_7
+    const-string/jumbo v11, "BackupRestoreReceiver"
+
+    invoke-virtual {v5}, Ljava/io/IOException;->toString()Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v11, v12}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_5
+
+    :cond_5
+    :try_start_8
+    throw v11
+    :try_end_8
+    .catch Ljava/io/FileNotFoundException; {:try_start_8 .. :try_end_8} :catch_1
+    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_6
+
+    :catch_6
+    move-exception v6
+
+    :goto_8
+    const-string/jumbo v11, "BackupRestoreReceiver"
+
+    invoke-virtual {v6}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v12
+
+    const/4 v13, 0x1
+
+    invoke-static {v11, v12, v13}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    goto :goto_5
+
+    :catch_7
+    move-exception v5
+
+    move-object v8, v9
+
+    goto :goto_7
+
+    :catch_8
+    move-exception v6
+
+    move-object v8, v9
+
+    goto :goto_8
+
+    :catchall_1
+    move-exception v11
+
+    goto :goto_2
+
+    :catchall_2
+    move-exception v11
+
+    move-object v8, v9
+
+    goto :goto_2
+
+    :catch_9
+    move-exception v11
+
+    goto :goto_1
 .end method
 
 .method private restoreRecordNumber(Ljava/io/File;)V
-    .locals 11
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    const/4 v4, 0x0
-
-    :try_start_0
-    new-instance v5, Ljava/io/BufferedReader;
-
-    new-instance v8, Ljava/io/FileReader;
-
-    invoke-direct {v8, p1}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
-
-    invoke-direct {v5, v8}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
-    :try_end_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    :try_start_1
-    invoke-virtual {v5}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
-
-    move-result-object v6
-
-    :cond_0
-    :goto_0
-    invoke-virtual {v5}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
-
-    move-result-object v6
-
-    if-eqz v6, :cond_2
-
-    const-string/jumbo v8, ","
-
-    invoke-virtual {v6, v8}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v0
-
-    const/4 v3, 0x0
-
-    const/4 v8, 0x1
-
-    aget-object v8, v0, v8
-
-    invoke-direct {p0, v8}, Lcom/android/phone/BackupRestoreReceiver;->checkRecordNumAlreadyInUse(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    new-instance v7, Landroid/content/ContentValues;
-
-    invoke-direct {v7}, Landroid/content/ContentValues;-><init>()V
-
-    const-string/jumbo v8, "enhanced_selected_number"
-
-    const/4 v9, 0x1
-
-    aget-object v9, v0, v9
-
-    invoke-virtual {v7, v8, v9}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    iget-object v8, p0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
-
-    iget-object v9, p0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v9}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v9
-
-    sget-object v10, Lcom/android/phone/callsettings/ProviderConstants;->ENHANCED_SELECTED_CONTENT_URI:Landroid/net/Uri;
-
-    invoke-static {v8, v9, v10, v7}, Landroid/database/sqlite/SqliteWrapper;->insert(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
-    :try_end_1
-    .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_3
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v1
-
-    move-object v4, v5
-
-    :goto_1
-    :try_start_2
-    const-string/jumbo v8, "BackupRestoreReceiver"
-
-    invoke-virtual {v1}, Ljava/io/FileNotFoundException;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v8, v9}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    if-eqz v4, :cond_1
-
-    invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
-
-    :cond_1
-    :goto_2
-    return-void
-
-    :cond_2
-    if-eqz v5, :cond_3
-
-    invoke-virtual {v5}, Ljava/io/BufferedReader;->close()V
-
-    :cond_3
-    move-object v4, v5
-
-    goto :goto_2
-
-    :catch_1
-    move-exception v2
-
-    :goto_3
-    :try_start_3
-    const-string/jumbo v8, "BackupRestoreReceiver"
-
-    invoke-virtual {v2}, Ljava/io/IOException;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v8, v9}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    if-eqz v4, :cond_1
-
-    invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
-
-    goto :goto_2
-
-    :catchall_0
-    move-exception v8
-
-    :goto_4
-    if-eqz v4, :cond_4
-
-    invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
-
-    :cond_4
-    throw v8
-
-    :catchall_1
-    move-exception v8
-
-    move-object v4, v5
-
-    goto :goto_4
-
-    :catch_2
-    move-exception v1
-
-    goto :goto_1
-
-    :catch_3
-    move-exception v2
-
-    move-object v4, v5
-
-    goto :goto_3
-.end method
-
-.method private restoreRejectMessage(Ljava/io/File;)V
     .locals 14
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -5361,180 +5865,66 @@
         }
     .end annotation
 
-    const/4 v3, 0x0
+    const/4 v10, 0x0
+
+    const/4 v5, 0x0
 
     :try_start_0
-    new-instance v4, Ljava/io/BufferedReader;
+    new-instance v6, Ljava/io/BufferedReader;
 
-    new-instance v10, Ljava/io/FileReader;
+    new-instance v9, Ljava/io/FileReader;
 
-    invoke-direct {v10, p1}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
+    invoke-direct {v9, p1}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
 
-    invoke-direct {v4, v10}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+    invoke-direct {v6, v9}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
     :try_end_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_9
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     :try_start_1
-    invoke-virtual {v4}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
-
-    move-result-object v8
-
-    if-eqz v8, :cond_3
-
-    const-string/jumbo v10, "\\d+?\\t(.+?)\\t\\d+\\t\\d+"
-
-    const/16 v11, 0x28
-
-    invoke-static {v10, v11}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
+    invoke-virtual {v6}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
     move-result-object v7
 
-    const-string/jumbo v5, ""
-
+    :cond_0
     :goto_0
-    invoke-virtual {v4}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v7
 
-    if-eqz v8, :cond_3
+    if-eqz v7, :cond_2
 
-    new-instance v10, Ljava/lang/StringBuilder;
+    const-string/jumbo v9, ","
 
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v10, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v10
-
-    invoke-virtual {v10, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v10
-
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v7, v5}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljava/util/regex/Matcher;->matches()Z
-
-    move-result v10
-
-    if-eqz v10, :cond_2
-
-    invoke-virtual {v6}, Ljava/util/regex/Matcher;->groupCount()I
-
-    move-result v10
-
-    if-lez v10, :cond_2
-
-    const/4 v10, 0x0
-
-    invoke-virtual {v6, v10}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
-
-    move-result-object v10
-
-    const-string/jumbo v11, "\t"
-
-    invoke-virtual {v10, v11}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v7, v9}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
-    array-length v10, v0
+    const/4 v4, 0x0
 
-    const/4 v11, 0x4
+    const/4 v9, 0x1
 
-    if-ne v10, v11, :cond_0
+    aget-object v9, v0, v9
 
-    new-instance v9, Landroid/content/ContentValues;
+    invoke-direct {p0, v9}, Lcom/android/phone/BackupRestoreReceiver;->checkRecordNumAlreadyInUse(Ljava/lang/String;)Z
 
-    invoke-direct {v9}, Landroid/content/ContentValues;-><init>()V
+    move-result v4
 
-    const-string/jumbo v10, "_id"
+    if-nez v4, :cond_0
 
-    const/4 v11, 0x0
+    new-instance v8, Landroid/content/ContentValues;
 
-    aget-object v11, v0, v11
+    invoke-direct {v8}, Landroid/content/ContentValues;-><init>()V
 
-    invoke-static {v11}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
-
-    move-result-wide v12
-
-    invoke-static {v12, v13}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v11
-
-    invoke-virtual {v9, v10, v11}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
-
-    const-string/jumbo v10, "reject_message"
+    const-string/jumbo v9, "enhanced_selected_number"
 
     const/4 v11, 0x1
 
     aget-object v11, v0, v11
 
-    invoke-virtual {v9, v10, v11}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v8, v9, v11}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string/jumbo v10, "edit_checked"
-
-    const/4 v11, 0x2
-
-    aget-object v11, v0, v11
-
-    invoke-static {v11}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v11
-
-    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v11
-
-    invoke-virtual {v9, v10, v11}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    const-string/jumbo v10, "remind_time"
-
-    const/4 v11, 0x3
-
-    aget-object v11, v0, v11
-
-    invoke-static {v11}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v11
-
-    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v11
-
-    invoke-virtual {v9, v10, v11}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    const-string/jumbo v10, "BackupRestoreReceiver"
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "restoreDefaultRejectMessage : "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    const/4 v12, 0x1
-
-    invoke-static {v10, v11, v12}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-
-    iget-object v10, p0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
+    iget-object v9, p0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
 
     iget-object v11, p0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
 
@@ -5542,157 +5932,665 @@
 
     move-result-object v11
 
-    sget-object v12, Lcom/android/phone/callsettings/ProviderConstants;->REJECTMSG_CONTENT_URI:Landroid/net/Uri;
+    sget-object v12, Lcom/android/phone/callsettings/ProviderConstants;->ENHANCED_SELECTED_CONTENT_URI:Landroid/net/Uri;
 
-    invoke-static {v10, v11, v12, v9}, Landroid/database/sqlite/SqliteWrapper;->insert(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
-
-    :goto_1
-    const-string/jumbo v5, ""
-
-    goto/16 :goto_0
-
-    :cond_0
-    const-string/jumbo v10, "BackupRestoreReceiver"
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "wrong pattern match : "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    const/4 v12, 0x1
-
-    invoke-static {v10, v11, v12}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    invoke-static {v9, v11, v12, v8}, Landroid/database/sqlite/SqliteWrapper;->insert(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     :try_end_1
-    .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_3
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    goto :goto_1
+    goto :goto_0
 
     :catch_0
-    move-exception v1
+    move-exception v9
 
-    move-object v3, v4
+    move-object v5, v6
 
-    :goto_2
+    :goto_1
     :try_start_2
-    const-string/jumbo v10, "BackupRestoreReceiver"
-
-    invoke-virtual {v1}, Ljava/io/FileNotFoundException;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    throw v9
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    if-eqz v3, :cond_1
-
-    invoke-virtual {v3}, Ljava/io/BufferedReader;->close()V
-
-    :cond_1
-    :goto_3
-    return-void
-
-    :cond_2
-    :try_start_3
-    new-instance v10, Ljava/lang/StringBuilder;
-
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v10, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v10
-
-    const-string/jumbo v11, "\n"
-
-    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v10
-
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-    :try_end_3
-    .catch Ljava/io/FileNotFoundException; {:try_start_3 .. :try_end_3} :catch_0
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    move-result-object v5
-
-    goto/16 :goto_0
-
-    :cond_3
-    if-eqz v4, :cond_4
-
-    invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
-
-    :cond_4
-    move-object v3, v4
-
-    goto :goto_3
-
-    :catch_1
-    move-exception v2
-
-    :goto_4
-    :try_start_4
-    const-string/jumbo v10, "BackupRestoreReceiver"
-
-    invoke-virtual {v2}, Ljava/io/IOException;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
-    if-eqz v3, :cond_1
-
-    invoke-virtual {v3}, Ljava/io/BufferedReader;->close()V
-
-    goto :goto_3
 
     :catchall_0
     move-exception v10
 
-    :goto_5
-    if-eqz v3, :cond_5
+    move-object v13, v10
 
-    invoke-virtual {v3}, Ljava/io/BufferedReader;->close()V
+    move-object v10, v9
 
-    :cond_5
+    move-object v9, v13
+
+    :goto_2
+    if-eqz v5, :cond_1
+
+    :try_start_3
+    invoke-virtual {v5}, Ljava/io/BufferedReader;->close()V
+    :try_end_3
+    .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_4
+    .catch Ljava/io/FileNotFoundException; {:try_start_3 .. :try_end_3} :catch_1
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_6
+
+    :cond_1
+    :goto_3
+    if-eqz v10, :cond_6
+
+    :try_start_4
     throw v10
+    :try_end_4
+    .catch Ljava/io/FileNotFoundException; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_6
 
-    :catchall_1
-    move-exception v10
+    :catch_1
+    move-exception v1
 
-    move-object v3, v4
+    :goto_4
+    const-string/jumbo v9, "BackupRestoreReceiver"
 
-    goto :goto_5
+    invoke-virtual {v1}, Ljava/io/FileNotFoundException;->toString()Ljava/lang/String;
+
+    move-result-object v10
+
+    const/4 v11, 0x1
+
+    invoke-static {v9, v10, v11}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    :goto_5
+    return-void
+
+    :cond_2
+    if-eqz v6, :cond_3
+
+    :try_start_5
+    invoke-virtual {v6}, Ljava/io/BufferedReader;->close()V
+    :try_end_5
+    .catch Ljava/lang/Throwable; {:try_start_5 .. :try_end_5} :catch_3
+    .catch Ljava/io/FileNotFoundException; {:try_start_5 .. :try_end_5} :catch_2
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_8
+
+    :cond_3
+    :goto_6
+    if-eqz v10, :cond_4
+
+    :try_start_6
+    throw v10
+    :try_end_6
+    .catch Ljava/io/FileNotFoundException; {:try_start_6 .. :try_end_6} :catch_2
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_8
 
     :catch_2
     move-exception v1
 
-    goto :goto_2
-
-    :catch_3
-    move-exception v2
-
-    move-object v3, v4
+    move-object v5, v6
 
     goto :goto_4
+
+    :catch_3
+    move-exception v10
+
+    goto :goto_6
+
+    :cond_4
+    move-object v5, v6
+
+    goto :goto_5
+
+    :catch_4
+    move-exception v11
+
+    if-nez v10, :cond_5
+
+    move-object v10, v11
+
+    goto :goto_3
+
+    :cond_5
+    if-eq v10, v11, :cond_1
+
+    :try_start_7
+    invoke-virtual {v10, v11}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    :try_end_7
+    .catch Ljava/io/FileNotFoundException; {:try_start_7 .. :try_end_7} :catch_1
+    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_6
+
+    goto :goto_3
+
+    :catch_5
+    move-exception v2
+
+    :goto_7
+    const-string/jumbo v9, "BackupRestoreReceiver"
+
+    invoke-virtual {v2}, Ljava/io/IOException;->toString()Ljava/lang/String;
+
+    move-result-object v10
+
+    const/4 v11, 0x1
+
+    invoke-static {v9, v10, v11}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    goto :goto_5
+
+    :cond_6
+    :try_start_8
+    throw v9
+    :try_end_8
+    .catch Ljava/io/FileNotFoundException; {:try_start_8 .. :try_end_8} :catch_1
+    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_6
+
+    :catch_6
+    move-exception v3
+
+    :goto_8
+    const-string/jumbo v9, "BackupRestoreReceiver"
+
+    invoke-virtual {v3}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v10
+
+    const/4 v11, 0x1
+
+    invoke-static {v9, v10, v11}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    goto :goto_5
+
+    :catch_7
+    move-exception v2
+
+    move-object v5, v6
+
+    goto :goto_7
+
+    :catch_8
+    move-exception v3
+
+    move-object v5, v6
+
+    goto :goto_8
+
+    :catchall_1
+    move-exception v9
+
+    goto :goto_2
+
+    :catchall_2
+    move-exception v9
+
+    move-object v5, v6
+
+    goto :goto_2
+
+    :catch_9
+    move-exception v9
+
+    goto :goto_1
+.end method
+
+.method private restoreRejectMessage(Ljava/io/File;)V
+    .locals 19
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const/4 v14, 0x0
+
+    const/4 v6, 0x0
+
+    :try_start_0
+    new-instance v7, Ljava/io/BufferedReader;
+
+    new-instance v13, Ljava/io/FileReader;
+
+    move-object/from16 v0, p1
+
+    invoke-direct {v13, v0}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
+
+    invoke-direct {v7, v13}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_9
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    invoke-virtual {v7}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+
+    move-result-object v11
+
+    if-eqz v11, :cond_3
+
+    const-string/jumbo v13, "\\d+?\\t(.+?)\\t\\d+\\t\\d+"
+
+    const/16 v15, 0x28
+
+    invoke-static {v13, v15}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
+
+    move-result-object v10
+
+    const-string/jumbo v8, ""
+
+    :goto_0
+    invoke-virtual {v7}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+
+    move-result-object v11
+
+    if-eqz v11, :cond_3
+
+    new-instance v13, Ljava/lang/StringBuilder;
+
+    invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v13, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v13
+
+    invoke-virtual {v13, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v10, v8}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/util/regex/Matcher;->matches()Z
+
+    move-result v13
+
+    if-eqz v13, :cond_2
+
+    invoke-virtual {v9}, Ljava/util/regex/Matcher;->groupCount()I
+
+    move-result v13
+
+    if-lez v13, :cond_2
+
+    const/4 v13, 0x0
+
+    invoke-virtual {v9, v13}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
+
+    move-result-object v13
+
+    const-string/jumbo v15, "\t"
+
+    invoke-virtual {v13, v15}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v2
+
+    array-length v13, v2
+
+    const/4 v15, 0x4
+
+    if-ne v13, v15, :cond_0
+
+    new-instance v12, Landroid/content/ContentValues;
+
+    invoke-direct {v12}, Landroid/content/ContentValues;-><init>()V
+
+    const-string/jumbo v13, "_id"
+
+    const/4 v15, 0x0
+
+    aget-object v15, v2, v15
+
+    invoke-static {v15}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+
+    move-result-wide v16
+
+    invoke-static/range {v16 .. v17}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v15
+
+    invoke-virtual {v12, v13, v15}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
+
+    const-string/jumbo v13, "reject_message"
+
+    const/4 v15, 0x1
+
+    aget-object v15, v2, v15
+
+    invoke-virtual {v12, v13, v15}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v13, "edit_checked"
+
+    const/4 v15, 0x2
+
+    aget-object v15, v2, v15
+
+    invoke-static {v15}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v15
+
+    invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v15
+
+    invoke-virtual {v12, v13, v15}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string/jumbo v13, "remind_time"
+
+    const/4 v15, 0x3
+
+    aget-object v15, v2, v15
+
+    invoke-static {v15}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v15
+
+    invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v15
+
+    invoke-virtual {v12, v13, v15}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string/jumbo v13, "BackupRestoreReceiver"
+
+    new-instance v15, Ljava/lang/StringBuilder;
+
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v16, "restoreDefaultRejectMessage : "
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    const/16 v16, 0x1
+
+    move/from16 v0, v16
+
+    invoke-static {v13, v15, v0}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v15}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v15
+
+    sget-object v16, Lcom/android/phone/callsettings/ProviderConstants;->REJECTMSG_CONTENT_URI:Landroid/net/Uri;
+
+    move-object/from16 v0, v16
+
+    invoke-static {v13, v15, v0, v12}, Landroid/database/sqlite/SqliteWrapper;->insert(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+
+    :goto_1
+    const-string/jumbo v8, ""
+
+    goto/16 :goto_0
+
+    :cond_0
+    const-string/jumbo v13, "BackupRestoreReceiver"
+
+    new-instance v15, Ljava/lang/StringBuilder;
+
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v16, "wrong pattern match : "
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-static {v2}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v16
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    const/16 v16, 0x1
+
+    move/from16 v0, v16
+
+    invoke-static {v13, v15, v0}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    :try_end_1
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v13
+
+    move-object v6, v7
+
+    :goto_2
+    :try_start_2
+    throw v13
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    :catchall_0
+    move-exception v14
+
+    move-object/from16 v18, v14
+
+    move-object v14, v13
+
+    move-object/from16 v13, v18
+
+    :goto_3
+    if-eqz v6, :cond_1
+
+    :try_start_3
+    invoke-virtual {v6}, Ljava/io/BufferedReader;->close()V
+    :try_end_3
+    .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_4
+    .catch Ljava/io/FileNotFoundException; {:try_start_3 .. :try_end_3} :catch_1
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_6
+
+    :cond_1
+    :goto_4
+    if-eqz v14, :cond_7
+
+    :try_start_4
+    throw v14
+    :try_end_4
+    .catch Ljava/io/FileNotFoundException; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_6
+
+    :catch_1
+    move-exception v3
+
+    :goto_5
+    const-string/jumbo v13, "BackupRestoreReceiver"
+
+    invoke-virtual {v3}, Ljava/io/FileNotFoundException;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    const/4 v15, 0x1
+
+    invoke-static {v13, v14, v15}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    :goto_6
+    return-void
+
+    :cond_2
+    :try_start_5
+    new-instance v13, Ljava/lang/StringBuilder;
+
+    invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v13, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v13
+
+    const-string/jumbo v15, "\n"
+
+    invoke-virtual {v13, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :try_end_5
+    .catch Ljava/lang/Throwable; {:try_start_5 .. :try_end_5} :catch_0
+    .catchall {:try_start_5 .. :try_end_5} :catchall_2
+
+    move-result-object v8
+
+    goto/16 :goto_0
+
+    :cond_3
+    if-eqz v7, :cond_4
+
+    :try_start_6
+    invoke-virtual {v7}, Ljava/io/BufferedReader;->close()V
+    :try_end_6
+    .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_3
+    .catch Ljava/io/FileNotFoundException; {:try_start_6 .. :try_end_6} :catch_2
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_8
+
+    :cond_4
+    :goto_7
+    if-eqz v14, :cond_5
+
+    :try_start_7
+    throw v14
+    :try_end_7
+    .catch Ljava/io/FileNotFoundException; {:try_start_7 .. :try_end_7} :catch_2
+    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_7
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_8
+
+    :catch_2
+    move-exception v3
+
+    move-object v6, v7
+
+    goto :goto_5
+
+    :catch_3
+    move-exception v14
+
+    goto :goto_7
+
+    :cond_5
+    move-object v6, v7
+
+    goto :goto_6
+
+    :catch_4
+    move-exception v15
+
+    if-nez v14, :cond_6
+
+    move-object v14, v15
+
+    goto :goto_4
+
+    :cond_6
+    if-eq v14, v15, :cond_1
+
+    :try_start_8
+    invoke-virtual {v14, v15}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    :try_end_8
+    .catch Ljava/io/FileNotFoundException; {:try_start_8 .. :try_end_8} :catch_1
+    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_6
+
+    goto :goto_4
+
+    :catch_5
+    move-exception v4
+
+    :goto_8
+    const-string/jumbo v13, "BackupRestoreReceiver"
+
+    invoke-virtual {v4}, Ljava/io/IOException;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    const/4 v15, 0x1
+
+    invoke-static {v13, v14, v15}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    goto :goto_6
+
+    :cond_7
+    :try_start_9
+    throw v13
+    :try_end_9
+    .catch Ljava/io/FileNotFoundException; {:try_start_9 .. :try_end_9} :catch_1
+    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_6
+
+    :catch_6
+    move-exception v5
+
+    :goto_9
+    const-string/jumbo v13, "BackupRestoreReceiver"
+
+    invoke-virtual {v5}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    const/4 v15, 0x1
+
+    invoke-static {v13, v14, v15}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Z)I
+
+    goto :goto_6
+
+    :catch_7
+    move-exception v4
+
+    move-object v6, v7
+
+    goto :goto_8
+
+    :catch_8
+    move-exception v5
+
+    move-object v6, v7
+
+    goto :goto_9
+
+    :catchall_1
+    move-exception v13
+
+    goto :goto_3
+
+    :catchall_2
+    move-exception v13
+
+    move-object v6, v7
+
+    goto :goto_3
+
+    :catch_9
+    move-exception v13
+
+    goto :goto_2
 .end method
 
 .method private sendResultForKies(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
@@ -7350,15 +8248,30 @@
 
     if-eqz p1, :cond_31
 
-    :goto_17
-    invoke-static {v4, v5, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    goto/16 :goto_1
+    move v3, v2
 
     :cond_31
-    move v2, v3
+    invoke-static {v4, v5, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    goto :goto_17
+    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
+
+    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getPhone()Lcom/android/internal/telephony/Phone;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v3
+
+    const-string/jumbo v4, "VolkeyTapping"
+
+    invoke-static {v3, v4, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    goto/16 :goto_1
 
     :cond_32
     sget-object v4, Lcom/android/phone/BackupRestoreReceiver;->supportSettingDB:[Ljava/lang/String;
@@ -7397,7 +8310,7 @@
 
     if-eqz p1, :cond_33
 
-    :goto_18
+    :goto_17
     invoke-static {v4, v5, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     goto/16 :goto_1
@@ -7405,7 +8318,7 @@
     :cond_33
     move v2, v3
 
-    goto :goto_18
+    goto :goto_17
 .end method
 
 .method private settingDbBackUpToPreference()V
@@ -7742,7 +8655,9 @@
 
     const-string/jumbo v13, "backup to sCloud"
 
-    invoke-static {v12, v13}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v14, 0x1
+
+    invoke-static {v12, v13, v14}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;Z)I
 
     move-object/from16 v0, p1
 
@@ -8075,7 +8990,9 @@
 
     const-string/jumbo v13, "backup FileOutputStream IOException : "
 
-    invoke-static {v12, v13, v3}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    const/4 v14, 0x1
+
+    invoke-static {v12, v13, v3, v14}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Z)I
 
     goto :goto_5
 
@@ -8088,7 +9005,9 @@
 
     const-string/jumbo v13, "backup IOException : "
 
-    invoke-static {v12, v13, v3}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    const/4 v14, 0x1
+
+    invoke-static {v12, v13, v3, v14}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Z)I
 
     const/4 v4, 0x1
 
@@ -8122,7 +9041,9 @@
 
     const-string/jumbo v13, "backup FileOutputStream IOException : "
 
-    invoke-static {v12, v13, v3}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    const/4 v14, 0x1
+
+    invoke-static {v12, v13, v3, v14}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Z)I
 
     goto :goto_7
 
@@ -8152,7 +9073,9 @@
 
     const-string/jumbo v14, "backup FileOutputStream IOException : "
 
-    invoke-static {v13, v14, v3}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    const/4 v15, 0x1
+
+    invoke-static {v13, v14, v3, v15}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Z)I
 
     goto :goto_9
 
@@ -8255,7 +9178,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d02b4
+    const v1, 0x7f0d0314
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8459,7 +9382,9 @@
 
     const-string/jumbo v12, "restore from sCloud"
 
-    invoke-static {v11, v12}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v13, 0x1
+
+    invoke-static {v11, v12, v13}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;Z)I
 
     move-object/from16 v0, p1
 
@@ -8534,7 +9459,9 @@
 
     move-result-object v12
 
-    invoke-static {v11, v12}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v13, 0x1
+
+    invoke-static {v11, v12, v13}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
     const/4 v11, 0x1
 
@@ -8770,7 +9697,9 @@
 
     move-result-object v12
 
-    invoke-static {v11, v12}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v13, 0x1
+
+    invoke-static {v11, v12, v13}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
     const/4 v11, 0x0
 

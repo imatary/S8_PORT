@@ -129,7 +129,7 @@
 
     if-ne v4, v7, :cond_0
 
-    const v7, 0x7f0d046e
+    const v7, 0x7f0d04ce
 
     invoke-static {v7}, Lcom/android/phone/PhoneUtils;->displayToast(I)V
 

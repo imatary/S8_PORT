@@ -201,9 +201,9 @@
 .end method
 
 .method private getMessageSender()Lcom/android/phone/vvm/omtp/sms/OmtpMessageSender;
-    .locals 8
+    .locals 10
 
-    const/4 v4, 0x0
+    const/4 v6, 0x0
 
     iget-object v2, p0, Lcom/android/phone/vvm/omtp/OmtpVvmCarrierConfigHelper;->mCarrierConfig:Landroid/os/PersistableBundle;
 
@@ -215,18 +215,18 @@
 
     invoke-static {v2, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    return-object v4
+    return-object v6
 
     :cond_0
     iget-object v2, p0, Lcom/android/phone/vvm/omtp/OmtpVvmCarrierConfigHelper;->mCarrierConfig:Landroid/os/PersistableBundle;
 
     const-string/jumbo v5, "vvm_port_number_int"
 
-    const/4 v6, 0x0
+    const/4 v9, 0x0
 
-    invoke-virtual {v2, v5, v6}, Landroid/os/PersistableBundle;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {v2, v5, v9}, Landroid/os/PersistableBundle;->getInt(Ljava/lang/String;I)I
 
-    move-result v7
+    move-result v8
 
     iget-object v2, p0, Lcom/android/phone/vvm/omtp/OmtpVvmCarrierConfigHelper;->mCarrierConfig:Landroid/os/PersistableBundle;
 
@@ -248,10 +248,60 @@
 
     invoke-static {v2, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    return-object v4
+    return-object v6
 
     :cond_1
     const/4 v0, 0x0
+
+    const/4 v4, 0x0
+
+    const-string/jumbo v2, "ro.build.version.release"
+
+    invoke-static {v2}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "Samsung."
+
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v5, "ro.product.model"
+
+    invoke-static {v5}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v5, "."
+
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v5, "."
+
+    const-string/jumbo v9, ""
+
+    invoke-virtual {v7, v5, v9}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
 
     iget v2, p0, Lcom/android/phone/vvm/omtp/OmtpVvmCarrierConfigHelper;->mSubId:I
 
@@ -271,11 +321,9 @@
 
     new-instance v0, Lcom/android/phone/vvm/omtp/sms/OmtpStandardMessageSender;
 
-    int-to-short v2, v7
+    int-to-short v2, v8
 
     const-string/jumbo v5, "11"
-
-    move-object v6, v4
 
     invoke-direct/range {v0 .. v6}, Lcom/android/phone/vvm/omtp/sms/OmtpStandardMessageSender;-><init>(Landroid/telephony/SmsManager;SLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -283,9 +331,9 @@
     return-object v0
 
     :cond_2
-    const-string/jumbo v4, "vvm_type_cvvm"
+    const-string/jumbo v5, "vvm_type_cvvm"
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -293,7 +341,7 @@
 
     new-instance v0, Lcom/android/phone/vvm/omtp/sms/OmtpCvvmMessageSender;
 
-    int-to-short v2, v7
+    int-to-short v2, v8
 
     invoke-direct {v0, v1, v2, v3}, Lcom/android/phone/vvm/omtp/sms/OmtpCvvmMessageSender;-><init>(Landroid/telephony/SmsManager;SLjava/lang/String;)V
 
@@ -302,27 +350,27 @@
     :cond_3
     const-string/jumbo v2, "OmtpVvmCarrierConfigHelper"
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v5, "Unexpected visual voicemail type: "
+    const-string/jumbo v6, "Unexpected visual voicemail type: "
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    iget-object v5, p0, Lcom/android/phone/vvm/omtp/OmtpVvmCarrierConfigHelper;->mVvmType:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/phone/vvm/omtp/OmtpVvmCarrierConfigHelper;->mVvmType:Ljava/lang/String;
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-static {v2, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v2, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 .end method

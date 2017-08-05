@@ -160,7 +160,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/SecDeletePrefixList$DeletePrefixAdapter$ViewHolder;-><init>(Lcom/android/phone/callsettings/SecDeletePrefixList$DeletePrefixAdapter;)V
 
-    const v3, 0x7f10026d
+    const v3, 0x7f10026e
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -170,7 +170,7 @@
 
     iput-object v3, v2, Lcom/android/phone/callsettings/SecDeletePrefixList$DeletePrefixAdapter$ViewHolder;->root_Layout:Landroid/widget/LinearLayout;
 
-    const v3, 0x7f10026f
+    const v3, 0x7f100270
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -180,7 +180,7 @@
 
     iput-object v3, v2, Lcom/android/phone/callsettings/SecDeletePrefixList$DeletePrefixAdapter$ViewHolder;->text:Landroid/widget/TextView;
 
-    const v3, 0x7f100262
+    const v3, 0x7f100263
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -188,7 +188,7 @@
 
     iput-object v3, v2, Lcom/android/phone/callsettings/SecDeletePrefixList$DeletePrefixAdapter$ViewHolder;->delete:Landroid/view/View;
 
-    const v3, 0x7f10026e
+    const v3, 0x7f10026f
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

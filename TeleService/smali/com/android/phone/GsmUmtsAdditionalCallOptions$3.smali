@@ -1,5 +1,5 @@
 .class Lcom/android/phone/GsmUmtsAdditionalCallOptions$3;
-.super Landroid/database/ContentObserver;
+.super Landroid/telephony/PhoneStateListener;
 .source "GsmUmtsAdditionalCallOptions.java"
 
 
@@ -19,26 +19,24 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$3;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
+    invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onChange(Z)V
+.method public onDataConnectionStateChanged(I)V
     .locals 1
-
-    invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$3;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    invoke-static {v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap3(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)V
+    invoke-virtual {v0, p1}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->dataConnectionStateChanged(I)V
 
     return-void
 .end method

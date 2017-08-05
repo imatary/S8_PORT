@@ -3,12 +3,10 @@ apkFileName: TeleService.apk
 compressionType: false
 doNotCompress:
 - arsc
-- qmg
-- qio
-- res/drawable-sw598dp-v13/incall_dialer_press.9.qmg
-- pio
 - webp
-- res/drawable/tw_noti_badge_mtrl.9.qmg
+- qmg
+- png_opti
+- pio
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
@@ -30,7 +28,7 @@ usesFramework:
   ids:
   - 1
   tag: null
-version: 2.2.3
+version: 2.2.4
 versionInfo:
   versionCode: '1'
   versionName: 1.0.0

@@ -182,7 +182,7 @@
 
     iget-object v0, p0, Lcom/android/phone/utils/EmergencyRadioOnDialogActivity;->mRadioOnProgressDialog:Landroid/app/ProgressDialog;
 
-    const v1, 0x7f0d0473
+    const v1, 0x7f0d04d3
 
     invoke-virtual {p0, v1}, Lcom/android/phone/utils/EmergencyRadioOnDialogActivity;->getText(I)Ljava/lang/CharSequence;
 
@@ -192,7 +192,7 @@
 
     iget-object v0, p0, Lcom/android/phone/utils/EmergencyRadioOnDialogActivity;->mRadioOnProgressDialog:Landroid/app/ProgressDialog;
 
-    const v1, 0x7f0d0474
+    const v1, 0x7f0d04d4
 
     invoke-virtual {p0, v1}, Lcom/android/phone/utils/EmergencyRadioOnDialogActivity;->getText(I)Ljava/lang/CharSequence;
 

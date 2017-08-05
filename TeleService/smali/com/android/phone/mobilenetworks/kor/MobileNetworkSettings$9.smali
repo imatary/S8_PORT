@@ -35,7 +35,7 @@
 
 # virtual methods
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
-    .locals 1
+    .locals 3
 
     check-cast p1, Landroid/preference/TwoStatePreference;
 
@@ -49,7 +49,19 @@
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings$9;->this$0:Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;
 
-    invoke-static {v0}, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->-wrap4(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;)V
+    invoke-static {v0}, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->-get6(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings$9;->this$0:Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;
+
+    iget-object v2, p0, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings$9;->this$0:Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;
+
+    invoke-static {v2}, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->-get0(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;)Landroid/preference/TwoStatePreference;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->setMobileDataEnabledDialog(Landroid/content/Context;Landroid/preference/TwoStatePreference;)V
 
     const/4 v0, 0x0
 

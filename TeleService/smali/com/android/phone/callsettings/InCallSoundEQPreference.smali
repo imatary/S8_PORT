@@ -86,7 +86,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/callsettings/InCallSoundEQPreference$2;-><init>(Lcom/android/phone/callsettings/InCallSoundEQPreference;)V
 
-    const v2, 0x7f0d02ca
+    const v2, 0x7f0d032a
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -94,15 +94,15 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/callsettings/InCallSoundEQPreference$3;-><init>(Lcom/android/phone/callsettings/InCallSoundEQPreference;)V
 
-    const v2, 0x7f0d02c7
+    const v2, 0x7f0d0327
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d05ee
+    const v1, 0x7f0d0652
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d05f9
+    const v1, 0x7f0d065d
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -438,7 +438,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/InCallSoundEQPreference;->mVoiceCallEqListSetting:Landroid/preference/ListPreference;
 
-    const v5, 0x7f0d05f7
+    const v5, 0x7f0d065b
 
     invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setSummary(I)V
 

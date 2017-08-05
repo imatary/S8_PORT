@@ -83,7 +83,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipPreferences;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0d01ad
+    const v2, 0x7f0d020a
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

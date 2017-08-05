@@ -290,7 +290,7 @@
 
     invoke-direct {v0, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d0509
+    const v2, 0x7f0d0569
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -857,7 +857,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d05c4
+    const v4, 0x7f0d0628
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -936,7 +936,7 @@
 
     if-nez v3, :cond_1
 
-    const v3, 0x7f0d05c5
+    const v3, 0x7f0d0629
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->getString(I)Ljava/lang/String;
 
@@ -975,7 +975,7 @@
 
     if-nez v3, :cond_2
 
-    const v3, 0x7f0d05c6
+    const v3, 0x7f0d062a
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->getString(I)Ljava/lang/String;
 
@@ -996,7 +996,7 @@
     return-void
 
     :cond_2
-    const v3, 0x7f0d09f9
+    const v3, 0x7f0d0a60
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->getString(I)Ljava/lang/String;
 
@@ -1399,7 +1399,7 @@
 
     check-cast v4, Landroid/widget/Button;
 
-    const v5, 0x7f0d041e
+    const v5, 0x7f0d047e
 
     invoke-virtual {v4, v5}, Landroid/widget/Button;->setText(I)V
 
@@ -1416,9 +1416,9 @@
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 8
 
-    const v7, 0x7f0d0511
+    const v7, 0x7f0d0571
 
-    const v6, 0x7f0d050d
+    const v6, 0x7f0d056d
 
     const/4 v5, 0x6
 

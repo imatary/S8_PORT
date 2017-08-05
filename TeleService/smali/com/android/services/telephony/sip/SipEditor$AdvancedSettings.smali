@@ -43,7 +43,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d019a
+    const v1, 0x7f0d01f7
 
     invoke-virtual {p1, v1}, Lcom/android/services/telephony/sip/SipEditor;->getString(I)Ljava/lang/String;
 
@@ -73,7 +73,7 @@
 
     iget-object v3, p0, Lcom/android/services/telephony/sip/SipEditor$AdvancedSettings;->mAdvancedSettingsTrigger:Landroid/preference/Preference;
 
-    const v4, 0x7f0d01a2
+    const v4, 0x7f0d01ff
 
     invoke-virtual {v3, v4}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -119,7 +119,7 @@
 
     iget-object v7, p0, Lcom/android/services/telephony/sip/SipEditor$AdvancedSettings;->this$0:Lcom/android/services/telephony/sip/SipEditor;
 
-    const v8, 0x7f0d01b6
+    const v8, 0x7f0d0213
 
     invoke-virtual {v7, v8}, Lcom/android/services/telephony/sip/SipEditor;->getString(I)Ljava/lang/String;
 
@@ -213,7 +213,7 @@
 
     iget-object v2, p0, Lcom/android/services/telephony/sip/SipEditor$AdvancedSettings;->mAdvancedSettingsTrigger:Landroid/preference/Preference;
 
-    const v3, 0x7f0d01a3
+    const v3, 0x7f0d0200
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setSummary(I)V
 

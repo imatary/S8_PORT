@@ -916,7 +916,7 @@
 
     invoke-direct {v2, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f0d0638
+    const v3, 0x7f0d069c
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CaptureImageViewer;->getString(I)Ljava/lang/String;
 
@@ -1073,7 +1073,7 @@
 
     if-eqz v4, :cond_2
 
-    const v4, 0x7f0d0722
+    const v4, 0x7f0d0786
 
     invoke-direct {p0, v4, v6}, Lcom/android/phone/callsettings/CaptureImageViewer;->showToast(II)V
 
@@ -1150,7 +1150,7 @@
 
     iput-boolean v6, p0, Lcom/android/phone/callsettings/CaptureImageViewer;->mNoSDCardstart:Z
 
-    const v4, 0x7f0d0721
+    const v4, 0x7f0d0785
 
     invoke-direct {p0, v4, v6}, Lcom/android/phone/callsettings/CaptureImageViewer;->showToast(II)V
 

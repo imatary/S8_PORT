@@ -1007,7 +1007,7 @@
 
     if-eqz v6, :cond_0
 
-    const v6, 0x7f0d0741
+    const v6, 0x7f0d07a5
 
     invoke-virtual {p0, v6}, Lcom/android/phone/emergencydialer/EmergencyCallList;->getString(I)Ljava/lang/String;
 
@@ -1019,7 +1019,7 @@
 
     if-eqz v6, :cond_0
 
-    const v6, 0x7f0d0740
+    const v6, 0x7f0d07a4
 
     invoke-virtual {p0, v6}, Lcom/android/phone/emergencydialer/EmergencyCallList;->getString(I)Ljava/lang/String;
 
@@ -1082,7 +1082,7 @@
 
     if-eqz v4, :cond_6
 
-    const v6, 0x7f0d0731
+    const v6, 0x7f0d0795
 
     invoke-virtual {p0, v6}, Lcom/android/phone/emergencydialer/EmergencyCallList;->getString(I)Ljava/lang/String;
 
@@ -1104,14 +1104,14 @@
 
     invoke-direct {v6, p0, v2}, Lcom/android/phone/emergencydialer/EmergencyCallList$2;-><init>(Lcom/android/phone/emergencydialer/EmergencyCallList;Ljava/lang/String;)V
 
-    const v7, 0x7f0d04f9
+    const v7, 0x7f0d0559
 
     invoke-virtual {v0, v7, v6}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     :cond_3
     if-eqz v4, :cond_7
 
-    const v3, 0x7f0d04f8
+    const v3, 0x7f0d0558
 
     :goto_2
     new-instance v6, Lcom/android/phone/emergencydialer/EmergencyCallList$3;
@@ -1124,7 +1124,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/emergencydialer/EmergencyCallList$4;-><init>(Lcom/android/phone/emergencydialer/EmergencyCallList;)V
 
-    const v7, 0x7f0d02c7
+    const v7, 0x7f0d0327
 
     invoke-virtual {v0, v7, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1142,7 +1142,7 @@
 
     iget-object v6, p0, Lcom/android/phone/emergencydialer/EmergencyCallList;->mEmergencyCallsDialog:Landroid/app/AlertDialog;
 
-    const v7, 0x7f0d072f
+    const v7, 0x7f0d0793
 
     invoke-virtual {v6, v7}, Landroid/app/AlertDialog;->setTitle(I)V
 
@@ -1179,7 +1179,7 @@
     goto :goto_0
 
     :cond_6
-    const v6, 0x7f0d0730
+    const v6, 0x7f0d0794
 
     invoke-virtual {p0, v6}, Lcom/android/phone/emergencydialer/EmergencyCallList;->getString(I)Ljava/lang/String;
 
@@ -1194,7 +1194,7 @@
     goto :goto_1
 
     :cond_7
-    const v3, 0x7f0d02ca
+    const v3, 0x7f0d032a
 
     goto :goto_2
 .end method
@@ -1696,7 +1696,7 @@
 
     invoke-virtual {p0, v11}, Lcom/android/phone/emergencydialer/EmergencyCallList;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    const v11, 0x7f0d072f
+    const v11, 0x7f0d0793
 
     invoke-virtual {p0, v11}, Lcom/android/phone/emergencydialer/EmergencyCallList;->setTitle(I)V
 
@@ -1854,7 +1854,7 @@
     if-eqz v11, :cond_5
 
     :cond_4
-    const v11, 0x7f0d046a
+    const v11, 0x7f0d04ca
 
     invoke-virtual {p0, v11}, Lcom/android/phone/emergencydialer/EmergencyCallList;->getString(I)Ljava/lang/String;
 

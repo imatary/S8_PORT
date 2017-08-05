@@ -17,6 +17,8 @@
 
 .field public static mAlarmNoti:Z
 
+.field private static mContentBitmap:Landroid/graphics/Bitmap;
+
 .field private static mSmartCallNotiCount:I
 
 .field private static sInstance:Lcom/android/phone/SmartCallNotificationMgr;
@@ -283,7 +285,7 @@
 
     iget-object v0, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0d01f9
+    const v1, 0x7f0d0256
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -291,7 +293,7 @@
 
     iget-object v1, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0d0222
+    const v2, 0x7f0d0280
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -309,6 +311,17 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
 
+    sget-object v0, Lcom/android/phone/SmartCallNotificationMgr;->mContentBitmap:Landroid/graphics/Bitmap;
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lcom/android/phone/SmartCallNotificationMgr;->mContentBitmap:Landroid/graphics/Bitmap;
+
+    invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
+
+    sput-object v3, Lcom/android/phone/SmartCallNotificationMgr;->mContentBitmap:Landroid/graphics/Bitmap;
+
+    :cond_0
     iput-object v3, p0, Lcom/android/phone/SmartCallNotificationMgr;->mSmartCallsFilterNotification:Landroid/app/Notification;
 
     iget-object v0, p0, Lcom/android/phone/SmartCallNotificationMgr;->mNotificationManager:Landroid/app/NotificationManager;
@@ -694,183 +707,245 @@
 .end method
 
 .method public showSmartCallsFilterNotification()V
-    .locals 12
+    .locals 13
+
+    const/4 v12, 0x0
 
     const/4 v11, 0x0
 
-    const/4 v10, 0x0
+    const-string/jumbo v7, "showSmartCallsFilterNotification()..."
 
-    const-string/jumbo v6, "showSmartCallsFilterNotification()..."
+    invoke-direct {p0, v7}, Lcom/android/phone/SmartCallNotificationMgr;->log(Ljava/lang/String;)V
 
-    invoke-direct {p0, v6}, Lcom/android/phone/SmartCallNotificationMgr;->log(Ljava/lang/String;)V
+    const-string/jumbo v7, "smartcall_noti_count"
 
-    const-string/jumbo v6, "smartcall_noti_count"
+    invoke-static {v7, v11}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
 
-    invoke-static {v6, v10}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
+    move-result v7
 
-    move-result v6
+    sput v7, Lcom/android/phone/SmartCallNotificationMgr;->mSmartCallNotiCount:I
 
-    sput v6, Lcom/android/phone/SmartCallNotificationMgr;->mSmartCallNotiCount:I
+    sget v7, Lcom/android/phone/SmartCallNotificationMgr;->mSmartCallNotiCount:I
 
-    sget v6, Lcom/android/phone/SmartCallNotificationMgr;->mSmartCallNotiCount:I
-
-    if-nez v6, :cond_0
+    if-nez v7, :cond_0
 
     invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isSupportedSmartCallNoti()Z
 
-    move-result v6
+    move-result v7
 
-    if-eqz v6, :cond_3
+    if-eqz v7, :cond_3
 
     :cond_0
-    new-instance v3, Landroid/content/Intent;
+    new-instance v4, Landroid/content/Intent;
 
-    iget-object v6, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
 
-    const-class v7, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;
+    const-class v8, Lcom/android/phone/smartcall/SmartCallPrivacyNoticeActivity;
 
-    invoke-direct {v3, v6, v7}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-direct {v4, v7, v8}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    iget-object v6, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
 
-    invoke-static {v6, v10, v3, v10}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+    invoke-static {v7, v11, v4, v11}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
-    move-result-object v5
+    move-result-object v6
 
     new-instance v0, Landroid/app/Notification$Builder;
 
-    iget-object v6, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
 
-    invoke-direct {v0, v6}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v7}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
-    const-string/jumbo v6, "feature_usa"
+    sget v7, Lcom/android/phone/SmartCallNotificationMgr;->mSmartCallNotiCount:I
 
-    invoke-static {v6}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    rem-int/lit8 v7, v7, 0x2
 
-    move-result v6
+    if-nez v7, :cond_4
 
-    if-eqz v6, :cond_4
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
 
-    iget-object v6, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+    const v8, 0x7f0d0c5c
 
-    const v7, 0x7f0d0bf1
-
-    invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
     :goto_0
-    const v6, 0x7f02014f
+    invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v0, v6}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
+    move-result-object v7
 
-    invoke-virtual {v0, v11}, Landroid/app/Notification$Builder;->setTicker(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+    invoke-virtual {v7}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v7
+
+    iget-object v7, v7, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
+
+    invoke-virtual {v7}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string/jumbo v7, "SmartCallNotificationMgr"
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v9, "currentLocale = "
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string/jumbo v7, "de"
+
+    invoke-virtual {v3, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_5
+
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v7
+
+    const v8, 0x7f020177
+
+    invoke-static {v7, v8}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
+
+    move-result-object v7
+
+    sput-object v7, Lcom/android/phone/SmartCallNotificationMgr;->mContentBitmap:Landroid/graphics/Bitmap;
+
+    :goto_1
+    const v7, 0x7f020153
+
+    invoke-virtual {v0, v7}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
+
+    invoke-virtual {v0, v12}, Landroid/app/Notification$Builder;->setTicker(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    move-result-wide v6
+    move-result-wide v8
 
-    invoke-virtual {v0, v6, v7}, Landroid/app/Notification$Builder;->setWhen(J)Landroid/app/Notification$Builder;
+    invoke-virtual {v0, v8, v9}, Landroid/app/Notification$Builder;->setWhen(J)Landroid/app/Notification$Builder;
 
-    const-string/jumbo v6, "feature_usa"
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
 
-    invoke-static {v6}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    const v8, 0x7f0d0c58
 
-    move-result v6
+    invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    if-eqz v6, :cond_5
+    move-result-object v7
 
-    iget-object v6, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+    invoke-virtual {v0, v7}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
-    const v7, 0x7f0d0bee
-
-    invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v0, v6}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
-
-    :goto_1
     invoke-virtual {v0, v2}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
-    invoke-virtual {v0, v5}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
+    invoke-virtual {v0, v6}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
 
-    new-instance v6, Landroid/app/Notification$BigTextStyle;
+    new-instance v7, Landroid/app/Notification$BigPictureStyle;
 
-    invoke-direct {v6}, Landroid/app/Notification$BigTextStyle;-><init>()V
+    invoke-direct {v7}, Landroid/app/Notification$BigPictureStyle;-><init>()V
 
-    invoke-virtual {v6, v2}, Landroid/app/Notification$BigTextStyle;->bigText(Ljava/lang/CharSequence;)Landroid/app/Notification$BigTextStyle;
+    sget-object v8, Lcom/android/phone/SmartCallNotificationMgr;->mContentBitmap:Landroid/graphics/Bitmap;
 
-    move-result-object v6
+    invoke-virtual {v7, v8}, Landroid/app/Notification$BigPictureStyle;->bigPicture(Landroid/graphics/Bitmap;)Landroid/app/Notification$BigPictureStyle;
 
-    invoke-virtual {v0, v6}, Landroid/app/Notification$Builder;->setStyle(Landroid/app/Notification$Style;)Landroid/app/Notification$Builder;
+    move-result-object v7
+
+    invoke-virtual {v7, v2}, Landroid/app/Notification$BigPictureStyle;->setSummaryText(Ljava/lang/CharSequence;)Landroid/app/Notification$BigPictureStyle;
+
+    move-result-object v7
+
+    invoke-virtual {v0, v7}, Landroid/app/Notification$Builder;->setStyle(Landroid/app/Notification$Style;)Landroid/app/Notification$Builder;
 
     invoke-virtual {v0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
 
-    move-result-object v6
+    move-result-object v7
 
-    iput-object v6, p0, Lcom/android/phone/SmartCallNotificationMgr;->mSmartCallsFilterNotification:Landroid/app/Notification;
+    iput-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mSmartCallsFilterNotification:Landroid/app/Notification;
 
-    iget-object v6, p0, Lcom/android/phone/SmartCallNotificationMgr;->mNotificationManager:Landroid/app/NotificationManager;
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mNotificationManager:Landroid/app/NotificationManager;
 
-    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mSmartCallsFilterNotification:Landroid/app/Notification;
+    iget-object v8, p0, Lcom/android/phone/SmartCallNotificationMgr;->mSmartCallsFilterNotification:Landroid/app/Notification;
 
-    sget-object v8, Landroid/os/UserHandle;->CURRENT:Landroid/os/UserHandle;
+    sget-object v9, Landroid/os/UserHandle;->CURRENT:Landroid/os/UserHandle;
 
-    const/16 v9, 0x17
+    const/16 v10, 0x17
 
-    invoke-virtual {v6, v11, v9, v7, v8}, Landroid/app/NotificationManager;->notifyAsUser(Ljava/lang/String;ILandroid/app/Notification;Landroid/os/UserHandle;)V
+    invoke-virtual {v7, v12, v10, v8, v9}, Landroid/app/NotificationManager;->notifyAsUser(Ljava/lang/String;ILandroid/app/Notification;Landroid/os/UserHandle;)V
 
-    const-string/jumbo v6, "first_call"
+    const-string/jumbo v7, "first_call"
 
-    invoke-static {v6, v10}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
+    invoke-static {v7, v11}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
 
-    const-string/jumbo v6, "support_smart_call_mcc"
+    const-string/jumbo v7, "support_smart_call_mcc"
 
-    invoke-static {v6}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v7}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v6
+    move-result v7
 
-    if-eqz v6, :cond_1
+    if-eqz v7, :cond_1
 
     invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isSupportMccSmartCall()Z
 
-    move-result v6
+    move-result v7
 
-    if-eqz v6, :cond_2
+    if-eqz v7, :cond_2
 
     :cond_1
-    iget-object v6, p0, Lcom/android/phone/SmartCallNotificationMgr;->mPhone:Lcom/android/internal/telephony/Phone;
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    invoke-virtual {v6}, Lcom/android/internal/telephony/Phone;->getServiceState()Landroid/telephony/ServiceState;
+    invoke-virtual {v7}, Lcom/android/internal/telephony/Phone;->getServiceState()Landroid/telephony/ServiceState;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v6}, Landroid/telephony/ServiceState;->getRoaming()Z
+    invoke-virtual {v7}, Landroid/telephony/ServiceState;->getRoaming()Z
 
-    move-result v6
+    move-result v7
 
-    if-nez v6, :cond_2
+    if-nez v7, :cond_2
 
     invoke-static {}, Lcom/android/phone/TeleServiceSystemDB;->isUltraPowerSavingMode()Z
 
-    move-result v6
+    move-result v7
 
-    if-nez v6, :cond_2
+    if-nez v7, :cond_2
 
     invoke-static {}, Lcom/android/phone/TeleServiceSystemDB;->isEmergencyMode()Z
 
-    move-result v6
+    move-result v7
 
-    if-eqz v6, :cond_6
+    if-eqz v7, :cond_9
 
     :cond_2
     invoke-virtual {p0}, Lcom/android/phone/SmartCallNotificationMgr;->cancelSmartCallsFilterNotification()V
 
     :goto_2
-    sget v6, Lcom/android/phone/SmartCallNotificationMgr;->mSmartCallNotiCount:I
+    sget v7, Lcom/android/phone/SmartCallNotificationMgr;->mSmartCallNotiCount:I
 
-    invoke-virtual {p0, v6}, Lcom/android/phone/SmartCallNotificationMgr;->setSmartCallNotificationAlarm(I)V
+    invoke-virtual {p0, v7}, Lcom/android/phone/SmartCallNotificationMgr;->setSmartCallNotificationAlarm(I)V
 
     return-void
 
@@ -879,122 +954,201 @@
 
     move-result-object v1
 
-    new-instance v6, Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const/4 v7, 0x1
+    const/4 v8, 0x1
 
-    invoke-virtual {v1, v7}, Ljava/util/Calendar;->get(I)I
+    invoke-virtual {v1, v8}, Ljava/util/Calendar;->get(I)I
 
-    move-result v7
+    move-result v8
 
-    invoke-static {v7}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+    invoke-static {v8}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    const-string/jumbo v7, ","
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    const/4 v7, 0x2
-
-    invoke-virtual {v1, v7}, Ljava/util/Calendar;->get(I)I
-
-    move-result v7
-
-    invoke-static {v7}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v8, ","
 
-    move-result-object v6
-
-    const-string/jumbo v7, ","
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    const/4 v7, 0x5
-
-    invoke-virtual {v1, v7}, Ljava/util/Calendar;->get(I)I
-
-    move-result v7
-
-    invoke-static {v7}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v8, 0x2
 
-    move-result-object v6
+    invoke-virtual {v1, v8}, Ljava/util/Calendar;->get(I)I
 
-    const-string/jumbo v7, ",12,0,0"
+    move-result v8
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v8}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v8
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v7
 
-    const-string/jumbo v6, "smartcall_noti_date"
+    const-string/jumbo v8, ","
 
-    invoke-static {v6, v4}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const/4 v8, 0x5
+
+    invoke-virtual {v1, v8}, Ljava/util/Calendar;->get(I)I
+
+    move-result v8
+
+    invoke-static {v8}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string/jumbo v8, ",12,0,0"
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string/jumbo v7, "smartcall_noti_date"
+
+    invoke-static {v7, v5}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
     :cond_4
-    iget-object v6, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f0d0bf0
+    const v8, 0x7f0d0c5d
 
-    invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
     goto/16 :goto_0
 
     :cond_5
-    iget-object v6, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+    const-string/jumbo v7, "es"
 
-    const v7, 0x7f0d0bed
+    invoke-virtual {v3, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    move-result v7
 
-    move-result-object v6
+    if-eqz v7, :cond_6
 
-    invoke-virtual {v0, v6}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v7
+
+    const v8, 0x7f020179
+
+    invoke-static {v7, v8}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
+
+    move-result-object v7
+
+    sput-object v7, Lcom/android/phone/SmartCallNotificationMgr;->mContentBitmap:Landroid/graphics/Bitmap;
 
     goto/16 :goto_1
 
     :cond_6
-    iget-object v6, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+    const-string/jumbo v7, "fr"
 
-    sget-object v7, Lcom/android/phone/utils/AppLogging$AppLoggingAction;->GENERAL_SINGLE:Lcom/android/phone/utils/AppLogging$AppLoggingAction;
+    invoke-virtual {v3, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    const-string/jumbo v8, "IUND"
+    move-result v7
 
-    invoke-static {v6, v7, v8}, Lcom/android/phone/utils/AppLogging;->insertLog(Landroid/content/Context;Lcom/android/phone/utils/AppLogging$AppLoggingAction;Ljava/lang/String;)V
+    if-eqz v7, :cond_7
 
-    iget-object v6, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f0d01f9
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    move-result-object v7
 
-    move-result-object v6
+    const v8, 0x7f02017a
 
-    invoke-static {v6}, Lcom/android/phone/utils/SALogging;->sendSAViewFlowLog(Ljava/lang/String;)V
+    invoke-static {v7, v8}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
+
+    move-result-object v7
+
+    sput-object v7, Lcom/android/phone/SmartCallNotificationMgr;->mContentBitmap:Landroid/graphics/Bitmap;
+
+    goto/16 :goto_1
+
+    :cond_7
+    const-string/jumbo v7, "it"
+
+    invoke-virtual {v3, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_8
+
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v7
+
+    const v8, 0x7f02017b
+
+    invoke-static {v7, v8}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
+
+    move-result-object v7
+
+    sput-object v7, Lcom/android/phone/SmartCallNotificationMgr;->mContentBitmap:Landroid/graphics/Bitmap;
+
+    goto/16 :goto_1
+
+    :cond_8
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v7
+
+    const v8, 0x7f020178
+
+    invoke-static {v7, v8}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
+
+    move-result-object v7
+
+    sput-object v7, Lcom/android/phone/SmartCallNotificationMgr;->mContentBitmap:Landroid/graphics/Bitmap;
+
+    goto/16 :goto_1
+
+    :cond_9
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+
+    sget-object v8, Lcom/android/phone/utils/AppLogging$AppLoggingAction;->GENERAL_SINGLE:Lcom/android/phone/utils/AppLogging$AppLoggingAction;
+
+    const-string/jumbo v9, "IUND"
+
+    invoke-static {v7, v8, v9}, Lcom/android/phone/utils/AppLogging;->insertLog(Landroid/content/Context;Lcom/android/phone/utils/AppLogging$AppLoggingAction;Ljava/lang/String;)V
+
+    iget-object v7, p0, Lcom/android/phone/SmartCallNotificationMgr;->mContext:Landroid/content/Context;
+
+    const v8, 0x7f0d0256
+
+    invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v7}, Lcom/android/phone/utils/SALogging;->sendSAViewFlowLog(Ljava/lang/String;)V
 
     goto/16 :goto_2
 .end method

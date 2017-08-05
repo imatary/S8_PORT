@@ -928,7 +928,7 @@
 
     invoke-static {v3}, Lcom/android/phone/PhoneUtils;->hangup(Lcom/android/internal/telephony/CallManager;)Z
 
-    const v8, 0x7f0d04f6
+    const v8, 0x7f0d0556
 
     invoke-virtual {v1, v8}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 

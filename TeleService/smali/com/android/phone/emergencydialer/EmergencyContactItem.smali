@@ -570,7 +570,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d0996
+    const v4, 0x7f0d09fc
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -666,7 +666,7 @@
 
     invoke-direct {v0, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d096d
+    const v4, 0x7f0d09d3
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -680,7 +680,7 @@
 
     invoke-direct {v5, p0, v3}, Lcom/android/phone/emergencydialer/EmergencyContactItem$9;-><init>(Lcom/android/phone/emergencydialer/EmergencyContactItem;Landroid/widget/EditText;)V
 
-    const v6, 0x7f0d02ca
+    const v6, 0x7f0d032a
 
     invoke-virtual {v4, v6, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -690,7 +690,7 @@
 
     invoke-direct {v5, p0}, Lcom/android/phone/emergencydialer/EmergencyContactItem$10;-><init>(Lcom/android/phone/emergencydialer/EmergencyContactItem;)V
 
-    const v6, 0x7f0d02c7
+    const v6, 0x7f0d0327
 
     invoke-virtual {v4, v6, v5}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1214,7 +1214,7 @@
     goto :goto_0
 
     :cond_4
-    const v3, 0x7f020073
+    const v3, 0x7f020076
 
     if-ne p2, v3, :cond_5
 
@@ -1319,7 +1319,7 @@
     return-void
 
     :cond_2
-    const v1, 0x7f020073
+    const v1, 0x7f020076
 
     invoke-direct {p0, v3, v1}, Lcom/android/phone/emergencydialer/EmergencyContactItem;->setContactImage(Landroid/graphics/Bitmap;I)V
 
@@ -1335,7 +1335,7 @@
 
     iget-object v0, p0, Lcom/android/phone/emergencydialer/EmergencyContactItem;->mImageButton:Landroid/widget/ImageButton;
 
-    const v1, 0x7f02008b
+    const v1, 0x7f02008e
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setBackgroundResource(I)V
 
@@ -1345,7 +1345,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d04c1
+    const v2, 0x7f0d0521
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1546,11 +1546,11 @@
 
     iget-object v3, p0, Lcom/android/phone/emergencydialer/EmergencyContactItem;->mNameView:Landroid/widget/TextView;
 
-    const v4, 0x7f0d096c
+    const v4, 0x7f0d09d2
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
-    const v1, 0x7f02008d
+    const v1, 0x7f020090
 
     :goto_4
     invoke-direct {p0, v0, v1}, Lcom/android/phone/emergencydialer/EmergencyContactItem;->setContactImage(Landroid/graphics/Bitmap;I)V
@@ -1564,7 +1564,7 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v1, 0x7f02008e
+    const v1, 0x7f020091
 
     goto :goto_4
 
@@ -1577,7 +1577,7 @@
 
     if-eqz v3, :cond_7
 
-    const v1, 0x7f020075
+    const v1, 0x7f020078
 
     iget-object v3, p0, Lcom/android/phone/emergencydialer/EmergencyContactItem;->mNameView:Landroid/widget/TextView;
 
@@ -1593,7 +1593,7 @@
 
     iget-object v3, p0, Lcom/android/phone/emergencydialer/EmergencyContactItem;->mImageButton:Landroid/widget/ImageButton;
 
-    const v4, 0x7f020076
+    const v4, 0x7f020079
 
     invoke-virtual {v3, v4}, Landroid/widget/ImageButton;->setBackgroundResource(I)V
 
@@ -1798,7 +1798,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d04c2
+    const v2, 0x7f0d0522
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2180,7 +2180,7 @@
 .method public updateEmergencyContact(I)V
     .locals 3
 
-    const v2, 0x7f0d0211
+    const v2, 0x7f0d026f
 
     const-string/jumbo v0, "EmergencyContactItem"
 
@@ -2221,7 +2221,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0212
+    const v1, 0x7f0d0270
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2231,7 +2231,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d028c
+    const v2, 0x7f0d02eb
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2285,7 +2285,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d028b
+    const v2, 0x7f0d02ea
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2325,7 +2325,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0289
+    const v2, 0x7f0d02e8
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

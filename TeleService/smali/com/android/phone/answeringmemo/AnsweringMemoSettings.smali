@@ -193,7 +193,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d09d2
+    const v3, 0x7f0d0a38
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -205,7 +205,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0cd0
+    const v3, 0x7f0d0d41
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -217,7 +217,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d02ca
+    const v3, 0x7f0d032a
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -233,7 +233,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d02c7
+    const v3, 0x7f0d0327
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -317,7 +317,7 @@
 
     aput-object v3, v2, v4
 
-    const v3, 0x7f0d0cbb
+    const v3, 0x7f0d0d2c
 
     invoke-virtual {p0, v3, v2}, Lcom/android/phone/answeringmemo/AnsweringMemoSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -517,7 +517,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0cbf
+    const v3, 0x7f0d0d30
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -529,7 +529,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0cd1
+    const v3, 0x7f0d0d42
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -541,7 +541,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d02ca
+    const v3, 0x7f0d032a
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -624,7 +624,7 @@
 
     iget-object v2, p0, Lcom/android/phone/answeringmemo/AnsweringMemoSettings;->mLimitListener:Lcom/android/phone/answeringmemo/RingDurationPickerDialog$OnDurationSetListener;
 
-    const v1, 0x7f0d0cce
+    const v1, 0x7f0d0d3f
 
     invoke-virtual {p0, v1}, Lcom/android/phone/answeringmemo/AnsweringMemoSettings;->getString(I)Ljava/lang/String;
 
@@ -668,7 +668,7 @@
 
     check-cast v1, Landroid/widget/LinearLayout;
 
-    const v5, 0x7f100292
+    const v5, 0x7f100294
 
     invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -710,11 +710,11 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v5, 0x7f0d0ccf
+    const v5, 0x7f0d0d40
 
     invoke-virtual {v0, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v5, 0x7f0d0ccb
+    const v5, 0x7f0d0d3c
 
     invoke-virtual {p0, v5}, Lcom/android/phone/answeringmemo/AnsweringMemoSettings;->getString(I)Ljava/lang/String;
 
@@ -728,7 +728,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0d086a
+    const v6, 0x7f0d08ce
 
     invoke-virtual {p0, v6}, Lcom/android/phone/answeringmemo/AnsweringMemoSettings;->getString(I)Ljava/lang/String;
 
@@ -756,7 +756,7 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    const v5, 0x7f100291
+    const v5, 0x7f100293
 
     invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -960,7 +960,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f0e0095
+    const v1, 0x7f0e0096
 
     invoke-virtual {p0, v1}, Lcom/android/phone/answeringmemo/AnsweringMemoSettings;->setTheme(I)V
 

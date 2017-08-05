@@ -287,11 +287,11 @@
     if-ne p1, v4, :cond_1
 
     :cond_0
-    const v3, 0x7f0d032d
+    const v3, 0x7f0d038d
 
     sparse-switch p1, :sswitch_data_0
 
-    const v2, 0x7f0d0332
+    const v2, 0x7f0d0392
 
     :goto_0
     new-instance v1, Landroid/app/AlertDialog$Builder;
@@ -314,7 +314,7 @@
 
     invoke-virtual {v1, v4}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v4, 0x7f0d050c
+    const v4, 0x7f0d056c
 
     invoke-virtual {p0, v4}, Lcom/android/phone/nwservice/NetworkService;->getText(I)Ljava/lang/CharSequence;
 
@@ -346,17 +346,17 @@
     return-object v4
 
     :sswitch_0
-    const v2, 0x7f0d0331
+    const v2, 0x7f0d0391
 
     goto :goto_0
 
     :sswitch_1
-    const v2, 0x7f0d0333
+    const v2, 0x7f0d0393
 
     goto :goto_0
 
     :sswitch_2
-    const v2, 0x7f0d05b6
+    const v2, 0x7f0d061a
 
     goto :goto_0
 

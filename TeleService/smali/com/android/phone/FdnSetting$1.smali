@@ -34,11 +34,11 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 14
 
-    const v13, 0x7f0d0332
+    const v13, 0x7f0d0392
 
-    const v12, 0x7f0d040d
+    const v12, 0x7f0d046d
 
-    const v11, 0x7f0d0409
+    const v11, 0x7f0d0469
 
     const/4 v10, 0x0
 
@@ -207,7 +207,7 @@
 
     iget-object v6, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    const v8, 0x7f0d044e
+    const v8, 0x7f0d04ae
 
     invoke-virtual {v6, v8}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -217,7 +217,7 @@
 
     iget-object v6, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    const v8, 0x7f0d0448
+    const v8, 0x7f0d04a8
 
     invoke-virtual {v6, v8}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -229,7 +229,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/FdnSetting$1$1;-><init>(Lcom/android/phone/FdnSetting$1;)V
 
-    const v8, 0x7f0d02ca
+    const v8, 0x7f0d032a
 
     invoke-virtual {v2, v8, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -269,7 +269,7 @@
 
     move-result-object v6
 
-    const v8, 0x7f0d0450
+    const v8, 0x7f0d04b0
 
     invoke-virtual {v6, v8}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
@@ -291,7 +291,7 @@
 
     move-result-object v6
 
-    const v8, 0x7f0d0452
+    const v8, 0x7f0d04b2
 
     invoke-virtual {v6, v8}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
@@ -352,7 +352,7 @@
 
     move-result-object v6
 
-    const v8, 0x7f0d0451
+    const v8, 0x7f0d04b1
 
     invoke-virtual {v6, v8}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
@@ -369,7 +369,7 @@
 
     iget-object v6, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    const v8, 0x7f0d0424
+    const v8, 0x7f0d0484
 
     invoke-static {v6, v8}, Lcom/android/phone/FdnSetting;->-wrap2(Lcom/android/phone/FdnSetting;I)V
 
@@ -653,7 +653,7 @@
 
     iget-object v6, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    const v8, 0x7f0d044e
+    const v8, 0x7f0d04ae
 
     invoke-virtual {v6, v8}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -663,7 +663,7 @@
 
     iget-object v6, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    const v8, 0x7f0d0448
+    const v8, 0x7f0d04a8
 
     invoke-virtual {v6, v8}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -675,7 +675,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/FdnSetting$1$3;-><init>(Lcom/android/phone/FdnSetting$1;)V
 
-    const v8, 0x7f0d02ca
+    const v8, 0x7f0d032a
 
     invoke-virtual {v2, v8, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -719,7 +719,7 @@
 
     move-result-object v6
 
-    const v8, 0x7f0d0450
+    const v8, 0x7f0d04b0
 
     invoke-virtual {v6, v8}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
@@ -741,7 +741,7 @@
 
     move-result-object v6
 
-    const v8, 0x7f0d0452
+    const v8, 0x7f0d04b2
 
     invoke-virtual {v6, v8}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
@@ -773,7 +773,7 @@
 
     move-result-object v6
 
-    const v8, 0x7f0d0451
+    const v8, 0x7f0d04b1
 
     invoke-virtual {v6, v8}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
@@ -901,7 +901,7 @@
 
     iget-object v6, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    const v8, 0x7f0d0441
+    const v8, 0x7f0d04a1
 
     invoke-static {v6, v8}, Lcom/android/phone/FdnSetting;->-wrap2(Lcom/android/phone/FdnSetting;I)V
 
@@ -999,7 +999,7 @@
     :cond_14
     iget-object v6, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    const v8, 0x7f0d0442
+    const v8, 0x7f0d04a2
 
     invoke-static {v6, v8}, Lcom/android/phone/FdnSetting;->-wrap2(Lcom/android/phone/FdnSetting;I)V
 
@@ -1057,7 +1057,7 @@
 
     iget-object v6, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    const v7, 0x7f0d032d
+    const v7, 0x7f0d038d
 
     invoke-virtual {v6, v7}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -1067,7 +1067,7 @@
 
     iget-object v6, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    const v7, 0x7f0d0449
+    const v7, 0x7f0d04a9
 
     invoke-virtual {v6, v7}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
@@ -1079,7 +1079,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/FdnSetting$1$5;-><init>(Lcom/android/phone/FdnSetting$1;)V
 
-    const v7, 0x7f0d0334
+    const v7, 0x7f0d0394
 
     invoke-virtual {v2, v7, v6}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1111,7 +1111,7 @@
 
     iget-object v6, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    const v8, 0x7f0d044a
+    const v8, 0x7f0d04aa
 
     invoke-static {v6, v8}, Lcom/android/phone/FdnSetting;->-wrap2(Lcom/android/phone/FdnSetting;I)V
 
@@ -1215,7 +1215,7 @@
     :cond_19
     iget-object v6, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    const v8, 0x7f0d0446
+    const v8, 0x7f0d04a6
 
     invoke-static {v6, v8}, Lcom/android/phone/FdnSetting;->-wrap2(Lcom/android/phone/FdnSetting;I)V
 

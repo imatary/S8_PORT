@@ -56,7 +56,7 @@
     .end annotation
 .end field
 
-.field private mListView:Landroid/widget/GridView;
+.field public mListView:Landroid/widget/GridView;
 
 .field public mLocList:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;

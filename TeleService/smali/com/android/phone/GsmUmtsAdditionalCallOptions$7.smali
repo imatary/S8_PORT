@@ -1,6 +1,9 @@
 .class Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;
-.super Landroid/content/BroadcastReceiver;
+.super Ljava/lang/Object;
 .source "GsmUmtsAdditionalCallOptions.java"
+
+# interfaces
+.implements Landroid/preference/Preference$OnPreferenceChangeListener;
 
 
 # annotations
@@ -24,57 +27,119 @@
 
     iput-object p1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 3
+.method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
+    .locals 6
 
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    const/4 v5, 0x1
 
-    move-result-object v0
-
-    const-string/jumbo v1, "com.samsung.intent.action.SIMHOTSWAP"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    const-string/jumbo v1, "com.samsung.settings.SIMCARD_MGT_ACTIVATED"
+    move-object v1, v0
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    const-string/jumbo v2, " "
 
-    move-result v0
+    const-string/jumbo v3, ""
 
-    if-eqz v0, :cond_1
+    invoke-virtual {v0, v2, v3}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    const-string/jumbo v0, ""
 
     :cond_0
-    const-string/jumbo v0, "GsmUmtsAdditionalCallOptions"
+    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    const-string/jumbo v1, "ACTION_HOT_SWAP_TYPE_SIM or ACTION_SIM_MGT_ACTIVATED_CHANGED (app finish !!)"
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    const/4 v2, 0x1
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {v0, v1, v2}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    const-string/jumbo v4, "onPreferenceChange - mAutoAreaCodeButton "
 
-    iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getActivity()Landroid/app/Activity;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3, v5}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap7(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;Z)V
+
+    const-string/jumbo v2, "feature_multisim"
+
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    sget v2, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mSimId:I
+
+    if-ne v2, v5, :cond_2
+
+    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+
+    invoke-static {v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap0(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "area_code_sim2_value"
+
+    invoke-static {v2, v3, v0}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
     :cond_1
-    return-void
+    :goto_0
+    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+
+    invoke-static {v2, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap14(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
+
+    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+
+    invoke-static {v2, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap9(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
+
+    return v5
+
+    :cond_2
+    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+
+    invoke-static {v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap0(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "area_code_value"
+
+    invoke-static {v2, v3, v0}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+    const-string/jumbo v2, "dcm_dialer_prefix_setting_support"
+
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
+
+    invoke-static {v2, v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap4(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/String;)V
+
+    goto :goto_0
 .end method

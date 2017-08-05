@@ -26,7 +26,11 @@
     </PreferenceScreen>
     <PreferenceScreen android:persistent="false" android:title="@string/callsettings_sync_call_settings" android:key="button_sync_call_settings_key" />
     <ListPreference android:entries="@array/guide_language_kddi" android:title="@string/change_guide_language_kddi" android:key="change_guide_language_key" android:entryValues="@array/guide_language_kddi_value" />
-    <PreferenceScreen android:title="@string/apply_option_service_kddi" android:key="apply_option_service_key" />
+    <PreferenceScreen android:title="@string/optional_service_kddi" android:key="apply_option_service_key" />
+    <PreferenceCategory android:persistent="false" android:title="@string/au_call_settings_category" android:key="aucallsettings_category_key">
+        <PreferenceScreen android:title="@string/website_kddi" android:key="apply_website_service_key" />
+        <PreferenceScreen android:title="@string/call_au_service_center" android:key="call_au_service_key" />
+    </PreferenceCategory>
     <CheckBoxPreference android:title="@string/callsettings_subaddress_title" android:key="button_subaddress_key" android:summary="@string/callsettings_subaddress_summary" />
     <PreferenceCategory android:persistent="false" android:title="@string/voicemail" android:key="button_voicemail_category_key_duos">
         <PreferenceScreen android:persistent="false" android:title="@string/voicemail" android:key="button_voicemail_key_duos" android:fragment="com.android.phone.CallFeaturesSetting">

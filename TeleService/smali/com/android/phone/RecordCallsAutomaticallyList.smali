@@ -503,7 +503,7 @@
     invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :cond_1
-    const v3, 0x7f100264
+    const v3, 0x7f100265
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -529,7 +529,7 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/ListView;->setItemsCanFocus(Z)V
 
-    const v3, 0x7f100265
+    const v3, 0x7f100266
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -539,7 +539,7 @@
 
     iput-object v3, p0, Lcom/android/phone/RecordCallsAutomaticallyList;->mEmptyImage:Lcom/altamirasoft/path_animation/PathLineAnimationView;
 
-    const v3, 0x7f100266
+    const v3, 0x7f100267
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -549,7 +549,7 @@
 
     iput-object v3, p0, Lcom/android/phone/RecordCallsAutomaticallyList;->mEmptyDesc:Landroid/widget/TextView;
 
-    const v3, 0x7f100267
+    const v3, 0x7f100268
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1327,7 +1327,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0c10
+    const v2, 0x7f0d0c7f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1364,7 +1364,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0c11
+    const v2, 0x7f0d0c80
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1404,7 +1404,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0d05dc
+    const v4, 0x7f0d0640
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1510,13 +1510,13 @@
 
     if-eqz v0, :cond_1
 
-    const v2, 0x7f0d01fb
+    const v2, 0x7f0d0258
 
     invoke-virtual {p0, v2}, Lcom/android/phone/RecordCallsAutomaticallyList;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v3, 0x7f0d021b
+    const v3, 0x7f0d0279
 
     invoke-virtual {p0, v3}, Lcom/android/phone/RecordCallsAutomaticallyList;->getString(I)Ljava/lang/String;
 
@@ -1577,7 +1577,7 @@
     :catch_0
     move-exception v0
 
-    const v1, 0x7f0d0995
+    const v1, 0x7f0d09fb
 
     invoke-virtual {p0, v1}, Lcom/android/phone/RecordCallsAutomaticallyList;->getString(I)Ljava/lang/String;
 
@@ -1837,13 +1837,13 @@
 
     iget-object v0, p0, Lcom/android/phone/RecordCallsAutomaticallyList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0201a7
+    const v1, 0x7f0201b0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/RecordCallsAutomaticallyList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0d07f6
+    const v1, 0x7f0d085a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/RecordCallsAutomaticallyList;->getString(I)Ljava/lang/String;
 
@@ -1867,13 +1867,13 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/RecordCallsAutomaticallyList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f02015d
+    const v1, 0x7f020161
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/RecordCallsAutomaticallyList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0d050a
+    const v1, 0x7f0d056a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/RecordCallsAutomaticallyList;->getString(I)Ljava/lang/String;
 
@@ -1923,13 +1923,13 @@
 
     iget-object v0, p0, Lcom/android/phone/RecordCallsAutomaticallyList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0201a7
+    const v1, 0x7f0201b0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/RecordCallsAutomaticallyList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0d07f6
+    const v1, 0x7f0d085a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/RecordCallsAutomaticallyList;->getString(I)Ljava/lang/String;
 
@@ -1963,13 +1963,13 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/RecordCallsAutomaticallyList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f02015d
+    const v1, 0x7f020161
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/RecordCallsAutomaticallyList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0d050a
+    const v1, 0x7f0d056a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/RecordCallsAutomaticallyList;->getString(I)Ljava/lang/String;
 
@@ -2268,7 +2268,7 @@
 
     if-ne v2, v3, :cond_7
 
-    const v2, 0x7f0d05de
+    const v2, 0x7f0d0642
 
     move-object/from16 v0, p0
 
@@ -2312,7 +2312,7 @@
 
     if-eqz v11, :cond_6
 
-    const v2, 0x7f0d01fb
+    const v2, 0x7f0d0258
 
     move-object/from16 v0, p0
 
@@ -2320,7 +2320,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d021a
+    const v3, 0x7f0d0278
 
     move-object/from16 v0, p0
 
@@ -2344,7 +2344,7 @@
     goto/16 :goto_0
 
     :cond_7
-    const v2, 0x7f0d05e0
+    const v2, 0x7f0d0644
 
     move-object/from16 v0, p0
 
@@ -2383,7 +2383,7 @@
     goto :goto_4
 
     :cond_8
-    const v2, 0x7f0d05df
+    const v2, 0x7f0d0643
 
     move-object/from16 v0, p0
 
@@ -2499,7 +2499,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0500
+    const v2, 0x7f0d0560
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2543,7 +2543,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0c0e
+    const v2, 0x7f0d0c7d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2574,7 +2574,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f100263
+    const v3, 0x7f100264
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2602,7 +2602,7 @@
 
     iput-object v3, p0, Lcom/android/phone/RecordCallsAutomaticallyList;->mErrorText:Landroid/widget/TextView;
 
-    const v3, 0x7f100268
+    const v3, 0x7f100269
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2791,7 +2791,7 @@
 
     iput-boolean v2, p0, Lcom/android/phone/RecordCallsAutomaticallyList;->mIsForeground:Z
 
-    const v0, 0x7f0d01fb
+    const v0, 0x7f0d0258
 
     invoke-virtual {p0, v0}, Lcom/android/phone/RecordCallsAutomaticallyList;->getString(I)Ljava/lang/String;
 

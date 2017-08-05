@@ -261,9 +261,9 @@
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;-><init>()V
 
-    const v0, 0x7f0d0694
+    const v0, 0x7f0d06f8
 
-    const v1, 0x7f0d0695
+    const v1, 0x7f0d06f9
 
     filled-new-array {v0, v1}, [I
 
@@ -361,7 +361,7 @@
 .method private createDialog()V
     .locals 3
 
-    const v2, 0x7f0d050c
+    const v2, 0x7f0d056c
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -371,7 +371,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d069c
+    const v1, 0x7f0d0700
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -399,7 +399,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d06a0
+    const v1, 0x7f0d0704
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -427,7 +427,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0698
+    const v1, 0x7f0d06fc
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -455,7 +455,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d069d
+    const v1, 0x7f0d0701
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -483,7 +483,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d069e
+    const v1, 0x7f0d0702
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -914,7 +914,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0697
+    const v2, 0x7f0d06fb
 
     invoke-virtual {p0, v2}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->getString(I)Ljava/lang/String;
 
@@ -1549,7 +1549,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d06a3
+    const v2, 0x7f0d0707
 
     const/4 v3, 0x0
 
@@ -1750,13 +1750,13 @@
 
     if-nez v0, :cond_0
 
-    const v0, 0x7f0d0699
+    const v0, 0x7f0d06fd
 
     invoke-interface {p1, v1, v1, v1, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f02018b
+    const v1, 0x7f020194
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -1964,13 +1964,13 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0699
+    const v1, 0x7f0d06fd
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f0d069a
+    const v1, 0x7f0d06fe
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -1980,7 +1980,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator$10;-><init>(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;)V
 
-    const v2, 0x7f0d050c
+    const v2, 0x7f0d056c
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1990,7 +1990,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator$11;-><init>(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;)V
 
-    const v2, 0x7f0d050d
+    const v2, 0x7f0d056d
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2021,7 +2021,7 @@
 
     const/4 v3, 0x3
 
-    const v5, 0x7f0d0696
+    const v5, 0x7f0d06fa
 
     move-object v0, p0
 
@@ -2342,7 +2342,7 @@
 
     iget-object v6, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->autoUpdatePreference:Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
-    const v7, 0x7f0d0691
+    const v7, 0x7f0d06f5
 
     invoke-virtual {v6, v7}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->setSummary(I)V
 
@@ -2479,7 +2479,7 @@
 
     iget-object v6, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->autoUpdatePreference:Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
-    const v7, 0x7f0d0692
+    const v7, 0x7f0d06f6
 
     invoke-virtual {v6, v7}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->setSummary(I)V
 
@@ -2504,7 +2504,7 @@
 
     iget-object v6, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->autoUpdatePreference:Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
-    const v7, 0x7f0d06a1
+    const v7, 0x7f0d0705
 
     invoke-virtual {v6, v7}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->setSummary(I)V
 
@@ -2529,7 +2529,7 @@
 
     iget-object v6, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->autoUpdatePreference:Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
-    const v7, 0x7f0d06a2
+    const v7, 0x7f0d0706
 
     invoke-virtual {v6, v7}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->setSummary(I)V
 
@@ -2666,7 +2666,7 @@
 
     move-result-object v2
 
-    const v6, 0x7f0d0bcf
+    const v6, 0x7f0d0c3a
 
     invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2690,7 +2690,7 @@
 
     iget-object v2, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->autoUpdatePreference:Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
-    const v5, 0x7f0d0691
+    const v5, 0x7f0d06f5
 
     invoke-virtual {v2, v5}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->setSummary(I)V
 
@@ -2730,7 +2730,7 @@
 
     move-result-object v2
 
-    const v6, 0x7f0d0bd0
+    const v6, 0x7f0d0c3b
 
     invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2754,7 +2754,7 @@
 
     iget-object v2, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->autoUpdatePreference:Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
-    const v5, 0x7f0d0692
+    const v5, 0x7f0d06f6
 
     invoke-virtual {v2, v5}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->setSummary(I)V
 
@@ -2769,7 +2769,7 @@
 
     iget-object v2, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->autoUpdatePreference:Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
-    const v5, 0x7f0d06a1
+    const v5, 0x7f0d0705
 
     invoke-virtual {v2, v5}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->setSummary(I)V
 
@@ -2784,7 +2784,7 @@
 
     iget-object v2, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->autoUpdatePreference:Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
-    const v5, 0x7f0d06a2
+    const v5, 0x7f0d0706
 
     invoke-virtual {v2, v5}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->setSummary(I)V
 

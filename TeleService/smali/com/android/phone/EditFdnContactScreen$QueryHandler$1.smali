@@ -78,7 +78,7 @@
 
     iget-object v2, v2, Lcom/android/phone/EditFdnContactScreen$QueryHandler;->this$0:Lcom/android/phone/EditFdnContactScreen;
 
-    const v3, 0x7f0d0555
+    const v3, 0x7f0d05b9
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditFdnContactScreen;->getString(I)Ljava/lang/String;
 
@@ -177,7 +177,7 @@
 
     aput-object v3, v2, v4
 
-    const v3, 0x7f0d0554
+    const v3, 0x7f0d05b8
 
     invoke-virtual {v1, v3, v2}, Lcom/android/phone/EditFdnContactScreen;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

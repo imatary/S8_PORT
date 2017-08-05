@@ -75,9 +75,9 @@
 .method private addSearchInfoDB_NetworkSettings()V
     .locals 8
 
-    const v7, 0x7f0d0380
+    const v7, 0x7f0d03e0
 
-    const v6, 0x7f0d037e
+    const v6, 0x7f0d03de
 
     const/4 v5, 0x2
 
@@ -126,9 +126,9 @@
 
     const-string/jumbo v0, "button_data_enabled_key"
 
-    const v1, 0x7f0d09e4
+    const v1, 0x7f0d0a4b
 
-    const v2, 0x7f0d09e5
+    const v2, 0x7f0d0a4c
 
     invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 
@@ -169,9 +169,9 @@
 
     const-string/jumbo v0, "global_data_roaming_access_key"
 
-    const v1, 0x7f0d07fc
+    const v1, 0x7f0d0860
 
-    const v2, 0x7f0d07fe
+    const v2, 0x7f0d0862
 
     invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 
@@ -179,7 +179,7 @@
     :goto_2
     const-string/jumbo v0, "button_apn_key"
 
-    const v1, 0x7f0d02e8
+    const v1, 0x7f0d0348
 
     invoke-direct {p0, v0, v1, v4, v3}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 
@@ -201,9 +201,9 @@
 
     const-string/jumbo v0, "button_prefer_networkmode_key"
 
-    const v1, 0x7f0d09e0
+    const v1, 0x7f0d0a47
 
-    const v2, 0x7f0d09e1
+    const v2, 0x7f0d0a48
 
     invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 
@@ -227,9 +227,9 @@
 
     const-string/jumbo v0, "button_carrier_sel_key"
 
-    const v1, 0x7f0d09e2
+    const v1, 0x7f0d0a49
 
-    const v2, 0x7f0d09e3
+    const v2, 0x7f0d0a4a
 
     invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 
@@ -245,7 +245,7 @@
 
     const-string/jumbo v0, "button_prefer_networkmode_key"
 
-    const v1, 0x7f0d09e6
+    const v1, 0x7f0d0a4d
 
     invoke-direct {p0, v0, v1, v4, v5}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 
@@ -260,7 +260,7 @@
 
     const-string/jumbo v0, "button_prefer_networkmode_key"
 
-    const v1, 0x7f0d02e9
+    const v1, 0x7f0d0349
 
     invoke-direct {p0, v0, v1, v4, v3}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 
@@ -278,7 +278,7 @@
 
     const-string/jumbo v0, "enhanced_4glte_key"
 
-    const v1, 0x7f0d070f
+    const v1, 0x7f0d0773
 
     invoke-direct {p0, v0, v1, v4, v3}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 
@@ -295,9 +295,9 @@
 
     const-string/jumbo v0, "button_data_enabled_key"
 
-    const v1, 0x7f0d070f
+    const v1, 0x7f0d0773
 
-    const v2, 0x7f0d0378
+    const v2, 0x7f0d03d8
 
     invoke-direct {p0, v0, v1, v2, v5}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 
@@ -351,7 +351,7 @@
 
     const-string/jumbo v0, "button_international_enhanced_4glte_key"
 
-    const v1, 0x7f0d08c5
+    const v1, 0x7f0d0929
 
     invoke-direct {p0, v0, v1, v4, v3}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 
@@ -392,7 +392,7 @@
     :cond_f
     const-string/jumbo v0, "preferred_network_mode_key"
 
-    const v1, 0x7f0d0358
+    const v1, 0x7f0d03b8
 
     invoke-direct {p0, v0, v1, v4, v3}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 
@@ -409,7 +409,7 @@
 
     const-string/jumbo v0, "button_prefer_networkmode_key"
 
-    const v1, 0x7f0d0358
+    const v1, 0x7f0d03b8
 
     invoke-direct {p0, v0, v1, v4, v3}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 
@@ -457,9 +457,9 @@
 
     const-string/jumbo v0, "button_carrier_sel_key"
 
-    const v1, 0x7f0d02f4
+    const v1, 0x7f0d0354
 
-    const v2, 0x7f0d0350
+    const v2, 0x7f0d03b0
 
     invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/phone/SettingSearchManagerReceiver;->putValues(Ljava/lang/String;III)V
 

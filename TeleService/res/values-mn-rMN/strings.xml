@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dц %2$dм</string>
-    <string name="battery_history_minutes_no_seconds">%dм</string>
+    <string name="battery_history_hours_no_seconds">%1$dц %2$dмин</string>
+    <string name="battery_history_minutes_no_seconds">%d мин</string>
     <string name="wifi_fail_to_scan">Сүлжээнүүдийг скан хийх боломжгүй</string>
     <string name="wifi_failed_to_obtain_IP">Failed to obtain IP address.</string>
     <string name="wifi_security_none">Байхгүй</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">%s-д холбогдох боломжгүй.</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">%1$s-д холбогдох боломжгүй. %2$s дээр тохиргоонуудаа шалгаад дахин оролдоно уу.</string>
     <string name="bluetooth_pairing_rejected_error_message">Хослуулалтыг %s няцаав</string>
+    <string name="bluetooth_getting_remote_device_name">Төхөөрөмжийн нэрийг авч байна…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">Энэ төхөөрөмж холбогдох үед төхөөрөмжийн нэр харагдана.</string>
     <string name="accessibility_wifi_off">Wifi унтраалттай байна.</string>
     <string name="accessibility_no_wifi">Wifi холбогдоогүй байна.</string>
     <string name="accessibility_wifi_one_bar">Wifi сүлжээний дохио нэг баганатай байна.</string>
@@ -835,7 +837,7 @@
     <string name="singleContactImportedMsg">Импортолсон харилцагчийн жагсаалт</string>
     <string name="failedToImportSingleContactMsg">Харилцагчийн жагсаалтыг импортолж чадсангүй</string>
     <string name="hac_mode_title">Сонсголын аппарат</string>
-    <string name="hac_mode_summary">Сонсголын аппараттай ашиглахын тулд төхөөрөмжийнхөө дууны чанарыг сайжруул.</string>
+    <string name="hac_mode_summary">Утасны сонсголын аппаратны дууны чанарыг тохируул.</string>
     <string name="dtmf_tones_title">DTMF хөгнүүд</string>
     <string name="dtmf_tones_summary">DTMF хөгнүүдийн уртыг тогтоох</string>
     <string name="network_info_message">Сүлжээний зурвас</string>
@@ -1014,6 +1016,10 @@
     <string name="add_call_block_number_toast">Та энэ дугаараас дуудлага хүлээн авахгүй.</string>
     <string name="delete_call_block_number_toast">Одоо та энэ дугаараас дуудлага хүлээн авах боломжтой.</string>
     <string name="emergency_call_block_number_toast">Яаралтай тусламжийн дугааруудыг хориглох боломжгүй.</string>
+    <string name="call_block_dialog_title">Хориглосон дугааруудыг засварлах</string>
+    <string name="call_block_dialog_contents">Android Nougat-с эхлэн, Дуудлага хориглох горим Дугаар хориглохоор солигдсон. Дугаар хориглох нь зүгээр л дуудлага хориглохын оронд дуудлага ба зурвасыг хоёуланг автоматаар хориглоно.</string>
+    <string name="call_block_dialog_settings">ТОХИРГОО-г товшиж Дугаар хориглохыг засварла.</string>
+    <string name="call_block_dialog_button">Тохиргоо</string>
     <string name="no_block_number_description">Таны нэмсэн дугаарууд энд харагдана.</string>
     <string name="no_messages_description">Таны нэмсэн зурвасууд энд харагдана.</string>
     <string name="callsettings_vipmode_blacklist_title">Хар данс</string>
@@ -1063,7 +1069,7 @@
     <string name="callsettings_answering_volume_key_title">Дуу чангалах товчоор хариул</string>
     <string name="callsettings_answering_key_summary">Ирсэн дуудлага хүлээн авахдаа гол товчлуур дар</string>
     <string name="callsettings_PowerkeyEndsCalls_title">Тэжээлийн товчоор дууд.г тасал</string>
-    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Тэжээлийн товчоор дууд.г тасал</string>
+    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Тэжээлийн товчоор дуудлагыг тасал</string>
     <string name="callsettings_PowerkeyEndsCalls_summary">Дэлгэц асаалттай байхад дуудлага таслахдаа тэжээлийн товчлуур дар. Энэ нь дэлгэцийг унтраахгүй.</string>
     <string name="Dialog_PowerkeyEndsCalls">Ойр зайн мэдрэгч идэвхгүй үед тэжээлийн товчлуураар дуудлага таслахаар тохируулах боломжгүй. Ойр зайн мэдрэгч асна. Дуудлагын явцад төхөөрөмжийг чихэндээ авчрахад дэлгэц унтарна.</string>
     <string name="Dialog_PowerkeyEndsCalls_title">Ойр зайн мэдрэгчийг асаах</string>
@@ -1335,7 +1341,7 @@ T роуминг харилцагчийн төвтэй холбоо барихы
     <string name="roaming_alerts_sbody">Яриа, бичвэр, олон улсын роуминг зэрэг роуминг тохиргоо.</string>
     <string name="roaming_alerts_voice_body">Ярианы роуминг</string>
     <string name="roaming_alerts_data_body">Дата роуминг</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">Гарах бичвэр зурвасын роуминг</string>
     <string name="roaming_domestic_category">Орон нутгийн роуминг</string>
     <string name="roaming_international_category">Олон улсын роуминг</string>
     <string name="roaming_voice_body">Яриа ба зурвасын роуминг</string>
@@ -1505,9 +1511,7 @@ Please note that the features above require a network connection."</string>
     <string name="data_usage_disable_mobile_vzw_chn">"Та WLAN хэрэглэхгүй бол интернэт, э-шуудан эсвэл өгөгдлийн холболт шаарддаг бусад програмыг ашиглах боломжгүй болно.
 
 Хөдөлгөөнт өгөгдөл идэвхгүй болно"</string>
-    <string name="mobile_data_off_dialog_text_common">"Wi-Fi ашиглаагүй бол та Интернэт, Имэйл болон дата холболт ашигладаг аппууд ажиллахгүй.
-
-Хөдөлгөөнт датаг идэвхгүй болгоно."</string>
+    <string name="mobile_data_off_dialog_text_common">Wi-Fi сүлжээнд холбогдолгүйгээр та, Интернет, Э-шуудан эсвэл сүлжээний холболт шаардлагатай бусад хэрэглүүр ашиглах боломжгүй.</string>
     <string name="mobile_data_off_dialog_button_turn_off">Унтраах</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"Та Wi-Fi хэрэглэхгүй бол интернэт, э-шуудан эсвэл өгөгдлийн холболт шаарддаг бусад програмыг ашиглах боломжгүй болно.
 
@@ -1587,8 +1591,9 @@ Mobile data will be turned off."</string>
 Хэрэв та тогтсон тарифтай багц ашиглаагүй бол нэмэлт төлбөр гарч болзошгүй."</string>
     <string name="data_3gwarning_popup_title">Мобайл өгөгдөл</string>
     <string name="roaming_data_off_msg">Өгөгдлийн роуминг ашиглахын тулд, Тохиргоо > Холболтууд > Глобал роуминг руу очоод Өгөгдлийн роумингийг идэвхжүүл.</string>
-    <string name="data_3gwarning_popup_noti">Хэрэв та тогтсон тарифтай багц ашиглаагүй бол хөдөлгөөнт сүлжээнд холбогдоход нэмэлт төлбөр гарч болзошгүй. Холбогдох уу?</string>
-    <string name="lgt_4gwarning_popup_mobiledata">Хөдөлгөөнт дата асах болно. Энэ таны төлбөрийн багцаас хамаарч үйлчилгээ үзүүлэгчийн нэмэлт төлбөр гарч болно.</string>
+    <string name="data_3gwarning_popup_noti">Хөдөлгөөнт өгөгдлийг идэвхжүүлнэ. Хөдөлгөөнт өгөгдөлд холбогдвол таны үйлчилгээний төрлөөс хамааран нэмэлт төлбөр тооцогдож болзошгүй.</string>
+    <string name="data_3gwarning_popup_noti_ktt">GiGA LTE ашиглахын тулд Хөдөлгөөнт өгөгдлийг асаана. Ингэснээр таны үйлчилгээний төрлөөс хамаараад нэмэлт төлбөр тооцогдож болзошгүй.</string>
+    <string name="lgt_4gwarning_popup_mobiledata">Хөдөлгөөнт өгөгдлийг идэвхжүүлнэ. Хөдөлгөөнт өгөгдөлд холбогдвол таны үйлчилгээний төрлөөс хамааран нэмэлт төлбөр тооцогдож болзошгүй.</string>
     <string name="lgt_lte_data_roaming_warningmsg">"Өгөгдлийн роуминг идэвхжсэн үед, &lt;u>&lt;font color=\"%1$s\">дотоодын өгөгдлийн тарифын оронд улс хоорондын өгөгдлийн роумингийн тарифаар төлбөр тооцогдоно.&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">Өгөгдлийн роумингийн төлбөрийг хэмнэхийн тулд IM мэдэгдлүүд болон автомат шинэчлэл зэрэг функцыг идэвхгүй болгож,&lt;/font>&lt;/u> дэвсгэр өгөгдлийг хязгаарлахыг идэвхжүүл"</string>
@@ -1959,6 +1964,8 @@ Data roaming may be modified and/or turned off in “Roaming settings”."</stri
     <string name="volte_call_summary_ops">4G сүлжээнд HD дуут дуудлага хийгээрэй.</string>
     <string name="voice_over_lte_title_cct">Volte дуудлага</string>
     <string name="volte_call_summary_cct">4G LTE хөдөлгөөнт сүлжээгээр боломжтой дуудлагын функцүүдийг идэвхжүүлнэ үү.</string>
+    <string name="voice_over_lte_title_o2">4G calling</string>
+    <string name="volte_call_summary_o2">4G дата ашиглан сайжруулсан холбоо ашигла.</string>
     <string name="volte_tty_description_on">While TTY is on, you will not be able to make and receive video calls or have conference calls.</string>
     <string name="volte_prepaid_tty_description_on">TTY mode will be enabled. You will not be able to make or receive conference calls.</string>
     <string name="volte_tty_description_off">While TTY is off, you will not be able to make and receive TTY calls.</string>
@@ -2148,9 +2155,13 @@ Photoring-ээр агуулга илгээхэд нэмэлт төлбөр га�
     <string name="group_voice_call_disable_on_3G">Зөвхөн LTE сүлжээгээр бүлгийн дуудлага боломжтой</string>
     <string name="group_voice_call_outgoing_voice_call">Гарах дуут дуудлага</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"Wi-Fi ашиглаагүй бол та Интернэт, э-шуудан болон өгөгдлийн холболт ашигладаг хэрэглүүрүүдийг ашиглах боломжгүй.
+
+Хөдөлгөөнт өгөгдлийг идэвхгүй болгоно."</string>
     <string name="data_usage_disable_mobile_warning">"Та Wi-Fi хэрэглэхгүй бол интернэт, э-шуудан эсвэл өгөгдлийн холболт шаарддаг бусад програмыг ашиглах боломжгүй болно.
 
 Хөдөлгөөнт өгөгдөл идэвхгүй болно"</string>
+    <string name="data_usage_enable_mobile_warning_skt">Хөдөлгөөнт өгөгдлийг идэвхжүүлнэ. Хөдөлгөөнт өгөгдөлд холбогдвол таны үйлчилгээний төрлөөс хамааран нэмэлт төлбөр тооцогдож болзошгүй.</string>
     <string name="data_usage_enable_mobile_warning">Багц өгөгдлөөр дамжуулан холбогдоход нэмэлт төлбөр гарч болзошгүй. Үргэлжлүүлэх үү?</string>
     <string name="insert_sim_card">SIM карт хийх</string>
     <string name="insert_sim_card_message">Сүлжээний үйлчилгээнд хандахын тулд SIM картыг оруул</string>
@@ -2184,6 +2195,7 @@ Photoring-ээр агуулга илгээхэд нэмэлт төлбөр га�
     <string name="turning_off_answer_memo">Автомат хариулагч болон хариулах зурвасыг хоёуланг нь идэвхжүүлэх боломжгүй. Хариулах зурвас идэвхгүй болно</string>
     <string name="disconnect_network_message">Өгөгдлийн үйлчилгээний сүлжээг өөрчлөхөд одоогоор ашиглаж буй сүлжээг салгана. Өгөгдлийн үйлчилгээний сүлжээг өөрчлөх үү?</string>
     <string name="disconnect_network_title">Одоогийн сүлжээнээс салгах</string>
+    <string name="disable2g_warning_message">Энэ тохиргоо 2G үйлчилгээг унтраана. Хэрэв 2G үйлчилгээ унтарвал LTE эсвэл 3G боломжгүй байршлууд дээр зарим хэрэглүүр болон функцүүд ажиллахгүй байж болно.</string>
     <string name="data_roaming_restrict_title">Өгөгд. роуминг ид.гүй бна</string>
     <string name="data_roaming_restrict_body">Энд товшиж, Өгөгдлийн роуминг горимыг идэвхжүүл.</string>
     <string name="data_network_mode">Өгөгдлийн сүлжээний горим</string>
@@ -2384,6 +2396,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">Энэ дугаарыг устгах уу?</string>
     <string name="change_guide_language_kddi">Зааврын хэлийг өөрчлөх</string>
     <string name="apply_option_service_kddi">%s үйлч.ний сонголтод оч</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">Хэрэглэгчид дэмжлэг үзүүлэх</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">Япон заавар (%d)</string>
     <string name="English_guidance_kddi">Англи заавар (%d)</string>
     <string name="voicecall_kddi">Дуут шуудан</string>
@@ -2438,11 +2454,13 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
     <string name="spam_call_mute_first_ring_summary">Mute the first ring of calls from unsaved numbers.</string>
     <string name="spam_call_auto_reject_title">Дууд. авто. татгалзах</string>
     <string name="smart_call_title">Дууд. ID ба спамийн хамгаалалт</string>
-    <string name="smart_call_title_usa">Спам дугааруудыг таних</string>
     <string name="smart_call_title_for_notice">Дуудлагын ID ба спамын хамгаалалт</string>
-    <string name="smart_call_description">Дуудлагын дэлгэц, Утасны бүртгэл, Зурвасууд дээрх хадгалаагүй залгагч, зурвас илгээгчдийг таньж тогтоо.</string>
-    <string name="smart_call_usa_description">Спам залгагчдын мэдээллийг дуудлагын дэлгэцэн дээр ба Утасны бүртгэлд харуул.</string>
+    <string name="smart_call_description">"Smart call-н тусламжтай спам ба залилагч залгагчдыг илрүүл.
+
+Энэ үйлчилгээ нь таны харилцагчид дотор байхгүй ч залгасан болон зурвас бичсэн хүмүүсийн нэр, профилийн зургийг танд харуулна."</string>
     <string name="smart_call_description_roaming">Бусад улсад ийм үйлчилгээ байхгүй.</string>
+    <string name="smart_call_noti_description_1">Энд товшоод өөрийгөө спам залгагчдаас үнэ төлбөргүй хамгаална уу.</string>
+    <string name="smart_call_noti_description_2">Энд товшоод спам эсвэл залилагч залгагчдыг илрүүлнэ үү.</string>
     <string name="smart_call_share_name_number_title">Нэр, дугаар хуваалц</string>
     <string name="smart_call_share_name_number_summary">Та хүлээн авагчид руу залгах/зурвас илгээх үедээ дугаараа харахгүй байж болох учраас серверт нэр болон дугаараа бүртгүүл.</string>
     <string name="smart_call_legal_info_category">Хууль эрх зүйн мэдээлэл</string>
@@ -2459,12 +2477,16 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
 Хэрвээ та дээр дурдсан зүйлийг зөвшөөрч, “%s” үйлчилгээг энэ удаа идэвхжүүлэхийг хүсвэл доорх зохих товчийг дарна уу."</string>
     <string name="smart_call_privacy_notice_donotshow">Хадгалаагүй дугааруудыг таних функцийг тодорхойлж буй мэдэгдлийг дахин бүү харуул</string>
     <string name="smart_call_privacy_notice_dream">Орох буюу гарах дуудлагын үеэр таны хөдөлгөөнт төхөөрөмж таны хөдөлгөөнт холбооны сүлжээнд холбогдсон тохиолдолд энэ үйлчилгээг ашиглах боломжтой боловч роуминг үйлчилгээг ашиглах үед хязгаарлагдана. Хөдөлгөөнт холбооны сүлжээ ашиглавал таны сүлжээний үйлчилгээ үзүүлэгчээс авсан дата багцаас хамааран нэмэлт төлбөр тооцож болно.</string>
+    <string name="show_privacy_notice_title">Нууцлалын бодлого</string>
     <string name="search_for_places_nearby_title">Ойролцоо газрууд хайх</string>
     <string name="search_for_places_nearby_help_description1">Ойролцоох суурин бизнесүүд, арга хэмжээнүүдийн утасны дугаар ба мэдээллийг ол.</string>
     <string name="search_for_places_nearby_help_description2">Энэ хэрэглүүр таны байршлын мэдээллийг шаардана.</string>
     <string name="search_for_places_nearby_help_description3">Байршлын мэдээллийг илүү нарийвчлалтай болгохын тулд Тохиргоо > Холболтууд > Байршил > Байршил тогтоох арга руу ороод Өндөр нарийвчлалыг сонго.</string>
     <string name="search_for_places_nearby_help_description3_vzw">To optimize the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
     <string name="search_for_places_nearby_help_description4">Wi-Fi сүлжээний оронд мобайл сүлжээ ашигласнаар таны төлбөрийн багцад нэмэлт төлбөр гарч болно.</string>
+    <string name="withdraw_menu_title">Энэ үйлчилгээг ашиглахгүй</string>
+    <string name="withdraw_dialog_description">%1$s-г ашиглахаа боливол үйлчилгээ идэвхгүй болох ба таны үйлчилгээ үзүүлэгч дээрх бүх %2$s өгөгдөл устана.</string>
+    <string name="withdraw_dialog_button">Үйлчилгээг ашиглахгүй</string>
     <string name="record_call_setting_title">Дуудлагыг автоматаар бичих</string>
     <string name="record_call_setting_selected_number">Сонгосон дугаарууд</string>
     <string name="record_call_setting_all_number">Бүх дугаар</string>
@@ -2477,6 +2499,8 @@ Identify unsaved numbers uses contents provided by Tencent. By using Identify un
     <string name="record_call_noti_setting_title">Бичлэгийн мэдэгдэл</string>
     <string name="record_call_noti_setting_summary">Дуудлагын дараа хүлээн авсан мэдэгдлүүд бүртгэгдлээ.</string>
     <string name="record_call_help_summary">Сонгосон дугааруудын авсан болон залгасан дуудлагыг автоматаар бүртгэ.</string>
+    <string name="record_call_setting_on_description">Авто бичлэг идэвхтэй</string>
+    <string name="record_call_setting_off_description">Авто бичлэг идэвхгүй</string>
     <string name="visual_call_title_callsetting">IVR call screen menu</string>
     <string name="preference_update_DB_visual_call">IVR дуудлага DB-ийг шинэчил</string>
     <string name="preference_update_DB_visual_call_summary">Зөвхөн WLAN-р автоматаар шинэчил</string>
@@ -2719,6 +2743,7 @@ Verizon-оос авсан кодоо оруул:"</string>
     <string name="about_phone_open_source_licenses">Нээлттэй эхийн лицензүүд</string>
     <string name="no_network_connection">Сүлжээний холболт байхгүй</string>
     <string name="unable_to_check_for_updates">Шинэчлэлийг шалгах боломжгүй. Сүлжээний холболт байхгүй.</string>
+    <string name="phoneAppLabel_dcm">Залга</string>
     <string name="dcm_vt_fail_cause_not_in_4g">Та 4G талбарт ороогүй тул видео дуудлага хийж чадсангүй.</string>
     <string name="ss_do_not_show_again_us">Do not show again</string>
     <string name="disable_advanced_calling_warning_msg">Your phone will not be able to make or receive HD voice and video calls when you turn this setting off.</string>
@@ -2752,6 +2777,8 @@ In the future if you want to use Wi-Fi for voice calling you can turn on Wi-Fi C
     <string name="save_text">Хадгалах</string>
     <string name="wfc_enable_dialog_title">Wi-Fi дуудлагыг идэвхжүүлэх</string>
     <string name="wfc_enable_dialog">Wi-Fi-р залгахыг идэвхжүүлбэл Тэжээл хэмнэх горимыг идэвхгүй болгоно. Ингэснээр зайн зарцуулалт ихэснэ. Зарим үйлчилгээ үзүүлэгчид энэ функцийг дэмжихгүй байж болно.</string>
+    <string name="group_call_not_support_emergency_number">Бүлгийн дуудлагад яаралтай тусламжийн дугаар нэмэх боломжгүй.</string>
+    <string name="group_call_not_support_emergency_number_all">Яаралтай тусламжийн дохиог бүлгийн дуудлагад нэмэх боломжгүй. Бусад бүх сонгогдсон харилцагчид нэмэгдлээ.</string>
     <string name="enable_data_popup_message">Энэ функцийг идэвхжүүлэхийн тулд Хөдөлгөөнт датаг идэвхжүүлэх хэрэгтэй.</string>
     <string name="enable_data_popup_tittle">Функц-г идэвхж.х боломжгүй</string>
 </resources>

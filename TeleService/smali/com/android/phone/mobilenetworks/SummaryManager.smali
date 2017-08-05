@@ -133,7 +133,7 @@
 
     invoke-static {v1, v2, v4}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    if-eqz p1, :cond_8
+    if-eqz p1, :cond_9
 
     const-string/jumbo v1, "volte_settings_in_mobile_networks_hk"
 
@@ -152,7 +152,7 @@
     if-eqz v1, :cond_1
 
     :cond_0
-    const v1, 0x7f0d08da
+    const v1, 0x7f0d093e
 
     invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -165,11 +165,11 @@
 
     if-eqz v1, :cond_2
 
-    const v1, 0x7f0d08f3
+    const v1, 0x7f0d0959
 
     invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setTitle(I)V
 
-    const v1, 0x7f0d08f4
+    const v1, 0x7f0d095a
 
     invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -182,7 +182,7 @@
 
     if-eqz v1, :cond_3
 
-    const v1, 0x7f0d08d6
+    const v1, 0x7f0d093a
 
     invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setTitle(I)V
 
@@ -195,11 +195,11 @@
 
     if-eqz v1, :cond_4
 
-    const v1, 0x7f0d08d7
+    const v1, 0x7f0d093b
 
     invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setTitle(I)V
 
-    const v1, 0x7f0d08db
+    const v1, 0x7f0d093f
 
     invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -212,11 +212,11 @@
 
     if-eqz v1, :cond_5
 
-    const v1, 0x7f0d08e2
+    const v1, 0x7f0d0946
 
     invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setTitle(I)V
 
-    const v1, 0x7f0d08e3
+    const v1, 0x7f0d0947
 
     invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -229,7 +229,7 @@
 
     if-eqz v1, :cond_6
 
-    const v1, 0x7f0d088f
+    const v1, 0x7f0d08f3
 
     invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setTitle(I)V
 
@@ -242,7 +242,7 @@
 
     if-eqz v1, :cond_7
 
-    const v1, 0x7f0d08d8
+    const v1, 0x7f0d093c
 
     invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setTitle(I)V
 
@@ -255,24 +255,41 @@
 
     if-eqz v1, :cond_8
 
-    const v1, 0x7f0d08e4
+    const v1, 0x7f0d0948
 
     invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setTitle(I)V
 
-    const v1, 0x7f0d08e5
+    const v1, 0x7f0d0949
 
     invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
     :cond_8
+    const-string/jumbo v1, "cust_network_sel_menu4_o2"
+
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_9
+
+    const v1, 0x7f0d094a
+
+    invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setTitle(I)V
+
+    const v1, 0x7f0d094b
+
+    invoke-virtual {p1, v1}, Landroid/preference/SwitchPreference;->setSummary(I)V
+
+    :cond_9
     return-void
 .end method
 
 .method public compositeSumaryMultiSim(Ljava/lang/String;I)Ljava/lang/String;
     .locals 8
 
-    const v7, 0x7f0d0c31
+    const v7, 0x7f0d0ca2
 
-    const v6, 0x7f0d0350
+    const v6, 0x7f0d03b0
 
     const/4 v2, 0x2
 
@@ -328,7 +345,7 @@
 .method public compositeSummaryNetworkOperator(Ljava/lang/String;ILcom/android/phone/GsmUmtsOptions;)V
     .locals 9
 
-    const v8, 0x7f0d0c31
+    const v8, 0x7f0d0ca2
 
     const/4 v3, 0x2
 
@@ -574,7 +591,7 @@
 .method public setSummaryButtonCarrierOperator(Lcom/android/phone/GsmUmtsOptions;)V
     .locals 8
 
-    const v7, 0x7f0d0c31
+    const v7, 0x7f0d0ca2
 
     const/4 v3, 0x2
 
@@ -582,7 +599,7 @@
 
     const/4 v5, 0x1
 
-    const v4, 0x7f0d0350
+    const v4, 0x7f0d03b0
 
     iget-object v1, p0, Lcom/android/phone/mobilenetworks/SummaryManager;->mContext:Landroid/content/Context;
 
@@ -734,7 +751,7 @@
 .method public setSummaryButtonDataEnabled(Landroid/preference/TwoStatePreference;)V
     .locals 1
 
-    const v0, 0x7f0d0379
+    const v0, 0x7f0d03d9
 
     invoke-virtual {p1, v0}, Landroid/preference/TwoStatePreference;->setSummary(I)V
 
@@ -744,7 +761,7 @@
 .method public setSummaryButtonDataRoam(Landroid/preference/TwoStatePreference;)V
     .locals 2
 
-    const v1, 0x7f0d0381
+    const v1, 0x7f0d03e1
 
     const-string/jumbo v0, "data_roaming_warning_popup"
 
@@ -762,7 +779,7 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f0d038c
+    const v0, 0x7f0d03ec
 
     invoke-virtual {p1, v0}, Landroid/preference/TwoStatePreference;->setSummary(I)V
 
@@ -786,7 +803,7 @@
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f0d0388
+    const v0, 0x7f0d03e8
 
     invoke-virtual {p1, v0}, Landroid/preference/TwoStatePreference;->setSummary(I)V
 
@@ -804,7 +821,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0d04af
+    const v0, 0x7f0d050f
 
     invoke-virtual {p1, v0}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -820,7 +837,7 @@
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/SummaryManager;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0d04ad
+    const v1, 0x7f0d050d
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -834,7 +851,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/SummaryManager;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0d04ae
+    const v1, 0x7f0d050e
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

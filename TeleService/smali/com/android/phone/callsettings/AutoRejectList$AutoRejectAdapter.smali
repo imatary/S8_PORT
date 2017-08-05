@@ -482,7 +482,7 @@
 
     iget-object v5, v4, Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter$ViewHolder;->summary:Landroid/widget/TextView;
 
-    const v8, 0x7f0d051a
+    const v8, 0x7f0d057a
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(I)V
 
@@ -495,7 +495,7 @@
 
     iget-object v5, v4, Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter$ViewHolder;->summary:Landroid/widget/TextView;
 
-    const v8, 0x7f0d051b
+    const v8, 0x7f0d057b
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(I)V
 
@@ -510,7 +510,7 @@
 
     iget-object v5, v4, Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter$ViewHolder;->summary:Landroid/widget/TextView;
 
-    const v8, 0x7f0d051c
+    const v8, 0x7f0d057c
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(I)V
 
@@ -523,7 +523,7 @@
 
     iget-object v5, v4, Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter$ViewHolder;->summary:Landroid/widget/TextView;
 
-    const v8, 0x7f0d051d
+    const v8, 0x7f0d057d
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(I)V
 

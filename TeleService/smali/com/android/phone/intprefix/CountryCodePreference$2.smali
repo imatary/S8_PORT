@@ -37,7 +37,7 @@
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 7
 
-    const v6, 0x7f0d0b51
+    const v6, 0x7f0d0bb8
 
     const/4 v5, 0x0
 

@@ -83,7 +83,7 @@
 .method private drawNormalScreen(ILandroid/view/View;)Landroid/view/View;
     .locals 9
 
-    const v8, 0x7f100262
+    const v8, 0x7f100263
 
     const/4 v7, 0x0
 

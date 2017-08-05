@@ -239,14 +239,14 @@
 
     if-nez v5, :cond_0
 
-    const v8, 0x7f0d06ad
+    const v8, 0x7f0d0711
 
-    const v1, 0x7f0d06ac
+    const v1, 0x7f0d0710
 
     :goto_0
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(I)V
 
-    const v9, 0x7f0d06f3
+    const v9, 0x7f0d0757
 
     invoke-virtual {v3, v9}, Landroid/widget/CheckBox;->setText(I)V
 
@@ -268,7 +268,7 @@
 
     invoke-direct {v10, p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference$3;-><init>(Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;)V
 
-    const v11, 0x7f0d050d
+    const v11, 0x7f0d056d
 
     invoke-virtual {v9, v11, v10}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -291,9 +291,9 @@
     return-void
 
     :cond_0
-    const v8, 0x7f0d06b2
+    const v8, 0x7f0d0716
 
-    const v1, 0x7f0d06b3
+    const v1, 0x7f0d0717
 
     goto :goto_0
 .end method

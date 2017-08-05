@@ -106,11 +106,11 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d05ef
+    const v2, 0x7f0d0653
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f0d05fa
+    const v2, 0x7f0d065e
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -118,7 +118,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/SoundEQDialog$2;-><init>(Lcom/android/phone/callsettings/SoundEQDialog;)V
 
-    const v3, 0x7f0d02ca
+    const v3, 0x7f0d032a
 
     invoke-virtual {v0, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -224,11 +224,11 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d05ef
+    const v2, 0x7f0d0653
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f0d05fa
+    const v2, 0x7f0d065e
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -236,7 +236,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/SoundEQDialog$3;-><init>(Lcom/android/phone/callsettings/SoundEQDialog;)V
 
-    const v3, 0x7f0d02ca
+    const v3, 0x7f0d032a
 
     invoke-virtual {v0, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -354,7 +354,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d05ee
+    const v3, 0x7f0d0652
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -366,7 +366,7 @@
 
     iput-boolean v3, v0, Lcom/android/internal/app/AlertController$AlertParams;->mIsSingleChoice:Z
 
-    const v3, 0x7f0d02c7
+    const v3, 0x7f0d0327
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

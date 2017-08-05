@@ -582,6 +582,79 @@
     goto :goto_0
 .end method
 
+.method private changeOrientation(Z)V
+    .locals 2
+
+    const-string/jumbo v0, "tablet_device"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->getActivity()Landroid/app/Activity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->getActivity()Landroid/app/Activity;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    if-eqz p1, :cond_1
+
+    const-string/jumbo v0, "SecAutoRejectList"
+
+    const-string/jumbo v1, "ORIENTATION_LANDSCAPE "
+
+    invoke-static {v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->getActivity()Landroid/app/Activity;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    const/16 v1, 0xf0
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
+    const-string/jumbo v0, "SecAutoRejectList"
+
+    const-string/jumbo v1, "ORIENTATION_PORTRAIT "
+
+    invoke-static {v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->getActivity()Landroid/app/Activity;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    const/16 v1, 0x10
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
+
+    goto :goto_0
+.end method
+
 .method private deleteAutoRejectNumber(I)V
     .locals 6
 
@@ -714,7 +787,7 @@
 .method private drawSecUnknownItem(Landroid/view/View;)V
     .locals 10
 
-    const v9, 0x7f0d052e
+    const v9, 0x7f0d058e
 
     const/4 v6, 0x1
 
@@ -804,7 +877,7 @@
 
     move-result-object v5
 
-    const v8, 0x7f0d0c19
+    const v8, 0x7f0d0c8a
 
     invoke-virtual {v5, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -853,7 +926,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d0bd9
+    const v9, 0x7f0d0c44
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -905,7 +978,7 @@
 
     move-result-object v5
 
-    const v8, 0x7f0d0c1a
+    const v8, 0x7f0d0c8b
 
     invoke-virtual {v5, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -946,7 +1019,7 @@
 .method private initLayout(Landroid/view/View;)V
     .locals 4
 
-    const v1, 0x7f100264
+    const v1, 0x7f100265
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -972,7 +1045,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->setItemsCanFocus(Z)V
 
-    const v1, 0x7f100265
+    const v1, 0x7f100266
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -982,7 +1055,7 @@
 
     iput-object v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mEmptyImage:Lcom/altamirasoft/path_animation/PathLineAnimationView;
 
-    const v1, 0x7f100266
+    const v1, 0x7f100267
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -992,7 +1065,7 @@
 
     iput-object v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mEmptyDesc:Landroid/widget/TextView;
 
-    const v1, 0x7f100267
+    const v1, 0x7f100268
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1028,7 +1101,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f100269
+    const v1, 0x7f10026a
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1038,7 +1111,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    const v1, 0x7f10026c
+    const v1, 0x7f10026d
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1094,7 +1167,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    const v1, 0x7f10026a
+    const v1, 0x7f10026b
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1957,11 +2030,11 @@
 .method private updateSecBlockedCategory()V
     .locals 11
 
-    const v10, 0x7f0d0c2c
+    const v10, 0x7f0d0c9d
 
-    const v9, 0x7f0d02bd
+    const v9, 0x7f0d031d
 
-    const v8, 0x7f0d02be
+    const v8, 0x7f0d031e
 
     const/4 v6, 0x0
 
@@ -2326,7 +2399,7 @@
 .method private updateTitleBar()V
     .locals 2
 
-    const v1, 0x7f0d052b
+    const v1, 0x7f0d058b
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -2340,7 +2413,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f0d052f
+    const v1, 0x7f0d058f
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -2721,7 +2794,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d05da
+    const v3, 0x7f0d063e
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2758,7 +2831,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d05db
+    const v3, 0x7f0d063f
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2798,7 +2871,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d05dc
+    const v5, 0x7f0d0640
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2909,7 +2982,7 @@
 
     invoke-static {v2, v3, v4}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    const v2, 0x7f0d0539
+    const v2, 0x7f0d0599
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -2986,7 +3059,7 @@
     if-eqz v2, :cond_7
 
     :cond_2
-    const v2, 0x7f0d0535
+    const v2, 0x7f0d0595
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -3001,13 +3074,13 @@
 
     if-eqz v0, :cond_3
 
-    const v2, 0x7f0d01f2
+    const v2, 0x7f0d024f
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v3, 0x7f0d021b
+    const v3, 0x7f0d0279
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -3084,7 +3157,7 @@
     goto :goto_0
 
     :cond_7
-    const v2, 0x7f0d0537
+    const v2, 0x7f0d0597
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -3119,7 +3192,7 @@
     :catch_0
     move-exception v0
 
-    const v1, 0x7f0d0995
+    const v1, 0x7f0d09fb
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -3747,13 +3820,13 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0201a7
+    const v1, 0x7f0201b0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0d07f6
+    const v1, 0x7f0d085a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -3777,13 +3850,13 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f02015d
+    const v1, 0x7f020161
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0d050a
+    const v1, 0x7f0d056a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -3839,13 +3912,13 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->AddButton:Landroid/widget/ImageView;
 
-    const v2, 0x7f0201a7
+    const v2, 0x7f0201b0
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->AddButton:Landroid/widget/ImageView;
 
-    const v2, 0x7f0d07f6
+    const v2, 0x7f0d085a
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -3882,13 +3955,13 @@
     :cond_1
     iget-object v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->AddButton:Landroid/widget/ImageView;
 
-    const v2, 0x7f02015d
+    const v2, 0x7f020161
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->AddButton:Landroid/widget/ImageView;
 
-    const v2, 0x7f0d050a
+    const v2, 0x7f0d056a
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -3926,13 +3999,13 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0201a7
+    const v1, 0x7f0201b0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->AddButton:Landroid/widget/ImageView;
 
-    const v1, 0x7f0d07f6
+    const v1, 0x7f0d085a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -4408,7 +4481,7 @@
 
     if-ne v2, v3, :cond_c
 
-    const v2, 0x7f0d05de
+    const v2, 0x7f0d0642
 
     move-object/from16 v0, p0
 
@@ -4452,7 +4525,7 @@
 
     if-eqz v11, :cond_b
 
-    const v2, 0x7f0d01f2
+    const v2, 0x7f0d024f
 
     move-object/from16 v0, p0
 
@@ -4460,7 +4533,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d021a
+    const v3, 0x7f0d0278
 
     move-object/from16 v0, p0
 
@@ -4484,7 +4557,7 @@
     goto/16 :goto_0
 
     :cond_c
-    const v2, 0x7f0d05e0
+    const v2, 0x7f0d0644
 
     move-object/from16 v0, p0
 
@@ -4523,7 +4596,7 @@
     goto :goto_5
 
     :cond_d
-    const v2, 0x7f0d05df
+    const v2, 0x7f0d0643
 
     move-object/from16 v0, p0
 
@@ -4574,7 +4647,7 @@
 
     if-eqz v2, :cond_f
 
-    const v2, 0x7f0d0535
+    const v2, 0x7f0d0595
 
     move-object/from16 v0, p0
 
@@ -4613,7 +4686,7 @@
     goto/16 :goto_5
 
     :cond_f
-    const v2, 0x7f0d0537
+    const v2, 0x7f0d0597
 
     move-object/from16 v0, p0
 
@@ -4662,23 +4735,39 @@
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
-    .locals 2
+    .locals 3
 
-    const-string/jumbo v0, "SecAutoRejectList"
+    const-string/jumbo v1, "SecAutoRejectList"
 
-    const-string/jumbo v1, "changed "
+    const-string/jumbo v2, "changed "
 
-    invoke-static {v0, v1}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->getFragmentManager()Landroid/app/FragmentManager;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Landroid/app/FragmentManager;->invalidateOptionsMenu()V
+    invoke-virtual {v1}, Landroid/app/FragmentManager;->invalidateOptionsMenu()V
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
+    iget v1, p1, Landroid/content/res/Configuration;->orientation:I
+
+    const/4 v2, 0x2
+
+    if-ne v1, v2, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    invoke-direct {p0, v0}, Lcom/android/phone/callsettings/SecAutoRejectList;->changeOrientation(Z)V
+
     return-void
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
@@ -4698,13 +4787,13 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    const v2, 0x7f0d01f1
+    const v2, 0x7f0d024e
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v3, 0x7f0d0231
+    const v3, 0x7f0d028f
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -4736,7 +4825,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0500
+    const v3, 0x7f0d0560
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4824,7 +4913,7 @@
 
     if-eqz v2, :cond_3
 
-    const v2, 0x7f0d052f
+    const v2, 0x7f0d058f
 
     invoke-virtual {v0, v2}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -4844,7 +4933,7 @@
     goto :goto_0
 
     :cond_3
-    const v2, 0x7f0d052b
+    const v2, 0x7f0d058b
 
     invoke-virtual {v0, v2}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -4949,7 +5038,7 @@
 
     invoke-direct {v0, v7}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v7, 0x7f0d02bf
+    const v7, 0x7f0d031f
 
     invoke-virtual {p0, v7}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
@@ -4967,7 +5056,7 @@
 
     invoke-direct {v7, p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectList$10;-><init>(Lcom/android/phone/callsettings/SecAutoRejectList;[Z)V
 
-    const v8, 0x7f0d02ca
+    const v8, 0x7f0d032a
 
     invoke-virtual {v0, v8, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -4975,7 +5064,7 @@
 
     invoke-direct {v7, p0}, Lcom/android/phone/callsettings/SecAutoRejectList$11;-><init>(Lcom/android/phone/callsettings/SecAutoRejectList;)V
 
-    const v8, 0x7f0d0971
+    const v8, 0x7f0d09d7
 
     invoke-virtual {v0, v8, v7}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -5034,7 +5123,7 @@
 
     iput-object v6, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mErrorText:Landroid/widget/TextView;
 
-    const v6, 0x7f100268
+    const v6, 0x7f100269
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -5052,7 +5141,7 @@
 
     invoke-virtual {v6, v11}, Landroid/widget/TextView;->setFocusableInTouchMode(Z)V
 
-    const v6, 0x7f100263
+    const v6, 0x7f100264
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -5364,62 +5453,79 @@
 .end method
 
 .method public onResume()V
-    .locals 7
+    .locals 9
 
-    const/4 v3, 0x1
+    const/4 v2, 0x0
 
-    const/4 v6, 0x0
+    const/4 v8, 0x0
+
+    const/4 v1, 0x1
 
     invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onResume()V
 
-    const-string/jumbo v1, "SecAutoRejectList"
+    const-string/jumbo v3, "SecAutoRejectList"
 
-    const-string/jumbo v2, "onResume "
+    const-string/jumbo v4, "onResume "
 
-    invoke-static {v1, v2, v3}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    invoke-static {v3, v4, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    const v1, 0x7f0d01f2
+    const v3, 0x7f0d024f
 
-    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/SecAutoRejectList;->getString(I)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-static {v1}, Lcom/android/phone/utils/SALogging;->sendSAViewFlowLog(Ljava/lang/String;)V
+    invoke-static {v3}, Lcom/android/phone/utils/SALogging;->sendSAViewFlowLog(Ljava/lang/String;)V
 
-    iput-boolean v3, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mIsForeground:Z
+    iput-boolean v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mIsForeground:Z
 
-    iget-object v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->editBox:Landroid/widget/EditText;
+    iget-object v3, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->editBox:Landroid/widget/EditText;
 
-    if-eqz v1, :cond_0
+    if-eqz v3, :cond_0
 
-    iget-object v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->handler:Landroid/os/Handler;
+    iget-object v3, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->handler:Landroid/os/Handler;
 
-    new-instance v2, Lcom/android/phone/callsettings/SecAutoRejectList$8;
+    new-instance v4, Lcom/android/phone/callsettings/SecAutoRejectList$8;
 
-    invoke-direct {v2, p0}, Lcom/android/phone/callsettings/SecAutoRejectList$8;-><init>(Lcom/android/phone/callsettings/SecAutoRejectList;)V
+    invoke-direct {v4, p0}, Lcom/android/phone/callsettings/SecAutoRejectList$8;-><init>(Lcom/android/phone/callsettings/SecAutoRejectList;)V
 
-    const-wide/16 v4, 0xc8
+    const-wide/16 v6, 0xc8
 
-    invoke-virtual {v1, v2, v4, v5}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {v3, v4, v6, v7}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     :cond_0
-    iget-boolean v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mUpdateScreen:Z
+    iget-boolean v3, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mUpdateScreen:Z
 
-    if-eqz v1, :cond_5
+    if-eqz v3, :cond_5
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->stopContactQuery()V
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->makeScreen()V
 
-    iget-object v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mListView:Landroid/widget/ListView;
+    iget-object v3, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mListView:Landroid/widget/ListView;
 
-    iget v2, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mFirstVisibleItem:I
+    iget v4, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mFirstVisibleItem:I
 
-    const/4 v3, 0x0
-
-    invoke-virtual {v1, v2, v3}, Landroid/widget/ListView;->setSelectionFromTop(II)V
+    invoke-virtual {v3, v4, v2}, Landroid/widget/ListView;->setSelectionFromTop(II)V
 
     :goto_0
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v3
+
+    iget v3, v3, Landroid/content/res/Configuration;->orientation:I
+
+    const/4 v4, 0x2
+
+    if-ne v3, v4, :cond_6
+
+    :goto_1
+    invoke-direct {p0, v1}, Lcom/android/phone/callsettings/SecAutoRejectList;->changeOrientation(Z)V
+
     invoke-direct {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->getAutoRejectNumber()Landroid/database/Cursor;
 
     move-result-object v0
@@ -5428,118 +5534,118 @@
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v1
+    move-result-object v2
 
-    sget-object v2, Lcom/android/phone/utils/AppLogging$AppLoggingAction;->GENERAL_SINGLE:Lcom/android/phone/utils/AppLogging$AppLoggingAction;
+    sget-object v3, Lcom/android/phone/utils/AppLogging$AppLoggingAction;->GENERAL_SINGLE:Lcom/android/phone/utils/AppLogging$AppLoggingAction;
 
-    const-string/jumbo v3, "BLCO"
+    const-string/jumbo v4, "BLCO"
 
     invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
 
-    move-result v4
+    move-result v5
 
-    invoke-static {v4}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+    invoke-static {v5}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-static {v1, v2, v3, v6, v4}, Lcom/android/phone/utils/AppLogging;->insertLog(Landroid/content/Context;Lcom/android/phone/utils/AppLogging$AppLoggingAction;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3, v4, v8, v5}, Lcom/android/phone/utils/AppLogging;->insertLog(Landroid/content/Context;Lcom/android/phone/utils/AppLogging$AppLoggingAction;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     :cond_1
-    const-string/jumbo v1, "support_bixby"
+    const-string/jumbo v2, "support_bixby"
 
-    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_4
+    if-eqz v2, :cond_4
 
-    const-string/jumbo v1, "SecAutoRejectList"
+    const-string/jumbo v2, "SecAutoRejectList"
 
-    const-string/jumbo v2, "block list onResume"
+    const-string/jumbo v3, "block list onResume"
 
-    invoke-static {v1, v2}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v2, v3}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance v1, Lcom/android/phone/ia/SecAutoRejectListStateListener;
+    new-instance v2, Lcom/android/phone/ia/SecAutoRejectListStateListener;
 
-    invoke-direct {v1, p0}, Lcom/android/phone/ia/SecAutoRejectListStateListener;-><init>(Lcom/android/phone/callsettings/SecAutoRejectList;)V
+    invoke-direct {v2, p0}, Lcom/android/phone/ia/SecAutoRejectListStateListener;-><init>(Lcom/android/phone/callsettings/SecAutoRejectList;)V
 
-    iput-object v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+    iput-object v2, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
 
-    iget-object v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+    iget-object v2, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
 
-    iget-object v2, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+    iget-object v3, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
 
-    invoke-virtual {v1, v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->setInterimStateListener(Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;)V
+    invoke-virtual {v2, v3}, Lcom/samsung/android/sdk/bixby/BixbyApi;->setInterimStateListener(Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;)V
 
-    const-string/jumbo v1, "SecAutoRejectList"
+    const-string/jumbo v2, "SecAutoRejectList"
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "executing stateid : "
+    const-string/jumbo v4, "executing stateid : "
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v2
+    move-result-object v3
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    const-string/jumbo v2, "BlockNumbers"
 
     invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result-object v2
+    move-result v2
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    const-string/jumbo v1, "BlockNumbers"
-
-    invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
+    if-eqz v2, :cond_3
 
     invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingLastState()Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_2
-
-    const-string/jumbo v1, "BlockNumbers"
-
-    invoke-static {v1}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
-
-    :cond_2
-    sget-object v1, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
-
-    const-string/jumbo v2, ""
-
-    invoke-static {v1, v2}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;Ljava/lang/String;)V
-
-    :cond_3
-    iget-object v1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+    if-eqz v2, :cond_2
 
     const-string/jumbo v2, "BlockNumbers"
 
-    invoke-virtual {v1, v2}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logEnterState(Ljava/lang/String;)V
+    invoke-static {v2}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
+
+    :cond_2
+    sget-object v2, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    const-string/jumbo v3, ""
+
+    invoke-static {v2, v3}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;Ljava/lang/String;)V
+
+    :cond_3
+    iget-object v2, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v3, "BlockNumbers"
+
+    invoke-virtual {v2, v3}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logEnterState(Ljava/lang/String;)V
 
     :cond_4
     return-void
@@ -5550,6 +5656,11 @@
     invoke-direct {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->startContactQuery()V
 
     goto/16 :goto_0
+
+    :cond_6
+    move v1, v2
+
+    goto/16 :goto_1
 .end method
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V

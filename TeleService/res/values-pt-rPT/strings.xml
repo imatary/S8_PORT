@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dh %2$dm</string>
-    <string name="battery_history_minutes_no_seconds">%dm</string>
+    <string name="battery_history_hours_no_seconds">%1$d h %2$d m</string>
+    <string name="battery_history_minutes_no_seconds">%d min</string>
     <string name="wifi_fail_to_scan">Não é possível verificar redes</string>
     <string name="wifi_failed_to_obtain_IP">Falha ao obter endereço IP.</string>
     <string name="wifi_security_none">Nenhuma</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">Impossível ligar ao %s.</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">Impossível ligar ao %1$s. Verifique as definições do %2$s e tente novamente.</string>
     <string name="bluetooth_pairing_rejected_error_message">Emparelhamento rejeitado por %s.</string>
+    <string name="bluetooth_getting_remote_device_name">A obter nome de dispositivo…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">O nome do dispositivo irá aparecer quando este dispositivo for ligado.</string>
     <string name="accessibility_wifi_off">Wi-Fi desativado.</string>
     <string name="accessibility_no_wifi">Wi-Fi desligado.</string>
     <string name="accessibility_wifi_one_bar">Uma barra de Wi-Fi.</string>
@@ -839,7 +841,7 @@
     <string name="singleContactImportedMsg">Contacto importado</string>
     <string name="failedToImportSingleContactMsg">Falha ao importar o contacto</string>
     <string name="hac_mode_title">Aparelhos auditivos</string>
-    <string name="hac_mode_summary">Melhora a qualidade de som do seu dispositivo, para utilizar com aparelhos auditivos.</string>
+    <string name="hac_mode_summary">Optimizar a qualidade de som do seu telefone para aparelhos auditivos.</string>
     <string name="dtmf_tones_title">Tons DTMF</string>
     <string name="dtmf_tones_summary">Definir comprimento dos tons DTMF.</string>
     <string name="network_info_message">Mensagem de rede</string>
@@ -1022,6 +1024,10 @@ O ícone abaixo será apresentado sempre que esta função estiver disponível."
     <string name="add_call_block_number_toast">Não receberá chamadas deste número.</string>
     <string name="delete_call_block_number_toast">Agora já pode receber chamadas deste número.</string>
     <string name="emergency_call_block_number_toast">Impossível bloquear números de emergência.</string>
+    <string name="call_block_dialog_title">Editar Números bloqueados</string>
+    <string name="call_block_dialog_contents">Do Android Nougat para a frente, o Modo de bloqueio de chamadas foi substituído por Bloquear números. Em vez de apenas bloquear chamadas, Bloquear números irá bloquear automaticamente chamadas e mensagens.</string>
+    <string name="call_block_dialog_settings">Toque em DEFINIÇÕES para editar Bloquear números.</string>
+    <string name="call_block_dialog_button">Definições</string>
     <string name="no_block_number_description">Os números que adicionar serão mostrados aqui.</string>
     <string name="no_messages_description">As mensagens que adicionar serão mostradas aqui.</string>
     <string name="callsettings_vipmode_blacklist_title">Lista negra</string>
@@ -1071,7 +1077,7 @@ O ícone abaixo será apresentado sempre que esta função estiver disponível."
     <string name="callsettings_answering_volume_key_title">Premir Aumentar volume p/ atender</string>
     <string name="callsettings_answering_key_summary">Premir a tecla principal para aceitar chamadas recebidas.</string>
     <string name="callsettings_PowerkeyEndsCalls_title">Premir Tecla alim terminar chamada</string>
-    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Premir Tecla alim terminar chamada</string>
+    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Premir Tecla de alimentação para terminar chamadas</string>
     <string name="callsettings_PowerkeyEndsCalls_summary">Prima tecla aliment. p/ terminar cham. quando ecrã estiver lig. Acção não desliga ecrã.</string>
     <string name="Dialog_PowerkeyEndsCalls">Impossível definir a tecla de alimentação para terminar chamadas enquanto o sensor de proximidade estiver desactivado. O sensor de proximidade será activado. Durante as chamadas, o ecrã será desligado quando colocar o dispositivo junto do ouvido.</string>
     <string name="Dialog_PowerkeyEndsCalls_title">Activar sensor de proximidade</string>
@@ -1343,7 +1349,7 @@ Injured/Dead
     <string name="roaming_alerts_sbody">Alterar definições de voz, texto e roaming de dados, incluindo roaming internacional.</string>
     <string name="roaming_alerts_voice_body">Roaming de voz</string>
     <string name="roaming_alerts_data_body">Roaming de dados</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">Roaming mensagem de texto enviada</string>
     <string name="roaming_domestic_category">Roaming nacional</string>
     <string name="roaming_international_category">Roaming internacional</string>
     <string name="roaming_voice_body">Roaming de voz e texto</string>
@@ -1513,9 +1519,7 @@ Turn off Mobile data?"</string>
     <string name="data_usage_disable_mobile_vzw_chn">"A não ser que utilize WLAN, deixará de poder utilizar a Internet, o e-mail ou outras aplicações que exijam uma ligação de dados.
 
 Os dados móveis serão desactivados."</string>
-    <string name="mobile_data_off_dialog_text_common">"A não ser que utilize Wi-Fi, deixará de poder utilizar a Internet, o e-mail ou outras aplicações que exijam uma ligação de dados.
-
-Os Dados móveis serão desligados."</string>
+    <string name="mobile_data_off_dialog_text_common">A não ser que se ligue a uma rede Wi-Fi, não poderá utilizar a Internet, o E-mail ou outras aplicações que exijam uma ligação de rede.</string>
     <string name="mobile_data_off_dialog_button_turn_off">Desligar</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"A não ser que utilize Wi-Fi, deixará de poder utilizar a Internet, o E-mail ou outras aplicações que exijam uma ligação de dados.
 
@@ -1595,8 +1599,9 @@ Para alterar o seu modo de rede, vá para Definições > Mais redes > Redes móv
 Pode incorrer em taxas adicionais se não estiver a utilizar um tarifário de taxa fixa."</string>
     <string name="data_3gwarning_popup_title">Dados móveis</string>
     <string name="roaming_data_off_msg">Para utilizar o roaming de dados, aceda a Definições > Ligações > Roaming global e active o Roaming de dados.</string>
-    <string name="data_3gwarning_popup_noti">A ligação a redes móveis pode incorrer em taxas adicionais se não estiver a utilizar um tarifário de taxa fixa. Ligar?</string>
-    <string name="lgt_4gwarning_popup_mobiledata">Os Dados móveis serão ligados. Isto pode implicar a cobrança de taxas adicionais pelo seu fornecedor de serviços, dependendo do seu tarifário.</string>
+    <string name="data_3gwarning_popup_noti">Os Dados móveis serão ligados. A ligação a redes móveis pode resultar na cobrança de taxas adicionais, dependendo do seu tarifário.</string>
+    <string name="data_3gwarning_popup_noti_ktt">Os Dados móveis serão ligados para utilizar GiGA LTE. Isto pode implicar a cobrança de taxas adicionais, dependendo do seu tarifário.</string>
+    <string name="lgt_4gwarning_popup_mobiledata">Os Dados móveis serão ligados. A ligação a redes móveis pode resultar na cobrança de taxas adicionais, dependendo do seu tarifário.</string>
     <string name="lgt_lte_data_roaming_warningmsg">"Enquanto o roaming de dados estiver activado, &lt;u>&lt;font color=\"%1$s\">serão aplicadas taxas de dados internacionais em vez de taxas de dados nacionais.&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">Active Restringir dados em segundo plano para reduzir as taxas de roaming de dados&lt;/font>&lt;/u> desactivando funções, tais como notificações de MI e actualizações automáticas"</string>
@@ -1967,6 +1972,8 @@ Contacte o centro de apoio ao cliente ou o seu revendedor local."</string>
     <string name="volte_call_summary_ops">Fazer chamadas de voz HD na rede 4G.</string>
     <string name="voice_over_lte_title_cct">Chamadas Volte</string>
     <string name="volte_call_summary_cct">Active as funcionalidades de chamada avançadas na rede celular 4G LTE se disponíveis.</string>
+    <string name="voice_over_lte_title_o2">Chamadas 4G</string>
+    <string name="volte_call_summary_o2">Usufruir de comunicações melhoradas utilizando dados 4G.</string>
     <string name="volte_tty_description_on">While TTY is on, you will not be able to make and receive video calls or have conference calls.</string>
     <string name="volte_prepaid_tty_description_on">TTY mode will be enabled. You will not be able to make or receive conference calls.</string>
     <string name="volte_tty_description_off">While TTY is off, you will not be able to make and receive TTY calls.</string>
@@ -2156,9 +2163,13 @@ O Roaming 4G não estará disponível se não aceitar. As redes 3G podem ser uti
     <string name="group_voice_call_disable_on_3G">Chamadas de grupo disponíveis apenas via rede LTE.</string>
     <string name="group_voice_call_outgoing_voice_call">Chamada de voz efectuada</string>
     <string name="voice_party_call_fail_network">Impossível efectuar Chamada de conferência de voz. Verifique a ligação de rede.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"A não ser que utilize Wi-Fi, deixará de poder utilizar a Internet, o e-mail ou outras aplicações que exijam uma ligação de dados.
+
+Os Dados móveis serão desligados."</string>
     <string name="data_usage_disable_mobile_warning">"A não ser que utilize Wi-Fi, deixará de poder utilizar a Internet, o E-mail ou outras aplicações que exijam uma ligação de dados.
 
 Os dados móveis serão desactivados."</string>
+    <string name="data_usage_enable_mobile_warning_skt">Os Dados móveis serão ligados. A ligação a redes móveis pode resultar na cobrança de taxas adicionais, dependendo do seu tarifário.</string>
     <string name="data_usage_enable_mobile_warning">O acesso à rede através de pacotes de dados pode implicar a cobrança de taxas adicionais. Continuar?</string>
     <string name="insert_sim_card">Inserir cartão SIM</string>
     <string name="insert_sim_card_message">Insira o cartão SIM para aceder aos serviços de rede.</string>
@@ -2192,6 +2203,7 @@ Os dados móveis serão desactivados."</string>
     <string name="turning_off_answer_memo">O atendimento automático e a mensagem de atendimento não podem estar activos ao mesmo tempo. A mensagem de atendimento será desactivada.</string>
     <string name="disconnect_network_message">A alteração da rede de serviço de dados desligará a rede a ser utilizada actualmente. Alterar a rede de serviço de dados?</string>
     <string name="disconnect_network_title">Desligar a rede actual</string>
+    <string name="disable2g_warning_message">Esta definição desliga o serviço 2G. Se o serviço 2G for desligado, algumas aplicações e funções podem não funcionar nos locais onde 4G ou 3G não esteja disponível.</string>
     <string name="data_roaming_restrict_title">Roaming de dados desactivado</string>
     <string name="data_roaming_restrict_body">Toque aqui para activar o Roaming de dados.</string>
     <string name="data_network_mode">Ligação de dados</string>
@@ -2392,6 +2404,10 @@ Tente novamente mais tarde."</string>
     <string name="delete_this_number_kddi">Eliminar este número?</string>
     <string name="change_guide_language_kddi">Mudar idioma de guia</string>
     <string name="apply_option_service_kddi">Aceder opções serviço %s</string>
+    <string name="optional_service_kddi">Utilizar serviços opcionais</string>
+    <string name="au_call_settings_category">Serviço de apoio ao cliente</string>
+    <string name="website_kddi">Ir para site Web</string>
+    <string name="call_au_service_center">Chamada (157)</string>
     <string name="Janpanese_guidance_kddi">Guia em japonês (%d)</string>
     <string name="English_guidance_kddi">Guia em inglês (%d)</string>
     <string name="voicecall_kddi">Correio de voz</string>
@@ -2446,11 +2462,13 @@ A funcionalidade Identificar números não guardados utiliza conteúdos fornecid
     <string name="spam_call_mute_first_ring_summary">Silenciar o primeiro toque de chamadas de números não guardados.</string>
     <string name="spam_call_auto_reject_title">Rejeitar chamadas auto.</string>
     <string name="smart_call_title">Protecção ID do chamador e spam</string>
-    <string name="smart_call_title_usa">Identificar números de spam</string>
     <string name="smart_call_title_for_notice">Protecção de ID do chamador e spam</string>
-    <string name="smart_call_description">Identificar remetentes de mensagens e chamadores não guardados no ecrã de chamadas, no Registo telefónico e nas Mensagens.</string>
-    <string name="smart_call_usa_description">Mostrar informações sobre chamadores spam no ecrã de chamadas e no Registo telefónico.</string>
+    <string name="smart_call_description">"Utilizar Chamada Inteligente para identificar chamadores spam e de esquemas.
+
+Este serviço mostra-lhe os nomes e as fotografias de perfil dos chamadores e remetentes de mensagens que não fazem parte dos seus contactos."</string>
     <string name="smart_call_description_roaming">Este serviço não está disponível noutros países.</string>
+    <string name="smart_call_noti_description_1">Toque aqui para se proteger contra chamadores spam gratuitamente.</string>
+    <string name="smart_call_noti_description_2">Toque aqui para identificar chamadores spam e de esquemas.</string>
     <string name="smart_call_share_name_number_title">Partilhar nome e número</string>
     <string name="smart_call_share_name_number_summary">Registe o seu nome e n.º no servidor para que os destinatários sem o seu número possam ver quando lhes ligar/enviar mensagens.</string>
     <string name="smart_call_legal_info_category">Informação legal</string>
@@ -2467,12 +2485,16 @@ Para disponibilizar esta funcionalidade, determinados dados, como o número de t
 Clique no botão adequado abaixo para indicar se concorda com o disposto anteriormente e se pretende activar a funcionalidade %s neste momento."</string>
     <string name="smart_call_privacy_notice_donotshow">Não mostrar notificação que descreve a função Identificar números não guardados novamente</string>
     <string name="smart_call_privacy_notice_dream">Este serviço estará disponível quando o dispositivo móvel estiver ligado à sua rede móvel durante a realização ou recepção de chamadas, mas será limitado durante o roaming. A utilização de redes móveis poderá resultar em custos adicionais, consoante o plano de dados que tiver com o seu fornecedor de rede.</string>
+    <string name="show_privacy_notice_title">Política de privacidade</string>
     <string name="search_for_places_nearby_title">Procurar locais próximos</string>
     <string name="search_for_places_nearby_help_description1">Encontre números de telefone e informações de empresas e espaços locais próximos.</string>
     <string name="search_for_places_nearby_help_description2">Este serviço requer as suas informações de localização.</string>
     <string name="search_for_places_nearby_help_description3">Para optimizar a precisão das suas informações de localização, aceda a Definições > Ligações > Localização > Método de localização, e depois seleccione Alta precisão.</string>
     <string name="search_for_places_nearby_help_description3_vzw">To optimize the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
     <string name="search_for_places_nearby_help_description4">A utilização de redes móveis, em vez de redes Wi-Fi, pode implicar a cobrança de taxas adicionais dependendo do seu tarifário.</string>
+    <string name="withdraw_menu_title">Parar de usar este serviço</string>
+    <string name="withdraw_dialog_description">Quando parar de utilizar %1$s, o serviço será desactivado e todos os seus dados de %2$s armazenados pelo fornecedor de serviços serão eliminados.</string>
+    <string name="withdraw_dialog_button">Parar de usar serviço</string>
     <string name="record_call_setting_title">Gravar chamadas automaticamente</string>
     <string name="record_call_setting_selected_number">Números seleccionados</string>
     <string name="record_call_setting_all_number">Todos os números</string>
@@ -2485,6 +2507,8 @@ Clique no botão adequado abaixo para indicar se concorda com o disposto anterio
     <string name="record_call_noti_setting_title">Notificações de gravação</string>
     <string name="record_call_noti_setting_summary">Receber notificações após a gravação das chamadas.</string>
     <string name="record_call_help_summary">Gravar chamadas para e de números seleccionados automaticamente.</string>
+    <string name="record_call_setting_on_description">Gravação automática ligada</string>
+    <string name="record_call_setting_off_description">Gravação automática desligada</string>
     <string name="visual_call_title_callsetting">Menu do ecrã de chamadas IVR</string>
     <string name="preference_update_DB_visual_call">Actualizar BD cham. IVR</string>
     <string name="preference_update_DB_visual_call_summary">Actualização automática só via WLAN</string>
@@ -2727,6 +2751,7 @@ Enter the code you get from Verizon:"</string>
     <string name="about_phone_open_source_licenses">Licenças Open source</string>
     <string name="no_network_connection">Nenhuma ligação de rede</string>
     <string name="unable_to_check_for_updates">Impossível verificar existência de actualizações. Sem ligação de rede.</string>
+    <string name="phoneAppLabel_dcm">Marcar</string>
     <string name="dcm_vt_fail_cause_not_in_4g">Impossível fazer chamada de vídeo porque não está numa área 4G.</string>
     <string name="ss_do_not_show_again_us">Do not show again</string>
     <string name="disable_advanced_calling_warning_msg">Your phone will not be able to make or receive HD voice and video calls when you turn this setting off.</string>
@@ -2760,6 +2785,8 @@ In the future if you want to use Wi-Fi for voice calling you can turn on Wi-Fi C
     <string name="save_text">Guardar</string>
     <string name="wfc_enable_dialog_title">Activar chamadas Wi-Fi</string>
     <string name="wfc_enable_dialog">A activação das chamadas Wi-Fi desactiva o Modo de economia de energia. Isto pode aumentar o consumo de bateria. Alguns fornecedores de serviços podem não suportar esta função.</string>
+    <string name="group_call_not_support_emergency_number">Impossível adicionar números de emergência a chamadas de grupo.</string>
+    <string name="group_call_not_support_emergency_number_all">Impossível adicionar números de emergência a chamadas de grupo. Adicionados todos os outros contactos seleccionados.</string>
     <string name="enable_data_popup_message">Para activar esta função, os Dados móveis têm de estar ligados.</string>
     <string name="enable_data_popup_tittle">Impossível activar função</string>
 </resources>

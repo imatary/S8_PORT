@@ -146,13 +146,13 @@
 .method private setDialogValues()V
     .locals 8
 
-    const v7, 0x7f0d06b4
+    const v7, 0x7f0d0718
 
-    const v6, 0x7f0d05d7
+    const v6, 0x7f0d063b
 
-    const v5, 0x7f0d05d4
+    const v5, 0x7f0d0638
 
-    const v4, 0x7f0d05d2
+    const v4, 0x7f0d0636
 
     const/4 v3, 0x0
 
@@ -538,7 +538,7 @@
 .method public onPinEntered(Lcom/android/phone/EditPinPreference;Z)V
     .locals 12
 
-    const v11, 0x7f0d06b5
+    const v11, 0x7f0d0719
 
     const/4 v10, 0x3
 
@@ -573,7 +573,7 @@
 
     iget-object v7, p0, Lcom/android/phone/CallLockSettings;->mRes:Landroid/content/res/Resources;
 
-    const v8, 0x7f0d06b6
+    const v8, 0x7f0d071a
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -52,9 +52,20 @@
 
     check-cast v0, Landroid/os/AsyncResult;
 
+    iget-object v2, p0, Lcom/android/phone/CLIRDropDownPreference$MyHandler;->this$0:Lcom/android/phone/CLIRDropDownPreference;
+
+    invoke-static {v2}, Lcom/android/phone/CLIRDropDownPreference;->-get6(Lcom/android/phone/CLIRDropDownPreference;)Lcom/android/phone/TimeConsumingPreferenceListener;
+
+    move-result-object v2
+
+    if-nez v2, :cond_0
+
+    return-void
+
+    :cond_0
     iget v2, p1, Landroid/os/Message;->arg2:I
 
-    if-ne v2, v5, :cond_2
+    if-ne v2, v5, :cond_3
 
     iget-object v2, p0, Lcom/android/phone/CLIRDropDownPreference$MyHandler;->this$0:Lcom/android/phone/CLIRDropDownPreference;
 
@@ -73,7 +84,7 @@
 
     iget-object v2, v0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_4
 
     const-string/jumbo v2, "CLIRDropDownPreference"
 
@@ -123,7 +134,7 @@
 
     invoke-virtual {v2, v3}, Lcom/android/phone/CLIRDropDownPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    :cond_0
+    :cond_1
     :goto_1
     const-string/jumbo v2, "disable_edit_callerid"
 
@@ -131,16 +142,16 @@
 
     move-result v2
 
-    if-eqz v2, :cond_1
+    if-eqz v2, :cond_2
 
     iget-object v2, p0, Lcom/android/phone/CLIRDropDownPreference$MyHandler;->this$0:Lcom/android/phone/CLIRDropDownPreference;
 
     invoke-virtual {v2, v6}, Lcom/android/phone/CLIRDropDownPreference;->setEnabled(Z)V
 
-    :cond_1
+    :cond_2
     return-void
 
-    :cond_2
+    :cond_3
     iget-object v2, p0, Lcom/android/phone/CLIRDropDownPreference$MyHandler;->this$0:Lcom/android/phone/CLIRDropDownPreference;
 
     invoke-static {v2}, Lcom/android/phone/CLIRDropDownPreference;->-get6(Lcom/android/phone/CLIRDropDownPreference;)Lcom/android/phone/TimeConsumingPreferenceListener;
@@ -153,37 +164,12 @@
 
     goto :goto_0
 
-    :cond_3
+    :cond_4
     iget-object v2, v0, Landroid/os/AsyncResult;->userObj:Ljava/lang/Object;
 
     instance-of v2, v2, Ljava/lang/Throwable;
 
-    if-eqz v2, :cond_4
-
-    iget-object v2, p0, Lcom/android/phone/CLIRDropDownPreference$MyHandler;->this$0:Lcom/android/phone/CLIRDropDownPreference;
-
-    invoke-static {v2}, Lcom/android/phone/CLIRDropDownPreference;->-get6(Lcom/android/phone/CLIRDropDownPreference;)Lcom/android/phone/TimeConsumingPreferenceListener;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/phone/CLIRDropDownPreference$MyHandler;->this$0:Lcom/android/phone/CLIRDropDownPreference;
-
-    invoke-interface {v2, v3, v7}, Lcom/android/phone/TimeConsumingPreferenceListener;->onError(Landroid/preference/Preference;I)V
-
-    goto :goto_1
-
-    :cond_4
-    iget-object v1, v0, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
-
-    check-cast v1, [I
-
-    if-eqz v1, :cond_0
-
-    array-length v2, v1
-
-    const/4 v3, 0x2
-
-    if-eq v2, v3, :cond_5
+    if-eqz v2, :cond_5
 
     iget-object v2, p0, Lcom/android/phone/CLIRDropDownPreference$MyHandler;->this$0:Lcom/android/phone/CLIRDropDownPreference;
 
@@ -198,6 +184,31 @@
     goto :goto_1
 
     :cond_5
+    iget-object v1, v0, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
+
+    check-cast v1, [I
+
+    if-eqz v1, :cond_1
+
+    array-length v2, v1
+
+    const/4 v3, 0x2
+
+    if-eq v2, v3, :cond_6
+
+    iget-object v2, p0, Lcom/android/phone/CLIRDropDownPreference$MyHandler;->this$0:Lcom/android/phone/CLIRDropDownPreference;
+
+    invoke-static {v2}, Lcom/android/phone/CLIRDropDownPreference;->-get6(Lcom/android/phone/CLIRDropDownPreference;)Lcom/android/phone/TimeConsumingPreferenceListener;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/phone/CLIRDropDownPreference$MyHandler;->this$0:Lcom/android/phone/CLIRDropDownPreference;
+
+    invoke-interface {v2, v3, v7}, Lcom/android/phone/TimeConsumingPreferenceListener;->onError(Landroid/preference/Preference;I)V
+
+    goto :goto_1
+
+    :cond_6
     const-string/jumbo v2, "CLIRDropDownPreference"
 
     new-instance v3, Ljava/lang/StringBuilder;

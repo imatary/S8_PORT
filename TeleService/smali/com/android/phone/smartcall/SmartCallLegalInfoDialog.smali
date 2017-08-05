@@ -50,7 +50,7 @@
     return-void
 
     :cond_0
-    const v6, 0x7f0d0be6
+    const v6, 0x7f0d0c51
 
     invoke-virtual {p0, v6}, Lcom/android/phone/smartcall/SmartCallLegalInfoDialog;->getString(I)Ljava/lang/String;
 
@@ -84,7 +84,7 @@
 
     invoke-direct {v0, v6}, Landroid/text/style/BackgroundColorSpan;-><init>(I)V
 
-    const v6, 0x7f0d0c24
+    const v6, 0x7f0d0c95
 
     invoke-virtual {p0, v6}, Lcom/android/phone/smartcall/SmartCallLegalInfoDialog;->getString(I)Ljava/lang/String;
 
@@ -203,7 +203,7 @@
 
     iget-object v1, p0, Lcom/android/phone/smartcall/SmartCallLegalInfoDialog;->mView:Landroid/view/View;
 
-    const v2, 0x7f100294
+    const v2, 0x7f100297
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -219,7 +219,7 @@
 
     iget-object v1, p0, Lcom/android/phone/smartcall/SmartCallLegalInfoDialog;->mView:Landroid/view/View;
 
-    const v2, 0x7f100295
+    const v2, 0x7f100298
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -245,7 +245,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0c20
+    const v1, 0x7f0d0c91
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -267,7 +267,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/smartcall/SmartCallLegalInfoDialog$2;-><init>(Lcom/android/phone/smartcall/SmartCallLegalInfoDialog;)V
 
-    const v3, 0x7f0d0c22
+    const v3, 0x7f0d0c93
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -277,7 +277,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/smartcall/SmartCallLegalInfoDialog$3;-><init>(Lcom/android/phone/smartcall/SmartCallLegalInfoDialog;)V
 
-    const v3, 0x7f0d0c23
+    const v3, 0x7f0d0c94
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

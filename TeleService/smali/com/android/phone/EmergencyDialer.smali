@@ -1483,7 +1483,7 @@
 
     aput-object v5, v4, v6
 
-    const v5, 0x7f0d0479
+    const v5, 0x7f0d04d9
 
     invoke-virtual {p0, v5, v4}, Lcom/android/phone/EmergencyDialer;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1506,7 +1506,7 @@
 
     if-eqz v4, :cond_2
 
-    const v4, 0x7f0d0477
+    const v4, 0x7f0d04d7
 
     invoke-virtual {p0, v4}, Lcom/android/phone/EmergencyDialer;->getString(I)Ljava/lang/String;
 
@@ -1519,7 +1519,7 @@
 
     aput-object p1, v4, v6
 
-    const v5, 0x7f0d0476
+    const v5, 0x7f0d04d6
 
     invoke-virtual {p0, v5, v4}, Lcom/android/phone/EmergencyDialer;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1544,7 +1544,7 @@
     return-object v2
 
     :cond_3
-    const v4, 0x7f0d0478
+    const v4, 0x7f0d04d8
 
     invoke-virtual {p0, v4}, Lcom/android/phone/EmergencyDialer;->getText(I)Ljava/lang/CharSequence;
 
@@ -2494,13 +2494,13 @@
 
     invoke-static {v1, v2, v3}, Lcom/android/phone/utils/AppLogging;->insertLog(Landroid/content/Context;Lcom/android/phone/utils/AppLogging$AppLoggingAction;Ljava/lang/String;)V
 
-    const v1, 0x7f0d0211
+    const v1, 0x7f0d026f
 
     invoke-virtual {p0, v1}, Lcom/android/phone/EmergencyDialer;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f0d028a
+    const v2, 0x7f0d02e9
 
     invoke-virtual {p0, v2}, Lcom/android/phone/EmergencyDialer;->getString(I)Ljava/lang/String;
 
@@ -3941,7 +3941,7 @@
 
     check-cast v8, Landroid/widget/ImageButton;
 
-    const v10, 0x7f02013f
+    const v10, 0x7f020143
 
     invoke-virtual {v8, v10}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -3950,7 +3950,7 @@
 
     check-cast v8, Landroid/widget/ImageButton;
 
-    const v10, 0x7f0d0cd6
+    const v10, 0x7f0d0d47
 
     invoke-virtual {p0, v10}, Lcom/android/phone/EmergencyDialer;->getString(I)Ljava/lang/String;
 
@@ -4026,7 +4026,7 @@
 
     check-cast v8, Landroid/widget/ImageButton;
 
-    const v10, 0x7f02013b
+    const v10, 0x7f02013f
 
     invoke-virtual {v8, v10}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -4103,7 +4103,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f02007f
+    const v11, 0x7f020082
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -4320,7 +4320,7 @@
     if-eqz v1, :cond_2
 
     :cond_0
-    const v0, 0x7f02007b
+    const v0, 0x7f02007e
 
     :goto_0
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer;->mDialButton:Landroid/view/View;
@@ -4430,7 +4430,7 @@
     return-void
 
     :cond_2
-    const v0, 0x7f02007d
+    const v0, 0x7f020080
 
     goto :goto_0
 
@@ -6029,7 +6029,7 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d0473
+    const v2, 0x7f0d04d3
 
     invoke-virtual {p0, v2}, Lcom/android/phone/EmergencyDialer;->getText(I)Ljava/lang/CharSequence;
 
@@ -6049,7 +6049,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d02ca
+    const v2, 0x7f0d032a
 
     const/4 v3, 0x0
 
@@ -6949,7 +6949,7 @@
         0x102002c -> :sswitch_0
         0x7f100120 -> :sswitch_3
         0x7f1001e3 -> :sswitch_2
-        0x7f1002e3 -> :sswitch_1
+        0x7f1002e6 -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -7144,7 +7144,7 @@
 
     const v7, 0x7f100120
 
-    const v6, 0x7f1002e3
+    const v6, 0x7f1002e6
 
     const/4 v5, 0x0
 

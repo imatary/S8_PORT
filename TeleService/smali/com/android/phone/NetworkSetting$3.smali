@@ -1127,7 +1127,7 @@
 
     iget-object v2, v2, Lcom/android/phone/NetworkSetting;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0d0649
+    const v3, 0x7f0d06ad
 
     invoke-static {v2, v3, v7}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1151,7 +1151,7 @@
 
     iget-object v2, v2, Lcom/android/phone/NetworkSetting;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0d064a
+    const v3, 0x7f0d06ae
 
     invoke-static {v2, v3, v7}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

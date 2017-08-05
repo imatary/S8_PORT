@@ -63,7 +63,7 @@
 
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings$4;->this$0:Lcom/android/phone/VzwAdvancedCallingSettings;
 
-    invoke-static {v0}, Lcom/android/phone/VzwAdvancedCallingSettings;->-get2(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/phone/VzwAdvancedCallingSettings;->-get3(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -73,7 +73,7 @@
 
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings$4;->this$0:Lcom/android/phone/VzwAdvancedCallingSettings;
 
-    invoke-static {v0}, Lcom/android/phone/VzwAdvancedCallingSettings;->-get2(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/phone/VzwAdvancedCallingSettings;->-get3(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -147,7 +147,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings$4;->this$0:Lcom/android/phone/VzwAdvancedCallingSettings;
 
-    invoke-static {v0}, Lcom/android/phone/VzwAdvancedCallingSettings;->-get2(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/phone/VzwAdvancedCallingSettings;->-get3(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -157,7 +157,7 @@
 
     iget-object v0, p0, Lcom/android/phone/VzwAdvancedCallingSettings$4;->this$0:Lcom/android/phone/VzwAdvancedCallingSettings;
 
-    invoke-static {v0}, Lcom/android/phone/VzwAdvancedCallingSettings;->-get2(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/phone/VzwAdvancedCallingSettings;->-get3(Lcom/android/phone/VzwAdvancedCallingSettings;)Landroid/os/Handler;
 
     move-result-object v0
 

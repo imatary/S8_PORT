@@ -3,12 +3,12 @@
 .source "GsmUmtsAdditionalCallOptions.java"
 
 # interfaces
-.implements Lcom/android/phone/DropDownPreference$Callback;
+.implements Landroid/preference/Preference$OnPreferenceChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/GsmUmtsAdditionalCallOptions;->initDropdownDTMF()V
+    value = Lcom/android/phone/GsmUmtsAdditionalCallOptions;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,58 +34,14 @@
 
 
 # virtual methods
-.method public onItemSelected(ILjava/lang/Object;)Z
-    .locals 4
+.method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
+    .locals 1
 
-    check-cast p2, Ljava/lang/Integer;
+    iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$13;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+    invoke-static {v0, p2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->-wrap6(Lcom/android/phone/GsmUmtsAdditionalCallOptions;Ljava/lang/Object;)V
 
-    move-result v0
+    const/4 v0, 0x1
 
-    const-string/jumbo v1, "GsmUmtsAdditionalCallOptions"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "DropdownDTMF val : "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const-string/jumbo v1, "dtmf_tone_type"
-
-    invoke-static {v0, v1}, Lcom/android/phone/utils/SALogging;->sendDTMFLog(ILjava/lang/String;)V
-
-    iget-object v1, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$13;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
-
-    iget-object v1, v1, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
-
-    invoke-virtual {v1}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v1
-
-    const-string/jumbo v2, "dtmf_tone_type"
-
-    invoke-static {v1, v2, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    const/4 v1, 0x1
-
-    return v1
+    return v0
 .end method

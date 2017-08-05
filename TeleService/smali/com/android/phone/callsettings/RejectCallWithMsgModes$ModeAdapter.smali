@@ -145,7 +145,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;->mTextView:Landroid/widget/TextView;
 
-    const v4, 0x7f0d097d
+    const v4, 0x7f0d09e3
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -225,7 +225,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;->mTextView:Landroid/widget/TextView;
 
-    const v4, 0x7f0d097e
+    const v4, 0x7f0d09e4
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 

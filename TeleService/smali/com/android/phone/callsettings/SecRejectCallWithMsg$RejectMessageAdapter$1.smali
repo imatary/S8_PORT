@@ -45,7 +45,7 @@
 
     iget-object v0, v0, Lcom/android/phone/callsettings/SecRejectCallWithMsg$RejectMessageAdapter;->this$0:Lcom/android/phone/callsettings/SecRejectCallWithMsg;
 
-    const v1, 0x7f0d01f3
+    const v1, 0x7f0d0250
 
     invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->getString(I)Ljava/lang/String;
 
@@ -55,7 +55,7 @@
 
     iget-object v1, v1, Lcom/android/phone/callsettings/SecRejectCallWithMsg$RejectMessageAdapter;->this$0:Lcom/android/phone/callsettings/SecRejectCallWithMsg;
 
-    const v2, 0x7f0d0246
+    const v2, 0x7f0d02a4
 
     invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->getString(I)Ljava/lang/String;
 

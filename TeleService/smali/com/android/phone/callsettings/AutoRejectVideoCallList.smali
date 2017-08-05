@@ -588,7 +588,7 @@
 
     if-eqz v0, :cond_0
 
-    const v6, 0x7f0d088c
+    const v6, 0x7f0d08f0
 
     :cond_0
     const-string/jumbo v0, "feature_ctc"
@@ -599,7 +599,7 @@
 
     if-eqz v0, :cond_1
 
-    const v6, 0x7f0d05b3
+    const v6, 0x7f0d0617
 
     :cond_1
     iget-object v7, p0, Lcom/android/phone/callsettings/AutoRejectVideoCallList;->mAutoRejectItemList:Ljava/util/ArrayList;
@@ -730,7 +730,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f0d087d
+    const v5, 0x7f0d08e1
 
     move-object v0, p0
 
@@ -753,7 +753,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f0d0518
+    const v5, 0x7f0d0578
 
     move-object v0, p0
 
@@ -1386,9 +1386,9 @@
 .method private updateTitleBar()V
     .locals 6
 
-    const v5, 0x7f0d072e
+    const v5, 0x7f0d0792
 
-    const v4, 0x7f0d087d
+    const v4, 0x7f0d08e1
 
     const/4 v3, 0x1
 
@@ -1487,7 +1487,7 @@
     goto :goto_0
 
     :cond_3
-    const v2, 0x7f0d072c
+    const v2, 0x7f0d0790
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/AutoRejectVideoCallList;->getString(I)Ljava/lang/String;
 
@@ -1515,7 +1515,7 @@
     goto :goto_0
 
     :cond_5
-    const v2, 0x7f0d051e
+    const v2, 0x7f0d057e
 
     invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/AutoRejectVideoCallList;->getString(I)Ljava/lang/String;
 
@@ -1561,7 +1561,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f0d087d
+    const v5, 0x7f0d08e1
 
     move-object v0, p0
 
@@ -1579,7 +1579,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f0d0518
+    const v5, 0x7f0d0578
 
     move-object v0, p0
 
@@ -1624,13 +1624,13 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0541
+    const v5, 0x7f0d05a5
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v4, 0x7f0d0543
+    const v4, 0x7f0d05a7
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/AutoRejectVideoCallList;->getText(I)Ljava/lang/CharSequence;
 
@@ -1649,7 +1649,7 @@
 
     invoke-direct {v5, p0}, Lcom/android/phone/callsettings/AutoRejectVideoCallList$6;-><init>(Lcom/android/phone/callsettings/AutoRejectVideoCallList;)V
 
-    const v6, 0x7f0d0510
+    const v6, 0x7f0d0570
 
     invoke-virtual {v4, v6, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1670,7 +1670,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0542
+    const v5, 0x7f0d05a6
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1678,7 +1678,7 @@
 
     if-eqz p1, :cond_1
 
-    const v4, 0x7f0d0545
+    const v4, 0x7f0d05a9
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/AutoRejectVideoCallList;->getText(I)Ljava/lang/CharSequence;
 
@@ -1697,7 +1697,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f0d0544
+    const v4, 0x7f0d05a8
 
     invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/AutoRejectVideoCallList;->getText(I)Ljava/lang/CharSequence;
 
@@ -1777,7 +1777,7 @@
     return-void
 
     :cond_2
-    const v3, 0x7f0d05c3
+    const v3, 0x7f0d0627
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/AutoRejectVideoCallList;->getString(I)Ljava/lang/String;
 
@@ -1864,7 +1864,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0500
+    const v3, 0x7f0d0560
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2262,13 +2262,13 @@
 
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
-    const v1, 0x7f0d050b
+    const v1, 0x7f0d056b
 
     invoke-interface {p1, v3, v2, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v1
 
-    const v4, 0x7f020008
+    const v4, 0x7f02000a
 
     invoke-interface {v1, v4}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -2288,13 +2288,13 @@
 
     if-lez v1, :cond_0
 
-    const v1, 0x7f0d0510
+    const v1, 0x7f0d0570
 
     invoke-interface {p1, v3, v5, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v1
 
-    const v4, 0x7f020098
+    const v4, 0x7f02009b
 
     invoke-interface {v1, v4}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -2754,7 +2754,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f1002e5
+    const v4, 0x7f1002e8
 
     invoke-interface {v3, v4}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 

@@ -234,7 +234,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_6
 
     const-string/jumbo v2, "EmergencyDialer"
 
@@ -318,8 +318,45 @@
 
     move-result v2
 
-    if-eqz v2, :cond_b
+    if-eqz v2, :cond_c
 
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/ia/EmergencyDialerStateListener;->mActivity:Lcom/android/phone/EmergencyDialer;
+
+    iget-object v2, v2, Lcom/android/phone/EmergencyDialer;->mSyncGroupItemContainer:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    iget-object v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mSyncGroupItemAdapter:Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;
+
+    iget-object v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;->mListView:Landroid/widget/GridView;
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3}, Landroid/widget/GridView;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_5
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/ia/EmergencyDialerStateListener;->mActivity:Lcom/android/phone/EmergencyDialer;
+
+    iget-object v2, v2, Lcom/android/phone/EmergencyDialer;->mSyncGroupItemContainer:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    iget-object v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mSyncGroupItemAdapter:Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;
+
+    iget-object v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;->mListView:Landroid/widget/GridView;
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3}, Landroid/widget/GridView;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/view/View;->performLongClick()Z
+
+    :cond_5
     const-string/jumbo v2, "EmergencyDialer"
 
     const-string/jumbo v3, "DeleteEmergencyShortcut"
@@ -336,14 +373,14 @@
 
     return-void
 
-    :cond_5
+    :cond_6
     move-object/from16 v0, p0
 
     invoke-direct {v0, v8}, Lcom/android/phone/ia/EmergencyDialerStateListener;->isDialable(Ljava/lang/String;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_9
 
     move-object/from16 v0, p0
 
@@ -355,7 +392,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_6
+    if-nez v2, :cond_7
 
     move-object/from16 v0, p0
 
@@ -365,9 +402,9 @@
 
     move-result v2
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_8
 
-    :cond_6
+    :cond_7
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/ia/EmergencyDialerStateListener;->mActivity:Lcom/android/phone/EmergencyDialer;
@@ -388,7 +425,7 @@
 
     return-void
 
-    :cond_7
+    :cond_8
     const-string/jumbo v2, "EmergencyDialer"
 
     const-string/jumbo v3, "EmergencyCall"
@@ -405,7 +442,7 @@
 
     goto/16 :goto_0
 
-    :cond_8
+    :cond_9
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/ia/EmergencyDialerStateListener;->mActivity:Lcom/android/phone/EmergencyDialer;
@@ -451,7 +488,7 @@
     const/4 v9, 0x0
 
     :goto_2
-    if-ge v9, v14, :cond_a
+    if-ge v9, v14, :cond_b
 
     move-object/from16 v0, p0
 
@@ -511,11 +548,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v8, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v8, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_9
+    if-eqz v2, :cond_a
 
     new-instance v13, Landroid/content/Intent;
 
@@ -563,12 +600,12 @@
 
     return-void
 
-    :cond_9
+    :cond_a
     add-int/lit8 v9, v9, 0x1
 
     goto :goto_2
 
-    :cond_a
+    :cond_b
     const-string/jumbo v2, "EmergencyDialer"
 
     const-string/jumbo v3, "EmergencyCall"
@@ -581,7 +618,7 @@
 
     goto/16 :goto_0
 
-    :cond_b
+    :cond_c
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/phone/ia/EmergencyDialerStateListener;->mActivity:Lcom/android/phone/EmergencyDialer;
@@ -596,14 +633,14 @@
 
     const-wide/16 v10, -0x1
 
-    if-lez v15, :cond_d
+    if-lez v15, :cond_e
 
     const/4 v12, 0x0
 
     const/4 v9, 0x0
 
     :goto_3
-    if-ge v9, v15, :cond_d
+    if-ge v9, v15, :cond_e
 
     move-object/from16 v0, p0
 
@@ -663,7 +700,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_c
+    if-eqz v2, :cond_d
 
     invoke-virtual {v12}, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter$ICEContactInfo;->getId()J
 
@@ -671,16 +708,53 @@
 
     add-int/lit8 v7, v7, 0x1
 
-    :cond_c
+    :cond_d
     add-int/lit8 v9, v9, 0x1
 
     goto :goto_3
 
-    :cond_d
+    :cond_e
     const/4 v2, 0x1
 
-    if-le v7, v2, :cond_e
+    if-le v7, v2, :cond_10
 
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/ia/EmergencyDialerStateListener;->mActivity:Lcom/android/phone/EmergencyDialer;
+
+    iget-object v2, v2, Lcom/android/phone/EmergencyDialer;->mSyncGroupItemContainer:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    iget-object v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mSyncGroupItemAdapter:Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;
+
+    iget-object v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;->mListView:Landroid/widget/GridView;
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3}, Landroid/widget/GridView;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_f
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/ia/EmergencyDialerStateListener;->mActivity:Lcom/android/phone/EmergencyDialer;
+
+    iget-object v2, v2, Lcom/android/phone/EmergencyDialer;->mSyncGroupItemContainer:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    iget-object v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mSyncGroupItemAdapter:Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;
+
+    iget-object v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;->mListView:Landroid/widget/GridView;
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3}, Landroid/widget/GridView;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/view/View;->performLongClick()Z
+
+    :cond_f
     const-string/jumbo v2, "EmergencyDialer"
 
     const-string/jumbo v3, "DeleteEmergencyShortcut"
@@ -699,10 +773,10 @@
 
     goto/16 :goto_1
 
-    :cond_e
+    :cond_10
     const/4 v2, 0x1
 
-    if-ne v7, v2, :cond_f
+    if-ne v7, v2, :cond_11
 
     move-object/from16 v0, p0
 
@@ -740,7 +814,44 @@
 
     goto/16 :goto_1
 
-    :cond_f
+    :cond_11
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/ia/EmergencyDialerStateListener;->mActivity:Lcom/android/phone/EmergencyDialer;
+
+    iget-object v2, v2, Lcom/android/phone/EmergencyDialer;->mSyncGroupItemContainer:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    iget-object v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mSyncGroupItemAdapter:Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;
+
+    iget-object v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;->mListView:Landroid/widget/GridView;
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3}, Landroid/widget/GridView;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_12
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/phone/ia/EmergencyDialerStateListener;->mActivity:Lcom/android/phone/EmergencyDialer;
+
+    iget-object v2, v2, Lcom/android/phone/EmergencyDialer;->mSyncGroupItemContainer:Lcom/android/phone/emergencydialer/SyncGroupItemContainer;
+
+    iget-object v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemContainer;->mSyncGroupItemAdapter:Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;
+
+    iget-object v2, v2, Lcom/android/phone/emergencydialer/SyncGroupItemAdapter;->mListView:Landroid/widget/GridView;
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3}, Landroid/widget/GridView;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/view/View;->performLongClick()Z
+
+    :cond_12
     const-string/jumbo v2, "EmergencyDialer"
 
     const-string/jumbo v3, "DeleteEmergencyShortcut"

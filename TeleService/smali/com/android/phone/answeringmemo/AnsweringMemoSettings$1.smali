@@ -65,7 +65,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f0d0cbb
+    const v4, 0x7f0d0d2c
 
     invoke-virtual {v2, v4, v3}, Lcom/android/phone/answeringmemo/AnsweringMemoSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

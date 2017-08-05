@@ -1024,7 +1024,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f020036
+    const v2, 0x7f020038
 
     invoke-static {v1, v2}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -1040,7 +1040,7 @@
 .method private checkMobileData()Z
     .locals 14
 
-    const v13, 0x7f0d0914
+    const v13, 0x7f0d097a
 
     const v12, 0x7f040099
 
@@ -1124,7 +1124,7 @@
 
     if-eqz v7, :cond_1
 
-    const v7, 0x7f0d0915
+    const v7, 0x7f0d097b
 
     invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(I)V
 
@@ -1149,7 +1149,7 @@
 
     invoke-direct {v7, p0}, Lcom/android/phone/photoring/PhotoRingScreen$7;-><init>(Lcom/android/phone/photoring/PhotoRingScreen;)V
 
-    const v8, 0x7f0d0760
+    const v8, 0x7f0d07c4
 
     invoke-virtual {v1, v8, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1157,7 +1157,7 @@
 
     invoke-direct {v7, p0}, Lcom/android/phone/photoring/PhotoRingScreen$8;-><init>(Lcom/android/phone/photoring/PhotoRingScreen;)V
 
-    const v8, 0x7f0d02c7
+    const v8, 0x7f0d0327
 
     invoke-virtual {v1, v8, v7}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1190,14 +1190,14 @@
 
     if-eqz v7, :cond_2
 
-    const v7, 0x7f0d0a07
+    const v7, 0x7f0d0a6e
 
     invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_0
 
     :cond_2
-    const v7, 0x7f0d0915
+    const v7, 0x7f0d097b
 
     invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(I)V
 
@@ -1294,7 +1294,7 @@
 
     invoke-direct {v7, p0}, Lcom/android/phone/photoring/PhotoRingScreen$10;-><init>(Lcom/android/phone/photoring/PhotoRingScreen;)V
 
-    const v8, 0x7f0d02ca
+    const v8, 0x7f0d032a
 
     invoke-virtual {v1, v8, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1325,7 +1325,7 @@
 
     if-eqz v7, :cond_6
 
-    const v7, 0x7f0d0a06
+    const v7, 0x7f0d0a6d
 
     invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(I)V
 
@@ -1857,7 +1857,7 @@
 
     iget-object v1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mPhotoringContentsText:Landroid/widget/TextView;
 
-    const v2, 0x7f0d0a01
+    const v2, 0x7f0d0a68
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -3067,7 +3067,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->clickListenerToFinish:Landroid/content/DialogInterface$OnClickListener;
 
-    const v2, 0x7f0d02ca
+    const v2, 0x7f0d032a
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3084,7 +3084,7 @@
     return-void
 
     :cond_0
-    const v1, 0x7f0d0916
+    const v1, 0x7f0d097c
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -3113,7 +3113,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->clickListenerToDismiss:Landroid/content/DialogInterface$OnClickListener;
 
-    const v2, 0x7f0d02ca
+    const v2, 0x7f0d032a
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3130,7 +3130,7 @@
     return-void
 
     :cond_0
-    const v1, 0x7f0d0916
+    const v1, 0x7f0d097c
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -3148,13 +3148,13 @@
 
     invoke-virtual {v0, p1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d02ca
+    const v1, 0x7f0d032a
 
     invoke-virtual {v0, v1, p2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     iget-object v1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->clickListenerToFinish:Landroid/content/DialogInterface$OnClickListener;
 
-    const v2, 0x7f0d02c7
+    const v2, 0x7f0d0327
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3499,7 +3499,7 @@
 
     move-result-object v30
 
-    const v31, 0x7f0d0a0b
+    const v31, 0x7f0d0a72
 
     invoke-virtual/range {v30 .. v31}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -4519,7 +4519,7 @@
 
     move-result-object v30
 
-    const v31, 0x7f020036
+    const v31, 0x7f020038
 
     invoke-static/range {v30 .. v31}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -5486,7 +5486,7 @@
 
     move-result-object v18
 
-    const v19, 0x7f0d0922
+    const v19, 0x7f0d0988
 
     invoke-virtual/range {v18 .. v19}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -5769,7 +5769,7 @@
 
     invoke-direct {v0, v1}, Lcom/android/phone/photoring/PhotoRingScreen$12;-><init>(Lcom/android/phone/photoring/PhotoRingScreen;)V
 
-    const v18, 0x7f0d0912
+    const v18, 0x7f0d0978
 
     move/from16 v0, v18
 
@@ -5785,7 +5785,7 @@
 
     invoke-direct {v0, v1}, Lcom/android/phone/photoring/PhotoRingScreen$13;-><init>(Lcom/android/phone/photoring/PhotoRingScreen;)V
 
-    const v18, 0x7f0d02c7
+    const v18, 0x7f0d0327
 
     move/from16 v0, v18
 
@@ -5912,7 +5912,7 @@
 
     move-result-object v18
 
-    const v19, 0x7f0d096f
+    const v19, 0x7f0d09d5
 
     invoke-virtual/range {v18 .. v19}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -5951,7 +5951,7 @@
 
     move-result-object v17
 
-    const v18, 0x7f0d091c
+    const v18, 0x7f0d0982
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6665,7 +6665,7 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 14
 
-    const v8, 0x7f0d0907
+    const v8, 0x7f0d096d
 
     const/16 v13, 0x8
 
@@ -6761,7 +6761,7 @@
 
     if-eqz v7, :cond_3
 
-    const v7, 0x7f0d0a03
+    const v7, 0x7f0d0a6a
 
     invoke-virtual {p0, v7}, Lcom/android/phone/photoring/PhotoRingScreen;->setTitle(I)V
 
@@ -6904,7 +6904,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d096f
+    const v9, 0x7f0d09d5
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -7023,18 +7023,18 @@
 
     const/4 v0, 0x1
 
-    const v1, 0x7f0d090e
+    const v1, 0x7f0d0974
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/ContextMenu;->add(IIII)Landroid/view/MenuItem;
 
-    const v0, 0x7f0d050e
+    const v0, 0x7f0d056e
 
     invoke-interface {p1, v2, v3, v2, v0}, Landroid/view/ContextMenu;->add(IIII)Landroid/view/MenuItem;
 
     :cond_0
     const/4 v0, 0x3
 
-    const v1, 0x7f0d0510
+    const v1, 0x7f0d0570
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/ContextMenu;->add(IIII)Landroid/view/MenuItem;
 

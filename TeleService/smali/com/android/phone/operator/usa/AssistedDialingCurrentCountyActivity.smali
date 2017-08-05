@@ -100,7 +100,7 @@
 
     iget-object v1, p0, Lcom/android/phone/operator/usa/AssistedDialingCurrentCountyActivity;->mCurrentText:Landroid/preference/PreferenceScreen;
 
-    const v2, 0x7f0d07da
+    const v2, 0x7f0d083e
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setSummary(I)V
 
@@ -286,13 +286,13 @@
     return v0
 
     :pswitch_0
-    const v0, 0x7f0d020d
+    const v0, 0x7f0d026b
 
     invoke-virtual {p0, v0}, Lcom/android/phone/operator/usa/AssistedDialingCurrentCountyActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f0d0217
+    const v1, 0x7f0d0275
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/usa/AssistedDialingCurrentCountyActivity;->getString(I)Ljava/lang/String;
 
@@ -385,13 +385,13 @@
 
     if-ne p2, v0, :cond_0
 
-    const v0, 0x7f0d020d
+    const v0, 0x7f0d026b
 
     invoke-virtual {p0, v0}, Lcom/android/phone/operator/usa/AssistedDialingCurrentCountyActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f0d02a9
+    const v1, 0x7f0d0309
 
     invoke-virtual {p0, v1}, Lcom/android/phone/operator/usa/AssistedDialingCurrentCountyActivity;->getString(I)Ljava/lang/String;
 
@@ -420,7 +420,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v4, 0x7f0d020d
+    const v4, 0x7f0d026b
 
     invoke-virtual {p0, v4}, Lcom/android/phone/operator/usa/AssistedDialingCurrentCountyActivity;->getString(I)Ljava/lang/String;
 
@@ -446,7 +446,7 @@
 
     iget-object v2, p0, Lcom/android/phone/operator/usa/AssistedDialingCurrentCountyActivity;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0d088a
+    const v4, 0x7f0d08ee
 
     invoke-static {v2, v4, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

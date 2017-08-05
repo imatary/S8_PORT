@@ -199,7 +199,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d0af6
+    const v2, 0x7f0d0b5d
 
     invoke-virtual {p0, v2}, Lcom/android/phone/nwservice/CallsSettings;->getString(I)Ljava/lang/String;
 
@@ -211,7 +211,7 @@
 
     new-array v1, v2, [Ljava/lang/CharSequence;
 
-    const v2, 0x7f0d0afe
+    const v2, 0x7f0d0b65
 
     invoke-virtual {p0, v2}, Lcom/android/phone/nwservice/CallsSettings;->getString(I)Ljava/lang/String;
 
@@ -221,7 +221,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0d0b00
+    const v2, 0x7f0d0b67
 
     invoke-virtual {p0, v2}, Lcom/android/phone/nwservice/CallsSettings;->getString(I)Ljava/lang/String;
 
@@ -231,7 +231,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0d0b01
+    const v2, 0x7f0d0b68
 
     invoke-virtual {p0, v2}, Lcom/android/phone/nwservice/CallsSettings;->getString(I)Ljava/lang/String;
 
@@ -247,7 +247,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f0d050d
+    const v2, 0x7f0d056d
 
     invoke-virtual {p0, v2}, Lcom/android/phone/nwservice/CallsSettings;->getString(I)Ljava/lang/String;
 
@@ -271,7 +271,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d0af5
+    const v2, 0x7f0d0b5c
 
     invoke-virtual {p0, v2}, Lcom/android/phone/nwservice/CallsSettings;->getString(I)Ljava/lang/String;
 
@@ -283,7 +283,7 @@
 
     new-array v1, v2, [Ljava/lang/CharSequence;
 
-    const v2, 0x7f0d0afe
+    const v2, 0x7f0d0b65
 
     invoke-virtual {p0, v2}, Lcom/android/phone/nwservice/CallsSettings;->getString(I)Ljava/lang/String;
 
@@ -293,7 +293,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0d0aff
+    const v2, 0x7f0d0b66
 
     invoke-virtual {p0, v2}, Lcom/android/phone/nwservice/CallsSettings;->getString(I)Ljava/lang/String;
 
@@ -309,7 +309,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f0d050d
+    const v2, 0x7f0d056d
 
     invoke-virtual {p0, v2}, Lcom/android/phone/nwservice/CallsSettings;->getString(I)Ljava/lang/String;
 
@@ -411,7 +411,7 @@
 
     invoke-virtual {v0, v5}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v4, 0x7f0d0aa4
+    const v4, 0x7f0d0b0b
 
     invoke-virtual {p0, v4}, Lcom/android/phone/nwservice/CallsSettings;->getText(I)Ljava/lang/CharSequence;
 
@@ -422,7 +422,7 @@
     return-object v0
 
     :sswitch_1
-    const v3, 0x7f0d0332
+    const v3, 0x7f0d0392
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
@@ -436,7 +436,7 @@
 
     invoke-virtual {v1, v4}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v4, 0x7f0d050c
+    const v4, 0x7f0d056c
 
     invoke-virtual {p0, v4}, Lcom/android/phone/nwservice/CallsSettings;->getText(I)Ljava/lang/CharSequence;
 

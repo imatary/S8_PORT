@@ -139,11 +139,11 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    const v5, 0x7f0d06f3
+    const v5, 0x7f0d0757
 
     invoke-virtual {v2, v5}, Landroid/widget/CheckBox;->setText(I)V
 
-    const v5, 0x7f0d06ac
+    const v5, 0x7f0d0710
 
     invoke-virtual {v1, v5}, Landroid/widget/TextView;->setText(I)V
 
@@ -153,7 +153,7 @@
 
     invoke-direct {v0, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f0d06ad
+    const v5, 0x7f0d0711
 
     invoke-virtual {v0, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -167,7 +167,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlyCheckBoxPreference$2;-><init>(Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlyCheckBoxPreference;)V
 
-    const v7, 0x7f0d050d
+    const v7, 0x7f0d056d
 
     invoke-virtual {v5, v7, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -177,7 +177,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlyCheckBoxPreference$3;-><init>(Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlyCheckBoxPreference;)V
 
-    const v7, 0x7f0d050c
+    const v7, 0x7f0d056c
 
     invoke-virtual {v5, v7, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

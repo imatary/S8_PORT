@@ -123,7 +123,7 @@
 
     iget-object v2, p0, Lcom/android/phone/additionalservice/RegisterUSSD$5;->this$0:Lcom/android/phone/additionalservice/RegisterUSSD;
 
-    const v3, 0x7f0d05c3
+    const v3, 0x7f0d0627
 
     invoke-virtual {v2, v3}, Lcom/android/phone/additionalservice/RegisterUSSD;->getString(I)Ljava/lang/String;
 

@@ -3,12 +3,12 @@
 .source "GlanceReply.java"
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Landroid/content/DialogInterface$OnKeyListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/edge/GlanceReply;->initSubAppBar()V
+    value = Lcom/android/phone/edge/GlanceReply;->alertEmptyMessage()Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,29 +34,17 @@
 
 
 # virtual methods
-.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+.method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 1
 
-    if-nez p2, :cond_0
+    const/4 v0, 0x4
 
-    iget-object v0, p0, Lcom/android/phone/edge/GlanceReply$4;->this$0:Lcom/android/phone/edge/GlanceReply;
+    if-ne p2, v0, :cond_0
 
-    invoke-static {v0, p2}, Lcom/android/phone/edge/GlanceReply;->-wrap0(Lcom/android/phone/edge/GlanceReply;Z)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/phone/edge/GlanceReply$4;->this$0:Lcom/android/phone/edge/GlanceReply;
-
-    invoke-static {v0, p2}, Lcom/android/phone/edge/GlanceReply;->-wrap2(Lcom/android/phone/edge/GlanceReply;Z)V
-
-    return-void
+    invoke-interface {p1}, Landroid/content/DialogInterface;->cancel()V
 
     :cond_0
-    iget-object v0, p0, Lcom/android/phone/edge/GlanceReply$4;->this$0:Lcom/android/phone/edge/GlanceReply;
+    const/4 v0, 0x0
 
-    invoke-static {v0, p2}, Lcom/android/phone/edge/GlanceReply;->-wrap3(Lcom/android/phone/edge/GlanceReply;Z)V
-
-    return-void
+    return v0
 .end method

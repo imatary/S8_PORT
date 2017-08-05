@@ -129,7 +129,7 @@
 
     iget-object v1, p0, Lcom/android/phone/nwservice/NuisanceCallBlockingService;->mNuisanceList1Pref:Landroid/preference/PreferenceScreen;
 
-    const v2, 0x7f0d0b1f
+    const v2, 0x7f0d0b86
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setTitle(I)V
 
@@ -151,7 +151,7 @@
 
     iget-object v1, p0, Lcom/android/phone/nwservice/NuisanceCallBlockingService;->mNuisanceList3Pref:Landroid/preference/PreferenceScreen;
 
-    const v2, 0x7f0d0b23
+    const v2, 0x7f0d0b8a
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setTitle(I)V
 
@@ -287,7 +287,7 @@
 
     if-nez p1, :cond_0
 
-    const v1, 0x7f0d0b29
+    const v1, 0x7f0d0b90
 
     invoke-virtual {p0, v1}, Lcom/android/phone/nwservice/NuisanceCallBlockingService;->getString(I)Ljava/lang/String;
 
@@ -296,7 +296,7 @@
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     :goto_0
-    const v1, 0x7f0d050c
+    const v1, 0x7f0d056c
 
     invoke-virtual {p0, v1}, Lcom/android/phone/nwservice/NuisanceCallBlockingService;->getString(I)Ljava/lang/String;
 
@@ -308,7 +308,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d050d
+    const v1, 0x7f0d056d
 
     invoke-virtual {p0, v1}, Lcom/android/phone/nwservice/NuisanceCallBlockingService;->getString(I)Ljava/lang/String;
 
@@ -329,7 +329,7 @@
 
     if-ne p1, v1, :cond_1
 
-    const v1, 0x7f0d0b2c
+    const v1, 0x7f0d0b93
 
     invoke-virtual {p0, v1}, Lcom/android/phone/nwservice/NuisanceCallBlockingService;->getString(I)Ljava/lang/String;
 
@@ -340,7 +340,7 @@
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f0d0b2d
+    const v1, 0x7f0d0b94
 
     invoke-virtual {p0, v1}, Lcom/android/phone/nwservice/NuisanceCallBlockingService;->getString(I)Ljava/lang/String;
 
@@ -358,11 +358,11 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0b23
+    const v1, 0x7f0d0b8a
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d0b24
+    const v1, 0x7f0d0b8b
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -370,11 +370,11 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/nwservice/NuisanceCallBlockingService$4;-><init>(Lcom/android/phone/nwservice/NuisanceCallBlockingService;)V
 
-    const v2, 0x7f0d0b33
+    const v2, 0x7f0d0b9a
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d050d
+    const v1, 0x7f0d056d
 
     invoke-virtual {p0, v1}, Lcom/android/phone/nwservice/NuisanceCallBlockingService;->getString(I)Ljava/lang/String;
 
@@ -390,7 +390,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/nwservice/NuisanceCallBlockingService$6;-><init>(Lcom/android/phone/nwservice/NuisanceCallBlockingService;)V
 
-    const v2, 0x7f0d0b32
+    const v2, 0x7f0d0b99
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -492,7 +492,7 @@
 
     invoke-virtual {v0, v5}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v4, 0x7f0d0aa4
+    const v4, 0x7f0d0b0b
 
     invoke-virtual {p0, v4}, Lcom/android/phone/nwservice/NuisanceCallBlockingService;->getText(I)Ljava/lang/CharSequence;
 
@@ -503,7 +503,7 @@
     return-object v0
 
     :sswitch_1
-    const v3, 0x7f0d0332
+    const v3, 0x7f0d0392
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
@@ -517,7 +517,7 @@
 
     invoke-virtual {v1, v4}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v4, 0x7f0d050c
+    const v4, 0x7f0d056c
 
     invoke-virtual {p0, v4}, Lcom/android/phone/nwservice/NuisanceCallBlockingService;->getText(I)Ljava/lang/CharSequence;
 
@@ -865,7 +865,7 @@
     :catch_2
     move-exception v0
 
-    const v3, 0x7f0d0b41
+    const v3, 0x7f0d0ba8
 
     invoke-direct {p0, v3}, Lcom/android/phone/nwservice/NuisanceCallBlockingService;->showAlertDialogAppNotInstalled(I)V
 

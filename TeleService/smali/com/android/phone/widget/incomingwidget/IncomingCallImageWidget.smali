@@ -420,7 +420,7 @@
 
     iget-object v1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageWidget;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0d0a1b
+    const v2, 0x7f0d0a82
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -436,7 +436,7 @@
 
     iget-object v1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageWidget;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0d0a1c
+    const v2, 0x7f0d0a83
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

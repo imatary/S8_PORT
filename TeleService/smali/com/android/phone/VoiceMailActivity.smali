@@ -127,7 +127,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0b9c
+    const v1, 0x7f0d0c03
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -145,7 +145,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -163,7 +163,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/VoiceMailActivity$20;-><init>(Lcom/android/phone/VoiceMailActivity;)V
 
-    const v3, 0x7f0d0639
+    const v3, 0x7f0d069d
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -173,7 +173,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/VoiceMailActivity$21;-><init>(Lcom/android/phone/VoiceMailActivity;)V
 
-    const v3, 0x7f0d063a
+    const v3, 0x7f0d069e
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -193,7 +193,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0b9c
+    const v1, 0x7f0d0c03
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -211,7 +211,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -229,7 +229,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/VoiceMailActivity$22;-><init>(Lcom/android/phone/VoiceMailActivity;)V
 
-    const v3, 0x7f0d0639
+    const v3, 0x7f0d069d
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -239,7 +239,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/VoiceMailActivity$23;-><init>(Lcom/android/phone/VoiceMailActivity;)V
 
-    const v3, 0x7f0d063a
+    const v3, 0x7f0d069e
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -259,7 +259,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0b9c
+    const v1, 0x7f0d0c03
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -277,7 +277,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -295,7 +295,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/VoiceMailActivity$24;-><init>(Lcom/android/phone/VoiceMailActivity;)V
 
-    const v3, 0x7f0d0639
+    const v3, 0x7f0d069d
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -305,7 +305,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/VoiceMailActivity$25;-><init>(Lcom/android/phone/VoiceMailActivity;)V
 
-    const v3, 0x7f0d063a
+    const v3, 0x7f0d069e
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -319,9 +319,9 @@
 .method private AlertDialogActivePlayVoiceMaill()V
     .locals 9
 
-    const v8, 0x7f0d063a
+    const v8, 0x7f0d069e
 
-    const v7, 0x7f0d0639
+    const v7, 0x7f0d069d
 
     const/4 v6, 0x0
 
@@ -335,7 +335,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0b9e
+    const v1, 0x7f0d0c05
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -351,7 +351,7 @@
 
     aput-object v4, v3, v6
 
-    const v4, 0x7f0d0b9f
+    const v4, 0x7f0d0c06
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -391,7 +391,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0b9c
+    const v1, 0x7f0d0c03
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -407,7 +407,7 @@
 
     aput-object v4, v3, v6
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -445,11 +445,11 @@
 .method private AlertDialogActiveStartVoiceMail1()V
     .locals 9
 
-    const v3, 0x7f0d0b9c
+    const v3, 0x7f0d0c03
 
-    const v8, 0x7f0d063a
+    const v8, 0x7f0d069e
 
-    const v7, 0x7f0d0639
+    const v7, 0x7f0d069d
 
     const/4 v6, 0x0
 
@@ -483,7 +483,7 @@
 
     aput-object v4, v3, v6
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -537,7 +537,7 @@
 
     aput-object v4, v3, v6
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -590,7 +590,7 @@
 
     aput-object v4, v3, v6
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -642,7 +642,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0b9c
+    const v1, 0x7f0d0c03
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -660,7 +660,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -678,7 +678,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/VoiceMailActivity$12;-><init>(Lcom/android/phone/VoiceMailActivity;)V
 
-    const v3, 0x7f0d0639
+    const v3, 0x7f0d069d
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -688,7 +688,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/VoiceMailActivity$13;-><init>(Lcom/android/phone/VoiceMailActivity;)V
 
-    const v3, 0x7f0d063a
+    const v3, 0x7f0d069e
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -702,11 +702,11 @@
 .method private AlertDialogActiveStopVoiceMail()V
     .locals 9
 
-    const v3, 0x7f0d0b9c
+    const v3, 0x7f0d0c03
 
-    const v8, 0x7f0d063a
+    const v8, 0x7f0d069e
 
-    const v7, 0x7f0d0639
+    const v7, 0x7f0d069d
 
     const/4 v6, 0x0
 
@@ -740,7 +740,7 @@
 
     aput-object v4, v3, v6
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -794,7 +794,7 @@
 
     aput-object v4, v3, v6
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -847,7 +847,7 @@
 
     aput-object v4, v3, v6
 
-    const v4, 0x7f0d0b9d
+    const v4, 0x7f0d0c04
 
     invoke-virtual {v2, v4, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

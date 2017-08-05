@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="battery_history_hours_no_seconds">%1$dh %2$dm</string>
-    <string name="battery_history_minutes_no_seconds">%dm</string>
+    <string name="battery_history_hours_no_seconds">%1$d j %2$d m</string>
+    <string name="battery_history_minutes_no_seconds">%d m</string>
     <string name="wifi_fail_to_scan">Tidak dapat memindai jaringan</string>
     <string name="wifi_failed_to_obtain_IP">Gagal mendapatkan alamat IP.</string>
     <string name="wifi_security_none">Tidak Ada</string>
@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">Tidak dapat tersambung ke %s.</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">Tidak dapat menyambung ke %1$s. Periksa pengaturan di %2$s dan coba lagi.</string>
     <string name="bluetooth_pairing_rejected_error_message">Pemasangan ditolak oleh %s.</string>
+    <string name="bluetooth_getting_remote_device_name">Mendapatkan nama perangkat…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">Nama perangkat akan muncul saat perangkat ini tersambung.</string>
     <string name="accessibility_wifi_off">Wi-Fi tidak aktif.</string>
     <string name="accessibility_no_wifi">Wi-Fi tidak tersambung.</string>
     <string name="accessibility_wifi_one_bar">Wi-Fi satu baris.</string>
@@ -839,7 +841,7 @@
     <string name="singleContactImportedMsg">Kontak diimpor</string>
     <string name="failedToImportSingleContactMsg">Gagal mengimpor kontak</string>
     <string name="hac_mode_title">Bantuan pendengaran</string>
-    <string name="hac_mode_summary">Tingkatkan kualitas suara perangkat Anda, untuk digunakan bersama alat bantu dengar.</string>
+    <string name="hac_mode_summary">Optimalkan kualitas suara ponsel Anda untuk alat bantu dengar.</string>
     <string name="dtmf_tones_title">Nada DTMF</string>
     <string name="dtmf_tones_summary">Atur panjang nada DTMF.</string>
     <string name="network_info_message">Pesan jaringan</string>
@@ -1022,6 +1024,10 @@ Ikon di bawah ini akan ditampilkan kapan pun fungsi ini tersedia."</string>
     <string name="add_call_block_number_toast">Anda tidak akan menerima panggilan dari nomor ini.</string>
     <string name="delete_call_block_number_toast">Kini Anda dapat menerima panggilan dari nomor ini.</string>
     <string name="emergency_call_block_number_toast">Tidak dapat memblokir nomor darurat.</string>
+    <string name="call_block_dialog_title">Edit Blokir nomor</string>
+    <string name="call_block_dialog_contents">Mulai dari Android Nougat hingga seterusnya, Mode pemblokiran panggilan digantikan oleh Blokir nomor. Bukan hanya memblokir panggilan, Blokir nomor akan otomatis memblokir panggilan dan pesan.</string>
+    <string name="call_block_dialog_settings">Ketuk PENGATURAN untuk mengedit Blokir nomor.</string>
+    <string name="call_block_dialog_button">Pengaturan</string>
     <string name="no_block_number_description">Nomor yang Anda tambahkan akan muncul di sini.</string>
     <string name="no_messages_description">Pesan yang Anda tambahkan akan muncul di sini.</string>
     <string name="callsettings_vipmode_blacklist_title">Daftar hitam</string>
@@ -1071,7 +1077,7 @@ Ikon di bawah ini akan ditampilkan kapan pun fungsi ini tersedia."</string>
     <string name="callsettings_answering_volume_key_title">Tkn Volume naik utk mnjwb pgln</string>
     <string name="callsettings_answering_key_summary">Tekan tombol beranda untuk menerima panggilan masuk.</string>
     <string name="callsettings_PowerkeyEndsCalls_title">Tkn tmbl Daya utk akhiri pnggln</string>
-    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Tkn tmbl Daya utk akhiri pnggln</string>
+    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">Tekan Tombol daya untuk mengakhiri panggilan</string>
     <string name="callsettings_PowerkeyEndsCalls_summary">Tekan daya tombol untuk mengakhiri pgln saat layar aktif. Ini tdk akan mematikan layar.</string>
     <string name="Dialog_PowerkeyEndsCalls">Tidak dapat mengatur tombol daya untuk mengakhiri panggilan sementara sensor kedekatan tidak aktif. Sensor kedekatan akan diaktifkan. Selama panggilan, layar akan dimatikan ketika Anda mendekatkan perangkat ke telinga.</string>
     <string name="Dialog_PowerkeyEndsCalls_title">Aktifkan sensor kedekatan</string>
@@ -1343,7 +1349,7 @@ Injured/Dead
     <string name="roaming_alerts_sbody">Ubah pengaturan suara, teks, dan roaming data, termasuk roaming internasional.</string>
     <string name="roaming_alerts_voice_body">Roaming suara</string>
     <string name="roaming_alerts_data_body">Roaming data</string>
-    <string name="roaming_alerts_sms_body">Outgoing text roaming</string>
+    <string name="roaming_alerts_sms_body">Roaming teks keluar</string>
     <string name="roaming_domestic_category">Roaming domestik</string>
     <string name="roaming_international_category">Roaming internasional</string>
     <string name="roaming_voice_body">Roaming suara dan teks</string>
@@ -1513,9 +1519,7 @@ Matikan Data seluler?"</string>
     <string name="data_usage_disable_mobile_vzw_chn">"Anda tidak lagi dapat menggunakan Internet, Email, atau aplikasi lainnya yang memerlukan koneksi data.
 
 Data seluler akan dinonaktifkan terkecuali Anda menggunakan WLAN."</string>
-    <string name="mobile_data_off_dialog_text_common">"Anda tidak lagi dapat menggunakan Internet, Email, atau aplikasi lainnya yang memerlukan koneksi data kecuali jika Anda menggunakan Wi-Fi.
-
-Data seluler akan dimatikan."</string>
+    <string name="mobile_data_off_dialog_text_common">Anda tidak akan dapat menggunakan Internet, Email, atau aplikasi lainnya yang memerlukan koneksi jaringan kecuali Anda tersambung ke jaringan Wi-Fi.</string>
     <string name="mobile_data_off_dialog_button_turn_off">Nonaktifkn</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"Anda tidak lagi dapat menggunakan Internet, email, atau aplikasi lainnya yang memerlukan koneksi data terkecuali Anda menggunakan Wi-Fi.
 
@@ -1595,8 +1599,9 @@ Untuk mengubah mode jaringan, masuklah ke Pengaturan > Jaringan lainnya > Jaring
 Biaya tambahan mungkin dikenakan jika Anda tidak menggunakan paket data tarif tetap."</string>
     <string name="data_3gwarning_popup_title">Data seluler</string>
     <string name="roaming_data_off_msg">Untuk menggunakan roaming data, buka Pengaturan > Koneksi > Roaming global, lalu aktifkan Roaming data.</string>
-    <string name="data_3gwarning_popup_noti">Menghubungkan ke jaringan seluler mungkin dikenakan biaya tambahan jika Anda tidak menggunakan paket tarif tetap. Hubungkan?</string>
-    <string name="lgt_4gwarning_popup_mobiledata">Data seluler akan dihidupkan. Hal ini dapat dikenakan biaya tambahan dari penyedia layanan Anda, tergantung paket pembayaran Anda.</string>
+    <string name="data_3gwarning_popup_noti">Data seluler akan dihidupkan. Tersambung ke jaringan seluler dapat dikenai biaya tambahan, tergantung paket pembayaran Anda.</string>
+    <string name="data_3gwarning_popup_noti_ktt">Data seluler akan dihidupkan untuk menggunakan GiGA LTE. Ini mungkin dikenai biaya tambahan, tergantung paket pembayaran Anda.</string>
+    <string name="lgt_4gwarning_popup_mobiledata">Data seluler akan dihidupkan. Tersambung ke jaringan seluler dapat dikenai biaya tambahan, tergantung paket pembayaran Anda.</string>
     <string name="lgt_lte_data_roaming_warningmsg">"Ketika roaming data diaktifkan, &lt;u>&lt;font color=\"%1$s\">biaya jelajah data internasional akan diterapkan sebagai ganti biaya data domestik.&lt;/font>&lt;/u>
 
 &lt;u>&lt;font color=\"%1$s\">Aktifkan pembatasan data latar belakang untuk mengurangi biaya jelajah data&lt;/font>&lt;/u> dengan menonaktifkan fitur seperti notifikasi IM dan pembaruan otomatis"</string>
@@ -1967,6 +1972,8 @@ Hubungi pusat pelanggan atau dealer lokal Anda."</string>
     <string name="volte_call_summary_ops">Lakukan panggilan suara HD pada jaringan 4G.</string>
     <string name="voice_over_lte_title_cct">Panggilan Volte</string>
     <string name="volte_call_summary_cct">Mengaktifkan fitur panggilan lanjutan melalui jaringan seluler 4G LTE bila tersedia.</string>
+    <string name="voice_over_lte_title_o2">Panggilan 4G</string>
+    <string name="volte_call_summary_o2">Nikmati komunikasi ditingkatkan menggunakan data 4G.</string>
     <string name="volte_tty_description_on">While TTY is on, you will not be able to make and receive video calls or have conference calls.</string>
     <string name="volte_prepaid_tty_description_on">TTY mode will be enabled. You will not be able to make or receive conference calls.</string>
     <string name="volte_tty_description_off">While TTY is off, you will not be able to make and receive TTY calls.</string>
@@ -2156,9 +2163,13 @@ Roaming LTE tidak akan tersedia jika Anda tidak setuju. Jaringan 3G mungkin digu
     <string name="group_voice_call_disable_on_3G">Panggilan grup hanya tersedia lewat jaringan LTE</string>
     <string name="group_voice_call_outgoing_voice_call">Panggilan suara keluar</string>
     <string name="voice_party_call_fail_network">Unable to make Voice party call. Check network connection.</string>
+    <string name="data_usage_disable_mobile_warning_skt">"Anda tidak lagi dapat menggunakan Internet, Email, atau aplikasi lain yang memerlukan koneksi data kecuali jika Anda menggunakan Wi-Fi.
+
+Data seluler akan dimatikan."</string>
     <string name="data_usage_disable_mobile_warning">"Anda tidak lagi dapat menggunakan Internet, email, atau aplikasi lainnya yang memerlukan koneksi data terkecuali Anda menggunakan Wi-Fi.
 
 Data seluler akan dinonaktifkan."</string>
+    <string name="data_usage_enable_mobile_warning_skt">Data seluler akan dihidupkan. Tersambung ke jaringan seluler dapat dikenai biaya tambahan, tergantung paket pembayaran Anda.</string>
     <string name="data_usage_enable_mobile_warning">Menghubung lewat paket data dapat terkena biaya tambahan. Lanjutkan?</string>
     <string name="insert_sim_card">Masukkan kartu SIM</string>
     <string name="insert_sim_card_message">Masukkan kartu SIM utk mengakses layanan jaringan.</string>
@@ -2192,6 +2203,7 @@ Data seluler akan dinonaktifkan."</string>
     <string name="turning_off_answer_memo">Penjawab otomatis dan pesan jawaban tidak dapat diaktifkan sekaligus. Pesan jawaban akan dinonaktifkan.</string>
     <string name="disconnect_network_message">Mengubah jaringan layanan data akan memutuskan jaringan yg sdg digunakan. Ubah jaringan layanan data?</string>
     <string name="disconnect_network_title">Putuskan sambungan saat ini</string>
+    <string name="disable2g_warning_message">Pengaturan ini menonaktifkan layanan 2G. Jika layanan 2G nonaktif, beberapa aplikasi dan fungsi mungkin tidak berfungsi apabila LTE atau 3G tidak tersedia.</string>
     <string name="data_roaming_restrict_title">Data roaming nonaktif</string>
     <string name="data_roaming_restrict_body">Ketuk di sini untuk mengaktifkan Roaming data.</string>
     <string name="data_network_mode">Mode jaringan data</string>
@@ -2392,6 +2404,10 @@ Try again later."</string>
     <string name="delete_this_number_kddi">Hapus nomor ini?</string>
     <string name="change_guide_language_kddi">Ubah bahasa panduan</string>
     <string name="apply_option_service_kddi">Buka opsi layanan %s</string>
+    <string name="optional_service_kddi">Use optional services</string>
+    <string name="au_call_settings_category">Dukungan pelanggan</string>
+    <string name="website_kddi">Go to website</string>
+    <string name="call_au_service_center">Call (157)</string>
     <string name="Janpanese_guidance_kddi">Panduan Bhs Jepang (%d)</string>
     <string name="English_guidance_kddi">Panduan Bhs Inggris (%d)</string>
     <string name="voicecall_kddi">Pesan suara</string>
@@ -2446,11 +2462,13 @@ Identifikasi nomor tak disimpan menggunakan konten yang disediakan oleh Tencent.
     <string name="spam_call_mute_first_ring_summary">Heningkan dering pertama panggilan dari nomor tak disimpan.</string>
     <string name="spam_call_auto_reject_title">Tolak panggilan otomatis</string>
     <string name="smart_call_title">ID pemanggil dan proteksi spam</string>
-    <string name="smart_call_title_usa">Identifikasi nomor spam</string>
     <string name="smart_call_title_for_notice">ID pemanggil dan perlindungan spam</string>
-    <string name="smart_call_description">Identifikasi penelepon dan pengirim pesan yang tidak disimpan di layar panggilan, Log telepon, dan Pesan.</string>
-    <string name="smart_call_usa_description">Tampilkan informasi tentang pemanggil spam pada layar panggilan dan Log telepon.</string>
+    <string name="smart_call_description">"Gunakan Smart Call untuk mengidentifikasi pemanggil spam dan penipu.
+
+Layanan ini menunjukkan nama dan gambar profil pemanggil serta pengirim pesan yang tidak ada di kontak Anda."</string>
     <string name="smart_call_description_roaming">Layanan ini tidak tersedia di negara lain.</string>
+    <string name="smart_call_noti_description_1">Ketuk di sini untuk melindungi diri Anda dari pemanggil spam secara gratis.</string>
+    <string name="smart_call_noti_description_2">Ketuk di sini untuk mengidentifikasi pemanggil spam dan penipu.</string>
     <string name="smart_call_share_name_number_title">Bagikan nama dan nomor</string>
     <string name="smart_call_share_name_number_summary">Daftarkan nama dan nomor ke server agar penerima yg tdk memiliki nomor Anda dpt mengenali saat Anda menelpon/mengirim pesan.</string>
     <string name="smart_call_legal_info_category">Informasi hukum</string>
@@ -2467,12 +2485,16 @@ Untuk menyediakan fitur ini, data tertentu, misalnya nomor telepon penelepon, ak
 Harap klik tombol yang sesuai di bawah untuk memberitahukan apakah Anda setuju dengan pernyataan di atas dan ingin mengaktifkan fitur %s pada saat ini."</string>
     <string name="smart_call_privacy_notice_donotshow">Jangan tampilkan lagi notifikasi yang mendeskripsikan fungsi Identifikasi nomor yang tidak disimpan</string>
     <string name="smart_call_privacy_notice_dream">Layanan ini tersedia saat perangkat seluler tersambung ke jaringan seluler selama panggilan masuk atau keluar, namun akan dibatasi saat jelajah. Menggunakan jaringan seluler dapat menimbulkan biaya tambahan, tergantung pada paket data Anda dengan penyedia jaringan.</string>
+    <string name="show_privacy_notice_title">Kebijakan privasi</string>
     <string name="search_for_places_nearby_title">Cari tempat terdekat</string>
     <string name="search_for_places_nearby_help_description1">Temukan nomor telepon serta informasi untuk bisnis dan tempat terdekat.</string>
     <string name="search_for_places_nearby_help_description2">Layanan ini memerlukan informasi lokasi Anda.</string>
     <string name="search_for_places_nearby_help_description3">Untuk mengoptimalkan akurasi informasi lokasi Anda, buka Pengaturan > Koneksi > Lokasi > Metode pencarian lokasi, lalu pilih Akurasi tinggi.</string>
     <string name="search_for_places_nearby_help_description3_vzw">To optimize the accuracy of your location information, go to Settings > Connections > Location > Locating method, then select High accuracy.</string>
     <string name="search_for_places_nearby_help_description4">Menggunakan jaringan seluler, bukan jaringan Wi-Fi, dapat dikenakan biaya tambahan, tergantung paket pembayaran Anda.</string>
+    <string name="withdraw_menu_title">Brhnt mnggnkn lynn ini</string>
+    <string name="withdraw_dialog_description">Saat Anda berhenti menggunakan %1$s, layanan akan dinonaktifkan, dan semua data %2$s yang disimpan oleh penyedia layanan akan dihapus.</string>
+    <string name="withdraw_dialog_button">Brhnt mnggnkn layann</string>
     <string name="record_call_setting_title">Rekam otomatis panggilan</string>
     <string name="record_call_setting_selected_number">Nomor terpilih</string>
     <string name="record_call_setting_all_number">Semua nomor</string>
@@ -2485,6 +2507,8 @@ Harap klik tombol yang sesuai di bawah untuk memberitahukan apakah Anda setuju d
     <string name="record_call_noti_setting_title">Notifikasi rekaman</string>
     <string name="record_call_noti_setting_summary">Terima notifikasi setelah panggilan direkam.</string>
     <string name="record_call_help_summary">Otomatis rekam panggilan ke atau dari nomor yang dipilih.</string>
+    <string name="record_call_setting_on_description">Otomatis rekam aktif</string>
+    <string name="record_call_setting_off_description">Otomatis rekam nonaktif</string>
     <string name="visual_call_title_callsetting">Menu layar panggilan IVR</string>
     <string name="preference_update_DB_visual_call">Perbarui DB panggilan IVR</string>
     <string name="preference_update_DB_visual_call_summary">Perbarui otomatis hanya lewat WLAN</string>
@@ -2727,6 +2751,7 @@ Masukkan kode yang Anda dapatkan dari Verizon:"</string>
     <string name="about_phone_open_source_licenses">Lisensi sumber terbuka</string>
     <string name="no_network_connection">Tdk ada koneksi jaringan</string>
     <string name="unable_to_check_for_updates">Tidak dapat memeriksa pembaruan. Tidak ada koneksi jaringan.</string>
+    <string name="phoneAppLabel_dcm">Panggil</string>
     <string name="dcm_vt_fail_cause_not_in_4g">Tidak dapat melakukan panggilan video karena Anda tidak berada di area 4G.</string>
     <string name="ss_do_not_show_again_us">Do not show again</string>
     <string name="disable_advanced_calling_warning_msg">Your phone will not be able to make or receive HD voice and video calls when you turn this setting off.</string>
@@ -2760,6 +2785,8 @@ In the future if you want to use Wi-Fi for voice calling you can turn on Wi-Fi C
     <string name="save_text">Simpan</string>
     <string name="wfc_enable_dialog_title">Aktifkan Panggilan Wi-Fi</string>
     <string name="wfc_enable_dialog">Mengaktifkan panggilan Wi-Fi akan menonaktifkan Mode hemat daya. Hal ini dapat meningkatkan konsumsi daya baterai. Beberapa penyedia layanan mungkin tidak mendukung fungsi ini.</string>
+    <string name="group_call_not_support_emergency_number">Tidak dapat menambahkan nomor darurat ke panggilan grup.</string>
+    <string name="group_call_not_support_emergency_number_all">Tidak dapat menambahkan nomor darurat ke panggilan grup. Semua kontak lain yang dipilih ditambahkan.</string>
     <string name="enable_data_popup_message">Untuk mengaktifkan fungsi ini, Data seluler harus diaktifkan.</string>
     <string name="enable_data_popup_tittle">Tdk dpt aktifkan fungsi</string>
 </resources>

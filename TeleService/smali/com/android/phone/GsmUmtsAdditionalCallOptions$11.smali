@@ -45,7 +45,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v4, "apply_option_service_key buttonMode: "
+    const-string/jumbo v4, "apply_website_service_key buttonMode: "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -67,7 +67,7 @@
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    const-string/jumbo v2, "http://cs.kddi.com/smt/option/"
+    const-string/jumbo v2, "https://cs.kddi.com/?bid=cs-cs-mb-0001"
 
     invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 

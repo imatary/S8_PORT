@@ -15,7 +15,7 @@
 .method public static getDisconnectCause(I)Ljava/lang/String;
     .locals 6
 
-    const v3, 0x7f0d0467
+    const v3, 0x7f0d04c7
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -58,7 +58,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d01db
+    const v3, 0x7f0d0238
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -71,7 +71,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d01e0
+    const v3, 0x7f0d023d
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -84,7 +84,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d01e1
+    const v3, 0x7f0d023e
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -122,7 +122,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0468
+    const v3, 0x7f0d04c8
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -135,7 +135,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0464
+    const v3, 0x7f0d04c4
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -148,7 +148,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0465
+    const v3, 0x7f0d04c5
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -161,7 +161,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0466
+    const v3, 0x7f0d04c6
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

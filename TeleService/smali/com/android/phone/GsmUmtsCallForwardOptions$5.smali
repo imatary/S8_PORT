@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/GsmUmtsCallForwardOptions;->showAlertDialogPlayVoicemailMessage()V
+    value = Lcom/android/phone/GsmUmtsCallForwardOptions;->showAlertDialogEditAnsweringMessage()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -41,7 +41,7 @@
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsCallForwardOptions$5;->this$0:Lcom/android/phone/GsmUmtsCallForwardOptions;
 
-    const-string/jumbo v1, "tel:1417"
+    const-string/jumbo v1, "tel:1414"
 
     invoke-static {v0, v1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->-wrap0(Lcom/android/phone/GsmUmtsCallForwardOptions;Ljava/lang/String;)V
 

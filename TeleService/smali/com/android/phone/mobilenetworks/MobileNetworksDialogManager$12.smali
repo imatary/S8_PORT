@@ -138,7 +138,7 @@
 
     iget-object v3, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$12;->val$dialogContext:Landroid/content/Context;
 
-    const v4, 0x7f0d09ee
+    const v4, 0x7f0d0a55
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

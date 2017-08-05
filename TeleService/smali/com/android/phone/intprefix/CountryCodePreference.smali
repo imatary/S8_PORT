@@ -249,7 +249,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0b57
+    const v3, 0x7f0d0bbe
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -265,7 +265,7 @@
 
     invoke-direct {v3, p0, p1}, Lcom/android/phone/intprefix/CountryCodePreference$7;-><init>(Lcom/android/phone/intprefix/CountryCodePreference;Lcom/android/phone/intprefix/InternationalPrefixPreference;)V
 
-    const v4, 0x7f0d02ca
+    const v4, 0x7f0d032a
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -275,7 +275,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/intprefix/CountryCodePreference$8;-><init>(Lcom/android/phone/intprefix/CountryCodePreference;)V
 
-    const v4, 0x7f0d02c7
+    const v4, 0x7f0d0327
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -303,7 +303,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0b56
+    const v3, 0x7f0d0bbd
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -319,7 +319,7 @@
 
     invoke-direct {v3, p0, p1}, Lcom/android/phone/intprefix/CountryCodePreference$9;-><init>(Lcom/android/phone/intprefix/CountryCodePreference;Lcom/android/phone/intprefix/InternationalPrefixPreference;)V
 
-    const v4, 0x7f0d02ca
+    const v4, 0x7f0d032a
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -329,7 +329,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/intprefix/CountryCodePreference$10;-><init>(Lcom/android/phone/intprefix/CountryCodePreference;)V
 
-    const v4, 0x7f0d02c7
+    const v4, 0x7f0d0327
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -349,7 +349,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d0b55
+    const v2, 0x7f0d0bbc
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -365,7 +365,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/intprefix/CountryCodePreference$11;-><init>(Lcom/android/phone/intprefix/CountryCodePreference;)V
 
-    const v4, 0x7f0d02ca
+    const v4, 0x7f0d032a
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -375,7 +375,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/intprefix/CountryCodePreference$12;-><init>(Lcom/android/phone/intprefix/CountryCodePreference;)V
 
-    const v4, 0x7f0d02c7
+    const v4, 0x7f0d0327
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -435,7 +435,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/intprefix/CountryCodePreference;->fillList()V
 
-    const v2, 0x7f0d0b4e
+    const v2, 0x7f0d0bb5
 
     invoke-virtual {p0, v2}, Lcom/android/phone/intprefix/CountryCodePreference;->getString(I)Ljava/lang/String;
 
@@ -748,7 +748,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v4, 0x7f0d0b51
+    const v4, 0x7f0d0bb8
 
     invoke-virtual {p0, v4}, Lcom/android/phone/intprefix/CountryCodePreference;->getString(I)Ljava/lang/String;
 
@@ -901,7 +901,7 @@
 
     invoke-direct {p0, v2, v1}, Lcom/android/phone/intprefix/CountryCodePreference;->updateSP(ILcom/android/phone/intprefix/InternationalPrefixPreference;)V
 
-    const v2, 0x7f0d0b4c
+    const v2, 0x7f0d0bb3
 
     invoke-virtual {p0, v2}, Lcom/android/phone/intprefix/CountryCodePreference;->getString(I)Ljava/lang/String;
 
@@ -998,7 +998,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v8, 0x7f0d0b44
+    const v8, 0x7f0d0bab
 
     invoke-virtual {v0, v8}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1008,11 +1008,11 @@
 
     invoke-direct {v8, p0, v3, v2, p1}, Lcom/android/phone/intprefix/CountryCodePreference$5;-><init>(Lcom/android/phone/intprefix/CountryCodePreference;Landroid/widget/EditText;Landroid/widget/EditText;Landroid/preference/Preference;)V
 
-    const v9, 0x7f0d041e
+    const v9, 0x7f0d047e
 
     invoke-virtual {v0, v9, v8}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v8, 0x7f0d02c7
+    const v8, 0x7f0d0327
 
     invoke-virtual {v0, v8, v10}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2083,7 +2083,7 @@
     return-void
 
     :cond_5
-    const v9, 0x7f0d0b52
+    const v9, 0x7f0d0bb9
 
     invoke-virtual {p0, v9}, Lcom/android/phone/intprefix/CountryCodePreference;->getString(I)Ljava/lang/String;
 
@@ -2300,7 +2300,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/intprefix/CountryCodePreference;->fillList()V
 
-    const v5, 0x7f0d0b4e
+    const v5, 0x7f0d0bb5
 
     invoke-virtual {p0, v5}, Lcom/android/phone/intprefix/CountryCodePreference;->getString(I)Ljava/lang/String;
 
@@ -2342,7 +2342,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0b50
+    const v1, 0x7f0d0bb7
 
     invoke-virtual {p0, v1}, Lcom/android/phone/intprefix/CountryCodePreference;->getString(I)Ljava/lang/String;
 
@@ -2350,7 +2350,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d02ca
+    const v1, 0x7f0d032a
 
     invoke-virtual {p0, v1}, Lcom/android/phone/intprefix/CountryCodePreference;->getString(I)Ljava/lang/String;
 
@@ -2424,7 +2424,7 @@
 
     invoke-direct {v6, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f0d0b8b
+    const v0, 0x7f0d0bf2
 
     invoke-virtual {p0, v0}, Lcom/android/phone/intprefix/CountryCodePreference;->getString(I)Ljava/lang/String;
 
@@ -2438,7 +2438,7 @@
 
     invoke-virtual {v6, v5, v3, v0}, Landroid/app/AlertDialog$Builder;->setMultiChoiceItems([Ljava/lang/CharSequence;[ZLandroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v0, 0x7f0d02ca
+    const v0, 0x7f0d032a
 
     invoke-virtual {p0, v0}, Lcom/android/phone/intprefix/CountryCodePreference;->getString(I)Ljava/lang/String;
 
@@ -2454,7 +2454,7 @@
 
     invoke-virtual {v6, v7, v0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v0, 0x7f0d02c7
+    const v0, 0x7f0d0327
 
     invoke-virtual {p0, v0}, Lcom/android/phone/intprefix/CountryCodePreference;->getString(I)Ljava/lang/String;
 
@@ -2495,7 +2495,7 @@
 
     invoke-direct {p0, v0, p1}, Lcom/android/phone/intprefix/CountryCodePreference;->updateSP(ILcom/android/phone/intprefix/InternationalPrefixPreference;)V
 
-    const v1, 0x7f0d0b4d
+    const v1, 0x7f0d0bb4
 
     invoke-virtual {p0, v1}, Lcom/android/phone/intprefix/CountryCodePreference;->getString(I)Ljava/lang/String;
 
@@ -2665,7 +2665,7 @@
 
     iget-object v3, p0, Lcom/android/phone/intprefix/CountryCodePreference;->sCountryCode:Ljava/lang/String;
 
-    const v4, 0x7f0d0b51
+    const v4, 0x7f0d0bb8
 
     invoke-virtual {p0, v4}, Lcom/android/phone/intprefix/CountryCodePreference;->getString(I)Ljava/lang/String;
 
@@ -2985,7 +2985,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0b58
+    const v5, 0x7f0d0bbf
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3016,7 +3016,7 @@
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    const v4, 0x7f0d0b4a
+    const v4, 0x7f0d0bb1
 
     invoke-virtual {p0, v4}, Lcom/android/phone/intprefix/CountryCodePreference;->getText(I)Ljava/lang/CharSequence;
 
@@ -3091,7 +3091,7 @@
     return-object v2
 
     :cond_2
-    const v4, 0x7f0d0b4b
+    const v4, 0x7f0d0bb2
 
     invoke-virtual {p0, v4}, Lcom/android/phone/intprefix/CountryCodePreference;->getText(I)Ljava/lang/CharSequence;
 
@@ -3122,7 +3122,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0b4f
+    const v1, 0x7f0d0bb6
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3140,7 +3140,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0b4a
+    const v1, 0x7f0d0bb1
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3160,7 +3160,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0b4b
+    const v1, 0x7f0d0bb2
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3180,7 +3180,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0b54
+    const v1, 0x7f0d0bbb
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -35,7 +35,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d0501
+    const v12, 0x7f0d0561
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -49,7 +49,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d0529
+    const v12, 0x7f0d0589
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -63,7 +63,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0d052a
+    const v12, 0x7f0d058a
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -151,7 +151,7 @@
 
     const/4 v10, 0x0
 
-    const v11, 0x7f0d0532
+    const v11, 0x7f0d0592
 
     invoke-virtual {p0, v11}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -161,7 +161,7 @@
 
     const-wide/16 v12, 0x0
 
-    const v11, 0x7f020174
+    const v11, 0x7f02017d
 
     invoke-direct {v5, v11, v10, v12, v13}, Landroid/app/Notification;-><init>(ILjava/lang/CharSequence;J)V
 
@@ -173,13 +173,13 @@
 
     move-result-object v2
 
-    const v11, 0x7f0d0533
+    const v11, 0x7f0d0593
 
     invoke-virtual {p0, v11}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v11
 
-    const v12, 0x7f0d0532
+    const v12, 0x7f0d0592
 
     invoke-virtual {p0, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

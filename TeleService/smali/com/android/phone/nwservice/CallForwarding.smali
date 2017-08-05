@@ -259,7 +259,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d0a7c
+    const v4, 0x7f0d0ae3
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -275,7 +275,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/nwservice/CallForwarding$8;-><init>(Lcom/android/phone/nwservice/CallForwarding;)V
 
-    const v5, 0x7f0d050c
+    const v5, 0x7f0d056c
 
     invoke-virtual {v0, v5, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -283,7 +283,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/nwservice/CallForwarding$9;-><init>(Lcom/android/phone/nwservice/CallForwarding;)V
 
-    const v5, 0x7f0d050d
+    const v5, 0x7f0d056d
 
     invoke-virtual {v0, v5, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -361,7 +361,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d0ac6
+    const v4, 0x7f0d0b2d
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -377,7 +377,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/nwservice/CallForwarding$14;-><init>(Lcom/android/phone/nwservice/CallForwarding;)V
 
-    const v5, 0x7f0d0af3
+    const v5, 0x7f0d0b5a
 
     invoke-virtual {v0, v5, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -385,7 +385,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/nwservice/CallForwarding$15;-><init>(Lcom/android/phone/nwservice/CallForwarding;)V
 
-    const v5, 0x7f0d0af4
+    const v5, 0x7f0d0b5b
 
     invoke-virtual {v0, v5, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -393,7 +393,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/nwservice/CallForwarding$16;-><init>(Lcom/android/phone/nwservice/CallForwarding;)V
 
-    const v5, 0x7f0d050d
+    const v5, 0x7f0d056d
 
     invoke-virtual {v0, v5, v4}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -443,13 +443,13 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d0ac7
+    const v2, 0x7f0d0b2e
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v2
 
-    const v3, 0x7f0d0ad8
+    const v3, 0x7f0d0b3f
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -465,7 +465,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/nwservice/CallForwarding$20;-><init>(Lcom/android/phone/nwservice/CallForwarding;)V
 
-    const v4, 0x7f0d0ad1
+    const v4, 0x7f0d0b38
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -475,7 +475,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/nwservice/CallForwarding$21;-><init>(Lcom/android/phone/nwservice/CallForwarding;)V
 
-    const v4, 0x7f0d0ad2
+    const v4, 0x7f0d0b39
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -485,7 +485,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/nwservice/CallForwarding$22;-><init>(Lcom/android/phone/nwservice/CallForwarding;)V
 
-    const v4, 0x7f0d050d
+    const v4, 0x7f0d056d
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -519,13 +519,13 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d0aea
+    const v2, 0x7f0d0b51
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v2
 
-    const v3, 0x7f0d0aeb
+    const v3, 0x7f0d0b52
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -541,7 +541,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/nwservice/CallForwarding$25;-><init>(Lcom/android/phone/nwservice/CallForwarding;)V
 
-    const v4, 0x7f0d0af0
+    const v4, 0x7f0d0b57
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -551,7 +551,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/nwservice/CallForwarding$26;-><init>(Lcom/android/phone/nwservice/CallForwarding;)V
 
-    const v4, 0x7f0d0af1
+    const v4, 0x7f0d0b58
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -561,7 +561,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/nwservice/CallForwarding$27;-><init>(Lcom/android/phone/nwservice/CallForwarding;)V
 
-    const v4, 0x7f0d050d
+    const v4, 0x7f0d056d
 
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -595,7 +595,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f0d0509
+    const v1, 0x7f0d0569
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1458,7 +1458,7 @@
 .method protected onCreateDialog(ILandroid/os/Bundle;)Landroid/app/Dialog;
     .locals 9
 
-    const v8, 0x7f0d050c
+    const v8, 0x7f0d056c
 
     const/4 v7, 0x1
 
@@ -1481,7 +1481,7 @@
 
     invoke-virtual {v0, v6}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v6, 0x7f0d0aa4
+    const v6, 0x7f0d0b0b
 
     invoke-virtual {p0, v6}, Lcom/android/phone/nwservice/CallForwarding;->getText(I)Ljava/lang/CharSequence;
 
@@ -1498,7 +1498,7 @@
 
     invoke-virtual {v4, v7}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    const v6, 0x7f0d0acb
+    const v6, 0x7f0d0b32
 
     invoke-virtual {p0, v6}, Lcom/android/phone/nwservice/CallForwarding;->getText(I)Ljava/lang/CharSequence;
 
@@ -1523,7 +1523,7 @@
     return-object v5
 
     :sswitch_2
-    const v3, 0x7f0d0332
+    const v3, 0x7f0d0392
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 

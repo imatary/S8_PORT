@@ -502,33 +502,21 @@
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
-    invoke-static {v5}, Landroid/telephony/SubscriptionManager;->getSubId(I)[I
+    const-string/jumbo v2, "gsm.sim.operator.numeric"
 
-    move-result-object v2
+    const-string/jumbo v3, "0"
 
-    aget v2, v2, v5
-
-    const-string/jumbo v3, "gsm.sim.operator.numeric"
-
-    const-string/jumbo v4, "0"
-
-    invoke-static {v2, v3, v4}, Landroid/telephony/TelephonyManager;->getTelephonyProperty(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5, v2, v3}, Landroid/telephony/TelephonyManager;->getTelephonyProperty(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
-    invoke-static {v6}, Landroid/telephony/SubscriptionManager;->getSubId(I)[I
+    const-string/jumbo v2, "gsm.sim.operator.numeric"
 
-    move-result-object v2
+    const-string/jumbo v3, "0"
 
-    aget v2, v2, v5
-
-    const-string/jumbo v3, "gsm.sim.operator.numeric"
-
-    const-string/jumbo v4, "0"
-
-    invoke-static {v2, v3, v4}, Landroid/telephony/TelephonyManager;->getTelephonyProperty(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6, v2, v3}, Landroid/telephony/TelephonyManager;->getTelephonyProperty(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -791,7 +779,7 @@
 
     iget-object v1, p0, Lcom/android/phone/mobilenetworks/NetworkModeMultiSimController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0d03f2
+    const v2, 0x7f0d0452
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -888,7 +876,7 @@
 
     iget-object v4, p0, Lcom/android/phone/mobilenetworks/NetworkModeMultiSimController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0d03f4
+    const v5, 0x7f0d0454
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -963,7 +951,7 @@
 
     aput-object v3, v5, v6
 
-    const v6, 0x7f0d03f3
+    const v6, 0x7f0d0453
 
     invoke-virtual {v4, v6, v5}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -993,7 +981,7 @@
 
     iget-object v5, p0, Lcom/android/phone/mobilenetworks/NetworkModeMultiSimController;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0d03f2
+    const v6, 0x7f0d0452
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4152,7 +4140,7 @@
 
     iget-object v4, p0, Lcom/android/phone/mobilenetworks/NetworkModeMultiSimController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0d0505
+    const v5, 0x7f0d0565
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4164,7 +4152,7 @@
 
     iget-object v4, p0, Lcom/android/phone/mobilenetworks/NetworkModeMultiSimController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0d064b
+    const v5, 0x7f0d06af
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4176,7 +4164,7 @@
 
     iget-object v4, p0, Lcom/android/phone/mobilenetworks/NetworkModeMultiSimController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0d050c
+    const v5, 0x7f0d056c
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

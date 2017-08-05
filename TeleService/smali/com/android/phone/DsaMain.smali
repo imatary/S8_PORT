@@ -111,7 +111,7 @@
 
     iput-boolean v1, p0, Lcom/android/phone/DsaMain;->mIsHotSwapRegister:Z
 
-    const v0, 0x7f0d0963
+    const v0, 0x7f0d09c9
 
     iput v0, p0, Lcom/android/phone/DsaMain;->mTitleID:I
 
@@ -164,9 +164,9 @@
 .method public displayDialog(I)V
     .locals 5
 
-    const/4 v4, 0x1
+    const/4 v4, 0x0
 
-    const/4 v3, 0x0
+    const/4 v3, 0x1
 
     const-string/jumbo v0, "DsaMain"
 
@@ -190,11 +190,20 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iput-boolean v4, p0, Lcom/android/phone/DsaMain;->mDialogPause:Z
+    iget-boolean v0, p0, Lcom/android/phone/DsaMain;->mDialogPause:Z
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/phone/DsaMain;->dsaset:Lcom/android/phone/DsaSetting;
+
+    invoke-virtual {v0, v3}, Lcom/android/phone/DsaSetting;->setUpdateDialogCount(Z)V
+
+    :cond_0
+    iput-boolean v3, p0, Lcom/android/phone/DsaMain;->mDialogPause:Z
 
     iget-object v0, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v0, v3}, Landroid/widget/Switch;->setEnabled(Z)V
+    invoke-virtual {v0, v4}, Landroid/widget/Switch;->setEnabled(Z)V
 
     packed-switch p1, :pswitch_data_0
 
@@ -208,13 +217,13 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d032f
+    const v1, 0x7f0d038f
 
     invoke-virtual {p0, v1}, Lcom/android/phone/DsaMain;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    invoke-static {p0, v0, v1, v4}, Landroid/app/ProgressDialog;->show(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Landroid/app/ProgressDialog;
+    invoke-static {p0, v0, v1, v3}, Landroid/app/ProgressDialog;->show(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Landroid/app/ProgressDialog;
 
     move-result-object v0
 
@@ -222,7 +231,7 @@
 
     sget-object v0, Lcom/android/phone/DsaMain;->mWaitDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0, v3}, Landroid/app/ProgressDialog;->setCancelable(Z)V
+    invoke-virtual {v0, v4}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     sget-object v0, Lcom/android/phone/DsaMain;->mWaitDialog:Landroid/app/ProgressDialog;
 
@@ -233,6 +242,8 @@
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
     goto :goto_0
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -348,7 +359,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0d0bcf
+    const v10, 0x7f0d0c3a
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -420,7 +431,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d0182
+    const v9, 0x7f0d01df
 
     invoke-virtual {p0, v9}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
@@ -485,7 +496,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0d0bd0
+    const v10, 0x7f0d0c3b
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -507,7 +518,7 @@
 
     invoke-direct {v8, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v9, 0x7f0d0964
+    const v9, 0x7f0d09ca
 
     invoke-virtual {p0, v9}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
@@ -527,7 +538,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d0182
+    const v9, 0x7f0d01df
 
     invoke-virtual {p0, v9}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
@@ -582,7 +593,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0d0bd0
+    const v10, 0x7f0d0c3b
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -654,7 +665,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d0182
+    const v9, 0x7f0d01df
 
     invoke-virtual {p0, v9}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
@@ -717,7 +728,7 @@
 
     invoke-direct {v8, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v9, 0x7f0d0964
+    const v9, 0x7f0d09ca
 
     invoke-virtual {p0, v9}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
@@ -737,7 +748,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d0182
+    const v9, 0x7f0d01df
 
     invoke-virtual {p0, v9}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
@@ -812,7 +823,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0d0bcf
+    const v10, 0x7f0d0c3a
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -867,7 +878,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0d0bcf
+    const v10, 0x7f0d0c3a
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -922,7 +933,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0d0bcf
+    const v10, 0x7f0d0c3a
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -998,7 +1009,7 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 10
 
-    const v9, 0x7f0d0961
+    const v9, 0x7f0d09c7
 
     const/4 v8, 0x0
 
@@ -1204,7 +1215,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0bcf
+    const v5, 0x7f0d0c3a
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1243,7 +1254,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0bd0
+    const v5, 0x7f0d0c3b
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1389,15 +1400,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Lcom/android/phone/DsaMain;->dismissDialog()V
-
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
-
-    iget-object v0, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     return-void
 .end method
@@ -1445,7 +1448,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_4
 
     iget-object v0, p0, Lcom/android/phone/DsaMain;->mButtonPhoneNumber:Landroid/preference/Preference;
 
@@ -1487,7 +1490,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0d0bd0
+    const v2, 0x7f0d0c3b
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1504,20 +1507,31 @@
     invoke-virtual {v0, v3}, Landroid/preference/Preference;->setEnabled(Z)V
 
     :cond_1
+    iget-object v0, p0, Lcom/android/phone/DsaMain;->dsaset:Lcom/android/phone/DsaSetting;
+
+    invoke-virtual {v0}, Lcom/android/phone/DsaSetting;->getUpdateDialogCount()I
+
+    move-result v0
+
+    if-gtz v0, :cond_2
+
+    iput-boolean v3, p0, Lcom/android/phone/DsaMain;->mDialogPause:Z
+
+    :cond_2
     iget-boolean v0, p0, Lcom/android/phone/DsaMain;->mDialogPause:Z
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
     invoke-virtual {p0, v3}, Lcom/android/phone/DsaMain;->displayDialog(I)V
 
-    :cond_2
+    :cond_3
     iget-object v0, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     return-void
 
-    :cond_3
+    :cond_4
     iget-object v0, p0, Lcom/android/phone/DsaMain;->mButtonPhoneNumber:Landroid/preference/Preference;
 
     invoke-virtual {v0, v4}, Landroid/preference/Preference;->setEnabled(Z)V
@@ -1564,11 +1578,19 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    invoke-virtual {p0}, Lcom/android/phone/DsaMain;->dismissDialog()V
+
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onStop()V
 
     iget-object v0, p0, Lcom/android/phone/DsaMain;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v0}, Lcom/android/phone/DsaMain;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    iget-object v0, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     return-void
 .end method
@@ -1576,7 +1598,7 @@
 .method public selectSwitch()V
     .locals 11
 
-    const v10, 0x7f0d0bd0
+    const v10, 0x7f0d0c3b
 
     const/4 v9, 0x1
 

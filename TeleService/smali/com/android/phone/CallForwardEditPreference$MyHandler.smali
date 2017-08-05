@@ -661,7 +661,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d032b
+    const v9, 0x7f0d038b
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -678,7 +678,7 @@
 
     invoke-direct {v1, v8}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v8, 0x7f0d0334
+    const v8, 0x7f0d0394
 
     const/4 v9, 0x0
 
@@ -690,7 +690,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d032d
+    const v9, 0x7f0d038d
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -735,7 +735,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d031d
+    const v9, 0x7f0d037d
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -750,7 +750,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d0325
+    const v9, 0x7f0d0385
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -771,7 +771,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d032a
+    const v9, 0x7f0d038a
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -786,7 +786,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d031c
+    const v9, 0x7f0d037c
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -801,7 +801,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0d0324
+    const v9, 0x7f0d0384
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

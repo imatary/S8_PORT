@@ -189,7 +189,7 @@
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity$2;->this$0:Lcom/android/phone/ims/IMSConferenceCallActivity;
 
-    const v1, 0x7f0d0823
+    const v1, 0x7f0d0887
 
     invoke-static {v0, v1}, Lcom/android/phone/ims/IMSConferenceCallActivity;->-wrap8(Lcom/android/phone/ims/IMSConferenceCallActivity;I)V
 

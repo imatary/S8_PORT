@@ -89,7 +89,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_0
+    if-eqz v3, :cond_2
 
     const-string/jumbo v3, "ss"
 
@@ -128,6 +128,23 @@
     iget-object v3, p0, Lcom/android/phone/mobilenetworks/controller/componentmanager/MobileNetworkComponentManager$1;->this$0:Lcom/android/phone/mobilenetworks/controller/componentmanager/MobileNetworkComponentManager;
 
     const/4 v4, 0x4
+
+    invoke-static {v3, v4}, Lcom/android/phone/mobilenetworks/controller/componentmanager/MobileNetworkComponentManager;->-wrap0(Lcom/android/phone/mobilenetworks/controller/componentmanager/MobileNetworkComponentManager;I)V
+
+    goto :goto_0
+
+    :cond_2
+    const-string/jumbo v3, "com.samsung.intent.action.EMERGENCY_STATE_CHANGED"
+
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    iget-object v3, p0, Lcom/android/phone/mobilenetworks/controller/componentmanager/MobileNetworkComponentManager$1;->this$0:Lcom/android/phone/mobilenetworks/controller/componentmanager/MobileNetworkComponentManager;
+
+    const/16 v4, 0x10
 
     invoke-static {v3, v4}, Lcom/android/phone/mobilenetworks/controller/componentmanager/MobileNetworkComponentManager;->-wrap0(Lcom/android/phone/mobilenetworks/controller/componentmanager/MobileNetworkComponentManager;I)V
 

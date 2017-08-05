@@ -523,7 +523,7 @@
 
     if-ne v0, v1, :cond_0
 
-    const v0, 0x7f0d0469
+    const v0, 0x7f0d04c9
 
     invoke-static {p0, v0, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

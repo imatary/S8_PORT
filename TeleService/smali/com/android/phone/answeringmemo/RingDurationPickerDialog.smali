@@ -157,7 +157,7 @@
 
     invoke-virtual {p0, p8}, Lcom/android/phone/answeringmemo/RingDurationPickerDialog;->setTitle(Ljava/lang/CharSequence;)V
 
-    const v3, 0x7f0d02ca
+    const v3, 0x7f0d032a
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -171,7 +171,7 @@
 
     invoke-virtual {p0, v5, v4, v3}, Lcom/android/phone/answeringmemo/RingDurationPickerDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    const v3, 0x7f0d02c7
+    const v3, 0x7f0d0327
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -334,7 +334,7 @@
 .method private showMaxLimitWarning()V
     .locals 6
 
-    const v5, 0x7f0d0cb8
+    const v5, 0x7f0d0d29
 
     const/4 v2, 0x1
 
@@ -440,7 +440,7 @@
 .method private showMinLimitWarning()V
     .locals 6
 
-    const v5, 0x7f0d0cb7
+    const v5, 0x7f0d0d28
 
     const/4 v2, 0x1
 

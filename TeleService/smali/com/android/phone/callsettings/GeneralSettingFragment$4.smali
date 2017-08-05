@@ -212,215 +212,116 @@
 .end method
 
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
-    .locals 8
+    .locals 6
 
-    const/4 v7, 0x1
+    const/4 v5, 0x0
 
-    const/4 v6, 0x0
+    const/4 v4, 0x1
 
-    const-string/jumbo v3, "GeneralSettingFragment"
+    const-string/jumbo v1, "GeneralSettingFragment"
 
-    const-string/jumbo v4, "onServiceStateChanged"
+    const-string/jumbo v2, "onServiceStateChanged"
 
-    invoke-static {v3, v4, v7}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    invoke-static {v1, v2, v4}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getRoaming()Z
 
-    move-result v2
+    move-result v0
 
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getState()I
 
-    move-result v3
+    move-result v1
 
-    if-nez v3, :cond_1
+    if-nez v1, :cond_1
 
-    const-string/jumbo v3, "GeneralSettingFragment"
+    const-string/jumbo v1, "GeneralSettingFragment"
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v5, "onServiceStateChanged roaming : "
+    const-string/jumbo v3, "onServiceStateChanged roaming : "
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-static {v3, v4, v7}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
+    invoke-static {v1, v2, v4}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    const-string/jumbo v3, "support_smart_call"
+    const-string/jumbo v1, "support_smart_call"
 
-    invoke-static {v3}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, p0, Lcom/android/phone/callsettings/GeneralSettingFragment$4;->this$0:Lcom/android/phone/callsettings/GeneralSettingFragment;
-
-    invoke-static {v3}, Lcom/android/phone/callsettings/GeneralSettingFragment;->-get7(Lcom/android/phone/callsettings/GeneralSettingFragment;)Landroid/preference/PreferenceScreen;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_1
-
-    const-string/jumbo v3, "smart_call_roaming_backup"
-
-    invoke-static {v3, v6}, Lcom/android/phone/TeleServiceSystemDB;->getSettingDB(Ljava/lang/String;I)I
-
-    move-result v0
-
-    iget-object v3, p0, Lcom/android/phone/callsettings/GeneralSettingFragment$4;->this$0:Lcom/android/phone/callsettings/GeneralSettingFragment;
-
-    invoke-static {v3}, Lcom/android/phone/callsettings/GeneralSettingFragment;->-get5(Lcom/android/phone/callsettings/GeneralSettingFragment;)Lcom/android/internal/telephony/Phone;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "spam_call_enable"
-
-    invoke-static {v3, v4, v6}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v1
 
-    const-string/jumbo v3, "GeneralSettingFragment"
+    if-eqz v1, :cond_1
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/android/phone/callsettings/GeneralSettingFragment$4;->this$0:Lcom/android/phone/callsettings/GeneralSettingFragment;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-static {v1}, Lcom/android/phone/callsettings/GeneralSettingFragment;->-get7(Lcom/android/phone/callsettings/GeneralSettingFragment;)Landroid/preference/PreferenceScreen;
 
-    const-string/jumbo v5, "onServiceStateChanged backupEnableValue : "
+    move-result-object v1
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v1, :cond_1
 
-    move-result-object v4
+    if-eqz v0, :cond_2
 
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/android/phone/callsettings/GeneralSettingFragment$4;->this$0:Lcom/android/phone/callsettings/GeneralSettingFragment;
 
-    move-result-object v4
+    invoke-static {v1}, Lcom/android/phone/callsettings/GeneralSettingFragment;->-get7(Lcom/android/phone/callsettings/GeneralSettingFragment;)Landroid/preference/PreferenceScreen;
 
-    const-string/jumbo v5, ", mSmartCallEnabled : "
+    move-result-object v1
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4, v7}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
-
-    if-eqz v2, :cond_2
-
-    if-eq v0, v1, :cond_0
-
-    const-string/jumbo v3, "smart_call_roaming_backup"
-
-    invoke-static {v3, v1}, Lcom/android/phone/TeleServiceSystemDB;->setSettingDB(Ljava/lang/String;I)V
+    invoke-virtual {v1, v5}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :cond_0
-    iget-object v3, p0, Lcom/android/phone/callsettings/GeneralSettingFragment$4;->this$0:Lcom/android/phone/callsettings/GeneralSettingFragment;
+    :goto_0
+    iget-object v1, p0, Lcom/android/phone/callsettings/GeneralSettingFragment$4;->this$0:Lcom/android/phone/callsettings/GeneralSettingFragment;
 
-    invoke-static {v3}, Lcom/android/phone/callsettings/GeneralSettingFragment;->-get5(Lcom/android/phone/callsettings/GeneralSettingFragment;)Lcom/android/internal/telephony/Phone;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "spam_call_enable"
-
-    invoke-static {v3, v4, v6}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    iget-object v3, p0, Lcom/android/phone/callsettings/GeneralSettingFragment$4;->this$0:Lcom/android/phone/callsettings/GeneralSettingFragment;
-
-    invoke-static {v3}, Lcom/android/phone/callsettings/GeneralSettingFragment;->-get7(Lcom/android/phone/callsettings/GeneralSettingFragment;)Landroid/preference/PreferenceScreen;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v6}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
+    invoke-static {v1}, Lcom/android/phone/callsettings/GeneralSettingFragment;->-wrap5(Lcom/android/phone/callsettings/GeneralSettingFragment;)V
 
     :cond_1
-    :goto_0
     return-void
 
     :cond_2
-    const-string/jumbo v3, "support_smart_call_mcc"
+    const-string/jumbo v1, "support_smart_call_mcc"
 
-    invoke-static {v3}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v3
+    move-result v1
 
-    if-eqz v3, :cond_3
+    if-eqz v1, :cond_3
 
-    const-string/jumbo v3, "support_smart_call_mcc"
+    const-string/jumbo v1, "support_smart_call_mcc"
 
-    invoke-static {v3}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
-    move-result v3
+    move-result v1
 
-    if-eqz v3, :cond_1
+    if-eqz v1, :cond_0
 
     invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isSupportMccSmartCall()Z
 
-    move-result v3
+    move-result v1
 
-    if-eqz v3, :cond_1
+    if-eqz v1, :cond_0
 
     :cond_3
-    if-eq v0, v1, :cond_4
+    iget-object v1, p0, Lcom/android/phone/callsettings/GeneralSettingFragment$4;->this$0:Lcom/android/phone/callsettings/GeneralSettingFragment;
 
-    iget-object v3, p0, Lcom/android/phone/callsettings/GeneralSettingFragment$4;->this$0:Lcom/android/phone/callsettings/GeneralSettingFragment;
+    invoke-static {v1}, Lcom/android/phone/callsettings/GeneralSettingFragment;->-get7(Lcom/android/phone/callsettings/GeneralSettingFragment;)Landroid/preference/PreferenceScreen;
 
-    invoke-static {v3}, Lcom/android/phone/callsettings/GeneralSettingFragment;->-get5(Lcom/android/phone/callsettings/GeneralSettingFragment;)Lcom/android/internal/telephony/Phone;
+    move-result-object v1
 
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "spam_call_enable"
-
-    invoke-static {v3, v4, v0}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    :cond_4
-    iget-object v3, p0, Lcom/android/phone/callsettings/GeneralSettingFragment$4;->this$0:Lcom/android/phone/callsettings/GeneralSettingFragment;
-
-    invoke-static {v3}, Lcom/android/phone/callsettings/GeneralSettingFragment;->-get7(Lcom/android/phone/callsettings/GeneralSettingFragment;)Landroid/preference/PreferenceScreen;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v7}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
+    invoke-virtual {v1, v4}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     goto :goto_0
 .end method

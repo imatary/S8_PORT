@@ -241,7 +241,7 @@
 
     iget-object v7, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0d072a
+    const v8, 0x7f0d078e
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -283,7 +283,7 @@
 
     iget-object v6, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f0d0952
+    const v7, 0x7f0d09b8
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -293,7 +293,7 @@
 
     iget-object v6, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f0d0950
+    const v7, 0x7f0d09b6
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -318,7 +318,7 @@
 
     iget-object v6, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f0d0953
+    const v7, 0x7f0d09b9
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -421,13 +421,13 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mAutoRadio:Landroid/widget/CheckedTextView;
 
-    const v5, 0x7f0d07c0
+    const v5, 0x7f0d0824
 
     invoke-virtual {v2, v5}, Landroid/widget/CheckedTextView;->setText(I)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mManualRadio:Landroid/widget/CheckedTextView;
 
-    const v5, 0x7f0d07bf
+    const v5, 0x7f0d0823
 
     invoke-virtual {v2, v5}, Landroid/widget/CheckedTextView;->setText(I)V
 
@@ -711,7 +711,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/phone/callsettings/IntCallServicePreference$7;-><init>(Lcom/android/phone/callsettings/IntCallServicePreference;)V
 
-    const v1, 0x7f0d050c
+    const v1, 0x7f0d056c
 
     invoke-virtual {p1, v1, v0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

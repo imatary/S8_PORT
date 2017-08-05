@@ -32,7 +32,7 @@
 
     iput-object p2, p0, Lcom/android/phone/callsettings/CaptureImageViewer$ImageAdapter;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f0201c7
+    const v0, 0x7f0201d0
 
     iput v0, p0, Lcom/android/phone/callsettings/CaptureImageViewer$ImageAdapter;->mGalleryItemBackground:I
 

@@ -871,7 +871,7 @@
 
     iget-object v2, p2, Lcom/android/internal/telephony/CallForwardInfo;->number:Ljava/lang/String;
 
-    const v3, 0x7f0d0315
+    const v3, 0x7f0d0375
 
     invoke-direct {p0, v1, v0, v3, v2}, Lcom/android/phone/CdmaCallForwardOptions;->adjustCFbuttonState(Lcom/android/phone/EditPhoneNumberPreference;ZILjava/lang/String;)V
 
@@ -886,7 +886,7 @@
 
     iget-object v2, p2, Lcom/android/internal/telephony/CallForwardInfo;->number:Ljava/lang/String;
 
-    const v3, 0x7f0d031a
+    const v3, 0x7f0d037a
 
     invoke-direct {p0, v1, v0, v3, v2}, Lcom/android/phone/CdmaCallForwardOptions;->adjustCFbuttonState(Lcom/android/phone/EditPhoneNumberPreference;ZILjava/lang/String;)V
 
@@ -901,7 +901,7 @@
 
     iget-object v2, p2, Lcom/android/internal/telephony/CallForwardInfo;->number:Ljava/lang/String;
 
-    const v3, 0x7f0d0322
+    const v3, 0x7f0d0382
 
     invoke-direct {p0, v1, v0, v3, v2}, Lcom/android/phone/CdmaCallForwardOptions;->adjustCFbuttonState(Lcom/android/phone/EditPhoneNumberPreference;ZILjava/lang/String;)V
 
@@ -916,7 +916,7 @@
 
     iget-object v2, p2, Lcom/android/internal/telephony/CallForwardInfo;->number:Ljava/lang/String;
 
-    const v3, 0x7f0d0328
+    const v3, 0x7f0d0388
 
     invoke-direct {p0, v1, v0, v3, v2}, Lcom/android/phone/CdmaCallForwardOptions;->adjustCFbuttonState(Lcom/android/phone/EditPhoneNumberPreference;ZILjava/lang/String;)V
 
@@ -1181,7 +1181,7 @@
 
     const/4 v7, 0x2
 
-    const v6, 0x7f0d0310
+    const v6, 0x7f0d0370
 
     const/4 v5, 0x1
 
@@ -1375,7 +1375,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFU:Lcom/android/phone/EditPhoneNumberPreference;
 
-    const v3, 0x7f0d0313
+    const v3, 0x7f0d0373
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
@@ -1402,7 +1402,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFU_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
-    const v3, 0x7f0d0313
+    const v3, 0x7f0d0373
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
@@ -1425,7 +1425,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFB:Lcom/android/phone/EditPhoneNumberPreference;
 
-    const v3, 0x7f0d0319
+    const v3, 0x7f0d0379
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
@@ -1452,7 +1452,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFB_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
-    const v3, 0x7f0d0319
+    const v3, 0x7f0d0379
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
@@ -1475,7 +1475,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRy:Lcom/android/phone/EditPhoneNumberPreference;
 
-    const v3, 0x7f0d0321
+    const v3, 0x7f0d0381
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
@@ -1502,7 +1502,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRy_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
-    const v3, 0x7f0d0321
+    const v3, 0x7f0d0381
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
@@ -1527,7 +1527,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRc:Lcom/android/phone/EditPhoneNumberPreference;
 
-    const v3, 0x7f0d0327
+    const v3, 0x7f0d0387
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
@@ -1556,7 +1556,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRc_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
-    const v3, 0x7f0d0327
+    const v3, 0x7f0d0387
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
@@ -1585,7 +1585,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFCancel:Lcom/android/phone/EditPhoneNumberPreference;
 
-    const v3, 0x7f0d06bb
+    const v3, 0x7f0d071f
 
     invoke-virtual {v2, v3}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
@@ -1758,7 +1758,7 @@
 
     const/4 v8, 0x0
 
-    const v7, 0x7f0d0334
+    const v7, 0x7f0d0394
 
     const/4 v6, 0x1
 
@@ -1779,7 +1779,7 @@
 
     invoke-direct {v2, v5}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f0d032c
+    const v5, 0x7f0d038c
 
     invoke-virtual {p0, v5}, Lcom/android/phone/CdmaCallForwardOptions;->getText(I)Ljava/lang/CharSequence;
 
@@ -1807,7 +1807,7 @@
 
     invoke-virtual {v2, v8}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v5, 0x7f0d032f
+    const v5, 0x7f0d038f
 
     invoke-virtual {p0, v5}, Lcom/android/phone/CdmaCallForwardOptions;->getText(I)Ljava/lang/CharSequence;
 
@@ -1830,7 +1830,7 @@
 
     invoke-virtual {v2, v5}, Landroid/app/ProgressDialog;->setCancelMessage(Landroid/os/Message;)V
 
-    const v5, 0x7f0d032e
+    const v5, 0x7f0d038e
 
     invoke-virtual {p0, v5}, Lcom/android/phone/CdmaCallForwardOptions;->getText(I)Ljava/lang/CharSequence;
 
@@ -1858,11 +1858,11 @@
 
     invoke-direct {v0, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v4, 0x7f0d032d
+    const v4, 0x7f0d038d
 
     sparse-switch p1, :sswitch_data_1
 
-    const v3, 0x7f0d0332
+    const v3, 0x7f0d0392
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1899,14 +1899,14 @@
     return-object v5
 
     :sswitch_2
-    const v3, 0x7f0d0331
+    const v3, 0x7f0d0391
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     goto :goto_1
 
     :sswitch_3
-    const v3, 0x7f0d0333
+    const v3, 0x7f0d0393
 
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2268,7 +2268,7 @@
 
     if-ne p2, v8, :cond_9
 
-    const v8, 0x7f0d06c0
+    const v8, 0x7f0d0724
 
     invoke-virtual {v6, v8}, Landroid/widget/TextView;->setText(I)V
 
@@ -2403,7 +2403,7 @@
 
     if-ne p2, v8, :cond_a
 
-    const v8, 0x7f0d06c1
+    const v8, 0x7f0d0725
 
     invoke-virtual {v6, v8}, Landroid/widget/TextView;->setText(I)V
 
@@ -2414,7 +2414,7 @@
 
     if-ne p2, v8, :cond_b
 
-    const v8, 0x7f0d06c2
+    const v8, 0x7f0d0726
 
     invoke-virtual {v6, v8}, Landroid/widget/TextView;->setText(I)V
 
@@ -2425,7 +2425,7 @@
 
     if-ne p2, v8, :cond_2
 
-    const v8, 0x7f0d06c3
+    const v8, 0x7f0d0727
 
     invoke-virtual {v6, v8}, Landroid/widget/TextView;->setText(I)V
 
@@ -2535,6 +2535,48 @@
     packed-switch v0, :pswitch_data_0
 
     :goto_0
+    const-string/jumbo v0, "support_bixby"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const-string/jumbo v0, "CallForwarding"
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingLastState()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const-string/jumbo v0, "CallForwarding"
+
+    invoke-static {v0}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
+
+    :cond_1
+    sget-object v0, Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;->SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v0}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    :cond_2
     return-void
 
     :pswitch_0
@@ -2564,8 +2606,6 @@
     iput-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mpreference:Landroid/preference/Preference;
 
     goto :goto_0
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0

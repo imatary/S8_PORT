@@ -79,6 +79,8 @@
     <string name="bluetooth_pairing_device_down_error_message">%sに接続できません。</string>
     <string name="bluetooth_pairing_device_down_black_list_error_message">%1$sに接続できません。%2$sで設定を確認し、再度実行してください。</string>
     <string name="bluetooth_pairing_rejected_error_message">%sにペアリングを拒否されました。</string>
+    <string name="bluetooth_getting_remote_device_name">デバイス名称を取得中…</string>
+    <string name="bluetooth_display_remote_device_name_after_pair">このデバイスが接続されると、デバイス名称が表示されます。</string>
     <string name="accessibility_wifi_off">Wi-FiはOFFです。</string>
     <string name="accessibility_no_wifi">Wi-Fiが切断されました。</string>
     <string name="accessibility_wifi_one_bar">Wi-Fiはレベル1です。</string>
@@ -852,7 +854,7 @@
     <string name="singleContactImportedMsg">連絡先をインポートしました</string>
     <string name="failedToImportSingleContactMsg">連絡先をインポートできませんでした</string>
     <string name="hac_mode_title">補聴器</string>
-    <string name="hac_mode_summary">補聴器を利用するために端末の音質を向上させます。</string>
+    <string name="hac_mode_summary">補聴器を利用するために端末の音質を最適化します。</string>
     <string name="dtmf_tones_title">DTMF音</string>
     <string name="dtmf_tones_summary">DTMF音の長さを設定</string>
     <string name="network_info_message">ネットワークメッセージ</string>
@@ -1037,6 +1039,10 @@
     <string name="add_call_block_number_toast">この番号からの着信を拒否します。</string>
     <string name="delete_call_block_number_toast">この番号からの着信を受けられるようになりました。</string>
     <string name="emergency_call_block_number_toast">緊急通報番号はブロックできません。</string>
+    <string name="call_block_dialog_title">拒否する番号を編集</string>
+    <string name="call_block_dialog_contents">Android Nougatから、着信ブロックモードは[番号指定拒否]に置き換えられます。[番号指定拒否]は、着信だけではなくメッセージも自動的に拒否します。</string>
+    <string name="call_block_dialog_settings">[番号指定拒否]を編集するには、[設定]をタップしてください。</string>
+    <string name="call_block_dialog_button">設定</string>
     <string name="no_block_number_description">電話番号を追加すると、ここに表示されます。</string>
     <string name="no_messages_description">メッセージを追加すると、ここに表示されます。</string>
     <string name="callsettings_vipmode_blacklist_title">着信拒否リスト</string>
@@ -1087,7 +1093,7 @@
     <string name="callsettings_answering_volume_key_title">音量ｱｯﾌﾟｷｰを押して着信に応答</string>
     <string name="callsettings_answering_key_summary">ホームキーを押して着信に応答</string>
     <string name="callsettings_PowerkeyEndsCalls_title">電源キーを押して通話終了</string>
-    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">電源キーを押して通話終了</string>
+    <string name="callsettings_PowerkeyEndsCalls_title_for_tts">電源キーを押して通話終了します。</string>
     <string name="callsettings_PowerkeyEndsCalls_summary">画面がONのときに電源キーを押すと通話を終了、画面の点灯は継続</string>
     <string name="Dialog_PowerkeyEndsCalls">近接センサーがOFFになっている場合、電源キーを押して通話を終了するように設定できないため、近接センサーをONにします。通話中に端末を耳に近づけると、画面がOFFになります。</string>
     <string name="Dialog_PowerkeyEndsCalls_title">近接センサーをON</string>
@@ -1529,9 +1535,7 @@ Injured/Dead
     <string name="data_usage_disable_mobile_vzw_chn">"WLANを使用しない場合、データ接続が必要なインターネット、Eメール、他のアプリを使用できません。
 
 モバイルデータは無効になります。"</string>
-    <string name="mobile_data_off_dialog_text_common">"Wi-Fiを使用しない場合、データ接続が必要なブラウザ、Eメール、その他のアプリを使用できません。
-
-モバイルデータをOFFにします。"</string>
+    <string name="mobile_data_off_dialog_text_common">Wi-Fiネットワークに接続しない場合、ブラウザやEメール、またはネットワーク接続を必要とする他のアプリを使用することはできません。</string>
     <string name="mobile_data_off_dialog_button_turn_off">OFF</string>
     <string name="mobile_data_off_dialog_text_common_ignore_product_type">"Wi-Fiを使用しない場合、データ接続が必要なブラウザ、Eメール、その他のアプリを使用できません。
 
@@ -1611,8 +1615,9 @@ LTEネットワークが有効な場合はデータサービスのみが利用�
 定額フラットプランを適用していない場合、追加料金が発生する可能性があります。"</string>
     <string name="data_3gwarning_popup_title">モバイル​データ</string>
     <string name="roaming_data_off_msg">データローミングを使用するには、[設定] > [接続] > [国際ローミング]に移動し、データローミングを有効にしてください。</string>
-    <string name="data_3gwarning_popup_noti">定額フラットプランを適用していない場合、モバイルネットワーク接続は追加料金が発生する可能性があります。接続しますか？</string>
-    <string name="lgt_4gwarning_popup_mobiledata">モバイルデータをONにします。ご利用のサービスプロバイダの料金プランによっては、追加料金が発生する可能性があります。</string>
+    <string name="data_3gwarning_popup_noti">モバイルデータをONにします。モバイルネットワークに接続すると、料金プランによっては追加料金が発生する可能性があります。</string>
+    <string name="data_3gwarning_popup_noti_ktt">GiGA LTEを使用するために、モバイルデータをONにします。ご契約の料金プランによっては追加料金が発生する可能性があります。</string>
+    <string name="lgt_4gwarning_popup_mobiledata">モバイルデータをONにします。モバイルネットワークに接続すると、料金プランによっては追加料金が発生する可能性があります。</string>
     <string name="lgt_lte_data_roaming_warningmsg">"データローミングが有効な場合、&lt;u>&lt;font color=\"%1$s\">国内データ料金の代わりに海外データローミング料金が適用されます。&lt;/font>&lt;/u>
 
 メッセンジャー通知や自動更新などの機能を無効にすることで&lt;u>&lt;font color=\"%1$s\">バックグラウンドデータを制限し、データローミングの料金を節約することができます。&lt;/font>&lt;/u>"</string>
@@ -1982,6 +1987,8 @@ LTEネットワークが有効な場合はデータサービスのみが利用�
     <string name="volte_call_summary_ops">4GネットワークでHD(高品質)音声通話を発信します。</string>
     <string name="voice_over_lte_title_cct">VoLTE通話</string>
     <string name="volte_call_summary_cct">この機能が利用可能な4G LTEセルラーネットワーク上では、高品質な通話機能を利用できます。</string>
+    <string name="voice_over_lte_title_o2">4G通話</string>
+    <string name="volte_call_summary_o2">4Gデータを使用した高速通信をお楽しみいただけます。</string>
     <string name="volte_tty_description_on">TTYがONの間は、ビデオコールの発着信および電話会議ができなくなります。</string>
     <string name="volte_prepaid_tty_description_on">TTYモードを有効にします。グループ通話は発着信できません。</string>
     <string name="volte_tty_description_off">TTYがOFFの間は、TTY通話の発着信ができなくなります。</string>
@@ -2175,9 +2182,13 @@ LTEネットワークが有効な場合はデータサービスのみが利用�
     <string name="group_voice_call_disable_on_3G">グループ電話は、LTEネットワークでのみ利用可能です。</string>
     <string name="group_voice_call_outgoing_voice_call">音声通話発信</string>
     <string name="voice_party_call_fail_network">ボイスパーティーコールを発信できません。ネットワーク接続を確認してください。</string>
+    <string name="data_usage_disable_mobile_warning_skt">"Wi-Fiを使用しない場合、ブラウザ、Eメール、その他データ接続が必要なアプリを使用できません。
+
+モバイルデータは無効になります。"</string>
     <string name="data_usage_disable_mobile_warning">"Wi-Fiを使用しない場合、データ接続が必要なブラウザ、Eメール、その他のアプリを使用できません。
 
 モバイルデータを無効にします。"</string>
+    <string name="data_usage_enable_mobile_warning_skt">モバイルデータをONにします。モバイルネットワークに接続すると、料金プランによっては追加料金が発生する可能性があります。</string>
     <string name="data_usage_enable_mobile_warning">モバイルデータを使用すると、追加料金が発生する可能性があります。続行しますか？</string>
     <string name="insert_sim_card">SIMカードを挿入</string>
     <string name="insert_sim_card_message">ネットワークサービスを利用するにはSIMカードを挿入してください。</string>
@@ -2186,7 +2197,7 @@ LTEネットワークが有効な場合はデータサービスのみが利用�
     <string name="mode_automatic">自動</string>
     <string name="mode_japan_4g">日本(4G)</string>
     <string name="volte_roaming_settings_title">4G設定</string>
-    <string name="volte_roaming_settings_summary_kdi">ローミング中はインターネット電話に4Gネットワークを使用します。4Gネットワークの使用を停止するには、この機能をOFFにした後この端末を再起動してください。海外でネットワーク品質が高くない場合は、4GネットワークをOFFにしてください。日本では、常にONにしてください。</string>
+    <string name="volte_roaming_settings_summary_kdi">海外での通話に4Gを利用します。変更後は再起動してください。海外でネットワーク品質が良くない場合は、4GをOFFにしてください。日本では常にONにしてください。</string>
     <string name="callsettings_allcalls_nwservice">au通話オプション</string>
     <string name="callsettings_allcalls_nwservice_sub_text">au通話オプションを設定します。</string>
     <string name="callsettings_allcalls_nwservice_dcm">ネットワークサービス</string>
@@ -2211,6 +2222,7 @@ LTEネットワークが有効な場合はデータサービスのみが利用�
     <string name="turning_off_answer_memo">[自動応答]と[伝言メモ]の両方を有効にすることはできません。[伝言メモ]が無効になります。</string>
     <string name="disconnect_network_message">データサービスネットワークを変更すると、現在使用中のネットワークが切断されます。データサービスネットワークを変更しますか？</string>
     <string name="disconnect_network_title">現在のネットワークを切断</string>
+    <string name="disable2g_warning_message">この設定により、2GサービスはOFFになります。2GサービスがOFFになると、LTEや3Gが利用できない場所で一部のアプリや機能が動作しない場合があります。</string>
     <string name="data_roaming_restrict_title">データローミングが無効</string>
     <string name="data_roaming_restrict_body">データローミングを有効にするには、ここをタップします。</string>
     <string name="data_network_mode">データ通信</string>
@@ -2545,7 +2557,7 @@ ONにするには、カスタマーサービスにお問い合わせください
     <string name="phoneset_overseas_remote_access">遠隔操作(有料)</string>
     <string name="phoneset_overseas_caller_id_request">番号通知お願いサービス(有料)</string>
     <string name="phoneset_overseas_notify_missed_call">ローミング着信通知(有料)</string>
-    <string name="phoneset_overseas_roaming_guidance_pay">ﾛｰﾐﾝｸﾞｶﾞｲﾀﾞﾝｽ(有料)</string>
+    <string name="phoneset_overseas_roaming_guidance_pay">ローミングガイダンス(有料)</string>
     <string name="phoneset_overseas_voice_mail">留守番電話サービス(有料)</string>
     <string name="phoneset_overseas_call_forwarding">転送でんわ(有料)</string>
     <string name="phoneset_overseas_play_messages">メッセージ再生</string>
@@ -2610,6 +2622,10 @@ ONにするには、カスタマーサービスにお問い合わせください
     <string name="delete_this_number_kddi">この番号を削除しますか？</string>
     <string name="change_guide_language_kddi">ガイド言語を変更</string>
     <string name="apply_option_service_kddi">%sｻｰﾋﾞｽｵﾌﾟｼｮﾝに移動</string>
+    <string name="optional_service_kddi">オプションサービスを使用</string>
+    <string name="au_call_settings_category">お客さまサポート</string>
+    <string name="website_kddi">Webサイトに移動</string>
+    <string name="call_au_service_center">電話(157)</string>
     <string name="Janpanese_guidance_kddi">日本語ガイダンス(%d)</string>
     <string name="English_guidance_kddi">英語ガイダンス(%d)</string>
     <string name="voicecall_kddi">留守番電話</string>
@@ -2664,11 +2680,13 @@ ONにするには、カスタマーサービスにお問い合わせください
     <string name="spam_call_mute_first_ring_summary">未登録の番号から電話があったときに最初の着信音を消音します。</string>
     <string name="spam_call_auto_reject_title">自動着信拒否</string>
     <string name="smart_call_title">発信者情報とスパムに関する保護</string>
-    <string name="smart_call_title_usa">迷惑電話番号を特定</string>
     <string name="smart_call_title_for_notice">発信者情報とスパムに関する保護</string>
-    <string name="smart_call_description">通話画面、通話履歴、およびメッセージで、端末に登録されていない発信者およびメッセージの送信者を特定します。</string>
-    <string name="smart_call_usa_description">迷惑電話の発信者に関する情報を通話画面および通話履歴に表示します。</string>
+    <string name="smart_call_description">"スマート通話を使用して、詐欺や迷惑電話の発信者を特定することができます。
+
+このサービスでは、連絡先に登録されていない発信者やメッセージ送信者の名前およびプロフィール画像を表示します。"</string>
     <string name="smart_call_description_roaming">このサービスは、他の国では利用できません。</string>
+    <string name="smart_call_noti_description_1">無料で迷惑電話からユーザーを保護するには、ここをタップしてください。</string>
+    <string name="smart_call_noti_description_2">詐欺や迷惑電話の発信者を特定するには、ここをタップしてください。</string>
     <string name="smart_call_share_name_number_title">名前と電話番号を共有</string>
     <string name="smart_call_share_name_number_summary">発信先またはメッセージの送信先のユーザーがあなたの番号を知らない場合でも、サーバーに登録された名前と電話番号を確認できます。</string>
     <string name="smart_call_legal_info_category">法定情報</string>
@@ -2685,12 +2703,16 @@ ONにするには、カスタマーサービスにお問い合わせください
 上記に同意して「%s」機能を今の時点で有効にすることを示す場合は、以下の適切なボタンをクリックしてください。"</string>
     <string name="smart_call_privacy_notice_donotshow">[未登録の番号を特定]機能についての通知を今後表示しない</string>
     <string name="smart_call_privacy_notice_dream">本サービスは、電話の着信または発信時にお客様のモバイルデバイスがモバイルネットワークに接続されている場合に利用できますが、ローミング時には制限が課せられます。モバイルネットワークを使用すると、ご利用のネットワークプロバイダのデータプランに応じて追加料金が発生する場合があります。</string>
+    <string name="show_privacy_notice_title">プライバシーポリシー</string>
     <string name="search_for_places_nearby_title">近くの場所を検索</string>
     <string name="search_for_places_nearby_help_description1">近くの企業および施設の電話番号や情報を検索します。</string>
     <string name="search_for_places_nearby_help_description2">このサービスには位置情報が必要です。</string>
     <string name="search_for_places_nearby_help_description3">位置情報の精度を最適化するには、[設定] > [接続] > [位置情報] > [位置情報の検出方法]に移動し、[高精度]を選択してください。</string>
     <string name="search_for_places_nearby_help_description3_vzw">位置情報の精度を最適化するには、[設定] > [接続] > [位置情報] > [位置情報の検出方法]に移動し、[高精度]を選択してください。</string>
     <string name="search_for_places_nearby_help_description4">Wi-Fiネットワークの代わりにモバイルネットワークを使用すると、料金プランによっては追加料金が発生する可能性があります。</string>
+    <string name="withdraw_menu_title">このｻｰﾋﾞｽの利用を停止</string>
+    <string name="withdraw_dialog_description">%1$sの使用を停止すると、サービスは無効になり、サービスプロバイダで保存された全ての%2$sデータは削除されます。</string>
+    <string name="withdraw_dialog_button">サービスの利用を停止</string>
     <string name="record_call_setting_title">通話の自動録音</string>
     <string name="record_call_setting_selected_number">選択した番号のみ</string>
     <string name="record_call_setting_all_number">全ての番号</string>
@@ -2703,6 +2725,8 @@ ONにするには、カスタマーサービスにお問い合わせください
     <string name="record_call_noti_setting_title">録音の通知</string>
     <string name="record_call_noti_setting_summary">通話の録音が完了した後に、通知を受信します。</string>
     <string name="record_call_help_summary">選択した番号に発着信した通話を自動的に録音します。</string>
+    <string name="record_call_setting_on_description">自動録音ON</string>
+    <string name="record_call_setting_off_description">自動録音OFF</string>
     <string name="visual_call_title_callsetting">IVR通話画面メニュー</string>
     <string name="preference_update_DB_visual_call">IVR通話DBを更新</string>
     <string name="preference_update_DB_visual_call_summary">WLAN接続時のみ自動更新</string>
@@ -2945,6 +2969,7 @@ Verizonから入手したコードを入力してください。"</string>
     <string name="about_phone_open_source_licenses">オープンソースライセンス</string>
     <string name="no_network_connection">ネットワーク接続不可</string>
     <string name="unable_to_check_for_updates">ネットワーク接続がないため、更新を確認できません。</string>
+    <string name="phoneAppLabel_dcm">ダイヤル</string>
     <string name="dcm_vt_fail_cause_roaming">ご利用のネットワークではビデオコールはご利用になれません。音声発信をご利用ください。</string>
     <string name="dcm_vt_fail_cause_network_mode">モバイルネットワークの設定がLTE以外になっているため、ビデオコールへの発信に失敗しました。音声発信をご利用ください。</string>
     <string name="dcm_vt_fail_cause_call_mode">通話モード設定が「VoLTE OFF」に設定されているため、ビデオコールへの発信に失敗しました。音声発信をご利用ください。</string>
@@ -2982,6 +3007,8 @@ Verizonから入手したコードを入力してください。"</string>
     <string name="save_text">保存</string>
     <string name="wfc_enable_dialog_title">Wi-Fi電話を有効にする</string>
     <string name="wfc_enable_dialog">Wi-Fi電話を有効にすると、省電力モードは無効になり、バッテリーの消費量が増加します。サービスプロバイダによってはこの機能に対応していない場合があります。</string>
+    <string name="group_call_not_support_emergency_number">緊急通報番号はグループ通話に追加できません。</string>
+    <string name="group_call_not_support_emergency_number_all">緊急通報番号はグループ通話に追加できません。その他の選択した連絡先は全て追加されました。</string>
     <string name="enable_data_popup_message">この機能を有効にするには、[モバイルデータ]をONにしてください。</string>
     <string name="enable_data_popup_tittle">機能の有効化不可</string>
 </resources>

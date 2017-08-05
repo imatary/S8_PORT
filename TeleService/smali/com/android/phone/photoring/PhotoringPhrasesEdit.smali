@@ -625,7 +625,7 @@
     :goto_0
     invoke-virtual {v0}, Lcom/android/phone/photoring/PhotoRingDB;->close()V
 
-    const v1, 0x7f0d05c3
+    const v1, 0x7f0d0627
 
     invoke-direct {p0, v1}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->displayToast(I)V
 
@@ -1506,7 +1506,7 @@
 
     if-eqz v25, :cond_5
 
-    const v25, 0x7f0d092d
+    const v25, 0x7f0d0993
 
     move-object/from16 v0, p0
 
@@ -2817,7 +2817,7 @@
 
     iget-object v5, p0, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->mtvTxt:Landroid/widget/TextView;
 
-    const v8, 0x7f0d0a01
+    const v8, 0x7f0d0a68
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(I)V
 
@@ -2988,7 +2988,7 @@
 
     if-ne v5, v8, :cond_c
 
-    const v5, 0x7f0d091a
+    const v5, 0x7f0d0980
 
     invoke-virtual {p0, v5}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->setTitle(I)V
 
@@ -3094,7 +3094,7 @@
 
     iget-object v5, p0, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->mtvTxt:Landroid/widget/TextView;
 
-    const v8, 0x7f0d0926
+    const v8, 0x7f0d098c
 
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(I)V
 
@@ -3146,7 +3146,7 @@
 
     invoke-virtual {v5, v8, v10, v11}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    const v5, 0x7f0d0919
+    const v5, 0x7f0d097f
 
     invoke-virtual {p0, v5}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->setTitle(I)V
 
@@ -3163,7 +3163,7 @@
 
     invoke-virtual {v5, v8, v10, v11}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    const v5, 0x7f0d0918
+    const v5, 0x7f0d097e
 
     invoke-virtual {p0, v5}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->setTitle(I)V
 
@@ -3187,18 +3187,18 @@
 
     const/4 v0, 0x1
 
-    const v1, 0x7f0d090e
+    const v1, 0x7f0d0974
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/ContextMenu;->add(IIII)Landroid/view/MenuItem;
 
-    const v0, 0x7f0d050e
+    const v0, 0x7f0d056e
 
     invoke-interface {p1, v2, v3, v2, v0}, Landroid/view/ContextMenu;->add(IIII)Landroid/view/MenuItem;
 
     :cond_0
     const/4 v0, 0x3
 
-    const v1, 0x7f0d0510
+    const v1, 0x7f0d0570
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/ContextMenu;->add(IIII)Landroid/view/MenuItem;
 
@@ -3217,7 +3217,7 @@
 
     const/4 v2, 0x1
 
-    const v0, 0x7f0d0906
+    const v0, 0x7f0d096c
 
     invoke-interface {p1, v3, v2, v2, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -3227,7 +3227,7 @@
 
     const/4 v0, 0x2
 
-    const v1, 0x7f0d0511
+    const v1, 0x7f0d0571
 
     invoke-interface {p1, v3, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -3237,7 +3237,7 @@
 
     const/4 v0, 0x3
 
-    const v1, 0x7f0d09d6
+    const v1, 0x7f0d0a3c
 
     invoke-interface {p1, v3, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -3247,7 +3247,7 @@
 
     const/4 v0, 0x4
 
-    const v1, 0x7f0d0510
+    const v1, 0x7f0d0570
 
     invoke-interface {p1, v3, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -3257,7 +3257,7 @@
 
     const/4 v0, 0x5
 
-    const v1, 0x7f0d0638
+    const v1, 0x7f0d069c
 
     invoke-interface {p1, v3, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -3291,7 +3291,7 @@
 
     const/4 v13, 0x2
 
-    const v5, 0x7f0d0927
+    const v5, 0x7f0d098d
 
     const/16 v3, 0x2f
 
@@ -3429,7 +3429,7 @@
 
     invoke-virtual {v0, v1, v2, v3, v12}, Lcom/android/phone/photoring/PhotoRingDB;->insertPhrase(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 
-    const v1, 0x7f0d0637
+    const v1, 0x7f0d069b
 
     invoke-direct {p0, v1}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->displayToast(I)V
 
@@ -3487,7 +3487,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f0d092c
+    const v1, 0x7f0d0992
 
     invoke-direct {p0, v1}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->displayToast(I)V
 
@@ -3496,7 +3496,7 @@
     goto/16 :goto_0
 
     :cond_4
-    const v1, 0x7f0d092b
+    const v1, 0x7f0d0991
 
     invoke-direct {p0, v1}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->displayToast(I)V
 
@@ -3627,7 +3627,7 @@
 
     invoke-virtual/range {v0 .. v5}, Lcom/android/phone/photoring/PhotoRingDB;->updatePhrase(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)I
 
-    const v1, 0x7f0d0637
+    const v1, 0x7f0d069b
 
     invoke-direct {p0, v1}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->displayToast(I)V
 
@@ -3716,7 +3716,7 @@
 
     if-eqz v1, :cond_5
 
-    const v1, 0x7f0d092c
+    const v1, 0x7f0d0992
 
     invoke-direct {p0, v1}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->displayToast(I)V
 
@@ -3725,7 +3725,7 @@
     goto/16 :goto_0
 
     :cond_b
-    const v1, 0x7f0d092b
+    const v1, 0x7f0d0991
 
     invoke-direct {p0, v1}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->displayToast(I)V
 
@@ -3738,7 +3738,7 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f0d09d5
+    const v2, 0x7f0d0a3b
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -3748,7 +3748,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/photoring/PhotoringPhrasesEdit$6;-><init>(Lcom/android/phone/photoring/PhotoringPhrasesEdit;)V
 
-    const v3, 0x7f0d02ca
+    const v3, 0x7f0d032a
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3758,7 +3758,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/photoring/PhotoringPhrasesEdit$7;-><init>(Lcom/android/phone/photoring/PhotoringPhrasesEdit;)V
 
-    const v3, 0x7f0d02c7
+    const v3, 0x7f0d0327
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -3808,7 +3808,7 @@
     goto :goto_5
 
     :cond_e
-    const v1, 0x7f0d0928
+    const v1, 0x7f0d098e
 
     invoke-virtual {v8, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 

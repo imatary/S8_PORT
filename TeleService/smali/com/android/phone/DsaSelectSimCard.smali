@@ -157,7 +157,7 @@
 
     iput-boolean v1, p0, Lcom/android/phone/DsaSelectSimCard;->mIsHotSwapRegister:Z
 
-    const v0, 0x7f0d0963
+    const v0, 0x7f0d09c9
 
     iput v0, p0, Lcom/android/phone/DsaSelectSimCard;->mTitleID:I
 
@@ -233,7 +233,7 @@
 .method public displayDialog(I)V
     .locals 6
 
-    const v5, 0x7f0d032f
+    const v5, 0x7f0d038f
 
     const/4 v4, 0x0
 
@@ -342,7 +342,7 @@
 .method public displayResultDialog()V
     .locals 15
 
-    const v14, 0x7f0d0182
+    const v14, 0x7f0d01df
 
     const/4 v13, 0x1
 
@@ -499,7 +499,7 @@
 
     invoke-direct {v10, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v11, 0x7f0d0964
+    const v11, 0x7f0d09ca
 
     invoke-virtual {p0, v11}, Lcom/android/phone/DsaSelectSimCard;->getString(I)Ljava/lang/String;
 
@@ -580,7 +580,7 @@
 
     invoke-virtual {v0, v2}, Lcom/android/phone/DsaSelectSimCard;->setContentView(I)V
 
-    const v2, 0x7f0d095e
+    const v2, 0x7f0d09c4
 
     move-object/from16 v0, p0
 
@@ -590,7 +590,7 @@
 
     iget-object v2, v0, Lcom/android/phone/DsaSelectSimCard;->items:Ljava/util/ArrayList;
 
-    const v3, 0x7f0d0960
+    const v3, 0x7f0d09c6
 
     move-object/from16 v0, p0
 
@@ -606,7 +606,7 @@
 
     sget-object v3, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
-    const v4, 0x7f0d0962
+    const v4, 0x7f0d09c8
 
     move-object/from16 v0, p0
 
@@ -650,7 +650,7 @@
 
     sget-object v3, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
-    const v4, 0x7f0d0962
+    const v4, 0x7f0d09c8
 
     move-object/from16 v0, p0
 
@@ -696,7 +696,7 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f0d0961
+    const v2, 0x7f0d09c7
 
     move-object/from16 v0, p0
 
@@ -1093,7 +1093,7 @@
 
     iget-object v2, v0, Lcom/android/phone/DsaSelectSimCard;->mLeftSoftImage:Landroid/widget/ImageView;
 
-    const v3, 0x7f020193
+    const v3, 0x7f02019c
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1108,7 +1108,7 @@
 
     iget-object v2, v0, Lcom/android/phone/DsaSelectSimCard;->mRightSoftImage:Landroid/widget/ImageView;
 
-    const v3, 0x7f020194
+    const v3, 0x7f02019d
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1192,7 +1192,7 @@
 
     iget-object v2, v0, Lcom/android/phone/DsaSelectSimCard;->mLeftSoftText:Landroid/widget/TextView;
 
-    const v3, 0x7f0d095c
+    const v3, 0x7f0d09c2
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -1200,7 +1200,7 @@
 
     iget-object v2, v0, Lcom/android/phone/DsaSelectSimCard;->mRightSoftText:Landroid/widget/TextView;
 
-    const v3, 0x7f0d095d
+    const v3, 0x7f0d09c3
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -1661,13 +1661,13 @@
 
     iget-object v2, p0, Lcom/android/phone/DsaSelectSimCard;->mCancleButton:Landroid/widget/Button;
 
-    const v3, 0x7f020165
+    const v3, 0x7f020169
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setBackgroundResource(I)V
 
     iget-object v2, p0, Lcom/android/phone/DsaSelectSimCard;->mDoneButton:Landroid/widget/Button;
 
-    const v3, 0x7f020166
+    const v3, 0x7f02016a
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setBackgroundResource(I)V
 
@@ -1999,13 +1999,13 @@
 
     iget-object v1, p0, Lcom/android/phone/DsaSelectSimCard;->mLeftSoftBtn:Landroid/widget/LinearLayout;
 
-    const v2, 0x7f020165
+    const v2, 0x7f020169
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
     iget-object v1, p0, Lcom/android/phone/DsaSelectSimCard;->mRightSoftBtn:Landroid/widget/LinearLayout;
 
-    const v2, 0x7f020166
+    const v2, 0x7f02016a
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 

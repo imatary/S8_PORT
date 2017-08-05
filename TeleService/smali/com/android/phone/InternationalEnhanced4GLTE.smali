@@ -19,11 +19,15 @@
 
 .field private mAlertDialog:Landroid/app/AlertDialog$Builder;
 
+.field mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
 .field private mEDM:Lcom/samsung/android/knox/EnterpriseDeviceManager;
 
 .field private mInternationalData:Landroid/preference/CheckBoxPreference;
 
 .field mPhoneStateListener:Landroid/telephony/PhoneStateListener;
+
+.field mStateListener:Lcom/android/phone/ia/IAInterimListener;
 
 .field private mWarnDialog:Landroid/app/AlertDialog;
 
@@ -204,7 +208,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d0d18
+    const v8, 0x7f0d0d89
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -258,7 +262,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d0d19
+    const v8, 0x7f0d0d8a
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -290,7 +294,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0d08d1
+    const v8, 0x7f0d0935
 
     invoke-virtual {v7, v8}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -470,7 +474,9 @@
 .end method
 
 .method protected onPause()V
-    .locals 2
+    .locals 3
+
+    const/4 v2, 0x0
 
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
@@ -480,6 +486,36 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/mobilenetworks/boundary/NetworkProxy;->listen(Landroid/telephony/PhoneStateListener;I)V
 
+    const-string/jumbo v0, "support_bixby"
+
+    invoke-static {v0}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    invoke-virtual {v0}, Lcom/samsung/android/sdk/bixby/BixbyApi;->clearInterimStateListener()V
+
+    iget-object v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v1, "InternationalDataRoaming"
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logExitState(Ljava/lang/String;)V
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    invoke-interface {v0}, Lcom/android/phone/ia/IAInterimListener;->clear()V
+
+    iput-object v2, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    :cond_1
     return-void
 .end method
 
@@ -543,7 +579,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0d0c55
+    const v3, 0x7f0d0cc6
 
     invoke-static {v2, v3, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -580,9 +616,9 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_6
 
-    const v2, 0x7f0d037c
+    const v2, 0x7f0d03dc
 
     :goto_0
     invoke-virtual {v3, v2}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
@@ -604,7 +640,7 @@
 
     sget-object v3, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy$State;->IDLE:Lcom/android/phone/mobilenetworks/boundary/PhoneProxy$State;
 
-    if-eq v2, v3, :cond_4
+    if-eq v2, v3, :cond_7
 
     iget-object v2, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mInternationalData:Landroid/preference/CheckBoxPreference;
 
@@ -622,14 +658,85 @@
     :goto_1
     invoke-direct {p0}, Lcom/android/phone/InternationalEnhanced4GLTE;->checkEDMRoaming()V
 
-    return-void
+    const-string/jumbo v2, "support_bixby"
+
+    invoke-static {v2}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    invoke-static {}, Lcom/samsung/android/sdk/bixby/BixbyApi;->getInstance()Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    new-instance v2, Lcom/android/phone/ia/InternationalEnhanced4GLTEStateListener;
+
+    invoke-direct {v2, p0}, Lcom/android/phone/ia/InternationalEnhanced4GLTEStateListener;-><init>(Landroid/preference/PreferenceActivity;)V
+
+    iput-object v2, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    iget-object v2, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    if-eqz v2, :cond_5
+
+    iget-object v2, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    iget-object v3, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mStateListener:Lcom/android/phone/ia/IAInterimListener;
+
+    invoke-virtual {v2, v3}, Lcom/samsung/android/sdk/bixby/BixbyApi;->setInterimStateListener(Lcom/samsung/android/sdk/bixby/BixbyApi$InterimStateListener;)V
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingState()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    const-string/jumbo v2, "InternationalDataRoaming"
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->getIAExecutingStateId()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    invoke-static {}, Lcom/android/phone/ia/IAUtil;->isIAExecutingLastState()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    const-string/jumbo v2, "InternationalDataRoaming"
+
+    invoke-static {v2}, Lcom/android/phone/ia/IAUtil;->requestNLG(Ljava/lang/String;)V
 
     :cond_3
-    const v2, 0x7f0d037d
+    sget-object v2, Lcom/android/phone/ia/IAConstants;->RESPONSE_SUCCESS:Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;
+
+    invoke-static {v2}, Lcom/android/phone/ia/IAUtil;->sendResponse(Lcom/samsung/android/sdk/bixby/BixbyApi$ResponseResults;)V
+
+    :cond_4
+    iget-object v2, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mBixbyApi:Lcom/samsung/android/sdk/bixby/BixbyApi;
+
+    const-string/jumbo v3, "InternationalDataRoaming"
+
+    invoke-virtual {v2, v3}, Lcom/samsung/android/sdk/bixby/BixbyApi;->logEnterState(Ljava/lang/String;)V
+
+    :cond_5
+    return-void
+
+    :cond_6
+    const v2, 0x7f0d03dd
 
     goto :goto_0
 
-    :cond_4
+    :cond_7
     iget-object v2, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mInternationalData:Landroid/preference/CheckBoxPreference;
 
     if-eqz v2, :cond_2

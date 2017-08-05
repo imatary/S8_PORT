@@ -124,9 +124,9 @@
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 10
 
-    const v9, 0x7f0d0511
+    const v9, 0x7f0d0571
 
-    const v8, 0x7f0d050d
+    const v8, 0x7f0d056d
 
     const/4 v7, 0x6
 
@@ -833,7 +833,7 @@
     :cond_0
     iget-object v2, p0, Lcom/android/phone/callsettings/EditSubNumberScreen;->minputPre:Landroid/widget/EditText;
 
-    const v3, 0x7f0d0caf
+    const v3, 0x7f0d0d20
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/EditSubNumberScreen;->getString(I)Ljava/lang/String;
 
@@ -894,7 +894,7 @@
     :cond_2
     iget-object v2, p0, Lcom/android/phone/callsettings/EditSubNumberScreen;->minputPho:Landroid/widget/EditText;
 
-    const v3, 0x7f0d0cb0
+    const v3, 0x7f0d0d21
 
     invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/EditSubNumberScreen;->getString(I)Ljava/lang/String;
 

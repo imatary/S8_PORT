@@ -312,7 +312,7 @@
 
     check-cast v10, Lcom/android/phone/dialpad/DialpadKeyButton;
 
-    const v13, 0x7f0d01cc
+    const v13, 0x7f0d0229
 
     invoke-virtual {v11, v13}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -328,7 +328,7 @@
 
     check-cast v12, Lcom/android/phone/dialpad/DialpadKeyButton;
 
-    const v13, 0x7f0d01cb
+    const v13, 0x7f0d0228
 
     invoke-virtual {v11, v13}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -340,34 +340,34 @@
 
     :array_0
     .array-data 4
-        0x7f0d0a0c
-        0x7f0d0a0d
-        0x7f0d0a0e
-        0x7f0d0a0f
-        0x7f0d0a10
-        0x7f0d0a11
-        0x7f0d0a12
-        0x7f0d0a13
-        0x7f0d0a14
-        0x7f0d0a15
-        0x7f0d01ba
-        0x7f0d01bb
+        0x7f0d0a73
+        0x7f0d0a74
+        0x7f0d0a75
+        0x7f0d0a76
+        0x7f0d0a77
+        0x7f0d0a78
+        0x7f0d0a79
+        0x7f0d0a7a
+        0x7f0d0a7b
+        0x7f0d0a7c
+        0x7f0d0217
+        0x7f0d0218
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f0d01bc
-        0x7f0d01bd
-        0x7f0d01be
-        0x7f0d01bf
-        0x7f0d01c0
-        0x7f0d01c1
-        0x7f0d01c2
-        0x7f0d01c3
-        0x7f0d01c4
-        0x7f0d01c5
-        0x7f0d01c6
-        0x7f0d01c7
+        0x7f0d0219
+        0x7f0d021a
+        0x7f0d021b
+        0x7f0d021c
+        0x7f0d021d
+        0x7f0d021e
+        0x7f0d021f
+        0x7f0d0220
+        0x7f0d0221
+        0x7f0d0222
+        0x7f0d0223
+        0x7f0d0224
     .end array-data
 .end method
 
