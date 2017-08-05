@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecAttributionInfoView$4;->this$0:Lcom/android/keyguard/sec/SecAttributionInfoView;
 
-    # getter for: Lcom/android/keyguard/sec/SecAttributionInfoView;->mLandingPageUrl:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecAttributionInfoView;->access$300(Lcom/android/keyguard/sec/SecAttributionInfoView;)Ljava/lang/String;
 
     move-result-object v0
@@ -54,7 +53,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecAttributionInfoView$4;->this$0:Lcom/android/keyguard/sec/SecAttributionInfoView;
 
-    # getter for: Lcom/android/keyguard/sec/SecAttributionInfoView;->mLandingPageUrl:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecAttributionInfoView;->access$300(Lcom/android/keyguard/sec/SecAttributionInfoView;)Ljava/lang/String;
 
     move-result-object v0
@@ -73,7 +71,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SecAttributionInfoView$4;->this$0:Lcom/android/keyguard/sec/SecAttributionInfoView;
 
-    # getter for: Lcom/android/keyguard/sec/SecAttributionInfoView;->mLandingPageUrl:Ljava/lang/String;
     invoke-static {v1}, Lcom/android/keyguard/sec/SecAttributionInfoView;->access$300(Lcom/android/keyguard/sec/SecAttributionInfoView;)Ljava/lang/String;
 
     move-result-object v1

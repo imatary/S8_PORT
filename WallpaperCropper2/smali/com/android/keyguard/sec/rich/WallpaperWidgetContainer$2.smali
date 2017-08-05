@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer$2;->this$0:Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;
 
-    # getter for: Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;->access$100(Lcom/android/keyguard/sec/rich/WallpaperWidgetContainer;)Landroid/os/Handler;
 
     move-result-object v0

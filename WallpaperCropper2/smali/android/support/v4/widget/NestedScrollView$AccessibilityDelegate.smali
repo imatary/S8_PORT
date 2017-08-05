@@ -46,7 +46,6 @@
 
     move-result-object v1
 
-    # invokes: Landroid/support/v4/widget/NestedScrollView;->getScrollRange()I
     invoke-static {p1}, Landroid/support/v4/widget/NestedScrollView;->access$000(Landroid/support/v4/widget/NestedScrollView;)I
 
     move-result v2
@@ -74,7 +73,6 @@
 
     invoke-virtual {v1, v0}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->setMaxScrollX(I)V
 
-    # invokes: Landroid/support/v4/widget/NestedScrollView;->getScrollRange()I
     invoke-static {p1}, Landroid/support/v4/widget/NestedScrollView;->access$000(Landroid/support/v4/widget/NestedScrollView;)I
 
     move-result v0
@@ -115,7 +113,6 @@
     return-void
 
     :cond_1
-    # invokes: Landroid/support/v4/widget/NestedScrollView;->getScrollRange()I
     invoke-static {p1}, Landroid/support/v4/widget/NestedScrollView;->access$000(Landroid/support/v4/widget/NestedScrollView;)I
 
     move-result v0
@@ -207,7 +204,6 @@
 
     add-int/2addr v0, v1
 
-    # invokes: Landroid/support/v4/widget/NestedScrollView;->getScrollRange()I
     invoke-static {p1}, Landroid/support/v4/widget/NestedScrollView;->access$000(Landroid/support/v4/widget/NestedScrollView;)I
 
     move-result v1

@@ -61,7 +61,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/PasswordTextView$2;->this$0:Lcom/android/keyguard/PasswordTextView;
 
-    # getter for: Lcom/android/keyguard/PasswordTextView;->mResDrawableId:I
     invoke-static {v0}, Lcom/android/keyguard/PasswordTextView;->access$400(Lcom/android/keyguard/PasswordTextView;)I
 
     move-result v0
@@ -81,7 +80,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/PasswordTextView$2;->this$0:Lcom/android/keyguard/PasswordTextView;
 
-    # getter for: Lcom/android/keyguard/PasswordTextView;->mResDrawableId:I
     invoke-static {v0}, Lcom/android/keyguard/PasswordTextView;->access$400(Lcom/android/keyguard/PasswordTextView;)I
 
     move-result v0
@@ -92,7 +90,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/PasswordTextView$2;->this$0:Lcom/android/keyguard/PasswordTextView;
 
-    # getter for: Lcom/android/keyguard/PasswordTextView;->mResDrawableId:I
     invoke-static {v1}, Lcom/android/keyguard/PasswordTextView;->access$400(Lcom/android/keyguard/PasswordTextView;)I
 
     move-result v1

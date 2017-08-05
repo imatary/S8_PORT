@@ -38,7 +38,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardWidgetFrame$1;->this$0:Lcom/android/keyguard/KeyguardWidgetFrame;
 
-    # getter for: Lcom/android/keyguard/KeyguardWidgetFrame;->mPerformAppWidgetSizeUpdateOnBootComplete:Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardWidgetFrame;->access$000(Lcom/android/keyguard/KeyguardWidgetFrame;)Z
 
     move-result v0
@@ -51,12 +50,10 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardWidgetFrame$1;->this$0:Lcom/android/keyguard/KeyguardWidgetFrame;
 
-    # invokes: Lcom/android/keyguard/KeyguardWidgetFrame;->performAppWidgetSizeCallbacksIfNecessary()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardWidgetFrame;->access$100(Lcom/android/keyguard/KeyguardWidgetFrame;)V
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardWidgetFrame$1;->this$0:Lcom/android/keyguard/KeyguardWidgetFrame;
 
-    # setter for: Lcom/android/keyguard/KeyguardWidgetFrame;->mPerformAppWidgetSizeUpdateOnBootComplete:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardWidgetFrame;->access$002(Lcom/android/keyguard/KeyguardWidgetFrame;Z)Z
 
     goto :goto_0

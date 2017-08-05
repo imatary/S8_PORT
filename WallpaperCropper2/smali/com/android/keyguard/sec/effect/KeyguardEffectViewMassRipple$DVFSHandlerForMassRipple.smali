@@ -46,7 +46,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple$DVFSHandlerForMassRipple;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->aquireCpuGpuMaxLock()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->access$400(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;)V
 
     goto :goto_0
@@ -54,7 +53,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple$DVFSHandlerForMassRipple;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->releaseCpuGpuMaxLock()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;->access$500(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassRipple;)V
 
     goto :goto_0

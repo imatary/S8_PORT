@@ -61,7 +61,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSplitClockView$3;->this$0:Lcom/android/keyguard/sec/KeyguardSplitClockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSplitClockView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSplitClockView;->access$300(Lcom/android/keyguard/sec/KeyguardSplitClockView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -75,14 +74,12 @@
     :goto_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSplitClockView$3;->this$0:Lcom/android/keyguard/sec/KeyguardSplitClockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSplitClockView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSplitClockView;->access$300(Lcom/android/keyguard/sec/KeyguardSplitClockView;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardSplitClockView$3;->this$0:Lcom/android/keyguard/sec/KeyguardSplitClockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSplitClockView;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardSplitClockView;->access$300(Lcom/android/keyguard/sec/KeyguardSplitClockView;)Landroid/os/Handler;
 
     move-result-object v1
@@ -98,7 +95,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSplitClockView$3;->this$0:Lcom/android/keyguard/sec/KeyguardSplitClockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSplitClockView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSplitClockView;->access$300(Lcom/android/keyguard/sec/KeyguardSplitClockView;)Landroid/os/Handler;
 
     move-result-object v0

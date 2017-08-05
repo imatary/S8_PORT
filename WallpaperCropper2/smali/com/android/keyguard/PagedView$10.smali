@@ -101,7 +101,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/PagedView$10;->this$0:Lcom/android/keyguard/PagedView;
 
-    # getter for: Lcom/android/keyguard/PagedView;->FLING_TO_DELETE_FADE_OUT_DURATION:I
     invoke-static {v2}, Lcom/android/keyguard/PagedView;->access$900(Lcom/android/keyguard/PagedView;)I
 
     move-result v2

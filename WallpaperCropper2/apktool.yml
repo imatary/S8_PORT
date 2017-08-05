@@ -3,9 +3,8 @@ apkFileName: WallpaperCropper2.apk
 compressionType: false
 doNotCompress:
 - arsc
+- webp
 - qmg
-- res/drawable-xxhdpi-v4/homescreen_btn_bg.9.qmg
-- res/drawable-xxhdpi-v4/wallpaper_setting_btn_set.9.qmg
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
@@ -21,7 +20,7 @@ usesFramework:
   ids:
   - 1
   tag: null
-version: 2.2.2
+version: 2.2.4
 versionInfo:
-  versionCode: '304104100'
-  versionName: 3.0.41
+  versionCode: '304804100'
+  versionName: 3.0.48

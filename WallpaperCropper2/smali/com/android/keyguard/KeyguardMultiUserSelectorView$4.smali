@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardMultiUserSelectorView$4;->val$avatar:Lcom/android/keyguard/KeyguardMultiUserAvatar;
 
-    # setter for: Lcom/android/keyguard/KeyguardMultiUserSelectorView;->mActiveUserAvatar:Lcom/android/keyguard/KeyguardMultiUserAvatar;
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardMultiUserSelectorView;->access$002(Lcom/android/keyguard/KeyguardMultiUserSelectorView;Lcom/android/keyguard/KeyguardMultiUserAvatar;)Lcom/android/keyguard/KeyguardMultiUserAvatar;
 
     :try_start_0

@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->handleDateOnSettngsChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$000(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)V
 
     goto :goto_0
@@ -52,7 +51,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->handleShowClockDateOnSettngsChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$100(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)V
 
     goto :goto_0
@@ -71,7 +69,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->setClockContentDesciption()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$200(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)V
 
     goto :goto_0

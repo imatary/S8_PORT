@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$16;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mSecurityTextViewDisplay:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$300(Lcom/android/keyguard/KeyguardPatternView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -52,7 +51,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$16;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mSecurityTextViewDisplay:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$300(Lcom/android/keyguard/KeyguardPatternView;)Landroid/widget/TextView;
 
     move-result-object v0

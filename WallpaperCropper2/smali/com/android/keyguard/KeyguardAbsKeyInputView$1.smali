@@ -65,7 +65,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$1;->this$0:Lcom/android/keyguard/KeyguardAbsKeyInputView;
 
-    # getter for: Lcom/android/keyguard/KeyguardAbsKeyInputView;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->access$000(Lcom/android/keyguard/KeyguardAbsKeyInputView;)Landroid/content/Context;
 
     move-result-object v3

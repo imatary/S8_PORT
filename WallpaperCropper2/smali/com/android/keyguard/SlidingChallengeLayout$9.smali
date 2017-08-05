@@ -42,7 +42,6 @@
 
     iget-boolean v1, p0, Lcom/android/keyguard/SlidingChallengeLayout$9;->val$show:Z
 
-    # invokes: Lcom/android/keyguard/SlidingChallengeLayout;->onFadeEnd(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/SlidingChallengeLayout;->access$200(Lcom/android/keyguard/SlidingChallengeLayout;Z)V
 
     return-void
@@ -55,7 +54,6 @@
 
     iget-boolean v1, p0, Lcom/android/keyguard/SlidingChallengeLayout$9;->val$show:Z
 
-    # invokes: Lcom/android/keyguard/SlidingChallengeLayout;->onFadeStart(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/SlidingChallengeLayout;->access$100(Lcom/android/keyguard/SlidingChallengeLayout;Z)V
 
     return-void

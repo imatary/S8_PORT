@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$1;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # invokes: Lcom/android/keyguard/sec/AdaptiveEventManager;->handleEmergencyUpdate()V
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$000(Lcom/android/keyguard/sec/AdaptiveEventManager;)V
 
     goto :goto_0
@@ -52,7 +51,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$1;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
-    # invokes: Lcom/android/keyguard/sec/AdaptiveEventManager;->handlePedoUpdate()V
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventManager;->access$100(Lcom/android/keyguard/sec/AdaptiveEventManager;)V
 
     goto :goto_0

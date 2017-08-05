@@ -38,7 +38,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView$3;->this$0:Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
-    # getter for: Lcom/android/keyguard/KeyguardCarrierPasswordView;->mBackupPin:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardCarrierPasswordView;->access$300(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -47,7 +46,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView$3;->this$0:Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
-    # getter for: Lcom/android/keyguard/KeyguardCarrierPasswordView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardCarrierPasswordView;->access$200(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Lcom/android/keyguard/SecurityMessageDisplay;
 
     move-result-object v0
@@ -68,7 +66,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView$3;->this$0:Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
-    # getter for: Lcom/android/keyguard/KeyguardCarrierPasswordView;->countryCode:Ljava/lang/String;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardCarrierPasswordView;->access$100(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Ljava/lang/String;
 
     move-result-object v1
@@ -83,7 +80,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView$3;->this$0:Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
-    # getter for: Lcom/android/keyguard/KeyguardCarrierPasswordView;->countryCode:Ljava/lang/String;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardCarrierPasswordView;->access$100(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Ljava/lang/String;
 
     move-result-object v1
@@ -96,7 +92,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView$3;->this$0:Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
-    # getter for: Lcom/android/keyguard/KeyguardCarrierPasswordView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardCarrierPasswordView;->access$200(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Lcom/android/keyguard/SecurityMessageDisplay;
 
     move-result-object v0
@@ -111,7 +106,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView$3;->this$0:Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
-    # getter for: Lcom/android/keyguard/KeyguardCarrierPasswordView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardCarrierPasswordView;->access$200(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Lcom/android/keyguard/SecurityMessageDisplay;
 
     move-result-object v0
@@ -125,7 +119,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView$3;->this$0:Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
-    # getter for: Lcom/android/keyguard/KeyguardCarrierPasswordView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardCarrierPasswordView;->access$200(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Lcom/android/keyguard/SecurityMessageDisplay;
 
     move-result-object v0

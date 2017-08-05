@@ -1464,7 +1464,6 @@
 
     invoke-virtual {v0, v6, v7, v8, v9}, Lcom/android/keyguard/PasswordTextView$CharState;->startRemoveAnimation(JJ)V
 
-    # invokes: Lcom/android/keyguard/PasswordTextView$CharState;->removeDotSwapCallbacks()V
     invoke-static {v0}, Lcom/android/keyguard/PasswordTextView$CharState;->access$600(Lcom/android/keyguard/PasswordTextView$CharState;)V
 
     goto :goto_2

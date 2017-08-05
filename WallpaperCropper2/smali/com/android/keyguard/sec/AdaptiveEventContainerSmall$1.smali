@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall$1;->this$0:Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;
 
-    # invokes: Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->handleEmergencyUpdate()V
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->access$000(Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;)V
 
     goto :goto_0
@@ -52,7 +51,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall$1;->this$0:Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;
 
-    # invokes: Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->handlePedoUpdate()V
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->access$100(Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;)V
 
     goto :goto_0
@@ -64,7 +62,6 @@
 
     check-cast v0, Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;
 
-    # invokes: Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->handleWeatherUpdate(Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;)V
     invoke-static {v1, v0}, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->access$200(Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;Lcom/android/keyguard/sec/AdaptiveEventManager$WeatherInfo;)V
 
     goto :goto_0

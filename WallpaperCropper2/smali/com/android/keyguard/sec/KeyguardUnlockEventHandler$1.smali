@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardUnlockEventHandler$1;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;->mCallback:Lcom/android/keyguard/sec/KeyguardUnlockEventHandler$UnlockCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;->access$000(Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;)Lcom/android/keyguard/sec/KeyguardUnlockEventHandler$UnlockCallback;
 
     move-result-object v0
@@ -52,7 +51,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardUnlockEventHandler$1;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;->mCallback:Lcom/android/keyguard/sec/KeyguardUnlockEventHandler$UnlockCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;->access$000(Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;)Lcom/android/keyguard/sec/KeyguardUnlockEventHandler$UnlockCallback;
 
     move-result-object v0
@@ -61,12 +59,10 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardUnlockEventHandler$1;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;->launch()V
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;->access$100(Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;)V
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardUnlockEventHandler$1;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;->mCallback:Lcom/android/keyguard/sec/KeyguardUnlockEventHandler$UnlockCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;->access$000(Lcom/android/keyguard/sec/KeyguardUnlockEventHandler;)Lcom/android/keyguard/sec/KeyguardUnlockEventHandler$UnlockCallback;
 
     move-result-object v0

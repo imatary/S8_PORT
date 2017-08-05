@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardEmergencyDummyCircle$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardEmergencyDummyCircle;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardEmergencyDummyCircle;->updateEmergencyCallButton()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardEmergencyDummyCircle;->access$000(Lcom/android/keyguard/sec/SecKeyguardEmergencyDummyCircle;)V
 
     return-void
@@ -47,7 +46,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardEmergencyDummyCircle$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardEmergencyDummyCircle;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardEmergencyDummyCircle;->updateEmergencyCallButton()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardEmergencyDummyCircle;->access$000(Lcom/android/keyguard/sec/SecKeyguardEmergencyDummyCircle;)V
 
     return-void

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->mWeatherContainer:Landroid/widget/LinearLayout;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->access$2100(Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;)Landroid/widget/LinearLayout;
 
     move-result-object v0
@@ -53,7 +52,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->mSmallWeather:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->access$500(Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;)Landroid/view/View;
 
     move-result-object v0
@@ -62,14 +60,12 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->mWeatherContainer:Landroid/widget/LinearLayout;
     invoke-static {v0}, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->access$2100(Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall$4;->this$0:Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->mSmallWeather:Landroid/view/View;
     invoke-static {v1}, Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;->access$500(Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;)Landroid/view/View;
 
     move-result-object v1

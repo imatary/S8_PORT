@@ -45,7 +45,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardBottomAreaView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardBottomAreaView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardBottomAreaView;->mShortcutReleaseMessageDisplay:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardBottomAreaView;->access$000(Lcom/android/keyguard/sec/SecKeyguardBottomAreaView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -54,7 +53,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardBottomAreaView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardBottomAreaView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardBottomAreaView;->mShortcutReleaseMessageDisplay:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardBottomAreaView;->access$000(Lcom/android/keyguard/sec/SecKeyguardBottomAreaView;)Landroid/widget/TextView;
 
     move-result-object v0

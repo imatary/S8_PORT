@@ -41,7 +41,6 @@
 
     iget-object v0, v0, Lcom/android/keyguard/KeyguardAccountView$5;->this$0:Lcom/android/keyguard/KeyguardAccountView;
 
-    # invokes: Lcom/android/keyguard/KeyguardAccountView;->getProgressDialog()Landroid/app/Dialog;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardAccountView;->access$900(Lcom/android/keyguard/KeyguardAccountView;)Landroid/app/Dialog;
 
     move-result-object v0

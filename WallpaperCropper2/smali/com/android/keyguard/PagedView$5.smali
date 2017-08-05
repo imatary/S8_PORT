@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/PagedView$5;->this$0:Lcom/android/keyguard/PagedView;
 
-    # getter for: Lcom/android/keyguard/PagedView;->mDeleteDropTarget:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/PagedView;->access$500(Lcom/android/keyguard/PagedView;)Landroid/view/View;
 
     move-result-object v0
@@ -49,7 +48,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/PagedView$5;->this$0:Lcom/android/keyguard/PagedView;
 
-    # getter for: Lcom/android/keyguard/PagedView;->mDeleteDropTarget:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/PagedView;->access$500(Lcom/android/keyguard/PagedView;)Landroid/view/View;
 
     move-result-object v0
@@ -60,7 +58,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/PagedView$5;->this$0:Lcom/android/keyguard/PagedView;
 
-    # getter for: Lcom/android/keyguard/PagedView;->mDeleteDropTarget:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/PagedView;->access$500(Lcom/android/keyguard/PagedView;)Landroid/view/View;
 
     move-result-object v0
@@ -77,7 +74,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/PagedView$5;->this$0:Lcom/android/keyguard/PagedView;
 
-    # getter for: Lcom/android/keyguard/PagedView;->REORDERING_DELETE_DROP_TARGET_FADE_DURATION:J
     invoke-static {v1}, Lcom/android/keyguard/PagedView;->access$600(Lcom/android/keyguard/PagedView;)J
 
     move-result-wide v2

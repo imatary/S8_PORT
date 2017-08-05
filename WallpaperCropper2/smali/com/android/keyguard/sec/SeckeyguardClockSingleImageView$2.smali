@@ -71,7 +71,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$2;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$300(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -85,14 +84,12 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$2;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$300(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$2;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$300(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)Landroid/os/Handler;
 
     move-result-object v1
@@ -113,7 +110,6 @@
     :cond_3
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$2;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$300(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -127,14 +123,12 @@
     :goto_2
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$2;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$300(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$2;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$300(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)Landroid/os/Handler;
 
     move-result-object v1
@@ -150,7 +144,6 @@
     :cond_4
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$2;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$300(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -186,7 +179,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$2;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$300(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -200,14 +192,12 @@
     :goto_3
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$2;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$300(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$2;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$300(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)Landroid/os/Handler;
 
     move-result-object v1
@@ -223,7 +213,6 @@
     :cond_6
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$2;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$300(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -235,7 +224,6 @@
     :cond_7
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView$2;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;->access$300(Lcom/android/keyguard/sec/SeckeyguardClockSingleImageView;)Landroid/os/Handler;
 
     move-result-object v0

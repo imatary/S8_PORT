@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$12;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionLockTextView:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1300(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -52,7 +51,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUniversalLockView$12;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDirectionLockTextView:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$1300(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/widget/TextView;
 
     move-result-object v0

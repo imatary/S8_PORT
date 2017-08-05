@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing$3;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;)Landroid/media/SoundPool;
 
     move-result-object v0
@@ -51,7 +50,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing$3;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;->releaseSoundRunnable:Ljava/lang/Runnable;
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;->access$102(Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;Ljava/lang/Runnable;)Ljava/lang/Runnable;
 
     return-void
@@ -65,7 +63,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing$3;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;)Landroid/media/SoundPool;
 
     move-result-object v0
@@ -74,7 +71,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing$3;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;->access$002(Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantRing;Landroid/media/SoundPool;)Landroid/media/SoundPool;
 
     goto :goto_0

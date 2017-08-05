@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecAttributionInfoView$5;->this$0:Lcom/android/keyguard/sec/SecAttributionInfoView;
 
-    # invokes: Lcom/android/keyguard/sec/SecAttributionInfoView;->updateOrientation()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecAttributionInfoView;->access$400(Lcom/android/keyguard/sec/SecAttributionInfoView;)V
 
     return-void

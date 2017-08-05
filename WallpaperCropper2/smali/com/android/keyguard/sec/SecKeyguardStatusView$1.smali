@@ -44,7 +44,6 @@
     :sswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardStatusView;->handleMyProfileSettngsChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$000(Lcom/android/keyguard/sec/SecKeyguardStatusView;)V
 
     goto :goto_0
@@ -52,7 +51,6 @@
     :sswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardStatusView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardStatusView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardStatusView;->updateStatusView()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardStatusView;->access$100(Lcom/android/keyguard/sec/SecKeyguardStatusView;)V
 
     goto :goto_0

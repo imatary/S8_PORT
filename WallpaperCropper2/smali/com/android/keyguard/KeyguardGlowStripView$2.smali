@@ -49,7 +49,6 @@
 
     move-result v0
 
-    # setter for: Lcom/android/keyguard/KeyguardGlowStripView;->mAnimationProgress:F
     invoke-static {v1, v0}, Lcom/android/keyguard/KeyguardGlowStripView;->access$102(Lcom/android/keyguard/KeyguardGlowStripView;F)F
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardGlowStripView$2;->this$0:Lcom/android/keyguard/KeyguardGlowStripView;

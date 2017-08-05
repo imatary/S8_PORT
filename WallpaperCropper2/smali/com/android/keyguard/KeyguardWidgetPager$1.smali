@@ -43,7 +43,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardWidgetPager$1;->this$0:Lcom/android/keyguard/KeyguardWidgetPager;
 
-    # getter for: Lcom/android/keyguard/KeyguardWidgetPager;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardWidgetPager;->access$000(Lcom/android/keyguard/KeyguardWidgetPager;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v0

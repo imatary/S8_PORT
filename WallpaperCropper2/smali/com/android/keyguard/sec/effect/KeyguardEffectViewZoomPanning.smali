@@ -1289,7 +1289,6 @@
     :cond_7
     iget-object v1, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewZoomPanning;->mMovableImageView:Lcom/android/keyguard/sec/effect/KeyguardEffectViewZoomPanning$MovingImageView;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewZoomPanning$MovingImageView;->updateFaceList()V
     invoke-static {v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewZoomPanning$MovingImageView;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewZoomPanning$MovingImageView;)V
 
     iget-object v1, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewZoomPanning;->mMovableImageView:Lcom/android/keyguard/sec/effect/KeyguardEffectViewZoomPanning$MovingImageView;
@@ -1298,7 +1297,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewZoomPanning;->mMovableImageView:Lcom/android/keyguard/sec/effect/KeyguardEffectViewZoomPanning$MovingImageView;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewZoomPanning$MovingImageView;->updateGoalList()V
     invoke-static {v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewZoomPanning$MovingImageView;->access$100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewZoomPanning$MovingImageView;)V
 
     goto :goto_1

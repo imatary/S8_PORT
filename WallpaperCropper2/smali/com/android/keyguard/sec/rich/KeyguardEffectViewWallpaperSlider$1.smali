@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider$1;->this$0:Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider;
 
-    # invokes: Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider;->startSlideShow()V
     invoke-static {v0}, Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider;->access$000(Lcom/android/keyguard/sec/rich/KeyguardEffectViewWallpaperSlider;)V
 
     goto :goto_0

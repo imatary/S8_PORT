@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewAbstractTile$4;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewAbstractTile;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewAbstractTile;->fadeOutSound()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewAbstractTile;->access$200(Lcom/android/keyguard/sec/effect/KeyguardEffectViewAbstractTile;)V
 
     return-void

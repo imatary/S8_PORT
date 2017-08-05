@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/EmergencyButton$1;->this$0:Lcom/android/keyguard/EmergencyButton;
 
-    # invokes: Lcom/android/keyguard/EmergencyButton;->updateEmergencyCallButton()V
     invoke-static {v0}, Lcom/android/keyguard/EmergencyButton;->access$000(Lcom/android/keyguard/EmergencyButton;)V
 
     return-void
@@ -47,7 +46,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/EmergencyButton$1;->this$0:Lcom/android/keyguard/EmergencyButton;
 
-    # invokes: Lcom/android/keyguard/EmergencyButton;->updateEmergencyCallButton()V
     invoke-static {v0}, Lcom/android/keyguard/EmergencyButton;->access$000(Lcom/android/keyguard/EmergencyButton;)V
 
     return-void

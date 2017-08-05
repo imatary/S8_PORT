@@ -326,7 +326,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/opentheme/common/OpenThemeSurfaceView$FrameDrawThread;->this$0:Lcom/android/keyguard/sec/opentheme/common/OpenThemeSurfaceView;
 
-    # getter for: Lcom/android/keyguard/sec/opentheme/common/OpenThemeSurfaceView;->TAG:Ljava/lang/String;
     invoke-static {v2}, Lcom/android/keyguard/sec/opentheme/common/OpenThemeSurfaceView;->access$000(Lcom/android/keyguard/sec/opentheme/common/OpenThemeSurfaceView;)Ljava/lang/String;
 
     move-result-object v2

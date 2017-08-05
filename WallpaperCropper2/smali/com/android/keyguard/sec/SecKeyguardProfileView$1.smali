@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardProfileView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardProfileView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardProfileView;->updateProfile()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardProfileView;->access$000(Lcom/android/keyguard/sec/SecKeyguardProfileView;)V
 
     goto :goto_0
@@ -52,7 +51,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardProfileView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardProfileView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardProfileView;->handleDateOnSettngsChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardProfileView;->access$100(Lcom/android/keyguard/sec/SecKeyguardProfileView;)V
 
     goto :goto_0
@@ -60,7 +58,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardProfileView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardProfileView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardProfileView;->handleClockOnSettngsChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardProfileView;->access$200(Lcom/android/keyguard/sec/SecKeyguardProfileView;)V
 
     goto :goto_0

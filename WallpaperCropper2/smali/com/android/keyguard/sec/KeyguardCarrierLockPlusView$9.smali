@@ -45,7 +45,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView$9;->this$0:Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mPhoneNumber:Ljava/lang/String;
     invoke-static {v3}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$500(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Ljava/lang/String;
 
     move-result-object v3
@@ -65,7 +64,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView$9;->this$0:Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$600(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Landroid/content/Context;
 
     move-result-object v1

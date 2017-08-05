@@ -45,7 +45,6 @@
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->handleTimeout(I)V
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$800(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;I)V
 
     return-void

@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockDualImageView$1;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;
 
-    # invokes: Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;->handleDateOnSettngsChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;->access$000(Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;)V
 
     goto :goto_0
@@ -52,7 +51,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockDualImageView$1;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;
 
-    # invokes: Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;->handleShowClockDateOnSettngsChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;->access$100(Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;)V
 
     goto :goto_0
@@ -71,7 +69,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SeckeyguardClockDualImageView$1;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;
 
-    # invokes: Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;->setClockContentDesciption()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;->access$200(Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;)V
 
     goto :goto_0

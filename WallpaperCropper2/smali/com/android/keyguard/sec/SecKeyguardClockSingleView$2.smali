@@ -40,7 +40,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$2;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->setClockContentDesciption()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$200(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)V
 
     return-void
@@ -51,7 +50,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$2;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->onScreenTurnedOff()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$400(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)V
 
     return-void
@@ -62,7 +60,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$2;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->onScreenTurnedOn()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$300(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)V
 
     return-void
@@ -73,7 +70,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$2;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->setClockContentDesciption()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$200(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)V
 
     return-void

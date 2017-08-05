@@ -44,7 +44,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/KeyguardUniversalLockView$14;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->WHITE_LOCKSCREEN_WALLPAPER:Ljava/lang/String;
     invoke-static {v2}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$4200(Lcom/android/keyguard/KeyguardUniversalLockView;)Ljava/lang/String;
 
     move-result-object v2
@@ -100,7 +99,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/KeyguardUniversalLockView$14;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$4300(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/content/Context;
 
     move-result-object v3
@@ -111,7 +109,6 @@
 
     iget-object v4, p0, Lcom/android/keyguard/KeyguardUniversalLockView$14;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->WHITE_LOCKSCREEN_WALLPAPER:Ljava/lang/String;
     invoke-static {v4}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$4200(Lcom/android/keyguard/KeyguardUniversalLockView;)Ljava/lang/String;
 
     move-result-object v4

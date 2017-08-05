@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles$5;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->fadeOutSound()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;->access$600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewSparklingBubbles;)V
 
     return-void

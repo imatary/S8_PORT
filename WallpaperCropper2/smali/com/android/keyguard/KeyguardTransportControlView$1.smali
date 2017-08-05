@@ -83,7 +83,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$1;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
-    # invokes: Lcom/android/keyguard/KeyguardTransportControlView;->updatePlayPauseState(I)V
     invoke-static {v0, p1}, Lcom/android/keyguard/KeyguardTransportControlView;->access$000(Lcom/android/keyguard/KeyguardTransportControlView;I)V
 
     return-void
@@ -94,7 +93,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$1;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
-    # invokes: Lcom/android/keyguard/KeyguardTransportControlView;->updatePlayPauseState(I)V
     invoke-static {v0, p1}, Lcom/android/keyguard/KeyguardTransportControlView;->access$000(Lcom/android/keyguard/KeyguardTransportControlView;I)V
 
     const-string/jumbo v0, "TransportControlView"
@@ -159,7 +157,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardTransportControlView$1;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
-    # getter for: Lcom/android/keyguard/KeyguardTransportControlView;->mUpdateSeekBars:Lcom/android/keyguard/KeyguardTransportControlView$UpdateSeekBarRunnable;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardTransportControlView;->access$100(Lcom/android/keyguard/KeyguardTransportControlView;)Lcom/android/keyguard/KeyguardTransportControlView$UpdateSeekBarRunnable;
 
     move-result-object v1
@@ -168,7 +165,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$1;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
-    # getter for: Lcom/android/keyguard/KeyguardTransportControlView;->mTransientSeek:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardTransportControlView;->access$200(Lcom/android/keyguard/KeyguardTransportControlView;)Landroid/view/View;
 
     move-result-object v0
@@ -186,12 +182,10 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$1;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
-    # getter for: Lcom/android/keyguard/KeyguardTransportControlView;->mCurrentPlayState:I
     invoke-static {v0}, Lcom/android/keyguard/KeyguardTransportControlView;->access$300(Lcom/android/keyguard/KeyguardTransportControlView;)I
 
     move-result v0
 
-    # invokes: Lcom/android/keyguard/KeyguardTransportControlView;->playbackPositionShouldMove(I)Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardTransportControlView;->access$400(I)Z
 
     move-result v0
@@ -202,7 +196,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardTransportControlView$1;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
-    # getter for: Lcom/android/keyguard/KeyguardTransportControlView;->mUpdateSeekBars:Lcom/android/keyguard/KeyguardTransportControlView$UpdateSeekBarRunnable;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardTransportControlView;->access$100(Lcom/android/keyguard/KeyguardTransportControlView;)Lcom/android/keyguard/KeyguardTransportControlView$UpdateSeekBarRunnable;
 
     move-result-object v1
@@ -225,7 +218,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$1;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
-    # invokes: Lcom/android/keyguard/KeyguardTransportControlView;->updateTransportControls(I)V
     invoke-static {v0, p1}, Lcom/android/keyguard/KeyguardTransportControlView;->access$500(Lcom/android/keyguard/KeyguardTransportControlView;I)V
 
     return-void

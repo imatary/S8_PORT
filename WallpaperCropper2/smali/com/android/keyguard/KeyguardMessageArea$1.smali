@@ -69,7 +69,6 @@
 
     const/4 v2, 0x1
 
-    # invokes: Lcom/android/keyguard/KeyguardMessageArea;->hideMessage(IZ)V
     invoke-static {v0, v1, v2}, Lcom/android/keyguard/KeyguardMessageArea;->access$000(Lcom/android/keyguard/KeyguardMessageArea;IZ)V
 
     goto :goto_0

@@ -81,12 +81,10 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$4;->this$0:Lcom/android/keyguard/KeyguardAbsKeyInputView;
 
-    # operator++ for: Lcom/android/keyguard/KeyguardAbsKeyInputView;->mPasswordTimeTick:I
     invoke-static {v0}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->access$108(Lcom/android/keyguard/KeyguardAbsKeyInputView;)I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$4;->this$0:Lcom/android/keyguard/KeyguardAbsKeyInputView;
 
-    # getter for: Lcom/android/keyguard/KeyguardAbsKeyInputView;->mPasswordTimeTick:I
     invoke-static {v0}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->access$100(Lcom/android/keyguard/KeyguardAbsKeyInputView;)I
 
     move-result v0

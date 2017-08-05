@@ -29,7 +29,7 @@
     <string name="processing">Processant…</string>
     <string name="request_permission_rationale">No es pot utilitzar %1$s. Toqui AJUSTAMENTS i, a continuació, autoritzi el permís de %2$s i torni-ho a intentar.</string>
     <string name="right_image">Dreta</string>
-    <string name="set_wallpaper_docomo_text_gui">"Aquesta imatge es mostrarà a les pantalles d'inici i de bloqueig."</string>
+    <string name="set_wallpaper_docomo_text_gui">"Aquesta imatge es mostrarà a les Pantalles d'inici i de bloqueig."</string>
     <string name="settings">Ajustaments</string>
     <string name="speak_button">Botó</string>
     <string name="sview_window">Finestra S View</string>

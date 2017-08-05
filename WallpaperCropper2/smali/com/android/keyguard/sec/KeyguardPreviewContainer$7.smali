@@ -53,14 +53,12 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mPreviewInflater:Lcom/android/keyguard/sec/KeyguardPreviewInflater;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$400(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Lcom/android/keyguard/sec/KeyguardPreviewInflater;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->getCameraIntent()Landroid/content/Intent;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$600(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Landroid/content/Intent;
 
     move-result-object v1
@@ -95,7 +93,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mCameraPreview:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$700(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Landroid/view/View;
 
     move-result-object v0
@@ -105,12 +102,10 @@
     :goto_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mCameraPreview:Landroid/view/View;
     invoke-static {v0, p1}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$702(Lcom/android/keyguard/sec/KeyguardPreviewContainer;Landroid/view/View;)Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mCameraPreview:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$700(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Landroid/view/View;
 
     move-result-object v0
@@ -121,7 +116,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mCameraPreview:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$700(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Landroid/view/View;
 
     move-result-object v0
@@ -132,7 +126,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mCameraPreview:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$700(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Landroid/view/View;
 
     move-result-object v0
@@ -147,7 +140,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mDisplay:Landroid/view/Display;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$900(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Landroid/view/Display;
 
     move-result-object v1
@@ -156,12 +148,10 @@
 
     move-result v1
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mCameraRotation:I
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$802(Lcom/android/keyguard/sec/KeyguardPreviewContainer;I)I
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mCameraRotation:I
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$800(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)I
 
     move-result v0
@@ -173,7 +163,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mCameraPreview:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$700(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Landroid/view/View;
 
     move-result-object v0
@@ -195,7 +184,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mCameraPreview:Landroid/view/View;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$700(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Landroid/view/View;
 
     move-result-object v1
@@ -216,7 +204,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mCameraRotation:I
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$800(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)I
 
     move-result v2
@@ -244,7 +231,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mCameraPreview:Landroid/view/View;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$700(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Landroid/view/View;
 
     move-result-object v1
@@ -256,7 +242,6 @@
     :cond_3
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$7;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mCameraRotation:I
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$800(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)I
 
     move-result v0

@@ -78,7 +78,6 @@
 .method public onSimStateChanged(IILcom/android/internal/telephony/IccCardConstants$State;)V
     .locals 1
 
-    # setter for: Lcom/android/keyguard/CarrierText;->mSimState:Lcom/android/internal/telephony/IccCardConstants$State;
     invoke-static {p3}, Lcom/android/keyguard/CarrierText;->access$002(Lcom/android/internal/telephony/IccCardConstants$State;)Lcom/android/internal/telephony/IccCardConstants$State;
 
     iget-object v0, p0, Lcom/android/keyguard/CarrierText$1;->this$0:Lcom/android/keyguard/CarrierText;

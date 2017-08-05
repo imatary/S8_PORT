@@ -41,7 +41,6 @@
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardBackupPINView;->enableClipping(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/KeyguardBackupPINView;->access$000(Lcom/android/keyguard/sec/KeyguardBackupPINView;Z)V
 
     return-void

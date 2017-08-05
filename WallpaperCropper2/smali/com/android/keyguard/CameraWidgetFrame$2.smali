@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/CameraWidgetFrame$2;->this$0:Lcom/android/keyguard/CameraWidgetFrame;
 
-    # getter for: Lcom/android/keyguard/CameraWidgetFrame;->mTransitioning:Z
     invoke-static {v0}, Lcom/android/keyguard/CameraWidgetFrame;->access$100(Lcom/android/keyguard/CameraWidgetFrame;)Z
 
     move-result v0
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/CameraWidgetFrame$2;->this$0:Lcom/android/keyguard/CameraWidgetFrame;
 
-    # getter for: Lcom/android/keyguard/CameraWidgetFrame;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/CameraWidgetFrame;->access$200(Lcom/android/keyguard/CameraWidgetFrame;)Landroid/os/Handler;
 
     move-result-object v0
@@ -68,10 +66,8 @@
 
     move-result-wide v2
 
-    # setter for: Lcom/android/keyguard/CameraWidgetFrame;->mLaunchCameraStart:J
     invoke-static {v1, v2, v3}, Lcom/android/keyguard/CameraWidgetFrame;->access$302(Lcom/android/keyguard/CameraWidgetFrame;J)J
 
-    # getter for: Lcom/android/keyguard/CameraWidgetFrame;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/CameraWidgetFrame;->access$400()Ljava/lang/String;
 
     move-result-object v1
@@ -88,7 +84,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/CameraWidgetFrame$2;->this$0:Lcom/android/keyguard/CameraWidgetFrame;
 
-    # getter for: Lcom/android/keyguard/CameraWidgetFrame;->mLaunchCameraStart:J
     invoke-static {v3}, Lcom/android/keyguard/CameraWidgetFrame;->access$300(Lcom/android/keyguard/CameraWidgetFrame;)J
 
     move-result-wide v4
@@ -105,14 +100,12 @@
 
     iget-object v1, p0, Lcom/android/keyguard/CameraWidgetFrame$2;->this$0:Lcom/android/keyguard/CameraWidgetFrame;
 
-    # getter for: Lcom/android/keyguard/CameraWidgetFrame;->mActivityLauncher:Lcom/android/keyguard/KeyguardActivityLauncher;
     invoke-static {v1}, Lcom/android/keyguard/CameraWidgetFrame;->access$600(Lcom/android/keyguard/CameraWidgetFrame;)Lcom/android/keyguard/KeyguardActivityLauncher;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/android/keyguard/CameraWidgetFrame$2;->this$0:Lcom/android/keyguard/CameraWidgetFrame;
 
-    # getter for: Lcom/android/keyguard/CameraWidgetFrame;->mSecureCameraActivityStartedRunnable:Ljava/lang/Runnable;
     invoke-static {v2}, Lcom/android/keyguard/CameraWidgetFrame;->access$500(Lcom/android/keyguard/CameraWidgetFrame;)Ljava/lang/Runnable;
 
     move-result-object v2

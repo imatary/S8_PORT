@@ -68,12 +68,10 @@
 
     move-result v1
 
-    # setter for: Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->mServiceState:I
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->access$102(Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;I)I
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView$2;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->updateEmergencyCallButton()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->access$000(Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;)V
 
     return-void

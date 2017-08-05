@@ -38,7 +38,6 @@
 
     if-nez p1, :cond_0
 
-    # setter for: Lcom/android/keyguard/KeyguardMessageArea;->mKeyguardShowing:Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardMessageArea;->access$702(Z)Z
 
     :goto_0
@@ -47,7 +46,6 @@
     :cond_0
     const/4 v0, 0x1
 
-    # setter for: Lcom/android/keyguard/KeyguardMessageArea;->mKeyguardShowing:Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardMessageArea;->access$702(Z)Z
 
     goto :goto_0
@@ -72,7 +70,6 @@
     move v0, v2
 
     :goto_0
-    # setter for: Lcom/android/keyguard/KeyguardMessageArea;->mShowingBatteryInfo:Z
     invoke-static {v3, v0}, Lcom/android/keyguard/KeyguardMessageArea;->access$402(Lcom/android/keyguard/KeyguardMessageArea;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$3;->this$0:Lcom/android/keyguard/KeyguardMessageArea;
@@ -87,14 +84,12 @@
     move v1, v2
 
     :goto_1
-    # setter for: Lcom/android/keyguard/KeyguardMessageArea;->mCharging:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardMessageArea;->access$502(Lcom/android/keyguard/KeyguardMessageArea;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$3;->this$0:Lcom/android/keyguard/KeyguardMessageArea;
 
     iget v1, p1, Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;->level:I
 
-    # setter for: Lcom/android/keyguard/KeyguardMessageArea;->mBatteryLevel:I
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardMessageArea;->access$602(Lcom/android/keyguard/KeyguardMessageArea;I)I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$3;->this$0:Lcom/android/keyguard/KeyguardMessageArea;
@@ -189,7 +184,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/KeyguardMessageArea$3;->this$0:Lcom/android/keyguard/KeyguardMessageArea;
 
-    # getter for: Lcom/android/keyguard/KeyguardMessageArea;->mCharging:Z
     invoke-static {v2}, Lcom/android/keyguard/KeyguardMessageArea;->access$500(Lcom/android/keyguard/KeyguardMessageArea;)Z
 
     move-result v2
@@ -212,7 +206,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$3;->this$0:Lcom/android/keyguard/KeyguardMessageArea;
 
-    # getter for: Lcom/android/keyguard/KeyguardMessageArea;->mCharging:Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardMessageArea;->access$500(Lcom/android/keyguard/KeyguardMessageArea;)Z
 
     move-result v0

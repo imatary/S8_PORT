@@ -76,7 +76,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView$1;->this$0:Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$000(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -85,7 +84,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView$1;->this$0:Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$100(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v0

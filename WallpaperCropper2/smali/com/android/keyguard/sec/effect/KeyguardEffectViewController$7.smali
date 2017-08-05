@@ -44,7 +44,6 @@
     :sswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$7;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1300(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/content/Context;
 
     move-result-object v0
@@ -70,7 +69,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$7;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -84,7 +82,6 @@
     :goto_1
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$7;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0
@@ -96,7 +93,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$7;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$1600(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)Landroid/os/Handler;
 
     move-result-object v0

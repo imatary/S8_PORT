@@ -38,7 +38,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$7;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignView:Lcom/android/internal/widget/SignView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$200(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/widget/SignView;
 
     move-result-object v0
@@ -47,7 +46,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$7;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$1000(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v0
@@ -58,7 +56,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$7;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mGuideText:Ljava/lang/String;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$1100(Lcom/android/keyguard/sec/KeyguardSignatureView;)Ljava/lang/String;
 
     move-result-object v1
@@ -83,7 +80,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$7;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$900(Lcom/android/keyguard/sec/KeyguardSignatureView;)Landroid/content/Context;
 
     move-result-object v2

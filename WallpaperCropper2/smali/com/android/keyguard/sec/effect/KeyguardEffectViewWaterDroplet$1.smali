@@ -53,7 +53,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->mKeyguardWindowCallback:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$KeyguardWindowCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;)Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$KeyguardWindowCallback;
 
     move-result-object v0
@@ -68,7 +67,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->mKeyguardWindowCallback:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$KeyguardWindowCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;)Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$KeyguardWindowCallback;
 
     move-result-object v0
@@ -80,14 +78,12 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->mView:Lcom/samsung/android/visualeffect/lock/waterdroplet/WaterDropletEffect;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->access$200(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;)Lcom/samsung/android/visualeffect/lock/waterdroplet/WaterDropletEffect;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->setBackground()Landroid/graphics/Bitmap;
     invoke-static {v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->access$100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -100,7 +96,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->mTouchFlagForMobileKeyboard:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->access$302(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;Z)Z
 
     const-string/jumbo v0, "WaterDroplet_Keyguard"
@@ -117,7 +112,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->mTouchFlagForMobileKeyboard:Z
     invoke-static {v2}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->access$300(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;)Z
 
     move-result v2

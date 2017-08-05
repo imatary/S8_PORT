@@ -89,7 +89,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;->playSound(I)V
     invoke-static {v0, v3}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;I)V
 
     goto :goto_0
@@ -97,7 +96,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;->playSound(I)V
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;I)V
 
     goto :goto_0

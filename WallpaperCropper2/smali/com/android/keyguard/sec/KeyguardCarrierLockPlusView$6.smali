@@ -56,7 +56,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView$6;->this$0:Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$600(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Landroid/content/Context;
 
     move-result-object v1
@@ -65,7 +64,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView$6;->this$0:Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
     invoke-static {v3}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$700(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v3

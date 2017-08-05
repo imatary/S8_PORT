@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView$2;->this$0:Lcom/android/keyguard/KeyguardHostView;
 
-    # invokes: Lcom/android/keyguard/KeyguardHostView;->updateAndAddWidgets()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardHostView;->access$200(Lcom/android/keyguard/KeyguardHostView;)V
 
     return-void

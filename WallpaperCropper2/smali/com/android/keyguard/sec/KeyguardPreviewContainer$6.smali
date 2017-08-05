@@ -53,7 +53,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$6;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mPreviewInflater:Lcom/android/keyguard/sec/KeyguardPreviewInflater;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$400(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Lcom/android/keyguard/sec/KeyguardPreviewInflater;
 
     move-result-object v0
@@ -110,7 +109,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$6;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mPhonePreview:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$500(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Landroid/view/View;
 
     move-result-object v0
@@ -128,7 +126,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$6;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mPhonePreview:Landroid/view/View;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$500(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Landroid/view/View;
 
     move-result-object v1
@@ -137,7 +134,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$6;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mPhonePreview:Landroid/view/View;
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$502(Lcom/android/keyguard/sec/KeyguardPreviewContainer;Landroid/view/View;)Landroid/view/View;
 
     goto :goto_0
@@ -149,7 +145,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$6;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mPhonePreview:Landroid/view/View;
     invoke-static {v0, p1}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$502(Lcom/android/keyguard/sec/KeyguardPreviewContainer;Landroid/view/View;)Landroid/view/View;
 
     goto :goto_1

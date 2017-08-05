@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">ไม่สามารถเปิด %s ได้ สัมผัส “การตั้งค่า” แล้วไปที่ ข้อมูลแอพ > การอนุญาต จากนั้นให้อนุญาตดังนี้แล้วลองใหม่อีกครั้ง:</string>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">ไม่สามารถเปิด %s ได้ แตะ “การตั้งค่า” แล้วไปที่ ข้อมูลแอพ > การอนุญาต จากนั้นให้อนุญาตดังนี้แล้วลองใหม่อีกครั้ง:</string>
     <string name="all_sim">ทั้ง​หมด</string>
     <string name="app_name">วอลเปเปอร์</string>
     <string name="apply">ใช้งาน</string>
@@ -29,18 +29,18 @@
     <string name="processing">ดำเนิน​การ…</string>
     <string name="request_permission_rationale">ไม่สามารถใช้ %1$s แตะ “การตั้งค่า” แล้วให้อนุญาต %2$s แล้วลองอีกครั้ง</string>
     <string name="right_image">ทางขวา</string>
-    <string name="set_wallpaper_docomo_text_gui">ภาพนี้จะแสดงบนหน้าจอหลักและหน้าจอล็อคของคุณ</string>
+    <string name="set_wallpaper_docomo_text_gui">ภาพนี้จะแสดงบนหน้าจอหลักและหน้าจอล็อกของคุณ</string>
     <string name="settings">การ​ตั้ง​ค่า</string>
     <string name="speak_button">ปุ่ม</string>
     <string name="sview_window">หน้าต่าง S View</string>
     <string name="unable_set_wallpaper_image_deleted">ไม่สามารถกำหนดรูปภาพเป็นวอลเปเปอร์ รูปภาพถูกลบแล้ว</string>
     <string name="unable_to_download">ไม่​สามารถ​ดาวน์​โหลด</string>
     <string name="wallpaper_applied_home">ใช้งานวอลเปเปอร์กับหน้าจอหลักแล้ว</string>
-    <string name="wallpaper_applied_home_and_lock">ใช้วอลเปเปอร์กับหน้าจอหลักและหน้าจอล็อค</string>
-    <string name="wallpaper_applied_lock">ใช้งานวอลเปเปอร์กับหน้าจอล็อคแล้ว</string>
-    <string name="wallpaper_applied_multi_lock">ใช้งาน %d วอลเปเปอร์กับหน้าจอล็อคแล้ว</string>
+    <string name="wallpaper_applied_home_and_lock">ใช้วอลเปเปอร์กับหน้าจอหลักและหน้าจอล็อก</string>
+    <string name="wallpaper_applied_lock">ใช้งานวอลเปเปอร์กับหน้าจอล็อกแล้ว</string>
+    <string name="wallpaper_applied_multi_lock">ใช้งาน %d วอลเปเปอร์กับหน้าจอล็อกแล้ว</string>
     <string name="wallpaper_applied_sview">ใช้งานวอลเปเปอร์กับหน้าต่าง S View แล้ว</string>
     <string name="wallpaper_crop_button_done">เรียบร้อย</string>
     <string name="wallpaper_instructions">ตั้งค่าเป็นวอลเปเปอร์</string>
-    <string name="wallpaper_lock_gui_cinematic">รูปลักษณ์ของหน้าจอล็อคจะเปลี่ยนเมื่อคุณเอียงอุปกรณ์ไปทางซ้ายและขวา</string>
+    <string name="wallpaper_lock_gui_cinematic">รูปลักษณ์ของหน้าจอล็อกจะเปลี่ยนเมื่อคุณเอียงอุปกรณ์ไปทางซ้ายและขวา</string>
 </resources>

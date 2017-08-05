@@ -74,7 +74,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardCircleView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleView;->mIsLandscapeAvailable:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleView;->access$300(Lcom/android/keyguard/sec/SecKeyguardCircleView;)Z
 
     move-result v0
@@ -96,7 +95,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardCircleView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleView;->mIsLandscapeAvailable:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleView;->access$300(Lcom/android/keyguard/sec/SecKeyguardCircleView;)Z
 
     move-result v0
@@ -118,7 +116,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardCircleView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleView;->mIsLandscapeAvailable:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleView;->access$300(Lcom/android/keyguard/sec/SecKeyguardCircleView;)Z
 
     move-result v0

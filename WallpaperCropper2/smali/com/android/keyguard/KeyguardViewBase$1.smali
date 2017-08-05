@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewBase$1;->this$0:Lcom/android/keyguard/KeyguardViewBase;
 
-    # getter for: Lcom/android/keyguard/KeyguardViewBase;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardViewBase;->access$000(Lcom/android/keyguard/KeyguardViewBase;)Landroid/content/Context;
 
     move-result-object v0

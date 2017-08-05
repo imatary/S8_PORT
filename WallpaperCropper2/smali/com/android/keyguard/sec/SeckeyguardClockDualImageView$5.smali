@@ -89,7 +89,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/SeckeyguardClockDualImageView$5;->this$0:Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;
 
-    # getter for: Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;->access$700(Lcom/android/keyguard/sec/SeckeyguardClockDualImageView;)Landroid/content/Context;
 
     move-result-object v2

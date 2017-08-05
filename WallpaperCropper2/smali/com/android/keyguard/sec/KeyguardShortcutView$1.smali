@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$1;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardShortcutView;->reloadBadges()V
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$000(Lcom/android/keyguard/sec/KeyguardShortcutView;)V
 
     goto :goto_0

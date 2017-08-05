@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->handleWallpaperTypeChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)V
 
     goto :goto_0
@@ -52,7 +51,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->handleWallpaperImageChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)V
 
     goto :goto_0
@@ -60,7 +58,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->handleSetGradationLayer()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$200(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)V
 
     goto :goto_0
@@ -68,7 +65,6 @@
     :pswitch_3
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->handleChargeStateChange()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;->access$300(Lcom/android/keyguard/sec/effect/KeyguardEffectViewController;)V
 
     goto :goto_0

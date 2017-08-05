@@ -34,7 +34,6 @@
 .method public onRoutePresentationDisplayChanged(Landroid/media/MediaRouter;Landroid/media/MediaRouter$RouteInfo;)V
     .locals 3
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager;->DEBUG:Z
     invoke-static {}, Lcom/android/keyguard/KeyguardDisplayManager;->access$000()Z
 
     move-result v0
@@ -46,7 +45,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardDisplayManager$1;->this$0:Lcom/android/keyguard/KeyguardDisplayManager;
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager;->mShowing:Z
     invoke-static {v1}, Lcom/android/keyguard/KeyguardDisplayManager;->access$100(Lcom/android/keyguard/KeyguardDisplayManager;)Z
 
     move-result v1
@@ -84,7 +82,6 @@
 .method public onRouteSelected(Landroid/media/MediaRouter;ILandroid/media/MediaRouter$RouteInfo;)V
     .locals 3
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager;->DEBUG:Z
     invoke-static {}, Lcom/android/keyguard/KeyguardDisplayManager;->access$000()Z
 
     move-result v0
@@ -96,7 +93,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardDisplayManager$1;->this$0:Lcom/android/keyguard/KeyguardDisplayManager;
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager;->mShowing:Z
     invoke-static {v1}, Lcom/android/keyguard/KeyguardDisplayManager;->access$100(Lcom/android/keyguard/KeyguardDisplayManager;)Z
 
     move-result v1
@@ -144,7 +140,6 @@
 .method public onRouteUnselected(Landroid/media/MediaRouter;ILandroid/media/MediaRouter$RouteInfo;)V
     .locals 3
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager;->DEBUG:Z
     invoke-static {}, Lcom/android/keyguard/KeyguardDisplayManager;->access$000()Z
 
     move-result v0
@@ -156,7 +151,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardDisplayManager$1;->this$0:Lcom/android/keyguard/KeyguardDisplayManager;
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager;->mShowing:Z
     invoke-static {v1}, Lcom/android/keyguard/KeyguardDisplayManager;->access$100(Lcom/android/keyguard/KeyguardDisplayManager;)Z
 
     move-result v1

@@ -94,7 +94,6 @@
 
     move-result-object v0
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->basePath:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->access$002(Ljava/lang/String;)Ljava/lang/String;
 
     const-string/jumbo v0, "SOURCE"
@@ -103,17 +102,14 @@
 
     move-result-object v0
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->source:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->access$102(Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardBackupRestoreManager$1;->this$0:Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->basePath:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->access$000()Ljava/lang/String;
 
     move-result-object v1
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->source:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->access$100()Ljava/lang/String;
 
     move-result-object v2
@@ -131,7 +127,6 @@
 
     move-result-object v0
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->basePath:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->access$002(Ljava/lang/String;)Ljava/lang/String;
 
     const-string/jumbo v0, "SOURCE"
@@ -140,17 +135,14 @@
 
     move-result-object v0
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->source:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->access$102(Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardBackupRestoreManager$1;->this$0:Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->basePath:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->access$000()Ljava/lang/String;
 
     move-result-object v1
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->source:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->access$100()Ljava/lang/String;
 
     move-result-object v2

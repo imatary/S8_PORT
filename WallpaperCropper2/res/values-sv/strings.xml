@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Det går inte att öppna %s. Tryck på INSTÄLLNINGAR, gå till Programinformation > Behörigheter och tillåt sedan följande behörigheter innan du försöker igen:</string>
+    <string name="IDS_IDLE_POP_UNABLE_TO_OPEN_PS_TAP_SETTINGS_GO_TO_APP_INFO_PERMISSIONS_THEN_ALLOW_MSG">Det går inte att öppna %s. Tryck på INSTÄLLNINGAR, gå till Appinformation > Behörigheter och tillåt sedan följande behörigheter innan du försöker igen:</string>
     <string name="all_sim">Alla</string>
     <string name="app_name">Bakgrunder</string>
     <string name="apply">Använd</string>
@@ -23,7 +23,7 @@
     <string name="motion_effect">Bakgrundsrörelseeffekt</string>
     <string name="motion_wallpaper_name">Animerad bakgrund</string>
     <string name="notice_low_storage">Inte tillräckligt med utrymme. Ta bort onödiga objekt till exempel hämtad programvara, bilder, videor och dokument.</string>
-    <string name="permission_description">Tryck på INSTÄLLNINGAR, öppna Programinfo > Behörigheter och tillåt sedan följande behörigheter om du vill använda %s:</string>
+    <string name="permission_description">Tryck på INSTÄLLNINGAR, öppna Appinfo > Behörigheter och tillåt sedan följande behörigheter om du vill använda %s:</string>
     <string name="permission_name_read_sms">Textmeddelande</string>
     <string name="permission_name_storage">Lagring</string>
     <string name="processing">Bearbetar…</string>

@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$3;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
-    # getter for: Lcom/android/keyguard/KeyguardTransportControlView;->mBtnPrev:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardTransportControlView;->access$700(Lcom/android/keyguard/KeyguardTransportControlView;)Landroid/widget/ImageView;
 
     move-result-object v0
@@ -50,7 +49,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$3;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
-    # getter for: Lcom/android/keyguard/KeyguardTransportControlView;->mBtnNext:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardTransportControlView;->access$800(Lcom/android/keyguard/KeyguardTransportControlView;)Landroid/widget/ImageView;
 
     move-result-object v0
@@ -59,7 +57,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$3;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
-    # getter for: Lcom/android/keyguard/KeyguardTransportControlView;->mBtnPlay:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardTransportControlView;->access$900(Lcom/android/keyguard/KeyguardTransportControlView;)Landroid/widget/ImageView;
 
     move-result-object v0
@@ -92,7 +89,6 @@
     :cond_3
     iget-object v1, p0, Lcom/android/keyguard/KeyguardTransportControlView$3;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
-    # invokes: Lcom/android/keyguard/KeyguardTransportControlView;->sendMediaButtonClick(I)V
     invoke-static {v1, v0}, Lcom/android/keyguard/KeyguardTransportControlView;->access$1000(Lcom/android/keyguard/KeyguardTransportControlView;I)V
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$3;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;

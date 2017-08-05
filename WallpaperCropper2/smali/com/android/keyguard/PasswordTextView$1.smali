@@ -57,7 +57,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/PasswordTextView$1;->this$0:Lcom/android/keyguard/PasswordTextView;
 
-    # getter for: Lcom/android/keyguard/PasswordTextView;->mDrawPaint:Landroid/graphics/Paint;
     invoke-static {v0}, Lcom/android/keyguard/PasswordTextView;->access$200(Lcom/android/keyguard/PasswordTextView;)Landroid/graphics/Paint;
 
     move-result-object v0
@@ -75,7 +74,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/PasswordTextView$1;->this$0:Lcom/android/keyguard/PasswordTextView;
 
-    # getter for: Lcom/android/keyguard/PasswordTextView;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/android/keyguard/PasswordTextView;->access$100(Lcom/android/keyguard/PasswordTextView;)Landroid/content/Context;
 
     move-result-object v3
@@ -93,7 +91,6 @@
     if-eq v3, v1, :cond_2
 
     :goto_2
-    # setter for: Lcom/android/keyguard/PasswordTextView;->mUseBlackTextOnWhiteWallpaper:Z
     invoke-static {v2, v0}, Lcom/android/keyguard/PasswordTextView;->access$002(Lcom/android/keyguard/PasswordTextView;Z)Z
 
     goto :goto_0
@@ -106,7 +103,6 @@
     :cond_3
     iget-object v0, p0, Lcom/android/keyguard/PasswordTextView$1;->this$0:Lcom/android/keyguard/PasswordTextView;
 
-    # getter for: Lcom/android/keyguard/PasswordTextView;->mUseBlackTextOnWhiteWallpaper:Z
     invoke-static {v0}, Lcom/android/keyguard/PasswordTextView;->access$000(Lcom/android/keyguard/PasswordTextView;)Z
 
     move-result v0
@@ -116,7 +112,6 @@
     :cond_4
     iget-object v0, p0, Lcom/android/keyguard/PasswordTextView$1;->this$0:Lcom/android/keyguard/PasswordTextView;
 
-    # getter for: Lcom/android/keyguard/PasswordTextView;->mDrawPaint:Landroid/graphics/Paint;
     invoke-static {v0}, Lcom/android/keyguard/PasswordTextView;->access$200(Lcom/android/keyguard/PasswordTextView;)Landroid/graphics/Paint;
 
     move-result-object v0
@@ -140,7 +135,6 @@
     :cond_5
     iget-object v0, p0, Lcom/android/keyguard/PasswordTextView$1;->this$0:Lcom/android/keyguard/PasswordTextView;
 
-    # getter for: Lcom/android/keyguard/PasswordTextView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/PasswordTextView;->access$300(Lcom/android/keyguard/PasswordTextView;)Landroid/content/Context;
 
     move-result-object v0
@@ -153,7 +147,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/PasswordTextView$1;->this$0:Lcom/android/keyguard/PasswordTextView;
 
-    # getter for: Lcom/android/keyguard/PasswordTextView;->mDrawPaint:Landroid/graphics/Paint;
     invoke-static {v0}, Lcom/android/keyguard/PasswordTextView;->access$200(Lcom/android/keyguard/PasswordTextView;)Landroid/graphics/Paint;
 
     move-result-object v0

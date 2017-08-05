@@ -50,7 +50,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mMccInfo:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$302(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;Ljava/lang/String;)Ljava/lang/String;
 
     const-string/jumbo v0, "KeyguardCarrierLockPlusView"
@@ -67,7 +66,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView$2;->this$0:Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mMccInfo:Ljava/lang/String;
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$300(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Ljava/lang/String;
 
     move-result-object v2
@@ -87,7 +85,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView$2;->this$0:Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mCallButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$200(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Landroid/widget/Button;
 
     move-result-object v0
@@ -106,7 +103,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView$2;->this$0:Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mCallButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$200(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Landroid/widget/Button;
 
     move-result-object v0
@@ -120,7 +116,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView$2;->this$0:Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mCallButton:Landroid/widget/Button;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->access$200(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Landroid/widget/Button;
 
     move-result-object v0

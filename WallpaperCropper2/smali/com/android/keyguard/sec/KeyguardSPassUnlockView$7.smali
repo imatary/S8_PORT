@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$7;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1500(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v0
@@ -52,7 +51,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$7;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1500(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v0

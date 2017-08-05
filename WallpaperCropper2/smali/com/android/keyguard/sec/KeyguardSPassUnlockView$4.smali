@@ -45,7 +45,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$4;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->handleDismissKeyguard()V
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$400(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)V
 
     goto :goto_0
@@ -53,7 +52,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$4;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->handleShowAutoWipePopup()V
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$500(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)V
 
     goto :goto_0
@@ -61,7 +59,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$4;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->handleShowFingerPrintInstruction()V
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$600(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)V
 
     goto :goto_0
@@ -73,7 +70,6 @@
 
     check-cast v0, Ljava/lang/String;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->handleShowErrorMessage(Ljava/lang/String;)V
     invoke-static {v1, v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;Ljava/lang/String;)V
 
     goto :goto_0
@@ -83,7 +79,6 @@
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->handleShowErrorPopup(I)V
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$800(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;I)V
 
     goto :goto_0
@@ -91,7 +86,6 @@
     :pswitch_5
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$4;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->handleShowBackupPasswordButton()V
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$900(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)V
 
     goto :goto_0
@@ -99,7 +93,6 @@
     :pswitch_6
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$4;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->handleShowBackupPasswordLockscreen()V
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1000(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)V
 
     goto :goto_0
@@ -107,7 +100,6 @@
     :pswitch_7
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$4;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mAttributionView:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1100(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/view/View;
 
     move-result-object v0
@@ -116,7 +108,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$4;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mAttributionView:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1100(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/view/View;
 
     move-result-object v0

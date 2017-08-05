@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockDualView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockDualView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockDualView;->setClockContentDesciption()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockDualView;->access$200(Lcom/android/keyguard/sec/SecKeyguardClockDualView;)V
 
     return-void
@@ -52,7 +51,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockDualView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockDualView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockDualView;->mDualHomeTime:Lcom/android/keyguard/sec/SecKeyguardTextClock;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockDualView;->access$1000(Lcom/android/keyguard/sec/SecKeyguardClockDualView;)Lcom/android/keyguard/sec/SecKeyguardTextClock;
 
     move-result-object v0
@@ -65,7 +63,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SecKeyguardClockDualView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockDualView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockDualView;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/keyguard/sec/SecKeyguardClockDualView;->access$1100(Lcom/android/keyguard/sec/SecKeyguardClockDualView;)Landroid/content/Context;
 
     move-result-object v1
@@ -76,7 +73,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/SecKeyguardClockDualView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockDualView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockDualView;->mDualHomeTime:Lcom/android/keyguard/sec/SecKeyguardTextClock;
     invoke-static {v2}, Lcom/android/keyguard/sec/SecKeyguardClockDualView;->access$1000(Lcom/android/keyguard/sec/SecKeyguardClockDualView;)Lcom/android/keyguard/sec/SecKeyguardTextClock;
 
     move-result-object v2
@@ -92,7 +88,6 @@
     :goto_0
     iget-object v2, p0, Lcom/android/keyguard/sec/SecKeyguardClockDualView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockDualView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockDualView;->mDualHomeTime:Lcom/android/keyguard/sec/SecKeyguardTextClock;
     invoke-static {v2}, Lcom/android/keyguard/sec/SecKeyguardClockDualView;->access$1000(Lcom/android/keyguard/sec/SecKeyguardClockDualView;)Lcom/android/keyguard/sec/SecKeyguardTextClock;
 
     move-result-object v2
@@ -101,7 +96,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockDualView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockDualView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockDualView;->mDualHomeTime:Lcom/android/keyguard/sec/SecKeyguardTextClock;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockDualView;->access$1000(Lcom/android/keyguard/sec/SecKeyguardClockDualView;)Lcom/android/keyguard/sec/SecKeyguardTextClock;
 
     move-result-object v0

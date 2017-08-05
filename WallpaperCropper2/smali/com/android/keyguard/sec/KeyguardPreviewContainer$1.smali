@@ -46,12 +46,10 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$1;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mIsKeyguardShowing:Z
     invoke-static {v0, p1}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$002(Lcom/android/keyguard/sec/KeyguardPreviewContainer;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$1;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->mIsKeyguardShowing:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$000(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)Z
 
     move-result v0
@@ -64,7 +62,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardPreviewContainer$1;->this$0:Lcom/android/keyguard/sec/KeyguardPreviewContainer;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardPreviewContainer;->refreshCameraPreviewIfNeeded()V
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardPreviewContainer;->access$100(Lcom/android/keyguard/sec/KeyguardPreviewContainer;)V
 
     goto :goto_0

@@ -52,7 +52,6 @@
     :goto_0
     iget-object v1, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->mOldClockText:Ljava/lang/String;
     invoke-static {v1}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$1100(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)Ljava/lang/String;
 
     move-result-object v1
@@ -62,12 +61,10 @@
     :cond_0
     iget-object v1, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # setter for: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->mOldClockText:Ljava/lang/String;
     invoke-static {v1, v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$1102(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;Ljava/lang/String;)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$1200(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)Landroid/content/Context;
 
     move-result-object v0
@@ -86,7 +83,6 @@
     :goto_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->setClockContentDesciption()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$200(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)V
 
     return-void
@@ -103,7 +99,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->mOldClockText:Ljava/lang/String;
     invoke-static {v1}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$1100(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)Ljava/lang/String;
 
     move-result-object v1
@@ -125,7 +120,6 @@
     :cond_4
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$1300(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)Landroid/content/Context;
 
     move-result-object v0
@@ -142,7 +136,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$1400(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)Landroid/content/Context;
 
     move-result-object v0
@@ -155,7 +148,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->mKeyguardLongShadowEffectWrapper:Lcom/android/keyguard/sec/KeyguardLongShadowEffectWrapper;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$1500(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)Lcom/android/keyguard/sec/KeyguardLongShadowEffectWrapper;
 
     move-result-object v0
@@ -164,7 +156,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->mKeyguardLongShadowEffectWrapper:Lcom/android/keyguard/sec/KeyguardLongShadowEffectWrapper;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$1500(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)Lcom/android/keyguard/sec/KeyguardLongShadowEffectWrapper;
 
     move-result-object v0
@@ -173,7 +164,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->mKeyguardLongShadowEffectWrapper:Lcom/android/keyguard/sec/KeyguardLongShadowEffectWrapper;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$1500(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)Lcom/android/keyguard/sec/KeyguardLongShadowEffectWrapper;
 
     move-result-object v0
@@ -200,7 +190,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$900(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)Landroid/content/Context;
 
     move-result-object v1
@@ -276,7 +265,6 @@
     :cond_1
     iget-object v2, p0, Lcom/android/keyguard/sec/SecKeyguardClockSingleView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockSingleView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/android/keyguard/sec/SecKeyguardClockSingleView;->access$1000(Lcom/android/keyguard/sec/SecKeyguardClockSingleView;)Landroid/content/Context;
 
     move-result-object v2

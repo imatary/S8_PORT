@@ -27,7 +27,7 @@
 
 .field private static final FLOAT_PRECISION:F = 0.001f
 
-.field private static final MAX_SCALE:F = 100.0f
+.field private static final MAX_SCALE:F = 50.0f
 
 .field private static final MSG_TILT_OFF:I = 0x2
 
@@ -2317,7 +2317,7 @@
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 4
 
-    const/high16 v0, 0x42c80000    # 100.0f
+    const/high16 v0, 0x42480000    # 50.0f
 
     iget-object v1, p0, Lcom/sec/android/wallpapercropper2/CropView;->mRendererWrapper:Lcom/sec/android/wallpapercropper2/TiledImageView$ImageRendererWrapper;
 

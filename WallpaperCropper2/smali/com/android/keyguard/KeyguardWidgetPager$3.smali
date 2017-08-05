@@ -47,7 +47,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardWidgetPager$3;->this$0:Lcom/android/keyguard/KeyguardWidgetPager;
 
-    # invokes: Lcom/android/keyguard/KeyguardWidgetPager;->updateWidgetFramesImportantForAccessibility()V
     invoke-static {v0}, Lcom/android/keyguard/KeyguardWidgetPager;->access$200(Lcom/android/keyguard/KeyguardWidgetPager;)V
 
     return-void
@@ -61,7 +60,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardWidgetPager$3;->this$0:Lcom/android/keyguard/KeyguardWidgetPager;
 
-    # getter for: Lcom/android/keyguard/KeyguardWidgetPager;->mWidgetToResetAfterFadeOut:I
     invoke-static {v1}, Lcom/android/keyguard/KeyguardWidgetPager;->access$100(Lcom/android/keyguard/KeyguardWidgetPager;)I
 
     move-result v1
@@ -77,7 +75,6 @@
 
     const/4 v1, -0x1
 
-    # setter for: Lcom/android/keyguard/KeyguardWidgetPager;->mWidgetToResetAfterFadeOut:I
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardWidgetPager;->access$102(Lcom/android/keyguard/KeyguardWidgetPager;I)I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardWidgetPager$3;->this$0:Lcom/android/keyguard/KeyguardWidgetPager;

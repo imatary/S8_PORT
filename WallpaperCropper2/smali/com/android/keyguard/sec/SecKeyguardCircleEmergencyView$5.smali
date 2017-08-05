@@ -63,7 +63,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->mServiceState:I
     invoke-static {v2}, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->access$100(Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;)I
 
     move-result v2
@@ -80,7 +79,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->mServiceState:I
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->access$100(Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;)I
 
     move-result v0
@@ -105,7 +103,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->mServiceState:I
     invoke-static {v2}, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->access$100(Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;)I
 
     move-result v2
@@ -134,7 +131,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->mServiceState2:I
     invoke-static {v2}, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->access$200(Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;)I
 
     move-result v2
@@ -151,7 +147,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->mServiceState:I
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->access$100(Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;)I
 
     move-result v0
@@ -161,7 +156,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->mServiceState2:I
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->access$200(Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;)I
 
     move-result v0
@@ -174,7 +168,6 @@
     :cond_4
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->mServiceState:I
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->access$100(Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;)I
 
     move-result v0
@@ -201,7 +194,6 @@
     :cond_5
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->mServiceState2:I
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->access$200(Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;)I
 
     move-result v0
@@ -213,7 +205,6 @@
     :cond_6
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView$5;->this$0:Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->mServiceState:I
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;->access$100(Lcom/android/keyguard/sec/SecKeyguardCircleEmergencyView;)I
 
     move-result v0

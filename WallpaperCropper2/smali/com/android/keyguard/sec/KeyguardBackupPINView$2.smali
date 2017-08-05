@@ -36,7 +36,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardBackupPINView$2;->this$0:Lcom/android/keyguard/sec/KeyguardBackupPINView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardBackupPINView;->getPasswordText()Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardBackupPINView;->access$500(Lcom/android/keyguard/sec/KeyguardBackupPINView;)Ljava/lang/String;
 
     move-result-object v0
@@ -58,7 +57,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardBackupPINView$2;->this$0:Lcom/android/keyguard/sec/KeyguardBackupPINView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardBackupPINView;->isCountDownTimerRunning()Z
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardBackupPINView;->access$600(Lcom/android/keyguard/sec/KeyguardBackupPINView;)Z
 
     move-result v0
@@ -71,7 +69,6 @@
 
     const/4 v2, 0x1
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardBackupPINView;->setHintOrMessageText(Ljava/lang/CharSequence;Z)V
     invoke-static {v0, v1, v2}, Lcom/android/keyguard/sec/KeyguardBackupPINView;->access$700(Lcom/android/keyguard/sec/KeyguardBackupPINView;Ljava/lang/CharSequence;Z)V
 
     goto :goto_0
@@ -82,12 +79,10 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardBackupPINView$2;->this$0:Lcom/android/keyguard/sec/KeyguardBackupPINView;
 
-    # operator++ for: Lcom/android/keyguard/sec/KeyguardBackupPINView;->mPasswordTimeTick:I
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardBackupPINView;->access$108(Lcom/android/keyguard/sec/KeyguardBackupPINView;)I
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardBackupPINView$2;->this$0:Lcom/android/keyguard/sec/KeyguardBackupPINView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardBackupPINView;->mPasswordTimeTick:I
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardBackupPINView;->access$100(Lcom/android/keyguard/sec/KeyguardBackupPINView;)I
 
     move-result v0
@@ -103,7 +98,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardBackupPINView$2;->this$0:Lcom/android/keyguard/sec/KeyguardBackupPINView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardBackupPINView;->getPasswordText()Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardBackupPINView;->access$200(Lcom/android/keyguard/sec/KeyguardBackupPINView;)Ljava/lang/String;
 
     move-result-object v0
@@ -120,7 +114,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardBackupPINView$2;->this$0:Lcom/android/keyguard/sec/KeyguardBackupPINView;
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardBackupPINView;->isCountDownTimerRunning()Z
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardBackupPINView;->access$300(Lcom/android/keyguard/sec/KeyguardBackupPINView;)Z
 
     move-result v0
@@ -137,7 +130,6 @@
 
     const/4 v2, 0x1
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardBackupPINView;->setHintOrMessageText(Ljava/lang/CharSequence;Z)V
     invoke-static {v0, v1, v2}, Lcom/android/keyguard/sec/KeyguardBackupPINView;->access$400(Lcom/android/keyguard/sec/KeyguardBackupPINView;Ljava/lang/CharSequence;Z)V
 
     goto :goto_0

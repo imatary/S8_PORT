@@ -38,7 +38,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion$SoundHandler;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;->access$100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;)Landroid/media/SoundPool;
 
     move-result-object v0
@@ -64,7 +63,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion$SoundHandler;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;->access$100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;)Landroid/media/SoundPool;
 
     move-result-object v1
@@ -85,7 +83,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion$SoundHandler;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;->mHandler:Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion$SoundHandler;
     invoke-static {v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;->access$300(Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion;)Lcom/android/keyguard/sec/effect/KeyguardEffectViewIndigoDiffusion$SoundHandler;
 
     move-result-object v1

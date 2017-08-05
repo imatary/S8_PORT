@@ -60,7 +60,6 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/keyguard/KeyguardSecurityModel$WaitIccIdTask;->this$0:Lcom/android/keyguard/KeyguardSecurityModel;
 
-    # getter for: Lcom/android/keyguard/KeyguardSecurityModel;->mTelephonyMgr:Landroid/telephony/TelephonyManager;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardSecurityModel;->access$100(Lcom/android/keyguard/KeyguardSecurityModel;)Landroid/telephony/TelephonyManager;
 
     move-result-object v1
@@ -92,7 +91,6 @@
     if-lez v1, :cond_0
 
     :try_start_1
-    # getter for: Lcom/android/keyguard/KeyguardSecurityModel;->sLock:Ljava/lang/Object;
     invoke-static {}, Lcom/android/keyguard/KeyguardSecurityModel;->access$000()Ljava/lang/Object;
 
     move-result-object v2
@@ -102,7 +100,6 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :try_start_2
-    # getter for: Lcom/android/keyguard/KeyguardSecurityModel;->sLock:Ljava/lang/Object;
     invoke-static {}, Lcom/android/keyguard/KeyguardSecurityModel;->access$000()Ljava/lang/Object;
 
     move-result-object v3
@@ -125,7 +122,6 @@
     :try_start_4
     iget-object v2, p0, Lcom/android/keyguard/KeyguardSecurityModel$WaitIccIdTask;->this$0:Lcom/android/keyguard/KeyguardSecurityModel;
 
-    # getter for: Lcom/android/keyguard/KeyguardSecurityModel;->mTelephonyMgr:Landroid/telephony/TelephonyManager;
     invoke-static {v2}, Lcom/android/keyguard/KeyguardSecurityModel;->access$100(Lcom/android/keyguard/KeyguardSecurityModel;)Landroid/telephony/TelephonyManager;
 
     move-result-object v2
@@ -162,7 +158,6 @@
     :try_start_7
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSecurityModel$WaitIccIdTask;->this$0:Lcom/android/keyguard/KeyguardSecurityModel;
 
-    # invokes: Lcom/android/keyguard/KeyguardSecurityModel;->unlockSimPin(Ljava/lang/String;)Z
     invoke-static {v0, v2}, Lcom/android/keyguard/KeyguardSecurityModel;->access$200(Lcom/android/keyguard/KeyguardSecurityModel;Ljava/lang/String;)Z
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_1
@@ -192,7 +187,6 @@
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 4
 
-    # getter for: Lcom/android/keyguard/KeyguardSecurityModel;->sPinLock:Ljava/lang/Object;
     invoke-static {}, Lcom/android/keyguard/KeyguardSecurityModel;->access$300()Ljava/lang/Object;
 
     move-result-object v1
@@ -206,7 +200,6 @@
 
     move-result-object v0
 
-    # setter for: Lcom/android/keyguard/KeyguardSecurityModel;->sPinUnlocking:Ljava/lang/Boolean;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardSecurityModel;->access$402(Ljava/lang/Boolean;)Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
@@ -235,7 +228,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/KeyguardSecurityModel$WaitIccIdTask;->this$0:Lcom/android/keyguard/KeyguardSecurityModel;
 
-    # getter for: Lcom/android/keyguard/KeyguardSecurityModel;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/android/keyguard/KeyguardSecurityModel;->access$500(Lcom/android/keyguard/KeyguardSecurityModel;)Landroid/content/Context;
 
     move-result-object v2

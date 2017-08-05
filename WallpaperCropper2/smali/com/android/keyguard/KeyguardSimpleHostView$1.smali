@@ -56,7 +56,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSimpleHostView$1;->this$0:Lcom/android/keyguard/KeyguardSimpleHostView;
 
-    # invokes: Lcom/android/keyguard/KeyguardSimpleHostView;->isVisibleToUser()Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardSimpleHostView;->access$000(Lcom/android/keyguard/KeyguardSimpleHostView;)Z
 
     move-result v0

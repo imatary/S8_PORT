@@ -41,7 +41,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet$5;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->access$500(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;)Landroid/media/SoundPool;
 
     move-result-object v0
@@ -51,7 +50,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet$5;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->releaseSoundRunnable:Ljava/lang/Runnable;
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->access$602(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;Ljava/lang/Runnable;)Ljava/lang/Runnable;
 
     return-void
@@ -65,7 +63,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet$5;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->access$500(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;)Landroid/media/SoundPool;
 
     move-result-object v0
@@ -74,7 +71,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet$5;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;
 
-    # setter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->mSoundPool:Landroid/media/SoundPool;
     invoke-static {v0, v2}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;->access$502(Lcom/android/keyguard/sec/effect/KeyguardEffectViewWaterDroplet;Landroid/media/SoundPool;)Landroid/media/SoundPool;
 
     goto :goto_0

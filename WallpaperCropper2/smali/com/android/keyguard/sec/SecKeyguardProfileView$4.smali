@@ -42,7 +42,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardProfileView$4;->this$0:Lcom/android/keyguard/sec/SecKeyguardProfileView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardProfileView;->refreshOwnerInfo()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardProfileView;->access$400(Lcom/android/keyguard/sec/SecKeyguardProfileView;)V
 
     goto :goto_0
@@ -53,7 +52,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardProfileView$4;->this$0:Lcom/android/keyguard/sec/SecKeyguardProfileView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardProfileView;->mOwnerInfo:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardProfileView;->access$500(Lcom/android/keyguard/sec/SecKeyguardProfileView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -66,7 +64,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardProfileView$4;->this$0:Lcom/android/keyguard/sec/SecKeyguardProfileView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardProfileView;->mOwnerInfo:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardProfileView;->access$500(Lcom/android/keyguard/sec/SecKeyguardProfileView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -83,7 +80,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardProfileView$4;->this$0:Lcom/android/keyguard/sec/SecKeyguardProfileView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardProfileView;->mOwnerInfo:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardProfileView;->access$500(Lcom/android/keyguard/sec/SecKeyguardProfileView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -96,7 +92,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardProfileView$4;->this$0:Lcom/android/keyguard/sec/SecKeyguardProfileView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardProfileView;->mOwnerInfo:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardProfileView;->access$500(Lcom/android/keyguard/sec/SecKeyguardProfileView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -113,7 +108,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardProfileView$4;->this$0:Lcom/android/keyguard/sec/SecKeyguardProfileView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardProfileView;->refreshOwnerInfo()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardProfileView;->access$400(Lcom/android/keyguard/sec/SecKeyguardProfileView;)V
 
     return-void

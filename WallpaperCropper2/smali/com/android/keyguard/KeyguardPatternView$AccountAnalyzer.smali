@@ -51,7 +51,6 @@
 
     new-instance v1, Landroid/os/UserHandle;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
     invoke-static {p1}, Lcom/android/keyguard/KeyguardPatternView;->access$900(Lcom/android/keyguard/KeyguardPatternView;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v2
@@ -86,7 +85,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mEnableFallback:Z
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$2000(Lcom/android/keyguard/KeyguardPatternView;)Z
 
     move-result v0
@@ -117,7 +115,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/KeyguardPatternView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
     invoke-static {v3}, Lcom/android/keyguard/KeyguardPatternView;->access$900(Lcom/android/keyguard/KeyguardPatternView;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v3
@@ -192,12 +189,10 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/android/keyguard/KeyguardPatternView;->mEnableFallback:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardPatternView;->access$2002(Lcom/android/keyguard/KeyguardPatternView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mLastFooterMode:Lcom/android/keyguard/KeyguardPatternView$FooterMode;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$2100(Lcom/android/keyguard/KeyguardPatternView;)Lcom/android/keyguard/KeyguardPatternView$FooterMode;
 
     move-result-object v0
@@ -208,7 +203,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # getter for: Lcom/android/keyguard/KeyguardPatternView;->mTotalFailedPatternAttempts:I
     invoke-static {v0}, Lcom/android/keyguard/KeyguardPatternView;->access$2200(Lcom/android/keyguard/KeyguardPatternView;)I
 
     move-result v0
@@ -221,7 +215,6 @@
 
     sget-object v1, Lcom/android/keyguard/KeyguardPatternView$FooterMode;->ForgotLockPattern:Lcom/android/keyguard/KeyguardPatternView$FooterMode;
 
-    # invokes: Lcom/android/keyguard/KeyguardPatternView;->updateFooter(Lcom/android/keyguard/KeyguardPatternView$FooterMode;)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardPatternView;->access$2300(Lcom/android/keyguard/KeyguardPatternView;Lcom/android/keyguard/KeyguardPatternView$FooterMode;)V
     :try_end_1
     .catch Landroid/accounts/OperationCanceledException; {:try_start_1 .. :try_end_1} :catch_0
@@ -291,7 +284,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
-    # setter for: Lcom/android/keyguard/KeyguardPatternView;->mEnableFallback:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardPatternView;->access$2002(Lcom/android/keyguard/KeyguardPatternView;Z)Z
 
     iput v1, p0, Lcom/android/keyguard/KeyguardPatternView$AccountAnalyzer;->mAccountIndex:I

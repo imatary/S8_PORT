@@ -44,7 +44,6 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$1;->this$0:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator;
 
-    # invokes: Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator;->handleWallpaperTypeChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator;->access$000(Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator;)V
 
     goto :goto_0

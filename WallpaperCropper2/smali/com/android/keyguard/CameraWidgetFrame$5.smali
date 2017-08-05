@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/CameraWidgetFrame$5;->this$0:Lcom/android/keyguard/CameraWidgetFrame;
 
-    # invokes: Lcom/android/keyguard/CameraWidgetFrame;->render()V
     invoke-static {v0}, Lcom/android/keyguard/CameraWidgetFrame;->access$900(Lcom/android/keyguard/CameraWidgetFrame;)V
 
     return-void

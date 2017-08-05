@@ -28,7 +28,6 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 0
 
-    # invokes: Lcom/android/keyguard/sec/SecPopupManager;->dismissdDialog()V
     invoke-static {}, Lcom/android/keyguard/sec/SecPopupManager;->access$000()V
 
     return-void

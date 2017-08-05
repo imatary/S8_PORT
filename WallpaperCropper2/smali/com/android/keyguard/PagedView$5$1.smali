@@ -38,7 +38,6 @@
 
     iget-object v0, v0, Lcom/android/keyguard/PagedView$5;->this$0:Lcom/android/keyguard/PagedView;
 
-    # getter for: Lcom/android/keyguard/PagedView;->mDeleteDropTarget:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/PagedView;->access$500(Lcom/android/keyguard/PagedView;)Landroid/view/View;
 
     move-result-object v0

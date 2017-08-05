@@ -51,7 +51,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUniversalLockView$8;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDot:Landroid/widget/ImageView;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$3000(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/widget/ImageView;
 
     move-result-object v1
@@ -64,7 +63,6 @@
     :cond_0
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUniversalLockView$8;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDot:Landroid/widget/ImageView;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$3000(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/widget/ImageView;
 
     move-result-object v1
@@ -73,7 +71,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUniversalLockView$8;->this$0:Lcom/android/keyguard/KeyguardUniversalLockView;
 
-    # getter for: Lcom/android/keyguard/KeyguardUniversalLockView;->mDot:Landroid/widget/ImageView;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardUniversalLockView;->access$3000(Lcom/android/keyguard/KeyguardUniversalLockView;)Landroid/widget/ImageView;
 
     move-result-object v1

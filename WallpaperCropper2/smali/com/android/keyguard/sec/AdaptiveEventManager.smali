@@ -643,7 +643,6 @@
 
     aget-object v2, v2, v3
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v2}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1500(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;)Landroid/view/View;
 
     move-result-object v2
@@ -700,7 +699,6 @@
 
     aget-object v2, v2, v3
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v2}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1500(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;)Landroid/view/View;
 
     move-result-object v2
@@ -1622,14 +1620,12 @@
     return-object v2
 
     :cond_1
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v1}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1500(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;)Landroid/view/View;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v1}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1500(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;)Landroid/view/View;
 
     move-result-object v0
@@ -1643,7 +1639,6 @@
     if-nez v0, :cond_2
 
     :goto_0
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v1}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1500(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;)Landroid/view/View;
 
     move-result-object v0
@@ -1815,7 +1810,6 @@
 
     aget-object v0, v0, v5
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v0, v3}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1502(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;Landroid/view/View;)Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager;->mViewList:[Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;
@@ -1841,7 +1835,6 @@
 
     aget-object v0, v0, v4
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v0, v3}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1502(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;Landroid/view/View;)Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager;->mViewList:[Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;
@@ -1855,7 +1848,6 @@
 
     aget-object v0, v0, v6
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v0, v3}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1502(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;Landroid/view/View;)Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager;->mViewList:[Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;
@@ -1995,7 +1987,6 @@
 
     aget-object v2, v2, v3
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v2}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1500(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;)Landroid/view/View;
 
     move-result-object v2
@@ -2027,7 +2018,6 @@
 
     aget-object v0, v0, v3
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v0, v4}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1502(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;Landroid/view/View;)Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager;->mViewList:[Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;
@@ -2139,7 +2129,6 @@
 
     aget-object v2, v2, v5
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v2}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1500(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;)Landroid/view/View;
 
     move-result-object v2
@@ -2205,7 +2194,6 @@
 
     aget-object v2, v2, v4
 
-    # getter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v2}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1500(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;)Landroid/view/View;
 
     move-result-object v2
@@ -2229,7 +2217,6 @@
 
     aget-object v0, v0, v4
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v0, v3}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1502(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;Landroid/view/View;)Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager;->mViewList:[Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;
@@ -2243,7 +2230,6 @@
 
     aget-object v0, v0, v5
 
-    # setter for: Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
     invoke-static {v0, v3}, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->access$1502(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;Landroid/view/View;)Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager;->mViewList:[Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;

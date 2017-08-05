@@ -59,7 +59,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAccountView$5;->this$0:Lcom/android/keyguard/KeyguardAccountView;
 
-    # getter for: Lcom/android/keyguard/KeyguardAccountView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardAccountView;->access$400(Lcom/android/keyguard/KeyguardAccountView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v0
@@ -102,7 +101,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardAccountView$5;->this$0:Lcom/android/keyguard/KeyguardAccountView;
 
-    # invokes: Lcom/android/keyguard/KeyguardAccountView;->postOnCheckPasswordResult(Z)V
     invoke-static {v1, v0}, Lcom/android/keyguard/KeyguardAccountView;->access$800(Lcom/android/keyguard/KeyguardAccountView;Z)V
     :try_end_0
     .catch Landroid/accounts/OperationCanceledException; {:try_start_0 .. :try_end_0} :catch_0
@@ -112,7 +110,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAccountView$5;->this$0:Lcom/android/keyguard/KeyguardAccountView;
 
-    # getter for: Lcom/android/keyguard/KeyguardAccountView;->mLogin:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardAccountView;->access$000(Lcom/android/keyguard/KeyguardAccountView;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -134,14 +131,12 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/android/keyguard/KeyguardAccountView;->postOnCheckPasswordResult(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardAccountView;->access$800(Lcom/android/keyguard/KeyguardAccountView;Z)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAccountView$5;->this$0:Lcom/android/keyguard/KeyguardAccountView;
 
-    # getter for: Lcom/android/keyguard/KeyguardAccountView;->mLogin:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardAccountView;->access$000(Lcom/android/keyguard/KeyguardAccountView;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -162,14 +157,12 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/android/keyguard/KeyguardAccountView;->postOnCheckPasswordResult(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardAccountView;->access$800(Lcom/android/keyguard/KeyguardAccountView;Z)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAccountView$5;->this$0:Lcom/android/keyguard/KeyguardAccountView;
 
-    # getter for: Lcom/android/keyguard/KeyguardAccountView;->mLogin:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardAccountView;->access$000(Lcom/android/keyguard/KeyguardAccountView;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -190,14 +183,12 @@
 
     const/4 v1, 0x0
 
-    # invokes: Lcom/android/keyguard/KeyguardAccountView;->postOnCheckPasswordResult(Z)V
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardAccountView;->access$800(Lcom/android/keyguard/KeyguardAccountView;Z)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAccountView$5;->this$0:Lcom/android/keyguard/KeyguardAccountView;
 
-    # getter for: Lcom/android/keyguard/KeyguardAccountView;->mLogin:Landroid/widget/EditText;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardAccountView;->access$000(Lcom/android/keyguard/KeyguardAccountView;)Landroid/widget/EditText;
 
     move-result-object v0
@@ -215,7 +206,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardAccountView$5;->this$0:Lcom/android/keyguard/KeyguardAccountView;
 
-    # getter for: Lcom/android/keyguard/KeyguardAccountView;->mLogin:Landroid/widget/EditText;
     invoke-static {v1}, Lcom/android/keyguard/KeyguardAccountView;->access$000(Lcom/android/keyguard/KeyguardAccountView;)Landroid/widget/EditText;
 
     move-result-object v1

@@ -45,7 +45,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewParticleSpace$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewParticleSpace;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewParticleSpace;->mKeyguardWindowCallback:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$KeyguardWindowCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewParticleSpace;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewParticleSpace;)Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$KeyguardWindowCallback;
 
     move-result-object v0
@@ -58,7 +57,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewParticleSpace$1;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewParticleSpace;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewParticleSpace;->mKeyguardWindowCallback:Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$KeyguardWindowCallback;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewParticleSpace;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewParticleSpace;)Lcom/android/keyguard/sec/wallpaper/KeyguardWallpaperMediator$KeyguardWindowCallback;
 
     move-result-object v0

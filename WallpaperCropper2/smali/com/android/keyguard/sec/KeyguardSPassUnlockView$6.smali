@@ -66,7 +66,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mContext:Landroid/content/Context;
     invoke-static {v3}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1400(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/content/Context;
 
     move-result-object v3
@@ -86,12 +85,10 @@
     move v0, v1
 
     :cond_3
-    # setter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mUseBlackTextOnWhiteWallpaper:Z
     invoke-static {v2, v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1602(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mStatusText:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -100,7 +97,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mUseBlackTextOnWhiteWallpaper:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1600(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Z
 
     move-result v0
@@ -109,14 +105,12 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mStatusText:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/TextView;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1400(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/content/Context;
 
     move-result-object v1
@@ -135,14 +129,12 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mStatusText:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/TextView;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mStatusText:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -153,7 +145,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mStatusText:Landroid/widget/TextView;
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/TextView;
 
     move-result-object v2
@@ -164,7 +155,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mStatusText:Landroid/widget/TextView;
     invoke-static {v3}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/TextView;
 
     move-result-object v3
@@ -182,7 +172,6 @@
     :cond_4
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mStatusText:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -193,14 +182,12 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mStatusText:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/TextView;
 
     move-result-object v0
 
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mStatusText:Landroid/widget/TextView;
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/TextView;
 
     move-result-object v2
@@ -211,7 +198,6 @@
 
     iget-object v3, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mStatusText:Landroid/widget/TextView;
     invoke-static {v3}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/TextView;
 
     move-result-object v3
@@ -222,7 +208,6 @@
 
     iget-object v4, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$6;->this$0:Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mStatusText:Landroid/widget/TextView;
     invoke-static {v4}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->access$1700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/widget/TextView;
 
     move-result-object v4

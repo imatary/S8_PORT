@@ -51,7 +51,6 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockView;->refreshTravelInfo()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$000(Lcom/android/keyguard/sec/SecKeyguardClockView;)V
 
     goto :goto_0
@@ -59,7 +58,6 @@
     :pswitch_2
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$1;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockView;->handleDelayedOnConfigurationChanged()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$100(Lcom/android/keyguard/sec/SecKeyguardClockView;)V
 
     goto :goto_0

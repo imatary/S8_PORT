@@ -40,7 +40,6 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignService:Lcom/android/internal/policy/ISignServiceInterface;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$100(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/policy/ISignServiceInterface;
 
     move-result-object v0
@@ -65,7 +64,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignView:Lcom/android/internal/widget/SignView;
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$200(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/widget/SignView;
 
     move-result-object v2
@@ -82,7 +80,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignView:Lcom/android/internal/widget/SignView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$200(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/widget/SignView;
 
     move-result-object v0
@@ -94,7 +91,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignService:Lcom/android/internal/policy/ISignServiceInterface;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$100(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/policy/ISignServiceInterface;
 
     move-result-object v1
@@ -103,12 +99,10 @@
 
     move-result v1
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mEngineStarted:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$302(Lcom/android/keyguard/sec/KeyguardSignatureView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mEngineStarted:Z
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$300(Lcom/android/keyguard/sec/KeyguardSignatureView;)Z
 
     move-result v0
@@ -136,14 +130,12 @@
     :try_start_1
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignView:Lcom/android/internal/widget/SignView;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$200(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/widget/SignView;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignService:Lcom/android/internal/policy/ISignServiceInterface;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$100(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/policy/ISignServiceInterface;
 
     move-result-object v1
@@ -155,7 +147,6 @@
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignService:Lcom/android/internal/policy/ISignServiceInterface;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$100(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/policy/ISignServiceInterface;
 
     move-result-object v0
@@ -166,7 +157,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignService:Lcom/android/internal/policy/ISignServiceInterface;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$100(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/policy/ISignServiceInterface;
 
     move-result-object v0
@@ -208,7 +198,6 @@
     :cond_3
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView$2;->this$0:Lcom/android/keyguard/sec/KeyguardSignatureView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignService:Lcom/android/internal/policy/ISignServiceInterface;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->access$100(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/policy/ISignServiceInterface;
 
     move-result-object v0

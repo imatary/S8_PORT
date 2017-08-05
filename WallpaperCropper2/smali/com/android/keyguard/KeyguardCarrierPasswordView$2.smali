@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView$2;->this$0:Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
-    # getter for: Lcom/android/keyguard/KeyguardCarrierPasswordView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardCarrierPasswordView;->access$000(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v0
@@ -52,7 +51,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView$2;->this$0:Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
-    # getter for: Lcom/android/keyguard/KeyguardCarrierPasswordView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardCarrierPasswordView;->access$000(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Lcom/android/keyguard/KeyguardSecurityCallback;
 
     move-result-object v0

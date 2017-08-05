@@ -38,7 +38,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$5;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$2300(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Lcom/android/keyguard/SecurityMessageDisplay;
 
     move-result-object v0
@@ -55,7 +54,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mCountdownTimer:Landroid/os/CountDownTimer;
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$2402(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;Landroid/os/CountDownTimer;)Landroid/os/CountDownTimer;
 
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardProperties;->isChinaFeature()Z
@@ -76,7 +74,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$5;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$2500(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v0
@@ -85,7 +82,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$5;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$2600(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/content/Context;
 
     move-result-object v0
@@ -98,7 +94,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$5;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$2700(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/content/Context;
 
     move-result-object v0
@@ -197,7 +192,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView$5;->this$0:Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$2100(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/content/Context;
 
     move-result-object v2
@@ -218,7 +212,6 @@
 
     const/16 v2, 0x3e8
 
-    # invokes: Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->setHintOrMessageText(Ljava/lang/CharSequence;ZI)V
     invoke-static {v1, v0, v6, v2}, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->access$2200(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;Ljava/lang/CharSequence;ZI)V
 
     return-void

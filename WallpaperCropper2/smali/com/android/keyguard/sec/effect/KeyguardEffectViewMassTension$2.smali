@@ -75,7 +75,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;->mCircleCenterDot:Landroid/widget/ImageView;
     invoke-static {v2}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;)Landroid/widget/ImageView;
 
     move-result-object v2
@@ -86,7 +85,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;->mCircleCenterDot:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;)Landroid/widget/ImageView;
 
     move-result-object v0
@@ -97,7 +95,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;->mCircleCenterDot:Landroid/widget/ImageView;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;)Landroid/widget/ImageView;
 
     move-result-object v0
@@ -108,7 +105,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;->createBouncerAnimation()Landroid/view/animation/AnimationSet;
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;->access$100(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;)Landroid/view/animation/AnimationSet;
 
     move-result-object v0
@@ -119,7 +115,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension$2;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;
 
-    # getter for: Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;->mCircleCenterDot:Landroid/widget/ImageView;
     invoke-static {v1}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;->access$000(Lcom/android/keyguard/sec/effect/KeyguardEffectViewMassTension;)Landroid/widget/ImageView;
 
     move-result-object v1

@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation$1;->this$0:Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mMarginLeft:I
     invoke-static {v0}, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->access$200(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)I
 
     move-result v0
@@ -50,14 +49,12 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation$1;->this$0:Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mUsableWidth:I
     invoke-static {v1}, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->access$300(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)I
 
     move-result v1
 
     iget-object v4, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation$1;->this$0:Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mClock:Landroid/view/View;
     invoke-static {v4}, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->access$400(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)Landroid/view/View;
 
     move-result-object v4
@@ -78,7 +75,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation$1;->this$0:Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mMarginTop:I
     invoke-static {v1}, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->access$500(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)I
 
     move-result v1
@@ -89,14 +85,12 @@
 
     iget-object v4, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation$1;->this$0:Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mUsableHeight:I
     invoke-static {v4}, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->access$600(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)I
 
     move-result v4
 
     iget-object v5, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation$1;->this$0:Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mClock:Landroid/view/View;
     invoke-static {v5}, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->access$400(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)Landroid/view/View;
 
     move-result-object v5
@@ -117,7 +111,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation$1;->this$0:Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mClock:Landroid/view/View;
     invoke-static {v2}, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->access$400(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)Landroid/view/View;
 
     move-result-object v2
@@ -128,7 +121,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation$1;->this$0:Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mClock:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->access$400(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)Landroid/view/View;
 
     move-result-object v0
@@ -139,7 +131,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation$1;->this$0:Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
-    # getter for: Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mClock:Landroid/view/View;
     invoke-static {v0}, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->access$400(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)Landroid/view/View;
 
     move-result-object v0

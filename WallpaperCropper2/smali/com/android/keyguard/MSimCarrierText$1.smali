@@ -92,14 +92,12 @@
 
     :cond_0
     :goto_0
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mPlmn:[Ljava/lang/CharSequence;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$000()[Ljava/lang/CharSequence;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/android/keyguard/MSimCarrierText$1;->this$0:Lcom/android/keyguard/MSimCarrierText;
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/android/keyguard/MSimCarrierText;->access$400(Lcom/android/keyguard/MSimCarrierText;)Landroid/content/Context;
 
     move-result-object v2
@@ -114,14 +112,12 @@
 
     aput-object v2, v1, v0
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mSpn:[Ljava/lang/CharSequence;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$200()[Ljava/lang/CharSequence;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/android/keyguard/MSimCarrierText$1;->this$0:Lcom/android/keyguard/MSimCarrierText;
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/android/keyguard/MSimCarrierText;->access$500(Lcom/android/keyguard/MSimCarrierText;)Landroid/content/Context;
 
     move-result-object v2
@@ -149,7 +145,6 @@
 
     move-result-object v1
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mPlmn:[Ljava/lang/CharSequence;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$000()[Ljava/lang/CharSequence;
 
     move-result-object v2
@@ -166,7 +161,6 @@
 
     move-result-object v1
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mSpn:[Ljava/lang/CharSequence;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$200()[Ljava/lang/CharSequence;
 
     move-result-object v2
@@ -195,17 +189,14 @@
 
     iget-object v0, p0, Lcom/android/keyguard/MSimCarrierText$1;->this$0:Lcom/android/keyguard/MSimCarrierText;
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mSimState:[Lcom/android/internal/telephony/IccCardConstants$State;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$600()[Lcom/android/internal/telephony/IccCardConstants$State;
 
     move-result-object v1
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mPlmn:[Ljava/lang/CharSequence;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$000()[Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mSpn:[Ljava/lang/CharSequence;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$200()[Ljava/lang/CharSequence;
 
     move-result-object v3
@@ -215,14 +206,12 @@
     return-void
 
     :cond_1
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mPlmn:[Ljava/lang/CharSequence;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$000()[Ljava/lang/CharSequence;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/MSimCarrierText$1;->this$0:Lcom/android/keyguard/MSimCarrierText;
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/keyguard/MSimCarrierText;->access$100(Lcom/android/keyguard/MSimCarrierText;)Landroid/content/Context;
 
     move-result-object v1
@@ -237,14 +226,12 @@
 
     aput-object v1, v0, p1
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mSpn:[Ljava/lang/CharSequence;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$200()[Ljava/lang/CharSequence;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/keyguard/MSimCarrierText$1;->this$0:Lcom/android/keyguard/MSimCarrierText;
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/keyguard/MSimCarrierText;->access$300(Lcom/android/keyguard/MSimCarrierText;)Landroid/content/Context;
 
     move-result-object v1
@@ -276,7 +263,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/MSimCarrierText$1;->this$0:Lcom/android/keyguard/MSimCarrierText;
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/keyguard/MSimCarrierText;->access$700(Lcom/android/keyguard/MSimCarrierText;)Landroid/content/Context;
 
     move-result-object v0
@@ -340,7 +326,6 @@
     if-nez v2, :cond_1
 
     :goto_0
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mSimState:[Lcom/android/internal/telephony/IccCardConstants$State;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$600()[Lcom/android/internal/telephony/IccCardConstants$State;
 
     move-result-object v1
@@ -350,17 +335,14 @@
 
     iget-object v0, p0, Lcom/android/keyguard/MSimCarrierText$1;->this$0:Lcom/android/keyguard/MSimCarrierText;
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mSimState:[Lcom/android/internal/telephony/IccCardConstants$State;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$600()[Lcom/android/internal/telephony/IccCardConstants$State;
 
     move-result-object v1
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mPlmn:[Ljava/lang/CharSequence;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$000()[Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mSpn:[Ljava/lang/CharSequence;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$200()[Ljava/lang/CharSequence;
 
     move-result-object v3
@@ -370,7 +352,6 @@
     return-void
 
     :cond_0
-    # getter for: Lcom/android/keyguard/MSimCarrierText;->mSimState:[Lcom/android/internal/telephony/IccCardConstants$State;
     invoke-static {}, Lcom/android/keyguard/MSimCarrierText;->access$600()[Lcom/android/internal/telephony/IccCardConstants$State;
 
     move-result-object v1

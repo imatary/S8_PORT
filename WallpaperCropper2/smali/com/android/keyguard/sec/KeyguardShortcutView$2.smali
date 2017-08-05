@@ -38,7 +38,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$2;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->TAG:Ljava/lang/String;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$100(Lcom/android/keyguard/sec/KeyguardShortcutView;)Ljava/lang/String;
 
     move-result-object v0
@@ -49,7 +48,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$2;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$200(Lcom/android/keyguard/sec/KeyguardShortcutView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -60,7 +58,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$2;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$200(Lcom/android/keyguard/sec/KeyguardShortcutView;)Landroid/os/Handler;
 
     move-result-object v1
@@ -69,7 +66,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$2;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
-    # getter for: Lcom/android/keyguard/sec/KeyguardShortcutView;->mHandler:Landroid/os/Handler;
     invoke-static {v1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->access$200(Lcom/android/keyguard/sec/KeyguardShortcutView;)Landroid/os/Handler;
 
     move-result-object v1

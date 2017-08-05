@@ -98,11 +98,20 @@
 .method protected onPostExecute(Ljava/lang/Long;)V
     .locals 6
 
+    iget-object v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity$3;->this$0:Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;
+
+    iget-object v0, v0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->mBitmapSource:Lcom/sec/android/wallpapercropper2/UriBitmapSource;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
     invoke-virtual {p0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity$3;->isCancelled()Z
 
     move-result v0
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_2
 
     iget-object v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity$3;->this$0:Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;
 
@@ -110,7 +119,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     iget-object v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity$3;->this$0:Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;
 
@@ -124,7 +133,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    :cond_0
+    :cond_1
     iget-object v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity$3;->this$0:Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;
 
     invoke-virtual {v0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->setCropViewTileSource()V
@@ -147,21 +156,21 @@
 
     cmp-long v0, v0, v4
 
-    if-lez v0, :cond_2
+    if-lez v0, :cond_3
 
     const-wide/16 v0, 0x64
 
     :goto_0
     invoke-virtual {v2, v3, v0, v1}, Landroid/widget/FrameLayout;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    :cond_1
+    :cond_2
     iget-object v0, p0, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity$3;->this$0:Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;
 
     invoke-static {v0}, Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;->-wrap2(Lcom/sec/android/wallpapercropper2/KeyguardCropActivity;)V
 
     return-void
 
-    :cond_2
+    :cond_3
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v0

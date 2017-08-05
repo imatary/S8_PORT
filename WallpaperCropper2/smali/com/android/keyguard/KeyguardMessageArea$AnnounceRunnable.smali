@@ -83,7 +83,6 @@
 
     if-nez v1, :cond_0
 
-    # getter for: Lcom/android/keyguard/KeyguardMessageArea;->mKeyguardShowing:Z
     invoke-static {}, Lcom/android/keyguard/KeyguardMessageArea;->access$700()Z
 
     move-result v1

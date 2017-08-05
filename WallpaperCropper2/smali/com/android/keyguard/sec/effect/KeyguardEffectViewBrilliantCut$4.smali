@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantCut$4;->this$0:Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantCut;
 
-    # invokes: Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantCut;->fadeOutSound()V
     invoke-static {v0}, Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantCut;->access$200(Lcom/android/keyguard/sec/effect/KeyguardEffectViewBrilliantCut;)V
 
     return-void

@@ -42,7 +42,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockView;->refreshOwnerInfo()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$1000(Lcom/android/keyguard/sec/SecKeyguardClockView;)V
 
     goto :goto_0
@@ -71,12 +70,10 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # setter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mScreenOn:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2602(Lcom/android/keyguard/sec/SecKeyguardClockView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mOwnerInfo:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2000(Lcom/android/keyguard/sec/SecKeyguardClockView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -89,7 +86,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mOwnerInfo:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2000(Lcom/android/keyguard/sec/SecKeyguardClockView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -106,12 +102,10 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # setter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mScreenOn:Z
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2602(Lcom/android/keyguard/sec/SecKeyguardClockView;Z)Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mOwnerInfo:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2000(Lcom/android/keyguard/sec/SecKeyguardClockView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -124,7 +118,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mOwnerInfo:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2000(Lcom/android/keyguard/sec/SecKeyguardClockView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -151,7 +144,6 @@
 
     move-result-object v1
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mShouldShowDualClock:Ljava/lang/Boolean;
     invoke-static {}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2100()Ljava/lang/Boolean;
 
     move-result-object v2
@@ -168,7 +160,6 @@
 
     iget-object v2, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockView;->isDualClockSet()Z
     invoke-static {v2}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2200(Lcom/android/keyguard/sec/SecKeyguardClockView;)Z
 
     move-result v2
@@ -187,15 +178,12 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2300(Lcom/android/keyguard/sec/SecKeyguardClockView;)Landroid/content/Context;
 
     move-result-object v1
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockView;->setAutoHomeTimezone(Landroid/content/Context;)V
     invoke-static {v0, v1}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2400(Lcom/android/keyguard/sec/SecKeyguardClockView;Landroid/content/Context;)V
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mShouldShowDualClock:Ljava/lang/Boolean;
     invoke-static {}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2100()Ljava/lang/Boolean;
 
     move-result-object v0
@@ -206,7 +194,6 @@
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockView;->isDualClockSet()Z
     invoke-static {v1}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2200(Lcom/android/keyguard/sec/SecKeyguardClockView;)Z
 
     move-result v1
@@ -215,7 +202,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockView;->setWidthAdaptiveEventContainer()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2500(Lcom/android/keyguard/sec/SecKeyguardClockView;)V
 
     :goto_0
@@ -224,7 +210,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$300(Lcom/android/keyguard/sec/SecKeyguardClockView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -238,7 +223,6 @@
     :goto_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$300(Lcom/android/keyguard/sec/SecKeyguardClockView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -250,7 +234,6 @@
     :cond_1
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$300(Lcom/android/keyguard/sec/SecKeyguardClockView;)Landroid/os/Handler;
 
     move-result-object v0
@@ -265,7 +248,6 @@
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mOwnerInfo:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2000(Lcom/android/keyguard/sec/SecKeyguardClockView;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -275,7 +257,6 @@
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # invokes: Lcom/android/keyguard/sec/SecKeyguardClockView;->refreshOwnerInfo()V
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$1000(Lcom/android/keyguard/sec/SecKeyguardClockView;)V
 
     return-void
@@ -283,7 +264,6 @@
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClockView$6;->this$0:Lcom/android/keyguard/sec/SecKeyguardClockView;
 
-    # getter for: Lcom/android/keyguard/sec/SecKeyguardClockView;->mOwnerInfo:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/android/keyguard/sec/SecKeyguardClockView;->access$2000(Lcom/android/keyguard/sec/SecKeyguardClockView;)Landroid/widget/TextView;
 
     move-result-object v0
