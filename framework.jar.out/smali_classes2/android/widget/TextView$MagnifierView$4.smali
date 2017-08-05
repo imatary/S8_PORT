@@ -1,6 +1,6 @@
-.class Landroid/widget/Editor$MagnifierView$1;
+.class Landroid/widget/TextView$MagnifierView$4;
 .super Ljava/lang/Object;
-.source "Editor.java"
+.source "TextView.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroid/widget/Editor$MagnifierView;->getShowAnimator()Landroid/animation/ValueAnimator;
+    value = Landroid/widget/TextView$MagnifierView;->getHideAnimator()Landroid/animation/ValueAnimator;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic this$1:Landroid/widget/Editor$MagnifierView;
+.field final synthetic this$1:Landroid/widget/TextView$MagnifierView;
 
 
 # direct methods
-.method constructor <init>(Landroid/widget/Editor$MagnifierView;)V
+.method constructor <init>(Landroid/widget/TextView$MagnifierView;)V
     .locals 0
 
-    iput-object p1, p0, Landroid/widget/Editor$MagnifierView$1;->this$1:Landroid/widget/Editor$MagnifierView;
+    iput-object p1, p0, Landroid/widget/TextView$MagnifierView$4;->this$1:Landroid/widget/TextView$MagnifierView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +61,7 @@
 
     move-result v0
 
-    iget-object v3, p0, Landroid/widget/Editor$MagnifierView$1;->this$1:Landroid/widget/Editor$MagnifierView;
+    iget-object v3, p0, Landroid/widget/TextView$MagnifierView$4;->this$1:Landroid/widget/TextView$MagnifierView;
 
     const-string/jumbo v2, "verticalOffset"
 
@@ -75,27 +75,27 @@
 
     move-result v2
 
-    invoke-static {v3, v2}, Landroid/widget/Editor$MagnifierView;->-set1(Landroid/widget/Editor$MagnifierView;I)I
+    invoke-static {v3, v2}, Landroid/widget/TextView$MagnifierView;->-set1(Landroid/widget/TextView$MagnifierView;I)I
 
-    iget-object v2, p0, Landroid/widget/Editor$MagnifierView$1;->this$1:Landroid/widget/Editor$MagnifierView;
+    iget-object v2, p0, Landroid/widget/TextView$MagnifierView$4;->this$1:Landroid/widget/TextView$MagnifierView;
 
-    iget-object v2, v2, Landroid/widget/Editor$MagnifierView;->mRectDst:Landroid/graphics/RectF;
+    iget-object v2, v2, Landroid/widget/TextView$MagnifierView;->mRectDst:Landroid/graphics/RectF;
 
-    iget-object v3, p0, Landroid/widget/Editor$MagnifierView$1;->this$1:Landroid/widget/Editor$MagnifierView;
+    iget-object v3, p0, Landroid/widget/TextView$MagnifierView$4;->this$1:Landroid/widget/TextView$MagnifierView;
 
-    invoke-static {v3}, Landroid/widget/Editor$MagnifierView;->-get10(Landroid/widget/Editor$MagnifierView;)F
+    invoke-static {v3}, Landroid/widget/TextView$MagnifierView;->-get10(Landroid/widget/TextView$MagnifierView;)F
 
     move-result v3
 
-    iget-object v4, p0, Landroid/widget/Editor$MagnifierView$1;->this$1:Landroid/widget/Editor$MagnifierView;
+    iget-object v4, p0, Landroid/widget/TextView$MagnifierView$4;->this$1:Landroid/widget/TextView$MagnifierView;
 
-    invoke-static {v4}, Landroid/widget/Editor$MagnifierView;->-get10(Landroid/widget/Editor$MagnifierView;)F
+    invoke-static {v4}, Landroid/widget/TextView$MagnifierView;->-get10(Landroid/widget/TextView$MagnifierView;)F
 
     move-result v4
 
-    iget-object v5, p0, Landroid/widget/Editor$MagnifierView$1;->this$1:Landroid/widget/Editor$MagnifierView;
+    iget-object v5, p0, Landroid/widget/TextView$MagnifierView$4;->this$1:Landroid/widget/TextView$MagnifierView;
 
-    invoke-static {v5}, Landroid/widget/Editor$MagnifierView;->-get9(Landroid/widget/Editor$MagnifierView;)I
+    invoke-static {v5}, Landroid/widget/TextView$MagnifierView;->-get9(Landroid/widget/TextView$MagnifierView;)I
 
     move-result v5
 
@@ -105,9 +105,9 @@
 
     invoke-virtual {v2, v3, v1, v4, v0}, Landroid/graphics/RectF;->set(FFFF)V
 
-    iget-object v2, p0, Landroid/widget/Editor$MagnifierView$1;->this$1:Landroid/widget/Editor$MagnifierView;
+    iget-object v2, p0, Landroid/widget/TextView$MagnifierView$4;->this$1:Landroid/widget/TextView$MagnifierView;
 
-    invoke-virtual {v2}, Landroid/widget/Editor$MagnifierView;->getMagnifierScreen()V
+    invoke-virtual {v2}, Landroid/widget/TextView$MagnifierView;->getMagnifierScreen()V
 
     return-void
 .end method
