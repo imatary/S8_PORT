@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/label_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="23.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="22.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sec.android.mimage.photoretouching.Decoration.InputFileName android:textSize="18.0dip" android:id="@id/filename_edit" android:layout_width="276.0dip" android:layout_height="38.0dip" android:cursorVisible="true" android:singleLine="true" android:selectAllOnFocus="true" android:capitalize="sentences" android:autoText="false" />
-</LinearLayout>

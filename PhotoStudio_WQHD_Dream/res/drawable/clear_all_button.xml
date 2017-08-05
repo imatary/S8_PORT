@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:gravity="center_vertical" android:drawable="@drawable/dialog_action_button_shape" android:left="7.0dip" android:top="@dimen/clear_all_button_background_padding" android:right="7.0dip" android:bottom="@dimen/clear_all_button_background_padding" />
-</layer-list>

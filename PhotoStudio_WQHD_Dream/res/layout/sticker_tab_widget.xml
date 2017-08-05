@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/deco_sticker_tab_item_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:id="@id/tab_item_image_background" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
-        <ImageView android:gravity="center" android:id="@id/tab_image" android:duplicateParentState="true" android:layout_width="41.0dip" android:layout_height="41.0dip" />
-    </LinearLayout>
-</LinearLayout>

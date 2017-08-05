@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shareThumbLayout" android:layout_width="112.0dip" android:layout_height="112.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center_horizontal" android:id="@id/shareviaThumb" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="14.0dip" />
-    <TextView android:textSize="14.0dip" android:textColor="#fff5f5f5" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/shareviaName" android:layout_width="112.0dip" android:layout_height="32.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:maxLines="2" android:includeFontPadding="false" android:fontFamily="sans-serif-light" />
-</LinearLayout>

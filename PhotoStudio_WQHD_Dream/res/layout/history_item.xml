@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/history_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <View android:layout_gravity="bottom" android:id="@id/history_bg" android:background="@drawable/history_item_bg" android:layout_width="fill_parent" android:layout_height="46.0dip" />
-    <TextView android:textSize="11.0dip" android:textColor="#fffafafa" android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@id/history_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" />
-</FrameLayout>

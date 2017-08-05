@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/gridview_item_bg" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/sticker_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
-    <ImageView android:layout_gravity="center" android:id="@id/label_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
-    <ImageView android:layout_gravity="center" android:id="@id/cover_image" android:visibility="gone" android:layout_width="@dimen/cover_grid_width" android:layout_height="@dimen/cover_grid_width" />
-    <ImageView android:layout_gravity="center" android:id="@id/decor_item_image" android:background="@drawable/gridview_item_c9_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/decor_sticker_height" />
-</LinearLayout>

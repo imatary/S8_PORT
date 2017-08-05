@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_selected="true">
-        <bitmap android:src="@drawable/tone_ic_saturation" android:tint="@color/btn_text_selected" />
-    </item>
-    <item android:drawable="@drawable/tone_ic_saturation" />
-</selector>

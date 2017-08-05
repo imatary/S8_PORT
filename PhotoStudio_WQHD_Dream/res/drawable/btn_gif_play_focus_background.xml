@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/effect_manager_actionbar_ripple_effect" />
-    <item android:drawable="@drawable/btn_shape_gif_play_with_inset" />
-</layer-list>

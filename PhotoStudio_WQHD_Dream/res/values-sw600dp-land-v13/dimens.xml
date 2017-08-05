@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="adjustment_bottom_margin">142.0dip</dimen>
-    <dimen name="adjustment_left_margin">86.0dip</dimen>
-    <dimen name="adjustment_right_margin">86.0dip</dimen>
-    <dimen name="agif_submenu_margin_start">60.0dip</dimen>
-    <dimen name="adjustment_top_margin">25.0dip</dimen>
-    <dimen name="__cp__recording_size_progressbar_width">229.0dip</dimen>
-</resources>

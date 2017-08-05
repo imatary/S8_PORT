@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/photoeditor_menu_remodecoration" android:title="@string/remove_decoration" android:showAsAction="collapseActionView" />
-    <item android:id="@id/photoeditor_menu_save" android:title="@string/save" android:showAsAction="always" />
-</menu>

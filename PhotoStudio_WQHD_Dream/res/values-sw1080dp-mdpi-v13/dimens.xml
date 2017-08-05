@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="pick_count_text_size">19.0sp</dimen>
-    <dimen name="pick_done_text_size">19.0sp</dimen>
-    <dimen name="picker_gridview_button_layout_height">64.0dip</dimen>
-    <dimen name="picker_gridview_button_layout_margin">32.0dip</dimen>
-    <dimen name="picker_gridview_item_video_icon_size">61.0dip</dimen>
-    <dimen name="search_no_item_text_size">20.0sp</dimen>
-</resources>

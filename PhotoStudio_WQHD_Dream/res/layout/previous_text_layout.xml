@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="56.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0dip" android:textColor="#fffafafa" android:gravity="center" android:layout_gravity="center" android:id="@id/previous_textview" android:background="@drawable/select_effect_tag_bg" android:layout_width="wrap_content" android:layout_height="22.0dip" android:text="@string/previous" android:paddingStart="7.0dip" android:paddingEnd="7.0dip" />
-</FrameLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_selected="true">
-        <bitmap android:src="@drawable/agif_ic_direction_forward" android:tint="@color/btn_text_selected" android:tintMode="src_atop"
-          xmlns:android="http://schemas.android.com/apk/res/android" />
-    </item>
-    <item android:drawable="@drawable/agif_ic_direction_forward" />
-</selector>
