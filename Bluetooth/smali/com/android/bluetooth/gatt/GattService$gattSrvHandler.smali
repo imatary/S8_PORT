@@ -512,7 +512,7 @@
 
     iget v3, p0, Lcom/android/bluetooth/gatt/GattService$gattSrvHandler;->status:I
 
-    invoke-static {v1, v2, v3}, Lcom/android/bluetooth/gatt/GattService;->-wrap30(Lcom/android/bluetooth/gatt/GattService;II)V
+    invoke-static {v1, v2, v3}, Lcom/android/bluetooth/gatt/GattService;->-wrap31(Lcom/android/bluetooth/gatt/GattService;II)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 

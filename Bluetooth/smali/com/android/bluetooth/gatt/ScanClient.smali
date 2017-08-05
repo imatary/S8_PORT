@@ -31,6 +31,8 @@
 
 .field legacyForegroundApp:Z
 
+.field oppoFilterConfigured:Z
+
 .field settings:Landroid/bluetooth/le/ScanSettings;
 
 .field stats:Lcom/android/bluetooth/gatt/AppScanStats;
@@ -269,6 +271,10 @@
     .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/android/bluetooth/gatt/ScanClient;->oppoFilterConfigured:Z
 
     const/4 v0, 0x0
 

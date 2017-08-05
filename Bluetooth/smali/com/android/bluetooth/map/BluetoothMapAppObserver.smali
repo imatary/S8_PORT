@@ -7,7 +7,8 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/android/bluetooth/map/BluetoothMapAppObserver$1;,
-        Lcom/android/bluetooth/map/BluetoothMapAppObserver$DirectBootCompleteReceiver;
+        Lcom/android/bluetooth/map/BluetoothMapAppObserver$DirectBootCompleteReceiver;,
+        Lcom/android/bluetooth/map/BluetoothMapAppObserver$EmergencyModeChangedReceiver;
     }
 .end annotation
 
@@ -28,6 +29,8 @@
 .field private mContext:Landroid/content/Context;
 
 .field private mDirectBootCompleteReceiver:Lcom/android/bluetooth/map/BluetoothMapAppObserver$DirectBootCompleteReceiver;
+
+.field private mEmergencyModeChangedReceiver:Lcom/android/bluetooth/map/BluetoothMapAppObserver$EmergencyModeChangedReceiver;
 
 .field mEnabledAccounts:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -153,6 +156,8 @@
 
     iput-object v5, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mDirectBootCompleteReceiver:Lcom/android/bluetooth/map/BluetoothMapAppObserver$DirectBootCompleteReceiver;
 
+    iput-object v5, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mEmergencyModeChangedReceiver:Lcom/android/bluetooth/map/BluetoothMapAppObserver$EmergencyModeChangedReceiver;
+
     iput-object v5, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mEnabledAccounts:Ljava/util/ArrayList;
 
     iput-object v5, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mNewAccountList:Ljava/util/ArrayList;
@@ -209,9 +214,19 @@
 
     iput-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mDirectBootCompleteReceiver:Lcom/android/bluetooth/map/BluetoothMapAppObserver$DirectBootCompleteReceiver;
 
+    new-instance v0, Lcom/android/bluetooth/map/BluetoothMapAppObserver$EmergencyModeChangedReceiver;
+
+    invoke-direct {v0, p0, v5}, Lcom/android/bluetooth/map/BluetoothMapAppObserver$EmergencyModeChangedReceiver;-><init>(Lcom/android/bluetooth/map/BluetoothMapAppObserver;Lcom/android/bluetooth/map/BluetoothMapAppObserver$EmergencyModeChangedReceiver;)V
+
+    iput-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mEmergencyModeChangedReceiver:Lcom/android/bluetooth/map/BluetoothMapAppObserver$EmergencyModeChangedReceiver;
+
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mDirectBootCompleteReceiver:Lcom/android/bluetooth/map/BluetoothMapAppObserver$DirectBootCompleteReceiver;
 
     invoke-virtual {v0}, Lcom/android/bluetooth/map/BluetoothMapAppObserver$DirectBootCompleteReceiver;->register()V
+
+    iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mEmergencyModeChangedReceiver:Lcom/android/bluetooth/map/BluetoothMapAppObserver$EmergencyModeChangedReceiver;
+
+    invoke-virtual {v0}, Lcom/android/bluetooth/map/BluetoothMapAppObserver$EmergencyModeChangedReceiver;->register()V
 
     invoke-direct {p0}, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->initObservers()V
 
@@ -233,6 +248,10 @@
 
     :cond_0
     invoke-virtual {p0}, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->unregisterObserver()V
+
+    iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mEmergencyModeChangedReceiver:Lcom/android/bluetooth/map/BluetoothMapAppObserver$EmergencyModeChangedReceiver;
+
+    invoke-virtual {v0}, Lcom/android/bluetooth/map/BluetoothMapAppObserver$EmergencyModeChangedReceiver;->unregister()V
 
     return-void
 .end method
@@ -278,9 +297,7 @@
 .method private handleAccountChanges(Ljava/lang/String;)V
     .locals 9
 
-    const/4 v2, 0x0
-
-    const/4 v8, 0x0
+    const/4 v3, 0x0
 
     sget-object v0, Lcom/android/bluetooth/map/BluetoothMapUtils;->EMAIL_CONTENT_URI:Ljava/lang/String;
 
@@ -296,21 +313,21 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_5
 
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/android/bluetooth/map/BluetoothMapUtils;->EMAIL_CONTENT_URI:Ljava/lang/String;
+    sget-object v2, Lcom/android/bluetooth/map/BluetoothMapUtils;->EMAIL_CONTENT_URI:Ljava/lang/String;
 
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    const-string/jumbo v3, "policies/"
+    const-string/jumbo v2, "policies/"
 
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -322,40 +339,45 @@
 
     move-result-object v1
 
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
+    const/4 v8, 0x0
+
+    :try_start_0
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mResolver:Landroid/content/ContentResolver;
 
     const-string/jumbo v3, "name = \'PasswordMode\'"
 
-    move-object v4, v2
+    const/4 v2, 0x0
 
-    move-object v5, v2
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
 
     invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
-    move-result-object v7
+    move-result-object v8
 
-    if-eqz v7, :cond_1
+    if-eqz v8, :cond_0
 
-    invoke-interface {v7}, Landroid/database/Cursor;->getCount()I
+    invoke-interface {v8}, Landroid/database/Cursor;->getCount()I
 
     move-result v0
 
     if-lez v0, :cond_0
 
-    invoke-interface {v7}, Landroid/database/Cursor;->moveToFirst()Z
+    invoke-interface {v8}, Landroid/database/Cursor;->moveToFirst()Z
 
     :goto_0
     const-string/jumbo v0, "value"
 
-    invoke-interface {v7, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v0
 
-    invoke-interface {v7, v0}, Landroid/database/Cursor;->getInt(I)I
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v6
+    move-result v7
 
     const-string/jumbo v0, "BluetoothMapAppObserver"
 
@@ -369,7 +391,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -379,7 +401,7 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-eqz v6, :cond_2
+    if-eqz v7, :cond_2
 
     const-string/jumbo v0, "BluetoothMapAppObserver"
 
@@ -424,15 +446,21 @@
     const-string/jumbo v2, "UPDATE_MAS_INSTANCES_ACCOUNT_POLICY_SET"
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_0
-    invoke-interface {v7}, Landroid/database/Cursor;->close()V
+    if-eqz v8, :cond_1
+
+    invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
     :cond_1
     :goto_1
     return-void
 
     :cond_2
+    :try_start_1
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mLoader:Lcom/android/bluetooth/map/BluetoothMapAccountLoader;
 
     iget-object v2, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->app:Lcom/android/bluetooth/map/BluetoothMapAccountItem;
@@ -461,7 +489,9 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mMapService:Lcom/android/bluetooth/map/BluetoothMapService;
 
-    invoke-virtual {v0, v8}, Lcom/android/bluetooth/map/BluetoothMapService;->updateMasInstances(I)V
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2}, Lcom/android/bluetooth/map/BluetoothMapService;->updateMasInstances(I)V
 
     const-string/jumbo v0, "MapObsv-Email Account is Added"
 
@@ -478,7 +508,10 @@
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3
-    invoke-interface {v7}, Landroid/database/Cursor;->moveToNext()Z
+    invoke-interface {v8}, Landroid/database/Cursor;->moveToNext()Z
+    :try_end_1
+    .catch Ljava/lang/SecurityException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     move-result v0
 
@@ -486,7 +519,51 @@
 
     goto/16 :goto_0
 
+    :catch_0
+    move-exception v6
+
+    :try_start_2
+    const-string/jumbo v0, "BluetoothMapAppObserver"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "Catching SecurityException : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    if-eqz v8, :cond_1
+
+    invoke-interface {v8}, Landroid/database/Cursor;->close()V
+
+    goto :goto_1
+
+    :catchall_0
+    move-exception v0
+
+    if-eqz v8, :cond_4
+
+    invoke-interface {v8}, Landroid/database/Cursor;->close()V
+
     :cond_4
+    throw v0
+
+    :cond_5
     sget-object v0, Lcom/android/bluetooth/map/BluetoothMapUtils;->EMAIL_CONTENT_OBSERVER_URI:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -501,7 +578,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_9
 
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->app:Lcom/android/bluetooth/map/BluetoothMapAccountItem;
 
@@ -527,7 +604,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_6
+    if-nez v0, :cond_7
 
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mOldAccountList:Ljava/util/ArrayList;
 
@@ -535,11 +612,11 @@
 
     move-result v0
 
-    if-nez v0, :cond_5
+    if-nez v0, :cond_6
 
     return-void
 
-    :cond_5
+    :cond_6
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -568,14 +645,14 @@
 
     goto/16 :goto_1
 
-    :cond_6
+    :cond_7
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mOldAccountList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
-    if-nez v0, :cond_7
+    if-nez v0, :cond_8
 
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mNewAccountList:Ljava/util/ArrayList;
 
@@ -583,7 +660,7 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mMapService:Lcom/android/bluetooth/map/BluetoothMapService;
 
-    invoke-virtual {v0, v8}, Lcom/android/bluetooth/map/BluetoothMapService;->updateMasInstances(I)V
+    invoke-virtual {v0, v3}, Lcom/android/bluetooth/map/BluetoothMapService;->updateMasInstances(I)V
 
     const-string/jumbo v0, "MapObsv-Email Account is Added"
 
@@ -601,10 +678,10 @@
 
     goto/16 :goto_1
 
-    :cond_7
+    :cond_8
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mNewAccountList:Ljava/util/ArrayList;
 
-    invoke-virtual {v0, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -618,7 +695,7 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mNewAccountList:Ljava/util/ArrayList;
 
-    invoke-virtual {v0, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -630,7 +707,7 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/map/BluetoothMapAppObserver;->mOldAccountList:Ljava/util/ArrayList;
 
-    invoke-virtual {v0, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -672,7 +749,7 @@
 
     goto/16 :goto_1
 
-    :cond_8
+    :cond_9
     const-string/jumbo v0, "BluetoothMapAppObserver"
 
     const-string/jumbo v2, "Received change notification on package not registered for notifications!"

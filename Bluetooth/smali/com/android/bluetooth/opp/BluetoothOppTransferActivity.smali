@@ -40,6 +40,8 @@
 # instance fields
 .field private mAdapter:Landroid/bluetooth/BluetoothAdapter;
 
+.field private mCount:I
+
 .field mIsComplete:Z
 
 .field private mLine1View:Landroid/widget/TextView;
@@ -151,57 +153,67 @@
 .end method
 
 .method private createView()Landroid/view/View;
-    .locals 3
+    .locals 4
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->getLayoutInflater()Landroid/view/LayoutInflater;
+    new-instance v0, Landroid/view/ContextThemeWrapper;
 
-    move-result-object v0
+    const v2, 0x1030132
 
-    const v1, 0x7f040009
+    invoke-direct {v0, p0, v2}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
 
-    const/4 v2, 0x0
+    const-string/jumbo v2, "layout_inflater"
 
-    invoke-virtual {v0, v1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+    invoke-virtual {v0, v2}, Landroid/view/ContextThemeWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    iput-object v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mView:Landroid/view/View;
+    check-cast v1, Landroid/view/LayoutInflater;
 
-    iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mView:Landroid/view/View;
+    const v2, 0x7f040008
 
-    const v1, 0x7f0e0018
+    const/4 v3, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v1, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    move-result-object v0
+    move-result-object v2
 
-    check-cast v0, Landroid/widget/ProgressBar;
+    iput-object v2, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mView:Landroid/view/View;
 
-    iput-object v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mProgressTransfer:Landroid/widget/ProgressBar;
+    iget-object v2, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mView:Landroid/view/View;
 
-    iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mView:Landroid/view/View;
+    const v3, 0x7f0e0018
 
-    const v1, 0x7f0e0019
+    invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    move-result-object v2
 
-    move-result-object v0
+    check-cast v2, Landroid/widget/ProgressBar;
 
-    check-cast v0, Landroid/widget/TextView;
+    iput-object v2, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mProgressTransfer:Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mPercentView:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mView:Landroid/view/View;
+
+    const v3, 0x7f0e0019
+
+    invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/TextView;
+
+    iput-object v2, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mPercentView:Landroid/widget/TextView;
 
     invoke-direct {p0}, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->customizeViewContent()V
 
-    const/4 v0, 0x0
+    const/4 v2, 0x0
 
-    iput-boolean v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mNeedUpdateButton:Z
+    iput-boolean v2, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mNeedUpdateButton:Z
 
     invoke-direct {p0}, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->updateProgressbar()V
 
-    iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mView:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mView:Landroid/view/View;
 
-    return-object v0
+    return-object v2
 .end method
 
 .method private customizeViewContent()V
@@ -969,11 +981,11 @@
 .method private setUpDialog()V
     .locals 7
 
-    const/4 v6, -0x1
+    const/4 v6, 0x3
 
-    const v5, 0x7f0a0040
+    const/4 v5, 0x1
 
-    const/4 v4, 0x3
+    const/4 v4, 0x0
 
     const/4 v3, -0x2
 
@@ -1005,26 +1017,34 @@
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonText:Ljava/lang/CharSequence;
 
+    invoke-virtual {p0}, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->getIntent()Landroid/content/Intent;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "count"
+
+    invoke-virtual {v0, v1, v4}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mCount:I
+
     iget v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mWhichDialog:I
 
     if-eqz v0, :cond_0
 
     iget v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mWhichDialog:I
 
-    if-ne v0, v4, :cond_5
+    if-ne v0, v6, :cond_5
 
     :cond_0
     iget v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mWhichDialog:I
 
-    if-ne v0, v4, :cond_4
+    if-ne v0, v6, :cond_4
 
-    invoke-static {p0}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getInstance(Landroid/content/Context;)Lcom/android/bluetooth/opp/BluetoothOppManager;
+    iget v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mCount:I
 
-    move-result-object v0
-
-    iget-boolean v0, v0, Lcom/android/bluetooth/opp/BluetoothOppManager;->mMultipleFlag:Z
-
-    if-eqz v0, :cond_4
+    if-le v0, v5, :cond_4
 
     iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mPara:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -1062,12 +1082,14 @@
 
     iget v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mWhichDialog:I
 
-    if-ne v0, v4, :cond_a
+    if-ne v0, v6, :cond_a
 
     :cond_2
     iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mAlert:Lcom/android/internal/app/AlertController;
 
-    invoke-virtual {v0, v6}, Lcom/android/internal/app/AlertController;->getButton(I)Landroid/widget/Button;
+    const/4 v1, -0x1
+
+    invoke-virtual {v0, v1}, Lcom/android/internal/app/AlertController;->getButton(I)Landroid/widget/Button;
 
     move-result-object v0
 
@@ -1093,9 +1115,7 @@
     :cond_5
     iget v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mWhichDialog:I
 
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_7
+    if-ne v0, v5, :cond_7
 
     const-string/jumbo v0, "text/x-vcard"
 
@@ -1111,7 +1131,9 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mPara:Lcom/android/internal/app/AlertController$AlertParams;
 
-    invoke-virtual {p0, v5}, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->getString(I)Ljava/lang/String;
+    const v1, 0x7f0a0040
+
+    invoke-virtual {p0, v1}, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1160,7 +1182,9 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mPara:Lcom/android/internal/app/AlertController$AlertParams;
 
-    invoke-virtual {p0, v5}, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->getString(I)Ljava/lang/String;
+    const v1, 0x7f0a0040
+
+    invoke-virtual {p0, v1}, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1200,9 +1224,7 @@
     :cond_a
     iget v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mWhichDialog:I
 
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_b
+    if-eq v0, v5, :cond_b
 
     iget v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mWhichDialog:I
 
@@ -1255,7 +1277,9 @@
     :cond_d
     iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->mAlert:Lcom/android/internal/app/AlertController;
 
-    invoke-virtual {v0, v6}, Lcom/android/internal/app/AlertController;->getButton(I)Landroid/widget/Button;
+    const/4 v1, -0x1
+
+    invoke-virtual {v0, v1}, Lcom/android/internal/app/AlertController;->getButton(I)Landroid/widget/Button;
 
     move-result-object v0
 
@@ -1267,7 +1291,9 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v5}, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->getString(I)Ljava/lang/String;
+    const v1, 0x7f0a0040
+
+    invoke-virtual {p0, v1}, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2204,6 +2230,10 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string/jumbo v1, "com.samsung.btopp.intent.action.OPP_FINISH_TRANSFER_ACTIVITY"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    const-string/jumbo v1, "com.samsung.btopp.intent.action.BT_ADVOPP_RECOVER"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 

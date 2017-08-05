@@ -657,7 +657,7 @@
 
     move-object/from16 v17, v0
 
-    const v18, 0x7f0a00d1
+    const v18, 0x7f0a00d9
 
     invoke-virtual/range {v17 .. v18}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->getString(I)Ljava/lang/String;
 
@@ -683,69 +683,45 @@
     move-object/from16 v0, v17
 
     invoke-virtual {v0, v9, v8, v12}, Lcom/android/bluetooth/pbap/BluetoothPbapSessionManager;->createSession(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothSocket;Ljava/lang/String;)Z
+
+    move-result v17
+
+    if-nez v17, :cond_10
+
+    const-string/jumbo v17, "BluetoothPbapService"
+
+    const-string/jumbo v18, "This device already has PBAP session"
+
+    invoke-static/range {v17 .. v18}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_7
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_0
     .catch Ljava/lang/NullPointerException; {:try_start_7 .. :try_end_7} :catch_1
 
-    const/16 v17, 0x1
-
-    move/from16 v0, v17
-
-    if-ne v10, v0, :cond_12
-
     :try_start_8
-    sget-boolean v17, Lcom/android/bluetooth/pbap/BluetoothPbapService;->VERBOSE:Z
-
-    if-eqz v17, :cond_10
-
-    const-string/jumbo v17, "BluetoothPbapService"
-
-    new-instance v18, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v19, "incoming connection accepted from: "
-
-    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    invoke-virtual {v9}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
-
-    move-result-object v19
-
-    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    const-string/jumbo v19, " automatically as already allowed device"
-
-    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v18
-
-    invoke-static/range {v17 .. v18}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_10
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/bluetooth/pbap/BluetoothPbapService$SocketAcceptThread;->this$0:Lcom/android/bluetooth/pbap/BluetoothPbapService;
-
-    move-object/from16 v17, v0
-
-    move-object/from16 v0, v17
-
-    invoke-static {v0, v9}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->-wrap5(Lcom/android/bluetooth/pbap/BluetoothPbapService;Landroid/bluetooth/BluetoothDevice;)V
+    invoke-virtual {v8}, Landroid/bluetooth/BluetoothSocket;->close()V
     :try_end_8
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_3
     .catch Ljava/lang/NullPointerException; {:try_start_8 .. :try_end_8} :catch_1
 
-    :goto_5
+    goto/16 :goto_0
+
+    :catch_3
+    move-exception v4
+
     :try_start_9
+    const-string/jumbo v17, "BluetoothPbapService"
+
+    const-string/jumbo v18, "Error closing the socket. ignoring..."
+
+    move-object/from16 v0, v17
+
+    move-object/from16 v1, v18
+
+    invoke-static {v0, v1, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    goto/16 :goto_0
+
+    :cond_10
     new-instance v17, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v17 .. v17}, Ljava/lang/StringBuilder;-><init>()V
@@ -837,48 +813,52 @@
     move-result-object v17
 
     invoke-static/range {v17 .. v17}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
-
-    invoke-virtual {v9}, Landroid/bluetooth/BluetoothDevice;->toString()Ljava/lang/String;
-
-    move-result-object v17
-
-    const/16 v18, 0x0
-
-    const/16 v19, 0x8
-
-    invoke-virtual/range {v17 .. v19}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v17
-
-    invoke-static/range {v17 .. v17}, Lcom/android/bluetooth/pbap/BluetoothPbapUtils;->isDualBlackList(Ljava/lang/String;)Z
-
-    move-result v17
-
-    if-eqz v17, :cond_11
-
-    const-string/jumbo v17, "BluetoothPbapService"
-
-    const-string/jumbo v18, "Disable the dual pbap!"
-
-    invoke-static/range {v17 .. v18}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_9
+    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_0
+    .catch Ljava/lang/NullPointerException; {:try_start_9 .. :try_end_9} :catch_1
 
     const/16 v17, 0x1
 
     move/from16 v0, v17
 
-    move-object/from16 v1, p0
+    if-ne v10, v0, :cond_12
 
-    iput-boolean v0, v1, Lcom/android/bluetooth/pbap/BluetoothPbapService$SocketAcceptThread;->stopped:Z
+    :try_start_a
+    sget-boolean v17, Lcom/android/bluetooth/pbap/BluetoothPbapService;->VERBOSE:Z
 
-    move-object/from16 v0, p0
+    if-eqz v17, :cond_11
 
-    iget-object v0, v0, Lcom/android/bluetooth/pbap/BluetoothPbapService$SocketAcceptThread;->this$0:Lcom/android/bluetooth/pbap/BluetoothPbapService;
+    const-string/jumbo v17, "BluetoothPbapService"
 
-    move-object/from16 v17, v0
+    new-instance v18, Ljava/lang/StringBuilder;
 
-    const/16 v18, 0x0
+    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static/range {v17 .. v18}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->-set0(Lcom/android/bluetooth/pbap/BluetoothPbapService;Lcom/android/bluetooth/pbap/BluetoothPbapService$SocketAcceptThread;)Lcom/android/bluetooth/pbap/BluetoothPbapService$SocketAcceptThread;
+    const-string/jumbo v19, "incoming connection accepted from: "
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual {v9}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
+
+    move-result-object v19
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    const-string/jumbo v19, " automatically as already allowed device"
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v18
+
+    invoke-static/range {v17 .. v18}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_11
     move-object/from16 v0, p0
@@ -889,18 +869,15 @@
 
     move-object/from16 v0, v17
 
-    iget-object v0, v0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->mSessionManager:Lcom/android/bluetooth/pbap/BluetoothPbapSessionManager;
+    invoke-static {v0, v9}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->-wrap5(Lcom/android/bluetooth/pbap/BluetoothPbapService;Landroid/bluetooth/BluetoothDevice;)V
+    :try_end_a
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_4
+    .catch Ljava/lang/NullPointerException; {:try_start_a .. :try_end_a} :catch_1
 
-    move-object/from16 v17, v0
-
-    invoke-virtual/range {v17 .. v17}, Lcom/android/bluetooth/pbap/BluetoothPbapSessionManager;->hasMoreAvailableSessions()Z
-
-    move-result v17
-
-    if-nez v17, :cond_1
-
+    :goto_5
     const/16 v17, 0x1
 
+    :try_start_b
     move/from16 v0, v17
 
     move-object/from16 v1, p0
@@ -919,7 +896,7 @@
 
     goto/16 :goto_0
 
-    :catch_3
+    :catch_4
     move-exception v5
 
     const-string/jumbo v17, "BluetoothPbapService"
@@ -948,7 +925,7 @@
 
     invoke-static/range {v17 .. v18}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto/16 :goto_5
+    goto :goto_5
 
     :cond_12
     const/16 v17, 0x2
@@ -1004,7 +981,7 @@
 
     invoke-static {v0, v9}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->-wrap7(Lcom/android/bluetooth/pbap/BluetoothPbapService;Landroid/bluetooth/BluetoothDevice;)V
 
-    goto/16 :goto_5
+    goto/16 :goto_0
 
     :cond_14
     new-instance v7, Landroid/content/Intent;
@@ -1177,9 +1154,9 @@
     move-wide/from16 v2, v20
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
-    :try_end_9
-    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_0
-    .catch Ljava/lang/NullPointerException; {:try_start_9 .. :try_end_9} :catch_1
+    :try_end_b
+    .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_0
+    .catch Ljava/lang/NullPointerException; {:try_start_b .. :try_end_b} :catch_1
 
     goto/16 :goto_5
 .end method

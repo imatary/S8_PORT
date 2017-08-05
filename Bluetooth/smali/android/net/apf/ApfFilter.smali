@@ -1545,7 +1545,7 @@
 .end method
 
 .method installNewProgramLocked()V
-    .locals 10
+    .locals 12
     .annotation build Lcom/android/internal/annotations/GuardedBy;
         value = "this"
     .end annotation
@@ -1557,120 +1557,135 @@
     :try_start_0
     invoke-direct {p0}, Landroid/net/apf/ApfFilter;->beginProgramLocked()Landroid/net/apf/ApfGenerator;
 
-    move-result-object v1
+    move-result-object v2
 
-    new-instance v7, Ljava/util/ArrayList;
+    new-instance v8, Ljava/util/ArrayList;
 
-    invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
 
-    iget-object v8, p0, Landroid/net/apf/ApfFilter;->mRas:Ljava/util/ArrayList;
+    iget-object v9, p0, Landroid/net/apf/ApfFilter;->mRas:Ljava/util/ArrayList;
 
-    invoke-interface {v8}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v9}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v7
+
+    :goto_0
+    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v9
+
+    if-eqz v9, :cond_0
+
+    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v6
 
-    :goto_0
-    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
+    check-cast v6, Landroid/net/apf/ApfFilter$Ra;
 
-    move-result v8
+    invoke-virtual {v6, v2}, Landroid/net/apf/ApfFilter$Ra;->generateFilterLocked(Landroid/net/apf/ApfGenerator;)J
 
-    if-eqz v8, :cond_0
+    invoke-virtual {v2}, Landroid/net/apf/ApfGenerator;->programLengthOverEstimate()I
 
-    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result v9
 
-    move-result-object v3
+    iget-object v10, p0, Landroid/net/apf/ApfFilter;->mApfCapabilities:Landroid/net/apf/ApfCapabilities;
 
-    check-cast v3, Landroid/net/apf/ApfFilter$Ra;
+    iget v10, v10, Landroid/net/apf/ApfCapabilities;->maximumApfProgramSize:I
 
-    invoke-virtual {v3, v1}, Landroid/net/apf/ApfFilter$Ra;->generateFilterLocked(Landroid/net/apf/ApfGenerator;)J
-
-    invoke-virtual {v1}, Landroid/net/apf/ApfGenerator;->programLengthOverEstimate()I
-
-    move-result v8
-
-    iget-object v9, p0, Landroid/net/apf/ApfFilter;->mApfCapabilities:Landroid/net/apf/ApfCapabilities;
-
-    iget v9, v9, Landroid/net/apf/ApfCapabilities;->maximumApfProgramSize:I
-
-    if-le v8, v9, :cond_1
+    if-le v9, v10, :cond_1
 
     :cond_0
     invoke-direct {p0}, Landroid/net/apf/ApfFilter;->beginProgramLocked()Landroid/net/apf/ApfGenerator;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-interface {v7}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v8}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v7
+
+    :goto_1
+    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v9
+
+    if-eqz v9, :cond_2
+
+    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v6
 
-    :goto_1
-    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
+    check-cast v6, Landroid/net/apf/ApfFilter$Ra;
 
-    move-result v8
+    invoke-virtual {v6, v2}, Landroid/net/apf/ApfFilter$Ra;->generateFilterLocked(Landroid/net/apf/ApfGenerator;)J
 
-    if-eqz v8, :cond_2
+    move-result-wide v10
 
-    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/net/apf/ApfFilter$Ra;
-
-    invoke-virtual {v3, v1}, Landroid/net/apf/ApfFilter$Ra;->generateFilterLocked(Landroid/net/apf/ApfGenerator;)J
-
-    move-result-wide v8
-
-    invoke-static {v4, v5, v8, v9}, Ljava/lang/Math;->min(JJ)J
+    invoke-static {v4, v5, v10, v11}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v4
 
     goto :goto_1
 
     :cond_1
-    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v8, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catch Landroid/net/apf/ApfGenerator$IllegalInstructionException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_1
 
     goto :goto_0
 
     :catch_0
     move-exception v0
 
-    const-string/jumbo v8, "ApfFilter"
+    const-string/jumbo v9, "ApfFilter"
 
-    const-string/jumbo v9, "Program failed to generate: "
+    const-string/jumbo v10, "Program failed to generate: "
 
-    invoke-static {v8, v9, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v9, v10, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     return-void
 
     :cond_2
     :try_start_1
-    invoke-virtual {v1}, Landroid/net/apf/ApfGenerator;->generate()[B
+    invoke-virtual {v2}, Landroid/net/apf/ApfGenerator;->generate()[B
     :try_end_1
     .catch Landroid/net/apf/ApfGenerator$IllegalInstructionException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    move-result-object v2
+    move-result-object v3
 
     invoke-static {}, Landroid/net/apf/ApfFilter;->curTime()J
 
-    move-result-wide v8
+    move-result-wide v10
 
-    iput-wide v8, p0, Landroid/net/apf/ApfFilter;->mLastTimeInstalledProgram:J
+    iput-wide v10, p0, Landroid/net/apf/ApfFilter;->mLastTimeInstalledProgram:J
 
     iput-wide v4, p0, Landroid/net/apf/ApfFilter;->mLastInstalledProgramMinLifetime:J
 
-    iput-object v2, p0, Landroid/net/apf/ApfFilter;->mLastInstalledProgram:[B
+    iput-object v3, p0, Landroid/net/apf/ApfFilter;->mLastInstalledProgram:[B
 
-    iget v8, p0, Landroid/net/apf/ApfFilter;->mNumProgramUpdates:I
+    iget v9, p0, Landroid/net/apf/ApfFilter;->mNumProgramUpdates:I
 
-    add-int/lit8 v8, v8, 0x1
+    add-int/lit8 v9, v9, 0x1
 
-    iput v8, p0, Landroid/net/apf/ApfFilter;->mNumProgramUpdates:I
+    iput v9, p0, Landroid/net/apf/ApfFilter;->mNumProgramUpdates:I
 
-    iget-object v8, p0, Landroid/net/apf/ApfFilter;->mIpManagerCallback:Landroid/net/ip/IpManager$Callback;
+    iget-object v9, p0, Landroid/net/apf/ApfFilter;->mIpManagerCallback:Landroid/net/ip/IpManager$Callback;
 
-    invoke-virtual {v8, v2}, Landroid/net/ip/IpManager$Callback;->installPacketFilter([B)V
+    invoke-virtual {v9, v3}, Landroid/net/ip/IpManager$Callback;->installPacketFilter([B)V
+
+    return-void
+
+    :catch_1
+    move-exception v1
+
+    const-string/jumbo v9, "ApfFilter"
+
+    invoke-virtual {v1}, Ljava/lang/IllegalArgumentException;->toString()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-static {v9, v10}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method

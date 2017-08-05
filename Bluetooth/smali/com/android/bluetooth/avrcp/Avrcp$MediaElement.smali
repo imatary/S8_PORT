@@ -238,7 +238,7 @@
     :cond_1
     iget-object v2, p0, Lcom/android/bluetooth/avrcp/Avrcp$MediaElement;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get32(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
+    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get33(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
 
     move-result-object v2
 
@@ -246,7 +246,7 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/avrcp/Avrcp$MediaElement;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get32(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
+    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get33(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
 
     move-result-object v2
 
@@ -258,7 +258,7 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/avrcp/Avrcp$MediaElement;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get32(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
+    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get33(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
 
     move-result-object v2
 

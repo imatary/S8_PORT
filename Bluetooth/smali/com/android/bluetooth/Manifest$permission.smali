@@ -17,6 +17,8 @@
 # static fields
 .field public static final ACCESS_BLUETOOTH_SHARE:Ljava/lang/String; = "android.permission.ACCESS_BLUETOOTH_SHARE"
 
+.field public static final HQM_NOTIFICATION_PERMISSION:Ljava/lang/String; = "com.samsung.permission.HQM_NOTIFICATION_PERMISSION"
+
 .field public static final WHITELIST_BLUETOOTH_DEVICE:Ljava/lang/String; = "com.android.permission.WHITELIST_BLUETOOTH_DEVICE"
 
 

@@ -1190,7 +1190,7 @@
     goto :goto_1
 
     :cond_1
-    const v10, 0x7f0a00e0
+    const v10, 0x7f0a00f9
 
     invoke-virtual {p0, v10}, Lcom/android/bluetooth/hid/HidService;->getString(I)Ljava/lang/String;
 
@@ -1420,9 +1420,15 @@
 .method private static isSupportedHidbySecureModePolicy()Z
     .locals 5
 
-    const/4 v1, 0x0
+    invoke-static {}, Lcom/android/bluetooth/Utils;->isSecureModeEnabled()Z
 
-    const/4 v0, 0x1
+    move-result v1
+
+    const-string/jumbo v2, "hid_enable"
+
+    invoke-static {v2}, Lcom/android/bluetooth/Utils;->getSecureModeSetting(Ljava/lang/String;)Z
+
+    move-result v0
 
     const-string/jumbo v2, "HidService"
 

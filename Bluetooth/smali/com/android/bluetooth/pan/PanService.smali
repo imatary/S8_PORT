@@ -44,6 +44,16 @@
 
 .field private static final FOUND_DEV_ADDR:Ljava/lang/String; = "bt_addr"
 
+.field public static final HW_KEY_COMP_ID:Ljava/lang/String; = "Bluetooth"
+
+.field public static final HW_KEY_COMP_MANUFACTURE:Ljava/lang/String; = "sec"
+
+.field public static final HW_KEY_COMP_VER:Ljava/lang/String; = "0.0"
+
+.field public static final HW_KEY_HIT_TYPE:Ljava/lang/String; = "ph"
+
+.field public static final HW_KEY_TYPE:I = 0x0
+
 .field private static final INTENT_INACTIVE_NAP_CONNECTION:Ljava/lang/String; = "com.samsung.bluetooth.pan.inactivenap.ASK_CONFIRM"
 
 .field private static final MESSAGE_CONNECT:I = 0x1
@@ -938,7 +948,7 @@
 .end method
 
 .method public static insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 5
+    .locals 14
 
     if-nez p0, :cond_0
 
@@ -951,21 +961,25 @@
     return-void
 
     :cond_0
-    new-instance v1, Landroid/content/ContentValues;
+    new-instance v13, Landroid/content/ContentValues;
 
-    invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
+    invoke-direct {v13}, Landroid/content/ContentValues;-><init>()V
 
     const-string/jumbo v2, "app_id"
 
-    invoke-virtual {v1, v2, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v13, v2, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v2, "feature"
 
-    invoke-virtual {v1, v2, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    move-object/from16 v0, p2
+
+    invoke-virtual {v13, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v2, "extra"
 
-    invoke-virtual {v1, v2, p3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    move-object/from16 v0, p3
+
+    invoke-virtual {v13, v2, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v2, "PanService"
 
@@ -989,7 +1003,9 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, p2
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -999,7 +1015,9 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, p3
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -1009,25 +1027,135 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance v0, Landroid/content/Intent;
+    new-instance v12, Landroid/content/Intent;
 
-    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+    invoke-direct {v12}, Landroid/content/Intent;-><init>()V
 
     const-string/jumbo v2, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
 
-    invoke-virtual {v0, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v12, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     const-string/jumbo v2, "data"
 
-    invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    invoke-virtual {v12, v2, v13}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     const-string/jumbo v2, "com.samsung.android.providers.context"
 
-    invoke-virtual {v0, v2}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v12, v2}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v12}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
+    const/4 v1, 0x0
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "HqmManagerService"
+
+    invoke-virtual {v2, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/os/SemHqmManager;
+
+    const-string/jumbo v2, "BPAR"
+
+    move-object/from16 v0, p2
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "\"BPRT\":\""
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v0, p3
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "\""
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    :goto_0
+    const-string/jumbo v2, "PanService"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "[PAN HQM Data] : "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    if-eqz v1, :cond_2
+
+    const-string/jumbo v3, "Bluetooth"
+
+    const-string/jumbo v5, "ph"
+
+    const-string/jumbo v6, "0.0"
+
+    const-string/jumbo v7, "sec"
+
+    const-string/jumbo v8, ""
+
+    const-string/jumbo v10, ""
+
+    const/4 v2, 0x0
+
+    move-object/from16 v4, p2
+
+    move-object v11, p1
+
+    invoke-virtual/range {v1 .. v11}, Landroid/os/SemHqmManager;->sendHWParamToHQMwithAppId(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+
+    :goto_1
     return-void
+
+    :cond_1
+    move-object/from16 v9, p3
+
+    goto :goto_0
+
+    :cond_2
+    const-string/jumbo v2, "PanService"
+
+    const-string/jumbo v3, "Failed to call QmBigDataModule API"
+
+    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_1
 .end method
 
 .method private onConnReqInactiveNAP([B)V
@@ -1603,7 +1731,7 @@
 
     move-result-object v18
 
-    invoke-virtual {v6}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
+    invoke-virtual {v6}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
     move-result-object v19
 
@@ -3159,7 +3287,7 @@
 
     aput-object v15, v14, v16
 
-    const v15, 0x7f0a0086
+    const v15, 0x7f0a0087
 
     invoke-virtual {v13, v15, v14}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3272,7 +3400,7 @@
 
     aput-object v15, v14, v16
 
-    const v15, 0x7f0a0085
+    const v15, 0x7f0a0086
 
     invoke-virtual {v13, v15, v14}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3325,6 +3453,18 @@
 
     :goto_2
     sget-boolean v13, Lcom/android/bluetooth/pan/PanService;->isLinkLoss:Z
+
+    if-eqz v13, :cond_a
+
+    invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
+
+    move-result-object v13
+
+    const-string/jumbo v14, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
+
+    invoke-virtual {v13, v14}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v13
 
     if-eqz v13, :cond_a
 
@@ -3409,11 +3549,9 @@
 
     move-result-object v14
 
-    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
+    move-object/from16 v0, p1
 
-    move-result-object v15
-
-    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v14
 
@@ -3473,11 +3611,9 @@
 
     move-result-object v14
 
-    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAddressForLog()Ljava/lang/String;
+    move-object/from16 v0, p1
 
-    move-result-object v15
-
-    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v14
 
@@ -4146,7 +4282,7 @@
     :cond_1
     const-string/jumbo v2, "SBM"
 
-    const-string/jumbo v4, "KTT"
+    const-string/jumbo v4, ""
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -4544,26 +4680,6 @@
 
     if-eqz v2, :cond_d
 
-    const/4 v2, 0x0
-
-    sput-boolean v2, Lcom/android/bluetooth/pan/PanService;->isLinkLoss:Z
-
-    const/4 v2, 0x0
-
-    sput-boolean v2, Lcom/android/bluetooth/pan/PanService;->isAutoRecon:Z
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
-
-    invoke-virtual {v2}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->clearLastTetheredDevice()V
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
-
-    invoke-virtual {v2}, Lcom/samsung/bt/pan/EnhancedTetheringManager;->cancelFindTetherServer()V
-
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/pan/PanService;->mETManager:Lcom/samsung/bt/pan/EnhancedTetheringManager;
@@ -4709,7 +4825,7 @@
 
     move-result-object v2
 
-    const v3, 0x10e0010
+    const v3, 0x10e0011
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 

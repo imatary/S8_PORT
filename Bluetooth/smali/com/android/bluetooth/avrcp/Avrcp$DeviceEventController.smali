@@ -124,6 +124,20 @@
 
     return v0
 
+    :pswitch_8
+    invoke-virtual {p1}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->getInitialRemoteVolume()I
+
+    move-result v0
+
+    return v0
+
+    :pswitch_9
+    invoke-virtual {p1}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->getRemoteVolume()I
+
+    move-result v0
+
+    return v0
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -134,6 +148,8 @@
         :pswitch_5
         :pswitch_6
         :pswitch_7
+        :pswitch_8
+        :pswitch_9
     .end packed-switch
 .end method
 
@@ -169,7 +185,7 @@
     :pswitch_1
     iget-object v6, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v6}, Lcom/android/bluetooth/avrcp/Avrcp;->-get32(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
+    invoke-static {v6}, Lcom/android/bluetooth/avrcp/Avrcp;->-get33(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
 
     move-result-object v6
 
@@ -185,7 +201,7 @@
 
     iget-object v6, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v6}, Lcom/android/bluetooth/avrcp/Avrcp;->-get32(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
+    invoke-static {v6}, Lcom/android/bluetooth/avrcp/Avrcp;->-get33(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$Metadata;
 
     move-result-object v6
 
@@ -500,6 +516,16 @@
 
     goto :goto_0
 
+    :pswitch_8
+    invoke-virtual {p1, p3}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->setInitialRemoteVolume(I)V
+
+    goto :goto_0
+
+    :pswitch_9
+    invoke-virtual {p1, p3}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->setRemoteVolume(I)V
+
+    goto :goto_0
+
     nop
 
     :pswitch_data_0
@@ -512,6 +538,8 @@
         :pswitch_5
         :pswitch_6
         :pswitch_7
+        :pswitch_8
+        :pswitch_9
     .end packed-switch
 .end method
 
@@ -840,7 +868,7 @@
 
     iget-object v9, p0, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v9}, Lcom/android/bluetooth/avrcp/Avrcp;->-get9(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/bluetooth/BluetoothAdapter;
+    invoke-static {v9}, Lcom/android/bluetooth/avrcp/Avrcp;->-get8(Lcom/android/bluetooth/avrcp/Avrcp;)Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object v9
 
@@ -1242,6 +1270,84 @@
 
     goto/16 :goto_0
 
+    :pswitch_8
+    const-string/jumbo v0, "Avrcp"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "getInitialRemoteVolume: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p1}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->getInitialRemoteVolume()I
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string/jumbo v2, ", addr: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    :pswitch_9
+    const-string/jumbo v0, "Avrcp"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "getRemoteVolume: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p1}, Lcom/android/bluetooth/avrcp/Avrcp$DeviceEventController$DeviceInformation;->getRemoteVolume()I
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string/jumbo v2, ", addr: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -1252,6 +1358,8 @@
         :pswitch_5
         :pswitch_6
         :pswitch_7
+        :pswitch_8
+        :pswitch_9
     .end packed-switch
 .end method
 

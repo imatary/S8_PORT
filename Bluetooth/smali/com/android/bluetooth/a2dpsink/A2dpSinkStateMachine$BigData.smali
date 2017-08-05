@@ -45,6 +45,8 @@
 
 .field private static final JSON_CODU:Ljava/lang/String; = "CODU"
 
+.field private static final JSON_CODU_I:Ljava/lang/String; = "CODU_I"
+
 .field private static final JSON_DIRE:Ljava/lang/String; = "DIRE"
 
 .field private static final JSON_JVER:Ljava/lang/String; = "JVER"
@@ -56,6 +58,8 @@
 .field private static final JSON_POUI:Ljava/lang/String; = "POUI"
 
 .field private static final JSON_STDU:Ljava/lang/String; = "STDU"
+
+.field private static final JSON_STDU_I:Ljava/lang/String; = "STDU_I"
 
 .field private static final JSON_WIFR:Ljava/lang/String; = "WIFR"
 
@@ -117,6 +121,16 @@
     iget-wide v0, p0, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->mServiceStartTime:J
 
     return-wide v0
+.end method
+
+.method static synthetic -wrap0(Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;I)Ljava/lang/String;
+    .locals 1
+
+    invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->getBigdataString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method private constructor <init>(Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;)V
@@ -282,6 +296,8 @@
 
     iput-object v0, p0, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->mapConnectedProfiles:[[I
 
+    invoke-virtual {p0}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->initBigData()V
+
     return-void
 .end method
 
@@ -289,14 +305,6 @@
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;-><init>(Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;)V
-
-    return-void
-.end method
-
-.method private BigData()V
-    .locals 0
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->initBigData()V
 
     return-void
 .end method
@@ -353,16 +361,12 @@
     return-void
 .end method
 
-.method private getBigdataString()Ljava/lang/String;
+.method private getBigdataString(I)Ljava/lang/String;
     .locals 4
 
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v1, "{"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "\"JVER\":\""
 
@@ -371,6 +375,8 @@
     const-string/jumbo v1, "1.02\""
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    if-nez p1, :cond_1
 
     const-string/jumbo v1, ",\"CODU\":\""
 
@@ -400,6 +406,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    :goto_0
     const-string/jumbo v1, ",\"DIRE\":\""
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -530,10 +537,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v1, "}"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     invoke-static {}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;->-get0()Z
 
     move-result v1
@@ -572,6 +575,37 @@
     move-result-object v1
 
     return-object v1
+
+    :cond_1
+    const-string/jumbo v1, ",\"CODU_I\":\""
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-wide v2, p0, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->mConnectedTotalTime:J
+
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "\""
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string/jumbo v1, ",\"STDU_I\":\""
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-wide v2, p0, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->mPlayingTotalTime:J
+
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "\""
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto/16 :goto_0
 .end method
 
 .method private getJsonInt(Lorg/json/JSONObject;Ljava/lang/String;)I
@@ -1348,8 +1382,8 @@
     return-void
 .end method
 
-.method public sendBigdatas()V
-    .locals 4
+.method public sendBigdata(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 5
 
     new-instance v1, Landroid/content/ContentValues;
 
@@ -1369,12 +1403,43 @@
 
     const-string/jumbo v2, "extra"
 
-    invoke-direct {p0}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->getBigdataString()Ljava/lang/String;
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "{"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string/jumbo v4, "}"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v1, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
+    invoke-static {}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;->-get0()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const-string/jumbo v2, "A2dpSinkStateMachine"
+
+    invoke-static {v2, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
@@ -1400,6 +1465,66 @@
     invoke-virtual {v2, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     return-void
+.end method
+
+.method public sendBigdataForHQM(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 11
+
+    const/4 v0, 0x0
+
+    iget-object v1, p0, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->this$0:Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;
+
+    invoke-static {v1}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;->-get10(Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;)Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "HqmManagerService"
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/os/SemHqmManager;
+
+    if-eqz v0, :cond_0
+
+    const-string/jumbo v2, "Bluetooth"
+
+    const-string/jumbo v4, "ph"
+
+    const-string/jumbo v5, "0.0"
+
+    const-string/jumbo v6, "sec"
+
+    const-string/jumbo v7, ""
+
+    const-string/jumbo v9, ""
+
+    const-string/jumbo v10, "com.android.bluetooth"
+
+    const/4 v1, 0x0
+
+    move-object v3, p1
+
+    move-object v8, p2
+
+    invoke-virtual/range {v0 .. v10}, Landroid/os/SemHqmManager;->sendHWParamToHQMwithAppId(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+
+    :goto_0
+    return-void
+
+    :cond_0
+    const-string/jumbo v1, "A2dpSinkStateMachine"
+
+    const-string/jumbo v2, "Failed to call QmBigDataModule API"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
 .end method
 
 .method public setBigdataInfo(Landroid/bluetooth/BluetoothDevice;)V

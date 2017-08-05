@@ -1237,190 +1237,333 @@
 .end method
 
 .method private mimeTypeCheck()Z
-    .locals 9
+    .locals 17
 
-    const/4 v5, 0x1
+    move-object/from16 v0, p0
 
-    const/4 v8, 0x0
+    iget-object v13, v0, Lcom/android/bluetooth/opp/BluetoothOppObexClientSession;->mUriForWifiShareInfo1:Ljava/util/ArrayList;
 
-    iget-object v4, p0, Lcom/android/bluetooth/opp/BluetoothOppObexClientSession;->mUriForWifiShareInfo1:Ljava/util/ArrayList;
+    if-nez v13, :cond_0
 
-    if-nez v4, :cond_0
+    const-string/jumbo v13, "BtOppObexClient"
 
-    const-string/jumbo v4, "BtOppObexClient"
+    const-string/jumbo v14, "[ADVANCED OPP] mUriForWifiShareInfo1 is null"
 
-    const-string/jumbo v5, "[ADVANCED OPP] mUriForWifiShareInfo1 is null"
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v13, 0x0
 
-    return v8
+    return v13
 
     :cond_0
-    iget-object v4, p0, Lcom/android/bluetooth/opp/BluetoothOppObexClientSession;->mUriForWifiShareInfo1:Ljava/util/ArrayList;
+    move-object/from16 v0, p0
 
-    invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    iget-object v13, v0, Lcom/android/bluetooth/opp/BluetoothOppObexClientSession;->mUriForWifiShareInfo1:Ljava/util/ArrayList;
 
-    move-result-object v3
+    invoke-interface {v13}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    :goto_0
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_6
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/net/Uri;
-
-    invoke-static {v2}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->getSendFileInfo(Landroid/net/Uri;)Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;
-
-    move-result-object v0
-
-    sget-object v4, Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;->SEND_FILE_INFO_ERROR:Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;
-
-    if-eq v0, v4, :cond_5
-
-    iget-object v1, v0, Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;->mMimetype:Ljava/lang/String;
-
-    if-nez v1, :cond_1
-
-    const-string/jumbo v4, "BtOppObexClient"
-
-    const-string/jumbo v5, "[ADVANCED OPP] mimeType is null"
-
-    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v8
+    move-result-object v12
 
     :cond_1
-    const-string/jumbo v4, "image/"
+    invoke-interface {v12}, Ljava/util/Iterator;->hasNext()Z
 
-    invoke-virtual {v1, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    move-result v13
 
-    move-result v4
+    if-eqz v13, :cond_d
 
-    if-nez v4, :cond_3
+    invoke-interface {v12}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    const-string/jumbo v4, "video/"
+    move-result-object v11
 
-    invoke-virtual {v1, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    check-cast v11, Landroid/net/Uri;
 
-    move-result v4
-
-    if-nez v4, :cond_3
-
-    const-string/jumbo v4, "audio/"
-
-    invoke-virtual {v1, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_3
-
-    const-string/jumbo v4, "application/ogg"
-
-    invoke-virtual {v1, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v4
-
-    :goto_1
-    if-nez v4, :cond_4
-
-    const-string/jumbo v4, "BtOppObexClient"
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v6, "[ADVANCED OPP] mimeType is not available : "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v11}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->getSendFileInfo(Landroid/net/Uri;)Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;
 
     move-result-object v5
 
-    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v13, Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;->SEND_FILE_INFO_ERROR:Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;
 
-    move-result-object v5
+    if-eq v5, v13, :cond_c
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object v8, v5, Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;->mMimetype:Ljava/lang/String;
 
-    move-result-object v5
+    if-nez v8, :cond_2
 
-    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const-string/jumbo v13, "BtOppObexClient"
+
+    const-string/jumbo v14, "[ADVANCED OPP] mimeType is null"
+
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v13, 0x0
+
+    return v13
+
+    :cond_2
+    const/4 v7, 0x0
+
+    const/4 v4, 0x0
+
+    :goto_0
+    sget-object v13, Lcom/android/bluetooth/opp/Constants;->CONTAIN_ADVANCED_OPP_TYPES:[Ljava/lang/String;
+
+    array-length v13, v13
+
+    if-ge v4, v13, :cond_3
+
+    sget-object v13, Lcom/android/bluetooth/opp/Constants;->CONTAIN_ADVANCED_OPP_TYPES:[Ljava/lang/String;
+
+    aget-object v13, v13, v4
+
+    invoke-virtual {v8, v13}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v13
+
+    if-eqz v13, :cond_8
+
+    const/4 v13, 0x3
+
+    if-eq v4, v13, :cond_5
+
+    const/4 v7, 0x1
+
+    :cond_3
+    if-nez v7, :cond_1
+
+    const-string/jumbo v13, "BtOppObexClient"
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v15, "[ADVANCED OPP] mimeType is not available : "
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
 
-    move-result-object v4
+    move-result-object v13
 
-    const-string/jumbo v5, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
+    const-string/jumbo v14, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
 
-    invoke-virtual {v4, v5}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {v13, v14}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
 
-    move-result v4
+    move-result v13
 
-    if-eqz v4, :cond_2
+    if-eqz v13, :cond_4
 
-    const-string/jumbo v4, "BAOI"
+    const-string/jumbo v13, "BAOI"
 
-    iget-object v5, p0, Lcom/android/bluetooth/opp/BluetoothOppObexClientSession;->mContext:Landroid/content/Context;
+    const-string/jumbo v14, "USMT"
 
-    const/16 v6, 0x3e8
+    move-object/from16 v0, p0
 
-    invoke-static {v4, v6, v1, v5}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->insertGSIMLog(Ljava/lang/String;ILjava/lang/String;Landroid/content/Context;)V
+    iget-object v15, v0, Lcom/android/bluetooth/opp/BluetoothOppObexClientSession;->mContext:Landroid/content/Context;
 
-    :cond_2
-    return v8
+    invoke-static {v13, v14, v8, v15}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->insertOPPLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
 
-    :cond_3
-    move v4, v5
+    :cond_4
+    const/4 v13, 0x0
+
+    return v13
+
+    :cond_5
+    const/4 v6, 0x0
+
+    const-string/jumbo v13, "/"
+
+    invoke-virtual {v8, v13}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
+
+    move-result v9
+
+    if-ltz v9, :cond_6
+
+    add-int/lit8 v13, v9, 0x1
+
+    invoke-virtual {v8, v13}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    sget-boolean v13, Lcom/android/bluetooth/opp/BluetoothOppObexClientSession;->D:Z
+
+    if-eqz v13, :cond_6
+
+    const-string/jumbo v13, "BtOppObexClient"
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v15, "[ADVANCED OPP] lastype = "
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v13, v14}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_6
+    if-eqz v6, :cond_8
+
+    const-string/jumbo v13, "*"
+
+    invoke-virtual {v6, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v13
+
+    if-eqz v13, :cond_a
+
+    iget-object v13, v5, Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;->mFileName:Ljava/lang/String;
+
+    if-eqz v13, :cond_8
+
+    iget-object v13, v5, Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;->mFileName:Ljava/lang/String;
+
+    const-string/jumbo v14, "."
+
+    invoke-virtual {v13, v14}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
+
+    move-result v1
+
+    if-ltz v1, :cond_8
+
+    iget-object v13, v5, Lcom/android/bluetooth/opp/BluetoothOppSendFileInfo;->mFileName:Ljava/lang/String;
+
+    add-int/lit8 v14, v1, 0x1
+
+    invoke-virtual {v13, v14}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v3
+
+    sget-boolean v13, Lcom/android/bluetooth/opp/BluetoothOppObexClientSession;->D:Z
+
+    if-eqz v13, :cond_7
+
+    const-string/jumbo v13, "BtOppObexClient"
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v15, "[ADVANCED OPP] fileExtension = "
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v13, v14}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_7
+    sget-object v14, Lcom/android/bluetooth/opp/Constants;->AVAILABLE_ADVANCED_OPP_EXTENSTION:[Ljava/lang/String;
+
+    const/4 v13, 0x0
+
+    array-length v15, v14
+
+    :goto_1
+    if-ge v13, v15, :cond_8
+
+    aget-object v2, v14, v13
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v16
+
+    if-eqz v16, :cond_9
+
+    const/4 v7, 0x1
+
+    :cond_8
+    :goto_2
+    add-int/lit8 v4, v4, 0x1
+
+    goto/16 :goto_0
+
+    :cond_9
+    add-int/lit8 v13, v13, 0x1
 
     goto :goto_1
 
-    :cond_4
-    const-string/jumbo v4, "BtOppObexClient"
+    :cond_a
+    sget-object v14, Lcom/android/bluetooth/opp/Constants;->AVAILABLE_ADVANCED_OPP_MIMETYPE:[Ljava/lang/String;
 
-    new-instance v6, Ljava/lang/StringBuilder;
+    const/4 v13, 0x0
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    array-length v15, v14
 
-    const-string/jumbo v7, "[ADVANCED OPP] mimeType : "
+    :goto_3
+    if-ge v13, v15, :cond_8
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aget-object v10, v14, v13
 
-    move-result-object v6
+    invoke-virtual {v10, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v16
 
-    move-result-object v6
+    if-eqz v16, :cond_b
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v7, 0x1
 
-    move-result-object v6
+    goto :goto_2
 
-    invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :cond_b
+    add-int/lit8 v13, v13, 0x1
 
-    goto/16 :goto_0
+    goto :goto_3
 
-    :cond_5
-    const-string/jumbo v4, "BtOppObexClient"
+    :cond_c
+    const-string/jumbo v13, "BtOppObexClient"
 
-    const-string/jumbo v6, "[ADVANCED OPP] info is SEND_FILE_INFO_ERROR"
+    const-string/jumbo v14, "[ADVANCED OPP] info is SEND_FILE_INFO_ERROR"
 
-    invoke-static {v4, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v13, v14}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto/16 :goto_0
+    const/4 v13, 0x0
 
-    :cond_6
-    const-string/jumbo v4, "BtOppObexClient"
+    return v13
 
-    const-string/jumbo v6, "[ADVANCED OPP] mimeType is available"
+    :cond_d
+    const-string/jumbo v13, "BtOppObexClient"
 
-    invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const-string/jumbo v14, "[ADVANCED OPP] mimeType is available"
 
-    return v5
+    invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v13, 0x1
+
+    return v13
 .end method
 
 .method private static readFully(Ljava/io/InputStream;[BI)I
@@ -1682,7 +1825,7 @@
 .end method
 
 .method public isP2pConnected()Z
-    .locals 5
+    .locals 4
 
     const/4 v0, 0x0
 
@@ -1709,33 +1852,11 @@
     move-result v0
 
     :cond_0
-    const-string/jumbo v2, "BtOppObexClient"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "[ADVANCED OPP] isP2pConnected() : "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
     return v0
 .end method
 
 .method public isWifiApEnabled()Z
-    .locals 5
+    .locals 4
 
     const/4 v0, 0x0
 
@@ -1758,28 +1879,6 @@
     const/4 v0, 0x1
 
     :cond_0
-    const-string/jumbo v2, "BtOppObexClient"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "[ADVANCED OPP] isWifiApEnabled() : "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
     return v0
 .end method
 

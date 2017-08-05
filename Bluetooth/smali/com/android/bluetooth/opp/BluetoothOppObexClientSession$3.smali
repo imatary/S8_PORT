@@ -51,6 +51,12 @@
 
     iput-object v2, v1, Lcom/android/bluetooth/opp/BluetoothOppObexClientSession;->mFileShareService:Lcom/samsung/android/allshare/service/fileshare/iface/IFileShareService;
 
+    iget-object v1, p0, Lcom/android/bluetooth/opp/BluetoothOppObexClientSession$3;->this$0:Lcom/android/bluetooth/opp/BluetoothOppObexClientSession;
+
+    iget-object v1, v1, Lcom/android/bluetooth/opp/BluetoothOppObexClientSession;->mFileShareService:Lcom/samsung/android/allshare/service/fileshare/iface/IFileShareService;
+
+    if-eqz v1, :cond_0
+
     :try_start_0
     iget-object v1, p0, Lcom/android/bluetooth/opp/BluetoothOppObexClientSession$3;->this$0:Lcom/android/bluetooth/opp/BluetoothOppObexClientSession;
 
@@ -71,6 +77,15 @@
     move-exception v0
 
     invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
+
+    goto :goto_0
+
+    :cond_0
+    const-string/jumbo v1, "BtOppObexClient"
+
+    const-string/jumbo v2, "[ADVANCED OPP] mFileShareService is null"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 .end method

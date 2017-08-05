@@ -505,7 +505,7 @@
 
     aput-object v23, v22, v24
 
-    const v23, 0x7f0a0070
+    const v23, 0x7f0a0071
 
     move/from16 v0, v23
 
@@ -555,7 +555,7 @@
 
     aput-object v23, v22, v24
 
-    const v23, 0x7f0a0071
+    const v23, 0x7f0a0072
 
     move/from16 v0, v23
 
@@ -590,7 +590,7 @@
 .method getThumbnail(Ljava/lang/String;)I
     .locals 3
 
-    const v2, 0x7f020007
+    const v2, 0x7f020006
 
     invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -604,7 +604,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f020009
+    const v1, 0x7f020008
 
     return v1
 
@@ -626,7 +626,7 @@
     if-eqz v1, :cond_2
 
     :cond_1
-    const v1, 0x7f020006
+    const v1, 0x7f020005
 
     return v1
 
@@ -639,7 +639,7 @@
 
     if-eqz v1, :cond_3
 
-    const v1, 0x7f02000d
+    const v1, 0x7f02000c
 
     return v1
 
@@ -661,7 +661,7 @@
     if-eqz v1, :cond_5
 
     :cond_4
-    const v1, 0x7f02000b
+    const v1, 0x7f02000a
 
     return v1
 
@@ -674,7 +674,7 @@
 
     if-eqz v1, :cond_6
 
-    const v1, 0x7f02000c
+    const v1, 0x7f02000b
 
     return v1
 
@@ -715,7 +715,7 @@
 
     if-eqz v1, :cond_9
 
-    const v1, 0x7f02000f
+    const v1, 0x7f02000e
 
     return v1
 
@@ -726,8 +726,11 @@
 
     move-result v1
 
-    if-nez v1, :cond_a
+    if-eqz v1, :cond_a
 
+    return v2
+
+    :cond_a
     const-string/jumbo v1, "spd"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
@@ -736,8 +739,9 @@
 
     if-eqz v1, :cond_b
 
-    :cond_a
-    return v2
+    const v1, 0x7f020003
+
+    return v1
 
     :cond_b
     const-string/jumbo v1, "memo"
@@ -748,7 +752,7 @@
 
     if-eqz v1, :cond_c
 
-    const v1, 0x7f02000a
+    const v1, 0x7f020009
 
     return v1
 
@@ -777,7 +781,7 @@
 .method getThumbnailFromFilename(Ljava/lang/String;)I
     .locals 3
 
-    const v2, 0x7f020007
+    const v2, 0x7f020006
 
     if-nez p1, :cond_0
 
@@ -869,7 +873,7 @@
     if-eqz v1, :cond_4
 
     :cond_3
-    const v1, 0x7f02000b
+    const v1, 0x7f02000a
 
     return v1
 
@@ -882,7 +886,7 @@
 
     if-eqz v1, :cond_5
 
-    const v1, 0x7f02000c
+    const v1, 0x7f02000b
 
     return v1
 
@@ -908,7 +912,7 @@
 
     if-eqz v1, :cond_7
 
-    const v1, 0x7f02000a
+    const v1, 0x7f020009
 
     return v1
 
@@ -933,7 +937,7 @@
 
     invoke-direct {v0}, Lcom/android/bluetooth/opp/BluetoothOppTransferAdapter$ViewHolder;-><init>()V
 
-    const v2, 0x7f0e000b
+    const v2, 0x7f0e000a
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -943,7 +947,7 @@
 
     iput-object v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferAdapter$ViewHolder;->mIcon:Landroid/widget/ImageView;
 
-    const v2, 0x7f0e000c
+    const v2, 0x7f0e000b
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -953,7 +957,7 @@
 
     iput-object v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferAdapter$ViewHolder;->mTitle:Landroid/widget/TextView;
 
-    const v2, 0x7f0e000d
+    const v2, 0x7f0e000c
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -963,7 +967,7 @@
 
     iput-object v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferAdapter$ViewHolder;->mTargetDevice:Landroid/widget/TextView;
 
-    const v2, 0x7f0e000f
+    const v2, 0x7f0e000e
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -973,7 +977,7 @@
 
     iput-object v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferAdapter$ViewHolder;->mContent:Landroid/widget/TextView;
 
-    const v2, 0x7f0e000e
+    const v2, 0x7f0e000d
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

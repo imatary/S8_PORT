@@ -94,7 +94,7 @@
 
     iget-object v4, p0, Lcom/android/bluetooth/sap/SapService$SocketAcceptThread;->this$0:Lcom/android/bluetooth/sap/SapService;
 
-    const v5, 0x7f0a00d1
+    const v5, 0x7f0a00d9
 
     invoke-virtual {v4, v5}, Lcom/android/bluetooth/sap/SapService;->getString(I)Ljava/lang/String;
 

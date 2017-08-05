@@ -260,7 +260,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0092
+    const v2, 0x7f0a0093
 
     invoke-virtual {p0, v2}, Lcom/android/bluetooth/a2dpsink/mbs/A2dpMediaBrowserService;->getString(I)Ljava/lang/String;
 
@@ -405,7 +405,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0092
+    const v2, 0x7f0a0093
 
     invoke-virtual {p0, v2}, Lcom/android/bluetooth/a2dpsink/mbs/A2dpMediaBrowserService;->getString(I)Ljava/lang/String;
 

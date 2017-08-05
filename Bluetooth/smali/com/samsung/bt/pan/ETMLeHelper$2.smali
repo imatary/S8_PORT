@@ -32,11 +32,13 @@
 
 # virtual methods
 .method public onScanResult(ILandroid/bluetooth/le/ScanResult;)V
-    .locals 9
+    .locals 10
 
-    const/16 v8, 0x77
+    const/16 v9, 0x77
 
-    invoke-super {p0, p1, p2}, Landroid/bluetooth/le/ScanCallback;->onScanResult(ILandroid/bluetooth/le/ScanResult;)V
+    const/4 v8, 0x1
+
+    const/4 v7, 0x0
 
     const-string/jumbo v5, "ETMLeHelper"
 
@@ -44,9 +46,6 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    monitor-enter p0
-
-    :try_start_0
     invoke-virtual {p2}, Landroid/bluetooth/le/ScanResult;->getScanRecord()Landroid/bluetooth/le/ScanRecord;
 
     move-result-object v5
@@ -59,9 +58,7 @@
 
     if-eqz v3, :cond_1
 
-    const/4 v5, 0x0
-
-    aget-byte v4, v3, v5
+    aget-byte v4, v3, v7
 
     const-string/jumbo v5, "ETMLeHelper"
 
@@ -85,7 +82,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-ne v4, v8, :cond_0
+    if-ne v4, v9, :cond_0
 
     invoke-static {v3}, Lcom/samsung/bt/pan/ETMLeHelper;->-wrap0([B)Ljava/lang/String;
 
@@ -147,9 +144,7 @@
 
     move-result-object v5
 
-    const/4 v6, 0x1
-
-    invoke-virtual {v5, v6}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v5, v8}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -170,16 +165,11 @@
     move-result-object v5
 
     invoke-virtual {v5, v2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_0
-    monitor-exit p0
-
     return-void
 
     :cond_1
-    :try_start_1
     invoke-virtual {p2}, Landroid/bluetooth/le/ScanResult;->getScanRecord()Landroid/bluetooth/le/ScanRecord;
 
     move-result-object v5
@@ -192,9 +182,7 @@
 
     if-eqz v3, :cond_3
 
-    const/4 v5, 0x0
-
-    aget-byte v4, v3, v5
+    aget-byte v4, v3, v7
 
     const-string/jumbo v5, "ETMLeHelper"
 
@@ -218,7 +206,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-ne v4, v8, :cond_2
+    if-ne v4, v9, :cond_2
 
     invoke-static {v3}, Lcom/samsung/bt/pan/ETMLeHelper;->-wrap0([B)Ljava/lang/String;
 
@@ -280,9 +268,7 @@
 
     move-result-object v5
 
-    const/4 v6, 0x1
-
-    invoke-virtual {v5, v6}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v5, v8}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -303,23 +289,10 @@
     move-result-object v5
 
     invoke-virtual {v5, v2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :cond_2
-    monitor-exit p0
-
     return-void
 
     :cond_3
-    monitor-exit p0
-
     return-void
-
-    :catchall_0
-    move-exception v5
-
-    monitor-exit p0
-
-    throw v5
 .end method

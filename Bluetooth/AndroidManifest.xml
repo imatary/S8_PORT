@@ -2,6 +2,9 @@
     <original-package android:name="com.android.bluetooth"/>
     <permission android:description="@string/permdesc_bluetoothShareManager" android:label="@string/permlab_bluetoothShareManager" android:name="android.permission.ACCESS_BLUETOOTH_SHARE" android:protectionLevel="signature"/>
     <permission android:description="@string/permdesc_bluetoothWhitelist" android:label="@string/permlab_bluetoothWhitelist" android:name="com.android.permission.WHITELIST_BLUETOOTH_DEVICE" android:protectionLevel="signature"/>
+    <permission android:label="HQM_NOTIFICATION_PERMISSION" android:name="com.samsung.permission.HQM_NOTIFICATION_PERMISSION" android:protectionLevel="signatureOrSystem"/>
+    <protected-broadcast android:name="com.samsung.android.dqagent.ACTION_DQA_DATA"/>
+    <uses-permission android:name="com.samsung.permission.HQM_NOTIFICATION_PERMISSION"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.ACCESS_BLUETOOTH_SHARE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -77,10 +80,14 @@
     <uses-permission android:name="android.permission.sec.MDM_AUDIT_LOG"/>
     <uses-permission android:name="com.samsung.android.knox.permission.KNOX_AUDIT_LOG"/>
     <uses-permission android:name="com.sec.android.permission.SMART_UNLOCK"/>
+    <uses-permission android:name="android.permission.STOP_APP_SWITCHES"/>
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_4d9592a7f7941e059d4568ad776ebc2b675f4f6c543a324dba84a789c084f5d6b0add338b80f963fc1e7a69800a32fa7a03781904fc1eb34437cd9a5255a18627fb6fe98ad04becdc4e885ddf4097294e3cc15fea88298dbe78634606ac016f6cb331163e8ea1d03c5a19bfa576007ad21036126b57cd0d1ab1ec0008178a5f6"/>
     <application android:defaultToDeviceProtectedStorage="true" android:directBootAware="true" android:icon="@mipmap/bt_share" android:label="@string/app_name" android:name=".btservice.AdapterApp" android:persistent="false" android:supportsRtl="true" android:usesCleartextTraffic="false">
+        <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
         <meta-data android:name="access" android:value="SS_META"/>
         <meta-data android:name="lib" android:value="/system/lib/hw/bluetooth.default.so"/>
         <meta-data android:name="lib64" android:value="/system/lib/hw/bluetooth.default.so"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
         <uses-library android:name="javax.obex"/>
         <provider android:authorities="com.android.bluetooth.opp" android:exported="true" android:name=".opp.BluetoothOppProvider" android:process="@string/process">
             <path-permission android:pathPrefix="/btopp" android:permission="android.permission.ACCESS_BLUETOOTH_SHARE"/>
@@ -180,14 +187,14 @@
                 <data android:mimeType="vnd.android.cursor.item/vnd.android.btopp"/>
             </intent-filter>
         </activity>
-        <activity android:enabled="@bool/profile_supported_opp" android:excludeFromRecents="true" android:name=".opp.BluetoothOppBtEnableActivity" android:process="@string/process" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
-        <activity android:excludeFromRecents="true" android:name=".opp.BluetoothOppBtErrorActivity" android:process="@string/process" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
-        <activity android:excludeFromRecents="true" android:name=".opp.BluetoothOppTransferHistoryClearActivity" android:process="@string/process" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
-        <activity android:enabled="@bool/profile_supported_opp" android:excludeFromRecents="true" android:name=".opp.BluetoothOppBtEnablingActivity" android:process="@string/process" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:enabled="@bool/profile_supported_opp" android:excludeFromRecents="true" android:name=".opp.BluetoothOppIncomingFileConfirmActivity" android:process="@string/process" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
-        <activity android:enabled="@bool/profile_supported_opp" android:excludeFromRecents="true" android:name=".opp.BluetoothOppTransferActivity" android:process="@string/process" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
+        <activity android:enabled="@bool/profile_supported_opp" android:excludeFromRecents="true" android:name=".opp.BluetoothOppBtEnableActivity" android:process="@string/process" android:resizeableActivity="false" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
+        <activity android:excludeFromRecents="true" android:name=".opp.BluetoothOppBtErrorActivity" android:process="@string/process" android:resizeableActivity="false" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
+        <activity android:excludeFromRecents="true" android:name=".opp.BluetoothOppTransferHistoryClearActivity" android:process="@string/process" android:resizeableActivity="false" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
+        <activity android:enabled="@bool/profile_supported_opp" android:excludeFromRecents="true" android:name=".opp.BluetoothOppBtEnablingActivity" android:process="@string/process" android:resizeableActivity="false" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:enabled="@bool/profile_supported_opp" android:excludeFromRecents="true" android:name=".opp.BluetoothOppIncomingFileConfirmActivity" android:process="@string/process" android:resizeableActivity="false" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
+        <activity android:enabled="@bool/profile_supported_opp" android:excludeFromRecents="true" android:name=".opp.BluetoothOppTransferActivity" android:process="@string/process" android:resizeableActivity="false" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
         <activity android:configChanges="keyboardHidden|screenSize" android:enabled="@bool/profile_supported_opp" android:excludeFromRecents="true" android:label="@string/app_name" android:name=".opp.BluetoothOppTransferHistory" android:process="@string/process" android:theme="@style/BluetoothTheme"/>
-        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:enabled="@bool/profile_supported_pan" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name=".pan.DialogConnReqInactiveNap" android:process="@string/process" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:enabled="@bool/profile_supported_pan" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name=".pan.DialogConnReqInactiveNap" android:process="@string/process" android:resizeableActivity="false" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
         <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:enabled="@bool/profile_supported_hid" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name=".hid.BluetoothHidIncomingpriorityoffActivity" android:process="@string/process" android:resizeableActivity="false" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"/>
         <activity android:enabled="@bool/profile_supported_pbap" android:excludeFromRecents="true" android:name=".pbap.BluetoothPbapActivity" android:process="@string/process" android:theme="@android:style/Theme.Material.Light.Dialog.Alert">
             <intent-filter>
@@ -303,6 +310,8 @@
                 <action android:name="com.samsung.intent.action.SETTINGS_SOFT_NETWORK_RESET"/>
                 <action android:name="com.samsung.server.BT_IT_POLICY"/>
                 <action android:name="com.samsung.bluetooth.a2dp.intent.action.DUAL_PLAY_NOTI_SELECTED"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
             </intent-filter>
         </receiver>
     </application>

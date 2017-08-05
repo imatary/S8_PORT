@@ -13,10 +13,12 @@
     <string name="notification_sending">Enviando %s…</string>
     <string name="notification_sent">%s enviado</string>
     <string name="notification_sent_fail">%s no enviado</string>
-    <string name="upload_line1">Para: %1$s</string>
+    <string name="download_line1">De: %s</string>
+    <string name="upload_line1">Para: %s</string>
     <string name="upload_line3_nofilesize">Tipo de archivo: %s</string>
     <string name="Button_Cancel">Cancelar</string>
     <string name="Button_Cancel_All">Cancelar todo</string>
+    <string name="upload_fail_line1">El archivo no se ha enviado a %s.</string>
     <string name="bt_toast_1">Se recibirá el archivo. Compruebe el progreso en el panel de notificaciones.</string>
     <string name="bt_toast_2">Transferencia de archivos cancelada.</string>
     <string name="bt_toast_3">Se ha cancelado la recepción de archivos de %s.</string>
@@ -37,6 +39,7 @@
     <string name="bt_more_settings">Más ajustes</string>
     <string name="status_forbidden">No se puede transferir el archivo</string>
     <string name="status_canceled">Envío cancelado</string>
+    <string name="bt_adv_opp_switch">Cambiado automáticamente de Bluetooth a Wi-Fi Directo para una compartición de archivos rápida.</string>
     <string name="inbound_history_title">Transferencias entrantes</string>
     <string name="outbound_history_title">Transferencias salientes</string>
     <string name="noti_caption_more">%1$s y %2$d más</string>
@@ -44,8 +47,8 @@
     <string name="transfer_clear_dlg_option_menu">Eliminar</string>
     <string name="transfer_clear_btn">Eliminar</string>
     <string name="connection_request_inactive_nap">%s está solicitando conectarse a su teléfono para compartir la red.</string>
-    <string name="allow_conn_req_inactive_nap">Aceptar</string>
-    <string name="deny_conn_req_inactive_nap">Cancelar</string>
+    <string name="allow_conn_req_inactive_nap">Permitir</string>
+    <string name="deny_conn_req_inactive_nap">Rechazar</string>
     <string name="bluetooth_tether_request">¿Quiere permitir Módem Bluetooth?</string>
     <string name="bluetooth_tether_connected">Se ha conectado a %s para acceder a la conexión a Internet.</string>
     <string name="bluetooth_pan_nap_connecting_error_message">No se puede conectar a %s.</string>
@@ -56,11 +59,21 @@
     <string name="bluetooth_a2dp_playing_via_device">Reproduciendo audio automáticamente mediante %s…</string>
     <string name="bluetooth_a2dp_sound_glitches">Problemas de sonido detectados</string>
     <string name="bluetooth_a2dp_turn_off_uhq_upscaler">Pulse aquí para desactivar Optimizador UHQ.</string>
+    <string name="bluetooth_dual_play_title">Audio dual</string>
+    <string name="bluetooth_dual_play_content">Hay 2 dispositivos Bluetooth conectados. Para activar Audio dual, vaya a Ajustes.</string>
+    <string name="settings">Ajustes</string>
+    <string name="bluetooth_dual_play_ongoing_title">Audio dual activado</string>
+    <string name="bluetooth_dual_play_ongoing_content">El audio se reproduce en 2 dispositivos Bluetooth conectados.</string>
+    <string name="bluetooth_avc_title">Control del volumen</string>
+    <string name="bluetooth_avc_content">Puede usar Sincronizar volumen multimedia para sincronizar el volumen en el teléfono y en el dispositivo Bluetooth conectado.</string>
+    <string name="bluetooth_avc_content_vzw">Puede sincronizar el volumen en el teléfono y en el dispositivo Bluetooth conectado mediante Sincronizar volumen multimedia.</string>
+    <string name="bluetooth_avc_earshock_protection_title">Cuidado con el volumen alto</string>
+    <string name="bluetooth_avc_earshock_protection_content">Escuchar en el modo Sincronizar volumen multimedia puede dañarle los oídos. Puede ajustar el volumen si el sonido es demasiado alto.</string>
     <string name="bluetooth_a2dpsink_sound_coming">El sonido de la TV solo se puede reproducir mediante el altavoz del teléfono o los auriculares por cable.</string>
     <string name="bluetooth_notif_sap_on">Se ha activado el modo Tarjeta SIM remota.</string>
     <string name="bluetooth_notif_sap_off">Se ha desactivado el modo Tarjeta SIM remota.</string>
     <string name="bluetooth_notif_sap_title">Modo SIM remota</string>
     <string name="bluetooth_notif_sap_message">Bluetooth está conectado con %s</string>
     <string name="bluetooth_remote_device">Dispositivo Bluetooth</string>
-    <string name="app_name">Compartir Bluetooth</string>
+    <string name="app_name">Bluetooth</string>
 </resources>

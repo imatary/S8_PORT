@@ -2,7 +2,7 @@
 <LinearLayout android:orientation="vertical" android:background="@color/hun_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxHeight="@dimen/hun_body_layout_max_height" android:minHeight="@dimen/hun_body_layout_min_height"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/HeadsUpNotificationContentLayoutStyle">
-        <LinearLayout android:orientation="horizontal" android:id="@id/content_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:id="@id/content_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginBottom="2.0dip" android:layout_weight="1.0">
             <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:scaleType="centerInside" style="@style/HeadsUpNotificationIconStyle" />
             <TextView android:layout_gravity="center_vertical" android:id="@id/caller" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/HeadsUpNotificationCallerStyle" />
         </LinearLayout>

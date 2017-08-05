@@ -128,6 +128,8 @@
 
 .field private mRetryCount:I
 
+.field private mScreenLockChangeReceiver:Landroid/content/BroadcastReceiver;
+
 
 # direct methods
 .method static synthetic -get0()Ljava/lang/String;
@@ -3392,6 +3394,51 @@
     return v0
 .end method
 
+.method private isUserUnlocked()Z
+    .locals 5
+
+    iget-object v2, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mContext:Landroid/content/Context;
+
+    invoke-static {v2}, Landroid/os/UserManager;->get(Landroid/content/Context;)Landroid/os/UserManager;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroid/os/UserManager;->isUserUnlocked()Z
+
+    move-result v1
+
+    sget-object v2, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v4, "Value is "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v1
+
+    :cond_0
+    const/4 v2, 0x1
+
+    return v2
+.end method
+
 .method private msg2Log(I)Ljava/lang/String;
     .locals 3
 
@@ -4710,13 +4757,13 @@
     return-void
 
     :cond_0
-    new-instance v2, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$2;
+    new-instance v2, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$3;
 
     const-string/jumbo v3, "/data/misc/bluedroid/downloadable_bt_temp.db"
 
     const/16 v4, 0xfff
 
-    invoke-direct {v2, p0, v3, v4}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$2;-><init>(Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;Ljava/lang/String;I)V
+    invoke-direct {v2, p0, v3, v4}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$3;-><init>(Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;Ljava/lang/String;I)V
 
     invoke-virtual {v2}, Landroid/os/FileObserver;->startWatching()V
 
@@ -5425,7 +5472,9 @@
 .end method
 
 .method public cleanup()V
-    .locals 3
+    .locals 4
+
+    const/4 v3, 0x1
 
     const/4 v2, 0x0
 
@@ -5437,7 +5486,7 @@
 
     iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
@@ -5447,11 +5496,24 @@
 
     iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
 
+    invoke-virtual {v0, v3}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->hasMessages(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
+    invoke-virtual {v0, v3}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->removeMessages(I)V
+
+    :cond_0
+    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
     invoke-virtual {v0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->getLooper()Landroid/os/Looper;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
 
@@ -5463,14 +5525,14 @@
 
     iput-object v2, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
 
-    :cond_0
+    :cond_1
     iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mContext:Landroid/content/Context;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mContext:Landroid/content/Context;
 
@@ -5478,12 +5540,14 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    :cond_1
+    :cond_2
     return-void
 .end method
 
 .method public cleanupLooper()V
-    .locals 3
+    .locals 4
+
+    const/4 v3, 0x1
 
     const/4 v2, 0x0
 
@@ -5495,7 +5559,7 @@
 
     iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
@@ -5505,11 +5569,24 @@
 
     iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
 
+    invoke-virtual {v0, v3}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->hasMessages(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
+    invoke-virtual {v0, v3}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->removeMessages(I)V
+
+    :cond_0
+    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
     invoke-virtual {v0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->getLooper()Landroid/os/Looper;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
 
@@ -5521,14 +5598,16 @@
 
     iput-object v2, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
 
-    :cond_0
+    :cond_1
     return-void
 .end method
 
 .method public getAbuseAccumulatedScanTime()I
-    .locals 11
+    .locals 13
 
-    const/4 v10, 0x0
+    const/4 v12, -0x1
+
+    const/4 v11, 0x0
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
@@ -5572,15 +5651,16 @@
 
     const-string/jumbo v5, "BLE Abuse Scan"
 
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
-    aput-object v5, v4, v9
+    aput-object v5, v4, v10
 
     const/4 v5, 0x0
 
     invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     :try_end_0
-    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v8
 
@@ -5593,7 +5673,7 @@
     if-eqz v0, :cond_2
 
     :cond_1
-    invoke-interface {v8, v10}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    invoke-interface {v8, v11}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -5614,6 +5694,33 @@
     return v6
 
     :catch_0
+    move-exception v9
+
+    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "Catching Security Exception: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v12
+
+    :catch_1
     move-exception v7
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
@@ -5642,15 +5749,15 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    const/4 v0, -0x1
-
-    return v0
+    return v12
 .end method
 
 .method public getAbuseMaxScanCount()I
-    .locals 11
+    .locals 13
 
-    const/4 v10, 0x0
+    const/4 v12, -0x1
+
+    const/4 v11, 0x0
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
@@ -5694,15 +5801,16 @@
 
     const-string/jumbo v5, "BLE Abuse Scan"
 
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
-    aput-object v5, v4, v9
+    aput-object v5, v4, v10
 
     const/4 v5, 0x0
 
     invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     :try_end_0
-    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v8
 
@@ -5715,7 +5823,7 @@
     if-eqz v0, :cond_2
 
     :cond_1
-    invoke-interface {v8, v10}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    invoke-interface {v8, v11}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -5736,6 +5844,33 @@
     return v7
 
     :catch_0
+    move-exception v9
+
+    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "Catching Security Exception: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v12
+
+    :catch_1
     move-exception v6
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
@@ -5764,13 +5899,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    const/4 v0, -0x1
-
-    return v0
+    return v12
 .end method
 
 .method public getAbuseScanPackages()Ljava/util/ArrayList;
-    .locals 12
+    .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -5781,7 +5914,7 @@
         }
     .end annotation
 
-    const/4 v11, 0x0
+    const/4 v12, 0x0
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
@@ -5827,15 +5960,16 @@
 
     const-string/jumbo v5, "BLE Abuse Scan List"
 
-    const/4 v10, 0x0
+    const/4 v11, 0x0
 
-    aput-object v5, v4, v10
+    aput-object v5, v4, v11
 
     const/4 v5, 0x0
 
     invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     :try_end_0
-    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v6
 
@@ -5848,7 +5982,7 @@
     if-eqz v0, :cond_2
 
     :cond_1
-    invoke-interface {v6, v11}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    invoke-interface {v6, v12}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
@@ -5867,6 +6001,33 @@
     return-object v8
 
     :catch_0
+    move-exception v10
+
+    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "Catching Security Exception: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object v8
+
+    :catch_1
     move-exception v9
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
@@ -5899,7 +6060,7 @@
 .end method
 
 .method public getNotAllowedVoiceRecognitionDeviceList()Ljava/util/ArrayList;
-    .locals 13
+    .locals 14
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -5910,7 +6071,7 @@
         }
     .end annotation
 
-    const/4 v12, 0x5
+    const/4 v13, 0x5
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
@@ -5980,15 +6141,16 @@
 
     const-string/jumbo v5, "NotAllowedVoiceRecognition"
 
-    const/4 v11, 0x0
+    const/4 v12, 0x0
 
-    aput-object v5, v4, v11
+    aput-object v5, v4, v12
 
     const/4 v5, 0x0
 
     invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     :try_end_0
-    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v7
 
@@ -6004,7 +6166,7 @@
     const/4 v10, 0x0
 
     :goto_0
-    if-ge v10, v12, :cond_3
+    if-ge v10, v13, :cond_3
 
     invoke-interface {v7, v10}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -6020,6 +6182,33 @@
     goto :goto_0
 
     :catch_0
+    move-exception v11
+
+    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "Catching Security Exception: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object v8
+
+    :catch_1
     move-exception v9
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
@@ -6088,7 +6277,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_8
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
@@ -6100,11 +6289,28 @@
 
     iput-boolean v9, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mDdbInitialized:Z
 
+    invoke-direct {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->isUserUnlocked()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->registerScreenLockChangeReceiver()V
+
+    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    const-string/jumbo v1, "User locked the storage access, exit"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_1
     iget v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mRetryCount:I
 
     const/16 v1, 0x14
 
-    if-ne v0, v1, :cond_1
+    if-ne v0, v1, :cond_7
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
@@ -6132,42 +6338,7 @@
 
     invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->cleanupLooper()V
 
-    invoke-direct {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->setDbError()V
-
     iput v9, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mRetryCount:I
-
-    iput-boolean v9, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitFailed:Z
-
-    :goto_0
-    return-void
-
-    :cond_1
-    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
-
-    invoke-virtual {v0, v10}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->obtainMessage(I)Landroid/os/Message;
-
-    move-result-object v7
-
-    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
-
-    const-wide/16 v2, 0x3e8
-
-    invoke-virtual {v0, v7, v2, v3}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
-
-    iget v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mRetryCount:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    iput v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mRetryCount:I
-
-    goto :goto_0
-
-    :cond_2
-    iput v9, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mRetryCount:I
-
-    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->initBroadcastReceiver()V
-
-    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->cleanupLooper()V
 
     const/4 v8, 0x0
 
@@ -6190,22 +6361,68 @@
 
     move-result-object v8
 
-    if-eqz v8, :cond_3
+    if-nez v8, :cond_2
 
+    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    const-string/jumbo v1, "DB is really not present, exit"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :catch_0
+    move-exception v6
+
+    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "Exception in querying the database: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v6}, Landroid/database/sqlite/SQLiteException;->getMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-direct {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->setDbError()V
+
+    return-void
+
+    :cond_2
     invoke-interface {v8}, Landroid/database/Cursor;->getCount()I
 
     move-result v0
 
     if-nez v0, :cond_4
 
-    :cond_3
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
-    const-string/jumbo v1, "no polices in db"
+    const-string/jumbo v1, "no Entries in policy, exit"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->insertInitialPoclicyValues()V
+    if-eqz v8, :cond_3
+
+    invoke-interface {v8}, Landroid/database/Cursor;->close()V
+
+    :cond_3
+    return-void
 
     :cond_4
     if-eqz v8, :cond_5
@@ -6213,13 +6430,9 @@
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
     :cond_5
+    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->initBroadcastReceiver()V
+
     iput-boolean v10, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mDdbInitialized:Z
-
-    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->checkHFPpolicies()V
-
-    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->checkBLEpolicies()V
-
-    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->checkA2DPpolicies()V
 
     iget-boolean v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitFailed:Z
 
@@ -6232,9 +6445,107 @@
     invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->refreshDbFile()V
 
     :cond_6
+    :goto_0
     return-void
 
-    :catch_0
+    :cond_7
+    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
+    if-eqz v0, :cond_6
+
+    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
+    invoke-virtual {v0, v10}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->obtainMessage(I)Landroid/os/Message;
+
+    move-result-object v7
+
+    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
+    const-wide/16 v2, 0x3e8
+
+    invoke-virtual {v0, v7, v2, v3}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
+
+    iget v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mRetryCount:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    iput v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mRetryCount:I
+
+    goto :goto_0
+
+    :cond_8
+    iput v9, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mRetryCount:I
+
+    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->initBroadcastReceiver()V
+
+    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->cleanupLooper()V
+
+    const/4 v8, 0x0
+
+    :try_start_1
+    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mCr:Landroid/content/ContentResolver;
+
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDbProvider;->POLICY_URI:Landroid/net/Uri;
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    :try_end_1
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_1 .. :try_end_1} :catch_1
+
+    move-result-object v8
+
+    if-eqz v8, :cond_9
+
+    invoke-interface {v8}, Landroid/database/Cursor;->getCount()I
+
+    move-result v0
+
+    if-nez v0, :cond_a
+
+    :cond_9
+    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    const-string/jumbo v1, "no polices in db"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->insertInitialPoclicyValues()V
+
+    :cond_a
+    if-eqz v8, :cond_b
+
+    invoke-interface {v8}, Landroid/database/Cursor;->close()V
+
+    :cond_b
+    iput-boolean v10, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mDdbInitialized:Z
+
+    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->checkHFPpolicies()V
+
+    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->checkBLEpolicies()V
+
+    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->checkA2DPpolicies()V
+
+    iget-boolean v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitFailed:Z
+
+    if-eqz v0, :cond_c
+
+    iput-boolean v9, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitFailed:Z
+
+    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->verifyFilePolicyVersion()V
+
+    invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->refreshDbFile()V
+
+    :cond_c
+    return-void
+
+    :catch_1
     move-exception v6
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
@@ -6277,9 +6588,9 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$1;
+    new-instance v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$2;
 
-    invoke-direct {v1, p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$1;-><init>(Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;)V
+    invoke-direct {v1, p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$2;-><init>(Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;)V
 
     iput-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
@@ -6313,6 +6624,75 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
+    return-void
+.end method
+
+.method public initDdbByUserUnlock()V
+    .locals 3
+
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
+    if-eqz v1, :cond_1
+
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    const-string/jumbo v2, "initDdbByUserUnlock"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mContext:Landroid/content/Context;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mContext:Landroid/content/Context;
+
+    iget-object v2, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mScreenLockChangeReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    :cond_0
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v2}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->obtainMessage(I)Landroid/os/Message;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
+    invoke-virtual {v1, v0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->sendMessage(Landroid/os/Message;)Z
+
+    :cond_1
+    return-void
+.end method
+
+.method public initDdbFromAdapter()V
+    .locals 3
+
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
+    if-eqz v1, :cond_0
+
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    const-string/jumbo v2, "initDdbFromAdapter"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v2}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->obtainMessage(I)Landroid/os/Message;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mInitHandler:Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;
+
+    invoke-virtual {v1, v0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$initHandler;->sendMessage(Landroid/os/Message;)Z
+
+    :cond_0
     return-void
 .end method
 
@@ -6684,209 +7064,241 @@
 .end method
 
 .method public isA2dpBlackListDevice(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 13
+    .locals 15
 
-    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, "isAvrcBlackListDevice: "
+    const-string/jumbo v3, "isAvrcBlackListDevice: "
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, p2
 
-    move-result-object v1
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v1
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->isDownloadableDbExists()Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_0
+    if-nez v1, :cond_0
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
 
     :cond_0
     if-nez p2, :cond_1
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
 
     :cond_1
-    const-string/jumbo v3, "downloadable_item = ?"
+    const-string/jumbo v4, "downloadable_item = ?"
 
-    const/4 v10, 0x0
+    const/4 v11, 0x0
 
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mCr:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mCr:Landroid/content/ContentResolver;
 
-    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDbProvider;->A2DP_URI:Landroid/net/Uri;
+    sget-object v2, Lcom/samsung/downloadabledb/BluetoothDownloadableDbProvider;->A2DP_URI:Landroid/net/Uri;
 
-    const/4 v2, 0x5
+    const/4 v3, 0x5
 
-    new-array v2, v2, [Ljava/lang/String;
+    new-array v3, v3, [Ljava/lang/String;
 
-    const-string/jumbo v4, "downloadable_data1"
-
-    const/4 v5, 0x0
-
-    aput-object v4, v2, v5
-
-    const-string/jumbo v4, "downloadable_data2"
-
-    const/4 v5, 0x1
-
-    aput-object v4, v2, v5
-
-    const-string/jumbo v4, "downloadable_data3"
-
-    const/4 v5, 0x2
-
-    aput-object v4, v2, v5
-
-    const-string/jumbo v4, "downloadable_data4"
-
-    const/4 v5, 0x3
-
-    aput-object v4, v2, v5
-
-    const-string/jumbo v4, "downloadable_data5"
-
-    const/4 v5, 0x4
-
-    aput-object v4, v2, v5
-
-    const/4 v4, 0x1
-
-    new-array v4, v4, [Ljava/lang/String;
-
-    const/4 v5, 0x0
-
-    aput-object p2, v4, v5
-
-    const/4 v5, 0x0
-
-    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-    :try_end_0
-    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result-object v10
-
-    if-eqz v10, :cond_6
-
-    invoke-interface {v10}, Landroid/database/Cursor;->moveToFirst()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_5
-
-    :cond_2
-    const/4 v12, 0x0
-
-    :goto_0
-    const/4 v0, 0x5
-
-    if-ge v12, v0, :cond_4
-
-    invoke-interface {v10, v12}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v7
-
-    if-eqz v7, :cond_3
-
-    invoke-virtual {v7}, Ljava/lang/String;->length()I
-
-    move-result v9
-
-    const/4 v5, 0x1
+    const-string/jumbo v5, "downloadable_data1"
 
     const/4 v6, 0x0
 
-    const/4 v8, 0x0
+    aput-object v5, v3, v6
 
-    move-object v4, p1
+    const-string/jumbo v5, "downloadable_data2"
 
-    invoke-virtual/range {v4 .. v9}, Ljava/lang/String;->regionMatches(ZILjava/lang/String;II)Z
+    const/4 v6, 0x1
 
-    move-result v0
+    aput-object v5, v3, v6
 
-    if-eqz v0, :cond_3
+    const-string/jumbo v5, "downloadable_data3"
 
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
+    const/4 v6, 0x2
 
-    const/4 v0, 0x1
+    aput-object v5, v3, v6
 
-    return v0
+    const-string/jumbo v5, "downloadable_data4"
+
+    const/4 v6, 0x3
+
+    aput-object v5, v3, v6
+
+    const-string/jumbo v5, "downloadable_data5"
+
+    const/4 v6, 0x4
+
+    aput-object v5, v3, v6
+
+    const/4 v5, 0x1
+
+    new-array v5, v5, [Ljava/lang/String;
+
+    const/4 v6, 0x0
+
+    aput-object p2, v5, v6
+
+    const/4 v6, 0x0
+
+    invoke-virtual/range {v1 .. v6}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    :try_end_0
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v11
+
+    if-eqz v11, :cond_6
+
+    invoke-interface {v11}, Landroid/database/Cursor;->moveToFirst()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_5
+
+    :cond_2
+    const/4 v13, 0x0
+
+    :goto_0
+    const/4 v1, 0x5
+
+    if-ge v13, v1, :cond_4
+
+    invoke-interface {v11, v13}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    if-eqz v8, :cond_3
+
+    invoke-virtual {v8}, Ljava/lang/String;->length()I
+
+    move-result v10
+
+    const/4 v6, 0x1
+
+    const/4 v7, 0x0
+
+    const/4 v9, 0x0
+
+    move-object/from16 v5, p1
+
+    invoke-virtual/range {v5 .. v10}, Ljava/lang/String;->regionMatches(ZILjava/lang/String;II)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    invoke-interface {v11}, Landroid/database/Cursor;->close()V
+
+    const/4 v1, 0x1
+
+    return v1
 
     :catch_0
-    move-exception v11
+    move-exception v14
 
-    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, "Exception in querying the database: "
+    const-string/jumbo v3, "Catching Security Exception: "
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v11}, Landroid/database/sqlite/SQLiteException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
+
+    :catch_1
+    move-exception v12
+
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "Exception in querying the database: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v12}, Landroid/database/sqlite/SQLiteException;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v1, 0x0
+
+    return v1
 
     :cond_3
-    add-int/lit8 v12, v12, 0x1
+    add-int/lit8 v13, v13, 0x1
 
     goto :goto_0
 
     :cond_4
-    invoke-interface {v10}, Landroid/database/Cursor;->moveToNext()Z
+    invoke-interface {v11}, Landroid/database/Cursor;->moveToNext()Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_2
+    if-nez v1, :cond_2
 
     :cond_5
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
+    invoke-interface {v11}, Landroid/database/Cursor;->close()V
 
     :cond_6
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
 .end method
 
 .method public isAvoidInBandRingtoneDevice(Ljava/lang/String;)Z
-    .locals 13
+    .locals 14
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
@@ -6962,7 +7374,8 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     :try_end_0
-    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v10
 
@@ -7013,6 +7426,35 @@
     return v0
 
     :catch_0
+    move-exception v13
+
+    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "Catching Security Exception: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :catch_1
     move-exception v11
 
     sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
@@ -7067,196 +7509,228 @@
 .end method
 
 .method public isCiBlacklistedDevice(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 13
+    .locals 15
 
-    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
-    const-string/jumbo v1, "isCiBlacklistedDevice"
+    const-string/jumbo v2, "isCiBlacklistedDevice"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->isDownloadableDbExists()Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_0
+    if-nez v1, :cond_0
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
 
     :cond_0
-    const-string/jumbo v3, "downloadable_item = ?"
+    const-string/jumbo v4, "downloadable_item = ?"
 
-    const/4 v11, 0x0
+    const/4 v12, 0x0
 
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mCr:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mCr:Landroid/content/ContentResolver;
 
-    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDbProvider;->BLE_URI:Landroid/net/Uri;
+    sget-object v2, Lcom/samsung/downloadabledb/BluetoothDownloadableDbProvider;->BLE_URI:Landroid/net/Uri;
 
-    const/4 v2, 0x2
+    const/4 v3, 0x2
 
-    new-array v2, v2, [Ljava/lang/String;
+    new-array v3, v3, [Ljava/lang/String;
 
-    const-string/jumbo v4, "downloadable_data1"
-
-    const/4 v5, 0x0
-
-    aput-object v4, v2, v5
-
-    const-string/jumbo v4, "downloadable_data2"
-
-    const/4 v5, 0x1
-
-    aput-object v4, v2, v5
-
-    const/4 v4, 0x1
-
-    new-array v4, v4, [Ljava/lang/String;
-
-    const-string/jumbo v5, "BLE CI BlackList"
+    const-string/jumbo v5, "downloadable_data1"
 
     const/4 v6, 0x0
 
-    aput-object v5, v4, v6
+    aput-object v5, v3, v6
 
-    const/4 v5, 0x0
+    const-string/jumbo v5, "downloadable_data2"
 
-    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    const/4 v6, 0x1
+
+    aput-object v5, v3, v6
+
+    const/4 v5, 0x1
+
+    new-array v5, v5, [Ljava/lang/String;
+
+    const-string/jumbo v6, "BLE CI BlackList"
+
+    const/4 v7, 0x0
+
+    aput-object v6, v5, v7
+
+    const/4 v6, 0x0
+
+    invoke-virtual/range {v1 .. v6}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     :try_end_0
-    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result-object v11
+    move-result-object v12
 
-    if-eqz v11, :cond_6
+    if-eqz v12, :cond_6
 
-    invoke-interface {v11}, Landroid/database/Cursor;->moveToFirst()Z
+    invoke-interface {v12}, Landroid/database/Cursor;->moveToFirst()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_5
+    if-eqz v1, :cond_5
 
     :cond_1
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    invoke-interface {v11, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    invoke-interface {v12, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v8
 
-    if-nez v7, :cond_2
+    if-nez v8, :cond_2
 
-    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
-    const-string/jumbo v1, "DB has null address"
+    const-string/jumbo v2, "DB has null address"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-interface {v11}, Landroid/database/Cursor;->close()V
+    invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
 
     :catch_0
-    move-exception v12
+    move-exception v14
 
-    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, "Exception in querying the database: "
+    const-string/jumbo v3, "Catching Security Exception: "
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v12}, Landroid/database/sqlite/SQLiteException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
+
+    :catch_1
+    move-exception v13
+
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "Exception in querying the database: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v13}, Landroid/database/sqlite/SQLiteException;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v1, 0x0
+
+    return v1
 
     :cond_2
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
-    invoke-interface {v11, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    invoke-interface {v12, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    move-result-object v10
+    move-result-object v11
 
-    if-nez v10, :cond_3
+    if-nez v11, :cond_3
 
-    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
-    const-string/jumbo v1, "DB has null Device Name"
+    const-string/jumbo v2, "DB has null Device Name"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-interface {v11}, Landroid/database/Cursor;->close()V
+    invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
 
     :cond_3
-    invoke-virtual {v7}, Ljava/lang/String;->length()I
+    invoke-virtual {v8}, Ljava/lang/String;->length()I
 
-    move-result v9
+    move-result v10
 
-    const/4 v5, 0x1
+    const/4 v6, 0x1
 
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
-    move-object v4, p1
+    move-object/from16 v5, p1
 
-    invoke-virtual/range {v4 .. v9}, Ljava/lang/String;->regionMatches(ZILjava/lang/String;II)Z
+    invoke-virtual/range {v5 .. v10}, Ljava/lang/String;->regionMatches(ZILjava/lang/String;II)Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_4
+    if-eqz v1, :cond_4
 
-    invoke-virtual {v10, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-object/from16 v0, p2
 
-    move-result v0
+    invoke-virtual {v11, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    if-eqz v0, :cond_4
+    move-result v1
 
-    invoke-interface {v11}, Landroid/database/Cursor;->close()V
+    if-eqz v1, :cond_4
 
-    const/4 v0, 0x1
+    invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
-    return v0
+    const/4 v1, 0x1
+
+    return v1
 
     :cond_4
-    invoke-interface {v11}, Landroid/database/Cursor;->moveToNext()Z
+    invoke-interface {v12}, Landroid/database/Cursor;->moveToNext()Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_1
+    if-nez v1, :cond_1
 
     :cond_5
-    invoke-interface {v11}, Landroid/database/Cursor;->close()V
+    invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
     :cond_6
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
 .end method
 
 .method public isDownloadableDbExists()Z
@@ -7367,196 +7841,228 @@
 .end method
 
 .method public isScBlacklistedDevice(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 13
+    .locals 15
 
-    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
-    const-string/jumbo v1, "isScBlacklistedDevice"
+    const-string/jumbo v2, "isScBlacklistedDevice"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-virtual {p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->isDownloadableDbExists()Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_0
+    if-nez v1, :cond_0
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
 
     :cond_0
-    const-string/jumbo v3, "downloadable_item = ?"
+    const-string/jumbo v4, "downloadable_item = ?"
 
-    const/4 v11, 0x0
+    const/4 v12, 0x0
 
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mCr:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mCr:Landroid/content/ContentResolver;
 
-    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDbProvider;->BLE_URI:Landroid/net/Uri;
+    sget-object v2, Lcom/samsung/downloadabledb/BluetoothDownloadableDbProvider;->BLE_URI:Landroid/net/Uri;
 
-    const/4 v2, 0x2
+    const/4 v3, 0x2
 
-    new-array v2, v2, [Ljava/lang/String;
+    new-array v3, v3, [Ljava/lang/String;
 
-    const-string/jumbo v4, "downloadable_data1"
-
-    const/4 v5, 0x0
-
-    aput-object v4, v2, v5
-
-    const-string/jumbo v4, "downloadable_data2"
-
-    const/4 v5, 0x1
-
-    aput-object v4, v2, v5
-
-    const/4 v4, 0x1
-
-    new-array v4, v4, [Ljava/lang/String;
-
-    const-string/jumbo v5, "BLE SC BlackList"
+    const-string/jumbo v5, "downloadable_data1"
 
     const/4 v6, 0x0
 
-    aput-object v5, v4, v6
+    aput-object v5, v3, v6
 
-    const/4 v5, 0x0
+    const-string/jumbo v5, "downloadable_data2"
 
-    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    const/4 v6, 0x1
+
+    aput-object v5, v3, v6
+
+    const/4 v5, 0x1
+
+    new-array v5, v5, [Ljava/lang/String;
+
+    const-string/jumbo v6, "BLE SC BlackList"
+
+    const/4 v7, 0x0
+
+    aput-object v6, v5, v7
+
+    const/4 v6, 0x0
+
+    invoke-virtual/range {v1 .. v6}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     :try_end_0
-    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result-object v11
+    move-result-object v12
 
-    if-eqz v11, :cond_6
+    if-eqz v12, :cond_6
 
-    invoke-interface {v11}, Landroid/database/Cursor;->moveToFirst()Z
+    invoke-interface {v12}, Landroid/database/Cursor;->moveToFirst()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_5
+    if-eqz v1, :cond_5
 
     :cond_1
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    invoke-interface {v11, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    invoke-interface {v12, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v8
 
-    if-nez v7, :cond_2
+    if-nez v8, :cond_2
 
-    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
-    const-string/jumbo v1, "DB has null address"
+    const-string/jumbo v2, "DB has null address"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-interface {v11}, Landroid/database/Cursor;->close()V
+    invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
 
     :catch_0
-    move-exception v12
+    move-exception v14
 
-    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, "Exception in querying the database: "
+    const-string/jumbo v3, "Catching Security Exception: "
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v12}, Landroid/database/sqlite/SQLiteException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
+
+    :catch_1
+    move-exception v13
+
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "Exception in querying the database: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v13}, Landroid/database/sqlite/SQLiteException;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v1, 0x0
+
+    return v1
 
     :cond_2
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
-    invoke-interface {v11, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    invoke-interface {v12, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    move-result-object v10
+    move-result-object v11
 
-    if-nez v10, :cond_3
+    if-nez v11, :cond_3
 
-    sget-object v0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
 
-    const-string/jumbo v1, "DB has null Device Name"
+    const-string/jumbo v2, "DB has null Device Name"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-interface {v11}, Landroid/database/Cursor;->close()V
+    invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
 
     :cond_3
-    invoke-virtual {v7}, Ljava/lang/String;->length()I
+    invoke-virtual {v8}, Ljava/lang/String;->length()I
 
-    move-result v9
+    move-result v10
 
-    const/4 v5, 0x1
+    const/4 v6, 0x1
 
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
-    move-object v4, p1
+    move-object/from16 v5, p1
 
-    invoke-virtual/range {v4 .. v9}, Ljava/lang/String;->regionMatches(ZILjava/lang/String;II)Z
+    invoke-virtual/range {v5 .. v10}, Ljava/lang/String;->regionMatches(ZILjava/lang/String;II)Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_4
+    if-eqz v1, :cond_4
 
-    invoke-virtual {v10, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-object/from16 v0, p2
 
-    move-result v0
+    invoke-virtual {v11, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    if-eqz v0, :cond_4
+    move-result v1
 
-    invoke-interface {v11}, Landroid/database/Cursor;->close()V
+    if-eqz v1, :cond_4
 
-    const/4 v0, 0x1
+    invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
-    return v0
+    const/4 v1, 0x1
+
+    return v1
 
     :cond_4
-    invoke-interface {v11}, Landroid/database/Cursor;->moveToNext()Z
+    invoke-interface {v12}, Landroid/database/Cursor;->moveToNext()Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_1
+    if-nez v1, :cond_1
 
     :cond_5
-    invoke-interface {v11}, Landroid/database/Cursor;->close()V
+    invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
     :cond_6
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    return v0
+    return v1
 .end method
 
 .method public refreshDbFile()V
@@ -7586,6 +8092,43 @@
     invoke-virtual {v0}, Lcom/android/bluetooth/btservice/AdapterService;->refreshDownloadableDbFileNative()V
 
     :cond_1
+    return-void
+.end method
+
+.method public registerScreenLockChangeReceiver()V
+    .locals 3
+
+    sget-object v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->TAG:Ljava/lang/String;
+
+    const-string/jumbo v2, "registerScreenLockChangeReceiver"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v1, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$1;
+
+    invoke-direct {v1, p0}, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase$1;-><init>(Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;)V
+
+    iput-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mScreenLockChangeReceiver:Landroid/content/BroadcastReceiver;
+
+    new-instance v0, Landroid/content/IntentFilter;
+
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    const-string/jumbo v1, "android.intent.action.USER_UNLOCKED"
+
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mContext:Landroid/content/Context;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mContext:Landroid/content/Context;
+
+    iget-object v2, p0, Lcom/samsung/downloadabledb/BluetoothDownloadableDatabase;->mScreenLockChangeReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    :cond_0
     return-void
 .end method
 

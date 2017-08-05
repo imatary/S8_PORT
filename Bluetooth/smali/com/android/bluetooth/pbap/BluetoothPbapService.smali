@@ -56,6 +56,8 @@
 
 .field private static final START_LISTENER:I = 0x1
 
+.field private static final START_LISTENER_DELAY:I = 0x7d0
+
 .field private static final TAG:Ljava/lang/String; = "BluetoothPbapService"
 
 .field public static final THIS_PACKAGE_NAME:Ljava/lang/String; = "com.android.bluetooth"
@@ -562,7 +564,7 @@
 
     new-instance v4, Landroid/app/Notification;
 
-    const v5, 0x7f0a00ce
+    const v5, 0x7f0a00d6
 
     invoke-virtual {p0, v5}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->getString(I)Ljava/lang/String;
 
@@ -576,7 +578,7 @@
 
     invoke-direct {v4, v8, v5, v6, v7}, Landroid/app/Notification;-><init>(ILjava/lang/CharSequence;J)V
 
-    const v5, 0x7f0a00cf
+    const v5, 0x7f0a00d7
 
     invoke-virtual {p0, v5}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->getString(I)Ljava/lang/String;
 
@@ -586,7 +588,7 @@
 
     aput-object v2, v6, v9
 
-    const v7, 0x7f0a00d0
+    const v7, 0x7f0a00d8
 
     invoke-virtual {p0, v7, v6}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1745,16 +1747,20 @@
 .end method
 
 .method private final startObexServerSession(Landroid/bluetooth/BluetoothDevice;)V
-    .locals 8
+    .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
+    const-wide/16 v8, 0x7d0
+
     const/16 v7, 0x138d
 
-    const/4 v6, 0x0
+    const/4 v5, 0x0
+
+    const/4 v6, 0x1
 
     sget-boolean v3, Lcom/android/bluetooth/pbap/BluetoothPbapService;->VERBOSE:Z
 
@@ -1781,9 +1787,7 @@
 
     const-string/jumbo v3, "StartingObexPbapTransaction"
 
-    const/4 v4, 0x1
-
-    invoke-virtual {v1, v4, v3}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
+    invoke-virtual {v1, v6, v3}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
 
     move-result-object v3
 
@@ -1791,7 +1795,7 @@
 
     iget-object v3, p0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
-    invoke-virtual {v3, v6}, Landroid/os/PowerManager$WakeLock;->setReferenceCounted(Z)V
+    invoke-virtual {v3, v5}, Landroid/os/PowerManager$WakeLock;->setReferenceCounted(Z)V
 
     iget-object v3, p0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -1828,7 +1832,7 @@
 
     if-eqz v3, :cond_2
 
-    const v3, 0x7f0a00d3
+    const v3, 0x7f0a00db
 
     invoke-virtual {p0, v3}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->getString(I)Ljava/lang/String;
 
@@ -1898,6 +1902,17 @@
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    iget-object v3, p0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->mSessionStatusHandler:Landroid/os/Handler;
+
+    iget-object v4, p0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->mSessionStatusHandler:Landroid/os/Handler;
+
+    invoke-virtual {v4, v6}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4, v8, v9}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     iget-object v3, p0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->mSessionStatusHandler:Landroid/os/Handler;
 
@@ -1920,6 +1935,7 @@
     :catch_0
     move-exception v0
 
+    :try_start_1
     const-string/jumbo v3, "BluetoothPbapService"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1946,7 +1962,9 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0, p1, v6}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->setState(Landroid/bluetooth/BluetoothDevice;I)V
+    const/4 v3, 0x0
+
+    invoke-direct {p0, p1, v3}, Lcom/android/bluetooth/pbap/BluetoothPbapService;->setState(Landroid/bluetooth/BluetoothDevice;I)V
 
     iget-object v3, p0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->mSessionManager:Lcom/android/bluetooth/pbap/BluetoothPbapSessionManager;
 
@@ -1957,6 +1975,23 @@
     const-string/jumbo v4, "Exception starting ServerSession"
 
     invoke-direct {v3, v4}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw v3
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :catchall_0
+    move-exception v3
+
+    iget-object v4, p0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->mSessionStatusHandler:Landroid/os/Handler;
+
+    iget-object v5, p0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->mSessionStatusHandler:Landroid/os/Handler;
+
+    invoke-virtual {v5, v6}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5, v8, v9}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     throw v3
 .end method
@@ -1996,6 +2031,14 @@
 
     if-nez v0, :cond_3
 
+    iget-object v0, p0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->mSessionManager:Lcom/android/bluetooth/pbap/BluetoothPbapSessionManager;
+
+    invoke-virtual {v0}, Lcom/android/bluetooth/pbap/BluetoothPbapSessionManager;->hasMoreAvailableSessions()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
     sget-boolean v0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->VERBOSE:Z
 
     if-eqz v0, :cond_2
@@ -2007,6 +2050,12 @@
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
+    iget-object v0, p0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->mSessionStatusHandler:Landroid/os/Handler;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
     new-instance v0, Lcom/android/bluetooth/pbap/BluetoothPbapService$SocketAcceptThread;
 
     invoke-direct {v0, p0, v2}, Lcom/android/bluetooth/pbap/BluetoothPbapService$SocketAcceptThread;-><init>(Lcom/android/bluetooth/pbap/BluetoothPbapService;Lcom/android/bluetooth/pbap/BluetoothPbapService$SocketAcceptThread;)V

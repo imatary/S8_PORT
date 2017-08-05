@@ -13,10 +13,12 @@
     <string name="notification_sending">Sending %s…</string>
     <string name="notification_sent">%s sent.</string>
     <string name="notification_sent_fail">%s not sent.</string>
-    <string name="upload_line1">To: %1$s</string>
+    <string name="download_line1">From: %s</string>
+    <string name="upload_line1">To: %s</string>
     <string name="upload_line3_nofilesize">File type: %s</string>
     <string name="Button_Cancel">Cancel</string>
     <string name="Button_Cancel_All">Cancel all</string>
+    <string name="upload_fail_line1">The file has not been sent to %s.</string>
     <string name="bt_toast_1">File will be received. Check progress in the notifications panel.</string>
     <string name="bt_toast_2">File transfer cancelled.</string>
     <string name="bt_toast_3">Receiving files from %s cancelled.</string>
@@ -37,6 +39,7 @@
     <string name="bt_more_settings">More settings</string>
     <string name="status_forbidden">Unable to transfer file.</string>
     <string name="status_canceled">Sending canceled.</string>
+    <string name="bt_adv_opp_switch">Automatically switched from Bluetooth to <cst>Wi-Fi</cst> Direct for fast file sharing.</string>
     <string name="inbound_history_title">Inbound transfers</string>
     <string name="outbound_history_title">Outbound transfers</string>
     <string name="noti_caption_more">%1$s and %2$d more</string>
@@ -44,8 +47,8 @@
     <string name="transfer_clear_dlg_option_menu">Clear</string>
     <string name="transfer_clear_btn">Clear</string>
     <string name="connection_request_inactive_nap">%s is requesting to tether to your phone.</string>
-    <string name="allow_conn_req_inactive_nap">OK</string>
-    <string name="deny_conn_req_inactive_nap">Cancel</string>
+    <string name="allow_conn_req_inactive_nap">Allow</string>
+    <string name="deny_conn_req_inactive_nap">Deny</string>
     <string name="bluetooth_tether_request">Allow Bluetooth tethering?</string>
     <string name="bluetooth_tether_connected">Connected to %s to access internet connection.</string>
     <string name="bluetooth_pan_nap_connecting_error_message">"Can't connect to %s."</string>
@@ -56,11 +59,21 @@
     <string name="bluetooth_a2dp_playing_via_device">Audio playing automatically via %s…</string>
     <string name="bluetooth_a2dp_sound_glitches">Sound glitches detected</string>
     <string name="bluetooth_a2dp_turn_off_uhq_upscaler">Tap here to turn off UHQ upscaler.</string>
+    <string name="bluetooth_dual_play_title">Dual audio</string>
+    <string name="bluetooth_dual_play_content">2 Bluetooth devices are connected. To turn on Dual audio, go to Settings.</string>
+    <string name="settings">Settings</string>
+    <string name="bluetooth_dual_play_ongoing_title">Dual audio on</string>
+    <string name="bluetooth_dual_play_ongoing_content">Audio played on 2 connected Bluetooth devices.</string>
+    <string name="bluetooth_avc_title">Control volume</string>
+    <string name="bluetooth_avc_content">You can use Media volume sync to synchronize the volume on your phone and the connected Bluetooth device.</string>
+    <string name="bluetooth_avc_content_vzw">You can synchronize the volume on your phone and the connected Bluetooth device using Media Volume Sync.</string>
+    <string name="bluetooth_avc_earshock_protection_title">Protect your hearing</string>
+    <string name="bluetooth_avc_earshock_protection_content">Long-term exposure to Media volume sync mode may damage your hearing. You can adjust the volume if the sound is too loud.</string>
     <string name="bluetooth_a2dpsink_sound_coming">TV sound can only be played via phone speaker or wired headphones.</string>
     <string name="bluetooth_notif_sap_on">Remote SIM card mode turned on.</string>
     <string name="bluetooth_notif_sap_off">Remote SIM card mode turned off.</string>
     <string name="bluetooth_notif_sap_title">Remote SIM mode</string>
     <string name="bluetooth_notif_sap_message">Bluetooth is connected with %s.</string>
     <string name="bluetooth_remote_device">Bluetooth device</string>
-    <string name="app_name">Bluetooth share</string>
+    <string name="app_name">Bluetooth</string>
 </resources>

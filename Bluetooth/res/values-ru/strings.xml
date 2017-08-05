@@ -51,7 +51,7 @@
     <string name="download_fail_ok">Да</string>
     <string name="download_succ_line5">Файл получен.</string>
     <string name="download_succ_ok">Открыть</string>
-    <string name="upload_line1">На: %1$s</string>
+    <string name="upload_line1">Кому: %s</string>
     <string name="upload_line3_nofilesize">Тип файла: %s</string>
     <string name="upload_line3">Тип файла: %1$s (%2$s)</string>
     <string name="upload_line5">Отправка файла…</string>
@@ -106,6 +106,7 @@
     <string name="status_protocol_error">Невозможно правильно обработать запрос.</string>
     <string name="status_unknown_error">Неизвестная ошибка</string>
     <string name="btopp_live_folder">Полученные файлы</string>
+    <string name="bt_adv_opp_switch">Для быстрой передачи файлов вместо Bluetooth автоматически включен Wi-Fi Direct.</string>
     <string name="download_success">Файл %s получен</string>
     <string name="upload_success">Файл %s отправлен</string>
     <string name="inbound_history_title">Входящие операции передачи</string>
@@ -123,8 +124,8 @@
     <string name="transfer_clear_dlg_title">Очистить</string>
     <string name="transfer_clear_btn">Очистить</string>
     <string name="connection_request_inactive_nap">%s запрашивает разрешение на использование вашего телефона в качестве модема.</string>
-    <string name="allow_conn_req_inactive_nap">Да</string>
-    <string name="deny_conn_req_inactive_nap">Отмена</string>
+    <string name="allow_conn_req_inactive_nap">Разрешить</string>
+    <string name="deny_conn_req_inactive_nap">Запретить</string>
     <string name="bluetooth_tether_request">Разрешить режим Bluetooth-модема?</string>
     <string name="bluetooth_tether_connected">Для получения доступа к Интернету устройство подключено к %s.</string>
     <string name="bluetooth_pan_nap_connecting_error_message">Невозможно подключиться к %s.</string>
@@ -144,6 +145,16 @@
     <string name="bluetooth_a2dp_playing_via_device">Автоматическое воспроизведение аудио через %s…</string>
     <string name="bluetooth_a2dp_sound_glitches">Обнаружен звуковой сбой</string>
     <string name="bluetooth_a2dp_turn_off_uhq_upscaler">Коснитесь, чтобы отключить UHQ upscaler.</string>
+    <string name="bluetooth_dual_play_title">Воспр. звука на 2 устр.</string>
+    <string name="bluetooth_dual_play_content">Подключены 2 устройства Bluetooth. Чтобы включить воспроизведение звука на двух устройствах, перейдите в меню “Настройки”.</string>
+    <string name="settings">Настройки</string>
+    <string name="bluetooth_dual_play_ongoing_title">Воспр. звука на 2 устр. включ.</string>
+    <string name="bluetooth_dual_play_ongoing_content">Воспроизведение звука на 2 подключенных устройствах Bluetooth.</string>
+    <string name="bluetooth_avc_title">Регулирование громкости</string>
+    <string name="bluetooth_avc_content">Функцию синхронизации громкости мультимедиа можно использовать для синхронизации громкости звука на телефоне и подключенном устройстве Bluetooth.</string>
+    <string name="bluetooth_avc_content_vzw">Вы можете синхронизировать громкость на телефоне и подключенном устройстве Bluetooth с помощью функции “Синхронизация громкости медиа”.</string>
+    <string name="bluetooth_avc_earshock_protection_title">Защита слуха</string>
+    <string name="bluetooth_avc_earshock_protection_content">Длительное прослушивание в режиме синхронизации громкости звука может привести к нарушениям слуха. Если громкость звука слишком высокая, ее можно отрегулировать.</string>
     <string name="bluetooth_a2dpsink_sound_coming">Звук телевизора можно воспроизводить только через динамик телефона или проводные наушники.</string>
     <string name="pbap_session_key_dialog_title">Введите ключ сеанса для %1$s</string>
     <string name="pbap_session_key_dialog_header">Необходим ключ сеанса Bluetooth.</string>
@@ -169,7 +180,7 @@
     <string name="bluetooth_notif_sap_message">Установлена связь Bluetooth с %s.</string>
     <string name="bluetooth_remote_device">Устройство Bluetooth</string>
     <string name="hello">Hello, World! (проверка связи)</string>
-    <string name="app_name">Общий доступ к Bluetooth</string>
+    <string name="app_name">Bluetooth</string>
     <string name="insert_record">Вставить запись</string>
     <string name="update_record">Подтвердить запись</string>
     <string name="ack_record">Запись подтверждения</string>

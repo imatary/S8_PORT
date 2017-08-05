@@ -23,19 +23,19 @@
 
 .field public static final bluetooth_map_settings_account_item:I = 0x7f040003
 
-.field public static final bluetooth_tether_request:I = 0x7f040004
+.field public static final bluetooth_transfer_item:I = 0x7f040004
 
-.field public static final bluetooth_transfer_item:I = 0x7f040005
+.field public static final bluetooth_transfers_page:I = 0x7f040005
 
-.field public static final bluetooth_transfers_page:I = 0x7f040006
+.field public static final bt_enabling_progress:I = 0x7f040006
 
-.field public static final bt_enabling_progress:I = 0x7f040007
+.field public static final confirm_dialog:I = 0x7f040007
 
-.field public static final confirm_dialog:I = 0x7f040008
+.field public static final file_transfer:I = 0x7f040008
 
-.field public static final file_transfer:I = 0x7f040009
+.field public static final heads_up_notification:I = 0x7f040009
 
-.field public static final heads_up_notification:I = 0x7f04000a
+.field public static final hid_incoming_dialog:I = 0x7f04000a
 
 .field public static final incoming_dialog:I = 0x7f04000b
 

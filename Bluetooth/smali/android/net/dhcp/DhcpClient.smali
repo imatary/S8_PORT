@@ -75,7 +75,7 @@
 
 .field private static final FIRST_TIMEOUT_MS:I = 0x7d0
 
-.field private static final MAX_TIMEOUT_MS:I = 0x1f400
+.field private static final MAX_TIMEOUT_MS:I = 0xfa000
 
 .field private static final MSG_DBG:Z
 
@@ -1060,13 +1060,13 @@
 .end method
 
 .method private getHostNameFromDeviceName()Ljava/lang/String;
-    .locals 8
+    .locals 7
 
-    const/16 v7, 0x2d
+    const/16 v6, 0x2d
 
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
-    const/4 v1, 0x0
+    iget-object v2, p0, Landroid/net/dhcp/DhcpClient;->trans:Landroid/icu/text/Transliterator;
 
     iget-object v3, p0, Landroid/net/dhcp/DhcpClient;->mContext:Landroid/content/Context;
 
@@ -1078,85 +1078,82 @@
 
     invoke-static {v3, v4}, Landroid/provider/Settings$Global;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
 
-    if-eqz v2, :cond_2
-
-    iget-object v3, p0, Landroid/net/dhcp/DhcpClient;->trans:Landroid/icu/text/Transliterator;
-
-    invoke-virtual {v3, v2}, Landroid/icu/text/Transliterator;->transliterate(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Landroid/icu/text/Transliterator;->transliterate(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    const-string/jumbo v3, "[^[[a-z][A-Z][0-9][ ][-]]]"
+    const/4 v1, 0x0
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v2, "[^[[a-z][A-Z][0-9][ ][-]]]"
 
-    invoke-virtual {v0, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string/jumbo v3, ""
 
-    move-result-object v3
+    invoke-virtual {v0, v2, v3}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    const-string/jumbo v4, " "
+    move-result-object v2
 
-    const-string/jumbo v5, "-"
+    const-string/jumbo v3, " "
 
-    invoke-virtual {v3, v4, v5}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string/jumbo v4, "-"
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
-    move-result v3
+    move-result v2
 
-    if-lez v3, :cond_0
+    if-lez v2, :cond_0
 
-    invoke-virtual {v1, v6}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {v1, v5}, Ljava/lang/String;->charAt(I)C
 
-    move-result v3
+    move-result v2
 
-    if-ne v3, v7, :cond_0
+    if-ne v2, v6, :cond_0
 
-    const-string/jumbo v3, "-+"
+    const-string/jumbo v2, "-+"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v3, ""
 
-    invoke-virtual {v1, v3, v4}, Ljava/lang/String;->replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Ljava/lang/String;->replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     :cond_0
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
-    move-result v3
+    move-result v2
 
-    if-lez v3, :cond_1
+    if-lez v2, :cond_1
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
-    move-result v3
+    move-result v2
 
-    add-int/lit8 v3, v3, -0x1
+    add-int/lit8 v2, v2, -0x1
 
-    invoke-virtual {v1, v3}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {v1, v2}, Ljava/lang/String;->charAt(I)C
 
-    move-result v3
+    move-result v2
 
-    if-ne v3, v7, :cond_1
+    if-ne v2, v6, :cond_1
 
     invoke-direct {p0, v1}, Landroid/net/dhcp/DhcpClient;->replaceLast(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     :cond_1
-    const-string/jumbo v3, "-+"
+    const-string/jumbo v2, "-+"
 
-    const-string/jumbo v4, "-"
+    const-string/jumbo v3, "-"
 
-    invoke-virtual {v1, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    :cond_2
     return-object v1
 .end method
 
@@ -1913,13 +1910,9 @@
 
     const/4 v7, 0x0
 
-    if-nez p3, :cond_1
+    if-nez p3, :cond_0
 
     :try_start_0
-    sget-boolean v0, Landroid/net/dhcp/DhcpClient;->DBG:Z
-
-    if-eqz v0, :cond_0
-
     const-string/jumbo v0, "DhcpClient"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1942,7 +1935,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_0
     iget-object v0, p0, Landroid/net/dhcp/DhcpClient;->mPacketSock:Ljava/io/FileDescriptor;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->array()[B
@@ -1964,8 +1956,8 @@
     :goto_0
     return v8
 
-    :cond_1
-    if-ne p3, v0, :cond_3
+    :cond_0
+    if-ne p3, v0, :cond_1
 
     sget-object v0, Landroid/net/dhcp/DhcpPacket;->INADDR_BROADCAST:Ljava/net/Inet4Address;
 
@@ -1973,11 +1965,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3
-
-    sget-boolean v0, Landroid/net/dhcp/DhcpClient;->DBG:Z
-
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
     const-string/jumbo v0, "DhcpClient"
 
@@ -2001,7 +1989,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_2
     iget-object v0, p0, Landroid/net/dhcp/DhcpClient;->mUdpSock:Ljava/io/FileDescriptor;
 
     const/16 v1, 0x43
@@ -2026,11 +2013,11 @@
 
     return v7
 
-    :cond_3
+    :cond_1
     :try_start_1
     sget-boolean v0, Landroid/net/dhcp/DhcpClient;->DBG:Z
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_2
 
     const-string/jumbo v0, "DhcpClient"
 
@@ -2060,7 +2047,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_4
+    :cond_2
     iget-object v0, p0, Landroid/net/dhcp/DhcpClient;->mUdpSock:Ljava/io/FileDescriptor;
 
     invoke-static {v0, p1}, Landroid/system/Os;->write(Ljava/io/FileDescriptor;Ljava/nio/ByteBuffer;)I

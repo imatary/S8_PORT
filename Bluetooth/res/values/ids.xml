@@ -10,7 +10,6 @@
     <item type="id" name="bluetooth_map_settings_group_checkbox">false</item>
     <item type="id" name="bluetooth_map_settings_item_text_view">false</item>
     <item type="id" name="bluetooth_map_settings_item_check">false</item>
-    <item type="id" name="content">false</item>
     <item type="id" name="transfer_icon">false</item>
     <item type="id" name="transfer_title">false</item>
     <item type="id" name="targetdevice">false</item>
@@ -19,6 +18,7 @@
     <item type="id" name="list">false</item>
     <item type="id" name="empty">false</item>
     <item type="id" name="progress_info">false</item>
+    <item type="id" name="content">false</item>
     <item type="id" name="line1_view">false</item>
     <item type="id" name="line2_view">false</item>
     <item type="id" name="line3_view">false</item>
