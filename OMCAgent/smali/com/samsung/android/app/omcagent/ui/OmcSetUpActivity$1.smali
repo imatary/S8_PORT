@@ -75,7 +75,6 @@
     :cond_0
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->mAppList:Ljava/util/LinkedHashMap;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$000(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)Ljava/util/LinkedHashMap;
 
     move-result-object v3
@@ -145,7 +144,6 @@
     :cond_4
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->mAppList:Ljava/util/LinkedHashMap;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$000(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)Ljava/util/LinkedHashMap;
 
     move-result-object v3
@@ -172,7 +170,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->mAppAdapter:Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$100(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
 
     move-result-object v3
@@ -230,7 +227,6 @@
     :cond_7
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->mAppList:Ljava/util/LinkedHashMap;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$000(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)Ljava/util/LinkedHashMap;
 
     move-result-object v3
@@ -267,7 +263,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->mAppListView:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$200(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
     move-result-object v3
@@ -277,7 +272,6 @@
     :cond_8
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->mAppAdapter:Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$100(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
 
     move-result-object v3
@@ -319,7 +313,6 @@
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$1;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->mAppListView:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$200(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
     move-result-object v3

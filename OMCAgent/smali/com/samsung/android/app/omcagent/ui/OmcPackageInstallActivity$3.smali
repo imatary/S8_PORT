@@ -49,7 +49,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/OmcPackageInstallActivity$3;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcPackageInstallActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/OmcPackageInstallActivity;->isAllUnchecked()Z
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/OmcPackageInstallActivity;->access$100(Lcom/samsung/android/app/omcagent/ui/OmcPackageInstallActivity;)Z
 
     move-result v1

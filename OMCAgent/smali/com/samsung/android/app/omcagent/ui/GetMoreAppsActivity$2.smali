@@ -45,7 +45,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity$2;->this$0:Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity;->mAppList:Ljava/util/LinkedHashMap;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity;->access$000(Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity;)Ljava/util/LinkedHashMap;
 
     move-result-object v1
@@ -58,7 +57,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity$2;->this$0:Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity;->isAllUnchecked()Z
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity;->access$200(Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity;)Z
 
     move-result v1
@@ -196,7 +194,6 @@
     :cond_5
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity$2;->this$0:Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity;->mAppListView:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity;->access$100(Lcom/samsung/android/app/omcagent/ui/GetMoreAppsActivity;)Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
     move-result-object v1

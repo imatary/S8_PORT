@@ -60,12 +60,10 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;->serverTypeList:[Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;->access$000()[Ljava/lang/String;
 
     move-result-object v1
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;->serverTypeIndex:I
     invoke-static {}, Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;->access$100()I
 
     move-result v2

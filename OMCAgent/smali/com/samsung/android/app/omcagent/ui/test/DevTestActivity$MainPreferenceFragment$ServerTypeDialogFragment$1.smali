@@ -37,7 +37,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    # setter for: Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;->serverTypeIndex:I
     invoke-static {p2}, Lcom/samsung/android/app/omcagent/ui/test/DevTestActivity$MainPreferenceFragment;->access$102(I)I
 
     return-void

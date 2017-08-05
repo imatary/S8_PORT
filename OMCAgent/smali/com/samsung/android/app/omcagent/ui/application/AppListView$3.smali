@@ -52,7 +52,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->mAppAdapter:Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$200(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
 
     move-result-object v1
@@ -119,7 +118,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->mAppListView:Landroid/widget/ListView;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$300(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)Landroid/widget/ListView;
 
     move-result-object v1
@@ -131,7 +129,6 @@
     :cond_3
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->calCntOfSelectedItems()V
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$100(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)V
 
     invoke-virtual {v0}, Lcom/samsung/android/app/omcagent/ui/application/AppItem;->isChecked()Z
@@ -153,19 +150,16 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # operator++ for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->selectedCnt:I
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$808(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)I
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->selectedCnt:I
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$800(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)I
 
     move-result v1
 
     iget-object v3, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->maxCnt:I
     invoke-static {v3}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$700(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)I
 
     move-result v3
@@ -174,7 +168,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->mSelectAll:Landroid/widget/CheckBox;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$000(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)Landroid/widget/CheckBox;
 
     move-result-object v1
@@ -185,7 +178,6 @@
     :goto_2
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->viewType:I
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$400(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)I
 
     move-result v1
@@ -194,12 +186,10 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->mCntOfSelectedItems:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$600(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)Landroid/widget/TextView;
 
     move-result-object v1
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->selectAll:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$500()Ljava/lang/String;
 
     move-result-object v2
@@ -209,7 +199,6 @@
     :goto_3
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->mAppAdapter:Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$200(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)Lcom/samsung/android/app/omcagent/ui/application/AppItemAdapter;
 
     move-result-object v1
@@ -226,12 +215,10 @@
     :cond_6
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # operator-- for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->selectedCnt:I
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$810(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)I
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->mSelectAll:Landroid/widget/CheckBox;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$000(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)Landroid/widget/CheckBox;
 
     move-result-object v1
@@ -244,7 +231,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->mSelectAll:Landroid/widget/CheckBox;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$000(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)Landroid/widget/CheckBox;
 
     move-result-object v1
@@ -256,7 +242,6 @@
     :cond_7
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->selectedCnt:I
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$800(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)I
 
     move-result v1
@@ -265,12 +250,10 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->mCntOfSelectedItems:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$600(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)Landroid/widget/TextView;
 
     move-result-object v1
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->selectAll:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$500()Ljava/lang/String;
 
     move-result-object v2
@@ -282,14 +265,12 @@
     :cond_8
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->mCntOfSelectedItems:Landroid/widget/TextView;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$600(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)Landroid/widget/TextView;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/samsung/android/app/omcagent/ui/application/AppListView$3;->this$0:Lcom/samsung/android/app/omcagent/ui/application/AppListView;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/application/AppListView;->selectedCnt:I
     invoke-static {v2}, Lcom/samsung/android/app/omcagent/ui/application/AppListView;->access$800(Lcom/samsung/android/app/omcagent/ui/application/AppListView;)I
 
     move-result v2

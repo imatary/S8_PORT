@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity$2;->this$0:Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->onInstallButtonClickEvent(Landroid/content/Context;)V
     invoke-static {v0, v1}, Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->access$300(Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;Landroid/content/Context;)V
 
     return-void

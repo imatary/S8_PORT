@@ -53,7 +53,6 @@
 
     move-result-object v2
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->targetOmcPackagePath:Ljava/lang/String;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->access$400(Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;)Ljava/lang/String;
 
     move-result-object v3

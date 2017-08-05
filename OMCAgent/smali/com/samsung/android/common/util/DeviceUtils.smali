@@ -1671,283 +1671,330 @@
 .end method
 
 .method public readUN()Ljava/lang/String;
-    .locals 12
+    .locals 11
 
-    const/4 v11, 0x3
+    const/16 v10, 0x1e
 
-    const/4 v10, 0x2
+    new-instance v6, Ljava/io/File;
 
-    const/4 v9, 0x0
+    const-string v8, "sys/class/scsi_host/host0/unique_number"
 
+    invoke-direct {v6, v8}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_0
+
+    const-string v8, "sys/class/scsi_host/host0/unique_number"
+
+    invoke-virtual {p0, v8}, Lcom/samsung/android/common/util/DeviceUtils;->readTextFromFile(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v9
+
+    invoke-virtual {v8, v9}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object v7
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v9, "Unique Number : "
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    const-string v9, " from UFS"
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v8}, Lcom/samsung/android/common/Log;->H(Ljava/lang/String;)V
+
+    :goto_0
+    return-object v7
+
+    :cond_0
     new-instance v2, Ljava/io/File;
 
-    const-string v7, "/sys/block/mmcblk0/device/cid"
+    const-string v8, "/sys/block/mmcblk0/device/cid"
 
-    invoke-direct {v2, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v8}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
-    move-result v7
+    move-result v8
 
-    if-eqz v7, :cond_6
+    if-eqz v8, :cond_4
 
-    const-string v7, "/sys/block/mmcblk0/device/cid"
+    const-string v8, "/sys/block/mmcblk0/device/cid"
 
-    invoke-virtual {p0, v7}, Lcom/samsung/android/common/util/DeviceUtils;->readTextFromFile(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/samsung/android/common/util/DeviceUtils;->readTextFromFile(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    const-string v7, "/sys/block/mmcblk0/device/name"
+    const-string v8, "/sys/block/mmcblk0/device/name"
 
-    invoke-virtual {p0, v7}, Lcom/samsung/android/common/util/DeviceUtils;->readTextFromFile(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/samsung/android/common/util/DeviceUtils;->readTextFromFile(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    new-instance v7, Ljava/lang/StringBuilder;
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v8, "cid : "
+    const-string v9, "cid : "
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v8
 
-    const-string v8, ", memory_name : "
+    const-string v9, ", memory_name : "
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-static {v7}, Lcom/samsung/android/common/Log;->H(Ljava/lang/String;)V
+    invoke-static {v8}, Lcom/samsung/android/common/Log;->H(Ljava/lang/String;)V
 
+    if-nez v1, :cond_1
+
+    :try_start_0
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v8
+
+    if-ge v8, v10, :cond_1
+
+    const-string v8, "Fail to read cid!!!"
+
+    invoke-static {v8}, Lcom/samsung/android/common/Log;->E(Ljava/lang/String;)V
+
+    const-string v7, ""
+
+    goto :goto_0
+
+    :cond_1
     const-string v0, ""
 
-    invoke-virtual {v1, v9, v10}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    const/4 v8, 0x0
 
-    move-result-object v3
-
-    const-string v7, "15"
-
-    invoke-virtual {v3, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_1
-
-    invoke-virtual {v4, v9, v10}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v0
-
-    :cond_0
-    :goto_0
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v8, "c"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const/16 v8, 0x12
-
-    const/16 v9, 0x1e
+    const/4 v9, 0x2
 
     invoke-virtual {v1, v8, v9}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v4
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-nez v4, :cond_2
 
-    move-result-object v7
+    const-string v8, "Fail to read eMMC!!!"
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v8}, Lcom/samsung/android/common/Log;->E(Ljava/lang/String;)V
 
-    move-result-object v7
+    const-string v7, ""
 
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
-
-    move-result-object v8
-
-    invoke-virtual {v7, v8}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    move-result-object v6
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v8, "Unique Number : "
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string v8, " from eMMC"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-static {v7}, Lcom/samsung/android/common/Log;->H(Ljava/lang/String;)V
-
-    :goto_1
-    return-object v6
-
-    :cond_1
-    const-string v7, "02"
-
-    invoke-virtual {v3, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v7
-
-    if-nez v7, :cond_2
-
-    const-string v7, "45"
-
-    invoke-virtual {v3, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_3
+    goto :goto_0
 
     :cond_2
-    const/4 v7, 0x5
+    const-string v8, "15"
 
-    invoke-virtual {v4, v11, v7}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {v4, v8}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_5
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x2
+
+    invoke-virtual {v5, v8, v9}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
-
-    goto :goto_0
 
     :cond_3
-    const-string v7, "11"
+    :goto_1
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result v7
+    const-string v9, "c"
 
-    if-nez v7, :cond_4
-
-    const-string v7, "90"
-
-    invoke-virtual {v3, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_5
-
-    :cond_4
-    const/4 v7, 0x1
-
-    invoke-virtual {v4, v7, v11}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_5
-    const-string v7, "FE"
-
-    invoke-virtual {v3, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_0
-
-    const/4 v7, 0x4
-
-    const/4 v8, 0x6
-
-    invoke-virtual {v4, v7, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_6
-    new-instance v5, Ljava/io/File;
-
-    const-string v7, "sys/class/scsi_host/host0/unique_number"
-
-    invoke-direct {v5, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v5}, Ljava/io/File;->exists()Z
-
-    move-result v7
-
-    if-eqz v7, :cond_7
-
-    const-string v7, "sys/class/scsi_host/host0/unique_number"
-
-    invoke-virtual {p0, v7}, Lcom/samsung/android/common/util/DeviceUtils;->readTextFromFile(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v8
 
-    invoke-virtual {v7, v8}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v8
 
-    new-instance v7, Ljava/lang/StringBuilder;
+    const/16 v9, 0x12
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    const/16 v10, 0x1e
 
-    const-string v8, "Unique Number : "
+    invoke-virtual {v1, v9, v10}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v9
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v9
+
+    invoke-virtual {v8, v9}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v7
 
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v8, " from UFS"
+    const-string v9, "Unique Number : "
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-static {v7}, Lcom/samsung/android/common/Log;->H(Ljava/lang/String;)V
+    const-string v9, " from eMMC"
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v8}, Lcom/samsung/android/common/Log;->H(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto/16 :goto_0
+
+    :catch_0
+    move-exception v3
+
+    invoke-static {v3}, Lcom/samsung/android/common/Log;->printStackTrace(Ljava/lang/Throwable;)V
+
+    :cond_4
+    const-string v7, ""
+
+    goto/16 :goto_0
+
+    :cond_5
+    :try_start_1
+    const-string v8, "02"
+
+    invoke-virtual {v4, v8}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_6
+
+    const-string v8, "45"
+
+    invoke-virtual {v4, v8}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_7
+
+    :cond_6
+    const/4 v8, 0x3
+
+    const/4 v9, 0x5
+
+    invoke-virtual {v5, v8, v9}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v0
 
     goto :goto_1
 
     :cond_7
-    const-string v6, ""
+    const-string v8, "11"
+
+    invoke-virtual {v4, v8}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_8
+
+    const-string v8, "90"
+
+    invoke-virtual {v4, v8}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_9
+
+    :cond_8
+    const/4 v8, 0x1
+
+    const/4 v9, 0x3
+
+    invoke-virtual {v5, v8, v9}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v0
 
     goto :goto_1
+
+    :cond_9
+    const-string v8, "FE"
+
+    invoke-virtual {v4, v8}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_3
+
+    const/4 v8, 0x4
+
+    const/4 v9, 0x6
+
+    invoke-virtual {v5, v8, v9}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    :try_end_1
+    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_1 .. :try_end_1} :catch_0
+
+    move-result-object v0
+
+    goto/16 :goto_1
 .end method

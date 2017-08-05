@@ -76,7 +76,6 @@
 
     invoke-direct {v1, p0, v3}, Lcom/samsung/android/common/diagmon/bundle/BundleToXML$TraverseToXML;-><init>(Lcom/samsung/android/common/diagmon/bundle/BundleToXML;Lcom/samsung/android/common/diagmon/bundle/BundleToXML$1;)V
 
-    # setter for: Lcom/samsung/android/common/diagmon/bundle/BundleToXML$TraverseToXML;->serializer:Lorg/xmlpull/v1/XmlSerializer;
     invoke-static {v1, v0}, Lcom/samsung/android/common/diagmon/bundle/BundleToXML$TraverseToXML;->access$102(Lcom/samsung/android/common/diagmon/bundle/BundleToXML$TraverseToXML;Lorg/xmlpull/v1/XmlSerializer;)Lorg/xmlpull/v1/XmlSerializer;
 
     invoke-virtual {v1}, Lcom/samsung/android/common/diagmon/bundle/BundleToXML$TraverseToXML;->traverse()V

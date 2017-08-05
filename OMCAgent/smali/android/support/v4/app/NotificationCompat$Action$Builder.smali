@@ -81,7 +81,6 @@
 
     new-instance v3, Landroid/os/Bundle;
 
-    # getter for: Landroid/support/v4/app/NotificationCompat$Action;->mExtras:Landroid/os/Bundle;
     invoke-static {p1}, Landroid/support/v4/app/NotificationCompat$Action;->access$400(Landroid/support/v4/app/NotificationCompat$Action;)Landroid/os/Bundle;
 
     move-result-object v4

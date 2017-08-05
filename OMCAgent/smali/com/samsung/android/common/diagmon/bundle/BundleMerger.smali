@@ -48,7 +48,6 @@
 
     invoke-direct {v0, p0}, Lcom/samsung/android/common/diagmon/bundle/BundleMerger$TraverseToMerge;-><init>(Lcom/samsung/android/common/diagmon/bundle/BundleMerger;)V
 
-    # setter for: Lcom/samsung/android/common/diagmon/bundle/BundleMerger$TraverseToMerge;->otherBundle:Landroid/os/Bundle;
     invoke-static {v0, p1}, Lcom/samsung/android/common/diagmon/bundle/BundleMerger$TraverseToMerge;->access$002(Lcom/samsung/android/common/diagmon/bundle/BundleMerger$TraverseToMerge;Landroid/os/Bundle;)Landroid/os/Bundle;
 
     invoke-virtual {v0}, Lcom/samsung/android/common/diagmon/bundle/BundleMerger$TraverseToMerge;->traverseWithoutException()V

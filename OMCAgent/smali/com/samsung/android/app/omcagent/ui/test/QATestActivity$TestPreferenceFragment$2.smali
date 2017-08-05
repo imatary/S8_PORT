@@ -90,7 +90,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment$2;->this$0:Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;->simStatusPref:Landroid/preference/Preference;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;->access$200(Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;)Landroid/preference/Preference;
 
     move-result-object v1
@@ -105,7 +104,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment$2;->this$0:Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;->virtualSIMInfoPref:Landroid/preference/SwitchPreference;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;->access$400(Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;)Landroid/preference/SwitchPreference;
 
     move-result-object v1
@@ -118,7 +116,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;->getVirtualSIMInfo(Landroid/content/Context;)Ljava/lang/String;
     invoke-static {v2, v3}, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;->access$300(Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
@@ -179,7 +176,6 @@
     :goto_1
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment$2;->this$0:Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;->omcAppsServerPref:Landroid/preference/SwitchPreference;
     invoke-static {v1}, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;->access$600(Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;)Landroid/preference/SwitchPreference;
 
     move-result-object v1
@@ -192,7 +188,6 @@
 
     move-result-object v3
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;->getAppServerName(Landroid/content/Context;)Ljava/lang/String;
     invoke-static {v2, v3}, Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;->access$500(Lcom/samsung/android/app/omcagent/ui/test/QATestActivity$TestPreferenceFragment;Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2

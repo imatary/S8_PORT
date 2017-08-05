@@ -469,7 +469,6 @@
     throw v4
 
     :cond_0
-    # getter for: Landroid/support/v4/media/MediaBrowserCompat;->DEBUG:Z
     invoke-static {}, Landroid/support/v4/media/MediaBrowserCompat;->access$700()Z
 
     move-result v4
@@ -616,7 +615,6 @@
     invoke-virtual {v4, v5}, Landroid/support/v4/media/MediaBrowserCompat$CallbackHandler;->post(Ljava/lang/Runnable;)Z
 
     :cond_4
-    # getter for: Landroid/support/v4/media/MediaBrowserCompat;->DEBUG:Z
     invoke-static {}, Landroid/support/v4/media/MediaBrowserCompat;->access$700()Z
 
     move-result v4
@@ -684,7 +682,6 @@
     :goto_0
     invoke-direct {p0}, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->forceCloseConnection()V
 
-    # getter for: Landroid/support/v4/media/MediaBrowserCompat;->DEBUG:Z
     invoke-static {}, Landroid/support/v4/media/MediaBrowserCompat;->access$700()Z
 
     move-result v1
@@ -1395,7 +1392,6 @@
     :cond_1
     move-object v0, p3
 
-    # getter for: Landroid/support/v4/media/MediaBrowserCompat;->DEBUG:Z
     invoke-static {}, Landroid/support/v4/media/MediaBrowserCompat;->access$700()Z
 
     move-result v3
@@ -1447,7 +1443,6 @@
 
     if-nez v1, :cond_3
 
-    # getter for: Landroid/support/v4/media/MediaBrowserCompat;->DEBUG:Z
     invoke-static {}, Landroid/support/v4/media/MediaBrowserCompat;->access$700()Z
 
     move-result v3
@@ -1570,7 +1565,6 @@
 
     iput v8, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mState:I
 
-    # getter for: Landroid/support/v4/media/MediaBrowserCompat;->DEBUG:Z
     invoke-static {}, Landroid/support/v4/media/MediaBrowserCompat;->access$700()Z
 
     move-result v8
@@ -1651,7 +1645,6 @@
 
     check-cast v8, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;
 
-    # getter for: Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;->mToken:Landroid/os/IBinder;
     invoke-static {v8}, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;->access$1200(Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;)Landroid/os/IBinder;
 
     move-result-object v11
@@ -1725,7 +1718,6 @@
     :try_start_0
     iget-object v2, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mServiceBinderWrapper:Landroid/support/v4/media/MediaBrowserCompat$ServiceBinderWrapper;
 
-    # getter for: Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;->mToken:Landroid/os/IBinder;
     invoke-static {p3}, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;->access$1200(Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;)Landroid/os/IBinder;
 
     move-result-object v3
@@ -1857,7 +1849,6 @@
 
     iget-object v5, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase;->mServiceBinderWrapper:Landroid/support/v4/media/MediaBrowserCompat$ServiceBinderWrapper;
 
-    # getter for: Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;->mToken:Landroid/os/IBinder;
     invoke-static {p2}, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;->access$1200(Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;)Landroid/os/IBinder;
 
     move-result-object v6

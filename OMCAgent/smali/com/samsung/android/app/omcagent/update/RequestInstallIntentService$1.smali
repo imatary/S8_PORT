@@ -74,12 +74,10 @@
 
     move-result v1
 
-    # setter for: Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;->isCancel:Z
     invoke-static {v0, v1}, Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;->access$002(Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;Z)Z
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;->isCancel:Z
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;->access$000(Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;)Z
 
     move-result v0
@@ -93,7 +91,6 @@
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;->stateContext:Lcom/samsung/android/app/omcagent/update/omc/InstallStateContext;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;->access$100(Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;)Lcom/samsung/android/app/omcagent/update/omc/InstallStateContext;
 
     move-result-object v0
@@ -102,7 +99,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;->stateContext:Lcom/samsung/android/app/omcagent/update/omc/InstallStateContext;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;->access$100(Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;)Lcom/samsung/android/app/omcagent/update/omc/InstallStateContext;
 
     move-result-object v0
@@ -111,7 +107,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;->stateContext:Lcom/samsung/android/app/omcagent/update/omc/InstallStateContext;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;->access$100(Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;)Lcom/samsung/android/app/omcagent/update/omc/InstallStateContext;
 
     move-result-object v0
@@ -124,7 +119,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService$1;->this$0:Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;
 
-    # getter for: Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;->stateContext:Lcom/samsung/android/app/omcagent/update/omc/InstallStateContext;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;->access$100(Lcom/samsung/android/app/omcagent/update/RequestInstallIntentService;)Lcom/samsung/android/app/omcagent/update/omc/InstallStateContext;
 
     move-result-object v0

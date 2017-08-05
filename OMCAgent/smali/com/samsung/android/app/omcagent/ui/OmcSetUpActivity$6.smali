@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$6;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->startArrowFadeInAnimation()V
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$500(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)V
 
     return-void

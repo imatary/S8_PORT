@@ -330,38 +330,39 @@
     <public type="color" name="bottom_bar_bg_color" id="0x7f0a0000" />
     <public type="color" name="bottom_bar_divider_color" id="0x7f0a0001" />
     <public type="color" name="bottom_bar_text_color" id="0x7f0a0002" />
-    <public type="color" name="caution_text_color" id="0x7f0a0003" />
-    <public type="color" name="colorcontrolactivate" id="0x7f0a0004" />
-    <public type="color" name="common_action_bar_splitter" id="0x7f0a0005" />
-    <public type="color" name="common_signin_btn_dark_text_default" id="0x7f0a0006" />
-    <public type="color" name="common_signin_btn_dark_text_disabled" id="0x7f0a0007" />
-    <public type="color" name="common_signin_btn_dark_text_focused" id="0x7f0a0008" />
-    <public type="color" name="common_signin_btn_dark_text_pressed" id="0x7f0a0009" />
-    <public type="color" name="common_signin_btn_default_background" id="0x7f0a000a" />
-    <public type="color" name="common_signin_btn_light_text_default" id="0x7f0a000b" />
-    <public type="color" name="common_signin_btn_light_text_disabled" id="0x7f0a000c" />
-    <public type="color" name="common_signin_btn_light_text_focused" id="0x7f0a000d" />
-    <public type="color" name="common_signin_btn_light_text_pressed" id="0x7f0a000e" />
-    <public type="color" name="content_box_background_color" id="0x7f0a000f" />
-    <public type="color" name="content_box_text_color" id="0x7f0a0010" />
-    <public type="color" name="description_text_color" id="0x7f0a0011" />
-    <public type="color" name="expaned_color" id="0x7f0a0012" />
-    <public type="color" name="list_description_text_color" id="0x7f0a0013" />
-    <public type="color" name="list_divider_color" id="0x7f0a0014" />
-    <public type="color" name="list_no_item_text_color" id="0x7f0a0015" />
-    <public type="color" name="list_title_text_color" id="0x7f0a0016" />
-    <public type="color" name="main_text_color" id="0x7f0a0017" />
-    <public type="color" name="tw_expander_tint_color" id="0x7f0a0018" />
-    <public type="color" name="wizard_bottom_button_background_color" id="0x7f0a0019" />
-    <public type="color" name="wizard_bottom_button_next_arrow_color" id="0x7f0a001a" />
-    <public type="color" name="wizard_bottom_button_ripple_color" id="0x7f0a001b" />
-    <public type="color" name="wizard_bottom_button_text_color" id="0x7f0a001c" />
-    <public type="color" name="wizard_contents_text_color" id="0x7f0a001d" />
-    <public type="color" name="wizard_title_background_color" id="0x7f0a001e" />
-    <public type="color" name="wizard_title_text_color" id="0x7f0a001f" />
-    <public type="color" name="wizard_title_top_background_color" id="0x7f0a0020" />
-    <public type="color" name="common_signin_btn_text_dark" id="0x7f0a0021" />
-    <public type="color" name="common_signin_btn_text_light" id="0x7f0a0022" />
+    <public type="color" name="bottom_bar_text_disabled_color" id="0x7f0a0003" />
+    <public type="color" name="caution_text_color" id="0x7f0a0004" />
+    <public type="color" name="colorcontrolactivate" id="0x7f0a0005" />
+    <public type="color" name="common_action_bar_splitter" id="0x7f0a0006" />
+    <public type="color" name="common_signin_btn_dark_text_default" id="0x7f0a0007" />
+    <public type="color" name="common_signin_btn_dark_text_disabled" id="0x7f0a0008" />
+    <public type="color" name="common_signin_btn_dark_text_focused" id="0x7f0a0009" />
+    <public type="color" name="common_signin_btn_dark_text_pressed" id="0x7f0a000a" />
+    <public type="color" name="common_signin_btn_default_background" id="0x7f0a000b" />
+    <public type="color" name="common_signin_btn_light_text_default" id="0x7f0a000c" />
+    <public type="color" name="common_signin_btn_light_text_disabled" id="0x7f0a000d" />
+    <public type="color" name="common_signin_btn_light_text_focused" id="0x7f0a000e" />
+    <public type="color" name="common_signin_btn_light_text_pressed" id="0x7f0a000f" />
+    <public type="color" name="content_box_background_color" id="0x7f0a0010" />
+    <public type="color" name="content_box_text_color" id="0x7f0a0011" />
+    <public type="color" name="description_text_color" id="0x7f0a0012" />
+    <public type="color" name="expaned_color" id="0x7f0a0013" />
+    <public type="color" name="list_description_text_color" id="0x7f0a0014" />
+    <public type="color" name="list_divider_color" id="0x7f0a0015" />
+    <public type="color" name="list_no_item_text_color" id="0x7f0a0016" />
+    <public type="color" name="list_title_text_color" id="0x7f0a0017" />
+    <public type="color" name="main_text_color" id="0x7f0a0018" />
+    <public type="color" name="tw_expander_tint_color" id="0x7f0a0019" />
+    <public type="color" name="wizard_bottom_button_background_color" id="0x7f0a001a" />
+    <public type="color" name="wizard_bottom_button_next_arrow_color" id="0x7f0a001b" />
+    <public type="color" name="wizard_bottom_button_ripple_color" id="0x7f0a001c" />
+    <public type="color" name="wizard_bottom_button_text_color" id="0x7f0a001d" />
+    <public type="color" name="wizard_contents_text_color" id="0x7f0a001e" />
+    <public type="color" name="wizard_title_background_color" id="0x7f0a001f" />
+    <public type="color" name="wizard_title_text_color" id="0x7f0a0020" />
+    <public type="color" name="wizard_title_top_background_color" id="0x7f0a0021" />
+    <public type="color" name="common_signin_btn_text_dark" id="0x7f0a0022" />
+    <public type="color" name="common_signin_btn_text_light" id="0x7f0a0023" />
     <public type="dimen" name="activity_padding_default" id="0x7f0b0000" />
     <public type="dimen" name="activity_padding_zero" id="0x7f0b0001" />
     <public type="dimen" name="app_listview_top_padding" id="0x7f0b0002" />

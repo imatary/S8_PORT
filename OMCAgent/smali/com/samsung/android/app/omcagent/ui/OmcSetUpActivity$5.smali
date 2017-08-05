@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$5;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->startArrowFadeOutAnimation()V
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$700(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)V
 
     return-void
@@ -56,7 +55,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity$5;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->startArrowDownAnimation()V
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;->access$600(Lcom/samsung/android/app/omcagent/ui/OmcSetUpActivity;)V
 
     return-void

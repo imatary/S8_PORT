@@ -93,7 +93,7 @@
     <string name="STR_UPDATING_PACKAGE">Actualizando…</string>
     <string name="STR_USE_DATA_BTN">Usar datos</string>
     <string name="STR_WAIT_FOR_WIFI">"Instalación de aplicaciones en pausa.
-Esperando a que se conecte a una Wi-Fi para instalar aplicaciones."</string>
+Esperando a que te conectes a una Wi-Fi para instalar aplicaciones."</string>
     <string name="STR_WAIT_FOR_WIFI_BTN">Esperar conexión Wi-Fi</string>
     <string name="STR_WIDGET_DEFAULT">Instale aplicaciones recomendadas por su proveedor de servicios.</string>
     <string name="STR_WIDGET_DOWNLOADING">Descargando…</string>

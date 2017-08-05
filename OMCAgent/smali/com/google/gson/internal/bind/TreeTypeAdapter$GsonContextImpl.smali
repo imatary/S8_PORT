@@ -64,7 +64,6 @@
 
     iget-object v0, p0, Lcom/google/gson/internal/bind/TreeTypeAdapter$GsonContextImpl;->this$0:Lcom/google/gson/internal/bind/TreeTypeAdapter;
 
-    # getter for: Lcom/google/gson/internal/bind/TreeTypeAdapter;->gson:Lcom/google/gson/Gson;
     invoke-static {v0}, Lcom/google/gson/internal/bind/TreeTypeAdapter;->access$100(Lcom/google/gson/internal/bind/TreeTypeAdapter;)Lcom/google/gson/Gson;
 
     move-result-object v0
@@ -81,7 +80,6 @@
 
     iget-object v0, p0, Lcom/google/gson/internal/bind/TreeTypeAdapter$GsonContextImpl;->this$0:Lcom/google/gson/internal/bind/TreeTypeAdapter;
 
-    # getter for: Lcom/google/gson/internal/bind/TreeTypeAdapter;->gson:Lcom/google/gson/Gson;
     invoke-static {v0}, Lcom/google/gson/internal/bind/TreeTypeAdapter;->access$100(Lcom/google/gson/internal/bind/TreeTypeAdapter;)Lcom/google/gson/Gson;
 
     move-result-object v0
@@ -98,7 +96,6 @@
 
     iget-object v0, p0, Lcom/google/gson/internal/bind/TreeTypeAdapter$GsonContextImpl;->this$0:Lcom/google/gson/internal/bind/TreeTypeAdapter;
 
-    # getter for: Lcom/google/gson/internal/bind/TreeTypeAdapter;->gson:Lcom/google/gson/Gson;
     invoke-static {v0}, Lcom/google/gson/internal/bind/TreeTypeAdapter;->access$100(Lcom/google/gson/internal/bind/TreeTypeAdapter;)Lcom/google/gson/Gson;
 
     move-result-object v0

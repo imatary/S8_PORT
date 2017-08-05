@@ -45,7 +45,6 @@
 
     check-cast v0, Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;
 
-    # getter for: Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->zipFileList:[Ljava/io/File;
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->access$500(Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;)[Ljava/io/File;
 
     move-result-object v1
@@ -56,7 +55,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->targetOmcPackagePath:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;->access$402(Lcom/samsung/android/app/omcagent/ui/test/SideloadingTestActivity;Ljava/lang/String;)Ljava/lang/String;
 
     return-void

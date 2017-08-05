@@ -41,7 +41,6 @@
 
     iget-object v1, p0, Lcom/samsung/android/app/omcagent/ui/test/OmcInfoActivity$2;->this$0:Lcom/samsung/android/app/omcagent/ui/test/OmcInfoActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/test/OmcInfoActivity;->runCommand(Landroid/content/Context;)V
     invoke-static {v0, v1}, Lcom/samsung/android/app/omcagent/ui/test/OmcInfoActivity;->access$100(Lcom/samsung/android/app/omcagent/ui/test/OmcInfoActivity;Landroid/content/Context;)V
 
     return-void

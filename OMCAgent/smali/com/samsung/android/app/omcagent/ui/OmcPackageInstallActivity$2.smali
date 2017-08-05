@@ -39,7 +39,6 @@
 
     iget-object v0, p0, Lcom/samsung/android/app/omcagent/ui/OmcPackageInstallActivity$2;->this$0:Lcom/samsung/android/app/omcagent/ui/OmcPackageInstallActivity;
 
-    # invokes: Lcom/samsung/android/app/omcagent/ui/OmcPackageInstallActivity;->showCautionDialog()V
     invoke-static {v0}, Lcom/samsung/android/app/omcagent/ui/OmcPackageInstallActivity;->access$000(Lcom/samsung/android/app/omcagent/ui/OmcPackageInstallActivity;)V
 
     return-void
