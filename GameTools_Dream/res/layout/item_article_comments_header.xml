@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/white2" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff363838" android:id="@id/comments_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_margin" android:layout_marginTop="24.0dip" android:layout_marginBottom="12.0dip" android:text="@string/article_comments_count" />
-    <TextView android:textSize="13.0dip" android:textColor="@android:color/black" android:gravity="center" android:id="@id/comments_more" android:background="@drawable/more_replies_background" android:layout_width="fill_parent" android:layout_height="40.0dip" />
-    <View android:id="@id/comments_header_divider" android:background="@color/gray9" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="12.0dip" />
-</LinearLayout>

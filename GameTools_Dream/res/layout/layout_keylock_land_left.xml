@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="horizontal" android:id="@id/rl_keylock_land_left" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/iv_lock" android:background="@drawable/gamehome_tools_lock_on" android:visibility="gone" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginLeft="28.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-</RelativeLayout>

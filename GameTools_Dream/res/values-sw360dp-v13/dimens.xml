@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="setting_game_launcher_guide_image_height">249.0dip</dimen>
-    <dimen name="setting_game_launcher_guide_image_width">280.0dip</dimen>
-    <dimen name="setting_game_tools_guide_image_height">249.0dip</dimen>
-    <dimen name="setting_game_tools_guide_image_width">130.0dip</dimen>
-</resources>

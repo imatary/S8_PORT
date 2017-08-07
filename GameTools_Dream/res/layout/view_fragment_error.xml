@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fragment_error_view" android:background="@color/white1" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gl_ls_icon_warningbic" />
-    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/black2" android:gravity="center" android:id="@id/message" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
-    <Button android:textSize="16.0dip" android:textColor="@color/white1" android:gravity="center" android:id="@id/retry" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="39.0dip" android:layout_marginTop="16.0dip" android:text="@string/retry_error" />
-    <Button android:textSize="16.0dip" android:textColor="@color/white1" android:gravity="center" android:id="@id/btn_login" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="39.0dip" android:layout_marginTop="16.0dip" android:text="@string/need_login" />
-    <Button android:textSize="16.0dip" android:textColor="@color/white1" android:gravity="center" android:id="@id/btn_logout" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="39.0dip" android:layout_marginTop="16.0dip" android:text="@string/profile_logout" />
-</LinearLayout>
