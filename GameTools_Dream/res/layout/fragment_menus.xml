@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ListView android:theme="@android:style/Theme.Holo.Light" android:scrollbarSize="4.0dip" android:scrollbarThumbVertical="@color/black2_opacity_20" android:id="@id/menus_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
-    <include layout="@layout/view_fragment_error" />
-</FrameLayout>

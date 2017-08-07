@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textSize="16.0dip" android:textColor="@color/black1" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="@string/nick_name_already_join"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
