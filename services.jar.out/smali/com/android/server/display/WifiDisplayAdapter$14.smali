@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/display/WifiDisplayAdapter;->requestResumeLocked()V
+    value = Lcom/android/server/display/WifiDisplayAdapter;->requestPauseLocked()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -51,7 +51,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/server/display/WifiDisplayController;->requestResume()V
+    invoke-virtual {v0}, Lcom/android/server/display/WifiDisplayController;->requestPause()V
 
     :cond_0
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$14;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
@@ -68,7 +68,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/server/display/IpRemoteDisplayController;->requestResume()V
+    invoke-virtual {v0}, Lcom/android/server/display/IpRemoteDisplayController;->requestPause()V
 
     :cond_1
     return-void
