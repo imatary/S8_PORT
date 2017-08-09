@@ -1524,52 +1524,115 @@
 .end method
 
 .method public getDisplayInfo(I)Landroid/view/DisplayInfo;
-    .locals 5
+    .locals 10
 
-    const/4 v4, 0x0
+    const v9, 0x3bcccccd    # 0.00625f
+
+    const/4 v8, 0x0
 
     :try_start_0
-    iget-object v3, p0, Landroid/hardware/display/DisplayManagerGlobal;->mLock:Ljava/lang/Object;
+    iget-object v7, p0, Landroid/hardware/display/DisplayManagerGlobal;->mLock:Ljava/lang/Object;
 
-    monitor-enter v3
+    monitor-enter v7
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v2, p0, Landroid/hardware/display/DisplayManagerGlobal;->mDm:Landroid/hardware/display/IDisplayManager;
+    iget-object v6, p0, Landroid/hardware/display/DisplayManagerGlobal;->mDm:Landroid/hardware/display/IDisplayManager;
 
-    invoke-interface {v2, p1}, Landroid/hardware/display/IDisplayManager;->getDisplayInfo(I)Landroid/view/DisplayInfo;
+    invoke-interface {v6, p1}, Landroid/hardware/display/IDisplayManager;->getDisplayInfo(I)Landroid/view/DisplayInfo;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    move-result-object v1
+    move-result-object v2
 
-    if-nez v1, :cond_0
+    if-nez v2, :cond_0
 
     :try_start_2
-    monitor-exit v3
+    monitor-exit v7
     :try_end_2
     .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_0
 
-    return-object v4
+    return-object v8
 
     :cond_0
     :try_start_3
+    invoke-static {}, Landroid/app/ActivityThread;->currentActivityThread()Landroid/app/ActivityThread;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_1
+
+    invoke-virtual {v3}, Landroid/app/ActivityThread;->isDexCompatMode()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_1
+
+    invoke-virtual {v3}, Landroid/app/ActivityThread;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v4
+
+    iget v6, v4, Landroid/content/res/Configuration;->densityDpi:I
+
+    if-eqz v6, :cond_1
+
+    iget v6, v4, Landroid/content/res/Configuration;->screenWidthDp:I
+
+    if-eqz v6, :cond_1
+
+    iget v6, v4, Landroid/content/res/Configuration;->screenHeightDp:I
+
+    if-eqz v6, :cond_1
+
+    iget v6, v4, Landroid/content/res/Configuration;->screenWidthDp:I
+
+    iget v8, v4, Landroid/content/res/Configuration;->densityDpi:I
+
+    mul-int/2addr v6, v8
+
+    int-to-float v6, v6
+
+    mul-float/2addr v6, v9
+
+    float-to-int v5, v6
+
+    iget v6, v4, Landroid/content/res/Configuration;->screenHeightDp:I
+
+    iget v8, v4, Landroid/content/res/Configuration;->densityDpi:I
+
+    mul-int/2addr v6, v8
+
+    int-to-float v6, v6
+
+    mul-float/2addr v6, v9
+
+    float-to-int v1, v6
+
+    iput v5, v2, Landroid/view/DisplayInfo;->logicalWidth:I
+
+    iput v5, v2, Landroid/view/DisplayInfo;->appWidth:I
+
+    iput v1, v2, Landroid/view/DisplayInfo;->logicalHeight:I
+
+    iput v1, v2, Landroid/view/DisplayInfo;->appHeight:I
+
+    :cond_1
     invoke-direct {p0}, Landroid/hardware/display/DisplayManagerGlobal;->registerCallbackIfNeededLocked()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :try_start_4
-    monitor-exit v3
+    monitor-exit v7
 
-    return-object v1
+    return-object v2
 
     :catchall_0
-    move-exception v2
+    move-exception v6
 
-    monitor-exit v3
+    monitor-exit v7
 
-    throw v2
+    throw v6
     :try_end_4
     .catch Landroid/os/RemoteException; {:try_start_4 .. :try_end_4} :catch_0
 
@@ -1578,9 +1641,9 @@
 
     invoke-virtual {v0}, Landroid/os/RemoteException;->rethrowFromSystemServer()Ljava/lang/RuntimeException;
 
-    move-result-object v2
+    move-result-object v6
 
-    throw v2
+    throw v6
 .end method
 
 .method public getLastConnectedDevice(I)Ljava/lang/Object;
