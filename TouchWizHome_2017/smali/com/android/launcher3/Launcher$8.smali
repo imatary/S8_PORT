@@ -237,14 +237,6 @@
 
     move-result-object v5
 
-    if-eqz v5, :cond_4
-
-    iget-object v5, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
-
-    invoke-static {v5}, Lcom/android/launcher3/Launcher;->access$500(Lcom/android/launcher3/Launcher;)Lcom/android/launcher3/common/drag/DragManager;
-
-    move-result-object v5
-
     invoke-virtual {v5}, Lcom/android/launcher3/common/drag/DragManager;->isQuickOptionShowing()Z
 
     move-result v5

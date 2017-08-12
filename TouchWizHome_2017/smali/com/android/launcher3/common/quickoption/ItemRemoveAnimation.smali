@@ -43,9 +43,9 @@
 
     const/high16 v8, 0x3f000000    # 0.5f
 
-    const/4 v7, 0x0
-
     const/4 v6, 0x1
+
+    const/4 v7, 0x0
 
     iget-object v0, p0, Lcom/android/launcher3/common/quickoption/ItemRemoveAnimation;->mView:Landroid/view/View;
 
@@ -79,19 +79,6 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setPivotY(F)V
 
-    iget-object v0, p0, Lcom/android/launcher3/common/quickoption/ItemRemoveAnimation;->mView:Landroid/view/View;
-
-    instance-of v0, v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/launcher3/common/quickoption/ItemRemoveAnimation;->mView:Landroid/view/View;
-
-    check-cast v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;
-
-    iput-boolean v6, v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasSetPivot:Z
-
-    :cond_0
     iget-object v0, p0, Lcom/android/launcher3/common/quickoption/ItemRemoveAnimation;->mAnimatorSet:Landroid/animation/AnimatorSet;
 
     const/4 v1, 0x5

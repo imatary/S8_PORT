@@ -52,6 +52,8 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
 
+    invoke-virtual {p0, p1}, Lcom/android/launcher3/allapps/AppsTransitionAnimation$9;->onAnimationEnd(Landroid/animation/Animator;)V
+
     return-void
 .end method
 
@@ -62,7 +64,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/launcher3/allapps/AppsTransitionAnimation;->access$402(Lcom/android/launcher3/allapps/AppsTransitionAnimation;Landroid/animation/AnimatorSet;)Landroid/animation/AnimatorSet;
+    invoke-static {v0, v1}, Lcom/android/launcher3/allapps/AppsTransitionAnimation;->access$302(Lcom/android/launcher3/allapps/AppsTransitionAnimation;Landroid/animation/AnimatorSet;)Landroid/animation/AnimatorSet;
 
     iget-object v1, p0, Lcom/android/launcher3/allapps/AppsTransitionAnimation$9;->val$topLayout:Landroid/view/View;
 

@@ -8,8 +8,6 @@
 
 .field static mIsBackToSetting:Z
 
-.field static mIsSettingMultiWindow:Z
-
 .field static mIsStartSetting:Z
 
 .field static mSettingActivityName:Ljava/lang/String;
@@ -40,8 +38,6 @@
     sput-boolean v1, Lcom/android/launcher3/util/GlobalSettingUtils;->mIsStartSetting:Z
 
     sput-boolean v1, Lcom/android/launcher3/util/GlobalSettingUtils;->mIsBackToSetting:Z
-
-    sput-boolean v1, Lcom/android/launcher3/util/GlobalSettingUtils;->mIsSettingMultiWindow:Z
 
     return-void
 .end method
@@ -131,14 +127,6 @@
     goto :goto_0
 .end method
 
-.method public static getSettingMultiWindow()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/android/launcher3/util/GlobalSettingUtils;->mIsSettingMultiWindow:Z
-
-    return v0
-.end method
-
 .method public static getStartSetting()Z
     .locals 1
 
@@ -209,11 +197,7 @@
 .end method
 
 .method public startHomeSettingBySettingMenu(Landroid/content/Intent;)V
-    .locals 5
-
-    const/4 v4, 0x1
-
-    const/4 v3, 0x0
+    .locals 3
 
     const-string v2, "PackageName"
 
@@ -231,21 +215,17 @@
 
     sput-object v0, Lcom/android/launcher3/util/GlobalSettingUtils;->mSettingActivityName:Ljava/lang/String;
 
-    sput-boolean v4, Lcom/android/launcher3/util/GlobalSettingUtils;->mIsStartSetting:Z
+    const/4 v2, 0x1
 
-    sput-boolean v3, Lcom/android/launcher3/util/GlobalSettingUtils;->mIsBackToSetting:Z
+    sput-boolean v2, Lcom/android/launcher3/util/GlobalSettingUtils;->mIsStartSetting:Z
 
-    const-string v2, "isInMultiWindowMode"
+    const/4 v2, 0x0
 
-    invoke-virtual {p1, v2, v3}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
-
-    move-result v2
-
-    sput-boolean v2, Lcom/android/launcher3/util/GlobalSettingUtils;->mIsSettingMultiWindow:Z
+    sput-boolean v2, Lcom/android/launcher3/util/GlobalSettingUtils;->mIsBackToSetting:Z
 
     iget-object v2, p0, Lcom/android/launcher3/util/GlobalSettingUtils;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    invoke-virtual {v2, v4}, Lcom/android/launcher3/Launcher;->startHomeSettingActivity(Z)V
+    invoke-virtual {v2}, Lcom/android/launcher3/Launcher;->startHomeSettingActivity()V
 
     return-void
 .end method

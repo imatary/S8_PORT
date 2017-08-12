@@ -19,17 +19,11 @@
 
 .field final synthetic val$enter:Z
 
-.field final synthetic val$homeContainer:Lcom/android/launcher3/home/HomeContainer;
-
-.field final synthetic val$homePageIndicator:Landroid/view/View;
-
 .field final synthetic val$multiSelectPanel:Lcom/android/launcher3/common/multiselect/MultiSelectPanel;
-
-.field final synthetic val$workspace:Lcom/android/launcher3/home/Workspace;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/home/HomeTransitionAnimation;ZLcom/android/launcher3/common/multiselect/MultiSelectPanel;Landroid/view/View;Lcom/android/launcher3/home/HomeContainer;Lcom/android/launcher3/home/Workspace;)V
+.method constructor <init>(Lcom/android/launcher3/home/HomeTransitionAnimation;ZLcom/android/launcher3/common/multiselect/MultiSelectPanel;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->this$0:Lcom/android/launcher3/home/HomeTransitionAnimation;
@@ -37,12 +31,6 @@
     iput-boolean p2, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->val$enter:Z
 
     iput-object p3, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->val$multiSelectPanel:Lcom/android/launcher3/common/multiselect/MultiSelectPanel;
-
-    iput-object p4, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->val$homePageIndicator:Landroid/view/View;
-
-    iput-object p5, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->val$homeContainer:Lcom/android/launcher3/home/HomeContainer;
-
-    iput-object p6, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->val$workspace:Lcom/android/launcher3/home/Workspace;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -52,9 +40,7 @@
 
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 3
-
-    const/4 v2, 0x0
+    .locals 2
 
     iget-object v0, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->this$0:Lcom/android/launcher3/home/HomeTransitionAnimation;
 
@@ -64,7 +50,7 @@
 
     iget-boolean v0, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->val$enter:Z
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_0
 
     iget-object v0, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->val$multiSelectPanel:Lcom/android/launcher3/common/multiselect/MultiSelectPanel;
 
@@ -72,48 +58,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectPanel;->setVisibility(I)V
 
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportMultiSelectSlideVI()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->val$multiSelectPanel:Lcom/android/launcher3/common/multiselect/MultiSelectPanel;
-
-    invoke-virtual {v0, v2}, Lcom/android/launcher3/common/multiselect/MultiSelectPanel;->setTranslationY(F)V
-
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->val$homePageIndicator:Landroid/view/View;
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setTranslationY(F)V
-
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->val$homeContainer:Lcom/android/launcher3/home/HomeContainer;
-
-    invoke-virtual {v0, v2}, Lcom/android/launcher3/home/HomeContainer;->setTranslationY(F)V
-
     :cond_0
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->isTablet()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->val$workspace:Lcom/android/launcher3/home/Workspace;
-
-    iget-object v1, p0, Lcom/android/launcher3/home/HomeTransitionAnimation$5;->val$workspace:Lcom/android/launcher3/home/Workspace;
-
-    invoke-virtual {v1}, Lcom/android/launcher3/home/Workspace;->getHeight()I
-
-    move-result v1
-
-    int-to-float v1, v1
-
-    const/high16 v2, 0x40000000    # 2.0f
-
-    div-float/2addr v1, v2
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/home/Workspace;->setPivotY(F)V
-
-    :cond_1
     return-void
 .end method
 

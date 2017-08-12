@@ -689,19 +689,19 @@
 
     invoke-virtual {v5, v6, v8}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    move-result-object v3
+    move-result-object v2
 
     const-string v5, "contact_shortcut_ids"
 
     const/4 v6, 0x0
 
-    invoke-interface {v3, v5, v6}, Landroid/content/SharedPreferences;->getStringSet(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;
+    invoke-interface {v2, v5, v6}, Landroid/content/SharedPreferences;->getStringSet(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;
 
-    move-result-object v1
+    move-result-object v4
 
-    if-eqz v1, :cond_1
+    if-eqz v4, :cond_1
 
-    invoke-interface {v1}, Ljava/util/Set;->size()I
+    invoke-interface {v4}, Ljava/util/Set;->size()I
 
     move-result v5
 
@@ -719,7 +719,7 @@
 
     move-result-object v6
 
-    invoke-interface {v1}, Ljava/util/Set;->size()I
+    invoke-interface {v4}, Ljava/util/Set;->size()I
 
     move-result v7
 
@@ -733,21 +733,21 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-interface {v3}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
-    move-result-object v2
+    move-result-object v1
 
     const-string v5, "smartswitch_restore_result"
 
     iget v6, p1, Lcom/android/launcher3/common/bnr/LauncherBnrListener$Result;->result:I
 
-    invoke-interface {v2, v5, v6}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v1, v5, v6}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
     const-string v5, "smartswitch_restore_error_code"
 
     iget v6, p1, Lcom/android/launcher3/common/bnr/LauncherBnrListener$Result;->errorCode:I
 
-    invoke-interface {v2, v5, v6}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v1, v5, v6}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
     if-eqz p2, :cond_0
 
@@ -759,16 +759,16 @@
 
     long-to-int v6, v6
 
-    invoke-interface {v2, v5, v6}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v1, v5, v6}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
     :goto_0
     const-string v5, "smartswitch_restore_source"
 
     iget-object v6, p0, Lcom/android/launcher3/common/bnr/smartswitch/SmartSwitchBnrService;->mSource:Ljava/lang/String;
 
-    invoke-interface {v2, v5, v6}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v1, v5, v6}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->apply()V
+    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     const-string v5, "Launcher.SSBnrService"
 
@@ -802,7 +802,7 @@
     :cond_0
     const-string v5, "smartswich_save_file_length"
 
-    invoke-interface {v2, v5, v8}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v1, v5, v8}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
     goto :goto_0
 
@@ -831,23 +831,23 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance v4, Landroid/content/Intent;
+    new-instance v3, Landroid/content/Intent;
 
     const-string v5, "com.sec.android.intent.action.RESPONSE_RESTORE_HOMELAYOUT"
 
-    invoke-direct {v4, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     const-string v5, "RESULT"
 
     iget v6, p1, Lcom/android/launcher3/common/bnr/LauncherBnrListener$Result;->result:I
 
-    invoke-virtual {v4, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v3, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     const-string v5, "ERR_CODE"
 
     iget v6, p1, Lcom/android/launcher3/common/bnr/LauncherBnrListener$Result;->errorCode:I
 
-    invoke-virtual {v4, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v3, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     if-eqz p2, :cond_2
 
@@ -859,27 +859,27 @@
 
     long-to-int v6, v6
 
-    invoke-virtual {v4, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v3, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     :goto_2
     const-string v5, "SOURCE"
 
     iget-object v6, p0, Lcom/android/launcher3/common/bnr/smartswitch/SmartSwitchBnrService;->mSource:Ljava/lang/String;
 
-    invoke-virtual {v4, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v3, v5, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/android/launcher3/common/bnr/smartswitch/SmartSwitchBnrService;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v5
 
-    invoke-virtual {v5, v4}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v5, v3}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     goto :goto_1
 
     :cond_2
     const-string v5, "REQ_SIZE"
 
-    invoke-virtual {v4, v5, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v3, v5, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     goto :goto_2
 .end method

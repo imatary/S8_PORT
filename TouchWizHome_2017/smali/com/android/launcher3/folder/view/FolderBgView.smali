@@ -51,7 +51,7 @@
 
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
-    const v0, 0x7f10006e
+    const v0, 0x7f0f007a
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/folder/view/FolderBgView;->findViewById(I)Landroid/view/View;
 
@@ -61,7 +61,7 @@
 
     iput-object v0, p0, Lcom/android/launcher3/folder/view/FolderBgView;->mHelpContainer:Landroid/widget/LinearLayout;
 
-    const v0, 0x7f10006f
+    const v0, 0x7f0f007b
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/folder/view/FolderBgView;->findViewById(I)Landroid/view/View;
 
@@ -121,7 +121,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0e0003
+    const v2, 0x7f0d0004
 
     invoke-virtual {v1, v2, v3}, Landroid/content/res/Resources;->getColor(ILandroid/content/res/Resources$Theme;)I
 
@@ -139,7 +139,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0e0004
+    const v2, 0x7f0d0005
 
     invoke-virtual {v1, v2, v3}, Landroid/content/res/Resources;->getColor(ILandroid/content/res/Resources$Theme;)I
 
@@ -174,90 +174,68 @@
 .end method
 
 .method public showHelpForEdit(ZIZ)V
-    .locals 6
+    .locals 4
 
     if-eqz p1, :cond_1
 
-    const/high16 v1, 0x3f800000    # 1.0f
+    const/high16 v0, 0x3f800000    # 1.0f
 
     :goto_0
     if-lez p2, :cond_2
 
-    iget-object v2, p0, Lcom/android/launcher3/folder/view/FolderBgView;->mHelpContainer:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderBgView;->mHelpContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v2}, Landroid/widget/LinearLayout;->animate()Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {v1}, Landroid/widget/LinearLayout;->animate()Landroid/view/ViewPropertyAnimator;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2, v1}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {v1, v0}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
 
-    move-result-object v2
+    move-result-object v1
 
-    int-to-long v4, p2
+    int-to-long v2, p2
 
-    invoke-virtual {v2, v4, v5}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
+    invoke-virtual {v1, v2, v3}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2}, Landroid/view/ViewPropertyAnimator;->start()V
+    invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->start()V
 
     :goto_1
     if-eqz p3, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/launcher3/folder/view/FolderBgView;->getResources()Landroid/content/res/Resources;
+    sget-object v1, Lcom/android/launcher3/util/LightingEffectManager;->INSTANCE:Lcom/android/launcher3/util/LightingEffectManager;
 
-    move-result-object v2
+    const/4 v2, 0x0
 
-    invoke-virtual {v2}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v2
-
-    iget v2, v2, Landroid/content/res/Configuration;->orientation:I
-
-    const/4 v3, 0x2
-
-    if-ne v2, v3, :cond_3
-
-    const/4 v0, 0x1
-
-    :goto_2
-    sget-object v2, Lcom/android/launcher3/util/LightingEffectManager;->INSTANCE:Lcom/android/launcher3/util/LightingEffectManager;
-
-    invoke-virtual {v2, p1, p2, v0}, Lcom/android/launcher3/util/LightingEffectManager;->showEffect(ZIZ)V
+    invoke-virtual {v1, p1, p2, v2}, Lcom/android/launcher3/util/LightingEffectManager;->showEffect(ZIZ)V
 
     invoke-static {}, Lcom/android/launcher3/Utilities;->isMobileKeyboardMode()Z
 
-    move-result v2
+    move-result v1
 
-    if-nez v2, :cond_0
+    if-nez v1, :cond_0
 
-    if-nez v0, :cond_0
+    iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderBgView;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    iget-object v2, p0, Lcom/android/launcher3/folder/view/FolderBgView;->mLauncher:Lcom/android/launcher3/Launcher;
+    invoke-virtual {v1}, Lcom/android/launcher3/Launcher;->getWindow()Landroid/view/Window;
 
-    invoke-virtual {v2}, Lcom/android/launcher3/Launcher;->getWindow()Landroid/view/Window;
+    move-result-object v1
 
-    move-result-object v2
-
-    invoke-static {v2, p1}, Lcom/android/launcher3/Utilities;->hideNavigationBar(Landroid/view/Window;Z)V
+    invoke-static {v1, p1}, Lcom/android/launcher3/Utilities;->hideNavigationBar(Landroid/view/Window;Z)V
 
     :cond_0
     return-void
 
     :cond_1
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     goto :goto_0
 
     :cond_2
-    iget-object v2, p0, Lcom/android/launcher3/folder/view/FolderBgView;->mHelpContainer:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderBgView;->mHelpContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->setAlpha(F)V
+    invoke-virtual {v1, v0}, Landroid/widget/LinearLayout;->setAlpha(F)V
 
     goto :goto_1
-
-    :cond_3
-    const/4 v0, 0x0
-
-    goto :goto_2
 .end method

@@ -6,9 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/samsung/android/sdk/bixby/R$string;,
-        Lcom/samsung/android/sdk/bixby/R$id;,
-        Lcom/samsung/android/sdk/bixby/R$attr;
+        Lcom/samsung/android/sdk/bixby/R$string;
     }
 .end annotation
 

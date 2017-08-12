@@ -3,6 +3,15 @@
 .source "R.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/fragment/R$styleable;,
+        Landroid/support/fragment/R$attr;
+    }
+.end annotation
+
+
 # direct methods
 .method public constructor <init>()V
     .locals 0

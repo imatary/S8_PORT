@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <integer name="appsPicker_NumAppsPerRow">4</integer>
     <integer name="apps_default_cellCountX">4</integer>
     <integer name="apps_default_cellCountY">5</integer>
     <integer name="config_workspaceOverviewShrinkPercentage">70</integer>
@@ -14,9 +15,6 @@
     <integer name="easy_home_cellCountX">3</integer>
     <integer name="easy_home_cellCountY">4</integer>
     <integer name="config_badgePositionPercentage">30</integer>
-    <integer name="config_appsPicker_MaxAppsPerRow">4</integer>
-    <integer name="config_appsPicker_NumAppsPerRow">4</integer>
-    <integer name="config_maxNumberOfPageIndicatorsToShow">21</integer>
     <integer name="config_EdgeLightArrowShowTranslateXDuration">667</integer>
     <integer name="config_appsDragTransitionDuration">333</integer>
     <integer name="config_appsScreenGridTransitionDuration">333</integer>
@@ -24,12 +22,6 @@
     <integer name="config_appsSelectTransitionDuration">200</integer>
     <integer name="config_appsTidyUpTransitionDuration">333</integer>
     <integer name="config_appsViewTypeTransitionDuration">333</integer>
-    <integer name="config_apps_gridShrinkPercentage">63</integer>
-    <integer name="config_deepShortcutArrowOpenDuration">80</integer>
-    <integer name="config_deepShortcutCloseDuration">150</integer>
-    <integer name="config_deepShortcutCloseStagger">20</integer>
-    <integer name="config_deepShortcutOpenDuration">220</integer>
-    <integer name="config_deepShortcutOpenStagger">40</integer>
     <integer name="config_delay_AppsGridChanged">450</integer>
     <integer name="config_dragOutlineFadeTime">333</integer>
     <integer name="config_dropAnimMaxDist">800</integer>
@@ -47,7 +39,7 @@
     <integer name="config_folderBgDarken">20</integer>
     <integer name="config_folderBgGlowDuration">300</integer>
     <integer name="config_folderCloseDuration">350</integer>
-    <integer name="config_folderEditTransitionDuration">333</integer>
+    <integer name="config_folderEditTransitionDuration">200</integer>
     <integer name="config_folderExpandDuration">300</integer>
     <integer name="config_folderFadeInDuration">333</integer>
     <integer name="config_folderFadeOutDuration">333</integer>
@@ -55,8 +47,8 @@
     <integer name="config_homeDragTransitionDuration">333</integer>
     <integer name="config_homeOverviewBgDarken">20</integer>
     <integer name="config_homeScreenGridTransitionDuration">333</integer>
+    <integer name="config_maxNumberOfPageIndicatorsToShow">22</integer>
     <integer name="config_multiSelectTransitionDuration">200</integer>
-    <integer name="config_multiSelectTranslationYDuration">400</integer>
     <integer name="config_overviewTransitionDuration">333</integer>
     <integer name="config_swipeAffordanceArrow1LastHideStartDelay">383</integer>
     <integer name="config_swipeAffordanceArrow2LastHideStartDelay">183</integer>

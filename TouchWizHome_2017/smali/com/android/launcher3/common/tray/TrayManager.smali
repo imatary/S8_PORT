@@ -20,11 +20,11 @@
 
 .field private static final BLUR_VALID_DECIMAL_PLACE:I = 0x2
 
-.field private static final DIRECTION_BOTTOM:I = 0x1
+.field public static final DIRECTION_BOTTOM:I = 0x1
 
-.field private static final DIRECTION_NONE:I = -0x1
+.field public static final DIRECTION_NONE:I = -0x1
 
-.field private static final DIRECTION_TOP:I = 0x0
+.field public static final DIRECTION_TOP:I = 0x0
 
 .field private static final FLING_THRESHOLD_VELOCITY:I = 0x1f4
 
@@ -42,15 +42,11 @@
 
 .field public static final TRANSITION_3_HOME_APPS_SCALE_AND_FADE:I = 0x3
 
-.field private static final TRANSITION_ADAPTIVE_BLUR:Z = true
-
-.field private static final TRANSITION_BLUR_SLOP_COUNT:I = 0x6
+.field public static final TRANSITION_ADAPTIVE_BLUR:Z = true
 
 .field public static final TRANSITION_LOOPING:Z = true
 
 .field public static final TRANSITION_TYPE:I = 0x3
-
-.field private static final UNSET_SUPPRESS_CHANGE_STAGE_DELAY:I = 0x190
 
 
 # instance fields
@@ -104,8 +100,6 @@
 
 .field private mMoved:Z
 
-.field private mNeedToShowLightingEffectLater:Z
-
 .field private mOffset:F
 
 .field private mShadowDarkBgColor:I
@@ -117,8 +111,6 @@
 .field private mStartOffsetY:F
 
 .field private mStartPoint:Landroid/graphics/Point;
-
-.field private mSuppressChangeStage:Z
 
 .field private mSwipeDistanceRatio:F
 
@@ -145,10 +137,6 @@
 
 .field private mTraySlipY:I
 
-.field private final mUnsetSuppressChangeStageAlarm:Lcom/android/launcher3/util/alarm/Alarm;
-
-.field private final mUnsetSuppressChangeStageAlarmListener:Lcom/android/launcher3/util/alarm/OnAlarmListener;
-
 .field private mVelocityTracker:Landroid/view/VelocityTracker;
 
 
@@ -161,18 +149,6 @@
     const/4 v1, 0x0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    new-instance v0, Lcom/android/launcher3/util/alarm/Alarm;
-
-    invoke-direct {v0}, Lcom/android/launcher3/util/alarm/Alarm;-><init>()V
-
-    iput-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mUnsetSuppressChangeStageAlarm:Lcom/android/launcher3/util/alarm/Alarm;
-
-    new-instance v0, Lcom/android/launcher3/common/tray/TrayManager$1;
-
-    invoke-direct {v0, p0}, Lcom/android/launcher3/common/tray/TrayManager$1;-><init>(Lcom/android/launcher3/common/tray/TrayManager;)V
-
-    iput-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mUnsetSuppressChangeStageAlarmListener:Lcom/android/launcher3/util/alarm/OnAlarmListener;
 
     iput v2, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTrayHeight:I
 
@@ -206,15 +182,15 @@
 
     iput-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTrayEventCallbacks:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    new-instance v0, Lcom/android/launcher3/common/tray/TrayManager$2;
+    new-instance v0, Lcom/android/launcher3/common/tray/TrayManager$1;
 
-    invoke-direct {v0, p0}, Lcom/android/launcher3/common/tray/TrayManager$2;-><init>(Lcom/android/launcher3/common/tray/TrayManager;)V
+    invoke-direct {v0, p0}, Lcom/android/launcher3/common/tray/TrayManager$1;-><init>(Lcom/android/launcher3/common/tray/TrayManager;)V
 
     iput-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewTranslationListener:Lcom/android/launcher3/common/tray/FakeView$TranslationCallback;
 
-    new-instance v0, Lcom/android/launcher3/common/tray/TrayManager$3;
+    new-instance v0, Lcom/android/launcher3/common/tray/TrayManager$2;
 
-    invoke-direct {v0, p0}, Lcom/android/launcher3/common/tray/TrayManager$3;-><init>(Lcom/android/launcher3/common/tray/TrayManager;)V
+    invoke-direct {v0, p0}, Lcom/android/launcher3/common/tray/TrayManager$2;-><init>(Lcom/android/launcher3/common/tray/TrayManager;)V
 
     iput-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewDragEventListener:Lcom/android/launcher3/common/tray/FakeView$DragEventCallback;
 
@@ -227,63 +203,7 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/launcher3/common/tray/TrayManager;)Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mSuppressChangeStage:Z
-
-    return v0
-.end method
-
-.method static synthetic access$002(Lcom/android/launcher3/common/tray/TrayManager;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/android/launcher3/common/tray/TrayManager;->mSuppressChangeStage:Z
-
-    return p1
-.end method
-
-.method static synthetic access$100(Lcom/android/launcher3/common/tray/TrayManager;)Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mNeedToShowLightingEffectLater:Z
-
-    return v0
-.end method
-
-.method static synthetic access$102(Lcom/android/launcher3/common/tray/TrayManager;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/android/launcher3/common/tray/TrayManager;->mNeedToShowLightingEffectLater:Z
-
-    return p1
-.end method
-
-.method static synthetic access$200(Lcom/android/launcher3/common/tray/TrayManager;)Lcom/android/launcher3/common/tray/FakeView;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$300(Lcom/android/launcher3/common/tray/TrayManager;)Lcom/android/launcher3/common/tray/FakeView;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$400(Lcom/android/launcher3/common/tray/TrayManager;)I
-    .locals 1
-
-    iget v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewAnimationTime:I
-
-    return v0
-.end method
-
-.method static synthetic access$500(Lcom/android/launcher3/common/tray/TrayManager;)Lcom/android/launcher3/common/tray/FakeView;
+.method static synthetic access$000(Lcom/android/launcher3/common/tray/TrayManager;)Lcom/android/launcher3/common/tray/FakeView;
     .locals 1
 
     iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewToBeShownOnChangeStage:Lcom/android/launcher3/common/tray/FakeView;
@@ -291,7 +211,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$600(Lcom/android/launcher3/common/tray/TrayManager;)F
+.method static synthetic access$100(Lcom/android/launcher3/common/tray/TrayManager;)F
     .locals 1
 
     iget v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mCurrentChangedOffsetY:F
@@ -299,7 +219,7 @@
     return v0
 .end method
 
-.method static synthetic access$700(Lcom/android/launcher3/common/tray/TrayManager;)I
+.method static synthetic access$200(Lcom/android/launcher3/common/tray/TrayManager;)I
     .locals 1
 
     iget v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTrayHeight:I
@@ -307,7 +227,7 @@
     return v0
 .end method
 
-.method static synthetic access$800(Lcom/android/launcher3/common/tray/TrayManager;Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;II)V
+.method static synthetic access$300(Lcom/android/launcher3/common/tray/TrayManager;Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;II)V
     .locals 0
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/launcher3/common/tray/TrayManager;->changeStageWithDrag(Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;II)V
@@ -315,7 +235,7 @@
     return-void
 .end method
 
-.method static synthetic access$900(Lcom/android/launcher3/common/tray/TrayManager;Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;)Lcom/android/launcher3/common/drag/DropTarget;
+.method static synthetic access$400(Lcom/android/launcher3/common/tray/TrayManager;Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;)Lcom/android/launcher3/common/drag/DropTarget;
     .locals 1
 
     invoke-direct {p0, p1}, Lcom/android/launcher3/common/tray/TrayManager;->findDropTarget(Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;)Lcom/android/launcher3/common/drag/DropTarget;
@@ -736,115 +656,83 @@
     return-void
 .end method
 
-.method private handleWallpaperBlur(FLcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;)V
-    .locals 12
+.method private handleWallpaperBlur(F)V
+    .locals 8
 
-    const/4 v5, 0x2
+    const/4 v7, 0x2
 
-    const/4 v1, 0x1
+    const/4 v6, 0x0
 
-    const/4 v0, 0x0
+    iget-boolean v4, p0, Lcom/android/launcher3/common/tray/TrayManager;->mIsRunningSwipeAnimation:Z
 
-    const/4 v9, 0x0
-
-    iget-boolean v2, p0, Lcom/android/launcher3/common/tray/TrayManager;->mIsRunningSwipeAnimation:Z
-
-    if-nez v2, :cond_2
+    if-nez v4, :cond_0
 
     invoke-virtual {p0}, Lcom/android/launcher3/common/tray/TrayManager;->getTrayMovingRange()I
 
-    move-result v7
+    move-result v1
 
-    if-eqz p2, :cond_0
+    cmpl-float v4, p1, v6
 
-    const/4 v2, 0x6
+    if-ltz v4, :cond_1
 
-    invoke-interface {p2, v2}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->isOverBlurSlop(I)Z
+    int-to-float v4, v1
 
-    move-result v2
-
-    if-eqz v2, :cond_3
-
-    :cond_0
-    move v6, v1
+    div-float v3, p1, v4
 
     :goto_0
-    cmpl-float v2, p1, v9
+    const/high16 v4, 0x3f800000    # 1.0f
 
-    if-ltz v2, :cond_4
-
-    int-to-float v2, v7
-
-    div-float v8, p1, v2
-
-    :goto_1
-    const/high16 v2, 0x3f800000    # 1.0f
-
-    invoke-static {v8, v2}, Ljava/lang/Math;->min(FF)F
-
-    move-result v8
-
-    const v2, 0x3e99999a    # 0.3f
-
-    mul-float/2addr v2, v8
-
-    invoke-static {v2, v5, v5}, Lcom/android/launcher3/Utilities;->simplifyDecimalFraction(FII)F
+    invoke-static {v3, v4}, Ljava/lang/Math;->min(FF)F
 
     move-result v3
 
-    cmpl-float v2, v3, v9
+    cmpl-float v4, v3, v6
 
-    if-eqz v2, :cond_1
+    if-lez v4, :cond_2
 
-    float-to-double v4, v3
+    const/4 v2, 0x1
 
-    const-wide v10, 0x3fd147ae20000000L    # 0.27000001072883606
+    :goto_1
+    const v4, 0x3e99999a    # 0.3f
 
-    cmpl-double v2, v4, v10
+    mul-float/2addr v4, v3
 
-    if-gtz v2, :cond_1
+    invoke-static {v4, v7, v7}, Lcom/android/launcher3/Utilities;->simplifyDecimalFraction(FII)F
 
-    if-eqz v6, :cond_2
+    move-result v0
 
-    :cond_1
-    if-eqz p2, :cond_2
+    iget-object v4, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    cmpl-float v2, v8, v9
+    invoke-virtual {v4}, Lcom/android/launcher3/Launcher;->getWindow()Landroid/view/Window;
 
-    if-lez v2, :cond_5
+    move-result-object v6
 
-    :goto_2
-    iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    invoke-virtual {v0}, Lcom/android/launcher3/Launcher;->getWindow()Landroid/view/Window;
-
-    move-result-object v2
+    if-eqz v2, :cond_3
 
     const-wide/16 v4, 0x0
 
-    move-object v0, p2
+    :goto_2
+    invoke-static {v2, v6, v0, v4, v5}, Lcom/android/launcher3/util/BlurUtils;->blurByWindowManager(ZLandroid/view/Window;FJ)V
 
-    invoke-interface/range {v0 .. v5}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->requestBlurChange(ZLandroid/view/Window;FJ)V
-
-    :cond_2
+    :cond_0
     return-void
 
-    :cond_3
-    move v6, v0
+    :cond_1
+    neg-float v4, p1
+
+    int-to-float v5, v1
+
+    div-float v3, v4, v5
 
     goto :goto_0
 
-    :cond_4
-    neg-float v2, p1
-
-    int-to-float v4, v7
-
-    div-float v8, v2, v4
+    :cond_2
+    const/4 v2, 0x0
 
     goto :goto_1
 
-    :cond_5
-    move v1, v0
+    :cond_3
+    const-wide/16 v4, 0x64
 
     goto :goto_2
 .end method
@@ -1028,7 +916,7 @@
     :cond_3
     if-eqz v9, :cond_6
 
-    const v1, 0x7f09018f
+    const v1, 0x7f08018f
 
     invoke-virtual {v10, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1038,7 +926,7 @@
     :goto_2
     packed-switch p1, :pswitch_data_0
 
-    const v1, 0x7f0900f0
+    const v1, 0x7f0800f1
 
     invoke-virtual {v10, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1061,7 +949,7 @@
     return-void
 
     :cond_6
-    const v1, 0x7f090190
+    const v1, 0x7f080190
 
     invoke-virtual {v10, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1076,7 +964,7 @@
 
     if-eqz v9, :cond_8
 
-    const v1, 0x7f090188
+    const v1, 0x7f080188
 
     invoke-virtual {v10, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1086,7 +974,7 @@
     goto :goto_2
 
     :cond_8
-    const v1, 0x7f090189
+    const v1, 0x7f080189
 
     invoke-virtual {v10, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1095,7 +983,7 @@
     goto :goto_4
 
     :pswitch_0
-    const v1, 0x7f0900f1
+    const v1, 0x7f0800f2
 
     invoke-virtual {v10, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1104,7 +992,7 @@
     goto :goto_3
 
     :pswitch_1
-    const v1, 0x7f0900ef
+    const v1, 0x7f0800f0
 
     invoke-virtual {v10, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1311,7 +1199,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0, p1}, Lcom/android/launcher3/common/tray/TrayManager;->willMove(FLcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;)Z
+    invoke-direct {p0, v0}, Lcom/android/launcher3/common/tray/TrayManager;->willMove(F)Z
 
     move-result v6
 
@@ -1681,7 +1569,7 @@
     goto :goto_0
 .end method
 
-.method private willMove(FLcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;)Z
+.method private willMove(F)Z
     .locals 1
 
     iget v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTouchSlop:I
@@ -1692,13 +1580,13 @@
 
     if-ltz v0, :cond_1
 
-    invoke-interface {p2}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->isVerticalScroll()Z
+    invoke-static {}, Lcom/android/launcher3/util/event/ScrollDetector;->isVerticalScroll()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    invoke-interface {p2}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->isMovingOnBlock()Z
+    invoke-static {}, Lcom/android/launcher3/util/event/ScrollDetector;->isMovingOnBlock()Z
 
     move-result v0
 
@@ -1776,30 +1664,30 @@
 .end method
 
 .method public changeStageWithDrag(Lcom/android/launcher3/common/drag/DragSource;)V
-    .locals 5
+    .locals 4
 
-    sget-object v2, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Overground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
+    sget-object v1, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Overground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
 
-    iget-object v3, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTrayEventCallbacks:Ljava/util/concurrent/CopyOnWriteArrayList;
+    iget-object v2, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTrayEventCallbacks:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    if-eqz v3, :cond_1
+    if-eqz v2, :cond_1
 
     if-eqz p1, :cond_1
 
-    iget-object v3, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTrayEventCallbacks:Ljava/util/concurrent/CopyOnWriteArrayList;
+    iget-object v2, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTrayEventCallbacks:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    invoke-virtual {v3}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v2}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
 
-    move-result-object v3
+    move-result-object v2
 
     :cond_0
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v4
+    move-result v3
 
-    if-eqz v4, :cond_1
+    if-eqz v3, :cond_1
 
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1807,48 +1695,40 @@
 
     invoke-interface {v0}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->getDropTarget()Lcom/android/launcher3/common/drag/DropTarget;
 
-    move-result-object v4
+    move-result-object v3
 
-    invoke-virtual {p1, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v3
 
-    if-eqz v4, :cond_0
+    if-eqz v3, :cond_0
 
     invoke-interface {v0}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->getTrayLevel()Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
 
-    move-result-object v3
+    move-result-object v2
 
-    sget-object v4, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Underground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
+    sget-object v3, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Underground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
 
-    if-ne v3, v4, :cond_2
+    if-ne v2, v3, :cond_2
 
-    sget-object v2, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Overground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
+    sget-object v1, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Overground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
 
     :cond_1
     :goto_0
-    if-eqz p1, :cond_3
+    const/4 v2, -0x1
 
     invoke-interface {p1}, Lcom/android/launcher3/common/drag/DragSource;->getDragSourceType()I
 
-    move-result v1
+    move-result v3
 
-    :goto_1
-    const/4 v3, -0x1
-
-    invoke-direct {p0, v2, v3, v1}, Lcom/android/launcher3/common/tray/TrayManager;->changeStageWithDrag(Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;II)V
+    invoke-direct {p0, v1, v2, v3}, Lcom/android/launcher3/common/tray/TrayManager;->changeStageWithDrag(Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;II)V
 
     return-void
 
     :cond_2
-    sget-object v2, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Underground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
+    sget-object v1, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Underground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
 
     goto :goto_0
-
-    :cond_3
-    const/4 v1, 0x0
-
-    goto :goto_1
 .end method
 
 .method public getHeightOfTrayForDrag()I
@@ -2076,29 +1956,7 @@
 
     invoke-direct {p0, v0, p3}, Lcom/android/launcher3/common/tray/TrayManager;->handleFakeViews(FI)V
 
-    invoke-direct {p0, v0, p1}, Lcom/android/launcher3/common/tray/TrayManager;->handleWallpaperBlur(FLcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;)V
-
-    return-void
-.end method
-
-.method public onConfigurationChanged()V
-    .locals 3
-
-    iget-object v2, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    invoke-virtual {v2}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    const v2, 0x7f0a0054
-
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v0
-
-    iget-object v2, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
-
-    invoke-virtual {v2, v0}, Lcom/android/launcher3/common/tray/FakeView;->setDescriptionHeight(I)V
+    invoke-direct {p0, v0}, Lcom/android/launcher3/common/tray/TrayManager;->handleWallpaperBlur(F)V
 
     return-void
 .end method
@@ -2168,7 +2026,7 @@
 .end method
 
 .method public onInterceptTouchEvent(Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;Landroid/view/MotionEvent;)Z
-    .locals 12
+    .locals 13
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -2188,14 +2046,14 @@
     return v0
 
     :cond_0
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
     packed-switch v6, :pswitch_data_0
 
     :cond_1
     :goto_1
     :pswitch_0
-    if-nez v8, :cond_2
+    if-nez v9, :cond_2
 
     iget-boolean v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mMoved:Z
 
@@ -2215,13 +2073,13 @@
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
-    move-result v10
+    move-result v11
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawY()F
 
-    move-result v11
+    move-result v12
 
-    iget v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownY:F
+    iget v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownX:F
 
     sub-float v0, v11, v0
 
@@ -2229,9 +2087,17 @@
 
     move-result v7
 
+    iget v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownY:F
+
+    sub-float v0, v12, v0
+
+    invoke-static {v0}, Ljava/lang/Math;->abs(F)F
+
+    move-result v8
+
     if-eqz p1, :cond_1
 
-    invoke-direct {p0, v7, p1}, Lcom/android/launcher3/common/tray/TrayManager;->willMove(FLcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;)Z
+    invoke-direct {p0, v8}, Lcom/android/launcher3/common/tray/TrayManager;->willMove(F)Z
 
     move-result v0
 
@@ -2241,7 +2107,7 @@
 
     invoke-static {}, Lcom/android/launcher3/util/animation/LauncherAnimUtils;->onDestroyActivity()V
 
-    const/4 v8, 0x1
+    const/4 v9, 0x1
 
     iget v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mActivePointerId:I
 
@@ -2251,7 +2117,7 @@
 
     invoke-interface {p1}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->getTrayScale()F
 
-    move-result v9
+    move-result v10
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -2261,7 +2127,7 @@
 
     move-result v1
 
-    mul-float/2addr v1, v9
+    mul-float/2addr v1, v10
 
     sub-float v3, v0, v1
 
@@ -2273,7 +2139,7 @@
 
     move-result v1
 
-    mul-float/2addr v1, v9
+    mul-float/2addr v1, v10
 
     sub-float v4, v0, v1
 
@@ -2292,14 +2158,6 @@
     goto :goto_1
 
     :pswitch_2
-    new-instance v0, Lcom/android/launcher3/util/DvfsUtil;
-
-    iget-object v1, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
-
-    invoke-direct {v0, v1}, Lcom/android/launcher3/util/DvfsUtil;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v0}, Lcom/android/launcher3/util/DvfsUtil;->boostUpForSupportedModel()V
-
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v0
@@ -2409,731 +2267,562 @@
 .end method
 
 .method public onTouchEvent(Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;Landroid/view/MotionEvent;)Z
-    .locals 25
+    .locals 20
 
     invoke-static/range {p2 .. p2}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
-    move-result-object v11
+    move-result-object v8
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawX()F
 
-    move-result v20
+    move-result v15
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getX()F
 
-    move-result v21
+    move-result v16
 
-    sub-float v20, v20, v21
+    sub-float v15, v15, v16
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawY()F
 
-    move-result v21
+    move-result v16
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getY()F
 
-    move-result v22
+    move-result v17
 
-    sub-float v21, v21, v22
+    sub-float v16, v16, v17
 
-    move/from16 v0, v20
+    move/from16 v0, v16
 
-    move/from16 v1, v21
-
-    invoke-virtual {v11, v0, v1}, Landroid/view/MotionEvent;->offsetLocation(FF)V
+    invoke-virtual {v8, v15, v0}, Landroid/view/MotionEvent;->offsetLocation(FF)V
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v11}, Lcom/android/launcher3/common/tray/TrayManager;->acquireVelocityTrackerAndAddMovement(Landroid/view/MotionEvent;)V
+    invoke-direct {v0, v8}, Lcom/android/launcher3/common/tray/TrayManager;->acquireVelocityTrackerAndAddMovement(Landroid/view/MotionEvent;)V
 
-    invoke-virtual {v11}, Landroid/view/MotionEvent;->recycle()V
+    invoke-virtual {v8}, Landroid/view/MotionEvent;->recycle()V
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getActionMasked()I
 
-    move-result v5
+    move-result v2
 
     invoke-interface/range {p1 .. p1}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->getTrayScale()F
 
-    move-result v19
+    move-result v14
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawX()F
 
-    move-result v20
+    move-result v15
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getX()F
 
-    move-result v21
+    move-result v16
 
-    mul-float v21, v21, v19
+    mul-float v16, v16, v14
 
-    sub-float v12, v20, v21
+    sub-float v9, v15, v16
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawY()F
 
-    move-result v20
+    move-result v15
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getY()F
 
-    move-result v21
+    move-result v16
 
-    mul-float v21, v21, v19
+    mul-float v16, v16, v14
 
-    sub-float v13, v20, v21
+    sub-float v10, v15, v16
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mActivePointerId:I
-
-    move/from16 v20, v0
+    iget v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mActivePointerId:I
 
     move-object/from16 v0, p2
 
-    move/from16 v1, v20
+    invoke-virtual {v0, v15}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
-    invoke-virtual {v0, v1}, Landroid/view/MotionEvent;->findPointerIndex(I)I
+    move-result v3
 
-    move-result v6
-
-    packed-switch v5, :pswitch_data_0
+    packed-switch v2, :pswitch_data_0
 
     :cond_0
     :goto_0
     :pswitch_0
-    const/16 v20, 0x1
+    const/4 v15, 0x1
 
-    return v20
+    return v15
 
     :pswitch_1
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawX()F
 
-    move-result v20
+    move-result v15
 
-    move/from16 v0, v20
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownX:F
+    iput v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownX:F
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawY()F
 
-    move-result v20
+    move-result v15
 
-    move/from16 v0, v20
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
+    iput v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownY:F
 
-    iput v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownY:F
+    move-object/from16 v0, p0
 
-    move/from16 v0, v20
+    iput v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mFirstDownY:F
 
-    move-object/from16 v1, p0
+    const/4 v15, 0x0
 
-    iput v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mFirstDownY:F
+    move-object/from16 v0, p0
 
-    const/16 v20, 0x0
+    iput v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mOffset:F
 
-    move/from16 v0, v20
+    const/4 v15, 0x0
 
-    move-object/from16 v1, p0
+    move-object/from16 v0, p0
 
-    iput v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mOffset:F
+    iput-boolean v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mMoved:Z
 
-    const/16 v20, 0x0
+    const/4 v15, 0x0
 
-    move/from16 v0, v20
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
+    iput v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mDirection:I
 
-    iput-boolean v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mMoved:Z
-
-    const/16 v20, 0x0
-
-    move/from16 v0, v20
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mDirection:I
-
-    const/16 v20, 0x0
+    const/4 v15, 0x0
 
     move-object/from16 v0, p2
 
-    move/from16 v1, v20
+    invoke-virtual {v0, v15}, Landroid/view/MotionEvent;->getPointerId(I)I
 
-    invoke-virtual {v0, v1}, Landroid/view/MotionEvent;->getPointerId(I)I
+    move-result v15
 
-    move-result v20
+    move-object/from16 v0, p0
 
-    move/from16 v0, v20
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mActivePointerId:I
+    iput v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mActivePointerId:I
 
     goto :goto_0
 
     :pswitch_2
-    const/16 v20, -0x1
+    const/4 v15, -0x1
 
-    move/from16 v0, v20
-
-    if-eq v6, v0, :cond_0
+    if-eq v3, v15, :cond_0
 
     move-object/from16 v0, p0
 
-    iget-boolean v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mMoved:Z
+    iget-boolean v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mMoved:Z
 
-    move/from16 v20, v0
-
-    if-eqz v20, :cond_0
+    if-eqz v15, :cond_0
 
     move-object/from16 v0, p2
 
-    invoke-virtual {v0, v6}, Landroid/view/MotionEvent;->getX(I)F
+    invoke-virtual {v0, v3}, Landroid/view/MotionEvent;->getX(I)F
 
-    move-result v20
+    move-result v15
 
-    add-float v20, v20, v12
-
-    move/from16 v0, v20
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownX:F
-
-    move-object/from16 v0, p2
-
-    invoke-virtual {v0, v6}, Landroid/view/MotionEvent;->getY(I)F
-
-    move-result v20
-
-    add-float v20, v20, v13
-
-    move/from16 v0, v20
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownY:F
+    add-float/2addr v15, v9
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownY:F
+    iput v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownX:F
 
-    move/from16 v20, v0
+    move-object/from16 v0, p2
+
+    invoke-virtual {v0, v3}, Landroid/view/MotionEvent;->getY(I)F
+
+    move-result v15
+
+    add-float/2addr v15, v10
+
+    move-object/from16 v0, p0
+
+    iput v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownY:F
+
+    move-object/from16 v0, p0
+
+    iget v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownY:F
 
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mFirstDownY:F
 
-    move/from16 v21, v0
+    move/from16 v16, v0
 
-    sub-float v16, v20, v21
-
-    move-object/from16 v0, p0
-
-    iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mSwipeDistanceRatio:F
-
-    move/from16 v20, v0
-
-    mul-float v16, v16, v20
+    sub-float v12, v15, v16
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mStartOffsetY:F
+    iget v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mSwipeDistanceRatio:F
 
-    move/from16 v20, v0
-
-    add-float v10, v20, v16
+    mul-float/2addr v12, v15
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mTrayHeight:I
+    iget v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mStartOffsetY:F
 
-    move/from16 v20, v0
+    add-float v7, v15, v12
 
-    if-lez v20, :cond_3
+    move-object/from16 v0, p0
 
-    const/4 v8, 0x0
+    iget v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mTrayHeight:I
+
+    if-lez v15, :cond_3
+
+    const/4 v5, 0x0
 
     invoke-interface/range {p1 .. p1}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->getTrayLevel()Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
 
-    move-result-object v20
+    move-result-object v15
 
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mDirection:I
 
-    move/from16 v21, v0
+    move/from16 v16, v0
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v20
+    move/from16 v1, v16
 
-    move/from16 v2, v21
+    invoke-direct {v0, v15, v1}, Lcom/android/launcher3/common/tray/TrayManager;->getOffsetLimit(Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;I)Landroid/graphics/Rect;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/launcher3/common/tray/TrayManager;->getOffsetLimit(Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;I)Landroid/graphics/Rect;
+    move-result-object v6
 
-    move-result-object v9
+    iget v15, v6, Landroid/graphics/Rect;->top:I
 
-    iget v0, v9, Landroid/graphics/Rect;->top:I
+    int-to-float v15, v15
 
-    move/from16 v20, v0
+    cmpg-float v15, v7, v15
 
-    move/from16 v0, v20
+    if-gez v15, :cond_1
 
-    int-to-float v0, v0
+    iget v15, v6, Landroid/graphics/Rect;->top:I
 
-    move/from16 v20, v0
+    int-to-float v15, v15
 
-    cmpg-float v20, v10, v20
+    sub-float v15, v7, v15
 
-    if-gez v20, :cond_1
+    float-to-int v5, v15
 
-    iget v0, v9, Landroid/graphics/Rect;->top:I
+    iget v15, v6, Landroid/graphics/Rect;->top:I
 
-    move/from16 v20, v0
-
-    move/from16 v0, v20
-
-    int-to-float v0, v0
-
-    move/from16 v20, v0
-
-    sub-float v20, v10, v20
-
-    move/from16 v0, v20
-
-    float-to-int v8, v0
-
-    iget v0, v9, Landroid/graphics/Rect;->top:I
-
-    move/from16 v20, v0
-
-    move/from16 v0, v20
-
-    int-to-float v10, v0
+    int-to-float v7, v15
 
     :cond_1
-    iget v0, v9, Landroid/graphics/Rect;->bottom:I
+    iget v15, v6, Landroid/graphics/Rect;->bottom:I
 
-    move/from16 v20, v0
+    int-to-float v15, v15
 
-    move/from16 v0, v20
+    cmpl-float v15, v7, v15
 
-    int-to-float v0, v0
+    if-lez v15, :cond_2
 
-    move/from16 v20, v0
+    iget v15, v6, Landroid/graphics/Rect;->bottom:I
 
-    cmpl-float v20, v10, v20
+    int-to-float v15, v15
 
-    if-lez v20, :cond_2
+    sub-float v15, v7, v15
 
-    iget v0, v9, Landroid/graphics/Rect;->bottom:I
+    float-to-int v5, v15
 
-    move/from16 v20, v0
+    iget v15, v6, Landroid/graphics/Rect;->bottom:I
 
-    move/from16 v0, v20
-
-    int-to-float v0, v0
-
-    move/from16 v20, v0
-
-    sub-float v20, v10, v20
-
-    move/from16 v0, v20
-
-    float-to-int v8, v0
-
-    iget v0, v9, Landroid/graphics/Rect;->bottom:I
-
-    move/from16 v20, v0
-
-    move/from16 v0, v20
-
-    int-to-float v10, v0
+    int-to-float v7, v15
 
     :cond_2
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mFirstDownY:F
+    iget v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mFirstDownY:F
 
-    move/from16 v20, v0
+    int-to-float v0, v5
 
-    int-to-float v0, v8
+    move/from16 v16, v0
 
-    move/from16 v21, v0
-
-    add-float v20, v20, v21
-
-    move/from16 v0, v20
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mFirstDownY:F
-
-    :cond_3
-    invoke-interface/range {p1 .. p1}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->isMovingOnBlock()Z
-
-    move-result v20
-
-    if-nez v20, :cond_4
+    add-float v15, v15, v16
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v10}, Lcom/android/launcher3/common/tray/TrayManager;->setTrayTranslationY(F)V
+    iput v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mFirstDownY:F
+
+    :cond_3
+    invoke-static {}, Lcom/android/launcher3/util/event/ScrollDetector;->isMovingOnBlock()Z
+
+    move-result v15
+
+    if-nez v15, :cond_4
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v0, v7}, Lcom/android/launcher3/common/tray/TrayManager;->setTrayTranslationY(F)V
 
     :cond_4
     move-object/from16 v0, p0
 
-    iput v10, v0, Lcom/android/launcher3/common/tray/TrayManager;->mOffset:F
+    iput v7, v0, Lcom/android/launcher3/common/tray/TrayManager;->mOffset:F
 
     goto/16 :goto_0
 
     :pswitch_3
-    invoke-interface/range {p1 .. p1}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->isMovingOnBlock()Z
+    invoke-static {}, Lcom/android/launcher3/util/event/ScrollDetector;->isMovingOnBlock()Z
 
-    move-result v20
+    move-result v15
 
-    if-nez v20, :cond_c
-
-    move-object/from16 v0, p0
-
-    iget-boolean v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mMoved:Z
-
-    move/from16 v20, v0
-
-    if-eqz v20, :cond_c
-
-    const/4 v7, 0x0
-
-    const/16 v20, -0x1
-
-    move/from16 v0, v20
-
-    if-eq v6, v0, :cond_8
+    if-nez v15, :cond_a
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mVelocityTracker:Landroid/view/VelocityTracker;
+    iget-boolean v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mMoved:Z
 
-    move-object/from16 v20, v0
+    if-eqz v15, :cond_a
 
-    const/16 v21, 0x3e8
+    const/4 v4, 0x0
+
+    const/4 v15, -0x1
+
+    if-eq v3, v15, :cond_7
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mVelocityTracker:Landroid/view/VelocityTracker;
+
+    const/16 v16, 0x3e8
 
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mMaximumVelocity:I
 
-    move/from16 v22, v0
+    move/from16 v17, v0
 
-    move/from16 v0, v22
+    move/from16 v0, v17
 
     int-to-float v0, v0
 
-    move/from16 v22, v0
+    move/from16 v17, v0
 
-    invoke-virtual/range {v20 .. v22}, Landroid/view/VelocityTracker;->computeCurrentVelocity(IF)V
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mVelocityTracker:Landroid/view/VelocityTracker;
-
-    move-object/from16 v20, v0
+    invoke-virtual/range {v15 .. v17}, Landroid/view/VelocityTracker;->computeCurrentVelocity(IF)V
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mActivePointerId:I
-
-    move/from16 v21, v0
-
-    invoke-virtual/range {v20 .. v21}, Landroid/view/VelocityTracker;->getXVelocity(I)F
-
-    move-result v17
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mVelocityTracker:Landroid/view/VelocityTracker;
-
-    move-object/from16 v20, v0
+    iget-object v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mVelocityTracker:Landroid/view/VelocityTracker;
 
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mActivePointerId:I
 
-    move/from16 v21, v0
+    move/from16 v16, v0
 
-    invoke-virtual/range {v20 .. v21}, Landroid/view/VelocityTracker;->getYVelocity(I)F
+    invoke-virtual/range {v15 .. v16}, Landroid/view/VelocityTracker;->getYVelocity(I)F
 
-    move-result v18
+    move-result v15
 
-    const v4, 0x3e4ccccd    # 0.2f
+    float-to-int v13, v15
 
-    const/16 v20, 0x0
-
-    cmpl-float v20, v17, v20
-
-    if-eqz v20, :cond_9
-
-    div-float v15, v18, v17
-
-    :goto_1
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getX()F
 
-    move-result v20
+    move-result v15
 
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mLastDownX:F
 
-    move/from16 v21, v0
+    move/from16 v16, v0
 
-    sub-float v20, v20, v21
+    sub-float v15, v15, v16
 
-    invoke-static/range {v20 .. v20}, Ljava/lang/Math;->abs(F)F
-
-    move-result v20
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v20
-
-    move-object/from16 v2, p1
-
-    invoke-direct {v0, v1, v2}, Lcom/android/launcher3/common/tray/TrayManager;->willMove(FLcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;)Z
-
-    move-result v20
-
-    if-eqz v20, :cond_a
-
-    invoke-interface/range {p1 .. p1}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->isScrollLocked()Z
-
-    move-result v20
-
-    if-nez v20, :cond_a
-
-    const/4 v14, 0x1
-
-    :goto_2
     invoke-static {v15}, Ljava/lang/Math;->abs(F)F
 
-    move-result v20
-
-    const v21, 0x3e4ccccd    # 0.2f
-
-    cmpl-float v20, v20, v21
-
-    if-lez v20, :cond_5
-
-    move/from16 v0, v18
-
-    float-to-int v0, v0
-
-    move/from16 v20, v0
+    move-result v15
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mOffset:F
+    invoke-direct {v0, v15}, Lcom/android/launcher3/common/tray/TrayManager;->willMove(F)Z
 
-    move/from16 v21, v0
+    move-result v15
+
+    if-eqz v15, :cond_8
+
+    invoke-static {}, Lcom/android/launcher3/util/event/ScrollDetector;->isLocked()Z
+
+    move-result v15
+
+    if-nez v15, :cond_8
+
+    const/4 v11, 0x1
+
+    :goto_1
+    move-object/from16 v0, p0
+
+    iget v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mOffset:F
 
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
 
-    move/from16 v2, v20
+    invoke-direct {v0, v1, v13, v15}, Lcom/android/launcher3/common/tray/TrayManager;->determineStageChange(Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;IF)Z
 
-    move/from16 v3, v21
+    move-result v15
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/android/launcher3/common/tray/TrayManager;->determineStageChange(Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;IF)Z
+    if-nez v15, :cond_5
 
-    move-result v20
-
-    if-nez v20, :cond_6
+    if-eqz v11, :cond_9
 
     :cond_5
-    if-eqz v14, :cond_b
+    const/4 v4, 0x1
 
-    :cond_6
-    const/4 v7, 0x1
-
-    :goto_3
-    if-eqz v7, :cond_7
+    :goto_2
+    if-eqz v4, :cond_6
 
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
 
-    move-result-object v20
+    move-result-object v15
 
     invoke-interface/range {p1 .. p1}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->getTrayLevel()Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
 
-    move-result-object v21
+    move-result-object v16
 
-    invoke-virtual/range {v21 .. v21}, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->ordinal()I
+    invoke-virtual/range {v16 .. v16}, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->ordinal()I
 
-    move-result v21
+    move-result v16
 
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mStartPoint:Landroid/graphics/Point;
 
-    move-object/from16 v22, v0
+    move-object/from16 v17, v0
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawX()F
 
-    move-result v23
+    move-result v18
 
-    move/from16 v0, v23
+    move/from16 v0, v18
 
     float-to-int v0, v0
 
-    move/from16 v23, v0
+    move/from16 v18, v0
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawY()F
 
-    move-result v24
+    move-result v19
 
-    move/from16 v0, v24
+    move/from16 v0, v19
 
     float-to-int v0, v0
 
-    move/from16 v24, v0
+    move/from16 v19, v0
 
-    invoke-virtual/range {v20 .. v24}, Lcom/android/launcher3/util/logging/SALogging;->insertGesturePointOnTrayChange(ILandroid/graphics/Point;II)V
+    invoke-virtual/range {v15 .. v19}, Lcom/android/launcher3/util/logging/SALogging;->insertGesturePointOnTrayChange(ILandroid/graphics/Point;II)V
 
-    :cond_7
-    const-string v20, "TrayManager"
+    :cond_6
+    const-string v15, "TrayManager"
 
-    new-instance v21, Ljava/lang/StringBuilder;
+    new-instance v16, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {v5}, Landroid/view/MotionEvent;->actionToString(I)Ljava/lang/String;
+    invoke-static {v2}, Landroid/view/MotionEvent;->actionToString(I)Ljava/lang/String;
 
-    move-result-object v22
+    move-result-object v17
 
-    invoke-virtual/range {v21 .. v22}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v21
+    move-result-object v16
 
-    const-string v22, " : v = "
+    const-string v17, " : v = "
 
-    invoke-virtual/range {v21 .. v22}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v21
+    move-result-object v16
 
-    move-object/from16 v0, v21
+    move-object/from16 v0, v16
 
-    move/from16 v1, v17
+    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    move-result-object v16
 
-    move-result-object v21
+    const-string v17, ", threshold = "
 
-    const-string v22, ", "
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v21 .. v22}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    move-object/from16 v0, v21
-
-    move/from16 v1, v18
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    const-string v22, ", threshold = "
-
-    invoke-virtual/range {v21 .. v22}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
+    move-result-object v16
 
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/android/launcher3/common/tray/TrayManager;->mFlingThresholdVelocity:I
 
-    move/from16 v22, v0
+    move/from16 v17, v0
 
-    invoke-virtual/range {v21 .. v22}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v21
+    move-result-object v16
 
-    const-string v22, ", scroll = "
+    const-string v17, ", scroll = "
 
-    invoke-virtual/range {v21 .. v22}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v21
+    move-result-object v16
 
-    move-object/from16 v0, v21
+    move-object/from16 v0, v16
 
-    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v21
+    move-result-object v16
 
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v16 .. v16}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v21
+    move-result-object v16
 
-    invoke-static/range {v20 .. v21}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v15 .. v16}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_8
+    :cond_7
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v7}, Lcom/android/launcher3/common/tray/TrayManager;->trayMoveEnd(Z)V
+    invoke-direct {v0, v4}, Lcom/android/launcher3/common/tray/TrayManager;->trayMoveEnd(Z)V
 
-    const/16 v20, 0x0
+    const/4 v15, 0x0
 
-    move/from16 v0, v20
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
+    iput-boolean v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mMoved:Z
 
-    iput-boolean v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mMoved:Z
+    :goto_3
+    const/4 v15, 0x0
 
-    :goto_4
-    const/16 v20, 0x0
+    move-object/from16 v0, p0
 
-    move/from16 v0, v20
+    iput v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mDirection:I
 
-    move-object/from16 v1, p0
+    const/4 v15, -0x1
 
-    iput v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mDirection:I
+    move-object/from16 v0, p0
 
-    const/16 v20, -0x1
-
-    move/from16 v0, v20
-
-    move-object/from16 v1, p0
-
-    iput v0, v1, Lcom/android/launcher3/common/tray/TrayManager;->mActivePointerId:I
+    iput v15, v0, Lcom/android/launcher3/common/tray/TrayManager;->mActivePointerId:I
 
     invoke-direct/range {p0 .. p0}, Lcom/android/launcher3/common/tray/TrayManager;->releaseVelocityTracker()V
 
     goto/16 :goto_0
 
-    :cond_9
-    move/from16 v15, v18
+    :cond_8
+    const/4 v11, 0x0
 
     goto/16 :goto_1
 
-    :cond_a
-    const/4 v14, 0x0
+    :cond_9
+    const/4 v4, 0x0
 
     goto/16 :goto_2
 
-    :cond_b
-    const/4 v7, 0x0
-
-    goto/16 :goto_3
-
-    :cond_c
-    const/16 v20, 0x0
+    :cond_a
+    const/4 v15, 0x0
 
     move-object/from16 v0, p0
 
-    move/from16 v1, v20
+    invoke-direct {v0, v15}, Lcom/android/launcher3/common/tray/TrayManager;->trayMoveEnd(Z)V
 
-    invoke-direct {v0, v1}, Lcom/android/launcher3/common/tray/TrayManager;->trayMoveEnd(Z)V
-
-    goto :goto_4
+    goto :goto_3
 
     :pswitch_4
     invoke-direct/range {p0 .. p2}, Lcom/android/launcher3/common/tray/TrayManager;->onSecondaryPointerUp(Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;Landroid/view/MotionEvent;)V
@@ -3155,217 +2844,168 @@
 .end method
 
 .method public pullTrayForDrag(Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;I)V
-    .locals 10
+    .locals 9
 
     const/4 v7, 0x0
 
-    const/4 v6, 0x1
+    const/4 v8, 0x1
 
     iput p2, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTrayHeight:I
 
     invoke-interface {p1}, Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;->getTrayLevel()Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
 
-    move-result-object v4
+    move-result-object v3
 
-    iget-object v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
+    sget-object v5, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Overground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
 
-    invoke-virtual {v8}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5, v3}, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->equals(Ljava/lang/Object;)Z
 
-    move-result-object v8
+    move-result v5
 
-    invoke-virtual {v8}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+    if-eqz v5, :cond_3
 
-    move-result-object v8
-
-    iget v8, v8, Landroid/content/res/Configuration;->orientation:I
-
-    const/4 v9, 0x2
-
-    if-ne v8, v9, :cond_3
-
-    move v3, v6
-
-    :goto_0
-    sget-object v8, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Overground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
-
-    invoke-virtual {v8, v4}, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->equals(Ljava/lang/Object;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_4
-
-    sget-object v5, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Underground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
+    sget-object v4, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Underground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
 
     const-string v2, ""
 
-    iget-object v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    invoke-virtual {v8}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v8
+    move-result-object v5
 
-    const v9, 0x7f09017b
+    const v6, 0x7f08017c
 
-    invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    :goto_1
-    iget-object v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
+    :goto_0
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
 
-    invoke-virtual {v8, v5}, Lcom/android/launcher3/common/tray/FakeView;->setTrayLevel(Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;)V
+    invoke-virtual {v5, v4}, Lcom/android/launcher3/common/tray/FakeView;->setTrayLevel(Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;)V
 
-    iget-object v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
 
-    invoke-virtual {v8, v2}, Lcom/android/launcher3/common/tray/FakeView;->setDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v5, v2}, Lcom/android/launcher3/common/tray/FakeView;->setDescription(Ljava/lang/CharSequence;)V
 
-    iget-object v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
 
-    invoke-direct {p0, v8, v7, v6}, Lcom/android/launcher3/common/tray/TrayManager;->animateFakeView(Landroid/view/View;IZ)V
+    invoke-direct {p0, v5, v7, v8}, Lcom/android/launcher3/common/tray/TrayManager;->animateFakeView(Landroid/view/View;IZ)V
 
     invoke-static {}, Lcom/android/launcher3/Utilities;->isMobileKeyboardMode()Z
 
-    move-result v8
+    move-result v5
 
-    if-nez v8, :cond_1
+    if-nez v5, :cond_1
 
-    if-nez v3, :cond_1
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    iget-object v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
+    invoke-virtual {v5}, Lcom/android/launcher3/Launcher;->getWindow()Landroid/view/Window;
 
-    invoke-virtual {v8}, Lcom/android/launcher3/Launcher;->getWindow()Landroid/view/Window;
+    move-result-object v5
 
-    move-result-object v8
+    invoke-static {v5, v8}, Lcom/android/launcher3/Utilities;->hideNavigationBar(Landroid/view/Window;Z)V
 
-    invoke-static {v8, v6}, Lcom/android/launcher3/Utilities;->hideNavigationBar(Landroid/view/Window;Z)V
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
 
-    iget-object v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
+    invoke-virtual {v5, v4}, Lcom/android/launcher3/common/tray/FakeView;->setTrayLevel(Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;)V
 
-    invoke-virtual {v8, v5}, Lcom/android/launcher3/common/tray/FakeView;->setTrayLevel(Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;)V
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
 
-    iget-object v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
+    invoke-virtual {v5, v1}, Lcom/android/launcher3/common/tray/FakeView;->setDescription(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v8, v1}, Lcom/android/launcher3/common/tray/FakeView;->setDescription(Ljava/lang/CharSequence;)V
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
 
-    iget-object v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
-
-    invoke-virtual {v8}, Lcom/android/launcher3/common/tray/FakeView;->getHeight()I
+    invoke-virtual {v5}, Lcom/android/launcher3/common/tray/FakeView;->getHeight()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
 
-    invoke-virtual {v8, v7, v7}, Lcom/android/launcher3/common/tray/FakeView;->measure(II)V
+    invoke-virtual {v5, v7, v7}, Lcom/android/launcher3/common/tray/FakeView;->measure(II)V
 
-    iget-object v7, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
 
-    invoke-virtual {v7}, Lcom/android/launcher3/common/tray/FakeView;->getMeasuredHeight()I
+    invoke-virtual {v5}, Lcom/android/launcher3/common/tray/FakeView;->getMeasuredHeight()I
 
     move-result v0
 
     :cond_0
-    iget-object v7, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
 
-    sub-int v8, p2, v0
+    sub-int v6, p2, v0
 
-    invoke-direct {p0, v7, v8, v6}, Lcom/android/launcher3/common/tray/TrayManager;->animateFakeView(Landroid/view/View;IZ)V
+    invoke-direct {p0, v5, v6, v8}, Lcom/android/launcher3/common/tray/TrayManager;->animateFakeView(Landroid/view/View;IZ)V
 
     :cond_1
-    iget-boolean v7, p0, Lcom/android/launcher3/common/tray/TrayManager;->mSuppressChangeStage:Z
+    sget-object v5, Lcom/android/launcher3/util/LightingEffectManager;->INSTANCE:Lcom/android/launcher3/util/LightingEffectManager;
 
-    if-eqz v7, :cond_5
-
-    iput-boolean v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mNeedToShowLightingEffectLater:Z
-
-    :goto_2
-    iget-object v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mDragManager:Lcom/android/launcher3/common/drag/DragManager;
-
-    if-eqz v6, :cond_2
-
-    iget-object v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mDragManager:Lcom/android/launcher3/common/drag/DragManager;
-
-    iget-object v7, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
-
-    invoke-virtual {v6, v7}, Lcom/android/launcher3/common/drag/DragManager;->removeDropTarget(Lcom/android/launcher3/common/drag/DropTarget;)V
-
-    iget-object v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mDragManager:Lcom/android/launcher3/common/drag/DragManager;
-
-    iget-object v7, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
-
-    invoke-virtual {v6, v7}, Lcom/android/launcher3/common/drag/DragManager;->addDropTarget(Lcom/android/launcher3/common/drag/DropTarget;)V
+    iget v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewAnimationTime:I
 
     invoke-static {}, Lcom/android/launcher3/Utilities;->isMobileKeyboardMode()Z
 
-    move-result v6
+    move-result v7
 
-    if-nez v6, :cond_2
+    invoke-virtual {v5, v8, v6, v7}, Lcom/android/launcher3/util/LightingEffectManager;->showEffect(ZIZ)V
 
-    if-nez v3, :cond_2
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mDragManager:Lcom/android/launcher3/common/drag/DragManager;
 
-    iget-object v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mDragManager:Lcom/android/launcher3/common/drag/DragManager;
+    if-eqz v5, :cond_2
 
-    iget-object v7, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mDragManager:Lcom/android/launcher3/common/drag/DragManager;
 
-    invoke-virtual {v6, v7}, Lcom/android/launcher3/common/drag/DragManager;->removeDropTarget(Lcom/android/launcher3/common/drag/DropTarget;)V
+    iget-object v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
 
-    iget-object v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mDragManager:Lcom/android/launcher3/common/drag/DragManager;
+    invoke-virtual {v5, v6}, Lcom/android/launcher3/common/drag/DragManager;->removeDropTarget(Lcom/android/launcher3/common/drag/DropTarget;)V
 
-    iget-object v7, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mDragManager:Lcom/android/launcher3/common/drag/DragManager;
 
-    invoke-virtual {v6, v7}, Lcom/android/launcher3/common/drag/DragManager;->addDropTarget(Lcom/android/launcher3/common/drag/DropTarget;)V
+    iget-object v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
+
+    invoke-virtual {v5, v6}, Lcom/android/launcher3/common/drag/DragManager;->addDropTarget(Lcom/android/launcher3/common/drag/DropTarget;)V
+
+    invoke-static {}, Lcom/android/launcher3/Utilities;->isMobileKeyboardMode()Z
+
+    move-result v5
+
+    if-nez v5, :cond_2
+
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mDragManager:Lcom/android/launcher3/common/drag/DragManager;
+
+    iget-object v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
+
+    invoke-virtual {v5, v6}, Lcom/android/launcher3/common/drag/DragManager;->removeDropTarget(Lcom/android/launcher3/common/drag/DropTarget;)V
+
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mDragManager:Lcom/android/launcher3/common/drag/DragManager;
+
+    iget-object v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
+
+    invoke-virtual {v5, v6}, Lcom/android/launcher3/common/drag/DragManager;->addDropTarget(Lcom/android/launcher3/common/drag/DropTarget;)V
 
     :cond_2
     return-void
 
     :cond_3
-    move v3, v7
+    sget-object v4, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Overground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
 
-    goto/16 :goto_0
+    iget-object v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
-    :cond_4
-    sget-object v5, Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;->Overground:Lcom/android/launcher3/common/tray/TrayManager$TrayLevel;
+    invoke-virtual {v5}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
 
-    iget-object v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
+    move-result-object v5
 
-    invoke-virtual {v8}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
+    const v6, 0x7f080058
 
-    move-result-object v8
-
-    const v9, 0x7f090052
-
-    invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
     const-string v1, ""
 
-    goto/16 :goto_1
-
-    :cond_5
-    if-eqz v3, :cond_6
-
-    sget-object v7, Lcom/android/launcher3/util/LightingEffectManager;->INSTANCE:Lcom/android/launcher3/util/LightingEffectManager;
-
-    iget v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewAnimationTime:I
-
-    invoke-virtual {v7, v6, v8, v6}, Lcom/android/launcher3/util/LightingEffectManager;->showEffect(ZIZ)V
-
-    goto :goto_2
-
-    :cond_6
-    sget-object v7, Lcom/android/launcher3/util/LightingEffectManager;->INSTANCE:Lcom/android/launcher3/util/LightingEffectManager;
-
-    iget v8, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewAnimationTime:I
-
-    invoke-static {}, Lcom/android/launcher3/Utilities;->isMobileKeyboardMode()Z
-
-    move-result v9
-
-    invoke-virtual {v7, v6, v8, v9}, Lcom/android/launcher3/util/LightingEffectManager;->showEffect(ZIZ)V
-
-    goto :goto_2
+    goto/16 :goto_0
 .end method
 
 .method public releaseTrayForDrag(Lcom/android/launcher3/common/tray/TrayManager$TrayInteractionListener;I)V
@@ -3374,14 +3014,6 @@
     const/4 v3, 0x0
 
     iput p2, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTrayHeight:I
-
-    iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mUnsetSuppressChangeStageAlarm:Lcom/android/launcher3/util/alarm/Alarm;
-
-    invoke-virtual {v0}, Lcom/android/launcher3/util/alarm/Alarm;->cancelAlarm()V
-
-    iput-boolean v3, p0, Lcom/android/launcher3/common/tray/TrayManager;->mSuppressChangeStage:Z
-
-    iput-boolean v3, p0, Lcom/android/launcher3/common/tray/TrayManager;->mNeedToShowLightingEffectLater:Z
 
     iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
@@ -3526,62 +3158,36 @@
 .end method
 
 .method public setBottomViewDragEnable()V
-    .locals 3
+    .locals 2
 
-    iget-object v1, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
+    iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
 
-    invoke-virtual {v1}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v1
-
-    iget v1, v1, Landroid/content/res/Configuration;->orientation:I
-
-    const/4 v2, 0x2
-
-    if-ne v1, v2, :cond_1
-
-    const/4 v0, 0x1
-
-    :goto_0
-    iget-object v1, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
-
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     invoke-static {}, Lcom/android/launcher3/Utilities;->isMobileKeyboardMode()Z
 
-    move-result v1
+    move-result v0
 
-    if-nez v1, :cond_2
+    if-nez v0, :cond_1
 
-    if-nez v0, :cond_2
+    iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
 
-    iget-object v1, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
+    iget-object v1, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewDragEventListener:Lcom/android/launcher3/common/tray/FakeView$DragEventCallback;
 
-    iget-object v2, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewDragEventListener:Lcom/android/launcher3/common/tray/FakeView$DragEventCallback;
-
-    invoke-virtual {v1, v2}, Lcom/android/launcher3/common/tray/FakeView;->setDragEventListener(Lcom/android/launcher3/common/tray/FakeView$DragEventCallback;)V
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/tray/FakeView;->setDragEventListener(Lcom/android/launcher3/common/tray/FakeView$DragEventCallback;)V
 
     :cond_0
-    :goto_1
+    :goto_0
     return-void
 
     :cond_1
-    const/4 v0, 0x0
+    iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/tray/FakeView;->setDragEventListener(Lcom/android/launcher3/common/tray/FakeView$DragEventCallback;)V
 
     goto :goto_0
-
-    :cond_2
-    iget-object v1, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v1, v2}, Lcom/android/launcher3/common/tray/FakeView;->setDragEventListener(Lcom/android/launcher3/common/tray/FakeView$DragEventCallback;)V
-
-    goto :goto_1
 .end method
 
 .method public setDisallowCallBacksVisibity(Z)V
@@ -3593,11 +3199,7 @@
 .end method
 
 .method public setSuppressChangeStageOnce()V
-    .locals 6
-
-    const/4 v5, 0x0
-
-    const/4 v4, 0x1
+    .locals 2
 
     const-string v0, "TrayManager"
 
@@ -3605,43 +3207,13 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mUnsetSuppressChangeStageAlarm:Lcom/android/launcher3/util/alarm/Alarm;
-
-    invoke-virtual {v0}, Lcom/android/launcher3/util/alarm/Alarm;->cancelAlarm()V
-
-    iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mUnsetSuppressChangeStageAlarm:Lcom/android/launcher3/util/alarm/Alarm;
-
-    iget-object v1, p0, Lcom/android/launcher3/common/tray/TrayManager;->mUnsetSuppressChangeStageAlarmListener:Lcom/android/launcher3/util/alarm/OnAlarmListener;
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/util/alarm/Alarm;->setOnAlarmListener(Lcom/android/launcher3/util/alarm/OnAlarmListener;)V
-
-    iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mUnsetSuppressChangeStageAlarm:Lcom/android/launcher3/util/alarm/Alarm;
-
-    const-wide/16 v2, 0x190
-
-    invoke-virtual {v0, v2, v3}, Lcom/android/launcher3/util/alarm/Alarm;->setAlarm(J)V
-
-    iput-boolean v4, p0, Lcom/android/launcher3/common/tray/TrayManager;->mSuppressChangeStage:Z
-
-    iput-boolean v5, p0, Lcom/android/launcher3/common/tray/TrayManager;->mNeedToShowLightingEffectLater:Z
-
-    sget-object v0, Lcom/android/launcher3/util/LightingEffectManager;->INSTANCE:Lcom/android/launcher3/util/LightingEffectManager;
-
-    iget v1, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewAnimationTime:I
-
-    invoke-static {}, Lcom/android/launcher3/Utilities;->isMobileKeyboardMode()Z
-
-    move-result v2
-
-    invoke-virtual {v0, v5, v1, v2}, Lcom/android/launcher3/util/LightingEffectManager;->showEffect(ZIZ)V
-
     iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelTopView:Lcom/android/launcher3/common/tray/FakeView;
 
-    invoke-virtual {v0, v4}, Lcom/android/launcher3/common/tray/FakeView;->setSuppressChangeStage(Z)V
+    invoke-virtual {v0}, Lcom/android/launcher3/common/tray/FakeView;->setSuppressChangeStageOnce()V
 
     iget-object v0, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTransferPanelBottomView:Lcom/android/launcher3/common/tray/FakeView;
 
-    invoke-virtual {v0, v4}, Lcom/android/launcher3/common/tray/FakeView;->setSuppressChangeStage(Z)V
+    invoke-virtual {v0}, Lcom/android/launcher3/common/tray/FakeView;->setSuppressChangeStageOnce()V
 
     return-void
 .end method
@@ -3660,12 +3232,6 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportBackgroundBlurByWindow()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
     iget-object v2, p0, Lcom/android/launcher3/common/tray/TrayManager;->mLauncher:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v2}, Lcom/android/launcher3/Launcher;->getWindow()Landroid/view/Window;
@@ -3753,7 +3319,7 @@
 
     iput v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFlingThresholdVelocity:I
 
-    const v6, 0x7f1000a0
+    const v6, 0x7f0f00ab
 
     invoke-virtual {p1, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -3761,7 +3327,7 @@
 
     check-cast v5, Landroid/view/ViewStub;
 
-    const v6, 0x7f1000a2
+    const v6, 0x7f0f00ad
 
     invoke-virtual {p1, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -3769,7 +3335,7 @@
 
     check-cast v0, Landroid/view/ViewStub;
 
-    const v6, 0x7f040044
+    const v6, 0x7f030044
 
     invoke-virtual {v5, v6}, Landroid/view/ViewStub;->setLayoutResource(I)V
 
@@ -3793,7 +3359,7 @@
 
     invoke-virtual {v6, v7}, Lcom/android/launcher3/common/tray/FakeView;->setDragEventListener(Lcom/android/launcher3/common/tray/FakeView$DragEventCallback;)V
 
-    const v6, 0x7f040043
+    const v6, 0x7f030043
 
     invoke-virtual {v0, v6}, Landroid/view/ViewStub;->setLayoutResource(I)V
 
@@ -3811,7 +3377,7 @@
 
     invoke-virtual {p0}, Lcom/android/launcher3/common/tray/TrayManager;->setBottomViewDragEnable()V
 
-    const v6, 0x7f0a00bd
+    const v6, 0x7f090152
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3819,7 +3385,7 @@
 
     iput v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewMaxHeight:I
 
-    const v6, 0x7f0a0161
+    const v6, 0x7f090151
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3835,7 +3401,7 @@
 
     iput v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewExtraMoveRange:I
 
-    const v6, 0x7f0c0034
+    const v6, 0x7f0b002c
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -3843,7 +3409,7 @@
 
     iput v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mFakeViewAnimationTime:I
 
-    const v6, 0x7f1000a5
+    const v6, 0x7f0f00b0
 
     invoke-virtual {p1, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -3851,7 +3417,7 @@
 
     iput-object v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mHightlightView:Landroid/view/View;
 
-    const v6, 0x7f1000a4
+    const v6, 0x7f0f00af
 
     invoke-virtual {p1, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -3859,7 +3425,7 @@
 
     iput-object v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mShadowView:Landroid/view/View;
 
-    const v6, 0x7f0a0162
+    const v6, 0x7f090153
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3867,7 +3433,7 @@
 
     iput v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mHighlightHeight:I
 
-    const v6, 0x7f0a0166
+    const v6, 0x7f090157
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3875,7 +3441,7 @@
 
     iput v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mShadowHeight:I
 
-    const v6, 0x7f0e002d
+    const v6, 0x7f0d002d
 
     const/4 v7, 0x0
 
@@ -3889,7 +3455,7 @@
 
     invoke-direct {p0, v6, v4}, Lcom/android/launcher3/common/tray/TrayManager;->handleHighlightAndShadow(FI)V
 
-    const v6, 0x7f0a0168
+    const v6, 0x7f090159
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3897,7 +3463,7 @@
 
     iput v6, p0, Lcom/android/launcher3/common/tray/TrayManager;->mTraySlipY:I
 
-    const v6, 0x7f0f000b
+    const v6, 0x7f0e000a
 
     invoke-virtual {v3, v6, v8, v8}, Landroid/content/res/Resources;->getFraction(III)F
 

@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">Sejarah carian</string>
-    <string name="accessibility_add_home_screen">Tambah halaman</string>
-    <string name="accessibility_button">Butang</string>
-    <string name="accessibility_dimmed">Lebih malap</string>
+    <string name="about">Mengenai %s</string>
+    <string name="about_already_installed">Versi terkini telah dipasang.</string>
+    <string name="about_home_screen">Skrin utama</string>
+    <string name="about_licence">Lesen sumber terbuka</string>
+    <string name="about_network_err">Tidak dapat menyemak kemas kini. Telefon anda tidak menyambung ke rangkaian.</string>
+    <string name="about_new_version_exist">Versi baru tersedia.</string>
+    <string name="about_retry">Cuba lagi</string>
+    <string name="about_update">Kemas kini</string>
+    <string name="about_version">Versi %s</string>
     <string name="activity_not_available">Aplikasi ini tidak tersedia untuk peranti anda.</string>
     <string name="activity_not_found">Aplikasi tidak dipasang.</string>
     <string name="align_to_bottom">Jajar ke bawah</string>
     <string name="align_to_top">Jajar ke atas</string>
-    <string name="app_locked_toast">%s dikunci.</string>
     <string name="app_search">Cari telefon</string>
     <string name="app_search_no_apps">Anda boleh menambah pintasan pada skrin utama daripada hasil carian.</string>
     <string name="app_search_no_results_found">Tiada keputusan ditemui</string>
     <string name="app_search_tablet">Cari tablet</string>
-    <string name="app_unlocked_toast">%s dibuka kunci.</string>
     <string name="application_name">Laman utama TouchWiz</string>
     <string name="apply">Guna</string>
     <string name="appsPicker_add_button">TAMBAH</string>
@@ -38,7 +42,6 @@
     <string name="default_page">Halaman lalai</string>
     <string name="default_scroll_format">Halaman %1$d dari %2$d.</string>
     <string name="disable_message">%1$s dan semua fungsi yang berkaitan akan dinyahaktifkan. Untuk mengaktifkan aplikasi sekali lagi, pergi ke Aturan > Aplikasi, kemudian pilih %2$s.</string>
-    <string name="disable_message_knox_mode">%1$s dan semua fungsi yang berkaitan akan dinyahaktifkan. Untuk mengaktifkan aplikasi sekali lagi, pergi ke Aturan %2$s > Aplikasi.</string>
     <string name="disable_message_vzw">%s dan semua ciri yang berkaitan dengannya akan dinyahaktifkan. Untuk mengaktifkannya lagi, pergi ke Aturan > Aplikasi > Pengurus aplikasi.</string>
     <string name="discard">Buang</string>
     <string name="do_not_show_again">Jangan tunjuk lagi</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">Tambah aplikasi</string>
     <string name="folder_closed">Pelipat ditutup.</string>
     <string name="folder_color">Warna pelipat</string>
+    <string name="folder_color_blue">Biru</string>
     <string name="folder_color_default">Warna pelipat lalai</string>
-    <string name="folder_color_pd">Warna %d</string>
+    <string name="folder_color_green">Hijau</string>
+    <string name="folder_color_orange">Jingga</string>
+    <string name="folder_color_yellow">Kuning</string>
     <string name="folder_hint_text">Masukkan nama pelipat</string>
     <string name="folder_microsoft_apps">Aplikasi Microsoft</string>
     <string name="folder_multi_search_bar_hint">Cari aplikasi</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">Tiada lagi ruang pada halaman ini</string>
     <string name="out_of_space_dialog">Tiada ruang pada halaman ini lagi. Item ini akan ditambah pada halaman baru.</string>
     <string name="permdesc_install_widget">Aplikasi ini boleh menambahkan widget pada skrin utama.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">Aplikasi ini boleh membaca aturan halaman kandungan tersuai yang terletak di bahagian kiri Skrin utama.</string>
     <string name="permdesc_write_zeropage_settings">Aplikasi ini boleh mengubah aturan halaman kandungan tersuai yang terletak di bahagian kiri Skrin utama.</string>
     <string name="permlab_install_widget">Tambah widget</string>
@@ -158,27 +165,21 @@
     <string name="selected">Dipilih</string>
     <string name="setting_apps_screen_grid">Grid skrin aplikasi</string>
     <string name="shortcut_duplicate">Pintasan %s telah wujud.</string>
-    <string name="shortcut_installed">Pintasan kepada %s ditambahkan pada Skrin utama.</string>
+    <string name="shortcut_installed">Pintasan ke %s ditambah pada skrin utama.</string>
     <string name="shortcut_moved_to_game_launcher">Ikon permainan dialihkan ke Game Launcher.</string>
     <string name="shortcut_uninstalled">Pintasan %s dialih keluar.</string>
     <string name="speak_now">Cakap sekarang</string>
     <string name="swipe_up_for_more_apps">Leret ke atas dan ke bawah untuk semua aplikasi</string>
     <string name="swipe_up_for_more_apps_att">Sapu ke atas atau ke bawah pada skrin untuk semua aplikasi</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">Leret ke atas atau bawah dengan dua jari untuk semua aplikasi.</string>
-    <string name="talkback_changed_to_ps">Ditukar kepada %s.</string>
+    <string name="talkback_checked">Dipilih</string>
     <string name="talkback_folder">Pelipat</string>
     <string name="talkback_n_items">%d item</string>
     <string name="talkback_press_back_key_to_close_folder">Tekan kekunci Kembali untuk menutup pelipat.</string>
-    <string name="talkback_tab_back_button_to_close_folder">Tekan butang Kembali untuk menutup pelipat.</string>
     <string name="title_settings">Aturan %s</string>
     <string name="tts_add_shortcut_on_home_screen_notice">Seret ikon ke bahagian atas skrin untuk ditambah pada Skrin utama.</string>
     <string name="tts_bottom_handle">Pemegang bawah</string>
-    <string name="tts_changed_to_apps_edit_mode">Diubah ke mod sunting Aplikasi.</string>
-    <string name="tts_changed_to_folder_edit_mode">Diubah ke Mod sunting pelipat</string>
-    <string name="tts_changed_to_home_screen_edit_mode">Ditukar ke mod sunting skrin Utama.</string>
     <string name="tts_folder_created">Pelipat dicipta.</string>
-    <string name="tts_holding_items">Memegang %1$s dan %2$d yang lain</string>
-    <string name="tts_hotseat_item_moved_from_external">Item dialihkan ke bar menu pada skrin utama.</string>
     <string name="tts_hotseat_move_to">Aturkan %d di bar menu.</string>
     <string name="tts_hover_item_over_other_item">%1$s di atas %2$s</string>
     <string name="tts_item_added">Item ditambah.</string>
@@ -199,7 +200,6 @@
     <string name="viewmore_playstore">Lihat lagi dalam Play Store</string>
     <string name="viewtype_alphabetic_grid">Susunan abjad</string>
     <string name="viewtype_custom_grid">Pesanan tersuai</string>
-    <string name="voice_search">Carian Suara</string>
     <string name="wallpaper_button_text">Hiasan latar</string>
     <string name="wallpapers_and_themes_button_text">Hiasan latar dan tema</string>
     <string name="widget_button_text">Widget</string>
@@ -209,5 +209,4 @@
     <string name="zeropage_download_msg">Untuk menggunakan fungsi ini, anda perlu memasang %1$s. Ketik MUAT TURUN untuk memuat turun dan memasang %2$s.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Berita Sohu</string>
-    <string name="zeropage_toutiao_title">Maklumat ekspres</string>
 </resources>

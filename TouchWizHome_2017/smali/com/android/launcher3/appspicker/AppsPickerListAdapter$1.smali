@@ -35,11 +35,11 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 6
+    .locals 3
 
-    const v3, 0x7f100030
+    const v2, 0x7f0f0040
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -49,136 +49,36 @@
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v2
 
-    instance-of v3, v3, Lcom/android/launcher3/common/base/item/IconInfo;
+    instance-of v2, v2, Lcom/android/launcher3/common/base/item/IconInfo;
 
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v1
 
-    check-cast v2, Lcom/android/launcher3/common/base/item/IconInfo;
-
-    const-string v1, ""
+    check-cast v1, Lcom/android/launcher3/common/base/item/IconInfo;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->toggle()V
 
-    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
+    iget-object v2, p0, Lcom/android/launcher3/appspicker/AppsPickerListAdapter$1;->this$0:Lcom/android/launcher3/appspicker/AppsPickerListAdapter;
 
-    move-result v3
+    invoke-static {v2}, Lcom/android/launcher3/appspicker/AppsPickerListAdapter;->access$000(Lcom/android/launcher3/appspicker/AppsPickerListAdapter;)Lcom/android/launcher3/appspicker/AppsPickerInfoInterface;
 
-    if-eqz v3, :cond_1
+    move-result-object v2
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    if-eqz v2, :cond_0
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object v2, p0, Lcom/android/launcher3/appspicker/AppsPickerListAdapter$1;->this$0:Lcom/android/launcher3/appspicker/AppsPickerListAdapter;
 
-    iget-object v4, v2, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
+    invoke-static {v2}, Lcom/android/launcher3/appspicker/AppsPickerListAdapter;->access$000(Lcom/android/launcher3/appspicker/AppsPickerListAdapter;)Lcom/android/launcher3/appspicker/AppsPickerInfoInterface;
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v3
-
-    const-string v4, " "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    iget-object v4, p0, Lcom/android/launcher3/appspicker/AppsPickerListAdapter$1;->this$0:Lcom/android/launcher3/appspicker/AppsPickerListAdapter;
-
-    invoke-static {v4}, Lcom/android/launcher3/appspicker/AppsPickerListAdapter;->access$000(Lcom/android/launcher3/appspicker/AppsPickerListAdapter;)Landroid/content/Context;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    const v5, 0x7f09009a
-
-    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {p1, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    :goto_0
-    sget-object v3, Lcom/android/launcher3/util/Talk;->INSTANCE:Lcom/android/launcher3/util/Talk;
-
-    invoke-virtual {v3, v1}, Lcom/android/launcher3/util/Talk;->say(Ljava/lang/String;)V
-
-    iget-object v3, p0, Lcom/android/launcher3/appspicker/AppsPickerListAdapter$1;->this$0:Lcom/android/launcher3/appspicker/AppsPickerListAdapter;
-
-    invoke-static {v3}, Lcom/android/launcher3/appspicker/AppsPickerListAdapter;->access$100(Lcom/android/launcher3/appspicker/AppsPickerListAdapter;)Lcom/android/launcher3/appspicker/AppsPickerInfoInterface;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_0
-
-    iget-object v3, p0, Lcom/android/launcher3/appspicker/AppsPickerListAdapter$1;->this$0:Lcom/android/launcher3/appspicker/AppsPickerListAdapter;
-
-    invoke-static {v3}, Lcom/android/launcher3/appspicker/AppsPickerListAdapter;->access$100(Lcom/android/launcher3/appspicker/AppsPickerListAdapter;)Lcom/android/launcher3/appspicker/AppsPickerInfoInterface;
-
-    move-result-object v3
-
-    invoke-interface {v3, v2}, Lcom/android/launcher3/appspicker/AppsPickerInfoInterface;->onToggleItem(Lcom/android/launcher3/common/base/item/IconInfo;)V
+    invoke-interface {v2, v1}, Lcom/android/launcher3/appspicker/AppsPickerInfoInterface;->onToggleItem(Lcom/android/launcher3/common/base/item/IconInfo;)V
 
     :cond_0
     return-void
-
-    :cond_1
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v4, v2, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string v4, " "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    iget-object v4, p0, Lcom/android/launcher3/appspicker/AppsPickerListAdapter$1;->this$0:Lcom/android/launcher3/appspicker/AppsPickerListAdapter;
-
-    invoke-static {v4}, Lcom/android/launcher3/appspicker/AppsPickerListAdapter;->access$000(Lcom/android/launcher3/appspicker/AppsPickerListAdapter;)Landroid/content/Context;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    const v5, 0x7f09006b
-
-    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {p1, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    goto :goto_0
 .end method

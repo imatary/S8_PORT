@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">Histórico de procuras</string>
-    <string name="accessibility_add_home_screen">Adicionar página</string>
-    <string name="accessibility_button">Botão</string>
-    <string name="accessibility_dimmed">Atenuado</string>
+    <string name="about">Acerca de %s</string>
+    <string name="about_already_installed">A versão mais recente já está instalada.</string>
+    <string name="about_home_screen">Ecrã principal</string>
+    <string name="about_licence">Licenças Open source</string>
+    <string name="about_network_err">Impossível verificar se existem actualizações. O seu telefone não está a ligado a uma rede.</string>
+    <string name="about_new_version_exist">Está disponível uma nova versão.</string>
+    <string name="about_retry">Repetir</string>
+    <string name="about_update">Actualizar</string>
+    <string name="about_version">Versão %s</string>
     <string name="activity_not_available">Esta aplicação não está disponível para o seu dispositivo.</string>
     <string name="activity_not_found">Aplicação não instalada.</string>
     <string name="align_to_bottom">Alinhar em baixo</string>
     <string name="align_to_top">Alinhar em cima</string>
-    <string name="app_locked_toast">%s bloqueado.</string>
     <string name="app_search">Procurar telefone</string>
     <string name="app_search_no_apps">Pode adicionar atalhos ao ecrã principal a partir dos resultados das procuras.</string>
     <string name="app_search_no_results_found">Nenhuns resultados encontrados</string>
     <string name="app_search_tablet">Procurar tablet</string>
-    <string name="app_unlocked_toast">%s desbloqueado.</string>
     <string name="application_name">TouchWiz Normal</string>
     <string name="apply">Aplicar</string>
     <string name="appsPicker_add_button">ADICIONAR</string>
@@ -38,7 +42,6 @@
     <string name="default_page">Página padrão</string>
     <string name="default_scroll_format">Página %1$d de %2$d.</string>
     <string name="disable_message">%1$s e todas as funções com ele relacionadas serão desactivadas. Para reactivar a aplicação, aceda a Definições > Aplicações e seleccione %2$s.</string>
-    <string name="disable_message_knox_mode">%1$s e todas as funções com ele relacionadas serão desactivadas. Para reactivar a aplicação, aceda a Definições do %2$s > Aplicações.</string>
     <string name="disable_message_vzw">%s e todas as funções com ele relacionadas serão desactivados. Para o reactivar vá para Definições > Aplicações > Gestor de aplicações.</string>
     <string name="discard">Eliminar</string>
     <string name="do_not_show_again">Não mostrar novamente</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">Adicionar aplicações</string>
     <string name="folder_closed">Pasta fechada.</string>
     <string name="folder_color">Cor de pasta</string>
+    <string name="folder_color_blue">Azul</string>
     <string name="folder_color_default">Cor de pasta padrão</string>
-    <string name="folder_color_pd">Cor %d</string>
+    <string name="folder_color_green">Verde</string>
+    <string name="folder_color_orange">Laranja</string>
+    <string name="folder_color_yellow">Amarelo</string>
     <string name="folder_hint_text">Introduzir nome pasta</string>
     <string name="folder_microsoft_apps">Aplicações Microsoft</string>
     <string name="folder_multi_search_bar_hint">Procurar aplicações</string>
@@ -111,7 +117,7 @@
     <string name="ok">OK</string>
     <string name="only_one_widget_instance_allowed">Widget %s já adicionado ao ecrã principal.</string>
     <string name="option_menu_contact_up">Contacte-nos</string>
-    <string name="option_menu_galaxy_essentials">GALAXY Essentials</string>
+    <string name="option_menu_galaxy_essentials">Galaxy Essentials</string>
     <string name="option_menu_home_settings">Definições</string>
     <string name="options_menu">Mais opções</string>
     <string name="options_menu_search_recommend">Procurar opções</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">Não existe mais espaço nesta página</string>
     <string name="out_of_space_dialog">Não existe mais espaço nesta página. O item vai ser adicionado a uma página nova.</string>
     <string name="permdesc_install_widget">Esta aplicação pode adicionar widgets ao ecrã principal.</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">Esta aplicação pode ler as definições da página de índice personalizada, situada à esquerda do Ecrã principal.</string>
     <string name="permdesc_write_zeropage_settings">Esta aplicação pode alterar as definições da página de índice personalizada, situada à esquerda do Ecrã principal.</string>
     <string name="permlab_install_widget">Adicionar widgets</string>
@@ -158,27 +165,21 @@
     <string name="selected">Seleccionado</string>
     <string name="setting_apps_screen_grid">Grelha do ecrã Aplicações</string>
     <string name="shortcut_duplicate">O atalho %s já existe.</string>
-    <string name="shortcut_installed">Atalho para %s adicionado ao Ecrã principal.</string>
+    <string name="shortcut_installed">Atalho para %s adicionado ao ecrã principal.</string>
     <string name="shortcut_moved_to_game_launcher">Ícone de jogo movido para o Game Launcher.</string>
     <string name="shortcut_uninstalled">Atalho %s removido.</string>
     <string name="speak_now">Fale agora</string>
     <string name="swipe_up_for_more_apps">Deslizar para cima ou para baixo, para ver todas as aplicações</string>
     <string name="swipe_up_for_more_apps_att">Deslizar para cima ou para baixo no ecrã, para todas as aplicações</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">Deslize com dois dedos para cima ou para baixo, para ver todas as aplicações.</string>
-    <string name="talkback_changed_to_ps">Alterado para %s.</string>
+    <string name="talkback_checked">Seleccionado</string>
     <string name="talkback_folder">Pasta</string>
     <string name="talkback_n_items">%d itens</string>
     <string name="talkback_press_back_key_to_close_folder">Prima a Tecla de retrocesso para fechar a pasta.</string>
-    <string name="talkback_tab_back_button_to_close_folder">Toque no Botão de retrocesso para fechar a pasta.</string>
     <string name="title_settings">Definições de %s</string>
     <string name="tts_add_shortcut_on_home_screen_notice">Arraste o ícone para a parte superior do ecrã, para adicionar ao Ecrã principal.</string>
     <string name="tts_bottom_handle">Alça inferior</string>
-    <string name="tts_changed_to_apps_edit_mode">Alterado para Modo de edição de aplicações.</string>
-    <string name="tts_changed_to_folder_edit_mode">Alterado para Modo de edição de pastas</string>
-    <string name="tts_changed_to_home_screen_edit_mode">Alterado para Modo de edição de ecrã principal.</string>
     <string name="tts_folder_created">Pasta criada.</string>
-    <string name="tts_holding_items">Tocar sem soltar em %1$s e mais %2$d</string>
-    <string name="tts_hotseat_item_moved_from_external">Item movido para a barra de menus no ecrã principal.</string>
     <string name="tts_hotseat_move_to">Posição de %d na barra de menu.</string>
     <string name="tts_hover_item_over_other_item">%1$s na parte superior de %2$s</string>
     <string name="tts_item_added">Item adicionado.</string>
@@ -199,7 +200,6 @@
     <string name="viewmore_playstore">Ver mais na Play Store</string>
     <string name="viewtype_alphabetic_grid">Ordem alfabética</string>
     <string name="viewtype_custom_grid">Ordem personalizada</string>
-    <string name="voice_search">Procura Voz</string>
     <string name="wallpaper_button_text">Fundos</string>
     <string name="wallpapers_and_themes_button_text">Fundos e temas</string>
     <string name="widget_button_text">Widgets</string>
@@ -209,5 +209,4 @@
     <string name="zeropage_download_msg">Para utilizar esta função, é necessário instalar o %1$s. Toque em TRANSFERIR para transferir e instalar o %2$s.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Sohu News</string>
-    <string name="zeropage_toutiao_title">Information express</string>
 </resources>

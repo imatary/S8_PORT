@@ -3,12 +3,12 @@
 .source "Workspace.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnDismissListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/Workspace;->onConfigurationChangedIfNeeded()V
+    value = Lcom/android/launcher3/home/Workspace;->showRemoveScreenPopup()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,46 +34,20 @@
 
 
 # virtual methods
-.method public run()V
+.method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
 
-    const/4 v1, 0x1
-
-    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$16;->this$0:Lcom/android/launcher3/home/Workspace;
-
-    invoke-static {v0, v1}, Lcom/android/launcher3/home/Workspace;->access$1502(Lcom/android/launcher3/home/Workspace;Z)Z
-
-    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$16;->this$0:Lcom/android/launcher3/home/Workspace;
-
-    invoke-static {v0}, Lcom/android/launcher3/home/Workspace;->access$1600(Lcom/android/launcher3/home/Workspace;)Ljava/util/List;
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v0
 
-    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$16;->this$0:Lcom/android/launcher3/home/Workspace;
-
-    invoke-static {v0}, Lcom/android/launcher3/home/Workspace;->access$1700(Lcom/android/launcher3/home/Workspace;)Lcom/android/launcher3/home/HomeBindController;
+    invoke-virtual {v0}, Lcom/android/launcher3/LauncherAppState;->getTopViewChangedMessageHandler()Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/launcher3/home/HomeBindController;->finishBindingItems()V
+    const/4 v1, 0x5
 
-    :goto_0
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;->sendMessage(I)V
+
     return-void
-
-    :cond_0
-    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$16;->this$0:Lcom/android/launcher3/home/Workspace;
-
-    invoke-static {v0, v1}, Lcom/android/launcher3/home/Workspace;->access$1802(Lcom/android/launcher3/home/Workspace;I)I
-
-    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$16;->this$0:Lcom/android/launcher3/home/Workspace;
-
-    invoke-static {v0}, Lcom/android/launcher3/home/Workspace;->access$000(Lcom/android/launcher3/home/Workspace;)V
-
-    goto :goto_0
 .end method

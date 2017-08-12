@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/HomeLoader;->removeScreen(I)V
+    value = Lcom/android/launcher3/home/HomeLoader;->updateContactShortcutInfo(JLandroid/content/Intent;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/home/HomeLoader;
 
-.field final synthetic val$index:I
+.field final synthetic val$r:Ljava/lang/Runnable;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/home/HomeLoader;I)V
+.method constructor <init>(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$41;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
-    iput p2, p0, Lcom/android/launcher3/home/HomeLoader$41;->val$index:I
+    iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$41;->val$r:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,214 +39,47 @@
 
 # virtual methods
 .method public run()V
-    .locals 9
+    .locals 3
 
-    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$9500()Ljava/lang/Object;
+    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$9700()Z
 
-    move-result-object v6
+    move-result v0
 
-    monitor-enter v6
+    if-eqz v0, :cond_0
+
+    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$9800()Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    monitor-enter v1
 
     :try_start_0
-    iget v3, p0, Lcom/android/launcher3/home/HomeLoader$41;->val$index:I
-
-    iget-object v7, p0, Lcom/android/launcher3/home/HomeLoader$41;->this$0:Lcom/android/launcher3/home/HomeLoader;
-
-    invoke-static {v7}, Lcom/android/launcher3/home/HomeLoader;->access$9600(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
-
-    move-result v7
-
-    if-lt v3, v7, :cond_0
-
-    const-string v3, "HomeLoader"
-
-    const-string v7, "removeScreen : remove page should be less than total workspace screen count."
-
-    invoke-static {v3, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    :goto_0
-    monitor-exit v6
-
-    :goto_1
-    return-void
-
-    :cond_0
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$41;->this$0:Lcom/android/launcher3/home/HomeLoader;
-
-    invoke-static {v3}, Lcom/android/launcher3/home/HomeLoader;->access$9700(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
-
-    move-result-object v3
-
-    iget v7, p0, Lcom/android/launcher3/home/HomeLoader$41;->val$index:I
-
-    invoke-virtual {v3, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/Long;
-
-    invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v4
-
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$41;->this$0:Lcom/android/launcher3/home/HomeLoader;
-
-    invoke-static {v3}, Lcom/android/launcher3/home/HomeLoader;->access$9800(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/HashMap;
-
-    move-result-object v3
-
-    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v7
-
-    invoke-virtual {v3, v7}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_1
-
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$41;->this$0:Lcom/android/launcher3/home/HomeLoader;
-
-    invoke-static {v3}, Lcom/android/launcher3/home/HomeLoader;->access$9900(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/HashMap;
-
-    move-result-object v3
-
-    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v7
-
-    invoke-virtual {v3, v7}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/util/ArrayList;
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->isEmpty()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    :cond_1
-    const/4 v1, 0x1
-
-    :goto_2
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
-
-    if-nez v1, :cond_4
-
-    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/android/launcher3/LauncherAppState;->isHomeOnlyModeEnabled()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_3
-
-    const-string v3, "HomeLoader"
-
-    const-string v7, "removeScreen : it can\'t remove a page with items on HomeOnlyMode"
-
-    invoke-static {v3, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    monitor-exit v6
-
-    goto :goto_1
-
-    :catchall_0
-    move-exception v3
-
-    monitor-exit v6
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v3
-
-    :cond_2
-    const/4 v1, 0x0
-
-    goto :goto_2
-
-    :cond_3
-    :try_start_1
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$41;->this$0:Lcom/android/launcher3/home/HomeLoader;
-
-    invoke-static {v3}, Lcom/android/launcher3/home/HomeLoader;->access$10000(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/HashMap;
-
-    move-result-object v3
-
-    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v7
-
-    invoke-virtual {v3, v7}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/util/Collection;
-
-    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
-
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$41;->this$0:Lcom/android/launcher3/home/HomeLoader;
-
-    invoke-static {v3}, Lcom/android/launcher3/home/HomeLoader;->access$10100(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v2}, Lcom/android/launcher3/common/model/FavoritesUpdater;->deleteItemsFromDatabase(Ljava/util/ArrayList;)V
-
-    :cond_4
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$41;->this$0:Lcom/android/launcher3/home/HomeLoader;
-
-    invoke-static {v3}, Lcom/android/launcher3/home/HomeLoader;->access$10200(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
-
-    move-result-object v3
-
-    iget v7, p0, Lcom/android/launcher3/home/HomeLoader$41;->val$index:I
-
-    invoke-virtual {v3, v7}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
-
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$41;->this$0:Lcom/android/launcher3/home/HomeLoader;
-
-    invoke-static {v3}, Lcom/android/launcher3/home/HomeLoader;->access$10500(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
-
-    move-result-object v3
-
-    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$10300()Landroid/content/Context;
-
-    move-result-object v7
-
-    iget-object v8, p0, Lcom/android/launcher3/home/HomeLoader$41;->this$0:Lcom/android/launcher3/home/HomeLoader;
-
-    invoke-static {v8}, Lcom/android/launcher3/home/HomeLoader;->access$10400(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
-
-    move-result-object v8
-
-    invoke-virtual {v3, v7, v8}, Lcom/android/launcher3/common/model/FavoritesUpdater;->updateScreenOrder(Landroid/content/Context;Ljava/util/ArrayList;)V
-
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$41;->this$0:Lcom/android/launcher3/home/HomeLoader;
-
-    invoke-static {v3}, Lcom/android/launcher3/home/HomeLoader;->access$1100(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$9900()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$41;->this$0:Lcom/android/launcher3/home/HomeLoader;
+    iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$41;->val$r:Ljava/lang/Runnable;
 
-    new-instance v7, Lcom/android/launcher3/home/HomeLoader$41$1;
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    invoke-direct {v7, p0, v0, v2}, Lcom/android/launcher3/home/HomeLoader$41$1;-><init>(Lcom/android/launcher3/home/HomeLoader$41;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;)V
+    monitor-exit v1
 
-    invoke-static {v3, v7}, Lcom/android/launcher3/home/HomeLoader;->access$10600(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    :goto_0
+    return-void
 
-    goto/16 :goto_0
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader$41;->val$r:Ljava/lang/Runnable;
+
+    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->access$10000(Ljava/lang/Runnable;)V
+
+    goto :goto_0
 .end method

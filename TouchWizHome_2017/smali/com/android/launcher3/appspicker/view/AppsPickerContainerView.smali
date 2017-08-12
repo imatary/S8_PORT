@@ -153,22 +153,6 @@
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;)Lcom/android/launcher3/allapps/controller/AllAppsSearchBarController;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mSearchBarController:Lcom/android/launcher3/allapps/controller/AllAppsSearchBarController;
-
-    return-object v0
-.end method
-
-.method static synthetic access$400()Ljava/lang/String;
-    .locals 1
-
-    sget-object v0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->TAG:Ljava/lang/String;
-
-    return-object v0
-.end method
-
 .method private checkHiddenItem()V
     .locals 6
 
@@ -738,7 +722,7 @@
 
     if-eqz p1, :cond_0
 
-    const v1, 0x7f0e0003
+    const v1, 0x7f0d0004
 
     :goto_0
     invoke-virtual {p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->getResources()Landroid/content/res/Resources;
@@ -754,7 +738,7 @@
     return v0
 
     :cond_0
-    const v1, 0x7f0e0004
+    const v1, 0x7f0d0005
 
     goto :goto_0
 .end method
@@ -837,7 +821,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09009a
+    const v4, 0x7f0800ab
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1036,7 +1020,7 @@
 .method public changeColorAndBackground()V
     .locals 14
 
-    const v13, 0x7f0a016e
+    const v13, 0x7f090160
 
     const/4 v12, 0x0
 
@@ -1106,7 +1090,7 @@
 
     iget-object v10, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mSearchBarContainerView:Landroid/view/ViewGroup;
 
-    const v11, 0x7f100032
+    const v11, 0x7f0f0042
 
     invoke-virtual {v10, v11}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1200,17 +1184,13 @@
 .end method
 
 .method public clearSearchResult()V
-    .locals 3
-
-    const/4 v2, 0x0
+    .locals 2
 
     iget-object v0, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mAppsList:Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;->setOrderedFilter(Ljava/util/ArrayList;)V
-
-    invoke-virtual {p0, v2}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->notifyAppsListChanged(Z)V
 
     iget-object v0, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mSearchListAdapter:Lcom/android/launcher3/appspicker/AppsPickerSearchListAdapter;
 
@@ -1248,7 +1228,9 @@
 
     iget-object v0, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mSearchQueryBuilder:Landroid/text/SpannableStringBuilder;
 
-    invoke-static {v0, v2}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;I)V
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;I)V
 
     :cond_2
     return-void
@@ -1465,7 +1447,7 @@
     return-object v0
 .end method
 
-.method public notifyAppsListChanged(Z)V
+.method public notifyAppsListChanged()V
     .locals 2
 
     sget-object v0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->TAG:Ljava/lang/String;
@@ -1473,14 +1455,6 @@
     const-string v1, "notifyAppsListChanged()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mAppsList:Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;
-
-    invoke-virtual {v0}, Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;->resetMap()V
-
-    iget-object v0, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mAppsList:Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;
-
-    invoke-virtual {v0}, Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;->setNumAppsPerRow()V
 
     iget-object v0, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mAppsList:Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;
 
@@ -1504,13 +1478,8 @@
     invoke-virtual {v0}, Lcom/android/launcher3/appspicker/AppsPickerSearchListAdapter;->notifyDataSetChanged()V
 
     :cond_1
-    invoke-virtual {p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->setScrollIndexer()V
-
-    if-eqz p1, :cond_2
-
     invoke-direct {p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->checkHiddenItem()V
 
-    :cond_2
     invoke-direct {p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->setSelectionCount()V
 
     return-void
@@ -1533,7 +1502,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView$1;-><init>(Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;)V
 
-    const v1, 0x7f100025
+    const v1, 0x7f0f0035
 
     invoke-virtual {p0, v1}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->findViewById(I)Landroid/view/View;
 
@@ -1547,7 +1516,7 @@
 
     invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    const v1, 0x7f100022
+    const v1, 0x7f0f0032
 
     invoke-virtual {p0, v1}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->findViewById(I)Landroid/view/View;
 
@@ -1557,7 +1526,7 @@
 
     iput-object v1, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mSelectionText:Landroid/widget/TextView;
 
-    const v1, 0x7f100023
+    const v1, 0x7f0f0033
 
     invoke-virtual {p0, v1}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->findViewById(I)Landroid/view/View;
 
@@ -1583,12 +1552,12 @@
 
     iget-object v1, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mAddButtonContainer:Landroid/view/View;
 
-    const v2, 0x7f0200cb
+    const v2, 0x7f0200d5
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setBackgroundResource(I)V
 
     :cond_0
-    const v1, 0x7f100024
+    const v1, 0x7f0f0034
 
     invoke-virtual {p0, v1}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->findViewById(I)Landroid/view/View;
 
@@ -1606,7 +1575,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f100026
+    const v1, 0x7f0f0036
 
     invoke-virtual {p0, v1}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->findViewById(I)Landroid/view/View;
 
@@ -1750,43 +1719,6 @@
     return-void
 .end method
 
-.method public onWindowFocusChanged(Z)V
-    .locals 3
-
-    invoke-super {p0, p1}, Lcom/android/launcher3/common/base/view/BaseContainerView;->onWindowFocusChanged(Z)V
-
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/android/launcher3/Launcher;
-
-    invoke-virtual {v1}, Lcom/android/launcher3/Launcher;->getStageManager()Lcom/android/launcher3/common/stage/StageManager;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/android/launcher3/common/stage/StageManager;->getTopStage()Lcom/android/launcher3/common/stage/Stage;
-
-    move-result-object v0
-
-    instance-of v1, v0, Lcom/android/launcher3/appspicker/controller/AppsPickerController;
-
-    if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mSearchBarContainerView:Landroid/view/ViewGroup;
-
-    new-instance v2, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView$3;
-
-    invoke-direct {v2, p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView$3;-><init>(Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;)V
-
-    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
-
-    :cond_0
-    return-void
-.end method
-
 .method public reset()V
     .locals 3
 
@@ -1864,7 +1796,7 @@
 .end method
 
 .method public setPickerMode(I)V
-    .locals 4
+    .locals 2
 
     const/4 v0, 0x1
 
@@ -1872,53 +1804,11 @@
 
     iget-object v0, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mAddButtonText:Landroid/widget/TextView;
 
-    const v1, 0x7f09003b
+    const v1, 0x7f080041
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     :goto_0
-    iget-object v0, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mAddButtonText:Landroid/widget/TextView;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v2, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mAddButtonText:Landroid/widget/TextView;
-
-    invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    const v3, 0x7f090021
-
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
-
     iput p1, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mPickerMode:I
 
     return-void
@@ -1926,7 +1816,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->mAddButtonText:Landroid/widget/TextView;
 
-    const v1, 0x7f090010
+    const v1, 0x7f080014
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

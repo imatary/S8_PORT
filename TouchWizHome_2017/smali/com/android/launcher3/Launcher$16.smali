@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/Launcher;->shutdownWallpaperScroller()V
+    value = Lcom/android/launcher3/Launcher;->finishSettingsActivity()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,28 +35,47 @@
 
 # virtual methods
 .method public run()V
-    .locals 1
+    .locals 4
 
-    iget-object v0, p0, Lcom/android/launcher3/Launcher$16;->this$0:Lcom/android/launcher3/Launcher;
+    const/4 v3, 0x0
 
-    invoke-static {v0}, Lcom/android/launcher3/Launcher;->access$1100(Lcom/android/launcher3/Launcher;)Z
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
-    move-result v0
+    move-result-object v2
 
-    if-eqz v0, :cond_0
+    invoke-virtual {v2}, Lcom/android/launcher3/LauncherAppState;->getSettingsActivity()Lcom/android/launcher3/SettingsActivity;
 
-    iget-object v0, p0, Lcom/android/launcher3/Launcher$16;->this$0:Lcom/android/launcher3/Launcher;
+    move-result-object v1
 
-    invoke-static {v0}, Lcom/android/launcher3/Launcher;->access$1200(Lcom/android/launcher3/Launcher;)Lcom/android/launcher3/common/wallpaperscroller/WallpaperScroller;
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Lcom/android/launcher3/SettingsActivity;->finish()V
+
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v3}, Lcom/android/launcher3/LauncherAppState;->setSettingsActivity(Lcom/android/launcher3/SettingsActivity;)V
+
+    :cond_0
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/android/launcher3/LauncherAppState;->getAppsButtonSettingsActivity()Lcom/android/launcher3/home/AppsButtonSettingsActivity;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/launcher3/common/wallpaperscroller/WallpaperScroller;->shutdown()V
+    if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/launcher3/Launcher$16;->this$0:Lcom/android/launcher3/Launcher;
+    invoke-virtual {v0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->finish()V
 
-    invoke-static {v0}, Lcom/android/launcher3/Launcher;->access$1300(Lcom/android/launcher3/Launcher;)V
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
-    :cond_0
+    move-result-object v2
+
+    invoke-virtual {v2, v3}, Lcom/android/launcher3/LauncherAppState;->setSettingsActivity(Lcom/android/launcher3/SettingsActivity;)V
+
+    :cond_1
     return-void
 .end method

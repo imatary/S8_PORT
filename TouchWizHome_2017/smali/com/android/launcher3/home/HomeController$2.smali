@@ -53,21 +53,5 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/home/HomeController;->enterResizeState(Landroid/appwidget/AppWidgetHostView;Lcom/android/launcher3/common/base/view/CellLayout;)V
 
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeController$2;->this$0:Lcom/android/launcher3/home/HomeController;
-
-    invoke-static {v0}, Lcom/android/launcher3/home/HomeController;->access$300(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/home/Workspace;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/launcher3/home/Workspace;->hideHintPages()V
-
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeController$2;->this$0:Lcom/android/launcher3/home/HomeController;
-
-    invoke-static {v0}, Lcom/android/launcher3/home/HomeController;->access$300(Lcom/android/launcher3/home/HomeController;)Lcom/android/launcher3/home/Workspace;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/launcher3/home/Workspace;->removeExtraEmptyScreenOnDrop()V
-
     return-void
 .end method

@@ -53,7 +53,7 @@
 
     iget-object v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$38;->val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
 
-    invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$5100()Lcom/android/launcher3/LauncherModel;
+    invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$4800()Lcom/android/launcher3/LauncherModel;
 
     move-result-object v4
 

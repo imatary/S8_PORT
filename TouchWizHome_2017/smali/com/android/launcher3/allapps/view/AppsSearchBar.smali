@@ -69,9 +69,9 @@
 
     const/4 v6, 0x0
 
-    const v5, 0x7f0e0035
+    const v5, 0x7f0d0035
 
-    const v4, 0x7f0e0027
+    const v4, 0x7f0d0027
 
     const/4 v3, 0x1
 
@@ -95,7 +95,7 @@
 
     aget-object v0, v0, v2
 
-    const v1, 0x7f0e0034
+    const v1, 0x7f0d0034
 
     iput v1, v0, Lcom/android/launcher3/allapps/view/AppsSearchBar$Style;->textColorId:I
 
@@ -115,7 +115,7 @@
 
     aget-object v0, v0, v2
 
-    const v1, 0x7f0e0029
+    const v1, 0x7f0d0029
 
     iput v1, v0, Lcom/android/launcher3/allapps/view/AppsSearchBar$Style;->dividerColorId:I
 
@@ -143,7 +143,7 @@
 
     aget-object v0, v0, v3
 
-    const v1, 0x7f0e0028
+    const v1, 0x7f0d0028
 
     iput v1, v0, Lcom/android/launcher3/allapps/view/AppsSearchBar$Style;->backgroundColorId:I
 
@@ -151,7 +151,7 @@
 
     aget-object v0, v0, v3
 
-    const v1, 0x7f0e002a
+    const v1, 0x7f0d002a
 
     iput v1, v0, Lcom/android/launcher3/allapps/view/AppsSearchBar$Style;->dividerColorId:I
 
@@ -219,7 +219,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09018c
+    const v1, 0x7f08018c
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -254,6 +254,109 @@
     return-object v0
 .end method
 
+.method static synthetic access$400(Lcom/android/launcher3/allapps/view/AppsSearchBar;)Z
+    .locals 1
+
+    invoke-direct {p0}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->launchSfinder()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method private launchSfinder()Z
+    .locals 8
+
+    const/4 v6, 0x0
+
+    iget-object v1, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mAppsController:Lcom/android/launcher3/allapps/controller/AppsController;
+
+    const-string v2, "com.samsung.android.app.galaxyfinder"
+
+    invoke-virtual {v1, v2}, Lcom/android/launcher3/allapps/controller/AppsController;->isAppInstalled(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    :goto_0
+    return v6
+
+    :cond_0
+    new-instance v7, Landroid/content/Intent;
+
+    invoke-direct {v7}, Landroid/content/Intent;-><init>()V
+
+    new-instance v1, Landroid/content/ComponentName;
+
+    const-string v2, "com.samsung.android.app.galaxyfinder"
+
+    const-string v3, "com.samsung.android.app.galaxyfinder.GalaxyFinderActivity"
+
+    invoke-direct {v1, v2, v3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v7, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    const-string v1, "launch_mode"
+
+    const-string v2, "text_input"
+
+    invoke-virtual {v7, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    :try_start_0
+    invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v7}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_1
+    invoke-static {}, Lcom/android/launcher3/util/logging/GSIMLogging;->getInstance()Lcom/android/launcher3/util/logging/GSIMLogging;
+
+    move-result-object v1
+
+    const-string v2, "APSC"
+
+    const/4 v3, 0x0
+
+    const-wide/16 v4, -0x1
+
+    invoke-virtual/range {v1 .. v6}, Lcom/android/launcher3/util/logging/GSIMLogging;->insertLogging(Ljava/lang/String;Ljava/lang/String;JZ)V
+
+    const/4 v6, 0x1
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    const-string v1, "AppsSearchBar"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Unable to start S Finder.  intent="
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    goto :goto_1
+.end method
+
 .method private setColorFilterToDrawable(Landroid/graphics/drawable/Drawable;Landroid/graphics/ColorFilter;)V
     .locals 0
 
@@ -269,43 +372,43 @@
 
     const/4 v9, 0x1
 
-    const v7, 0x7f1000f8
+    const v7, 0x7f0f0103
 
     invoke-interface {p1, v7}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v6
 
-    const v7, 0x7f1000fc
+    const v7, 0x7f0f0107
 
     invoke-interface {p1, v7}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v1
 
-    const v7, 0x7f1000f9
+    const v7, 0x7f0f0104
 
     invoke-interface {p1, v7}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v5
 
-    const v7, 0x7f1000fd
+    const v7, 0x7f0f0108
 
     invoke-interface {p1, v7}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v4
 
-    const v7, 0x7f1000fe
+    const v7, 0x7f0f0109
 
     invoke-interface {p1, v7}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v7, 0x7f1000fa
+    const v7, 0x7f0f0105
 
     invoke-interface {p1, v7}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v3
 
-    const v7, 0x7f1000fb
+    const v7, 0x7f0f0106
 
     invoke-interface {p1, v7}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -555,115 +658,22 @@
     return-void
 .end method
 
-.method public launchSfinder()Z
-    .locals 8
-
-    const/4 v6, 0x0
-
-    iget-object v1, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mAppsController:Lcom/android/launcher3/allapps/controller/AppsController;
-
-    const-string v2, "com.samsung.android.app.galaxyfinder"
-
-    invoke-virtual {v1, v2}, Lcom/android/launcher3/allapps/controller/AppsController;->isAppInstalled(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    :goto_0
-    return v6
-
-    :cond_0
-    new-instance v7, Landroid/content/Intent;
-
-    invoke-direct {v7}, Landroid/content/Intent;-><init>()V
-
-    new-instance v1, Landroid/content/ComponentName;
-
-    const-string v2, "com.samsung.android.app.galaxyfinder"
-
-    const-string v3, "com.samsung.android.app.galaxyfinder.GalaxyFinderActivity"
-
-    invoke-direct {v1, v2, v3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-virtual {v7, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
-
-    const-string v1, "launch_mode"
-
-    const-string v2, "text_input"
-
-    invoke-virtual {v7, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    :try_start_0
-    invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v7}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-    :try_end_0
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :goto_1
-    invoke-static {}, Lcom/android/launcher3/util/logging/GSIMLogging;->getInstance()Lcom/android/launcher3/util/logging/GSIMLogging;
-
-    move-result-object v1
-
-    const-string v2, "APSC"
-
-    const/4 v3, 0x0
-
-    const-wide/16 v4, -0x1
-
-    invoke-virtual/range {v1 .. v6}, Lcom/android/launcher3/util/logging/GSIMLogging;->insertLogging(Ljava/lang/String;Ljava/lang/String;JZ)V
-
-    const/4 v6, 0x1
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    const-string v1, "AppsSearchBar"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Unable to start S Finder.  intent="
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    goto :goto_1
-.end method
-
 .method protected onFinishInflate()V
-    .locals 13
+    .locals 12
 
-    const v12, 0x7f1000ac
+    const v11, 0x7f0f00b7
 
-    const v11, 0x7f100043
+    const v10, 0x7f0f0053
 
-    const/16 v10, 0x8
-
-    const/4 v9, 0x0
+    const/16 v9, 0x8
 
     const/4 v8, 0x0
 
+    const/4 v7, 0x0
+
     invoke-super {p0}, Landroid/widget/LinearLayout;->onFinishInflate()V
 
-    const v5, 0x7f10003e
+    const v5, 0x7f0f004e
 
     invoke-virtual {p0, v5}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
 
@@ -673,7 +683,7 @@
 
     iput-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchbarWrapper:Landroid/widget/LinearLayout;
 
-    const v5, 0x7f10003f
+    const v5, 0x7f0f004f
 
     invoke-virtual {p0, v5}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
 
@@ -689,7 +699,7 @@
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchView:Landroid/widget/SearchView;
 
-    invoke-virtual {v5, v8}, Landroid/widget/SearchView;->setBackgroundColor(I)V
+    invoke-virtual {v5, v7}, Landroid/widget/SearchView;->setBackgroundColor(I)V
 
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->getResources()Landroid/content/res/Resources;
 
@@ -697,7 +707,7 @@
 
     const-string v6, "android:id/search_voice_btn"
 
-    invoke-virtual {v5, v6, v9, v9}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v5, v6, v8, v8}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v4
 
@@ -711,7 +721,7 @@
 
     iput-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchVoiceButton:Landroid/widget/ImageView;
 
-    const v5, 0x7f1000cf
+    const v5, 0x7f0f00da
 
     invoke-virtual {p0, v5}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
 
@@ -723,7 +733,7 @@
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchView:Landroid/widget/SearchView;
 
-    invoke-virtual {v5, v8}, Landroid/widget/SearchView;->setInputType(I)V
+    invoke-virtual {v5, v7}, Landroid/widget/SearchView;->setInputType(I)V
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchView:Landroid/widget/SearchView;
 
@@ -745,31 +755,10 @@
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchVoiceButton:Landroid/widget/ImageView;
 
-    invoke-virtual {v5, v10}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v5, v9}, Landroid/widget/ImageView;->setVisibility(I)V
 
     :cond_0
-    invoke-static {}, Lcom/android/launcher3/LauncherFeature;->isTablet()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchView:Landroid/widget/SearchView;
-
-    invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v6
-
-    const v7, 0x7f09000c
-
-    invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v5, v6}, Landroid/widget/SearchView;->setQueryHint(Ljava/lang/CharSequence;)V
-
-    :cond_1
-    const v5, 0x7f100041
+    const v5, 0x7f0f0051
 
     invoke-virtual {p0, v5}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
 
@@ -777,7 +766,7 @@
 
     iput-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mDivider:Landroid/view/View;
 
-    const v5, 0x7f10003d
+    const v5, 0x7f0f004d
 
     invoke-virtual {p0, v5}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
 
@@ -795,9 +784,9 @@
 
     move-result v5
 
-    if-eqz v5, :cond_4
+    if-eqz v5, :cond_3
 
-    const v5, 0x7f100042
+    const v5, 0x7f0f0052
 
     invoke-virtual {p0, v5}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
 
@@ -805,7 +794,7 @@
 
     iput-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mMoreButtonContainer:Landroid/view/View;
 
-    const v5, 0x7f1000ab
+    const v5, 0x7f0f00b6
 
     invoke-virtual {p0, v5}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
 
@@ -815,17 +804,17 @@
 
     iput-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mMoreButton:Landroid/widget/ImageButton;
 
+    invoke-virtual {p0, v10}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v9}, Landroid/view/View;->setVisibility(I)V
+
     invoke-virtual {p0, v11}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
 
     move-result-object v5
 
-    invoke-virtual {v5, v10}, Landroid/view/View;->setVisibility(I)V
-
-    invoke-virtual {p0, v12}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v10}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v5, v9}, Landroid/view/View;->setVisibility(I)V
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mMoreButton:Landroid/widget/ImageButton;
 
@@ -833,7 +822,7 @@
 
     move-result-object v5
 
-    if-eqz v5, :cond_2
+    if-eqz v5, :cond_1
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mMoreButton:Landroid/widget/ImageButton;
 
@@ -843,7 +832,7 @@
 
     invoke-virtual {v5}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
 
-    :cond_2
+    :cond_1
     :goto_0
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->getResources()Landroid/content/res/Resources;
 
@@ -851,7 +840,7 @@
 
     const-string v5, "android:id/search_src_text"
 
-    invoke-virtual {v0, v5, v9, v9}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v0, v5, v8, v8}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v1
 
@@ -863,7 +852,7 @@
 
     check-cast v2, Landroid/widget/EditText;
 
-    invoke-virtual {v2, v8}, Landroid/widget/EditText;->setLongClickable(Z)V
+    invoke-virtual {v2, v7}, Landroid/widget/EditText;->setLongClickable(Z)V
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchViewKeyListener:Landroid/view/View$OnKeyListener;
 
@@ -873,9 +862,7 @@
 
     move-result v5
 
-    if-nez v5, :cond_3
-
-    invoke-virtual {v2, v8}, Landroid/widget/EditText;->semSetDirectPenInputEnabled(Z)V
+    if-nez v5, :cond_2
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchView:Landroid/widget/SearchView;
 
@@ -887,7 +874,7 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/AutoCompleteTextView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    :cond_3
+    :cond_2
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchVoiceButton:Landroid/widget/ImageView;
 
     iget-object v6, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mVoiceBtnOnClickListener:Landroid/view/View$OnClickListener;
@@ -908,7 +895,7 @@
 
     const-string v6, "android:id/search_mag_icon"
 
-    invoke-virtual {v5, v6, v9, v9}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v5, v6, v8, v8}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v3
 
@@ -922,7 +909,7 @@
 
     iput-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mMagIcon:Landroid/widget/ImageView;
 
-    invoke-virtual {p0, v8}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->changeColorAndBackground(Z)V
+    invoke-virtual {p0, v7}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->changeColorAndBackground(Z)V
 
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->getContext()Landroid/content/Context;
 
@@ -936,14 +923,14 @@
 
     return-void
 
-    :cond_4
-    invoke-virtual {p0, v11}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
+    :cond_3
+    invoke-virtual {p0, v10}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
 
     move-result-object v5
 
     iput-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mMoreButtonContainer:Landroid/view/View;
 
-    invoke-virtual {p0, v12}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v11}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->findViewById(I)Landroid/view/View;
 
     move-result-object v5
 
@@ -953,15 +940,15 @@
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchbarWrapper:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v5, v10}, Landroid/widget/LinearLayout;->setVisibility(I)V
+    invoke-virtual {v5, v9}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mMoreButtonContainer:Landroid/view/View;
 
-    invoke-virtual {v5, v8}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v5, v7}, Landroid/view/View;->setVisibility(I)V
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mMoreButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v5, v8}, Landroid/widget/ImageButton;->setVisibility(I)V
+    invoke-virtual {v5, v7}, Landroid/widget/ImageButton;->setVisibility(I)V
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mMoreButton:Landroid/widget/ImageButton;
 
@@ -969,7 +956,7 @@
 
     move-result-object v5
 
-    if-eqz v5, :cond_2
+    if-eqz v5, :cond_1
 
     iget-object v5, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mMoreButton:Landroid/widget/ImageButton;
 
@@ -983,7 +970,7 @@
 .end method
 
 .method public onWindowFocusChanged(Z)V
-    .locals 2
+    .locals 1
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onWindowFocusChanged(Z)V
 
@@ -991,43 +978,57 @@
 
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->getContext()Landroid/content/Context;
 
-    move-result-object v1
-
-    check-cast v1, Lcom/android/launcher3/Launcher;
-
-    invoke-virtual {v1}, Lcom/android/launcher3/Launcher;->getStageManager()Lcom/android/launcher3/common/stage/StageManager;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/android/launcher3/common/stage/StageManager;->getTopStage()Lcom/android/launcher3/common/stage/Stage;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/android/launcher3/common/stage/Stage;->getContainerView()Landroid/view/View;
-
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/android/launcher3/Launcher;
-
-    if-eqz v1, :cond_0
+    check-cast v0, Lcom/android/launcher3/Launcher;
 
     if-eqz v0, :cond_0
 
-    instance-of v1, v0, Lcom/android/launcher3/allapps/view/AppsContainer;
+    invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->getContext()Landroid/content/Context;
 
-    if-nez v1, :cond_0
+    move-result-object v0
 
-    instance-of v1, v0, Lcom/android/launcher3/folder/view/FolderView;
+    check-cast v0, Lcom/android/launcher3/Launcher;
 
-    if-nez v1, :cond_0
+    invoke-virtual {v0}, Lcom/android/launcher3/Launcher;->getStageManager()Lcom/android/launcher3/common/stage/StageManager;
 
-    iget-object v1, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchView:Landroid/widget/SearchView;
+    move-result-object v0
 
-    invoke-virtual {v1}, Landroid/widget/SearchView;->clearFocus()V
+    invoke-virtual {v0}, Lcom/android/launcher3/common/stage/StageManager;->getTopStage()Lcom/android/launcher3/common/stage/Stage;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/launcher3/common/stage/Stage;->getContainerView()Landroid/view/View;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsSearchBar;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/launcher3/Launcher;
+
+    invoke-virtual {v0}, Lcom/android/launcher3/Launcher;->getStageManager()Lcom/android/launcher3/common/stage/StageManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/launcher3/common/stage/StageManager;->getTopStage()Lcom/android/launcher3/common/stage/Stage;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/launcher3/common/stage/Stage;->getContainerView()Landroid/view/View;
+
+    move-result-object v0
+
+    instance-of v0, v0, Lcom/android/launcher3/allapps/view/AppsContainer;
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mSearchView:Landroid/widget/SearchView;
+
+    invoke-virtual {v0}, Landroid/widget/SearchView;->clearFocus()V
 
     :cond_0
     return-void
@@ -1112,7 +1113,7 @@
 
     move-result-object v0
 
-    const/high16 v1, 0x7f120000
+    const/high16 v1, 0x7f110000
 
     iget-object v2, p0, Lcom/android/launcher3/allapps/view/AppsSearchBar;->mPopupMenu:Landroid/widget/PopupMenu;
 

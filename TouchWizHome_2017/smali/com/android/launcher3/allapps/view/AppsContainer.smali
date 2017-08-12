@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0f0001
+    const v1, 0x7f0e0001
 
     invoke-virtual {v0, v1, v2, v2}, Landroid/content/res/Resources;->getFraction(III)F
 
@@ -77,7 +77,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a015e
+    const v1, 0x7f09014e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -89,7 +89,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0160
+    const v1, 0x7f090150
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -375,11 +375,7 @@
 
     if-eq v3, v2, :cond_3
 
-    new-instance v3, Lcom/android/launcher3/allapps/view/VisibilityChange;
-
-    invoke-direct {v3, v2, p0}, Lcom/android/launcher3/allapps/view/VisibilityChange;-><init>(ILcom/android/launcher3/allapps/view/AppsContainer;)V
-
-    invoke-virtual {p0, v3}, Lcom/android/launcher3/allapps/view/AppsContainer;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v2}, Lcom/android/launcher3/allapps/view/AppsContainer;->setVisibility(I)V
 
     :cond_3
     if-eqz p2, :cond_4

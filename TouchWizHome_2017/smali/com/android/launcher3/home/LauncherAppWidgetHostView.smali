@@ -49,7 +49,7 @@
 
 .field mGestureListener:Landroid/view/GestureDetector$OnGestureListener;
 
-.field public mHasSetPivot:Z
+.field private mHasScrollView:Z
 
 .field private mHierarchyChangeListener:Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;
 
@@ -69,8 +69,6 @@
 
 .field private mIsWeatherCityOneMore:Z
 
-.field private mIsWeatherFling:Z
-
 .field private mLongPressHelper:Lcom/android/launcher3/util/event/CheckLongPressHelper;
 
 .field private mPreviousOrientation:I
@@ -88,8 +86,6 @@
 .field private mStylusEventHelper:Lcom/android/launcher3/util/event/StylusEventHelper;
 
 .field private mWeatherCityAddObserver:Landroid/database/ContentObserver;
-
-.field private mWidgetScroll:Lcom/android/launcher3/home/WidgetScroll;
 
 
 # direct methods
@@ -160,27 +156,17 @@
 
     iput-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHierarchyChangeListener:Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;
 
-    iput-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsWeatherFling:Z
-
     iput-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsWeatherCityOneMore:Z
 
     iput-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsSetFlingOption:Z
 
     iput-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsGSB:Z
 
-    new-instance v0, Lcom/android/launcher3/home/WidgetScroll;
-
-    invoke-direct {v0}, Lcom/android/launcher3/home/WidgetScroll;-><init>()V
-
-    iput-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mWidgetScroll:Lcom/android/launcher3/home/WidgetScroll;
-
     iput-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsAllowSwipe:Z
 
     iput-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsScrollingUp:Z
 
     iput-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsScrollingDown:Z
-
-    iput-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasSetPivot:Z
 
     new-instance v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$1;
 
@@ -301,20 +287,12 @@
 .method static synthetic access$100(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsWeatherFling:Z
-
-    return v0
-.end method
-
-.method static synthetic access$200(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Z
-    .locals 1
-
     iget-boolean v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsScrollingUp:Z
 
     return v0
 .end method
 
-.method static synthetic access$202(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Z)Z
+.method static synthetic access$102(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsScrollingUp:Z
@@ -322,7 +300,7 @@
     return p1
 .end method
 
-.method static synthetic access$302(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Z)Z
+.method static synthetic access$202(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsScrollingDown:Z
@@ -330,7 +308,7 @@
     return p1
 .end method
 
-.method static synthetic access$400(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Landroid/view/View;Landroid/view/View;)V
+.method static synthetic access$300(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Landroid/view/View;Landroid/view/View;)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->initWidgetAnimation(Landroid/view/View;Landroid/view/View;)V
@@ -338,23 +316,33 @@
     return-void
 .end method
 
-.method static synthetic access$500(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Lcom/android/launcher3/home/WidgetScroll;
+.method static synthetic access$400(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mWidgetScroll:Lcom/android/launcher3/home/WidgetScroll;
-
-    return-object v0
-.end method
-
-.method static synthetic access$600(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsAllowSwipe:Z
+    iget-boolean v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasScrollView:Z
 
     return v0
 .end method
 
-.method static synthetic access$700(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)V
+.method static synthetic access$402(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasScrollView:Z
+
+    return p1
+.end method
+
+.method static synthetic access$500(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Landroid/view/View;)Z
+    .locals 1
+
+    invoke-direct {p0, p1}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->findScrollView(Landroid/view/View;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static synthetic access$600(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->checkWeatherCount()V
@@ -597,13 +585,9 @@
 
     iput-boolean v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsWeatherCityOneMore:Z
 
+    iput-boolean v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasScrollView:Z
+
     :goto_0
-    iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mWidgetScroll:Lcom/android/launcher3/home/WidgetScroll;
-
-    iget-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsWeatherCityOneMore:Z
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/home/WidgetScroll;->setWeatherScrollablility(Z)V
-
     if-eqz v6, :cond_1
 
     invoke-interface {v6}, Landroid/database/Cursor;->isClosed()Z
@@ -621,6 +605,8 @@
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsWeatherCityOneMore:Z
+
+    iput-boolean v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasScrollView:Z
 
     goto :goto_0
 .end method
@@ -769,6 +755,79 @@
     goto :goto_0
 .end method
 
+.method private findScrollView(Landroid/view/View;)Z
+    .locals 5
+
+    const/4 v3, 0x1
+
+    const/4 v2, 0x0
+
+    iget-boolean v4, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsAllowSwipe:Z
+
+    if-eqz v4, :cond_1
+
+    :cond_0
+    :goto_0
+    return v2
+
+    :cond_1
+    if-eqz p1, :cond_0
+
+    instance-of v4, p1, Landroid/view/ViewGroup;
+
+    if-eqz v4, :cond_0
+
+    instance-of v4, p1, Landroid/widget/StackView;
+
+    if-nez v4, :cond_2
+
+    instance-of v4, p1, Landroid/widget/ListView;
+
+    if-nez v4, :cond_2
+
+    instance-of v4, p1, Landroid/widget/GridView;
+
+    if-eqz v4, :cond_3
+
+    :cond_2
+    move v2, v3
+
+    goto :goto_0
+
+    :cond_3
+    move-object v1, p1
+
+    check-cast v1, Landroid/view/ViewGroup;
+
+    const/4 v0, 0x0
+
+    :goto_1
+    invoke-virtual {v1}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v4
+
+    if-ge v0, v4, :cond_0
+
+    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v4
+
+    invoke-direct {p0, v4}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->findScrollView(Landroid/view/View;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    move v2, v3
+
+    goto :goto_0
+
+    :cond_4
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_1
+.end method
+
 .method private initWidgetAnimation(Landroid/view/View;Landroid/view/View;)V
     .locals 3
 
@@ -875,17 +934,12 @@
 
     :cond_1
     :goto_0
-    if-nez v8, :cond_2
+    if-eq v8, v9, :cond_2
 
     move v1, v9
 
     :goto_1
-    iput-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsWeatherFling:Z
-
-    if-eq v8, v9, :cond_3
-
-    :goto_2
-    return v9
+    return v1
 
     :catch_0
     move-exception v7
@@ -934,11 +988,6 @@
     move v1, v10
 
     goto :goto_1
-
-    :cond_3
-    move v9, v10
-
-    goto :goto_2
 .end method
 
 .method private resetTouchStateOfTopContainer()V
@@ -1346,7 +1395,7 @@
 
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f040017
+    const v1, 0x7f030019
 
     const/4 v2, 0x0
 
@@ -1558,35 +1607,29 @@
     iput-boolean v5, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsGSB:Z
 
     :cond_3
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_4
 
     :try_start_0
-    iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mWidgetScroll:Lcom/android/launcher3/home/WidgetScroll;
+    iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mGestureDetector:Landroid/view/GestureDetector;
 
-    invoke-virtual {v2}, Lcom/android/launcher3/home/WidgetScroll;->isWeather()Z
+    if-eqz v2, :cond_5
 
-    move-result v2
+    iget-boolean v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsWeatherCityOneMore:Z
+
+    :goto_0
+    iput-boolean v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasScrollView:Z
+
+    iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mGestureDetector:Landroid/view/GestureDetector;
 
     if-nez v2, :cond_4
 
-    iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mWidgetScroll:Lcom/android/launcher3/home/WidgetScroll;
-
-    iget-boolean v3, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsAllowSwipe:Z
-
-    invoke-virtual {v2, p0, v3}, Lcom/android/launcher3/home/WidgetScroll;->getScrollType(Landroid/view/View;Z)I
-
-    :cond_4
-    iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mGestureDetector:Landroid/view/GestureDetector;
-
-    if-nez v2, :cond_5
-
     iget-boolean v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsAllowSwipe:Z
 
-    if-nez v2, :cond_5
+    if-nez v2, :cond_4
 
     iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHierarchyChangeListener:Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;
 
-    if-nez v2, :cond_5
+    if-nez v2, :cond_4
 
     new-instance v2, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;
 
@@ -1621,12 +1664,19 @@
     move-result-object v3
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_4
+    :goto_1
+    return-void
+
+    :cond_5
+    invoke-direct {p0, p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->findScrollView(Landroid/view/View;)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    :cond_5
-    :goto_0
-    return-void
+    move-result v2
+
+    goto :goto_0
 
     :catch_0
     move-exception v0
@@ -1639,7 +1689,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_0
+    goto :goto_1
 .end method
 
 .method protected onDetachedFromWindow()V
@@ -1675,45 +1725,6 @@
 
     :cond_0
     return-void
-.end method
-
-.method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
-    .locals 3
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v1
-
-    const-string v2, "pen_hovering"
-
-    invoke-static {v1, v2, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
-    :goto_0
-    return v0
-
-    :cond_1
-    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getToolType(I)I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    if-ne v1, v2, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
 .end method
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
@@ -1826,21 +1837,9 @@
 
     invoke-virtual {v1, p0}, Lcom/android/launcher3/common/view/DragLayer;->setTouchCompleteListener(Lcom/android/launcher3/common/view/DragLayer$TouchCompleteListener;)V
 
-    iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mWidgetScroll:Lcom/android/launcher3/home/WidgetScroll;
-
-    invoke-virtual {v1}, Lcom/android/launcher3/home/WidgetScroll;->isScrollable()Z
-
-    move-result v1
+    iget-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasScrollView:Z
 
     if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mWidgetScroll:Lcom/android/launcher3/home/WidgetScroll;
-
-    invoke-virtual {v1}, Lcom/android/launcher3/home/WidgetScroll;->isWeather()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_7
 
     iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mGestureDetector:Landroid/view/GestureDetector;
 
@@ -2173,15 +2172,10 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasSetPivot:Z
-
-    if-nez v0, :cond_0
-
     invoke-virtual {p0, v3}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->setPivotX(F)V
 
     invoke-virtual {p0, v3}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->setPivotY(F)V
 
-    :cond_0
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mResizeResult:Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
 
     iget v0, v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->scaleToResize:F

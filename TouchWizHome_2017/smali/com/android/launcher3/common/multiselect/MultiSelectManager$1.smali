@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/common/multiselect/MultiSelectManager;->onChangeSelectMode(ZZ)V
+    value = Lcom/android/launcher3/common/multiselect/MultiSelectManager;->disableApp(Lcom/android/launcher3/common/base/item/IconInfo;Landroid/content/ComponentName;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,13 +35,11 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 1
 
     iget-object v0, p0, Lcom/android/launcher3/common/multiselect/MultiSelectManager$1;->this$0:Lcom/android/launcher3/common/multiselect/MultiSelectManager;
 
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->showHelpDialog(Z)V
+    invoke-virtual {v0}, Lcom/android/launcher3/common/multiselect/MultiSelectManager;->postUninstallActivity()V
 
     return-void
 .end method

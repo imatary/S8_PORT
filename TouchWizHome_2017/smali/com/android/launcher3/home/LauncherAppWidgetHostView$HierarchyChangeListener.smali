@@ -39,15 +39,11 @@
 
 # virtual methods
 .method public onChildViewAdded(Landroid/view/View;Landroid/view/View;)V
-    .locals 3
+    .locals 2
 
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
-    invoke-static {v0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$500(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Lcom/android/launcher3/home/WidgetScroll;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/launcher3/home/WidgetScroll;->isWeather()Z
+    invoke-static {v0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$400(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Z
 
     move-result v0
 
@@ -55,19 +51,13 @@
 
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
-    invoke-static {v0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$500(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Lcom/android/launcher3/home/WidgetScroll;
+    iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
-    move-result-object v0
+    invoke-static {v1, p2}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$500(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Landroid/view/View;)Z
 
-    iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->mHostView:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
+    move-result v1
 
-    iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
-
-    invoke-static {v2}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$600(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Z
-
-    move-result v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/home/WidgetScroll;->getScrollType(Landroid/view/View;Z)I
+    invoke-static {v0, v1}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$402(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Z)Z
 
     :cond_0
     return-void
@@ -78,31 +68,23 @@
 
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
-    invoke-static {v0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$500(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Lcom/android/launcher3/home/WidgetScroll;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/launcher3/home/WidgetScroll;->isWeather()Z
+    invoke-static {v0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$400(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Z
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
-    invoke-static {v0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$500(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Lcom/android/launcher3/home/WidgetScroll;
+    iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
-    move-result-object v0
+    iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->mHostView:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
-    iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->mHostView:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
+    invoke-static {v1, v2}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$500(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Landroid/view/View;)Z
 
-    iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
+    move-result v1
 
-    invoke-static {v2}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$600(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)Z
-
-    move-result v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/home/WidgetScroll;->getScrollType(Landroid/view/View;Z)I
+    invoke-static {v0, v1}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$402(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Z)Z
 
     :cond_0
     return-void

@@ -1011,7 +1011,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x7f09009c
+    const v19, 0x7f0800a3
 
     const/16 v20, 0x1
 
@@ -1110,7 +1110,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x7f09009d
+    const v19, 0x7f0800a4
 
     const/16 v20, 0x1
 
@@ -1132,31 +1132,6 @@
 
     move-result-object v13
 
-    sget-boolean v18, Lcom/android/launcher3/Utilities;->sIsRtl:Z
-
-    if-eqz v18, :cond_1a
-
-    new-instance v18, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
-
-    const/16 v19, 0x200f
-
-    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    move-object/from16 v0, v18
-
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v13
-
-    :cond_1a
     new-instance v18, Landroid/view/ContextThemeWrapper;
 
     move-object/from16 v0, p0

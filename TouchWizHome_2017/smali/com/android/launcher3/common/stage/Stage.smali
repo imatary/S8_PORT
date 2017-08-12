@@ -325,14 +325,6 @@
     return v0
 .end method
 
-.method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
 .method public finishOnTouchOutSide()Z
     .locals 1
 

@@ -20,16 +20,12 @@
 # instance fields
 .field final synthetic this$1:Lcom/android/launcher3/LauncherModel$9;
 
-.field final synthetic val$badgeItems:Ljava/util/ArrayList;
-
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/LauncherModel$9;Ljava/util/ArrayList;)V
+.method constructor <init>(Lcom/android/launcher3/LauncherModel$9;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel$9$1;->this$1:Lcom/android/launcher3/LauncherModel$9;
-
-    iput-object p2, p0, Lcom/android/launcher3/LauncherModel$9$1;->val$badgeItems:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,15 +35,13 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 1
 
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$9$1;->this$1:Lcom/android/launcher3/LauncherModel$9;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel$9;->this$0:Lcom/android/launcher3/LauncherModel;
 
-    iget-object v1, p0, Lcom/android/launcher3/LauncherModel$9$1;->val$badgeItems:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/LauncherModel;->onBadgeBindingCompleted(Ljava/util/ArrayList;)V
+    invoke-virtual {v0}, Lcom/android/launcher3/LauncherModel;->forceReload()V
 
     return-void
 .end method

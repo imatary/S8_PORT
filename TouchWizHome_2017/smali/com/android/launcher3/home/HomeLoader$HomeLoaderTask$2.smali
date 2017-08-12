@@ -41,7 +41,7 @@
 
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask$2;->this$1:Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;
 
-    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;->access$3600(Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;)Z
+    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;->access$3200(Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;)Z
 
     move-result v0
 
@@ -63,19 +63,23 @@
     :goto_0
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask$2;->this$1:Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;
 
-    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;->access$3900(Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;)Z
+    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;->access$3500(Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$4000()Z
+    iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask$2;->this$1:Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;
+
+    iget-object v0, v0, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;->this$0:Lcom/android/launcher3/home/HomeLoader;
+
+    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->access$3600(Lcom/android/launcher3/home/HomeLoader;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$4100()Ljava/util/HashMap;
+    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$3700()Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -91,7 +95,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$4300()Landroid/content/Context;
+    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$3900()Landroid/content/Context;
 
     move-result-object v0
 
@@ -105,7 +109,7 @@
 
     invoke-direct {v2, v3}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$4200()Landroid/os/Handler;
+    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$3800()Landroid/os/Handler;
 
     move-result-object v3
 
@@ -116,7 +120,7 @@
 
     iget-object v0, v0, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
-    invoke-static {v0, v4}, Lcom/android/launcher3/home/HomeLoader;->access$4402(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;)Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
+    invoke-static {v0, v4}, Lcom/android/launcher3/home/HomeLoader;->access$4002(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;)Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
 
     return-void
 
@@ -125,7 +129,7 @@
 
     iget-object v0, v0, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
-    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->access$3700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
+    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->access$3300(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
 
     move-result-object v0
 
@@ -135,7 +139,7 @@
 
     iget-object v0, v0, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
-    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->access$3800(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
+    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->access$3400(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
 
     move-result-object v0
 

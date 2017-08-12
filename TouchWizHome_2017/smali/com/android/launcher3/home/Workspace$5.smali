@@ -1,9 +1,6 @@
 .class Lcom/android/launcher3/home/Workspace$5;
-.super Ljava/lang/Object;
+.super Landroid/animation/AnimatorListenerAdapter;
 .source "Workspace.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -20,63 +17,52 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/home/Workspace;
 
-.field final synthetic val$cl:Lcom/android/launcher3/common/base/view/CellLayout;
+.field final synthetic val$onComplete:Ljava/lang/Runnable;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/home/Workspace;Lcom/android/launcher3/common/base/view/CellLayout;)V
+.method constructor <init>(Lcom/android/launcher3/home/Workspace;Ljava/lang/Runnable;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/home/Workspace$5;->this$0:Lcom/android/launcher3/home/Workspace;
 
-    iput-object p2, p0, Lcom/android/launcher3/home/Workspace$5;->val$cl:Lcom/android/launcher3/common/base/view/CellLayout;
+    iput-object p2, p0, Lcom/android/launcher3/home/Workspace$5;->val$onComplete:Ljava/lang/Runnable;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 4
-
-    const-wide/16 v2, -0xc9
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
 
     iget-object v0, p0, Lcom/android/launcher3/home/Workspace$5;->this$0:Lcom/android/launcher3/home/Workspace;
 
-    invoke-virtual {v0}, Lcom/android/launcher3/home/Workspace;->hasExtraEmptyScreen()Z
+    invoke-static {v0}, Lcom/android/launcher3/home/Workspace;->access$300(Lcom/android/launcher3/home/Workspace;)Ljava/lang/Runnable;
 
-    move-result v0
+    move-result-object v0
 
     if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/launcher3/home/Workspace$5;->this$0:Lcom/android/launcher3/home/Workspace;
 
-    invoke-static {v0}, Lcom/android/launcher3/home/Workspace;->access$200(Lcom/android/launcher3/home/Workspace;)Lcom/android/launcher3/util/LongArrayMap;
+    invoke-static {v0}, Lcom/android/launcher3/home/Workspace;->access$300(Lcom/android/launcher3/home/Workspace;)Ljava/lang/Runnable;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2, v3}, Lcom/android/launcher3/util/LongArrayMap;->remove(J)V
-
-    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$5;->this$0:Lcom/android/launcher3/home/Workspace;
-
-    invoke-static {v0}, Lcom/android/launcher3/home/Workspace;->access$300(Lcom/android/launcher3/home/Workspace;)Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
-
-    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$5;->this$0:Lcom/android/launcher3/home/Workspace;
-
-    iget-object v1, p0, Lcom/android/launcher3/home/Workspace$5;->val$cl:Lcom/android/launcher3/common/base/view/CellLayout;
-
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/home/Workspace;->removeView(Landroid/view/View;)V
+    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
     :cond_0
+    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$5;->val$onComplete:Ljava/lang/Runnable;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/launcher3/home/Workspace$5;->val$onComplete:Ljava/lang/Runnable;
+
+    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
+
+    :cond_1
     return-void
 .end method

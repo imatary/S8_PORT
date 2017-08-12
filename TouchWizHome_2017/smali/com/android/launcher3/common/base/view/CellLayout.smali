@@ -323,7 +323,7 @@
 
     move-result-object v8
 
-    const v1, 0x7f0c001f
+    const v1, 0x7f0b0017
 
     invoke-virtual {v8, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -405,7 +405,7 @@
 
     if-nez v1, :cond_2
 
-    const v1, 0x7f02006c
+    const v1, 0x7f02006e
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1449,298 +1449,246 @@
 .end method
 
 .method public animateChildToPosition(Landroid/view/View;IIIIZZ[[ZILjava/lang/Runnable;)Z
-    .locals 22
+    .locals 15
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/common/base/view/CellLayout;->getCellLayoutChildren()Lcom/android/launcher3/common/base/view/CellLayoutChildren;
+    invoke-virtual {p0}, Lcom/android/launcher3/common/base/view/CellLayout;->getCellLayoutChildren()Lcom/android/launcher3/common/base/view/CellLayoutChildren;
 
-    move-result-object v18
+    move-result-object v10
 
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/android/launcher3/common/base/view/CellLayout;->mOccupied:[[Z
+    iget-object v12, p0, Lcom/android/launcher3/common/base/view/CellLayout;->mOccupied:[[Z
 
     if-nez p6, :cond_0
 
-    move-object/from16 v9, p8
+    move-object/from16 v12, p8
 
     :cond_0
-    if-nez v9, :cond_1
+    if-nez v12, :cond_1
 
-    const/4 v4, 0x0
+    const/4 v2, 0x0
 
     :goto_0
-    return v4
+    return v2
 
     :cond_1
-    move-object/from16 v0, v18
+    move-object/from16 v0, p1
 
-    move-object/from16 v1, p1
+    invoke-virtual {v10, v0}, Lcom/android/launcher3/common/base/view/CellLayoutChildren;->indexOfChild(Landroid/view/View;)I
 
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/base/view/CellLayoutChildren;->indexOfChild(Landroid/view/View;)I
+    move-result v2
 
-    move-result v4
+    const/4 v3, -0x1
 
-    const/4 v5, -0x1
-
-    if-eq v4, v5, :cond_8
+    if-eq v2, v3, :cond_8
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
-    move-result-object v12
+    move-result-object v4
 
-    check-cast v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;
+    check-cast v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
-    move-result-object v19
+    move-result-object v11
 
-    check-cast v19, Lcom/android/launcher3/common/base/item/ItemInfo;
+    check-cast v11, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    move-object/from16 v0, p0
+    iget-object v2, p0, Lcom/android/launcher3/common/base/view/CellLayout;->mReorderAnimators:Ljava/util/HashMap;
 
-    iget-object v4, v0, Lcom/android/launcher3/common/base/view/CellLayout;->mReorderAnimators:Ljava/util/HashMap;
+    invoke-virtual {v2, v4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
-    invoke-virtual {v4, v12}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+    move-result v2
 
-    move-result v4
+    if-eqz v2, :cond_2
 
-    if-eqz v4, :cond_2
+    iget-object v2, p0, Lcom/android/launcher3/common/base/view/CellLayout;->mReorderAnimators:Ljava/util/HashMap;
 
-    move-object/from16 v0, p0
+    invoke-virtual {v2, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v4, v0, Lcom/android/launcher3/common/base/view/CellLayout;->mReorderAnimators:Ljava/util/HashMap;
+    move-result-object v2
 
-    invoke-virtual {v4, v12}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v2, Landroid/animation/Animator;
 
-    move-result-object v4
+    invoke-virtual {v2}, Landroid/animation/Animator;->cancel()V
 
-    check-cast v4, Landroid/animation/Animator;
+    iget-object v2, p0, Lcom/android/launcher3/common/base/view/CellLayout;->mReorderAnimators:Ljava/util/HashMap;
 
-    invoke-virtual {v4}, Landroid/animation/Animator;->cancel()V
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/android/launcher3/common/base/view/CellLayout;->mReorderAnimators:Ljava/util/HashMap;
-
-    invoke-virtual {v4, v12}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_2
-    iget v13, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->x:I
+    iget v5, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->x:I
 
-    iget v15, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->y:I
+    iget v7, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->y:I
 
     if-eqz p7, :cond_3
 
-    iget v5, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->cellX:I
+    iget v2, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->cellX:I
 
-    iget v6, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->cellY:I
+    aget-object v2, v12, v2
 
-    iget v7, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->cellHSpan:I
+    iget v3, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->cellY:I
 
-    iget v8, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->cellVSpan:I
+    const/4 v9, 0x0
 
-    const/4 v10, 0x0
+    aput-boolean v9, v2, v3
 
-    move-object/from16 v4, p0
+    aget-object v2, v12, p2
 
-    invoke-virtual/range {v4 .. v10}, Lcom/android/launcher3/common/base/view/CellLayout;->markCellsForView(IIII[[ZZ)V
+    const/4 v3, 0x1
 
-    iget v7, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->cellHSpan:I
-
-    iget v8, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->cellVSpan:I
-
-    const/4 v10, 0x1
-
-    move-object/from16 v4, p0
-
-    move/from16 v5, p2
-
-    move/from16 v6, p3
-
-    invoke-virtual/range {v4 .. v10}, Lcom/android/launcher3/common/base/view/CellLayout;->markCellsForView(IIII[[ZZ)V
+    aput-boolean v3, v2, p3
 
     :cond_3
-    const/4 v4, 0x1
+    const/4 v2, 0x1
 
-    iput-boolean v4, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->isLockedToGrid:Z
+    iput-boolean v2, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->isLockedToGrid:Z
 
     if-eqz p6, :cond_6
 
     move/from16 v0, p2
 
-    iput v0, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->cellX:I
+    iput v0, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->cellX:I
 
     move/from16 v0, p3
 
-    iput v0, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->cellY:I
+    iput v0, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->cellY:I
 
-    if-eqz v19, :cond_4
+    if-eqz v11, :cond_4
 
     move/from16 v0, p2
 
-    move-object/from16 v1, v19
-
-    iput v0, v1, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
+    iput v0, v11, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
     move/from16 v0, p3
 
-    move-object/from16 v1, v19
-
-    iput v0, v1, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
+    iput v0, v11, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
     :cond_4
     :goto_1
-    move-object/from16 v0, v18
-
-    invoke-virtual {v0, v12}, Lcom/android/launcher3/common/base/view/CellLayoutChildren;->setupLp(Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;)V
+    invoke-virtual {v10, v4}, Lcom/android/launcher3/common/base/view/CellLayoutChildren;->setupLp(Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;)V
 
     move-object/from16 v0, p1
 
-    instance-of v4, v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;
+    instance-of v2, v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
-    if-eqz v4, :cond_5
+    if-eqz v2, :cond_5
 
-    move-object/from16 v4, p1
+    move-object/from16 v2, p1
 
-    check-cast v4, Lcom/android/launcher3/home/LauncherAppWidgetHostView;
+    check-cast v2, Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
-    invoke-virtual {v4}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getResizeResult()Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
+    invoke-virtual {v2}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getResizeResult()Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
 
-    move-result-object v20
+    move-result-object v13
 
-    if-eqz v20, :cond_5
+    if-eqz v13, :cond_5
 
-    move-object/from16 v0, v20
+    iget v2, v13, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->width:I
 
-    iget v4, v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->width:I
+    iput v2, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->width:I
 
-    iput v4, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->width:I
+    iget v2, v13, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->height:I
 
-    move-object/from16 v0, v20
-
-    iget v4, v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->height:I
-
-    iput v4, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->height:I
+    iput v2, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->height:I
 
     :cond_5
-    const/4 v4, 0x0
+    const/4 v2, 0x0
 
-    iput-boolean v4, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->isLockedToGrid:Z
+    iput-boolean v2, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->isLockedToGrid:Z
 
-    iget v4, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->x:I
+    iget v2, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->x:I
 
-    add-int v14, p9, v4
+    add-int v6, p9, v2
 
-    iget v0, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->y:I
+    iget v8, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->y:I
 
-    move/from16 v16, v0
+    iput v5, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->x:I
 
-    iput v13, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->x:I
+    iput v7, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->y:I
 
-    iput v15, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->y:I
+    if-ne v5, v6, :cond_7
 
-    if-ne v13, v14, :cond_7
-
-    move/from16 v0, v16
-
-    if-ne v15, v0, :cond_7
+    if-ne v7, v8, :cond_7
 
     if-nez p10, :cond_7
 
-    const/4 v4, 0x1
+    const/4 v2, 0x1
 
-    iput-boolean v4, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->isLockedToGrid:Z
+    iput-boolean v2, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->isLockedToGrid:Z
 
-    const/4 v4, 0x1
+    const/4 v2, 0x1
 
     goto/16 :goto_0
 
     :cond_6
     move/from16 v0, p2
 
-    iput v0, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->tmpCellX:I
+    iput v0, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->tmpCellX:I
 
     move/from16 v0, p3
 
-    iput v0, v12, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->tmpCellY:I
+    iput v0, v4, Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;->tmpCellY:I
 
     goto :goto_1
 
     :cond_7
-    const/4 v4, 0x2
+    const/4 v2, 0x2
 
-    new-array v4, v4, [F
+    new-array v2, v2, [F
 
-    fill-array-data v4, :array_0
+    fill-array-data v2, :array_0
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v4}, Lcom/android/launcher3/util/animation/LauncherAnimUtils;->ofFloat(Landroid/view/View;[F)Landroid/animation/ValueAnimator;
+    invoke-static {v0, v2}, Lcom/android/launcher3/util/animation/LauncherAnimUtils;->ofFloat(Landroid/view/View;[F)Landroid/animation/ValueAnimator;
 
-    move-result-object v21
+    move-result-object v14
 
     move/from16 v0, p4
 
-    int-to-long v4, v0
+    int-to-long v2, v0
 
-    move-object/from16 v0, v21
+    invoke-virtual {v14, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    invoke-virtual {v0, v4, v5}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
+    iget-object v2, p0, Lcom/android/launcher3/common/base/view/CellLayout;->mReorderAnimators:Ljava/util/HashMap;
 
-    move-object/from16 v0, p0
+    invoke-virtual {v2, v4, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v4, v0, Lcom/android/launcher3/common/base/view/CellLayout;->mReorderAnimators:Ljava/util/HashMap;
+    new-instance v2, Lcom/android/launcher3/common/base/view/CellLayout$4;
 
-    move-object/from16 v0, v21
+    move-object v3, p0
 
-    invoke-virtual {v4, v12, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v9, p1
 
-    new-instance v10, Lcom/android/launcher3/common/base/view/CellLayout$4;
+    invoke-direct/range {v2 .. v9}, Lcom/android/launcher3/common/base/view/CellLayout$4;-><init>(Lcom/android/launcher3/common/base/view/CellLayout;Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;IIIILandroid/view/View;)V
 
-    move-object/from16 v11, p0
+    invoke-virtual {v14, v2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    move-object/from16 v17, p1
+    new-instance v2, Lcom/android/launcher3/common/base/view/CellLayout$5;
 
-    invoke-direct/range {v10 .. v17}, Lcom/android/launcher3/common/base/view/CellLayout$4;-><init>(Lcom/android/launcher3/common/base/view/CellLayout;Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;IIIILandroid/view/View;)V
+    move-object/from16 v0, p1
 
-    move-object/from16 v0, v21
+    move-object/from16 v1, p10
 
-    invoke-virtual {v0, v10}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+    invoke-direct {v2, p0, v4, v0, v1}, Lcom/android/launcher3/common/base/view/CellLayout$5;-><init>(Lcom/android/launcher3/common/base/view/CellLayout;Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;Landroid/view/View;Ljava/lang/Runnable;)V
 
-    new-instance v4, Lcom/android/launcher3/common/base/view/CellLayout$5;
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
-    move-object/from16 v2, p10
-
-    invoke-direct {v4, v0, v12, v1, v2}, Lcom/android/launcher3/common/base/view/CellLayout$5;-><init>(Lcom/android/launcher3/common/base/view/CellLayout;Lcom/android/launcher3/common/base/view/CellLayout$LayoutParams;Landroid/view/View;Ljava/lang/Runnable;)V
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v4}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {v14, v2}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     move/from16 v0, p5
 
-    int-to-long v4, v0
+    int-to-long v2, v0
 
-    move-object/from16 v0, v21
+    invoke-virtual {v14, v2, v3}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
 
-    invoke-virtual {v0, v4, v5}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
+    invoke-virtual {v14}, Landroid/animation/ValueAnimator;->start()V
 
-    invoke-virtual/range {v21 .. v21}, Landroid/animation/ValueAnimator;->start()V
-
-    const/4 v4, 0x1
+    const/4 v2, 0x1
 
     goto/16 :goto_0
 
     :cond_8
-    const/4 v4, 0x0
+    const/4 v2, 0x0
 
     goto/16 :goto_0
-
-    nop
 
     :array_0
     .array-data 4
@@ -1755,12 +1703,6 @@
     iget-object v0, p0, Lcom/android/launcher3/common/base/view/CellLayout;->mChildren:Lcom/android/launcher3/common/base/view/CellLayoutChildren;
 
     invoke-virtual {v0}, Lcom/android/launcher3/common/base/view/CellLayoutChildren;->buildLayer()V
-
-    return-void
-.end method
-
-.method public callRefreshLiveIcon()V
-    .locals 0
 
     return-void
 .end method
@@ -2432,7 +2374,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0900b5
+    const v1, 0x7f0800b6
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -30,9 +30,24 @@
 
 .field private static final PREFERENCES_APPS_BUTTON_SETTINGS:Ljava/lang/String; = "apps_button_settings"
 
+.field private static final PREFERENCES_APPS_BUTTON_SETTINGS_APPLY_COUNT:Ljava/lang/String; = "apps_button_settings_apply_count"
+
 .field private static final PREFERENCES_APPS_BUTTON_SETTINGS_EASY:Ljava/lang/String; = "apps_button_settings_easy"
 
 .field private static final PREFERENCES_BADGE_SETTINGS:Ljava/lang/String; = "badge_settings"
+
+.field private static final PREFERENCES_HOME_LAYOUT_SETTINGS_APPLY_COUNT:Ljava/lang/String; = "home_layout_settings_apply_count"
+
+.field private static sAppsButtonSettingsActivity:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference",
+            "<",
+            "Lcom/android/launcher3/home/AppsButtonSettingsActivity;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field private static sContext:Landroid/content/Context;
 
@@ -69,8 +84,6 @@
     .end annotation
 .end field
 
-.field private static sUseExternalRequestQueue:Z
-
 
 # instance fields
 .field private final mBadgeCache:Lcom/android/launcher3/common/model/BadgeCache;
@@ -80,10 +93,6 @@
 .field private mBadgeRefreshRunnable:Ljava/lang/Runnable;
 
 .field private mCloneItemEnabled:Z
-
-.field private final mDeepShortcutManager:Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;
-
-.field private mDesktopModeEventListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
 
 .field private final mDisableableAppCache:Lcom/android/launcher3/common/model/DisableableAppCache;
 
@@ -128,325 +137,291 @@
 
     sput v0, Lcom/android/launcher3/LauncherAppState;->EASY_GRID_CELLY:I
 
-    const/4 v0, 0x0
-
-    sput-boolean v0, Lcom/android/launcher3/LauncherAppState;->sUseExternalRequestQueue:Z
-
     return-void
 .end method
 
 .method private constructor <init>()V
-    .locals 10
+    .locals 8
 
-    const/4 v9, 0x1
+    const/4 v7, 0x1
 
-    const/4 v8, 0x0
+    const/4 v6, 0x0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean v9, p0, Lcom/android/launcher3/LauncherAppState;->mCloneItemEnabled:Z
+    iput-boolean v7, p0, Lcom/android/launcher3/LauncherAppState;->mCloneItemEnabled:Z
 
-    iput-boolean v8, p0, Lcom/android/launcher3/LauncherAppState;->mIsEasyMode:Z
+    iput-boolean v6, p0, Lcom/android/launcher3/LauncherAppState;->mIsEasyMode:Z
 
-    iput-boolean v8, p0, Lcom/android/launcher3/LauncherAppState;->mIsHomeOnlyMode:Z
+    iput-boolean v6, p0, Lcom/android/launcher3/LauncherAppState;->mIsHomeOnlyMode:Z
 
-    const/4 v0, 0x0
+    new-instance v2, Landroid/os/Handler;
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mDesktopModeEventListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
+    invoke-direct {v2}, Landroid/os/Handler;-><init>()V
 
-    new-instance v0, Landroid/os/Handler;
+    iput-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mHandler:Landroid/os/Handler;
 
-    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+    new-instance v2, Lcom/android/launcher3/LauncherAppState$1;
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mHandler:Landroid/os/Handler;
+    iget-object v3, p0, Lcom/android/launcher3/LauncherAppState;->mHandler:Landroid/os/Handler;
 
-    new-instance v0, Lcom/android/launcher3/LauncherAppState$2;
+    invoke-direct {v2, p0, v3}, Lcom/android/launcher3/LauncherAppState$1;-><init>(Lcom/android/launcher3/LauncherAppState;Landroid/os/Handler;)V
 
-    iget-object v1, p0, Lcom/android/launcher3/LauncherAppState;->mHandler:Landroid/os/Handler;
+    iput-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mBadgeObserver:Landroid/database/ContentObserver;
 
-    invoke-direct {v0, p0, v1}, Lcom/android/launcher3/LauncherAppState$2;-><init>(Lcom/android/launcher3/LauncherAppState;Landroid/os/Handler;)V
+    new-instance v2, Lcom/android/launcher3/LauncherAppState$2;
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mBadgeObserver:Landroid/database/ContentObserver;
+    invoke-direct {v2, p0}, Lcom/android/launcher3/LauncherAppState$2;-><init>(Lcom/android/launcher3/LauncherAppState;)V
 
-    new-instance v0, Lcom/android/launcher3/LauncherAppState$3;
+    iput-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mBadgeRefreshRunnable:Ljava/lang/Runnable;
 
-    invoke-direct {v0, p0}, Lcom/android/launcher3/LauncherAppState$3;-><init>(Lcom/android/launcher3/LauncherAppState;)V
+    sget-object v2, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mBadgeRefreshRunnable:Ljava/lang/Runnable;
+    if-nez v2, :cond_0
 
-    sget-object v0, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    new-instance v2, Ljava/lang/IllegalStateException;
 
-    if-nez v0, :cond_0
+    const-string v3, "LauncherAppState inited before app context set"
 
-    new-instance v0, Ljava/lang/IllegalStateException;
+    invoke-direct {v2, v3}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    const-string v1, "LauncherAppState inited before app context set"
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw v2
 
     :cond_0
-    const-string v0, "Launcher"
+    const-string v2, "Launcher"
 
-    const-string v1, "LauncherAppState inited"
+    const-string v3, "LauncherAppState inited"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-virtual {p0}, Lcom/android/launcher3/LauncherAppState;->makeDeviceProfile()V
 
-    sget-object v0, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    sget-object v2, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    sget-object v1, Lcom/android/launcher3/common/model/BadgeCache;->BADGE_URI:Landroid/net/Uri;
-
-    iget-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mBadgeObserver:Landroid/database/ContentObserver;
-
-    invoke-virtual {v0, v1, v9, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
-
-    new-instance v0, Lcom/android/launcher3/common/model/IconCache;
-
-    sget-object v1, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
-
-    invoke-virtual {p0}, Lcom/android/launcher3/LauncherAppState;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
+    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
-    iget v2, v2, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->defaultIconSize:I
+    sget-object v3, Lcom/android/launcher3/common/model/BadgeCache;->BADGE_URI:Landroid/net/Uri;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/launcher3/common/model/IconCache;-><init>(Landroid/content/Context;I)V
+    iget-object v4, p0, Lcom/android/launcher3/LauncherAppState;->mBadgeObserver:Landroid/database/ContentObserver;
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
+    invoke-virtual {v2, v3, v7, v4}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    new-instance v0, Lcom/android/launcher3/common/model/BadgeCache;
+    new-instance v2, Lcom/android/launcher3/common/model/IconCache;
 
-    sget-object v1, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    sget-object v3, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/android/launcher3/common/model/BadgeCache;-><init>(Landroid/content/Context;)V
+    invoke-virtual {p0}, Lcom/android/launcher3/LauncherAppState;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mBadgeCache:Lcom/android/launcher3/common/model/BadgeCache;
+    move-result-object v4
 
-    new-instance v0, Lcom/android/launcher3/widget/model/WidgetPreviewLoader;
+    iget v4, v4, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->defaultIconSize:I
 
-    sget-object v1, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    invoke-direct {v2, v3, v4}, Lcom/android/launcher3/common/model/IconCache;-><init>(Landroid/content/Context;I)V
 
-    iget-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
+    iput-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/launcher3/widget/model/WidgetPreviewLoader;-><init>(Landroid/content/Context;Lcom/android/launcher3/common/model/IconCache;)V
+    new-instance v2, Lcom/android/launcher3/common/model/BadgeCache;
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mWidgetCache:Lcom/android/launcher3/widget/model/WidgetPreviewLoader;
+    sget-object v3, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
-    new-instance v0, Lcom/android/launcher3/common/model/DisableableAppCache;
+    invoke-direct {v2, v3}, Lcom/android/launcher3/common/model/BadgeCache;-><init>(Landroid/content/Context;)V
 
-    sget-object v1, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    iput-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mBadgeCache:Lcom/android/launcher3/common/model/BadgeCache;
 
-    invoke-direct {v0, v1}, Lcom/android/launcher3/common/model/DisableableAppCache;-><init>(Landroid/content/Context;)V
+    new-instance v2, Lcom/android/launcher3/widget/model/WidgetPreviewLoader;
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mDisableableAppCache:Lcom/android/launcher3/common/model/DisableableAppCache;
+    sget-object v3, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
-    new-instance v0, Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;
+    iget-object v4, p0, Lcom/android/launcher3/LauncherAppState;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
 
-    sget-object v1, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    invoke-direct {v2, v3, v4}, Lcom/android/launcher3/widget/model/WidgetPreviewLoader;-><init>(Landroid/content/Context;Lcom/android/launcher3/common/model/IconCache;)V
 
-    new-instance v2, Lcom/android/launcher3/common/quickoption/shortcuts/ShortcutCache;
+    iput-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mWidgetCache:Lcom/android/launcher3/widget/model/WidgetPreviewLoader;
 
-    invoke-direct {v2}, Lcom/android/launcher3/common/quickoption/shortcuts/ShortcutCache;-><init>()V
+    new-instance v2, Lcom/android/launcher3/common/model/DisableableAppCache;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;-><init>(Landroid/content/Context;Lcom/android/launcher3/common/quickoption/shortcuts/ShortcutCache;)V
+    sget-object v3, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mDeepShortcutManager:Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;
+    invoke-direct {v2, v3}, Lcom/android/launcher3/common/model/DisableableAppCache;-><init>(Landroid/content/Context;)V
 
-    new-instance v0, Lcom/android/launcher3/LauncherModel;
+    iput-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mDisableableAppCache:Lcom/android/launcher3/common/model/DisableableAppCache;
 
-    iget-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
+    new-instance v2, Lcom/android/launcher3/LauncherModel;
 
-    iget-object v3, p0, Lcom/android/launcher3/LauncherAppState;->mBadgeCache:Lcom/android/launcher3/common/model/BadgeCache;
+    iget-object v3, p0, Lcom/android/launcher3/LauncherAppState;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
 
-    iget-object v4, p0, Lcom/android/launcher3/LauncherAppState;->mDisableableAppCache:Lcom/android/launcher3/common/model/DisableableAppCache;
+    iget-object v4, p0, Lcom/android/launcher3/LauncherAppState;->mBadgeCache:Lcom/android/launcher3/common/model/BadgeCache;
 
-    iget-object v5, p0, Lcom/android/launcher3/LauncherAppState;->mDeepShortcutManager:Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;
+    iget-object v5, p0, Lcom/android/launcher3/LauncherAppState;->mDisableableAppCache:Lcom/android/launcher3/common/model/DisableableAppCache;
 
-    move-object v1, p0
+    invoke-direct {v2, p0, v3, v4, v5}, Lcom/android/launcher3/LauncherModel;-><init>(Lcom/android/launcher3/LauncherAppState;Lcom/android/launcher3/common/model/IconCache;Lcom/android/launcher3/common/model/BadgeCache;Lcom/android/launcher3/common/model/DisableableAppCache;)V
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/launcher3/LauncherModel;-><init>(Lcom/android/launcher3/LauncherAppState;Lcom/android/launcher3/common/model/IconCache;Lcom/android/launcher3/common/model/BadgeCache;Lcom/android/launcher3/common/model/DisableableAppCache;Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;)V
+    iput-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mModel:Lcom/android/launcher3/LauncherModel;
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mModel:Lcom/android/launcher3/LauncherModel;
+    sget-object v2, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
-    sget-object v0, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    invoke-static {v2}, Lcom/android/launcher3/common/compat/LauncherAppsCompat;->getInstance(Landroid/content/Context;)Lcom/android/launcher3/common/compat/LauncherAppsCompat;
 
-    invoke-static {v0}, Lcom/android/launcher3/common/compat/LauncherAppsCompat;->getInstance(Landroid/content/Context;)Lcom/android/launcher3/common/compat/LauncherAppsCompat;
+    move-result-object v2
 
-    move-result-object v0
+    iget-object v3, p0, Lcom/android/launcher3/LauncherAppState;->mModel:Lcom/android/launcher3/LauncherModel;
 
-    iget-object v1, p0, Lcom/android/launcher3/LauncherAppState;->mModel:Lcom/android/launcher3/LauncherModel;
+    invoke-virtual {v2, v3}, Lcom/android/launcher3/common/compat/LauncherAppsCompat;->addOnAppsChangedCallback(Lcom/android/launcher3/common/compat/LauncherAppsCompat$OnAppsChangedCallbackCompat;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/compat/LauncherAppsCompat;->addOnAppsChangedCallback(Lcom/android/launcher3/common/compat/LauncherAppsCompat$OnAppsChangedCallbackCompat;)V
+    new-instance v0, Landroid/content/IntentFilter;
 
-    new-instance v6, Landroid/content/IntentFilter;
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    invoke-direct {v6}, Landroid/content/IntentFilter;-><init>()V
+    const-string v2, "android.intent.action.LOCALE_CHANGED"
 
-    const-string v0, "android.intent.action.LOCALE_CHANGED"
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    const-string v2, "com.samsung.settings.ICON_BACKGROUNDS_CHANGED"
 
-    const-string v0, "com.samsung.settings.ICON_BACKGROUNDS_CHANGED"
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    const-string v2, "android.intent.action.MANAGED_PROFILE_ADDED"
 
-    const-string v0, "android.intent.action.MANAGED_PROFILE_ADDED"
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    const-string v2, "android.intent.action.MANAGED_PROFILE_REMOVED"
 
-    const-string v0, "android.intent.action.MANAGED_PROFILE_REMOVED"
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    const-string v2, "android.intent.action.MANAGED_PROFILE_AVAILABLE"
 
-    const-string v0, "android.intent.action.MANAGED_PROFILE_AVAILABLE"
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    const-string v2, "android.intent.action.MANAGED_PROFILE_UNAVAILABLE"
 
-    const-string v0, "android.intent.action.MANAGED_PROFILE_UNAVAILABLE"
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    const-string v2, "com.samsung.android.knox.intent.action.EDM_UNINSTALL_STATUS_INTERNAL"
 
-    const-string v0, "com.samsung.android.knox.intent.action.EDM_UNINSTALL_STATUS_INTERNAL"
-
-    invoke-virtual {v6, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportSprintExtension()Z
 
-    move-result v0
+    move-result v2
 
-    if-eqz v0, :cond_1
+    if-eqz v2, :cond_1
 
-    const-string v0, "Launcher"
+    const-string v2, "Launcher"
 
-    const-string v1, "[SPRINT] Adding Force Launhcer Refresh Intent"
+    const-string v3, "[SPRINT] Adding Force Launhcer Refresh Intent"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    const-string v0, "com.sec.sprextension.FORCE_LAUNCHER_REFRESH"
+    const-string v2, "com.sec.sprextension.FORCE_LAUNCHER_REFRESH"
 
-    invoke-virtual {v6, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     :cond_1
-    sget-object v0, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    sget-object v2, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/launcher3/LauncherAppState;->mModel:Lcom/android/launcher3/LauncherModel;
+    iget-object v3, p0, Lcom/android/launcher3/LauncherAppState;->mModel:Lcom/android/launcher3/LauncherModel;
 
-    invoke-virtual {v0, v1, v6}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {v2, v3, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    new-instance v6, Landroid/content/IntentFilter;
+    new-instance v0, Landroid/content/IntentFilter;
 
-    invoke-direct {v6}, Landroid/content/IntentFilter;-><init>()V
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    const-string v0, "android.intent.action.STK_TITLE_IS_LOADED"
+    const-string v2, "android.intent.action.STK_TITLE_IS_LOADED"
 
-    invoke-virtual {v6, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    const-string v0, "package"
+    const-string v2, "package"
 
-    invoke-virtual {v6, v0}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
-    sget-object v0, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    sget-object v2, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/launcher3/LauncherAppState;->mModel:Lcom/android/launcher3/LauncherModel;
+    iget-object v3, p0, Lcom/android/launcher3/LauncherAppState;->mModel:Lcom/android/launcher3/LauncherModel;
 
-    invoke-virtual {v0, v1, v6}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {v2, v3, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    sget-object v0, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    sget-object v2, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/launcher3/common/compat/UserManagerCompat;->getInstance(Landroid/content/Context;)Lcom/android/launcher3/common/compat/UserManagerCompat;
+    invoke-static {v2}, Lcom/android/launcher3/common/compat/UserManagerCompat;->getInstance(Landroid/content/Context;)Lcom/android/launcher3/common/compat/UserManagerCompat;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Lcom/android/launcher3/common/compat/UserManagerCompat;->enableAndResetCache()V
+    invoke-virtual {v2}, Lcom/android/launcher3/common/compat/UserManagerCompat;->enableAndResetCache()V
 
-    sget-object v0, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    sget-object v2, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
 
+    move-result-object v3
+
+    invoke-virtual {v2, v3, v6}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
     move-result-object v1
 
-    invoke-virtual {v0, v1, v8}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    const-string v2, "pref_CloneItemEnabled"
 
-    move-result-object v7
+    invoke-interface {v1, v2, v7}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
-    const-string v0, "pref_CloneItemEnabled"
+    move-result v2
 
-    invoke-interface {v7, v0, v9}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    iput-boolean v0, p0, Lcom/android/launcher3/LauncherAppState;->mCloneItemEnabled:Z
+    iput-boolean v2, p0, Lcom/android/launcher3/LauncherAppState;->mCloneItemEnabled:Z
 
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportEasyModeChange()Z
 
-    move-result v0
+    move-result v2
 
-    if-eqz v0, :cond_2
+    if-eqz v2, :cond_2
 
     invoke-direct {p0}, Lcom/android/launcher3/LauncherAppState;->initEasyMode()V
 
     :cond_2
     invoke-virtual {p0}, Lcom/android/launcher3/LauncherAppState;->initHomeOnlyMode()V
 
-    iget-boolean v0, p0, Lcom/android/launcher3/LauncherAppState;->mIsHomeOnlyMode:Z
+    iget-boolean v2, p0, Lcom/android/launcher3/LauncherAppState;->mIsHomeOnlyMode:Z
 
-    invoke-virtual {p0, v0}, Lcom/android/launcher3/LauncherAppState;->initScreenGrid(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/launcher3/LauncherAppState;->initScreenGrid(Z)V
 
     invoke-static {}, Lcom/android/launcher3/util/TestHelper;->isRoboUnitTest()Z
 
-    move-result v0
+    move-result v2
 
-    if-nez v0, :cond_3
+    if-nez v2, :cond_3
 
-    iget-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mModel:Lcom/android/launcher3/LauncherModel;
+    iget-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mModel:Lcom/android/launcher3/LauncherModel;
 
-    invoke-virtual {v0, p0}, Lcom/android/launcher3/LauncherModel;->reloadBadges(Lcom/android/launcher3/LauncherAppState;)V
+    invoke-virtual {v2, p0}, Lcom/android/launcher3/LauncherModel;->reloadBadges(Lcom/android/launcher3/LauncherAppState;)V
 
     :cond_3
-    new-instance v0, Lcom/android/launcher3/executor/StateManager;
+    new-instance v2, Lcom/android/launcher3/executor/StateManager;
 
-    invoke-direct {v0}, Lcom/android/launcher3/executor/StateManager;-><init>()V
+    invoke-direct {v2}, Lcom/android/launcher3/executor/StateManager;-><init>()V
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mStateManager:Lcom/android/launcher3/executor/StateManager;
+    iput-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mStateManager:Lcom/android/launcher3/executor/StateManager;
 
-    new-instance v0, Lcom/android/launcher3/proxy/LauncherProxy;
+    new-instance v2, Lcom/android/launcher3/proxy/LauncherProxy;
 
-    invoke-direct {v0}, Lcom/android/launcher3/proxy/LauncherProxy;-><init>()V
+    invoke-direct {v2}, Lcom/android/launcher3/proxy/LauncherProxy;-><init>()V
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mLauncherProxy:Lcom/android/launcher3/proxy/LauncherProxy;
+    iput-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mLauncherProxy:Lcom/android/launcher3/proxy/LauncherProxy;
 
-    new-instance v0, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;
+    new-instance v2, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;
 
-    invoke-direct {v0}, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;-><init>()V
+    invoke-direct {v2}, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mTopViewChangedMessageHandler:Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;
+    iput-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mTopViewChangedMessageHandler:Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;
 
-    iget-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mTopViewChangedMessageHandler:Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;
+    iget-object v2, p0, Lcom/android/launcher3/LauncherAppState;->mTopViewChangedMessageHandler:Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;
 
-    iget-object v1, p0, Lcom/android/launcher3/LauncherAppState;->mStateManager:Lcom/android/launcher3/executor/StateManager;
+    iget-object v3, p0, Lcom/android/launcher3/LauncherAppState;->mStateManager:Lcom/android/launcher3/executor/StateManager;
 
-    invoke-virtual {v1}, Lcom/android/launcher3/executor/StateManager;->getTopViewListener()Lcom/android/launcher3/executor/StateManager$TopViewListener;
+    invoke-virtual {v3}, Lcom/android/launcher3/executor/StateManager;->getTopViewListener()Lcom/android/launcher3/executor/StateManager$TopViewListener;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;->registerOnLauncherTopViewChangedListener(Lcom/android/launcher3/proxy/OnLauncherTopViewChangedListener;)V
-
-    new-instance v0, Lcom/android/launcher3/LauncherAppState$1;
-
-    invoke-direct {v0, p0}, Lcom/android/launcher3/LauncherAppState$1;-><init>(Lcom/android/launcher3/LauncherAppState;)V
-
-    iput-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mDesktopModeEventListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
-
-    iget-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mDesktopModeEventListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
-
-    invoke-static {v0}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->registerListener(Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;)V
+    invoke-virtual {v2, v3}, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;->registerOnLauncherTopViewChangedListener(Lcom/android/launcher3/proxy/OnLauncherTopViewChangedListener;)V
 
     return-void
 .end method
@@ -550,51 +525,43 @@
 .end method
 
 .method private initEasyMode()V
-    .locals 4
+    .locals 3
 
-    const/4 v3, 0x0
-
-    sget-object v1, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
-
-    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-static {}, Lcom/android/launcher3/common/model/FavoritesProvider;->getInstance()Lcom/android/launcher3/common/model/FavoritesProvider;
 
     move-result-object v0
 
-    const-string v1, "easy_mode"
+    const-string v1, "favorites_standard"
 
-    invoke-interface {v0, v1, v3}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/common/model/FavoritesProvider;->tableExists(Ljava/lang/String;)Z
 
-    move-result v1
+    move-result v0
 
-    iput-boolean v1, p0, Lcom/android/launcher3/LauncherAppState;->mIsEasyMode:Z
+    iput-boolean v0, p0, Lcom/android/launcher3/LauncherAppState;->mIsEasyMode:Z
 
-    const-string v1, "Launcher"
+    const-string v0, "Launcher"
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "initEasyMode : "
+    const-string v2, "initEasyMode : "
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v2
+    move-result-object v1
 
-    iget-boolean v3, p0, Lcom/android/launcher3/LauncherAppState;->mIsEasyMode:Z
+    iget-boolean v2, p0, Lcom/android/launcher3/LauncherAppState;->mIsEasyMode:Z
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method
@@ -676,30 +643,28 @@
 
 
 # virtual methods
-.method public disableAndFlushExternalQueue()V
-    .locals 1
+.method public getAppsButtonApplyCount()I
+    .locals 5
 
-    const/4 v0, 0x0
+    const/4 v4, 0x0
 
-    sput-boolean v0, Lcom/android/launcher3/LauncherAppState;->sUseExternalRequestQueue:Z
+    sget-object v2, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
-    sget-object v0, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
 
-    invoke-static {v0, p0}, Lcom/android/launcher3/home/ExternalRequestQueue;->disableAndFlushExternalRequestQueue(Landroid/content/Context;Lcom/android/launcher3/LauncherAppState;)V
+    move-result-object v3
 
-    sget-object v0, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+    invoke-virtual {v2, v3, v4}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    invoke-static {v0, p0}, Lcom/android/launcher3/remoteconfiguration/ExternalMethodQueue;->disableAndFlushExternalMethodQueue(Landroid/content/Context;Lcom/android/launcher3/LauncherAppState;)V
+    move-result-object v1
 
-    return-void
-.end method
+    const-string v2, "apps_button_settings_apply_count"
 
-.method public enableExternalQueue(Z)V
-    .locals 0
+    invoke-interface {v1, v2, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
-    sput-boolean p1, Lcom/android/launcher3/LauncherAppState;->sUseExternalRequestQueue:Z
+    move-result v0
 
-    return-void
+    return v0
 .end method
 
 .method public getAppsButtonEnabled()Z
@@ -732,6 +697,30 @@
 
     :cond_0
     const-string v2, "apps_button_settings"
+
+    goto :goto_0
+.end method
+
+.method public getAppsButtonSettingsActivity()Lcom/android/launcher3/home/AppsButtonSettingsActivity;
+    .locals 1
+
+    sget-object v0, Lcom/android/launcher3/LauncherAppState;->sAppsButtonSettingsActivity:Ljava/lang/ref/WeakReference;
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    sget-object v0, Lcom/android/launcher3/LauncherAppState;->sAppsButtonSettingsActivity:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;
 
     goto :goto_0
 .end method
@@ -797,37 +786,47 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_0
 
     iget v1, v0, Landroid/content/res/Configuration;->orientation:I
 
     const/4 v2, 0x2
 
-    if-ne v1, v2, :cond_1
+    if-ne v1, v2, :cond_0
 
-    iget-object v1, p0, Lcom/android/launcher3/LauncherAppState;->mLandscapeProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
-
-    if-nez v1, :cond_0
-
-    invoke-virtual {p0}, Lcom/android/launcher3/LauncherAppState;->makeDeviceProfile()V
-
-    :cond_0
     iget-object v1, p0, Lcom/android/launcher3/LauncherAppState;->mLandscapeProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
     :goto_0
     return-object v1
 
-    :cond_1
-    iget-object v1, p0, Lcom/android/launcher3/LauncherAppState;->mPortraitProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
-
-    if-nez v1, :cond_2
-
-    invoke-virtual {p0}, Lcom/android/launcher3/LauncherAppState;->makeDeviceProfile()V
-
-    :cond_2
+    :cond_0
     iget-object v1, p0, Lcom/android/launcher3/LauncherAppState;->mPortraitProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
     goto :goto_0
+.end method
+
+.method public getHomeLayoutApplyCount()I
+    .locals 5
+
+    const/4 v4, 0x0
+
+    sget-object v2, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
+
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3, v4}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v1
+
+    const-string v2, "home_layout_settings_apply_count"
+
+    invoke-interface {v1, v2, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v0
+
+    return v0
 .end method
 
 .method public getIconCache()Lcom/android/launcher3/common/model/IconCache;
@@ -854,6 +853,14 @@
     return-object v0
 .end method
 
+.method getSavedHotseatIconsBitmap()[Landroid/os/Parcelable;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mSavedHotseatIconsBitmap:[Landroid/os/Parcelable;
+
+    return-object v0
+.end method
+
 .method public getSettingsActivity()Lcom/android/launcher3/SettingsActivity;
     .locals 1
 
@@ -876,14 +883,6 @@
     check-cast v0, Lcom/android/launcher3/SettingsActivity;
 
     goto :goto_0
-.end method
-
-.method public getShortcutManager()Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/LauncherAppState;->mDeepShortcutManager:Lcom/android/launcher3/common/quickoption/shortcuts/DeepShortcutManager;
-
-    return-object v0
 .end method
 
 .method public getStateManager()Lcom/android/launcher3/executor/StateManager;
@@ -1158,7 +1157,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0c000b
+    const v6, 0x7f0b000c
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1172,7 +1171,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0c000c
+    const v6, 0x7f0b000d
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1222,7 +1221,7 @@
 
     move-result-object v5
 
-    const/high16 v8, 0x7f0c0000
+    const v8, 0x7f0b0001
 
     invoke-virtual {v5, v8}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1236,7 +1235,7 @@
 
     move-result-object v5
 
-    const v8, 0x7f0c0001
+    const v8, 0x7f0b0002
 
     invoke-virtual {v5, v8}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1258,14 +1257,6 @@
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherAppState;->mIsEasyMode:Z
-
-    return v0
-.end method
-
-.method public isExternalQueueEnabled()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/android/launcher3/LauncherAppState;->sUseExternalRequestQueue:Z
 
     return v0
 .end method
@@ -1518,10 +1509,6 @@
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    iget-object v1, p0, Lcom/android/launcher3/LauncherAppState;->mDesktopModeEventListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
-
-    invoke-static {v1}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->unregisterListener(Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;)V
-
     sget-object v1, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/android/launcher3/common/compat/LauncherAppsCompat;->getInstance(Landroid/content/Context;)Lcom/android/launcher3/common/compat/LauncherAppsCompat;
@@ -1629,6 +1616,14 @@
     goto :goto_0
 .end method
 
+.method saveHotseatIconsBitmap([Landroid/os/Parcelable;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/launcher3/LauncherAppState;->mSavedHotseatIconsBitmap:[Landroid/os/Parcelable;
+
+    return-void
+.end method
+
 .method public setAppsButtonEnabled(Z)V
     .locals 1
 
@@ -1642,13 +1637,13 @@
 .method public setAppsButtonEnabled(ZZ)V
     .locals 5
 
+    const/4 v4, 0x0
+
     sget-object v2, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
 
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
 
     move-result-object v3
-
-    const/4 v4, 0x0
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
@@ -1665,6 +1660,18 @@
     :goto_0
     invoke-interface {v1, v2, p1}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
+    const-string v2, "apps_button_settings_apply_count"
+
+    const-string v3, "apps_button_settings_apply_count"
+
+    invoke-interface {v0, v3, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v3
+
+    add-int/lit8 v3, v3, 0x1
+
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+
     invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     return-void
@@ -1673,6 +1680,18 @@
     const-string v2, "apps_button_settings"
 
     goto :goto_0
+.end method
+
+.method public setAppsButtonSettingsActivity(Lcom/android/launcher3/home/AppsButtonSettingsActivity;)V
+    .locals 1
+
+    new-instance v0, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    sput-object v0, Lcom/android/launcher3/LauncherAppState;->sAppsButtonSettingsActivity:Ljava/lang/ref/WeakReference;
+
+    return-void
 .end method
 
 .method public setBadgeSetings(I)V
@@ -1749,39 +1768,17 @@
 .end method
 
 .method public writeEasyModeEnabled(Z)V
-    .locals 5
+    .locals 0
 
     iput-boolean p1, p0, Lcom/android/launcher3/LauncherAppState;->mIsEasyMode:Z
-
-    sget-object v2, Lcom/android/launcher3/LauncherAppState;->sContext:Landroid/content/Context;
-
-    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v2, v3, v4}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v0
-
-    const-string v2, "easy_mode"
-
-    iget-boolean v3, p0, Lcom/android/launcher3/LauncherAppState;->mIsEasyMode:Z
-
-    invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     return-void
 .end method
 
 .method public writeHomeOnlyModeEnabled(Z)V
     .locals 5
+
+    const/4 v4, 0x0
 
     iput-boolean p1, p0, Lcom/android/launcher3/LauncherAppState;->mIsHomeOnlyMode:Z
 
@@ -1790,8 +1787,6 @@
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
 
     move-result-object v3
-
-    const/4 v4, 0x0
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
@@ -1806,6 +1801,18 @@
     iget-boolean v3, p0, Lcom/android/launcher3/LauncherAppState;->mIsHomeOnlyMode:Z
 
     invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    const-string v2, "home_layout_settings_apply_count"
+
+    const-string v3, "home_layout_settings_apply_count"
+
+    invoke-interface {v1, v3, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v3
+
+    add-int/lit8 v3, v3, 0x1
+
+    invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 

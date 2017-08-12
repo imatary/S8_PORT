@@ -44,7 +44,7 @@
 
     iget-object v0, p0, Lcom/android/launcher3/allapps/AppsTransitionAnimation$11;->this$0:Lcom/android/launcher3/allapps/AppsTransitionAnimation;
 
-    invoke-static {v0}, Lcom/android/launcher3/allapps/AppsTransitionAnimation;->access$500(Lcom/android/launcher3/allapps/AppsTransitionAnimation;)Lcom/android/launcher3/Launcher;
+    invoke-static {v0}, Lcom/android/launcher3/allapps/AppsTransitionAnimation;->access$400(Lcom/android/launcher3/allapps/AppsTransitionAnimation;)Lcom/android/launcher3/Launcher;
 
     move-result-object v0
 
@@ -59,6 +59,14 @@
 
 
 # virtual methods
+.method public onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/launcher3/allapps/AppsTransitionAnimation$11;->animationComplete()V
+
+    return-void
+.end method
+
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 0
 

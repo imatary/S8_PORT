@@ -132,7 +132,7 @@
     :try_start_0
     iget-object v8, p0, Lcom/android/launcher3/common/model/FavoritesUpdater$6;->val$cr:Landroid/content/ContentResolver;
 
-    const-string v9, "com.sec.android.app.launcher.settings"
+    sget-object v9, Lcom/android/launcher3/LauncherProvider;->AUTHORITY:Ljava/lang/String;
 
     invoke-virtual {v8, v9, v3}, Landroid/content/ContentResolver;->applyBatch(Ljava/lang/String;Ljava/util/ArrayList;)[Landroid/content/ContentProviderResult;
     :try_end_0

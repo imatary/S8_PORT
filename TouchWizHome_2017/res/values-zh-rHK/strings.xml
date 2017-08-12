@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="SS_SEARCH_HISTORY_HEADER_ABB">搜尋歷程記錄</string>
-    <string name="accessibility_add_home_screen">加入頁面</string>
-    <string name="accessibility_button">按鈕</string>
-    <string name="accessibility_dimmed">已變暗</string>
+    <string name="about">關於 %s</string>
+    <string name="about_already_installed">已安裝最新版本。</string>
+    <string name="about_home_screen">主螢幕</string>
+    <string name="about_licence">開放源碼授權</string>
+    <string name="about_network_err">無法檢查更新。您的手機未連接至網絡。</string>
+    <string name="about_new_version_exist">已有新版本可用。</string>
+    <string name="about_retry">重試</string>
+    <string name="about_update">更新</string>
+    <string name="about_version">版本%s</string>
     <string name="activity_not_available">此應用程式不可用於您的裝置。</string>
     <string name="activity_not_found">未安裝應用程式。</string>
     <string name="align_to_bottom">對齊底部</string>
     <string name="align_to_top">對齊頂部</string>
-    <string name="app_locked_toast">%s已鎖定。</string>
     <string name="app_search">搜尋電話</string>
     <string name="app_search_no_apps">您可以從搜尋結果加入捷徑至主螢幕。</string>
     <string name="app_search_no_results_found">無搜尋結果</string>
     <string name="app_search_tablet">搜尋平板電腦電腦</string>
-    <string name="app_unlocked_toast">%s已解鎖。</string>
     <string name="application_name">TouchWiz 首頁</string>
     <string name="apply">套用</string>
     <string name="appsPicker_add_button">加入</string>
@@ -38,7 +42,6 @@
     <string name="default_page">預設頁面</string>
     <string name="default_scroll_format">第 %1$d 頁，共 %2$d 頁。</string>
     <string name="disable_message">%1$s 及所有相關功能將被停用。若要再次啟用應用程式，請前往 [設定] > [應用程式]，然後選擇 %2$s。</string>
-    <string name="disable_message_knox_mode">將停用 %1$s 及所有相關功能。若要再次啟用應用程式，請前往 [%2$s 設定] > [應用程式]。</string>
     <string name="disable_message_vzw">%s及所有相關功能將被停用。若要再次啟用，請前往 [設定] > [應用程式] > [應用程式管理員]。</string>
     <string name="discard">捨棄</string>
     <string name="do_not_show_again">不再顯示</string>
@@ -49,8 +52,11 @@
     <string name="folder_add_button">加入應用程式</string>
     <string name="folder_closed">資料夾已關閉。</string>
     <string name="folder_color">資料夾顏色</string>
+    <string name="folder_color_blue">藍色</string>
     <string name="folder_color_default">預設資料夾顏色</string>
-    <string name="folder_color_pd">顏色 %d</string>
+    <string name="folder_color_green">綠色</string>
+    <string name="folder_color_orange">橙色</string>
+    <string name="folder_color_yellow">黃色</string>
     <string name="folder_hint_text">輸入資料夾名稱</string>
     <string name="folder_microsoft_apps">Microsoft 應用程式</string>
     <string name="folder_multi_search_bar_hint">搜尋應用程式</string>
@@ -111,7 +117,7 @@
     <string name="ok">確定</string>
     <string name="only_one_widget_instance_allowed">%s Widget 已加入至主螢幕。</string>
     <string name="option_menu_contact_up">聯絡我們</string>
-    <string name="option_menu_galaxy_essentials">GALAXY Essentials</string>
+    <string name="option_menu_galaxy_essentials">Galaxy Essentials</string>
     <string name="option_menu_home_settings">設定</string>
     <string name="options_menu">更多選項</string>
     <string name="options_menu_search_recommend">搜尋選項</string>
@@ -122,6 +128,7 @@
     <string name="out_of_space">此頁面沒有更多空間。</string>
     <string name="out_of_space_dialog">此頁面上空間不足。項目將加入至新頁面。</string>
     <string name="permdesc_install_widget">此應用程式可加入 widget 至主螢幕。</string>
+    <string name="permdesc_read_settings">This app can read the Home screen settings and shortcuts.</string>
     <string name="permdesc_read_zeropage_settings">此應用程式可讀取位於主螢幕左側的自訂內容頁面設定。</string>
     <string name="permdesc_write_zeropage_settings">此應用程式可變更位於主螢幕左側的自訂內容頁面設定。</string>
     <string name="permlab_install_widget">加入 widget</string>
@@ -158,27 +165,21 @@
     <string name="selected">已選擇</string>
     <string name="setting_apps_screen_grid">應用程式網格</string>
     <string name="shortcut_duplicate">快捷鍵%s已存在。</string>
-    <string name="shortcut_installed">%s 的捷徑已加至主螢幕。</string>
+    <string name="shortcut_installed">%s的捷徑已加入至主螢幕。</string>
     <string name="shortcut_moved_to_game_launcher">遊戲圖示已移動至遊戲啟動器。</string>
     <string name="shortcut_uninstalled">快捷鍵%s已移除。</string>
     <string name="speak_now">現在請說</string>
     <string name="swipe_up_for_more_apps">向上或向下滑動所有應用程式</string>
     <string name="swipe_up_for_more_apps_att">在屏幕上向上或向下滑動所有應用程式</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">以兩指向上或向下滑動所有應用程式。</string>
-    <string name="talkback_changed_to_ps">已變更為%s。</string>
+    <string name="talkback_checked">已選擇</string>
     <string name="talkback_folder">資料夾</string>
     <string name="talkback_n_items">%d 個項目</string>
     <string name="talkback_press_back_key_to_close_folder">按下返回鍵以關閉資料夾。</string>
-    <string name="talkback_tab_back_button_to_close_folder">按下返回鍵以關閉資料夾。</string>
     <string name="title_settings">%s 設定</string>
     <string name="tts_add_shortcut_on_home_screen_notice">拖曳圖示至螢幕頂部以加入至主螢幕。</string>
     <string name="tts_bottom_handle">底部控點</string>
-    <string name="tts_changed_to_apps_edit_mode">已變更為應用程式編輯模式。</string>
-    <string name="tts_changed_to_folder_edit_mode">已變更為資料夾編輯模式</string>
-    <string name="tts_changed_to_home_screen_edit_mode">已變更為主螢幕編輯模式。</string>
     <string name="tts_folder_created">資料夾已建立。</string>
-    <string name="tts_holding_items">按住 %1$s 和其他 %2$d 個應用程式</string>
-    <string name="tts_hotseat_item_moved_from_external">項目已移動至主螢幕的功能表列。</string>
     <string name="tts_hotseat_move_to">功能表列中的位置 %d。</string>
     <string name="tts_hover_item_over_other_item">%1$s 位於 %2$s 上方</string>
     <string name="tts_item_added">項目已加入。</string>
@@ -199,7 +200,6 @@
     <string name="viewmore_playstore">檢視更多 Play Store 的內容</string>
     <string name="viewtype_alphabetic_grid">按字母排序</string>
     <string name="viewtype_custom_grid">自訂順序</string>
-    <string name="voice_search">語音搜尋</string>
     <string name="wallpaper_button_text">螢幕牆紙</string>
     <string name="wallpapers_and_themes_button_text">螢幕牆紙與主題</string>
     <string name="widget_button_text">Widgets</string>
@@ -209,5 +209,4 @@
     <string name="zeropage_download_msg">若要使用此功能，您需要安裝 %1$s。請輕觸 [下載] 以下載並安裝 %2$s。</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">搜狐新聞三星版</string>
-    <string name="zeropage_toutiao_title">資訊快遞</string>
 </resources>

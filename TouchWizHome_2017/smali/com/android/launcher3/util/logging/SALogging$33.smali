@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/util/logging/SALogging;->insertCancelAddWidgetLog(Landroid/content/ComponentName;)V
+    value = Lcom/android/launcher3/util/logging/SALogging;->insertEnterResizeWidgetLog(Landroid/appwidget/AppWidgetProviderInfo;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-.field final synthetic val$cp:Landroid/content/ComponentName;
+.field final synthetic val$info:Landroid/appwidget/AppWidgetProviderInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/util/logging/SALogging;Landroid/content/ComponentName;)V
+.method constructor <init>(Lcom/android/launcher3/util/logging/SALogging;Landroid/appwidget/AppWidgetProviderInfo;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$33;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$33;->val$cp:Landroid/content/ComponentName;
+    iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$33;->val$info:Landroid/appwidget/AppWidgetProviderInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,11 +49,15 @@
 
     const-string v0, ""
 
-    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$33;->val$cp:Landroid/content/ComponentName;
+    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$33;->val$info:Landroid/appwidget/AppWidgetProviderInfo;
+
+    iget-object v2, v2, Landroid/appwidget/AppWidgetProviderInfo;->provider:Landroid/content/ComponentName;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$33;->val$cp:Landroid/content/ComponentName;
+    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$33;->val$info:Landroid/appwidget/AppWidgetProviderInfo;
+
+    iget-object v2, v2, Landroid/appwidget/AppWidgetProviderInfo;->provider:Landroid/content/ComponentName;
 
     invoke-virtual {v2}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
@@ -64,13 +68,13 @@
 
     move-result-object v2
 
-    const v3, 0x7f09019d
+    const v3, 0x7f08019b
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v4, 0x7f090101
+    const v4, 0x7f080146
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

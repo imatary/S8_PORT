@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/HomeBindController;->bindInsertScreens(JI)V
+    value = Lcom/android/launcher3/home/HomeBindController;->bindFolders(Lcom/android/launcher3/util/LongArrayMap;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,20 +20,16 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/home/HomeBindController;
 
-.field final synthetic val$insertIndex:I
-
-.field final synthetic val$screenId:J
+.field final synthetic val$folders:Lcom/android/launcher3/util/LongArrayMap;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/home/HomeBindController;JI)V
+.method constructor <init>(Lcom/android/launcher3/home/HomeBindController;Lcom/android/launcher3/util/LongArrayMap;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/home/HomeBindController$6;->this$0:Lcom/android/launcher3/home/HomeBindController;
 
-    iput-wide p2, p0, Lcom/android/launcher3/home/HomeBindController$6;->val$screenId:J
-
-    iput p4, p0, Lcom/android/launcher3/home/HomeBindController$6;->val$insertIndex:I
+    iput-object p2, p0, Lcom/android/launcher3/home/HomeBindController$6;->val$folders:Lcom/android/launcher3/util/LongArrayMap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,15 +39,13 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 2
 
     iget-object v0, p0, Lcom/android/launcher3/home/HomeBindController$6;->this$0:Lcom/android/launcher3/home/HomeBindController;
 
-    iget-wide v2, p0, Lcom/android/launcher3/home/HomeBindController$6;->val$screenId:J
+    iget-object v1, p0, Lcom/android/launcher3/home/HomeBindController$6;->val$folders:Lcom/android/launcher3/util/LongArrayMap;
 
-    iget v1, p0, Lcom/android/launcher3/home/HomeBindController$6;->val$insertIndex:I
-
-    invoke-virtual {v0, v2, v3, v1}, Lcom/android/launcher3/home/HomeBindController;->bindInsertScreens(JI)V
+    invoke-virtual {v0, v1}, Lcom/android/launcher3/home/HomeBindController;->bindFolders(Lcom/android/launcher3/util/LongArrayMap;)V
 
     return-void
 .end method
