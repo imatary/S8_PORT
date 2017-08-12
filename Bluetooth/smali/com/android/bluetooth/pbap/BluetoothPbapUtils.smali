@@ -61,10 +61,21 @@
     .end annotation
 .end field
 
+.field private static mDualBlackLists:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
     sget-boolean v0, Lcom/android/bluetooth/pbap/BluetoothPbapService;->VERBOSE:Z
 
@@ -79,6 +90,24 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Lcom/android/bluetooth/pbap/BluetoothPbapUtils;->mBlackLists:Ljava/util/List;
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    sput-object v0, Lcom/android/bluetooth/pbap/BluetoothPbapUtils;->mDualBlackLists:Ljava/util/List;
+
+    sget-object v0, Lcom/android/bluetooth/pbap/BluetoothPbapUtils;->mDualBlackLists:Ljava/util/List;
+
+    const-string/jumbo v1, "E0:75:0A"
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    sget-object v0, Lcom/android/bluetooth/pbap/BluetoothPbapUtils;->mDualBlackLists:Ljava/util/List;
+
+    const-string/jumbo v1, "FC:62:B9"
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-void
 .end method
@@ -1029,6 +1058,18 @@
     .locals 1
 
     sget-object v0, Lcom/android/bluetooth/pbap/BluetoothPbapUtils;->mBlackLists:Ljava/util/List;
+
+    invoke-interface {v0, p0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public static isDualBlackList(Ljava/lang/String;)Z
+    .locals 1
+
+    sget-object v0, Lcom/android/bluetooth/pbap/BluetoothPbapUtils;->mDualBlackLists:Ljava/util/List;
 
     invoke-interface {v0, p0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 

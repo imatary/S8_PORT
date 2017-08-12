@@ -192,7 +192,7 @@
 .method protected scheduleKick()V
     .locals 8
 
-    const v7, 0xfa000
+    const v7, 0x1f400
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 

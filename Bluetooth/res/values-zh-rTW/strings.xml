@@ -51,7 +51,7 @@
     <string name="download_fail_ok">確認</string>
     <string name="download_succ_line5">已接收檔案</string>
     <string name="download_succ_ok">開啟</string>
-    <string name="upload_line1">至：%s</string>
+    <string name="upload_line1">收件人：%1$s</string>
     <string name="upload_line3_nofilesize">檔案類型：%s</string>
     <string name="upload_line3">檔案類型：%1$s (%2$s)</string>
     <string name="upload_line5">正在傳送檔案…</string>
@@ -106,7 +106,6 @@
     <string name="status_protocol_error">無法正確處理要求。</string>
     <string name="status_unknown_error">未知的錯誤。</string>
     <string name="btopp_live_folder">已接收檔案</string>
-    <string name="bt_adv_opp_switch">自動從藍牙切換至 Wi-Fi Direct 以加速檔案共享。</string>
     <string name="download_success">已接收 %s</string>
     <string name="upload_success">已傳送 %s</string>
     <string name="inbound_history_title">已收到檔案</string>
@@ -124,8 +123,8 @@
     <string name="transfer_clear_dlg_title">清除</string>
     <string name="transfer_clear_btn">清除</string>
     <string name="connection_request_inactive_nap">%s 正在要求共享您手機的網路。</string>
-    <string name="allow_conn_req_inactive_nap">允許</string>
-    <string name="deny_conn_req_inactive_nap">拒絕</string>
+    <string name="allow_conn_req_inactive_nap">確定</string>
+    <string name="deny_conn_req_inactive_nap">取消</string>
     <string name="bluetooth_tether_request">允許藍牙網路共享嗎？</string>
     <string name="bluetooth_tether_connected">已連接 %s 來存取網際網路連線。</string>
     <string name="bluetooth_pan_nap_connecting_error_message">無法連接至 %s。</string>
@@ -145,16 +144,6 @@
     <string name="bluetooth_a2dp_playing_via_device">正在透過 %s 自動播放音訊…</string>
     <string name="bluetooth_a2dp_sound_glitches">偵測到音效故障</string>
     <string name="bluetooth_a2dp_turn_off_uhq_upscaler">輕觸此處來關閉 UHQ 超高音質。</string>
-    <string name="bluetooth_dual_play_title">雙聲道</string>
-    <string name="bluetooth_dual_play_content">已連接 2 部藍牙裝置。若要開啟 [雙聲道]，請前往 [設定]。</string>
-    <string name="settings">設定</string>
-    <string name="bluetooth_dual_play_ongoing_title">已開啟雙聲道</string>
-    <string name="bluetooth_dual_play_ongoing_content">已於 2 部連接的藍牙裝置上播放音訊。</string>
-    <string name="bluetooth_avc_title">控制音量</string>
-    <string name="bluetooth_avc_content">您可以使用媒體音量同步來將手機的音量與連接的藍牙裝置同步。</string>
-    <string name="bluetooth_avc_content_vzw">您可以透過媒體音量同步來將手機的音量與連接的藍牙裝置同步。</string>
-    <string name="bluetooth_avc_earshock_protection_title">保護您的聽力</string>
-    <string name="bluetooth_avc_earshock_protection_content">長期處於媒體音量同步模式下，可能導致您的聽力受損。若聲音太大，可加以調整。</string>
     <string name="bluetooth_a2dpsink_sound_coming">電視音效僅能透過手機揚聲器或有線耳機播放。</string>
     <string name="pbap_session_key_dialog_title">輸入 %1$s 的對稱金鑰</string>
     <string name="pbap_session_key_dialog_header">必須有藍牙對稱金鑰</string>
@@ -180,7 +169,7 @@
     <string name="bluetooth_notif_sap_message">藍牙連接%s。</string>
     <string name="bluetooth_remote_device">藍牙設備</string>
     <string name="hello">Hello World, TestActivity</string>
-    <string name="app_name">藍牙</string>
+    <string name="app_name">藍牙共享</string>
     <string name="insert_record">插入記錄</string>
     <string name="update_record">確認記錄</string>
     <string name="ack_record">Ack 記錄</string>

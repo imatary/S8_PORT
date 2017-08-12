@@ -500,7 +500,7 @@
     goto/16 :goto_0
 
     :cond_2
-    const v6, 0x7f0a00f9
+    const v6, 0x7f0a00e0
 
     invoke-virtual {p0, v6}, Lcom/android/bluetooth/hid/BluetoothHidIncomingpriorityoffActivity;->getString(I)Ljava/lang/String;
 

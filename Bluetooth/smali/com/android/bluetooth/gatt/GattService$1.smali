@@ -166,11 +166,11 @@
 
     iget-object v3, p0, Lcom/android/bluetooth/gatt/GattService$1;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/GattService;->-wrap19(Lcom/android/bluetooth/gatt/GattService;)V
+    invoke-static {v3}, Lcom/android/bluetooth/gatt/GattService;->-wrap17(Lcom/android/bluetooth/gatt/GattService;)V
 
     iget-object v3, p0, Lcom/android/bluetooth/gatt/GattService$1;->this$0:Lcom/android/bluetooth/gatt/GattService;
 
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/GattService;->-wrap20(Lcom/android/bluetooth/gatt/GattService;)V
+    invoke-static {v3}, Lcom/android/bluetooth/gatt/GattService;->-wrap18(Lcom/android/bluetooth/gatt/GattService;)V
 
     goto :goto_0
 

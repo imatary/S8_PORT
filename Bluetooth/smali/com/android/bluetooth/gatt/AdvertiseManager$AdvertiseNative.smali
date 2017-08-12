@@ -78,81 +78,140 @@
 .end method
 
 .method private enableAdvertising(Lcom/android/bluetooth/gatt/AdvertiseClient;)V
-    .locals 14
+    .locals 17
 
-    iget v1, p1, Lcom/android/bluetooth/gatt/AdvertiseClient;->clientIf:I
+    move-object/from16 v0, p1
 
-    iget-object v0, p1, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
+    iget v3, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->clientIf:I
 
-    invoke-direct {p0, v0}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->getAdvertisingIntervalUnit(Landroid/bluetooth/le/AdvertiseSettings;)J
+    move-object/from16 v0, p1
 
-    move-result-wide v8
+    iget-object v2, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
 
-    long-to-int v2, v8
+    move-object/from16 v0, p0
 
-    add-int/lit8 v3, v2, 0xa
+    invoke-direct {v0, v2}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->getAdvertisingIntervalUnit(Landroid/bluetooth/le/AdvertiseSettings;)J
 
-    invoke-direct {p0, p1}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->getAdvertisingEventType(Lcom/android/bluetooth/gatt/AdvertiseClient;)I
+    move-result-wide v10
 
-    move-result v4
+    long-to-int v4, v10
 
-    iget-object v0, p1, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
+    add-int/lit8 v5, v4, 0xa
 
-    invoke-direct {p0, v0}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->getTxPowerLevel(Landroid/bluetooth/le/AdvertiseSettings;)I
+    invoke-direct/range {p0 .. p1}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->getAdvertisingEventType(Lcom/android/bluetooth/gatt/AdvertiseClient;)I
 
     move-result v6
 
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+    move-object/from16 v0, p1
 
-    iget-object v5, p1, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
+    iget-object v2, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
 
-    invoke-virtual {v5}, Landroid/bluetooth/le/AdvertiseSettings;->getTimeout()I
+    move-object/from16 v0, p0
 
-    move-result v5
+    invoke-direct {v0, v2}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->getTxPowerLevel(Landroid/bluetooth/le/AdvertiseSettings;)I
 
-    int-to-long v8, v5
+    move-result v8
 
-    invoke-virtual {v0, v8, v9}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
+    sget-object v2, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
-    move-result-wide v8
+    move-object/from16 v0, p1
 
-    long-to-int v7, v8
+    iget-object v7, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
 
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
+    invoke-virtual {v7}, Landroid/bluetooth/le/AdvertiseSettings;->getTimeout()I
 
-    invoke-static {v0}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get0(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/btservice/AdapterService;
+    move-result v7
 
-    move-result-object v0
+    int-to-long v10, v7
 
-    invoke-virtual {v0}, Lcom/android/bluetooth/btservice/AdapterService;->isMultiAdvertisementSupported()Z
+    invoke-virtual {v2, v10, v11}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
 
-    move-result v0
+    move-result-wide v10
 
-    if-eqz v0, :cond_0
+    long-to-int v9, v10
 
-    const/4 v5, 0x7
+    move-object/from16 v0, p1
 
-    move-object v0, p0
+    iget-object v2, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
 
-    invoke-direct/range {v0 .. v7}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->gattClientEnableAdvNative(IIIIIII)V
+    invoke-virtual {v2}, Landroid/bluetooth/le/AdvertiseSettings;->getIsStandardAdv()Z
+
+    move-result v16
+
+    const-string/jumbo v2, "BtGatt.AdvertiseManager"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v10, "isStandardAdv = "
+
+    invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    move/from16 v0, v16
+
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v2, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get0(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/btservice/AdapterService;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/android/bluetooth/btservice/AdapterService;->isMultiAdvertisementSupported()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    move-object/from16 v0, p1
+
+    iget-object v2, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
+
+    invoke-virtual {v2}, Landroid/bluetooth/le/AdvertiseSettings;->getIsStandardAdv()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    :cond_0
+    move-object/from16 v0, p1
+
+    iget v11, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->clientIf:I
+
+    const/4 v15, 0x1
+
+    move-object/from16 v10, p0
+
+    move v12, v4
+
+    move v13, v5
+
+    move v14, v6
+
+    invoke-direct/range {v10 .. v15}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->gattAdvertiseNative(IIIIZ)V
 
     :goto_0
     return-void
 
-    :cond_0
-    iget v9, p1, Lcom/android/bluetooth/gatt/AdvertiseClient;->clientIf:I
+    :cond_1
+    const/4 v7, 0x7
 
-    const/4 v13, 0x1
+    move-object/from16 v2, p0
 
-    move-object v8, p0
-
-    move v10, v2
-
-    move v11, v3
-
-    move v12, v4
-
-    invoke-direct/range {v8 .. v13}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->gattAdvertiseNative(IIIIZ)V
+    invoke-direct/range {v2 .. v9}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->gattClientEnableAdvNative(IIIIIII)V
 
     goto :goto_0
 .end method
@@ -585,7 +644,7 @@
 
     move-result-object v2
 
-    if-nez v2, :cond_1
+    if-nez v2, :cond_2
 
     const/4 v2, 0x0
 
@@ -604,101 +663,19 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
-
-    const-string/jumbo v3, "starting multi advertising"
-
-    invoke-static {v2, v3}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-wrap1(Lcom/android/bluetooth/gatt/AdvertiseManager;Ljava/lang/String;)V
+    if-eqz v2, :cond_1
 
     move-object/from16 v0, p1
 
-    iget v3, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->clientIf:I
+    iget-object v2, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->settings:Landroid/bluetooth/le/AdvertiseSettings;
 
-    move-object/from16 v2, p0
+    invoke-virtual {v2}, Landroid/bluetooth/le/AdvertiseSettings;->getIsStandardAdv()Z
 
-    move/from16 v4, p3
+    move-result v2
 
-    invoke-direct/range {v2 .. v10}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->gattClientSetAdvDataNative(IZZZI[B[B[B)V
-
-    :goto_1
-    return-void
+    if-eqz v2, :cond_4
 
     :cond_1
-    invoke-virtual/range {p2 .. p2}, Landroid/bluetooth/le/AdvertiseData;->getServiceUuids()Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    mul-int/lit8 v2, v2, 0x10
-
-    invoke-static {v2}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
-
-    move-result-object v2
-
-    sget-object v3, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
-
-    invoke-virtual {v2, v3}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
-
-    move-result-object v22
-
-    invoke-virtual/range {p2 .. p2}, Landroid/bluetooth/le/AdvertiseData;->getServiceUuids()Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v24
-
-    :goto_2
-    invoke-interface/range {v24 .. v24}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    invoke-interface/range {v24 .. v24}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v23
-
-    check-cast v23, Landroid/os/ParcelUuid;
-
-    invoke-virtual/range {v23 .. v23}, Landroid/os/ParcelUuid;->getUuid()Ljava/util/UUID;
-
-    move-result-object v25
-
-    invoke-virtual/range {v25 .. v25}, Ljava/util/UUID;->getLeastSignificantBits()J
-
-    move-result-wide v2
-
-    move-object/from16 v0, v22
-
-    invoke-virtual {v0, v2, v3}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
-
-    move-result-object v2
-
-    invoke-virtual/range {v25 .. v25}, Ljava/util/UUID;->getMostSignificantBits()J
-
-    move-result-wide v12
-
-    invoke-virtual {v2, v12, v13}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
-
-    goto :goto_2
-
-    :cond_2
-    invoke-virtual/range {v22 .. v22}, Ljava/nio/ByteBuffer;->array()[B
-
-    move-result-object v10
-
-    goto :goto_0
-
-    :cond_3
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
@@ -732,6 +709,99 @@
     move-object/from16 v21, v10
 
     invoke-direct/range {v11 .. v21}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->gattSetAdvDataNative(IZZZIII[B[B[B)V
+
+    :goto_1
+    return-void
+
+    :cond_2
+    invoke-virtual/range {p2 .. p2}, Landroid/bluetooth/le/AdvertiseData;->getServiceUuids()Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    mul-int/lit8 v2, v2, 0x10
+
+    invoke-static {v2}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
+
+    move-result-object v2
+
+    sget-object v3, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
+
+    invoke-virtual {v2, v3}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
+
+    move-result-object v22
+
+    invoke-virtual/range {p2 .. p2}, Landroid/bluetooth/le/AdvertiseData;->getServiceUuids()Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v24
+
+    :goto_2
+    invoke-interface/range {v24 .. v24}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    invoke-interface/range {v24 .. v24}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v23
+
+    check-cast v23, Landroid/os/ParcelUuid;
+
+    invoke-virtual/range {v23 .. v23}, Landroid/os/ParcelUuid;->getUuid()Ljava/util/UUID;
+
+    move-result-object v25
+
+    invoke-virtual/range {v25 .. v25}, Ljava/util/UUID;->getLeastSignificantBits()J
+
+    move-result-wide v2
+
+    move-object/from16 v0, v22
+
+    invoke-virtual {v0, v2, v3}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
+
+    move-result-object v2
+
+    invoke-virtual/range {v25 .. v25}, Ljava/util/UUID;->getMostSignificantBits()J
+
+    move-result-wide v12
+
+    invoke-virtual {v2, v12, v13}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
+
+    goto :goto_2
+
+    :cond_3
+    invoke-virtual/range {v22 .. v22}, Ljava/nio/ByteBuffer;->array()[B
+
+    move-result-object v10
+
+    goto :goto_0
+
+    :cond_4
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
+
+    const-string/jumbo v3, "starting multi advertising"
+
+    invoke-static {v2, v3}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-wrap1(Lcom/android/bluetooth/gatt/AdvertiseManager;Ljava/lang/String;)V
+
+    move-object/from16 v0, p1
+
+    iget v3, v0, Lcom/android/bluetooth/gatt/AdvertiseClient;->clientIf:I
+
+    move-object/from16 v2, p0
+
+    move/from16 v4, p3
+
+    invoke-direct/range {v2 .. v10}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->gattClientSetAdvDataNative(IZZZI[B[B[B)V
 
     goto :goto_1
 .end method
@@ -784,7 +854,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get5(Lcom/android/bluetooth/gatt/AdvertiseManager;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get4(Lcom/android/bluetooth/gatt/AdvertiseManager;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -812,7 +882,7 @@
     :cond_2
     iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get5(Lcom/android/bluetooth/gatt/AdvertiseManager;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get4(Lcom/android/bluetooth/gatt/AdvertiseManager;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -826,31 +896,12 @@
 .end method
 
 .method private waitForCallback()Z
-    .locals 6
+    .locals 5
 
-    const/4 v5, 0x0
-
-    iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
-
-    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get3(Lcom/android/bluetooth/gatt/AdvertiseManager;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const-string/jumbo v1, "BtGatt.AdvertiseManager"
-
-    const-string/jumbo v2, "waitForCallback() - AdvertiseManager is not avaliable, maybe during cleanup"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v5
-
-    :cond_0
     :try_start_0
     iget-object v1, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get4(Lcom/android/bluetooth/gatt/AdvertiseManager;)Ljava/util/concurrent/CountDownLatch;
+    invoke-static {v1}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get3(Lcom/android/bluetooth/gatt/AdvertiseManager;)Ljava/util/concurrent/CountDownLatch;
 
     move-result-object v1
 
@@ -869,7 +920,9 @@
     :catch_0
     move-exception v0
 
-    return v5
+    const/4 v1, 0x0
+
+    return v1
 .end method
 
 
@@ -1042,7 +1095,23 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "stop advertising,  client.clientIf = "
+    const-string/jumbo v3, "stop advertising, standardAdvClientIf = "
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-object v3, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
+
+    invoke-static {v3}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get6(Lcom/android/bluetooth/gatt/AdvertiseManager;)I
+
+    move-result v3
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string/jumbo v3, " client.clientIf = "
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1072,6 +1141,16 @@
 
     if-eqz v0, :cond_0
 
+    iget-object v0, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
+
+    invoke-static {v0}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get6(Lcom/android/bluetooth/gatt/AdvertiseManager;)I
+
+    move-result v0
+
+    iget v1, p1, Lcom/android/bluetooth/gatt/AdvertiseClient;->clientIf:I
+
+    if-eq v0, v1, :cond_0
+
     iget v0, p1, Lcom/android/bluetooth/gatt/AdvertiseClient;->clientIf:I
 
     invoke-direct {p0, v0}, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->gattClientDisableAdvNative(I)V
@@ -1093,7 +1172,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/bluetooth/gatt/AdvertiseManager$AdvertiseNative;->this$0:Lcom/android/bluetooth/gatt/AdvertiseManager;
 
-    invoke-static {v0}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get6(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
+    invoke-static {v0}, Lcom/android/bluetooth/gatt/AdvertiseManager;->-get5(Lcom/android/bluetooth/gatt/AdvertiseManager;)Lcom/android/bluetooth/gatt/GattService;
 
     move-result-object v0
 

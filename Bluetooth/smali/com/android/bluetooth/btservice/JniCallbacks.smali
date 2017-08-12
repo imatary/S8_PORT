@@ -10,8 +10,6 @@
 
 .field private mBondStateMachine:Lcom/android/bluetooth/btservice/BondStateMachine;
 
-.field private mCoreManager:Lcom/samsung/bt/data/BluetoothCoreManager;
-
 .field private mDataManager:Lcom/samsung/bt/data/BluetoothDataManager;
 
 .field private mRemoteDevices:Lcom/android/bluetooth/btservice/RemoteDevices;
@@ -196,32 +194,6 @@
 
     iput-object v0, p0, Lcom/android/bluetooth/btservice/JniCallbacks;->mDataManager:Lcom/samsung/bt/data/BluetoothDataManager;
 
-    new-instance v0, Lcom/samsung/bt/data/BluetoothCoreManager;
-
-    invoke-direct {v0}, Lcom/samsung/bt/data/BluetoothCoreManager;-><init>()V
-
-    iput-object v0, p0, Lcom/android/bluetooth/btservice/JniCallbacks;->mCoreManager:Lcom/samsung/bt/data/BluetoothCoreManager;
-
-    return-void
-.end method
-
-.method lePhyUpdateCallback(I[BII)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/bluetooth/btservice/JniCallbacks;->mRemoteDevices:Lcom/android/bluetooth/btservice/RemoteDevices;
-
-    invoke-virtual {v0, p1, p2, p3, p4}, Lcom/android/bluetooth/btservice/RemoteDevices;->lePhyUpdateCallback(I[BII)V
-
-    return-void
-.end method
-
-.method leReadPhyCallback(I[BII)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/bluetooth/btservice/JniCallbacks;->mRemoteDevices:Lcom/android/bluetooth/btservice/RemoteDevices;
-
-    invoke-virtual {v0, p1, p2, p3, p4}, Lcom/android/bluetooth/btservice/RemoteDevices;->leReadPhyCallback(I[BII)V
-
     return-void
 .end method
 
@@ -231,16 +203,6 @@
     iget-object v0, p0, Lcom/android/bluetooth/btservice/JniCallbacks;->mAdapterProperties:Lcom/android/bluetooth/btservice/AdapterProperties;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/android/bluetooth/btservice/AdapterProperties;->leTestModeRecvCallback(III)V
-
-    return-void
-.end method
-
-.method linkLossCallback([B)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/bluetooth/btservice/JniCallbacks;->mCoreManager:Lcom/samsung/bt/data/BluetoothCoreManager;
-
-    invoke-virtual {v0, p1}, Lcom/samsung/bt/data/BluetoothCoreManager;->notifyLinkLossReason([B)V
 
     return-void
 .end method

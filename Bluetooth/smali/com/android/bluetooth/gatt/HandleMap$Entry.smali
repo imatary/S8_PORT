@@ -78,6 +78,10 @@
 
     iput-object p5, p0, Lcom/android/bluetooth/gatt/HandleMap$Entry;->uuid:Ljava/util/UUID;
 
+    iget v0, p0, Lcom/android/bluetooth/gatt/HandleMap$Entry;->instance:I
+
+    iput v0, p0, Lcom/android/bluetooth/gatt/HandleMap$Entry;->instance:I
+
     iput p6, p0, Lcom/android/bluetooth/gatt/HandleMap$Entry;->serviceHandle:I
 
     return-void
@@ -121,6 +125,10 @@
     iput p4, p0, Lcom/android/bluetooth/gatt/HandleMap$Entry;->handle:I
 
     iput-object p5, p0, Lcom/android/bluetooth/gatt/HandleMap$Entry;->uuid:Ljava/util/UUID;
+
+    iget v0, p0, Lcom/android/bluetooth/gatt/HandleMap$Entry;->instance:I
+
+    iput v0, p0, Lcom/android/bluetooth/gatt/HandleMap$Entry;->instance:I
 
     iput p6, p0, Lcom/android/bluetooth/gatt/HandleMap$Entry;->serviceHandle:I
 

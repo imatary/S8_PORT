@@ -155,7 +155,7 @@
 
     iget v3, p0, Lcom/android/bluetooth/gatt/GattService$ClientDeathRecipient;->mAppIf:I
 
-    invoke-static {v2, v3}, Lcom/android/bluetooth/gatt/GattService;->-wrap22(Lcom/android/bluetooth/gatt/GattService;I)V
+    invoke-static {v2, v3}, Lcom/android/bluetooth/gatt/GattService;->-wrap20(Lcom/android/bluetooth/gatt/GattService;I)V
 
     iget v2, p0, Lcom/android/bluetooth/gatt/GattService$ClientDeathRecipient;->mAppIf:I
 

@@ -145,7 +145,7 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v0}, Lcom/android/bluetooth/gatt/ScanManager;->-get17(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
+    invoke-static {v0}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
 
     move-result-object v0
 
@@ -168,7 +168,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v0}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+    invoke-static {v0}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
 
     move-result-object v0
 
@@ -190,7 +190,7 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v0}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+    invoke-static {v0}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
 
     move-result-object v0
 
@@ -210,7 +210,7 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v0}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+    invoke-static {v0}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
 
     move-result-object v0
 
@@ -285,7 +285,7 @@
     :sswitch_5
     iget-object v1, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v1}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+    invoke-static {v1}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
 
     move-result-object v1
 
@@ -311,7 +311,7 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get17(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
 
     move-result-object v2
 
@@ -337,7 +337,7 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get17(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
 
     move-result-object v2
 
@@ -350,7 +350,7 @@
     :cond_0
     iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Ljava/util/Set;
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get14(Lcom/android/bluetooth/gatt/ScanManager;)Ljava/util/Set;
 
     move-result-object v2
 
@@ -381,7 +381,7 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get17(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
 
     move-result-object v2
 
@@ -408,7 +408,7 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
 
     move-result-object v2
 
@@ -420,7 +420,7 @@
     :cond_3
     iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Ljava/util/Set;
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get14(Lcom/android/bluetooth/gatt/ScanManager;)Ljava/util/Set;
 
     move-result-object v2
 
@@ -428,7 +428,7 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
 
     move-result-object v2
 
@@ -436,7 +436,27 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+
+    move-result-object v2
+
+    invoke-static {v2, p1}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->-wrap2(Lcom/android/bluetooth/gatt/ScanManager$ScanNative;Lcom/android/bluetooth/gatt/ScanClient;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_4
+
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->configureRegularScanParams()V
+
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
 
     move-result-object v2
 
@@ -448,15 +468,7 @@
 
     iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->configureRegularScanParams()V
-
-    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
 
     move-result-object v2
 
@@ -464,16 +476,31 @@
 
     move-result v2
 
-    if-nez v2, :cond_4
+    if-eqz v2, :cond_5
 
+    :cond_4
+    :goto_1
+    :try_start_0
     iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get6(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get5(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/internal/app/IBatteryStats;
 
     move-result-object v2
 
-    if-eqz v2, :cond_4
+    iget-object v3, p1, Lcom/android/bluetooth/gatt/ScanClient;->workSource:Landroid/os/WorkSource;
 
+    invoke-interface {v2, v3}, Lcom/android/internal/app/IBatteryStats;->noteBleScanStarted(Landroid/os/WorkSource;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+
+    :cond_5
     iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
     invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get6(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
@@ -504,7 +531,110 @@
 
     invoke-virtual {v2, v1, v4, v5}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    :cond_4
+    goto :goto_1
+.end method
+
+.method handleStopScan(Lcom/android/bluetooth/gatt/ScanClient;)V
+    .locals 5
+
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/android/bluetooth/Utils;->enforceAdminPermission(Landroid/content/ContextWrapper;)V
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    :cond_0
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get14(Lcom/android/bluetooth/gatt/ScanManager;)Ljava/util/Set;
+
+    move-result-object v2
+
+    invoke-interface {v2, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    iget-boolean v1, p1, Lcom/android/bluetooth/gatt/ScanClient;->appDied:Z
+
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+
+    move-result-object v2
+
+    iget v3, p1, Lcom/android/bluetooth/gatt/ScanClient;->clientIf:I
+
+    invoke-virtual {v2, v3}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->getRegularScanClient(I)Lcom/android/bluetooth/gatt/ScanClient;
+
+    move-result-object p1
+
+    if-nez p1, :cond_1
+
+    return-void
+
+    :cond_1
+    iput-boolean v1, p1, Lcom/android/bluetooth/gatt/ScanClient;->appDied:Z
+
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->stopRegularScan(Lcom/android/bluetooth/gatt/ScanClient;)V
+
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->-wrap4(Lcom/android/bluetooth/gatt/ScanManager$ScanNative;)I
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get6(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
+
+    move-result-object v2
+
+    const/4 v3, 0x3
+
+    invoke-virtual {v2, v3}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->removeMessages(I)V
+
+    :cond_2
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+
+    move-result-object v2
+
+    invoke-static {v2, p1}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->-wrap2(Lcom/android/bluetooth/gatt/ScanManager$ScanNative;Lcom/android/bluetooth/gatt/ScanClient;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_3
+
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->configureRegularScanParams()V
+
+    :cond_3
     :try_start_0
     iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
@@ -514,256 +644,65 @@
 
     iget-object v3, p1, Lcom/android/bluetooth/gatt/ScanClient;->workSource:Landroid/os/WorkSource;
 
-    invoke-interface {v2, v3}, Lcom/android/internal/app/IBatteryStats;->noteBleScanStarted(Landroid/os/WorkSource;)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    goto :goto_0
-.end method
-
-.method handleStopScan(Lcom/android/bluetooth/gatt/ScanClient;)V
-    .locals 6
-
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get17(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lcom/android/bluetooth/Utils;->enforceAdminPermission(Landroid/content/ContextWrapper;)V
-
-    if-nez p1, :cond_0
-
-    return-void
-
-    :cond_0
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Ljava/util/Set;
-
-    move-result-object v3
-
-    invoke-interface {v3, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_5
-
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
-
-    move-result-object v3
-
-    iget v4, p1, Lcom/android/bluetooth/gatt/ScanClient;->clientIf:I
-
-    invoke-virtual {v3, v4}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->getRegularScanClient(I)Lcom/android/bluetooth/gatt/ScanClient;
-
-    move-result-object v2
-
-    if-nez v2, :cond_1
-
-    const-string/jumbo v3, "BtGatt.ScanManager"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "regularClient is NULL!, appDied: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    iget-boolean v5, p1, Lcom/android/bluetooth/gatt/ScanClient;->appDied:Z
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    :cond_1
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v2}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->stopRegularScan(Lcom/android/bluetooth/gatt/ScanClient;)V
-
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->-wrap4(Lcom/android/bluetooth/gatt/ScanManager$ScanNative;)I
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get6(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_2
-
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get6(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    move-result-object v3
-
-    const/4 v4, 0x3
-
-    invoke-virtual {v3, v4}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->removeMessages(I)V
-
-    :cond_2
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
-
-    move-result-object v3
-
-    invoke-static {v3, v2}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->-wrap1(Lcom/android/bluetooth/gatt/ScanManager$ScanNative;Lcom/android/bluetooth/gatt/ScanClient;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_3
-
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->configureRegularScanParams()V
-
-    :cond_3
-    :try_start_0
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get5(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/internal/app/IBatteryStats;
-
-    move-result-object v3
-
-    iget-object v4, v2, Lcom/android/bluetooth/gatt/ScanClient;->workSource:Landroid/os/WorkSource;
-
-    invoke-interface {v3, v4}, Lcom/android/internal/app/IBatteryStats;->noteBleScanStopped(Landroid/os/WorkSource;)V
+    invoke-interface {v2, v3}, Lcom/android/internal/app/IBatteryStats;->noteBleScanStopped(Landroid/os/WorkSource;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_0
-    iget-boolean v3, p1, Lcom/android/bluetooth/gatt/ScanClient;->appDied:Z
+    iget-boolean v2, p1, Lcom/android/bluetooth/gatt/ScanClient;->appDied:Z
 
-    if-eqz v3, :cond_4
+    if-eqz v2, :cond_4
 
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v5, "app died, unregister client - "
+    const-string/jumbo v4, "app died, unregister client - "
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    iget v5, p1, Lcom/android/bluetooth/gatt/ScanClient;->clientIf:I
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Lcom/android/bluetooth/gatt/ScanManager;->-wrap1(Lcom/android/bluetooth/gatt/ScanManager;Ljava/lang/String;)V
-
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get17(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
     iget v4, p1, Lcom/android/bluetooth/gatt/ScanClient;->clientIf:I
 
-    invoke-virtual {v3, v4}, Lcom/android/bluetooth/gatt/GattService;->unregisterClient(I)V
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Lcom/android/bluetooth/gatt/ScanManager;->-wrap1(Lcom/android/bluetooth/gatt/ScanManager;Ljava/lang/String;)V
+
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
+
+    move-result-object v2
+
+    iget v3, p1, Lcom/android/bluetooth/gatt/ScanClient;->clientIf:I
+
+    invoke-virtual {v2, v3}, Lcom/android/bluetooth/gatt/GattService;->unregisterClient(I)V
 
     :cond_4
     return-void
 
     :cond_5
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
+    iget-object v2, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
 
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+    invoke-static {v2}, Lcom/android/bluetooth/gatt/ScanManager;->-get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget v4, p1, Lcom/android/bluetooth/gatt/ScanClient;->clientIf:I
-
-    invoke-static {v3, v4}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->-wrap3(Lcom/android/bluetooth/gatt/ScanManager$ScanNative;I)Lcom/android/bluetooth/gatt/ScanClient;
-
-    move-result-object v0
-
-    if-nez v0, :cond_6
-
-    const-string/jumbo v3, "BtGatt.ScanManager"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "batchClient is NULL!, appDied: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    iget-boolean v5, p1, Lcom/android/bluetooth/gatt/ScanClient;->appDied:Z
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    :cond_6
-    iget-object v3, p0, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->this$0:Lcom/android/bluetooth/gatt/ScanManager;
-
-    invoke-static {v3}, Lcom/android/bluetooth/gatt/ScanManager;->-get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v0}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->stopBatchScan(Lcom/android/bluetooth/gatt/ScanClient;)V
+    invoke-virtual {v2, p1}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->stopBatchScan(Lcom/android/bluetooth/gatt/ScanClient;)V
 
     goto :goto_0
 
     :catch_0
-    move-exception v1
+    move-exception v0
 
     goto :goto_0
 .end method

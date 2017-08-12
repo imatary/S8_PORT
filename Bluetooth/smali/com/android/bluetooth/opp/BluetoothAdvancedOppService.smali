@@ -1181,11 +1181,9 @@
 .method public removeWifiConnectionMessage()V
     .locals 4
 
-    const/16 v3, 0x66
+    const/16 v3, 0x64
 
     const/16 v2, 0x65
-
-    const/16 v1, 0x64
 
     iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothAdvancedOppService;->mWifiConnectionHandler:Landroid/os/Handler;
 
@@ -1202,7 +1200,9 @@
     :cond_0
     iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothAdvancedOppService;->mWifiConnectionHandler:Landroid/os/Handler;
 
-    invoke-virtual {v0, v3}, Landroid/os/Handler;->hasMessages(I)Z
+    const/16 v1, 0x66
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
 
     move-result v0
 
@@ -1210,12 +1210,12 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothAdvancedOppService;->mWifiConnectionHandler:Landroid/os/Handler;
 
-    invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {v0, v2}, Landroid/os/Handler;->removeMessages(I)V
 
     :cond_1
     iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothAdvancedOppService;->mWifiConnectionHandler:Landroid/os/Handler;
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
+    invoke-virtual {v0, v3}, Landroid/os/Handler;->hasMessages(I)Z
 
     move-result v0
 
@@ -1223,7 +1223,7 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothAdvancedOppService;->mWifiConnectionHandler:Landroid/os/Handler;
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
 
     :cond_2
     return-void

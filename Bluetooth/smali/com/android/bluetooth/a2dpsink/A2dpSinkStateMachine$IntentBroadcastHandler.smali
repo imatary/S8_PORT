@@ -38,11 +38,7 @@
 .end method
 
 .method private onConnectionStateChanged(Landroid/bluetooth/BluetoothDevice;II)V
-    .locals 9
-
-    const/4 v8, 0x1
-
-    const/4 v7, 0x0
+    .locals 7
 
     new-instance v2, Landroid/content/Intent;
 
@@ -202,39 +198,7 @@
 
     move-result-object v4
 
-    const-string/jumbo v5, "SINK"
-
-    iget-object v6, p0, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$IntentBroadcastHandler;->this$0:Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;
-
-    invoke-static {v6}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;->-get8(Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;)Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;
-
-    move-result-object v6
-
-    invoke-static {v6, v7}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->-wrap0(Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v4, v5, v6}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->sendBigdata(Ljava/lang/String;Ljava/lang/String;)V
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$IntentBroadcastHandler;->this$0:Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;
-
-    invoke-static {v4}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;->-get8(Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;)Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;
-
-    move-result-object v4
-
-    const-string/jumbo v5, "SINK"
-
-    iget-object v6, p0, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$IntentBroadcastHandler;->this$0:Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;
-
-    invoke-static {v6}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;->-get8(Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine;)Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;
-
-    move-result-object v6
-
-    invoke-static {v6, v8}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->-wrap0(Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v4, v5, v6}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->sendBigdataForHQM(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v4}, Lcom/android/bluetooth/a2dpsink/A2dpSinkStateMachine$BigData;->sendBigdatas()V
 
     :cond_3
     :goto_1
@@ -257,13 +221,15 @@
 
     move-result-object v5
 
-    const v6, 0x7f0a00a6
+    const v6, 0x7f0a009e
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-static {v4, v5, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    const/4 v6, 0x1
+
+    invoke-static {v4, v5, v6}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object v3
 

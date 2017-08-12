@@ -1184,7 +1184,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v10, v4}, Landroid/app/Notification$Builder;->setContentInfo(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+    invoke-virtual {v10, v4}, Landroid/app/Notification$Builder;->setSubText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
     move-object/from16 v0, v33
 
@@ -1507,26 +1507,6 @@
 
     const/16 v16, 0x0
 
-    move-object/from16 v0, p0
-
-    iget-boolean v4, v0, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mUpdateCompleteNotification:Z
-
-    if-nez v4, :cond_1
-
-    sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->V:Z
-
-    if-eqz v4, :cond_0
-
-    const-string/jumbo v4, "BluetoothOppNotification"
-
-    const-string/jumbo v5, "No need to update cvomplete notification"
-
-    invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    return-void
-
-    :cond_1
     const/4 v13, 0x0
 
     :try_start_0
@@ -1556,16 +1536,16 @@
 
     move-result-object v13
 
-    if-nez v13, :cond_3
+    if-nez v13, :cond_1
 
-    if-eqz v13, :cond_2
+    if-eqz v13, :cond_0
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_2
+    :cond_0
     return-void
 
-    :cond_3
+    :cond_1
     :try_start_1
     const-string/jumbo v4, "timestamp"
 
@@ -1598,7 +1578,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_d
+    if-nez v4, :cond_b
 
     move/from16 v0, v41
 
@@ -1610,15 +1590,15 @@
 
     move-result v4
 
-    if-nez v4, :cond_7
+    if-nez v4, :cond_5
 
-    if-nez v38, :cond_6
+    if-nez v38, :cond_4
 
     invoke-interface {v13, v14}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v37
 
-    if-nez v37, :cond_4
+    if-nez v37, :cond_2
 
     move/from16 v0, v20
 
@@ -1626,8 +1606,8 @@
 
     move-result-object v37
 
-    :cond_4
-    if-nez v37, :cond_5
+    :cond_2
+    if-nez v37, :cond_3
 
     move-object/from16 v0, p0
 
@@ -1639,17 +1619,17 @@
 
     move-result-object v37
 
-    :cond_5
+    :cond_3
     move/from16 v0, v45
 
     invoke-interface {v13, v0}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v34
 
-    :cond_6
+    :cond_4
     add-int/lit8 v38, v38, 0x1
 
-    :cond_7
+    :cond_5
     invoke-interface {v13}, Landroid/database/Cursor;->moveToNext()Z
     :try_end_1
     .catch Landroid/database/CursorWindowAllocationException; {:try_start_1 .. :try_end_1} :catch_0
@@ -1686,13 +1666,13 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    if-eqz v13, :cond_8
+    if-eqz v13, :cond_6
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_8
+    :cond_6
     :goto_1
-    if-lez v38, :cond_12
+    if-lez v38, :cond_10
 
     new-instance v32, Landroid/app/Notification;
 
@@ -1734,7 +1714,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_9
+    if-eqz v4, :cond_7
 
     move-object/from16 v0, p0
 
@@ -1746,12 +1726,12 @@
 
     move-result-object v37
 
-    :cond_9
+    :cond_7
     const/4 v4, 0x1
 
     move/from16 v0, v38
 
-    if-ne v0, v4, :cond_10
+    if-ne v0, v4, :cond_e
 
     const/4 v10, 0x0
 
@@ -1768,7 +1748,7 @@
     move-result-object v46
 
     :goto_2
-    if-eqz v10, :cond_a
+    if-eqz v10, :cond_8
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1788,7 +1768,7 @@
 
     move-result-object v19
 
-    :cond_a
+    :cond_8
     move-wide/from16 v0, v34
 
     move-object/from16 v2, v32
@@ -1851,7 +1831,7 @@
 
     invoke-virtual {v4, v5, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    :cond_b
+    :cond_9
     :goto_3
     const/4 v13, 0x0
 
@@ -1882,20 +1862,20 @@
 
     move-result-object v13
 
-    if-nez v13, :cond_13
+    if-nez v13, :cond_11
 
-    if-eqz v13, :cond_c
+    if-eqz v13, :cond_a
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_c
+    :cond_a
     return-void
 
-    :cond_d
+    :cond_b
     :try_start_4
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->V:Z
 
-    if-eqz v4, :cond_e
+    if-eqz v4, :cond_c
 
     const-string/jumbo v4, "BluetoothOppNotification"
 
@@ -1925,8 +1905,8 @@
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_4 .. :try_end_4} :catch_1
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    :cond_e
-    if-eqz v13, :cond_8
+    :cond_c
+    if-eqz v13, :cond_6
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
@@ -1962,7 +1942,7 @@
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    if-eqz v13, :cond_8
+    if-eqz v13, :cond_6
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
@@ -1971,14 +1951,14 @@
     :catchall_0
     move-exception v4
 
-    if-eqz v13, :cond_f
+    if-eqz v13, :cond_d
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_f
+    :cond_d
     throw v4
 
-    :cond_10
+    :cond_e
     const-string/jumbo v4, "."
 
     move-object/from16 v0, v37
@@ -1991,7 +1971,7 @@
 
     move/from16 v0, v16
 
-    if-eq v0, v4, :cond_11
+    if-eq v0, v4, :cond_f
 
     move-object/from16 v0, v37
 
@@ -2034,7 +2014,7 @@
 
     aput-object v6, v5, v7
 
-    const v6, 0x7f0a007a
+    const v6, 0x7f0a0079
 
     invoke-virtual {v4, v6, v5}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2052,19 +2032,19 @@
 
     goto/16 :goto_2
 
-    :cond_11
+    :cond_f
     const-string/jumbo v18, ""
 
     move-object/from16 v19, v37
 
     goto :goto_4
 
-    :cond_12
+    :cond_10
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mNotificationMgr:Landroid/app/NotificationManager;
 
-    if-eqz v4, :cond_b
+    if-eqz v4, :cond_9
 
     move-object/from16 v0, p0
 
@@ -2076,7 +2056,7 @@
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->V:Z
 
-    if-eqz v4, :cond_b
+    if-eqz v4, :cond_9
 
     const-string/jumbo v4, "BluetoothOppNotification"
 
@@ -2086,7 +2066,7 @@
 
     goto/16 :goto_3
 
-    :cond_13
+    :cond_11
     :try_start_6
     const-string/jumbo v4, "timestamp"
 
@@ -2119,7 +2099,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_1d
+    if-nez v4, :cond_1b
 
     move/from16 v0, v41
 
@@ -2131,15 +2111,15 @@
 
     move-result v4
 
-    if-eqz v4, :cond_17
+    if-eqz v4, :cond_15
 
-    if-nez v36, :cond_16
+    if-nez v36, :cond_14
 
     invoke-interface {v13, v14}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v33
 
-    if-nez v33, :cond_14
+    if-nez v33, :cond_12
 
     move/from16 v0, v20
 
@@ -2147,8 +2127,8 @@
 
     move-result-object v33
 
-    :cond_14
-    if-nez v33, :cond_15
+    :cond_12
+    if-nez v33, :cond_13
 
     move-object/from16 v0, p0
 
@@ -2160,17 +2140,17 @@
 
     move-result-object v33
 
-    :cond_15
+    :cond_13
     move/from16 v0, v44
 
     invoke-interface {v13, v0}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v30
 
-    :cond_16
+    :cond_14
     add-int/lit8 v36, v36, 0x1
 
-    :cond_17
+    :cond_15
     invoke-interface {v13}, Landroid/database/Cursor;->moveToNext()Z
     :try_end_6
     .catch Landroid/database/CursorWindowAllocationException; {:try_start_6 .. :try_end_6} :catch_2
@@ -2207,13 +2187,13 @@
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_1
 
-    if-eqz v13, :cond_18
+    if-eqz v13, :cond_16
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_18
+    :cond_16
     :goto_6
-    if-lez v36, :cond_22
+    if-lez v36, :cond_20
 
     new-instance v32, Landroid/app/Notification;
 
@@ -2255,7 +2235,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_19
+    if-eqz v4, :cond_17
 
     move-object/from16 v0, p0
 
@@ -2267,12 +2247,12 @@
 
     move-result-object v33
 
-    :cond_19
+    :cond_17
     const/4 v4, 0x1
 
     move/from16 v0, v36
 
-    if-ne v0, v4, :cond_20
+    if-ne v0, v4, :cond_1e
 
     const/4 v10, 0x0
 
@@ -2289,7 +2269,7 @@
 
     move-result-object v46
 
-    if-eqz v10, :cond_1a
+    if-eqz v10, :cond_18
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -2309,7 +2289,7 @@
 
     move-result-object v19
 
-    :cond_1a
+    :cond_18
     move-wide/from16 v0, v30
 
     move-object/from16 v2, v32
@@ -2372,7 +2352,7 @@
 
     invoke-virtual {v4, v5, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    :cond_1b
+    :cond_19
     :goto_8
     const/4 v13, 0x0
 
@@ -2403,20 +2383,20 @@
 
     move-result-object v13
 
-    if-nez v13, :cond_23
+    if-nez v13, :cond_21
 
-    if-eqz v13, :cond_1c
+    if-eqz v13, :cond_1a
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_1c
+    :cond_1a
     return-void
 
-    :cond_1d
+    :cond_1b
     :try_start_9
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->V:Z
 
-    if-eqz v4, :cond_1e
+    if-eqz v4, :cond_1c
 
     const-string/jumbo v4, "BluetoothOppNotification"
 
@@ -2446,8 +2426,8 @@
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_9 .. :try_end_9} :catch_3
     .catchall {:try_start_9 .. :try_end_9} :catchall_1
 
-    :cond_1e
-    if-eqz v13, :cond_18
+    :cond_1c
+    if-eqz v13, :cond_16
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
@@ -2483,7 +2463,7 @@
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_1
 
-    if-eqz v13, :cond_18
+    if-eqz v13, :cond_16
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
@@ -2492,14 +2472,14 @@
     :catchall_1
     move-exception v4
 
-    if-eqz v13, :cond_1f
+    if-eqz v13, :cond_1d
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_1f
+    :cond_1d
     throw v4
 
-    :cond_20
+    :cond_1e
     const-string/jumbo v4, "."
 
     move-object/from16 v0, v33
@@ -2512,7 +2492,7 @@
 
     move/from16 v0, v16
 
-    if-eq v0, v4, :cond_21
+    if-eq v0, v4, :cond_1f
 
     move-object/from16 v0, v33
 
@@ -2555,7 +2535,7 @@
 
     aput-object v6, v5, v7
 
-    const v6, 0x7f0a007a
+    const v6, 0x7f0a0079
 
     invoke-virtual {v4, v6, v5}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2563,19 +2543,19 @@
 
     goto/16 :goto_7
 
-    :cond_21
+    :cond_1f
     const-string/jumbo v18, ""
 
     move-object/from16 v19, v33
 
     goto :goto_9
 
-    :cond_22
+    :cond_20
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mNotificationMgr:Landroid/app/NotificationManager;
 
-    if-eqz v4, :cond_1b
+    if-eqz v4, :cond_19
 
     move-object/from16 v0, p0
 
@@ -2587,7 +2567,7 @@
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->V:Z
 
-    if-eqz v4, :cond_1b
+    if-eqz v4, :cond_19
 
     const-string/jumbo v4, "BluetoothOppNotification"
 
@@ -2597,7 +2577,7 @@
 
     goto/16 :goto_8
 
-    :cond_23
+    :cond_21
     :try_start_b
     const-string/jumbo v4, "timestamp"
 
@@ -2630,7 +2610,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_2d
+    if-nez v4, :cond_2b
 
     move/from16 v0, v40
 
@@ -2642,9 +2622,9 @@
 
     move-result v4
 
-    if-nez v4, :cond_27
+    if-nez v4, :cond_25
 
-    if-nez v29, :cond_26
+    if-nez v29, :cond_24
 
     move/from16 v0, v20
 
@@ -2652,14 +2632,14 @@
 
     move-result-object v28
 
-    if-nez v28, :cond_24
+    if-nez v28, :cond_22
 
     invoke-interface {v13, v14}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v28
 
-    :cond_24
-    if-nez v28, :cond_25
+    :cond_22
+    if-nez v28, :cond_23
 
     move-object/from16 v0, p0
 
@@ -2671,17 +2651,17 @@
 
     move-result-object v28
 
-    :cond_25
+    :cond_23
     move/from16 v0, v43
 
     invoke-interface {v13, v0}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v24
 
-    :cond_26
+    :cond_24
     add-int/lit8 v29, v29, 0x1
 
-    :cond_27
+    :cond_25
     invoke-interface {v13}, Landroid/database/Cursor;->moveToNext()Z
     :try_end_b
     .catch Landroid/database/CursorWindowAllocationException; {:try_start_b .. :try_end_b} :catch_4
@@ -2718,13 +2698,13 @@
     :try_end_c
     .catchall {:try_start_c .. :try_end_c} :catchall_2
 
-    if-eqz v13, :cond_28
+    if-eqz v13, :cond_26
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_28
+    :cond_26
     :goto_b
-    if-lez v29, :cond_32
+    if-lez v29, :cond_30
 
     new-instance v21, Landroid/app/Notification;
 
@@ -2766,7 +2746,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_29
+    if-eqz v4, :cond_27
 
     move-object/from16 v0, p0
 
@@ -2778,12 +2758,12 @@
 
     move-result-object v28
 
-    :cond_29
+    :cond_27
     const/4 v4, 0x1
 
     move/from16 v0, v29
 
-    if-ne v0, v4, :cond_30
+    if-ne v0, v4, :cond_2e
 
     const/4 v10, 0x0
 
@@ -2800,7 +2780,7 @@
     move-result-object v46
 
     :goto_c
-    if-eqz v10, :cond_2a
+    if-eqz v10, :cond_28
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -2820,7 +2800,7 @@
 
     move-result-object v19
 
-    :cond_2a
+    :cond_28
     move-wide/from16 v0, v24
 
     move-object/from16 v2, v21
@@ -2883,7 +2863,7 @@
 
     invoke-virtual {v4, v5, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    :cond_2b
+    :cond_29
     :goto_d
     const/4 v13, 0x0
 
@@ -2914,20 +2894,20 @@
 
     move-result-object v13
 
-    if-nez v13, :cond_33
+    if-nez v13, :cond_31
 
-    if-eqz v13, :cond_2c
+    if-eqz v13, :cond_2a
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_2c
+    :cond_2a
     return-void
 
-    :cond_2d
+    :cond_2b
     :try_start_e
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->V:Z
 
-    if-eqz v4, :cond_2e
+    if-eqz v4, :cond_2c
 
     const-string/jumbo v4, "BluetoothOppNotification"
 
@@ -2957,8 +2937,8 @@
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_e .. :try_end_e} :catch_5
     .catchall {:try_start_e .. :try_end_e} :catchall_2
 
-    :cond_2e
-    if-eqz v13, :cond_28
+    :cond_2c
+    if-eqz v13, :cond_26
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
@@ -2994,7 +2974,7 @@
     :try_end_f
     .catchall {:try_start_f .. :try_end_f} :catchall_2
 
-    if-eqz v13, :cond_28
+    if-eqz v13, :cond_26
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
@@ -3003,14 +2983,14 @@
     :catchall_2
     move-exception v4
 
-    if-eqz v13, :cond_2f
+    if-eqz v13, :cond_2d
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_2f
+    :cond_2d
     throw v4
 
-    :cond_30
+    :cond_2e
     const-string/jumbo v4, "."
 
     move-object/from16 v0, v28
@@ -3023,7 +3003,7 @@
 
     move/from16 v0, v16
 
-    if-eq v0, v4, :cond_31
+    if-eq v0, v4, :cond_2f
 
     move-object/from16 v0, v28
 
@@ -3066,7 +3046,7 @@
 
     aput-object v6, v5, v7
 
-    const v6, 0x7f0a007a
+    const v6, 0x7f0a0079
 
     invoke-virtual {v4, v6, v5}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3084,19 +3064,19 @@
 
     goto/16 :goto_c
 
-    :cond_31
+    :cond_2f
     const-string/jumbo v18, ""
 
     move-object/from16 v19, v28
 
     goto :goto_e
 
-    :cond_32
+    :cond_30
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mNotificationMgr:Landroid/app/NotificationManager;
 
-    if-eqz v4, :cond_2b
+    if-eqz v4, :cond_29
 
     move-object/from16 v0, p0
 
@@ -3108,7 +3088,7 @@
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->V:Z
 
-    if-eqz v4, :cond_2b
+    if-eqz v4, :cond_29
 
     const-string/jumbo v4, "BluetoothOppNotification"
 
@@ -3118,7 +3098,7 @@
 
     goto/16 :goto_d
 
-    :cond_33
+    :cond_31
     :try_start_10
     const-string/jumbo v4, "timestamp"
 
@@ -3151,7 +3131,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_3d
+    if-nez v4, :cond_3b
 
     move/from16 v0, v40
 
@@ -3163,9 +3143,9 @@
 
     move-result v4
 
-    if-eqz v4, :cond_37
+    if-eqz v4, :cond_35
 
-    if-nez v27, :cond_36
+    if-nez v27, :cond_34
 
     move/from16 v0, v20
 
@@ -3173,14 +3153,14 @@
 
     move-result-object v26
 
-    if-nez v26, :cond_34
+    if-nez v26, :cond_32
 
     invoke-interface {v13, v14}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v26
 
-    :cond_34
-    if-nez v26, :cond_35
+    :cond_32
+    if-nez v26, :cond_33
 
     move-object/from16 v0, p0
 
@@ -3192,17 +3172,17 @@
 
     move-result-object v26
 
-    :cond_35
+    :cond_33
     move/from16 v0, v42
 
     invoke-interface {v13, v0}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v22
 
-    :cond_36
+    :cond_34
     add-int/lit8 v27, v27, 0x1
 
-    :cond_37
+    :cond_35
     invoke-interface {v13}, Landroid/database/Cursor;->moveToNext()Z
     :try_end_10
     .catch Landroid/database/CursorWindowAllocationException; {:try_start_10 .. :try_end_10} :catch_6
@@ -3239,13 +3219,13 @@
     :try_end_11
     .catchall {:try_start_11 .. :try_end_11} :catchall_3
 
-    if-eqz v13, :cond_38
+    if-eqz v13, :cond_36
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_38
+    :cond_36
     :goto_10
-    if-lez v27, :cond_42
+    if-lez v27, :cond_40
 
     new-instance v21, Landroid/app/Notification;
 
@@ -3287,7 +3267,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_39
+    if-eqz v4, :cond_37
 
     move-object/from16 v0, p0
 
@@ -3299,12 +3279,12 @@
 
     move-result-object v26
 
-    :cond_39
+    :cond_37
     const/4 v4, 0x1
 
     move/from16 v0, v27
 
-    if-ne v0, v4, :cond_40
+    if-ne v0, v4, :cond_3e
 
     const/4 v10, 0x0
 
@@ -3321,7 +3301,7 @@
 
     move-result-object v46
 
-    if-eqz v10, :cond_3a
+    if-eqz v10, :cond_38
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -3341,7 +3321,7 @@
 
     move-result-object v19
 
-    :cond_3a
+    :cond_38
     move-wide/from16 v0, v22
 
     move-object/from16 v2, v21
@@ -3404,50 +3384,34 @@
 
     invoke-virtual {v4, v5, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    :cond_3b
+    :cond_39
     :goto_12
     const/4 v13, 0x0
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mNotificationMgr:Landroid/app/NotificationManager;
+    iget-boolean v4, v0, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mUpdateCompleteNotification:Z
 
-    if-eqz v4, :cond_3c
-
-    sget v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mActiveNotificationId:I
-
-    if-eqz v4, :cond_3c
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mNotificationMgr:Landroid/app/NotificationManager;
-
-    sget v5, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mActiveNotificationId:I
-
-    invoke-virtual {v4, v5}, Landroid/app/NotificationManager;->cancel(I)V
-
-    const/4 v4, 0x0
-
-    sput v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mActiveNotificationId:I
+    if-nez v4, :cond_41
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->V:Z
 
-    if-eqz v4, :cond_3c
+    if-eqz v4, :cond_3a
 
     const-string/jumbo v4, "BluetoothOppNotification"
 
-    const-string/jumbo v5, "ongoing transfer notification was removed"
+    const-string/jumbo v5, "No need to update complete notification"
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_3c
+    :cond_3a
     return-void
 
-    :cond_3d
+    :cond_3b
     :try_start_12
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->V:Z
 
-    if-eqz v4, :cond_3e
+    if-eqz v4, :cond_3c
 
     const-string/jumbo v4, "BluetoothOppNotification"
 
@@ -3489,8 +3453,8 @@
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_12 .. :try_end_12} :catch_7
     .catchall {:try_start_12 .. :try_end_12} :catchall_3
 
-    :cond_3e
-    if-eqz v13, :cond_38
+    :cond_3c
+    if-eqz v13, :cond_36
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
@@ -3526,7 +3490,7 @@
     :try_end_13
     .catchall {:try_start_13 .. :try_end_13} :catchall_3
 
-    if-eqz v13, :cond_38
+    if-eqz v13, :cond_36
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
@@ -3535,14 +3499,14 @@
     :catchall_3
     move-exception v4
 
-    if-eqz v13, :cond_3f
+    if-eqz v13, :cond_3d
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_3f
+    :cond_3d
     throw v4
 
-    :cond_40
+    :cond_3e
     const-string/jumbo v4, "."
 
     move-object/from16 v0, v26
@@ -3555,7 +3519,7 @@
 
     move/from16 v0, v16
 
-    if-eq v0, v4, :cond_41
+    if-eq v0, v4, :cond_3f
 
     move-object/from16 v0, v26
 
@@ -3598,7 +3562,7 @@
 
     aput-object v6, v5, v7
 
-    const v6, 0x7f0a007a
+    const v6, 0x7f0a0079
 
     invoke-virtual {v4, v6, v5}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3606,19 +3570,19 @@
 
     goto/16 :goto_11
 
-    :cond_41
+    :cond_3f
     const-string/jumbo v18, ""
 
     move-object/from16 v19, v26
 
     goto :goto_13
 
-    :cond_42
+    :cond_40
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mNotificationMgr:Landroid/app/NotificationManager;
 
-    if-eqz v4, :cond_3b
+    if-eqz v4, :cond_39
 
     move-object/from16 v0, p0
 
@@ -3630,7 +3594,7 @@
 
     sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->V:Z
 
-    if-eqz v4, :cond_3b
+    if-eqz v4, :cond_39
 
     const-string/jumbo v4, "BluetoothOppNotification"
 
@@ -3639,6 +3603,42 @@
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_12
+
+    :cond_41
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mNotificationMgr:Landroid/app/NotificationManager;
+
+    if-eqz v4, :cond_42
+
+    sget v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mActiveNotificationId:I
+
+    if-eqz v4, :cond_42
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mNotificationMgr:Landroid/app/NotificationManager;
+
+    sget v5, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mActiveNotificationId:I
+
+    invoke-virtual {v4, v5}, Landroid/app/NotificationManager;->cancel(I)V
+
+    const/4 v4, 0x0
+
+    sput v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->mActiveNotificationId:I
+
+    sget-boolean v4, Lcom/android/bluetooth/opp/BluetoothOppNotification;->V:Z
+
+    if-eqz v4, :cond_42
+
+    const-string/jumbo v4, "BluetoothOppNotification"
+
+    const-string/jumbo v5, "ongoing transfer notification was removed"
+
+    invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_42
+    return-void
 .end method
 
 .method private updateIncomingFileConfirmNotification()V

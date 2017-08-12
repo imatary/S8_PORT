@@ -256,9 +256,9 @@
 .end method
 
 .method private static choosefilename(Ljava/lang/String;)Ljava/lang/String;
-    .locals 6
+    .locals 5
 
-    const/16 v5, 0x2f
+    const/16 v4, 0x2f
 
     const/4 v0, 0x0
 
@@ -287,7 +287,7 @@
 
     const/16 v2, 0x5c
 
-    invoke-virtual {p0, v2, v5}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+    invoke-virtual {p0, v2, v4}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
 
     move-result-object p0
 
@@ -299,7 +299,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v2, "[:\"<>*?|/]"
+    const-string/jumbo v2, "[:\"<>*?|]"
 
     const-string/jumbo v3, "_"
 
@@ -313,28 +313,12 @@
 
     const-string/jumbo v2, "BtOppReceiveFileInfo"
 
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "getting filename from hint : "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
+    const-string/jumbo v3, "getting filename from hint"
 
     invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    invoke-virtual {p0, v5}, Ljava/lang/String;->lastIndexOf(I)I
+    invoke-virtual {p0, v4}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v2
 
@@ -355,7 +339,7 @@
 .end method
 
 .method public static generateFileInfo(Landroid/content/Context;I)Lcom/android/bluetooth/opp/BluetoothOppReceiveFileInfo;
-    .locals 28
+    .locals 30
 
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -544,13 +528,23 @@
 
     invoke-direct {v0, v4}, Landroid/os/StatFs;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual/range {v23 .. v23}, Landroid/os/StatFs;->getBlockSizeLong()J
+    invoke-virtual/range {v23 .. v23}, Landroid/os/StatFs;->getBlockSize()I
 
-    move-result-wide v8
+    move-result v4
 
-    invoke-virtual/range {v23 .. v23}, Landroid/os/StatFs;->getAvailableBlocksLong()J
+    int-to-long v8, v4
 
-    move-result-wide v26
+    invoke-virtual/range {v23 .. v23}, Landroid/os/StatFs;->getAvailableBlocks()I
+
+    move-result v4
+
+    int-to-long v0, v4
+
+    move-wide/from16 v26, v0
+
+    const-wide/16 v28, 0x4
+
+    sub-long v26, v26, v28
 
     mul-long v8, v8, v26
 
@@ -596,13 +590,23 @@
 
     invoke-direct {v0, v1}, Landroid/os/StatFs;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual/range {v23 .. v23}, Landroid/os/StatFs;->getBlockSizeLong()J
+    invoke-virtual/range {v23 .. v23}, Landroid/os/StatFs;->getBlockSize()I
 
-    move-result-wide v8
+    move-result v4
 
-    invoke-virtual/range {v23 .. v23}, Landroid/os/StatFs;->getAvailableBlocksLong()J
+    int-to-long v8, v4
 
-    move-result-wide v26
+    invoke-virtual/range {v23 .. v23}, Landroid/os/StatFs;->getAvailableBlocks()I
+
+    move-result v4
+
+    int-to-long v0, v4
+
+    move-wide/from16 v26, v0
+
+    const-wide/16 v28, 0x4
+
+    sub-long v26, v26, v28
 
     mul-long v8, v8, v26
 

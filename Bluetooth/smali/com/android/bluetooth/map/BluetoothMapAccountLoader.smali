@@ -454,7 +454,7 @@
 
     iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
 
-    if-nez v2, :cond_4
+    if-nez v2, :cond_8
 
     new-instance v2, Landroid/os/RemoteException;
 
@@ -485,14 +485,12 @@
     throw v2
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_3
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_1
 
     :catch_0
     move-exception v18
 
-    :try_start_1
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->D:Z
 
     if-eqz v2, :cond_1
@@ -559,96 +557,9 @@
     move-result-object v2
 
     invoke-static {v2}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    if-eqz v14, :cond_2
-
-    invoke-interface {v14}, Landroid/database/Cursor;->close()V
-
-    :cond_2
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
-
-    if-eqz v2, :cond_3
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
-
-    invoke-virtual {v2}, Landroid/content/ContentProviderClient;->release()Z
 
     :goto_0
-    const/4 v2, 0x0
-
-    move-object/from16 v0, p0
-
-    iput-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
-
-    :cond_3
-    return-object v16
-
-    :cond_4
-    :try_start_2
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
-
-    const-wide/16 v6, 0x4e20
-
-    invoke-virtual {v2, v6, v7}, Landroid/content/ContentProviderClient;->setDetectNotResponding(J)V
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v4, Lcom/android/bluetooth/map/BluetoothMapUtils;->EMAIL_CONTENT_URI:Ljava/lang/String;
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string/jumbo v4, "account"
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v3
-
-    invoke-virtual/range {p1 .. p1}, Lcom/android/bluetooth/map/BluetoothMapAccountItem;->getType()Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;
-
-    move-result-object v2
-
-    sget-object v4, Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;->IM:Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;
-
-    if-ne v2, v4, :cond_a
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
-
-    sget-object v4, Lcom/android/bluetooth/mapapi/BluetoothMapContract;->BT_IM_ACCOUNT_PROJECTION:[Ljava/lang/String;
-
-    const-string/jumbo v7, "_id DESC"
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    invoke-virtual/range {v2 .. v7}, Landroid/content/ContentProviderClient;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object v14
-
-    :goto_1
-    if-eqz v14, :cond_16
+    if-eqz v14, :cond_11
 
     const/4 v2, -0x1
 
@@ -684,16 +595,16 @@
 
     move-result v28
 
-    :cond_5
+    :cond_2
     invoke-interface {v14}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v2
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_5
 
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->D:Z
 
-    if-eqz v2, :cond_6
+    if-eqz v2, :cond_3
 
     const-string/jumbo v2, "BluetoothMapAccountLoader"
 
@@ -743,7 +654,7 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_6
+    :cond_3
     const/4 v10, 0x0
 
     const/4 v11, 0x0
@@ -754,7 +665,7 @@
 
     sget-object v4, Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;->IM:Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;
 
-    if-ne v2, v4, :cond_7
+    if-ne v2, v4, :cond_4
 
     move/from16 v0, v27
 
@@ -770,7 +681,7 @@
 
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->D:Z
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_4
 
     const-string/jumbo v2, "BluetoothMapAccountLoader"
 
@@ -794,7 +705,7 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_7
+    :cond_4
     const-string/jumbo v2, "isDefault"
 
     invoke-interface {v14, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -863,13 +774,13 @@
 
     move/from16 v0, v24
 
-    if-ne v0, v2, :cond_b
+    if-ne v0, v2, :cond_a
 
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mDefaultAccountId:I
 
-    if-ne v2, v12, :cond_b
+    if-ne v2, v12, :cond_a
 
     move-object/from16 v0, p0
 
@@ -894,24 +805,18 @@
     move-object/from16 v0, v16
 
     invoke-virtual {v0, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_2
-    .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_0
-    .catch Ljava/lang/SecurityException; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_3
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    :cond_8
-    :goto_2
-    if-eqz v14, :cond_9
-
+    :cond_5
+    :goto_1
     invoke-interface {v14}, Landroid/database/Cursor;->close()V
 
-    :cond_9
+    :cond_6
+    :goto_2
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_7
 
     move-object/from16 v0, p0
 
@@ -919,10 +824,76 @@
 
     invoke-virtual {v2}, Landroid/content/ContentProviderClient;->release()Z
 
+    const/4 v2, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
+
+    :cond_7
+    return-object v16
+
+    :cond_8
+    :try_start_1
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
+
+    const-wide/16 v6, 0x4e20
+
+    invoke-virtual {v2, v6, v7}, Landroid/content/ContentProviderClient;->setDetectNotResponding(J)V
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v4, Lcom/android/bluetooth/map/BluetoothMapUtils;->EMAIL_CONTENT_URI:Ljava/lang/String;
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v4, "account"
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v3
+
+    invoke-virtual/range {p1 .. p1}, Lcom/android/bluetooth/map/BluetoothMapAccountItem;->getType()Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;
+
+    move-result-object v2
+
+    sget-object v4, Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;->IM:Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;
+
+    if-ne v2, v4, :cond_9
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
+
+    sget-object v4, Lcom/android/bluetooth/mapapi/BluetoothMapContract;->BT_IM_ACCOUNT_PROJECTION:[Ljava/lang/String;
+
+    const-string/jumbo v7, "_id DESC"
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    invoke-virtual/range {v2 .. v7}, Landroid/content/ContentProviderClient;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v14
+
     goto/16 :goto_0
 
-    :cond_a
-    :try_start_3
+    :cond_9
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
@@ -936,12 +907,74 @@
     const/4 v6, 0x0
 
     invoke-virtual/range {v2 .. v7}, Landroid/content/ContentProviderClient;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    :try_end_1
+    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/SecurityException; {:try_start_1 .. :try_end_1} :catch_2
+    .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_1
 
     move-result-object v14
 
-    goto/16 :goto_1
+    goto/16 :goto_0
 
-    :cond_b
+    :catch_1
+    move-exception v19
+
+    const-string/jumbo v2, "BluetoothMapAccountLoader"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v6, "Catching IllegalStateException : "
+
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    move-object/from16 v0, v19
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    :catch_2
+    move-exception v20
+
+    const-string/jumbo v2, "BluetoothMapAccountLoader"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v6, "Catching SecurityException : "
+
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    move-object/from16 v0, v20
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_0
+
+    :cond_a
     const/4 v2, 0x1
 
     iput-boolean v2, v15, Lcom/android/bluetooth/map/BluetoothMapAccountItem;->mIsChecked:Z
@@ -950,7 +983,7 @@
 
     move/from16 v0, v24
 
-    if-ne v0, v2, :cond_5
+    if-ne v0, v2, :cond_2
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -973,11 +1006,6 @@
     move-result-object v2
 
     invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-    :try_end_3
-    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_0
-    .catch Ljava/lang/SecurityException; {:try_start_3 .. :try_end_3} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_3 .. :try_end_3} :catch_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     move-result-object v5
 
@@ -985,7 +1013,7 @@
 
     const/16 v26, 0x0
 
-    :try_start_4
+    :try_start_2
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mResolver:Landroid/content/ContentResolver;
@@ -1002,17 +1030,17 @@
 
     move-result-object v26
 
-    if-eqz v26, :cond_e
+    if-eqz v26, :cond_d
 
     invoke-interface/range {v26 .. v26}, Landroid/database/Cursor;->getCount()I
 
     move-result v2
 
-    if-lez v2, :cond_e
+    if-lez v2, :cond_d
 
     invoke-interface/range {v26 .. v26}, Landroid/database/Cursor;->moveToFirst()Z
 
-    :cond_c
+    :cond_b
     const-string/jumbo v2, "value"
 
     move-object/from16 v0, v26
@@ -1027,7 +1055,7 @@
 
     move-result v25
 
-    if-eqz v25, :cond_d
+    if-eqz v25, :cond_c
 
     const-string/jumbo v2, "BluetoothMapAccountLoader"
 
@@ -1035,33 +1063,32 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_d
+    :cond_c
     invoke-interface/range {v26 .. v26}, Landroid/database/Cursor;->moveToNext()Z
-    :try_end_4
-    .catch Ljava/lang/SecurityException; {:try_start_4 .. :try_end_4} :catch_2
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+    :try_end_2
+    .catch Ljava/lang/SecurityException; {:try_start_2 .. :try_end_2} :catch_3
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     move-result v2
 
-    if-nez v2, :cond_c
+    if-nez v2, :cond_b
 
-    :cond_e
-    if-eqz v26, :cond_f
+    :cond_d
+    if-eqz v26, :cond_e
 
-    :try_start_5
     invoke-interface/range {v26 .. v26}, Landroid/database/Cursor;->close()V
 
-    :cond_f
+    :cond_e
     :goto_3
     iget-boolean v2, v15, Lcom/android/bluetooth/map/BluetoothMapAccountItem;->mIsChecked:Z
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_2
 
-    if-nez v25, :cond_5
+    if-nez v25, :cond_2
 
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->D:Z
 
-    if-eqz v2, :cond_10
+    if-eqz v2, :cond_f
 
     const-string/jumbo v2, "BluetoothMapAccountLoader"
 
@@ -1119,7 +1146,7 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_10
+    :cond_f
     move-object/from16 v0, p0
 
     move/from16 v1, v22
@@ -1147,122 +1174,26 @@
     move-object/from16 v0, v16
 
     invoke-virtual {v0, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_5
-    .catch Landroid/os/RemoteException; {:try_start_5 .. :try_end_5} :catch_0
-    .catch Ljava/lang/SecurityException; {:try_start_5 .. :try_end_5} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_5 .. :try_end_5} :catch_3
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    goto/16 :goto_2
-
-    :catch_1
-    move-exception v20
-
-    :try_start_6
-    const-string/jumbo v2, "BluetoothMapAccountLoader"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v6, "Catching SecurityException : "
-
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    move-object/from16 v0, v20
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_1
-
-    if-eqz v14, :cond_11
-
-    invoke-interface {v14}, Landroid/database/Cursor;->close()V
-
-    :cond_11
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
-
-    if-eqz v2, :cond_3
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
-
-    invoke-virtual {v2}, Landroid/content/ContentProviderClient;->release()Z
-
-    goto/16 :goto_0
-
-    :catch_2
-    move-exception v20
-
-    :try_start_7
-    const-string/jumbo v2, "BluetoothMapAccountLoader"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v6, "Catching SecurityException : "
-
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    move-object/from16 v0, v20
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_0
-
-    if-eqz v26, :cond_f
-
-    :try_start_8
-    invoke-interface/range {v26 .. v26}, Landroid/database/Cursor;->close()V
-    :try_end_8
-    .catch Landroid/os/RemoteException; {:try_start_8 .. :try_end_8} :catch_0
-    .catch Ljava/lang/SecurityException; {:try_start_8 .. :try_end_8} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_8 .. :try_end_8} :catch_3
-    .catchall {:try_start_8 .. :try_end_8} :catchall_1
-
-    goto/16 :goto_3
+    goto/16 :goto_1
 
     :catch_3
-    move-exception v19
+    move-exception v20
 
-    :try_start_9
+    :try_start_3
     const-string/jumbo v2, "BluetoothMapAccountLoader"
 
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v6, "Catching IllegalStateException : "
+    const-string/jumbo v6, "Catching SecurityException : "
 
     invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v20
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1273,89 +1204,35 @@
     move-result-object v4
 
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_1
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    if-eqz v14, :cond_12
+    if-eqz v26, :cond_e
 
-    invoke-interface {v14}, Landroid/database/Cursor;->close()V
+    invoke-interface/range {v26 .. v26}, Landroid/database/Cursor;->close()V
 
-    :cond_12
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
-
-    if-eqz v2, :cond_3
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
-
-    invoke-virtual {v2}, Landroid/content/ContentProviderClient;->release()Z
-
-    goto/16 :goto_0
+    goto/16 :goto_3
 
     :catchall_0
     move-exception v2
 
-    if-eqz v26, :cond_13
+    if-eqz v26, :cond_10
 
-    :try_start_a
     invoke-interface/range {v26 .. v26}, Landroid/database/Cursor;->close()V
 
-    :cond_13
-    throw v2
-    :try_end_a
-    .catch Landroid/os/RemoteException; {:try_start_a .. :try_end_a} :catch_0
-    .catch Ljava/lang/SecurityException; {:try_start_a .. :try_end_a} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_a .. :try_end_a} :catch_3
-    .catchall {:try_start_a .. :try_end_a} :catchall_1
-
-    :catchall_1
-    move-exception v2
-
-    if-eqz v14, :cond_14
-
-    invoke-interface {v14}, Landroid/database/Cursor;->close()V
-
-    :cond_14
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
-
-    if-eqz v4, :cond_15
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
-
-    invoke-virtual {v4}, Landroid/content/ContentProviderClient;->release()Z
-
-    const/4 v4, 0x0
-
-    move-object/from16 v0, p0
-
-    iput-object v4, v0, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->mProviderClient:Landroid/content/ContentProviderClient;
-
-    :cond_15
+    :cond_10
     throw v2
 
-    :cond_16
-    :try_start_b
+    :cond_11
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapAccountLoader;->D:Z
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_6
 
     const-string/jumbo v2, "BluetoothMapAccountLoader"
 
     const-string/jumbo v4, "query failed"
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_b
-    .catch Landroid/os/RemoteException; {:try_start_b .. :try_end_b} :catch_0
-    .catch Ljava/lang/SecurityException; {:try_start_b .. :try_end_b} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_b .. :try_end_b} :catch_3
-    .catchall {:try_start_b .. :try_end_b} :catchall_1
 
     goto/16 :goto_2
 .end method

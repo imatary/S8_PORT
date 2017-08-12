@@ -1658,14 +1658,6 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine$Connected;->this$0:Lcom/android/bluetooth/hfp/HeadsetStateMachine;
 
-    invoke-static {v0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->-get25(Lcom/android/bluetooth/hfp/HeadsetStateMachine;)Lcom/android/bluetooth/hfp/HeadsetPhoneState;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/bluetooth/hfp/HeadsetPhoneState;->clearSpeakerVolumeList()V
-
-    iget-object v0, p0, Lcom/android/bluetooth/hfp/HeadsetStateMachine$Connected;->this$0:Lcom/android/bluetooth/hfp/HeadsetStateMachine;
-
     invoke-static {v0}, Lcom/android/bluetooth/hfp/HeadsetStateMachine;->-get17(Lcom/android/bluetooth/hfp/HeadsetStateMachine;)Z
 
     move-result v0

@@ -3332,7 +3332,7 @@
 
     if-eqz v3, :cond_0
 
-    const v3, 0x7f0a00d9
+    const v3, 0x7f0a00d1
 
     invoke-virtual {p0, v3}, Lcom/android/bluetooth/map/BluetoothMapService;->getString(I)Ljava/lang/String;
 

@@ -4890,7 +4890,7 @@
 
     check-cast v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
 
-    if-nez v4, :cond_d
+    if-nez v4, :cond_e
 
     const/16 v33, 0x1
 
@@ -4947,7 +4947,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_13
+    if-eqz v5, :cond_14
 
     invoke-interface/range {v34 .. v34}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -5284,8 +5284,21 @@
 
     move-result v5
 
+    if-nez v5, :cond_d
+
+    invoke-static {v8}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMmsFolderName(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string/jumbo v12, "draft"
+
+    invoke-virtual {v5, v12}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v5
+
     if-eqz v5, :cond_a
 
+    :cond_d
     new-instance v11, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
     const-string/jumbo v25, "NewMessage"
@@ -5308,14 +5321,14 @@
 
     goto :goto_4
 
-    :cond_d
+    :cond_e
     iget v5, v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->type:I
 
-    if-eq v8, v5, :cond_10
+    if-eq v8, v5, :cond_11
 
     sget-boolean v5, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
 
-    if-eqz v5, :cond_e
+    if-eqz v5, :cond_f
 
     const-string/jumbo v5, "BluetoothMapContentObserver"
 
@@ -5351,7 +5364,7 @@
 
     invoke-static {v5, v12}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_e
+    :cond_f
     const/16 v33, 0x1
 
     iget v5, v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->type:I
@@ -5372,7 +5385,7 @@
 
     move-result v5
 
-    if-nez v5, :cond_f
+    if-nez v5, :cond_10
 
     new-instance v11, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -5402,7 +5415,7 @@
 
     invoke-direct {v0, v11}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->sendEvent(Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;)V
 
-    :cond_f
+    :cond_10
     iput v8, v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->type:I
 
     invoke-static {v8}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMmsFolderName(I)Ljava/lang/String;
@@ -5415,7 +5428,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_10
+    if-eqz v5, :cond_11
 
     new-instance v11, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -5441,10 +5454,10 @@
 
     invoke-direct {v0, v11}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->sendEvent(Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;)V
 
-    :cond_10
+    :cond_11
     iget v5, v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->flagRead:I
 
-    if-eq v10, v5, :cond_11
+    if-eq v10, v5, :cond_12
 
     const/16 v33, 0x1
 
@@ -5456,7 +5469,7 @@
 
     const/16 v12, 0xa
 
-    if-le v5, v12, :cond_11
+    if-le v5, v12, :cond_12
 
     new-instance v11, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -5480,7 +5493,7 @@
 
     invoke-direct {v0, v11}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->sendEvent(Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;)V
 
-    :cond_11
+    :cond_12
     invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v5
@@ -5497,15 +5510,15 @@
     :catchall_1
     move-exception v5
 
-    if-eqz v31, :cond_12
+    if-eqz v31, :cond_13
 
     :try_start_6
     invoke-interface/range {v31 .. v31}, Landroid/database/Cursor;->close()V
 
-    :cond_12
+    :cond_13
     throw v5
 
-    :cond_13
+    :cond_14
     move-object/from16 v0, p0
 
     move-object/from16 v1, v35
@@ -6776,7 +6789,7 @@
 
     const/16 v5, 0xa
 
-    if-ne v4, v5, :cond_7
+    if-ne v4, v5, :cond_8
 
     move-object/from16 v0, p0
 
@@ -6797,13 +6810,13 @@
     move-result-object v43
 
     :goto_0
-    if-eqz v43, :cond_5
+    if-eqz v43, :cond_6
 
     invoke-interface/range {v43 .. v43}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v4
 
-    if-eqz v4, :cond_5
+    if-eqz v4, :cond_6
 
     :cond_1
     const-string/jumbo v4, "_id"
@@ -6876,7 +6889,7 @@
 
     check-cast v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
 
-    if-nez v8, :cond_e
+    if-nez v8, :cond_10
 
     new-instance v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
 
@@ -6900,7 +6913,7 @@
 
     iget-boolean v4, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mTransmitEvents:Z
 
-    if-eqz v4, :cond_d
+    if-eqz v4, :cond_e
 
     move-object/from16 v0, p0
 
@@ -6908,7 +6921,7 @@
 
     const/16 v5, 0xa
 
-    if-le v4, v5, :cond_d
+    if-le v4, v5, :cond_e
 
     const-string/jumbo v4, "date"
 
@@ -6956,7 +6969,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_a
+    if-eqz v4, :cond_b
 
     const-string/jumbo v4, "address"
 
@@ -6978,7 +6991,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_8
+    if-eqz v4, :cond_9
 
     :cond_2
     move-object/from16 v24, v49
@@ -6997,15 +7010,28 @@
 
     move-result v4
 
-    if-eqz v4, :cond_4
+    if-nez v4, :cond_4
 
+    invoke-static {v12}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getRcsFolderName(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string/jumbo v5, "draft"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_5
+
+    :cond_4
     move-object/from16 v0, p0
 
     iget v4, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mMapEventReportVersion:I
 
     const/16 v5, 0xb
 
-    if-ne v4, v5, :cond_c
+    if-ne v4, v5, :cond_d
 
     new-instance v15, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -7023,7 +7049,7 @@
 
     invoke-direct/range {v15 .. v25}, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;-><init>(Lcom/android/bluetooth/map/BluetoothMapContentObserver;Ljava/lang/String;JLjava/lang/String;Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    :cond_4
+    :cond_5
     :goto_2
     move-object/from16 v0, p0
 
@@ -7039,13 +7065,13 @@
 
     if-nez v4, :cond_1
 
-    :cond_5
-    if-eqz v43, :cond_6
+    :cond_6
+    if-eqz v43, :cond_7
 
     :try_start_2
     invoke-interface/range {v43 .. v43}, Landroid/database/Cursor;->close()V
 
-    :cond_6
+    :cond_7
     :goto_4
     invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMsgListRcsChat()Ljava/util/Map;
 
@@ -7064,7 +7090,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_14
+    if-eqz v4, :cond_16
 
     invoke-interface/range {v46 .. v46}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -7106,7 +7132,7 @@
 
     goto :goto_5
 
-    :cond_7
+    :cond_8
     :try_start_3
     move-object/from16 v0, p0
 
@@ -7128,7 +7154,7 @@
 
     goto/16 :goto_0
 
-    :cond_8
+    :cond_9
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mResolver:Landroid/content/ContentResolver;
@@ -7139,7 +7165,7 @@
 
     move-result-object v24
 
-    if-eqz v24, :cond_9
+    if-eqz v24, :cond_a
 
     invoke-virtual/range {v24 .. v24}, Ljava/lang/String;->isEmpty()Z
 
@@ -7147,12 +7173,12 @@
 
     if-eqz v4, :cond_3
 
-    :cond_9
+    :cond_a
     move-object/from16 v24, v49
 
     goto/16 :goto_1
 
-    :cond_a
+    :cond_b
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mContext:Landroid/content/Context;
@@ -7175,7 +7201,7 @@
 
     move-result-object v24
 
-    if-eqz v24, :cond_b
+    if-eqz v24, :cond_c
 
     invoke-virtual/range {v24 .. v24}, Ljava/lang/String;->isEmpty()Z
 
@@ -7183,12 +7209,12 @@
 
     if-eqz v4, :cond_3
 
-    :cond_b
+    :cond_c
     move-object/from16 v24, v49
 
     goto/16 :goto_1
 
-    :cond_c
+    :cond_d
     new-instance v15, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
     const-string/jumbo v17, "NewMessage"
@@ -7213,7 +7239,7 @@
 
     goto/16 :goto_2
 
-    :cond_d
+    :cond_e
     invoke-static {v12}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getRcsFolderName(I)Ljava/lang/String;
 
     move-result-object v4
@@ -7224,8 +7250,21 @@
 
     move-result v4
 
-    if-eqz v4, :cond_4
+    if-nez v4, :cond_f
 
+    invoke-static {v12}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getRcsFolderName(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string/jumbo v5, "draft"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_5
+
+    :cond_f
     new-instance v15, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
     const-string/jumbo v29, "NewMessage"
@@ -7248,16 +7287,16 @@
 
     goto/16 :goto_2
 
-    :cond_e
+    :cond_10
     iget v4, v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->type:I
 
-    if-eq v12, v4, :cond_11
+    if-eq v12, v4, :cond_13
 
     const/16 v45, 0x1
 
     sget-boolean v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
 
-    if-eqz v4, :cond_f
+    if-eqz v4, :cond_11
 
     const-string/jumbo v4, "BluetoothMapContentObserver"
 
@@ -7293,7 +7332,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_f
+    :cond_11
     iget v4, v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->type:I
 
     invoke-static {v4}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getRcsFolderName(I)Ljava/lang/String;
@@ -7312,7 +7351,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_10
+    if-nez v4, :cond_12
 
     new-instance v15, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -7336,12 +7375,12 @@
 
     invoke-direct {v0, v15}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->sendEvent(Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;)V
 
-    :cond_10
+    :cond_12
     iput v12, v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->type:I
 
     iget-boolean v4, v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->localInitiatedSend:Z
 
-    if-nez v4, :cond_11
+    if-nez v4, :cond_13
 
     invoke-static {v12}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getRcsFolderName(I)Ljava/lang/String;
 
@@ -7353,7 +7392,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_11
+    if-eqz v4, :cond_13
 
     new-instance v15, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -7379,10 +7418,10 @@
 
     invoke-direct {v0, v15}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->sendEvent(Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;)V
 
-    :cond_11
+    :cond_13
     iget v4, v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->flagRead:I
 
-    if-eq v14, v4, :cond_12
+    if-eq v14, v4, :cond_14
 
     const/16 v45, 0x1
 
@@ -7394,7 +7433,7 @@
 
     const/16 v5, 0xa
 
-    if-le v4, v5, :cond_12
+    if-le v4, v5, :cond_14
 
     new-instance v15, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -7418,7 +7457,7 @@
 
     invoke-direct {v0, v15}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->sendEvent(Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;)V
 
-    :cond_12
+    :cond_14
     invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
@@ -7462,7 +7501,7 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    if-eqz v43, :cond_6
+    if-eqz v43, :cond_7
 
     :try_start_5
     invoke-interface/range {v43 .. v43}, Landroid/database/Cursor;->close()V
@@ -7481,15 +7520,15 @@
     :catchall_1
     move-exception v4
 
-    if-eqz v43, :cond_13
+    if-eqz v43, :cond_15
 
     :try_start_6
     invoke-interface/range {v43 .. v43}, Landroid/database/Cursor;->close()V
 
-    :cond_13
+    :cond_15
     throw v4
 
-    :cond_14
+    :cond_16
     move-object/from16 v0, p0
 
     move-object/from16 v1, v47
@@ -7584,13 +7623,13 @@
     move-result-object v43
 
     :goto_0
-    if-eqz v43, :cond_a
+    if-eqz v43, :cond_b
 
     invoke-interface/range {v43 .. v43}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v4
 
-    if-eqz v4, :cond_a
+    if-eqz v4, :cond_b
 
     :cond_1
     const-string/jumbo v4, "_id"
@@ -7663,7 +7702,7 @@
 
     check-cast v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
 
-    if-nez v8, :cond_12
+    if-nez v8, :cond_14
 
     new-instance v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
 
@@ -7687,7 +7726,7 @@
 
     iget-boolean v4, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mTransmitEvents:Z
 
-    if-eqz v4, :cond_11
+    if-eqz v4, :cond_12
 
     move-object/from16 v0, p0
 
@@ -7695,7 +7734,7 @@
 
     const/16 v5, 0xa
 
-    if-le v4, v5, :cond_11
+    if-le v4, v5, :cond_12
 
     const-string/jumbo v4, "date"
 
@@ -7907,7 +7946,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_e
+    if-eqz v4, :cond_f
 
     const-string/jumbo v4, "address"
 
@@ -7929,7 +7968,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_c
+    if-eqz v4, :cond_d
 
     :cond_7
     move-object/from16 v24, v50
@@ -7948,15 +7987,28 @@
 
     move-result v4
 
-    if-eqz v4, :cond_9
+    if-nez v4, :cond_9
 
+    invoke-static {v12}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getRcsFolderName(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string/jumbo v5, "draft"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_a
+
+    :cond_9
     move-object/from16 v0, p0
 
     iget v4, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mMapEventReportVersion:I
 
     const/16 v5, 0xb
 
-    if-ne v4, v5, :cond_10
+    if-ne v4, v5, :cond_11
 
     new-instance v15, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -7974,7 +8026,7 @@
 
     invoke-direct/range {v15 .. v25}, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;-><init>(Lcom/android/bluetooth/map/BluetoothMapContentObserver;Ljava/lang/String;JLjava/lang/String;Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    :cond_9
+    :cond_a
     :goto_3
     move-object/from16 v0, p0
 
@@ -7990,13 +8042,13 @@
 
     if-nez v4, :cond_1
 
-    :cond_a
-    if-eqz v43, :cond_b
+    :cond_b
+    if-eqz v43, :cond_c
 
     :try_start_2
     invoke-interface/range {v43 .. v43}, Landroid/database/Cursor;->close()V
 
-    :cond_b
+    :cond_c
     :goto_5
     invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMsgListRcsFt()Ljava/util/Map;
 
@@ -8015,7 +8067,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_18
+    if-eqz v4, :cond_1a
 
     invoke-interface/range {v47 .. v47}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -8057,7 +8109,7 @@
 
     goto :goto_6
 
-    :cond_c
+    :cond_d
     :try_start_3
     move-object/from16 v0, p0
 
@@ -8069,7 +8121,7 @@
 
     move-result-object v24
 
-    if-eqz v24, :cond_d
+    if-eqz v24, :cond_e
 
     invoke-virtual/range {v24 .. v24}, Ljava/lang/String;->isEmpty()Z
 
@@ -8077,12 +8129,12 @@
 
     if-eqz v4, :cond_8
 
-    :cond_d
+    :cond_e
     move-object/from16 v24, v50
 
     goto/16 :goto_2
 
-    :cond_e
+    :cond_f
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mContext:Landroid/content/Context;
@@ -8105,7 +8157,7 @@
 
     move-result-object v24
 
-    if-eqz v24, :cond_f
+    if-eqz v24, :cond_10
 
     invoke-virtual/range {v24 .. v24}, Ljava/lang/String;->isEmpty()Z
 
@@ -8113,12 +8165,12 @@
 
     if-eqz v4, :cond_8
 
-    :cond_f
+    :cond_10
     move-object/from16 v24, v50
 
     goto/16 :goto_2
 
-    :cond_10
+    :cond_11
     new-instance v15, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
     const-string/jumbo v17, "NewMessage"
@@ -8143,7 +8195,7 @@
 
     goto/16 :goto_3
 
-    :cond_11
+    :cond_12
     invoke-static {v12}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getRcsFolderName(I)Ljava/lang/String;
 
     move-result-object v4
@@ -8154,8 +8206,21 @@
 
     move-result v4
 
-    if-eqz v4, :cond_9
+    if-nez v4, :cond_13
 
+    invoke-static {v12}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getRcsFolderName(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string/jumbo v5, "draft"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_a
+
+    :cond_13
     new-instance v15, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
     const-string/jumbo v29, "NewMessage"
@@ -8178,16 +8243,16 @@
 
     goto/16 :goto_3
 
-    :cond_12
+    :cond_14
     iget v4, v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->type:I
 
-    if-eq v12, v4, :cond_15
+    if-eq v12, v4, :cond_17
 
     const/16 v46, 0x1
 
     sget-boolean v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
 
-    if-eqz v4, :cond_13
+    if-eqz v4, :cond_15
 
     const-string/jumbo v4, "BluetoothMapContentObserver"
 
@@ -8223,7 +8288,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_13
+    :cond_15
     iget v4, v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->type:I
 
     invoke-static {v4}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getRcsFolderName(I)Ljava/lang/String;
@@ -8242,7 +8307,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_14
+    if-nez v4, :cond_16
 
     new-instance v15, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -8266,12 +8331,12 @@
 
     invoke-direct {v0, v15}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->sendEvent(Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;)V
 
-    :cond_14
+    :cond_16
     iput v12, v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->type:I
 
     iget-boolean v4, v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->localInitiatedSend:Z
 
-    if-nez v4, :cond_15
+    if-nez v4, :cond_17
 
     invoke-static {v12}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getRcsFolderName(I)Ljava/lang/String;
 
@@ -8283,7 +8348,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_15
+    if-eqz v4, :cond_17
 
     new-instance v15, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -8309,10 +8374,10 @@
 
     invoke-direct {v0, v15}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->sendEvent(Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;)V
 
-    :cond_15
+    :cond_17
     iget v4, v8, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->flagRead:I
 
-    if-eq v14, v4, :cond_16
+    if-eq v14, v4, :cond_18
 
     const/16 v46, 0x1
 
@@ -8324,7 +8389,7 @@
 
     const/16 v5, 0xa
 
-    if-le v4, v5, :cond_16
+    if-le v4, v5, :cond_18
 
     new-instance v15, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -8348,7 +8413,7 @@
 
     invoke-direct {v0, v15}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->sendEvent(Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;)V
 
-    :cond_16
+    :cond_18
     invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
@@ -8392,7 +8457,7 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    if-eqz v43, :cond_b
+    if-eqz v43, :cond_c
 
     :try_start_5
     invoke-interface/range {v43 .. v43}, Landroid/database/Cursor;->close()V
@@ -8411,15 +8476,15 @@
     :catchall_1
     move-exception v4
 
-    if-eqz v43, :cond_17
+    if-eqz v43, :cond_19
 
     :try_start_6
     invoke-interface/range {v43 .. v43}, Landroid/database/Cursor;->close()V
 
-    :cond_17
+    :cond_19
     throw v4
 
-    :cond_18
+    :cond_1a
     move-object/from16 v0, p0
 
     move-object/from16 v1, v48
@@ -8470,7 +8535,7 @@
 
     const/16 v12, 0xa
 
-    if-ne v5, v12, :cond_7
+    if-ne v5, v12, :cond_8
 
     move-object/from16 v0, p0
 
@@ -8491,13 +8556,13 @@
     move-result-object v39
 
     :goto_0
-    if-eqz v39, :cond_5
+    if-eqz v39, :cond_6
 
     invoke-interface/range {v39 .. v39}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v5
 
-    if-eqz v5, :cond_5
+    if-eqz v5, :cond_6
 
     :cond_1
     const-string/jumbo v5, "_id"
@@ -8570,7 +8635,7 @@
 
     check-cast v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
 
-    if-nez v4, :cond_e
+    if-nez v4, :cond_10
 
     new-instance v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
 
@@ -8594,7 +8659,7 @@
 
     iget-boolean v5, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mTransmitEvents:Z
 
-    if-eqz v5, :cond_d
+    if-eqz v5, :cond_e
 
     move-object/from16 v0, p0
 
@@ -8602,7 +8667,7 @@
 
     const/16 v12, 0xa
 
-    if-le v5, v12, :cond_d
+    if-le v5, v12, :cond_e
 
     const-string/jumbo v5, "date"
 
@@ -8650,7 +8715,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_a
+    if-eqz v5, :cond_b
 
     const-string/jumbo v5, "address"
 
@@ -8672,7 +8737,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_8
+    if-eqz v5, :cond_9
 
     :cond_2
     move-object/from16 v20, v45
@@ -8691,15 +8756,28 @@
 
     move-result v5
 
-    if-eqz v5, :cond_4
+    if-nez v5, :cond_4
 
+    invoke-static {v8}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getSmsFolderName(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string/jumbo v12, "draft"
+
+    invoke-virtual {v5, v12}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_5
+
+    :cond_4
     move-object/from16 v0, p0
 
     iget v5, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mMapEventReportVersion:I
 
     const/16 v12, 0xb
 
-    if-ne v5, v12, :cond_c
+    if-ne v5, v12, :cond_d
 
     new-instance v11, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -8721,7 +8799,7 @@
 
     invoke-direct/range {v11 .. v21}, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;-><init>(Lcom/android/bluetooth/map/BluetoothMapContentObserver;Ljava/lang/String;JLjava/lang/String;Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    :cond_4
+    :cond_5
     :goto_2
     move-object/from16 v0, p0
 
@@ -8737,13 +8815,13 @@
 
     if-nez v5, :cond_1
 
-    :cond_5
-    if-eqz v39, :cond_6
+    :cond_6
+    if-eqz v39, :cond_7
 
     :try_start_1
     invoke-interface/range {v39 .. v39}, Landroid/database/Cursor;->close()V
 
-    :cond_6
+    :cond_7
     :goto_4
     invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMsgListSms()Ljava/util/Map;
 
@@ -8762,7 +8840,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_14
+    if-eqz v5, :cond_16
 
     invoke-interface/range {v42 .. v42}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -8808,7 +8886,7 @@
 
     goto :goto_5
 
-    :cond_7
+    :cond_8
     :try_start_2
     move-object/from16 v0, p0
 
@@ -8830,7 +8908,7 @@
 
     goto/16 :goto_0
 
-    :cond_8
+    :cond_9
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mResolver:Landroid/content/ContentResolver;
@@ -8841,7 +8919,7 @@
 
     move-result-object v20
 
-    if-eqz v20, :cond_9
+    if-eqz v20, :cond_a
 
     invoke-virtual/range {v20 .. v20}, Ljava/lang/String;->isEmpty()Z
 
@@ -8849,12 +8927,12 @@
 
     if-eqz v5, :cond_3
 
-    :cond_9
+    :cond_a
     move-object/from16 v20, v45
 
     goto/16 :goto_1
 
-    :cond_a
+    :cond_b
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mContext:Landroid/content/Context;
@@ -8877,7 +8955,7 @@
 
     move-result-object v20
 
-    if-eqz v20, :cond_b
+    if-eqz v20, :cond_c
 
     invoke-virtual/range {v20 .. v20}, Ljava/lang/String;->isEmpty()Z
 
@@ -8885,12 +8963,12 @@
 
     if-eqz v5, :cond_3
 
-    :cond_b
+    :cond_c
     move-object/from16 v20, v45
 
     goto/16 :goto_1
 
-    :cond_c
+    :cond_d
     new-instance v11, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
     const-string/jumbo v13, "NewMessage"
@@ -8919,7 +8997,7 @@
 
     goto/16 :goto_2
 
-    :cond_d
+    :cond_e
     invoke-static {v8}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getSmsFolderName(I)Ljava/lang/String;
 
     move-result-object v5
@@ -8930,8 +9008,21 @@
 
     move-result v5
 
-    if-eqz v5, :cond_4
+    if-nez v5, :cond_f
 
+    invoke-static {v8}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getSmsFolderName(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string/jumbo v12, "draft"
+
+    invoke-virtual {v5, v12}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_5
+
+    :cond_f
     new-instance v11, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
     const-string/jumbo v25, "NewMessage"
@@ -8958,16 +9049,16 @@
 
     goto/16 :goto_2
 
-    :cond_e
+    :cond_10
     iget v5, v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->type:I
 
-    if-eq v8, v5, :cond_11
+    if-eq v8, v5, :cond_13
 
     const/16 v41, 0x1
 
     sget-boolean v5, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
 
-    if-eqz v5, :cond_f
+    if-eqz v5, :cond_11
 
     const-string/jumbo v5, "BluetoothMapContentObserver"
 
@@ -9003,7 +9094,7 @@
 
     invoke-static {v5, v12}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_f
+    :cond_11
     iget v5, v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->type:I
 
     invoke-static {v5}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getSmsFolderName(I)Ljava/lang/String;
@@ -9022,7 +9113,7 @@
 
     move-result v5
 
-    if-nez v5, :cond_10
+    if-nez v5, :cond_12
 
     new-instance v11, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -9050,12 +9141,12 @@
 
     invoke-direct {v0, v11}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->sendEvent(Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;)V
 
-    :cond_10
+    :cond_12
     iput v8, v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->type:I
 
     iget-boolean v5, v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->localInitiatedSend:Z
 
-    if-nez v5, :cond_11
+    if-nez v5, :cond_13
 
     invoke-static {v8}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getSmsFolderName(I)Ljava/lang/String;
 
@@ -9067,7 +9158,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_11
+    if-eqz v5, :cond_13
 
     new-instance v11, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -9097,10 +9188,10 @@
 
     invoke-direct {v0, v11}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->sendEvent(Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;)V
 
-    :cond_11
+    :cond_13
     iget v5, v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->flagRead:I
 
-    if-eq v10, v5, :cond_12
+    if-eq v10, v5, :cond_14
 
     const/16 v41, 0x1
 
@@ -9112,7 +9203,7 @@
 
     const/16 v12, 0xa
 
-    if-le v5, v12, :cond_12
+    if-le v5, v12, :cond_14
 
     new-instance v11, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;
 
@@ -9140,7 +9231,7 @@
 
     invoke-direct {v0, v11}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->sendEvent(Lcom/android/bluetooth/map/BluetoothMapContentObserver$Event;)V
 
-    :cond_12
+    :cond_14
     invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v5
@@ -9184,7 +9275,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    if-eqz v39, :cond_6
+    if-eqz v39, :cond_7
 
     :try_start_4
     invoke-interface/range {v39 .. v39}, Landroid/database/Cursor;->close()V
@@ -9203,15 +9294,15 @@
     :catchall_1
     move-exception v5
 
-    if-eqz v39, :cond_13
+    if-eqz v39, :cond_15
 
     :try_start_5
     invoke-interface/range {v39 .. v39}, Landroid/database/Cursor;->close()V
 
-    :cond_13
+    :cond_15
     throw v5
 
-    :cond_14
+    :cond_16
     move-object/from16 v0, p0
 
     move-object/from16 v1, v43
@@ -18718,7 +18809,7 @@
 
     move-object/from16 v0, p3
 
-    if-ne v0, v2, :cond_f
+    if-ne v0, v2, :cond_9
 
     :cond_1
     sget-object v2, Landroid/provider/Telephony$Sms;->CONTENT_URI:Landroid/net/Uri;
@@ -18745,16 +18836,19 @@
     const/4 v7, 0x0
 
     invoke-virtual/range {v2 .. v7}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v10
 
-    if-eqz v10, :cond_a
+    :goto_0
+    if-eqz v10, :cond_7
 
     invoke-interface {v10}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v2
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_6
 
     const-string/jumbo v2, "type"
 
@@ -18764,7 +18858,7 @@
 
     invoke-interface {v10, v2}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v13
+    move-result v12
 
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
 
@@ -18782,7 +18876,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
@@ -18793,7 +18887,7 @@
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    packed-switch v13, :pswitch_data_0
+    packed-switch v12, :pswitch_data_0
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -18802,37 +18896,53 @@
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
-    :try_end_0
-    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     const/4 v2, 0x0
 
-    if-eqz v10, :cond_3
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_3
     return v2
 
+    :catch_0
+    move-exception v11
+
+    const-string/jumbo v2, "BluetoothMapContentObserver"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "Exeption = "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v11}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
     :pswitch_0
-    :try_start_1
     sget-object v2, Landroid/provider/Telephony$Sms$Inbox;->CONTENT_URI:Landroid/net/Uri;
 
     move-wide/from16 v0, p1
 
     invoke-static {v2, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
-    :try_end_1
-    .catch Ljava/lang/SecurityException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     move-result-object v3
 
-    if-eqz v10, :cond_4
-
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    :cond_4
     new-instance v8, Landroid/content/ContentValues;
 
     invoke-direct {v8}, Landroid/content/ContentValues;-><init>()V
@@ -18855,11 +18965,11 @@
 
     invoke-virtual {v8}, Landroid/content/ContentValues;->toString()Ljava/lang/String;
 
-    move-result-object v22
+    move-result-object v21
 
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_3
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -18887,7 +18997,7 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v21
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -18899,14 +19009,14 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_5
+    :cond_3
     invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMsgListSms()Ljava/util/Map;
 
     move-result-object v4
 
     monitor-enter v4
 
-    :try_start_2
+    :try_start_1
     invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMsgListSms()Ljava/util/Map;
 
     move-result-object v2
@@ -18917,24 +19027,24 @@
 
     invoke-interface {v2, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v20
+    move-result-object v19
 
-    check-cast v20, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
+    check-cast v19, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
 
-    if-eqz v20, :cond_6
+    if-eqz v19, :cond_4
 
     move/from16 v0, p5
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v19
 
     iput v0, v1, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->flagRead:I
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    :cond_6
+    :cond_4
     monitor-exit v4
 
-    :try_start_3
+    :try_start_2
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mResolver:Landroid/content/ContentResolver;
@@ -18949,7 +19059,7 @@
 
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_5
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -18979,10 +19089,10 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_7
+    :cond_5
     const/4 v2, 0x1
 
-    if-ge v9, v2, :cond_e
+    if-ge v9, v2, :cond_8
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -19007,15 +19117,14 @@
     move-result-object v4
 
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_3
-    .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_1
+    :try_end_2
+    .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_1
 
     const/4 v2, 0x0
 
     return v2
 
-    :cond_8
-    :try_start_4
+    :cond_6
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
     const-string/jumbo v4, "setMessageRead() : cursor has no row"
@@ -19023,87 +19132,23 @@
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
-    :try_end_4
-    .catch Ljava/lang/SecurityException; {:try_start_4 .. :try_end_4} :catch_0
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     const/4 v2, 0x0
 
-    if-eqz v10, :cond_9
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_9
     return v2
 
-    :cond_a
-    :try_start_5
+    :cond_7
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
     const-string/jumbo v4, "setMessageRead() : cursor is null"
 
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_5
-    .catch Ljava/lang/SecurityException; {:try_start_5 .. :try_end_5} :catch_0
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     const/4 v2, 0x0
 
-    if-eqz v10, :cond_b
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_b
-    return v2
-
-    :catch_0
-    move-exception v12
-
-    :try_start_6
-    const-string/jumbo v2, "BluetoothMapContentObserver"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "Catching SecurityException : "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
-
-    const/4 v2, 0x0
-
-    if-eqz v10, :cond_c
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_c
     return v2
 
     :catchall_0
-    move-exception v2
-
-    if-eqz v10, :cond_d
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_d
-    throw v2
-
-    :catchall_1
     move-exception v2
 
     monitor-exit v4
@@ -19111,7 +19156,7 @@
     throw v2
 
     :catch_1
-    move-exception v21
+    move-exception v20
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -19135,22 +19180,22 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v21
+    move-object/from16 v0, v20
 
     invoke-static {v2, v4, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    :cond_e
-    :goto_0
+    :cond_8
+    :goto_1
     const/4 v2, 0x1
 
     return v2
 
-    :cond_f
+    :cond_9
     sget-object v2, Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;->RCS_CHAT:Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;
 
     move-object/from16 v0, p3
 
-    if-ne v0, v2, :cond_1d
+    if-ne v0, v2, :cond_11
 
     move-object/from16 v0, p0
 
@@ -19164,9 +19209,9 @@
 
     const/4 v10, 0x0
 
-    const/16 v16, 0x0
+    const/4 v15, 0x0
 
-    :try_start_7
+    :try_start_3
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mResolver:Landroid/content/ContentResolver;
@@ -19180,16 +19225,19 @@
     const/4 v7, 0x0
 
     invoke-virtual/range {v2 .. v7}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
 
     move-result-object v10
 
-    if-eqz v10, :cond_19
+    :goto_2
+    if-eqz v10, :cond_10
 
     invoke-interface {v10}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v2
 
-    if-eqz v2, :cond_17
+    if-eqz v2, :cond_f
 
     const-string/jumbo v2, "_id"
 
@@ -19199,7 +19247,7 @@
 
     invoke-interface {v10, v2}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v16
+    move-result v15
 
     const-string/jumbo v2, "type"
 
@@ -19209,11 +19257,11 @@
 
     invoke-interface {v10, v2}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v13
+    move-result v12
 
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
 
-    if-eqz v2, :cond_10
+    if-eqz v2, :cond_a
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -19227,7 +19275,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
@@ -19237,8 +19285,8 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_10
-    packed-switch v13, :pswitch_data_1
+    :cond_a
+    packed-switch v12, :pswitch_data_1
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -19247,21 +19295,43 @@
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
-    :try_end_7
-    .catch Ljava/lang/SecurityException; {:try_start_7 .. :try_end_7} :catch_2
-    .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
     const/4 v2, 0x0
 
-    if-eqz v10, :cond_11
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_11
     return v2
 
+    :catch_2
+    move-exception v11
+
+    const-string/jumbo v2, "BluetoothMapContentObserver"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "Exeption = "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v11}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_2
+
     :pswitch_1
-    :try_start_8
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mRcsChatUri:Landroid/net/Uri;
@@ -19269,17 +19339,11 @@
     move-wide/from16 v0, p1
 
     invoke-static {v2, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
-    :try_end_8
-    .catch Ljava/lang/SecurityException; {:try_start_8 .. :try_end_8} :catch_2
-    .catchall {:try_start_8 .. :try_end_8} :catchall_2
 
     move-result-object v3
 
-    if-eqz v10, :cond_12
-
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    :cond_12
     new-instance v8, Landroid/content/ContentValues;
 
     invoke-direct {v8}, Landroid/content/ContentValues;-><init>()V
@@ -19302,11 +19366,11 @@
 
     invoke-virtual {v8}, Landroid/content/ContentValues;->toString()Ljava/lang/String;
 
-    move-result-object v22
+    move-result-object v21
 
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
 
-    if-eqz v2, :cond_13
+    if-eqz v2, :cond_b
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -19334,7 +19398,7 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v21
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -19346,14 +19410,14 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_13
+    :cond_b
     invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMsgListRcsChat()Ljava/util/Map;
 
     move-result-object v4
 
     monitor-enter v4
 
-    :try_start_9
+    :try_start_4
     invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMsgListRcsChat()Ljava/util/Map;
 
     move-result-object v2
@@ -19364,37 +19428,37 @@
 
     invoke-interface {v2, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v20
+    move-result-object v19
 
-    check-cast v20, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
+    check-cast v19, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
 
-    if-eqz v20, :cond_14
+    if-eqz v19, :cond_c
 
     move/from16 v0, p5
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v19
 
     iput v0, v1, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->flagRead:I
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_3
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    :cond_14
+    :cond_c
     monitor-exit v4
 
     const/4 v2, 0x1
 
     move/from16 v0, p5
 
-    if-ne v0, v2, :cond_15
+    if-ne v0, v2, :cond_d
 
     const/4 v2, 0x1
 
-    :try_start_a
-    new-array v14, v2, [I
+    :try_start_5
+    new-array v13, v2, [I
 
     const/4 v2, 0x0
 
-    aput v16, v14, v2
+    aput v15, v13, v2
 
     new-instance v2, Landroid/content/Intent;
 
@@ -19432,15 +19496,475 @@
 
     const-string/jumbo v4, "NOTIFICATION_ITEM_ID"
 
-    invoke-virtual {v2, v4, v14}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[I)Landroid/content/Intent;
+    invoke-virtual {v2, v4, v13}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[I)Landroid/content/Intent;
 
-    move-result-object v19
+    move-result-object v18
 
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mContext:Landroid/content/Context;
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v18
+
+    invoke-virtual {v2, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+
+    :cond_d
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mResolver:Landroid/content/ContentResolver;
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    invoke-virtual {v2, v3, v8, v4, v5}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+
+    move-result v9
+
+    sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
+
+    if-eqz v2, :cond_e
+
+    const-string/jumbo v2, "BluetoothMapContentObserver"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, " -> "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string/jumbo v5, " rows updated!"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_e
+    const/4 v2, 0x1
+
+    if-ge v9, v2, :cond_8
+
+    const-string/jumbo v2, "BluetoothMapContentObserver"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "setMessageRead(): Unable to update read status. Message not found: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    move-wide/from16 v0, p1
+
+    invoke-virtual {v4, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_5
+    .catch Ljava/lang/Throwable; {:try_start_5 .. :try_end_5} :catch_3
+
+    const/4 v2, 0x0
+
+    return v2
+
+    :cond_f
+    const-string/jumbo v2, "BluetoothMapContentObserver"
+
+    const-string/jumbo v4, "setMessageRead() : cursor has no row"
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-interface {v10}, Landroid/database/Cursor;->close()V
+
+    const/4 v2, 0x0
+
+    return v2
+
+    :cond_10
+    const-string/jumbo v2, "BluetoothMapContentObserver"
+
+    const-string/jumbo v4, "setMessageRead() : cursor is null"
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v2, 0x0
+
+    return v2
+
+    :catchall_1
+    move-exception v2
+
+    monitor-exit v4
+
+    throw v2
+
+    :catch_3
+    move-exception v20
+
+    const-string/jumbo v2, "BluetoothMapContentObserver"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "setMessageRead(): error updating read status for message: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    move-wide/from16 v0, p1
+
+    invoke-virtual {v4, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    move-object/from16 v0, v20
+
+    invoke-static {v2, v4, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    goto/16 :goto_1
+
+    :cond_11
+    sget-object v2, Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;->RCS_FT:Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;
+
+    move-object/from16 v0, p3
+
+    if-ne v0, v2, :cond_19
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mRcsFtUri:Landroid/net/Uri;
+
+    move-wide/from16 v0, p1
+
+    invoke-static {v2, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
+
+    move-result-object v3
+
+    const/4 v10, 0x0
+
+    const/4 v15, 0x0
+
+    :try_start_6
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mResolver:Landroid/content/ContentResolver;
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    invoke-virtual/range {v2 .. v7}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    :try_end_6
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_4
+
+    move-result-object v10
+
+    :goto_3
+    if-eqz v10, :cond_18
+
+    invoke-interface {v10}, Landroid/database/Cursor;->moveToFirst()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_17
+
+    const-string/jumbo v2, "_id"
+
+    invoke-interface {v10, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v2
+
+    invoke-interface {v10, v2}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v15
+
+    const-string/jumbo v2, "type"
+
+    invoke-interface {v10, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v2
+
+    invoke-interface {v10, v2}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v12
+
+    sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
+
+    if-eqz v2, :cond_12
+
+    const-string/jumbo v2, "BluetoothMapContentObserver"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "RCS FT folderType = "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_12
+    packed-switch v12, :pswitch_data_2
+
+    const-string/jumbo v2, "BluetoothMapContentObserver"
+
+    const-string/jumbo v4, "setMessageRead() : RCS FT folderType is invalid"
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-interface {v10}, Landroid/database/Cursor;->close()V
+
+    const/4 v2, 0x0
+
+    return v2
+
+    :catch_4
+    move-exception v11
+
+    const-string/jumbo v2, "BluetoothMapContentObserver"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "Exeption = "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v11}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_3
+
+    :pswitch_2
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mRcsFtUri:Landroid/net/Uri;
+
+    move-wide/from16 v0, p1
+
+    invoke-static {v2, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
+
+    move-result-object v3
+
+    invoke-interface {v10}, Landroid/database/Cursor;->close()V
+
+    new-instance v8, Landroid/content/ContentValues;
+
+    invoke-direct {v8}, Landroid/content/ContentValues;-><init>()V
+
+    const-string/jumbo v2, "read"
+
+    invoke-static/range {p5 .. p5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    invoke-virtual {v8, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string/jumbo v2, "seen"
+
+    invoke-static/range {p5 .. p5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    invoke-virtual {v8, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    invoke-virtual {v8}, Landroid/content/ContentValues;->toString()Ljava/lang/String;
+
+    move-result-object v21
+
+    sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
+
+    if-eqz v2, :cond_13
+
+    const-string/jumbo v2, "BluetoothMapContentObserver"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, " -> RCS FT Uri: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v3}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string/jumbo v5, " values "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    move-object/from16 v0, v21
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_13
+    invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMsgListRcsFt()Ljava/util/Map;
+
+    move-result-object v4
+
+    monitor-enter v4
+
+    :try_start_7
+    invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMsgListRcsFt()Ljava/util/Map;
+
+    move-result-object v2
+
+    invoke-static/range {p1 .. p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v5
+
+    invoke-interface {v2, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v19
+
+    check-cast v19, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
+
+    if-eqz v19, :cond_14
+
+    move/from16 v0, p5
+
+    move-object/from16 v1, v19
+
+    iput v0, v1, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->flagRead:I
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_2
+
+    :cond_14
+    monitor-exit v4
+
+    const/4 v2, 0x1
+
+    move/from16 v0, p5
+
+    if-ne v0, v2, :cond_15
+
+    const/4 v2, 0x1
+
+    :try_start_8
+    new-array v13, v2, [I
+
+    const/4 v2, 0x0
+
+    aput v15, v13, v2
+
+    new-instance v2, Landroid/content/Intent;
+
+    const-string/jumbo v4, "com.samsung.accessory.intent.action.UPDATE_NOTIFICATION_ITEM"
+
+    invoke-direct {v2, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    sget-object v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->PACKAGE_NAME_MESSAGING:Ljava/lang/String;
+
+    invoke-virtual {v2, v4}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v2
+
+    const-string/jumbo v4, "NOTIFICATION_PACKAGE_NAME"
+
+    sget-object v5, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->PACKAGE_NAME_MESSAGING:Ljava/lang/String;
+
+    invoke-virtual {v2, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v2
+
+    const-string/jumbo v4, "NOTIFICATION_ITEM_URI"
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mRcsFtUri:Landroid/net/Uri;
+
+    invoke-virtual {v5}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v2, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v2
+
+    const-string/jumbo v4, "NOTIFICATION_ITEM_ID"
+
+    invoke-virtual {v2, v4, v13}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[I)Landroid/content/Intent;
+
+    move-result-object v18
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mContext:Landroid/content/Context;
+
+    move-object/from16 v0, v18
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
@@ -19492,7 +20016,7 @@
     :cond_16
     const/4 v2, 0x1
 
-    if-ge v9, v2, :cond_e
+    if-ge v9, v2, :cond_8
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -19517,15 +20041,14 @@
     move-result-object v4
 
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_a
-    .catch Ljava/lang/Throwable; {:try_start_a .. :try_end_a} :catch_3
+    :try_end_8
+    .catch Ljava/lang/Throwable; {:try_start_8 .. :try_end_8} :catch_5
 
     const/4 v2, 0x0
 
     return v2
 
     :cond_17
-    :try_start_b
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
     const-string/jumbo v4, "setMessageRead() : cursor has no row"
@@ -19533,593 +20056,23 @@
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
-    :try_end_b
-    .catch Ljava/lang/SecurityException; {:try_start_b .. :try_end_b} :catch_2
-    .catchall {:try_start_b .. :try_end_b} :catchall_2
 
     const/4 v2, 0x0
 
-    if-eqz v10, :cond_18
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_18
     return v2
 
-    :cond_19
-    :try_start_c
+    :cond_18
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
     const-string/jumbo v4, "setMessageRead() : cursor is null"
 
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_c
-    .catch Ljava/lang/SecurityException; {:try_start_c .. :try_end_c} :catch_2
-    .catchall {:try_start_c .. :try_end_c} :catchall_2
 
     const/4 v2, 0x0
 
-    if-eqz v10, :cond_1a
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_1a
-    return v2
-
-    :catch_2
-    move-exception v12
-
-    :try_start_d
-    const-string/jumbo v2, "BluetoothMapContentObserver"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "Catching SecurityException : "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_d
-    .catchall {:try_start_d .. :try_end_d} :catchall_2
-
-    const/4 v2, 0x0
-
-    if-eqz v10, :cond_1b
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_1b
     return v2
 
     :catchall_2
-    move-exception v2
-
-    if-eqz v10, :cond_1c
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_1c
-    throw v2
-
-    :catchall_3
-    move-exception v2
-
-    monitor-exit v4
-
-    throw v2
-
-    :catch_3
-    move-exception v21
-
-    const-string/jumbo v2, "BluetoothMapContentObserver"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "setMessageRead(): error updating read status for message: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    move-wide/from16 v0, p1
-
-    invoke-virtual {v4, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    move-object/from16 v0, v21
-
-    invoke-static {v2, v4, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    goto/16 :goto_0
-
-    :cond_1d
-    sget-object v2, Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;->RCS_FT:Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;
-
-    move-object/from16 v0, p3
-
-    if-ne v0, v2, :cond_2b
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mRcsFtUri:Landroid/net/Uri;
-
-    move-wide/from16 v0, p1
-
-    invoke-static {v2, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
-
-    move-result-object v3
-
-    const/4 v10, 0x0
-
-    const/16 v16, 0x0
-
-    :try_start_e
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mResolver:Landroid/content/ContentResolver;
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    invoke-virtual/range {v2 .. v7}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object v10
-
-    if-eqz v10, :cond_27
-
-    invoke-interface {v10}, Landroid/database/Cursor;->moveToFirst()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_25
-
-    const-string/jumbo v2, "_id"
-
-    invoke-interface {v10, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v2
-
-    invoke-interface {v10, v2}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v16
-
-    const-string/jumbo v2, "type"
-
-    invoke-interface {v10, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v2
-
-    invoke-interface {v10, v2}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v13
-
-    sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
-
-    if-eqz v2, :cond_1e
-
-    const-string/jumbo v2, "BluetoothMapContentObserver"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "RCS FT folderType = "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1e
-    packed-switch v13, :pswitch_data_2
-
-    const-string/jumbo v2, "BluetoothMapContentObserver"
-
-    const-string/jumbo v4, "setMessageRead() : RCS FT folderType is invalid"
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-    :try_end_e
-    .catch Ljava/lang/SecurityException; {:try_start_e .. :try_end_e} :catch_4
-    .catchall {:try_start_e .. :try_end_e} :catchall_4
-
-    const/4 v2, 0x0
-
-    if-eqz v10, :cond_1f
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_1f
-    return v2
-
-    :pswitch_2
-    :try_start_f
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mRcsFtUri:Landroid/net/Uri;
-
-    move-wide/from16 v0, p1
-
-    invoke-static {v2, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
-    :try_end_f
-    .catch Ljava/lang/SecurityException; {:try_start_f .. :try_end_f} :catch_4
-    .catchall {:try_start_f .. :try_end_f} :catchall_4
-
-    move-result-object v3
-
-    if-eqz v10, :cond_20
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_20
-    new-instance v8, Landroid/content/ContentValues;
-
-    invoke-direct {v8}, Landroid/content/ContentValues;-><init>()V
-
-    const-string/jumbo v2, "read"
-
-    invoke-static/range {p5 .. p5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    invoke-virtual {v8, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    const-string/jumbo v2, "seen"
-
-    invoke-static/range {p5 .. p5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    invoke-virtual {v8, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    invoke-virtual {v8}, Landroid/content/ContentValues;->toString()Ljava/lang/String;
-
-    move-result-object v22
-
-    sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
-
-    if-eqz v2, :cond_21
-
-    const-string/jumbo v2, "BluetoothMapContentObserver"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, " -> RCS FT Uri: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v3}, Landroid/net/Uri;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    const-string/jumbo v5, " values "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    move-object/from16 v0, v22
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_21
-    invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMsgListRcsFt()Ljava/util/Map;
-
-    move-result-object v4
-
-    monitor-enter v4
-
-    :try_start_10
-    invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMsgListRcsFt()Ljava/util/Map;
-
-    move-result-object v2
-
-    invoke-static/range {p1 .. p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v5
-
-    invoke-interface {v2, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v20
-
-    check-cast v20, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
-
-    if-eqz v20, :cond_22
-
-    move/from16 v0, p5
-
-    move-object/from16 v1, v20
-
-    iput v0, v1, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->flagRead:I
-    :try_end_10
-    .catchall {:try_start_10 .. :try_end_10} :catchall_5
-
-    :cond_22
-    monitor-exit v4
-
-    const/4 v2, 0x1
-
-    move/from16 v0, p5
-
-    if-ne v0, v2, :cond_23
-
-    const/4 v2, 0x1
-
-    :try_start_11
-    new-array v14, v2, [I
-
-    const/4 v2, 0x0
-
-    aput v16, v14, v2
-
-    new-instance v2, Landroid/content/Intent;
-
-    const-string/jumbo v4, "com.samsung.accessory.intent.action.UPDATE_NOTIFICATION_ITEM"
-
-    invoke-direct {v2, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    sget-object v4, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->PACKAGE_NAME_MESSAGING:Ljava/lang/String;
-
-    invoke-virtual {v2, v4}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
-
-    move-result-object v2
-
-    const-string/jumbo v4, "NOTIFICATION_PACKAGE_NAME"
-
-    sget-object v5, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->PACKAGE_NAME_MESSAGING:Ljava/lang/String;
-
-    invoke-virtual {v2, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    move-result-object v2
-
-    const-string/jumbo v4, "NOTIFICATION_ITEM_URI"
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mRcsFtUri:Landroid/net/Uri;
-
-    invoke-virtual {v5}, Landroid/net/Uri;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v2, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    move-result-object v2
-
-    const-string/jumbo v4, "NOTIFICATION_ITEM_ID"
-
-    invoke-virtual {v2, v4, v14}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[I)Landroid/content/Intent;
-
-    move-result-object v19
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mContext:Landroid/content/Context;
-
-    move-object/from16 v0, v19
-
-    invoke-virtual {v2, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
-
-    :cond_23
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mResolver:Landroid/content/ContentResolver;
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    invoke-virtual {v2, v3, v8, v4, v5}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
-
-    move-result v9
-
-    sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
-
-    if-eqz v2, :cond_24
-
-    const-string/jumbo v2, "BluetoothMapContentObserver"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, " -> "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    const-string/jumbo v5, " rows updated!"
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_24
-    const/4 v2, 0x1
-
-    if-ge v9, v2, :cond_e
-
-    const-string/jumbo v2, "BluetoothMapContentObserver"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "setMessageRead(): Unable to update read status. Message not found: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    move-wide/from16 v0, p1
-
-    invoke-virtual {v4, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_11
-    .catch Ljava/lang/Throwable; {:try_start_11 .. :try_end_11} :catch_5
-
-    const/4 v2, 0x0
-
-    return v2
-
-    :cond_25
-    :try_start_12
-    const-string/jumbo v2, "BluetoothMapContentObserver"
-
-    const-string/jumbo v4, "setMessageRead() : cursor has no row"
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-    :try_end_12
-    .catch Ljava/lang/SecurityException; {:try_start_12 .. :try_end_12} :catch_4
-    .catchall {:try_start_12 .. :try_end_12} :catchall_4
-
-    const/4 v2, 0x0
-
-    if-eqz v10, :cond_26
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_26
-    return v2
-
-    :cond_27
-    :try_start_13
-    const-string/jumbo v2, "BluetoothMapContentObserver"
-
-    const-string/jumbo v4, "setMessageRead() : cursor is null"
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_13
-    .catch Ljava/lang/SecurityException; {:try_start_13 .. :try_end_13} :catch_4
-    .catchall {:try_start_13 .. :try_end_13} :catchall_4
-
-    const/4 v2, 0x0
-
-    if-eqz v10, :cond_28
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_28
-    return v2
-
-    :catch_4
-    move-exception v12
-
-    :try_start_14
-    const-string/jumbo v2, "BluetoothMapContentObserver"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "Catching SecurityException : "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_14
-    .catchall {:try_start_14 .. :try_end_14} :catchall_4
-
-    const/4 v2, 0x0
-
-    if-eqz v10, :cond_29
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_29
-    return v2
-
-    :catchall_4
-    move-exception v2
-
-    if-eqz v10, :cond_2a
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_2a
-    throw v2
-
-    :catchall_5
     move-exception v2
 
     monitor-exit v4
@@ -20127,7 +20080,7 @@
     throw v2
 
     :catch_5
-    move-exception v21
+    move-exception v20
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -20151,18 +20104,18 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v21
+    move-object/from16 v0, v20
 
     invoke-static {v2, v4, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    :cond_2b
+    :cond_19
     sget-object v2, Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;->MMS:Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;
 
     move-object/from16 v0, p3
 
-    if-ne v0, v2, :cond_38
+    if-ne v0, v2, :cond_20
 
     sget-object v2, Landroid/provider/Telephony$Mms;->CONTENT_URI:Landroid/net/Uri;
 
@@ -20174,7 +20127,7 @@
 
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
 
-    if-eqz v2, :cond_2c
+    if-eqz v2, :cond_1a
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -20202,10 +20155,10 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_2c
+    :cond_1a
     const/4 v10, 0x0
 
-    :try_start_15
+    :try_start_9
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mResolver:Landroid/content/ContentResolver;
@@ -20219,16 +20172,19 @@
     const/4 v7, 0x0
 
     invoke-virtual/range {v2 .. v7}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    :try_end_9
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_6
 
     move-result-object v10
 
-    if-eqz v10, :cond_34
+    :goto_4
+    if-eqz v10, :cond_1f
 
     invoke-interface {v10}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v2
 
-    if-eqz v2, :cond_32
+    if-eqz v2, :cond_1e
 
     const-string/jumbo v2, "msg_box"
 
@@ -20238,11 +20194,11 @@
 
     invoke-interface {v10, v2}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v13
+    move-result v12
 
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
 
-    if-eqz v2, :cond_2d
+    if-eqz v2, :cond_1b
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -20256,7 +20212,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
@@ -20266,8 +20222,8 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_2d
-    packed-switch v13, :pswitch_data_3
+    :cond_1b
+    packed-switch v12, :pswitch_data_3
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -20276,37 +20232,53 @@
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
-    :try_end_15
-    .catch Ljava/lang/Exception; {:try_start_15 .. :try_end_15} :catch_6
-    .catchall {:try_start_15 .. :try_end_15} :catchall_6
 
     const/4 v2, 0x0
 
-    if-eqz v10, :cond_2e
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_2e
     return v2
 
+    :catch_6
+    move-exception v11
+
+    const-string/jumbo v2, "BluetoothMapContentObserver"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v5, "Exeption = "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v11}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_4
+
     :pswitch_3
-    :try_start_16
     sget-object v2, Landroid/provider/Telephony$Mms$Inbox;->CONTENT_URI:Landroid/net/Uri;
 
     move-wide/from16 v0, p1
 
     invoke-static {v2, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
-    :try_end_16
-    .catch Ljava/lang/Exception; {:try_start_16 .. :try_end_16} :catch_6
-    .catchall {:try_start_16 .. :try_end_16} :catchall_6
 
     move-result-object v3
 
-    if-eqz v10, :cond_2f
-
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    :cond_2f
     new-instance v8, Landroid/content/ContentValues;
 
     invoke-direct {v8}, Landroid/content/ContentValues;-><init>()V
@@ -20325,7 +20297,7 @@
 
     monitor-enter v4
 
-    :try_start_17
+    :try_start_a
     invoke-direct/range {p0 .. p0}, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->getMsgListMms()Ljava/util/Map;
 
     move-result-object v2
@@ -20336,24 +20308,24 @@
 
     invoke-interface {v2, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v20
+    move-result-object v19
 
-    check-cast v20, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
+    check-cast v19, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;
 
-    if-eqz v20, :cond_30
+    if-eqz v19, :cond_1c
 
     move/from16 v0, p5
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v19
 
     iput v0, v1, Lcom/android/bluetooth/map/BluetoothMapContentObserver$Msg;->flagRead:I
-    :try_end_17
-    .catchall {:try_start_17 .. :try_end_17} :catchall_7
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_3
 
-    :cond_30
+    :cond_1c
     monitor-exit v4
 
-    :try_start_18
+    :try_start_b
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mResolver:Landroid/content/ContentResolver;
@@ -20368,7 +20340,7 @@
 
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->D:Z
 
-    if-eqz v2, :cond_31
+    if-eqz v2, :cond_1d
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -20398,10 +20370,10 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_31
+    :cond_1d
     const/4 v2, 0x1
 
-    if-ge v9, v2, :cond_e
+    if-ge v9, v2, :cond_8
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -20426,15 +20398,14 @@
     move-result-object v4
 
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_18
-    .catch Ljava/lang/Throwable; {:try_start_18 .. :try_end_18} :catch_7
+    :try_end_b
+    .catch Ljava/lang/Throwable; {:try_start_b .. :try_end_b} :catch_7
 
     const/4 v2, 0x0
 
     return v2
 
-    :cond_32
-    :try_start_19
+    :cond_1e
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
     const-string/jumbo v4, "setMessageRead() : cursor has no row"
@@ -20442,91 +20413,23 @@
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
-    :try_end_19
-    .catch Ljava/lang/Exception; {:try_start_19 .. :try_end_19} :catch_6
-    .catchall {:try_start_19 .. :try_end_19} :catchall_6
 
     const/4 v2, 0x0
 
-    if-eqz v10, :cond_33
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_33
     return v2
 
-    :cond_34
-    :try_start_1a
+    :cond_1f
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
     const-string/jumbo v4, "setMessageRead() : cursor is null"
 
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1a
-    .catch Ljava/lang/Exception; {:try_start_1a .. :try_end_1a} :catch_6
-    .catchall {:try_start_1a .. :try_end_1a} :catchall_6
 
     const/4 v2, 0x0
 
-    if-eqz v10, :cond_35
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_35
     return v2
 
-    :catch_6
-    move-exception v11
-
-    :try_start_1b
-    const-string/jumbo v2, "BluetoothMapContentObserver"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "Exeption = "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v11}, Ljava/lang/Exception;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1b
-    .catchall {:try_start_1b .. :try_end_1b} :catchall_6
-
-    const/4 v2, 0x0
-
-    if-eqz v10, :cond_36
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_36
-    return v2
-
-    :catchall_6
-    move-exception v2
-
-    if-eqz v10, :cond_37
-
-    invoke-interface {v10}, Landroid/database/Cursor;->close()V
-
-    :cond_37
-    throw v2
-
-    :catchall_7
+    :catchall_3
     move-exception v2
 
     monitor-exit v4
@@ -20534,7 +20437,7 @@
     throw v2
 
     :catch_7
-    move-exception v21
+    move-exception v20
 
     const-string/jumbo v2, "BluetoothMapContentObserver"
 
@@ -20558,60 +20461,60 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v21
+    move-object/from16 v0, v20
 
     invoke-static {v2, v4, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    :cond_38
+    :cond_20
     sget-object v2, Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;->EMAIL:Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;
 
     move-object/from16 v0, p3
 
-    if-eq v0, v2, :cond_39
+    if-eq v0, v2, :cond_21
 
     sget-object v2, Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;->IM:Lcom/android/bluetooth/map/BluetoothMapUtils$TYPE;
 
     move-object/from16 v0, p3
 
-    if-ne v0, v2, :cond_e
+    if-ne v0, v2, :cond_8
 
-    :cond_39
+    :cond_21
     const/4 v2, 0x1
 
-    new-array v15, v2, [J
+    new-array v14, v2, [J
 
     const-wide/16 v4, 0x0
 
     const/4 v2, 0x0
 
-    aput-wide v4, v15, v2
+    aput-wide v4, v14, v2
 
     const/4 v2, 0x0
 
-    aput-wide p1, v15, v2
+    aput-wide p1, v14, v2
 
-    const/16 v19, 0x0
+    const/16 v18, 0x0
 
     const/4 v2, 0x1
 
     move/from16 v0, p5
 
-    if-ne v0, v2, :cond_3a
+    if-ne v0, v2, :cond_22
 
-    new-instance v19, Landroid/content/Intent;
+    new-instance v18, Landroid/content/Intent;
 
     sget-object v2, Lcom/android/bluetooth/map/BluetoothMapUtils;->SET_READ_STATUS:Ljava/lang/String;
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v18
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    :goto_1
+    :goto_5
     sget-object v2, Lcom/android/bluetooth/map/BluetoothMapUtils;->EMAIL_PACKAGE:Ljava/lang/String;
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v18
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -20619,21 +20522,21 @@
 
     sget-object v4, Lcom/android/bluetooth/map/BluetoothMapUtils;->EMAIL_PACKAGE:Ljava/lang/String;
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v18
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string/jumbo v2, "MESSAGE_ITEM_ID"
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v18
 
-    invoke-virtual {v0, v2, v15}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[J)Landroid/content/Intent;
+    invoke-virtual {v0, v2, v14}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[J)Landroid/content/Intent;
 
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapContentObserver;->mContext:Landroid/content/Context;
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v18
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
@@ -20643,7 +20546,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_e
+    if-eqz v2, :cond_8
 
     invoke-static {}, Lcom/android/bluetooth/Utils;->getBtEnabledContainers()Ljava/util/List;
 
@@ -20651,20 +20554,20 @@
 
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v18
+    move-result-object v17
 
-    :goto_2
-    invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->hasNext()Z
+    :goto_6
+    invoke-interface/range {v17 .. v17}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
-    if-eqz v2, :cond_e
+    if-eqz v2, :cond_8
 
-    invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface/range {v17 .. v17}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v17
+    move-result-object v16
 
-    check-cast v17, Ljava/lang/Integer;
+    check-cast v16, Ljava/lang/Integer;
 
     move-object/from16 v0, p0
 
@@ -20672,28 +20575,28 @@
 
     new-instance v4, Landroid/os/UserHandle;
 
-    invoke-virtual/range {v17 .. v17}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual/range {v16 .. v16}, Ljava/lang/Integer;->intValue()I
 
     move-result v5
 
     invoke-direct {v4, v5}, Landroid/os/UserHandle;-><init>(I)V
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v18
 
     invoke-virtual {v2, v0, v4}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    goto :goto_2
+    goto :goto_6
 
-    :cond_3a
-    new-instance v19, Landroid/content/Intent;
+    :cond_22
+    new-instance v18, Landroid/content/Intent;
 
     sget-object v2, Lcom/android/bluetooth/map/BluetoothMapUtils;->SET_UNREAD_STATUS:Ljava/lang/String;
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v18
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    goto :goto_1
+    goto :goto_5
 
     :pswitch_data_0
     .packed-switch 0x1

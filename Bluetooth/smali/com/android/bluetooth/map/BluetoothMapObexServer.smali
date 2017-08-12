@@ -767,9 +767,6 @@
     goto :goto_0
 
     :cond_2
-    const/4 v13, 0x0
-
-    :try_start_0
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/map/BluetoothMapObexServer;->mProviderClient:Landroid/content/ContentProviderClient;
@@ -784,10 +781,11 @@
 
     move-result-object v13
 
-    if-eqz v13, :cond_7
+    if-eqz v13, :cond_6
 
     const/4 v2, -0x1
 
+    :try_start_0
     invoke-interface {v13, v2}, Landroid/database/Cursor;->moveToPosition(I)Z
 
     :cond_3
@@ -796,7 +794,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_7
 
     const-string/jumbo v2, "CASE parentKey WHEN -1 THEN CASE type WHEN 0 THEN \'inbox\' WHEN 4 THEN \'outbox\' WHEN 5 THEN \'sent\' WHEN 6 THEN \'deleted\' WHEN 3 THEN \'draft\' ELSE displayName END ELSE displayName END"
 
@@ -858,64 +856,37 @@
 
     invoke-virtual/range {v6 .. v11}, Lcom/android/bluetooth/map/BluetoothMapFolderElement;->addEmailServer(Ljava/lang/String;JLjava/lang/String;I)Lcom/android/bluetooth/map/BluetoothMapFolderElement;
 
-    move-result-object v15
+    move-result-object v14
 
     if-eqz v10, :cond_3
 
-    if-eqz v15, :cond_3
+    if-eqz v14, :cond_3
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v15}, Lcom/android/bluetooth/map/BluetoothMapObexServer;->addEmailFolders(Lcom/android/bluetooth/map/BluetoothMapFolderElement;)V
+    invoke-direct {v0, v14}, Lcom/android/bluetooth/map/BluetoothMapObexServer;->addEmailFolders(Lcom/android/bluetooth/map/BluetoothMapFolderElement;)V
     :try_end_0
-    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_1
 
-    :catch_0
-    move-exception v14
-
-    :try_start_1
-    const-string/jumbo v2, "BluetoothMapObexServer"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v6, "Catching SecurityException : "
-
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    :catchall_0
+    move-exception v2
 
     if-eqz v13, :cond_4
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
     :cond_4
-    :goto_2
-    return-void
+    throw v2
 
     :cond_5
-    :try_start_2
+    :try_start_1
     move-object/from16 v0, p1
 
     invoke-virtual {v0, v7, v8, v9, v11}, Lcom/android/bluetooth/map/BluetoothMapFolderElement;->addEmailFolder(Ljava/lang/String;JI)Lcom/android/bluetooth/map/BluetoothMapFolderElement;
 
-    move-result-object v15
+    move-result-object v14
 
     const-wide/16 v16, -0x1
 
@@ -923,48 +894,34 @@
 
     if-eqz v2, :cond_3
 
-    if-eqz v15, :cond_3
+    if-eqz v14, :cond_3
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v15}, Lcom/android/bluetooth/map/BluetoothMapObexServer;->addEmailFolders(Lcom/android/bluetooth/map/BluetoothMapFolderElement;)V
-    :try_end_2
-    .catch Ljava/lang/SecurityException; {:try_start_2 .. :try_end_2} :catch_0
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    invoke-direct {v0, v14}, Lcom/android/bluetooth/map/BluetoothMapObexServer;->addEmailFolders(Lcom/android/bluetooth/map/BluetoothMapFolderElement;)V
 
-    goto/16 :goto_1
-
-    :catchall_0
-    move-exception v2
-
-    if-eqz v13, :cond_6
-
-    invoke-interface {v13}, Landroid/database/Cursor;->close()V
+    goto :goto_1
 
     :cond_6
-    throw v2
-
-    :cond_7
-    :try_start_3
     sget-boolean v2, Lcom/android/bluetooth/map/BluetoothMapObexServer;->D:Z
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_7
 
     const-string/jumbo v2, "BluetoothMapObexServer"
 
     const-string/jumbo v4, "addEmailFolders(): no elements found"
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_3
-    .catch Ljava/lang/SecurityException; {:try_start_3 .. :try_end_3} :catch_0
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    :cond_8
-    if-eqz v13, :cond_4
+    :cond_7
+    if-eqz v13, :cond_8
 
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    goto :goto_2
+    :cond_8
+    return-void
 .end method
 
 .method private addImFolders(Lcom/android/bluetooth/map/BluetoothMapFolderElement;)V

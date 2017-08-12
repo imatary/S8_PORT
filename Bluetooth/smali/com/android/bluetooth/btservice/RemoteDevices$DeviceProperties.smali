@@ -798,17 +798,17 @@
 
     aget v6, v0, v10
 
-    if-nez v6, :cond_7
+    if-nez v6, :cond_3
 
     aget v6, v0, v9
 
     const/16 v7, 0xff
 
-    if-gt v6, v7, :cond_7
+    if-gt v6, v7, :cond_3
 
     aget v6, v0, v9
 
-    if-lt v6, v9, :cond_7
+    if-lt v6, v9, :cond_3
 
     return v9
 
@@ -910,61 +910,7 @@
     goto/16 :goto_0
 
     :cond_3
-    iget-object v6, p0, Lcom/android/bluetooth/btservice/RemoteDevices$DeviceProperties;->mName:Ljava/lang/String;
-
-    if-eqz v6, :cond_7
-
-    iget-object v6, p0, Lcom/android/bluetooth/btservice/RemoteDevices$DeviceProperties;->mName:Ljava/lang/String;
-
-    invoke-virtual {v6}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
-
-    move-result-object v6
-
-    const-string/jumbo v7, "GALAXY GEAR ("
-
-    invoke-virtual {v6, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_7
-
-    iget v6, p0, Lcom/android/bluetooth/btservice/RemoteDevices$DeviceProperties;->mBluetoothClass:I
-
-    and-int/lit16 v6, v6, 0x1f00
-
-    const/16 v7, 0x700
-
-    if-ne v6, v7, :cond_4
-
-    return v9
-
-    :cond_4
-    iget-short v6, p0, Lcom/android/bluetooth/btservice/RemoteDevices$DeviceProperties;->mAppearance:S
-
-    const/16 v7, 0x40
-
-    if-eq v6, v7, :cond_5
-
-    iget-short v6, p0, Lcom/android/bluetooth/btservice/RemoteDevices$DeviceProperties;->mAppearance:S
-
-    const/16 v7, 0xc1
-
-    if-ne v6, v7, :cond_6
-
-    :cond_5
-    return v9
-
-    :cond_6
-    iget-short v6, p0, Lcom/android/bluetooth/btservice/RemoteDevices$DeviceProperties;->mAppearance:S
-
-    const/16 v7, 0xc0
-
-    if-eq v6, v7, :cond_5
-
-    :cond_7
     return v10
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x1

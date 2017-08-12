@@ -5595,14 +5595,6 @@
 
     new-array v1, v3, [Ljava/lang/String;
 
-    if-eqz v2, :cond_5
-
-    const/4 v3, 0x0
-
-    aget-object v3, v2, v3
-
-    if-eqz v3, :cond_5
-
     const/4 v3, 0x0
 
     aget-object v3, v2, v3
@@ -5642,11 +5634,7 @@
     :goto_0
     array-length v3, v2
 
-    if-ge v0, v3, :cond_4
-
-    aget-object v3, v2, v0
-
-    if-eqz v3, :cond_3
+    if-ge v0, v3, :cond_3
 
     const/4 v3, 0x2
 
@@ -5676,12 +5664,11 @@
 
     aput-object v4, v1, v3
 
-    :cond_3
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    :cond_4
+    :cond_3
     const/4 v3, 0x2
 
     aget-object v3, v1, v3
@@ -5700,22 +5687,9 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    :goto_1
     monitor-exit p0
 
     return-void
-
-    :cond_5
-    :try_start_3
-    const-string/jumbo v3, "BluetoothAtMessage"
-
-    const-string/jumbo v4, "processMsgRcvdActionForAtCMD - mSmsMessages is null"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    goto :goto_1
 
     :catchall_0
     move-exception v3

@@ -17,11 +17,9 @@
 # static fields
 .field public static final bt_history_statusbar:I = 0x7f060006
 
-.field public static final complete_date_textColor:I = 0x7f06000a
+.field public static final complete_date_textColor:I = 0x7f060009
 
-.field public static final complete_text_textColor:I = 0x7f06000b
-
-.field public static final file_transfer_item_label_color:I = 0x7f06000c
+.field public static final complete_text_textColor:I = 0x7f06000a
 
 .field public static final hun_background_color:I = 0x7f060000
 
@@ -35,11 +33,11 @@
 
 .field public static final hun_title_text_color:I = 0x7f060003
 
-.field public static final no_transfers_textColor:I = 0x7f060007
+.field public static final no_transfers_textColor:I = 0x7f06000b
 
-.field public static final targetdevice_textColor:I = 0x7f060009
+.field public static final targetdevice_textColor:I = 0x7f060008
 
-.field public static final transfer_title_textColor:I = 0x7f060008
+.field public static final transfer_title_textColor:I = 0x7f060007
 
 
 # direct methods

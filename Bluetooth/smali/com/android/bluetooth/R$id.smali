@@ -47,11 +47,11 @@
 
 .field public static final caller:I = 0x7f0e001c
 
-.field public static final complete_date:I = 0x7f0e000d
+.field public static final complete_date:I = 0x7f0e000e
 
-.field public static final complete_text:I = 0x7f0e000e
+.field public static final complete_text:I = 0x7f0e000f
 
-.field public static final content:I = 0x7f0e0012
+.field public static final content:I = 0x7f0e000a
 
 .field public static final content_header:I = 0x7f0e001a
 
@@ -61,7 +61,7 @@
 
 .field public static final delete_text:I = 0x7f0e0029
 
-.field public static final empty:I = 0x7f0e0010
+.field public static final empty:I = 0x7f0e0011
 
 .field public static final filename_content:I = 0x7f0e0022
 
@@ -83,7 +83,7 @@
 
 .field public static final line5_view:I = 0x7f0e0017
 
-.field public static final list:I = 0x7f0e000f
+.field public static final list:I = 0x7f0e0010
 
 .field public static final media_text:I = 0x7f0e0026
 
@@ -91,7 +91,7 @@
 
 .field public static final notify_server:I = 0x7f0e0031
 
-.field public static final progress_info:I = 0x7f0e0011
+.field public static final progress_info:I = 0x7f0e0012
 
 .field public static final progress_percent:I = 0x7f0e0019
 
@@ -101,13 +101,13 @@
 
 .field public static final start_server:I = 0x7f0e0030
 
-.field public static final targetdevice:I = 0x7f0e000c
+.field public static final targetdevice:I = 0x7f0e000d
 
 .field public static final text:I = 0x7f0e0001
 
 .field public static final title:I = 0x7f0e001d
 
-.field public static final transfer_icon:I = 0x7f0e000a
+.field public static final transfer_icon:I = 0x7f0e000b
 
 .field public static final transfer_menu_clear:I = 0x7f0e0034
 
@@ -115,7 +115,7 @@
 
 .field public static final transfer_menu_open:I = 0x7f0e0032
 
-.field public static final transfer_title:I = 0x7f0e000b
+.field public static final transfer_title:I = 0x7f0e000c
 
 .field public static final update_record:I = 0x7f0e002c
 

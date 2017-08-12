@@ -116,7 +116,7 @@
 
     move-result-object v2
 
-    const v3, 0x107003a
+    const v3, 0x1070035
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -339,7 +339,7 @@
 
     move-result-object v3
 
-    const v4, 0x107003a
+    const v4, 0x1070035
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -529,7 +529,7 @@
     :goto_0
     aput-object v3, v5, v6
 
-    const v3, 0x7f0a0082
+    const v3, 0x7f0a0081
 
     invoke-virtual {p0, v3, v5}, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -579,7 +579,7 @@
 
     iget-object v1, p0, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    const v3, 0x7f0a0085
+    const v3, 0x7f0a0084
 
     invoke-virtual {p0, v3}, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->getString(I)Ljava/lang/String;
 
@@ -591,7 +591,7 @@
 
     iput-object v3, v1, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
-    const v3, 0x7f0a0083
+    const v3, 0x7f0a0082
 
     invoke-virtual {p0, v3}, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->getString(I)Ljava/lang/String;
 
@@ -601,7 +601,7 @@
 
     iput-object p0, v1, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const v3, 0x7f0a0084
+    const v3, 0x7f0a0083
 
     invoke-virtual {p0, v3}, Lcom/android/bluetooth/pan/DialogConnReqInactiveNap;->getString(I)Ljava/lang/String;
 

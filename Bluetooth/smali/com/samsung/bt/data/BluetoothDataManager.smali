@@ -54,10 +54,6 @@
 
 .field private static final DBG:Z
 
-.field public static final ERROR_CMD_TIMEOUT:I = 0xe1
-
-.field public static final ERROR_MAX_TIMEOUT_VALUE:I = 0xd2
-
 .field static final FAIL_BOND:I = 0x1
 
 .field static final FAIL_CONNECTION:I = 0x2
@@ -65,8 +61,6 @@
 .field static final FAIL_DISCONNECTION:I = 0x3
 
 .field static final FAIL_HWERROR:I = 0x4
-
-.field public static final HW_KEY_APP_ID:Ljava/lang/String; = "com.android.bluetooth"
 
 .field public static final HW_KEY_COMP_ID:Ljava/lang/String; = "Bluetooth"
 
@@ -78,9 +72,9 @@
 
 .field public static final HW_KEY_HIT_TYPE:Ljava/lang/String; = "ph"
 
-.field public static final HW_KEY_TYPE:I = 0x0
+.field public static final HW_KEY_TYPE:I = 0x1
 
-.field static final LE_BIGDATA_VERSION:D = 1.6
+.field static final LE_BIGDATA_VERSION:D = 1.3
 
 .field static final MAJOR_DEVICE_CLASS_AUDIO_VIDEO:I = 0x400
 
@@ -168,8 +162,6 @@
 
 .field private final mHandler:Landroid/os/Handler;
 
-.field private mSemHqmManager:Landroid/os/SemHqmManager;
-
 
 # direct methods
 .method static synthetic -wrap0(Lcom/samsung/bt/data/BluetoothDataManager;II[B)V
@@ -220,10 +212,6 @@
     const/4 v1, -0x1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/samsung/bt/data/BluetoothDataManager;->mSemHqmManager:Landroid/os/SemHqmManager;
 
     new-instance v0, Lcom/samsung/bt/data/BluetoothDataManager$1;
 
@@ -409,314 +397,6 @@
 
     :cond_5
     return-void
-.end method
-
-.method private getUartErrorInfo()Ljava/lang/String;
-    .locals 8
-
-    const/4 v0, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v1, 0x0
-
-    const-string/jumbo v5, "ro.bluetooth.tty"
-
-    invoke-static {v5}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_0
-
-    invoke-virtual {v4}, Ljava/lang/String;->isEmpty()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_2
-
-    :cond_0
-    const-string/jumbo v4, "NONE"
-
-    :cond_1
-    :goto_0
-    const-string/jumbo v5, "BluetoothDataManager"
-
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v7, "getUartErrorInfo "
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-object v4
-
-    :cond_2
-    const-string/jumbo v5, "/sys/class/tty/%s/device/error_cnt"
-
-    const/4 v6, 0x1
-
-    new-array v6, v6, [Ljava/lang/Object;
-
-    const/4 v7, 0x0
-
-    aput-object v4, v6, v7
-
-    invoke-static {v5, v6}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    :try_start_0
-    new-instance v2, Ljava/io/BufferedReader;
-
-    new-instance v5, Ljava/io/FileReader;
-
-    invoke-direct {v5, v0}, Ljava/io/FileReader;-><init>(Ljava/lang/String;)V
-
-    invoke-direct {v2, v5}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    if-eqz v2, :cond_3
-
-    :try_start_1
-    invoke-virtual {v2}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_4
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    move-result-object v4
-
-    :cond_3
-    if-eqz v2, :cond_4
-
-    :try_start_2
-    invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
-
-    :cond_4
-    :goto_1
-    move-object v1, v2
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v3
-
-    invoke-virtual {v3}, Ljava/io/IOException;->printStackTrace()V
-
-    goto :goto_1
-
-    :catch_1
-    move-exception v3
-
-    :goto_2
-    :try_start_3
-    invoke-virtual {v3}, Ljava/io/IOException;->printStackTrace()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    if-eqz v1, :cond_1
-
-    :try_start_4
-    invoke-virtual {v1}, Ljava/io/BufferedReader;->close()V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
-
-    goto :goto_0
-
-    :catch_2
-    move-exception v3
-
-    invoke-virtual {v3}, Ljava/io/IOException;->printStackTrace()V
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v5
-
-    :goto_3
-    if-eqz v1, :cond_5
-
-    :try_start_5
-    invoke-virtual {v1}, Ljava/io/BufferedReader;->close()V
-    :try_end_5
-    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3
-
-    :cond_5
-    :goto_4
-    throw v5
-
-    :catch_3
-    move-exception v3
-
-    invoke-virtual {v3}, Ljava/io/IOException;->printStackTrace()V
-
-    goto :goto_4
-
-    :catchall_1
-    move-exception v5
-
-    move-object v1, v2
-
-    goto :goto_3
-
-    :catch_4
-    move-exception v3
-
-    move-object v1, v2
-
-    goto :goto_2
-.end method
-
-.method private handleSendBroadcastToHWParam(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 11
-
-    invoke-static {}, Lcom/android/bluetooth/btservice/AdapterService;->getAdapterService()Lcom/android/bluetooth/btservice/AdapterService;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
-
-    iget-object v0, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
-
-    if-nez v0, :cond_1
-
-    sget-boolean v0, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
-
-    if-eqz v0, :cond_0
-
-    const-string/jumbo v0, "BluetoothDataManager"
-
-    const-string/jumbo v1, "BluetoothDataManager :: handleSendBroadcastToHWParam :: adapterService is NULL!!!"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    return-void
-
-    :cond_1
-    iget-object v0, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
-
-    invoke-virtual {v0}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    const-string/jumbo v1, "HqmManagerService"
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/os/SemHqmManager;
-
-    iput-object v0, p0, Lcom/samsung/bt/data/BluetoothDataManager;->mSemHqmManager:Landroid/os/SemHqmManager;
-
-    iget-object v0, p0, Lcom/samsung/bt/data/BluetoothDataManager;->mSemHqmManager:Landroid/os/SemHqmManager;
-
-    if-eqz v0, :cond_4
-
-    sget-boolean v0, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
-
-    if-eqz v0, :cond_2
-
-    const-string/jumbo v0, "BluetoothDataManager"
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v2, "handleSendBroadcastToHWParam(), feat: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string/jumbo v2, ", hitType: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string/jumbo v2, ", data: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_2
-    iget-object v0, p0, Lcom/samsung/bt/data/BluetoothDataManager;->mSemHqmManager:Landroid/os/SemHqmManager;
-
-    const-string/jumbo v2, "Bluetooth"
-
-    const-string/jumbo v5, "0.0"
-
-    const-string/jumbo v6, "sec"
-
-    const-string/jumbo v7, ""
-
-    const-string/jumbo v9, ""
-
-    const-string/jumbo v10, "com.android.bluetooth"
-
-    const/4 v1, 0x0
-
-    move-object v3, p1
-
-    move-object v4, p2
-
-    move-object v8, p3
-
-    invoke-virtual/range {v0 .. v10}, Landroid/os/SemHqmManager;->sendHWParamToHQMwithAppId(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
-
-    :cond_3
-    :goto_0
-    return-void
-
-    :cond_4
-    sget-boolean v0, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
-
-    if-eqz v0, :cond_3
-
-    const-string/jumbo v0, "BluetoothDataManager"
-
-    const-string/jumbo v1, "handleSendBroadcastToHWParam() mSemHqmManager is null"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
 .end method
 
 .method private initLeScanInfo()V
@@ -1045,27 +725,27 @@
 .end method
 
 .method insertLeAbuseConnLog(ILjava/lang/String;)V
-    .locals 10
+    .locals 8
 
     invoke-static {}, Lcom/android/bluetooth/btservice/AdapterService;->getAdapterService()Lcom/android/bluetooth/btservice/AdapterService;
 
-    move-result-object v7
+    move-result-object v5
 
-    iput-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iput-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    iget-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iget-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    if-nez v7, :cond_1
+    if-nez v5, :cond_1
 
-    sget-boolean v7, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+    sget-boolean v5, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
 
-    if-eqz v7, :cond_0
+    if-eqz v5, :cond_0
 
-    const-string/jumbo v7, "BluetoothDataManager"
+    const-string/jumbo v5, "BluetoothDataManager"
 
-    const-string/jumbo v8, "BluetoothDataManager :: insertLeAbuseConnLog :: adapterService is NULL!!!"
+    const-string/jumbo v6, "BluetoothDataManager :: insertLeAbuseConnLog :: adapterService is NULL!!!"
 
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
     return-void
@@ -1075,336 +755,234 @@
 
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
-    const-string/jumbo v7, "app_id"
+    const-string/jumbo v5, "app_id"
 
-    const-string/jumbo v8, "com.android.bluetooth"
+    const-string/jumbo v6, "com.android.bluetooth"
 
-    invoke-virtual {v1, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string/jumbo v7, "feature"
+    const-string/jumbo v5, "feature"
 
-    const-string/jumbo v8, "LEAC"
+    const-string/jumbo v6, "LEAC"
 
-    invoke-virtual {v1, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "\"LB_VER\":\""
+    const-string/jumbo v5, "{"
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "1.6\","
+    const-string/jumbo v5, "\"LB_VER\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"LO_MUA\":\""
+    const-string/jumbo v5, "1.3\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "\"LO_MUA\":\""
 
-    move-result-object v7
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LO_MUC\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "\"LO_MUC\":\""
 
-    move-result-object v7
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"RE_SFR\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\","
+    const-string/jumbo v5, "\"RE_SFR\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"RE_NAM\":\""
+    const-string/jumbo v5, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\","
+    const-string/jumbo v5, "\"RE_NAM\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"RE_PRO\":\""
+    const-string/jumbo v5, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\","
+    const-string/jumbo v5, "\"RE_PRO\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"RE_PRA\":\""
+    const-string/jumbo v5, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\","
+    const-string/jumbo v5, "\"RE_PRA\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"LO_LMP\":\""
+    const-string/jumbo v5, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\""
+    const-string/jumbo v5, "\"LO_LMP\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string/jumbo v5, "\""
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string/jumbo v5, "}"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    sget-boolean v5, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+
+    if-eqz v5, :cond_2
+
+    const-string/jumbo v5, "BluetoothDataManager"
 
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "\"LB_VER\":\""
+    const-string/jumbo v7, "[BIGDATA] insertLeAbuseConnLog() "
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "1.6\","
+    move-result-object v6
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"LO_MUA\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_MUC\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"RE_SFR\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\","
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"RE_NAM\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\","
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"RE_PRO\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\","
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"RE_PRA\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\","
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LO_LMP\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
+    move-result-object v6
 
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v6
 
-    const-string/jumbo v7, "LEAC"
-
-    const-string/jumbo v8, "ph"
-
-    invoke-direct {p0, v7, v8, v4}, Lcom/samsung/bt/data/BluetoothDataManager;->handleSendBroadcastToHWParam(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v8, "{"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "}"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    sget-boolean v7, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
-
-    if-eqz v7, :cond_2
-
-    const-string/jumbo v7, "BluetoothDataManager"
-
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v9, "[BIGDATA] insertLeAbuseConnLog() "
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    const-string/jumbo v7, "extra"
+    const-string/jumbo v5, "extra"
 
-    invoke-virtual {v1, v7, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
 
-    move-result-object v7
+    move-result-object v5
 
-    const-string/jumbo v8, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
+    const-string/jumbo v6, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
 
-    invoke-virtual {v7, v8}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {v5, v6}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
 
-    move-result v7
+    move-result v5
 
-    if-eqz v7, :cond_3
+    if-eqz v5, :cond_3
 
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    const-string/jumbo v7, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
+    const-string/jumbo v5, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
 
-    invoke-virtual {v0, v7}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v5}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    const-string/jumbo v7, "data"
+    const-string/jumbo v5, "data"
 
-    invoke-virtual {v0, v7, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    invoke-virtual {v0, v5, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string/jumbo v7, "com.samsung.android.providers.context"
+    const-string/jumbo v5, "com.samsung.android.providers.context"
 
-    invoke-virtual {v0, v7}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v5}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     :try_start_0
-    iget-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iget-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    invoke-virtual {v7}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v5}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v5, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_3
     :goto_0
-    new-instance v7, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v8, "BluetoothDataManager -- LE ABUSE CONN INFO : "
+    const-string/jumbo v6, "BluetoothDataManager -- LE ABUSE CONN INFO : "
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-static {v7}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
+    invoke-static {v5}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
 
     return-void
 
     :catch_0
     move-exception v2
 
-    const-string/jumbo v7, "BluetoothDataManager"
+    const-string/jumbo v5, "BluetoothDataManager"
 
-    const-string/jumbo v8, "Failed to send intent to ContextFramework"
+    const-string/jumbo v6, "Failed to send intent to ContextFramework"
 
-    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 .end method
 
 .method public insertLeAbuseScanLog(JILjava/lang/String;)V
-    .locals 11
+    .locals 9
 
     invoke-static {}, Lcom/android/bluetooth/btservice/AdapterService;->getAdapterService()Lcom/android/bluetooth/btservice/AdapterService;
 
-    move-result-object v7
+    move-result-object v5
 
-    iput-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iput-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    iget-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iget-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    if-nez v7, :cond_1
+    if-nez v5, :cond_1
 
-    sget-boolean v7, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+    sget-boolean v5, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
 
-    if-eqz v7, :cond_0
+    if-eqz v5, :cond_0
 
-    const-string/jumbo v7, "BluetoothDataManager"
+    const-string/jumbo v5, "BluetoothDataManager"
 
-    const-string/jumbo v8, "BluetoothDataManager :: insertLeAbuseScanLog :: adapterService is NULL!!!"
+    const-string/jumbo v6, "BluetoothDataManager :: insertLeAbuseScanLog :: adapterService is NULL!!!"
 
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
     return-void
@@ -1414,280 +992,206 @@
 
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
-    const-string/jumbo v7, "app_id"
+    const-string/jumbo v5, "app_id"
 
-    const-string/jumbo v8, "com.android.bluetooth"
+    const-string/jumbo v6, "com.android.bluetooth"
 
-    invoke-virtual {v1, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string/jumbo v7, "feature"
+    const-string/jumbo v5, "feature"
 
-    const-string/jumbo v8, "LEAS"
+    const-string/jumbo v6, "LEAS"
 
-    invoke-virtual {v1, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "\"LB_VER\":\""
+    const-string/jumbo v5, "{"
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "1.6\","
+    const-string/jumbo v5, "\"LB_VER\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"LS_APK\":\""
+    const-string/jumbo v5, "1.3\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "\"LS_APK\":\""
 
-    move-result-object v7
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LS_ATM\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "\"LS_ATM\":\""
 
-    move-result-object v7
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LS_ACT\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "\"LS_ACT\":\""
 
-    move-result-object v7
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "\""
+    invoke-virtual {v4, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
+
+    const-string/jumbo v6, "\""
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string/jumbo v5, "}"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    sget-boolean v5, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+
+    if-eqz v5, :cond_2
+
+    const-string/jumbo v5, "BluetoothDataManager"
 
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "\"LB_VER\":\""
+    const-string/jumbo v7, "[BIGDATA] insertLeAbuseScanLog() "
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "1.6\","
+    move-result-object v6
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"LS_APK\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_ATM\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_ACT\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\""
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
+    move-result-object v6
 
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v6
 
-    const-string/jumbo v7, "LEAS"
-
-    const-string/jumbo v8, "sm"
-
-    invoke-direct {p0, v7, v8, v4}, Lcom/samsung/bt/data/BluetoothDataManager;->handleSendBroadcastToHWParam(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v8, "{"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "}"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    sget-boolean v7, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
-
-    if-eqz v7, :cond_2
-
-    const-string/jumbo v7, "BluetoothDataManager"
-
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v9, "[BIGDATA] insertLeAbuseScanLog() "
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    const-string/jumbo v7, "extra"
+    const-string/jumbo v5, "extra"
 
-    invoke-virtual {v1, v7, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
 
-    move-result-object v7
+    move-result-object v5
 
-    const-string/jumbo v8, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
+    const-string/jumbo v6, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
 
-    invoke-virtual {v7, v8}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {v5, v6}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
 
-    move-result v7
+    move-result v5
 
-    if-eqz v7, :cond_3
+    if-eqz v5, :cond_3
 
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    const-string/jumbo v7, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
+    const-string/jumbo v5, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
 
-    invoke-virtual {v0, v7}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v5}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    const-string/jumbo v7, "data"
+    const-string/jumbo v5, "data"
 
-    invoke-virtual {v0, v7, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    invoke-virtual {v0, v5, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string/jumbo v7, "com.samsung.android.providers.context"
+    const-string/jumbo v5, "com.samsung.android.providers.context"
 
-    invoke-virtual {v0, v7}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v5}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     :try_start_0
-    iget-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iget-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    invoke-virtual {v7}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v5}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v5, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_3
     :goto_0
-    new-instance v7, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v8, "BluetoothDataManager -- LE ABUSE SCAN INFO : "
+    const-string/jumbo v6, "BluetoothDataManager -- LE ABUSE SCAN INFO : "
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-static {v7}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
+    invoke-static {v5}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
 
     return-void
 
     :catch_0
     move-exception v2
 
-    const-string/jumbo v7, "BluetoothDataManager"
+    const-string/jumbo v5, "BluetoothDataManager"
 
-    const-string/jumbo v8, "Failed to send intent to ContextFramework"
+    const-string/jumbo v6, "Failed to send intent to ContextFramework"
 
-    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 .end method
 
-.method public insertLeAppInfo(Ljava/lang/String;Ljava/lang/String;IJ)V
-    .locals 10
+.method public insertLeAppInfo(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 8
 
     invoke-static {}, Lcom/android/bluetooth/btservice/AdapterService;->getAdapterService()Lcom/android/bluetooth/btservice/AdapterService;
 
-    move-result-object v7
+    move-result-object v5
 
-    iput-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iput-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    iget-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iget-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    if-nez v7, :cond_1
+    if-nez v5, :cond_1
 
-    sget-boolean v7, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+    sget-boolean v5, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
 
-    if-eqz v7, :cond_0
+    if-eqz v5, :cond_0
 
-    const-string/jumbo v7, "BluetoothDataManager"
+    const-string/jumbo v5, "BluetoothDataManager"
 
-    const-string/jumbo v8, "BluetoothDataManager :: insertLeAppInfo :: adapterService is NULL!!!"
+    const-string/jumbo v6, "BluetoothDataManager :: insertLeAppInfo :: adapterService is NULL!!!"
 
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
     return-void
@@ -1697,304 +1201,194 @@
 
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
-    const-string/jumbo v7, "app_id"
+    const-string/jumbo v5, "app_id"
 
-    const-string/jumbo v8, "com.android.bluetooth"
+    const-string/jumbo v6, "com.android.bluetooth"
 
-    invoke-virtual {v1, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string/jumbo v7, "feature"
+    const-string/jumbo v5, "feature"
 
-    const-string/jumbo v8, "LEAI"
+    const-string/jumbo v6, "LEAI"
 
-    invoke-virtual {v1, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "\"LB_VER\":\""
+    const-string/jumbo v5, "{"
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "1.6\","
+    const-string/jumbo v5, "\"LB_VER\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"LA_TYP\":\""
+    const-string/jumbo v5, "1.3\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "\"LA_TYP\":\""
 
-    move-result-object v7
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LA_NAM\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "\"LA_NAM\":\""
 
-    move-result-object v7
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LA_INT\":\""
+    const-string/jumbo v6, "\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "}"
 
-    move-result-object v7
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    const-string/jumbo v7, "\"LA_LNG\":\""
+    sget-boolean v5, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v5, :cond_2
 
-    invoke-virtual {v5, p4, p5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\""
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "BluetoothDataManager"
 
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "\"LB_VER\":\""
+    const-string/jumbo v7, "[BIGDATA] insertLeAppInfo() "
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "1.6\","
+    move-result-object v6
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"LA_TYP\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LA_NAM\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_INT\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_LNG\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, p4, p5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\""
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
+    move-result-object v6
 
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v6
 
-    const-string/jumbo v7, "LEAI"
-
-    const-string/jumbo v8, "ph"
-
-    invoke-direct {p0, v7, v8, v4}, Lcom/samsung/bt/data/BluetoothDataManager;->handleSendBroadcastToHWParam(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v8, "{"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "}"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    sget-boolean v7, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
-
-    if-eqz v7, :cond_2
-
-    const-string/jumbo v7, "BluetoothDataManager"
-
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v9, "[BIGDATA] insertLeAppInfo() "
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    const-string/jumbo v7, "extra"
+    const-string/jumbo v5, "extra"
 
-    invoke-virtual {v1, v7, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
 
-    move-result-object v7
+    move-result-object v5
 
-    const-string/jumbo v8, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
+    const-string/jumbo v6, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
 
-    invoke-virtual {v7, v8}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {v5, v6}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
 
-    move-result v7
+    move-result v5
 
-    if-eqz v7, :cond_3
+    if-eqz v5, :cond_3
 
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    const-string/jumbo v7, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
+    const-string/jumbo v5, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
 
-    invoke-virtual {v0, v7}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v5}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    const-string/jumbo v7, "data"
+    const-string/jumbo v5, "data"
 
-    invoke-virtual {v0, v7, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    invoke-virtual {v0, v5, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string/jumbo v7, "com.samsung.android.providers.context"
+    const-string/jumbo v5, "com.samsung.android.providers.context"
 
-    invoke-virtual {v0, v7}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v5}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     :try_start_0
-    iget-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iget-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    invoke-virtual {v7}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v5}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v5, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_3
     :goto_0
-    new-instance v7, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v8, "BluetoothDataManager -- LE APP INFO : "
+    const-string/jumbo v6, "BluetoothDataManager -- LE APP INFO : "
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-static {v7}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
+    invoke-static {v5}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
 
     return-void
 
     :catch_0
     move-exception v2
 
-    const-string/jumbo v7, "BluetoothDataManager"
+    const-string/jumbo v5, "BluetoothDataManager"
 
-    const-string/jumbo v8, "Failed to send intent to ContextFramework"
+    const-string/jumbo v6, "Failed to send intent to ContextFramework"
 
-    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 .end method
 
 .method public insertLeConnCountLog(I)V
-    .locals 10
+    .locals 8
 
     invoke-static {}, Lcom/android/bluetooth/btservice/AdapterService;->getAdapterService()Lcom/android/bluetooth/btservice/AdapterService;
 
-    move-result-object v7
+    move-result-object v5
 
-    iput-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iput-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    iget-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iget-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    if-nez v7, :cond_1
+    if-nez v5, :cond_1
 
-    sget-boolean v7, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+    sget-boolean v5, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
 
-    if-eqz v7, :cond_0
+    if-eqz v5, :cond_0
 
-    const-string/jumbo v7, "BluetoothDataManager"
+    const-string/jumbo v5, "BluetoothDataManager"
 
-    const-string/jumbo v8, "BluetoothDataManager :: insertLeConnCountLog :: adapterService is NULL!!!"
+    const-string/jumbo v6, "BluetoothDataManager :: insertLeConnCountLog :: adapterService is NULL!!!"
 
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
     return-void
@@ -2004,232 +1398,182 @@
 
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
-    const-string/jumbo v7, "app_id"
+    const-string/jumbo v5, "app_id"
 
-    const-string/jumbo v8, "com.android.bluetooth"
+    const-string/jumbo v6, "com.android.bluetooth"
 
-    invoke-virtual {v1, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string/jumbo v7, "feature"
+    const-string/jumbo v5, "feature"
 
-    const-string/jumbo v8, "LECC"
+    const-string/jumbo v6, "LECC"
 
-    invoke-virtual {v1, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "\"LB_VER\":\""
+    const-string/jumbo v5, "{"
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "1.6\","
+    const-string/jumbo v5, "\"LB_VER\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"LO_MCC\":\""
+    const-string/jumbo v5, "1.3\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "\"LO_MCC\":\""
 
-    move-result-object v7
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "\""
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
+
+    const-string/jumbo v6, "\""
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string/jumbo v5, "}"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    sget-boolean v5, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+
+    if-eqz v5, :cond_2
+
+    const-string/jumbo v5, "BluetoothDataManager"
 
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "\"LB_VER\":\""
+    const-string/jumbo v7, "[BIGDATA] insertLeConnCountLog() "
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "1.6\","
+    move-result-object v6
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"LE_MCC\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\""
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
+    move-result-object v6
 
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v6
 
-    const-string/jumbo v7, "LECC"
-
-    const-string/jumbo v8, "sm"
-
-    invoke-direct {p0, v7, v8, v4}, Lcom/samsung/bt/data/BluetoothDataManager;->handleSendBroadcastToHWParam(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v8, "{"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "}"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    sget-boolean v7, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
-
-    if-eqz v7, :cond_2
-
-    const-string/jumbo v7, "BluetoothDataManager"
-
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v9, "[BIGDATA] insertLeConnCountLog() "
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    const-string/jumbo v7, "extra"
+    const-string/jumbo v5, "extra"
 
-    invoke-virtual {v1, v7, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
 
-    move-result-object v7
+    move-result-object v5
 
-    const-string/jumbo v8, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
+    const-string/jumbo v6, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
 
-    invoke-virtual {v7, v8}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {v5, v6}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
 
-    move-result v7
+    move-result v5
 
-    if-eqz v7, :cond_3
+    if-eqz v5, :cond_3
 
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    const-string/jumbo v7, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
+    const-string/jumbo v5, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
 
-    invoke-virtual {v0, v7}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v5}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    const-string/jumbo v7, "data"
+    const-string/jumbo v5, "data"
 
-    invoke-virtual {v0, v7, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    invoke-virtual {v0, v5, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string/jumbo v7, "com.samsung.android.providers.context"
+    const-string/jumbo v5, "com.samsung.android.providers.context"
 
-    invoke-virtual {v0, v7}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v5}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     :try_start_0
-    iget-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iget-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    invoke-virtual {v7}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v5}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v5, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_3
     :goto_0
-    new-instance v7, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v8, "BluetoothDataManager -- LE CONNECTION COUNT INFO : "
+    const-string/jumbo v6, "BluetoothDataManager -- LE CONNECTION COUNT INFO : "
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-static {v7}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
+    invoke-static {v5}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
 
     return-void
 
     :catch_0
     move-exception v2
 
-    const-string/jumbo v7, "BluetoothDataManager"
+    const-string/jumbo v5, "BluetoothDataManager"
 
-    const-string/jumbo v8, "Failed to send intent to ContextFramework"
+    const-string/jumbo v6, "Failed to send intent to ContextFramework"
 
-    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 .end method
 
 .method insertLeScanLog(IJ)V
-    .locals 10
+    .locals 8
 
     invoke-static {}, Lcom/android/bluetooth/btservice/AdapterService;->getAdapterService()Lcom/android/bluetooth/btservice/AdapterService;
 
-    move-result-object v7
+    move-result-object v5
 
-    iput-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iput-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    iget-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iget-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    if-nez v7, :cond_1
+    if-nez v5, :cond_1
 
-    sget-boolean v7, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+    sget-boolean v5, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
 
-    if-eqz v7, :cond_0
+    if-eqz v5, :cond_0
 
-    const-string/jumbo v7, "BluetoothDataManager"
+    const-string/jumbo v5, "BluetoothDataManager"
 
-    const-string/jumbo v8, "BluetoothDataManager :: insertLeScanLog :: adapterService is NULL!!!"
+    const-string/jumbo v6, "BluetoothDataManager :: insertLeScanLog :: adapterService is NULL!!!"
 
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
     return-void
@@ -2239,434 +1583,274 @@
 
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
-    const-string/jumbo v7, "app_id"
+    const-string/jumbo v5, "app_id"
 
-    const-string/jumbo v8, "com.android.bluetooth"
+    const-string/jumbo v6, "com.android.bluetooth"
 
-    invoke-virtual {v1, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string/jumbo v7, "feature"
+    const-string/jumbo v5, "feature"
 
-    const-string/jumbo v8, "LESI"
+    const-string/jumbo v6, "LESI"
 
-    invoke-virtual {v1, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "\"LB_VER\":\""
+    const-string/jumbo v5, "{"
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "1.6\","
+    const-string/jumbo v5, "\"LB_VER\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"LS_CNT\":\""
+    const-string/jumbo v5, "1.3\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "\"LS_CNT\":\""
 
-    move-result-object v7
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LS_SRC\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "\"LS_SRC\":\""
 
-    move-result-object v7
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LS_BSC\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiBatchRate:F
+    const-string/jumbo v5, "\"LS_BSC\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    sget v5, Lcom/samsung/bt/data/BluetoothDataManager;->lesiBatchRate:F
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LS_IMF\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiIntermediateFilterRate:F
+    const-string/jumbo v5, "\"LS_IMF\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    sget v5, Lcom/samsung/bt/data/BluetoothDataManager;->lesiIntermediateFilterRate:F
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LS_INF\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiIntermediateNonFilterRate:F
+    const-string/jumbo v5, "\"LS_INF\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    sget v5, Lcom/samsung/bt/data/BluetoothDataManager;->lesiIntermediateNonFilterRate:F
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LS_FSF\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiOnFoundRate:F
+    const-string/jumbo v5, "\"LS_FSF\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    sget v5, Lcom/samsung/bt/data/BluetoothDataManager;->lesiOnFoundRate:F
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LS_FSL\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiOnLostRate:F
+    const-string/jumbo v5, "\"LS_FSL\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    sget v5, Lcom/samsung/bt/data/BluetoothDataManager;->lesiOnLostRate:F
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LS_FSB\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiOnBothRate:F
+    const-string/jumbo v5, "\"LS_FSB\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    sget v5, Lcom/samsung/bt/data/BluetoothDataManager;->lesiOnBothRate:F
 
-    const-string/jumbo v8, "\","
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string/jumbo v7, "\"LS_BGS\":\""
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiBGAppRate:F
+    const-string/jumbo v5, "\"LS_BGS\":\""
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    sget v5, Lcom/samsung/bt/data/BluetoothDataManager;->lesiBGAppRate:F
 
-    const-string/jumbo v8, "\""
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    new-instance v6, Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\""
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "\"LB_VER\":\""
+    const-string/jumbo v5, "}"
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v7, "1.6\","
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_CNT\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_SRC\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_BSC\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiBatchRate:F
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_IMF\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiIntermediateFilterRate:F
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_INF\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiIntermediateNonFilterRate:F
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_FSF\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiOnFoundRate:F
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_FSL\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiOnLostRate:F
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_FSB\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiOnBothRate:F
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\","
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v7, "\"LE_BGS\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget v7, Lcom/samsung/bt/data/BluetoothDataManager;->lesiBGAppRate:F
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "\""
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string/jumbo v7, "LESI"
-
-    const-string/jumbo v8, "sm"
-
-    invoke-direct {p0, v7, v8, v4}, Lcom/samsung/bt/data/BluetoothDataManager;->handleSendBroadcastToHWParam(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v8, "{"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string/jumbo v8, "}"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-direct {p0}, Lcom/samsung/bt/data/BluetoothDataManager;->initLeScanInfo()V
 
-    sget-boolean v7, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+    sget-boolean v5, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
 
-    if-eqz v7, :cond_2
+    if-eqz v5, :cond_2
 
-    const-string/jumbo v7, "BluetoothDataManager"
+    const-string/jumbo v5, "BluetoothDataManager"
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v9, "[BIGDATA] insertLeScanLog() "
+    const-string/jumbo v7, "[BIGDATA] insertLeScanLog() "
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v6
 
-    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v6
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v6
 
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    const-string/jumbo v7, "extra"
+    const-string/jumbo v5, "extra"
 
-    invoke-virtual {v1, v7, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v5, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
 
-    move-result-object v7
+    move-result-object v5
 
-    const-string/jumbo v8, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
+    const-string/jumbo v6, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
 
-    invoke-virtual {v7, v8}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {v5, v6}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
 
-    move-result v7
+    move-result v5
 
-    if-eqz v7, :cond_3
+    if-eqz v5, :cond_3
 
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    const-string/jumbo v7, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
+    const-string/jumbo v5, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
 
-    invoke-virtual {v0, v7}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v5}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    const-string/jumbo v7, "data"
+    const-string/jumbo v5, "data"
 
-    invoke-virtual {v0, v7, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    invoke-virtual {v0, v5, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string/jumbo v7, "com.samsung.android.providers.context"
+    const-string/jumbo v5, "com.samsung.android.providers.context"
 
-    invoke-virtual {v0, v7}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v5}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     :try_start_0
-    iget-object v7, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iget-object v5, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    invoke-virtual {v7}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v5}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v5, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_3
     :goto_0
-    new-instance v7, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v8, "BluetoothDataManager -- LE SCAN INFO : "
+    const-string/jumbo v6, "BluetoothDataManager -- LE SCAN INFO : "
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v5
 
-    invoke-static {v7}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
+    invoke-static {v5}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
 
     return-void
 
     :catch_0
     move-exception v2
 
-    const-string/jumbo v7, "BluetoothDataManager"
+    const-string/jumbo v5, "BluetoothDataManager"
 
-    const-string/jumbo v8, "Failed to send intent to ContextFramework"
+    const-string/jumbo v6, "Failed to send intent to ContextFramework"
 
-    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 .end method
 
 .method insertLog(II)V
-    .locals 19
+    .locals 18
 
     invoke-static {}, Lcom/android/bluetooth/btservice/AdapterService;->getAdapterService()Lcom/android/bluetooth/btservice/AdapterService;
 
@@ -2737,35 +1921,35 @@
     :cond_2
     invoke-virtual/range {p0 .. p0}, Lcom/samsung/bt/data/BluetoothDataManager;->adjustInvalidValues()V
 
-    new-instance v15, Landroid/content/ContentValues;
+    new-instance v14, Landroid/content/ContentValues;
 
-    invoke-direct {v15}, Landroid/content/ContentValues;-><init>()V
+    invoke-direct {v14}, Landroid/content/ContentValues;-><init>()V
 
     const-string/jumbo v3, "app_id"
 
     const-string/jumbo v4, "com.android.bluetooth"
 
-    invoke-virtual {v15, v3, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v14, v3, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string/jumbo v3, "feature"
 
     const-string/jumbo v4, "BERI"
 
-    invoke-virtual {v15, v3, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v14, v3, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    new-instance v18, Ljava/lang/StringBuilder;
+    new-instance v17, Ljava/lang/StringBuilder;
 
-    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v17 .. v17}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string/jumbo v3, "\"LO_MFN\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget v3, Lcom/samsung/bt/data/BluetoothDataManager;->localManufacturer:I
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2777,13 +1961,13 @@
 
     const-string/jumbo v3, "\"LO_LMP\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget v3, Lcom/samsung/bt/data/BluetoothDataManager;->localLmpVersion:I
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2795,13 +1979,13 @@
 
     const-string/jumbo v3, "\"LO_SUB\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget v3, Lcom/samsung/bt/data/BluetoothDataManager;->localLmpSubversion:I
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2813,13 +1997,13 @@
 
     const-string/jumbo v3, "\"LO_FWV\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget-object v3, Lcom/samsung/bt/data/BluetoothDataManager;->firmwareVersion:Ljava/lang/String;
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2829,19 +2013,19 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v17 .. v17}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v10
 
     const-string/jumbo v3, "\"RE_OUI\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget-object v3, Lcom/samsung/bt/data/BluetoothDataManager;->remoteOui:Ljava/lang/String;
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2853,26 +2037,26 @@
 
     const-string/jumbo v3, "\"RE_NAM\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget v3, Lcom/samsung/bt/data/BluetoothDataManager;->remoteCod:I
 
-    and-int/lit16 v14, v3, 0x1f00
+    and-int/lit16 v13, v3, 0x1f00
 
     const/16 v3, 0x100
 
-    if-eq v14, v3, :cond_3
+    if-eq v13, v3, :cond_3
 
     const/16 v3, 0x200
 
-    if-ne v14, v3, :cond_8
+    if-ne v13, v3, :cond_7
 
     :cond_3
     const-string/jumbo v3, "Personal Device\","
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2881,17 +2065,17 @@
 
     move/from16 v0, p1
 
-    if-eq v0, v3, :cond_9
+    if-eq v0, v3, :cond_8
 
     const-string/jumbo v3, "\"RE_MFN\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget v3, Lcom/samsung/bt/data/BluetoothDataManager;->remoteManufacturer:I
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2903,13 +2087,13 @@
 
     const-string/jumbo v3, "\"RE_LMP\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget v3, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLmpversion:I
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2921,13 +2105,13 @@
 
     const-string/jumbo v3, "\"RE_SUB\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget v3, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLmpSubversion:I
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2939,13 +2123,13 @@
 
     const-string/jumbo v3, "\"RE_COD\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget v3, Lcom/samsung/bt/data/BluetoothDataManager;->remoteCod:I
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2957,13 +2141,13 @@
 
     const-string/jumbo v3, "\"RE_LTY\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget v3, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLinktype:I
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2975,13 +2159,13 @@
 
     const-string/jumbo v3, "\"RE_ROL\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget v3, Lcom/samsung/bt/data/BluetoothDataManager;->remoteRole:I
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2993,13 +2177,13 @@
 
     const-string/jumbo v3, "\"RE_WEA\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget v3, Lcom/samsung/bt/data/BluetoothDataManager;->remoteWearable:I
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3013,19 +2197,9 @@
     packed-switch p1, :pswitch_data_0
 
     :goto_2
-    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v17 .. v17}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v17
-
-    const-string/jumbo v3, "BERI"
-
-    const-string/jumbo v4, "ph"
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v17
-
-    invoke-direct {v0, v3, v4, v1}, Lcom/samsung/bt/data/BluetoothDataManager;->handleSendBroadcastToHWParam(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    move-result-object v16
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -3037,7 +2211,7 @@
 
     move-result-object v3
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v16
 
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3051,7 +2225,7 @@
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v17
+    move-result-object v16
 
     invoke-direct/range {p0 .. p0}, Lcom/samsung/bt/data/BluetoothDataManager;->initRemoteInfo()V
 
@@ -3071,7 +2245,7 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v16
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3086,9 +2260,9 @@
     :cond_4
     const-string/jumbo v3, "extra"
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v16
 
-    invoke-virtual {v15, v3, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v14, v3, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
 
@@ -3102,21 +2276,21 @@
 
     if-eqz v3, :cond_5
 
-    new-instance v13, Landroid/content/Intent;
+    new-instance v12, Landroid/content/Intent;
 
-    invoke-direct {v13}, Landroid/content/Intent;-><init>()V
+    invoke-direct {v12}, Landroid/content/Intent;-><init>()V
 
     const-string/jumbo v3, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
 
-    invoke-virtual {v13, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v12, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     const-string/jumbo v3, "data"
 
-    invoke-virtual {v13, v3, v15}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    invoke-virtual {v12, v3, v14}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     const-string/jumbo v3, "com.samsung.android.providers.context"
 
-    invoke-virtual {v13, v3}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v12, v3}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     :try_start_0
     move-object/from16 v0, p0
@@ -3127,7 +2301,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, v13}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v3, v12}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3137,21 +2311,8 @@
 
     move/from16 v0, p1
 
-    if-ne v0, v3, :cond_7
+    if-ne v0, v3, :cond_6
 
-    const/16 v3, 0xd2
-
-    move/from16 v0, p2
-
-    if-lt v0, v3, :cond_6
-
-    const/16 v3, 0xe1
-
-    move/from16 v0, p2
-
-    if-ne v0, v3, :cond_7
-
-    :cond_6
     const-string/jumbo v3, "BluetoothDataManager"
 
     const-string/jumbo v4, "Call QmBigDataModule API additionally"
@@ -3202,32 +2363,6 @@
 
     move-result-object v3
 
-    const-string/jumbo v4, "\","
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "\"UART\":"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "\""
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-direct/range {p0 .. p0}, Lcom/samsung/bt/data/BluetoothDataManager;->getUartErrorInfo()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
     const-string/jumbo v4, "\""
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -3242,7 +2377,7 @@
 
     invoke-static {v3, v10}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-eqz v2, :cond_a
+    if-eqz v2, :cond_9
 
     const-string/jumbo v4, "Bluetooth"
 
@@ -3258,13 +2393,11 @@
 
     const-string/jumbo v11, ""
 
-    const-string/jumbo v12, "com.android.bluetooth"
+    const/4 v3, 0x1
 
-    const/4 v3, 0x0
+    invoke-virtual/range {v2 .. v11}, Landroid/os/SemHqmManager;->sendHWParamToHQM(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
 
-    invoke-virtual/range {v2 .. v12}, Landroid/os/SemHqmManager;->sendHWParamToHQMwithAppId(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
-
-    :cond_7
+    :cond_6
     :goto_4
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -3276,7 +2409,7 @@
 
     move-result-object v3
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v16
 
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3290,10 +2423,10 @@
 
     return-void
 
-    :cond_8
+    :cond_7
     sget-object v3, Lcom/samsung/bt/data/BluetoothDataManager;->remoteDeviceName:Ljava/lang/String;
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3305,88 +2438,88 @@
 
     goto/16 :goto_0
 
-    :cond_9
+    :cond_8
     const-string/jumbo v3, "\"RE_MFN\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\","
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\"RE_LMP\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\","
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\"RE_SUB\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\","
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\"RE_COD\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\","
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\"RE_LTY\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\","
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\"RE_ROL\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\","
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\"RE_WEA\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\","
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3395,11 +2528,11 @@
     :pswitch_0
     const-string/jumbo v3, "\"CO_CFR\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     move/from16 v1, p2
 
@@ -3413,25 +2546,25 @@
 
     const-string/jumbo v3, "\"CO_ADR\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\","
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\"CO_HER\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3440,23 +2573,23 @@
     :pswitch_1
     const-string/jumbo v3, "\"CO_CFR\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\","
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\"CO_ADR\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     move/from16 v1, p2
 
@@ -3470,13 +2603,13 @@
 
     const-string/jumbo v3, "\"CO_HER\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3485,35 +2618,35 @@
     :pswitch_2
     const-string/jumbo v3, "\"CO_CFR\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\","
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\"CO_ADR\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\","
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "\"CO_HER\":\""
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v17
 
     move/from16 v1, p2
 
@@ -3528,7 +2661,7 @@
     goto/16 :goto_2
 
     :catch_0
-    move-exception v16
+    move-exception v15
 
     const-string/jumbo v3, "BluetoothDataManager"
 
@@ -3538,7 +2671,7 @@
 
     goto/16 :goto_3
 
-    :cond_a
+    :cond_9
     const-string/jumbo v3, "BluetoothDataManager"
 
     const-string/jumbo v4, "Failed to call QmBigDataModule API"
@@ -3546,6 +2679,8 @@
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_4
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x1
@@ -3557,902 +2692,691 @@
 .end method
 
 .method public insertLogforBLE(II)V
-    .locals 16
+    .locals 13
+
+    const/16 v12, 0x200
+
+    const/16 v9, 0x100
+
+    const/4 v11, 0x1
+
+    const/4 v10, 0x0
 
     invoke-static {}, Lcom/android/bluetooth/btservice/AdapterService;->getAdapterService()Lcom/android/bluetooth/btservice/AdapterService;
 
-    move-result-object v12
+    move-result-object v6
 
-    move-object/from16 v0, p0
+    iput-object v6, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    iput-object v12, v0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    iget-object v6, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    move-object/from16 v0, p0
+    if-nez v6, :cond_1
 
-    iget-object v12, v0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    sget-boolean v6, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
 
-    if-nez v12, :cond_1
+    if-eqz v6, :cond_0
 
-    sget-boolean v12, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+    const-string/jumbo v6, "BluetoothDataManager"
 
-    if-eqz v12, :cond_0
+    const-string/jumbo v7, "BluetoothDataManager :: insertLogforBLE :: adapterService is NULL!!!"
 
-    const-string/jumbo v12, "BluetoothDataManager"
-
-    const-string/jumbo v13, "BluetoothDataManager :: insertLogforBLE :: adapterService is NULL!!!"
-
-    invoke-static {v12, v13}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
     return-void
 
     :cond_1
-    const-string/jumbo v6, ""
+    sput-boolean v10, Lcom/samsung/bt/data/BluetoothDataManager;->update:Z
 
-    const/4 v12, 0x0
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->pending:I
 
-    sput-boolean v12, Lcom/samsung/bt/data/BluetoothDataManager;->update:Z
+    add-int/lit8 v6, v6, -0x1
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->pending:I
+    sput v6, Lcom/samsung/bt/data/BluetoothDataManager;->pending:I
 
-    add-int/lit8 v12, v12, -0x1
+    sget-boolean v6, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
 
-    sput v12, Lcom/samsung/bt/data/BluetoothDataManager;->pending:I
+    if-eqz v6, :cond_2
 
-    sget-boolean v12, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+    const-string/jumbo v6, "BluetoothDataManager"
 
-    if-eqz v12, :cond_2
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "BluetoothDataManager"
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    new-instance v13, Ljava/lang/StringBuilder;
+    const-string/jumbo v8, "pending : "
 
-    invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v14, "pending : "
+    move-result-object v7
 
-    invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget v8, Lcom/samsung/bt/data/BluetoothDataManager;->pending:I
 
-    move-result-object v13
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    sget v14, Lcom/samsung/bt/data/BluetoothDataManager;->pending:I
+    move-result-object v7
 
-    invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v7
 
-    invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v13
-
-    invoke-static {v12, v13}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    invoke-virtual/range {p0 .. p0}, Lcom/samsung/bt/data/BluetoothDataManager;->adjustInvalidValues()V
+    invoke-virtual {p0}, Lcom/samsung/bt/data/BluetoothDataManager;->adjustInvalidValues()V
 
-    invoke-direct/range {p0 .. p0}, Lcom/samsung/bt/data/BluetoothDataManager;->getLLFeatureBitInfo()V
+    invoke-direct {p0}, Lcom/samsung/bt/data/BluetoothDataManager;->getLLFeatureBitInfo()V
 
-    new-instance v4, Landroid/content/ContentValues;
+    new-instance v2, Landroid/content/ContentValues;
 
-    invoke-direct {v4}, Landroid/content/ContentValues;-><init>()V
+    invoke-direct {v2}, Landroid/content/ContentValues;-><init>()V
 
-    const-string/jumbo v12, "app_id"
+    const-string/jumbo v6, "app_id"
 
-    const-string/jumbo v13, "com.android.bluetooth"
+    const-string/jumbo v7, "com.android.bluetooth"
 
-    invoke-virtual {v4, v12, v13}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    new-instance v9, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    new-instance v10, Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "{"
 
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"LB_VER\":\""
+    const-string/jumbo v6, "\"LB_VER\":\""
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "1.6\","
+    const-string/jumbo v6, "1.3\","
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v12, 0x1
-
-    move/from16 v0, p1
-
-    if-ne v0, v12, :cond_7
+    if-ne p1, v11, :cond_7
 
     if-eqz p2, :cond_7
 
-    const-string/jumbo v6, "LEAC"
+    const-string/jumbo v6, "feature"
 
-    const-string/jumbo v12, "feature"
+    const-string/jumbo v7, "LEAC"
 
-    const-string/jumbo v13, "LEAC"
+    invoke-virtual {v2, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v4, v12, v13}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    const-string/jumbo v6, "\"LO_MUA\":\""
 
-    const-string/jumbo v12, "\"LO_MUA\":\""
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\","
 
-    const-string/jumbo v12, "\","
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\"LO_MUC\":\""
 
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    const-string/jumbo v6, "\","
 
-    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"LE_MUC\":\""
+    const-string/jumbo v6, "\"RE_SFR\":\""
 
-    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"LO_MUC\":\""
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteSmpFailReason:I
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    new-instance v11, Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+    const-string/jumbo v7, "\","
 
-    const-string/jumbo v12, "\","
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\"RE_NAM\":\""
 
-    const-string/jumbo v12, "\"RE_SFR\":\""
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteCod:I
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteSmpFailReason:I
+    and-int/lit16 v1, v6, 0x1f00
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    if-eq v1, v9, :cond_3
 
-    move-result-object v12
-
-    const-string/jumbo v13, "\","
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v12, "\"RE_NAM\":\""
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteCod:I
-
-    and-int/lit16 v3, v12, 0x1f00
-
-    const/16 v12, 0x100
-
-    if-eq v3, v12, :cond_3
-
-    const/16 v12, 0x200
-
-    if-ne v3, v12, :cond_6
+    if-ne v1, v12, :cond_6
 
     :cond_3
-    const-string/jumbo v12, "Personal Device\","
+    const-string/jumbo v6, "Personal Device\","
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :goto_0
-    const-string/jumbo v12, "\"RE_PRO\":\""
+    const-string/jumbo v6, "\"RE_PRO\":\""
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remotePairingResponseOob:I
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remotePairingResponseOob:I
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\","
+    const-string/jumbo v7, "\","
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"RE_PRA\":\""
+    const-string/jumbo v6, "\"RE_PRA\":\""
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remotePairingResponseAuth:I
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remotePairingResponseAuth:I
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\","
+    const-string/jumbo v7, "\","
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"LO_LMP\":\""
+    const-string/jumbo v6, "\"LO_LMP\":\""
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->localLmpVersion:I
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->localLmpVersion:I
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\""
+    const-string/jumbo v7, "\""
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :goto_1
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string/jumbo v6, "}"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-direct {p0}, Lcom/samsung/bt/data/BluetoothDataManager;->initRemoteInfo()V
+
+    invoke-direct {p0}, Lcom/samsung/bt/data/BluetoothDataManager;->initRemoteBLEInfo()V
+
+    sget-boolean v6, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+
+    if-eqz v6, :cond_4
+
+    const-string/jumbo v6, "BluetoothDataManager"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v8, "insertLogforBLE : "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    const-string/jumbo v12, "ph"
-
-    move-object/from16 v0, p0
-
-    invoke-direct {v0, v6, v12, v8}, Lcom/samsung/bt/data/BluetoothDataManager;->handleSendBroadcastToHWParam(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    new-instance v12, Ljava/lang/StringBuilder;
-
-    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v13, "{"
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    const-string/jumbo v13, "}"
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
-    sget-boolean v12, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    if-eqz v12, :cond_4
+    move-result-object v7
 
-    const-string/jumbo v12, "BluetoothDataManager"
-
-    new-instance v13, Ljava/lang/StringBuilder;
-
-    invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v14, "insertLogforBLE : "
-
-    invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v13
-
-    invoke-virtual {v13, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v13
-
-    invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v13
-
-    invoke-static {v12, v13}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4
-    invoke-direct/range {p0 .. p0}, Lcom/samsung/bt/data/BluetoothDataManager;->initRemoteInfo()V
+    const-string/jumbo v6, "extra"
 
-    invoke-direct/range {p0 .. p0}, Lcom/samsung/bt/data/BluetoothDataManager;->initRemoteBLEInfo()V
-
-    const-string/jumbo v12, "extra"
-
-    invoke-virtual {v4, v12, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v6, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
+    const-string/jumbo v7, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
 
-    invoke-virtual {v12, v13}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {v6, v7}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
 
-    move-result v12
+    move-result v6
 
-    if-eqz v12, :cond_5
+    if-eqz v6, :cond_5
 
-    new-instance v2, Landroid/content/Intent;
+    new-instance v0, Landroid/content/Intent;
 
-    invoke-direct {v2}, Landroid/content/Intent;-><init>()V
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    const-string/jumbo v12, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
+    const-string/jumbo v6, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
 
-    invoke-virtual {v2, v12}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v6}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    const-string/jumbo v12, "data"
+    const-string/jumbo v6, "data"
 
-    invoke-virtual {v2, v12, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+    invoke-virtual {v0, v6, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string/jumbo v12, "com.samsung.android.providers.context"
+    const-string/jumbo v6, "com.samsung.android.providers.context"
 
-    invoke-virtual {v2, v12}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v6}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     :try_start_0
-    move-object/from16 v0, p0
+    iget-object v6, p0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
 
-    iget-object v12, v0, Lcom/samsung/bt/data/BluetoothDataManager;->adapterService:Lcom/android/bluetooth/btservice/AdapterService;
+    invoke-virtual {v6}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
 
-    invoke-virtual {v12}, Lcom/android/bluetooth/btservice/AdapterService;->getApplicationContext()Landroid/content/Context;
+    move-result-object v6
 
-    move-result-object v12
-
-    invoke-virtual {v12, v2}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v6, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_5
     :goto_2
-    new-instance v12, Ljava/lang/StringBuilder;
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v13, "BluetoothDataManager -- CONNECTION INFO : "
+    const-string/jumbo v7, "BluetoothDataManager -- CONNECTION INFO : "
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    invoke-virtual {v12, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v12
+    move-result-object v6
 
-    invoke-static {v12}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
+    invoke-static {v6}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
 
     return-void
 
     :cond_6
-    sget-object v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteDeviceName:Ljava/lang/String;
+    sget-object v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteDeviceName:Ljava/lang/String;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\","
+    const-string/jumbo v7, "\","
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto/16 :goto_0
 
     :cond_7
-    const/4 v12, 0x3
+    const-string/jumbo v6, "feature"
 
-    move/from16 v0, p1
+    const-string/jumbo v7, "LECI"
 
-    if-ne v0, v12, :cond_a
+    invoke-virtual {v2, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string/jumbo v6, "LECI"
+    const-string/jumbo v6, "\"LO_LMP\":\""
 
-    const-string/jumbo v12, "feature"
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v13, "LECI"
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->localLmpVersion:I
 
-    invoke-virtual {v4, v12, v13}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"LO_LMP\":\""
+    move-result-object v6
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v7, "\","
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->localLmpVersion:I
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\"LO_FWV\":\""
 
-    move-result-object v12
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v13, "\","
+    sget-object v6, Lcom/samsung/bt/data/BluetoothDataManager;->firmwareVersion:Ljava/lang/String;
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"LO_FWV\":\""
+    move-result-object v6
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v7, "\","
 
-    sget-object v12, Lcom/samsung/bt/data/BluetoothDataManager;->firmwareVersion:Ljava/lang/String;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\"RE_NAM\":\""
 
-    move-result-object v12
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v13, "\","
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteCod:I
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    and-int/lit16 v1, v6, 0x1f00
 
-    const-string/jumbo v12, "\"RE_NAM\":\""
+    if-eq v1, v9, :cond_8
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteCod:I
-
-    and-int/lit16 v3, v12, 0x1f00
-
-    const/16 v12, 0x100
-
-    if-eq v3, v12, :cond_8
-
-    const/16 v12, 0x200
-
-    if-ne v3, v12, :cond_9
+    if-ne v1, v12, :cond_9
 
     :cond_8
-    const-string/jumbo v12, "Personal Device\","
+    const-string/jumbo v6, "Personal Device\","
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :goto_3
-    const-string/jumbo v12, "\"RE_LTY\":\""
+    const-string/jumbo v6, "\"RE_LTY\":\""
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLinktype:I
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLinktype:I
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\","
+    const-string/jumbo v7, "\","
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"RE_DTY\":\""
+    const-string/jumbo v6, "\"RE_DTY\":\""
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteDevicetype:I
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteDevicetype:I
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\","
+    const-string/jumbo v7, "\","
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"RE_ADT\":\""
+    const-string/jumbo v6, "\"RE_ADT\":\""
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteAddresstype:I
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteAddresstype:I
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\","
+    const-string/jumbo v7, "\","
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"RE_COD\":\""
+    const-string/jumbo v6, "\"RE_COD\":\""
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteCod:I
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteCod:I
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\","
+    const-string/jumbo v7, "\","
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"RE_OUI\":\""
+    const-string/jumbo v6, "\"RE_OUI\":\""
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteOui:Ljava/lang/String;
+    sget-object v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteOui:Ljava/lang/String;
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\","
+    const-string/jumbo v7, "\","
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string/jumbo v6, "\"RE_CIV\":\""
 
-    move-result-object v12
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteConnectionInterval:I
 
-    const-string/jumbo v12, "\"RE_CIT\":\""
+    int-to-double v6, v6
 
-    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-wide/high16 v8, 0x3ff4000000000000L    # 1.25
 
-    const-string/jumbo v12, "\"RE_CIV\":\""
+    mul-double/2addr v6, v8
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    double-to-float v6, v6
 
-    new-instance v11, Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v6
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteConnectionInterval:I
+    const-string/jumbo v7, "\","
 
-    int-to-double v12, v12
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-wide/high16 v14, 0x3ff4000000000000L    # 1.25
+    const-string/jumbo v6, "\"RE_PRO\":\""
 
-    mul-double/2addr v12, v14
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    double-to-float v12, v12
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remotePairingResponseOob:I
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\","
+    const-string/jumbo v7, "\","
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"RE_PRO\":\""
+    const-string/jumbo v6, "\"RE_PRA\":\""
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remotePairingResponseOob:I
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remotePairingResponseAuth:I
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\","
+    const-string/jumbo v7, "\","
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"RE_PRA\":\""
+    const-string/jumbo v6, "\"RE_DSR\":\""
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remotePairingResponseAuth:I
+    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    move-result-object v12
+    const-string/jumbo v7, "\","
 
-    const-string/jumbo v13, "\","
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\"RE_LLF\":\""
 
-    const-string/jumbo v12, "\"RE_DSR\":\""
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeature:I
 
-    move/from16 v0, p2
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    move-result-object v12
+    const-string/jumbo v7, "\","
 
-    const-string/jumbo v13, "\","
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\"LF_ENC\":\""
 
-    const-string/jumbo v12, "\"RE_LLF\":\""
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
 
-    sget v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeature:I
+    aget-char v6, v6, v10
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\","
+    const-string/jumbo v7, "\","
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v12, "\"LF_ENC\":\""
+    const-string/jumbo v6, "\"LF_CPR\":\""
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
+    sget-object v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
 
-    const/4 v13, 0x0
+    aget-char v6, v6, v11
 
-    aget-char v12, v12, v13
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    move-result-object v12
+    const-string/jumbo v7, "\","
 
-    const-string/jumbo v13, "\","
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\"LF_ERI\":\""
 
-    const-string/jumbo v12, "\"LF_CPR\":\""
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
 
-    sget-object v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
+    const/4 v7, 0x2
 
-    const/4 v13, 0x1
+    aget-char v6, v6, v7
 
-    aget-char v12, v12, v13
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    move-result-object v12
+    const-string/jumbo v7, "\","
 
-    const-string/jumbo v13, "\","
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\"LF_SIF\":\""
 
-    const-string/jumbo v12, "\"LF_ERI\":\""
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
 
-    sget-object v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
+    const/4 v7, 0x3
 
-    const/4 v13, 0x2
+    aget-char v6, v6, v7
 
-    aget-char v12, v12, v13
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    move-result-object v12
+    const-string/jumbo v7, "\","
 
-    const-string/jumbo v13, "\","
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\"LF_PNG\":\""
 
-    const-string/jumbo v12, "\"LF_SIF\":\""
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
 
-    sget-object v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
+    const/4 v7, 0x4
 
-    const/4 v13, 0x3
+    aget-char v6, v6, v7
 
-    aget-char v12, v12, v13
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    move-result-object v12
+    const-string/jumbo v7, "\","
 
-    const-string/jumbo v13, "\","
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\"LF_EXT\":\""
 
-    const-string/jumbo v12, "\"LF_PNG\":\""
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
 
-    sget-object v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
+    const/4 v7, 0x5
 
-    const/4 v13, 0x4
+    aget-char v6, v6, v7
 
-    aget-char v12, v12, v13
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    move-result-object v12
+    const-string/jumbo v7, "\","
 
-    const-string/jumbo v13, "\","
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\"LF_PRV\":\""
 
-    const-string/jumbo v12, "\"LF_EXT\":\""
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
 
-    sget-object v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
+    const/4 v7, 0x6
 
-    const/4 v13, 0x5
+    aget-char v6, v6, v7
 
-    aget-char v12, v12, v13
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    move-result-object v12
+    const-string/jumbo v7, "\","
 
-    const-string/jumbo v13, "\","
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v6, "\"LF_ESF\":\""
 
-    const-string/jumbo v12, "\"LF_PRV\":\""
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
 
-    sget-object v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
+    const/4 v7, 0x7
 
-    const/4 v13, 0x6
+    aget-char v6, v6, v7
 
-    aget-char v12, v12, v13
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    move-result-object v12
+    const-string/jumbo v7, "\""
 
-    const-string/jumbo v13, "\","
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v12, "\"LF_ESF\":\""
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-object v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteLLFeatureBit:[C
-
-    const/4 v13, 0x7
-
-    aget-char v12, v12, v13
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    const-string/jumbo v13, "\""
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto/16 :goto_1
 
     :cond_9
-    sget-object v12, Lcom/samsung/bt/data/BluetoothDataManager;->remoteDeviceName:Ljava/lang/String;
+    sget-object v6, Lcom/samsung/bt/data/BluetoothDataManager;->remoteDeviceName:Ljava/lang/String;
 
-    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v12
+    move-result-object v6
 
-    const-string/jumbo v13, "\","
+    const-string/jumbo v7, "\","
 
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto/16 :goto_3
 
-    :cond_a
-    return-void
-
     :catch_0
-    move-exception v5
+    move-exception v3
 
-    const-string/jumbo v12, "BluetoothDataManager"
+    const-string/jumbo v6, "BluetoothDataManager"
 
-    const-string/jumbo v13, "Failed to send intent to ContextFramework"
+    const-string/jumbo v7, "Failed to send intent to ContextFramework"
 
-    invoke-static {v12, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v6, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_2
-.end method
-
-.method public insertLogforBOCI(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 5
-
-    invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
-
-    move-result-object v2
-
-    const-string/jumbo v3, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
-
-    invoke-virtual {v2, v3}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    new-instance v0, Landroid/content/ContentValues;
-
-    invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
-
-    const-string/jumbo v2, "app_id"
-
-    const-string/jumbo v3, "com.android.bluetooth"
-
-    invoke-virtual {v0, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string/jumbo v2, "feature"
-
-    invoke-virtual {v0, v2, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string/jumbo v2, "extra"
-
-    invoke-virtual {v0, v2, p3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string/jumbo v2, "ph"
-
-    invoke-direct {p0, p2, v2, p3}, Lcom/samsung/bt/data/BluetoothDataManager;->handleSendBroadcastToHWParam(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    new-instance v1, Landroid/content/Intent;
-
-    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
-
-    const-string/jumbo v2, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
-
-    invoke-virtual {v1, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
-
-    const-string/jumbo v2, "data"
-
-    invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
-
-    const-string/jumbo v2, "com.samsung.android.providers.context"
-
-    invoke-virtual {v1, v2}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
-
-    sget-boolean v2, Lcom/samsung/bt/data/BluetoothDataManager;->DBG:Z
-
-    if-eqz v2, :cond_0
-
-    const-string/jumbo v2, "BluetoothDataManager"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "Send survey info. app_id: com.android.bluetooth, feature: "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string/jumbo v4, ", value: "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    invoke-virtual {p1, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
-
-    :cond_1
-    return-void
 .end method
 
 .method public notifyBondFailReason([BI)V

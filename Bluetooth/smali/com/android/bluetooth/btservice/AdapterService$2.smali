@@ -55,7 +55,7 @@
 
     const/4 v2, 0x2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/bluetooth/btservice/AdapterService;->setA2dpPreference(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/bluetooth/btservice/AdapterService;->setA2dpPreference(Ljava/lang/String;I)Z
 
     const-string/jumbo v0, "BluetoothAdapterService"
 

@@ -396,7 +396,7 @@
 
     :cond_5
     :goto_0
-    if-eqz v15, :cond_f
+    if-eqz v15, :cond_e
 
     move-object/from16 v0, p0
 
@@ -897,28 +897,23 @@
 
     move-result-object v4
 
-    const/4 v5, 0x0
-
-    if-eqz v4, :cond_b
-
     invoke-virtual {v4}, Landroid/bluetooth/BluetoothClass;->getDeviceClass()I
 
     move-result v5
 
-    :cond_b
     const/16 v18, 0x540
 
     move/from16 v0, v18
 
-    if-eq v5, v0, :cond_c
+    if-eq v5, v0, :cond_b
 
     const/16 v18, 0x5c0
 
     move/from16 v0, v18
 
-    if-ne v5, v0, :cond_d
+    if-ne v5, v0, :cond_c
 
-    :cond_c
+    :cond_b
     invoke-static {}, Ljava/lang/Math;->random()D
 
     move-result-wide v18
@@ -963,7 +958,7 @@
 
     goto/16 :goto_0
 
-    :cond_d
+    :cond_c
     move-object/from16 v0, p1
 
     iget v0, v0, Landroid/os/Message;->arg2:I
@@ -976,7 +971,7 @@
 
     move/from16 v1, v19
 
-    if-ne v0, v1, :cond_e
+    if-ne v0, v1, :cond_d
 
     move-object/from16 v0, p0
 
@@ -996,7 +991,7 @@
 
     goto/16 :goto_0
 
-    :cond_e
+    :cond_d
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/bluetooth/btservice/BondStateMachine$PendingCommandState;->this$0:Lcom/android/bluetooth/btservice/BondStateMachine;
@@ -1015,7 +1010,7 @@
 
     goto/16 :goto_0
 
-    :cond_f
+    :cond_e
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/bluetooth/btservice/BondStateMachine$PendingCommandState;->this$0:Lcom/android/bluetooth/btservice/BondStateMachine;
@@ -1027,8 +1022,6 @@
     invoke-static/range {v18 .. v19}, Lcom/android/bluetooth/btservice/BondStateMachine;->-wrap8(Lcom/android/bluetooth/btservice/BondStateMachine;Ljava/lang/String;)V
 
     goto/16 :goto_1
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x1

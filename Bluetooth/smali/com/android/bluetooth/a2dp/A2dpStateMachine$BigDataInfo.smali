@@ -237,55 +237,6 @@
     throw v1
 .end method
 
-.method public makeDataSet(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
-    .locals 3
-
-    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;->mHashBigData:Ljava/util/HashMap;
-
-    monitor-enter v2
-
-    :try_start_0
-    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;->mHashBigData:Ljava/util/HashMap;
-
-    invoke-virtual {v1, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;->mHashBigData:Ljava/util/HashMap;
-
-    invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;
-
-    invoke-static {v0, p2, p3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;->-wrap0(Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;Ljava/lang/String;I)Ljava/lang/String;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    move-result-object v1
-
-    monitor-exit v2
-
-    return-object v1
-
-    :cond_0
-    monitor-exit v2
-
-    const/4 v1, 0x0
-
-    return-object v1
-
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v2
-
-    throw v1
-.end method
-
 .method public remove(Ljava/lang/String;)V
     .locals 2
 
@@ -319,6 +270,47 @@
     monitor-exit v1
 
     throw v0
+.end method
+
+.method public sendBigData(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 3
+
+    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;->mHashBigData:Ljava/util/HashMap;
+
+    monitor-enter v2
+
+    :try_start_0
+    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;->mHashBigData:Ljava/util/HashMap;
+
+    invoke-virtual {v1, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;->mHashBigData:Ljava/util/HashMap;
+
+    invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;
+
+    invoke-virtual {v0, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;->sendBigData(Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :cond_0
+    monitor-exit v2
+
+    return-void
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v2
+
+    throw v1
 .end method
 
 .method public setBigData(Ljava/lang/String;Ljava/lang/String;)V
@@ -398,9 +390,9 @@
 
     invoke-direct {v0, p0, v2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;-><init>(Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;)V
 
-    invoke-static {v0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;->-wrap2(Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;Ljava/lang/String;)V
-
     invoke-static {v0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;->-wrap1(Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;Ljava/lang/String;)V
+
+    invoke-static {v0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;->-wrap0(Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;Ljava/lang/String;)V
 
     invoke-virtual {v0, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo$BigData;->ParsingStackData(Ljava/lang/String;)V
 

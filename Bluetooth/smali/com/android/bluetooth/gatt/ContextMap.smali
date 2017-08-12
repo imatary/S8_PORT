@@ -457,168 +457,68 @@
 .end method
 
 .method dump(Ljava/lang/StringBuilder;)V
-    .locals 10
+    .locals 6
 
-    const-string/jumbo v8, "\n- Registered AppSize: "
+    const-string/jumbo v4, "  Entries: "
 
-    invoke-virtual {p1, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v4
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/gatt/ContextMap;->getAppSize()I
+    iget-object v5, p0, Lcom/android/bluetooth/gatt/ContextMap;->mAppScanStats:Ljava/util/HashMap;
 
-    move-result v9
+    invoke-virtual {v5}, Ljava/util/HashMap;->size()I
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result v5
 
-    move-result-object v8
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string/jumbo v9, "\n\n"
+    move-result-object v4
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string/jumbo v5, "\n\n"
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/gatt/ContextMap;->getRegisteredMap()Ljava/util/Map;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    iget-object v4, p0, Lcom/android/bluetooth/gatt/ContextMap;->mAppScanStats:Ljava/util/HashMap;
 
-    invoke-interface {v8}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+    invoke-virtual {v4}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
-    move-result-object v8
+    move-result-object v4
 
-    invoke-interface {v8}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    invoke-interface {v4}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    move-result-object v6
+    move-result-object v2
 
     :goto_0
-    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v8
+    move-result v4
 
-    if-eqz v8, :cond_0
+    if-eqz v4, :cond_0
 
-    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/util/Map$Entry;
-
-    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v8
-
-    check-cast v8, Ljava/lang/Integer;
-
-    invoke-virtual {v8}, Ljava/lang/Integer;->intValue()I
-
-    move-result v0
-
-    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ljava/lang/String;
+    check-cast v1, Ljava/util/Map$Entry;
 
-    const-string/jumbo v8, "appIf: "
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    invoke-virtual {p1, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    move-result-object v8
+    check-cast v3, Ljava/lang/String;
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
-    move-result-object v8
+    move-result-object v0
 
-    const-string/jumbo v9, ", appName: "
+    check-cast v0, Lcom/android/bluetooth/gatt/AppScanStats;
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    const-string/jumbo v9, "\n"
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Lcom/android/bluetooth/gatt/AppScanStats;->dumpToString(Ljava/lang/StringBuilder;)V
 
     goto :goto_0
 
     :cond_0
-    const-string/jumbo v8, "\n- AppScanStats Entries: "
-
-    invoke-virtual {p1, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    iget-object v9, p0, Lcom/android/bluetooth/gatt/ContextMap;->mAppScanStats:Ljava/util/HashMap;
-
-    invoke-virtual {v9}, Ljava/util/HashMap;->size()I
-
-    move-result v9
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    const-string/jumbo v9, "\n\n"
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v8, p0, Lcom/android/bluetooth/gatt/ContextMap;->mAppScanStats:Ljava/util/HashMap;
-
-    invoke-virtual {v8}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
-
-    move-result-object v8
-
-    invoke-interface {v8}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v5
-
-    :goto_1
-    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v8
-
-    if-eqz v8, :cond_1
-
-    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/util/Map$Entry;
-
-    invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Ljava/lang/String;
-
-    const-string/jumbo v8, "appName: "
-
-    invoke-virtual {p1, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    const-string/jumbo v9, "\n"
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/android/bluetooth/gatt/AppScanStats;
-
-    invoke-virtual {v2, p1}, Lcom/android/bluetooth/gatt/AppScanStats;->dumpToString(Ljava/lang/StringBuilder;)V
-
-    goto :goto_1
-
-    :cond_1
     return-void
 .end method
 
@@ -675,31 +575,15 @@
 .end method
 
 .method getAppSize()I
-    .locals 2
+    .locals 1
 
-    iget-object v1, p0, Lcom/android/bluetooth/gatt/ContextMap;->mApps:Ljava/util/List;
-
-    monitor-enter v1
-
-    :try_start_0
     iget-object v0, p0, Lcom/android/bluetooth/gatt/ContextMap;->mApps:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result v0
 
-    monitor-exit v1
-
     return v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit v1
-
-    throw v0
 .end method
 
 .method getByConnId(I)Lcom/android/bluetooth/gatt/ContextMap$App;
@@ -1380,8 +1264,6 @@
 
     if-ne v3, p1, :cond_0
 
-    invoke-virtual {p0, p1}, Lcom/android/bluetooth/gatt/ContextMap;->removeConnectionsByAppId(I)V
-
     invoke-virtual {v1}, Lcom/android/bluetooth/gatt/ContextMap$App;->unlinkToDeath()V
 
     iget-object v3, v1, Lcom/android/bluetooth/gatt/ContextMap$App;->mHandler:Landroid/os/Handler;
@@ -1571,39 +1453,4 @@
     monitor-exit v3
 
     throw v2
-.end method
-
-.method removeConnectionsByAppId(I)V
-    .locals 3
-
-    iget-object v2, p0, Lcom/android/bluetooth/gatt/ContextMap;->mConnections:Ljava/util/Set;
-
-    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_0
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/android/bluetooth/gatt/ContextMap$Connection;
-
-    iget v2, v0, Lcom/android/bluetooth/gatt/ContextMap$Connection;->appId:I
-
-    if-ne v2, p1, :cond_0
-
-    invoke-interface {v1}, Ljava/util/Iterator;->remove()V
-
-    goto :goto_0
-
-    :cond_1
-    return-void
 .end method

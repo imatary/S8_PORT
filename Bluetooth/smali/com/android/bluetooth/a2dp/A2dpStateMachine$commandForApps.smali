@@ -46,7 +46,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$commandForApps;->this$0:Lcom/android/bluetooth/a2dp/A2dpStateMachine;
 
@@ -57,23 +57,7 @@
     invoke-static {v0, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->-wrap13(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Z)V
 
     :cond_0
-    :goto_0
     return-void
-
-    :cond_1
-    const-string/jumbo v0, "CDIF"
-
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$commandForApps;->this$0:Lcom/android/bluetooth/a2dp/A2dpStateMachine;
-
-    invoke-static {v0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->-wrap11(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)V
-
-    goto :goto_0
 .end method
 
 .method private getJsonBoolean(Lorg/json/JSONObject;Ljava/lang/String;)Z

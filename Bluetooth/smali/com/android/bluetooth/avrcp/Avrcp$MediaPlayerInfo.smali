@@ -463,7 +463,7 @@
 
     iget-byte v4, p0, Lcom/android/bluetooth/avrcp/Avrcp$MediaPlayerInfo;->mPlayState:B
 
-    invoke-static {v3, v4}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap16(Lcom/android/bluetooth/avrcp/Avrcp;I)I
+    invoke-static {v3, v4}, Lcom/android/bluetooth/avrcp/Avrcp;->-wrap17(Lcom/android/bluetooth/avrcp/Avrcp;I)I
 
     move-result v3
 

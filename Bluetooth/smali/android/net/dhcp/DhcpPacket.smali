@@ -1508,7 +1508,7 @@
 
     check-cast v16, Ljava/net/Inet4Address;
     :try_end_0
-    .catch Ljava/net/UnknownHostException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/net/UnknownHostException; {:try_start_0 .. :try_end_0} :catch_0
 
     const/16 v10, 0x10
 
@@ -1547,7 +1547,6 @@
 
     invoke-virtual {v0, v10}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    :try_start_1
     invoke-virtual/range {p0 .. p0}, Ljava/nio/ByteBuffer;->getInt()I
 
     move-result v23
@@ -1589,32 +1588,13 @@
     invoke-direct {v10, v11, v12, v13}, Landroid/net/dhcp/DhcpPacket$ParseException;-><init>(ILjava/lang/String;[Ljava/lang/Object;)V
 
     throw v10
-    :try_end_1
-    .catch Ljava/nio/BufferUnderflowException; {:try_start_1 .. :try_end_1} :catch_0
-
-    :catch_0
-    move-exception v27
-
-    new-instance v10, Landroid/net/dhcp/DhcpPacket$ParseException;
-
-    sget v11, Landroid/net/metrics/DhcpErrorEvent;->BUFFER_UNDERFLOW:I
-
-    const-string/jumbo v12, "BufferUnderflowException"
-
-    const/4 v13, 0x0
-
-    new-array v13, v13, [Ljava/lang/Object;
-
-    invoke-direct {v10, v11, v12, v13}, Landroid/net/dhcp/DhcpPacket$ParseException;-><init>(ILjava/lang/String;[Ljava/lang/Object;)V
-
-    throw v10
 
     :cond_b
     const/4 v5, 0x0
 
     goto/16 :goto_1
 
-    :catch_1
+    :catch_0
     move-exception v29
 
     new-instance v10, Landroid/net/dhcp/DhcpPacket$ParseException;
@@ -1673,7 +1653,7 @@
     :cond_e
     if-eqz v60, :cond_d
 
-    :try_start_2
+    :try_start_1
     invoke-virtual/range {p0 .. p0}, Ljava/nio/ByteBuffer;->get()B
 
     move-result v10
@@ -1765,10 +1745,10 @@
     invoke-direct {v10, v0, v11, v12}, Landroid/net/dhcp/DhcpPacket$ParseException;-><init>(ILjava/lang/String;[Ljava/lang/Object;)V
 
     throw v10
-    :try_end_2
-    .catch Ljava/nio/BufferUnderflowException; {:try_start_2 .. :try_end_2} :catch_2
+    :try_end_1
+    .catch Ljava/nio/BufferUnderflowException; {:try_start_1 .. :try_end_1} :catch_1
 
-    :catch_2
+    :catch_1
     move-exception v27
 
     sget v10, Landroid/net/metrics/DhcpErrorEvent;->BUFFER_UNDERFLOW:I
@@ -1803,7 +1783,7 @@
 
     if-ge v0, v1, :cond_f
 
-    :try_start_3
+    :try_start_2
     invoke-static/range {p0 .. p0}, Landroid/net/dhcp/DhcpPacket;->readIpAddress(Ljava/nio/ByteBuffer;)Ljava/net/Inet4Address;
 
     move-result-object v10
@@ -2043,8 +2023,8 @@
     move/from16 v1, v59
 
     invoke-static {v0, v1, v10}, Landroid/net/dhcp/DhcpPacket;->readAsciiString(Ljava/nio/ByteBuffer;IZ)Ljava/lang/String;
-    :try_end_3
-    .catch Ljava/nio/BufferUnderflowException; {:try_start_3 .. :try_end_3} :catch_2
+    :try_end_2
+    .catch Ljava/nio/BufferUnderflowException; {:try_start_2 .. :try_end_2} :catch_1
 
     move-result-object v71
 
@@ -2263,8 +2243,6 @@
     invoke-direct {v2, v3, v4, v7, v9}, Landroid/net/dhcp/DhcpReleasePacket;-><init>(ISLjava/net/Inet4Address;[B)V
 
     goto/16 :goto_7
-
-    nop
 
     :sswitch_data_0
     .sparse-switch

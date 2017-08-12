@@ -51,7 +51,7 @@
     <string name="download_fail_ok">OK</string>
     <string name="download_succ_line5">Fichier reçu</string>
     <string name="download_succ_ok">Ouvrir</string>
-    <string name="upload_line1">A : %s</string>
+    <string name="upload_line1">A : %1$s</string>
     <string name="upload_line3_nofilesize">Type de fichier : %s</string>
     <string name="upload_line3">Type de fichier : %1$s (%2$s)</string>
     <string name="upload_line5">Envoi du fichier en cours…</string>
@@ -106,7 +106,6 @@
     <string name="status_protocol_error">Impossible de traiter la demande correctement.</string>
     <string name="status_unknown_error">Erreur inconnue.</string>
     <string name="btopp_live_folder">Fichiers reçus</string>
-    <string name="bt_adv_opp_switch">"La connexion a basculé automatiquement du Bluetooth à Wi-Fi Direct afin d'accélérer le partage des fichiers."</string>
     <string name="download_success">%s reçu(s)</string>
     <string name="upload_success">%s envoyé(s)</string>
     <string name="inbound_history_title">Transferts de communications entrantes</string>
@@ -124,8 +123,8 @@
     <string name="transfer_clear_dlg_title">Effacer</string>
     <string name="transfer_clear_btn">Effacer</string>
     <string name="connection_request_inactive_nap">"%s demande l'autorisation d'activer le modem sur votre téléphone."</string>
-    <string name="allow_conn_req_inactive_nap">Autoriser</string>
-    <string name="deny_conn_req_inactive_nap">Interdire</string>
+    <string name="allow_conn_req_inactive_nap">OK</string>
+    <string name="deny_conn_req_inactive_nap">Annuler</string>
     <string name="bluetooth_tether_request">Autoriser activation du modem Bluetooth ?</string>
     <string name="bluetooth_tether_connected">Connecté à %s pour accéder à la connexion Internet.</string>
     <string name="bluetooth_pan_nap_connecting_error_message">"La connexion à l'appareil %s est impossible."</string>
@@ -145,16 +144,6 @@
     <string name="bluetooth_a2dp_playing_via_device">Son lu automatiquement via %s…</string>
     <string name="bluetooth_a2dp_sound_glitches">Problèmes de son détectés</string>
     <string name="bluetooth_a2dp_turn_off_uhq_upscaler">Appuyez ici pour désactiver UHQ upscaler.</string>
-    <string name="bluetooth_dual_play_title">Double sortie audio</string>
-    <string name="bluetooth_dual_play_content">2 périphériques Bluetooth sont connectés. Pour activer la fonction Double sortie audio, accédez à Paramètres.</string>
-    <string name="settings">Paramètres</string>
-    <string name="bluetooth_dual_play_ongoing_title">Mode Double sortie audio activé</string>
-    <string name="bluetooth_dual_play_ongoing_content">Le son est lu sur 2 périphériques Bluetooth connectés.</string>
-    <string name="bluetooth_avc_title">Contrôle du volume</string>
-    <string name="bluetooth_avc_content">Vous pouvez utiliser la fonction Synchronisation du volume des médias pour synchroniser le volume sur votre téléphone et le périphérique Bluetooth connecté.</string>
-    <string name="bluetooth_avc_content_vzw">Vous pouvez synchroniser le volume sur votre téléphone et le périphérique Bluetooth connecté avec la fonction Synchronisation du volume des médias.</string>
-    <string name="bluetooth_avc_earshock_protection_title">Protégez votre audition</string>
-    <string name="bluetooth_avc_earshock_protection_content">"L'exposition prolongée au mode de synchronisation du volume des médias risque d'endommager votre audition. Vous pouvez ajuster le volume si le volume sonore est trop élevé."</string>
     <string name="bluetooth_a2dpsink_sound_coming">Le son de la TV peut uniquement être lu via le haut-parleur du téléphone ou des écouteurs filaires.</string>
     <string name="pbap_session_key_dialog_title">Entrer la clé de session de %1$s</string>
     <string name="pbap_session_key_dialog_header">Clé de session Bluetooth requise</string>
@@ -180,7 +169,7 @@
     <string name="bluetooth_notif_sap_message">Le Bluetooth est connecté à %s.</string>
     <string name="bluetooth_remote_device">Appareil Bluetooth</string>
     <string name="hello">Bonjour à tous, TestActivity</string>
-    <string name="app_name">Bluetooth</string>
+    <string name="app_name">Partage Bluetooth</string>
     <string name="insert_record">"Insérer l'enregistrement"</string>
     <string name="update_record">"Confirmer l'enregistrement"</string>
     <string name="ack_record">Enregistrement accusé de réception</string>

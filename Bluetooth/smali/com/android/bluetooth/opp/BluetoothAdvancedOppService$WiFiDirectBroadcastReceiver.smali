@@ -508,22 +508,6 @@
 
     invoke-virtual {v9, v3, v8, v10, v11}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    new-instance v9, Landroid/view/ContextThemeWrapper;
-
-    const v10, 0x103012b
-
-    invoke-direct {v9, p1, v10}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
-
-    const v10, 0x7f0a0070
-
-    const/4 v11, 0x1
-
-    invoke-static {v9, v10, v11}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
-
-    move-result-object v9
-
-    invoke-virtual {v9}, Landroid/widget/Toast;->show()V
-
     iget-object v9, p0, Lcom/android/bluetooth/opp/BluetoothAdvancedOppService$WiFiDirectBroadcastReceiver;->this$0:Lcom/android/bluetooth/opp/BluetoothAdvancedOppService;
 
     invoke-static {v9}, Lcom/android/bluetooth/opp/BluetoothAdvancedOppService;->-get2(Lcom/android/bluetooth/opp/BluetoothAdvancedOppService;)I

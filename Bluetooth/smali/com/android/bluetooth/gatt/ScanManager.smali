@@ -73,8 +73,6 @@
 
 .field private mIsLcdOff:Z
 
-.field private mIsManagerAvailable:Z
-
 .field private mLastConfiguredScanInterval:I
 
 .field private mLastConfiguredScanSetting:I
@@ -123,7 +121,7 @@
 .method static synthetic -get10(Lcom/android/bluetooth/gatt/ScanManager;)I
     .locals 1
 
-    iget v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mLastConfiguredScanSetting:I
+    iget v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mLastConfiguredScanValue:I
 
     return v0
 .end method
@@ -131,7 +129,7 @@
 .method static synthetic -get11(Lcom/android/bluetooth/gatt/ScanManager;)I
     .locals 1
 
-    iget v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mLastConfiguredScanValue:I
+    iget v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mLastConfiguredScanWindow:I
 
     return v0
 .end method
@@ -139,20 +137,12 @@
 .method static synthetic -get12(Lcom/android/bluetooth/gatt/ScanManager;)I
     .locals 1
 
-    iget v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mLastConfiguredScanWindow:I
-
-    return v0
-.end method
-
-.method static synthetic -get13(Lcom/android/bluetooth/gatt/ScanManager;)I
-    .locals 1
-
     iget v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mLastLcdOffConfiguredScanValue:I
 
     return v0
 .end method
 
-.method static synthetic -get14(Lcom/android/bluetooth/gatt/ScanManager;)Ljava/util/concurrent/CountDownLatch;
+.method static synthetic -get13(Lcom/android/bluetooth/gatt/ScanManager;)Ljava/util/concurrent/CountDownLatch;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mLatch:Ljava/util/concurrent/CountDownLatch;
@@ -160,7 +150,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get15(Lcom/android/bluetooth/gatt/ScanManager;)Ljava/util/Set;
+.method static synthetic -get14(Lcom/android/bluetooth/gatt/ScanManager;)Ljava/util/Set;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mRegularScanClients:Ljava/util/Set;
@@ -168,7 +158,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
+.method static synthetic -get15(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mScanNative:Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
@@ -176,7 +166,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get17(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
+.method static synthetic -get16(Lcom/android/bluetooth/gatt/ScanManager;)Lcom/android/bluetooth/gatt/GattService;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mService:Lcom/android/bluetooth/gatt/GattService;
@@ -232,10 +222,10 @@
     return v0
 .end method
 
-.method static synthetic -get8(Lcom/android/bluetooth/gatt/ScanManager;)Z
+.method static synthetic -get8(Lcom/android/bluetooth/gatt/ScanManager;)I
     .locals 1
 
-    iget-boolean v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mIsManagerAvailable:Z
+    iget v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mLastConfiguredScanInterval:I
 
     return v0
 .end method
@@ -243,7 +233,7 @@
 .method static synthetic -get9(Lcom/android/bluetooth/gatt/ScanManager;)I
     .locals 1
 
-    iget v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mLastConfiguredScanInterval:I
+    iget v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mLastConfiguredScanSetting:I
 
     return v0
 .end method
@@ -367,23 +357,15 @@
 
     iput-boolean v1, p0, Lcom/android/bluetooth/gatt/ScanManager;->mIsLcdOff:Z
 
-    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
+    new-instance v0, Ljava/util/HashSet;
 
-    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
-
-    invoke-static {v0}, Ljava/util/Collections;->newSetFromMap(Ljava/util/Map;)Ljava/util/Set;
-
-    move-result-object v0
+    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     iput-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mRegularScanClients:Ljava/util/Set;
 
-    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
+    new-instance v0, Ljava/util/HashSet;
 
-    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
-
-    invoke-static {v0}, Ljava/util/Collections;->newSetFromMap(Ljava/util/Map;)Ljava/util/Set;
-
-    move-result-object v0
+    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     iput-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mBatchClients:Ljava/util/Set;
 
@@ -400,10 +382,6 @@
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->curUsedTrackableAdvertisements:Ljava/lang/Integer;
-
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mIsManagerAvailable:Z
 
     return-void
 .end method
@@ -601,10 +579,6 @@
 
     invoke-virtual {v0}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->cleanup()V
 
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mIsManagerAvailable:Z
-
     iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
 
     if-eqz v0, :cond_0
@@ -614,8 +588,6 @@
     const-string/jumbo v1, "cleanup handler"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/gatt/ScanManager;->removeMessages()V
 
     iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
 
@@ -1066,7 +1038,7 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mScanNative:Lcom/android/bluetooth/gatt/ScanManager$ScanNative;
 
-    invoke-static {v0, p1}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->-wrap2(Lcom/android/bluetooth/gatt/ScanManager$ScanNative;Lcom/android/bluetooth/gatt/ScanClient;)Z
+    invoke-static {v0, p1}, Lcom/android/bluetooth/gatt/ScanManager$ScanNative;->-wrap3(Lcom/android/bluetooth/gatt/ScanManager$ScanNative;Lcom/android/bluetooth/gatt/ScanClient;)Z
 
     move-result v0
 
@@ -1081,110 +1053,6 @@
     const/4 v0, 0x1
 
     goto :goto_0
-.end method
-
-.method removeMessages()V
-    .locals 7
-
-    const/16 v6, 0x64
-
-    const/4 v5, 0x3
-
-    const/4 v4, 0x2
-
-    const/4 v3, 0x1
-
-    const/4 v2, 0x0
-
-    const-string/jumbo v0, "BtGatt.ScanManager"
-
-    const-string/jumbo v1, "removeMessages"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    invoke-virtual {v0, v2}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->hasMessages(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    invoke-virtual {v0, v2}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->removeMessages(I)V
-
-    :cond_0
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    invoke-virtual {v0, v3}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->hasMessages(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    invoke-virtual {v0, v3}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->removeMessages(I)V
-
-    :cond_1
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    invoke-virtual {v0, v4}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->hasMessages(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    invoke-virtual {v0, v4}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->removeMessages(I)V
-
-    :cond_2
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    invoke-virtual {v0, v5}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->hasMessages(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    invoke-virtual {v0, v5}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->removeMessages(I)V
-
-    :cond_3
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    invoke-virtual {v0, v6}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->hasMessages(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    invoke-virtual {v0, v6}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->removeMessages(I)V
-
-    :cond_4
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    const/16 v1, 0x65
-
-    invoke-virtual {v0, v1}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->hasMessages(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_5
-
-    iget-object v0, p0, Lcom/android/bluetooth/gatt/ScanManager;->mHandler:Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;
-
-    const/16 v1, 0x65
-
-    invoke-virtual {v0, v1}, Lcom/android/bluetooth/gatt/ScanManager$ClientHandler;->removeMessages(I)V
-
-    :cond_5
-    return-void
 .end method
 
 .method setLcdOffScanParameters()V

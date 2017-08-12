@@ -4,6 +4,7 @@ compressionType: false
 doNotCompress:
 - arsc
 - qmg
+- pio
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
@@ -19,7 +20,7 @@ usesFramework:
   ids:
   - 1
   tag: null
-version: 2.2.4
+version: 2.2.3
 versionInfo:
   versionCode: '24'
   versionName: '7.0'

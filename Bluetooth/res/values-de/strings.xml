@@ -51,7 +51,7 @@
     <string name="download_fail_ok">OK</string>
     <string name="download_succ_line5">Datei empfangen</string>
     <string name="download_succ_ok">Öffnen</string>
-    <string name="upload_line1">An: %s</string>
+    <string name="upload_line1">An: %1$s</string>
     <string name="upload_line3_nofilesize">Dateityp: %s</string>
     <string name="upload_line3">Dateityp: %1$s (%2$s)</string>
     <string name="upload_line5">Datei wird gesendet…</string>
@@ -106,7 +106,6 @@
     <string name="status_protocol_error">Die Anfrage kann nicht richtig verarbeitet werden.</string>
     <string name="status_unknown_error">Unbekannter Fehler</string>
     <string name="btopp_live_folder">Empfangene Dateien</string>
-    <string name="bt_adv_opp_switch">Automatisch von Bluetooth zu Wi-Fi Direct gewechselt, um Dateifreigabe schneller durchzuführen.</string>
     <string name="download_success">%s empfangen</string>
     <string name="upload_success">%s gesendet</string>
     <string name="inbound_history_title">Eingehende Übertragungen</string>
@@ -124,8 +123,8 @@
     <string name="transfer_clear_dlg_title">Löschen</string>
     <string name="transfer_clear_btn">Löschen</string>
     <string name="connection_request_inactive_nap">%s möchte eine Tethering-Verbindung mit Ihrem Telefon herstellen.</string>
-    <string name="allow_conn_req_inactive_nap">Zulassen</string>
-    <string name="deny_conn_req_inactive_nap">Ablehnen</string>
+    <string name="allow_conn_req_inactive_nap">OK</string>
+    <string name="deny_conn_req_inactive_nap">Abbr.</string>
     <string name="bluetooth_tether_request">Bluetooth-Tethering zulassen?</string>
     <string name="bluetooth_tether_connected">Verbindung mit %s zum Zugriff auf Internetverbindung hergestellt.</string>
     <string name="bluetooth_pan_nap_connecting_error_message">Verbindung zu %s kann nicht hergestellt werden.</string>
@@ -145,16 +144,6 @@
     <string name="bluetooth_a2dp_playing_via_device">Audio wird automatisch über %s wiedergegeben…</string>
     <string name="bluetooth_a2dp_sound_glitches">Tonaussetzer erkannt</string>
     <string name="bluetooth_a2dp_turn_off_uhq_upscaler">Hier tippen, um UHQ Upscaler auszuschalten.</string>
-    <string name="bluetooth_dual_play_title">Dual Audio</string>
-    <string name="bluetooth_dual_play_content">2 Bluetooth-Geräte sind verbunden. Wechseln Sie zu den Einstellungen, um „Dual Audio“ zu aktivieren.</string>
-    <string name="settings">Einstellungen</string>
-    <string name="bluetooth_dual_play_ongoing_title">Dual Audio ein</string>
-    <string name="bluetooth_dual_play_ongoing_content">Audio auf 2 verbundenen Bluetooth-Geräten wiedergegeben.</string>
-    <string name="bluetooth_avc_title">Lautstärkeregelung</string>
-    <string name="bluetooth_avc_content">Die Synchronisierung der Medienlautstärke kann verwendet werden, um die Lautstärke auf Ihrem Telefon mit dem verbundenen Bluetooth-Gerät abzustimmen.</string>
-    <string name="bluetooth_avc_content_vzw">Sie können die Lautstärke Ihres Telefons und des verbundenen Bluetooth-Geräts mit der Medienlautstärkesynchronisierung synchronisieren.</string>
-    <string name="bluetooth_avc_earshock_protection_title">Schützen Sie Ihr Gehör</string>
-    <string name="bluetooth_avc_earshock_protection_content">Die Verwendung des Medienlautstärkesynchronisierungsmodus über einen längeren Zeitraum kann das Gehör schädigen. Sie können die Lautstärke verringern, falls sie zu hoch ist.</string>
     <string name="bluetooth_a2dpsink_sound_coming">TV-Ton kann nur über Telefonlautsprecher oder Kopfhörer mit Kabel wiedergegeben werden.</string>
     <string name="pbap_session_key_dialog_title">Sitzungsschlüssel für %1$s eingeben</string>
     <string name="pbap_session_key_dialog_header">Bluetooth-Sitzungsschlüssel erforderlich</string>
@@ -180,7 +169,7 @@
     <string name="bluetooth_notif_sap_message">Bluetooth ist mit %s verbunden</string>
     <string name="bluetooth_remote_device">Bluetooth-Gerät</string>
     <string name="hello">Hallo Welt, Testaktivität</string>
-    <string name="app_name">Bluetooth</string>
+    <string name="app_name">Bluetooth-Freigabe</string>
     <string name="insert_record">Aufnahme einfügen</string>
     <string name="update_record">Aufnahme bestätigen</string>
     <string name="ack_record">Aufnahme bestätigen</string>

@@ -4,6 +4,8 @@
 
 
 # static fields
+.field public static final ACCEPTABLE_SHARE_INBOUND_TYPES:[Ljava/lang/String;
+
 .field public static final ACTION_ADVOPP_RECOVER:Ljava/lang/String; = "com.samsung.btopp.intent.action.BT_ADVOPP_RECOVER"
 
 .field public static final ACTION_BT_OPP_TRANSFER_DONE:Ljava/lang/String; = "android.nfc.handover.intent.action.TRANSFER_DONE"
@@ -72,12 +74,6 @@
 
 .field public static final ACTION_WHITELIST_DEVICE:Ljava/lang/String; = "android.btopp.intent.action.WHITELIST_DEVICE"
 
-.field public static final APPLICATION_INDEX:I = 0x3
-
-.field public static final AVAILABLE_ADVANCED_OPP_EXTENSTION:[Ljava/lang/String;
-
-.field public static final AVAILABLE_ADVANCED_OPP_MIMETYPE:[Ljava/lang/String;
-
 .field public static final BATCH_STATUS_FAILED:I = 0x3
 
 .field public static final BATCH_STATUS_FINISHED:I = 0x2
@@ -91,8 +87,6 @@
 .field public static final BLUETOOTHOPP_NAME_PREFERENCE:Ljava/lang/String; = "btopp_names"
 
 .field public static final BLUETOOTH_ADVANCEDOPP_FEATURE:Ljava/lang/String; = "BAOI"
-
-.field public static final CONTAIN_ADVANCED_OPP_TYPES:[Ljava/lang/String;
 
 .field public static final COUNT_HEADER_UNAVAILABLE:I = -0x1
 
@@ -117,8 +111,6 @@
 .field public static final EXTRA_BAOI_ORIGINAL_OPP:Ljava/lang/String; = "ORIGINAL_OPP"
 
 .field public static final EXTRA_BAOI_RFC_CONNECTED:Ljava/lang/String; = "RFC_CONNECTED"
-
-.field public static final EXTRA_BAOI_UNSUPPORTED_MIMETYPE:Ljava/lang/String; = "USMT"
 
 .field public static final EXTRA_BT_HIDE_CLEAR_OPTION:Ljava/lang/String; = "android.btopp.intent.extra.CLEAR_OPTION"
 
@@ -178,6 +170,8 @@
 
 .field public static final THIS_PACKAGE_NAME:Ljava/lang/String; = "com.android.bluetooth"
 
+.field public static final UNACCEPTABLE_SHARE_INBOUND_TYPES:[Ljava/lang/String;
+
 .field public static final USE_EMULATOR_DEBUG:Z
 
 .field public static final USE_TCP_DEBUG:Z
@@ -197,75 +191,117 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
-
-    const/4 v6, 0x4
-
-    const/4 v5, 0x3
-
-    const/4 v4, 0x2
+    .locals 5
 
     const/4 v0, 0x1
 
     const/4 v1, 0x0
 
-    new-array v2, v6, [Ljava/lang/String;
-
-    const-string/jumbo v3, "image/"
-
-    aput-object v3, v2, v1
-
-    const-string/jumbo v3, "video/"
-
-    aput-object v3, v2, v0
-
-    const-string/jumbo v3, "audio/"
-
-    aput-object v3, v2, v4
-
-    const-string/jumbo v3, "application/"
-
-    aput-object v3, v2, v5
-
-    sput-object v2, Lcom/android/bluetooth/opp/Constants;->CONTAIN_ADVANCED_OPP_TYPES:[Ljava/lang/String;
-
-    const/4 v2, 0x5
+    const/16 v2, 0x10
 
     new-array v2, v2, [Ljava/lang/String;
 
-    const-string/jumbo v3, "ogg"
+    const-string/jumbo v3, "image/*"
 
     aput-object v3, v2, v1
 
-    const-string/jumbo v3, "vnd.android.package-archive"
+    const-string/jumbo v3, "video/*"
 
     aput-object v3, v2, v0
 
-    const-string/jumbo v3, "pdf"
+    const-string/jumbo v3, "audio/*"
+
+    const/4 v4, 0x2
 
     aput-object v3, v2, v4
 
-    const-string/jumbo v3, "zip"
+    const-string/jumbo v3, "text/x-vcard"
 
-    aput-object v3, v2, v5
+    const/4 v4, 0x3
 
-    const-string/jumbo v3, "octet-stream"
+    aput-object v3, v2, v4
 
-    aput-object v3, v2, v6
+    const-string/jumbo v3, "text/plain"
 
-    sput-object v2, Lcom/android/bluetooth/opp/Constants;->AVAILABLE_ADVANCED_OPP_MIMETYPE:[Ljava/lang/String;
+    const/4 v4, 0x4
 
-    new-array v2, v4, [Ljava/lang/String;
+    aput-object v3, v2, v4
 
-    const-string/jumbo v3, "apk"
+    const-string/jumbo v3, "text/html"
+
+    const/4 v4, 0x5
+
+    aput-object v3, v2, v4
+
+    const-string/jumbo v3, "text/xml"
+
+    const/4 v4, 0x6
+
+    aput-object v3, v2, v4
+
+    const-string/jumbo v3, "application/zip"
+
+    const/4 v4, 0x7
+
+    aput-object v3, v2, v4
+
+    const-string/jumbo v3, "application/vnd.ms-excel"
+
+    const/16 v4, 0x8
+
+    aput-object v3, v2, v4
+
+    const-string/jumbo v3, "application/msword"
+
+    const/16 v4, 0x9
+
+    aput-object v3, v2, v4
+
+    const-string/jumbo v3, "application/vnd.ms-powerpoint"
+
+    const/16 v4, 0xa
+
+    aput-object v3, v2, v4
+
+    const-string/jumbo v3, "application/pdf"
+
+    const/16 v4, 0xb
+
+    aput-object v3, v2, v4
+
+    const-string/jumbo v3, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+
+    const/16 v4, 0xc
+
+    aput-object v3, v2, v4
+
+    const-string/jumbo v3, "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+
+    const/16 v4, 0xd
+
+    aput-object v3, v2, v4
+
+    const-string/jumbo v3, "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+
+    const/16 v4, 0xe
+
+    aput-object v3, v2, v4
+
+    const-string/jumbo v3, "application/x-hwp"
+
+    const/16 v4, 0xf
+
+    aput-object v3, v2, v4
+
+    sput-object v2, Lcom/android/bluetooth/opp/Constants;->ACCEPTABLE_SHARE_INBOUND_TYPES:[Ljava/lang/String;
+
+    new-array v2, v0, [Ljava/lang/String;
+
+    const-string/jumbo v3, "text/x-vcalendar"
 
     aput-object v3, v2, v1
 
-    const-string/jumbo v3, "smi"
-
-    aput-object v3, v2, v0
-
-    sput-object v2, Lcom/android/bluetooth/opp/Constants;->AVAILABLE_ADVANCED_OPP_EXTENSTION:[Ljava/lang/String;
+    sput-object v2, Lcom/android/bluetooth/opp/Constants;->UNACCEPTABLE_SHARE_INBOUND_TYPES:[Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Debug;->semIsProductDev()Z
 
@@ -721,6 +757,67 @@
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
+.end method
+
+.method public static mimeTypeMatches(Ljava/lang/String;Ljava/lang/String;)Z
+    .locals 3
+
+    const-string/jumbo v1, "\\*"
+
+    const-string/jumbo v2, "\\.\\*"
+
+    invoke-virtual {p1, v1, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    invoke-static {v1, v2}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/util/regex/Matcher;->matches()Z
+
+    move-result v1
+
+    return v1
+.end method
+
+.method public static mimeTypeMatches(Ljava/lang/String;[Ljava/lang/String;)Z
+    .locals 5
+
+    const/4 v2, 0x0
+
+    array-length v3, p1
+
+    move v1, v2
+
+    :goto_0
+    if-ge v1, v3, :cond_1
+
+    aget-object v0, p1, v1
+
+    invoke-static {p0, v0}, Lcom/android/bluetooth/opp/Constants;->mimeTypeMatches(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    const/4 v1, 0x1
+
+    return v1
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return v2
 .end method
 
 .method public static sendIntentIfCompleted(Landroid/content/Context;Landroid/net/Uri;I)V

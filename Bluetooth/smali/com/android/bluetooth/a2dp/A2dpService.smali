@@ -401,13 +401,8 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
-
     invoke-virtual {v0, p1}, Lcom/android/bluetooth/avrcp/Avrcp;->adjustVolume(I)V
 
-    :cond_0
     return-void
 .end method
 
@@ -1087,58 +1082,8 @@
     throw v0
 .end method
 
-.method public isAbsoluteVolumeControl()Z
-    .locals 2
-
-    const-string/jumbo v0, "android.permission.BLUETOOTH_ADMIN"
-
-    const-string/jumbo v1, "Need BLUETOOTH ADMIN permission"
-
-    invoke-virtual {p0, v0, v1}, Lcom/android/bluetooth/a2dp/A2dpService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-virtual {v0}, Lcom/android/bluetooth/avrcp/Avrcp;->isAbsoluteVolumeControl()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public isAvrcpAbsoluteVolumeDeviceActive()Z
-    .locals 2
-
-    const-string/jumbo v0, "android.permission.BLUETOOTH_ADMIN"
-
-    const-string/jumbo v1, "Need BLUETOOTH ADMIN permission"
-
-    invoke-virtual {p0, v0, v1}, Lcom/android/bluetooth/a2dp/A2dpService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-virtual {v0}, Lcom/android/bluetooth/avrcp/Avrcp;->isAbsoluteVolumeDeviceActive()Z
-
-    move-result v0
-
-    :goto_0
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
 .method public isAvrcpAbsoluteVolumeSupported()Z
     .locals 1
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
 
@@ -1146,13 +1091,7 @@
 
     move-result v0
 
-    :goto_0
     return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
 .end method
 
 .method public isDualPlayEnabled()Z
@@ -1330,51 +1269,13 @@
     throw v0
 .end method
 
-.method public setAbsoluteVolumeControl(Z)Z
-    .locals 2
-
-    const-string/jumbo v0, "android.permission.BLUETOOTH_ADMIN"
-
-    const-string/jumbo v1, "Need BLUETOOTH ADMIN permission"
-
-    invoke-virtual {p0, v0, v1}, Lcom/android/bluetooth/a2dp/A2dpService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-virtual {v0, p1}, Lcom/android/bluetooth/avrcp/Avrcp;->setAbsoluteVolumeControl(Z)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public setAudioDeviceChanged(Landroid/bluetooth/BluetoothDevice;)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
-
-    invoke-virtual {v0, p1}, Lcom/android/bluetooth/avrcp/Avrcp;->setAudioDeviceChanged(Landroid/bluetooth/BluetoothDevice;)V
-
-    :cond_0
-    return-void
-.end method
-
 .method public setAvrcpAbsoluteVolume(I)V
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
-
     invoke-virtual {v0, p1}, Lcom/android/bluetooth/avrcp/Avrcp;->setAbsoluteVolume(I)V
 
-    :cond_0
     return-void
 .end method
 
@@ -1383,13 +1284,8 @@
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpService;->mAvrcp:Lcom/android/bluetooth/avrcp/Avrcp;
-
     invoke-virtual {v0, p1}, Lcom/android/bluetooth/avrcp/Avrcp;->setA2dpAudioState(I)V
 
-    :cond_0
     return-void
 .end method
 

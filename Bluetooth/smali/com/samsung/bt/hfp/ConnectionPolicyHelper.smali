@@ -369,15 +369,6 @@
     move-result-object v0
 
     :cond_1
-    const/16 v2, 0x1f00
-
-    if-eqz v1, :cond_2
-
-    invoke-virtual {v1}, Landroid/bluetooth/BluetoothClass;->getDeviceClass()I
-
-    move-result v2
-
-    :cond_2
     const-string/jumbo v11, "ConnectionPolicyHelper"
 
     new-instance v12, Ljava/lang/StringBuilder;
@@ -390,7 +381,11 @@
 
     move-result-object v12
 
-    invoke-virtual {v12, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Landroid/bluetooth/BluetoothClass;->getDeviceClass()I
+
+    move-result v13
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v12
 
@@ -400,13 +395,17 @@
 
     invoke-static {v11, v12}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    invoke-virtual {v1}, Landroid/bluetooth/BluetoothClass;->getDeviceClass()I
+
+    move-result v2
+
     const/16 v11, 0x1f00
 
-    if-eq v2, v11, :cond_3
+    if-eq v2, v11, :cond_2
 
-    if-nez v10, :cond_7
+    if-nez v10, :cond_6
 
-    :cond_3
+    :cond_2
     const-string/jumbo v11, "SM-V700"
 
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getName()Ljava/lang/String;
@@ -427,13 +426,13 @@
 
     move-result v5
 
-    if-eqz p1, :cond_4
+    if-eqz p1, :cond_3
 
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getName()Ljava/lang/String;
 
     move-result-object v11
 
-    if-eqz v11, :cond_4
+    if-eqz v11, :cond_3
 
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getName()Ljava/lang/String;
 
@@ -453,16 +452,16 @@
 
     move-result v8
 
-    :cond_4
-    if-eqz p1, :cond_5
+    :cond_3
+    if-eqz p1, :cond_4
 
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
     move-result-object v11
 
-    if-eqz v11, :cond_5
+    if-eqz v11, :cond_4
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_5
 
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
@@ -472,7 +471,7 @@
 
     move-result v6
 
-    :cond_5
+    :cond_4
     :goto_0
     or-int v11, v7, v5
 
@@ -510,7 +509,7 @@
 
     return v9
 
-    :cond_6
+    :cond_5
     const-string/jumbo v11, "ConnectionPolicyHelper"
 
     const-string/jumbo v12, "GM_address is null"
@@ -519,10 +518,10 @@
 
     goto :goto_0
 
-    :cond_7
+    :cond_6
     const/16 v11, 0x704
 
-    if-ne v2, v11, :cond_9
+    if-ne v2, v11, :cond_8
 
     const/4 v4, 0x1
 
@@ -537,27 +536,27 @@
 
     move-result v3
 
-    if-eqz v4, :cond_a
+    if-eqz v4, :cond_9
 
-    if-nez v3, :cond_8
+    if-nez v3, :cond_7
 
     invoke-direct {p0, p1}, Lcom/samsung/bt/hfp/ConnectionPolicyHelper;->isGear(Landroid/bluetooth/BluetoothDevice;)Z
 
     move-result v11
 
-    if-eqz v11, :cond_a
+    if-eqz v11, :cond_9
 
-    :cond_8
+    :cond_7
     const/4 v11, 0x1
 
     return v11
 
-    :cond_9
+    :cond_8
     const/4 v4, 0x0
 
     goto :goto_1
 
-    :cond_a
+    :cond_9
     const/4 v11, 0x0
 
     return v11

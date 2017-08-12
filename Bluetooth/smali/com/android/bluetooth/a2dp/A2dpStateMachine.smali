@@ -22,10 +22,6 @@
 # static fields
 .field private static final A2DP_PACKAGE:Ljava/lang/String; = "com.android.bluetooth.a2dp"
 
-.field private static final ACTION_NOTIFY_SCMST_UPDATE:Ljava/lang/String; = "com.samsung.bluetooth.btservice.action.ACTION_NOTIFY_SCMST_UPDATE"
-
-.field private static final ALL_TYPES_TIME:I = 0x4
-
 .field private static final APP_ID:Ljava/lang/String; = "com.android.bluetooth"
 
 .field static final AUDIO_DEVICE_CHANGED:I = 0x3
@@ -108,19 +104,13 @@
 
 .field private static final DBG:Z
 
-.field private static final DEFAULT_ADDRESS:Ljava/lang/String; = "00:00:00:00:00:00"
-
 .field static final DISCONNECT:I = 0x2
 
 .field private static final DUAL_A2DP_CONNECTION:Ljava/lang/String; = "A2DP_2"
 
-.field private static final DUAL_AUDIO_ON_TIME:I = 0x3
-
 .field private static final DUAL_PLAY_MODE_OFF:I = 0x0
 
 .field private static final DUAL_PLAY_MODE_ON:I = 0x1
-
-.field private static final EVENT_TYPE_AUDIO_DELAY_REPORTED:I = 0x4
 
 .field private static final EVENT_TYPE_AUDIO_STATE_CHANGED:I = 0x2
 
@@ -152,10 +142,6 @@
 
 .field private static final FEATURE_DELAY_DISCONNECTED_BROADCAST:I = 0x4
 
-.field private static final FEATURE_DELAY_REPORT:I = 0x6
-
-.field private static final FEATURE_DUAU:Ljava/lang/String; = "DUAU"
-
 .field private static final FEATURE_PEER_CODECS:I = 0x1
 
 .field private static final FEATURE_SCMST:I = 0x2
@@ -168,97 +154,39 @@
 
 .field private static final HOTPLUG_ON:Ljava/lang/String; = "1"
 
-.field public static final HQM_KEY_COMP_ID:Ljava/lang/String; = "Bluetooth"
-
-.field public static final HQM_KEY_COMP_MANUFACTURE:Ljava/lang/String; = "sec"
-
-.field public static final HQM_KEY_COMP_VER:Ljava/lang/String; = "0.0"
-
-.field public static final HQM_KEY_HIT_TYPE:Ljava/lang/String; = "ph"
-
-.field public static final HQM_KEY_TYPE:I = 0x0
-
-.field private static final JSON_BMAC:Ljava/lang/String; = "MACC"
-
 .field private static final JSON_BSLV:Ljava/lang/String; = "BSLV"
 
 .field private static final JSON_BTRT:Ljava/lang/String; = "BTRT"
 
 .field private static final JSON_CCOD:Ljava/lang/String; = "CCOD"
 
-.field private static final JSON_CMD_CDIF:Ljava/lang/String; = "CDIF"
-
-.field private static final JSON_CNUM:Ljava/lang/String; = "CNUM"
-
 .field private static final JSON_CODU:Ljava/lang/String; = "CODU"
 
-.field private static final JSON_CODU_I:Ljava/lang/String; = "CODU_I"
-
 .field private static final JSON_CONF:Ljava/lang/String; = "CONF"
-
-.field private static final JSON_CONF_I:Ljava/lang/String; = "CONF_I"
-
-.field private static final JSON_DADU:Ljava/lang/String; = "DADU"
-
-.field private static final JSON_DADU_I:Ljava/lang/String; = "DADU_I"
 
 .field private static final JSON_ENLF:Ljava/lang/String; = "ENLF"
 
 .field private static final JSON_FAIL:Ljava/lang/String; = "FAIL"
 
-.field private static final JSON_FVER:Ljava/lang/String; = "FVER"
-
 .field private static final JSON_JVER:Ljava/lang/String; = "JVER"
 
 .field private static final JSON_LFIF:Ljava/lang/String; = "LFIF"
 
-.field private static final JSON_MODE:Ljava/lang/String; = "MODE"
-
-.field private static final JSON_MPDU:Ljava/lang/String; = "MPDU"
-
-.field private static final JSON_MPDU_I:Ljava/lang/String; = "MPDU_I"
-
 .field private static final JSON_NAME:Ljava/lang/String; = "NAME"
-
-.field private static final JSON_NAME2:Ljava/lang/String; = "NAME2"
 
 .field private static final JSON_OFCN:Ljava/lang/String; = "OFCN"
 
-.field private static final JSON_OFCN_I:Ljava/lang/String; = "OFCN_I"
-
 .field private static final JSON_OFDU:Ljava/lang/String; = "OFDU"
-
-.field private static final JSON_OFDU_I:Ljava/lang/String; = "OFDU_I"
 
 .field private static final JSON_PCOD:Ljava/lang/String; = "PCOD"
 
 .field private static final JSON_POUI:Ljava/lang/String; = "POUI"
 
-.field private static final JSON_POUI2:Ljava/lang/String; = "POUI2"
-
-.field private static final JSON_RCOD:Ljava/lang/String; = "RCOD"
-
-.field private static final JSON_RCOD2:Ljava/lang/String; = "RCOD2"
-
 .field private static final JSON_STDU:Ljava/lang/String; = "STDU"
-
-.field private static final JSON_STDU_I:Ljava/lang/String; = "STDU_I"
-
-.field private static final JSON_TPDU:Ljava/lang/String; = "TPDU"
-
-.field private static final JSON_TPDU_I:Ljava/lang/String; = "TPDU_I"
 
 .field private static final JSON_UHDU:Ljava/lang/String; = "UHDU"
 
-.field private static final JSON_UHDU_I:Ljava/lang/String; = "UHDU_I"
-
-.field private static final JVER_ACFR:Ljava/lang/String; = "1.13"
-
-.field private static final JVER_BMAC:Ljava/lang/String; = "1.0"
-
-.field private static final JVER_CINF:Ljava/lang/String; = "1.12"
-
-.field private static final JVER_DUAU:Ljava/lang/String; = "1.0"
+.field private static final JVER_INFO:Ljava/lang/String; = "1.11"
 
 .field private static final KEY_BLUETOOTH_DUAL_PLAY_NOTIFICATION:Ljava/lang/String; = "bluetooth_dual_play_notification"
 
@@ -266,23 +194,13 @@
 
 .field private static MAX_AVDTP_CONNECTIONS:I = 0x0
 
-.field private static final MAX_SEC_YEAR:J = 0x1e13380L
-
-.field private static final MODE_BIG_DATA:I = 0x0
-
-.field private static final MODE_HQM:I = 0x1
-
 .field private static final MODE_OFF:I = 0x0
 
 .field private static final MODE_ON:I = 0x2
 
-.field private static final MSG_CMD_FOR_MONITORING:I = 0x2
-
 .field private static final MSG_CONNECTION_STATE_CHANGED:I = 0x0
 
 .field private static final MSG_WIFI_STATE_CHANGED:I = 0x1
-
-.field private static final MULTI_PLAYING_TIME:I = 0x1
 
 .field static final REGISTER_DEVCALLBACK_EVENT:I = 0x4
 
@@ -300,11 +218,9 @@
 
 .field private static final STACK_EVENT:I = 0x65
 
-.field private static final SUPPORT_DUAL_PLAY:Z = true
+.field private static final SUPPORT_DUAL_PLAY:Z = false
 
 .field private static final TAG:Ljava/lang/String; = "A2dpStateMachine"
-
-.field private static final TOTAL_PLAYING_TIME:I = 0x2
 
 .field private static final TURNING_OFF:I = 0x3
 
@@ -330,8 +246,6 @@
 
 
 # instance fields
-.field private m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
 .field private mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
 
 .field private mAdapter:Landroid/bluetooth/BluetoothAdapter;
@@ -399,15 +313,7 @@
     return v0
 .end method
 
-.method static synthetic -get10(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/content/Context;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    return-object v0
-.end method
-
-.method static synthetic -get11(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
+.method static synthetic -get10(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
@@ -415,7 +321,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get12(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpStateMachine$Disconnected;
+.method static synthetic -get11(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpStateMachine$Disconnected;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDisconnected:Lcom/android/bluetooth/a2dp/A2dpStateMachine$Disconnected;
@@ -423,7 +329,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get13(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/bluetooth/BluetoothDevice;
+.method static synthetic -get12(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIncomingDevice:Landroid/bluetooth/BluetoothDevice;
@@ -431,7 +337,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get14(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
+.method static synthetic -get13(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
@@ -439,7 +345,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get15(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Z
+.method static synthetic -get14(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mNeedNotification:Z
@@ -447,7 +353,7 @@
     return v0
 .end method
 
-.method static synthetic -get16(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/app/NotificationManager;
+.method static synthetic -get15(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/app/NotificationManager;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mNotificationManager:Landroid/app/NotificationManager;
@@ -455,7 +361,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get17(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpStateMachine$Pending;
+.method static synthetic -get16(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpStateMachine$Pending;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPending:Lcom/android/bluetooth/a2dp/A2dpStateMachine$Pending;
@@ -463,7 +369,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get18(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/bluetooth/BluetoothDevice;
+.method static synthetic -get17(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
@@ -471,7 +377,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get19(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpService;
+.method static synthetic -get18(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpService;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mService:Lcom/android/bluetooth/a2dp/A2dpService;
@@ -479,15 +385,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get2(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/bluetooth/BluetoothDevice;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    return-object v0
-.end method
-
-.method static synthetic -get20(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/bluetooth/BluetoothDevice;
+.method static synthetic -get19(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mTargetDevice:Landroid/bluetooth/BluetoothDevice;
@@ -495,23 +393,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get21()I
-    .locals 1
-
-    sget v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mUhqSupport:I
-
-    return v0
-.end method
-
-.method static synthetic -get22(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/os/PowerManager$WakeLock;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mWakeLock:Landroid/os/PowerManager$WakeLock;
-
-    return-object v0
-.end method
-
-.method static synthetic -get3(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/bluetooth/BluetoothDevice;
+.method static synthetic -get2(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
@@ -519,7 +401,23 @@
     return-object v0
 .end method
 
-.method static synthetic -get4(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/bluetooth/BluetoothAdapter;
+.method static synthetic -get20()I
+    .locals 1
+
+    sget v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mUhqSupport:I
+
+    return v0
+.end method
+
+.method static synthetic -get21(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/os/PowerManager$WakeLock;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+
+    return-object v0
+.end method
+
+.method static synthetic -get3(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/bluetooth/BluetoothAdapter;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
@@ -527,7 +425,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get5(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Z
+.method static synthetic -get4(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioDeviceChanged:Z
@@ -535,7 +433,7 @@
     return v0
 .end method
 
-.method static synthetic -get6(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/media/AudioManager;
+.method static synthetic -get5(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/media/AudioManager;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
@@ -543,7 +441,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get7(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;
+.method static synthetic -get6(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mBigDataInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;
@@ -551,7 +449,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get8(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpStateMachine$Connected;
+.method static synthetic -get7(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Lcom/android/bluetooth/a2dp/A2dpStateMachine$Connected;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnected:Lcom/android/bluetooth/a2dp/A2dpStateMachine$Connected;
@@ -559,7 +457,7 @@
     return-object v0
 .end method
 
-.method static synthetic -get9(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Ljava/util/ArrayList;
+.method static synthetic -get8(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Ljava/util/ArrayList;
     .locals 1
 
     iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
@@ -567,15 +465,15 @@
     return-object v0
 .end method
 
-.method static synthetic -set0(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothDevice;
-    .locals 0
+.method static synthetic -get9(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)Landroid/content/Context;
+    .locals 1
 
-    iput-object p1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
+    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
 
-    return-object p1
+    return-object v0
 .end method
 
-.method static synthetic -set1(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothDevice;
+.method static synthetic -set0(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothDevice;
     .locals 0
 
     iput-object p1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
@@ -583,7 +481,7 @@
     return-object p1
 .end method
 
-.method static synthetic -set2(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Z)Z
+.method static synthetic -set1(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioDeviceChanged:Z
@@ -591,7 +489,7 @@
     return p1
 .end method
 
-.method static synthetic -set3(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothDevice;
+.method static synthetic -set2(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothDevice;
     .locals 0
 
     iput-object p1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIncomingDevice:Landroid/bluetooth/BluetoothDevice;
@@ -599,7 +497,7 @@
     return-object p1
 .end method
 
-.method static synthetic -set4(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Z)Z
+.method static synthetic -set3(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Z)Z
     .locals 0
 
     iput-boolean p1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mNeedNotification:Z
@@ -607,7 +505,7 @@
     return p1
 .end method
 
-.method static synthetic -set5(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothDevice;
+.method static synthetic -set4(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothDevice;
     .locals 0
 
     iput-object p1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
@@ -615,7 +513,7 @@
     return-object p1
 .end method
 
-.method static synthetic -set6(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothDevice;
+.method static synthetic -set5(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothDevice;
     .locals 0
 
     iput-object p1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mTargetDevice:Landroid/bluetooth/BluetoothDevice;
@@ -646,15 +544,15 @@
 .method static synthetic -wrap10(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;II)V
     .locals 0
 
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->broadcastConnectionState(Landroid/bluetooth/BluetoothDevice;II)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->broadcastAudioState(Landroid/bluetooth/BluetoothDevice;II)V
 
     return-void
 .end method
 
-.method static synthetic -wrap11(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)V
+.method static synthetic -wrap11(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;II)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->codecInfoToMonitoring()V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->broadcastConnectionState(Landroid/bluetooth/BluetoothDevice;II)V
 
     return-void
 .end method
@@ -741,15 +639,7 @@
     return-void
 .end method
 
-.method static synthetic -wrap21(Lcom/android/bluetooth/a2dp/A2dpStateMachine;ILandroid/bluetooth/BluetoothDevice;)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->processDelayReportEvent(ILandroid/bluetooth/BluetoothDevice;)V
-
-    return-void
-.end method
-
-.method static synthetic -wrap22(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)V
+.method static synthetic -wrap21(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->processSelectStreamDeviceByPlay(Landroid/bluetooth/BluetoothDevice;)V
@@ -757,31 +647,7 @@
     return-void
 .end method
 
-.method static synthetic -wrap23(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->sendBigDataForHQM(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method static synthetic -wrap24(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->sendBigData(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method static synthetic -wrap25(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->sendIntentNotifyScmstChanged()V
-
-    return-void
-.end method
-
-.method static synthetic -wrap26(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)V
+.method static synthetic -wrap22(Lcom/android/bluetooth/a2dp/A2dpStateMachine;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setInitHotPlugMode()V
@@ -789,7 +655,7 @@
     return-void
 .end method
 
-.method static synthetic -wrap27(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Z)V
+.method static synthetic -wrap23(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Z)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setRegistDevCallBack(Z)V
@@ -797,7 +663,7 @@
     return-void
 .end method
 
-.method static synthetic -wrap28(Lcom/android/bluetooth/a2dp/A2dpStateMachine;I)V
+.method static synthetic -wrap24(Lcom/android/bluetooth/a2dp/A2dpStateMachine;I)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setScmstSupport(I)V
@@ -805,10 +671,34 @@
     return-void
 .end method
 
-.method static synthetic -wrap29(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;Z)V
+.method static synthetic -wrap25(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Ljava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setStreamDevice(Landroid/bluetooth/BluetoothDevice;Z)V
+    invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->showUHQNotification(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method static synthetic -wrap26(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Lcom/android/internal/util/IState;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
+
+    return-void
+.end method
+
+.method static synthetic -wrap27(Lcom/android/bluetooth/a2dp/A2dpStateMachine;ILjava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->updateBitRateInfo(ILjava/lang/String;)V
+
+    return-void
+.end method
+
+.method static synthetic -wrap28(Lcom/android/bluetooth/a2dp/A2dpStateMachine;ILjava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->updateLinkFeedBackInfo(ILjava/lang/String;)V
 
     return-void
 .end method
@@ -823,46 +713,6 @@
     return v0
 .end method
 
-.method static synthetic -wrap30(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Ljava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->showUHQNotification(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method static synthetic -wrap31(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Lcom/android/internal/util/IState;)V
-    .locals 0
-
-    invoke-virtual {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
-
-    return-void
-.end method
-
-.method static synthetic -wrap32(Lcom/android/bluetooth/a2dp/A2dpStateMachine;ILjava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->updateBitRateInfo(ILjava/lang/String;)V
-
-    return-void
-.end method
-
-.method static synthetic -wrap33(Lcom/android/bluetooth/a2dp/A2dpStateMachine;ZZI)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->updateDualAudioPlayingTime(ZZI)V
-
-    return-void
-.end method
-
-.method static synthetic -wrap34(Lcom/android/bluetooth/a2dp/A2dpStateMachine;ILjava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->updateLinkFeedBackInfo(ILjava/lang/String;)V
-
-    return-void
-.end method
-
 .method static synthetic -wrap4(Lcom/android/bluetooth/a2dp/A2dpStateMachine;[B)Z
     .locals 1
 
@@ -873,7 +723,17 @@
     return v0
 .end method
 
-.method static synthetic -wrap5(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Z)Z
+.method static synthetic -wrap5(Lcom/android/bluetooth/a2dp/A2dpStateMachine;[B)Z
+    .locals 1
+
+    invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->selectstreamA2dpNative([B)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static synthetic -wrap6(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Z)Z
     .locals 1
 
     invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setDualPlayMode(Z)Z
@@ -883,7 +743,7 @@
     return v0
 .end method
 
-.method static synthetic -wrap6(Lcom/android/bluetooth/a2dp/A2dpStateMachine;I)Z
+.method static synthetic -wrap7(Lcom/android/bluetooth/a2dp/A2dpStateMachine;I)Z
     .locals 1
 
     invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setbusylevelA2dpNative(I)Z
@@ -893,7 +753,7 @@
     return v0
 .end method
 
-.method static synthetic -wrap7(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)[B
+.method static synthetic -wrap8(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;)[B
     .locals 1
 
     invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
@@ -903,7 +763,7 @@
     return-object v0
 .end method
 
-.method static synthetic -wrap8(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic -wrap9(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->getAddressForLog(Ljava/lang/String;)Ljava/lang/String;
@@ -911,14 +771,6 @@
     move-result-object v0
 
     return-object v0
-.end method
-
-.method static synthetic -wrap9(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Landroid/bluetooth/BluetoothDevice;II)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->broadcastAudioState(Landroid/bluetooth/BluetoothDevice;II)V
-
-    return-void
 .end method
 
 .method static constructor <clinit>()V
@@ -985,8 +837,6 @@
     iput-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIncomingDevice:Landroid/bluetooth/BluetoothDevice;
 
     iput-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    iput-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
 
     iput-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
 
@@ -1096,7 +946,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-direct {p0, v3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setDualPlayModeAfterBtOn(Z)Z
+    invoke-direct {p0, v3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setDualPlayMode(Z)Z
 
     :cond_0
     return-void
@@ -1121,31 +971,31 @@
 
     if-ne p2, v3, :cond_0
 
-    sget-boolean v3, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
+    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
+
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->isContainKey(Ljava/lang/String;)Z
+
+    move-result v3
 
     if-eqz v3, :cond_0
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
-    const-string/jumbo v4, "mHeadsetScmstSupport : "
+    move-result-object v4
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v5, 0x2
 
-    move-result-object v3
+    invoke-virtual {v3, v4, v5}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
 
-    sget v4, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mHeadsetScmstSupport:I
+    move-result v3
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {p0, v3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setScmstSupport(I)V
 
     :cond_0
     new-instance v2, Landroid/content/Intent;
@@ -1266,8 +1116,6 @@
 
     invoke-virtual {p0, v3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->log(Ljava/lang/String;)V
 
-    invoke-direct {p0, p1, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setDelayReport(Landroid/bluetooth/BluetoothDevice;I)V
-
     invoke-direct {p0, p1, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setCPUMinLock(Landroid/bluetooth/BluetoothDevice;I)V
 
     invoke-direct {p0, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setHotPlugMode(I)V
@@ -1284,938 +1132,492 @@
 .end method
 
 .method private broadcastConnectionState(Landroid/bluetooth/BluetoothDevice;II)V
-    .locals 18
+    .locals 12
 
-    const/4 v4, 0x0
+    const/4 v0, 0x0
 
-    move-object/from16 v0, p0
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
 
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
+    invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
 
-    invoke-virtual {v14}, Ljava/util/ArrayList;->size()I
+    move-result v3
 
-    move-result v8
+    const-string/jumbo v8, "A2dpStateMachine"
 
-    const-string/jumbo v14, "A2dpStateMachine"
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    new-instance v15, Ljava/lang/StringBuilder;
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+    const-string/jumbo v10, "broadcastConnectionState : device = "
 
-    const-string/jumbo v16, "broadcastConnectionState : device = "
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v9
 
-    move-result-object v15
+    invoke-virtual {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
 
-    invoke-virtual/range {p0 .. p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
+    move-result-object v10
 
-    move-result-object v16
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v9
 
-    move-result-object v15
+    const-string/jumbo v10, " playing : "
 
-    const-string/jumbo v16, " playing : "
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v9
 
-    move-result-object v15
+    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
 
-    move-object/from16 v0, p0
+    invoke-virtual {p0, v10}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
 
-    iget-object v0, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
+    move-result-object v10
 
-    move-object/from16 v16, v0
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-object/from16 v0, p0
+    move-result-object v9
 
-    move-object/from16 v1, v16
+    const-string/jumbo v10, " state : "
 
-    invoke-virtual {v0, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v16
+    move-result-object v9
 
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v15
+    move-result-object v9
 
-    const-string/jumbo v16, " state : "
+    const-string/jumbo v10, " --> "
 
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v15
+    move-result-object v9
 
-    move/from16 v0, p3
+    invoke-virtual {v9, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v9
 
-    move-result-object v15
+    const-string/jumbo v10, " numberConnections : "
 
-    const-string/jumbo v16, " --> "
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v9
 
-    move-result-object v15
+    invoke-virtual {v9, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move/from16 v0, p2
+    move-result-object v9
 
-    invoke-virtual {v15, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v15
+    move-result-object v9
 
-    const-string/jumbo v16, " numberConnections : "
+    invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v15
-
-    invoke-static {v14, v15}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    move/from16 v6, p2
+    move v2, p2
 
     if-nez p2, :cond_0
 
-    move-object/from16 v0, p0
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
 
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
+    invoke-virtual {p1, v8}, Landroid/bluetooth/BluetoothDevice;->equals(Ljava/lang/Object;)Z
 
-    move-object/from16 v0, p1
+    move-result v8
 
-    invoke-virtual {v0, v14}, Landroid/bluetooth/BluetoothDevice;->equals(Ljava/lang/Object;)Z
+    if-nez v8, :cond_a
 
-    move-result v14
+    const/4 v8, 0x1
 
-    if-nez v14, :cond_d
+    if-le v3, v8, :cond_9
 
-    const/4 v14, 0x1
-
-    if-le v8, v14, :cond_c
-
-    const/4 v6, 0x4
+    const/4 v2, 0x4
 
     :cond_0
     :goto_0
-    move-object/from16 v0, p0
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
 
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
+    invoke-virtual {p1, v8}, Landroid/bluetooth/BluetoothDevice;->equals(Ljava/lang/Object;)Z
 
-    move-object/from16 v0, p1
+    move-result v8
 
-    invoke-virtual {v0, v14}, Landroid/bluetooth/BluetoothDevice;->equals(Ljava/lang/Object;)Z
+    if-eqz v8, :cond_5
 
-    move-result v14
+    const/4 v8, 0x1
 
-    if-eqz v14, :cond_5
+    if-le v3, v8, :cond_5
 
-    const/4 v14, 0x1
+    const/4 v8, 0x3
 
-    if-le v8, v14, :cond_5
-
-    const/4 v14, 0x3
-
-    move/from16 v0, p2
-
-    if-eq v0, v14, :cond_1
+    if-eq p2, v8, :cond_1
 
     if-nez p2, :cond_5
 
     :cond_1
-    const/4 v13, 0x0
+    const/4 v7, 0x0
 
-    const/4 v14, 0x3
+    const/4 v8, 0x3
 
-    move/from16 v0, p2
+    if-ne p2, v8, :cond_d
 
-    if-ne v0, v14, :cond_10
-
-    const/16 v13, 0x7d0
+    const/16 v7, 0x7d0
 
     :cond_2
     :goto_1
-    move-object/from16 v0, p0
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
 
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
+    const/16 v9, 0xca
 
-    const/16 v15, 0xca
+    invoke-virtual {v8, v9}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->hasMessages(I)Z
 
-    invoke-virtual {v14, v15}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->hasMessages(I)Z
+    move-result v8
 
-    move-result v14
+    if-eqz v8, :cond_3
 
-    if-eqz v14, :cond_3
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
 
-    move-object/from16 v0, p0
+    const/16 v9, 0xca
 
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
-
-    const/16 v15, 0xca
-
-    invoke-virtual {v14, v15}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->removeMessages(I)V
+    invoke-virtual {v8, v9}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->removeMessages(I)V
 
     :cond_3
-    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->isDualPlayEnabled()Z
+    sget-boolean v8, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
 
-    move-result v14
+    if-eqz v8, :cond_4
 
-    if-nez v14, :cond_5
+    const-string/jumbo v8, "A2dpStateMachine"
 
-    sget-boolean v14, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    if-eqz v14, :cond_4
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v14, "A2dpStateMachine"
+    const-string/jumbo v10, "set CLEAR_SUSPEND_FLAG with timeout "
 
-    new-instance v15, Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v9
 
-    const-string/jumbo v16, "set CLEAR_SUSPEND_FLAG with timeout "
+    invoke-virtual {v9, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v9
 
-    move-result-object v15
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v15, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v9
 
-    move-result-object v15
-
-    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v15
-
-    invoke-static {v14, v15}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4
-    move-object/from16 v0, p0
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
 
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
+    const-string/jumbo v9, "A2dpSuspended=true"
 
-    const-string/jumbo v15, "A2dpSuspended=true"
+    invoke-virtual {v8, v9}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
 
-    invoke-virtual {v14, v15}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
 
-    move-object/from16 v0, p0
+    const/16 v9, 0xca
 
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
+    invoke-virtual {v8, v9}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->obtainMessage(I)Landroid/os/Message;
 
-    const/16 v15, 0xca
+    move-result-object v1
 
-    invoke-virtual {v14, v15}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->obtainMessage(I)Landroid/os/Message;
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
 
-    move-result-object v5
+    int-to-long v10, v7
 
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
-
-    int-to-long v0, v13
-
-    move-wide/from16 v16, v0
-
-    move-wide/from16 v0, v16
-
-    invoke-virtual {v14, v5, v0, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {v8, v1, v10, v11}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     :cond_5
-    const-string/jumbo v14, "A2dpStateMachine"
+    const-string/jumbo v8, "A2dpStateMachine"
 
-    new-instance v15, Ljava/lang/StringBuilder;
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v16, "bCS newStateWithoutBN "
+    const-string/jumbo v10, "bCS newStateWithoutBN "
 
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v15
+    move-result-object v9
 
-    invoke-virtual {v15, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v15
+    move-result-object v9
 
-    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v15
+    move-result-object v9
 
-    invoke-static {v14, v15}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-object/from16 v0, p0
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
 
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
+    const/4 v9, 0x2
 
-    const/4 v15, 0x2
+    invoke-virtual {v8, p1, v2, v9}, Landroid/media/AudioManager;->setBluetoothA2dpDeviceConnectionState(Landroid/bluetooth/BluetoothDevice;II)I
 
-    move-object/from16 v0, p1
+    move-result v0
 
-    invoke-virtual {v14, v0, v6, v15}, Landroid/media/AudioManager;->setBluetoothA2dpDeviceConnectionState(Landroid/bluetooth/BluetoothDevice;II)I
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
-    move-result v4
+    invoke-virtual {v8}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
-    move-object/from16 v0, p0
+    const/4 v8, 0x2
 
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+    if-ne p3, v8, :cond_e
 
-    invoke-virtual {v14}, Landroid/os/PowerManager$WakeLock;->acquire()V
+    const/4 v8, 0x3
 
-    const/4 v14, 0x1
+    if-ne p2, v8, :cond_e
 
-    if-ne v8, v14, :cond_12
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
 
-    const/4 v14, 0x2
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
-    move/from16 v0, p2
+    move-result-object v9
 
-    if-ne v0, v14, :cond_12
+    const/4 v10, 0x4
 
-    const-string/jumbo v14, "\"JVER\":\"1.0\",\"MACC\":\"A2DP_2\""
-
-    const-string/jumbo v15, "BMAC"
-
-    move-object/from16 v0, p0
-
-    invoke-direct {v0, v14, v15}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->sendBigData(Ljava/lang/String;Ljava/lang/String;)V
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v14}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v14
-
-    const v15, 0x7f0a00e7
-
-    invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v14
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v15}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v15
-
-    const v16, 0x7f0a00e8
-
-    invoke-virtual/range {v15 .. v16}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v15
-
-    invoke-static {v14, v15}, Lcom/android/bluetooth/Utils;->insertEventLog(Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->isDualPlayEnabled()Z
-
-    move-result v14
-
-    if-eqz v14, :cond_11
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v16
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    const/16 v17, 0x0
-
-    move/from16 v0, v17
-
-    invoke-virtual {v14, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v14
-
-    check-cast v14, Landroid/bluetooth/BluetoothDevice;
-
-    invoke-virtual {v14}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v14
-
-    move-object/from16 v0, v16
-
-    invoke-virtual {v15, v0, v14}, Landroid/media/AudioManager;->makeBTVolumeSame(Ljava/lang/String;Ljava/lang/String;)V
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    invoke-static {v14}, Lcom/android/bluetooth/Utils;->launchDualPlayOnGoingNotification(Landroid/content/Context;)V
+    invoke-virtual {v8, v9, v10, v0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->setDeviceFeature(Ljava/lang/String;II)V
 
     :cond_6
     :goto_2
-    move-object/from16 v0, p0
+    sget-boolean v8, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
 
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+    if-eqz v8, :cond_7
 
-    invoke-virtual {v14}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    move-result-object v14
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v15, "bluetooth_dual_play_notification"
+    const-string/jumbo v9, "broadcastConnectionState: delay: "
 
-    const/16 v16, 0x0
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static/range {v14 .. v16}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    move-result-object v8
 
-    const/4 v14, 0x1
+    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-object/from16 v0, p0
+    move-result-object v8
 
-    move-object/from16 v1, p1
+    const-string/jumbo v9, " State:"
 
-    invoke-direct {v0, v1, v14}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setStreamDevice(Landroid/bluetooth/BluetoothDevice;Z)V
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    const-string/jumbo v9, "->"
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {p0, v8}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->log(Ljava/lang/String;)V
 
     :cond_7
-    :goto_3
-    const/4 v14, 0x2
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
 
-    move/from16 v0, p3
+    iget-object v9, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
 
-    if-ne v0, v14, :cond_13
+    const/4 v10, 0x0
 
-    const/4 v14, 0x3
+    invoke-virtual {v9, v10, p3, p2, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
-    move/from16 v0, p2
+    move-result-object v9
 
-    if-ne v0, v14, :cond_13
+    int-to-long v10, v0
 
-    move-object/from16 v0, p0
+    invoke-virtual {v8, v9, v10, v11}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
+    if-nez p2, :cond_8
 
-    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+    const/16 v8, 0xb
 
-    move-result-object v15
-
-    const/16 v16, 0x4
-
-    move/from16 v0, v16
-
-    invoke-virtual {v14, v15, v0, v4}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->setDeviceFeature(Ljava/lang/String;II)V
+    invoke-direct {p0, p1, v8}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setCPUMinLock(Landroid/bluetooth/BluetoothDevice;I)V
 
     :cond_8
-    :goto_4
-    sget-boolean v14, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mBigDataInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;
 
-    if-eqz v14, :cond_9
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
-    new-instance v14, Ljava/lang/StringBuilder;
+    move-result-object v9
 
-    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v8, v9, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;->checkServiceTime(Ljava/lang/String;I)V
 
-    const-string/jumbo v15, "broadcastConnectionState: delay: "
-
-    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v14
-
-    invoke-virtual {v14, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v14
-
-    const-string/jumbo v15, " State:"
-
-    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v14
-
-    move/from16 v0, p3
-
-    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v14
-
-    const-string/jumbo v15, "->"
-
-    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v14
-
-    move/from16 v0, p2
-
-    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v14
-
-    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v14
-
-    move-object/from16 v0, p0
-
-    invoke-virtual {v0, v14}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->log(Ljava/lang/String;)V
-
-    :cond_9
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
-
-    const/16 v16, 0x0
-
-    move/from16 v0, v16
-
-    move/from16 v1, p3
-
-    move/from16 v2, p2
-
-    move-object/from16 v3, p1
-
-    invoke-virtual {v15, v0, v1, v2, v3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
-
-    move-result-object v15
-
-    int-to-long v0, v4
-
-    move-wide/from16 v16, v0
-
-    invoke-virtual/range {v14 .. v17}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
-
-    if-nez p2, :cond_a
-
-    const/16 v14, 0xb
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p1
-
-    invoke-direct {v0, v1, v14}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setCPUMinLock(Landroid/bluetooth/BluetoothDevice;I)V
-
-    :cond_a
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mBigDataInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;
-
-    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v15
-
-    move/from16 v0, p2
-
-    invoke-virtual {v14, v15, v0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$BigDataInfo;->checkServiceTime(Ljava/lang/String;I)V
-
-    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->isDualPlayEnabled()Z
-
-    move-result v14
-
-    if-eqz v14, :cond_b
-
-    const/4 v14, 0x1
-
-    if-le v8, v14, :cond_b
-
-    if-nez p2, :cond_b
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v14, :cond_b
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v14, :cond_b
-
-    const/4 v14, 0x0
-
-    move-object/from16 v0, p0
-
-    iput-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    const/4 v14, 0x1
-
-    const/4 v15, 0x0
-
-    const/16 v16, 0x1
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v16
-
-    invoke-direct {v0, v14, v15, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->updateDualAudioPlayingTime(ZZI)V
-
-    :cond_b
     return-void
 
+    :cond_9
+    const/4 v8, 0x1
+
+    if-ne v3, v8, :cond_0
+
+    const/4 v8, 0x1
+
+    if-ne p3, v8, :cond_0
+
+    const/4 v2, 0x4
+
+    goto/16 :goto_0
+
+    :cond_a
+    const/4 v8, 0x1
+
+    if-le v3, v8, :cond_0
+
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
+
+    invoke-interface {v8}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v5
+
+    :cond_b
+    :goto_3
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_c
+
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/bluetooth/BluetoothDevice;
+
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
+
+    invoke-virtual {v4, v8}, Landroid/bluetooth/BluetoothDevice;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_b
+
+    const-string/jumbo v8, "A2dpStateMachine"
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v10, "update codecInfo for another device : "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {p0, v4}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
+
+    invoke-virtual {v4}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+
+    move-result-object v9
+
+    const/4 v10, 0x0
+
+    invoke-virtual {v8, v9, v10}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
+
+    move-result v8
+
+    iget-object v9, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
+
+    invoke-virtual {v4}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+
+    move-result-object v10
+
+    const/4 v11, 0x1
+
+    invoke-virtual {v9, v10, v11}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
+
+    move-result v9
+
+    invoke-direct {p0, v8, v9, v4}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->processCodecInfoUpdate(IILandroid/bluetooth/BluetoothDevice;)V
+
+    goto :goto_3
+
     :cond_c
-    const/4 v14, 0x1
+    invoke-virtual {p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->isDualPlayEnabled()Z
 
-    if-ne v8, v14, :cond_0
+    move-result v8
 
-    const/4 v14, 0x1
+    if-eqz v8, :cond_0
 
-    move/from16 v0, p3
-
-    if-ne v0, v14, :cond_0
-
-    const/4 v6, 0x4
+    const/4 v2, 0x4
 
     goto/16 :goto_0
 
     :cond_d
-    const/4 v14, 0x1
-
-    if-le v8, v14, :cond_0
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    invoke-interface {v14}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v10
-
-    :cond_e
-    :goto_5
-    invoke-interface {v10}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v14
-
-    if-eqz v14, :cond_f
-
-    invoke-interface {v10}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v9
-
-    check-cast v9, Landroid/bluetooth/BluetoothDevice;
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-virtual {v9, v14}, Landroid/bluetooth/BluetoothDevice;->equals(Ljava/lang/Object;)Z
-
-    move-result v14
-
-    if-nez v14, :cond_e
-
-    const-string/jumbo v14, "A2dpStateMachine"
-
-    new-instance v15, Ljava/lang/StringBuilder;
-
-    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v16, "update codecInfo for another device : "
-
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    move-object/from16 v0, p0
-
-    invoke-virtual {v0, v9}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
-
-    move-result-object v16
-
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v15
-
-    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v15
-
-    invoke-static {v14, v15}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
-
-    invoke-virtual {v9}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v15
-
-    const/16 v16, 0x0
-
-    invoke-virtual/range {v14 .. v16}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
-
-    move-result v14
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
-
-    invoke-virtual {v9}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v16
-
-    const/16 v17, 0x1
-
-    invoke-virtual/range {v15 .. v17}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
-
-    move-result v15
-
-    move-object/from16 v0, p0
-
-    invoke-direct {v0, v14, v15, v9}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->processCodecInfoUpdate(IILandroid/bluetooth/BluetoothDevice;)V
-
-    goto :goto_5
-
-    :cond_f
-    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->isDualPlayEnabled()Z
-
-    move-result v14
-
-    if-eqz v14, :cond_0
-
-    const/4 v6, 0x4
-
-    goto/16 :goto_0
-
-    :cond_10
     if-nez p2, :cond_2
 
-    const/16 v13, 0x3e8
+    const/16 v7, 0x3e8
 
     goto/16 :goto_1
 
-    :cond_11
-    move-object/from16 v0, p0
+    :cond_e
+    const/4 v8, 0x3
 
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+    if-ne p3, v8, :cond_6
 
-    invoke-virtual {v14}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    if-nez p2, :cond_6
 
-    move-result-object v14
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
 
-    const-string/jumbo v15, "bluetooth_dual_play_notification"
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
-    const/16 v16, 0x1
+    move-result-object v9
 
-    invoke-static/range {v14 .. v16}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    const/4 v10, 0x4
 
-    move-result v12
+    invoke-virtual {v8, v9, v10}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
 
-    new-instance v14, Ljava/lang/StringBuilder;
+    move-result v6
 
-    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+    if-ge v0, v6, :cond_6
 
-    const-string/jumbo v15, "onConnectionStateChanged :: connected two a2dp devices, check dual play notification = "
+    move v0, v6
 
-    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v8, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
 
-    move-result-object v14
+    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
-    invoke-virtual {v14, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v9
 
-    move-result-object v14
+    const/4 v10, 0x4
 
-    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v11, 0x0
 
-    move-result-object v14
-
-    move-object/from16 v0, p0
-
-    invoke-virtual {v0, v14}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->log(Ljava/lang/String;)V
-
-    const/4 v14, 0x1
-
-    if-ne v12, v14, :cond_6
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    const/4 v15, 0x0
-
-    invoke-static {v14, v15}, Lcom/android/bluetooth/Utils;->launchDualPlayNotification(Landroid/content/Context;Z)V
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    const v15, 0x7f0a00e7
-
-    invoke-virtual {v14, v15}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v14
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    const v16, 0x7f0a00ea
-
-    invoke-virtual/range {v15 .. v16}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v15
-
-    invoke-static {v14, v15}, Lcom/android/bluetooth/Utils;->insertEventLog(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v8, v9, v10, v11}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->setDeviceFeature(Ljava/lang/String;II)V
 
     goto/16 :goto_2
-
-    :cond_12
-    const/4 v14, 0x2
-
-    if-ne v8, v14, :cond_7
-
-    if-nez p2, :cond_7
-
-    invoke-virtual/range {p0 .. p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->isDualPlayEnabled()Z
-
-    move-result v14
-
-    if-eqz v14, :cond_7
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    const-string/jumbo v15, "notification"
-
-    invoke-virtual {v14, v15}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Landroid/app/NotificationManager;
-
-    const-string/jumbo v14, "dual_play"
-
-    const/4 v15, 0x2
-
-    invoke-virtual {v7, v14, v15}, Landroid/app/NotificationManager;->cancel(Ljava/lang/String;I)V
-
-    goto/16 :goto_3
-
-    :cond_13
-    const/4 v14, 0x3
-
-    move/from16 v0, p3
-
-    if-ne v0, v14, :cond_8
-
-    if-nez p2, :cond_8
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
-
-    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v15
-
-    const/16 v16, 0x4
-
-    invoke-virtual/range {v14 .. v16}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
-
-    move-result v11
-
-    if-ge v4, v11, :cond_8
-
-    move v4, v11
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
-
-    invoke-virtual/range {p1 .. p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v15
-
-    const/16 v16, 0x4
-
-    const/16 v17, 0x0
-
-    invoke-virtual/range {v14 .. v17}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->setDeviceFeature(Ljava/lang/String;II)V
-
-    goto/16 :goto_4
 .end method
 
 .method private static native classInitNative()V
 .end method
 
 .method private native cleanupNative()V
-.end method
-
-.method private codecInfoToMonitoring()V
-    .locals 7
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    if-eqz v4, :cond_0
-
-    const/4 v2, 0x0
-
-    :goto_0
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
-
-    move-result v4
-
-    if-ge v2, v4, :cond_0
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    invoke-virtual {v4, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/bluetooth/BluetoothDevice;
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
-
-    invoke-virtual {v1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v5
-
-    const/4 v6, 0x0
-
-    invoke-virtual {v4, v5, v6}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
-
-    move-result v0
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
-
-    invoke-virtual {v1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v5
-
-    const/4 v6, 0x1
-
-    invoke-virtual {v4, v5, v6}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
-
-    move-result v3
-
-    invoke-direct {p0, v0, v3, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->updateCallBackCurCodecInfo(IILandroid/bluetooth/BluetoothDevice;)V
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    sget-boolean v4, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
-
-    if-eqz v4, :cond_1
-
-    const-string/jumbo v4, "A2dpStateMachine"
-
-    const-string/jumbo v5, "codecInfoToMonitoring()"
-
-    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    return-void
 .end method
 
 .method private native configureCPNative(I)Z
@@ -2407,101 +1809,6 @@
     move-result-object v0
 
     return-object v0
-.end method
-
-.method private getPeerNameFromDevice(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
-    .locals 6
-
-    const-string/jumbo v2, "INVALID"
-
-    if-eqz p1, :cond_4
-
-    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getBluetoothClass()Landroid/bluetooth/BluetoothClass;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    invoke-virtual {v0}, Landroid/bluetooth/BluetoothClass;->getDeviceClass()I
-
-    move-result v3
-
-    and-int/lit16 v1, v3, 0x1f00
-
-    sget-boolean v3, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
-
-    if-eqz v3, :cond_0
-
-    const-string/jumbo v3, "A2dpStateMachine"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "cod: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    const/16 v3, 0x400
-
-    if-ne v1, v3, :cond_1
-
-    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getName()Ljava/lang/String;
-
-    move-result-object v2
-
-    :goto_0
-    return-object v2
-
-    :cond_1
-    const-string/jumbo v2, "Personal Device"
-
-    goto :goto_0
-
-    :cond_2
-    sget-boolean v3, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
-
-    if-eqz v3, :cond_3
-
-    const-string/jumbo v3, "A2dpStateMachine"
-
-    const-string/jumbo v4, "deviceClass is null"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_3
-    const-string/jumbo v2, "Unknown"
-
-    goto :goto_0
-
-    :cond_4
-    sget-boolean v3, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
-
-    if-eqz v3, :cond_5
-
-    const-string/jumbo v3, "A2dpStateMachine"
-
-    const-string/jumbo v4, "device is null"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_5
-    const-string/jumbo v2, "Unknown"
-
-    goto :goto_0
 .end method
 
 .method private getPeerSupportedCodecNames(I)Ljava/lang/String;
@@ -2815,6 +2122,300 @@
 .method private native initNative()V
 .end method
 
+.method private launchDualPlayNotification()V
+    .locals 15
+
+    const-string/jumbo v11, "launchDualPlayNotification :: "
+
+    invoke-virtual {p0, v11}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->log(Ljava/lang/String;)V
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const-string/jumbo v12, "notification"
+
+    invoke-virtual {v11, v12}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Landroid/app/NotificationManager;
+
+    const/4 v11, 0x1
+
+    invoke-virtual {v7, v11}, Landroid/app/NotificationManager;->cancel(I)V
+
+    new-instance v6, Landroid/app/Notification$Builder;
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    invoke-direct {v6, v11}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
+
+    const/4 v11, 0x2
+
+    invoke-virtual {v6, v11}, Landroid/app/Notification$Builder;->setPriority(I)Landroid/app/Notification$Builder;
+
+    move-result-object v11
+
+    const/4 v12, 0x1
+
+    invoke-virtual {v11, v12}, Landroid/app/Notification$Builder;->setAutoCancel(Z)Landroid/app/Notification$Builder;
+
+    move-result-object v11
+
+    const/4 v12, 0x0
+
+    invoke-virtual {v11, v12}, Landroid/app/Notification$Builder;->setShowWhen(Z)Landroid/app/Notification$Builder;
+
+    move-result-object v11
+
+    const/4 v12, 0x1
+
+    invoke-virtual {v11, v12}, Landroid/app/Notification$Builder;->setDefaults(I)Landroid/app/Notification$Builder;
+
+    move-result-object v11
+
+    const v12, 0x1080080
+
+    invoke-virtual {v11, v12}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
+
+    move-result-object v11
+
+    iget-object v12, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const v13, 0x7f0a009a
+
+    invoke-virtual {v12, v13}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-virtual {v11, v12}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    move-result-object v11
+
+    iget-object v12, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const v13, 0x7f0a009b
+
+    invoke-virtual {v12, v13}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-virtual {v11, v12}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+
+    move-result-object v11
+
+    new-instance v12, Landroid/app/Notification$BigTextStyle;
+
+    invoke-direct {v12}, Landroid/app/Notification$BigTextStyle;-><init>()V
+
+    iget-object v13, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const v14, 0x7f0a009b
+
+    invoke-virtual {v13, v14}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-virtual {v12, v13}, Landroid/app/Notification$BigTextStyle;->bigText(Ljava/lang/CharSequence;)Landroid/app/Notification$BigTextStyle;
+
+    move-result-object v12
+
+    invoke-virtual {v11, v12}, Landroid/app/Notification$Builder;->setStyle(Landroid/app/Notification$Style;)Landroid/app/Notification$Builder;
+
+    new-instance v3, Landroid/os/Bundle;
+
+    invoke-direct {v3}, Landroid/os/Bundle;-><init>()V
+
+    const-string/jumbo v11, "android.substName"
+
+    iget-object v12, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const v13, 0x7f0a0004
+
+    invoke-virtual {v12, v13}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-virtual {v3, v11, v12}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v6, v3}, Landroid/app/Notification$Builder;->addExtras(Landroid/os/Bundle;)Landroid/app/Notification$Builder;
+
+    new-instance v2, Landroid/content/Intent;
+
+    const-string/jumbo v11, "com.samsung.bluetooth.a2dp.intent.action.DUAL_PLAY_NOTI_SELECTED"
+
+    invoke-direct {v2, v11}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string/jumbo v11, "com.samsung.bluetooth.a2dp.intent.extra.DUAL_PLAY_NOTI_SELECT_TYPE"
+
+    const/4 v12, 0x1
+
+    invoke-virtual {v2, v11, v12}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const/4 v12, 0x1
+
+    const/high16 v13, 0x8000000
+
+    invoke-static {v11, v12, v2, v13}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v9
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const v12, 0x7f0a009c
+
+    invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v11
+
+    const/4 v12, 0x0
+
+    invoke-virtual {v6, v12, v11, v9}, Landroid/app/Notification$Builder;->addAction(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string/jumbo v11, "com.samsung.bluetooth.a2dp.intent.action.DUAL_PLAY_NOTI_SELECTED"
+
+    invoke-direct {v0, v11}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string/jumbo v11, "com.samsung.bluetooth.a2dp.intent.extra.DUAL_PLAY_NOTI_SELECT_TYPE"
+
+    const/4 v12, 0x2
+
+    invoke-virtual {v0, v11, v12}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const/4 v12, 0x2
+
+    const/high16 v13, 0x8000000
+
+    invoke-static {v11, v12, v0, v13}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v8
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const v12, 0x7f0a009d
+
+    invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v11
+
+    const/4 v12, 0x0
+
+    invoke-virtual {v6, v12, v11, v8}, Landroid/app/Notification$Builder;->addAction(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
+
+    new-instance v4, Landroid/content/Intent;
+
+    const-string/jumbo v11, "com.samsung.settings.BLUETOOTH_DUAL_PLAY_SETTINGS"
+
+    invoke-direct {v4, v11}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const/4 v12, 0x0
+
+    const/high16 v13, 0x8000000
+
+    invoke-static {v11, v12, v4, v13}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v10
+
+    invoke-virtual {v6, v10}, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
+
+    new-instance v1, Landroid/widget/RemoteViews;
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v11}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v11
+
+    const v12, 0x7f04000a
+
+    invoke-direct {v1, v11, v12}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
+
+    const v11, 0x7f0e001b
+
+    const v12, 0x1080080
+
+    invoke-direct {p0, v1, v11, v12}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setIconCustomNotification(Landroid/widget/RemoteViews;II)V
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const v12, 0x7f0a0004
+
+    invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v11
+
+    const v12, 0x7f0e001c
+
+    invoke-direct {p0, v1, v12, v11}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setTextCustomNotification(Landroid/widget/RemoteViews;ILjava/lang/String;)V
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const v12, 0x7f0a009a
+
+    invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v11
+
+    const v12, 0x7f0e001d
+
+    invoke-direct {p0, v1, v12, v11}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setTextCustomNotification(Landroid/widget/RemoteViews;ILjava/lang/String;)V
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const v12, 0x7f0a009b
+
+    invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v11
+
+    const v12, 0x7f0e0001
+
+    invoke-direct {p0, v1, v12, v11}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setTextCustomNotification(Landroid/widget/RemoteViews;ILjava/lang/String;)V
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const v12, 0x7f0a009c
+
+    invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v11
+
+    const v12, 0x7f0e001f
+
+    invoke-direct {p0, v1, v12, v11, v9}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setButtonCustomNotification(Landroid/widget/RemoteViews;ILjava/lang/String;Landroid/app/PendingIntent;)V
+
+    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const v12, 0x7f0a009d
+
+    invoke-virtual {v11, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v11
+
+    const v12, 0x7f0e0020
+
+    invoke-direct {p0, v1, v12, v11, v8}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setButtonCustomNotification(Landroid/widget/RemoteViews;ILjava/lang/String;Landroid/app/PendingIntent;)V
+
+    invoke-virtual {v6}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v5
+
+    iput-object v1, v5, Landroid/app/Notification;->headsUpContentView:Landroid/widget/RemoteViews;
+
+    const/4 v11, 0x1
+
+    invoke-virtual {v7, v11, v5}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
+
+    return-void
+.end method
+
 .method static make(Lcom/android/bluetooth/a2dp/A2dpService;Landroid/content/Context;)Lcom/android/bluetooth/a2dp/A2dpStateMachine;
     .locals 3
 
@@ -2831,32 +2432,6 @@
     invoke-virtual {v0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->start()V
 
     return-object v0
-.end method
-
-.method private onAudioDelayReported(I[B)V
-    .locals 3
-
-    new-instance v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$StackEvent;
-
-    const/4 v1, 0x4
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, p0, v1, v2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$StackEvent;-><init>(Lcom/android/bluetooth/a2dp/A2dpStateMachine;ILcom/android/bluetooth/a2dp/A2dpStateMachine$StackEvent;)V
-
-    iput p1, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$StackEvent;->valueInt:I
-
-    invoke-direct {p0, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->getDevice([B)Landroid/bluetooth/BluetoothDevice;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$StackEvent;->device:Landroid/bluetooth/BluetoothDevice;
-
-    const/16 v1, 0x65
-
-    invoke-virtual {p0, v1, v0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->sendMessage(ILjava/lang/Object;)V
-
-    return-void
 .end method
 
 .method private onAudioStateChanged(I[B)V
@@ -3216,9 +2791,9 @@
 
     const v8, 0xac44
 
-    const/4 v7, 0x1
+    const/4 v7, 0x0
 
-    const/4 v6, 0x0
+    const/4 v6, 0x1
 
     sget-boolean v2, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
 
@@ -3384,7 +2959,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v3, v6, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->setDeviceFeature(Ljava/lang/String;II)V
+    invoke-virtual {v2, v3, v7, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->setDeviceFeature(Ljava/lang/String;II)V
 
     iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
 
@@ -3392,7 +2967,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v3, v7, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->setDeviceFeature(Ljava/lang/String;II)V
+    invoke-virtual {v2, v3, v6, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->setDeviceFeature(Ljava/lang/String;II)V
 
     iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
 
@@ -3402,11 +2977,15 @@
 
     const-string/jumbo v3, "bluetooth_a2dp_uhqa_mode"
 
-    invoke-static {v2, v3, v7}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v2, v3, v6}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v0
 
-    if-nez p1, :cond_7
+    invoke-virtual {p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->isDualPlayEnabled()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_7
 
     sget-boolean v2, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
 
@@ -3414,14 +2993,14 @@
 
     const-string/jumbo v2, "A2dpStateMachine"
 
-    const-string/jumbo v3, "processCodecInfoUpdate: current codec is SBC"
+    const-string/jumbo v3, "processCodecInfoUpdate: Dual Play is enabled"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4
-    sput v6, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mUhqSupport:I
+    sput v7, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mUhqSupport:I
 
-    if-ne v0, v7, :cond_6
+    if-ne v0, v6, :cond_6
 
     sget-boolean v2, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
 
@@ -3447,7 +3026,7 @@
 
     const-string/jumbo v3, "bluetooth_a2dp_uhqa_support"
 
-    invoke-static {v2, v3, v6}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v2, v3, v7}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     return-void
 
@@ -3515,7 +3094,7 @@
 
     sput v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mUhqMode:I
 
-    if-ne v1, v7, :cond_11
+    if-ne v1, v6, :cond_11
 
     iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
 
@@ -3525,9 +3104,9 @@
 
     const-string/jumbo v3, "bluetooth_a2dp_uhqa_support"
 
-    invoke-static {v2, v3, v7}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v2, v3, v6}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    if-ne v0, v7, :cond_f
+    if-ne v0, v6, :cond_f
 
     sget-boolean v2, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
 
@@ -3619,7 +3198,7 @@
 
     const-string/jumbo v3, "bluetooth_a2dp_uhqa_support"
 
-    invoke-static {v2, v3, v6}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v2, v3, v7}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     sget-boolean v2, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
 
@@ -3653,108 +3232,6 @@
     invoke-virtual {v2, p3, v8}, Landroid/media/AudioManager;->updateBluetoothDevice(Landroid/bluetooth/BluetoothDevice;I)V
 
     goto :goto_2
-.end method
-
-.method private processDelayReportEvent(ILandroid/bluetooth/BluetoothDevice;)V
-    .locals 4
-
-    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
-
-    invoke-virtual {p2}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v2
-
-    const/4 v3, 0x6
-
-    invoke-virtual {v1, v2, v3, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->setDeviceFeature(Ljava/lang/String;II)V
-
-    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_2
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->isDualPlayEnabled()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    const-string/jumbo v2, "A2dpDelayReport=0"
-
-    invoke-virtual {v1, v2}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
-
-    :cond_0
-    :goto_0
-    return-void
-
-    :cond_1
-    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-virtual {v1, p2}, Landroid/bluetooth/BluetoothDevice;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "A2dpDelayReport="
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_2
-    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "A2dpDelayReport="
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
-
-    goto :goto_0
 .end method
 
 .method private processSelectStreamDeviceByPlay(Landroid/bluetooth/BluetoothDevice;)V
@@ -3862,810 +3339,25 @@
     return-void
 .end method
 
-.method private native selectstreamA2dpNative([BZ)Z
+.method private native selectstreamA2dpNative([B)Z
 .end method
 
-.method private sendBigData(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 5
-
-    new-instance v1, Landroid/content/ContentValues;
-
-    invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
-
-    const-string/jumbo v2, "app_id"
-
-    const-string/jumbo v3, "com.android.bluetooth"
-
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string/jumbo v2, "feature"
-
-    invoke-virtual {v1, v2, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string/jumbo v2, "extra"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "{"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "}"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
-
-    move-result-object v2
-
-    const-string/jumbo v3, "SEC_FLOATING_FEATURE_CONTEXTSERVICE_ENABLE_SURVEY_MODE"
-
-    invoke-virtual {v2, v3}, Lcom/samsung/android/feature/SemFloatingFeature;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    new-instance v0, Landroid/content/Intent;
-
-    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
-
-    const-string/jumbo v2, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
-
-    invoke-virtual {v0, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
-
-    const-string/jumbo v2, "data"
-
-    invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
-
-    const-string/jumbo v2, "com.samsung.android.providers.context"
-
-    invoke-virtual {v0, v2}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
-
-    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v2, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method private sendBigDataForDualAudio(I)V
-    .locals 26
-
-    new-instance v20, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    move-object/from16 v24, v0
-
-    invoke-virtual/range {v24 .. v24}, Ljava/util/ArrayList;->size()I
-
-    move-result v9
-
-    const-string/jumbo v16, "INVALID"
-
-    const-string/jumbo v12, "INVALID"
-
-    const-string/jumbo v14, "INVALID"
-
-    const-string/jumbo v17, "INVALID"
-
-    const-string/jumbo v13, "INVALID"
-
-    const-string/jumbo v15, "INVALID"
-
-    const-wide/16 v10, -0x1
-
-    const-wide/16 v18, -0x1
-
-    const-wide/16 v22, -0x1
-
-    const/16 v24, 0x1
-
-    move/from16 v0, v24
-
-    if-lt v9, v0, :cond_3
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    move-object/from16 v24, v0
-
-    const/16 v25, 0x0
-
-    invoke-virtual/range {v24 .. v25}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v6, :cond_1
-
-    invoke-virtual {v6}, Landroid/bluetooth/BluetoothDevice;->getBluetoothClass()Landroid/bluetooth/BluetoothClass;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_0
-
-    invoke-virtual {v4}, Landroid/bluetooth/BluetoothClass;->getDeviceClass()I
-
-    move-result v24
-
-    invoke-static/range {v24 .. v24}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
-
-    move-result-object v12
-
-    :cond_0
-    invoke-virtual {v6}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v24
-
-    invoke-static/range {v24 .. v24}, Lcom/android/bluetooth/Utils;->getBytesFromAddress(Ljava/lang/String;)[B
-
-    move-result-object v24
-
-    invoke-static/range {v24 .. v24}, Lcom/android/bluetooth/Utils;->getOuiStringFromByte([B)Ljava/lang/String;
-
-    move-result-object v16
-
-    move-object/from16 v0, p0
-
-    invoke-direct {v0, v6}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->getPeerNameFromDevice(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
-
-    move-result-object v14
-
-    :cond_1
-    const/16 v24, 0x2
-
-    move/from16 v0, v24
-
-    if-ne v9, v0, :cond_3
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    move-object/from16 v24, v0
-
-    const/16 v25, 0x1
-
-    invoke-virtual/range {v24 .. v25}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v21
-
-    check-cast v21, Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v21, :cond_3
-
-    invoke-virtual/range {v21 .. v21}, Landroid/bluetooth/BluetoothDevice;->getBluetoothClass()Landroid/bluetooth/BluetoothClass;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_2
-
-    invoke-virtual {v4}, Landroid/bluetooth/BluetoothClass;->getDeviceClass()I
-
-    move-result v24
-
-    invoke-static/range {v24 .. v24}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
-
-    move-result-object v13
-
-    :cond_2
-    invoke-virtual/range {v21 .. v21}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v24
-
-    invoke-static/range {v24 .. v24}, Lcom/android/bluetooth/Utils;->getBytesFromAddress(Ljava/lang/String;)[B
-
-    move-result-object v24
-
-    invoke-static/range {v24 .. v24}, Lcom/android/bluetooth/Utils;->getOuiStringFromByte([B)Ljava/lang/String;
-
-    move-result-object v17
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v21
-
-    invoke-direct {v0, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->getPeerNameFromDevice(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
-
-    move-result-object v15
-
-    :cond_3
-    if-nez p1, :cond_6
-
-    const/16 v24, 0x1
-
-    const/16 v25, 0x0
-
-    invoke-static/range {v24 .. v25}, Lcom/android/bluetooth/Utils;->getDualAudioTime(IZ)J
-
-    move-result-wide v10
-
-    const/16 v24, 0x2
-
-    const/16 v25, 0x0
-
-    invoke-static/range {v24 .. v25}, Lcom/android/bluetooth/Utils;->getDualAudioTime(IZ)J
-
-    move-result-wide v18
-
-    const/16 v24, 0x3
-
-    const/16 v25, 0x0
-
-    invoke-static/range {v24 .. v25}, Lcom/android/bluetooth/Utils;->getDualAudioTime(IZ)J
-
-    move-result-wide v22
-
-    const-wide/16 v24, 0x0
-
-    cmp-long v24, v22, v24
-
-    if-gez v24, :cond_7
-
-    const-wide/16 v22, 0x0
-
-    :cond_4
-    :goto_0
-    const-wide/16 v24, 0x0
-
-    cmp-long v24, v18, v24
-
-    if-gez v24, :cond_8
-
-    const-wide/16 v18, 0x0
-
-    :cond_5
-    :goto_1
-    const-wide/16 v24, 0x0
-
-    cmp-long v24, v10, v24
-
-    if-gez v24, :cond_9
-
-    const-wide/16 v10, 0x0
-
-    :cond_6
-    :goto_2
-    const-string/jumbo v24, "\"JVER\":\""
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v24
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, "1.0\""
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v24
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, ",\"MODE\":\""
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v24
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-object/from16 v0, v20
-
-    move/from16 v1, p1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, ",\"CNUM\":\""
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v24
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-object/from16 v0, v20
-
-    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, ",\"POUI\":\""
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v24
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v16
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, ",\"RCOD\":\""
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v24
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-object/from16 v0, v20
-
-    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, ",\"NAME\":\""
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v24
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-object/from16 v0, v20
-
-    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, ",\"POUI2\":\""
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v24
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v17
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, ",\"RCOD2\":\""
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v24
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-object/from16 v0, v20
-
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, ",\"NAME2\":\""
-
-    move-object/from16 v0, v20
-
-    move-object/from16 v1, v24
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-object/from16 v0, v20
-
-    invoke-virtual {v0, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual/range {v20 .. v20}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v24, ",\"MPDU\":\""
-
-    move-object/from16 v0, v24
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v10, v11}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, ",\"TPDU\":\""
-
-    move-object/from16 v0, v24
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-wide/from16 v0, v18
-
-    invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, ",\"DADU\":\""
-
-    move-object/from16 v0, v24
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-wide/from16 v0, v22
-
-    invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    new-instance v24, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v24 .. v24}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, v24
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v25
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    invoke-virtual/range {v24 .. v24}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v24, ",\"MPDU_I\":\""
-
-    move-object/from16 v0, v24
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7, v10, v11}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, ",\"TPDU_I\":\""
-
-    move-object/from16 v0, v24
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-wide/from16 v0, v18
-
-    invoke-virtual {v7, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string/jumbo v24, ",\"DADU_I\":\""
-
-    move-object/from16 v0, v24
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-wide/from16 v0, v22
-
-    invoke-virtual {v7, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    const-string/jumbo v25, "\""
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    new-instance v24, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v24 .. v24}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, v24
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v25
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    invoke-virtual/range {v24 .. v24}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    new-instance v24, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v24 .. v24}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v25, "A2DPSM-sendBigDataForDualAudio value = "
-
-    invoke-virtual/range {v24 .. v25}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    move-object/from16 v0, v24
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v24
-
-    invoke-virtual/range {v24 .. v24}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v24
-
-    invoke-static/range {v24 .. v24}, Landroid/bluetooth/BluetoothDump;->BtLog(Ljava/lang/String;)V
-
-    const-string/jumbo v24, "DUAU"
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v24
-
-    invoke-direct {v0, v2, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->sendBigData(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string/jumbo v24, "DUAU"
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v24
-
-    invoke-direct {v0, v8, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->sendBigDataForHQM(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-
-    :cond_7
-    const-wide/32 v24, 0x1e13380
-
-    cmp-long v24, v22, v24
-
-    if-lez v24, :cond_4
-
-    const-wide/32 v22, 0x1e13380
-
-    goto/16 :goto_0
-
-    :cond_8
-    cmp-long v24, v18, v22
-
-    if-lez v24, :cond_5
-
-    const-string/jumbo v24, "A2dpStateMachine"
-
-    const-string/jumbo v25, "total playing time is bigger than total duration"
-
-    invoke-static/range {v24 .. v25}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-wide/from16 v18, v22
-
-    goto/16 :goto_1
-
-    :cond_9
-    cmp-long v24, v10, v18
-
-    if-lez v24, :cond_6
-
-    const-string/jumbo v24, "A2dpStateMachine"
-
-    const-string/jumbo v25, "multi playing time is bigger than total playing time"
-
-    invoke-static/range {v24 .. v25}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-wide/from16 v10, v18
-
-    goto/16 :goto_2
-.end method
-
-.method private sendBigDataForHQM(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 11
-
-    const/4 v0, 0x0
-
-    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    const-string/jumbo v2, "HqmManagerService"
-
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/os/SemHqmManager;
-
-    if-eqz v0, :cond_0
-
-    const-string/jumbo v2, "Bluetooth"
-
-    const-string/jumbo v4, "ph"
-
-    const-string/jumbo v5, "0.0"
-
-    const-string/jumbo v6, "sec"
-
-    const-string/jumbo v7, ""
-
-    const-string/jumbo v9, ""
-
-    const-string/jumbo v10, "com.android.bluetooth"
+.method private setButtonCustomNotification(Landroid/widget/RemoteViews;ILjava/lang/String;Landroid/app/PendingIntent;)V
+    .locals 2
 
     const/4 v1, 0x0
 
-    move-object v3, p2
+    const v0, 0x7f0e001e
 
-    move-object v8, p1
+    invoke-virtual {p1, v0, v1}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
 
-    invoke-virtual/range {v0 .. v10}, Landroid/os/SemHqmManager;->sendHWParamToHQMwithAppId(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-virtual {p1, p2, v1}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
 
-    :goto_0
-    return-void
+    invoke-virtual {p1, p2, p3}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
-    :cond_0
-    const-string/jumbo v1, "A2dpStateMachine"
+    if-eqz p4, :cond_0
 
-    const-string/jumbo v2, "Failed to call QmBigDataModule API"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-.end method
-
-.method private sendIntentNotifyScmstChanged()V
-    .locals 6
-
-    const-string/jumbo v3, "sendIntentNotifyScmstChanged"
-
-    invoke-virtual {p0, v3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->log(Ljava/lang/String;)V
-
-    new-instance v2, Landroid/content/Intent;
-
-    const-string/jumbo v3, "com.samsung.bluetooth.btservice.action.ACTION_NOTIFY_SCMST_UPDATE"
-
-    invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    const-string/jumbo v4, "android.permission.BLUETOOTH"
-
-    invoke-virtual {v3, v2, v4}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
-
-    const/16 v3, 0xf0
-
-    invoke-static {v3}, Lcom/samsung/android/knox/SemPersonaManager;->isKnoxVersionSupported(I)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    invoke-static {}, Lcom/android/bluetooth/Utils;->getBtEnabledContainers()Ljava/util/List;
-
-    move-result-object v3
-
-    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Integer;
-
-    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    new-instance v4, Landroid/os/UserHandle;
-
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    move-result v5
-
-    invoke-direct {v4, v5}, Landroid/os/UserHandle;-><init>(I)V
-
-    const-string/jumbo v5, "android.permission.BLUETOOTH"
-
-    invoke-virtual {v3, v2, v4, v5}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
-
-    goto :goto_0
+    invoke-virtual {p1, p2, p4}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
 
     :cond_0
     return-void
@@ -4938,537 +3630,41 @@
     goto :goto_1
 .end method
 
-.method private setDelayReport(Landroid/bluetooth/BluetoothDevice;I)V
-    .locals 5
-
-    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->isDualPlayEnabled()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    const/4 v2, 0x2
-
-    if-ne v0, v2, :cond_0
-
-    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    const-string/jumbo v3, "A2dpDelayReport=0"
-
-    invoke-virtual {v2, v3}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
-
-    return-void
-
-    :cond_0
-    const/16 v2, 0xa
-
-    if-ne p2, v2, :cond_1
-
-    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
-
-    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v4, 0x6
-
-    invoke-virtual {v2, v3, v4}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
-
-    move-result v1
-
-    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "A2dpDelayReport="
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
-
-    :cond_1
-    return-void
-.end method
-
 .method private native setDualPlayA2dpNative(Z)Z
 .end method
 
 .method private setDualPlayMode(Z)Z
-    .locals 13
+    .locals 3
 
-    new-instance v10, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v11, "setDualPlayMode : enable = "
+    const-string/jumbo v2, "setDualPlayMode : enable = "
 
-    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v10
+    move-result-object v1
 
-    invoke-virtual {v10, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v10
+    move-result-object v1
 
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v10
+    move-result-object v1
 
-    invoke-virtual {p0, v10}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->log(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->log(Ljava/lang/String;)V
 
-    const/4 v8, 0x0
-
-    invoke-virtual {p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->isDualPlayEnabled()Z
-
-    move-result v10
-
-    if-ne p1, v10, :cond_0
-
-    const-string/jumbo v10, "A2dpStateMachine"
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "setDualPlayMode : already set, enable = "
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v10, v11}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v10, 0x1
-
-    return v10
-
-    :cond_0
-    if-eqz p1, :cond_4
-
-    const/4 v4, 0x1
-
-    :goto_0
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v10}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v10
-
-    const-string/jumbo v11, "bluetooth_a2dp_dual_play_mode"
-
-    invoke-static {v10, v11, v4}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setDualPlayA2dpNative(Z)Z
-
-    move-result v8
-
-    const/4 v10, 0x1
-
-    if-ne v4, v10, :cond_8
-
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v10}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v10
-
-    const-string/jumbo v11, "bluetooth_a2dp_uhqa_mode"
-
-    const/4 v12, 0x1
-
-    invoke-static {v10, v11, v12}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v9
-
-    const/4 v10, 0x0
-
-    sput v10, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mUhqSupport:I
-
-    const/4 v10, 0x1
-
-    if-ne v9, v10, :cond_2
-
-    sget-boolean v10, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
-
-    if-eqz v10, :cond_1
-
-    const-string/jumbo v10, "A2dpStateMachine"
-
-    const-string/jumbo v11, "update sampleRate to 44100"
-
-    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
-
-    const v12, 0xac44
-
-    invoke-virtual {v10, v11, v12}, Landroid/media/AudioManager;->updateBluetoothDevice(Landroid/bluetooth/BluetoothDevice;I)V
-
-    :cond_2
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v10}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v10
-
-    const-string/jumbo v11, "bluetooth_a2dp_uhqa_support"
-
-    const/4 v12, 0x0
-
-    invoke-static {v10, v11, v12}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mService:Lcom/android/bluetooth/a2dp/A2dpService;
-
-    const/4 v11, 0x0
-
-    invoke-virtual {v10, v11}, Lcom/android/bluetooth/a2dp/A2dpService;->setAbsoluteVolumeControl(Z)Z
-
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    invoke-virtual {v10}, Ljava/util/ArrayList;->size()I
-
-    move-result v10
-
-    const/4 v11, 0x2
-
-    if-lt v10, v11, :cond_7
-
-    const/4 v2, 0x0
-
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    invoke-interface {v10}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v7
-
-    :cond_3
-    :goto_1
-    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v10
-
-    if-eqz v10, :cond_5
-
-    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Landroid/bluetooth/BluetoothDevice;
-
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-virtual {v6, v10}, Landroid/bluetooth/BluetoothDevice;->equals(Ljava/lang/Object;)Z
-
-    move-result v10
-
-    if-nez v10, :cond_3
-
-    move-object v2, v6
-
-    goto :goto_1
-
-    :cond_4
-    const/4 v4, 0x0
-
-    goto :goto_0
-
-    :cond_5
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v10, :cond_6
-
-    if-eqz v2, :cond_6
-
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-virtual {v11}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-virtual {v2}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-virtual {v10, v11, v12}, Landroid/media/AudioManager;->makeBTVolumeSame(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_6
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    invoke-static {v10}, Lcom/android/bluetooth/Utils;->launchDualPlayOnGoingNotification(Landroid/content/Context;)V
-
-    :cond_7
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    const-string/jumbo v11, "notification"
-
-    invoke-virtual {v10, v11}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Landroid/app/NotificationManager;
-
-    const-string/jumbo v10, "dual_play"
-
-    const/4 v11, 0x1
-
-    invoke-virtual {v5, v10, v11}, Landroid/app/NotificationManager;->cancel(Ljava/lang/String;I)V
-
-    :goto_2
-    const/4 v10, 0x1
-
-    const/4 v11, 0x0
-
-    invoke-direct {p0, p1, v10, v11}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->updateDualAudioPlayingTime(ZZI)V
-
-    invoke-direct {p0, v4}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->sendBigDataForDualAudio(I)V
-
-    new-instance v3, Landroid/content/Intent;
-
-    const-string/jumbo v10, "com.samsung.bluetooth.a2dp.intent.action.DUAL_PLAY_MODE_ENABLED"
-
-    invoke-direct {v3, v10}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    const-string/jumbo v10, "enable"
-
-    invoke-virtual {v3, v10, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
-
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    const-string/jumbo v11, "android.permission.BLUETOOTH"
-
-    invoke-virtual {v10, v3, v11}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
-
-    return v8
-
-    :cond_8
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    invoke-virtual {v10}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    const/4 v10, 0x2
-
-    if-ne v0, v10, :cond_9
-
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v10, :cond_9
-
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
-
-    iget-object v11, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-virtual {v11}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v11
-
-    const/4 v12, 0x6
-
-    invoke-virtual {v10, v11, v12}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
-
-    move-result v1
-
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v12, "A2dpDelayReport="
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-virtual {v10, v11}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
-
-    :cond_9
-    iget-object v10, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    const-string/jumbo v11, "notification"
-
-    invoke-virtual {v10, v11}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Landroid/app/NotificationManager;
-
-    const-string/jumbo v10, "dual_play"
-
-    const/4 v11, 0x2
-
-    invoke-virtual {v5, v10, v11}, Landroid/app/NotificationManager;->cancel(Ljava/lang/String;I)V
-
-    goto :goto_2
-.end method
-
-.method private setDualPlayModeAfterBtOn(Z)Z
-    .locals 10
-
-    const/4 v9, 0x0
-
-    const/4 v8, 0x1
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "setDualPlayModeAfterBtOn : enable = "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {p0, v3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->log(Ljava/lang/String;)V
-
-    const/4 v1, 0x0
-
-    if-eqz p1, :cond_3
-
-    const/4 v0, 0x1
-
-    :goto_0
-    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "bluetooth_a2dp_dual_play_mode"
-
-    invoke-static {v3, v4, v0}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->setDualPlayA2dpNative(Z)Z
-
-    move-result v1
-
-    if-ne v0, v8, :cond_2
-
-    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "bluetooth_a2dp_uhqa_mode"
-
-    invoke-static {v3, v4, v8}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v2
-
-    sput v9, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mUhqSupport:I
-
-    if-ne v2, v8, :cond_1
-
-    sget-boolean v3, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->DBG:Z
-
-    if-eqz v3, :cond_0
-
-    const-string/jumbo v3, "A2dpStateMachine"
-
-    const-string/jumbo v4, "update sampleRate to 44100"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
-
-    const v5, 0xac44
-
-    invoke-virtual {v3, v4, v5}, Landroid/media/AudioManager;->updateBluetoothDevice(Landroid/bluetooth/BluetoothDevice;I)V
-
-    :cond_1
-    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v3
-
-    const-string/jumbo v4, "bluetooth_a2dp_uhqa_support"
-
-    invoke-static {v3, v4, v9}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mService:Lcom/android/bluetooth/a2dp/A2dpService;
-
-    invoke-virtual {v3, v9}, Lcom/android/bluetooth/a2dp/A2dpService;->setAbsoluteVolumeControl(Z)Z
-
-    const/4 v3, 0x3
-
-    invoke-static {v3, v8}, Lcom/android/bluetooth/Utils;->getDualAudioTime(IZ)J
-
-    move-result-wide v4
-
-    const-wide/16 v6, 0x0
-
-    cmp-long v3, v4, v6
-
-    if-nez v3, :cond_2
-
-    const-string/jumbo v3, "A2dpStateMachine"
-
-    const-string/jumbo v4, "setDualPlayModeAfterBtOn : time reset because of flight mode or power cycle"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-direct {p0, p1, v8, v9}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->updateDualAudioPlayingTime(ZZI)V
-
-    :cond_2
-    return v1
-
-    :cond_3
     const/4 v0, 0x0
 
-    goto :goto_0
+    const-string/jumbo v1, "A2dpStateMachine"
+
+    const-string/jumbo v2, "setDualPlayMode : Dual Play not supported"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v0
 .end method
 
 .method private setHotPlugMode(I)V
@@ -5620,6 +3816,18 @@
     goto :goto_0
 .end method
 
+.method private setIconCustomNotification(Landroid/widget/RemoteViews;II)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, p2, v0}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
+
+    invoke-virtual {p1, p2, p3}, Landroid/widget/RemoteViews;->setImageViewResource(II)V
+
+    return-void
+.end method
+
 .method private setInitHotPlugMode()V
     .locals 4
 
@@ -5746,76 +3954,34 @@
     return-void
 .end method
 
-.method private setStreamDevice(Landroid/bluetooth/BluetoothDevice;Z)V
-    .locals 5
+.method private setTextCustomNotification(Landroid/widget/RemoteViews;ILjava/lang/String;)V
+    .locals 2
 
-    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
+    const/4 v1, 0x0
 
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+    const v0, 0x7f0e000a
 
-    move-result v0
+    invoke-virtual {p1, v0, v1}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
 
-    invoke-virtual {p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->isDualPlayEnabled()Z
+    const v0, 0x7f0e001b
 
-    move-result v2
+    if-eq p2, v0, :cond_0
 
-    if-eqz v2, :cond_0
+    const v0, 0x7f0e001c
 
-    const/4 v2, 0x2
-
-    if-ne v0, v2, :cond_0
-
-    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    const-string/jumbo v3, "A2dpDelayReport=0"
-
-    invoke-virtual {v2, v3}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
-
-    :goto_0
-    invoke-direct {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->getByteAddress(Landroid/bluetooth/BluetoothDevice;)[B
-
-    move-result-object v2
-
-    invoke-direct {p0, v2, p2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->selectstreamA2dpNative([BZ)Z
-
-    return-void
+    if-ne p2, v0, :cond_1
 
     :cond_0
-    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
+    const v0, 0x7f0e001a
 
-    invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+    invoke-virtual {p1, v0, v1}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
 
-    move-result-object v3
+    :cond_1
+    invoke-virtual {p1, p2, v1}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
 
-    const/4 v4, 0x6
+    invoke-virtual {p1, p2, p3}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
-
-    move-result v1
-
-    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "A2dpDelayReport="
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
-
-    goto :goto_0
+    return-void
 .end method
 
 .method private native setbusylevelA2dpNative(I)Z
@@ -6151,7 +4317,7 @@
 
     move-object/from16 v26, v0
 
-    const v27, 0x7f0a0097
+    const v27, 0x7f0a0096
 
     invoke-virtual/range {v26 .. v27}, Lcom/android/bluetooth/a2dp/A2dpService;->getString(I)Ljava/lang/String;
 
@@ -6183,7 +4349,7 @@
 
     aput-object v28, v27, v29
 
-    const v28, 0x7f0a0098
+    const v28, 0x7f0a0097
 
     move-object/from16 v0, v26
 
@@ -6682,7 +4848,7 @@
 
     iget-object v6, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mService:Lcom/android/bluetooth/a2dp/A2dpService;
 
-    const v7, 0x7f0a0099
+    const v7, 0x7f0a0098
 
     invoke-virtual {v6, v7}, Lcom/android/bluetooth/a2dp/A2dpService;->getString(I)Ljava/lang/String;
 
@@ -6694,7 +4860,7 @@
 
     iget-object v6, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mService:Lcom/android/bluetooth/a2dp/A2dpService;
 
-    const v7, 0x7f0a009a
+    const v7, 0x7f0a0099
 
     invoke-virtual {v6, v7}, Lcom/android/bluetooth/a2dp/A2dpService;->getString(I)Ljava/lang/String;
 
@@ -6950,183 +5116,6 @@
     return-void
 .end method
 
-.method private updateDualAudioPlayingTime(ZZI)V
-    .locals 12
-
-    const-wide/16 v10, 0x3e8
-
-    const/4 v9, 0x2
-
-    const/4 v6, 0x0
-
-    const/4 v8, 0x1
-
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide v2
-
-    const-wide/16 v0, 0x0
-
-    if-eqz p1, :cond_7
-
-    if-eqz p2, :cond_2
-
-    const/4 v4, 0x4
-
-    const-wide/16 v6, 0x0
-
-    invoke-static {v4, v8, v8, v6, v7}, Lcom/android/bluetooth/Utils;->setDualAudioTime(IZZJ)V
-
-    const/4 v4, 0x3
-
-    invoke-static {v4, v8, v8, v2, v3}, Lcom/android/bluetooth/Utils;->setDualAudioTime(IZZJ)V
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-nez v4, :cond_0
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v4, :cond_1
-
-    :cond_0
-    invoke-static {v9, v8, v8, v2, v3}, Lcom/android/bluetooth/Utils;->setDualAudioTime(IZZJ)V
-
-    :cond_1
-    :goto_0
-    return-void
-
-    :cond_2
-    if-ne p3, v9, :cond_4
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v4, :cond_3
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-nez v4, :cond_3
-
-    invoke-static {v9, v8, v8, v2, v3}, Lcom/android/bluetooth/Utils;->setDualAudioTime(IZZJ)V
-
-    goto :goto_0
-
-    :cond_3
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v4, :cond_1
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v4, :cond_1
-
-    invoke-static {v8, v8, v8, v2, v3}, Lcom/android/bluetooth/Utils;->setDualAudioTime(IZZJ)V
-
-    goto :goto_0
-
-    :cond_4
-    if-eqz p3, :cond_5
-
-    if-ne p3, v8, :cond_1
-
-    :cond_5
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-nez v4, :cond_6
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-nez v4, :cond_6
-
-    invoke-static {v9, v8}, Lcom/android/bluetooth/Utils;->getDualAudioTime(IZ)J
-
-    move-result-wide v4
-
-    sub-long v4, v2, v4
-
-    div-long v0, v4, v10
-
-    invoke-static {v9, v6, v6, v0, v1}, Lcom/android/bluetooth/Utils;->setDualAudioTime(IZZJ)V
-
-    goto :goto_0
-
-    :cond_6
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-nez v4, :cond_1
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v4, :cond_1
-
-    invoke-static {v8, v8}, Lcom/android/bluetooth/Utils;->getDualAudioTime(IZ)J
-
-    move-result-wide v4
-
-    sub-long v4, v2, v4
-
-    div-long v0, v4, v10
-
-    invoke-static {v8, v6, v6, v0, v1}, Lcom/android/bluetooth/Utils;->setDualAudioTime(IZZJ)V
-
-    goto :goto_0
-
-    :cond_7
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-nez v4, :cond_8
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v4, :cond_9
-
-    :cond_8
-    invoke-static {v9, v8}, Lcom/android/bluetooth/Utils;->getDualAudioTime(IZ)J
-
-    move-result-wide v4
-
-    sub-long v4, v2, v4
-
-    div-long v0, v4, v10
-
-    invoke-static {v9, v6, v6, v0, v1}, Lcom/android/bluetooth/Utils;->setDualAudioTime(IZZJ)V
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v4, :cond_9
-
-    iget-object v4, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v4, :cond_9
-
-    invoke-static {v8, v8}, Lcom/android/bluetooth/Utils;->getDualAudioTime(IZ)J
-
-    move-result-wide v4
-
-    sub-long v4, v2, v4
-
-    div-long v0, v4, v10
-
-    invoke-static {v8, v6, v6, v0, v1}, Lcom/android/bluetooth/Utils;->setDualAudioTime(IZZJ)V
-
-    :cond_9
-    const/4 v4, 0x3
-
-    invoke-static {v4, v8}, Lcom/android/bluetooth/Utils;->getDualAudioTime(IZ)J
-
-    move-result-wide v4
-
-    sub-long v4, v2, v4
-
-    div-long v0, v4, v10
-
-    const/4 v4, 0x3
-
-    invoke-static {v4, v8, v6, v0, v1}, Lcom/android/bluetooth/Utils;->setDualAudioTime(IZZJ)V
-
-    goto :goto_0
-.end method
-
 .method private updateLinkFeedBackInfo(ILjava/lang/String;)V
     .locals 4
 
@@ -7235,23 +5224,19 @@
 .end method
 
 .method commandForMonitoring(Ljava/lang/String;)Z
-    .locals 3
+    .locals 2
 
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
+    new-instance v0, Lcom/android/bluetooth/a2dp/A2dpStateMachine$commandForApps;
 
-    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIntentBroadcastHandler:Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x2
+    invoke-direct {v0, p0, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$commandForApps;-><init>(Lcom/android/bluetooth/a2dp/A2dpStateMachine;Lcom/android/bluetooth/a2dp/A2dpStateMachine$commandForApps;)V
 
-    invoke-virtual {v1, v2, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$commandForApps;->ParsingStackData(Ljava/lang/String;)V
 
-    move-result-object v1
+    const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->sendMessage(Landroid/os/Message;)Z
-
-    const/4 v0, 0x1
-
-    return v0
+    return v1
 .end method
 
 .method deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
@@ -7303,225 +5288,157 @@
 .end method
 
 .method public dump(Ljava/lang/StringBuilder;)V
-    .locals 6
+    .locals 2
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "mActiveStreamDevice: "
+    const-string/jumbo v1, "mActiveStreamDevice: "
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-virtual {p0, v3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {p1, v2}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "mTargetDevice: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mTargetDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-virtual {p0, v3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {p1, v2}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "mIncomingDevice: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIncomingDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-virtual {p0, v3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {p1, v2}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "mPlayingA2dpDevice: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-virtual {p0, v3}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {p1, v2}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "mRegisterDevCallBack: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    sget-boolean v3, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mRegisterDevCallBack:Z
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {p1, v2}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
-
-    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
-
-    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    check-cast v0, Landroid/bluetooth/BluetoothDevice;
+    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v1
 
-    const-string/jumbo v3, "delay reporting("
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    move-result-object v2
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v3
+    invoke-static {p1, v0}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object v2
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, ") :"
+    const-string/jumbo v1, "mTargetDevice: "
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v2
+    move-result-object v0
 
-    iget-object v3, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mDeviceInfo:Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;
+    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mTargetDevice:Landroid/bluetooth/BluetoothDevice;
 
-    invoke-virtual {v0}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v1
 
-    const/4 v5, 0x6
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v4, v5}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$DeviceInfo;->getDeviceFeature(Ljava/lang/String;I)I
+    move-result-object v0
 
-    move-result v3
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    move-result-object v2
+    invoke-static {p1, v0}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object v2
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {p1, v2}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
+    const-string/jumbo v1, "mIncomingDevice: "
 
-    goto :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    :cond_0
-    new-instance v2, Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mIncomingDevice:Landroid/bluetooth/BluetoothDevice;
 
-    const-string/jumbo v3, "StateMachine: "
+    invoke-virtual {p0, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v2
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v1, "mPlayingA2dpDevice: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
+
+    invoke-virtual {p0, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v1, "mRegisterDevCallBack: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    sget-boolean v1, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mRegisterDevCallBack:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v1, "StateMachine: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v1
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v2
+    move-result-object v0
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v0
 
-    invoke-static {p1, v2}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lcom/android/bluetooth/btservice/ProfileService;->println(Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -8059,58 +5976,21 @@
 .end method
 
 .method isDualPlayEnabled()Z
-    .locals 5
+    .locals 3
 
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
-    iget-object v2, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+    const-string/jumbo v1, "A2dpStateMachine"
 
-    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    const-string/jumbo v2, "isDualPlayEnabled : Dual Play not supported"
 
-    move-result-object v2
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    const-string/jumbo v3, "bluetooth_a2dp_dual_play_mode"
-
-    const/4 v4, 0x0
-
-    invoke-static {v2, v3, v4}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v0
-
-    const/4 v2, 0x1
-
-    if-ne v0, v2, :cond_0
-
-    const/4 v1, 0x1
-
-    :cond_0
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "isDualPlayEnabled : "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {p0, v2}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->log(Ljava/lang/String;)V
-
-    return v1
+    return v0
 .end method
 
 .method isPlaying(Landroid/bluetooth/BluetoothDevice;)Z
-    .locals 2
-
-    const/4 v1, 0x1
+    .locals 1
 
     monitor-enter p0
 
@@ -8125,42 +6005,13 @@
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     monitor-exit p0
 
-    return v1
+    return v0
 
     :cond_0
-    :try_start_1
-    invoke-virtual {p0}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->isDualPlayEnabled()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->m2ndPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v0, :cond_2
-
-    :cond_1
-    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mActiveStreamDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-virtual {p1, v0}, Landroid/bluetooth/BluetoothDevice;->equals(Ljava/lang/Object;)Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    monitor-exit p0
-
-    return v1
-
-    :cond_2
     monitor-exit p0
 
     const/4 v0, 0x0
@@ -8493,6 +6344,95 @@
     goto :goto_2
 .end method
 
+.method public declared-synchronized resumeSink(Landroid/bluetooth/BluetoothDevice;)Z
+    .locals 4
+
+    const/4 v3, 0x0
+
+    monitor-enter p0
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const-string/jumbo v1, "android.permission.BLUETOOTH_ADMIN"
+
+    const-string/jumbo v2, "Need BLUETOOTH_ADMIN permission"
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "A2dpStateMachine"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "resumeSink : "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    monitor-exit p0
+
+    return v3
+
+    :cond_0
+    :try_start_1
+    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
+
+    const-string/jumbo v1, "A2dpSuspended=false"
+
+    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    const/4 v0, 0x1
+
+    monitor-exit p0
+
+    return v0
+
+    :cond_1
+    monitor-exit p0
+
+    return v3
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
 .method setBusyLevelForWifi(I)V
     .locals 4
 
@@ -8513,4 +6453,93 @@
     invoke-virtual {v0, v1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine$IntentBroadcastHandler;->sendMessage(Landroid/os/Message;)Z
 
     return-void
+.end method
+
+.method public declared-synchronized suspendSink(Landroid/bluetooth/BluetoothDevice;)Z
+    .locals 4
+
+    const/4 v3, 0x0
+
+    monitor-enter p0
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mContext:Landroid/content/Context;
+
+    const-string/jumbo v1, "android.permission.BLUETOOTH_ADMIN"
+
+    const-string/jumbo v2, "Need BLUETOOTH_ADMIN permission"
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "A2dpStateMachine"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "suspendSink : "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p0, p1}, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->deviceInfo(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mConnectedDevices:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    monitor-exit p0
+
+    return v3
+
+    :cond_0
+    :try_start_1
+    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mPlayingA2dpDevice:Landroid/bluetooth/BluetoothDevice;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/bluetooth/a2dp/A2dpStateMachine;->mAudioManager:Landroid/media/AudioManager;
+
+    const-string/jumbo v1, "A2dpSuspended=true"
+
+    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    const/4 v0, 0x1
+
+    monitor-exit p0
+
+    return v0
+
+    :cond_1
+    monitor-exit p0
+
+    return v3
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
 .end method

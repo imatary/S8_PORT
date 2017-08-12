@@ -310,7 +310,7 @@
 
     iget-object v3, p0, Lcom/android/bluetooth/map/BluetoothMapSettingsAdapter;->mActivity:Landroid/app/Activity;
 
-    const v4, 0x7f0a0091
+    const v4, 0x7f0a0090
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -345,7 +345,7 @@
 
     iget-object v4, p0, Lcom/android/bluetooth/map/BluetoothMapSettingsAdapter;->mActivity:Landroid/app/Activity;
 
-    const v5, 0x7f0a008e
+    const v5, 0x7f0a008d
 
     invoke-virtual {v4, v5}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

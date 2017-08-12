@@ -23,9 +23,9 @@
     <string name="ss_sent">送信したファイル</string>
     <string name="ss_multi_sent">送信ファイル</string>
     <string name="ss_sent_failed">送信に失敗</string>
-    <string name="ss_received">ファイルを受信</string>
+    <string name="ss_received">受信ファイル</string>
     <string name="ss_multi_received">受信ファイル</string>
-    <string name="ss_received_failed">受信に失敗</string>
+    <string name="ss_received_failed">受信失敗</string>
     <string name="incoming_file_confirm_Notification_title">着信ファイル</string>
     <string name="notification_receiving">%sを受信中…</string>
     <string name="notification_received">%1$sを受信しました。</string>
@@ -51,7 +51,7 @@
     <string name="download_fail_ok">OK</string>
     <string name="download_succ_line5">ファイルを受信しました</string>
     <string name="download_succ_ok">開く</string>
-    <string name="upload_line1">宛先: %s</string>
+    <string name="upload_line1">宛先：%1$s</string>
     <string name="upload_line3_nofilesize">ファイルタイプ: %s</string>
     <string name="upload_line3">ファイル形式: %1$s（%2$s）</string>
     <string name="upload_line5">ファイルを送信中…</string>
@@ -59,7 +59,7 @@
     <string name="upload_succ_ok">OK</string>
     <string name="Button_Cancel">キャンセル</string>
     <string name="Button_Cancel_All">全てキャンセル</string>
-    <string name="upload_fail_line1">%sにファイルが送信されませんでした。</string>
+    <string name="upload_fail_line1">%sにファイルは送信されませんでした。</string>
     <string name="upload_fail_line1_2">ファイル: %s</string>
     <string name="upload_fail_ok">再試行</string>
     <string name="upload_fail_cancel">閉じる</string>
@@ -106,7 +106,6 @@
     <string name="status_protocol_error">リクエストを正しく処理できません。</string>
     <string name="status_unknown_error">不明なエラーです。</string>
     <string name="btopp_live_folder">受信済みファイル</string>
-    <string name="bt_adv_opp_switch">ファイルを素早く共有するために、BluetoothからWi-Fi Directに自動的に切り替わりました。</string>
     <string name="download_success">%sを受信</string>
     <string name="upload_success">%sを送信</string>
     <string name="inbound_history_title">受信</string>
@@ -124,8 +123,8 @@
     <string name="transfer_clear_dlg_title">消去</string>
     <string name="transfer_clear_btn">消去</string>
     <string name="connection_request_inactive_nap">%sがこの端末にテザリングを要求しています。</string>
-    <string name="allow_conn_req_inactive_nap">許可</string>
-    <string name="deny_conn_req_inactive_nap">拒否</string>
+    <string name="allow_conn_req_inactive_nap">OK</string>
+    <string name="deny_conn_req_inactive_nap">キャンセル</string>
     <string name="bluetooth_tether_request">Bluetoothテザリングを許可しますか？</string>
     <string name="bluetooth_tether_connected">インターネットにアクセスするために、%sに接続しました。</string>
     <string name="bluetooth_pan_nap_connecting_error_message">%sに接続できません。</string>
@@ -145,17 +144,7 @@
     <string name="bluetooth_a2dp_playing_via_device">%sでオーディオを自動再生中…</string>
     <string name="bluetooth_a2dp_sound_glitches">音声の異常を検出</string>
     <string name="bluetooth_a2dp_turn_off_uhq_upscaler">UHQｱｯﾌﾟｽｹｰﾗｰをOFFにするには、ﾀｯﾌﾟします。</string>
-    <string name="bluetooth_dual_play_title">デュアルオーディオ</string>
-    <string name="bluetooth_dual_play_content">2台のBluetoothデバイスが接続されています。デュアルオーディオをONにするには、[設定]に移動してください。</string>
-    <string name="settings">設定</string>
-    <string name="bluetooth_dual_play_ongoing_title">デュアルオーディオがON</string>
-    <string name="bluetooth_dual_play_ongoing_content">オーディオは、接続された2台のBluetoothデバイスで再生されます。</string>
-    <string name="bluetooth_avc_title">音量を調節</string>
-    <string name="bluetooth_avc_content">[メディア音量の同期]を使用すると、接続したBluetoothデバイスと端末で音量を同期することができます。</string>
-    <string name="bluetooth_avc_content_vzw">[メディア音量の同期]を使用して、端末と接続したBluetoothデバイスで音量を同期することができます。</string>
-    <string name="bluetooth_avc_earshock_protection_title">聴力を保護</string>
-    <string name="bluetooth_avc_earshock_protection_content">[メディア音量の同期]モードで長時間聴くと、聴力に影響を与える恐れがあります。音声が大きすぎる場合、音量を調節できます。</string>
-    <string name="bluetooth_a2dpsink_sound_coming">テレビの音声は、端末のスピーカーまたは有線ヘッドホンでのみ再生できます。</string>
+    <string name="bluetooth_a2dpsink_sound_coming">テレビ音声は端末のスピーカーまたは有線ヘッドホンでのみ再生できます。</string>
     <string name="pbap_session_key_dialog_title">%1$sのセッションキーを入力</string>
     <string name="pbap_session_key_dialog_header">Bluetoothセッションキーが必要です</string>
     <string name="pbap_acceptance_timeout_message">%1$sとの接続の承諾がタイムアウトになりました</string>
@@ -180,7 +169,7 @@
     <string name="bluetooth_notif_sap_message">Bluetoothは%sと接続されています。</string>
     <string name="bluetooth_remote_device">Bluetoothデバイス</string>
     <string name="hello">Hello World, TestActivity</string>
-    <string name="app_name">Bluetooth</string>
+    <string name="app_name">Bluetooth共有</string>
     <string name="insert_record">記録を挿入</string>
     <string name="update_record">レコードを確認</string>
     <string name="ack_record">Ackレコード</string>

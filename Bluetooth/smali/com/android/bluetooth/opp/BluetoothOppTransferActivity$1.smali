@@ -61,7 +61,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_0
 
     iget-object v1, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity$1;->this$0:Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;
 
@@ -85,27 +85,6 @@
     const-string/jumbo v1, "BluetoothOppTransferActivity"
 
     const-string/jumbo v2, "FileShare of advanced opp is started So finish opp transfer activity"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v1, p0, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity$1;->this$0:Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;
-
-    invoke-virtual {v1}, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;->finish()V
-
-    goto :goto_0
-
-    :cond_3
-    const-string/jumbo v1, "com.samsung.btopp.intent.action.BT_ADVOPP_RECOVER"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const-string/jumbo v1, "BluetoothOppTransferActivity"
-
-    const-string/jumbo v2, "FileShare of advanced opp is fail and recovery started. So finish opp transfer activity"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

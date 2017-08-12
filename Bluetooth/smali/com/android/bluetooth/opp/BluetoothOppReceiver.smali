@@ -135,11 +135,11 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 58
+    .locals 54
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    move-result-object v15
+    move-result-object v11
 
     sget-boolean v2, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->V:Z
 
@@ -157,7 +157,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
@@ -168,11 +168,11 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    new-instance v20, Landroid/view/ContextThemeWrapper;
+    new-instance v17, Landroid/view/ContextThemeWrapper;
 
     const v2, 0x7f0c0004
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     move-object/from16 v1, p1
 
@@ -180,11 +180,11 @@
 
     const-string/jumbo v2, "android.bluetooth.adapter.action.STATE_CHANGED"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_8
 
     const-string/jumbo v2, "android.bluetooth.adapter.extra.STATE"
 
@@ -198,7 +198,7 @@
 
     const/16 v4, 0xc
 
-    if-ne v4, v2, :cond_5
+    if-ne v4, v2, :cond_6
 
     const/16 v2, 0xc
 
@@ -215,12 +215,21 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    invoke-static {}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->isSupportedOppbySecureModePolicy()Z
+    invoke-static {}, Lcom/android/bluetooth/btservice/AdapterService;->getAdapterService()Lcom/android/bluetooth/btservice/AdapterService;
+
+    move-result-object v12
+
+    if-eqz v12, :cond_2
+
+    const-string/jumbo v2, "opp_enable"
+
+    invoke-virtual {v12, v2}, Lcom/android/bluetooth/btservice/AdapterService;->isProfileAllowed(Ljava/lang/String;)Z
 
     move-result v2
 
-    if-nez v2, :cond_2
+    if-nez v2, :cond_3
 
+    :cond_2
     const-string/jumbo v2, "BluetoothOppReceiver"
 
     const-string/jumbo v4, "Secure Mode is on with OPP Profile disabled"
@@ -229,31 +238,31 @@
 
     return-void
 
-    :cond_2
+    :cond_3
     new-instance v2, Landroid/content/Intent;
 
     const-class v4, Lcom/android/bluetooth/opp/BluetoothOppService;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-direct {v2, v0, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     monitor-enter p0
 
     :try_start_0
-    invoke-static/range {v20 .. v20}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getInstance(Landroid/content/Context;)Lcom/android/bluetooth/opp/BluetoothOppManager;
+    invoke-static/range {v17 .. v17}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getInstance(Landroid/content/Context;)Lcom/android/bluetooth/opp/BluetoothOppManager;
 
     move-result-object v2
 
     iget-boolean v2, v2, Lcom/android/bluetooth/opp/BluetoothOppManager;->mSendingFlag:Z
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_4
 
-    invoke-static/range {v20 .. v20}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getInstance(Landroid/content/Context;)Lcom/android/bluetooth/opp/BluetoothOppManager;
+    invoke-static/range {v17 .. v17}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getInstance(Landroid/content/Context;)Lcom/android/bluetooth/opp/BluetoothOppManager;
 
     move-result-object v2
 
@@ -261,11 +270,11 @@
 
     iput-boolean v4, v2, Lcom/android/bluetooth/opp/BluetoothOppManager;->mSendingFlag:Z
 
-    new-instance v38, Landroid/content/Intent;
+    new-instance v35, Landroid/content/Intent;
 
     const-string/jumbo v2, "android.bluetooth.devicepicker.action.LAUNCH"
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v35
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -273,7 +282,7 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v35
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
@@ -281,7 +290,7 @@
 
     const/4 v4, 0x2
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v35
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -289,7 +298,7 @@
 
     const-string/jumbo v4, "com.android.bluetooth"
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v35
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -301,28 +310,28 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v35
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const/high16 v2, 0x10000000
 
-    move-object/from16 v0, v38
+    move-object/from16 v0, v35
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v38
+    move-object/from16 v1, v35
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    :cond_3
+    :cond_4
     monitor-exit p0
 
-    :cond_4
+    :cond_5
     :goto_0
     return-void
 
@@ -333,7 +342,7 @@
 
     throw v2
 
-    :cond_5
+    :cond_6
     const-string/jumbo v2, "android.bluetooth.adapter.extra.STATE"
 
     const/high16 v4, -0x80000000
@@ -346,17 +355,17 @@
 
     const/16 v4, 0xa
 
-    if-ne v4, v2, :cond_4
+    if-ne v4, v2, :cond_5
 
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->mNotifier:Lcom/android/bluetooth/opp/BluetoothOppNotification;
 
-    if-nez v2, :cond_6
+    if-nez v2, :cond_7
 
     new-instance v2, Lcom/android/bluetooth/opp/BluetoothOppNotification;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-direct {v2, v0}, Lcom/android/bluetooth/opp/BluetoothOppNotification;-><init>(Landroid/content/Context;)V
 
@@ -364,7 +373,7 @@
 
     iput-object v2, v0, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->mNotifier:Lcom/android/bluetooth/opp/BluetoothOppNotification;
 
-    :cond_6
+    :cond_7
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->mNotifier:Lcom/android/bluetooth/opp/BluetoothOppNotification;
@@ -373,14 +382,14 @@
 
     goto :goto_0
 
-    :cond_7
+    :cond_8
     const-string/jumbo v2, "android.bluetooth.devicepicker.action.DEVICE_SELECTED"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_10
+    if-eqz v2, :cond_11
 
     invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
 
@@ -392,7 +401,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_9
 
     const-string/jumbo v2, "BAOI"
 
@@ -400,14 +409,14 @@
 
     const/16 v5, 0x3e8
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-static {v2, v5, v4, v0}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->insertGSIMLog(Ljava/lang/String;ILjava/lang/String;Landroid/content/Context;)V
 
-    :cond_8
-    invoke-static/range {v20 .. v20}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getInstance(Landroid/content/Context;)Lcom/android/bluetooth/opp/BluetoothOppManager;
+    :cond_9
+    invoke-static/range {v17 .. v17}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getInstance(Landroid/content/Context;)Lcom/android/bluetooth/opp/BluetoothOppManager;
 
-    move-result-object v40
+    move-result-object v37
 
     const-string/jumbo v2, "android.bluetooth.device.extra.DEVICE"
 
@@ -415,13 +424,13 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
-    move-result-object v42
+    move-result-object v39
 
-    check-cast v42, Landroid/bluetooth/BluetoothDevice;
+    check-cast v39, Landroid/bluetooth/BluetoothDevice;
 
     sget-boolean v2, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->V:Z
 
-    if-eqz v2, :cond_9
+    if-eqz v2, :cond_a
 
     const-string/jumbo v2, "BluetoothOppReceiver"
 
@@ -435,7 +444,7 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v42
+    move-object/from16 v0, v39
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -447,7 +456,7 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_9
+    :cond_a
     const-string/jumbo v2, "content://com.sec.knox.provider/BluetoothPolicy"
 
     invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -455,7 +464,7 @@
     move-result-object v3
 
     :try_start_1
-    invoke-virtual/range {v42 .. v42}, Landroid/bluetooth/BluetoothDevice;->getBluetoothClass()Landroid/bluetooth/BluetoothClass;
+    invoke-virtual/range {v39 .. v39}, Landroid/bluetooth/BluetoothDevice;->getBluetoothClass()Landroid/bluetooth/BluetoothClass;
 
     move-result-object v2
 
@@ -465,11 +474,11 @@
 
     const/16 v4, 0x100
 
-    if-ne v2, v4, :cond_d
+    if-ne v2, v4, :cond_e
 
-    const/16 v39, 0x1
+    const/16 v36, 0x1
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v17 .. v17}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -481,9 +490,9 @@
 
     const-string/jumbo v4, "true"
 
-    const/4 v8, 0x0
+    const/4 v7, 0x0
 
-    aput-object v4, v6, v8
+    aput-object v4, v6, v7
 
     const/4 v4, 0x0
 
@@ -493,26 +502,26 @@
     :try_end_1
     .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_1
 
-    move-result-object v21
+    move-result-object v18
 
-    if-eqz v21, :cond_b
+    if-eqz v18, :cond_c
 
     :try_start_2
-    invoke-interface/range {v21 .. v21}, Landroid/database/Cursor;->moveToFirst()Z
+    invoke-interface/range {v18 .. v18}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v2
 
-    if-eqz v2, :cond_a
+    if-eqz v2, :cond_b
 
     const-string/jumbo v2, "isDesktopConnectivityEnabled"
 
-    move-object/from16 v0, v21
+    move-object/from16 v0, v18
 
     invoke-interface {v0, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v2
 
-    move-object/from16 v0, v21
+    move-object/from16 v0, v18
 
     invoke-interface {v0, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -527,30 +536,30 @@
 
     move-result v2
 
-    if-eqz v2, :cond_c
+    if-eqz v2, :cond_d
 
-    const/16 v39, 0x1
+    const/16 v36, 0x1
 
-    :cond_a
+    :cond_b
     :goto_1
     :try_start_3
-    invoke-interface/range {v21 .. v21}, Landroid/database/Cursor;->close()V
+    invoke-interface/range {v18 .. v18}, Landroid/database/Cursor;->close()V
     :try_end_3
     .catch Ljava/lang/NullPointerException; {:try_start_3 .. :try_end_3} :catch_1
 
-    :cond_b
+    :cond_c
     :goto_2
-    if-nez v39, :cond_d
+    if-nez v36, :cond_e
 
     return-void
 
-    :cond_c
-    const/16 v39, 0x0
+    :cond_d
+    const/16 v36, 0x0
 
     goto :goto_1
 
     :catch_0
-    move-exception v28
+    move-exception v25
 
     :try_start_4
     const-string/jumbo v2, "BluetoothOppReceiver"
@@ -565,7 +574,7 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v28
+    move-object/from16 v0, v25
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -580,14 +589,14 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     :try_start_5
-    invoke-interface/range {v21 .. v21}, Landroid/database/Cursor;->close()V
+    invoke-interface/range {v18 .. v18}, Landroid/database/Cursor;->close()V
     :try_end_5
     .catch Ljava/lang/NullPointerException; {:try_start_5 .. :try_end_5} :catch_1
 
     goto :goto_2
 
     :catch_1
-    move-exception v30
+    move-exception v27
 
     const-string/jumbo v2, "BluetoothOppReceiver"
 
@@ -601,7 +610,7 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v30
+    move-object/from16 v0, v27
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -613,30 +622,26 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_d
+    :cond_e
     const/16 v2, 0xf0
 
     invoke-static {v2}, Lcom/samsung/android/knox/SemPersonaManager;->isKnoxVersionSupported(I)Z
 
     move-result v2
 
-    if-eqz v2, :cond_e
+    if-eqz v2, :cond_f
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
-    move-result v18
+    move-result v15
 
     const/16 v2, 0x64
 
-    move/from16 v0, v18
-
-    if-gt v2, v0, :cond_e
+    if-gt v2, v15, :cond_f
 
     const/16 v2, 0xc8
 
-    move/from16 v0, v18
-
-    if-gt v0, v2, :cond_e
+    if-gt v15, v2, :cond_f
 
     const-string/jumbo v2, "BluetoothOppReceiver"
 
@@ -670,42 +675,42 @@
     move-exception v2
 
     :try_start_6
-    invoke-interface/range {v21 .. v21}, Landroid/database/Cursor;->close()V
+    invoke-interface/range {v18 .. v18}, Landroid/database/Cursor;->close()V
 
     throw v2
     :try_end_6
     .catch Ljava/lang/NullPointerException; {:try_start_6 .. :try_end_6} :catch_1
 
-    :cond_e
-    move-object/from16 v0, v40
+    :cond_f
+    move-object/from16 v0, v37
 
-    move-object/from16 v1, v42
+    move-object/from16 v1, v39
 
     invoke-virtual {v0, v1}, Lcom/android/bluetooth/opp/BluetoothOppManager;->startTransfer(Landroid/bluetooth/BluetoothDevice;)V
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v37
 
-    move-object/from16 v1, v42
+    move-object/from16 v1, v39
 
     invoke-virtual {v0, v1}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getDeviceName(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
 
-    move-result-object v25
+    move-result-object v22
 
-    invoke-virtual/range {v40 .. v40}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getBatchSize()I
+    invoke-virtual/range {v37 .. v37}, Lcom/android/bluetooth/opp/BluetoothOppManager;->getBatchSize()I
 
-    move-result v16
+    move-result v13
 
-    move-object/from16 v0, v40
+    move-object/from16 v0, v37
 
     iget-boolean v2, v0, Lcom/android/bluetooth/opp/BluetoothOppManager;->mMultipleFlag:Z
 
-    if-eqz v2, :cond_f
+    if-eqz v2, :cond_10
 
     const/4 v2, 0x2
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    invoke-static/range {v16 .. v16}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+    invoke-static {v13}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -715,22 +720,22 @@
 
     const/4 v4, 0x1
 
-    aput-object v25, v2, v4
+    aput-object v22, v2, v4
 
     const v4, 0x7f0a0052
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v4, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v49
+    move-result-object v45
 
     :goto_3
     const/4 v2, 0x0
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v49
+    move-object/from16 v1, v45
 
     invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
@@ -740,7 +745,7 @@
 
     goto/16 :goto_0
 
-    :cond_f
+    :cond_10
     const/4 v2, 0x1
 
     new-array v2, v2, [Ljava/lang/Object;
@@ -755,7 +760,7 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v25
+    move-object/from16 v0, v22
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -777,26 +782,26 @@
 
     const v4, 0x7f0a0051
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v4, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v49
+    move-result-object v45
 
     goto :goto_3
 
-    :cond_10
+    :cond_11
     const-string/jumbo v2, "android.btopp.intent.action.CONFIRM"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_12
+    if-eqz v2, :cond_13
 
     sget-boolean v2, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->V:Z
 
-    if-eqz v2, :cond_11
+    if-eqz v2, :cond_12
 
     const-string/jumbo v2, "BluetoothOppReceiver"
 
@@ -804,68 +809,68 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_11
+    :cond_12
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
     move-result-object v3
 
-    new-instance v37, Landroid/content/Intent;
+    new-instance v34, Landroid/content/Intent;
 
     const-class v2, Lcom/android/bluetooth/opp/BluetoothOppIncomingFileConfirmActivity;
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v17
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     const/high16 v2, 0x30000000
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v3}, Landroid/content/Intent;->setDataAndNormalize(Landroid/net/Uri;)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v37
+    move-object/from16 v1, v34
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
-    :cond_12
+    :cond_13
     const-string/jumbo v2, "android.btopp.intent.action.OPEN"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-nez v2, :cond_13
+    if-nez v2, :cond_14
 
     const-string/jumbo v2, "android.btopp.intent.action.LIST"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_19
 
-    :cond_13
+    :cond_14
     sget-boolean v2, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->V:Z
 
-    if-eqz v2, :cond_14
+    if-eqz v2, :cond_15
 
     const-string/jumbo v2, "android.btopp.intent.action.OPEN"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_15
+    if-eqz v2, :cond_16
 
     const-string/jumbo v2, "BluetoothOppReceiver"
 
@@ -893,23 +898,23 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_14
+    :cond_15
     :goto_4
-    new-instance v50, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;
+    new-instance v46, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;
 
-    invoke-direct/range {v50 .. v50}, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;-><init>()V
+    invoke-direct/range {v46 .. v46}, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;-><init>()V
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
     move-result-object v3
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-static {v0, v3}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->queryRecord(Landroid/content/Context;Landroid/net/Uri;)Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;
 
-    move-result-object v50
+    move-result-object v46
 
-    if-nez v50, :cond_16
+    if-nez v46, :cond_17
 
     const-string/jumbo v2, "BluetoothOppReceiver"
 
@@ -919,7 +924,7 @@
 
     return-void
 
-    :cond_15
+    :cond_16
     const-string/jumbo v2, "BluetoothOppReceiver"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -948,16 +953,16 @@
 
     goto :goto_4
 
-    :cond_16
-    move-object/from16 v0, v50
+    :cond_17
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDirection:I
 
     const/4 v4, 0x1
 
-    if-ne v2, v4, :cond_17
+    if-ne v2, v4, :cond_18
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mStatus:I
 
@@ -965,118 +970,61 @@
 
     move-result v2
 
-    if-eqz v2, :cond_17
+    if-eqz v2, :cond_18
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-object v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mFileName:Ljava/lang/String;
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mFileType:Ljava/lang/String;
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-object v5, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mTimeStamp:Ljava/lang/Long;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-static {v0, v2, v4, v5, v3}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->openReceivedFile(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Landroid/net/Uri;)V
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-static {v0, v3}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->updateVisibilityToHidden(Landroid/content/Context;Landroid/net/Uri;)V
 
     :goto_5
     move-object/from16 v0, p0
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v17
 
     invoke-direct {v0, v1, v3}, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->cancelNotification(Landroid/content/Context;Landroid/net/Uri;)V
 
     goto/16 :goto_0
 
-    :cond_17
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v4, "timestamp == "
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    move-object/from16 v0, v50
-
-    iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mTimeStamp:Ljava/lang/Long;
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    const/16 v43, 0x0
-
-    invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    sget-object v5, Lcom/android/bluetooth/opp/BluetoothShare;->CONTENT_URI:Landroid/net/Uri;
-
-    const/4 v6, 0x0
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    invoke-virtual/range {v4 .. v9}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object v22
-
-    if-eqz v22, :cond_18
-
-    invoke-interface/range {v22 .. v22}, Landroid/database/Cursor;->getCount()I
-
-    move-result v43
-
-    invoke-interface/range {v22 .. v22}, Landroid/database/Cursor;->close()V
-
     :cond_18
-    new-instance v37, Landroid/content/Intent;
+    new-instance v34, Landroid/content/Intent;
 
     const-class v2, Lcom/android/bluetooth/opp/BluetoothOppTransferActivity;
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v17
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string/jumbo v2, "count"
-
-    move-object/from16 v0, v37
-
-    move/from16 v1, v43
-
-    invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
     const/high16 v2, 0x50000000
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v3}, Landroid/content/Intent;->setDataAndNormalize(Landroid/net/Uri;)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v37
+    move-object/from16 v1, v34
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
@@ -1085,7 +1033,7 @@
     :cond_19
     const-string/jumbo v2, "android.btopp.intent.action.OPEN_OUTBOUND_FAILED"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1102,19 +1050,19 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1a
-    new-instance v37, Landroid/content/Intent;
+    new-instance v34, Landroid/content/Intent;
 
     const-class v2, Lcom/android/bluetooth/opp/BluetoothOppTransferHistory;
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v17
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     const/high16 v2, 0x14000000
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
@@ -1122,7 +1070,7 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1130,13 +1078,13 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v37
+    move-object/from16 v1, v34
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
@@ -1145,7 +1093,7 @@
     :cond_1b
     const-string/jumbo v2, "android.btopp.intent.action.OPEN_OUTBOUND_SUCCESSFUL"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1162,19 +1110,19 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1c
-    new-instance v37, Landroid/content/Intent;
+    new-instance v34, Landroid/content/Intent;
 
     const-class v2, Lcom/android/bluetooth/opp/BluetoothOppTransferHistory;
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v17
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     const/high16 v2, 0x14000000
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
@@ -1182,7 +1130,7 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1190,13 +1138,13 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v37
+    move-object/from16 v1, v34
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
@@ -1205,7 +1153,7 @@
     :cond_1d
     const-string/jumbo v2, "android.btopp.intent.action.OPEN_INBOUND_FAILED"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1222,19 +1170,19 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1e
-    new-instance v37, Landroid/content/Intent;
+    new-instance v34, Landroid/content/Intent;
 
     const-class v2, Lcom/android/bluetooth/opp/BluetoothOppTransferHistory;
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v17
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     const/high16 v2, 0x14000000
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
@@ -1242,7 +1190,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1250,13 +1198,13 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v37
+    move-object/from16 v1, v34
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
@@ -1265,7 +1213,7 @@
     :cond_1f
     const-string/jumbo v2, "android.btopp.intent.action.OPEN_INBOUND_SUCCESSFUL"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1282,19 +1230,19 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_20
-    new-instance v37, Landroid/content/Intent;
+    new-instance v34, Landroid/content/Intent;
 
     const-class v2, Lcom/android/bluetooth/opp/BluetoothOppTransferHistory;
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v17
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     const/high16 v2, 0x14000000
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
@@ -1302,7 +1250,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1310,13 +1258,13 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v37
+    move-object/from16 v1, v34
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
@@ -1325,7 +1273,7 @@
     :cond_21
     const-string/jumbo v2, "android.btopp.intent.action.OPEN_RECEIVED_FILES"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1342,19 +1290,19 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_22
-    new-instance v37, Landroid/content/Intent;
+    new-instance v34, Landroid/content/Intent;
 
     const-class v2, Lcom/android/bluetooth/opp/BluetoothOppTransferHistory;
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v17
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     const/high16 v2, 0x14000000
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
@@ -1362,7 +1310,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1370,13 +1318,13 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v37
+    move-object/from16 v0, v34
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v37
+    move-object/from16 v1, v34
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
@@ -1385,7 +1333,7 @@
     :cond_23
     const-string/jumbo v2, "android.btopp.intent.action.HIDE"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1422,29 +1370,29 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_24
-    invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v17 .. v17}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v8
+    move-result-object v4
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
-    move-result-object v9
+    move-result-object v5
 
-    const/4 v10, 0x0
+    const/4 v6, 0x0
 
-    const/4 v11, 0x0
+    const/4 v7, 0x0
 
-    const/4 v12, 0x0
+    const/4 v8, 0x0
 
-    const/4 v13, 0x0
+    const/4 v9, 0x0
 
-    invoke-virtual/range {v8 .. v13}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-virtual/range {v4 .. v9}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
-    move-result-object v22
+    move-result-object v19
 
-    if-eqz v22, :cond_4
+    if-eqz v19, :cond_5
 
-    invoke-interface/range {v22 .. v22}, Landroid/database/Cursor;->moveToFirst()Z
+    invoke-interface/range {v19 .. v19}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v2
 
@@ -1452,66 +1400,66 @@
 
     const-string/jumbo v2, "status"
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v19
 
     invoke-interface {v0, v2}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
-    move-result v46
+    move-result v42
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v19
 
-    move/from16 v1, v46
+    move/from16 v1, v42
 
     invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v45
+    move-result v41
 
     const-string/jumbo v2, "visibility"
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v19
 
     invoke-interface {v0, v2}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
-
-    move-result v57
-
-    move-object/from16 v0, v22
-
-    move/from16 v1, v57
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v56
-
-    const-string/jumbo v2, "confirm"
-
-    move-object/from16 v0, v22
-
-    invoke-interface {v0, v2}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
-
-    move-result v54
-
-    move-object/from16 v0, v22
-
-    move/from16 v1, v54
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v53
 
-    if-eqz v53, :cond_25
+    move-object/from16 v0, v19
+
+    move/from16 v1, v53
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v52
+
+    const-string/jumbo v2, "confirm"
+
+    move-object/from16 v0, v19
+
+    invoke-interface {v0, v2}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
+
+    move-result v50
+
+    move-object/from16 v0, v19
+
+    move/from16 v1, v50
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v49
+
+    if-eqz v49, :cond_25
 
     const/4 v2, 0x7
 
-    move/from16 v0, v53
+    move/from16 v0, v49
 
     if-ne v0, v2, :cond_26
 
     :cond_25
-    if-nez v56, :cond_26
+    if-nez v52, :cond_26
 
-    new-instance v55, Landroid/content/ContentValues;
+    new-instance v51, Landroid/content/ContentValues;
 
-    invoke-direct/range {v55 .. v55}, Landroid/content/ContentValues;-><init>()V
+    invoke-direct/range {v51 .. v51}, Landroid/content/ContentValues;-><init>()V
 
     const-string/jumbo v2, "visibility"
 
@@ -1521,11 +1469,11 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v55
+    move-object/from16 v0, v51
 
     invoke-virtual {v0, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v17 .. v17}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1537,7 +1485,7 @@
 
     const/4 v6, 0x0
 
-    move-object/from16 v0, v55
+    move-object/from16 v0, v51
 
     invoke-virtual {v2, v4, v0, v5, v6}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
@@ -1552,14 +1500,14 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_26
-    invoke-interface/range {v22 .. v22}, Landroid/database/Cursor;->close()V
+    invoke-interface/range {v19 .. v19}, Landroid/database/Cursor;->close()V
 
     goto/16 :goto_0
 
     :cond_27
     const-string/jumbo v2, "com.samsung.btopp.intent.action.HIDE_COMPLETE_INBOUND"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1576,9 +1524,9 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_28
-    new-instance v52, Landroid/content/ContentValues;
+    new-instance v48, Landroid/content/ContentValues;
 
-    invoke-direct/range {v52 .. v52}, Landroid/content/ContentValues;-><init>()V
+    invoke-direct/range {v48 .. v48}, Landroid/content/ContentValues;-><init>()V
 
     const-string/jumbo v2, "visibility"
 
@@ -1588,15 +1536,15 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v52
+    move-object/from16 v0, v48
 
     invoke-virtual {v0, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    new-instance v19, Landroid/content/Intent;
+    new-instance v16, Landroid/content/Intent;
 
     const-string/jumbo v2, "android.btopp.intent.action.HIDE_COMPLETE_CLEAR"
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -1604,7 +1552,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1612,7 +1560,7 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1620,17 +1568,17 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v19
+    move-object/from16 v1, v16
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v17 .. v17}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1640,7 +1588,7 @@
 
     const/4 v6, 0x0
 
-    move-object/from16 v0, v52
+    move-object/from16 v0, v48
 
     invoke-virtual {v2, v4, v0, v5, v6}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
@@ -1649,7 +1597,7 @@
     :cond_29
     const-string/jumbo v2, "com.samsung.btopp.intent.action.HIDE_COMPLETE_OUTBOUND"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1666,9 +1614,9 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2a
-    new-instance v52, Landroid/content/ContentValues;
+    new-instance v48, Landroid/content/ContentValues;
 
-    invoke-direct/range {v52 .. v52}, Landroid/content/ContentValues;-><init>()V
+    invoke-direct/range {v48 .. v48}, Landroid/content/ContentValues;-><init>()V
 
     const-string/jumbo v2, "visibility"
 
@@ -1678,15 +1626,15 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v52
+    move-object/from16 v0, v48
 
     invoke-virtual {v0, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    new-instance v19, Landroid/content/Intent;
+    new-instance v16, Landroid/content/Intent;
 
     const-string/jumbo v2, "android.btopp.intent.action.HIDE_COMPLETE_CLEAR"
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -1694,7 +1642,7 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1702,7 +1650,7 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1710,17 +1658,17 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v19
+    move-object/from16 v1, v16
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v17 .. v17}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1730,7 +1678,7 @@
 
     const/4 v6, 0x0
 
-    move-object/from16 v0, v52
+    move-object/from16 v0, v48
 
     invoke-virtual {v2, v4, v0, v5, v6}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
@@ -1739,7 +1687,7 @@
     :cond_2b
     const-string/jumbo v2, "com.samsung.btopp.intent.action.HIDE_FAILED_INBOUND"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1756,9 +1704,9 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2c
-    new-instance v52, Landroid/content/ContentValues;
+    new-instance v48, Landroid/content/ContentValues;
 
-    invoke-direct/range {v52 .. v52}, Landroid/content/ContentValues;-><init>()V
+    invoke-direct/range {v48 .. v48}, Landroid/content/ContentValues;-><init>()V
 
     const-string/jumbo v2, "visibility"
 
@@ -1768,15 +1716,15 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v52
+    move-object/from16 v0, v48
 
     invoke-virtual {v0, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    new-instance v19, Landroid/content/Intent;
+    new-instance v16, Landroid/content/Intent;
 
     const-string/jumbo v2, "android.btopp.intent.action.HIDE_COMPLETE_CLEAR"
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -1784,7 +1732,7 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
@@ -1792,7 +1740,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1800,17 +1748,17 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v19
+    move-object/from16 v1, v16
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v17 .. v17}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1820,7 +1768,7 @@
 
     const/4 v6, 0x0
 
-    move-object/from16 v0, v52
+    move-object/from16 v0, v48
 
     invoke-virtual {v2, v4, v0, v5, v6}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
@@ -1829,7 +1777,7 @@
     :cond_2d
     const-string/jumbo v2, "com.samsung.btopp.intent.action.HIDE_FAILED_OUTBOUND"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1846,9 +1794,9 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2e
-    new-instance v52, Landroid/content/ContentValues;
+    new-instance v48, Landroid/content/ContentValues;
 
-    invoke-direct/range {v52 .. v52}, Landroid/content/ContentValues;-><init>()V
+    invoke-direct/range {v48 .. v48}, Landroid/content/ContentValues;-><init>()V
 
     const-string/jumbo v2, "visibility"
 
@@ -1858,15 +1806,15 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v52
+    move-object/from16 v0, v48
 
     invoke-virtual {v0, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    new-instance v19, Landroid/content/Intent;
+    new-instance v16, Landroid/content/Intent;
 
     const-string/jumbo v2, "android.btopp.intent.action.HIDE_COMPLETE_CLEAR"
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -1874,7 +1822,7 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1882,7 +1830,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -1890,17 +1838,17 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v19
+    move-object/from16 v1, v16
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v17 .. v17}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1910,7 +1858,7 @@
 
     const/4 v6, 0x0
 
-    move-object/from16 v0, v52
+    move-object/from16 v0, v48
 
     invoke-virtual {v2, v4, v0, v5, v6}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
@@ -1919,7 +1867,7 @@
     :cond_2f
     const-string/jumbo v2, "android.btopp.intent.action.TRANSFER_COMPLETE"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1964,7 +1912,7 @@
 
     new-instance v2, Lcom/android/bluetooth/opp/BluetoothOppNotification;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-direct {v2, v0}, Lcom/android/bluetooth/opp/BluetoothOppNotification;-><init>(Landroid/content/Context;)V
 
@@ -1983,23 +1931,23 @@
 
     move-result-object v3
 
-    const/16 v49, 0x0
+    const/16 v45, 0x0
 
-    new-instance v50, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;
+    new-instance v46, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;
 
-    invoke-direct/range {v50 .. v50}, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;-><init>()V
+    invoke-direct/range {v46 .. v46}, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;-><init>()V
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
     move-result-object v2
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-static {v0, v2}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->queryRecord(Landroid/content/Context;Landroid/net/Uri;)Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;
 
-    move-result-object v50
+    move-result-object v46
 
-    if-nez v50, :cond_32
+    if-nez v46, :cond_32
 
     const-string/jumbo v2, "BluetoothOppReceiver"
 
@@ -2026,7 +1974,7 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-boolean v5, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mHandoverInitiated:Z
 
@@ -2041,13 +1989,13 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_33
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-boolean v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mHandoverInitiated:Z
 
     if-nez v2, :cond_34
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mStatus:I
 
@@ -2057,32 +2005,32 @@
 
     if-eqz v2, :cond_36
 
-    const/16 v51, 0x0
+    const/16 v47, 0x0
 
     :goto_6
-    new-instance v19, Landroid/content/Intent;
+    new-instance v16, Landroid/content/Intent;
 
     const-string/jumbo v2, "android.btopp.intent.action.HIDE_COMPLETE_CLEAR"
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     const-string/jumbo v2, "direction"
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDirection:I
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     const-string/jumbo v2, "status"
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
-    move/from16 v1, v51
+    move/from16 v1, v47
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -2090,24 +2038,24 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v16
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v19
+    move-object/from16 v1, v16
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     :cond_34
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-boolean v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mHandoverInitiated:Z
 
     if-eqz v2, :cond_3b
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDirection:I
 
@@ -2126,11 +2074,11 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_35
-    new-instance v34, Landroid/content/Intent;
+    new-instance v31, Landroid/content/Intent;
 
     const-string/jumbo v2, "android.nfc.handover.intent.action.TRANSFER_PROGRESS"
 
-    move-object/from16 v0, v34
+    move-object/from16 v0, v31
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -2138,17 +2086,17 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v34
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     const-string/jumbo v2, "android.nfc.handover.intent.extra.TRANSFER_ID"
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mID:I
 
-    move-object/from16 v0, v34
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -2156,25 +2104,25 @@
 
     const/high16 v4, 0x3f800000    # 1.0f
 
-    move-object/from16 v0, v34
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;F)Landroid/content/Intent;
 
     const-string/jumbo v2, "android.nfc.handover.intent.extra.ADDRESS"
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDestAddr:Ljava/lang/String;
 
-    move-object/from16 v0, v34
+    move-object/from16 v0, v31
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string/jumbo v2, "android.permission.NFC_HANDOVER_STATUS"
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v34
+    move-object/from16 v1, v31
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
@@ -2192,24 +2140,24 @@
 
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v36
+    move-result-object v33
 
     :goto_7
-    invoke-interface/range {v36 .. v36}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface/range {v33 .. v33}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-eqz v2, :cond_37
 
-    invoke-interface/range {v36 .. v36}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface/range {v33 .. v33}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v35
+    move-result-object v32
 
-    check-cast v35, Ljava/lang/Integer;
+    check-cast v32, Ljava/lang/Integer;
 
     new-instance v2, Landroid/os/UserHandle;
 
-    invoke-virtual/range {v35 .. v35}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual/range {v32 .. v32}, Ljava/lang/Integer;->intValue()I
 
     move-result v4
 
@@ -2217,29 +2165,29 @@
 
     const-string/jumbo v4, "android.permission.NFC_HANDOVER_STATUS"
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v34
+    move-object/from16 v1, v31
 
     invoke-virtual {v0, v1, v2, v4}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
 
     goto :goto_7
 
     :cond_36
-    const/16 v51, 0x1
+    const/16 v47, 0x1
 
     goto/16 :goto_6
 
     :cond_37
-    new-instance v33, Landroid/content/Intent;
+    new-instance v30, Landroid/content/Intent;
 
     const-string/jumbo v2, "android.nfc.handover.intent.action.TRANSFER_DONE"
 
-    move-object/from16 v0, v33
+    move-object/from16 v0, v30
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDirection:I
 
@@ -2251,32 +2199,32 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v33
+    move-object/from16 v0, v30
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     :goto_8
     const-string/jumbo v2, "android.nfc.handover.intent.extra.TRANSFER_ID"
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mID:I
 
-    move-object/from16 v0, v33
+    move-object/from16 v0, v30
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     const-string/jumbo v2, "android.nfc.handover.intent.extra.ADDRESS"
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDestAddr:Ljava/lang/String;
 
-    move-object/from16 v0, v33
+    move-object/from16 v0, v30
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mStatus:I
 
@@ -2290,36 +2238,36 @@
 
     const/4 v4, 0x0
 
-    move-object/from16 v0, v33
+    move-object/from16 v0, v30
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     const-string/jumbo v2, "android.nfc.handover.intent.extra.TRANSFER_URI"
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mFileName:Ljava/lang/String;
 
-    move-object/from16 v0, v33
+    move-object/from16 v0, v30
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string/jumbo v2, "android.nfc.handover.intent.extra.TRANSFER_MIME_TYPE"
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mFileType:Ljava/lang/String;
 
-    move-object/from16 v0, v33
+    move-object/from16 v0, v30
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     :goto_9
     const-string/jumbo v2, "android.permission.NFC_HANDOVER_STATUS"
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v33
+    move-object/from16 v1, v30
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
@@ -2337,24 +2285,24 @@
 
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v36
+    move-result-object v33
 
     :goto_a
-    invoke-interface/range {v36 .. v36}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface/range {v33 .. v33}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-eqz v2, :cond_3a
 
-    invoke-interface/range {v36 .. v36}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface/range {v33 .. v33}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v35
+    move-result-object v32
 
-    check-cast v35, Ljava/lang/Integer;
+    check-cast v32, Ljava/lang/Integer;
 
     new-instance v2, Landroid/os/UserHandle;
 
-    invoke-virtual/range {v35 .. v35}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual/range {v32 .. v32}, Ljava/lang/Integer;->intValue()I
 
     move-result v4
 
@@ -2362,9 +2310,9 @@
 
     const-string/jumbo v4, "android.permission.NFC_HANDOVER_STATUS"
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v33
+    move-object/from16 v1, v30
 
     invoke-virtual {v0, v1, v2, v4}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
 
@@ -2375,7 +2323,7 @@
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v33
+    move-object/from16 v0, v30
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -2384,11 +2332,11 @@
     :cond_39
     const-string/jumbo v2, "android.nfc.handover.intent.extra.TRANSFER_STATUS"
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mStatus:I
 
-    move-object/from16 v0, v33
+    move-object/from16 v0, v30
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -2398,7 +2346,7 @@
     return-void
 
     :cond_3b
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mStatus:I
 
@@ -2408,7 +2356,7 @@
 
     if-eqz v2, :cond_43
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDirection:I
 
@@ -2418,7 +2366,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mFileName:Ljava/lang/String;
 
@@ -2428,15 +2376,15 @@
 
     const v4, 0x7f0a0027
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v4, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v49
+    move-result-object v45
 
     :cond_3c
     :goto_b
-    const-string/jumbo v47, "Failed"
+    const-string/jumbo v43, "Failed"
 
     const-string/jumbo v2, "BluetoothOppReceiver"
 
@@ -2470,7 +2418,7 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mStatus:I
 
@@ -2480,7 +2428,7 @@
 
     if-eqz v2, :cond_3e
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDirection:I
 
@@ -2506,17 +2454,17 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v50
+    move-object/from16 v1, v46
 
     invoke-static {v0, v1, v3}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->autoImportVCard(Landroid/content/Context;Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;Landroid/net/Uri;)V
 
     :cond_3d
-    const-string/jumbo v47, "Completed"
+    const-string/jumbo v43, "Completed"
 
     :cond_3e
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mStatus:I
 
@@ -2526,7 +2474,7 @@
 
     if-eqz v2, :cond_40
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDirection:I
 
@@ -2536,11 +2484,11 @@
 
     const v2, 0x7f0a0054
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object v49
+    move-result-object v45
 
     sget-boolean v2, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->V:Z
 
@@ -2558,7 +2506,7 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v49
+    move-object/from16 v0, v45
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2571,13 +2519,13 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3f
-    if-eqz v49, :cond_40
+    if-eqz v45, :cond_40
 
     const/4 v2, 0x0
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v49
+    move-object/from16 v1, v45
 
     invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
@@ -2586,15 +2534,15 @@
     invoke-virtual {v2}, Landroid/widget/Toast;->show()V
 
     :cond_40
-    invoke-static/range {v20 .. v20}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->isBluetoothLogEnabled(Landroid/content/Context;)Z
+    invoke-static/range {v17 .. v17}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->isBluetoothLogEnabled(Landroid/content/Context;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_5
 
-    const-string/jumbo v27, "Sent"
+    const-string/jumbo v24, "Sent"
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDirection:I
 
@@ -2602,24 +2550,24 @@
 
     if-ne v2, v4, :cond_41
 
-    const-string/jumbo v27, "Received"
+    const-string/jumbo v24, "Received"
 
     :cond_41
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
-    iget-object v9, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mFileUri:Ljava/lang/String;
+    iget-object v5, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mFileUri:Ljava/lang/String;
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
-    iget-object v10, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mFileName:Ljava/lang/String;
+    iget-object v6, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mFileName:Ljava/lang/String;
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
-    iget-object v11, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDeviceName:Ljava/lang/String;
+    iget-object v7, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDeviceName:Ljava/lang/String;
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
-    iget-object v12, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDestAddr:Ljava/lang/String;
+    iget-object v8, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDestAddr:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2631,7 +2579,7 @@
 
     move-result-object v2
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v24
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2643,7 +2591,7 @@
 
     move-result-object v2
 
-    move-object/from16 v0, v47
+    move-object/from16 v0, v43
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2651,16 +2599,16 @@
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v9
 
-    move-object/from16 v8, v20
+    move-object/from16 v4, v17
 
-    invoke-static/range {v8 .. v13}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->logOppConnection(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static/range {v4 .. v9}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->logOppConnection(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
     :cond_42
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDirection:I
 
@@ -2672,7 +2620,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mFileName:Ljava/lang/String;
 
@@ -2682,16 +2630,16 @@
 
     const v4, 0x7f0a0024
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v4, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v49
+    move-result-object v45
 
     goto/16 :goto_b
 
     :cond_43
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mStatus:I
 
@@ -2701,7 +2649,7 @@
 
     if-eqz v2, :cond_3c
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDirection:I
 
@@ -2711,7 +2659,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget-object v4, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mFileName:Ljava/lang/String;
 
@@ -2721,16 +2669,16 @@
 
     const v4, 0x7f0a0029
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v4, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v49
+    move-result-object v45
 
     goto/16 :goto_b
 
     :cond_44
-    move-object/from16 v0, v50
+    move-object/from16 v0, v46
 
     iget v2, v0, Lcom/android/bluetooth/opp/BluetoothOppTransferInfo;->mDirection:I
 
@@ -2740,18 +2688,18 @@
 
     const v2, 0x7f0a0035
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object v49
+    move-result-object v45
 
     goto/16 :goto_b
 
     :cond_45
     const-string/jumbo v2, "com.samsung.btopp.intent.action.MSG_SESSION_COMPLETE"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -2768,7 +2716,7 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_46
-    const/16 v49, 0x0
+    const/16 v45, 0x0
 
     const-string/jumbo v2, "Direction"
 
@@ -2776,17 +2724,17 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->getExtra(Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result-object v48
+    move-result-object v44
 
-    check-cast v48, Ljava/lang/String;
+    check-cast v44, Ljava/lang/String;
 
-    invoke-static/range {v48 .. v48}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+    invoke-static/range {v44 .. v44}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
-    move-result v26
+    move-result v23
 
     sget-boolean v2, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->V:Z
 
@@ -2804,7 +2752,7 @@
 
     move-result-object v4
 
-    move/from16 v0, v26
+    move/from16 v0, v23
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2821,15 +2769,15 @@
 
     if-nez v2, :cond_4c
 
-    if-nez v26, :cond_4b
+    if-nez v23, :cond_4b
 
     const v2, 0x7f0a0057
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object v49
+    move-result-object v45
 
     :goto_c
     sget-boolean v2, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->V:Z
@@ -2848,7 +2796,7 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v49
+    move-object/from16 v0, v45
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2862,13 +2810,13 @@
 
     :cond_48
     :goto_d
-    if-eqz v49, :cond_49
+    if-eqz v45, :cond_49
 
     const/4 v2, 0x0
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v49
+    move-object/from16 v1, v45
 
     invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
@@ -2885,7 +2833,7 @@
 
     new-instance v2, Lcom/android/bluetooth/opp/BluetoothOppNotification;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-direct {v2, v0}, Lcom/android/bluetooth/opp/BluetoothOppNotification;-><init>(Landroid/content/Context;)V
 
@@ -2905,11 +2853,11 @@
     :cond_4b
     const v2, 0x7f0a0056
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object v49
+    move-result-object v45
 
     goto :goto_c
 
@@ -2923,7 +2871,7 @@
     :cond_4d
     const-string/jumbo v2, "com.samsung.btopp.intent.action.MSG_SESSION_ERROR"
 
-    invoke-virtual {v15, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -2940,7 +2888,7 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4e
-    const/16 v49, 0x0
+    const/16 v45, 0x0
 
     const-string/jumbo v2, "Direction"
 
@@ -2948,17 +2896,17 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->getExtra(Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result-object v48
+    move-result-object v44
 
-    check-cast v48, Ljava/lang/String;
+    check-cast v44, Ljava/lang/String;
 
-    invoke-static/range {v48 .. v48}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+    invoke-static/range {v44 .. v44}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
-    move-result v26
+    move-result v23
 
     sget-boolean v2, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->V:Z
 
@@ -2976,7 +2924,7 @@
 
     move-result-object v4
 
-    move/from16 v0, v26
+    move/from16 v0, v23
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2989,7 +2937,7 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4f
-    if-nez v26, :cond_50
+    if-nez v23, :cond_50
 
     sget-boolean v2, Lcom/android/bluetooth/opp/Constants;->mAdvancedOppUsing:Z
 
@@ -3014,7 +2962,7 @@
 
     new-instance v2, Lcom/android/bluetooth/opp/BluetoothOppNotification;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-direct {v2, v0}, Lcom/android/bluetooth/opp/BluetoothOppNotification;-><init>(Landroid/content/Context;)V
 
@@ -3034,11 +2982,11 @@
     :cond_53
     const v2, 0x7f0a0055
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object v49
+    move-result-object v45
 
     sget-boolean v2, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->V:Z
 
@@ -3056,7 +3004,7 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v49
+    move-object/from16 v0, v45
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3069,13 +3017,13 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_54
-    if-eqz v49, :cond_51
+    if-eqz v45, :cond_51
 
     const/4 v2, 0x0
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
-    move-object/from16 v1, v49
+    move-object/from16 v1, v45
 
     invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
@@ -3088,7 +3036,7 @@
     :cond_55
     const-string/jumbo v2, "android.intent.action.LOCALE_CHANGED"
 
-    invoke-virtual {v2, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -3113,7 +3061,7 @@
 
     new-instance v2, Lcom/android/bluetooth/opp/BluetoothOppNotification;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-direct {v2, v0}, Lcom/android/bluetooth/opp/BluetoothOppNotification;-><init>(Landroid/content/Context;)V
 
@@ -3133,7 +3081,7 @@
     :cond_58
     const-string/jumbo v2, "com.samsung.intent.action.SETTINGS_SOFT_RESET"
 
-    invoke-virtual {v2, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -3150,15 +3098,15 @@
     invoke-static {v2, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_59
-    const/16 v23, 0x0
+    const/16 v20, 0x0
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v17 .. v17}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
     if-eqz v2, :cond_5a
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v17 .. v17}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -3170,12 +3118,12 @@
 
     invoke-virtual {v2, v4, v5, v6}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
-    move-result v23
+    move-result v20
 
     :cond_5a
     sget-boolean v2, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->V:Z
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_5
 
     const-string/jumbo v2, "BluetoothOppReceiver"
 
@@ -3189,7 +3137,7 @@
 
     move-result-object v4
 
-    move/from16 v0, v23
+    move/from16 v0, v20
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3206,24 +3154,24 @@
     :cond_5b
     const-string/jumbo v2, "android.intent.action.BOOT_COMPLETED"
 
-    invoke-virtual {v2, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_5
 
-    const/16 v44, 0x0
+    const/16 v40, 0x0
 
-    const/16 v31, 0x0
+    const/16 v28, 0x0
 
-    const/16 v41, 0x0
+    const/16 v38, 0x0
 
     :try_start_7
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
+    invoke-virtual/range {v17 .. v17}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
     move-result-object v4
 
@@ -3243,13 +3191,13 @@
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v44
+    move-result-object v40
 
-    new-instance v32, Ljava/io/File;
+    new-instance v29, Ljava/io/File;
 
-    move-object/from16 v0, v32
+    move-object/from16 v0, v29
 
-    move-object/from16 v1, v44
+    move-object/from16 v1, v40
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
     :try_end_7
@@ -3273,7 +3221,7 @@
 
     move-result-object v4
 
-    move-object/from16 v0, v44
+    move-object/from16 v0, v40
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3286,7 +3234,7 @@
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_5c
-    invoke-virtual/range {v32 .. v32}, Ljava/io/File;->exists()Z
+    invoke-virtual/range {v29 .. v29}, Ljava/io/File;->exists()Z
 
     move-result v2
 
@@ -3307,21 +3255,21 @@
 
     :cond_5d
     :goto_f
-    if-eqz v41, :cond_4
+    if-eqz v38, :cond_5
 
     :try_start_9
-    invoke-virtual/range {v41 .. v41}, Ljava/io/FileOutputStream;->close()V
+    invoke-virtual/range {v38 .. v38}, Ljava/io/FileOutputStream;->close()V
     :try_end_9
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_2
 
     goto/16 :goto_0
 
     :catch_2
-    move-exception v14
+    move-exception v10
 
     const-string/jumbo v2, "BluetoothOppReceiver"
 
-    invoke-virtual {v14}, Ljava/io/IOException;->toString()Ljava/lang/String;
+    invoke-virtual {v10}, Ljava/io/IOException;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -3333,39 +3281,35 @@
     const/4 v2, 0x1
 
     :try_start_a
-    new-array v0, v2, [B
-
-    move-object/from16 v17, v0
+    new-array v14, v2, [B
 
     const/4 v2, 0x0
 
     const/4 v4, 0x0
 
-    aput-byte v2, v17, v4
+    aput-byte v2, v14, v4
 
-    invoke-virtual/range {v32 .. v32}, Ljava/io/File;->getName()Ljava/lang/String;
+    invoke-virtual/range {v29 .. v29}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v2
 
     const v4, 0x8000
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Context;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
 
-    move-result-object v41
+    move-result-object v38
 
     const/4 v2, 0x0
 
     const/4 v4, 0x1
 
-    move-object/from16 v0, v41
+    move-object/from16 v0, v38
 
-    move-object/from16 v1, v17
+    invoke-virtual {v0, v14, v2, v4}, Ljava/io/FileOutputStream;->write([BII)V
 
-    invoke-virtual {v0, v1, v2, v4}, Ljava/io/FileOutputStream;->write([BII)V
-
-    invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v17 .. v17}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -3377,7 +3321,7 @@
 
     invoke-virtual {v2, v4, v5, v6}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
-    move-result v24
+    move-result v21
 
     sget-boolean v2, Lcom/android/bluetooth/opp/BluetoothOppReceiver;->D:Z
 
@@ -3395,7 +3339,7 @@
 
     move-result-object v4
 
-    move/from16 v0, v24
+    move/from16 v0, v21
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3416,7 +3360,7 @@
 
     new-instance v2, Lcom/android/bluetooth/opp/BluetoothOppNotification;
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v17
 
     invoke-direct {v2, v0}, Lcom/android/bluetooth/opp/BluetoothOppNotification;-><init>(Landroid/content/Context;)V
 
@@ -3437,15 +3381,15 @@
     goto :goto_f
 
     :catch_3
-    move-exception v29
+    move-exception v26
 
-    move-object/from16 v31, v32
+    move-object/from16 v28, v29
 
     :goto_10
     :try_start_b
     const-string/jumbo v2, "BluetoothOppReceiver"
 
-    invoke-virtual/range {v29 .. v29}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual/range {v26 .. v26}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -3453,21 +3397,21 @@
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_2
 
-    if-eqz v41, :cond_4
+    if-eqz v38, :cond_5
 
     :try_start_c
-    invoke-virtual/range {v41 .. v41}, Ljava/io/FileOutputStream;->close()V
+    invoke-virtual/range {v38 .. v38}, Ljava/io/FileOutputStream;->close()V
     :try_end_c
     .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_4
 
     goto/16 :goto_0
 
     :catch_4
-    move-exception v14
+    move-exception v10
 
     const-string/jumbo v2, "BluetoothOppReceiver"
 
-    invoke-virtual {v14}, Ljava/io/IOException;->toString()Ljava/lang/String;
+    invoke-virtual {v10}, Ljava/io/IOException;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -3479,10 +3423,10 @@
     move-exception v2
 
     :goto_11
-    if-eqz v41, :cond_61
+    if-eqz v38, :cond_61
 
     :try_start_d
-    invoke-virtual/range {v41 .. v41}, Ljava/io/FileOutputStream;->close()V
+    invoke-virtual/range {v38 .. v38}, Ljava/io/FileOutputStream;->close()V
     :try_end_d
     .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_5
 
@@ -3491,11 +3435,11 @@
     throw v2
 
     :catch_5
-    move-exception v14
+    move-exception v10
 
     const-string/jumbo v4, "BluetoothOppReceiver"
 
-    invoke-virtual {v14}, Ljava/io/IOException;->toString()Ljava/lang/String;
+    invoke-virtual {v10}, Ljava/io/IOException;->toString()Ljava/lang/String;
 
     move-result-object v5
 
@@ -3506,12 +3450,12 @@
     :catchall_3
     move-exception v2
 
-    move-object/from16 v31, v32
+    move-object/from16 v28, v29
 
     goto :goto_11
 
     :catch_6
-    move-exception v29
+    move-exception v26
 
     goto :goto_10
 .end method

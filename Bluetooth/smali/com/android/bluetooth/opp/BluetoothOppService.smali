@@ -2379,7 +2379,7 @@
 .end method
 
 .method private shouldScanFile(I)Z
-    .locals 5
+    .locals 4
 
     const/4 v1, 0x1
 
@@ -2426,12 +2426,6 @@
     return v1
 
     :cond_3
-    iget v3, v0, Lcom/android/bluetooth/opp/BluetoothOppShareInfo;->mConfirm:I
-
-    const/4 v4, 0x5
-
-    if-eq v3, v4, :cond_1
-
     const-string/jumbo v2, "text/x-vcard"
 
     iget-object v3, v0, Lcom/android/bluetooth/opp/BluetoothOppShareInfo;->mMimetype:Ljava/lang/String;
@@ -2502,21 +2496,6 @@
 .method private startSocketListener()V
     .locals 2
 
-    invoke-static {}, Lcom/android/bluetooth/opp/BluetoothOppUtility;->isSupportedOppbySecureModePolicy()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const-string/jumbo v0, "BtOppService"
-
-    const-string/jumbo v1, "OPP socket lesten is blocked by Secure Mode Policy"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    :cond_0
     iget-object v0, p0, Lcom/android/bluetooth/opp/BluetoothOppService;->mSocketListener:Lcom/android/bluetooth/opp/BluetoothOppRfcommListener;
 
     iget-object v1, p0, Lcom/android/bluetooth/opp/BluetoothOppService;->mHandler:Landroid/os/Handler;
@@ -2525,7 +2504,7 @@
 
     sget-boolean v0, Lcom/android/bluetooth/opp/BluetoothOppService;->V:Z
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     const-string/jumbo v0, "BtOppService"
 
@@ -2533,7 +2512,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_1
+    :cond_0
     return-void
 .end method
 

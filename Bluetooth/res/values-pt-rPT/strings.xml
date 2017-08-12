@@ -51,7 +51,7 @@
     <string name="download_fail_ok">OK</string>
     <string name="download_succ_line5">Ficheiro recebido</string>
     <string name="download_succ_ok">Abrir</string>
-    <string name="upload_line1">Para: %s</string>
+    <string name="upload_line1">Para: %1$s</string>
     <string name="upload_line3_nofilesize">Tipo de ficheiro: %s</string>
     <string name="upload_line3">Tipo de ficheiro: %1$s (%2$s)</string>
     <string name="upload_line5">Enviar ficheiro…</string>
@@ -106,7 +106,6 @@
     <string name="status_protocol_error">Não é possível processar o pedido corretamente.</string>
     <string name="status_unknown_error">Erro desconhecido.</string>
     <string name="btopp_live_folder">Ficheiros recebidos</string>
-    <string name="bt_adv_opp_switch">Mudado automaticamente de Bluetooth para Wi-Fi Direct, para partilha rápida de ficheiros.</string>
     <string name="download_success">%s recebidos</string>
     <string name="upload_success">%s enviados</string>
     <string name="inbound_history_title">Transferências de entrada</string>
@@ -124,8 +123,8 @@
     <string name="transfer_clear_dlg_title">Limpar</string>
     <string name="transfer_clear_btn">Limpar</string>
     <string name="connection_request_inactive_nap">%s está a pedir para ancorar no seu telefone.</string>
-    <string name="allow_conn_req_inactive_nap">Permitir</string>
-    <string name="deny_conn_req_inactive_nap">Recusar</string>
+    <string name="allow_conn_req_inactive_nap">OK</string>
+    <string name="deny_conn_req_inactive_nap">Cancelar</string>
     <string name="bluetooth_tether_request">Permitir ancoragem Bluetooth?</string>
     <string name="bluetooth_tether_connected">Ligado a %s para aceder à ligação de Internet.</string>
     <string name="bluetooth_pan_nap_connecting_error_message">Impossível ligar ao %s.</string>
@@ -145,16 +144,6 @@
     <string name="bluetooth_a2dp_playing_via_device">Áudio a ser reproduzido automaticamente via %s…</string>
     <string name="bluetooth_a2dp_sound_glitches">Anomalias de som detectadas</string>
     <string name="bluetooth_a2dp_turn_off_uhq_upscaler">Tocar aqui para desligar o UHQ upscaler.</string>
-    <string name="bluetooth_dual_play_title">Áudio dual</string>
-    <string name="bluetooth_dual_play_content">Estão ligados 2 dispositivos Bluetooth. Para ligar o Áudio dual, aceda a Definições.</string>
-    <string name="settings">Definições</string>
-    <string name="bluetooth_dual_play_ongoing_title">Áudio dual ligado</string>
-    <string name="bluetooth_dual_play_ongoing_content">Áudio reproduzido em 2 dispositivos Bluetooth ligados.</string>
-    <string name="bluetooth_avc_title">Controlar volume</string>
-    <string name="bluetooth_avc_content">Pode utilizar a Sincronização de volume multimédia, para sincronizar o volume do seu telefone e o dispositivo Bluetooth ligado.</string>
-    <string name="bluetooth_avc_content_vzw">Pode sincronizar o volume do seu telefone e o dispositivo Bluetooth ligado utilizando a Sincronização de Volume Multimédia.</string>
-    <string name="bluetooth_avc_earshock_protection_title">Proteger a sua audição</string>
-    <string name="bluetooth_avc_earshock_protection_content">A exposição durante longos períodos de tempo ao Modo de sincronização de volume multimédia pode causar-lhe lesões auditivas. Pode ajustar o volume se o som estiver demasiado alto.</string>
     <string name="bluetooth_a2dpsink_sound_coming">O som da TV só pode ser reproduzido através dos auriculares com fios ou do altifalante do telefone.</string>
     <string name="pbap_session_key_dialog_title">Escreva a chave de sessão para %1$s</string>
     <string name="pbap_session_key_dialog_header">Necessária chave de sessão Bluetooth</string>
@@ -180,7 +169,7 @@
     <string name="bluetooth_notif_sap_message">O Bluetooth está ligado com %s.</string>
     <string name="bluetooth_remote_device">Dispositivo Bluetooth</string>
     <string name="hello">Olá mundo! Isto é um teste</string>
-    <string name="app_name">Bluetooth</string>
+    <string name="app_name">Partilha Bluetooth</string>
     <string name="insert_record">Inserir registo</string>
     <string name="update_record">Confirmar registo</string>
     <string name="ack_record">Registo de confirmação</string>

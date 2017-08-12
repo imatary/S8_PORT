@@ -166,7 +166,7 @@
     :cond_1
     iget-object v2, p0, Lcom/android/bluetooth/avrcp/Avrcp$MediaControllerCallbackHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v2
 
@@ -191,7 +191,7 @@
     :cond_2
     iget-object v2, p0, Lcom/android/bluetooth/avrcp/Avrcp$MediaControllerCallbackHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v2
 
@@ -200,7 +200,7 @@
     :cond_3
     iget-object v2, p0, Lcom/android/bluetooth/avrcp/Avrcp$MediaControllerCallbackHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v2
 
@@ -225,7 +225,7 @@
     :cond_4
     iget-object v2, p0, Lcom/android/bluetooth/avrcp/Avrcp$MediaControllerCallbackHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v2
 
@@ -234,7 +234,7 @@
     :cond_5
     iget-object v2, p0, Lcom/android/bluetooth/avrcp/Avrcp$MediaControllerCallbackHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v2
 
@@ -267,7 +267,7 @@
     :cond_6
     iget-object v2, p0, Lcom/android/bluetooth/avrcp/Avrcp$MediaControllerCallbackHandler;->this$0:Lcom/android/bluetooth/avrcp/Avrcp;
 
-    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get24(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
+    invoke-static {v2}, Lcom/android/bluetooth/avrcp/Avrcp;->-get23(Lcom/android/bluetooth/avrcp/Avrcp;)Lcom/android/bluetooth/avrcp/Avrcp$AvrcpMessageHandler;
 
     move-result-object v2
 
