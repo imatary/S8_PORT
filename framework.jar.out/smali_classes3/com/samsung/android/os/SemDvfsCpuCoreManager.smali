@@ -56,7 +56,7 @@
 
     const-string/jumbo v3, "isla"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -66,7 +66,7 @@
 
     const-string/jumbo v3, "carmen2"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

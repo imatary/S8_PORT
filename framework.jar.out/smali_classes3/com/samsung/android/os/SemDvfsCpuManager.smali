@@ -58,7 +58,7 @@
 
     const-string/jumbo v3, "hf"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -70,7 +70,7 @@
 
     :cond_1
     :goto_0
-    const-string/jumbo v3, "ssrm_dream2l_xx"
+    const-string/jumbo v3, "ssrm_hero2l_xx"
 
     const-string/jumbo v4, "lentis"
 
@@ -80,7 +80,7 @@
 
     if-nez v3, :cond_2
 
-    const-string/jumbo v3, "ssrm_dream2l_xx"
+    const-string/jumbo v3, "ssrm_hero2l_xx"
 
     const-string/jumbo v4, "kcat6"
 
@@ -92,7 +92,7 @@
 
     const-string/jumbo v3, "ta"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -147,7 +147,7 @@
     :cond_4
     const-string/jumbo v3, "hrl"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -162,7 +162,7 @@
     :cond_5
     const-string/jumbo v3, "island"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -170,7 +170,7 @@
 
     if-eqz v3, :cond_6
 
-    const-string/jumbo v3, "ssrm_dream2l_xx"
+    const-string/jumbo v3, "ssrm_hero2l_xx"
 
     const-string/jumbo v4, "novel"
 
@@ -187,7 +187,7 @@
     :cond_6
     const-string/jumbo v3, "hrq"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -197,7 +197,7 @@
 
     const-string/jumbo v3, "kf"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -207,7 +207,7 @@
 
     const-string/jumbo v3, "ka"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -217,7 +217,7 @@
 
     const-string/jumbo v3, "tr3ca"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -227,7 +227,7 @@
 
     const-string/jumbo v3, "zl"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -257,7 +257,7 @@
 
     const-string/jumbo v3, "zq"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -273,7 +273,7 @@
     :cond_8
     const-string/jumbo v3, "tf"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -314,7 +314,7 @@
     goto/16 :goto_0
 
     :cond_b
-    const-string/jumbo v3, "ssrm_dream2l_xx"
+    const-string/jumbo v3, "ssrm_hero2l_xx"
 
     const-string/jumbo v4, "ja_kor"
 
@@ -452,7 +452,7 @@
 
     const-string/jumbo v1, "ja"
 
-    const-string/jumbo v2, ""
+    const-string/jumbo v2, "hrl"
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

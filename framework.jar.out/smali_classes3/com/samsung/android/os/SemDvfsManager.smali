@@ -167,11 +167,11 @@
 
     iput-boolean v0, p0, Lcom/samsung/android/os/SemDvfsManager;->sIsDebugLevelHigh:Z
 
-    const-string/jumbo v0, ""
+    const-string/jumbo v0, "hrl"
 
     iput-object v0, p0, Lcom/samsung/android/os/SemDvfsManager;->BASE_MODEL:Ljava/lang/String;
 
-    const-string/jumbo v0, "ssrm_dream2l_xx"
+    const-string/jumbo v0, "ssrm_hero2l_xx"
 
     iput-object v0, p0, Lcom/samsung/android/os/SemDvfsManager;->SIOP_MODEL:Ljava/lang/String;
 
