@@ -56,7 +56,7 @@
 
     const-string/jumbo v3, "ha"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -66,7 +66,7 @@
 
     const-string/jumbo v3, "ka"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -76,7 +76,7 @@
 
     const-string/jumbo v3, "sa"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -86,7 +86,7 @@
 
     const-string/jumbo v3, "ta"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -96,7 +96,7 @@
 
     const-string/jumbo v3, "hrl"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -106,7 +106,7 @@
 
     const-string/jumbo v3, "hrq"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -181,7 +181,7 @@
     :cond_3
     const-string/jumbo v3, "zl"
 
-    const-string/jumbo v4, ""
+    const-string/jumbo v4, "hrl"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
