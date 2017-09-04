@@ -1333,7 +1333,7 @@ Versuchen Sie es in %2$d Sekunden erneut."</string>
     <string name="lock_to_app_toast">Um eine App zu lösen, drücken und halten Sie gleichzeitig die Tasten „Aktuelle Anwendungen“ und „Zurück“.</string>
     <string name="lock_to_app_toast_for_navibar">Um eine App zu lösen, berühren und halten Sie gleichzeitig die Schaltflächen „Aktuelle Anwendungen“ und „Zurück“ gedrückt.</string>
     <string name="lock_to_app_toast_accessible">Um das Anheften der Anwendung aufzuheben, halten Sie die Taste „Aktuelle Anwendungen“ gedrückt.</string>
-    <string name="lock_to_app_toast_accessible_for_navibar">To unpin app, touch and hold Recents button.</string>
+    <string name="lock_to_app_toast_accessible_for_navibar">Zum Lösen der App berühren und halten Sie die Schaltfläche „Aktuelle Anwendungen“.</string>
     <string name="lock_to_app_toast_locked">Der Modus „Auf App sperren“ wurde aktiviert.</string>
     <string name="lock_to_app_start">App angeheftet.</string>
     <string name="lock_to_app_exit">App gelöst.</string>
@@ -2047,6 +2047,7 @@ Offline-Modus einschalten?"</string>
     <string name="multisound_hun_change">Ändern</string>
     <string name="my_device">Eigenes Telefon</string>
     <string name="headset">Headset</string>
+    <string name="my_phone">Telefon</string>
     <string name="bixby_edgecase_mpsm">Bixby kann nicht verwendet werden, solange der maximale Energiesparmodus eingeschaltet ist.</string>
     <string name="bixby_edgecase_emergencymode">Bixby kann im Notfallmodus nicht verwendet werden.</string>
     <string name="bixby_edgecase_kidsmode">Bixby kann im Kindermodus nicht verwendet werden.</string>
