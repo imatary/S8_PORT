@@ -2155,7 +2155,7 @@
 
     move-result-object v6
 
-    const v1, 0x7f02065e
+    const v1, 0x7f020665
 
     :goto_1
     new-instance v8, Landroid/app/Notification$Builder;
@@ -2267,7 +2267,7 @@
 
     move-result-object v6
 
-    const v1, 0x7f02065d
+    const v1, 0x7f020664
 
     goto :goto_1
 
@@ -2294,7 +2294,7 @@
 
     move-result-object v6
 
-    const v1, 0x7f02065d
+    const v1, 0x7f020664
 
     goto/16 :goto_1
 
@@ -2311,7 +2311,7 @@
 
     move-result-object v6
 
-    const v1, 0x7f02065d
+    const v1, 0x7f020664
 
     goto/16 :goto_1
 
@@ -5318,15 +5318,17 @@
 .end method
 
 .method public refreshMPTCPIndicator()V
-    .locals 13
+    .locals 14
 
-    const/4 v10, 0x1
+    const/4 v11, 0x1
 
-    const/4 v11, 0x0
+    const/4 v12, 0x0
 
-    const/4 v6, 0x0
+    const-string/jumbo v4, ""
 
-    const/4 v4, 0x0
+    const/4 v7, 0x0
+
+    const/4 v5, 0x0
 
     const/4 v0, 0x0
 
@@ -5338,302 +5340,422 @@
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->getDataController()Lcom/android/systemui/statusbar/policy/MobileSignalController;
 
-    move-result-object v9
+    move-result-object v10
 
-    if-eqz v9, :cond_0
-
-    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->getDataController()Lcom/android/systemui/statusbar/policy/MobileSignalController;
-
-    move-result-object v9
-
-    invoke-virtual {v9}, Lcom/android/systemui/statusbar/policy/MobileSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
-
-    move-result-object v9
-
-    check-cast v9, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;
-
-    iget-boolean v3, v9, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;->dataConnected:Z
+    if-eqz v10, :cond_0
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->getDataController()Lcom/android/systemui/statusbar/policy/MobileSignalController;
 
-    move-result-object v9
+    move-result-object v10
 
-    invoke-virtual {v9}, Lcom/android/systemui/statusbar/policy/MobileSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
+    invoke-virtual {v10}, Lcom/android/systemui/statusbar/policy/MobileSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
 
-    move-result-object v9
+    move-result-object v10
 
-    check-cast v9, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;
+    check-cast v10, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;
 
-    iget-boolean v9, v9, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;->activityOut:Z
+    iget-boolean v3, v10, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;->dataConnected:Z
 
-    if-eqz v9, :cond_1
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->getDataController()Lcom/android/systemui/statusbar/policy/MobileSignalController;
 
-    move v9, v10
+    move-result-object v10
+
+    invoke-virtual {v10}, Lcom/android/systemui/statusbar/policy/MobileSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
+
+    move-result-object v10
+
+    check-cast v10, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;
+
+    iget-boolean v10, v10, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;->activityOut:Z
+
+    if-eqz v10, :cond_1
+
+    move v10, v11
 
     :goto_0
-    shl-int/lit8 v12, v9, 0x1
+    shl-int/lit8 v13, v10, 0x1
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->getDataController()Lcom/android/systemui/statusbar/policy/MobileSignalController;
 
-    move-result-object v9
+    move-result-object v10
 
-    invoke-virtual {v9}, Lcom/android/systemui/statusbar/policy/MobileSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
+    invoke-virtual {v10}, Lcom/android/systemui/statusbar/policy/MobileSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
 
-    move-result-object v9
+    move-result-object v10
 
-    check-cast v9, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;
+    check-cast v10, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;
 
-    iget-boolean v9, v9, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;->activityIn:Z
+    iget-boolean v10, v10, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;->activityIn:Z
 
-    if-eqz v9, :cond_2
+    if-eqz v10, :cond_2
 
-    move v9, v10
+    move v10, v11
 
     :goto_1
-    or-int v2, v12, v9
+    or-int v2, v13, v10
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->getDataController()Lcom/android/systemui/statusbar/policy/MobileSignalController;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Lcom/android/systemui/statusbar/policy/MobileSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
+
+    move-result-object v10
+
+    check-cast v10, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;
+
+    iget-object v10, v10, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileState;->iconGroup:Lcom/android/systemui/statusbar/policy/SignalController$IconGroup;
+
+    iget-object v4, v10, Lcom/android/systemui/statusbar/policy/SignalController$IconGroup;->mName:Ljava/lang/String;
+
+    if-eqz v3, :cond_3
 
     :cond_0
-    iget-object v9, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mWifiSignalController:Lcom/android/systemui/statusbar/policy/WifiSignalController;
-
-    invoke-virtual {v9}, Lcom/android/systemui/statusbar/policy/WifiSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
-
-    move-result-object v9
-
-    check-cast v9, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;
-
-    iget-boolean v8, v9, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;->connected:Z
-
-    iget-object v9, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mWifiSignalController:Lcom/android/systemui/statusbar/policy/WifiSignalController;
-
-    invoke-virtual {v9}, Lcom/android/systemui/statusbar/policy/WifiSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
-
-    move-result-object v9
-
-    check-cast v9, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;
-
-    iget-boolean v9, v9, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;->activityOut:Z
-
-    if-eqz v9, :cond_3
-
-    move v9, v10
-
     :goto_2
-    shl-int/lit8 v12, v9, 0x1
+    iget-object v10, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mWifiSignalController:Lcom/android/systemui/statusbar/policy/WifiSignalController;
 
-    iget-object v9, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mWifiSignalController:Lcom/android/systemui/statusbar/policy/WifiSignalController;
+    invoke-virtual {v10}, Lcom/android/systemui/statusbar/policy/WifiSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
 
-    invoke-virtual {v9}, Lcom/android/systemui/statusbar/policy/WifiSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
+    move-result-object v10
 
-    move-result-object v9
+    check-cast v10, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;
 
-    check-cast v9, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;
+    iget-boolean v9, v10, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;->connected:Z
 
-    iget-boolean v9, v9, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;->activityIn:Z
+    iget-object v10, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mWifiSignalController:Lcom/android/systemui/statusbar/policy/WifiSignalController;
 
-    if-eqz v9, :cond_4
+    invoke-virtual {v10}, Lcom/android/systemui/statusbar/policy/WifiSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
+
+    move-result-object v10
+
+    check-cast v10, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;
+
+    iget-boolean v10, v10, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;->activityOut:Z
+
+    if-eqz v10, :cond_4
+
+    move v10, v11
 
     :goto_3
-    or-int v7, v12, v10
+    shl-int/lit8 v13, v10, 0x1
 
-    if-nez v3, :cond_5
+    iget-object v10, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mWifiSignalController:Lcom/android/systemui/statusbar/policy/WifiSignalController;
 
-    iget-object v9, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mCallbackHandler:Lcom/android/systemui/statusbar/policy/CallbackHandler;
+    invoke-virtual {v10}, Lcom/android/systemui/statusbar/policy/WifiSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
 
-    invoke-virtual {v9, v11, v6, v4, v1}, Lcom/android/systemui/statusbar/policy/CallbackHandler;->setMPTCPIndicators(ZIII)V
+    move-result-object v10
+
+    check-cast v10, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;
+
+    iget-boolean v10, v10, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;->activityIn:Z
+
+    if-eqz v10, :cond_5
+
+    move v10, v11
 
     :goto_4
+    or-int v8, v13, v10
+
+    if-nez v3, :cond_6
+
+    iget-object v10, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mCallbackHandler:Lcom/android/systemui/statusbar/policy/CallbackHandler;
+
+    invoke-virtual {v10, v12, v7, v5, v1}, Lcom/android/systemui/statusbar/policy/CallbackHandler;->setMPTCPIndicators(ZIII)V
+
+    :goto_5
     return-void
 
     :cond_1
-    move v9, v11
+    move v10, v12
 
     goto :goto_0
 
     :cond_2
-    move v9, v11
+    move v10, v12
 
     goto :goto_1
 
     :cond_3
-    move v9, v11
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->getDataController()Lcom/android/systemui/statusbar/policy/MobileSignalController;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Lcom/android/systemui/statusbar/policy/MobileSignalController;->getRealDataStateInVowifi()Z
+
+    move-result v3
 
     goto :goto_2
 
     :cond_4
-    move v10, v11
+    move v10, v12
 
     goto :goto_3
 
     :cond_5
-    iget-object v9, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mPhone:Landroid/telephony/TelephonyManager;
+    move v10, v12
 
-    invoke-virtual {v9}, Landroid/telephony/TelephonyManager;->getSubscriberId()Ljava/lang/String;
+    goto :goto_4
 
-    move-result-object v5
+    :cond_6
+    iget-object v10, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mPhone:Landroid/telephony/TelephonyManager;
 
-    sget-boolean v9, Lcom/android/systemui/SystemUIRune;->SUPPORT_TUR_MPTCP:Z
+    invoke-virtual {v10}, Landroid/telephony/TelephonyManager;->getSubscriberId()Ljava/lang/String;
 
-    if-eqz v9, :cond_c
+    move-result-object v6
 
-    if-eqz v5, :cond_7
+    sget-boolean v10, Lcom/android/systemui/SystemUIRune;->SUPPORT_TUR_MPTCP:Z
 
-    const-string/jumbo v9, "28603"
+    if-eqz v10, :cond_d
 
-    invoke-virtual {v5, v9}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    if-eqz v6, :cond_8
 
-    move-result v9
+    const-string/jumbo v10, "28603"
+
+    invoke-virtual {v6, v10}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_b
+
+    const v7, 0x7f02064e
+
+    if-eqz v9, :cond_9
+
+    const v5, 0x7f02064f
+
+    :goto_6
+    if-eqz v3, :cond_a
 
     if-eqz v9, :cond_a
 
-    const v6, 0x7f02064e
+    or-int v0, v2, v8
 
-    if-eqz v8, :cond_8
-
-    const v4, 0x7f02064f
-
-    :goto_5
-    if-eqz v3, :cond_9
-
-    if-eqz v8, :cond_9
-
-    or-int v0, v2, v7
-
-    :cond_6
-    :goto_6
+    :cond_7
+    :goto_7
     packed-switch v0, :pswitch_data_0
 
     const v1, 0x7f020653
 
-    :cond_7
-    :goto_7
-    iget-object v9, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mCallbackHandler:Lcom/android/systemui/statusbar/policy/CallbackHandler;
-
-    iget-boolean v10, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mMPTCPSettingEnabled:Z
-
-    invoke-virtual {v9, v10, v6, v4, v1}, Lcom/android/systemui/statusbar/policy/CallbackHandler;->setMPTCPIndicators(ZIII)V
-
-    goto :goto_4
-
     :cond_8
-    const v4, 0x7f020650
+    :goto_8
+    iget-object v10, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mCallbackHandler:Lcom/android/systemui/statusbar/policy/CallbackHandler;
+
+    iget-boolean v11, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mMPTCPSettingEnabled:Z
+
+    invoke-virtual {v10, v11, v7, v5, v1}, Lcom/android/systemui/statusbar/policy/CallbackHandler;->setMPTCPIndicators(ZIII)V
 
     goto :goto_5
 
     :cond_9
-    if-eqz v3, :cond_6
+    const v5, 0x7f020650
+
+    goto :goto_6
+
+    :cond_a
+    if-eqz v3, :cond_7
 
     move v0, v2
 
-    goto :goto_6
+    goto :goto_7
 
     :pswitch_0
     const v1, 0x7f020651
 
-    goto :goto_7
+    goto :goto_8
 
     :pswitch_1
     const v1, 0x7f020654
 
-    goto :goto_7
+    goto :goto_8
 
     :pswitch_2
     const v1, 0x7f020652
 
-    goto :goto_7
+    goto :goto_8
 
-    :cond_a
-    const-string/jumbo v9, "28602"
+    :cond_b
+    const-string/jumbo v10, "28602"
 
-    invoke-virtual {v5, v9}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-virtual {v6, v10}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    move-result v9
+    move-result v10
 
-    if-eqz v9, :cond_7
+    if-eqz v10, :cond_8
 
-    if-eqz v3, :cond_b
+    if-eqz v3, :cond_c
 
-    if-eqz v8, :cond_b
+    if-eqz v9, :cond_c
 
-    const v6, 0x7f020655
+    const v7, 0x7f020655
 
-    or-int v0, v2, v7
+    or-int v0, v2, v8
 
     packed-switch v0, :pswitch_data_1
 
     const v1, 0x7f020658
 
-    goto :goto_7
+    goto :goto_8
 
     :pswitch_3
     const v1, 0x7f020656
 
-    goto :goto_7
+    goto :goto_8
 
     :pswitch_4
     const v1, 0x7f020659
 
-    goto :goto_7
+    goto :goto_8
 
     :pswitch_5
     const v1, 0x7f020657
 
-    goto :goto_7
+    goto :goto_8
 
-    :cond_b
-    iget-object v9, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mCallbackHandler:Lcom/android/systemui/statusbar/policy/CallbackHandler;
+    :cond_c
+    iget-object v10, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mCallbackHandler:Lcom/android/systemui/statusbar/policy/CallbackHandler;
 
-    invoke-virtual {v9, v11, v6, v4, v1}, Lcom/android/systemui/statusbar/policy/CallbackHandler;->setMPTCPIndicators(ZIII)V
+    invoke-virtual {v10, v12, v7, v5, v1}, Lcom/android/systemui/statusbar/policy/CallbackHandler;->setMPTCPIndicators(ZIII)V
 
     return-void
 
-    :cond_c
-    const v6, 0x7f02065c
+    :cond_d
+    sget-boolean v10, Lcom/android/systemui/SystemUIRune;->SUPPORT_THL_MPTCP:Z
 
-    if-eqz v8, :cond_e
+    if-eqz v10, :cond_10
 
-    const v4, 0x7f02065a
+    if-eqz v6, :cond_8
 
-    :goto_8
+    const-string/jumbo v10, "52003"
+
+    invoke-virtual {v6, v10}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_8
+
     if-eqz v3, :cond_f
 
-    if-eqz v8, :cond_f
+    const-string/jumbo v10, "4G"
 
-    or-int v0, v2, v7
+    invoke-virtual {v4, v10}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    :cond_d
-    :goto_9
-    packed-switch v0, :pswitch_data_2
+    move-result v10
 
-    const v1, 0x7f020712
+    if-nez v10, :cond_e
 
-    goto :goto_7
+    const-string/jumbo v10, "3G"
+
+    invoke-virtual {v4, v10}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v10
+
+    if-nez v10, :cond_e
+
+    const-string/jumbo v10, "H"
+
+    invoke-virtual {v4, v10}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_f
 
     :cond_e
-    const v4, 0x7f02065b
+    if-eqz v9, :cond_f
 
-    goto :goto_8
+    iget-object v10, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mWifiSignalController:Lcom/android/systemui/statusbar/policy/WifiSignalController;
+
+    invoke-virtual {v10}, Lcom/android/systemui/statusbar/policy/WifiSignalController;->getState()Lcom/android/systemui/statusbar/policy/SignalController$State;
+
+    move-result-object v10
+
+    check-cast v10, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;
+
+    iget v10, v10, Lcom/android/systemui/statusbar/policy/WifiSignalController$WifiState;->inetCondition:I
+
+    if-ne v11, v10, :cond_f
+
+    const v7, 0x7f02065d
+
+    const v5, 0x7f02065e
+
+    or-int v0, v2, v8
+
+    packed-switch v0, :pswitch_data_2
+
+    const v1, 0x7f020662
+
+    goto/16 :goto_8
+
+    :pswitch_6
+    const v1, 0x7f020660
+
+    goto/16 :goto_8
+
+    :pswitch_7
+    const v1, 0x7f020663
+
+    goto/16 :goto_8
+
+    :pswitch_8
+    const v1, 0x7f020661
+
+    goto/16 :goto_8
 
     :cond_f
-    if-eqz v3, :cond_d
+    iget-object v10, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mCallbackHandler:Lcom/android/systemui/statusbar/policy/CallbackHandler;
 
-    move v0, v2
+    invoke-virtual {v10, v12, v7, v5, v1}, Lcom/android/systemui/statusbar/policy/CallbackHandler;->setMPTCPIndicators(ZIII)V
+
+    return-void
+
+    :cond_10
+    const v7, 0x7f02065c
+
+    if-eqz v9, :cond_12
+
+    const v5, 0x7f02065a
+
+    :goto_9
+    if-eqz v3, :cond_13
+
+    if-eqz v9, :cond_13
+
+    or-int v0, v2, v8
+
+    :cond_11
+    :goto_a
+    packed-switch v0, :pswitch_data_3
+
+    const v1, 0x7f020719
+
+    goto/16 :goto_8
+
+    :cond_12
+    const v5, 0x7f02065b
 
     goto :goto_9
 
-    :pswitch_6
-    const v1, 0x7f020704
+    :cond_13
+    if-eqz v3, :cond_11
 
-    goto :goto_7
+    move v0, v2
 
-    :pswitch_7
-    const v1, 0x7f020719
+    goto :goto_a
 
-    goto :goto_7
+    :pswitch_9
+    const v1, 0x7f02070b
 
-    :pswitch_8
-    const v1, 0x7f02070c
+    goto/16 :goto_8
 
-    goto :goto_7
+    :pswitch_a
+    const v1, 0x7f020720
+
+    goto/16 :goto_8
+
+    :pswitch_b
+    const v1, 0x7f020713
+
+    goto/16 :goto_8
 
     :pswitch_data_0
     .packed-switch 0x1
@@ -5654,6 +5776,13 @@
         :pswitch_6
         :pswitch_7
         :pswitch_8
+    .end packed-switch
+
+    :pswitch_data_3
+    .packed-switch 0x1
+        :pswitch_9
+        :pswitch_a
+        :pswitch_b
     .end packed-switch
 .end method
 

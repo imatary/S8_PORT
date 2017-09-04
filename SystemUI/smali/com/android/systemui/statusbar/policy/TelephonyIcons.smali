@@ -139,15 +139,15 @@
 
     new-array v0, v0, [[I
 
-    const v1, 0x7f020687
+    const v1, 0x7f02068e
 
-    const v2, 0x7f02068a
+    const v2, 0x7f020691
 
-    const v3, 0x7f02068d
+    const v3, 0x7f020694
 
-    const v4, 0x7f020690
+    const v4, 0x7f020697
 
-    const v5, 0x7f020693
+    const v5, 0x7f02069a
 
     filled-new-array {v1, v2, v3, v4, v5}, [I
 
@@ -157,15 +157,15 @@
 
     aput-object v1, v0, v2
 
-    const v1, 0x7f020687
+    const v1, 0x7f02068e
 
-    const v2, 0x7f02068a
+    const v2, 0x7f020691
 
-    const v3, 0x7f02068d
+    const v3, 0x7f020694
 
-    const v4, 0x7f020690
+    const v4, 0x7f020697
 
-    const v5, 0x7f020693
+    const v5, 0x7f02069a
 
     filled-new-array {v1, v2, v3, v4, v5}, [I
 
@@ -207,15 +207,15 @@
 
     new-array v0, v0, [[I
 
-    const v1, 0x7f0206ec
+    const v1, 0x7f0206f3
 
-    const v2, 0x7f0206ee
+    const v2, 0x7f0206f5
 
-    const v3, 0x7f0206f0
+    const v3, 0x7f0206f7
 
-    const v4, 0x7f0206f2
+    const v4, 0x7f0206f9
 
-    const v5, 0x7f0206f4
+    const v5, 0x7f0206fb
 
     filled-new-array {v1, v2, v3, v4, v5}, [I
 
@@ -225,15 +225,15 @@
 
     aput-object v1, v0, v2
 
-    const v1, 0x7f0206ec
+    const v1, 0x7f0206f3
 
-    const v2, 0x7f0206ee
+    const v2, 0x7f0206f5
 
-    const v3, 0x7f0206f0
+    const v3, 0x7f0206f7
 
-    const v4, 0x7f0206f2
+    const v4, 0x7f0206f9
 
-    const v5, 0x7f0206f4
+    const v5, 0x7f0206fb
 
     filled-new-array {v1, v2, v3, v4, v5}, [I
 
@@ -275,15 +275,15 @@
 
     new-array v0, v0, [[I
 
-    const v1, 0x7f02072e
+    const v1, 0x7f020735
 
-    const v2, 0x7f020730
+    const v2, 0x7f020737
 
-    const v3, 0x7f020732
+    const v3, 0x7f020739
 
-    const v4, 0x7f020734
+    const v4, 0x7f02073b
 
-    const v5, 0x7f020736
+    const v5, 0x7f02073d
 
     filled-new-array {v1, v2, v3, v4, v5}, [I
 
@@ -293,15 +293,15 @@
 
     aput-object v1, v0, v2
 
-    const v1, 0x7f020722
+    const v1, 0x7f020729
 
-    const v2, 0x7f020724
+    const v2, 0x7f02072b
 
-    const v3, 0x7f020726
+    const v3, 0x7f02072d
 
-    const v4, 0x7f020728
+    const v4, 0x7f02072f
 
-    const v5, 0x7f02072a
+    const v5, 0x7f020731
 
     filled-new-array {v1, v2, v3, v4, v5}, [I
 
@@ -313,15 +313,15 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->TELEPHONY_PURE_SIGNAL_STRENGTH:[[I
 
-    const v0, 0x7f0206a3
+    const v0, 0x7f0206aa
 
-    const v1, 0x7f0206a4
+    const v1, 0x7f0206ab
 
-    const v2, 0x7f0206a5
+    const v2, 0x7f0206ac
 
-    const v3, 0x7f0206a6
+    const v3, 0x7f0206ad
 
-    const v4, 0x7f0206a7
+    const v4, 0x7f0206ae
 
     filled-new-array {v0, v1, v2, v3, v4}, [I
 
@@ -399,15 +399,15 @@
 
     new-array v0, v0, [[I
 
-    const v1, 0x7f020687
+    const v1, 0x7f02068e
 
-    const v2, 0x7f02068a
+    const v2, 0x7f020691
 
-    const v3, 0x7f02068d
+    const v3, 0x7f020694
 
-    const v4, 0x7f020690
+    const v4, 0x7f020697
 
-    const v5, 0x7f020693
+    const v5, 0x7f02069a
 
     filled-new-array {v1, v2, v3, v4, v5}, [I
 
@@ -417,15 +417,15 @@
 
     aput-object v1, v0, v2
 
-    const v1, 0x7f020687
+    const v1, 0x7f02068e
 
-    const v2, 0x7f02068a
+    const v2, 0x7f020691
 
-    const v3, 0x7f02068d
+    const v3, 0x7f020694
 
-    const v4, 0x7f020690
+    const v4, 0x7f020697
 
-    const v5, 0x7f020693
+    const v5, 0x7f02069a
 
     filled-new-array {v1, v2, v3, v4, v5}, [I
 
@@ -441,15 +441,15 @@
 
     new-array v0, v0, [[I
 
-    const v1, 0x7f0206a2
+    const v1, 0x7f0206a9
 
-    const v2, 0x7f0206a2
+    const v2, 0x7f0206a9
 
-    const v3, 0x7f0206a2
+    const v3, 0x7f0206a9
 
-    const v4, 0x7f0206a2
+    const v4, 0x7f0206a9
 
-    const v5, 0x7f0206a2
+    const v5, 0x7f0206a9
 
     filled-new-array {v1, v2, v3, v4, v5}, [I
 
@@ -459,15 +459,15 @@
 
     aput-object v1, v0, v2
 
-    const v1, 0x7f0206a2
+    const v1, 0x7f0206a9
 
-    const v2, 0x7f0206a2
+    const v2, 0x7f0206a9
 
-    const v3, 0x7f0206a2
+    const v3, 0x7f0206a9
 
-    const v4, 0x7f0206a2
+    const v4, 0x7f0206a9
 
-    const v5, 0x7f0206a2
+    const v5, 0x7f0206a9
 
     filled-new-array {v1, v2, v3, v4, v5}, [I
 
@@ -845,7 +845,7 @@
 
     const/4 v6, 0x0
 
-    const v7, 0x7f0206a2
+    const v7, 0x7f0206a9
 
     const v8, 0x7f020207
 
@@ -897,7 +897,7 @@
 
     const v13, 0x7f020202
 
-    const v14, 0x7f020664
+    const v14, 0x7f02066b
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -979,7 +979,7 @@
 
     const/4 v13, 0x0
 
-    const v14, 0x7f020671
+    const v14, 0x7f020678
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1021,7 +1021,7 @@
 
     const v13, 0x7f020209
 
-    const v14, 0x7f02066a
+    const v14, 0x7f020671
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1063,7 +1063,7 @@
 
     const v13, 0x7f0201ff
 
-    const v14, 0x7f020662
+    const v14, 0x7f020669
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1105,7 +1105,7 @@
 
     const v13, 0x7f02020f
 
-    const v14, 0x7f02066b
+    const v14, 0x7f020672
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1147,7 +1147,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f02066c
+    const v14, 0x7f020673
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1189,7 +1189,7 @@
 
     const v13, 0x7f020204
 
-    const v14, 0x7f020667
+    const v14, 0x7f02066e
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1231,7 +1231,7 @@
 
     const v13, 0x7f020205
 
-    const v14, 0x7f020668
+    const v14, 0x7f02066f
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1273,7 +1273,7 @@
 
     const v13, 0x7f020212
 
-    const v14, 0x7f02066e
+    const v14, 0x7f020675
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1387,7 +1387,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f02066d
+    const v14, 0x7f020674
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1429,7 +1429,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f020669
+    const v14, 0x7f020670
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1513,7 +1513,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f020667
+    const v14, 0x7f02066e
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1555,7 +1555,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f02066e
+    const v14, 0x7f020675
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1597,7 +1597,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f020664
+    const v14, 0x7f02066b
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1639,7 +1639,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f020667
+    const v14, 0x7f02066e
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1681,7 +1681,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f02066e
+    const v14, 0x7f020675
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1723,7 +1723,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f020667
+    const v14, 0x7f02066e
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1765,7 +1765,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f020667
+    const v14, 0x7f02066e
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1807,7 +1807,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f020665
+    const v14, 0x7f02066c
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1849,7 +1849,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f020662
+    const v14, 0x7f020669
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1891,7 +1891,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f020667
+    const v14, 0x7f02066e
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1933,7 +1933,7 @@
 
     const v13, 0x7f020212
 
-    const v14, 0x7f020670
+    const v14, 0x7f020677
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -1971,7 +1971,7 @@
 
     const v13, 0x7f02020f
 
-    const v14, 0x7f02066b
+    const v14, 0x7f020672
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -2009,7 +2009,7 @@
 
     const v13, 0x7f020210
 
-    const v14, 0x7f020664
+    const v14, 0x7f02066b
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -2047,7 +2047,7 @@
 
     const v13, 0x7f020212
 
-    const v14, 0x7f02066e
+    const v14, 0x7f020675
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -2085,7 +2085,7 @@
 
     const v13, 0x7f020212
 
-    const v14, 0x7f020670
+    const v14, 0x7f020677
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
@@ -2127,19 +2127,19 @@
 
     const v13, 0x7f020204
 
-    const v14, 0x7f020666
+    const v14, 0x7f02066d
 
     invoke-direct/range {v0 .. v14}, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIIIIIZII)V
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->FOUR_HALF_G:Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;
 
-    const v0, 0x7f020712
+    const v0, 0x7f020719
 
-    const v1, 0x7f020704
+    const v1, 0x7f02070b
 
-    const v2, 0x7f020719
+    const v2, 0x7f020720
 
-    const v3, 0x7f02070c
+    const v3, 0x7f020713
 
     filled-new-array {v0, v1, v2, v3}, [I
 
@@ -2149,11 +2149,11 @@
 
     const/4 v0, 0x0
 
-    const v1, 0x7f020705
+    const v1, 0x7f02070c
 
-    const v2, 0x7f02071a
+    const v2, 0x7f020721
 
-    const v3, 0x7f02070d
+    const v3, 0x7f020714
 
     filled-new-array {v0, v1, v2, v3}, [I
 
@@ -2161,13 +2161,13 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_ACTIVITY_ATT:[I
 
-    const v0, 0x7f020715
+    const v0, 0x7f02071c
 
-    const v1, 0x7f02070b
+    const v1, 0x7f020712
 
-    const v2, 0x7f020720
+    const v2, 0x7f020727
 
-    const v3, 0x7f020710
+    const v3, 0x7f020717
 
     filled-new-array {v0, v1, v2, v3}, [I
 
@@ -2175,13 +2175,13 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_ACTIVITY_TMO:[I
 
-    const v0, 0x7f020713
+    const v0, 0x7f02071a
 
-    const v1, 0x7f020709
+    const v1, 0x7f020710
 
-    const v2, 0x7f02071e
+    const v2, 0x7f020725
 
-    const v3, 0x7f02070e
+    const v3, 0x7f020715
 
     filled-new-array {v0, v1, v2, v3}, [I
 
@@ -2189,13 +2189,13 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_ACTIVITY_LTE_PLUS:[I
 
-    const v0, 0x7f020714
+    const v0, 0x7f02071b
 
-    const v1, 0x7f02070a
+    const v1, 0x7f020711
 
-    const v2, 0x7f02071f
+    const v2, 0x7f020726
 
-    const v3, 0x7f02070f
+    const v3, 0x7f020716
 
     filled-new-array {v0, v1, v2, v3}, [I
 
@@ -2217,63 +2217,56 @@
 
     :array_0
     .array-data 4
-        0x7f020696
-        0x7f020698
-        0x7f02069a
-        0x7f02069c
-        0x7f02069e
-        0x7f0206a0
+        0x7f02069d
+        0x7f02069f
+        0x7f0206a1
+        0x7f0206a3
+        0x7f0206a5
+        0x7f0206a7
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f020696
-        0x7f020698
-        0x7f02069a
-        0x7f02069c
-        0x7f02069e
-        0x7f0206a0
+        0x7f02069d
+        0x7f02069f
+        0x7f0206a1
+        0x7f0206a3
+        0x7f0206a5
+        0x7f0206a7
     .end array-data
 
     :array_2
     .array-data 4
-        0x7f0206f6
-        0x7f0206f8
-        0x7f0206fa
-        0x7f0206fc
-        0x7f0206fe
-        0x7f020700
+        0x7f0206fd
+        0x7f0206ff
+        0x7f020701
+        0x7f020703
+        0x7f020705
+        0x7f020707
     .end array-data
 
     :array_3
     .array-data 4
-        0x7f0206f6
-        0x7f0206f8
-        0x7f0206fa
-        0x7f0206fc
-        0x7f0206fe
-        0x7f020700
+        0x7f0206fd
+        0x7f0206ff
+        0x7f020701
+        0x7f020703
+        0x7f020705
+        0x7f020707
     .end array-data
 
     :array_4
     .array-data 4
-        0x7f0206a8
-        0x7f0206a9
-        0x7f0206aa
-        0x7f0206ab
-        0x7f0206ac
-        0x7f0206ad
-    .end array-data
-
-    :array_5
-    .array-data 4
-        0x7f0206ae
         0x7f0206af
         0x7f0206b0
         0x7f0206b1
         0x7f0206b2
         0x7f0206b3
         0x7f0206b4
+    .end array-data
+
+    :array_5
+    .array-data 4
         0x7f0206b5
         0x7f0206b6
         0x7f0206b7
@@ -2292,10 +2285,6 @@
         0x7f0206c4
         0x7f0206c5
         0x7f0206c6
-    .end array-data
-
-    :array_6
-    .array-data 4
         0x7f0206c7
         0x7f0206c8
         0x7f0206c9
@@ -2303,6 +2292,10 @@
         0x7f0206cb
         0x7f0206cc
         0x7f0206cd
+    .end array-data
+
+    :array_6
+    .array-data 4
         0x7f0206ce
         0x7f0206cf
         0x7f0206d0
@@ -2332,19 +2325,26 @@
         0x7f0206e8
         0x7f0206e9
         0x7f0206ea
+        0x7f0206eb
+        0x7f0206ec
+        0x7f0206ed
+        0x7f0206ee
+        0x7f0206ef
+        0x7f0206f0
+        0x7f0206f1
     .end array-data
 
     :array_7
     .array-data 4
-        0x7f020679
-        0x7f02067a
-        0x7f02067c
         0x7f020680
-        0x7f020680
-        0x7f02067f
-        0x7f02067e
         0x7f020681
-        0x7f02067d
+        0x7f020683
+        0x7f020687
+        0x7f020687
+        0x7f020686
+        0x7f020685
+        0x7f020688
+        0x7f020684
     .end array-data
 .end method
 
@@ -2363,7 +2363,7 @@
 
     if-eqz v1, :cond_0
 
-    const v0, 0x7f02072c
+    const v0, 0x7f020733
 
     :goto_0
     return v0
@@ -2379,7 +2379,7 @@
 
     if-eqz v1, :cond_1
 
-    const v0, 0x7f020718
+    const v0, 0x7f02071f
 
     goto :goto_0
 
@@ -2405,12 +2405,12 @@
     if-eqz v1, :cond_3
 
     :cond_2
-    const v0, 0x7f020717
+    const v0, 0x7f02071e
 
     goto :goto_0
 
     :cond_3
-    const v0, 0x7f020716
+    const v0, 0x7f02071d
 
     goto :goto_0
 .end method
@@ -2471,12 +2471,12 @@
 
     if-ne v0, v1, :cond_0
 
-    const v0, 0x7f020701
+    const v0, 0x7f020708
 
     return v0
 
     :cond_0
-    const v0, 0x7f020702
+    const v0, 0x7f020709
 
     return v0
 .end method

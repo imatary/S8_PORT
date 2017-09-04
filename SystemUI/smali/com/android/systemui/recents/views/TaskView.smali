@@ -2791,7 +2791,7 @@
 
     if-nez v3, :cond_8
 
-    const v3, 0x7f02078f
+    const v3, 0x7f020796
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2844,7 +2844,7 @@
     return-void
 
     :cond_8
-    const v3, 0x7f02078e
+    const v3, 0x7f020795
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 

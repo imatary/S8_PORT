@@ -294,7 +294,7 @@
 
     if-eqz v11, :cond_c
 
-    const v4, 0x7f020683
+    const v4, 0x7f02068a
 
     :goto_1
     const-string/jumbo v11, "volume"
@@ -320,7 +320,7 @@
 
     if-eqz v11, :cond_d
 
-    const v4, 0x7f020778
+    const v4, 0x7f02077f
 
     :goto_2
     const-string/jumbo v11, "zen"
@@ -424,7 +424,7 @@
 
     if-eqz v11, :cond_13
 
-    const v4, 0x7f02073d
+    const v4, 0x7f020744
 
     :goto_6
     const-string/jumbo v11, "tty"
@@ -553,7 +553,7 @@
 
     if-eqz v11, :cond_e
 
-    const v4, 0x7f020779
+    const v4, 0x7f020780
 
     goto/16 :goto_2
 
