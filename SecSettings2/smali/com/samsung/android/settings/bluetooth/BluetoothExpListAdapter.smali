@@ -150,7 +150,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b1260
+    const v2, 0x7f0b1272
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1459,7 +1459,7 @@
 
     iget-object v1, p0, Lcom/samsung/android/settings/bluetooth/BluetoothExpListAdapter;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0b13d6
+    const v2, 0x7f0b13e8
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1498,7 +1498,7 @@
 
     iget-object v1, p0, Lcom/samsung/android/settings/bluetooth/BluetoothExpListAdapter;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0b13d5
+    const v2, 0x7f0b13e7
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

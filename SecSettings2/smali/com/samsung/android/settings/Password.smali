@@ -81,7 +81,7 @@
 .method private match(Ljava/lang/String;)Z
     .locals 4
 
-    const v3, 0x7f0b1103
+    const v3, 0x7f0b1115
 
     const/4 v2, 0x0
 
@@ -113,7 +113,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b1102
+    const v1, 0x7f0b1114
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -218,7 +218,7 @@
 .method private reasonable(Ljava/lang/String;)Z
     .locals 4
 
-    const v3, 0x7f0b1103
+    const v3, 0x7f0b1115
 
     const/4 v2, 0x0
 
@@ -242,7 +242,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b1104
+    const v1, 0x7f0b1116
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -298,7 +298,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b1105
+    const v1, 0x7f0b1117
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
