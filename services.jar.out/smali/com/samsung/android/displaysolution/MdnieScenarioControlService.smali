@@ -8269,7 +8269,7 @@
 
     const v11, 0x102005f
 
-    const v10, 0x10408d7
+    const v10, 0x10408d8
 
     const/4 v9, 0x1
 
@@ -8277,7 +8277,7 @@
 
     iget-object v5, p0, Lcom/samsung/android/displaysolution/MdnieScenarioControlService;->mContext:Landroid/content/Context;
 
-    const v6, 0x10408d6
+    const v6, 0x10408d7
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8315,7 +8315,7 @@
 
     move-result-object v6
 
-    const v7, 0x10408d6
+    const v7, 0x10408d7
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8369,7 +8369,7 @@
 
     move-result-object v6
 
-    const v7, 0x10408d8
+    const v7, 0x10408d9
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8391,7 +8391,7 @@
 
     move-result-object v6
 
-    const v7, 0x10408d9
+    const v7, 0x10408da
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8471,7 +8471,7 @@
 
     iget-object v5, p0, Lcom/samsung/android/displaysolution/MdnieScenarioControlService;->mContext:Landroid/content/Context;
 
-    const v6, 0x10408d9
+    const v6, 0x10408da
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8481,7 +8481,7 @@
 
     iget-object v5, p0, Lcom/samsung/android/displaysolution/MdnieScenarioControlService;->mContext:Landroid/content/Context;
 
-    const v6, 0x10408d8
+    const v6, 0x10408d9
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8550,7 +8550,7 @@
 
     move-result-object v6
 
-    const v7, 0x10408d6
+    const v7, 0x10408d7
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8604,7 +8604,7 @@
 
     move-result-object v6
 
-    const v7, 0x10408d8
+    const v7, 0x10408d9
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8626,7 +8626,7 @@
 
     move-result-object v6
 
-    const v7, 0x10408d9
+    const v7, 0x10408da
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8700,7 +8700,7 @@
 
     iget-object v5, p0, Lcom/samsung/android/displaysolution/MdnieScenarioControlService;->mContext:Landroid/content/Context;
 
-    const v6, 0x10408d9
+    const v6, 0x10408da
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8710,7 +8710,7 @@
 
     iget-object v5, p0, Lcom/samsung/android/displaysolution/MdnieScenarioControlService;->mContext:Landroid/content/Context;
 
-    const v6, 0x10408d8
+    const v6, 0x10408d9
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

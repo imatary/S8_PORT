@@ -3601,7 +3601,7 @@
 
     iget-object v2, v0, Lcom/android/server/audio/AudioService$AudioServiceBroadcastReceiver;->this$0:Lcom/android/server/audio/AudioService;
 
-    const v3, 0x1040919
+    const v3, 0x104091a
 
     const/4 v4, 0x0
 
@@ -3647,7 +3647,7 @@
 
     move-result-object v2
 
-    const v3, 0x1040919
+    const v3, 0x104091a
 
     invoke-virtual {v2, v3}, Landroid/widget/Toast;->setText(I)V
 

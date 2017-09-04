@@ -6767,13 +6767,13 @@
 
     check-cast v8, Landroid/app/NotificationManager;
 
-    const v3, 0x10408fc
+    const v3, 0x10408fd
 
     invoke-virtual {v0, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v10
 
-    const v3, 0x10408fe
+    const v3, 0x10408ff
 
     invoke-virtual {v0, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

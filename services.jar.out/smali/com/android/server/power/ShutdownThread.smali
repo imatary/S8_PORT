@@ -2096,7 +2096,7 @@
 
     if-eqz v2, :cond_6
 
-    const v0, 0x10408b2
+    const v0, 0x10408b3
 
     goto :goto_0
 

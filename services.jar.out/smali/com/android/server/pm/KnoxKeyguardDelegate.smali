@@ -54,6 +54,10 @@
 
 .field private static final TIME_TO_CLEAR_PENDING_FLAG:I = 0x1388
 
+.field private static lastInfinityWallpaperColor:Ljava/lang/String;
+
+.field private static lastInfinityWallpaperData:Landroid/graphics/Bitmap;
+
 
 # instance fields
 .field private final eventListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
@@ -164,6 +168,20 @@
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/KnoxKeyguardDelegate;->show(II)V
+
+    return-void
+.end method
+
+.method static constructor <clinit>()V
+    .locals 1
+
+    const-string/jumbo v0, ""
+
+    sput-object v0, Lcom/android/server/pm/KnoxKeyguardDelegate;->lastInfinityWallpaperColor:Ljava/lang/String;
+
+    const/4 v0, 0x0
+
+    sput-object v0, Lcom/android/server/pm/KnoxKeyguardDelegate;->lastInfinityWallpaperData:Landroid/graphics/Bitmap;
 
     return-void
 .end method
@@ -362,7 +380,7 @@
 
     invoke-direct {p0, v9}, Lcom/android/server/pm/KnoxKeyguardDelegate;->parseInfinityColorInfo(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
     const-string/jumbo v9, "KnoxKeyguardDelegate"
 
@@ -386,7 +404,7 @@
 
     move-result-object v10
 
-    invoke-virtual {v10, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v10
 
@@ -396,6 +414,34 @@
 
     invoke-static {v9, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    const/4 v2, 0x0
+
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_1
+
+    sget-object v9, Lcom/android/server/pm/KnoxKeyguardDelegate;->lastInfinityWallpaperColor:Ljava/lang/String;
+
+    invoke-virtual {v0, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_1
+
+    sget-object v9, Lcom/android/server/pm/KnoxKeyguardDelegate;->lastInfinityWallpaperData:Landroid/graphics/Bitmap;
+
+    if-eqz v9, :cond_1
+
+    sget-object v2, Lcom/android/server/pm/KnoxKeyguardDelegate;->lastInfinityWallpaperData:Landroid/graphics/Bitmap;
+
+    :goto_0
+    return-object v2
+
+    :cond_1
+    sput-object v0, Lcom/android/server/pm/KnoxKeyguardDelegate;->lastInfinityWallpaperColor:Ljava/lang/String;
+
     new-instance v4, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v4}, Landroid/graphics/BitmapFactory$Options;-><init>()V
@@ -404,24 +450,24 @@
 
     iput v9, v4, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
-    const-string/jumbo v7, "keyguard_default_wallpaper"
+    const-string/jumbo v7, "keyguard_default_wallpaper_thumbnail"
 
-    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v9
 
-    if-nez v9, :cond_1
+    if-nez v9, :cond_2
 
     const-string/jumbo v9, "black"
 
-    invoke-virtual {v1, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v9
 
-    if-eqz v9, :cond_2
+    if-eqz v9, :cond_3
 
-    :cond_1
-    :goto_0
+    :cond_2
+    :goto_1
     const-string/jumbo v9, "KnoxKeyguardDelegate"
 
     new-instance v10, Ljava/lang/StringBuilder;
@@ -473,11 +519,13 @@
 
     invoke-static {v5, v6, v4}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
-    move-result-object v0
+    move-result-object v2
 
-    return-object v0
+    sput-object v2, Lcom/android/server/pm/KnoxKeyguardDelegate;->lastInfinityWallpaperData:Landroid/graphics/Bitmap;
 
-    :cond_2
+    goto :goto_0
+
+    :cond_3
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -492,7 +540,7 @@
 
     move-result-object v9
 
-    invoke-virtual {v9, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v9
 
@@ -500,12 +548,12 @@
 
     move-result-object v7
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
-    move-exception v2
+    move-exception v1
 
-    invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     return-object v12
 .end method
