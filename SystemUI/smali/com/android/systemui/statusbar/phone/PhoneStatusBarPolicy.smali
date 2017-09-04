@@ -546,7 +546,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mSlotTty:Ljava/lang/String;
 
-    const v2, 0x7f02073d
+    const v2, 0x7f020744
 
     const/4 v4, 0x0
 
@@ -584,7 +584,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mSlotZen:Ljava/lang/String;
 
-    const v2, 0x7f020778
+    const v2, 0x7f02077f
 
     const/4 v4, 0x0
 
@@ -602,7 +602,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mSlotVolume:Ljava/lang/String;
 
-    const v2, 0x7f020683
+    const v2, 0x7f02068a
 
     const/4 v4, 0x0
 
@@ -702,7 +702,7 @@
 
     const-string/jumbo v1, "power_saver"
 
-    const v2, 0x7f020677
+    const v2, 0x7f02067e
 
     const/4 v4, 0x0
 
@@ -1582,7 +1582,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f02073d
+    const v5, 0x7f020744
 
     invoke-virtual {v2, v3, v5, v4}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -1879,7 +1879,7 @@
 
     const/16 v18, 0x1
 
-    const v17, 0x7f020683
+    const v17, 0x7f02068a
 
     move-object/from16 v0, p0
 
@@ -2029,7 +2029,7 @@
 
     const/16 v18, 0x1
 
-    const v17, 0x7f020682
+    const v17, 0x7f020689
 
     move-object/from16 v0, p0
 
@@ -2191,7 +2191,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f020685
+    const v4, 0x7f02068c
 
     invoke-virtual {v1, v2, v4, v3}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -2220,7 +2220,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f020684
+    const v4, 0x7f02068b
 
     invoke-virtual {v1, v2, v4, v3}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -2381,7 +2381,7 @@
 
     const-string/jumbo v3, "power_saver"
 
-    const v4, 0x7f020678
+    const v4, 0x7f02067f
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
@@ -2407,7 +2407,7 @@
 
     const-string/jumbo v3, "power_saver"
 
-    const v4, 0x7f020677
+    const v4, 0x7f02067e
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIcon(Ljava/lang/String;ILjava/lang/CharSequence;)V
 

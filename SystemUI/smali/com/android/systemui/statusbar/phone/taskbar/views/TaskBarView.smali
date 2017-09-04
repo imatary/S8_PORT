@@ -837,9 +837,9 @@
 .method private updateWindowLayoutForRTL()V
     .locals 5
 
-    const v2, 0x7f0207cd
+    const v2, 0x7f0207d4
 
-    const v3, 0x7f0207ca
+    const v3, 0x7f0207d1
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarView;->mScreenCaptureBtn:Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;
 
@@ -856,7 +856,7 @@
 
     if-eqz v0, :cond_1
 
-    const v1, 0x7f0207cf
+    const v1, 0x7f0207d6
 
     :goto_1
     invoke-virtual {v4, v1}, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;->setImageResource(I)V
@@ -889,7 +889,7 @@
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f0207bd
+    const v1, 0x7f0207c4
 
     goto :goto_1
 
@@ -2051,7 +2051,7 @@
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarView;->mSizeControlBtn:Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;
 
-    const v4, 0x7f0207cf
+    const v4, 0x7f0207d6
 
     invoke-virtual {v2, v4}, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;->setImageResource(I)V
 
@@ -2061,7 +2061,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0f0a2e
+    const v5, 0x7f0f0a30
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2153,7 +2153,7 @@
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarView;->mSizeControlBtn:Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;
 
-    const v4, 0x7f0207bd
+    const v4, 0x7f0207c4
 
     invoke-virtual {v2, v4}, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;->setImageResource(I)V
 
@@ -2163,7 +2163,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0f0a2f
+    const v5, 0x7f0f0a31
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3311,7 +3311,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarView;->mVolumeBtn:Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;
 
-    const v1, 0x7f0207d1
+    const v1, 0x7f0207d8
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;->setImageResource(I)V
 
@@ -3320,7 +3320,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarView;->mVolumeBtn:Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;
 
-    const v1, 0x7f0207ac
+    const v1, 0x7f0207b3
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;->setImageResource(I)V
 
@@ -3329,7 +3329,7 @@
     :pswitch_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarView;->mVolumeBtn:Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;
 
-    const v1, 0x7f0207a8
+    const v1, 0x7f0207af
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;->setImageResource(I)V
 
@@ -3384,9 +3384,9 @@
 .method public setup(Lcom/android/systemui/statusbar/phone/taskbar/TaskBar;Z)V
     .locals 8
 
-    const v4, 0x7f0207cd
+    const v4, 0x7f0207d4
 
-    const v5, 0x7f0207ca
+    const v5, 0x7f0207d1
 
     const/4 v3, 0x0
 
@@ -3597,7 +3597,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarView;->mSizeControlBtn:Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;
 
-    const v3, 0x7f0207cf
+    const v3, 0x7f0207d6
 
     invoke-virtual {v1, v3}, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarButtonView;->setImageResource(I)V
 
@@ -5190,7 +5190,7 @@
 
     if-eq v0, v1, :cond_0
 
-    const v0, 0x7f0207c1
+    const v0, 0x7f0207c8
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -5198,7 +5198,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarView;->mHomeDefaultIcon:Landroid/graphics/drawable/Drawable;
 
-    const v0, 0x7f0207c5
+    const v0, 0x7f0207cc
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -5206,7 +5206,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarView;->mRecentIcon:Landroid/graphics/drawable/Drawable;
 
-    const v0, 0x7f0207b8
+    const v0, 0x7f0207bf
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -5218,7 +5218,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/taskbar/views/TaskBarView;->mBackLandIcon:Landroid/graphics/drawable/Drawable;
 
-    const v0, 0x7f0207b6
+    const v0, 0x7f0207bd
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

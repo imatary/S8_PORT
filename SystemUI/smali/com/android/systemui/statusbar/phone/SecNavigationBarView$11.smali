@@ -1,9 +1,9 @@
-.class Lcom/android/systemui/statusbar/phone/SecNavigationBarView$10;
+.class Lcom/android/systemui/statusbar/phone/SecNavigationBarView$11;
 .super Ljava/lang/Object;
 .source "SecNavigationBarView.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnKeyListener;
+.implements Landroid/content/DialogInterface$OnDismissListener;
 
 
 # annotations
@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/SecNavigationBarView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/systemui/statusbar/phone/SecNavigationBarView$10;->this$0:Lcom/android/systemui/statusbar/phone/SecNavigationBarView;
+    iput-object p1, p0, Lcom/android/systemui/statusbar/phone/SecNavigationBarView$11;->this$0:Lcom/android/systemui/statusbar/phone/SecNavigationBarView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,17 +34,14 @@
 
 
 # virtual methods
-.method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
-    .locals 1
+.method public onDismiss(Landroid/content/DialogInterface;)V
+    .locals 2
 
-    const/4 v0, 0x4
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/SecNavigationBarView$11;->this$0:Lcom/android/systemui/statusbar/phone/SecNavigationBarView;
 
-    if-ne p2, v0, :cond_0
+    const/4 v1, 0x0
 
-    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
+    invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/SecNavigationBarView;->-set0(Lcom/android/systemui/statusbar/phone/SecNavigationBarView;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
 
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
+    return-void
 .end method

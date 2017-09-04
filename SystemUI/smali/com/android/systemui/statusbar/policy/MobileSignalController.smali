@@ -136,6 +136,8 @@
 
 .field private mPreSvcSate:I
 
+.field private mRealDataStateInVowifi:Z
+
 .field private mRssiTypeIconId:I
 
 .field private mServiceState:Landroid/telephony/ServiceState;
@@ -308,7 +310,15 @@
     return-object p1
 .end method
 
-.method static synthetic -set5(Lcom/android/systemui/statusbar/policy/MobileSignalController;Landroid/telephony/ServiceState;)Landroid/telephony/ServiceState;
+.method static synthetic -set5(Lcom/android/systemui/statusbar/policy/MobileSignalController;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController;->mRealDataStateInVowifi:Z
+
+    return p1
+.end method
+
+.method static synthetic -set6(Lcom/android/systemui/statusbar/policy/MobileSignalController;Landroid/telephony/ServiceState;)Landroid/telephony/ServiceState;
     .locals 0
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController;->mServiceState:Landroid/telephony/ServiceState;
@@ -316,7 +326,7 @@
     return-object p1
 .end method
 
-.method static synthetic -set6(Lcom/android/systemui/statusbar/policy/MobileSignalController;Landroid/telephony/SignalStrength;)Landroid/telephony/SignalStrength;
+.method static synthetic -set7(Lcom/android/systemui/statusbar/policy/MobileSignalController;Landroid/telephony/SignalStrength;)Landroid/telephony/SignalStrength;
     .locals 0
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController;->mSignalStrength:Landroid/telephony/SignalStrength;
@@ -530,6 +540,10 @@
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController;->mLteCaStatus:Z
+
+    const/4 v1, 0x0
+
+    iput-boolean v1, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController;->mRealDataStateInVowifi:Z
 
     new-instance v1, Lcom/android/systemui/statusbar/policy/MobileSignalController$1;
 
@@ -6091,11 +6105,11 @@
 .method private updateCTCRssiTypeIcon()V
     .locals 6
 
-    const v5, 0x7f02073a
+    const v5, 0x7f020741
 
-    const v4, 0x7f020738
+    const v4, 0x7f02073f
 
-    const v3, 0x7f020737
+    const v3, 0x7f02073e
 
     const/4 v2, 0x0
 
@@ -6287,7 +6301,7 @@
 
     if-lez v0, :cond_b
 
-    const v0, 0x7f020739
+    const v0, 0x7f020740
 
     iput v0, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController;->mRssiTypeIconId:I
 
@@ -6299,7 +6313,7 @@
     goto/16 :goto_0
 
     :cond_c
-    const v0, 0x7f02073b
+    const v0, 0x7f020742
 
     iput v0, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController;->mRssiTypeIconId:I
 
@@ -12273,6 +12287,14 @@
     return-object v1
 .end method
 
+.method public getRealDataStateInVowifi()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController;->mRealDataStateInVowifi:Z
+
+    return v0
+.end method
+
 .method protected getResourceName(I)Ljava/lang/String;
     .locals 3
 
@@ -13950,7 +13972,7 @@
 
     move-result v2
 
-    const v9, 0x7f020703
+    const v9, 0x7f02070a
 
     move-object/from16 v0, p1
 
@@ -14177,7 +14199,7 @@
 
     aget v4, v0, v6
 
-    const v5, 0x7f020660
+    const v5, 0x7f020667
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/MobileSignalController;->getIcons()Lcom/android/systemui/statusbar/policy/SignalController$IconGroup;
 
@@ -14191,7 +14213,7 @@
 
     if-eqz v0, :cond_0
 
-    const v5, 0x7f020661
+    const v5, 0x7f020668
 
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController;->mCurrentState:Lcom/android/systemui/statusbar/policy/SignalController$State;

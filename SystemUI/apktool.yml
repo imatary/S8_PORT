@@ -24,7 +24,7 @@ usesFramework:
   ids:
   - 1
   tag: null
-version: 2.2.3
+version: 2.2.4
 versionInfo:
   versionCode: '20170630'
   versionName: '7.0'
