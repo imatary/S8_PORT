@@ -2016,7 +2016,7 @@
 
     move-result-object v9
 
-    const v10, 0x1040929
+    const v10, 0x104092b
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2052,7 +2052,7 @@
 
     move-result-object v9
 
-    const v10, 0x104092a
+    const v10, 0x104092c
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2077,7 +2077,7 @@
 
     move-result-object v9
 
-    const v10, 0x104092b
+    const v10, 0x104092d
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2102,7 +2102,7 @@
 
     move-result-object v9
 
-    const v10, 0x104092c
+    const v10, 0x104092e
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2127,7 +2127,7 @@
 
     move-result-object v9
 
-    const v10, 0x104092d
+    const v10, 0x104092f
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2152,7 +2152,7 @@
 
     move-result-object v9
 
-    const v10, 0x104092e
+    const v10, 0x1040930
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2177,7 +2177,7 @@
 
     move-result-object v9
 
-    const v10, 0x104092f
+    const v10, 0x1040931
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2202,7 +2202,7 @@
 
     move-result-object v9
 
-    const v10, 0x1040934
+    const v10, 0x1040936
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6022,6 +6022,10 @@
 
     move-result v2
 
+    iget v3, v0, Landroid/view/WindowManager$LayoutParams;->type:I
+
+    sparse-switch v3, :sswitch_data_0
+
     iget-object v3, p0, Lcom/android/server/policy/SamsungPhoneWindowManager;->mPWM:Lcom/android/server/policy/PhoneWindowManager;
 
     iget-object v3, v3, Lcom/android/server/policy/PhoneWindowManager;->mWindowManagerInternal:Landroid/view/WindowManagerInternal;
@@ -6037,6 +6041,7 @@
     and-int/lit16 v2, v2, -0x201
 
     :cond_0
+    :sswitch_0
     and-int/lit16 v3, v1, 0x100
 
     if-nez v3, :cond_1
@@ -6470,6 +6475,13 @@
     iput v3, p3, Landroid/graphics/Rect;->bottom:I
 
     goto/16 :goto_3
+
+    :sswitch_data_0
+    .sparse-switch
+        0x8b3 -> :sswitch_0
+        0x8b4 -> :sswitch_0
+        0x97f -> :sswitch_0
+    .end sparse-switch
 .end method
 
 .method public applyLidSwitchState()Z
@@ -14384,7 +14396,7 @@
 
     move-object/from16 v47, v0
 
-    const v48, 0x10409ed
+    const v48, 0x10409ef
 
     invoke-virtual/range {v47 .. v48}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
