@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0e0001
+    const v1, 0x7f100001
 
     invoke-virtual {v0, v1, v2, v2}, Landroid/content/res/Resources;->getFraction(III)F
 
@@ -77,7 +77,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09014e
+    const v1, 0x7f0a018f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -89,7 +89,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090150
+    const v1, 0x7f0a0191
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -319,7 +319,7 @@
 
     cmpl-float v4, p1, v4
 
-    if-lez v4, :cond_6
+    if-lez v4, :cond_7
 
     iget v4, v1, Landroid/widget/FrameLayout$LayoutParams;->topMargin:I
 
@@ -341,7 +341,7 @@
 
     iput v5, v4, Landroid/graphics/Rect;->bottom:I
 
-    if-gtz v0, :cond_5
+    if-gtz v0, :cond_6
 
     :goto_0
     iget-object v3, p0, Lcom/android/launcher3/allapps/view/AppsContainer;->mLauncher:Lcom/android/launcher3/Launcher;
@@ -369,28 +369,45 @@
     const/16 v2, 0x8
 
     :cond_2
+    iget-object v3, p0, Lcom/android/launcher3/allapps/view/AppsContainer;->mTrayManager:Lcom/android/launcher3/common/tray/TrayManager;
+
+    if-eqz v3, :cond_3
+
+    iget-object v3, p0, Lcom/android/launcher3/allapps/view/AppsContainer;->mTrayManager:Lcom/android/launcher3/common/tray/TrayManager;
+
+    invoke-virtual {v3}, Lcom/android/launcher3/common/tray/TrayManager;->isMoveAndAnimated()Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    :cond_3
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsContainer;->getVisibility()I
 
     move-result v3
 
-    if-eq v3, v2, :cond_3
+    if-eq v3, v2, :cond_4
 
-    invoke-virtual {p0, v2}, Lcom/android/launcher3/allapps/view/AppsContainer;->setVisibility(I)V
+    new-instance v3, Lcom/android/launcher3/allapps/view/VisibilityChange;
 
-    :cond_3
-    if-eqz p2, :cond_4
+    invoke-direct {v3, v2, p0}, Lcom/android/launcher3/allapps/view/VisibilityChange;-><init>(ILcom/android/launcher3/allapps/view/AppsContainer;)V
+
+    invoke-virtual {v3}, Lcom/android/launcher3/allapps/view/VisibilityChange;->run()V
+
+    :cond_4
+    if-eqz p2, :cond_5
 
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsContainer;->invalidate()V
 
-    :cond_4
+    :cond_5
     return-void
 
-    :cond_5
+    :cond_6
     move v2, v3
 
     goto :goto_0
 
-    :cond_6
+    :cond_7
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/view/AppsContainer;->getHeight()I
 
     move-result v4
@@ -425,12 +442,12 @@
 
     move-result v4
 
-    if-lt v0, v4, :cond_7
+    if-lt v0, v4, :cond_8
 
     :goto_1
     goto :goto_0
 
-    :cond_7
+    :cond_8
     move v2, v3
 
     goto :goto_1

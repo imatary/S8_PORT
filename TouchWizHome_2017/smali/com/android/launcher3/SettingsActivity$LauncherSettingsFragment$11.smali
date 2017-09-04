@@ -47,7 +47,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080199
+    const v3, 0x7f0901aa
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -59,7 +59,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f08012f
+    const v4, 0x7f090142
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -100,14 +100,6 @@
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
-
-    iget-object v1, p0, Lcom/android/launcher3/SettingsActivity$LauncherSettingsFragment$11;->this$0:Lcom/android/launcher3/SettingsActivity$LauncherSettingsFragment;
-
-    invoke-virtual {v1}, Lcom/android/launcher3/SettingsActivity$LauncherSettingsFragment;->getActivity()Landroid/app/Activity;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
 
     :cond_0
     const/4 v1, 0x0
