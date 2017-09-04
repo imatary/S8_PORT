@@ -22,7 +22,7 @@ usesFramework:
   ids:
   - 1
   tag: null
-version: 2.2.3
+version: 2.2.4
 versionInfo:
   versionCode: '415300000'
   versionName: 4.1.53

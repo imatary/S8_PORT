@@ -348,7 +348,7 @@ Name: res/interpolator/sine_in_out_80.xml
 SHA-256-Digest: z67P0Vjh0ku5gUIpG3FWQB0tumdYq2OJaHboGC2NoJw=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: vB4ZD/bBz3xZB1x706PwFolCeELQdO/lQG0nMCqBQHw=
+SHA-256-Digest: zolKZrD+PpH6SQ1ZS5EwT3JvwKI97TsKIr64C9Go40I=
 
 Name: res/layout/activity_packageinstall.xml
 SHA-256-Digest: mm7fkG5Ah8h/qST8KRfTfxjjwBtjjxYv5TrrjVsga9g=
