@@ -418,7 +418,7 @@
 
     invoke-direct {v0, v6}, Landroid/preference/PreferenceCategory;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f0b1753
+    const v6, 0x7f0b1766
 
     invoke-virtual {v0, v6}, Landroid/preference/PreferenceCategory;->setTitle(I)V
 
@@ -432,7 +432,7 @@
 
     invoke-direct {v4, v6}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    const v6, 0x7f0b1754
+    const v6, 0x7f0b1767
 
     invoke-virtual {v4, v6}, Landroid/preference/Preference;->setTitle(I)V
 
@@ -446,7 +446,7 @@
 
     aput-object v1, v6, v8
 
-    const v7, 0x7f0b1755
+    const v7, 0x7f0b1768
 
     invoke-virtual {p0, v7, v6}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -750,7 +750,7 @@
 
     invoke-direct {v0, v5}, Landroid/preference/PreferenceCategory;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f0b1c0e
+    const v5, 0x7f0b1c21
 
     invoke-virtual {v0, v5}, Landroid/preference/PreferenceCategory;->setTitle(I)V
 
@@ -1587,7 +1587,7 @@
 
     aput-object v7, v6, v8
 
-    const v7, 0x7f0b1c01
+    const v7, 0x7f0b1c14
 
     invoke-virtual {p1, v7, v6}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1615,7 +1615,7 @@
 
     if-nez v6, :cond_7
 
-    const v6, 0x7f0b1bfd
+    const v6, 0x7f0b1c10
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1629,7 +1629,7 @@
 
     if-eqz v6, :cond_2
 
-    const v6, 0x7f0b1b76
+    const v6, 0x7f0b1b89
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1649,7 +1649,7 @@
 
     if-lez v1, :cond_3
 
-    const v6, 0x7f0b1c00
+    const v6, 0x7f0b1c13
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1680,7 +1680,7 @@
 
     if-eqz v6, :cond_6
 
-    const v6, 0x7f0b1bfb
+    const v6, 0x7f0b1c0e
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1701,7 +1701,7 @@
 
     if-ge v6, v7, :cond_0
 
-    const v6, 0x7f0b1bfc
+    const v6, 0x7f0b1c0f
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1718,7 +1718,7 @@
 
     if-ne v6, v7, :cond_1
 
-    const v6, 0x7f0b1bfe
+    const v6, 0x7f0b1c11
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1731,7 +1731,7 @@
     :cond_8
     if-nez v0, :cond_9
 
-    const v6, 0x7f0b1bfa
+    const v6, 0x7f0b1c0d
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1926,7 +1926,7 @@
 
     iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->mForceStopButton:Landroid/widget/Button;
 
-    const v5, 0x7f0b16f9
+    const v5, 0x7f0b170c
 
     invoke-virtual {v4, v5}, Landroid/widget/Button;->setText(I)V
 
@@ -2353,7 +2353,7 @@
     :cond_c
     iget-object v10, p0, Lcom/android/settings/applications/InstalledAppDetails;->mUninstallButton:Landroid/widget/Button;
 
-    const v11, 0x7f0b16ff
+    const v11, 0x7f0b1712
 
     invoke-virtual {v10, v11}, Landroid/widget/Button;->setText(I)V
 
@@ -3216,7 +3216,7 @@
 
     aput-object v5, v4, v6
 
-    const v5, 0x7f0b173a
+    const v5, 0x7f0b174d
 
     invoke-virtual {v3, v5, v4}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3498,7 +3498,7 @@
 
     aput-object v4, v3, v6
 
-    const v4, 0x7f0b1c46
+    const v4, 0x7f0b1c59
 
     invoke-virtual {p0, v4, v3}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3520,7 +3520,7 @@
 
     iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails;->mBatteryPreference:Lcom/samsung/android/settings/ProgressPreference;
 
-    const v3, 0x7f0b1c47
+    const v3, 0x7f0b1c5a
 
     invoke-virtual {p0, v3}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 
@@ -3625,7 +3625,7 @@
 
     iget-object v3, v0, Lcom/android/settings/applications/InstalledAppDetails;->mDataPreference:Lcom/samsung/android/settings/ProgressPreference;
 
-    const v10, 0x7f0b1c79
+    const v10, 0x7f0b1c8c
 
     invoke-virtual {v3, v10}, Lcom/samsung/android/settings/ProgressPreference;->setSummary(I)V
 
@@ -3785,7 +3785,7 @@
 
     iget-object v3, v0, Lcom/android/settings/applications/InstalledAppDetails;->mDataPreference:Lcom/samsung/android/settings/ProgressPreference;
 
-    const v10, 0x7f0b1737
+    const v10, 0x7f0b174a
 
     invoke-virtual {v3, v10}, Lcom/samsung/android/settings/ProgressPreference;->setSummary(I)V
 
@@ -4321,11 +4321,11 @@
 .method protected createDialog(II)Landroid/app/AlertDialog;
     .locals 6
 
-    const v5, 0x7f0b174e
+    const v5, 0x7f0b1761
 
     const v2, 0x7f0b0405
 
-    const v4, 0x7f0b1728
+    const v4, 0x7f0b173b
 
     const/4 v3, 0x0
 
@@ -4424,7 +4424,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b1747
+    const v2, 0x7f0b175a
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -4438,7 +4438,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/settings/applications/InstalledAppDetails$11;-><init>(Lcom/android/settings/applications/InstalledAppDetails;)V
 
-    const v2, 0x7f0b1746
+    const v2, 0x7f0b1759
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -5279,7 +5279,7 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mDataPreference:Lcom/samsung/android/settings/ProgressPreference;
 
-    const v1, 0x7f0b198e
+    const v1, 0x7f0b19a1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/ProgressPreference;->setTitle(I)V
 
@@ -5327,7 +5327,7 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mMemoryPreference:Lcom/samsung/android/settings/ProgressPreference;
 
-    const v1, 0x7f0b1c6f
+    const v1, 0x7f0b1c82
 
     invoke-virtual {p0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 
@@ -5839,7 +5839,7 @@
 
     invoke-virtual {p0, v6}, Lcom/android/settings/applications/InstalledAppDetails;->setHasOptionsMenu(Z)V
 
-    const v3, 0x7f080089
+    const v3, 0x7f08008a
 
     invoke-virtual {p0, v3}, Lcom/android/settings/applications/InstalledAppDetails;->addPreferencesFromResource(I)V
 
@@ -5964,7 +5964,7 @@
 
     const/4 v0, 0x2
 
-    const v1, 0x7f0b1705
+    const v1, 0x7f0b1718
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -5972,7 +5972,7 @@
 
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
-    const v0, 0x7f0b1700
+    const v0, 0x7f0b1713
 
     invoke-interface {p1, v2, v3, v3, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -6156,7 +6156,7 @@
 
     const-class v0, Lcom/android/settings/notification/AppNotificationSettings;
 
-    const v1, 0x7f0b1b56
+    const v1, 0x7f0b1b69
 
     invoke-virtual {p0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 
@@ -6279,7 +6279,7 @@
 
     const-class v0, Lcom/android/settings/datausage/AppDataUsage;
 
-    const v1, 0x7f0b1bf4
+    const v1, 0x7f0b1c07
 
     invoke-virtual {p0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 

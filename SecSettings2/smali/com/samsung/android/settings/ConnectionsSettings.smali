@@ -640,7 +640,7 @@
 
     move-result v9
 
-    const v20, 0x7f080044
+    const v20, 0x7f080045
 
     move-object/from16 v0, p0
 
@@ -1101,7 +1101,7 @@
 
     move-object/from16 v20, v0
 
-    const v21, 0x7f0b0c7b
+    const v21, 0x7f0b0c81
 
     invoke-virtual/range {v20 .. v21}, Landroid/preference/PreferenceScreen;->setTitle(I)V
 
@@ -1344,6 +1344,23 @@
     if-eqz v20, :cond_25
 
     :goto_6
+    invoke-static {}, Lcom/android/settings/Utils;->isSupportMptcp()Z
+
+    move-result v20
+
+    if-eqz v20, :cond_26
+
+    invoke-virtual/range {p0 .. p0}, Lcom/samsung/android/settings/ConnectionsSettings;->getActivity()Landroid/app/Activity;
+
+    move-result-object v20
+
+    invoke-static/range {v20 .. v20}, Lcom/android/settings/Utils;->isAisSIMValid(Landroid/content/Context;)Z
+
+    move-result v20
+
+    if-eqz v20, :cond_26
+
+    :goto_7
     const-string/jumbo v20, "tethering_and_hotspot"
 
     move-object/from16 v0, p0
@@ -1488,7 +1505,7 @@
 
     move-result v20
 
-    if-eqz v20, :cond_26
+    if-eqz v20, :cond_27
 
     const-string/jumbo v20, "ATT"
 
@@ -1500,7 +1517,7 @@
 
     move-result v20
 
-    if-eqz v20, :cond_26
+    if-eqz v20, :cond_27
 
     :cond_17
     const-string/jumbo v20, "tethering_and_hotspot"
@@ -1512,7 +1529,7 @@
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/ConnectionsSettings;->removePreference(Ljava/lang/String;)V
 
     :cond_18
-    :goto_7
+    :goto_8
     invoke-virtual/range {p0 .. p0}, Lcom/samsung/android/settings/ConnectionsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v20
@@ -1521,7 +1538,7 @@
 
     move-result v20
 
-    if-eqz v20, :cond_2a
+    if-eqz v20, :cond_2b
 
     move-object/from16 v0, p0
 
@@ -1557,7 +1574,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/ConnectionsSettings;->removePreference(Ljava/lang/String;)V
 
-    :goto_8
+    :goto_9
     new-instance v20, Lcom/samsung/android/settings/bixby/EmSettingsManager;
 
     invoke-direct/range {v20 .. v20}, Lcom/samsung/android/settings/bixby/EmSettingsManager;-><init>()V
@@ -1836,7 +1853,7 @@
 
     invoke-virtual {v8, v0, v1}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    :goto_9
+    :goto_a
     invoke-virtual {v14, v8}, Lcom/samsung/android/settingslib/RestrictedPreference;->setIntent(Landroid/content/Intent;)V
 
     goto/16 :goto_4
@@ -1866,7 +1883,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/ConnectionsSettings;->removePreference(Ljava/lang/String;)V
 
-    goto :goto_9
+    goto :goto_a
 
     :cond_22
     const-string/jumbo v20, "com.android.phone"
@@ -1889,19 +1906,19 @@
 
     const/4 v11, 0x1
 
-    :goto_a
+    :goto_b
     const-string/jumbo v20, "sim_id"
 
     move-object/from16 v0, v20
 
     invoke-virtual {v8, v0, v11}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    goto :goto_9
+    goto :goto_a
 
     :cond_23
     const/4 v11, 0x0
 
-    goto :goto_a
+    goto :goto_b
 
     :cond_24
     move-object/from16 v0, p0
@@ -1946,13 +1963,7 @@
     goto/16 :goto_6
 
     :cond_26
-    invoke-static {}, Lcom/android/settings/Utils;->isSprModel()Z
-
-    move-result v20
-
-    if-eqz v20, :cond_27
-
-    const-string/jumbo v20, "tethering_and_hotspot"
+    const-string/jumbo v20, "ais_mptcp"
 
     move-object/from16 v0, p0
 
@@ -1963,6 +1974,23 @@
     goto/16 :goto_7
 
     :cond_27
+    invoke-static {}, Lcom/android/settings/Utils;->isSprModel()Z
+
+    move-result v20
+
+    if-eqz v20, :cond_28
+
+    const-string/jumbo v20, "tethering_and_hotspot"
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v20
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/settings/ConnectionsSettings;->removePreference(Ljava/lang/String;)V
+
+    goto/16 :goto_8
+
+    :cond_28
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/samsung/android/settings/ConnectionsSettings;->mUm:Landroid/os/UserManager;
@@ -1975,15 +2003,15 @@
 
     move-result v20
 
-    if-nez v20, :cond_28
+    if-nez v20, :cond_29
 
     invoke-virtual {v6}, Landroid/net/ConnectivityManager;->isTetheringSupported()Z
 
     move-result v20
 
-    if-eqz v20, :cond_29
+    if-eqz v20, :cond_2a
 
-    :cond_28
+    :cond_29
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/samsung/android/settings/ConnectionsSettings;->mUm:Landroid/os/UserManager;
@@ -2008,9 +2036,9 @@
 
     invoke-virtual/range {v20 .. v21}, Lcom/samsung/android/settingslib/RestrictedPreference;->setEnabled(Z)V
 
-    goto/16 :goto_7
+    goto/16 :goto_8
 
-    :cond_29
+    :cond_2a
     const-string/jumbo v20, "tethering_and_hotspot"
 
     move-object/from16 v0, p0
@@ -2019,9 +2047,9 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/ConnectionsSettings;->removePreference(Ljava/lang/String;)V
 
-    goto/16 :goto_7
+    goto/16 :goto_8
 
-    :cond_2a
+    :cond_2b
     const-string/jumbo v20, "wireless_settings_for_vzw"
 
     move-object/from16 v0, p0
@@ -2030,7 +2058,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/ConnectionsSettings;->removePreference(Ljava/lang/String;)V
 
-    goto/16 :goto_8
+    goto/16 :goto_9
 .end method
 
 .method public onDestroy()V

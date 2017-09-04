@@ -1363,6 +1363,11 @@ Where Can I Find More Information About the 3rd Party's Policies? Separately, if
 แตะ “ตกลง” เพื่ออนุญาตให้เพิ่มความสว่างที่สูงกว่าระดับที่ปลอดภัย"</string>
     <string name="auto_adjust_brightness">ปรับความสว่างอัตโนมัติ</string>
     <string name="auto_adjust_brightness_summary">ติดตามการปรับความสว่างของคุณ และนำไปใช้โดยอัตโนมัติในสภาพแสงที่ใกล้เคียงกัน</string>
+    <string name="auto_adjust_brightness_summary_nopac">ปรับความสว่างหน้าจอโดยอัตโนมัติโดยปรับตามสภาพแสงปัจจุบัน</string>
+    <string name="reset_usage_pattern_title">รีเซ็ทรูปแบบการใช้งาน</string>
+    <string name="reset_usage_pattern_summary">ล้างประวัติการปรับความสว่างของคุณ โทรศัพท์ของคุณจะเริ่มเรียนรู้การตั้งค่าของคุณใหม่อีกครั้งหลังการรีเซ็ท</string>
+    <string name="reset_usage_pattern_dialog_title">รีเซ็ทรูปแบบการใช้ความสว่างของคุณหรือไม่</string>
+    <string name="reset_usage_pattern_dialog_summary">โทรศัพท์ของคุณจะเริ่มเรียนรู้การตั้งค่าความสว่างของคุณอีกครั้งหลังการรีเซ็ท</string>
     <string name="current_theme_font">ค่าเริ่มต้นของธีมปัจจุบัน</string>
     <string name="hbm_mode_on">เพิ่มให้แสดงผลดีที่สุดในแสงแดด</string>
     <string name="aod_detach_mobile_keyboard_toast">ถอดฝาปิดแป้นพิมพ์ออกจากเครื่อง เพื่อใช้ %s</string>
@@ -2728,6 +2733,11 @@ Mobile data will be turned off."</string>
 แยกเสียงแอพจะทำงานเมื่ออุปกรณ์เสียงที่คุณเลือกแตกต่างจากอุปกรณ์เอาต์พุตเสียงหลักของโทรศัพท์ของคุณเท่านั้น
 
 คุณสามารถเปลี่ยนอุปกรณ์เอาต์พุตเสียงหลักของโทรศัพท์ของคุณได้ในแผงการตั้งค่าด่วน หากไม่มีการแสดงเอาต์พุดเสียง ให้เปิดใน Samsung Connect > การตั้งค่า > แผง Samsung Connect"</string>
+    <string name="multi_sound_descryption_for_uninstalledsc">"เล่นเสียงมีเดียจากแอพเดียวบนอุปกรณ์เสียงแยกจากอุปกรณ์เอาต์พุตเสียงหลักของโทรศัพท์ของคุณ โปรดเลือกแอพและอุปกรณ์เสียงเพื่อเปิด
+
+แยกเสียงแอพจะทำงานเมื่ออุปกรณ์เสียงที่คุณเลือกแตกต่างจากอุปกรณ์เอาต์พุตเสียงหลักของโทรศัพท์ของคุณเท่านั้น
+
+หากคุณติดตั้ง Samsung Connect แล้ว คุณสามารถเปลี่ยนอุปกรณ์เอาต์พุตเสียงหลักของโทรศัพท์ของคุณได้ในแผงการตั้งค่าด่วน หากอุปกรณ์เอาต์พุตเสียงไม่ปรากฏขึ้น ให้ไปที่ Samsung Connect > การตั้งค่า แล้วเปิดใช้งาน แผง Samsung Connect"</string>
     <string name="set_application_title">แอพ</string>
     <string name="set_application_summary">เลือกแอพเพื่อเล่นเสียงบนอุปกรณ์เสียงที่แยกต่างหาก</string>
     <string name="set_application_descryption">เลือกแอพมัลติมีเดียเพื่อเล่นเสียงจากแอพบนอุปกรณ์เสียงที่แยกต่างหาก</string>
@@ -3196,6 +3206,17 @@ Mobile data will be turned off."</string>
     <string name="avea_giga_popup_msg">เปิด Wi-Fi และข้อมูลมือถือเพื่อใช้ GIGA 4.5G</string>
     <string name="avea_giga_wifi_msg">เปิด Wi-Fi เพื่อใช้ GIGA 4.5G</string>
     <string name="avea_giga_mobile_msg">เปิดข้อมูลมือถือเพื่อใช้ GIGA 4.5G</string>
+    <string name="ais_mptcp_body">NEXT G คือ บริการที่เพิ่มขีดความสามารถของความเร็วเน็ต ด้วยการใช้งานผ่านเครือข่าย LTE และ WiFi พร้อมกัน เมื่อเปิดใช้งาน NEXT G ข้อมูลบนเครือข่าย LTE จะถูกคิดค่าบริการตามแพ็กเกจเน็ตที่ใช้งาน NEXT G อาจไม่สามารถใช้งานได้บางเครือข่าย เช่น เว็บไซท์ที่มีการตั้งค่าความปลอดภัย</string>
+    <string name="ais_mptcp_popup_title">การเปิดใช้งาน NEXT G</string>
+    <string name="ais_mptcp_wifi_mobile_off_msg">ทั้ง Wi-Fi และข้อมูลมือถือปิดใช้งานอยู่ กรุณาเปิดใช้งานทั้ง Wi-Fi และข้อมูลมือถือเพื่อใช้งาน NEXT G เมื่อเปิดใช้งาน NEXT G ข้อมูลที่ใช้บนเครือข่าย LTE จะถูกคิดค่าบริการตามแพ็กเกจเน็ตที่ใช้งาน ถ้าหากเปิดใช้งาน Wi-Fi และข้อมูลมือถือฟังก์ชั่น %s จะถูกเปิดใช้งานไปด้วย</string>
+    <string name="ais_mptcp_wifi_off_msg">ขณะนี้ Wi-Fi ปิดอยู่ กรุณาเปิดใช้งาน Wi-Fi เพื่อใช้งาน NEXT G ถ้าหากเปิดใช้งาน Wi-Fi, ฟังก์ชั่น %s จะเปิดใช้งานไปด้วย</string>
+    <string name="ais_mptcp_mobile_off_msg">ขณะนี้ข้อมูลมือถือปิดอยู่ กรุณาเปิดใช้งานข้อมูลมือถือเพื่อใช้ NEXT G เมื่อเปิดใช้งาน NEXT G, ข้อมูลที่ใช้บนเครือข่าย LTE จะถูกคิดค่าบริการตามแพ็กเกจเน็ตที่ใช้งาน ถ้าหากเปิดใช้งานข้อมูลมือถือ, ฟังก์ชั่น %s จะเปิดใช้งานไปด้วย</string>
+    <string name="ais_mptcp_smartbonding_off">ถ้าคุณใช้งาน NEXT G, ฟังก์ชั่น %s จะถูกปิด คุณต้องการเปิดใช้ NEXT G หรือไม่?</string>
+    <string name="ais_mptcp_off_by_smartbonding">ถ้าคุณใช้งาน %s, NEXT G จะถูกปิด คุณต้องการเปิดใช้ NEXT G หรือไม่?</string>
+    <string name="ais_mptcp_smartbonding_wifi">ถ้าคุณใช้งาน NEXT G, %s จะถูกปิด ขณะนี้ปิดใช้งาน Wi-Fi อยู่ กรุณาเปิดใช้งานทั้ง Wi-Fi และข้อมูลมือถือเพื่อใช้งาน NEXT G ข้อมูลที่ใช้บนเครือข่าย LTE จะถูกคิดค่าบริการตามแพ็กเกจเน็ตที่ใช้งาน</string>
+    <string name="ais_mptcp_booster_smart_wifi">ถ้าคุณใช้งาน NEXT G , %1$s จะถูกปิด ขณะนี้ปิดใช้งาน Wi-Fi อยู่ กรุณาเปิดใช้งานทั้ง Wi-Fi และข้อมูลมือถือเพื่อใช้งาน NEXT G ข้อมูลที่ใช้บนเครือข่าย LTE จะถูกคิดค่าบริการตามแพ็กเกจเน็ตที่ใช้งาน เมื่อเปิดWi-Fiและข้อมูลมือถือฟังก์ชั่น %2$s จะถูกเปิดใช้งานไปด้วย</string>
+    <string name="ais_mptcp_smartbonding_mobile">ถถ้าคุณใช้งาน NEXT G, %s จะถูกปิด ขณะนี้ปิดใช้งานข้อมูลมือถืออยู่ กรุณาเปิดใช้งานทั้ง Wi-Fi และข้อมูลมือถือเพื่อใช้งาน NEXT G ข้อมูลที่ใช้บนเครือข่าย LTE จะถูกคิดค่าบริการตามแพ็กเกจเน็ตที่ใช้งาน</string>
+    <string name="ais_mptcp_booster_smart_mobile">ถ้าคุณใช้งาน NEXT G , %1$s จะถูกปิด ขณะนี้ปิดใช้งานข้อมูลมือถืออยู่ กรุณาเปิดใช้งานทั้ง Wi-Fi และข้อมูลมือถือเพื่อใช้งาน NEXT G ข้อมูลที่ใช้บนเครือข่าย LTE จะถูกคิดค่าบริการตามแพ็กเกจเน็ตที่ใช้งาน เมื่อเปิดWi-Fiและข้อมูลมือถือฟังก์ชั่น %2$s จะถูกเปิดใช้งานไปด้วย</string>
     <string name="samsung_bnr_section_title">Samsung account</string>
     <string name="samsung_backup_summary">ใช้ Samsung account ของคุณเพื่อแบ็คอัพข้อมูล</string>
     <string name="samsung_restore_summary">ใช้ Samsung account เพื่อคืนค่าข้อมูลแบ็คอัพของคุณ</string>

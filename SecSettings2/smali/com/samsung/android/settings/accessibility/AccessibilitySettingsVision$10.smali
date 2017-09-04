@@ -61,7 +61,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b1bc6
+    const v2, 0x7f0b1bd9
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setSummary(I)V
 
@@ -75,7 +75,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b1bc7
+    const v2, 0x7f0b1bda
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setSummary(I)V
 

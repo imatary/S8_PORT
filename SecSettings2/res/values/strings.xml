@@ -1629,6 +1629,11 @@ Please also bear in mind that Samsung may still collect information about your u
 Tap OK to allow the brightness to be increased above safe levels."</string>
     <string name="auto_adjust_brightness">Auto brightness</string>
     <string name="auto_adjust_brightness_summary">Keep track of your brightness adjustments and apply them automatically in similar lighting conditions.</string>
+    <string name="auto_adjust_brightness_summary_nopac">Adjust the screen brightness automatically based on the current lighting conditions.</string>
+    <string name="reset_usage_pattern_title">Reset usage patterns</string>
+    <string name="reset_usage_pattern_summary">Clear your brightness adjustment history. Your phone will begin learning your preferences again after the reset.</string>
+    <string name="reset_usage_pattern_dialog_title">Reset your brightness usage patterns?</string>
+    <string name="reset_usage_pattern_dialog_summary">Your phone will begin learning your brightness preferences again after the reset.</string>
     <string name="current_theme_font">"Current theme's default"</string>
     <string name="auto_brightness">Auto brightness</string>
     <string name="hbm_mode_on">Maximised for best viewing in sunlight</string>
@@ -3185,6 +3190,11 @@ To unblock it and connect to other devices via a USB cable, insert a USIM/SIM ca
 Separate app sound only works when the audio device you select is different from your phone's main audio output device.
 
 You can change your phone's main audio output device in the quick settings panel. If audio output isn't shown, turn it on in Samsung Connect > Settings > Samsung Connect panel."</string>
+    <string name="multi_sound_descryption_for_uninstalledsc">"Play media sound from one app on an audio device separate from your phone's main audio output device. Select an app and audio device to turn this on.
+
+Separate app sound only works when the audio device you select is different from your phone's main audio output device.
+
+If you have Samsung Connect installed, you can change your phone's main audio output device in the quick settings panel. If the audio output device isn't shown, go to Samsung Connect > Settings, then turn on Samsung Connect panel."</string>
     <string name="set_application_title">App</string>
     <string name="set_application_summary">Select an app to play its sound on a separate audio device.</string>
     <string name="set_application_descryption">Select a multimedia app below to play its sound on a separate audio device.</string>
@@ -3692,9 +3702,9 @@ Your personal data and the settings of downloaded apps won't be affected."</stri
     <string name="giga_lte_nokt_sim">GiGA LTE cannot be enabled while a non-KT USIM card is inserted. Insert a KT USIM card and try again.</string>
     <string name="giga_lte_roaming">Unable to enable GiGA LTE while roaming internationally.</string>
     <string name="giga_lte_samrtbonding_wifi">Wi-Fi is currently turned off and Download booster is enabled. GiGA LTE and Download booster cannot be enabled at the same time. To enable GiGA LTE, Wi-Fi will be turned on and Download booster will be disabled. GiGA LTE uses Wi-Fi and mobile networks. Downloading via mobile networks may result in additional charges depending on your payment plan.</string>
-    <string name="giga_lte_booster_smart_wifi">GiGA LTE를 사용하려면 다운로드부스터가 Off가 됩니다. Wi-Fi가 해제된 상태입니다. GiGA LTE를 실행하려면 Wi-Fi 및 모바일 데이터를 모두 실행 하세요. LTE 네트워크에서 사용한 데이터는 제공량에서 차감됩니다. Wi-Fi 및 모바일 데이터 실행 시 스마트네트워크 기능도 함께 동작됩니다.</string>
+    <string name="giga_lte_booster_smart_wifi">GiGA LTE를 사용하려면 다운로드부스터가 Off가 됩니다. Wi-Fi가 해제된 상태입니다. GiGA LTE를 실행하려면 Wi-Fi 및 모바일 데이터를 모두 실행 하세요. LTE 네트워크에서 사용한 데이터는 제공량에서 차감됩니다. Wi-Fi 및 모바일 데이터 실행 시 스마트 네트워크 전환 기능도 함께 동작됩니다.</string>
     <string name="giga_lte_samrtbonding_mobile">Mobile data is currently turned off and Download booster is enabled. GiGA LTE and Download booster cannot be enabled at the same time. To enable GiGA LTE, Mobile data will be turned on and Download booster will be disabled. Downloading via mobile networks may result in additional charges depending on your payment plan.</string>
-    <string name="giga_lte_booster_smart_mobile">GiGA LTE를 사용하려면 다운로드부스터가 Off가 됩니다. 모바일데이터가 해제된 상태입니다. GiGA LTE를 실행하려면 Wi-Fi 및 모바일 데이터를 모두 실행 하세요. LTE 네트워크에서 사용한 데이터는 제공량에서 차감됩니다. Wi-Fi 및 모바일 데이터 실행 시 스마트네트워크 기능도 함께 동작됩니다.</string>
+    <string name="giga_lte_booster_smart_mobile">GiGA LTE를 사용하려면 다운로드부스터가 Off가 됩니다. 모바일데이터가 해제된 상태입니다. GiGA LTE를 실행하려면 Wi-Fi 및 모바일 데이터를 모두 실행 하세요. LTE 네트워크에서 사용한 데이터는 제공량에서 차감됩니다. Wi-Fi 및 모바일 데이터 실행 시 스마트 네트워크 전환 기능도 함께 동작됩니다.</string>
     <string name="band_lte_title">band LTE WiFi</string>
     <string name="band_lte_body">Enjoy higher data speeds by using LTE and Wi-Fi networks at the same time. Wi-Fi and Mobile data must be turned on to enable band LTE WiFi. Additional charges may apply depending on your payment plan. band LTE WiFi may not be available depending on content and network conditions.</string>
     <string name="band_lte_nosim_msg">No USIM card is inserted. Insert a USIM card and try again.</string>
@@ -3733,6 +3743,18 @@ Please activate Wi-Fi in order to use 4.5Gbit"</string>
     <string name="vodafone_giga_supernet_msg">In order to use 4.5Gbit service you should be connected to Vodafone Net Wi-Fi</string>
     <string name="vodafone_giga_mobile_msg">"Mobile Data is Off.
 Please activate Mobile Data in order to use 4.5Gbit"</string>
+    <string name="ais_mptcp_title">NEXT G</string>
+    <string name="ais_mptcp_body">NEXT G is able to enhance data speed through simultaneous access to LTE and Wi-Fi networks. If NEXT G is activated, the data used on the LTE network shall be deducted from the given data quota. NEXT G may not be activated on some networks such as websites with security settings.</string>
+    <string name="ais_mptcp_popup_title">NEXT G Activation</string>
+    <string name="ais_mptcp_wifi_mobile_off_msg">Both Wi-Fi and mobile data are off. Please turn both Wi-Fi and mobile data on in order to use NEXT G. If NEXT G is On, the data used on the LTE network shall be deducted from the given data quota. If Wi-Fi and mobile data are on, %s function is activated as well.</string>
+    <string name="ais_mptcp_wifi_off_msg">Wi-Fi is off. Please turn Wi-Fi on in order to use NEXT G. If Wi-Fi is on, %s function is activated as well.</string>
+    <string name="ais_mptcp_mobile_off_msg">Mobile data is off. please turn mobile data on in order to use NEXT G. If NEXT G is on, the data used on the LTE network shall be deducted from the given data quota. If mobile data is on, %s function is activated as well.</string>
+    <string name="ais_mptcp_smartbonding_off">If you use NEXT G, %s will be off. Would you like to continue?</string>
+    <string name="ais_mptcp_off_by_smartbonding">If you use %s, NEXT G will be off. Would you like to continue?</string>
+    <string name="ais_mptcp_smartbonding_wifi">If you use NEXT G, %s will be off. Wi-Fi is off. Please turn both Wi-Fi and mobile data on in order to use NEXT G. The data used on the LTE network shall be deducted from the given data quota.</string>
+    <string name="ais_mptcp_booster_smart_wifi">If you use NEXT G, %1$s will be off. Wi-Fi is off. Please turn both Wi-Fi and mobile data on in order to use NEXT G. The data used on the LTE network shall be deducted from the given data quota. If Wi-Fi and mobile are on, %2$s function is activated as well.</string>
+    <string name="ais_mptcp_smartbonding_mobile">If you use NEXT G, %s will be off. Mobile data is off. Please turn both Wi-fi and mobile data on in order to use NEXT G. The data used on the LTE network shall be deducted from the given data quota.</string>
+    <string name="ais_mptcp_booster_smart_mobile">If you use NEXT G, %1$s will be off. Mobile data is off. Please turn both Wi-fi and mobile data on in order to use NEXT G. The data used on the LTE network shall be deducted from the given data quota. If Wi-Fi and mobile data are on, %2$s function is activated as well.</string>
     <string name="samsung_bnr_section_title">Samsung account</string>
     <string name="samsung_backup_summary">Use your Samsung account to back up your data.</string>
     <string name="samsung_restore_summary">Use your Samsung account to restore your backup data.</string>
@@ -5672,6 +5694,7 @@ Phone setup can require significant network activity."</string>
     <string name="wifi_dns2">DNS 2</string>
     <string name="wifi_gateway">Gateway</string>
     <string name="wifi_network_prefix_length">Network prefix length</string>
+    <string name="wifi_watchdog_connectivity_check_adaptive">Adaptive Wi-Fi</string>
     <string name="wifi_watchdog_connectivity_check_summary">Automatically switch between Wi-Fi and mobile networks to maintain a stable Internet connection.</string>
     <string name="wifi_watchdog_connectivity_check_summary_include_autowifi">Automatically switch between Wi-Fi and mobile data and save frequently used Wi-Fi networks.</string>
     <string name="wifi_smart_network_switch_turned_on">On</string>

@@ -642,7 +642,7 @@
 .method protected getHelpResource()I
     .locals 1
 
-    const v0, 0x7f0b1a81
+    const v0, 0x7f0b1a94
 
     return v0
 .end method
@@ -668,7 +668,7 @@
 
     move-result-object v5
 
-    const v10, 0x7f080066
+    const v10, 0x7f080067
 
     invoke-virtual {p0, v10}, Lcom/android/settings/DisplaySettings;->addPreferencesFromResource(I)V
 
@@ -875,14 +875,14 @@
 
     if-eqz v10, :cond_8
 
-    const v6, 0x7f0b1bd2
+    const v6, 0x7f0b1be5
 
     :goto_6
     const/4 v10, 0x2
 
     new-array v10, v10, [Ljava/lang/CharSequence;
 
-    const v11, 0x7f0b1bcf
+    const v11, 0x7f0b1be2
 
     invoke-virtual {v0, v11}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -956,7 +956,7 @@
 
     new-array v10, v10, [Ljava/lang/CharSequence;
 
-    const v11, 0x7f0b1b70
+    const v11, 0x7f0b1b83
 
     invoke-virtual {v0, v11}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -966,7 +966,7 @@
 
     aput-object v11, v10, v12
 
-    const v11, 0x7f0b1b71
+    const v11, 0x7f0b1b84
 
     invoke-virtual {v0, v11}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1115,12 +1115,12 @@
 
     if-ne v10, v11, :cond_9
 
-    const v6, 0x7f0b1bd0
+    const v6, 0x7f0b1be3
 
     goto/16 :goto_6
 
     :cond_9
-    const v6, 0x7f0b1bd1
+    const v6, 0x7f0b1be4
 
     goto/16 :goto_6
 
