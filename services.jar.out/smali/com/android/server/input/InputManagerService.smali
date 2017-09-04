@@ -4420,7 +4420,7 @@
 
     sget-object v1, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
 
-    const v2, 0x10408b9
+    const v2, 0x10408ba
 
     invoke-virtual {v0, v3, v2, v1}, Landroid/app/NotificationManager;->cancelAsUser(Ljava/lang/String;ILandroid/os/UserHandle;)V
 
@@ -6941,9 +6941,11 @@
 .end method
 
 .method private showMissingKeyboardLayoutNotification(Landroid/view/InputDevice;)V
-    .locals 10
+    .locals 11
 
-    const v9, 0x10408b9
+    const v10, 0x10408bb
+
+    const v9, 0x10408ba
 
     const/4 v1, 0x0
 
@@ -7004,9 +7006,7 @@
 
     move-result-object v0
 
-    const v1, 0x10408ba
-
-    invoke-virtual {v8, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v8, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -7039,6 +7039,22 @@
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/app/Notification$Builder;->setColor(I)Landroid/app/Notification$Builder;
+
+    move-result-object v0
+
+    new-instance v1, Landroid/app/Notification$BigTextStyle;
+
+    invoke-direct {v1}, Landroid/app/Notification$BigTextStyle;-><init>()V
+
+    invoke-virtual {v8, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Landroid/app/Notification$BigTextStyle;->bigText(Ljava/lang/CharSequence;)Landroid/app/Notification$BigTextStyle;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/app/Notification$Builder;->setStyle(Landroid/app/Notification$Style;)Landroid/app/Notification$Builder;
 
     move-result-object v0
 
@@ -7077,7 +7093,7 @@
 
     if-ne p1, v2, :cond_1
 
-    const v2, 0x10408b7
+    const v2, 0x10408b8
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -7112,7 +7128,7 @@
     return-void
 
     :cond_1
-    const v2, 0x10408b8
+    const v2, 0x10408b9
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -8394,11 +8410,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-wide v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:J
-
-    invoke-static {v0, v1, p1}, Lcom/android/server/input/InputManagerService;->nativeAddOrRemoveVirtualGamePadDevice(JZ)I
-
-    move-result v0
+    const/4 v0, -0x1
 
     return v0
 .end method

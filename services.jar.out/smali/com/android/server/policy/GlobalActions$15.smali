@@ -104,7 +104,7 @@
 .method public onPress()V
     .locals 11
 
-    const v10, 0x1040897
+    const v10, 0x1040898
 
     const/4 v5, 0x0
 
@@ -443,7 +443,7 @@
 
     if-eqz v4, :cond_8
 
-    const v2, 0x10408a6
+    const v2, 0x10408a7
 
     :cond_8
     :goto_1
@@ -472,7 +472,7 @@
 
     if-eqz v4, :cond_9
 
-    const v1, 0x10408a7
+    const v1, 0x10408a8
 
     iget-object v4, p0, Lcom/android/server/policy/GlobalActions$15;->this$0:Lcom/android/server/policy/GlobalActions;
 
@@ -554,7 +554,7 @@
 
     if-eqz v4, :cond_f
 
-    const v1, 0x10408a9
+    const v1, 0x10408aa
 
     iget-object v4, p0, Lcom/android/server/policy/GlobalActions$15;->this$0:Lcom/android/server/policy/GlobalActions;
 
