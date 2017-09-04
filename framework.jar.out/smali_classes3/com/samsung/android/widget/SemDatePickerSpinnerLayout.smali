@@ -759,7 +759,7 @@
 
     iput v4, p0, Lcom/samsung/android/widget/SemDatePickerSpinnerLayout;->mSubTextSize:I
 
-    const v4, 0x104090b
+    const v4, 0x104090c
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -893,7 +893,7 @@
 
     move-result-object v5
 
-    const v6, 0x1040906
+    const v6, 0x1040907
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -907,7 +907,7 @@
 
     move-result-object v5
 
-    const v6, 0x1040907
+    const v6, 0x1040908
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -921,7 +921,7 @@
 
     move-result-object v5
 
-    const v6, 0x1040908
+    const v6, 0x1040909
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
