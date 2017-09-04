@@ -3705,6 +3705,8 @@
     return-void
 
     :cond_3
+    invoke-direct {p0, v5}, Lcom/android/phone/CallFeaturesSetting;->showVMDialog(I)V
+
     return-void
 
     :cond_4

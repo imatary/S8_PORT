@@ -2166,10 +2166,17 @@ Hindi magagamit ang LTE roaming kung hindi ka sasang-ayon. Maaaring gamitin ang 
     <string name="data_usage_disable_mobile_warning_skt">"Maliban kung gagamit ka ng Wi-Fi, hindi mo na magagamit ang Internet, Email o iba pang app na nangangailangan ng koneksiyon sa data.
 
 Io-off ang mobile data."</string>
+    <string name="data_usage_disable_mobile_warning_ktt">Io-off ang Mobile data (WCDMA/LTE). Maliban kung gumagamit ka ng Wi-Fi, hindi mo na magagamit ang mga app na kailangan ng koneksiyon sa data. Maaari ka pa rin magpadala at tumanggap ng mga multimedia message.</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">Io-off ang Mobile data (WCDMA/LTE). Maliban kung gumagamit ka ng Wi-Fi, hindi mo na magagamit ang mga app na kailangan ng koneksiyon sa data. Ipagbabawala ng pagtanggap o pagpadala ng mga multimedia message.</string>
+    <string name="data_usage_disable_mobile_warning_lgt">"Maliban kung gagamit ka ng Wi-Fi, hindi mo na magagamit ang Internet, Email o iba pang app na nangangailangan ng koneksiyon sa data.
+
+Io-off ang mobile data."</string>
     <string name="data_usage_disable_mobile_warning">"Maliban kung gagamit ka ng Wi-Fi, hindi mo na magagamit ang Internet, Email, o iba pang apps na nangangailangan ng koneksyon sa data.
 
 Hindi papaganahin ang mobile data."</string>
     <string name="data_usage_enable_mobile_warning_skt">Io-on ang Mobile data. Maaaring magresulta sa karagdagang singil ang pagkonekta sa mga mobile network depende sa iyong plan sa pagbabayad.</string>
+    <string name="data_usage_enable_mobile_warning_ktt">Io-on ang Mobile data. Maaaring magresulta sa karagdagang singil ang pagkonekta sa mga mobile network depende sa iyong plan sa pagbabayad.</string>
+    <string name="data_usage_enable_mobile_warning_lgt">Io-on ang Mobile data. Maaaring magresulta sa karagdagang singil ang pagkonekta sa mga mobile network depende sa iyong plan sa pagbabayad.</string>
     <string name="data_usage_enable_mobile_warning">Maaaring magtamo ng karagdagang mga singilin ang pagkonekta sa pamamagitan ng packet data. Magpatuloy?</string>
     <string name="insert_sim_card">Ipasok ang SIM card</string>
     <string name="insert_sim_card_message">Magpasok ng SIM card upang ma-access ang mga serbisyo sa network.</string>

@@ -1,5 +1,5 @@
 Signature-Version: 1.0
-SHA-256-Digest-Manifest: oNBvloFeOND/+X5xREDL7N++kXhqbIGT069X35ao5Qs=
+SHA-256-Digest-Manifest: CEDSSxTN95M+mRGZi4zSu0R3ckevNMV19qqOjY9aSYo=
 Created-By: 1.0 (Android SignApk)
 
 Name: res/drawable-xxxhdpi-v4/tw_ic_ab_back_mtrl.png
@@ -1247,7 +1247,7 @@ Name: res/layout-sw360dp-land-xhdpi-v13/emergency_dialer.xml
 SHA-256-Digest: Ldf/bSvN1KiprQImQ097hI3D5z19cko354arNm7NXKM=
 
 Name: res/xml/sec_call_feature_setting.xml
-SHA-256-Digest: zsnbry2Ywo3JSJb4u3bQFs8OcQHNnfnTABkLqkDh47A=
+SHA-256-Digest: joB5omY2wS9hGsMGvyc6RdgOg0D1/GKWD430ygDOP7E=
 
 Name: res/drawable-xxxhdpi-v4/ic_add_24dp.png
 SHA-256-Digest: UhFB6Rdeq8oiCbFth1NT4kkx/bvcVqInlRoRhWt/VIE=
@@ -1730,7 +1730,7 @@ Name: res/layout/adn_list.xml
 SHA-256-Digest: FO/bYgHR8y54aOQM62TYLDjoOBdiatRhGcuRw219em8=
 
 Name: resources.arsc
-SHA-256-Digest: MvKU4XUrtf9B+rto39CGka2ZGvpEwdynTO+VrIVmC8s=
+SHA-256-Digest: m1RSd0pNm5n+6PK0nobROjppFoQZvfaDNPXAPM19B9U=
 
 Name: res/drawable/action_bar_icon_add.bmp
 SHA-256-Digest: m2WzvQrEcrf1T1/+EdIzkuHGzJ197oEv3tNdxaU4vXI=
@@ -1908,7 +1908,7 @@ Name: res/drawable/emergency_dialpad_button_bg_rounded_rectangle_inset
 SHA-256-Digest: 0AcFOBPulcl79/EltmxQY3cG4RCaYgB/h7KKVGMV99M=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: 5seyjDvI4+krBbwqFa/Siv9FCCk6Vibf1a7m13fMP/4=
+SHA-256-Digest: v86mamu/zUQ1ED4+/tYi5oVla5rpKzQdGMqW9zErrIg=
 
 Name: res/drawable-xxxhdpi-v4/call_circle_arrow_left_04.qmg
 SHA-256-Digest: lf5t1UA/BsnoUH5lM1AYnP9PA5ByEA2lvdU0Bw0yfZs=

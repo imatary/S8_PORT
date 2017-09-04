@@ -1117,20 +1117,6 @@
 
     invoke-virtual {v1, v0}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    iget-object v1, p0, Lcom/android/phone/callsettings/WifiSettingFragment;->mWifiSwitch:Landroid/preference/SwitchPreference;
-
-    iget-object v2, p0, Lcom/android/phone/callsettings/WifiSettingFragment;->mPhone:Lcom/android/internal/telephony/Phone;
-
-    invoke-virtual {v2}, Lcom/android/internal/telephony/Phone;->getContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    invoke-static {v2, v0}, Lcom/android/phone/utils/WifiSettingUtils;->getWiFiCallingSummaryText(Landroid/content/Context;Z)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Landroid/preference/SwitchPreference;->setSummary(Ljava/lang/CharSequence;)V
-
     :cond_0
     iget-object v1, p0, Lcom/android/phone/callsettings/WifiSettingFragment;->mWifiSwitchPref:Landroid/preference/SemSwitchPreferenceScreen;
 
@@ -1156,7 +1142,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/WifiSettingFragment;->mWifiSwitchPref:Landroid/preference/SemSwitchPreferenceScreen;
 
-    invoke-virtual {v1, v4}, Landroid/preference/SemSwitchPreferenceScreen;->semSetSummaryColorToColorPrimaryDark(Z)V
+    invoke-virtual {v1, v0}, Landroid/preference/SemSwitchPreferenceScreen;->semSetSummaryColorToColorPrimaryDark(Z)V
 
     :cond_1
     iget-object v1, p0, Lcom/android/phone/callsettings/WifiSettingFragment;->mWifiPref:Landroid/preference/PreferenceScreen;

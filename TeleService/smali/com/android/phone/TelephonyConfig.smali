@@ -1235,14 +1235,44 @@
     return v1
 .end method
 
-.method public static isNEESIM()Z
-    .locals 2
+.method public static isNEESIM(I)Z
+    .locals 4
 
-    const-string/jumbo v1, "gsm.sim.operator.numeric"
-
-    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/phone/PhoneUtilsMultiSIM;->getMultiSimNumeric(I)Ljava/lang/String;
 
     move-result-object v0
+
+    const-string/jumbo v1, "TelephonyConfig"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "isNEESIM simOperator = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v3, " phoneId = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     const-string/jumbo v1, "24412"
 
@@ -2121,14 +2151,44 @@
     return v2
 .end method
 
-.method public static isSMARTSIM()Z
-    .locals 2
+.method public static isSMARTSIM(I)Z
+    .locals 4
 
-    const-string/jumbo v1, "gsm.sim.operator.numeric"
-
-    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/phone/PhoneUtilsMultiSIM;->getMultiSimNumeric(I)Ljava/lang/String;
 
     move-result-object v0
+
+    const-string/jumbo v1, "TelephonyConfig"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v3, "isSMARTSIM simOperator = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v3, " phoneId = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     const-string/jumbo v1, "45606"
 
@@ -2136,13 +2196,22 @@
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-nez v1, :cond_0
 
+    const-string/jumbo v1, "45608"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    :cond_0
     const/4 v1, 0x1
 
     return v1
 
-    :cond_0
+    :cond_1
     const/4 v1, 0x0
 
     return v1
@@ -2272,12 +2341,10 @@
     return v1
 .end method
 
-.method public static isSwisscomSIM()Z
+.method public static isSwisscomSIM(I)Z
     .locals 4
 
-    const-string/jumbo v1, "gsm.sim.operator.numeric"
-
-    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/phone/PhoneUtilsMultiSIM;->getMultiSimNumeric(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2287,13 +2354,23 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "gsm.sim.operator.numeric = "
+    const-string/jumbo v3, "isSwisscomSIM simOperator = "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v3, " phoneId = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -2321,12 +2398,10 @@
     return v1
 .end method
 
-.method public static isTELSIM()Z
+.method public static isTELSIM(I)Z
     .locals 4
 
-    const-string/jumbo v1, "gsm.sim.operator.numeric"
-
-    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/phone/PhoneUtilsMultiSIM;->getMultiSimNumeric(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2336,13 +2411,23 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "gsm.sim.operator.numeric = "
+    const-string/jumbo v3, "isTELSIM simOperator = "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v3, " phoneId = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -2370,12 +2455,10 @@
     return v1
 .end method
 
-.method public static isTelenorDKSIM()Z
+.method public static isTelenorDKSIM(I)Z
     .locals 4
 
-    const-string/jumbo v1, "gsm.sim.operator.numeric"
-
-    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/phone/PhoneUtilsMultiSIM;->getMultiSimNumeric(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2385,13 +2468,23 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "gsm.sim.operator.numeric = "
+    const-string/jumbo v3, "isTelenorDKSIM simOperator = "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v3, " phoneId = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -2641,12 +2734,10 @@
     return v1
 .end method
 
-.method public static isVodaSIM()Z
+.method public static isVodaSIM(I)Z
     .locals 4
 
-    const-string/jumbo v1, "gsm.sim.operator.numeric"
-
-    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/phone/PhoneUtilsMultiSIM;->getMultiSimNumeric(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2656,13 +2747,23 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "gsm.sim.operator.numeric = "
+    const-string/jumbo v3, "isVodaSIM simOperator = "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string/jumbo v3, " phoneId = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v2
 

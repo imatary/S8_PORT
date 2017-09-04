@@ -2167,10 +2167,17 @@ LTE-Roaming ist nicht verfügbar, wenn Sie nicht zustimmen. Falls keine LTE-Netz
     <string name="data_usage_disable_mobile_warning_skt">"Sie können das Internet, E-Mail oder andere Anwendungen, die eine Datenverbindung benötigen, nicht mehr verwenden, außer Sie nutzen WLAN.
 
 Mobile Daten werden deaktiviert."</string>
+    <string name="data_usage_disable_mobile_warning_ktt">Mobile Daten (WCDMA/LTE) werden ausgeschaltet. Sie können Anwendungen, die eine Datenverbindung benötigen, nur verwenden, wenn Sie WLAN nutzen. Sie können noch MMS senden und empfangen.</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">Mobile Daten (WCDMA/LTE) werden ausgeschaltet. Sie können Anwendungen, die eine Datenverbindung benötigen, nur verwenden, wenn Sie WLAN nutzen. Das Senden oder Empfangen von MMS wird eingeschränkt.</string>
+    <string name="data_usage_disable_mobile_warning_lgt">"Sie können das Internet, E-Mail oder andere Anwendungen, die eine Datenverbindung benötigen, nicht mehr verwenden, außer Sie nutzen WLAN.
+
+Mobile Daten werden deaktiviert."</string>
     <string name="data_usage_disable_mobile_warning">"Sie können das Internet, E-Mail oder andere Anwendungen, die eine Datenverbindung benötigen, nicht mehr verwenden, außer bei der Verwendung von WLAN.
 
 Mobile Daten werden deaktiviert."</string>
     <string name="data_usage_enable_mobile_warning_skt">Mobile Daten werden eingeschaltet. Bei einer Verbindung mit einem mobilen Netzwerk fallen je nach Tarif möglicherweise zusätzliche Gebühren an.</string>
+    <string name="data_usage_enable_mobile_warning_ktt">Mobile Daten werden eingeschaltet. Bei einer Verbindung mit einem mobilen Netzwerk fallen je nach Tarif möglicherweise zusätzliche Gebühren an.</string>
+    <string name="data_usage_enable_mobile_warning_lgt">Mobile Daten werden eingeschaltet. Bei einer Verbindung mit einem mobilen Netzwerk fallen je nach Tarif möglicherweise zusätzliche Gebühren an.</string>
     <string name="data_usage_enable_mobile_warning">Die Verbindung über Paketdaten kann zusätzliche Kosten erzeugen. Fortfahren?</string>
     <string name="insert_sim_card">SIM-Karte einlegen</string>
     <string name="insert_sim_card_message">SIM-Karte einsetzen, um auf Netzdienste zuzugreifen</string>

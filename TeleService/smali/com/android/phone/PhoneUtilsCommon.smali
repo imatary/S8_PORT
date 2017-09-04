@@ -5692,66 +5692,48 @@
     return-void
 .end method
 
-.method public static showCBPassword()Z
+.method public static showCBPassword(I)Z
     .locals 4
 
     const/4 v0, 0x0
 
-    invoke-static {}, Lcom/android/phone/TelephonyConfig;->isVodaSIM()Z
+    invoke-static {p0}, Lcom/android/phone/TelephonyConfig;->isVodaSIM(I)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    invoke-static {}, Lcom/android/phone/TelephonyConfig;->isSwisscomSIM()Z
+    invoke-static {p0}, Lcom/android/phone/TelephonyConfig;->isSwisscomSIM(I)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    invoke-static {}, Lcom/android/phone/TelephonyConfig;->isTELSIM()Z
+    invoke-static {p0}, Lcom/android/phone/TelephonyConfig;->isTELSIM(I)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    invoke-static {}, Lcom/android/phone/TelephonyConfig;->isNEESIM()Z
+    invoke-static {p0}, Lcom/android/phone/TelephonyConfig;->isNEESIM(I)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    invoke-static {}, Lcom/android/phone/TelephonyConfig;->isSMARTSIM()Z
+    invoke-static {p0}, Lcom/android/phone/TelephonyConfig;->isSMARTSIM(I)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    invoke-static {}, Lcom/android/phone/TelephonyConfig;->isTelenorDKSIM()Z
+    invoke-static {p0}, Lcom/android/phone/TelephonyConfig;->isTelenorDKSIM(I)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    invoke-static {}, Lcom/android/phone/TelephonyConfig;->isSINSIM()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const-string/jumbo v1, "feature_multisim"
-
-    invoke-static {v1}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-static {}, Lcom/android/phone/PhoneUtilsMultiSIM;->getCurrentNetworkPhoneId()I
-
-    move-result v1
-
-    invoke-static {v1}, Lcom/android/phone/TelephonyConfig;->isSINSIM(I)Z
+    invoke-static {p0}, Lcom/android/phone/TelephonyConfig;->isSINSIM(I)Z
 
     move-result v1
 

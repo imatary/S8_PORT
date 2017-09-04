@@ -105,7 +105,7 @@
         <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.CdmaCallOptions" />
     </PreferenceScreen>
     <PreferenceCategory android:persistent="false" android:title="@string/wfc_title" android:key="button_wifi_calling_category_key">
-        <SwitchPreference android:persistent="true" android:title="@string/wfc_title" android:key="button_meterial_wifi_calling" />
+        <SwitchPreference android:persistent="true" android:title="@string/wfc_title" android:key="button_meterial_wifi_calling" android:summary="@string/wfc_summary_dt" />
         <SemSwitchPreferenceScreen android:persistent="true" android:title="@string/wfc_title" android:key="button_wifi_call_preference" android:fragment="com.android.phone.callsettings.WifiCallActivity" />
         <PreferenceScreen android:persistent="false" android:title="@string/wfc_title" android:key="button_wifi_call_preference_spr">
             <intent android:action="com.sec.sprint.wfc.WIFI_CALLING" />

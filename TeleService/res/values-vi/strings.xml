@@ -2166,10 +2166,17 @@ Chuyển vùng LTE sẽ không khả dụng nếu bạn không đồng ý. Mạn
     <string name="data_usage_disable_mobile_warning_skt">"Trừ khi sử dụng Wi-Fi, bạn sẽ không thể tiếp tục sử dụng Internet, Email hoặc các ứng dụng khác cần có kết nối dữ liệu.
 
 Dữ liệu di động sẽ bị tắt."</string>
+    <string name="data_usage_disable_mobile_warning_ktt">Dữ liệu di động (WCDMA/LTE) sẽ tắt. Nếu không dùng Wi-Fi, bạn sẽ không thể tiếp tục sử dụng các ứng dụng cần có kết nối dữ liệu. Bạn vẫn có thể gửi và nhận tin nhắn MMS.</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">Dữ liệu di động (WCDMA/LTE) sẽ tắt. Nếu không dùng Wi-Fi, bạn sẽ không thể tiếp tục sử dụng các ứng dụng cần có kết nối dữ liệu. Việc gửi hoặc nhận tin nhắn MMS sẽ bị hạn chế.</string>
+    <string name="data_usage_disable_mobile_warning_lgt">"Trừ khi sử dụng Wi-Fi, bạn sẽ không thể tiếp tục sử dụng Internet, Email hoặc các ứng dụng khác cần có kết nối dữ liệu.
+
+Dữ liệu di động sẽ bị tắt."</string>
     <string name="data_usage_disable_mobile_warning">"Nếu không dùng Wi-Fi, bạn sẽ không thể tiếp tục dùng Internet, Email hoặc các ứng dụng khác yêu cầu có kết nối dữ liệu.
 
 Dữ liệu di động sẽ bị tắt."</string>
     <string name="data_usage_enable_mobile_warning_skt">Dữ liệu di động sẽ được bật. Việc kết nối với mạng di động có thể bị tính thêm phí tùy vào gói thanh toán của bạn.</string>
+    <string name="data_usage_enable_mobile_warning_ktt">Dữ liệu di động sẽ được bật. Việc kết nối với mạng di động có thể bị tính thêm phí tùy vào gói thanh toán của bạn.</string>
+    <string name="data_usage_enable_mobile_warning_lgt">Dữ liệu di động sẽ được bật. Việc kết nối với mạng di động có thể bị tính thêm phí tùy vào gói thanh toán của bạn.</string>
     <string name="data_usage_enable_mobile_warning">Việc kết nối qua dữ liệu gói có thể phải trả thêm phí. Tiếp tục?</string>
     <string name="insert_sim_card">Gắn thẻ SIM</string>
     <string name="insert_sim_card_message">Gắn thẻ SIM để truy cập mạng.</string>

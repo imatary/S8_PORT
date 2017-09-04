@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->showMobileDataOffDialog(Landroid/content/Context;Landroid/preference/TwoStatePreference;)V
+    value = Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->showMobileDataOffDialogWhenBootup()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,12 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;
 
-.field final synthetic val$pref:Landroid/preference/TwoStatePreference;
-
 
 # direct methods
-.method constructor <init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/preference/TwoStatePreference;)V
+.method constructor <init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$17;->this$0:Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;
-
-    iput-object p2, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$17;->val$pref:Landroid/preference/TwoStatePreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,18 +35,9 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+    .locals 0
 
-    iget-object v0, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$17;->val$pref:Landroid/preference/TwoStatePreference;
+    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$17;->val$pref:Landroid/preference/TwoStatePreference;
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
-
-    :cond_0
     return-void
 .end method

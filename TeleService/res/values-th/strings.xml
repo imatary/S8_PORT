@@ -2176,10 +2176,17 @@ Data roaming may be modified and/or turned off in “Roaming settings”."</stri
     <string name="data_usage_disable_mobile_warning_skt">"หากคุณไม่ใช้ Wi-Fi คุณจะไม่สามารถใช้อินเทอร์เน็ต อีเมล์ หรือแอพอื่นๆ ที่ต้องมีการเชื่อมต่อข้อมูลได้อีกต่อไป
 
 ข้อมูลมือถือจะถูกปิด"</string>
+    <string name="data_usage_disable_mobile_warning_ktt">ข้อมูลมือถือ (WCDMA/LTE) จะถูกปิด หากคุณไม่ใช้ Wi-Fi คุณจะไม่สามารถใช้แอพที่ต้องมีการเชื่อมต่อข้อมูลได้อีกต่อไป คุณยังสามารถส่งและรับข้อความ MMS ได้</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">ข้อมูลมือถือ (WCDMA/LTE) จะถูกปิด หากคุณไม่ใช้ Wi-Fi คุณจะไม่สามารถใช้แอพที่ต้องมีการเชื่อมต่อข้อมูลได้อีกต่อไป การส่งหรือรับข้อความ MMS จะถูกจำกัด</string>
+    <string name="data_usage_disable_mobile_warning_lgt">"หากคุณไม่ใช้ Wi-Fi คุณจะไม่สามารถใช้อินเทอร์เน็ต อีเมล์ หรือแอพอื่นๆ ที่ต้องมีการเชื่อมต่อข้อมูลได้อีกต่อไป
+
+ข้อมูลมือถือจะถูกปิด"</string>
     <string name="data_usage_disable_mobile_warning">"หากคุณไม่ใช้ Wi-Fi คุณจะไม่สามารถใช้อินเทอร์เน็ต อีเมล หรือแอพอื่นๆ ที่ต้องมีการเชื่อมต่อข้อมูลได้อีกต่อไป
 
 ข้อมูลมือถือจะถูกปิดใช้งาน"</string>
     <string name="data_usage_enable_mobile_warning_skt">ข้อมูลมือถือจะถูกเปิด การเชื่อมต่อกับเครือข่ายมือถือ อาจมีค่าใช้จ่ายเพิ่มเติม โดยขึ้นอยู่กับแผนการชำระเงินของคุณ</string>
+    <string name="data_usage_enable_mobile_warning_ktt">ข้อมูลมือถือจะถูกเปิด การเชื่อมต่อกับเครือข่ายมือถือ อาจมีค่าใช้จ่ายเพิ่มเติม โดยขึ้นอยู่กับแผนการชำระเงินของคุณ</string>
+    <string name="data_usage_enable_mobile_warning_lgt">ข้อมูลมือถือจะถูกเปิด การเชื่อมต่อกับเครือข่ายมือถือ อาจมีค่าใช้จ่ายเพิ่มเติม โดยขึ้นอยู่กับแผนการชำระเงินของคุณ</string>
     <string name="data_usage_enable_mobile_warning">การ​เชื่อม​ต่อ​กับ​ใช้​แพ็กเกจดาต้าอาจ​มี​ค่า​ใช้​จ่าย​เพิ่ม​เติม​เกิด​ขึ้น ทำ​ต่อ?</string>
     <string name="insert_sim_card">ใส่ SIM ​การ์ด</string>
     <string name="insert_sim_card_message">"ใส่ SIM การ์ด เพื่อใช้งาน

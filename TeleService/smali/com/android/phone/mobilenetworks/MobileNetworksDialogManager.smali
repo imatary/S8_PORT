@@ -755,62 +755,6 @@
     return-void
 .end method
 
-.method public static final showCarrierLockWarningDialog(Landroid/content/Context;)Landroid/app/AlertDialog;
-    .locals 5
-
-    new-instance v2, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$13;
-
-    invoke-direct {v2, p0}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$13;-><init>(Landroid/content/Context;)V
-
-    new-instance v0, Landroid/app/AlertDialog$Builder;
-
-    invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    const v3, 0x7f0d06a0
-
-    invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v3
-
-    const v4, 0x7f0d07b4
-
-    invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v3
-
-    const v4, 0x7f0d0835
-
-    invoke-virtual {v3, v4, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v3
-
-    const v4, 0x7f0d0349
-
-    invoke-virtual {v3, v4, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
-
-    move-result-object v3
-
-    const/16 v4, 0x7d8
-
-    invoke-virtual {v3, v4}, Landroid/view/Window;->setType(I)V
-
-    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
-
-    return-object v1
-.end method
-
 .method public static final showKorOpenRoamingDataSelectionPopUp(Landroid/content/Context;)Landroid/app/AlertDialog;
     .locals 9
 
@@ -1751,9 +1695,9 @@
 
     move-result-object v4
 
-    new-instance v5, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$15;
+    new-instance v5, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$14;
 
-    invoke-direct {v5, p0}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$15;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;)V
+    invoke-direct {v5, p0}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$14;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;)V
 
     invoke-virtual {v4, v5}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->setOkClickListener(Landroid/content/DialogInterface$OnClickListener;)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
 
@@ -1807,9 +1751,9 @@
 
     invoke-direct {p0, v4}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->log(Ljava/lang/String;)V
 
-    new-instance v3, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$14;
+    new-instance v3, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$13;
 
-    invoke-direct {v3, p0, p2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$14;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/preference/TwoStatePreference;)V
+    invoke-direct {v3, p0, p2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$13;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/preference/TwoStatePreference;)V
 
     invoke-virtual {p2}, Landroid/preference/TwoStatePreference;->isChecked()Z
 
@@ -2242,17 +2186,17 @@
 
     invoke-direct {v5, p0, p1, v2, v0}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    new-instance v6, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$16;
+    new-instance v6, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$15;
 
-    invoke-direct {v6, p0, p2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$16;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/preference/TwoStatePreference;)V
+    invoke-direct {v6, p0, p2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$15;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/preference/TwoStatePreference;)V
 
     invoke-virtual {v5, v1, v6}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->setOkClickListener(Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
 
     move-result-object v5
 
-    new-instance v6, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$17;
+    new-instance v6, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$16;
 
-    invoke-direct {v6, p0, p2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$17;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/preference/TwoStatePreference;)V
+    invoke-direct {v6, p0, p2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$16;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/preference/TwoStatePreference;)V
 
     invoke-virtual {v5, v6}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->setNoClickListener(Landroid/content/DialogInterface$OnClickListener;)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
 
@@ -2321,9 +2265,9 @@
 
     invoke-direct {v3, p0, v4, v1, v0}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    new-instance v4, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$18;
+    new-instance v4, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$17;
 
-    invoke-direct {v4, p0}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$18;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;)V
+    invoke-direct {v4, p0}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$17;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;)V
 
     invoke-virtual {v3, v4}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;->setOkClickListener(Landroid/content/DialogInterface$OnClickListener;)Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$MobileNetworkDialog;
 
@@ -2357,9 +2301,9 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$19;
+    new-instance v3, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$18;
 
-    invoke-direct {v3, p0, p1}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$19;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;I)V
+    invoke-direct {v3, p0, p1}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$18;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;I)V
 
     const v4, 0x104000a
 
@@ -2367,9 +2311,9 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$20;
+    new-instance v3, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$19;
 
-    invoke-direct {v3, p0, p2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$20;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/preference/ListPreference;)V
+    invoke-direct {v3, p0, p2}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$19;-><init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/preference/ListPreference;)V
 
     const/high16 v4, 0x1040000
 

@@ -2181,10 +2181,17 @@ Injured/Dead
     <string name="data_usage_disable_mobile_warning_skt">除非您使用 <cst>Wi-Fi</cst>"，否则您将不能再使用互联网、电子邮件或需要数据连接的其他应用程序。
 
 移动数据将关闭。"</string>
+    <string name="data_usage_disable_mobile_warning_ktt">将关闭移动数据 (WCDMA/LTE)。除非您使用 <cst>Wi-Fi</cst>，否则将无法使用需要数据连接的应用程序。您仍可以发送或接收彩信。</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">将关闭移动数据 (WCDMA/LTE)。除非您使用 <cst>Wi-Fi</cst>，否则将无法使用需要数据连接的应用程序。发送或接收彩信会受限。</string>
+    <string name="data_usage_disable_mobile_warning_lgt">除非您使用 <cst>Wi-Fi</cst>"，否则您将不能再使用互联网、电子邮件或需要数据连接的其他应用程序。
+
+移动数据将关闭。"</string>
     <string name="data_usage_disable_mobile_warning">除非您使用 <cst>Wi-Fi</cst>"，否则您将不能再使用互联网、电子邮件或需要数据连接的其他应用程序。
 
 移动数据将被禁用。"</string>
     <string name="data_usage_enable_mobile_warning_skt">将打开移动数据。根据您的资费套餐，连接至移动网络可能产生额外费用。</string>
+    <string name="data_usage_enable_mobile_warning_ktt">将打开移动数据。根据您的资费套餐，连接至移动网络可能产生额外费用。</string>
+    <string name="data_usage_enable_mobile_warning_lgt">将打开移动数据。根据您的资费套餐，连接至移动网络可能产生额外费用。</string>
     <string name="data_usage_enable_mobile_warning">通过分组数据连接可能产生额外费用。继续？</string>
     <string name="insert_sim_card">插入 SIM 卡</string>
     <string name="insert_sim_card_message">插入 SIM 卡以访问网络服务。</string>

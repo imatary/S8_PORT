@@ -2164,10 +2164,17 @@ L'itinérance 4G ne sera pas disponible si vous n'acceptez pas. Il se peut que l
     <string name="data_usage_disable_mobile_warning_skt">"À moins que vous n'utilisiez le Wi-Fi, vous ne pourrez plus utiliser Internet, la messagerie électronique ou d'autres applications nécessitant une connexion de données.
 
 Les données mobiles vont être désactivées."</string>
+    <string name="data_usage_disable_mobile_warning_ktt">"Les données mobiles (WCDMA/4G) vont être désactivées. À moins d'utiliser le Wi-Fi, vous ne pourrez plus utiliser les applications nécessitant une connexion de données. Vous pourrez quand même envoyer et recevoir des MMS."</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">"Les données mobiles (WCDMA/4G) vont être désactivées. À moins d'utiliser le Wi-Fi, vous ne pourrez plus utiliser les applications nécessitant une connexion de données. L'envoi ou la réception de MMS sera limité."</string>
+    <string name="data_usage_disable_mobile_warning_lgt">"À moins que vous n'utilisiez le Wi-Fi, vous ne pourrez plus utiliser Internet, la messagerie électronique ou d'autres applications nécessitant une connexion de données.
+
+Les données mobiles vont être désactivées."</string>
     <string name="data_usage_disable_mobile_warning">"A moins que vous n'utilisiez le Wi-Fi, vous ne pourrez plus utiliser internet, la messagerie électronique ou d'autres applications nécessitant une connexion de données.
 
 Les données mobiles vont être désactivées."</string>
     <string name="data_usage_enable_mobile_warning_skt">Les données mobiles vont être activées. La connexion aux réseaux mobiles peut entraîner des frais supplémentaires en fonction de votre forfait.</string>
+    <string name="data_usage_enable_mobile_warning_ktt">Les données mobiles vont être activées. La connexion aux réseaux mobiles peut entraîner des frais supplémentaires en fonction de votre forfait.</string>
+    <string name="data_usage_enable_mobile_warning_lgt">Les données mobiles vont être activées. La connexion aux réseaux mobiles peut entraîner des frais supplémentaires en fonction de votre forfait.</string>
     <string name="data_usage_enable_mobile_warning">Les connexions de données peuvent entraîner des frais supplémentaires. Continuer ?</string>
     <string name="insert_sim_card">Insérez la carte SIM</string>
     <string name="insert_sim_card_message">Insérez une carte SIM pour accéder aux services réseau.</string>

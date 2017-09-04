@@ -2164,10 +2164,17 @@ Injured/Dead
     <string name="data_usage_disable_mobile_warning_skt">"除非您使用 Wi-Fi，否則將無法繼續使用網際網路、電子郵件或其他需要數據連線的應用程式。
 
 將關閉行動數據。"</string>
+    <string name="data_usage_disable_mobile_warning_ktt">將關閉行動數據 (WCDMA/LTE)。除非您使用 Wi-Fi，否則將無法再使用需要數據連線的應用程式。您仍可傳送與接收多媒體訊息。</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">將關閉行動數據 (WCDMA/LTE)。除非您使用 Wi-Fi，否則將無法再使用需要數據連線的應用程式。將限制傳送與接收多媒體訊息。</string>
+    <string name="data_usage_disable_mobile_warning_lgt">"除非您使用 Wi-Fi，否則將無法繼續使用網際網路、電子郵件或其他需要數據連線的應用程式。
+
+將關閉行動數據。"</string>
     <string name="data_usage_disable_mobile_warning">"除非您使用 Wi-Fi 網路，否則將無法使用網際網路、電子郵件或其他需要數據連接的應用程式。
 
 行動數據將被停用。"</string>
     <string name="data_usage_enable_mobile_warning_skt">將開啟行動數據。連接至行動網路可能根據您的資費方案產生額外費用。</string>
+    <string name="data_usage_enable_mobile_warning_ktt">將開啟行動數據。連接至行動網路可能根據您的資費方案產生額外費用。</string>
+    <string name="data_usage_enable_mobile_warning_lgt">將開啟行動數據。連接至行動網路可能根據您的資費方案產生額外費用。</string>
     <string name="data_usage_enable_mobile_warning">透過數據傳輸連線可能會產生額外費用。要繼續嗎？</string>
     <string name="insert_sim_card">插入SIM卡</string>
     <string name="insert_sim_card_message">請插入 SIM 卡以存取網路服務。</string>

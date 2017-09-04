@@ -2970,7 +2970,7 @@
 
     move-result v3
 
-    if-nez v3, :cond_16
+    if-nez v3, :cond_14
 
     if-eqz v22, :cond_13
 
@@ -3026,7 +3026,7 @@
 
     move-result-object v17
 
-    if-eqz v17, :cond_17
+    if-eqz v17, :cond_15
 
     return-object v17
 
@@ -3076,54 +3076,19 @@
 
     move-result v3
 
-    if-eqz v3, :cond_14
+    if-eqz v3, :cond_11
 
     invoke-static/range {p2 .. p2}, Lcom/android/services/telephony/TelephonyConnectionUtils;->isImsCall(Landroid/telecom/ConnectionRequest;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_15
+    if-nez v3, :cond_11
 
-    :cond_14
-    :goto_3
-    invoke-direct/range {p0 .. p0}, Lcom/android/services/telephony/TelephonyConnectionService;->isAirplainModeOn()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_11
-
-    invoke-static/range {v20 .. v20}, Lcom/android/services/utils/SecTelephonyUtil;->isPotentialMMICode(Landroid/net/Uri;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_11
-
-    invoke-static {}, Lcom/android/services/utils/SecTelephonyUtil;->isCellCNetwork()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_11
-
-    const-string/jumbo v3, "change service state to STATE_POWER_OFF (case Wifi only IMS)"
-
-    const/4 v5, 0x0
-
-    new-array v5, v5, [Ljava/lang/Object;
-
-    move-object/from16 v0, p0
-
-    invoke-static {v0, v3, v5}, Lcom/android/services/telephony/Log;->i(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)V
-
-    const/16 v31, 0x3
-
-    goto :goto_2
-
-    :cond_15
     invoke-static/range {p2 .. p2}, Lcom/android/services/telephony/TelephonyConnectionUtils;->isVoiceCall(Landroid/telecom/ConnectionRequest;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_14
+    if-eqz v3, :cond_11
 
     const-string/jumbo v3, "VoicePhoneService in Service and Plane mode on, change domain CS -> PS"
 
@@ -3141,7 +3106,7 @@
 
     move-result v3
 
-    if-nez v3, :cond_14
+    if-nez v3, :cond_11
 
     invoke-virtual/range {p2 .. p2}, Landroid/telecom/ConnectionRequest;->getExtras()Landroid/os/Bundle;
 
@@ -3151,7 +3116,7 @@
 
     move-result-object v26
 
-    if-eqz v26, :cond_14
+    if-eqz v26, :cond_11
 
     const/4 v3, 0x2
 
@@ -3159,9 +3124,9 @@
 
     invoke-virtual {v0, v3}, Lcom/android/services/telephony/common/SecCallExtra;->setDomain(I)V
 
-    goto :goto_3
+    goto :goto_2
 
-    :cond_16
+    :cond_14
     invoke-virtual {v4}, Lcom/android/internal/telephony/Phone;->getVoicePhoneServiceState()I
 
     move-result v3
@@ -3200,7 +3165,7 @@
 
     goto/16 :goto_2
 
-    :cond_17
+    :cond_15
     move/from16 v0, v31
 
     move-object/from16 v1, p2
@@ -3219,7 +3184,7 @@
 
     move-result v22
 
-    if-eqz v22, :cond_18
+    if-eqz v22, :cond_16
 
     move-object/from16 v0, p0
 
@@ -3229,9 +3194,9 @@
 
     move-result v3
 
-    if-eqz v3, :cond_19
+    if-eqz v3, :cond_17
 
-    :cond_18
+    :cond_16
     packed-switch v31, :pswitch_data_0
 
     const-string/jumbo v3, "onCreateOutgoingConnection, unknown service state: %d"
@@ -3258,17 +3223,17 @@
 
     return-object v3
 
-    :cond_19
+    :cond_17
     const/4 v3, 0x3
 
     move/from16 v0, v31
 
-    if-ne v0, v3, :cond_1a
+    if-ne v0, v3, :cond_18
 
     const/16 v32, 0x1
 
-    :cond_1a
-    :goto_4
+    :cond_18
+    :goto_3
     :pswitch_0
     move-object/from16 v0, p2
 
@@ -3278,7 +3243,7 @@
 
     const/4 v3, -0x1
 
-    if-eq v11, v3, :cond_1e
+    if-eq v11, v3, :cond_1c
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -3332,7 +3297,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_1b
+    if-eqz v3, :cond_19
 
     move-object/from16 v0, p2
 
@@ -3340,14 +3305,14 @@
 
     move-result v3
 
-    if-nez v3, :cond_1a
+    if-nez v3, :cond_18
 
-    :cond_1b
+    :cond_19
     invoke-static/range {p2 .. p2}, Lcom/android/services/telephony/retrydial/ConnectionRetryDial;->isPhoneTypeChanged(Landroid/telecom/ConnectionRequest;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_1c
+    if-eqz v3, :cond_1a
 
     const-string/jumbo v3, "onCreateOutgoingConnection STATE_OUT_OF_SERVICE in isPhoneTypeChanged"
 
@@ -3359,9 +3324,9 @@
 
     invoke-static {v0, v3, v5}, Lcom/android/services/telephony/Log;->i(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    goto :goto_4
+    goto :goto_3
 
-    :cond_1c
+    :cond_1a
     const-string/jumbo v3, "ServiceState.STATE_OUT_OF_SERVICE"
 
     const/16 v5, 0x12
@@ -3381,7 +3346,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_1d
+    if-eqz v3, :cond_1b
 
     const-string/jumbo v3, "ServiceState.STATE_POWER_OFF"
 
@@ -3397,7 +3362,7 @@
 
     return-object v3
 
-    :cond_1d
+    :cond_1b
     const-string/jumbo v3, "ServiceState.STATE_OUT_OF_SERVICE"
 
     const/16 v5, 0x12
@@ -3412,7 +3377,7 @@
 
     return-object v3
 
-    :cond_1e
+    :cond_1c
     invoke-virtual/range {p2 .. p2}, Landroid/telecom/ConnectionRequest;->getAccountHandle()Landroid/telecom/PhoneAccountHandle;
 
     move-result-object v7
@@ -3437,7 +3402,7 @@
 
     move-result-object v13
 
-    if-nez v13, :cond_1f
+    if-nez v13, :cond_1d
 
     const-string/jumbo v3, "Invalid phone type"
 
@@ -3453,7 +3418,7 @@
 
     return-object v3
 
-    :cond_1f
+    :cond_1d
     const/4 v3, 0x1
 
     move-object/from16 v0, v20
@@ -3472,13 +3437,13 @@
 
     invoke-static {v13, v0}, Lcom/android/services/telephony/TelephonyConnectionUtils;->setConnectionCallId(Lcom/android/services/telephony/TelephonyConnection;Landroid/telecom/ConnectionRequest;)V
 
-    if-eqz v32, :cond_21
+    if-eqz v32, :cond_1f
 
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/services/telephony/TelephonyConnectionService;->mEmergencyCallHelper:Lcom/android/services/telephony/EmergencyCallHelper;
 
-    if-nez v3, :cond_20
+    if-nez v3, :cond_1e
 
     new-instance v3, Lcom/android/services/telephony/EmergencyCallHelper;
 
@@ -3490,7 +3455,7 @@
 
     iput-object v3, v0, Lcom/android/services/telephony/TelephonyConnectionService;->mEmergencyCallHelper:Lcom/android/services/telephony/EmergencyCallHelper;
 
-    :cond_20
+    :cond_1e
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/services/telephony/TelephonyConnectionService;->mEmergencyCallHelper:Lcom/android/services/telephony/EmergencyCallHelper;
@@ -3505,24 +3470,24 @@
 
     invoke-virtual {v3, v4, v5}, Lcom/android/services/telephony/EmergencyCallHelper;->startTurnOnRadioSequence(Lcom/android/internal/telephony/Phone;Lcom/android/services/telephony/EmergencyCallHelper$Callback;)V
 
-    :goto_5
+    :goto_4
     move-object/from16 v0, p2
 
     invoke-static {v13, v0}, Lcom/android/services/telephony/TelephonyConnectionUtils;->setSecCallExtraToConnectionExtras(Lcom/android/services/telephony/TelephonyConnection;Landroid/telecom/ConnectionRequest;)V
 
     return-object v13
 
-    :cond_21
+    :cond_1f
     invoke-static {v4}, Lcom/android/phone/PhoneUtils;->isPhoneInEcm(Lcom/android/internal/telephony/Phone;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_22
+    if-eqz v3, :cond_20
 
-    if-eqz v22, :cond_23
+    if-eqz v22, :cond_21
 
-    :cond_22
-    :goto_6
+    :cond_20
+    :goto_5
     move-object/from16 v0, p0
 
     move-object/from16 v1, v24
@@ -3535,7 +3500,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_24
+    if-eqz v3, :cond_22
 
     invoke-virtual {v4}, Lcom/android/internal/telephony/Phone;->getForegroundCall()Lcom/android/internal/telephony/Call;
 
@@ -3543,9 +3508,9 @@
 
     invoke-static {v13, v3}, Lcom/android/services/telephony/retrydial/ConnectionRetryDial;->requestOriginalConnection(Lcom/android/services/telephony/TelephonyConnection;Lcom/android/internal/telephony/Call;)V
 
-    goto :goto_5
+    goto :goto_4
 
-    :cond_23
+    :cond_21
     const-string/jumbo v3, "show exit ECM toast because outgoing non-emergency call"
 
     const/4 v5, 0x0
@@ -3574,7 +3539,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_22
+    if-eqz v3, :cond_20
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -3586,9 +3551,9 @@
 
     invoke-static {v3}, Lcom/android/phone/operator/usa/TelephonyExtension;->enableWifiAfterEmergencyCall(Landroid/content/Context;)V
 
-    goto :goto_6
+    goto :goto_5
 
-    :cond_24
+    :cond_22
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -3627,7 +3592,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_25
+    if-eqz v3, :cond_23
 
     move-object/from16 v0, p0
 
@@ -3641,16 +3606,16 @@
 
     invoke-virtual {v3, v5, v13, v4, v0}, Lcom/android/services/telephony/advanced911/AdvancedEmergencyManager;->placeEmergencyConnection(Lcom/android/services/telephony/TelephonyConnectionService;Lcom/android/services/telephony/TelephonyConnection;Lcom/android/internal/telephony/Phone;Landroid/telecom/ConnectionRequest;)V
 
-    goto/16 :goto_5
+    goto/16 :goto_4
 
-    :cond_25
+    :cond_23
     move-object/from16 v0, p0
 
     move-object/from16 v1, p2
 
     invoke-direct {v0, v13, v4, v1}, Lcom/android/services/telephony/TelephonyConnectionService;->placeOutgoingConnection(Lcom/android/services/telephony/TelephonyConnection;Lcom/android/internal/telephony/Phone;Landroid/telecom/ConnectionRequest;)V
 
-    goto/16 :goto_5
+    goto/16 :goto_4
 
     :pswitch_data_0
     .packed-switch 0x0

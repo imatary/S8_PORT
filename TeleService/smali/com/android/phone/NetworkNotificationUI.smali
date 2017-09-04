@@ -50,8 +50,6 @@
 
 .field private static mAutoTimesetDialog:Landroid/app/AlertDialog;
 
-.field private static mCarrierLockWarningDialog:Landroid/app/AlertDialog;
-
 .field private static mContext:Landroid/content/Context;
 
 .field private static mIsRegistRejectEnabled:Z
@@ -75,8 +73,6 @@
 .field private mAlertDialogDataKey:Landroid/app/AlertDialog;
 
 .field private mAutoTimesetListener:Landroid/content/DialogInterface$OnDismissListener;
-
-.field private mCheckingMobilityWarring:Z
 
 .field private mDataSelectionByDataKeyListener:Landroid/content/DialogInterface$OnDismissListener;
 
@@ -339,17 +335,15 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    const/4 v1, 0x0
-
     const/4 v0, 0x0
+
+    const/4 v1, 0x0
 
     sput-object v0, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
     sput-boolean v1, Lcom/android/phone/NetworkNotificationUI;->m3gwarningPopup:Z
 
     sput-object v0, Lcom/android/phone/NetworkNotificationUI;->mAutoTimesetDialog:Landroid/app/AlertDialog;
-
-    sput-object v0, Lcom/android/phone/NetworkNotificationUI;->mCarrierLockWarningDialog:Landroid/app/AlertDialog;
 
     const/4 v0, 0x1
 
@@ -394,8 +388,6 @@
     iput v2, p0, Lcom/android/phone/NetworkNotificationUI;->rtsPsValue:I
 
     iput-object v1, p0, Lcom/android/phone/NetworkNotificationUI;->mNotifyRTSDialog:Landroid/app/AlertDialog;
-
-    iput-boolean v2, p0, Lcom/android/phone/NetworkNotificationUI;->mCheckingMobilityWarring:Z
 
     iput-object v1, p0, Lcom/android/phone/NetworkNotificationUI;->mAlertDialogDataKey:Landroid/app/AlertDialog;
 
@@ -9375,7 +9367,7 @@
 
     move-result v8
 
-    if-eqz v8, :cond_2
+    if-eqz v8, :cond_0
 
     const-string/jumbo v8, "NetworkNotificationUI"
 
@@ -9407,11 +9399,11 @@
 
     move-result v8
 
-    if-nez v8, :cond_2
+    if-nez v8, :cond_0
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mServiceState:Landroid/telephony/ServiceState;
 
-    if-eqz v8, :cond_2
+    if-eqz v8, :cond_0
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mServiceState:Landroid/telephony/ServiceState;
 
@@ -9419,7 +9411,7 @@
 
     move-result v8
 
-    if-nez v8, :cond_2
+    if-nez v8, :cond_0
 
     const-string/jumbo v8, "true"
 
@@ -9460,65 +9452,38 @@
     invoke-virtual {v8, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     :cond_0
-    const-string/jumbo v8, "mobile_newtork_style_for_kor"
-
-    invoke-static {v8}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_2
-
-    invoke-static {}, Lcom/android/phone/PhoneUtils;->isSKTSIM()Z
-
-    move-result v8
-
-    if-nez v8, :cond_1
-
-    invoke-static {}, Lcom/android/phone/PhoneUtils;->isKTSIM()Z
-
-    move-result v8
-
-    if-eqz v8, :cond_2
-
-    :cond_1
-    iget-boolean v8, p0, Lcom/android/phone/NetworkNotificationUI;->mCheckingMobilityWarring:Z
-
-    if-eqz v8, :cond_10
-
-    :cond_2
-    :goto_0
     const-string/jumbo v8, "mobile_newtork_style_for_skt"
 
     invoke-static {v8}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v8
 
-    if-eqz v8, :cond_3
+    if-eqz v8, :cond_1
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_1
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->checkAndUpdateRoamingStateSKT()V
 
-    :cond_3
+    :cond_1
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->isSupportRoamingRegRoamingNoti()Z
 
     move-result v8
 
-    if-eqz v8, :cond_4
+    if-eqz v8, :cond_2
 
     iget-boolean v8, p0, Lcom/android/phone/NetworkNotificationUI;->mAirplaneMode:Z
 
-    if-eqz v8, :cond_12
+    if-eqz v8, :cond_e
 
-    :cond_4
-    :goto_1
+    :cond_2
+    :goto_0
     const-string/jumbo v8, "mobile_newtork_style_for_ktt"
 
     invoke-static {v8}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v8
 
-    if-eqz v8, :cond_6
+    if-eqz v8, :cond_4
 
     const-string/jumbo v8, "20"
 
@@ -9530,9 +9495,9 @@
 
     move-result v8
 
-    if-eqz v8, :cond_5
+    if-eqz v8, :cond_3
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_3
 
     new-instance v1, Landroid/content/Intent;
 
@@ -9544,7 +9509,7 @@
 
     invoke-virtual {v8, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    :cond_5
+    :cond_3
     iput-object p1, p0, Lcom/android/phone/NetworkNotificationUI;->mServiceState:Landroid/telephony/ServiceState;
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mServiceState:Landroid/telephony/ServiceState;
@@ -9553,32 +9518,32 @@
 
     move-result v8
 
-    if-eqz v8, :cond_1c
+    if-eqz v8, :cond_18
 
     invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/SettingProxy;->isManualSelection()Z
 
     move-result v8
 
-    if-eqz v8, :cond_1c
+    if-eqz v8, :cond_18
 
-    :goto_2
+    :goto_1
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getState()I
 
     move-result v8
 
     const/4 v9, 0x1
 
-    if-ne v8, v9, :cond_6
+    if-ne v8, v9, :cond_4
 
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getIsManualSelection()Z
 
     move-result v8
 
-    if-eqz v8, :cond_6
+    if-eqz v8, :cond_4
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mNoServiceAndManualSelectionDialog:Landroid/app/AlertDialog;
 
-    if-nez v8, :cond_6
+    if-nez v8, :cond_4
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mHandler:Landroid/os/Handler;
 
@@ -9588,19 +9553,19 @@
 
     move-result v8
 
-    if-nez v8, :cond_6
+    if-nez v8, :cond_4
 
     iget-boolean v8, p0, Lcom/android/phone/NetworkNotificationUI;->mAirplaneMode:Z
 
-    if-eqz v8, :cond_1d
+    if-eqz v8, :cond_19
 
-    :cond_6
-    :goto_3
+    :cond_4
+    :goto_2
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getState()I
 
     move-result v8
 
-    if-nez v8, :cond_b
+    if-nez v8, :cond_9
 
     const-string/jumbo v8, "mobile_newtork_style_for_kor_open"
 
@@ -9608,15 +9573,15 @@
 
     move-result v8
 
-    if-eqz v8, :cond_1e
+    if-eqz v8, :cond_1a
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->dissmissRTSPopup()V
 
-    :cond_7
-    :goto_4
+    :cond_5
+    :goto_3
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mNotifyNetworkRegisteringDialog:Landroid/app/AlertDialog;
 
-    if-eqz v8, :cond_8
+    if-eqz v8, :cond_6
 
     const-string/jumbo v8, "NetworkNotificationUI"
 
@@ -9632,14 +9597,14 @@
 
     iput-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mNotifyNetworkRegisteringDialog:Landroid/app/AlertDialog;
 
-    :cond_8
+    :cond_6
     const-string/jumbo v8, "mobile_newtork_style_for_ktt"
 
     invoke-static {v8}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v8
 
-    if-eqz v8, :cond_a
+    if-eqz v8, :cond_8
 
     const/4 v8, 0x0
 
@@ -9653,7 +9618,7 @@
 
     move-result v8
 
-    if-eqz v8, :cond_9
+    if-eqz v8, :cond_7
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mHandler:Landroid/os/Handler;
 
@@ -9661,10 +9626,10 @@
 
     invoke-virtual {v8, v9}, Landroid/os/Handler;->removeMessages(I)V
 
-    :cond_9
+    :cond_7
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mNoServiceAndManualSelectionDialog:Landroid/app/AlertDialog;
 
-    if-eqz v8, :cond_a
+    if-eqz v8, :cond_8
 
     const-string/jumbo v8, "NetworkNotificationUI"
 
@@ -9680,18 +9645,18 @@
 
     iput-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mNoServiceAndManualSelectionDialog:Landroid/app/AlertDialog;
 
-    :cond_a
+    :cond_8
     const-string/jumbo v8, "hd_voice_network_prefer"
 
     invoke-static {v8}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v8
 
-    if-eqz v8, :cond_b
+    if-eqz v8, :cond_9
 
     invoke-static {}, Lcom/android/phone/operator/kor/PhoneUtilsKOR;->checkKTHDVoice()V
 
-    :cond_b
+    :cond_9
     invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
 
     move-result-object v8
@@ -9702,7 +9667,7 @@
 
     move-result v8
 
-    if-eqz v8, :cond_c
+    if-eqz v8, :cond_a
 
     const-string/jumbo v8, "feature_kor_open"
 
@@ -9710,45 +9675,45 @@
 
     move-result v8
 
-    if-eqz v8, :cond_c
+    if-eqz v8, :cond_a
 
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getState()I
 
     move-result v8
 
-    if-nez v8, :cond_c
+    if-nez v8, :cond_a
 
     sget-boolean v8, Lcom/android/phone/NetworkNotificationUI;->isOTAstarted:Z
 
-    if-eqz v8, :cond_20
+    if-eqz v8, :cond_1c
 
-    :cond_c
-    :goto_5
+    :cond_a
+    :goto_4
     const-string/jumbo v8, "lost_phone_lock"
 
     invoke-static {v8}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v8
 
-    if-eqz v8, :cond_f
+    if-eqz v8, :cond_d
 
     invoke-static {}, Lcom/android/phone/TeleServiceSystemDB;->isLostPhoneLock()Z
 
     move-result v8
 
-    if-eqz v8, :cond_f
+    if-eqz v8, :cond_d
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->isRoamingArea()Z
 
     move-result v8
 
-    if-nez v8, :cond_f
+    if-nez v8, :cond_d
 
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getDataRegState()I
 
     move-result v8
 
-    if-nez v8, :cond_f
+    if-nez v8, :cond_d
 
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getRadioTechnology()I
 
@@ -9756,13 +9721,13 @@
 
     const/16 v9, 0xe
 
-    if-ne v8, v9, :cond_f
+    if-ne v8, v9, :cond_d
 
     const/4 v3, 0x0
 
     sget-object v8, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    if-eqz v8, :cond_d
+    if-eqz v8, :cond_b
 
     sget-object v8, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
@@ -9776,7 +9741,7 @@
 
     move-result v8
 
-    if-nez v8, :cond_21
+    if-nez v8, :cond_1d
 
     const-string/jumbo v8, "support_softphone"
 
@@ -9784,13 +9749,13 @@
 
     move-result v3
 
-    :cond_d
-    :goto_6
-    if-nez v3, :cond_e
+    :cond_b
+    :goto_5
+    if-nez v3, :cond_c
 
     sget-object v8, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    if-eqz v8, :cond_e
+    if-eqz v8, :cond_c
 
     new-instance v5, Lcom/android/internal/widget/LockPatternUtils;
 
@@ -9816,10 +9781,10 @@
 
     invoke-virtual {v8, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    :cond_e
+    :cond_c
     sget-object v8, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
-    if-eqz v8, :cond_f
+    if-eqz v8, :cond_d
 
     sget-object v8, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
@@ -9847,47 +9812,23 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_f
+    :cond_d
     return-void
 
-    :cond_10
-    const/4 v8, 0x1
-
-    iput-boolean v8, p0, Lcom/android/phone/NetworkNotificationUI;->mCheckingMobilityWarring:Z
-
-    sget-object v8, Lcom/android/phone/NetworkNotificationUI;->mCarrierLockWarningDialog:Landroid/app/AlertDialog;
-
-    if-eqz v8, :cond_11
-
-    sget-object v8, Lcom/android/phone/NetworkNotificationUI;->mCarrierLockWarningDialog:Landroid/app/AlertDialog;
-
-    invoke-virtual {v8}, Landroid/app/AlertDialog;->dismiss()V
-
-    :cond_11
-    sget-object v8, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
-
-    invoke-static {v8}, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;->showCarrierLockWarningDialog(Landroid/content/Context;)Landroid/app/AlertDialog;
-
-    move-result-object v8
-
-    sput-object v8, Lcom/android/phone/NetworkNotificationUI;->mCarrierLockWarningDialog:Landroid/app/AlertDialog;
-
-    goto/16 :goto_0
-
-    :cond_12
+    :cond_e
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mServiceState:Landroid/telephony/ServiceState;
 
     invoke-virtual {v8}, Landroid/telephony/ServiceState;->getState()I
 
     move-result v8
 
-    if-eqz v8, :cond_19
+    if-eqz v8, :cond_15
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->isRoamingArea()Z
 
     move-result v8
 
-    if-eqz v8, :cond_19
+    if-eqz v8, :cond_15
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mHandler:Landroid/os/Handler;
 
@@ -9897,7 +9838,7 @@
 
     move-result v8
 
-    if-eqz v8, :cond_17
+    if-eqz v8, :cond_13
 
     const-string/jumbo v8, "NetworkNotificationUI"
 
@@ -9905,21 +9846,21 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_13
-    :goto_7
+    :cond_f
+    :goto_6
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mServiceState:Landroid/telephony/ServiceState;
 
     invoke-virtual {v8}, Landroid/telephony/ServiceState;->getState()I
 
     move-result v8
 
-    if-nez v8, :cond_1a
+    if-nez v8, :cond_16
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->isRoamingArea()Z
 
     move-result v8
 
-    if-eqz v8, :cond_1a
+    if-eqz v8, :cond_16
 
     const-string/jumbo v8, "NetworkNotificationUI"
 
@@ -9929,29 +9870,29 @@
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->addRoamingCurrentOperatorNotification()V
 
-    :goto_8
+    :goto_7
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mServiceState:Landroid/telephony/ServiceState;
 
     invoke-virtual {v8}, Landroid/telephony/ServiceState;->getState()I
 
     move-result v8
 
-    if-nez v8, :cond_1b
+    if-nez v8, :cond_17
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->isRoamingArea()Z
 
     move-result v8
 
-    if-eqz v8, :cond_1b
+    if-eqz v8, :cond_17
 
-    :goto_9
+    :goto_8
     const-string/jumbo v8, "mobile_newtork_style_for_lgt"
 
     invoke-static {v8}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v8
 
-    if-eqz v8, :cond_15
+    if-eqz v8, :cond_11
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mServiceState:Landroid/telephony/ServiceState;
 
@@ -9959,23 +9900,23 @@
 
     move-result v8
 
-    if-nez v8, :cond_14
+    if-nez v8, :cond_10
 
     invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/SettingProxy;->isManualSelection()Z
 
     move-result v8
 
-    if-eqz v8, :cond_15
+    if-eqz v8, :cond_11
 
-    :cond_14
+    :cond_10
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->removeRoamingNetScanningNotification()V
 
-    :cond_15
+    :cond_11
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->isRoamingArea()Z
 
     move-result v8
 
-    if-eqz v8, :cond_16
+    if-eqz v8, :cond_12
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mServiceState:Landroid/telephony/ServiceState;
 
@@ -9983,9 +9924,9 @@
 
     move-result v8
 
-    if-nez v8, :cond_4
+    if-nez v8, :cond_2
 
-    :cond_16
+    :cond_12
     const-string/jumbo v8, "NetworkNotificationUI"
 
     const-string/jumbo v9, "removeRoamingRegFailNotification"
@@ -9998,9 +9939,9 @@
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->dismissNetworkRegNotiPopUp()V
 
-    goto/16 :goto_1
+    goto/16 :goto_0
 
-    :cond_17
+    :cond_13
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mHandler:Landroid/os/Handler;
 
     const/16 v9, 0x65
@@ -10015,7 +9956,7 @@
 
     move-result v8
 
-    if-eqz v8, :cond_18
+    if-eqz v8, :cond_14
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mHandler:Landroid/os/Handler;
 
@@ -10023,20 +9964,20 @@
 
     invoke-virtual {v8, v6, v10, v11}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    goto :goto_7
+    goto :goto_6
 
-    :cond_18
+    :cond_14
     const-string/jumbo v8, "mobile_newtork_style_for_lgt"
 
     invoke-static {v8}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v8
 
-    if-eqz v8, :cond_13
+    if-eqz v8, :cond_f
 
     iget-boolean v8, p0, Lcom/android/phone/NetworkNotificationUI;->roamingRegFailNoti:Z
 
-    if-nez v8, :cond_13
+    if-nez v8, :cond_f
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->addRoamingNetScanningNotification()V
 
@@ -10046,9 +9987,9 @@
 
     invoke-virtual {v8, v6, v10, v11}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    goto/16 :goto_7
+    goto/16 :goto_6
 
-    :cond_19
+    :cond_15
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mHandler:Landroid/os/Handler;
 
     const/16 v9, 0x65
@@ -10057,7 +9998,7 @@
 
     move-result v8
 
-    if-eqz v8, :cond_13
+    if-eqz v8, :cond_f
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI;->mHandler:Landroid/os/Handler;
 
@@ -10071,9 +10012,20 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    goto/16 :goto_6
+
+    :cond_16
+    const-string/jumbo v8, "NetworkNotificationUI"
+
+    const-string/jumbo v9, "removeRoamingCurrentOperatorNotification"
+
+    invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->removeRoamingCurrentOperatorNotification()V
+
     goto/16 :goto_7
 
-    :cond_1a
+    :cond_17
     const-string/jumbo v8, "NetworkNotificationUI"
 
     const-string/jumbo v9, "removeRoamingCurrentOperatorNotification"
@@ -10084,18 +10036,7 @@
 
     goto/16 :goto_8
 
-    :cond_1b
-    const-string/jumbo v8, "NetworkNotificationUI"
-
-    const-string/jumbo v9, "removeRoamingCurrentOperatorNotification"
-
-    invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->removeRoamingCurrentOperatorNotification()V
-
-    goto/16 :goto_9
-
-    :cond_1c
+    :cond_18
     const-string/jumbo v8, "NetworkNotificationUI"
 
     const-string/jumbo v9, "Reset mNoservicePopupSelectionNagativeButton for Switching to Automatic Selection"
@@ -10106,9 +10047,9 @@
 
     iput-boolean v8, p0, Lcom/android/phone/NetworkNotificationUI;->mNoservicePopupSelectionNagativeButton:Z
 
-    goto/16 :goto_2
+    goto/16 :goto_1
 
-    :cond_1d
+    :cond_19
     const-string/jumbo v8, "NetworkNotificationUI"
 
     const-string/jumbo v9, "send EVENT_MANUAL_SELECTION_NO_SVC msg"
@@ -10129,58 +10070,58 @@
 
     invoke-virtual {v8, v4, v10, v11}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    goto/16 :goto_3
+    goto/16 :goto_2
 
-    :cond_1e
+    :cond_1a
     const-string/jumbo v8, "mobile_newtork_style_for_kor"
 
     invoke-static {v8}, Lcom/android/phone/TeleServiceFeature;->hasFeature(Ljava/lang/String;)Z
 
     move-result v8
 
-    if-eqz v8, :cond_7
+    if-eqz v8, :cond_5
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->refleshRTSValue()Z
 
     move-result v8
 
-    if-eqz v8, :cond_7
+    if-eqz v8, :cond_5
 
     iget v8, p0, Lcom/android/phone/NetworkNotificationUI;->rtsStatusValue:I
 
     const/4 v9, 0x1
 
-    if-eq v8, v9, :cond_1f
+    if-eq v8, v9, :cond_1b
 
     iget v8, p0, Lcom/android/phone/NetworkNotificationUI;->rtsStatusValue:I
 
     const/4 v9, 0x5
 
-    if-ne v8, v9, :cond_7
+    if-ne v8, v9, :cond_5
 
-    :cond_1f
+    :cond_1b
     iget v8, p0, Lcom/android/phone/NetworkNotificationUI;->rtsIdleValue:I
 
-    if-nez v8, :cond_7
+    if-nez v8, :cond_5
 
     iget v8, p0, Lcom/android/phone/NetworkNotificationUI;->rtsCsValue:I
 
-    if-nez v8, :cond_7
+    if-nez v8, :cond_5
 
     iget v8, p0, Lcom/android/phone/NetworkNotificationUI;->rtsPsValue:I
 
-    if-nez v8, :cond_7
+    if-nez v8, :cond_5
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->dissmissRTSPopup()V
 
-    goto/16 :goto_4
+    goto/16 :goto_3
 
-    :cond_20
+    :cond_1c
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->isLGTUnregSIM()Z
 
     move-result v8
 
-    if-eqz v8, :cond_c
+    if-eqz v8, :cond_a
 
     const-string/jumbo v8, "NetworkNotificationUI"
 
@@ -10198,12 +10139,12 @@
 
     invoke-virtual {v8, v9}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    goto/16 :goto_5
+    goto/16 :goto_4
 
-    :cond_21
+    :cond_1d
     const/4 v3, 0x1
 
-    goto/16 :goto_6
+    goto/16 :goto_5
 .end method
 
 .method public updatePhoneStateListeners()V
