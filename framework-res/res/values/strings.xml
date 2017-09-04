@@ -2235,6 +2235,7 @@ To unpin an application, press and hold the menu key."</string>
     <string name="mptcp_message_mptcp_capability_noresponse">No response from service provider.</string>
     <string name="mptcp_message_mptcp_capability_sendfail">Failed to send %s activation request. Reconnecting via available network...</string>
     <string name="mptcp_message_mptcp_capability_packege_authfail">Unable to enable %1$s. %2$s not available with your internet package or no response from %3$s server received.</string>
+    <string name="mptcp_message_mptcp_capability_WiFiAPCompatible">Please connect WiFi network by AIS before using %s.</string>
     <string name="mptcp_message_setting_disabled_overheating">Unable to enable %s. Device overheating. Wait until device cools down and try again.</string>
     <string name="mptcp_message_operation_disabled_overheating">%s is disabled to prevent device overheating. Downloading via mobile network instead...</string>
     <string name="mptcp_message_data_usage_limit">Data usage limit reached. To change data usage limit, go to Settings.</string>
@@ -2389,6 +2390,7 @@ Turn on Airplane mode?"</string>
     <string name="multisound_hun_change">Change</string>
     <string name="my_device">My phone</string>
     <string name="headset">Headset</string>
+    <string name="my_phone">Phone</string>
     <string name="bixby_edgecase_mpsm">"Can't use Bixby while Maximum power saving mode is on."</string>
     <string name="bixby_edgecase_emergencymode">"Can't use Bixby in Emergency mode."</string>
     <string name="bixby_edgecase_kidsmode">"Can't use Bixby in Kids Mode."</string>

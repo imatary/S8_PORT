@@ -1335,7 +1335,7 @@
     <string name="lock_to_app_toast">หากต้องการยกเลิกการปักหมุดแอพ ให้กดค้างที่ปุ่มล่าสุดและปุ่มกลับพร้อมกัน</string>
     <string name="lock_to_app_toast_for_navibar">หากต้องการยกเลิกการปักหมุดแอพ ให้แตะค้างที่ปุ่มล่าสุดและปุ่มกลับพร้อมกัน</string>
     <string name="lock_to_app_toast_accessible">ในการยกเลิกการปักหมุดแอพพลิเคชั่น ให้กดปุ่มล่าสุดค้างไว้</string>
-    <string name="lock_to_app_toast_accessible_for_navibar">To unpin app, touch and hold Recents button.</string>
+    <string name="lock_to_app_toast_accessible_for_navibar">หากต้องการยกเลิกปักหมุดแอพ ให้แตะค้างที่ปุ่ม ล่าสุด</string>
     <string name="lock_to_app_toast_locked">โหมด Lock-to-app ถูกเปิดใช้งานแล้ว</string>
     <string name="lock_to_app_start">ปักหมุดแอพแล้ว</string>
     <string name="lock_to_app_exit">ยกเลิกการปักหมุดแอพแล้ว</string>
@@ -1937,7 +1937,8 @@ memo"</string>
     <string name="mptcp_message_mptcp_capability_WifiDirect">ไม่สามารถใช้งาน %s ได้ขณะเปิดใช้งาน Wi-Fi Direct</string>
     <string name="mptcp_message_mptcp_capability_noresponse">ไม่มีคำตอบจากผู้ให้บริการ</string>
     <string name="mptcp_message_mptcp_capability_sendfail">การส่งคำร้องขอการเปิดใช้งาน %s ล้มเหลว กำลังเชื่อมต่อใหม่ด้วยเครือข่ายที่พร้อมใช้งาน…</string>
-    <string name="mptcp_message_mptcp_capability_packege_authfail">ไม่สามารถเปิดใช้งาน %1$s %2$s ไม่พร้อมใช้งานกับแพ็คเกจอินเทอร์เน็ตของคุณ หรือไม่ได้รับการตอบสนองจากเซิร์ฟเวอร์ %3$s</string>
+    <string name="mptcp_message_mptcp_capability_packege_authfail">ไม่สามารถเปิดใช้งาน %1$s เนื่องจากคุณไม่มีแพ็กเกจ %2$s หรือไม่ได้รับการตอบสนองจากเซิร์ฟเวอร์ %3$s</string>
+    <string name="mptcp_message_mptcp_capability_WiFiAPCompatible">กรุณาเชื่อมต่อ WiFi ของ AIS เพื่อใช้บริการ %s</string>
     <string name="mptcp_message_setting_disabled_overheating">ไม่สามารถเปิดใช้งาน %s ได้ อุปกรณ์ร้อนเกินไป รอจนกว่าอุปกรณ์เย็นลงและลองอีกครั้ง</string>
     <string name="mptcp_message_operation_disabled_overheating">ปิดใช้งาน %s เพื่อป้องกันไม่ให้อุปกรณ์ร้อนเกินไป กำลังดาวน์โหลดผ่านเครือข่ายมือถือแทน…</string>
     <string name="mptcp_message_data_usage_limit">ถึงขีดจำกัดการใช้ข้อมูลแล้ว ในการเปลี่ยนขีดจำกัดการใช้ข้อมูล ให้ไปที่การตั้งค่า</string>
@@ -2051,6 +2052,7 @@ Turn on Airplane mode?"</string>
     <string name="multisound_hun_change">เปลี่ยน</string>
     <string name="my_device">My phone</string>
     <string name="headset">เฮ​ดเซ็ท</string>
+    <string name="my_phone">โทรศัพท์</string>
     <string name="bixby_edgecase_mpsm">ไม่สามารถใช้ Bixby ในขณะเปิดโหมดประหยัดพลังงานสูงสุดได้</string>
     <string name="bixby_edgecase_emergencymode">ไม่สามารถใช้ Bixby ในโหมดฉุกเฉิน</string>
     <string name="bixby_edgecase_kidsmode">ไม่สามารถใช้ Bixby ใน Kids Mode</string>
