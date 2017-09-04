@@ -426,6 +426,8 @@
 
 .field protected mSubscriberTimer:I
 
+.field protected mSupport183ForIr92v9Precondition:Z
+
 .field protected mSupport3gppUssi:Z
 
 .field protected mSupportIncomingHistoryInfo:Z
@@ -470,9 +472,13 @@
 
 .field protected mTtyType:I
 
+.field protected mUse183OnProgressIncoming:Z
+
 .field protected mUseCompactHeader:Z
 
 .field protected mUsePrecondition:I
+
+.field protected mUseProvisionalResponse100rel:Z
 
 .field protected mVideoAS:I
 
@@ -2301,8 +2307,41 @@
 
     if-ne v0, v1, :cond_1c
 
+    move v0, v1
+
     :goto_1c
-    iput-boolean v1, p0, Lcom/sec/ims/settings/ImsProfile;->mSupportIncomingHistoryInfo:Z
+    iput-boolean v0, p0, Lcom/sec/ims/settings/ImsProfile;->mSupportIncomingHistoryInfo:Z
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v0
+
+    if-ne v0, v1, :cond_1d
+
+    move v0, v1
+
+    :goto_1d
+    iput-boolean v0, p0, Lcom/sec/ims/settings/ImsProfile;->mUseProvisionalResponse100rel:Z
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v0
+
+    if-ne v0, v1, :cond_1e
+
+    move v0, v1
+
+    :goto_1e
+    iput-boolean v0, p0, Lcom/sec/ims/settings/ImsProfile;->mUse183OnProgressIncoming:Z
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v0
+
+    if-ne v0, v1, :cond_1f
+
+    :goto_1f
+    iput-boolean v1, p0, Lcom/sec/ims/settings/ImsProfile;->mSupport183ForIr92v9Precondition:Z
 
     return-void
 
@@ -2447,9 +2486,24 @@
     goto :goto_1b
 
     :cond_1c
-    move v1, v2
+    move v0, v2
 
     goto :goto_1c
+
+    :cond_1d
+    move v0, v2
+
+    goto :goto_1d
+
+    :cond_1e
+    move v0, v2
+
+    goto :goto_1e
+
+    :cond_1f
+    move v1, v2
+
+    goto :goto_1f
 .end method
 
 .method private readStringFromParcel(Landroid/os/Parcel;)Ljava/lang/String;
@@ -4028,7 +4082,34 @@
 
     if-eqz v0, :cond_1c
 
+    move v0, v1
+
     :goto_1c
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+
+    iget-boolean v0, p0, Lcom/sec/ims/settings/ImsProfile;->mUseProvisionalResponse100rel:Z
+
+    if-eqz v0, :cond_1d
+
+    move v0, v1
+
+    :goto_1d
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+
+    iget-boolean v0, p0, Lcom/sec/ims/settings/ImsProfile;->mUse183OnProgressIncoming:Z
+
+    if-eqz v0, :cond_1e
+
+    move v0, v1
+
+    :goto_1e
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+
+    iget-boolean v0, p0, Lcom/sec/ims/settings/ImsProfile;->mSupport183ForIr92v9Precondition:Z
+
+    if-eqz v0, :cond_1f
+
+    :goto_1f
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     return-void
@@ -4174,7 +4255,22 @@
     goto :goto_1b
 
     :cond_1c
-    move v1, v2
+    move v0, v2
 
     goto :goto_1c
+
+    :cond_1d
+    move v0, v2
+
+    goto :goto_1d
+
+    :cond_1e
+    move v0, v2
+
+    goto :goto_1e
+
+    :cond_1f
+    move v1, v2
+
+    goto :goto_1f
 .end method

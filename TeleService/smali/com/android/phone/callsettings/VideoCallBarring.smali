@@ -4362,7 +4362,9 @@
 
     if-eqz v3, :cond_2
 
-    invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->showCBPassword()Z
+    sget v3, Lcom/android/phone/callsettings/VideoCallBarring;->mSimId:I
+
+    invoke-static {v3}, Lcom/android/phone/PhoneUtilsCommon;->showCBPassword(I)Z
 
     move-result v3
 

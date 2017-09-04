@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;
 
-.field final synthetic val$selectedValue:I
+.field final synthetic val$preference:Landroid/preference/ListPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;I)V
+.method constructor <init>(Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;Landroid/preference/ListPreference;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$19;->this$0:Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager;
 
-    iput p2, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$19;->val$selectedValue:I
+    iput-object p2, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$19;->val$preference:Landroid/preference/ListPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,11 +39,19 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 1
+    .locals 3
 
-    iget v0, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$19;->val$selectedValue:I
+    invoke-static {}, Lcom/android/phone/mobilenetworks/boundary/SettingProxy;->getNationalRoamingMode()I
 
-    invoke-static {v0}, Lcom/android/phone/mobilenetworks/boundary/PhoneProxy;->setSelectedDataRoamingMode(I)V
+    move-result v0
+
+    iget-object v1, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$19;->val$preference:Landroid/preference/ListPreference;
+
+    invoke-static {v0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     return-void
 .end method

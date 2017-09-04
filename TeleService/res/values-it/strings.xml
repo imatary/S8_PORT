@@ -2166,10 +2166,17 @@ Il roaming LTE non sarà disponibile se non accettate. Potrebbero venire utilizz
     <string name="data_usage_disable_mobile_warning_skt">"A meno che non utilizziate una rete Wi-Fi, non potrete più utilizzare Internet, E-mail o altre applicazioni che richiedono una connessione dati.
 
 La connessione dati verrà disattivata."</string>
+    <string name="data_usage_disable_mobile_warning_ktt">La connessione dati (WCDMA/LTE) verrà disattivata. A meno che non utilizziate una rete Wi-Fi, non potrete più usare le applicazioni che richiedono la connessione dati. Potrete comunque inviare e ricevere i messaggi multimediali.</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">"La connessione dati (WCDMA/LTE) verrà disattivata. A meno che non utilizziate una rete Wi-Fi, non potrete più usare le applicazioni che richiedono la connessione dati. L'invio o la ricezione dei messaggi multimediali verranno limitati."</string>
+    <string name="data_usage_disable_mobile_warning_lgt">"A meno che non utilizziate una rete Wi-Fi, non potrete più utilizzare Internet, E-mail o altre applicazioni che richiedono una connessione dati.
+
+La connessione dati verrà disattivata."</string>
     <string name="data_usage_disable_mobile_warning">"Se non siete connessi ad una rete Wi-Fi, non potrete utilizzare Internet, E-mail o altre applicazioni che richiedono una connessione dati attiva.
 
 La connessione dati verrà disattivata."</string>
     <string name="data_usage_enable_mobile_warning_skt">La connessione dati verrà attivata. La connessione alle reti mobili potrebbe comportare costi aggiuntivi a seconda del piano tariffario.</string>
+    <string name="data_usage_enable_mobile_warning_ktt">La connessione dati verrà attivata. La connessione alle reti mobili potrebbe comportare costi aggiuntivi a seconda del piano tariffario.</string>
+    <string name="data_usage_enable_mobile_warning_lgt">La connessione dati verrà attivata. La connessione alle reti mobili potrebbe comportare costi aggiuntivi a seconda del piano tariffario.</string>
     <string name="data_usage_enable_mobile_warning">La connessione a pacchetti dati può determinare costi aggiuntivi. Continuare?</string>
     <string name="insert_sim_card">Inserisci una scheda SIM</string>
     <string name="insert_sim_card_message">Inserite una scheda SIM per accedere ai servizi di rete.</string>

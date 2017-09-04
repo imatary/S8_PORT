@@ -17,15 +17,9 @@
 
     const/4 v3, 0x2
 
-    const v1, 0x7f0d050e
+    const v1, 0x7f0d050f
 
     if-eqz p1, :cond_0
-
-    invoke-static {}, Lcom/android/phone/utils/WifiSettingUtils;->showWifiPreference()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
 
     const-string/jumbo v2, "wifi_call_preferred"
 
@@ -70,11 +64,6 @@
 
     :cond_2
     const v1, 0x7f0d0515
-
-    goto :goto_0
-
-    :cond_3
-    const v1, 0x7f0d050d
 
     goto :goto_0
 .end method

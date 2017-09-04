@@ -2158,10 +2158,17 @@ Perayauan LTE tidak akan tersedia jika anda tidak bersetuju. Rangkaian 3G akan d
     <string name="data_usage_disable_mobile_warning_skt">"Melainkan jika anda menggunakan Wi-Fi, anda tidak lagi akan dapat menggunakan Internet, E-mel atau aplikasi lain yang memerlukan sambungan data.
 
 Data mudah alih akan dimatikan."</string>
+    <string name="data_usage_disable_mobile_warning_ktt">Data mudah alih (WCDMA/LTE) akan dimatikan. Melainkan anda menggunakan Wi-Fi, anda tidak akan dapat menggunakan aplikasi yang memerlukan sambungan data. Anda masih boleh menghantar dan menerima mesej multimedia.</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">Data mudah alih (WCDMA/LTE) akan dimatikan. Melainkan anda menggunakan Wi-Fi, anda tidak akan dapat menggunakan aplikasi yang memerlukan sambungan data. Penghantaran atau penerimaan mesej multimedia akan dihadkan.</string>
+    <string name="data_usage_disable_mobile_warning_lgt">"Melainkan jika anda menggunakan Wi-Fi, anda tidak lagi akan dapat menggunakan Internet, E-mel atau aplikasi lain yang memerlukan sambungan data.
+
+Data mudah alih akan dimatikan."</string>
     <string name="data_usage_disable_mobile_warning">"Melainkan jika anda menggunakan Wi-Fi, anda tidak lagi akan dapat menggunakan Internet, E-mel atau aplikasi lain yang memerlukan sambungan data.
 
 Data mudah alih akan dinyahaktifkan."</string>
     <string name="data_usage_enable_mobile_warning_skt">Data mudah alih akan dihidupkan. Menyambung ke rangkaian mudah alih mungkin menyebabkan caj tambahan bergantung pada pelan pembayaran anda.</string>
+    <string name="data_usage_enable_mobile_warning_ktt">Data mudah alih akan dihidupkan. Menyambung ke rangkaian mudah alih mungkin menyebabkan caj tambahan bergantung pada pelan pembayaran anda.</string>
+    <string name="data_usage_enable_mobile_warning_lgt">Data mudah alih akan dihidupkan. Menyambung ke rangkaian mudah alih mungkin menyebabkan caj tambahan bergantung pada pelan pembayaran anda.</string>
     <string name="data_usage_enable_mobile_warning">Bersambung melalui data paket boleh dikenakan caj tambahan. Teruskan?</string>
     <string name="insert_sim_card">Masukkan kad SIM</string>
     <string name="insert_sim_card_message">Masukkan kad SIM utk mencapai perkhidmatan rangkaian.</string>

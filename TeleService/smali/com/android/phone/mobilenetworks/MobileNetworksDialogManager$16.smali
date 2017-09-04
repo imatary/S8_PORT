@@ -41,15 +41,13 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    const/4 v1, 0x0
-
-    invoke-static {v1}, Lcom/android/phone/mobilenetworks/MobileNetworkUtils;->setMobileDataEnabled(Z)V
-
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$16;->val$pref:Landroid/preference/TwoStatePreference;
 
     if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/MobileNetworksDialogManager$16;->val$pref:Landroid/preference/TwoStatePreference;
+
+    const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
 

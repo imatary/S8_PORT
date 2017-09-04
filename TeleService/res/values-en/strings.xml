@@ -312,7 +312,18 @@ LTE roaming will not be available if you do not agree. 3G networks may be used w
     <string name="data_usage_disable_mobile_warning_skt">Unless you use <cst>Wi-Fi</cst>", you will no longer be able to use Internet, Email, or other apps that require a data connection.
 
 Mobile data will be turned off."</string>
+    <string name="data_usage_disable_mobile_warning_ktt">Mobile data (WCDMA/LTE) will be turned off. Unless you use <cst>Wi-Fi</cst>, you will no longer be able to use apps that require a data connection. You can still send and receive multimedia messages.</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">Mobile data (WCDMA/LTE) will be turned off. Unless you use <cst>Wi-Fi</cst>, you will no longer be able to use apps that require a data connection. Sending or receiving multimedia messages will be restricted.</string>
+    <string name="data_usage_disable_mobile_warning_lgt">Unless you use <cst>Wi-Fi</cst>", you will no longer be able to use Internet, Email, or other apps that require a data connection.
+
+Mobile data will be turned off."</string>
+    <string name="data_usage_disable_mobile_warning">Unless you use <cst>Wi-Fi</cst>", you will no longer be able to use Internet, Email, or other apps that require a data connection.
+
+Mobile data will be disabled."</string>
     <string name="data_usage_enable_mobile_warning_skt">Mobile data will be turned on. Connecting to mobile networks may result in additional charges depending on your payment plan.</string>
+    <string name="data_usage_enable_mobile_warning_ktt">Mobile data will be turned on. Connecting to mobile networks may result in additional charges depending on your payment plan.</string>
+    <string name="data_usage_enable_mobile_warning_lgt">Mobile data will be turned on. Connecting to mobile networks may result in additional charges depending on your payment plan.</string>
+    <string name="data_usage_enable_mobile_warning">Connecting via packet data may incur additional charges. Continue?</string>
     <string name="volte_roaming_settings_title">4G Settings</string>
     <string name="volte_roaming_settings_summary_kdi">"Use 4G networks for Internet calls while roaming. To stop using 4G networks, restart your phone after turning off this function. 4G networks should be turned off when network quality is poor while you're overseas and should always be turned on in Japan."</string>
     <string name="answering_memo_text">Answering message enabled</string>

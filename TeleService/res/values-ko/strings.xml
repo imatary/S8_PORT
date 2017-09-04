@@ -2246,8 +2246,8 @@ LTE 네트워크 모드를 실행해야 데이터 서비스를 사용할 수 있
     <string name="group_voice_call_outgoing_voice_call">음성전화 발신</string>
     <string name="voice_party_call_fail_network">Voice party 전화를 걸 수 없습니다. 네트워크 연결을 확인하세요.</string>
     <string name="data_usage_disable_mobile_warning_skt">모바일 데이터 접속을 차단합니다. 차단시에도 MMS는 정상적으로 수발신 가능하며, Wi-Fi 연결을 통한 캘린더, 이메일 등에서 자동 싱크와 데이터 사용이 가능합니다.</string>
-    <string name="data_usage_disable_mobile_warning_ktt">모바일 데이터 네트워크(WCDMA/LTE) 연결을 차단합니다. 차단 시에도 MMS는 정상적으로 수발신 가능하며, Wi-Fi 연결을 통해 데이터 사용이 가능합니다.</string>
-    <string name="data_usage_disable_mobile_warning_ktt_jb">모바일 데이터 네트워크(WCDMA/LTE) 연결을 차단합니다. 연결 차단 시 MMS 수발신이 불가능하며, Wi-Fi 연결을 통해 데이터 사용이 가능합니다.</string>
+    <string name="data_usage_disable_mobile_warning_ktt">모바일 데이터 네트워크(WCDMA/LTE) 연결을 차단합니다. 차단시에도 MMS는 정상적으로 수발신이 가능하며 Wi-Fi 연결을 통해 데이터 사용이 가능합니다.</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">모바일 데이터 네트워크(WCDMA/LTE) 연결을 차단합니다. 연결 차단 시 MMS 수발신이 불가능하며 Wi-Fi 연결을 통해 데이터 사용이 가능합니다.</string>
     <string name="data_usage_disable_mobile_warning_lgt">"모바일 데이터 접속을 차단하면, 모바일 데이터 전용 서비스의 사용이 제한됩니다.
 
 모바일 데이터 접속을 차단하시겠습니까?"</string>
@@ -2255,8 +2255,8 @@ LTE 네트워크 모드를 실행해야 데이터 서비스를 사용할 수 있
 
 모바일 데이터 사용을 해제합니다."</string>
     <string name="data_usage_enable_mobile_warning_skt">모바일 데이터 접속을 허용합니다. 가입하신 요금제에 따라 모바일 데이터 접속 및 GPS 정보 전송, 이메일 계정 싱크 등 스마트폰 특성으로 인한 데이터 통화료가 발생할 수 있습니다.</string>
-    <string name="data_usage_enable_mobile_warning_ktt">모바일 데이터 네트워크 사용을 허용합니다. 정액제나 무료 이용 서비스가 아닌 경우 데이터 통화료가 부과 될 수 있습니다. 연결하시겠습니까?</string>
-    <string name="data_usage_enable_mobile_warning_lgt">"모바일 데이터 접속을 허용하면, 정액제 및 무료 서비스가 아닌 경우 데이터 이용 요금이 부과됩니다.
+    <string name="data_usage_enable_mobile_warning_ktt">모바일 데이터 접속을 허용합니다. 가입하신 요금제에 따라 모바일 데이터 접속 및 GPS 정보 전송, 이메일 계정 싱크 등 스마트폰 특성으로 인한 데이터 통화료가 발생할 수 있습니다.</string>
+    <string name="data_usage_enable_mobile_warning_lgt">"모바일 데이터 접속을 허용하면, 정액제 및 무료 서비스가 아닌 경우 데이터 이용 요금이 부과 됩니다.
 
 모바일 데이터 접속을 허용하시겠습니까?"</string>
     <string name="data_usage_enable_mobile_warning">패킷 데이터로 연결하면 요금이 발생할 수 있습니다. 계속할까요?</string>

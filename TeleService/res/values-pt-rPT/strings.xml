@@ -2166,10 +2166,17 @@ O Roaming 4G não estará disponível se não aceitar. As redes 3G podem ser uti
     <string name="data_usage_disable_mobile_warning_skt">"A não ser que utilize Wi-Fi, deixará de poder utilizar a Internet, o e-mail ou outras aplicações que exijam uma ligação de dados.
 
 Os Dados móveis serão desligados."</string>
+    <string name="data_usage_disable_mobile_warning_ktt">Dados móveis (WCDMA/4G) serão desligados. Deixará de poder usar aplicações que necessitem de ligação de dados, a menos que utilize Wi-Fi. Continua a poder enviar e receber mensagens multimédia.</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">Dados móveis (WCDMA/4G) serão desligados. Deixará de poder usar aplicações que necessitem de ligação de dados, a menos que utilize Wi-Fi. O envio e a recepção de mensagens multimédia serão restringidos.</string>
+    <string name="data_usage_disable_mobile_warning_lgt">"A não ser que utilize Wi-Fi, deixará de poder utilizar a Internet, o e-mail ou outras aplicações que exijam uma ligação de dados.
+
+Os Dados móveis serão desligados."</string>
     <string name="data_usage_disable_mobile_warning">"A não ser que utilize Wi-Fi, deixará de poder utilizar a Internet, o E-mail ou outras aplicações que exijam uma ligação de dados.
 
 Os dados móveis serão desactivados."</string>
     <string name="data_usage_enable_mobile_warning_skt">Os Dados móveis serão ligados. A ligação a redes móveis pode resultar na cobrança de taxas adicionais, dependendo do seu tarifário.</string>
+    <string name="data_usage_enable_mobile_warning_ktt">Os Dados móveis serão ligados. A ligação a redes móveis pode resultar na cobrança de taxas adicionais, dependendo do seu tarifário.</string>
+    <string name="data_usage_enable_mobile_warning_lgt">Os Dados móveis serão ligados. A ligação a redes móveis pode resultar na cobrança de taxas adicionais, dependendo do seu tarifário.</string>
     <string name="data_usage_enable_mobile_warning">O acesso à rede através de pacotes de dados pode implicar a cobrança de taxas adicionais. Continuar?</string>
     <string name="insert_sim_card">Inserir cartão SIM</string>
     <string name="insert_sim_card_message">Insira o cartão SIM para aceder aos serviços de rede.</string>

@@ -1861,10 +1861,17 @@ La itinerancia LTE no estará disponible si no acepta. Cuando no haya redes LTE 
     <string name="data_usage_disable_mobile_warning_skt">"Si no se conecta mediante Wi-Fi, ya no podrá utilizar Internet, Correo electrónico u otras aplicaciones que necesiten una conexión de datos.
 
 Se desactivarán los datos móviles."</string>
+    <string name="data_usage_disable_mobile_warning_ktt">Se desactivarán los datos móviles (WCDMA/LTE). Si no te conectas mediante Wi-Fi, no podrás usar aplicaciones que requieran conexión de datos. Podrás continuar enviando y recibiendo mensajes multimedia.</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">Se desactivarán los datos móviles (WCDMA/LTE). Si no te conectas mediante Wi-Fi, no podrás usar aplicaciones que requieran conexión de datos. Se limitará el envío y la recepción de mensajes multimedia.</string>
+    <string name="data_usage_disable_mobile_warning_lgt">"Si no se conecta mediante Wi-Fi, ya no podrá utilizar Internet, Correo electrónico u otras aplicaciones que necesiten una conexión de datos.
+
+Se desactivarán los datos móviles."</string>
     <string name="data_usage_disable_mobile_warning">"A menos que utilice Wi-Fi, ya no podrá utilizar Internet, ni el correo electrónico ni cualquier otra aplicación que requiera una conexión de datos.
 
 Se desactivarán los datos móviles."</string>
     <string name="data_usage_enable_mobile_warning_skt">Se activarán los datos móviles. Conectarse a las redes móviles puede suponer costes adicionales en función de su plan de pago.</string>
+    <string name="data_usage_enable_mobile_warning_ktt">Se activarán los datos móviles. Conectarse a las redes móviles puede suponer costes adicionales en función de su plan de pago.</string>
+    <string name="data_usage_enable_mobile_warning_lgt">Se activarán los datos móviles. Conectarse a las redes móviles puede suponer costes adicionales en función de su plan de pago.</string>
     <string name="data_usage_enable_mobile_warning">La conexión mediante paquetes de datos puede suponer gastos adicionales. ¿Continuar?</string>
     <string name="insert_sim_card">Insertar tarjeta SIM</string>
     <string name="insert_sim_card_message">Inserte la tarjeta SIM para acceder a los servicios de red.</string>

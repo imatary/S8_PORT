@@ -2158,10 +2158,17 @@ LTE-roumingdan rozi bo‘lmasangiz foydalanib bo‘lmaydi. LTE tarmoqlaridan foy
     <string name="data_usage_disable_mobile_warning_skt">"Wi-Fidan foydalanmasangiz, Internet, e-pochta yoki tarmoq ulanishini talab qiluvchi boshqa ilovalardan foydalana olmaysiz.
 
 Mobil internet o‘chiriladi."</string>
+    <string name="data_usage_disable_mobile_warning_ktt">Mobil internet (WCDMA/LTE) o‘chiriladi. Wi-Fi tarmoqdan foydalanmayotgan bo‘lsangiz, ma’lumot ulanishini talab qiluvchi ilovalardan foydalana olmaysiz. Hali ham multimedia xabarlarini yuborishingiz va qabul qilishingiz mumkin.</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">Mobil internet (WCDMA/LTE) o‘chiriladi. Wi-Fi tarmoqdan foydalanmayotgan bo‘lsangiz, ma’lumot ulanishini talab qiluvchi ilovalardan foydalana olmaysiz. Multimedia xabarlarini yuborish va olish cheklanadi.</string>
+    <string name="data_usage_disable_mobile_warning_lgt">"Wi-Fidan foydalanmasangiz, Internet, e-pochta yoki tarmoq ulanishini talab qiluvchi boshqa ilovalardan foydalana olmaysiz.
+
+Mobil internet o‘chiriladi."</string>
     <string name="data_usage_disable_mobile_warning">"Wi-Fi ulanishidan foydalanmasangiz, Internet, e-pochta yoki ma‘lumot ulanishini talab qiluvchi boshqa ilovalardan foydalana olmaysiz.
 
 Mobil ma’lumot o‘chiriladi"</string>
     <string name="data_usage_enable_mobile_warning_skt">Mobil internet yoqiladi. Mobil tarmoqlarga ulanish tarif rejangiz asosida qo‘shimcha to‘lov olinishiga sabab bo‘lishi mumkin.</string>
+    <string name="data_usage_enable_mobile_warning_ktt">Mobil internet yoqiladi. Mobil tarmoqlarga ulanish tarif rejangiz asosida qo‘shimcha to‘lov olinishiga sabab bo‘lishi mumkin.</string>
+    <string name="data_usage_enable_mobile_warning_lgt">Mobil internet yoqiladi. Mobil tarmoqlarga ulanish tarif rejangiz asosida qo‘shimcha to‘lov olinishiga olib kelishi mumkin.</string>
     <string name="data_usage_enable_mobile_warning">Paketli ma’lumot orqali ulanish uchun qo‘shimcha to‘lov olinishi mumkin. Davom ettirilsinmi?</string>
     <string name="insert_sim_card">SIM-karta kiriting</string>
     <string name="insert_sim_card_message">Tarmoq xizmatlariga kirish uchun SIM-karta kiriting.</string>

@@ -2166,10 +2166,17 @@ Roaming LTE tidak akan tersedia jika Anda tidak setuju. Jaringan 3G mungkin digu
     <string name="data_usage_disable_mobile_warning_skt">"Anda tidak lagi dapat menggunakan Internet, Email, atau aplikasi lain yang memerlukan koneksi data kecuali jika Anda menggunakan Wi-Fi.
 
 Data seluler akan dimatikan."</string>
+    <string name="data_usage_disable_mobile_warning_ktt">Data seluler (WCDMA/LTE) akan dinonaktifkan. Anda tidak lagi dapat menggunakan aplikasi yang memerlukan koneksi data kecuali menggunakan Wi-Fi. Anda masih dapat mengirim dan menerima pesan multimedia.</string>
+    <string name="data_usage_disable_mobile_warning_ktt_jb">Data seluler (WCDMA/LTE) akan dinonaktifkan. Anda tidak lagi dapat menggunakan aplikasi yang memerlukan koneksi data kecuali menggunakan Wi-Fi. Mengirim atau menerima pesan multimedia akan dibatasi.</string>
+    <string name="data_usage_disable_mobile_warning_lgt">"Anda tidak lagi dapat menggunakan Internet, Email, atau aplikasi lain yang memerlukan koneksi data kecuali jika Anda menggunakan Wi-Fi.
+
+Data seluler akan dimatikan."</string>
     <string name="data_usage_disable_mobile_warning">"Anda tidak lagi dapat menggunakan Internet, email, atau aplikasi lainnya yang memerlukan koneksi data terkecuali Anda menggunakan Wi-Fi.
 
 Data seluler akan dinonaktifkan."</string>
     <string name="data_usage_enable_mobile_warning_skt">Data seluler akan dihidupkan. Tersambung ke jaringan seluler dapat dikenai biaya tambahan, tergantung paket pembayaran Anda.</string>
+    <string name="data_usage_enable_mobile_warning_ktt">Data seluler akan dihidupkan. Tersambung ke jaringan seluler dapat dikenai biaya tambahan, tergantung paket pembayaran Anda.</string>
+    <string name="data_usage_enable_mobile_warning_lgt">Data seluler akan dihidupkan. Tersambung ke jaringan seluler dapat dikenai biaya tambahan, tergantung paket pembayaran Anda.</string>
     <string name="data_usage_enable_mobile_warning">Menghubung lewat paket data dapat terkena biaya tambahan. Lanjutkan?</string>
     <string name="insert_sim_card">Masukkan kartu SIM</string>
     <string name="insert_sim_card_message">Masukkan kartu SIM utk mengakses layanan jaringan.</string>
