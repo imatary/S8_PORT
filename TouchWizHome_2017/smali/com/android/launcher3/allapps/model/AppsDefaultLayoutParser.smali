@@ -393,7 +393,6 @@
     if-ne v11, v12, :cond_3
 
     :cond_2
-    :goto_1
     return-void
 
     :cond_3
@@ -496,7 +495,7 @@
 
     invoke-static {v12, v13}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_5
     const-wide/16 v12, -0x66
@@ -918,7 +917,7 @@
 
     if-eqz v2, :cond_6
 
-    const v14, 0x7f070004
+    const v14, 0x7f080004
 
     :goto_3
     move-object/from16 v0, p0
@@ -956,12 +955,12 @@
 
     if-eqz v2, :cond_8
 
-    const v14, 0x7f070003
+    const v14, 0x7f080003
 
     goto :goto_3
 
     :cond_8
-    const v14, 0x7f070002
+    const v14, 0x7f080002
 
     goto :goto_3
 

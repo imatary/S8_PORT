@@ -101,23 +101,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1200(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)Landroid/content/ContentValues;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
-
-    return-object v0
-.end method
-
-.method static synthetic access$1300(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)Landroid/content/ContentValues;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
-
-    return-object v0
-.end method
-
-.method static synthetic access$1400(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)Landroid/content/Context;
+.method static synthetic access$1200(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)Landroid/content/Context;
     .locals 1
 
     iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mContext:Landroid/content/Context;
@@ -125,7 +109,39 @@
     return-object v0
 .end method
 
+.method static synthetic access$1300(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)Landroid/content/Context;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1400(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)Landroid/content/ContentValues;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
+
+    return-object v0
+.end method
+
 .method static synthetic access$1500(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)Landroid/content/ContentValues;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1600(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)Landroid/content/Context;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1700(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)Landroid/content/ContentValues;
     .locals 1
 
     iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
@@ -244,7 +260,7 @@
 .end method
 
 .method protected parseLayout(Ljava/util/ArrayList;)I
-    .locals 14
+    .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -254,6 +270,8 @@
             ">;)I"
         }
     .end annotation
+
+    const/4 v12, -0x1
 
     const/4 v0, 0x0
 
@@ -292,11 +310,11 @@
 
     invoke-interface {v0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
-    move-result v13
+    move-result v11
 
     const/4 v0, 0x3
 
-    if-ne v13, v0, :cond_1
+    if-ne v11, v0, :cond_1
 
     iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
@@ -309,11 +327,11 @@
     :cond_1
     const/4 v0, 0x1
 
-    if-eq v13, v0, :cond_3
+    if-eq v11, v0, :cond_3
 
     const/4 v0, 0x2
 
-    if-ne v13, v0, :cond_0
+    if-ne v11, v0, :cond_0
 
     iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
@@ -372,16 +390,6 @@
     if-eqz v0, :cond_4
 
     :cond_2
-    iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
-
-    invoke-virtual {v0, v2}, Lcom/android/launcher3/common/model/FavoritesProvider;->initializeMaxItemId(Ljava/lang/String;)J
-
-    move-result-wide v10
-
-    iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
-
-    invoke-virtual {v0, v10, v11}, Lcom/android/launcher3/common/model/FavoritesProvider;->setMaxItemId(J)V
-
     iget-object v1, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
     const/16 v5, -0x66
@@ -401,9 +409,7 @@
     move-exception v7
 
     :goto_1
-    const/4 v0, -0x1
-
-    iput v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mRank:I
+    iput v12, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mRank:I
 
     const-string v0, "Launcher.AppsRestore"
 
@@ -423,13 +429,13 @@
 
     invoke-virtual {v0, v9}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v12
+    move-result-object v10
 
-    check-cast v12, Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;
+    check-cast v10, Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;
 
     iget-object v0, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
-    invoke-interface {v12, v0, v2}, Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;->parseAndAdd(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)J
+    invoke-interface {v10, v0, v2}, Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;->parseAndAdd(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)J
     :try_end_1
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
@@ -442,7 +448,7 @@
 
     if-gez v0, :cond_0
 
-    const/4 v0, -0x1
+    move v0, v12
 
     goto :goto_2
 

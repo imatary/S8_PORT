@@ -75,7 +75,7 @@
     :catch_0
     move-exception v0
 
-    sget-object v2, Lcom/android/launcher3/SettingsActivity;->TAG:Ljava/lang/String;
+    const-string v2, "SettingsActivity"
 
     new-instance v3, Ljava/lang/StringBuilder;
 

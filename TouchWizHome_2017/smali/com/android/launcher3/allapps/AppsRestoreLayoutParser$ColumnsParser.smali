@@ -103,7 +103,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_2
+    if-eqz v4, :cond_3
 
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -232,7 +232,49 @@
     invoke-static {v4, v5, v6}, Lcom/android/launcher3/util/ScreenGridUtilities;->storeAppsGridLayoutPreference(Landroid/content/Context;II)V
 
     :cond_2
+    :goto_0
     const-wide/16 v4, 0x0
 
     return-wide v4
+
+    :cond_3
+    iget-object v4, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser$ColumnsParser;->this$0:Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;
+
+    invoke-static {v4}, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->access$1200(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lcom/android/launcher3/Utilities;->isDeskTopMode(Landroid/content/Context;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    const-string v4, "Launcher.AppsRestore"
+
+    const-string v5, "restore apps grid in desktop mode"
+
+    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v4, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser$ColumnsParser;->this$0:Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;
+
+    invoke-static {v4}, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->access$1300(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)Landroid/content/Context;
+
+    move-result-object v4
+
+    iget-object v5, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser$ColumnsParser;->this$0:Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;
+
+    invoke-static {v5}, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->access$1000(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)I
+
+    move-result v5
+
+    iget-object v6, p0, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser$ColumnsParser;->this$0:Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;
+
+    invoke-static {v6}, Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;->access$900(Lcom/android/launcher3/allapps/AppsRestoreLayoutParser;)I
+
+    move-result v6
+
+    invoke-static {v4, v5, v6}, Lcom/android/launcher3/util/ScreenGridUtilities;->storeAppsGridLayoutPreference(Landroid/content/Context;II)V
+
+    goto :goto_0
 .end method

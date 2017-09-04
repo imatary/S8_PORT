@@ -26,11 +26,9 @@
 
 .field final synthetic val$data:Landroid/content/Intent;
 
-.field final synthetic val$desktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
-
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/home/InstallShortcutReceiver;Landroid/content/Intent;Landroid/content/Context;Lcom/android/launcher3/LauncherAppState;Lcom/samsung/android/desktopmode/SemDesktopModeManager;)V
+.method constructor <init>(Lcom/android/launcher3/home/InstallShortcutReceiver;Landroid/content/Intent;Landroid/content/Context;Lcom/android/launcher3/LauncherAppState;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->this$0:Lcom/android/launcher3/home/InstallShortcutReceiver;
@@ -40,8 +38,6 @@
     iput-object p3, p0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$context:Landroid/content/Context;
 
     iput-object p4, p0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$app:Lcom/android/launcher3/LauncherAppState;
-
-    iput-object p5, p0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$desktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -968,7 +964,7 @@
     const/16 v17, 0x1
 
     :cond_15
-    if-eqz v16, :cond_17
+    if-eqz v16, :cond_16
 
     move-object/from16 v0, p0
 
@@ -984,25 +980,16 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$desktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
+    iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$context:Landroid/content/Context;
 
     move-object/from16 v18, v0
 
-    if-eqz v18, :cond_16
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$desktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
-
-    move-object/from16 v18, v0
-
-    invoke-static {}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->isDesktopMode()Z
+    invoke-static/range {v18 .. v18}, Lcom/android/launcher3/Utilities;->isDeskTopMode(Landroid/content/Context;)Z
 
     move-result v18
 
     if-nez v18, :cond_1
 
-    :cond_16
     if-nez v17, :cond_1
 
     move-object/from16 v0, p0
@@ -1011,7 +998,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x7f0800a3
+    const v19, 0x7f0900af
 
     const/16 v20, 0x1
 
@@ -1059,8 +1046,8 @@
 
     goto/16 :goto_0
 
-    :cond_17
-    if-eqz v4, :cond_18
+    :cond_16
+    if-eqz v4, :cond_17
 
     move-object/from16 v0, p0
 
@@ -1080,28 +1067,19 @@
 
     invoke-static {v8, v0, v1}, Lcom/android/launcher3/home/ExternalRequestQueue;->queueExternalRequestInfo(Lcom/android/launcher3/home/ExternalRequestInfo;Landroid/content/Context;Lcom/android/launcher3/LauncherAppState;)V
 
-    :cond_18
+    :cond_17
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$desktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
+    iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$context:Landroid/content/Context;
 
     move-object/from16 v18, v0
 
-    if-eqz v18, :cond_19
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$desktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
-
-    move-object/from16 v18, v0
-
-    invoke-static {}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->isDesktopMode()Z
+    invoke-static/range {v18 .. v18}, Lcom/android/launcher3/Utilities;->isDeskTopMode(Landroid/content/Context;)Z
 
     move-result v18
 
     if-nez v18, :cond_1
 
-    :cond_19
     if-nez v17, :cond_1
 
     move-object/from16 v0, p0
@@ -1110,7 +1088,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x7f0800a4
+    const v19, 0x7f0900b0
 
     const/16 v20, 0x1
 
@@ -1132,6 +1110,31 @@
 
     move-result-object v13
 
+    sget-boolean v18, Lcom/android/launcher3/Utilities;->sIsRtl:Z
+
+    if-eqz v18, :cond_18
+
+    new-instance v18, Ljava/lang/StringBuilder;
+
+    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
+
+    const/16 v19, 0x200f
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v13
+
+    :cond_18
     new-instance v18, Landroid/view/ContextThemeWrapper;
 
     move-object/from16 v0, p0

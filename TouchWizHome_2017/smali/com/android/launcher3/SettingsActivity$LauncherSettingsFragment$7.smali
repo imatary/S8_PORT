@@ -71,14 +71,6 @@
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    iget-object v1, p0, Lcom/android/launcher3/SettingsActivity$LauncherSettingsFragment$7;->this$0:Lcom/android/launcher3/SettingsActivity$LauncherSettingsFragment;
-
-    invoke-virtual {v1}, Lcom/android/launcher3/SettingsActivity$LauncherSettingsFragment;->getActivity()Landroid/app/Activity;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
-
     :cond_0
     const/4 v1, 0x0
 
