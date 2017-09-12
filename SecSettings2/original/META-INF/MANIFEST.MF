@@ -4294,7 +4294,7 @@ Name: res/drawable-xxhdpi-v4/motion_pick_up_soft_03.qmg
 SHA-256-Digest: xq/RrxDJ+X1lqHCSTZIhxMTP3gM1zaNRorb9smyb30c=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: HVABO5qj0CNhRl6bpooCVvAq1+qeKJg7HvlN9BtjaQk=
+SHA-256-Digest: Edwpw317qmqBPdxWgqzq1cisTrn2jk2h059FFj89uPI=
 
 Name: res/drawable/motion_multi_window_anim.xml
 SHA-256-Digest: JGLjosMQWq6K6uoAWyT2ELDRS9aemFXIt81EaC0U3G4=
