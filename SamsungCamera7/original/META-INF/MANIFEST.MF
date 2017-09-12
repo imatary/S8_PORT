@@ -1409,7 +1409,7 @@ Name: res/drawable/sticker_sound_pressed.bmp
 SHA-256-Digest: q6cJGVo4HplgyUkYBUuiVng09zITyDMS+Jt6uzjIPCE=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: ZR3OL0SghKsXrSaqlaNz/F1EDcHvGx6bO9PqvTUSNm0=
+SHA-256-Digest: RJo4LpSvnlicC7LySEGVg9oCPNI6Bcx9O57deemaqcU=
 
 Name: res/drawable/camera_pro_mode_icon_bg.bmp
 SHA-256-Digest: ymfKRSKF+ZrxqvZzPO39sd+jfsdxc9gDIK7EIguIRBY=

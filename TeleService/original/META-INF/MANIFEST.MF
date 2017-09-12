@@ -1907,7 +1907,7 @@ Name: res/drawable/emergency_dialpad_button_bg_rounded_rectangle_inset
 SHA-256-Digest: xBOd1d/303cSi8YXRpUhb7RSnzklaVMor82t5uffgs4=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: BewogJ1f1nQcCnHNfawN3JRw5EPiH1WUTAfGVbSsm2Y=
+SHA-256-Digest: ocQY00/8QcdeG9XXWV+eCq7mKk8bO/LZDtudZZchWSE=
 
 Name: res/drawable-xxxhdpi-v4/call_circle_arrow_left_04.qmg
 SHA-256-Digest: /88otD0sq6Uc3rMDAJeghdlsr/2OoDJvnAOsi1maTlc=

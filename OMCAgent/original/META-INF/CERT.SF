@@ -1,5 +1,5 @@
 Signature-Version: 1.0
-SHA-256-Digest-Manifest: XI8N+rLglyOlVEoViDhuLh0tK10qwmyWmLyFA83RES8=
+SHA-256-Digest-Manifest: 0Vvv7d6aEMN0DX8BqTgGmkx3BlAldOsQtwajLzjvAbY=
 Created-By: 1.0 (Android SignApk)
 
 Name: res/drawable-xxxhdpi-v4/omc_setup.qmg
@@ -349,7 +349,7 @@ Name: res/interpolator/sine_in_out_80.xml
 SHA-256-Digest: gjbkfk/XcoROqStaJvHDvIoBXOpjeS1M5m51G7im6e4=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: Rfo9JffoOfh/VlH1CutOQ6jKMwKes+oppNoYE5id5oo=
+SHA-256-Digest: 5DTSB7ttuev9YcMrW6ZkhGaqHdmOm2HAfUfOZiK05PY=
 
 Name: res/layout/activity_packageinstall.xml
 SHA-256-Digest: s0H2c96LAjaoLcpdeZF+EvSTi1pTzqYTnZieSDMUsWY=

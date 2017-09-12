@@ -1,5 +1,5 @@
 Signature-Version: 1.0
-SHA-256-Digest-Manifest: PgOVMZMcngYbPHK9eyBCztET6HNeAsMzitrJw9m/XYk=
+SHA-256-Digest-Manifest: 3vnXMNdWJaZXwa0lZsRtmjC2dOaPTV16n4mUunVyNNE=
 Created-By: 1.0 (Android SignApk)
 
 Name: res/drawable/quantum_panel_shape_dark.xml
@@ -207,7 +207,7 @@ Name: res/drawable-xxhdpi-v4/quick_ic_sleep_now.bmp
 SHA-256-Digest: /6xqSnJxZXWbxTYR1sw8FeFqj5U4TlYmjHJXxWMkVBw=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: yD3pf0WX5TiJ7KUZXOqaP7NQcGRHwmxJkkaG4jOtQy4=
+SHA-256-Digest: cNiB/tlH53D3EPXW9FR/0EQuS1ghHpRg8JtE8+0jAvs=
 
 Name: res/layout/lighting_effect.xml
 SHA-256-Digest: XXt9xC1dEHkRFa7sdyCZH2dnjpXJR4Q4YZlycN/7eew=

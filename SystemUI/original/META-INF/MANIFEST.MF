@@ -7068,7 +7068,7 @@ Name: res/drawable/recents_lock_to_task_button_bg.xml
 SHA-256-Digest: aXFqQakHNj/P/bDZ6NlOKkJsfiIROOsUNpZXUM6vyYY=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: oGlWOwJ77MfHJlD2EffgecNxUCuWHYSHYjpM2PoO8kg=
+SHA-256-Digest: QuoYOWhgCNfc7zON4ricEynGaLK+NCNVX4quGmWRWPA=
 
 Name: res/drawable/stat_sys_signal_focus_1.spr
 SHA-256-Digest: /0DDZ+B4sXynnhL0mIN+wMD+/haTid9AYvBF4MDePJ0=
