@@ -214,7 +214,7 @@
     <bool name="config_usb_data_unlock">false</bool>
     <bool name="lockscreen_isPortrait">true</bool>
     <bool name="config_DisableHWKeyOptionMenu">true</bool>
-    <bool name="config_EnableFakeMenuKeyByBackLong">false</bool>
+    <bool name="config_EnableFakeMenuKeyByBackLong">true</bool>
     <bool name="tw_action_bar_text_item_mode">false</bool>
     <bool name="tw_seekbar_sliding_animation">true</bool>
     <bool name="tw_edit_text_hint_theme">false</bool>
